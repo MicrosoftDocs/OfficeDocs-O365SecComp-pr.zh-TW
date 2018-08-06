@@ -1,0 +1,83 @@
+---
+title: 套用 EOP 設定至多個承租人的範例指令碼
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 11/17/2014
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
+description: 下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
+ms.openlocfilehash: 899cc51f80230e92b573803301f0e462205af61a
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22028090"
+---
+# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>套用 EOP 設定至多個承租人的範例指令碼
+
+下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
+  
+### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>對多個承租人執行指令碼或指令程式
+
+1. 使用應用程式 (例如 Excel) 來建立 .csv 檔案 (例如，c:\scripts\inputfile.csv)：
+    
+1. 在 .csv 檔案中，指定兩個欄名：UserName 和 Cmdlet。
+    
+2. 對於 .csv 檔案的每一列，在 UserName 欄中加入承租人的管理員名稱，在 Cmdlet 欄中加入要對該承租人執行的指令程式。例如，使用 admin@contoso.com 和 Get-AcceptedDomain。
+    
+2. 將 [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) 指令碼複製到記事本之類的編輯器，然後將檔案儲存到很容易找到 .ps1 檔案的位置 (例如 c:\scripts)。 
+    
+3. 使用下列語法執行指令碼：
+    
+     `&amp; "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"`
+    
+    以下為範例。 
+    
+  ```
+  &amp; "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+  ```
+
+4. 將登入每個承租人並執行指令程式。
+    
+## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
+<a name="RunCmdletOnMultipleTenants.ps1"> </a>
+
+```
+# This script runs Windows PowerShell cmdlets on multiple tenants.
+# Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
+#  
+# .csv input file sample: 
+# UserName,Cmdlet
+# admin@contoso.com,Get-AcceptedDomain | ft Name
+# URI for connecting to remote Windows PowerShell
+$URI = "https://ps.protection.outlook.com/powershell-liveid/"
+# Get the .csv file name as an argument to this script.
+$FilePath = $args[0]
+# Import the UserName and Cmdlet values from the .csv file.
+$CompanyList = Import-CSV $FilePath
+# Loop through each entry from the .csv file.
+ForEach ($Company in $CompanyList) {
+# Get the current entry's UserName.
+$UserName = $Company.UserName
+# Get the current entry's Cmdlet.
+$Cmdlet = $Company.Cmdlet
+# Create a PowerShell credential object by using the current entry's UserName. Prompt for the password.
+$UserCredential = Get-Credential -username $UserName
+# Log on to a new Windows PowerShell session.
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $URI -Credential $UserCredential -Authentication Basic -AllowRedirection
+Import-PSSession $Session
+# Here's where the script to be run on the tenant goes.
+# In this example, the cmdlet in the .csv file runs.
+Invoke-Expression $Cmdlet
+# End the current PowerShell session.
+remove-pssession -session $Session
+}
+
+```
+
+
