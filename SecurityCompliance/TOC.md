@@ -410,6 +410,5 @@
 ### [將郵件傳送至 Office 365](sending-mail-to-office-365.md)
 ### [非客戶服務](services-for-non-customers.md)
 
-# 
-  [Office 365 企業版](https://docs.microsoft.com/Office365/Enterprise)
+# [Office 365 企業版](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 企業版](https://support.office.com/office365admin)
