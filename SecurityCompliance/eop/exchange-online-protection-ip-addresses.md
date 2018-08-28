@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: 下列的 Microsoft 資料中心 IP 位址所使用的 Microsoft Exchange Online Protection (EOP) 傳送電子郵件、 時接收電子郵件、 或 Exchange Online Protection 入口網站及管理服務。為了傳送和接收來自 EOP 的郵件或使用管理服務，請確定您的網路允許來自這些 IP 位址的連線。
-ms.openlocfilehash: 1b5dad69fb300f36bc94c9d264492f9c9be8948f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 853b64410969fcc2f3c9ef238d2e9f4a4bb36e7b
+ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026320"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23230005"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Exchange Online Protection IP 位址
 
@@ -26,8 +26,6 @@ ms.locfileid: "22026320"
 > Microsoft 已開發 rest web 服務 IP 位址及 FQDN 此頁面上的項目。此新服務可協助您設定及更新例如防火牆及 proxy 伺服器的網路周邊裝置。您可以下載端點、 清單或特定變更的目前版本的清單。XML 文件、 RSS 摘要、 和 IP 位址及 FQDN 此頁面上的項目最後會取代此服務。若要嘗試取出這個新的服務，請移至[Web 服務](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice)。 
  
 ## <a name="eop-ip-address-ranges"></a>EOP IP 位址範圍
-
-以下是**7/2/2018年**到 EOP IP 位址範圍的完整清單。 
 
 ||||
 |:-----|:-----|:-----|
@@ -91,3 +89,4 @@ Exchange Online Protection 路由郵件同時又不遵守我們客戶我們合�
 | 216.32.180.0/23 |  | |
 | 2a01:111:f400:7 c 00:: / 54 |  | |
 ||||
+
