@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用搜尋並清除 Office 365 安全性功能&amp;規範中心來搜尋並刪除您組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: 8bba4be473977afc229f64dfba6fd1514b86ecd2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d9ca212585f1cb7e98e5f577ce47fcdef7ea979f
+ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526558"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23531866"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>搜尋並刪除您的 Office 365 組織-Admin 說明中的電子郵件
 
@@ -120,11 +120,11 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **刪除郵件之後會發生什麼事？**
 
-    使用已刪除的訊息`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令移至使用者的 [可復原的項目] 資料夾中的 [刪除] 資料夾。它不是立即清除來自 Office 365。使用者可以設定信箱已刪除的項目保留期間為基礎的持續期間復原刪除的郵件] 資料夾中的郵件。此保留期間到期 （或如果使用者清除前的郵件會到期後），郵件移至 [清除] 資料夾，並不會再使用者存取。一次 [清除] 資料夾中郵件會再次保留已刪除的項目保留期間如果單一項目復原已啟用信箱的信箱設定為基礎的工期。（Office 365 的單一項目復原預設會啟用時建立新的信箱。）刪除項目保留期間到期後，標記遭到永久刪除郵件，並將來自 Office 365 清除信箱由受管理的資料夾助理員處理下一次。 
+    使用已刪除的訊息`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令移至使用者的 [可復原的項目] 資料夾中的 [刪除] 資料夾。它不是立即清除來自 Office 365。使用者可以設定信箱已刪除的項目保留期間為基礎的持續期間復原刪除的郵件] 資料夾中的郵件。此保留期間到期 （或如果使用者清除前的郵件會到期後），郵件移至 [清除] 資料夾，並不會再使用者存取。一次 [清除] 資料夾中郵件會再次保留已刪除的項目保留期間如果單一項目復原已啟用信箱的信箱設定為基礎的工期。（Office 365 的單一項目復原預設會啟用時建立新的信箱。）刪除項目保留期間到期後，標記為永久刪除郵件，並將來自 Office 365 清除信箱由受管理的資料夾助理員處理下一次。 
     
-- **如何得知郵件已刪除且移至使用者的 [可復原的項目] 資料夾？**
+- **如何知道郵件的刪除和移至使用者的 [可復原的項目] 資料夾？**
 
-    如果您執行相同的內容搜尋您刪除一則訊息之後，您仍會看到相同數目的搜尋結果 （和可能會假設未從使用者信箱中刪除郵件）。這是因為內容的搜尋會搜尋 [可復原的項目] 資料夾中，這是其中已刪除的郵件移至執行之後`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令。若要確認郵件位置移至 [可復原的項目] 資料夾，您可以執行就地 eDiscovery 搜尋 （使用相同的來源信箱與搜尋準則為在步驟 1 中建立內容的搜尋） 和搜尋結果複製到探索信箱。然後您可以檢視搜尋結果中的探索信箱並確認郵件已移至 [可復原的項目] 資料夾。如需建立就地 eDiscovery 搜尋所使用的來源信箱和內容搜尋的搜尋查詢的清單的詳細資訊，請參閱[使用 eDiscovery 工作流程中的內容搜尋](use-content-search-in-ediscovery.md)。 
+    如果您執行相同的內容搜尋您刪除一則訊息之後，您仍會看到相同數目的搜尋結果 （和可能會假設未從使用者信箱中刪除郵件）。這是因為內容的搜尋會搜尋 [可復原的項目] 資料夾中，這是其中已刪除的郵件移至執行之後`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令。若要確認郵件已移至 [可復原的項目] 資料夾，您可以執行就地 eDiscovery 搜尋 （使用相同的來源信箱及搜尋準則做為在步驟 1 中建立內容搜尋），並再將搜尋結果複製到探索信箱。然後您可以檢視搜尋結果中的探索信箱並確認郵件已移至 [可復原的項目] 資料夾。如需建立就地 eDiscovery 搜尋所使用的來源信箱和內容搜尋的搜尋查詢的清單的詳細資訊，請參閱[使用 eDiscovery 工作流程中的內容搜尋](use-content-search-in-ediscovery.md)。 
     
 - **如果您必須刪除超過 50000 個信箱的郵件吗？**
 
