@@ -9,16 +9,18 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 description: Microsoft 開發各種原則、 程序，而且採用數個業界最佳作法，協助保護我們使用者從粗俗、 不想要或惡意的電子郵件。
-ms.openlocfilehash: 436f564f20d579c56197563c7bfac3ef903be750
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026270"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003082"
 ---
-# <a name="reference-policies-practices-and-guidelines"></a>參照： 原則、 做法，以及指導方針
+# <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
   
 Microsoft 致力於協助網路上提供的最受信任的使用者經驗。因此，Microsoft 開發各種原則、 程序，而且採用數個業界最佳作法，協助保護我們使用者從粗俗、 不想要或惡意的電子郵件。嘗試傳送至 Office 365 使用者的電子郵件的寄件者應確保它們完全了解，而且會遵循本文以協助在此工作，並協助避免潛在的傳遞問題的指導。
   

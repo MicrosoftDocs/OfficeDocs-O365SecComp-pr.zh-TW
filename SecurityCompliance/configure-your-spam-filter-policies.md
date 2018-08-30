@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: 基本的垃圾郵件篩選設定包括選取會被識別為垃圾郵件的郵件上所採取的動作和選擇是否要篩選以特定語言編寫或寄自特定國家或地區的郵件。
-ms.openlocfilehash: b0a5fa1a5640bd0baab68c29d8098059a6025f7d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 3e24a69dacc18272baa710c18492759f67583f4f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026530"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002962"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
   
@@ -26,7 +28,6 @@ ms.locfileid: "22026530"
 > Exchange Online Protection (EOP) 獨立客戶： 根據預設，EOP 垃圾郵件篩選器將垃圾郵件偵測到的郵件傳送至每個收件者的垃圾郵件] 資料夾。不過，以確保 [**移至 [垃圾郵件] 資料夾的郵件**] 動作運作的內部部署信箱，您必須設定 Exchange 傳輸規則來偵測新增的 EOP 的垃圾郵件標頭的內部伺服器上。如需詳細資訊，請參閱[確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
   
 ## <a name="what-you-must-know-before-you-begin"></a>您必須知道您開始之前
-<a name="sectionSection0"> </a>
 
 預估完成時間：30 分鐘
   
@@ -35,7 +36,6 @@ ms.locfileid: "22026530"
 如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Keyboard shortcuts in Exchange 2013**。
   
 ## <a name="use-the-exchange-admin-center-eac-to-configure-spam-filter-policies"></a>使用 Exchange 系統管理中心 (EAC) 來設定垃圾郵件篩選原則
-<a name="sectionSection1"> </a>
 
 1. 在 Exchange 系統管理中心 (EAC)，瀏覽至 **[保護]** \> **[垃圾郵件篩選]**。
     
@@ -43,7 +43,7 @@ ms.locfileid: "22026530"
     
   - 按兩下預設原則，以編輯這個全公司的原則。
     
-  - 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.png) **[新建]** 圖示，建立新的自訂垃圾郵件篩選原則，此原則可以套用到組織內的使用者、群組和網域。您也可以按兩下現有的自訂原則來編輯它們。 
+  - 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.gif) **[新建]** 圖示，建立新的自訂垃圾郵件篩選原則，此原則可以套用到組織內的使用者、群組和網域。您也可以按兩下現有的自訂原則來編輯它們。 
     
 3. 僅限自訂原則，指定此原則的名稱。或者，您也可以指定詳細的說明。您不能重新命名的預設原則。
     
@@ -85,27 +85,27 @@ ms.locfileid: "22026530"
     
 6. 在 [ **封鎖清單**] 頁面上，您可以指定一律會標記為垃圾郵件的項目，例如寄件者或網域。此服務將會在符合這些項目的電子郵件上套用高信賴垃圾郵件動作。 
     
-  - 將不想要的寄件者新增到「寄件者」封鎖清單。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png)，然後在選取範圍對話方塊中新增您想要封鎖的寄件者地址。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
+  - 將不想要的寄件者新增到「寄件者」封鎖清單。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要封鎖的寄件者地址。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
     
-  - 將不想要的網域新增到「網域」封鎖清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.png)，然後在選取範圍對話方塊中新增您想要封鎖的網域。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
+  - 將不想要的網域新增到「網域」封鎖清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要封鎖的網域。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
     
     > [!CAUTION]
     > 如果您封鎖頂層網域，您想要的電子郵件可能會標示為垃圾郵件。 
   
 7. 在 [ **允許清單**] 頁面上，您可以指定一律會傳遞到收件匣的項目，例如寄件者或網域。來自這些項目的電子郵件不會由垃圾郵件篩選器處理。 
     
-  - 將受信任的寄件者新增到寄件者允許清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.png)，然後在選取範圍對話方塊中新增您想要允許的寄件者地址。您可以使用分號或新行區隔多個項目。按一下 [確定] 回到 [ **允許清單**] 頁面。 
+  - 將受信任的寄件者新增到寄件者允許清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要允許的寄件者地址。您可以使用分號或新行區隔多個項目。按一下 [確定] 回到 [ **允許清單**] 頁面。 
     
-  - 將受信任的網域新增到網域允許清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.png)，然後在選取範圍對話方塊中新增您想要允許的網域。您可以使用分號或新行區隔多個項目。按一下 [確定] 回到 [ **允許清單**] 頁面。 
+  - 將受信任的網域新增到網域允許清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要允許的網域。您可以使用分號或新行區隔多個項目。按一下 [確定] 回到 [ **允許清單**] 頁面。 
     
     > [!CAUTION]
     > 如果您允許頂層網域，您不想要的電子郵件可能會傳遞至收件匣。 
   
 8. 您可在 「**國際垃圾郵件**」 頁面上篩選以特定語言編寫或寄自特定國家或地區的電子郵件訊息。您可以設定最多 86 不同語言和 250 不同的區域。此服務會套用高信賴垃圾郵件設定] 動作。 
     
-1. 選取 [**以下列語言撰寫的篩選器電子郵件**] 核取方塊以啟用此功能。按一下 [![新增圖示](media/ITPro-EAC-AddIcon.png)，然後在選取項目] 對話方塊中，進行您 （支援多重選取項目） 的選擇。例如，如果您選取篩選郵件寫入在阿拉伯文 (AR)，和**隔離郵件**是您設定高信賴垃圾郵件] 動作，將隔離阿拉伯文中寫入任何郵件。按一下 [**確定]** 回到 [**國際垃圾郵件**] 窗格。 
+1. 選取 [**以下列語言撰寫的篩選器電子郵件**] 核取方塊以啟用此功能。按一下 [![新增圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取項目] 對話方塊中，進行您 （支援多重選取項目） 的選擇。例如，如果您選取篩選郵件寫入在阿拉伯文 (AR)，和**隔離郵件**是您設定高信賴垃圾郵件] 動作，將隔離阿拉伯文中寫入任何郵件。按一下 [**確定]** 回到 [**國際垃圾郵件**] 窗格。 
     
-2. 選取 [**從下列的國家或地區的篩選電子郵件傳送**] 核取方塊以啟用此功能。按一下 [![新增圖示](media/ITPro-EAC-AddIcon.png)，然後在選取項目] 對話方塊中，進行您 （支援多重選取項目） 的選擇。例如，如果您選取篩選出傳送從澳洲 (AU)，所有郵件和**隔離郵件**是您設定巨集指令的高信賴垃圾郵件，則任何郵件從澳洲傳送會被隔離。按一下 [**確定]** 回到 [**國際垃圾郵件**] 窗格。 
+2. 選取 [**從下列的國家或地區的篩選電子郵件傳送**] 核取方塊以啟用此功能。按一下 [![新增圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取項目] 對話方塊中，進行您 （支援多重選取項目） 的選擇。例如，如果您選取篩選出傳送從澳洲 (AU)，所有郵件和**隔離郵件**是您設定巨集指令的高信賴垃圾郵件，則任何郵件從澳洲傳送會被隔離。按一下 [**確定]** 回到 [**國際垃圾郵件**] 窗格。 
     
     > [!NOTE]
     > 如果未選取國際垃圾郵件選項，則服務預設會對以所有語言傳送以及來自所有地區的郵件執行標準垃圾郵件篩選。郵件會經過分析，並在經判定為垃圾郵件或高信賴度垃圾郵件時，套用設定的動作。 
@@ -143,10 +143,9 @@ ms.locfileid: "22026530"
 11. 按一下 **[儲存]**。原則設定的摘要隨即出現在右側窗格中。
     
 > [!TIP]
->  您可以選取或清除核取方塊以啟用或停用您的自訂原則的 [**啟用**] 欄中。根據預設，會啟用所有原則。無法停用預設原則。> 若要刪除的自訂原則，請選取的原則，按一下 [![刪除圖示](media/ITPro-EAC-DeleteIcon.png)**刪除**圖示，然後確認您想要刪除之原則。無法刪除預設原則。> 自訂原則一律優先預設原則。自訂原則執行相反順序在其中建立它們 （從最舊到最新），但您可以依序按一下 [變更您的自訂原則的優先順序 （執行順序）![向上箭號圖示](media/ITPro-EAC-UpArrowIcon.png)向上鍵及![向下箭號圖示](media/ITPro-EAC-DownArrowIcon.png)向下箭號。具有**優先順序** **0**的原則將會執行第一筆、 後面接著**1**，則**2**，依此類推。 
+>  您可以選取或清除核取方塊以啟用或停用您的自訂原則的 [**啟用**] 欄中。根據預設，會啟用所有原則。無法停用預設原則。> 若要刪除的自訂原則，請選取的原則，按一下 [![刪除圖示](media/ITPro-EAC-DeleteIcon.gif)**刪除**圖示，然後確認您想要刪除之原則。無法刪除預設原則。> 自訂原則一律優先預設原則。自訂原則執行相反順序在其中建立它們 （從最舊到最新），但您可以依序按一下 [變更您的自訂原則的優先順序 （執行順序）![向上箭號圖示](media/ITPro-EAC-UpArrowIcon.gif)向上鍵及![向下箭號圖示](media/ITPro-EAC-DownArrowIcon.gif)向下箭號。具有**優先順序** **0**的原則將會執行第一筆、 後面接著**1**，則**2**，依此類推。 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>使用遠端 PowerShell 設定垃圾郵件篩選原則
-<a name="sectionSection2"> </a>
 
 您也可以設定並套用 PowerShell 中的垃圾郵件篩選器原則。若要了解如何使用 Windows PowerShell 連線至 Exchange Online，請參閱[Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 連線至 Exchange Online Protection，請參閱[Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
   
@@ -161,7 +160,6 @@ ms.locfileid: "22026530"
 若要將自訂垃圾郵件篩選原則套用至使用者、群組和 (或) 網域，請使用 [New-HostedContentFilterRule](http://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) Cmdlet (建立可套用至自訂原則的新篩選規則) 或 [Set-HostedContentFilterRule](http://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) Cmdlet (編輯可套用至自訂原則的現有篩選規則)。使用 [Enable-HostedContentFilterRule](http://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) Cmdlet或 [Disable-HostedContentFilterRule](http://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) Cmdlet 可以啟用或停用對原則套用的規則。 
   
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
-<a name="sectionSection3"> </a>
 
 若要確保已針對垃圾郵件進行適當偵測和採取行動，可以透過服務傳送 GTUBE 訊息。GTUBE 與 EICAR 防毒測試檔案類似，GTUBE 提供了一項測試，您可以用來確認服務正在偵測進入的垃圾郵件。GTUBE 訊息應該一律被垃圾郵件篩選器偵測為垃圾郵件，且對郵件執行的動作應該符合您進行的設定。
   
@@ -172,16 +170,8 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>調整您的垃圾郵件篩選原則，以避免誤判和漏報
-<a name="sectionSection4"> </a>
 
 如果想要使用積極的垃圾郵件篩選方法，您可以啟用進階的垃圾郵件篩選選項。如需套用至整個組織的一般垃圾郵件設定，請參閱[使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)，或[使用 Office 365 垃圾郵件篩選器封鎖垃圾郵件以避免漏報問題](https://go.microsoft.com/fwlink/p/?LinkId=534225)。如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
-  
-## <a name="new-to-office-365"></a>初次使用 Office 365 嗎？
-<a name="sectionSection5"> </a>
-
-||
-|:-----|
-|![LinkedIn Learning 的短圖示](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？**         探索 LinkedIn Learning 提供的 **Office 365 admins and IT pros** 免費影片課程。 |
    
 ## <a name="for-more-information"></a>相關資訊
 <a name="sectionSection6"> </a>

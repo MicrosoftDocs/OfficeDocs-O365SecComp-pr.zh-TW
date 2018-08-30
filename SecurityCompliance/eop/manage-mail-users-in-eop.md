@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: e985adf5659b50cf567ea798a092f809d77ca470
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027390"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003042"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
@@ -101,7 +101,7 @@ ms.locfileid: "22027390"
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>在 EAC 中編輯或移除郵件使用者
 
-- 在 EAC 中，移至 [**收件者** \> **連絡人**。在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.png)以視需要更新使用者設定。您可以變更使用者的名稱、 別名或連絡人資訊，以及您可以在組織中記錄於使用者角色的詳細的資訊。您可以也選取使用者，然後選擇 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.png)將它刪除。 
+- 在 EAC 中，移至 [**收件者** \> **連絡人**。在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)以視需要更新使用者設定。您可以變更使用者的名稱、 別名或連絡人資訊，以及您可以在組織中記錄於使用者角色的詳細的資訊。您可以也選取使用者，然後選擇 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.gif)將它刪除。 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>使用遠端 Windows PowerShell 管理郵件使用者
 

@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 在 Microsoft Exchange Online Protection (EOP) 中，您可以使用 Exchange 系統管理中心 (EAC)，讓使用者成為角色群組的成員，以為他們指派可用以執行特定管理工作的權限。您也可以使用 EAC 從角色群組中移除使用者。
-ms.openlocfilehash: 5d50c77c97f2c345aa3994e7fa3ecd2eea93a13a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026660"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002972"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>管理 EOP 中的系統管理員角色群組權限
   
@@ -39,9 +39,9 @@ ms.locfileid: "22026660"
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>使用 EAC 將成員指派給系統管理員角色群組
 
-1. 在 EAC 中，瀏覽至 **[權限]** \> **[系統管理員角色]**，按一下您要新增使用者的角色群組，然後按一下 **[編輯]**![編輯圖示](../media/ITPro-EAC-EditIcon.png)。
+1. 在 EAC 中，瀏覽至 [**權限** \> **系統管理員角色**]，按一下您想要新增的使用者或使用者、 角色群組] 和 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
     
-2. 在 [成員] 下，按一下 **[新增]**![加入圖示](../media/ITPro-EAC-AddIcon.png)。[選取成員] 視窗將會出現。
+2. 在 [成員] 下，按一下 **[新增]**![加入圖示](../media/ITPro-EAC-AddIcon.gif)。[選取成員] 視窗將會出現。
     
 3. 搜尋您要新增的使用者，或是從清單中加以選取。
     
@@ -54,9 +54,9 @@ ms.locfileid: "22026660"
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>使用 EAC 從系統管理員角色群組中移除成員
 
-1. 在 EAC 中，瀏覽至 **[權限]** \> **[系統管理員角色]**，按一下您要從中移除使用者的角色群組，然後按一下 **[編輯]**![編輯圖示](../media/ITPro-EAC-EditIcon.png)。
+1. 在 EAC 中，瀏覽至 [**權限** \> **系統管理員角色**]，按一下您要移除的使用者或使用者、 角色群組] 和 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
     
-2. 在 [成員] 下，選取您要移除的使用者，然後按一下 **[移除]**![[移除] 圖示](../media/ITPro-EAC-RemoveIcon.png)。
+2. 在 [成員] 下，選取您要移除的使用者，然後按一下 **[移除]**![[移除] 圖示](../media/ITPro-EAC-RemoveIcon.gif)。
     
 3. 按一下 **[儲存]**，以儲存角色群組的變更，並回到 **[系統管理員角色]** 頁面。若要確認您是否已成功從系統管理員角色群組中移除使用者，請確定在所選角色群組的詳細資料窗格中，[成員] 下已看不到該成員。 
     
