@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。
-ms.openlocfilehash: 87bf6a4f1e7d0fac1f98255d222693cb4910f1a6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
+ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027660"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "23002205"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>將網域及設定從某個 EOP 組織移到另一個 EOP 組織
 
 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。 
   
 > [!NOTE]
->  設定可以只從一個 EOP 獨立 (標準) 組織可靠地移至另一個 EOP 標準組織或至具有服務 (EOP 進階) 的 Exchange 企業 CAL 組織，或是從 EOP 進階組織移至另一個 EOP 進階組織。因為 EOP 標準組織中部支援部分進階功能，所以從 EOP 進階組織移至 EOP 進階組織可能會失敗。 >  這些指示適用於僅進行 EOP 篩選的組織。從一個 Exchange Online 組織移至另一個 Exchange Online 組織有其他的考量。Exchange Online 組織並不在這些指引的範圍內。 
+>  設定可可靠的方式移動只能從 EOP 獨立版 （標準） 組織至另一個 EOP 標準或 Exchange Enterprise CAL 與服務 （EOP 進階版） 的組織，或從 EOP Premium 組織到另一個 EOP Premium 組織。因為 EOP 標準組織中不支援部分進階版功能，從 EOP Premium 組織移至 EOP 標準組織可能不會成功。> EOP 篩選僅限組織的這些指示說明。有中從一部 Exchange Online 組織移至另一個 Exchange Online 組織的其他考量。Exchange Online 組織已超出範圍這些指示。 
   
 在下列範例中，Contoso, Ltd. 已經和 Contoso 套件合併。下圖顯示將網域、郵件使用者和群組以及設定從來源 EOP 組織 (contoso.onmicrosoft.com) 移至目標 EOP 組織 (contososuites.onmicrosoft.com) 的程序：
   

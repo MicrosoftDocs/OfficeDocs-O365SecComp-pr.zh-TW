@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.custom: TN2DMC
+search.appverid:
+- MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 摘要： 本文將告訴您如何使用 DomainKeys 識別郵件 (DKIM) 與 Office 365 以確定目的地的電子郵件系統信任從自訂網域傳送的訊息。
-ms.openlocfilehash: 0626a2c7bc33df3dc77d3aec8be6dbec5a96472b
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7dccab55ab86d9ecac14b7042b5a030c2415fece
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026160"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003212"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -26,7 +28,7 @@ ms.locfileid: "22026160"
   
 基本上，您可使用私密金鑰來加密您的網域外寄電子郵件中的頁首。您可以發佈公開金鑰接收伺服器可以使用解碼簽章的網域的 DNS 記錄。他們使用公開金鑰來確認訊息會真正來自您並不來自詐騙網域某人。
   
-Office 365 自動會設定 DKIM 的初始網域。初始網域是當您使用的服務，例如 contoso.onmicrosoft.com 註冊為您建立 Office 365 的網域。您不需要執行任何動作來設定 DKIM 初始網域。如需網域的詳細資訊，請參閱 ＜[網域常見問題集](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
+Office 365 自動會設定 DKIM 的初始網域。初始網域是當您使用的服務，例如 contoso.onmicrosoft.com 註冊為您建立 Office 365 的網域。您不需要執行任何動作來設定 DKIM 初始網域。如需網域的詳細資訊，請參閱 ＜[網域常見問題集](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
   
 您可以選擇執行任何 DKIM 相關動作的自訂網域。若不要為您的自訂網域設定 DKIM、 Office 365 建立私密與公開金鑰組、 啟用 DKIM 簽署，並設定巡自訂網域的 Office 365 預設原則。雖然這是大部分的 Office 365 客戶的足夠涵蓋範圍，您應該以手動方式設定 DKIM 自訂網域在下列情況：
   
@@ -105,7 +107,7 @@ TTL:                3600
   contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
   ```
 
--  _initialDomain_是註冊 Office 365 時所使用的網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
+-  _initialDomain_是註冊 Office 365 時所使用的網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
     
 例如，如果您有 cohovineyardandwinery.onmicrosoft.com、 初始網域和兩個自訂網域 cohovineyard.com cohowinery.com，就必須設定兩個總共四個 CNAME 記錄的每個其他網域的 CNAME 記錄。
   
@@ -245,7 +247,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 
 ```
 
-在此範例中的主機名稱與網域包含要 CNAME 會指向如果 fabrikam.com DKIM 簽署鎖網域系統管理員所啟用的值。最後，從 Office 365 傳送每一個單一訊息將會 DKIM 簽署。如果您自行啟用 DKIM，網域將會在 [從網域相同： 位址，在此案例的 fabrikam.com。如果您未將不會對齊並將改用貴組織的初始網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
+在此範例中的主機名稱與網域包含要 CNAME 會指向如果 fabrikam.com DKIM 簽署鎖網域系統管理員所啟用的值。最後，從 Office 365 傳送每一個單一訊息將會 DKIM 簽署。如果您自行啟用 DKIM，網域將會在 [從網域相同： 位址，在此案例的 fabrikam.com。如果您未將不會對齊並將改用貴組織的初始網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
   
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>設定 DKIM 才能讓協力廠商服務可傳送] 或詐騙代表自訂網域的電子郵件
 <a name="SetUp3rdPartyspoof"> </a>

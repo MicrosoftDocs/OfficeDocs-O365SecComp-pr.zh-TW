@@ -1,7 +1,7 @@
 ---
-title: Create organization-wide safe sender or blocked sender lists in Office 365
+title: 在 Office 365 中建立整個組織的安全寄件者或封鎖的寄件者清單
 ms.author: stephow
-author: stephow-msft
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/8/2015
 ms.audience: ITPro
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要確定您從特定寄件者收到郵件因為您信任他們和其訊息，您可以調整您允許在 Exchange 系統管理中心中的垃圾郵件篩選器原則中的清單。
-ms.openlocfilehash: 1086a4a710432eb412ae9f08f204beda52aa5390
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a90679fc900ca5695904898af3627fc1900a8545
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027540"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003162"
 ---
-# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Create organization-wide safe sender or blocked sender lists in Office 365
+# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>在 Office 365 中建立整個組織的安全寄件者或封鎖的寄件者清單
   
 如果您想要確定您從特定寄件者收到郵件因為您信任他們和其訊息，您可以調整您允許在**保護**Exchange 系統管理中心 (EAC) 中的垃圾郵件篩選器原則中的清單\>**垃圾郵件篩選器**。深入了解這在[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)。另一個作法是建立 Exchange 傳輸規則 works like 網域或使用者型的允許在垃圾郵件篩選清單。您可封鎖郵件從特定的網域或使用者傳來的類似的方式太。
   
@@ -30,7 +32,6 @@ ms.locfileid: "22027540"
 如需與傳輸規則相關的其他管理工作，請參閱[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)。
   
 ## <a name="use-the-eac-to-customize-a-block-or-allow-list-to-prevent-or-receive-email-from-a-domain-or-user"></a>使用 EAC 來自訂封鎖或允許清單，以防止或從某個網域或使用者會收到電子郵件
-<a name="sectionSection0"> </a>
 
 1. 在 EAC 中，移至 [**保護** \> **垃圾郵件篩選器**。 
     
@@ -51,17 +52,14 @@ ms.locfileid: "22027540"
   
 4. 在 [ **封鎖清單**] 頁面上，您可以指定一律會標記為垃圾郵件的項目，例如寄件者或網域。此服務將會在符合這些項目的電子郵件上套用高信賴垃圾郵件動作。 
     
-  - 將不想要的寄件者新增到「寄件者」封鎖清單。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png)，然後在選取範圍對話方塊中新增您想要封鎖的寄件者地址。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
+  - 將不想要的寄件者新增到「寄件者」封鎖清單。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要封鎖的寄件者地址。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
     
-  - 將不想要的網域新增到「網域」封鎖清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.png)，然後在選取範圍對話方塊中新增您想要封鎖的網域。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
+  - 將不想要的網域新增到「網域」封鎖清單。按一下 [ **新增**] ![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要封鎖的網域。您可以使用分號或新行區隔多個項目。按一下 [ **確定**] 回到 [ **封鎖清單**] 頁面。 
     
     > [!CAUTION]
     > 如果您封鎖頂層網域，您想要的電子郵件可能會標示為垃圾郵件。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin-creating-a-transport-rule"></a>您需要知道之前建立傳輸規則什麼？
-<a name="sectionSection1"> </a>
-
-- 預估完成時間：15 分鐘
     
 - 您不需要建立傳輸規則，以略過垃圾郵件篩選功能或標示為垃圾郵件的寄件者或網域的電子郵件。使用 Exchange Online Protection 封鎖及允許清單中，而不是此傳輸規則的垃圾郵件原則，如果您只想要封鎖或允許特定寄件者或網域並沒有附加任何額外的條件。深入了解這在[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)。
     
@@ -70,16 +68,15 @@ ms.locfileid: "22027540"
 - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Exchange 系統管理中心的鍵盤快速鍵**。
     
 > [!TIP]
-> 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 
+> 有問題嗎？尋求 Exchange 論壇中的協助。請造訪在[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)論壇。 
   
 ## <a name="use-the-eac-to-create-a-transport-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>使用 EAC 來建立傳輸規則，以略過網域或使用者的垃圾郵件篩選
-<a name="sectionSection2"> </a>
 
-1. 在 EAC 中，瀏覽至 **[郵件流程]** \> **[規則]**。選擇 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png) 然後選擇 **[略過垃圾郵件篩選]**。
+1. 在 EAC 中，瀏覽至 [**郵件流程** \> **規則**。選擇 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)然後選擇 [**略過垃圾郵件篩選**。
     
 2. 為規則命名。在 **[套用此規則，如果]** 下，選擇 **[寄件者]**，然後選取下列其中一個條件： 
     
-  - 如果您要指定網域，請選擇 **[網域是]**。在 **[指定網域]** 對話方塊中，輸入您要指定為安全的寄件者網域，例如 contoso.com。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png) 將其移至片語清單。如果要新增其他網域請重複此步驟，並在完成後按一下 **[確定]**。 
+  - 如果您想要指定的網域，選擇 [**網域**]。在 [**指定網域**] 對話方塊中，輸入您想要指定為安全，例如 contoso.com 的寄件者的網域。**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)將移至的片語清單。如果您想要新增其他的網域，並按一下 [**確定]** 完成時，重複此步驟。 
     
   - 如果您要指定使用者，請選擇 **[是此人]**。在 **[選取成員]** 對話方塊中，新增清單中的使用者，或輸入使用者並按一下 **[檢查名稱]**。如果要新增其他使用者，請重複此步驟，並在完成後按一下 **[確定]**。 
     
@@ -94,15 +91,14 @@ ms.locfileid: "22027540"
 建立並強制執行規則後，垃圾郵件篩選就會略過您指定的網域或使用者。
   
 ## <a name="use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>使用 EAC 來建立傳輸規則封鎖從某個網域或使用者傳來的訊息
-<a name="sectionSection3"> </a>
 
-1. 在 EAC 中，瀏覽至 **[郵件流程]** \> **[規則]**。選擇 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png)，然後選擇 **[建立新規則]**。
+1. 在 EAC 中，瀏覽至 [**郵件流程** \> **規則**。選擇 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)然後選擇 [**建立新的規則**。
     
 2. 命名規則，然後按一下 **[更多選項]**。 
     
 3. 在 **[套用此規則，如果]** 下，選擇 **[寄件者]**，然後選取下列其中一個條件： 
     
-  - 如果您要指定網域，請選擇 **[網域是]**。在 [指定網域] 對話方塊中，輸入您要封鎖其郵件的寄件者網域，例如 contoso.com。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png) 將其移至片語清單。如果要新增其他網域請重複此步驟，並在完成後按一下 **[確定]**。 
+  - 如果您想要指定的網域，選擇 [**網域**]。在 [指定網域] 對話方塊中，輸入您要封鎖郵件，例如 contoso.com 的寄件者網域。按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)將移至的片語清單。如果您想要新增其他的網域，並按一下 [**確定]** 完成時，重複此步驟。 
     
   - 如果您要指定使用者，請選擇 **[是此人]**。在 **[選取成員]** 對話方塊中，新增清單中的使用者，或輸入使用者並按一下 **[檢查名稱]**。如果要新增其他使用者，請重複此步驟，並在完成後按一下 **[確定]**。 
     
@@ -117,7 +113,6 @@ ms.locfileid: "22027540"
 建立並強制執行規則後，將會封鎖從您指定的網域或使用者傳來的任何郵件。
   
 ## <a name="see-also"></a>另請參閱
-<a name="sectionSection3"> </a>
 
 [設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)
   

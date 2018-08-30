@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: 您可以建立的傳輸規則會將電子郵件的垃圾郵件信賴等級 (SCL)。SCL 為量值的方式有可能郵件為垃圾郵件。垃圾郵件是來路不明的 （且通常不想要的） 的電子郵件訊息。服務會根據其 scl 郵件上採取不同的動作。例如，您可能會想略過垃圾郵件內容之郵件的傳送來自組織內的人員因為您信任從同事內部傳送的訊息不是垃圾郵件篩選。您使用傳輸規則將郵件的 SCL 值提供增加處理垃圾郵件中的控制項。
-ms.openlocfilehash: ad89230dac9de668488b40090d70d2b697a86edd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026730"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002892"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)
 
@@ -34,7 +36,7 @@ ms.locfileid: "22026730"
 
 1. 在 Exchange 系統管理中心 (EAC) 中，選擇 [**郵件流程** \> **規則**。
     
-2. 選擇 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.png)，然後選取 [**建立新的規則**。
+2. 選擇 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)，然後選取 [**建立新的規則**。
     
 3. 指定規則的名稱。
     

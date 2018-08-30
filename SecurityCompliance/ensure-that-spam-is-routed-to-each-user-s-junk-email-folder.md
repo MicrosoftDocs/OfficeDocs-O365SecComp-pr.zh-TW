@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 description: EOP 客戶的預設反垃圾郵件動作是要將垃圾郵件移至 [收件者的垃圾郵件] 資料夾。為了讓此巨集指令來搭配內部部署信箱，您必須設定 Exchange 傳輸規則來偵測垃圾郵件標頭新增的 EOP 與內部邊緣] 或 [集線伺服器上。這些傳輸規則設定由 SclJunkThreshold 屬性使用 Set-organizationconfig 指令程式將垃圾郵件移至每個信箱的垃圾郵件] 資料夾的垃圾郵件信賴等級 (SCL)。
-ms.openlocfilehash: 290a3cc6aed07cd4d91df65350fd49c9226a0d64
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1b0a9e5ee39820baade714612ca0b0bdb7a81bb9
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026630"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002852"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾
 

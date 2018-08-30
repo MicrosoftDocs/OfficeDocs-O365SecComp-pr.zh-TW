@@ -1,5 +1,5 @@
 ---
-title: 提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 進行分析。
+title: 將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 description: '您和使用者可以送出 false 負值和 false 正數垃圾郵件訊息給 Microsoft 進行分析。 '
-ms.openlocfilehash: 1ae33fc7208ab679b7eeb148007bb3b676533e55
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8966dcb513c727527cc809bb2fde5b3181dc94a2
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026420"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002862"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 進行分析。
+# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 
 它可以是什麼時您組織中的使用者在其收件匣] 中接收垃圾郵件 （垃圾郵件） 或網路釣魚詐騙郵件訊息, 或他們未收到的合法電子郵件因為標示為垃圾郵件。我們正在正比微調我們要更精確的垃圾郵件篩選器。您和使用者可協助此程序所送出 false 負值和 false 正數垃圾郵件訊息給 Microsoft 進行分析。"False 負"是應該都已但未被識別為垃圾郵件的垃圾郵件訊息。"誤判 」 是不正確地識別為垃圾郵件的合法電子郵件訊息。 
   
@@ -115,7 +117,7 @@ ms.locfileid: "22026420"
 ## <a name="for-more-information"></a>相關資訊
 <a name="sectionSection4"> </a>
 
-[反垃圾郵件和反惡意程式防護](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[反垃圾郵件和反惡意程式碼防護](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
   
 [如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)
   

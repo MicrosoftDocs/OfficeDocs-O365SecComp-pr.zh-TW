@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 系統管理員可以使用 Search-Mailbox Cmdlet 來搜尋使用者信箱，然後刪除信箱中的郵件。
-ms.openlocfilehash: ed110c4a3e36a93970af99e9548aa293d94307fd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026580"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002822"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>搜尋並刪除郵件 - 管理中心說明
   
@@ -26,8 +28,7 @@ ms.locfileid: "22026580"
   
 為其他的保護，您可以先將郵件複製到另一個信箱所使用的_TargetMailbox_和_TargetFolder_參數。依照此您會保留一份已刪除的郵件以防需要再次存取它們。 
   
-## <a name="what-do-i-need-to-know-before-i-begin"></a>開始前需要瞭解什麼？
-<a name="sectionSection0"> </a>
+## <a name="before-you-begin"></a>開始之前
 
 - 預估完成時間：10 分鐘。實際時間可能視信箱大小和搜尋查詢而有所不同。
     
@@ -37,7 +38,7 @@ ms.locfileid: "22026580"
     
   - **信箱搜尋**此角色可讓您跨組織中的多個信箱搜尋的郵件。系統管理員未指派此角色預設。若要指派自行此角色，讓您可以搜尋信箱，新增您探索管理角色群組的成員身分自己。請參閱[新增至探索管理角色群組的使用者](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)。
     
-  - **信箱匯入 / 匯出**此角色可讓您刪除使用者信箱的郵件。根據預設，此角色不被指派給任何角色群組。若要刪除的郵件從使用者的信箱，您可以將信箱匯入 / 匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱 ＜[管理角色群組](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)的 「 將角色新增至角色群組 」 一節。 
+  - **信箱匯入 / 匯出**-此角色可讓您刪除使用者信箱的郵件。根據預設，此角色不被指派給任何角色群組。若要刪除的郵件從使用者的信箱，您可以將信箱匯入 / 匯出角色新增至組織管理角色群組。如需詳細資訊，請參閱 ＜[管理角色群組](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)的 「 將角色新增至角色群組 」 一節。 
     
 - 如果您要從中刪除郵件的信箱已啟用單一項目復原，則必須先停用該功能。如需詳細資訊，請參閱[Enable or disable single item recovery for a mailbox](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx)。
     
@@ -50,7 +51,6 @@ ms.locfileid: "22026580"
 - 當您執行**Search-mailbox**指令程式也要搜尋使用者的封存信箱。同樣地，當您使用**Search-mailbox**指令程式搭配_DeleteContent_參數將會刪除主要封存信箱中的項目。若要避免此問題，您可以包含*DoNotIncludeArchive*參數。此外，我們建議不建議您使用_DeleteContent_參數刪除的郵件在 Exchange Online 已啟用因為可能會發生未預期的資料遺失自動展開封存信箱。 
     
 ## <a name="search-messages-and-log-the-search-results"></a>搜尋郵件並記錄搜尋結果
-<a name="sectionSection1"> </a>
 
 此範例會搜尋 April Stewart 的信箱中 [主旨] 欄位中包含 "Your bank statement" 字詞的郵件，並將搜尋結果記錄在系統管理員信箱的 SearchAndDeleteLog 資料夾中。不會將郵件複製到目標信箱或從中刪除。
   
@@ -66,10 +66,8 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:troja
 
 如需詳細的語法及參數資訊，請參閱 [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx)。
   
-[回到頁首](search-for-and-delete-messagesadmin-help.md#top)
-  
+ 
 ## <a name="search-and-delete-messages"></a>搜尋和刪除郵件
-<a name="sectionSection2"> </a>
 
 此範例會搜尋 April Stewart 的信箱中 [主旨] 欄位中包含 "Your bank statement" 字詞的郵件，並從來源信箱刪除這些郵件，而不將搜尋結果複製到其他資料夾。如先前所述，您必須取得「信箱匯入匯出」管理角色，才能刪除使用者信箱中的郵件。 。
   
@@ -93,12 +91,7 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Downlo
 ```
 
 如需詳細的語法及參數資訊，請參閱 [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx)。
-  
-[回到頁首](search-for-and-delete-messagesadmin-help.md#top)
-  
+
 ## <a name="using-the--loglevel-full-parameter"></a>使用 -LogLevel Full 參數
-<a name="sectionSection3"> </a>
 
 在某些先前範例_LogLevel_參數與`Full`值可用來記錄有關使用**Search-mailbox** cmdlet 傳回結果的詳細的資訊。當包含此參數時，請電子郵件訊息建立及傳送給_TargetMailbox_參數所指定的信箱。（這是名為搜尋 Results.csv CSV 格式的檔案） 的記錄檔案附加到此電子郵件訊息，並將位於_TargetFolder_參數所指定的資料夾。記錄檔包含當您執行**Search-mailbox**指令程式搜尋結果中包含的每封郵件的列。 
-  
-

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: '將信箱置於訴訟暫止狀態以保留所有信箱內容，包括已刪除的項目和已修改項目的原始版本。 '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026440"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002842"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>將信箱設為訴訟暫止
  
@@ -51,7 +53,7 @@ ms.locfileid: "22026440"
 
 1. 移至 [**收件者** \> **信箱**。
     
-2. 在使用者信箱清單中，按一下您想要置於訴訟暫止狀態、 信箱和 [**編輯**![編輯圖示](media/ITPro-EAC-EditIcon.png)。
+2. 在使用者信箱清單中，按一下您想要置於訴訟暫止狀態、 信箱和 [**編輯**![編輯圖示](media/ITPro-EAC-EditIcon.gif)。
     
 3. 在信箱內容頁面上，按一下 [**信箱功能。**
     
@@ -124,7 +126,7 @@ P
     
 1. 移至 [**收件者** \> **信箱**。
     
-2. 在使用者信箱清單中，按一下您想要確認的訴訟暫止狀態設定的信箱和 [**編輯**![編輯圖示](media/ITPro-EAC-EditIcon.png)。
+2. 在使用者信箱清單中，按一下您想要確認的訴訟暫止狀態設定的信箱和 [**編輯**![編輯圖示](media/ITPro-EAC-EditIcon.gif)。
     
 3. 在信箱內容頁面上，按一下 [**信箱功能。**
     

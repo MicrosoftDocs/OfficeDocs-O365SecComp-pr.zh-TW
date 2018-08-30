@@ -1,5 +1,5 @@
 ---
-title: 使用以查看您的使用者會報告給 Microsoft 的郵件流程規則
+title: 使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -8,16 +8,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: 您可以建立 Exchange 傳輸規則，以防止使用者傳送電子郵件訊息給 Microsoft 進行分析並用於您自己的安全性程序
-ms.openlocfilehash: 6c6af23e6a5f345e26c7dc09c898f2978ea51a5f
-ms.sourcegitcommit: df1e9590a9fa152fa776f16d9b25c180ba7198f3
+ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "22122583"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002620"
 ---
-# <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用以查看您的使用者會報告給 Microsoft 的郵件流程規則
+# <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容
 
 有多個您可以傳送正誤差與 false 誤判正常的郵件給 Microsoft 進行分析的方式。身為管理員，您可以使用郵件流程規則以查看新使用者會向 Microsoft 回報垃圾郵件、 非垃圾郵件和網路釣魚詐騙。如需詳細資訊，請參閱[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。相反地，您可以建立 Exchange 傳輸規則，以防止使用者傳送電子郵件訊息給 Microsoft 進行分析並用於您自己的安全性程序。
   
@@ -33,16 +35,16 @@ ms.locfileid: "22122583"
 
 1. 在 EAC 中，瀏覽至 **[郵件流程]** \> **[規則]**。
     
-2. 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.png)，然後選取 **[建立新的規則]**。
+2. 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後選取 **[建立新的規則]**。
     
 3. 命名規則，然後按一下 **[更多選項]**。
     
 4. 在 **[套用此規則，如果]** 下選取 **[收件者]**，然後選擇 **[位址包含任何這些文字]**。
     
 5. 在 **[指定單字或片語]** 方塊中，執行下列作業： 
-    - 類型`abuse@messaging.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.png)，然後輸入`junk@office365.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.png)。這些電子郵件地址用來提交誤判正常的郵件給 Microsoft。
-    - 類型`phish@office365.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.png)。此電子郵件地址用來送出未接的網路釣魚訊息給 Microsoft。
-    - 類型`false_positive@messaging.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.png)，然後輸入`not_junk@office365.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.png)。這些電子郵件地址用來提交誤判的郵件給 Microsoft。
+    - 類型`abuse@messaging.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.gif)，然後輸入`junk@office365.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.gif)。這些電子郵件地址用來提交誤判正常的郵件給 Microsoft。
+    - 類型`phish@office365.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.gif)。此電子郵件地址用來送出未接的網路釣魚訊息給 Microsoft。
+    - 類型`false_positive@messaging.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.gif)，然後輸入`not_junk@office365.microsoft.com`] 和 [![新增圖示](media/ITPro-EAC-AddIcon.gif)。這些電子郵件地址用來提交誤判的郵件給 Microsoft。
     - 按一下 **[確定]**。
     
 6. 在 [**執行下列動作**，選取 [ **[密件副本郵件至...** 與您想要的信箱然後，然後選取 [接收的郵件。 

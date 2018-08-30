@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: 若為 Exchange Online Protection (EOP) 客戶，傳送到貴組織的所有郵件會先通過 EOP，您的背景工作才會看見這些郵件。不論透過 Exchange Online 在雲端託管所有的信箱，或將信箱託管於內部部署環境 (稱為獨立案例)，或者繼續利用現有的基礎結構，您都可以在即將通過 EOP 進行處理的郵件路由傳送到您的背景工作收件匣之前，先選擇如何路由傳送這些郵件。
-ms.openlocfilehash: d35e6f2fdbe7bb991ebf3d766fadae34638831ef
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: ff5284eafe01a3887fa69fde2b5bcd023ee391db
+ms.sourcegitcommit: 285c58a371e6ab82c40fac3f24530cf3b09d0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027340"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "23002134"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的郵件流程
 
@@ -30,7 +30,7 @@ EOP 對您的郵件路由傳送方式提供了很大的彈性。下列主題說�
   
 [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx) 描述「目錄架構邊緣封鎖」功能，可讓您拒絕服務周邊網路處之無效收件者的郵件。 
   
-[View or Edit Managed Domains in EOP](http://technet.microsoft.com/library/69523bec-07ee-46f9-ae08-40437e39b87c.aspx)說明如何管理與您的 EOP 服務相關聯的網域。 
+[View or Edit Managed Domains in EOP](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)說明如何管理與您的 EOP 服務相關聯的網域。 
   
 如果您新增子網域至組織，則 EOP 服務也可以協助您管理這些子網域。若要深入了解子網域，請參閱 [Enable Mail Flow for Subdomains in Exchange Online](http://technet.microsoft.com/library/4033a30a-f506-481c-8ef0-fd9a0508ae38.aspx)。
   

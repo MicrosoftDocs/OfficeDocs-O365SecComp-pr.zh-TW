@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 description: 當電子郵件訊息會通過垃圾郵件篩選其指派的垃圾郵件計分。該分數會對應到個別的垃圾郵件信賴等級 (SCL) 為與 X 標頭中加上戳記。服務採取動作時取決於的 scl 垃圾郵件信賴解譯的訊息。下表來篩選和預設採取的動作是針對每個評等的內送郵件上解譯不同 SCL 評等。
-ms.openlocfilehash: cd33f440828761ab8cb496d9eff07288d974514c
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4b8eea798bc46396e06da2c6ba0573c019d7a9b7
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026280"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002902"
 ---
 # <a name="spam-confidence-levels"></a>垃圾郵件信賴等級
 

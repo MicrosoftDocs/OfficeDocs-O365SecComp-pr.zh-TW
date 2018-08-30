@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: 您可以使用 Exchange Online Protection (EOP) 來建立具有郵件功能的 Exchange 組織的群組。您也可以使用 EOP 來定義或更新群組屬性指定成員資格、 電子郵件地址及其他考量的群組。
-ms.openlocfilehash: 744a28d2003496650e7350108797cc5cc4eaad4f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026340"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003172"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
@@ -41,7 +41,7 @@ ms.locfileid: "22026340"
     
 - 此指令程式採用批次處理方法，因此導致幾分鐘的傳播延遲，然後才能看到指令程式的結果。
     
-- 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱＜[使用遠端 PowerShell 連線到 Exchange Online Protection](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)＞。
+- 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱＜[使用遠端 PowerShell 連線到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)＞。
     
 - 如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Exchange 系統管理中心的鍵盤快速鍵**。
     
@@ -52,7 +52,7 @@ ms.locfileid: "22026340"
 
 1. 在 Exchange 系統管理中心 (EAC) 中，移至 [**收件者** \> **群組**。
     
-2. 按一下 [**新增**![新增圖示](../media/ITPro-EAC-AddIcon.png)、] 和 [**通訊群組**或**安全性群組**，視您的需求而定。請參閱差別[擁有郵件功能的群組類型](manage-groups-in-eop.md)。 
+2. 按一下 [**新增**![新增圖示](../media/ITPro-EAC-AddIcon.gif)、] 和 [**通訊群組**或**安全性群組**，視您的需求而定。請參閱差別[擁有郵件功能的群組類型](manage-groups-in-eop.md)。 
     
 3. 在 **[新增通訊群組]** 或 **[新增安全性群組]** 頁面上，完成下列欄位： 
     
@@ -62,12 +62,12 @@ ms.locfileid: "22026340"
     
   - **描述**輸入群組的描述，使他人了解該群組的用途。 
     
-  - **擁有者**根據預設，會建立群組的人員是擁有者。您可以選擇 [**新增]** 新增擁有者![新增圖示](../media/ITPro-EAC-AddIcon.png)。所有群組都必須至少一個擁有者。
+  - **擁有者**根據預設，會建立群組的人員是擁有者。您可以選擇 [**新增]** 新增擁有者![新增圖示](../media/ITPro-EAC-AddIcon.gif)。所有群組都必須至少一個擁有者。
     
     > [!NOTE]
     > 擁有者不必是群組的成員。 
   
-  - **成員**使用此區段可新增群組成員並指定核准是否需要使用者在加入或離開群組。若要將成員新增至群組中，按一下 [**新增**![新增圖示](../media/ITPro-EAC-AddIcon.png)。
+  - **成員**使用此區段可新增群組成員並指定核准是否需要使用者在加入或離開群組。若要將成員新增至群組中，按一下 [**新增**![新增圖示](../media/ITPro-EAC-AddIcon.gif)。
     
 4. 按一下 **[確定]**，以返回原始頁面。 
     
@@ -79,9 +79,9 @@ ms.locfileid: "22026340"
     
 2. 執行下列其中一項動作：
     
-  - 若要編輯群組： 在群組清單中，按一下 [通訊] 或 [您要檢視或變更的安全性群組] 和 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.png)。您可以更新一般設定、 新增或移除群組擁有者及新增或移除所需的群組成員。
+  - 若要編輯群組： 在群組清單中，按一下 [通訊] 或 [您要檢視或變更的安全性群組] 和 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。您可以更新一般設定、 新增或移除群組擁有者及新增或移除所需的群組成員。
     
-  - 若要移除群組： 選取群組，然後按一下 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.png)。
+  - 若要移除群組： 選取群組，然後按一下 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.gif)。
     
 3. 當您完成變更後，按一下 [**儲存**]。
     

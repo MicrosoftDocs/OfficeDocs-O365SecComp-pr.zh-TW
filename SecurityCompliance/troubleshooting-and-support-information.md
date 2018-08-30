@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 description: 本主題說明使用者和系統管理員可用的疑難排解步驟，並提供如何連絡技術支援人員以取得協助的相關資訊。
-ms.openlocfilehash: d6168be0580175b172616b3274f2a13f36de5d57
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 249f6fabf0ae7037ef905c455cfb45582be0e40b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027630"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003122"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑難排解和支援資訊
 
@@ -87,7 +89,7 @@ ms.locfileid: "22027630"
   
 ## <a name="for-more-information"></a>如需詳細資訊
 
-[啟用報表訊息增益集](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[啟用報告訊息增益集](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [向 Microsoft 回報垃圾郵件](report-junk-email-messages-to-microsoft.md)
   

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 description: 若要確定未被封鎖從您信任的人員所傳送的電子郵件，您可以使用連線篩選原則建立允許清單中，也稱為安全寄件者清單中，您信任的 IP 位址。您也可以建立封鎖的寄件者清單。
-ms.openlocfilehash: d106e55779c6246b77018fef3ab9d58fa759d99e
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cb9b73ff61b477f1c7ea0bb8da4039bebce83d1b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027600"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003262"
 ---
 # <a name="configure-the-connection-filter-policy"></a>設定連線篩選原則
  
@@ -52,7 +54,7 @@ ms.locfileid: "22027600"
     
 2. 按一下 [連線篩選]**** 功能表項目，然後建立所需的清單：IP 允許清單、IP 封鎖清單或兩者。 
     
-    若要建立這些清單，請按一下![加入圖示](media/ITPro-EAC-AddIcon.png)。在後續對話方塊中，指定 IP 位址或位址範圍，然後按一下 **[確定]**。重複此程序來新增其他位址。(新增 IP 位址後，您也可以編輯或移除 IP 位址。)
+    若要建立這些清單，請按一下![加入圖示](media/ITPro-EAC-AddIcon.gif)。在後續對話方塊中，指定 IP 位址或位址範圍，然後按一下 **[確定]**。重複此程序來新增其他位址。(新增 IP 位址後，您也可以編輯或移除 IP 位址。)
     
     > [!NOTE]
     >  如果您將 IP 位址新增至兩個清單時，是否允許從它傳送的電子郵件。> IPV4 IP 位址必須指定其中？ （\d{3}） 是從 0 到 255 的數字格式 nnn.nnn.nnn.nnn 中。您也可以在其中 rr 是從 24 到 32 的數字格式 nnn.nnn.nnn.nnn/rr 中指定無網域間路由選擇 (CIDR) 範圍。若要指定 24 至 32 範圍的範圍，請參閱 ＜[其他考量時設定 IP 允許清單](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)。> 您可以指定 1273年個項目，其中項目是單一 IP 位址或 CIDR 範圍的 IP 位址從/24 至/32 的最大值。> 如果您正在傳送 TLS 加密訊息，IPv6 位址與位址範圍不支援。 
@@ -74,13 +76,13 @@ ms.locfileid: "22027600"
   
 1. 在 EAC 中，瀏覽至 **[郵件流程]** \> **[規則]**。
     
-2. 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.png)，然後選取 **[建立新的規則]**。
+2. 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後選取 **[建立新的規則]**。
     
 3. 命名規則，然後按一下 **[更多選項]**。
     
 4. 在 **[套用此規則情況]** 下，選取 **[寄件者]**，然後選擇 **[IP 位址在任何這些範圍中或完全符合]**。
     
-5. 在 **[指定 IP 位址]** 方塊中，指定 IP 位址範圍，按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png)，然後按一下 **[確定]**。
+5. 在 **[指定 IP 位址]** 方塊中，指定 IP 位址範圍，按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後按一下 **[確定]**。
     
 6. 在 **[執行下列動作]** 方塊下，選擇 **[修改訊息屬性]**，再選擇 **[設定垃圾郵件信賴等級 (SCL)]** 來設定動作。在 **[指定 SCL]** 方塊中，選取 **[略過垃圾郵件篩選]**，然後按一下 **[確定]**。
     
@@ -100,19 +102,19 @@ ms.locfileid: "22027600"
   
 1. 在 EAC 中，瀏覽至 **[郵件流程]** \> **[規則]**。
     
-2. 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.png)，然後選取 **[建立新的規則]**。
+2. 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後選取 **[建立新的規則]**。
     
 3. 命名規則，然後按一下 **[更多選項]**。
     
 4. 在 **[套用此規則情況]** 下，選取 **[寄件者]**，然後選擇 **[IP 位址在任何這些範圍中或完全符合]**。
     
-5. 在 **[指定 IP 位址]** 方塊中，指定您在 IP 允許清單中輸入的 IP 位址或 IP 位址範圍，按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png)，然後按一下 **[確定]**。
+5. 在 **[指定 IP 位址]** 方塊中，指定您在 IP 允許清單中輸入的 IP 位址或 IP 位址範圍，按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.gif)，然後按一下 **[確定]**。
     
 6. 在 **[執行下列動作]** 下，選擇 **[修改訊息屬性]**，再選擇 **[設定垃圾郵件信賴等級 (SCL)]** 來設定動作。在 **[指定 SCL]** 方塊中，選取 **[0]**，然後按一下 **[確定]**。
     
 7. 按一下 **[新增例外狀況]**，在 **[除非]** 下，選取 **[寄件者]**，然後選擇 **[網域是]**。 
     
-8. 在 **[指定網域]** 方塊中，輸入您要略過垃圾郵件篩選的網域，例如 **contosob.com**。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.png)，將它移至片語清單。如果要新增其他網域當作例外狀況，請重複此步驟，完成時按一下 **[確定]**。 
+8. 在 **[指定網域]** 方塊中，輸入您要略過垃圾郵件篩選的網域，例如 **contosob.com**。按一下 **[新增]**![加入圖示](media/ITPro-EAC-AddIcon.gif)，將它移至片語清單。如果要新增其他網域當作例外狀況，請重複此步驟，完成時按一下 **[確定]**。 
     
 9. 您也可以視需要選取稽核規則、測試規則、在特定期間啟動規則等等選項。施行規則之前，建議先測試規則一段時間。[Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx) 包含這些選擇的詳細資訊。 
     

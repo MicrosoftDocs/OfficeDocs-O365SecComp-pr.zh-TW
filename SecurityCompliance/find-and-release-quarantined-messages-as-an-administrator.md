@@ -9,20 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: 本主題說明如何 Exchange Online 與 Exchange Online Protection (EOP) 系統管理員可以尋找、 釋出，並報告在 Exchange 系統管理中心 (EAC) 的隔離郵件。
-ms.openlocfilehash: 5ebe65bf703087e8ad4bace827d84833eddb038f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027480"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003272"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以系統管理員身分找到並釋放被隔離的郵件
 
 本主題說明如何 Exchange Online 與 Exchange Online Protection (EOP) 系統管理員可以尋找、 釋出，並報告在 Exchange 系統管理中心 (EAC) 的隔離郵件。Office 365 引導至其中一個隔離的郵件因為它們已識別為垃圾郵件或其符合傳輸規則。 
   
-使用安全性&amp;規範中心，而不是 EAC 中完成這些工作，以及檢視的任何並使用 [傳送至隔離因為它們包含惡意程式碼的郵件。如需詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+使用安全性&amp;規範中心，而不是 EAC 中完成這些工作，以及檢視的任何並使用 [傳送至隔離因為它們包含惡意程式碼的郵件。如需詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
   
 在 EAC 中的 [**隔離**] 頁面上將列出隔離的郵件。根據預設，訊息會排序從到最舊**RECEIVED**上最新的欄位。**寄件者**、**主旨**和**到期日**的值也會列出每封郵件。您可以按一下其標題排序上所有這些欄位。如果您按一下欄標題第二次時，會回復的排序順序。[**隔離**] 頁面上會顯示最大值為 500 封郵件。 
   
@@ -158,7 +160,7 @@ ms.locfileid: "22027480"
     
 4. 按一下 **[釋出]**。 
     
-如果您按一下 [**重新整理**![重新整理圖示](media/ITPro-EAC-RefreshIcon.png)圖示來重新整理資料，然後按兩下郵件，您應該會看到它在預定的收件者已經發行。 
+如果您按一下 [**重新整理**![重新整理圖示](media/ITPro-EAC-RefreshIcon.gif)圖示來重新整理資料，然後按兩下郵件，您應該會看到它在預定的收件者已經發行。 
   
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>釋出給所有收件者的一個或多個隔離的郵件
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -187,7 +189,7 @@ ms.locfileid: "22027480"
 > [!TIP]
 > 協助確保該郵件不標記為垃圾郵件[如何協助確保郵件未標示為垃圾郵件](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)中的步驟。 
   
-如果您按一下 [**重新整理**![重新整理圖示](media/ITPro-EAC-RefreshIcon.png)圖示來重新整理資料，然後按兩下郵件，您應該會看到它在預定的收件者已經發行。 
+如果您按一下 [**重新整理**![重新整理圖示](media/ITPro-EAC-RefreshIcon.gif)圖示來重新整理資料，然後按兩下郵件，您應該會看到它在預定的收件者已經發行。 
   
 ## <a name="for-more-information"></a>相關資訊
 <a name="sectionSection4"> </a>

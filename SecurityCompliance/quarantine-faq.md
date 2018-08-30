@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: 本主題提供有關託管隔離區的常見問題與解答。
-ms.openlocfilehash: 6aebeadc5155cbdb8cbeeb73e29c8b8cb0d53767
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027080"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003192"
 ---
 # <a name="quarantine-faq"></a>隔離常見問題集
 
@@ -24,7 +26,7 @@ ms.locfileid: "22027080"
   
  **問： 如何管理隔離區中的惡意程式碼隔離的郵件？**
   
-您需要使用安全性&amp;規範中心以檢視及使用傳送至隔離因為它們包含惡意程式碼的郵件。如需詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+您需要使用安全性&amp;規範中心以檢視及使用傳送至隔離因為它們包含惡意程式碼的郵件。如需詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
   
  **問：如何設定服務以將因垃圾郵件而遭到隔離的郵件傳送至隔離區？**
   

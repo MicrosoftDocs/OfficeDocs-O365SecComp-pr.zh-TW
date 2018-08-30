@@ -1,0 +1,108 @@
+---
+title: Office 365 安全性內容的搜尋限制&amp;規範中心
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: 4/30/2018
+ms.audience: Admin
+ms.topic: reference
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Strat_O365_IP
+search.appverid:
+- MOE150
+- MET150
+ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
+description: '了解 Office 365 安全性內容的搜尋功能作用中的限制&amp;規範中心，例如同時搜尋數量上限。 '
+ms.openlocfilehash: 896d1fb5aafb7ae28f00c5e19af229415d800f36
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22526787"
+---
+# <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性內容的搜尋限制&amp;規範中心
+
+> [!NOTE]
+> 本主題中的限制是不同的 Exchange Online 中的就地 eDiscovery 和 eDiscovery 中心的 SharePoint Online 的目前限制。 
+  
+各種限制會套用至 Office 365 安全性內容的搜尋功能&amp;規範中心。這包含搜尋執行之**內容搜尋**] 頁面上與搜尋相關聯的 eDiscovery 案例。這些限制協助維護的健康狀況和至 Office 365 組織提供服務的品質。也有相關編製索引的電子郵件在 Exchange Online 的搜尋限制。您無法修改內容搜尋或電子郵件編製索引的限制，不過您應該要知道有這些，讓您可以考量這些限制時規劃、 執行及疑難排解內容的搜尋。 
+  
+ **目錄**
+  
+[內容的搜尋限制](limits-for-content-search.md#searchlimits)
+  
+[編製索引的電子郵件的限制](limits-for-content-search.md#indexinglimits)
+  
+[其他資訊](limits-for-content-search.md#moreinfo)
+  
+## <a name="content-search-limits"></a>內容的搜尋限制
+<a name="searchlimits"> </a>
+
+下表列出在 [安全性] 中的搜尋限制&amp;規範中心。
+  
+|**限制說明**|**限制**|
+|:-----|:-----|
+|信箱或單一內容搜尋可搜尋的網站數目上限  <br/> |無限制  <br/> |
+|可以在組織中的同一時間執行的內容搜尋的數目上限。  <br/> |無限制  <br/> |
+|單一使用者可以同時啟動的內容搜尋的數目上限。請注意此限制很有可能瀏覽當使用者嘗試使用啟動多個搜尋**Get ComplianceSearch\|開始 ComplianceSearch**的安全性與規範中心 PowerShell 命令。<br/> |10   <br/> |
+|每個使用者信箱預覽內容搜尋結果時顯示在 [預覽] 頁面的項目數目上限。  <br/> |100  <br/> |
+|在預覽內容搜尋結果時顯示在 [預覽] 頁面的所有使用者信箱中找到的項目數目上限。顯示最新的項目。  <br/> |1,000  <br/> |
+|可以預覽搜尋結果的使用者信箱的數目上限。如果有超過 1000 個信箱內含符合搜尋查詢的內容，與大部分的搜尋結果只前 1000年信箱可用於預覽。  <br/> |1,000  <br/> |
+|預覽內容搜尋結果時顯示在 [預覽] 頁面的商務網站的 SharePoint 和 OneDrive 中找到的項目數目上限。顯示最新的項目。  <br/> |200 個  <br/> |
+|（在 SharePoint 和 OneDrive for Business） 可以預覽搜尋結果的網站數目上限。如果有超過 200 總網站包含符合搜尋查詢的內容，只有主要 200 網站與大部分的搜尋結果會提供 preview。  <br/> |200 個  <br/> |
+|每個公用資料夾信箱預覽內容搜尋結果時顯示在 [預覽] 頁面的項目數目上限。  <br/> |100  <br/> |
+|在預覽內容搜尋結果時顯示在 [預覽] 頁面的所有公用資料夾信箱中找到的項目數目上限。  <br/> |200 個  <br/> |
+|公用可以預覽搜尋結果的信箱數目上限。如果有超過 500 個公用資料夾信箱內含符合搜尋查詢的內容，僅上方 500 個公用資料夾信箱與大部分的搜尋結果會提供的預覽。  <br/> |500 個  <br/> |
+|內容搜尋的搜尋查詢 （包括運算子和條件） 的字元數上限。  <br/> **附註：** 此限制查詢擴充時，這表示該查詢會取得展開針對每個關鍵字之後才會生效。例如，如果搜尋查詢 15 關鍵字及其他參數與條件，查詢取得延伸 15 次，每個其他參數和在查詢條件。那麼即使低於此限制可能的搜尋查詢中的字元數，它會是超過此限制可能會參與擴充的查詢。<br/> |**信箱：** 10000 個  <br/> **網站：** 4000 搜尋最多 20 網站<sup>1</sup>時搜尋的所有網站或 2000 時 <br/> |
+|最大數目變體時使用前置詞萬用字元搜尋精確對應字詞或搜尋查詢中使用前置詞萬用字元及**NEAR**或**ONEAR**布林運算子時所傳回的詳細資訊。  <br/> |10000<sup>2</sup> <br/> |
+|前置詞萬用字元; alpha 字元數目最小值例如， `time*`、 `one*`，或`set*`。  <br/> |3  <br/> |
+|您可以刪除內容搜尋中的信箱數量上限中的項目執行動作的 「 搜尋和清除 」 動作 (使用**新增 ComplianceSearchAction-清除**命令)。如果您正在進行清除動作的內容搜尋具有多個來源信箱超過此限制，清除動作將會失敗。如需搜尋及清除的詳細資訊，請參閱[Search for 和 Office 365 組織中的刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。<br/> |各 50000 個  <br/> |
+   
+> [!NOTE]
+> <sup>1</sup>搜尋 SharePoint 和 OneDrive for Business 位置時所搜尋之網站的 url 字元都會被計算針對此限制。> <sup>2</sup>非片語查詢 （不會使用雙引號關鍵字值） 我們會使用特殊的前置詞索引。這會告訴我們 word 會發生在文件，但不是其中發生在文件。為達成片語查詢 （使用雙引號關鍵字值），我們需要比較中片語內文件中之文字的位置。這表示我們不能使用前置詞索引進行片語查詢。在此例中，我們內部展開含有所有可能的字前置詞會擴大以; 查詢例如，`"time*"`可以擴充到`"time OR timer OR times OR timex OR timeboxed OR …"`。10000 是變體字可以擴充到不符合查詢的文件數目的最大數目。沒有上限非片語詞彙。 
+  
+[回到頁首](limits-for-content-search.md#top)
+  
+## <a name="indexing-limits-for-email-messages"></a>編製索引的電子郵件的限制
+<a name="indexinglimits"> </a>
+
+下表說明可能會導致電子郵件訊息以編製索引的項目或內容的搜尋結果的部分已編製索引項目所傳回的索引限制。
+  
+|**索引限制**|**附註**|**描述**|
+|:-----|:-----|:-----|
+|附件大小上限 （不包括結尾的 Excel 檔案）  <br/> |150 MB  <br/> |將剖析為編製索引的電子郵件附件的大小上限。任何附件大於此限制將不會剖析為編製索引，並加以標示附件的郵件為部分編製索引。<br/> > [!NOTE]> 剖析為索引服務出附件中擷取文字、 移除不必要的字元標點符號和空格，以及然後，將文字插入文字 （在程序呼叫 token 化），然後儲存在索引中的程序。           |
+|Excel 檔案的大小上限  <br/> |4 MB  <br/> |Excel 檔案的大小上限位在網站上或附加至電子郵件訊息會剖析為編製索引。任何過大，而不會剖析此限制，並將檔案或電子郵件檔案附件的郵件將會標示為未建立索引的 Excel 檔案。  <br/> |
+|附件數目上限  <br/> |250  <br/> |附加至電子郵件訊息會剖析為編製索引的檔案數目上限。如果郵件含有超過 250 個附件前, 250 附件會剖析及編製索引，並將郵件標示為部分編製索引因為它有未剖析的額外附件。  <br/> |
+|最大的附件深度  <br/> |30  <br/> |會剖析的巢狀附件數目上限。例如，如果電子郵件訊息發生附加到其另一則訊息，附加的郵件未附加的 Word 文件的 Word 文件和附加的郵件將編製索引。此行為會繼續最多 30 個巢狀的附件。  <br/> |
+|附加的圖像的數目上限  <br/> |0  <br/> |附加至電子郵件訊息映像的剖析器會略過和未編製索引。  <br/> |
+|剖析項目所花費的時間上限  <br/> |30 秒  <br/> |最大值為 30 秒是所花費的剖析為編製索引的項目。如果剖析的時間超過 30 秒，項目標記為部分編製索引。  <br/> |
+|最大剖析器輸出  <br/> |200 萬個字元  <br/> |已編製索引的剖析器文字輸出數量上限。例如，如果剖析器從文件擷取 8 千萬個字元，編製索引前 2 百萬個字元。  <br/> |
+|最大的註解權杖  <br/> |2 百萬  <br/> |當電子郵件已編製索引時，每個文字會以指定如何該 word 應該要編製索引的不同的處理指示加註解。每個處理指示集稱為註釋權杖。若要維護的 Office 365 中的服務品質，有 2 百萬註釋語彙基元的電子郵件的限制。  <br/> |
+|在索引中的最大主體大小  <br/> |67 萬個字元  <br/> |電子郵件和其所有附件的內文中的字元總數。當電子郵件已編製索引時，所有附件及訊息本文中的所有文字都串連成單一字串。此字串是編製索引的大小上限為 67 萬個字元。  <br/> |
+|內文中的最大唯一 token  <br/> |1 百萬  <br/> |如先前清楚、 權杖會從內容擷取文字、 移除標點符號和空格，並再將它分成字 （稱為權杖） 儲存在索引中的結果。例如，片語`"cat, mouse, bird, dog, dog"`包含 5 權杖。但是只有 4 都是唯一的 token。有限制的電子郵件訊息，有助於防止索引變得太大隨機權杖與每 1 百萬個唯一 token。<br/> |
+   
+[回到頁首](limits-for-content-search.md#top)
+  
+## <a name="more-information"></a>其他資訊
+<a name="moreinfo"> </a>
+
+例如匯出搜尋結果與內容編製索引有其他限制與不同方面內容搜尋]。如需這些限制的說明，請參閱下列主題：
+  
+- 
+    
+- [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)
+    
+- [調查 Office 365 電子文件探索中已局部編製索引的項目](investigating-partially-indexed-items-in-ediscovery.md)
+    
+- [SharePoint Online 的搜尋限制](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+    
+內容搜尋的相關資訊，請參閱：
+  
+- [Office 365 中的內容搜尋](content-search.md)
+    
+- [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
+    
+[回到頁首](limits-for-content-search.md#top)
+  
+

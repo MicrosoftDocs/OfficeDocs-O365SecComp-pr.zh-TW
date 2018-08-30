@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: S/MIME 可讓您加密電子郵件與數位簽章它們。當您使用 S/MIME 與電子郵件訊息時，它可協助的人員接收該訊息是特定看到其收件匣中是完全入門寄件者的郵件。
-ms.openlocfilehash: 3ce95132476417df8949cdc12f2d825047f6b76d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 26c50fb6e4d1b07b7dba26948ae46e7f36eeaec5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027590"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002762"
 ---
 # <a name="smime-for-message-signing-and-encryption"></a>為郵件簽章和加密的 S/MIME
 
@@ -56,7 +58,7 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
   
 1. [設定 Outlook Web App 的 S/MIME 設定](configure-s-mime-settings-for-outlook-web-app.md)
     
-2. [設定驗證 S/MIME 的虛擬憑證集合](set-up-virtual-certificate-collection-to-validate-s-mime.md)
+2. [設定虛擬憑證集合以驗證 S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
     
 3. [將使用者憑證同步至 Office 365 進行 S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)此步驟僅適用於 Exchange Online。 
     

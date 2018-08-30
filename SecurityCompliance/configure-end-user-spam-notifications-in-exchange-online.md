@@ -9,21 +9,23 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
-description: 您可以設定使用者垃圾郵件通知或自訂的垃圾郵件篩選器原則套用至網域的預設全公司的垃圾郵件篩選器原則。
-ms.openlocfilehash: 4a4c7c6b139fe0f8b0a1f6b69c1b95e321293af5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: 您可以針對預設的全公司內容篩選原則或是網域所套用的自訂內容篩選原則，設定使用者垃圾郵件通知。
+ms.openlocfilehash: da370497f78d7f253276c908061a9a80e2f74938
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027530"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002741"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online 中設定使用者垃圾郵件通知
 
 > [!IMPORTANT]
 > 本主題是 Exchange Online 客戶若要保護雲端託管信箱。會保護內部部署信箱的 Exchange Online Protection (EOP) 獨立客戶應該改閱讀下列主題：[在 EOP 中的設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-eop.md)。 
   
-您可以設定使用者垃圾郵件通知或自訂的垃圾郵件篩選器原則套用至網域的預設全公司的垃圾郵件篩選器原則。啟用使用者垃圾郵件通知訊息可讓您的使用者自我管理自己被當成垃圾郵件隔離的郵件。使用者垃圾郵件通知不能與原則套用至使用者或群組，或有例外的原則。
+您可以針對預設的全公司內容篩選原則或是網域所套用的自訂內容篩選原則，設定使用者垃圾郵件通知。啟用使用者垃圾郵件通知訊息，可讓您的使用者自行管理其被當成垃圾郵件隔離的郵件。使用者或群組所套用的原則或具有例外狀況的原則所套用的原則，無法使用使用者垃圾郵件通知。
   
 使用者垃圾郵件通知包含使用者在您設定的時間期間 (您可指定 1 到 15 天之間的值) 內收到，被當成垃圾郵件隔離的所有郵件清單。您也可以設定用來撰寫通知郵件的語言。
   
@@ -39,9 +41,9 @@ ms.locfileid: "22027530"
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>使用 EAC 來設定使用者垃圾郵件通知
 
-1. 在 Exchange 系統管理中心 (EAC)，瀏覽至 **[保護]** \> **[垃圾郵件篩選]**。
+1. 在 Exchange 系統管理中心 (EAC) 中，瀏覽至 **[保護]** \> **[內容篩選器]**。
     
-2. 選取您要啟用使用者垃圾郵件通知 （已停用預設值） 的垃圾郵件篩選器原則。
+2. 選取要啟用使用者垃圾郵件通知 (預設為停用) 的內容篩選原則。
     
 3. 在右窗格中，其中會顯示您的原則摘要資訊，請按一下 [**設定使用者垃圾郵件通知**] 連結。 
     
@@ -53,12 +55,12 @@ ms.locfileid: "22027530"
     
 3. **通知語言** 您可以使用下拉式清單，選取用來撰寫此原則之使用者垃圾郵件通知的語言。 
     
-5. 按一下 [**儲存**]。在右窗格中會出現在垃圾郵件篩選器原則設定，包括您使用者垃圾郵件通知的設定，摘要。
+5. 按一下 **[儲存]**。右側窗格便會出現內容篩選原則設定的摘要，包括使用者垃圾郵件通知設定。
     
 > [!NOTE]
->  使用者垃圾郵件通知只會啟用的垃圾郵件篩選原則作用。> 每天一次只能傳送使用者垃圾郵件通知。傳送通知的時間無法向任何特定客戶保證和且無法加以設定。 
+>  使用者垃圾郵件通知只會對已啟用的內容篩選原則作用。 >  每天只傳送一次使用者垃圾郵件通知。無法向任何特定客戶保證通知傳遞的時間，且無法加以設定。 
   
- **提示：** 如果您想要測試使用者垃圾郵件通知完整實作它們之前將它們傳送至一組有限的使用者，建立自訂垃圾郵件篩選器原則可讓使用者都位於之網域的使用者垃圾郵件通知。然後，在 EAC 中下,**郵件流程\>規則**、 例外狀況為您想要接收通知的使用者與來自 quarantine@messaging.microsoft.com （傳送通知電子郵件位址） 建立傳輸規則封鎖的郵件。下圖是來自網域 Contoso.com 建立兩個使用者 （SaraD 和 AlexD） 的例外狀況的範例： 
+ **提示：** 如果您想要在完全實作使用者垃圾郵件通知之前將其傳送給有限的使用者集，藉以測試使用者垃圾郵件通知，請建立一個自訂內容篩選器原則，為使用者所在的網域啟用使用者垃圾郵件通知。然後，在 EAC 中的 [ **郵件流程 \> 規則**] 之下，建立傳輸規則以封鎖來自 quarantine@messaging.microsoft.com (傳送通知的電子郵件地址) 的郵件，其例外狀況為您想要接收通知的使用者。下圖是從網域 Contoso.com 建立兩個使用者 (SaraD 和 AlexD) 之例外狀況的範例： 
   
 ![測試使用者垃圾郵件通知的傳輸規則](media/EOP-ESN-testspecificusers.jpg)
   

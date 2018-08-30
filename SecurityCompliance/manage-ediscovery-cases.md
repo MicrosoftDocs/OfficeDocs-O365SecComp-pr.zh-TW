@@ -1,0 +1,604 @@
+---
+title: 管理 Office 365 安全性的 eDiscovery 案例&amp;規範中心
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: 7/2/2018
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MOE150
+- MED150
+- MBS150
+- MET150
+ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
+description: 使用 Office 365 安全性&amp;規範中心建立 eDiscovery 保留及來存取，並管理組織中的 eDiscovery 案例。
+ms.openlocfilehash: 5be66419e19f9703be5dde3fad82837bda249b72
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22526738"
+---
+# <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>管理 Office 365 安全性的 eDiscovery 案例&amp;規範中心
+
+您可以使用 eDiscovery 案例中 Office 365 安全性&amp;規範中心控制人員可以建立、 存取及管理組織中的 eDiscovery 案例。如果貴組織的 Office 365 E5 訂閱，也可以使用 eDiscovery 案例分析使用 Office 365 進階 eDiscovery 搜尋結果。
+  
+EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特定案例的成員可以執行、 置於保留的內容位置相關法律案例，並建立多個內容搜尋與單一案例的關聯的動作。您也可以與案例相關聯的任何內容搜尋結果匯出或準備分析進階在 eDiscovery 中搜尋結果。eDiscovery 案例是很好的方式來限制在組織中有存取特定的法律案例內容的搜尋及搜尋結果。
+  
+使用下列工作流程設定和安全性中使用 eDiscovery 案例&amp;規範中心] 及 [進階 eDiscovery。
+  
+[步驟 1：將 eDiscovery 權限指派給潛在的案例成員](manage-ediscovery-cases.md#step1_1)
+  
+[步驟 2： 建立新的案例](manage-ediscovery-cases.md#step2_1)
+  
+[步驟 3： 將成員新增至案例](manage-ediscovery-cases.md#step2a_1)
+  
+[步驟 4： 就地保留上的內容位置](manage-ediscovery-cases.md#step3_1)
+  
+[步驟 5： 建立並執行與案例相關聯之內容搜尋](manage-ediscovery-cases.md#step4_1)
+  
+[步驟 6： 匯出與案例相關聯之內容搜尋的結果](manage-ediscovery-cases.md#step5_1)
+  
+[步驟 7： 準備搜尋結果進階 ediscovery （英文）](manage-ediscovery-cases.md#step7_1)
+  
+[步驟 8： 移至 [進階 ediscovery 案例](manage-ediscovery-cases.md#gotoAeD_1)
+  
+[（選用）步驟 9： 關閉案例](manage-ediscovery-cases.md#closecase_1)
+  
+[（選用）步驟 10： 重新開啟關閉的案例](manage-ediscovery-cases.md#reopencase_1)
+  
+[其他資訊](manage-ediscovery-cases.md#moreinfo_1)
+  
+## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步驟 1：將 eDiscovery 權限指派給潛在的案例成員
+<a name="step1_1"> </a>
+
+第一個步驟是將適當的 eDiscovery 相關權限指派給人員讓您可以將其新增至 eDiscovery 案例在步驟 2。您必須是 「 組織管理角色群組的成員 （或要指派的角色管理角色） Office 365 安全性&amp;規範中心指派 eDiscovery 權限。下列清單說明 eDiscovery 相關的角色群組安全性&amp;規範中心。
+  
+- **檢閱者**此角色群組具有最嚴格的 eDiscovery 相關權限。此群組的成員只能看到並在 [安全性] 中開啟 [ **eDiscovery** ] 頁面上的案例清單&amp;他們是成員的規範中心。他們無法建立的情況下，將成員新增至案例、 建立保留、 建立搜尋、 匯出搜尋結果或準備進階 eDiscovery 的結果。不過，成員可存取執行分析工作的進階 ediscovery 案例。 
+    
+- **eDiscovery 管理員**此角色群組的成員可以建立與管理 eDiscovery 案例。他們可以新增和移除成員、 放置的內容上的位置保留、 建立及編輯與案例相關聯的內容搜尋]、 [匯出搜尋結果的內容，並準備分析進階在 eDiscovery 中搜尋結果。有兩個此角色群組中的子群組。這些子群組之間的差異根據範圍。
+    
+  - **eDiscovery 管理員**可以檢視及管理 eDiscovery 案例所建立或成員。如果另一個 eDiscovery 管理員會建立案例，但不會將第二個 eDiscovery 管理員新增為該案例的成員，第二個 eDiscovery 管理員將無法檢視或在 [安全性] 中開啟 [ **eDiscovery** ] 頁面上的大小寫&amp;規範中心。eDiscovery 管理員也可以存取他們的情況下執行分析工作的進階 ediscovery。 
+    
+  - **eDiscovery 管理員**可以執行 eDiscovery 管理員可以執行的所有管理工作。此外，eDiscovery 管理員可以：
+    
+  - 在 [ **eDiscovery** ] 頁面上檢視所列的所有案例。 
+    
+  - 管理組織中的任何 eDiscovery 案例之後他們將自己新增為大小寫的成員。
+    
+  - 執行進階 eDiscovery，例如處理案例資料以供分析、 設定案例，及從進階 eDiscovery 匯出資料的系統管理工作。這是因為 eDiscovery 安全性的系統管理員的人員&amp;規範中心會自動新增為進階 eDiscovery 的管理員。
+    
+    請參閱[More information](manage-ediscovery-cases.md#moreinfo_1)一節以了解為何您可能希望組織中有 eDiscovery 系統管理員的原因。 
+    
+> [!IMPORTANT]
+> 如果使用者不是其中一個這些 eDiscovery 相關的角色群組的成員或不是已指派的檢閱者 」 角色的角色群組的成員，您無法將其新增為 eDiscovery 案例的成員。 
+  
+ **若要指派 eDiscovery 權限：**
+  
+1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+    
+2. 登入 Office 365 中，使用您工作或學校的帳戶。
+    
+3. 安全性&amp;規範中心 [**權限**，然後再執行作業根據想要指定 eDiscovery 權限的下列其中之一。
+    
+  - 若要指定檢閱者權限，選取 「**檢閱者**」 角色群組，然後按一下 [**成員**] 旁的 [**編輯**。依序按一下 [**選擇成員**、![新增圖示](media/ITPro-EAC-AddIcon.gif)**新增**選取您要新增至 「 檢閱者 」 角色群組、 使用者] 和 [**新增]**。
+    
+  - 若要指派 eDiscovery 管理員權限，選取**eDiscovery 管理員**角色群組中，，然後按一下 [ **eDiscovery 管理員**旁的 [**編輯**。依序按一下 [**選擇 eDiscovery 管理員**、![新增圖示](media/ITPro-EAC-AddIcon.gif)* * 新增 * *、 選取您要新增 eDiscovery 管理員] 中，為該使用者，然後按一下 [**新增]**。
+    
+  - 若要指派 eDiscovery 管理員權限，請選取**eDiscovery 管理員**角色群組，然後按一下 [ **eDiscovery 管理員**旁的 [**編輯**。依序按一下 [**選擇 eDiscovery 管理員**、![新增圖示](media/ITPro-EAC-AddIcon.gif)**新增**]，選取您要新增為 eDiscovery 管理員的使用者，然後按一下 [**新增]**。
+    
+4. 您已新增的所有使用者之後，請按一下 [**完成**]、 按一下 [**儲存**] 以將所做的變更儲存到角色群組中，然後按一下 [**關閉**]。
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="step-2-create-a-new-case"></a>步驟 2： 建立新的案例
+<a name="step2_1"> </a>
+
+下一步是建立新的 eDiscovery 案例。您必須是要建立 eDiscovery 案例的 eDiscovery 管理員角色群組的成員。如先前清楚，您在 [安全性] 建立新案例之後&amp;規範中心、 您 （和其他案例的成員） 將能夠存取進階 eDiscovery 如果您組織中的相同案例具有 Office 365 E5 訂閱。
+  
+1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+    
+2. 登入 Office 365 中，使用您工作或學校的帳戶。
+    
+3. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**，然後按一下 [![新增圖示](media/ITPro-EAC-AddIcon.gif)**建立案例**。
+    
+4. 在 [**新案例**] 頁面提供大小寫的名稱、 輸入選用描述，和 [**儲存**。請注意大小寫的名稱必須是唯一您組織中。
+    
+    ![新案例的頁面](media/538f66b8-eb6e-4c4c-83d8-7154fd85883a.png)
+  
+    新的案例會顯示在 [ **eDiscovery** ] 頁面上的情況下的清單中。您可以將游標滑鼠停留在來顯示關於情況下，包括] （**使用中**或**已關閉**） 的大小寫的狀態資訊的案例名稱的附註的 （也就在上一個步驟中建立） 的情況下，描述與大小寫當上次變更及誰已變更它。
+    
+    > [!TIP]
+    > 建立新案例之後，您可以隨時命名。只要按一下在 [ **eDiscovery** ] 頁面的大小寫的名稱。在 [**管理此例中**彈出式] 頁面變更 [**名稱**] 方塊中顯示的名稱並儲存變更。 
+  
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="step-3-add-members-to-a-case"></a>步驟 3： 將成員新增至案例
+<a name="step2a_1"> </a>
+
+建立新案例之後下, 一步是將成員新增至大小寫。如先前所述的檢閱者的成員的使用者或 eDiscovery 管理員角色群組可新增為大小寫的成員。請注意 eDiscovery 管理員建立案例會自動新增為成員。
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想要將成員新增至的大小寫的名稱。
+    
+    會顯示 [**管理此例中**彈出式] 頁面。 
+    
+    ![按一下案例名稱以顯示 [管理此案例的頁面](media/2364dc08-a3dc-4724-acf4-7a68c8588e6f.png)
+  
+3. 在 [**管理成員**、 下方按一下 [![新增圖示](media/ITPro-EAC-AddIcon.gif)**新增**成員新增到大小寫。 
+    
+4. 在可新增為的大小寫成員的人員清單中，按一下您想要新增至案例的人員名稱旁的核取方塊。
+    
+    > [!TIP]
+    > 如果您有大型的人員可新增為成員的清單，可用於**搜尋**方塊的清單中的特定人員搜尋。 
+  
+5. 您已選取加入群組之成員的人員之後，請按一下 [**新增**]。
+    
+    在 [**管理此例中**，按一下 [**儲存**] 以儲存新案例成員的清單。 
+    
+6. 按一下 [**儲存**] 以儲存新案例成員的清單。 
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="step-4-place-content-locations-on-hold"></a>步驟 4： 就地保留上的內容位置
+<a name="step3_1"> </a>
+
+您可以使用 eDiscovery 案例來建立保留来保留可能案例相關的內容。您可以置於保留信箱和 OneDrive 商務網站的是 custodians 案例中的人員。您也可以將保留群組信箱、 SharePoint 網站及 OneDrive 商務網站的 Office 365 群組。同樣地，您可以利用保留對信箱和相關聯的 Microsoft 小組網站。當您保留上放置的內容位置時，內容會保留直到您移除保留內容的位置或直到您刪除保留。
+  
+當您建立保留時，您有下列選項的範圍會保留在指定的內容位置的內容：
+  
+- 您建立的所有內容都處於保留狀態設為無限期保留。或者，您可以建立查詢式的保留僅符合內容的搜尋查詢處於保留狀態。
+    
+- 您可以指定日期範圍，以保留已傳送、 接收到，或建立的日期範圍內的內容。或者，您可以保留不論當它已傳送、 接收到，或建立的所有內容。
+    
+> [!NOTE]
+> 您可以將最多 10000 個跨所有組織中的 eDiscovery 案例與保留原則。 
+  
+若要建立保留 eDiscovery 案例：
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想要建立的保留案例] 旁的 [**開啟**]。 
+    
+3. 在 [**首頁**] 頁面的大小寫上按一下 [**保留**]。
+    
+    ![按一下 [顯示 [案件保留] 頁面的 [保留]。](media/25c0300a-bd33-4443-a121-d595b1a3e00f.png)
+  
+4. 在 [**保留**] 頁面上，按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)。
+    
+5. 在 [**建立新的保留**] 頁面上提供保留的名稱。保留名稱必須是在組織中唯一的。 
+    
+6. 選擇您想要進行的內容位置保留。您可以在保留上放置信箱、 網站及公用資料夾。
+    
+    ![選擇要保留的內容位置](media/a00c952c-f91f-4708-b5a4-6213e4c413c7.png)
+  
+1. **信箱**按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)來指定要保留信箱。使用 [搜尋] 方塊中找到使用者信箱使用者和通訊群組 （置於群組成員的信箱保留） 至保留。您也可撥打相關聯的信箱上的保留供 Office 365 群組或 Microsoft 小組。 
+    
+    > [!NOTE]
+    > 當您按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)來指定要保留信箱，會顯示信箱選擇是空的。這是由設計，以提升效能。若要將人員新增至這份清單，在搜尋方塊中輸入的名稱 （至少要有 3 個字元） 並按一下 [**搜尋**]![搜尋圖示](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)。 
+  
+2. **網站**按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)指定 SharePoint 和 OneDrive for Business 網站保留。輸入您想要保留每個網站的 URL。您也可以針對 Office 365 群組或 Microsoft 小組新增 SharePoint 網站的 URL。 
+    
+<<<<<<< 標題請參閱[管理 Office 365 安全性的 eDiscovery 案例&amp;規範中心](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1)] 區段中放入保留的 Office 365 群組及 Microsoft 小組的秘訣。=== 查看[詳細資訊](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1)] 區段中放入保留的 Office 365 群組及 Microsoft 小組的秘訣。 
+>>>>>>> deniseb 轉換
+    
+    > [!NOTE]
+    > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
+  
+3. **公用資料夾**按一下 [將所有的公用資料夾放在您 Exchange Online 組織上的保留**保留所有公用資料夾**。請注意，您無法選擇特定公用資料夾遷移至放入保留。維持**不保留任何公用資料夾**選取選項如果您不想將放在公用資料夾的保留。 
+    
+7. 當您完成新增至保留的內容位置時，按一下 [**下一步**]。
+    
+8. 若要建立條件查詢式保留，請完成下列設定。否則，只要按一下 [**完成**] 以保留所有內容。 
+    
+    ![藉由指定的關鍵字與條件建立查詢式保留](media/a5bb802e-2e96-4f12-8b33-1ddd671638e4.png)
+  
+    如需建立搜尋查詢和使用情況的詳細資訊，請參閱[關鍵字查詢和搜尋條件的內容搜尋](keyword-queries-and-search-conditions.md)。
+    
+1. 在下] 方塊中**您想什麼我們要尋找的？**，以便符合搜尋準則的內容處於保留狀態] 方塊中輸入搜尋查詢。您可以指定關鍵字、 郵件內容或文件屬性，例如檔案名稱。您也可以使用較複雜布林運算子，例如**AND**、 **OR**，或**未**使用的查詢。如果您遺漏保留空白，則將會位於指定之內容的位置中的所有內容都放在 [關鍵字] 方塊。 
+    
+2. **條件**，按一下 [新增一或多個條件，縮減保留搜尋查詢的 [**新增條件**]。每個條件將子句新增至 KQL 搜尋查詢，建立及執行當您建立保留。例如您可以指定日期範圍，讓電子郵件或站台建立日期範圍內的文件會處於保留狀態。條件是以邏輯方式連線到 （在 [關鍵字] 方塊中指定） 的關鍵字查詢**和**運算子。表示項目必須滿足的關鍵字查詢及可放置在此條件就會保留。 
+    
+9. 設定查詢式之後保留，按一下 [**完成**] 來建立保留。 
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+### <a name="hold-statistics"></a>保留的統計資料
+
+While 後的新保留的相關資訊會顯示所選保留的 [**保留**] 頁面的詳細資料窗格中。此資訊包含的信箱數目上的網站保留與已對內容的相關的統計資料保留，例如處於保留狀態的總人數及的項目大小和上次所計算的統計資料的保留。這些保留統計值能協助您識別要保留多少 eDiscovery 案例相關的內容。 
+  
+![保留選取保留在詳細資料窗格中顯示的統計資料](media/e46359a3-cba1-4771-bbf5-bc53b4a2cb14.png)
+  
+保留有關保留統計資料記住下列事項：
+  
+- 保留的項目數總計會指出從保留的所有內容來源的項目數。如果您已建立查詢式保留功能，這次統計指出符合查詢的項目數。
+    
+- 保留的項目數也包含編製索引的內容位置中找到的項目。如果您建立查詢式保留，內容的位置中的所有編製索引項目會放在保留的記事。這包括編製索引的項目不符合搜尋準則的查詢式保留及編製索引的項目可能屬於以外的日期範圍條件。這是與當您執行內容搜尋] 中編製索引的項目已不符合搜尋查詢或排除的日期範圍條件不包含在搜尋結果中有什麼不同。如需編製索引項目的詳細資訊，請參閱[編製索引的項目中的 Office 365 中的內容搜尋](partially-indexed-items-in-content-search.md)。
+    
+- 您可以取得最新保留按一下 [重新執行搜尋的 [**更新統計資料**的統計資料評估的計算目前保留的項目數。若有必要，請按一下 [**重新整理**![重新整理] 圖示](media/O365-MDM-Policy-RefreshIcon.gif)要更新的詳細資料窗格中的保留統計資料工具列中。 
+    
+- 因為其信箱或網站會保留使用者通常會傳送或接收新的電子郵件訊息和建立新的 SharePoint 和 OneDrive for Business 文件增加一段時間保留它的一般上的項目數目。
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>步驟 5： 建立並執行與案例相關聯之內容搜尋
+<a name="step4_1"> </a>
+
+建立 eDiscovery 案例並與案例相關的任何 custodians 處於保留狀態之後，您可建立並執行一或多個內容搜尋與案例相關聯。內容與案例相關聯的搜尋未列在安全性中的 [**搜尋**] 頁面上&amp;規範中心。內容搜尋相關聯的大小寫這表示只可以存取來區分成員能夠同時 eDiscovery 管理員角色群組的成員。 
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下 [大小寫您要建立的內容搜尋] 旁的 [**開啟**]。 
+    
+3. 在 [**首頁**] 頁面的大小寫上按一下 [**搜尋**]。
+    
+    ![按一下 [大小寫的 [首頁] 頁面的 [搜尋](media/bd358eb3-12d4-4f0c-8317-d192286813d0.png)
+  
+4. 在 [**搜尋**] 頁面上，按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)。
+    
+5. 在 [**新的搜尋**] 頁面上輸入搜尋的名稱。與案例相關聯的內容搜尋必須是 Office 365 組織內唯一的名稱。 
+    
+6. 選擇您要搜尋的內容位置。您可以在相同的搜尋中搜尋信箱、 網站及公用資料夾。
+    
+    ![搜尋案例的內容位置，所有內容的位置，或選取特定的內容位置](media/08c523dc-cba8-4fce-aee6-f86251204393.png)
+  
+1. **區分大小的所有內容**選取此選項可搜尋已處於保留狀態的情況下的所有內容位置。如果案例包含多個保留，當您選取這個選項會搜尋的所有保留位置的內容。此外，如果查詢式保留撥打內容的位置，只會保留的項目拼寫須符合當您執行您在此步驟中建立的內容搜尋。例如，如果使用者已處於查詢為基礎的案例保留保留項目已傳送或特定日期之前建立的這些項目嗎搜尋所使用之內容的搜尋的搜尋準則。這被藉由將 case 保留查詢及內容的搜尋查詢所**AND**運算子連線。請參閱如需詳細資訊搜尋 case 內容本文結尾處[的詳細資訊](manage-ediscovery-cases.md#moreinfo_1)] 區段。 
+    
+2. **寄件人搜尋**選取此選項可在組織中搜尋所有內容的位置。當您選取這個選項時，您可以選擇搜尋所有的 Exchange 信箱 （其中包含信箱的所有 Office 365 群組與的 Microsoft 小組），所有 SharePoint 和 OneDrive for Business 的網站 （其中包含所有的 Office 365 群組與 Microsoft 的網站小組） 及所有公用資料夾。
+    
+3. **自訂位置選取項目**選取此選項可選取的信箱與您想要搜尋的網站。當您選取這個選項時，信箱和網站的清單會預先填入位置會放在保留內大小寫的內容。您也可以選擇在組織中搜尋所有的公用資料夾。
+    
+    ![搜尋所有案例的內容、 搜尋所有的位置，或搜尋自訂位置](media/7ca97ab4-52d5-46a5-9e24-e3a4d1001595.png)
+  
+    如果您選取此選項與搜尋上的任何內容位置，但保留，從查詢為基礎的案例保留任何查詢不會套用至搜尋查詢。換句話說，搜尋位置中的所有內容，而不只保留查詢為基礎的案例保留的內容。
+    
+    您可以移除預先填入的區分內容位置或新增新的。如果您選擇這個選項，您也可以彈性來搜尋特定的服務 （例如搜尋所有的 Exchange 信箱） 的所有內容的位置或可搜尋服務的特定內容的位置。您也可以選擇要在組織中搜尋的公用資料夾。
+    
+    新增要搜尋的內容位置時請牢記下列事項：
+    
+  - 當您按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)來指定要搜尋的信箱，會顯示信箱選擇是空的。這是由設計，以提升效能。若要新增至這份清單的收件者，在搜尋方塊中輸入的名稱 （至少要有 3 個字元） 並按一下 [**搜尋**]![搜尋圖示](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)。
+    
+  - 您可以將非使用中信箱、 Office 365 群組、 Microsoft 小組及通訊群組新增至搜尋信箱清單。不支援動態通訊群組。若您要新增的 Office 365 群組或 Microsoft 小組、 群組或小組信箱搜尋 ；群組成員的信箱不搜尋。
+    
+  - 如果您不想要包含的任何信箱或網站搜尋中，選取**選擇搜尋特定信箱**] 或 [**選擇要搜尋的特定網站**、 但不信箱或網站新增至清單。
+    
+  - 若要新增網站按一下 [**新增**![新增圖示](media/ITPro-EAC-AddIcon.gif)然後輸入您要搜尋的每個網站的 URL。您也可以新增 SharePoint 網站的 URL 為 Office 365 群組和 Microsoft 小組。 
+    
+7. 之後您選取 [內容的位置搜尋，並按一下 [**下一步**]。
+    
+8. 您可以在 [**新的搜尋**] 頁面上新增關鍵字和條件來建立搜尋查詢。 
+    
+    ![搜尋條件和條件](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+  
+1. 在下] 方塊中**您想什麼我們要尋找的？**、] 方塊中輸入搜尋查詢。您可以指定關鍵字，訊息屬性例如傳送及接收日期或文件內容，例如檔案名稱或上次變更文件的日期。您可以使用較複雜的查詢使用布林運算子，例如**AND**、**或**、**不**、 **NEAR**或**ONEAR**。您也可以搜尋文件或搜尋功能已從外部共用的文件中的機密資訊 （例如社會安全編號）。如果 [關鍵字] 方塊中保留空白，將會在搜尋結果中包含位於指定之內容的位置中的所有內容。 
+    
+2. 您可以按一下 [**顯示關鍵字清單**] 核取方塊和類型中的每一列的關鍵字。如果您這樣做，在每一列的關鍵字連接**OR**運算子會建立搜尋查詢中所連接。 
+    
+    ![搜尋關鍵字](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
+  
+    為什麼要選擇使用 [關鍵字] 清單？您可以取得顯示多少個項目比對每個關鍵字的統計資料。這可協助您快速識別出哪些關鍵字是最 （且至少） 有效。您也可以使用 （以括弧括住） 的關鍵字文句] 列中。如需搜尋統計資料的詳細資訊，請參閱 ＜[檢視內容的搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md)。
+    
+    如需使用關鍵字] 清單中的詳細資訊，請參閱[的詳細資訊](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)。
+    
+3. 按一下 [**檢查查詢錯字**檢查查詢不受支援的字元與可能未接的布林運算子。不支援的字元通常隱藏與通常搜尋的錯誤或傳回非預期的結果。如需會檢查有不支援字元的詳細資訊，請參閱[檢查錯誤的內容搜尋查詢](check-your-content-search-query-for-errors.md)。
+    
+4. 在 [**條件**新增條件來縮小搜尋及傳回一組更精簡的結果在搜尋查詢。每個條件將子句新增至 KQL 搜尋查詢，建立及執行當您啟動搜尋。條件是以邏輯方式連線到 （在 [關鍵字] 方塊中指定） 的關鍵字查詢**和**運算子。這表示項目必須滿足的關鍵字查詢與結果中包含的條件。這是條件，縮減結果協助的方式。 
+    
+    如需建立搜尋查詢和使用條件的相關資訊，請參閱 [Keyword queries for Content Search](keyword-queries-and-search-conditions.md)。
+    
+9. 按一下 [**搜尋**] 以儲存搜尋設定並啟動搜尋。 
+    
+    啟動搜尋。While 之後評估會有搜尋結果會顯示詳細資料窗格中。評估包含的總大小和符合搜尋準則的項目數。搜尋 estimate 也包括所搜尋的內容位置編製索引的項目數。編製索引不符合搜尋準則的項目數將包含在詳細資料窗格中顯示的搜尋統計資料。如果搜尋查詢 （因為其他訊息或文件屬性符合搜尋準則） 編製索引的項目相符，則不會包含在估計編製索引的項目數。如果編製索引的項目會排除的搜尋準則，它也不會包含在評估編製索引的項目。
+    
+    搜尋完成後，您可預覽搜尋結果。若有必要，請按一下 [**重新整理**![重新整理] 圖示](media/O365-MDM-Policy-RefreshIcon.gif)要更新的詳細資料窗格中的資訊。 
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>步驟 6： 匯出與案例相關聯之內容搜尋的結果
+<a name="step5_1"> </a>
+
+成功執行搜尋之後，您可以將匯出的搜尋結果。當您將搜尋結果匯出信箱項目會下載 PST 檔案中或以個別的郵件。當您匯出 SharePoint 與內容 OneDrive for Business 的網站時，都要匯出的原生 Office 文件和其他文件複本。包含每個搜尋結果的相關資訊的資訊清單檔案 （以 XML 格式） 也會匯出。
+  
+您可以將匯出的[匯出與案例相關聯的單一搜尋結果](manage-ediscovery-cases.md#singlesearch_1)的結果或您可以將匯出的[匯出其結果的多個案例相關聯的搜尋](manage-ediscovery-cases.md#multiplesearches_1)結果。
+  
+### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>匯出與案例相關聯的單一搜尋結果
+<a name="singlesearch_1"> </a>
+
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想要匯出從搜尋案例] 旁的 [**開啟**]。 
+    
+3. 在 [**首頁**] 頁面的大小寫上按一下 [**搜尋**]。
+    
+4. 在搜尋案例清單中，按一下 [您想要匯出的搜尋結果中，按一下 [**匯出**搜尋![匯出搜尋結果圖示](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)，然後按一下 [**匯出結果**。
+    
+    **匯出搜尋結果**頁面會顯示。要匯出之內容的搜尋結果的工作流程相關聯的案例是可與相同匯出搜尋結果在**內容搜尋**] 頁面上。如需逐步說明，請參閱[匯出搜尋結果的 Office 365 安全性&amp;規範中心](export-search-results.md)。
+    
+    > [!NOTE]
+    > 匯出搜尋結果時，必須啟用重複資料刪除以便只有一個電子郵件的副本匯出即使多個執行個體相同的訊息可能會有已搜尋的信箱中找到的選項。如需詳細資訊需重複資料刪除和如何重複的項目會識別出，請參閱[重複資料刪除 eDiscovery 搜尋結果中](de-duplication-in-ediscovery-search-results.md)。 
+  
+5. 在您開始匯出之後，按一下 [**匯出**至顯示存在於該案例的匯出工作的清單。 
+    
+    ![按一下 [匯出至顯示的匯出工作清單](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
+  
+    您可能必須按一下 [**重新整理**![重新整理] 圖示](media/O365-MDM-Policy-RefreshIcon.gif)要更新的匯出至顯示您剛才建立的匯出工作的工作清單。請注意匯出工作有相同名稱的對應的內容搜尋與 **_Export**附加至搜尋名稱結尾。 
+    
+6. 按一下您剛建立的詳細資料窗格中顯示狀態資訊的匯出工作。此資訊包含已經移轉到 Microsoft 雲端 Azure 儲存區的項目百分比。
+    
+    所有項目已傳送之後，按一下 [**下載匯出結果**下載至您的本機電腦的搜尋結果。如需詳細資訊，請參閱 ＜ 步驟 2 中[匯出搜尋結果的 Office 365 安全性&amp;規範中心](export-search-results.md)
+    
+### <a name="export-the-results-of-multiple-searches-associated-with-a-case"></a>匯出多個案例相關聯的搜尋結果
+<a name="multiplesearches_1"> </a>
+
+當另一種替代匯出單一內容的搜尋結果相關聯的案例，您可以從單一匯出中的相同情況匯出多個搜尋的結果。匯出多個搜尋的結果是更快且更容易比匯出結果一個搜尋一次。
+  
+> [!NOTE]
+> 您無法將多個搜尋結果匯出如果其中一個這些搜尋設定為搜尋所有案例的內容。僅匯出多個搜尋與 eDiscovery 案例相關聯的搜尋結果。您無法將匯出的安全性**內容搜尋**] 頁面上所列的多個搜尋結果&amp;規範中心。 
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想要匯出從搜尋案例] 旁的 [**開啟**]。 
+    
+3. 在 [**首頁**] 頁面的大小寫上按一下 [**搜尋**]。
+    
+4. 在 [大小寫的搜尋] 清單選取您想要匯出的搜尋結果的兩個或多個搜尋。
+    
+    > [!NOTE]
+    > 若要選取多個搜尋，請按住**ctrl 鍵**當您按一下每個搜尋。或者，您可以按一下第一個搜尋、 按住**Shift**鍵，然後按一下 [上次搜尋來選取多個相鄰的搜尋。 
+  
+5. 選取搜尋之後，按一下 [**匯出**![匯出搜尋結果圖示](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)，然後按一下 [**匯出結果**。
+    
+6. * * 匯出搜尋結果*n*搜尋 * * 顯示] 頁面上，其中*n*是您要匯出結果的搜尋數目。請注意您必須提供匯出工作的名稱。 
+    
+    要匯出結果從多個內容搜尋與案例相關聯的工作流程並匯出單一搜尋結果相同。如需逐步說明，請參閱[匯出搜尋結果的 Office 365 安全性&amp;規範中心](export-search-results.md)。
+    
+    > [!NOTE]
+    > 當您從多個案例相關聯的搜尋匯出搜尋結果時，您也可以啟用重複資料刪除以便只有一個電子郵件的副本匯出即使多個執行個體相同訊息可能會有中找到的選項在一或多個搜尋所搜尋的信箱。如需詳細資訊需重複資料刪除和如何重複的項目會識別出，請參閱[重複資料刪除 eDiscovery 搜尋結果中](de-duplication-in-ediscovery-search-results.md)。 
+  
+7. 在您開始匯出之後，按一下 [顯示匯出清單的 [**匯出**工作可針對該案例。 
+    
+    ![按一下 [匯出至顯示的匯出工作清單](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
+  
+    您可能必須按一下 [**重新整理**![重新整理] 圖示](media/O365-MDM-Policy-RefreshIcon.gif)要更新的匯出至顯示您剛才建立的匯出工作的工作清單。請注意匯出工作中所包含的搜尋所列在 [**搜尋**] 欄中。 
+    
+8. 按一下您剛建立的詳細資料窗格中顯示狀態資訊的匯出工作。此資訊包含已經移轉到 Microsoft 雲端 Azure 儲存區的項目百分比。
+    
+9. 所有項目已傳送之後，按一下 [**下載匯出結果**下載至您的本機電腦的搜尋結果。如需詳細資訊，請參閱 ＜ 步驟 2 中[匯出搜尋結果的 Office 365 安全性&amp;規範中心](export-search-results.md)
+    
+#### <a name="more-information-about-exporting-the-results-of-multiple-searches"></a>匯出多個搜尋結果的詳細資訊
+
+- 當您將匯出的多個搜尋結果時，搜尋查詢所有搜尋從結合使用**或**運算子，然後合併的搜尋已啟動。估計合併的搜尋結果會顯示所選的匯出工作的詳細資料窗格中。在搜尋結果會然後轉接到 Microsoft 雲端中的 [Azure 存放區] 區域。傳輸狀態也會顯示在詳細資料窗格中。先前所述，已轉移所有搜尋結果之後，您可以下載這些到您的本機電腦。 
+    
+- 您想要匯出的所有搜尋搜尋查詢關鍵字的數目上限為 500。（這是單一內容搜尋的相同限制。）那是因為匯出工作合併所有搜尋查詢使用**OR**運算子。如果您超過此限制，則會傳回錯誤。在此例中，您必須從較少的搜尋結果匯出或簡化您想要匯出的搜尋搜尋查詢。 
+    
+- 會匯出搜尋結果被依據此項目中找到的內容來源。這表示在匯出結果的內容來源可能會有不同的搜尋所傳回的項目。例如，如果您選擇要匯出的每個信箱的一個 PST 檔案中的電子郵件訊息、 PST 檔案可能會有來自多個搜尋結果。
+    
+- 如果相同的電子郵件項目或文件從相同的內容位置由多個匯出搜尋所傳回，要匯出的項目只有一個複本。
+    
+- 您在建立之後，您無法編輯匯出多個搜尋。例如，您無法新增或移除匯出搜尋。您必須建立新的匯出工作變更都要匯出哪些搜尋結果。建立 「 匯出 」 工作之後，您只可以下載到電腦的結果、 重新啟動匯出，或刪除匯出工作。
+    
+- 如果您重新啟動匯出的匯出工作所組成的搜尋查詢的任何變更將不會影響將擷取的搜尋結果。當您重新啟動匯出時，將會再次執行建立匯出工作時所執行的相同合併的搜尋查詢工作。
+    
+- 如果您重新啟動 eDiscovery 案例中的匯出從 [**匯出**] 頁面上，會轉接到 Azure 儲存區的搜尋結果會覆寫先前的結果 ；先前的結果有已轉接通話將不會可供下載。 
+    
+- 準備進行分析進階在 eDiscovery 中的多個搜尋結果無法使用。您只可以準備進行分析進階在 eDiscovery 中的單一搜尋結果。
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>步驟 7： 準備搜尋結果進階 ediscovery （英文）
+<a name="step7_1"> </a>
+
+如果貴組織的 Office 365 E5 訂閱，您可以準備內容進行分析進階 ediscovery 案例相關聯的搜尋的結果。準備好搜尋結果之後，您可以前往進階的 eDiscovery (請參閱[步驟 8： 移至 [進階 ediscovery 案例](manage-ediscovery-cases.md#gotoAeD_1)) 及處理供進一步分析進階在 eDiscovery 中搜尋結果資料。
+  
+當您準備進階 eDiscovery 搜尋結果時，光學字元辨識 (OCR) 功能自動擷取文字的圖像。OCR 支援寬鬆的檔案、 電子郵件附件、 和內嵌圖像。這可讓您將文字分析功能的進階 eDiscovery （接近重複項目、 電子郵件執行緒、 佈景主題及預測編碼） 套用至圖像檔案中的任何文字。
+  
+> [!NOTE]
+> 若要分析使用進階的 eDiscovery 的使用者資料，使用者 (資料 okay) 必須指派 Office 365 E5 授權。或者，使用 Office 365 E1 或 E3 授權的使用者可以將指派進階的 eDiscovery 獨立授權。系統管理員及法務人員對於已指派給的情況下並使用進階的 eDiscovery 分析資料不需要的 E5 授權。 
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想要準備分析進階在 eDiscovery 中搜尋結果的大小寫] 旁的 [**開啟**]。 
+    
+3. 在 [**首頁**] 頁面的大小寫 [**搜尋**]，然後選取搜尋]。
+    
+4. 在詳細資料] 窗格中，[**具有進階 eDiscovery 的分析結果**，請按一下 [**準備進行分析的結果**。
+    
+5. 在**準備供分析的結果**的頁面上，執行下列動作︰  
+    
+  - 選擇 [準備進階 ediscovery 分析已編製索引的項目、 已編製索引及編製索引項目或僅編製索引的項目。
+    
+  - 選擇是否要包含的文件符合搜尋準則的 SharePoint 上找到的所有版本。只有當搜尋的內容來源包含網站會出現此選項。
+    
+  - 指定是否要通知訊息傳送 （或複製） 來準備程序完成時的人員及資料已準備好進階 ediscovery 處理。
+    
+6. 按一下 [**準備**]。
+    
+    在搜尋結果已備妥與進階 eDiscovery 的分析。
+    
+7. 在 [詳細資料] 窗格中，按一下 [**檢查準備狀態**顯示的準備程序的相關資訊。準備程序完成時，您可以前往處理分析之資料的進階 ediscovery 案例。 
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>步驟 8： 移至 [進階 ediscovery 案例
+<a name="gotoAeD_1"> </a>
+
+安全性建立案例之後&amp;規範中心您可以前往進階在 eDiscovery 中相同的大小寫。
+  
+移至進階 ediscovery 案例：
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想要移至 [進階 ediscovery 案例] 旁的 [**開啟**]。 
+    
+3. 按一下 [**首頁**] 頁面的大小寫的 [**進階 ediscovery 的切換參數**。
+    
+    ![若要開啟 [進階在 eDiscovery 中的 [大小寫的進階 ediscovery 按一下切換參數](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+  
+    會顯示 [**連線至進階 eDiscovery**進度列。當您連線至進階的 eDiscovery 時、 容器清單隨即顯示在頁面。 
+    
+    ![大小寫會顯示在進階的 eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+  
+    這些容器代表您準備進行分析步驟 7 中的進階 eDiscovery 中搜尋結果。該容器的名稱同名內容搜尋案例中安全性的附註&amp;規範中心。在清單容器是過您準備。如果不同的使用者準備進階 eDiscovery 搜尋結果，相對應的容器不會包含在清單中。
+    
+4. 從容器的搜尋結果資料載入至進階 ediscovery 案例中，選取容器並按一下 [**程序**。
+    
+    如需如何處理程序容器的資訊，請參閱[執行程序模組和 Office 365 進階在 eDiscovery 中的將資料載入](run-the-process-module-and-load-data-in-advanced-ediscovery.md)。
+    
+> [!TIP]
+> 按一下 [ **ediscovery 切換**回移至 [安全性] 中的相同情況&amp;規範中心。 
+  
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="optional-step-9-close-a-case"></a>（選用）步驟 9： 關閉案例
+<a name="closecase_1"> </a>
+
+法律案例或 eDiscovery 案例所支援的調查完成時，即可關閉案例。以下是當您關閉案例會發生什麼事：
+  
+- 如果案例包含音樂的所有內容位置，將會開啟這些保留。這可能會導致內容要永久刪除或清除、 使用者或自動程序，例如的刪除原則。
+    
+- 關閉案例只會關閉與該案例相關聯的保留。如果其他保留內容的位置 （例如訴訟保留。 保留原則，或從不同的 eDiscovery 案例的保留） 上進行這些保留則仍會保留。
+    
+- 大小寫仍會列在 [eDiscovery] 頁面上的 [安全性]&amp;規範中心。會保留詳細資料、 保留、 搜尋，並關閉案例的成員。
+    
+- 會在關閉之後，您可以編輯案例。例如，您可以新增或移除成員建立搜尋、 匯出搜尋結果，並準備分析進階在 eDiscovery 中搜尋結果。作用中且已關閉的情況下的主要差異在於保留已關閉時關閉案例。
+    
+若要關閉案例：
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想要關閉的大小寫的名稱。
+    
+    會顯示 [**管理此例中**彈出式] 頁面。 
+    
+3. [**管理案例狀態**] 下按一下 [![移除 [預覽] 按鈕](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif)**關閉案例**。
+    
+4. 在 [**詳細資料**] 頁面上，按一下 [**關閉案例**。
+    
+    預警案例相關聯的保留將已關閉顯示一則警告訊息。
+    
+5. 按一下 [**是]** 以關閉 [大小寫。 
+    
+    在 [**管理此例中**彈出式頁面上的狀態會從**作用中**變更為**關閉**。
+    
+6. 關閉 [**管理此案例**。
+    
+7. 在 [ **eDiscovery** ] 頁面上，按一下 [![重新整理] 圖示](media/O365-MDM-Policy-RefreshIcon.gif)**重新整理**更新關閉大小寫的狀態。可能需要最多 60 分鐘結束程序來完成。 
+    
+    程序完成時，大小寫的狀態變更以**關閉**[ **eDiscovery** ] 頁面上。按一下 [大小寫一次以顯示 [**管理此例中**彈出式] 頁面，包含以下資訊時關閉案例和誰在關閉的名稱。 
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="optional-step-10-re-open-a-closed-case"></a>（選用）步驟 10： 重新開啟關閉的案例
+<a name="reopencase_1"> </a>
+
+當您重新開啟案例時，將不會自動恢復已備妥時關閉案例是任何保留。大小寫重新開啟後，您必須移至 [**保留**] 頁面上，並開啟先前保留。若要開啟保留，請選取其和詳細資料窗格中按一下 [**開啟**。 
+  
+1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+    
+2. 按一下您想重新開啟的大小寫的名稱。
+    
+    會顯示 [**管理此例中**彈出式] 頁面。 
+    
+3. **管理案例的狀態**，請按一下 [**重新開啟案例**。
+    
+    預警時關閉已與案例相關聯的保留將不會自動開啟顯示一則警告訊息。
+    
+4. 按一下 [**是]** 以重新開啟 [大小寫。 
+    
+    在 [**管理此例中**彈出式頁面上的狀態會從**已關閉**變更為**使用中**。
+    
+5. 關閉 [**管理此案例**。
+    
+6. 在 [ **eDiscovery** ] 頁面上，按一下 [![重新整理] 圖示](media/O365-MDM-Policy-RefreshIcon.gif)**重新整理**更新重新開啟大小寫的狀態。可能需要重新前後的程序完成最多 60 分鐘。 
+    
+    程序完成時，大小寫的狀態變更為 [**作用中**[ **eDiscovery** ] 頁面上。 
+    
+[回到頁首](manage-ediscovery-cases.md#top)
+  
+## <a name="more-information"></a>其他資訊
+<a name="moreinfo_1"> </a>
+
+- **有 eDiscovery 案例或保留與 eDiscovery 案例相關聯的任何限制吗？** 下表列出 eDiscovery 案例] 和 [大小寫的保留的限制。
+    
+|**限制說明**|**限制**|
+|:-----|:-----|
+|為組織的情況下的最大數目  <br/> |無限制  <br/> |
+|為組織保留最大數目大小寫  <br/> |10,000  <br/> |
+|單一 case 保留中的信箱數量上限  <br/> |1,000  <br/> |
+|與最大數目 SharePoint OneDrive 單一案例中的商務網站的保留  <br/> |100  <br/> |
+   
+- **因應在 [管理] 頁面上建立進階 ediscovery 的情況下？** 您可以按一下在 [ **eDiscovery** ] 頁面上的 [安全性] 下方的連結來存取較舊的進階的 eDiscovery 案例的清單&amp;規範中心。不過，執行較舊的案例中的任何工作，您必須連絡 Office 365 支援人員並要求大小寫要移至新的 eDiscovery 案例安全性&amp;規範中心。 
+    
+- **為什麼要選擇建立 [eDiscovery 管理員？** 如先前清楚，系統管理員是可以檢視及存取您組織中所有的 eDiscovery 案例 eDiscovery 管理員角色群組的成員 eDiscovery。這項功能來存取所有的 eDiscovery 案例有兩個重要的用途：
+    
+  - 如果 eDiscovery 案例的唯一成員的人員離開貴組織，因為他們未成員任何人 （包括組織管理角色群組的成員或另一個 eDiscovery 管理員角色群組的成員） 是可存取該 eDiscovery 案例案例。在此情況下，就會有任何方法，以存取案例中的資料。但 eDiscovery 管理員可以存取所有在組織中的 eDiscovery 案例，因為他們可以檢視案例安全性&amp;規範中心並將其本身或另一個 eDiscovery 管理員新增為大小寫的成員。
+    
+  - EDiscovery 系統管理員可以檢視及存取所有的 eDiscovery 案例，因為他們可以稽核和監督所有案例和相關聯的內容搜尋。這有助於防止任何誤用內容搜尋或 eDiscovery 案例。與因為 eDiscovery 系統管理員可以存取內容的搜尋結果中的潛在敏感資訊，您應該限制的 eDiscovery 管理員的使用者數目。
+    
+    最後，如先前清楚、 eDiscovery 管理員可以在 [安全性]&amp;規範中心會自動新增為進階 ediscovery 的管理員。這表示 eDiscovery 管理員的人員可執行的使用者設定、 建立的情況下，並將資料新增到的情況下進階 eDiscovery 的管理工作。
+    
+<<<<<<< 標頭
+- **授權的內容位置置於保留需求為何吗？** 一般而言，組織需要的 Office 365 E3 訂閱或更高的內容位置置於保留。若要將信箱就地保留，皆需有 Exchange Online 計劃 2 授權。如需詳細資訊，請參閱此[eDiscovery 常見問題集](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae#Q5)。=======
+- **授權的內容位置置於保留需求為何吗？** 一般而言，組織需要的 Office 365 E3 訂閱或更高的內容位置置於保留。若要將信箱就地保留，皆需有 Exchange Online 計劃 2 授權。如需詳細資訊，請參閱此[常見問題集](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5)。
+>>>>>>> deniseb 轉換
+    
+- **還有什麼應該您了解在步驟 5 中搜尋所有案例的內容？** 如先前所述，您可以搜尋的大小寫保留在內容位置。當您這麼做時，保留條件會比對的內容為 [搜尋]。如果沒有任何保留準則，將搜尋所有內容。如果內容上查詢式保留，只會比對這兩個保留準則 （放在步驟 4 中保留） 的內容及搜尋準則 （從步驟 5 中搜尋） 會傳回與搜尋結果。
+    
+    以下是搜尋所有案例的內容時請牢記的一些其他事項：
+    
+  - 如果內容的位置是在相同的案例中的多個保留的一部分，保留查詢來結合**OR**運算子時搜尋的內容位置，使用所有案例內容] 選項。同樣地，如果內容位置屬於兩個不同保留，其中一個是查詢為基礎而另一個是設為無限期保留 （其中的所有內容都處於保留狀態），則所有內容將會無限期保留因都是搜尋。 
+    
+  - 如果內容搜尋是案例和您已設定要搜尋所有案例的內容，然後 （藉由新增或移除內容的位置或變更保留查詢） 變更保留這些變更更新的搜尋設定。不過，您必須重新執行搜尋之後保留變更來更新的搜尋結果。
+    
+  - 如果多個案例保留會放在 eDiscovery 案例中的內容位置且選取搜尋所有案例的內容、 關鍵字的搜尋查詢數目上限為 500。那是因為內容的搜尋將所有查詢式保留結合使用**OR**運算子。如果有超過 500 個關鍵字中合併保留查詢及內容的搜尋查詢，然後搜尋信箱中的所有內容，而不只是符合任何查詢為基礎的案例該內容保留。 
+    
+  - 如果 case 保留的**開啟**狀態，您仍然可以搜尋案例的內容位置在已開啟保留。
+    
+  - 如先前所述，如果搜尋設定成搜尋所有案例的內容，則您不能包含搜尋如果您想要匯出的多個搜尋結果。如果搜尋設定成搜尋所有案例的內容，然後您必須將匯出的單一搜尋結果。
+    
+- **不住在 Office 365 群組及 Microsoft 小組中放置保留吗？** Office 365 群組之內建的 Microsoft 小組。因此，將其置於保留 eDiscovery 案例中是非常類似。將 Office 365 群組和上的 Microsoft 小組保留狀態時請記住下列事項。 
+    
+  - 若要放置音樂位於 Office 365 群組及 Microsoft 小組中的內容，您必須指定的信箱與 SharePoint 網站的群組或小組與之相關聯。
+    
+  - 執行**Get UnifiedGroup** cmdlet 在 Exchange Online 中檢視 Office 365 群組或 Microsoft 小組的屬性。這是一個好方法來取得具有相關聯的 Office 365 群組或 Microsoft 小組網站的 URL。例如，下列命令會顯示所選的屬性名為資深領導小組 Office 365 群組： 
+    
+  ```
+  Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
+  DisplayName            : Senior Leadership Team
+  Alias                  : seniorleadershipteam
+  PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
+  SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
+  
+  ```
+
+    > [!NOTE]
+    > 若要執行**Get UnifiedGroup**指令程式，您必須指派 「 僅檢視收件者 」 角色在 Exchange Online 或角色群組的成員，已指派 「 僅檢視收件者 」 角色。 
+  
+  - 當使用者的信箱搜尋時，將不會搜尋所有 Office 365 群組或使用者為其成員的 Microsoft 小組。同樣地，當撥打 Office 365 群組或 Microsoft 小組保留，只有群組信箱和群組網站會放在保留;信箱和 OneDrive for Business 網站群組成員的不處於保留狀態除非您明確地將其新增保留。因此，如果您基於法律考量，保留上放置在 Office 365 群組或 Microsoft 小組需要考慮新增信箱和 OneDrive 商務網站的群組和小組成員在相同的音樂。
+    
+  - 若要取得 Office 365 群組或 Microsoft 小組成員的清單，您可以檢視屬性**首頁\>群組**頁面上的 Office 365 系統管理中心。或者，您可以在 Exchange Online PowerShell 中執行下列命令： 
+    
+  ```
+  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
+  ```
+
+    > [!NOTE]
+    > 若要執行**Get UnifiedGroupLinks**指令程式，您必須指派 「 僅檢視收件者 」 角色在 Exchange Online 或角色群組的成員，已指派 「 僅檢視收件者 」 角色。 
+  
+  - 屬於 Microsoft 小組通道的交談會儲存在具有 Microsoft 小組與相關聯的信箱。同樣地，小組成員共用通道中的檔案都會儲存在團隊的 SharePoint 網站上。因此，您必須將 Microsoft 小組信箱和 SharePoint 網站上的保留要保留交談和通道中的檔案。
+    
+    或者，是 [聊天室] 清單中的 Microsoft 小組的一部分的交談會儲存在信箱的使用者參與交談。與使用者共用聊天交談中的檔案都會儲存在 OneDrive for Business 網站共用檔案的使用者。因此，您必須將個別使用者信箱並 OneDrive for Business 網站上按住保留交談和在 [聊天室] 清單中的檔案。這就是為什麼很好置於除了放置小組信箱 （及網站） 的 Microsoft 小組成員之信箱的保留音樂。
+    
+    > [!IMPORTANT]
+    > 參與交談屬於 [聊天室] 清單中的 Microsoft 小組的使用者必須具有 （雲端） 的 Exchange Online 信箱以保留信箱處於 eDiscovery 保留狀態時的交談的交談。那是因為交談屬於 [聊天室] 清單會儲存在雲端架構信箱的交談參與者。如果交談參與者都不會有 Exchange Online 信箱，將不能夠保留交談的交談。例如，在 Exchange 混合部署，可能會能夠參與交談屬於 [聊天室] 清單中的 Microsoft 小組與內部部署信箱的使用者。但在此例中，從這些交談內容無法保留因為使用者沒有雲端架構信箱。 
+  
+  - 每個 Microsoft 小組或小組通道包含 Wiki 筆記記錄與共同作業。Wiki 內容會自動儲存至含有.mht 格式的檔案。此檔案儲存在團隊的 SharePoint 網站上的小組 Wiki 資料文件庫。您可以利用音樂 Wiki 內容所保留上放置團隊的 SharePoint 網站。
+    
+    > [!NOTE]
+    > 要保留的 Microsoft 小組或小組通道 Wiki 內容 （如果您保留上放置團隊的 SharePoint 網站） 的功能已於 2017 年 6 月 22 日發行。如果小組網站上保留，將啟動到期保留內容 wiki （英文）。不過，如果小組網站會保留與 Wiki 內容已遭刪除之前 2017 年 6 月 22 Wiki 內容已不會保留。 
+  
+- **如何尋找 onedrive 的 URL 放商務網站？** 若要收集的 Url 清單 onedrive，如，因此您可以將其新增至保留或搜尋您組織中的商務網站相關聯 eDiscovery 案例，請參閱[建立您的組織中的所有 OneDrive 位置的清單](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。本文中的此指令碼會建立包含的所有 OneDrive 網站清單的文字檔案。若要執行此指令碼，您必須安裝及使用 SharePoint Online 管理命令介面。請務必附加至每個想要搜尋的 OneDrive 網站的組織的我的網站網域的 URL。這是包含您 OneDrive; 的網域例如， `https://contoso-my.sharepoint.com`。以下是使用者的 OneDrive 網站的 URL 範例： `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。

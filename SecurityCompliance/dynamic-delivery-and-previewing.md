@@ -1,0 +1,81 @@
+---
+title: 動態傳遞和 Office 365 ATP 安全附件預覽
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.date: 2/28/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
+description: 當您設定好您 ATP 安全附件原則時，您選擇以避免郵件延遲，並啟用人員預覽會掃描附件的動態傳遞。
+ms.openlocfilehash: 23017f4f995dfe6a90479d83af9522531d7bf96b
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22526158"
+---
+# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和 Office 365 ATP 安全附件預覽
+
+動態傳遞則可以針對選取此選項。請閱讀本篇文章以深入了解動態傳遞，在[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)的附件預覽功能。
+  
+## <a name="how-dynamic-delivery-works"></a>如何動態傳遞運作
+
+當您[設定 Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)，您可以選擇從**封鎖**」、 「**取代**，與 「**動態傳遞**數個選項。根據您的原則設定的方式，電子郵件收件者可以體驗次要中電子郵件傳遞延遲時掃描其附件。若要避免郵件延遲回應，請選擇 [**動態傳遞**。
+  
+動態的傳遞選項不傳送具有版面配置區的每個電子郵件附件透過電子郵件訊息的本文以電子郵件延遲。附件掃描的[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)之前，保持版面配置區。電子郵件收件者可讀取及回應其電子郵件訊息向右離開知道正在分析 [其附件。
+  
+大部分的 Pdf 和 Office 可以在安全模式中預覽文件時 ATP 掃描正在進行中。如果附件不相容的動態傳遞預覽程式，直到完成 ATP 安全附件掃描電子郵件收件者請參閱附件版面配置區。
+  
+清除 [每個附件時，它會自動重新附加到原始的電子郵件。如果設為惡意決定附件，它傳送至隔離某人在貴組織的安全性小組 （例如 Office 365 全域管理員或安全性管理員） 可以[管理 Office 365 中隔離的郵件](manage-quarantined-messages-and-files.md)。
+  
+## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>當某人將轉送電子郵件的什麼包含附件？
+
+假設組織會使用動態傳遞其[ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)」 與某人接收電子郵件含有附件。現在假設該名人員會在電子郵件轉寄給其他人。會發生什麼事？ATP 安全附件原則中是否包含其他收件者而定。
+  
+- 如果收件者使用動態的傳遞選項 ATP 安全附件原則所涵蓋、 收件者會看見版面配置區與能夠預覽相容的檔案。
+    
+- 如果收件者未涵蓋 ATP 安全附件原則，然後電子郵件和附件都會通過，而不掃描 ATP 安全附件或附件版面配置區。
+    
+## <a name="whats-required-for-dynamic-delivery-to-work"></a>如何才能以動態傳遞給運作？
+
+- 您的組織必須具有[Office 365 進階威脅保護](office-365-atp.md)
+    
+- 必須使用動態的傳遞選項 （請參閱[Set up Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)） ATP 安全附件定義原則
+    
+- Office 365 中必須主控貴組織的電子郵件
+    
+## <a name="are-there-scenarios-for-which-dynamic-delivery-is-not-available"></a>是否有不提供動態傳遞案例吗？
+
+以下是不會支援動態傳遞為特定案例。這些包括下列：
+  
+- 公用資料夾中的電子郵件
+    
+- 不會路由傳送然後回來成使用自訂規則的使用者信箱的電子郵件
+    
+- 會移動 （自動或手動） 不在主控信箱並將其他位置，包括封存資料夾的郵件
+    
+- 會刪除的郵件
+    
+- 處於錯誤狀態的使用者的信箱搜尋資料夾
+    
+- Exchange Online 系統管理員已啟用 Exclaimer 的環境。（請參閱[附件的郵件不會傳遞 ATP 動態傳遞和 Exclaimer 可用時](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)）
+    
+## <a name="related-topics"></a>相關主題
+
+[Office 365 進階威脅防護](office-365-atp.md)
+  
+[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)
+  
+[設定 Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)
+  
+[Office 365 中的 ATP 安全連結](atp-safe-links.md)
+
+[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
+  
+
