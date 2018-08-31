@@ -3,7 +3,6 @@ title: 對於 Office 365 遭入侵電子郵件帳戶的回覆
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -16,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何將能辨識和回應 Office 365 的入侵的電子郵件帳戶
-ms.openlocfilehash: ef97ecd3198234cf2c3d609f81a4a4a8af2c237e
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531876"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782180"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>對於 Office 365 遭入侵電子郵件帳戶的回覆
 
@@ -35,9 +34,9 @@ ms.locfileid: "23531876"
 - 可疑的活動，例如遺失或已刪除的電子郵件。
 - 其他使用者可能會收到電子郵件從洩漏的帳戶沒有對應的寄件者**傳送的項目**] 資料夾中現有的電子郵件。
 - 未預期的使用者或系統管理員所建立的收件匣規則的目前狀態。這些規則可能會自動轉寄未知的地址的電子郵件或將其移至的**註解**、**垃圾郵件**或**RSS 訂閱**的資料夾。
-- 全域通訊清單中，可能會變更使用者顯示名稱。
+- 全域通訊清單中，可能會變更使用者的顯示名稱。
 - 使用者的信箱會禁止傳送電子郵件。
-- 在 Microsoft Outlook 或 Microsoft Outlook Web App 中的寄件備份或刪除的郵件資料夾包含一般駭客入侵-帳戶的郵件，例如"I 倫敦、 傳送 money 中前"。
+- 在 Microsoft Outlook 或 Microsoft Outlook Web App 中的寄件備份或刪除的郵件資料夾包含一般駭客入侵帳戶訊息，例如"I 倫敦、 傳送 money 中前"。
 - 已更新不尋常的設定檔的變更，例如名稱、 電話號碼或的郵遞區號。
 - 不尋常的認證的變更，例如多項的密碼變更是必要的。
 - 最近新增郵件轉寄。
