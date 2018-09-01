@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 系統管理員： 即使該信箱處於合法持有刪除 Exchange Online 的信箱使用者的可復原的項目] 資料夾中的項目。這是有效的方式刪除已意外溢出至 Office 365 的資料。
-ms.openlocfilehash: 0519e389f05ed9952090fb9b163a05d18e3bd762
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
+ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23014027"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23796879"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除項目可復原的項目] 資料夾中的雲端架構信箱保留-Admin 說明
 
@@ -110,7 +110,7 @@ ms.locfileid: "23014027"
 
    如果已啟用使用者的封存信箱，執行下列命令以取得資料夾和封存信箱中 [可復原的項目] 資料夾中的子資料夾中的大小和項目總數。 
 
-    ```
+    ```s
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
