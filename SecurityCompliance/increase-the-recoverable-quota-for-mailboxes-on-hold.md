@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '啟用封存信箱並開啟自動展開封存增加的 Office 365 中的信箱 [可復原的項目] 資料夾的大小。 '
-ms.openlocfilehash: 2e7149ef10152a11dc638c04b61a261440b539b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526278"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782090"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱的「可復原的項目」配額
 
@@ -35,11 +35,11 @@ ms.locfileid: "22526278"
 |**[可復原的項目] 資料夾的儲存配額總計** <br/> |無限制  <br/> |無限制  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>封存信箱的初始儲存配額為 100 GB 具有 Exchange Online (Plan 2) 授權的使用者。但是，自動展開封存開啟時，使用者的封存和 [可復原的項目] 資料夾中封存的儲存配額為 unlimited。如需關於自動展開封存，請參閱[Overview of Office 365 中沒有限制之封存](unlimited-archiving.md)。 
+> <sup>\*</sup>封存信箱的初始儲存配額為 100 GB 具有 Exchange Online (Plan 2) 授權的使用者。不過，當自動展開封存在已開啟信箱保留、 儲存配額同時封存信箱與 [可復原的項目] 資料夾已增加到 110 GB。額外的封存儲存空間在佈建時所需結果中封存儲存區中不受限制的數量。如需關於自動展開封存，請參閱[Overview of Office 365 中沒有限制之封存](unlimited-archiving.md)。 
   
 在保留信箱的主要信箱中，當 [可復原的項目] 資料夾的儲存配額接近限制時，您可以執行下列動作︰
   
-- **啟用封存信箱並開啟自動展開封存**-您可以只是透過啟用封存信箱並再開啟自動展開封存功能 Exchange 中啟用 [可復原的項目] 資料夾不受限制的儲存容量線上。這會產生 100 GB 的 [可復原的項目] 資料夾中主要信箱和 [可復原的項目] 資料夾中使用者的封存的儲存容量中不受限制的數量。請參閱如何：[啟用封存信箱在 Office 365 安全性&amp;規範中心](enable-archive-mailboxes.md)並[啟用 Office 365 中沒有限制之封存](enable-unlimited-archiving.md)。
+- **啟用封存信箱並開啟自動展開封存**-您可以只是透過啟用封存信箱並再開啟自動展開封存功能 Exchange 中啟用 [可復原的項目] 資料夾不受限制的儲存容量線上。這會產生 110 GB 主要信箱與使用者的封存中的 [可復原的項目] 資料夾的儲存容量不受限制的數量的可復原的項目] 資料夾。請參閱如何：[啟用封存信箱在 Office 365 安全性&amp;規範中心](enable-archive-mailboxes.md)並[啟用 Office 365 中沒有限制之封存](enable-unlimited-archiving.md)。
     
     > [!NOTE]
     > 啟用封存信箱的接近超過儲存配額可復原的項目] 資料夾以之後，您可能會想要執行受管理的資料夾助理員以手動觸發的移到期的項目處理的信箱助理員封存信箱中的可復原的項目資料夾。請參閱指示的[步驟 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 。請注意其他使用者的信箱中的項目可能會移至新的封存信箱。請考慮告知使用者這可能會發生之後您啟用封存信箱。 

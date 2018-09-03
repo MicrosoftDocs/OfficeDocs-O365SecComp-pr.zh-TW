@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解您可以使用 Office 365 安全性內容搜尋工具商務網站的搜尋在 Exchange Online 信箱及 SharePoint 或 OneDrive 的電子郵件和檔案屬性&amp;規範中心。  '
-ms.openlocfilehash: c043b6667e6847ff944b05e6bbe91df8ed2f600c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526911"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782100"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -116,7 +116,7 @@ ms.locfileid: "22526911"
 |OfficeLocation  <br/> |在 [ **Office** ] 或 [**辦公室位置**屬性值。  <br/> |
 |OtherAddress  <br/> |**其他**地址屬性的值。  <br/> |
 |Surname  <br/> |中**最後**的 name 屬性的名稱。  <br/> |
-|Title  <br/> |**職稱**屬性中的標題。  <br/> |
+|職稱  <br/> |**職稱**屬性中的標題。  <br/> |
    
 
 ## <a name="searchable-sensitive-data-types"></a>可搜尋的敏感資料類型
@@ -134,7 +134,7 @@ ms.locfileid: "22526911"
 |**運算子**|**Usage**|**描述**|
 |:-----|:-----|:-----|
 |AND  <br/> |keyword1 AND keyword2  <br/> |會傳回內含指定的關鍵字的所有項目或`property:value`運算式。例如，`from:"Ann Beebe" AND subject:northwind`會傳回所有包含主旨行中的 word northwind Ann Beebe 所傳送的郵件。<sup>2</sup> <br/> |
-|+  <br/> |keyword1??+ keyword2??+ keyword3  <br/> |會傳回包含*一個*項目，`keyword2`或`keyword3`*和*也包含`keyword1`。因此，此範例會相當於查詢`(keyword2 OR keyword3) AND keyword1`。  <br/> 請注意，查詢`keyword1 + keyword2`(之後空白**+** 符號) 不是使用相同 * * AND * * 運算子。此查詢就是相當於`"keyword1 + keyword2"`並傳回 「 實際 」 階段的項目`"keyword1 + keyword2"`。<br/> |
+|+  <br/> |keyword1 + keyword2 + keyword3  <br/> |會傳回包含*一個*項目，`keyword2`或`keyword3`*和*也包含`keyword1`。因此，此範例會相當於查詢`(keyword2 OR keyword3) AND keyword1`。  <br/> 請注意，查詢`keyword1 + keyword2`(之後空白**+** 符號) 不是使用相同 * * AND * * 運算子。此查詢就是相當於`"keyword1 + keyword2"`並傳回 「 實際 」 階段的項目`"keyword1 + keyword2"`。<br/> |
 |OR  <br/> |keyword1 OR keyword2  <br/> |會傳回包含一或多個指定關鍵字的項目或`property:value`運算式。<sup>2</sup> <br/> |
 |NOT  <br/> |keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> Im 不種類：  <br/> |排除關鍵字所指定的項目或`property:value`運算式。在第二個範例會排除 Ann Beebe 所傳送的郵件。第三個範例會排除任何立即訊息交談，例如 Skype 商務儲存至交談記錄的信箱資料夾的交談。<sup>2</sup> <br/> |
 |-  <br/> |keyword1 -keyword2  <br/> |相同**不**運算子。因此這個查詢會傳回包含的項目`keyword1`會排除包含的項目和`keyword2`。<br/> |
@@ -152,7 +152,7 @@ ms.locfileid: "22526911"
 |(  )  <br/> | (fair OR free) AND (from:contoso.com)  <br/>  (IPO OR initial) AND (stock OR shares)  <br/>  (quarterly financials)  <br/> |括弧括住群組在一起布林片語`property:value`項目和關鍵字。例如，`(quarterly financials)`會傳回包含每季文字的項目及 financials。<br/> |
    
 > [!NOTE]
-> <sup>1</sup>??????Use 此運算子具有日期或數字值的屬性。> <sup>2</sup>??????Boolean 搜尋運算子必須為大寫;例如， **AND**。如果您使用小寫的運算子，例如**和**，它會視為在搜尋查詢關鍵字。 
+> <sup>1</sup>會使用此運算子具有日期或數字值的屬性。<br/> <sup>2</sup>布林搜尋運算子必須為大寫;例如， **AND**。如果您使用小寫的運算子，例如**和**，它會視為在搜尋查詢關鍵字。 
   
 ## <a name="search-conditions"></a>新增條件
 
@@ -205,7 +205,7 @@ ms.locfileid: "22526911"
 |**條件**|**描述**|
 |:-----|:-----|
 |Author  <br/> |[作者] 欄位從 Office 文件可保存如果複製文件。例如，如果使用者建立文件和電子郵件它給其他人，然後將其上傳至 SharePoint 文件將仍保留原始作者。  <br/> |
-|Title  <br/> |文件的標題。Title 屬性是在 Office 文件中所指定的中繼資料。它會不同於文件的檔案名稱。  <br/> |
+|職稱  <br/> |文件的標題。Title 屬性是在 Office 文件中所指定的中繼資料。它會不同於文件的檔案名稱。  <br/> |
 |建立日期  <br/> |建立文件的日期。  <br/> |
 |上次修改日期  <br/> |上次變更文件的日期。  <br/> |
 |檔案類型  <br/> |檔案 ； 的副檔名例如 docx、 一、 pptx、 或 xlsx。這是做為 FileExtension site 屬性為相同的屬性。  <br/> |

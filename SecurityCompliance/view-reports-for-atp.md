@@ -3,7 +3,6 @@ title: Office 365 進階威脅保護的檢視報告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 了解如何尋找及使用報表的 Office 365 進階威脅保護安全性&amp;規範中心。
-ms.openlocfilehash: bd02989711629cc67f7a7d5e061862a1146ff21b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526585"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782110"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 進階威脅保護的檢視報告
 
@@ -26,7 +25,7 @@ ms.locfileid: "22526585"
   
 ![安全性&amp;規範中心儀表板可協助您看到其用於進階威脅保護](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP 報告包含[威脅保護狀態報表](view-reports-for-atp.md#advancedthreats)、 [ATP 檔案類型的報告](view-reports-for-atp.md#atpfiletypes)及[ATP 郵件處理報告](view-reports-for-atp.md#atpmessagedisp)。本文說明 ATP 報告並包含連結至[其他報表檢視](view-reports-for-atp.md#addl)。
+ATP 報告包含威脅保護狀態報表、 ATP 檔案類型報表及 ATP 郵件處理報告。本文說明 ATP 報告並包含連結至其他報表檢視。
   
 ## <a name="threat-protection-status-report"></a>威脅保護狀態報表
 

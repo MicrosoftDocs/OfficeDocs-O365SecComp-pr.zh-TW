@@ -1,9 +1,8 @@
 ---
-title: Office 365 威脅情報的 SIEM 整合
+title: 與 Office 365 威脅智慧及進階威脅保護 SIEM 整合
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/21/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,31 +11,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
-description: 整合您的組織 SIEM server 與 Office 365 威脅智慧使用 Office 365 活動管理 API。
-ms.openlocfilehash: 82aeeea53bf87f1555fa68b2784b8fe38a435e15
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 整合您的組織 SIEM server 與 Office 365 威脅智慧及進階威脅保護的 Office 365 活動管理 api。
+ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527008"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782140"
 ---
-# <a name="siem-integration-with-office-365-threat-intelligence"></a>Office 365 威脅情報的 SIEM 整合
+# <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>與 Office 365 威脅智慧及進階威脅保護 SIEM 整合
 
-如果貴組織要使用安全性事件及事件管理 (SIEM) 伺服器，您可以使用 SIEM server 整合 Office 365 威脅智慧。這可讓您檢視的資訊，例如偵測到的 Office 365 威脅智慧、 您 SIEM server 報告中的惡意程式碼。
-  
-## <a name="use-the-office-365-activity-management-api"></a>使用 Office 365 活動管理 API
+如果貴組織要使用安全性事件及事件管理 (SIEM) 伺服器，您可以使用 SIEM server 整合 Office 365 威脅智慧及進階威脅保護。SIEM 整合可讓您檢視的資訊，例如偵測到的 Office 365 進階保護和威脅智慧您 SIEM server 報告中的惡意程式碼。若要設定 SIEM 整合，您可以使用[Office 365 活動管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 
 
-若要整合 Office 365 威脅智慧 SIEM 伺服器，可以使用 Office 365 活動管理 API。此 API 貴組織的 Office 365 和 Azure AD 活動的記錄檔從擷取使用者、 管理、 系統及原則動作和事件的相關資訊。 
-  
-您必須是 Office 365 全域管理員或具有安全性管理員角色指派安全性&amp;規範中心。
-  
-請參閱[Office 365 管理活動 API 參考 （英文）](https://msdn.microsoft.com/en-us/office-365/office-365-management-activity-api-reference)。
-  
+Office 365 活動管理 API 從您組織的 Office 365 和 Azure Active Directory 活動記錄檔擷取使用者、 管理、 系統及原則動作和事件的相關資訊。[Office 365 進階威脅保護和威脅智慧結構描述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-intelligence-schema)搭配威脅智慧及/或進階威脅防護，因此如果您的組織有但不是威脅智慧 （反之亦然），進階威脅保護，您可以仍然使用該相同的 API 來進行 SIEM server 的整合。 
+
+SIEM 伺服器或其他類似系統應輪詢 access 偵測事件**audit.general**工作量。若要了解，請參閱[開始使用 Office 365 管理 api （英文）](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。 
+
+> [!IMPORTANT]
+> 您必須是 Office 365 全域管理員或已指派的安全性與規範中心來設定與 Office 365 威脅智慧及進階威脅保護 SIEM 整合安全性管理員角色。</br>稽核記錄必須針對 Office 365 環境開啟。若要取得與此說明，請參閱[開啟 Office 365 稽核記錄搜尋開啟或關閉](turn-audit-log-search-on-or-off.md)。
+
 ## <a name="related-topics"></a>相關主題
 
 [Office 365 威脅情報](office-365-ti.md)
-  
-[防範 Office 365 中的威脅](protect-against-threats.md)
+
+[Office 365 進階威脅防護](office-365-atp.md)
+
+[智慧報表和 Office 365 安全性前瞻&amp;規範中心](reports-and-insights-in-security-and-compliance.md)
   
 [Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
   
