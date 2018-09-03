@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 系統管理員： 了解如何啟用自動展開 Office 365，您的使用者與不受限制的存放區提供其 Exchange Online 信箱的封存。您可以啟用自動展開封存為整個組織或只是特定的使用者。
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782150"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809698"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>啟用 Office 365-說明系統中沒有限制之封存
 
@@ -54,7 +54,7 @@ ms.locfileid: "23782150"
 
 而非啟用自動展開您組織中每個使用者的封存，您可以僅啟用它對特定使用者。因為只有一些使用者可能會有非常大的封存儲存區需要您可能會這麼做。
   
-當您啟用自動展開特定使用者的封存時，也會進行下列兩種組態變更：
+當您啟用自動展開特定使用者的封存和上的使用者的信箱中保留或指派給 Office 365 保留原則，會進行下列兩種設定變更：
   
 - 使用者的主要封存信箱儲存配額會增加 10 GB （從 100 GB，以 110 GB)。封存警告配額也增加 10 GB （從 100 gb 的 90 GB)。
     

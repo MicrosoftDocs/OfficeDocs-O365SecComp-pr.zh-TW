@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台及文件共同作業平台至 Office 365 組織中的信箱。這可讓您封存 Office 365 中的 Facebook、 Twitter 與資料來源的資料。然後您可以與協力廠商資料 appply Office 365 的符合性功能 （例如法務保存措施、 內容搜尋和保留原則）。
-ms.openlocfilehash: 3d51d9f5cb546b33fa636fab0ca319e4d24b1ad4
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230035"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809708"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中封存協力廠商資料
 
@@ -46,6 +46,8 @@ Office 365 可讓系統管理員匯入及封存立即訊息平台和文件共同
 [步驟 3：設定協力廠商資料的使用者信箱](#step-3-configure-user-mailboxes-for-third-party-data)
 
 [步驟 4：提供資訊給合作夥伴](#step-4-provide-your-partner-with-information)
+
+[步驟 5： 在 Azure Active Directory 中登錄的協力廠商資料連接器](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
 ## <a name="how-the-third-party-data-import-process-works"></a>如何將第三方的資料匯入程序的運作方式 >
 
@@ -622,8 +624,28 @@ Microsoft Lync (2010、2013)
     ```
 
 - 登入您在步驟 2 中建立的協力廠商資料信箱認證 （Office 365 使用者識別碼和密碼）。這些認證是必要的協力廠商連接器可以存取和使用者信箱與協力廠商資料信箱匯入項目。
-    
+ 
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>步驟 5： 在 Azure Active Directory 中登錄的協力廠商資料連接器
 
+啟動 2018 September 30、 Office 365 的 Azure 服務會開始使用經過驗證在 Exchange Online 進行驗證嘗試連線至 Office 365 組織匯入資料的第三方資料連接器。這項變更的原因是經過驗證提供更多安全性比目前的方法來連線至 Azure 服務使用先前所述的端點的家協力廠商連接器的基礎。
+
+若要啟用協力廠商資料連接線連線到 Office 365 使用新的現代的驗證方法，在 Office 365 組織中的系統管理員必須同意登錄為 Azure Active Directory 中的受信任的服務應用程式的連接器。做法是接受權限要求允許存取您的組織資料 Azure Active Directory 中的連接器。接受此要求之後，與協力廠商資料新增為 Azure Active directory 企業應用程式及連接器表示為服務主要名稱。如同意程序的詳細資訊，請參閱[租用戶系統同意](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
+
+存取及接受登錄連接器要求的步驟如下：
+
+1. 前往[此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)及使用的 Office 365 全域管理員認證登入。<br/><br/>會顯示下列對話方塊。您可以展開檢閱會指派給連接器的權限插入號。<br/><br/>![顯示 [權限要求] 對話方塊](media/O365_ThirdPartyDataConnector_OptIn1.png)
+2. 按一下 [**接受**]。
+
+接受邀請之後，會顯示[Azure 入口網站的儀表板](https://portal.azure.com)。若要檢視您組織的應用程式清單，請按一下 [ **Azure Active Directory** > **企業應用程式**。**企業應用程式**blade 會列出 Office 365 協力廠商資料連接器。
+
+> [!IMPORTANT]
+> 之後 2018 September 30、 協力廠商將不會再將資料匯入您組織中信箱如果您不在 Azure Active Directory 登錄協力廠商資料連接器。也必須遵循下列步驟 5 中的程序在 Azure Active Directory 中登錄現有的協力廠商資料連接器 （與其 2018 September 30、 之前建立） 的附註。
+
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>Grant 同意的協力廠商資料連接器
+
+您的組織 consents 權限要求在 Azure Active Directory 中登錄的協力廠商資料連接器之後，您的組織可以撤銷隨時該同意。不過，撤銷連接器同意表示可與協力廠商資料來源的資料將不會再匯入 Office 365。
+
+若要撤銷的協力廠商資料連接器的同意，您可以刪除應用程式 （刪除的對應的服務主要名稱） 從 Azure 入口網站，或使用[使用**企業應用程式**blade 部署 Azure Active Directory移除 MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) Office 365 PowerShell 中。您也可以使用 Azure Active Directory PowerShell 中的[移除 AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal)指令程式。
   
 ## <a name="more-information"></a>其他資訊
 
