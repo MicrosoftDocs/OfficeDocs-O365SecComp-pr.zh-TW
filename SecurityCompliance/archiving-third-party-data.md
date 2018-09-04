@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台及文件共同作業平台至 Office 365 組織中的信箱。這可讓您封存 Office 365 中的 Facebook、 Twitter 與資料來源的資料。然後您可以與協力廠商資料 appply Office 365 的符合性功能 （例如法務保存措施、 內容搜尋和保留原則）。
-ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809708"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827087"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中封存協力廠商資料
 
@@ -636,7 +636,7 @@ Microsoft Lync (2010、2013)
 1. 前往[此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)及使用的 Office 365 全域管理員認證登入。<br/><br/>會顯示下列對話方塊。您可以展開檢閱會指派給連接器的權限插入號。<br/><br/>![顯示 [權限要求] 對話方塊](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. 按一下 [**接受**]。
 
-接受邀請之後，會顯示[Azure 入口網站的儀表板](https://portal.azure.com)。若要檢視您組織的應用程式清單，請按一下 [ **Azure Active Directory** > **企業應用程式**。**企業應用程式**blade 會列出 Office 365 協力廠商資料連接器。
+接受邀請之後，會顯示[Azure 入口網站](https://portal.azure.com)。若要檢視您組織的應用程式清單，請按一下 [ **Azure Active Directory** > **企業應用程式**。**企業應用程式**blade 會列出 Office 365 協力廠商資料連接器。
 
 > [!IMPORTANT]
 > 之後 2018 September 30、 協力廠商將不會再將資料匯入您組織中信箱如果您不在 Azure Active Directory 登錄協力廠商資料連接器。也必須遵循下列步驟 5 中的程序在 Azure Active Directory 中登錄現有的協力廠商資料連接器 （與其 2018 September 30、 之前建立） 的附註。
