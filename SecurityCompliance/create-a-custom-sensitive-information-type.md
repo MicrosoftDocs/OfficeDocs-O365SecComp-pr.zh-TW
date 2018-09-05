@@ -1,0 +1,753 @@
+---
+title: 建立自訂機密資訊類型
+ms.author: stephow
+author: stephow-MSFT
+manager: laurawi
+ms.date: 10/5/2017
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Priority
+ms.collection: Strat_O365_IP
+search.appverid:
+- MOE150
+- MET150
+ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
+description: 如果您需要識別及保護不同類型的機密資訊 (例如使用貴組織專屬格式的員工識別碼)，可以建立自訂機密資訊類型。機密資訊類型是在稱為規則套件的 XML 檔案中定義。本主題說明如何建立 XML 檔案，該檔案會定義您的自訂機密資訊類型。您必須知道如何建立規則運算式。
+ms.openlocfilehash: 65e55832a88ec7b31dba55930cc90960aa33a20d
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22526304"
+---
+# <a name="create-a-custom-sensitive-information-type"></a><span data-ttu-id="ec74a-106">建立自訂機密資訊類型</span><span class="sxs-lookup"><span data-stu-id="ec74a-106">Create a custom sensitive information type</span></span>
+
+<span data-ttu-id="ec74a-p102">Office 365 中的資料外洩防護 (DLP) 包含許多[機密資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內件類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p102">Data loss prevention (DLP) in Office 365 includes many [sensitive information types](what-the-sensitive-information-types-look-for.md) that are ready for you to use in your DLP policies. These built-in types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more.</span></span> 
+  
+<span data-ttu-id="ec74a-p103">但是如果您需要識別及保護不同類型的機密資訊 (例如使用貴組織專屬格式的員工識別碼)，可以建立自訂機密資訊類型。機密資訊類型是在稱為規則套件的 XML 檔案中定義。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p103">But if you need to identify and protect a different type of sensitive information - for example, an employee ID that uses a format specific to your organization - you can create a custom sensitive information type. A sensitive information type is defined in an XML file called a rule package.</span></span>
+  
+<span data-ttu-id="ec74a-p104">本主題說明如何建立 XML 檔案，該檔案會定義您的自訂機密資訊類型。您必須知道如何建立規則運算式。例如，本主題會建立自訂機密資訊類型，該類型會識別員工識別碼。您可以使用這個範例 XML 作為專屬 XML 檔案的起點。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p104">This topic shows you how to create an XML file that defines your own custom sensitive information type. You need to know how to create a regular expression. As an example, this topic creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file.</span></span>
+  
+<span data-ttu-id="ec74a-p105">建立格式正確的 XML 檔案之後，您可以藉由使用 PowerShell 將它上傳至 Office 365。然後您就可以在 DLP 原則中使用自訂機密資訊類型，並且測試它是否會如您所望地偵測機密資訊。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p105">After you've created a well-formed XML file, you can upload it to Office 365 by using PowerShell. Then you're ready to use your custom sensitive information type in your DLP policies and test that it's detecting the sensitive information as you intended.</span></span>
+    
+## <a name="sample-xml-of-a-rule-package"></a><span data-ttu-id="ec74a-117">規則套件的範例 XML</span><span class="sxs-lookup"><span data-stu-id="ec74a-117">Sample XML of a rule package</span></span>
+
+<span data-ttu-id="ec74a-p106">以下是我們在本主題中建立的規則套件範例 XML。元素和屬性會在以下章節中說明。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p106">Here's the sample XML of the rule package that we'll create in this topic. Elements and attributes are explained in the sections below.</span></span>
+  
+```
+<?xml version="1.0" encoding="UTF-16"?>
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
+    <Version build="0" major="1" minor="0" revision="0"/>
+    <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
+    <Details defaultLangCode="en-us">
+        <LocalizedDetails langcode="en-us">
+            <PublisherName>Contoso</PublisherName>
+            <Name>Employee ID Custom Rule Pack</Name>
+            <Description>
+            This rule package contains the custom Employee ID entity.
+            </Description>
+        </LocalizedDetails>
+    </Details>
+</RulePack>
+<Rules>
+<!-- Employee ID -->
+    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
+        <Pattern confidenceLevel="60">
+            <IdMatch idRef="Regex_employee_id"/>
+        </Pattern>
+        <Pattern confidenceLevel="70">
+            <IdMatch idRef="Regex_employee_id"/>
+            <Match idRef="Func_us_date"/>
+        </Pattern>
+        <Pattern confidenceLevel="80">
+            <IdMatch idRef="Regex_employee_id"/>
+            <Match idRef="Func_us_date"/>
+            <Any minMatches="1">
+                <Match idRef="Keyword_badge" minCount="2"/>
+                <Match idRef="Keyword_employee"/>
+            </Any>
+            <Any minMatches="0" maxMatches="0">
+                <Match idRef="Keyword_false_positives_local"/>
+                <Match idRef="Keyword_false_positives_intl"/>
+            </Any>
+        </Pattern>
+    </Entity>
+    <Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
+    <Keyword id="Keyword_employee">
+        <Group matchStyle="word">
+            <Term>Identification</Term>
+            <Term>Contoso Employee</Term>
+        </Group>
+    </Keyword>
+    <Keyword id="Keyword_badge">
+        <Group matchStyle="string">
+            <Term>card</Term>
+            <Term>badge</Term>
+            <Term caseSensitive="true">ID</Term>
+        </Group>
+    </Keyword>
+    <Keyword id="Keyword_false_positives_local">
+        <Group matchStyle="word">
+            <Term>credit card</Term>
+            <Term>national ID</Term>
+        </Group>
+    </Keyword>
+    <Keyword id="Keyword_false_positives_intl">
+        <Group matchStyle="word">
+            <Term>identity card</Term>
+            <Term>national ID</Term>
+            <Term>EU debit card</Term>
+        </Group>
+    </Keyword>
+    <LocalizedStrings>
+        <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
+            <Name default="true" langcode="en-us">Employee ID</Name>
+            <Description default="true" langcode="en-us">
+            A custom classification for detecting Employee IDs.
+            </Description>
+            <Name default="true" langcode="de-de">Name for German locale</Name>
+            <Description default="true" langcode="de-de">
+            Description for German locale.
+            </Description>
+        </Resource>
+    </LocalizedStrings>
+</Rules>
+</RulePackage>
+
+```
+
+## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a><span data-ttu-id="ec74a-p107">您的關鍵需求是什麼？[Rule、Entity、Pattern 元素]</span><span class="sxs-lookup"><span data-stu-id="ec74a-p107">What are your key requirements? [Rule, Entity, Pattern elements]</span></span>
+
+<span data-ttu-id="ec74a-122">在您開始之前，了解規則的 XML 結構描述基本結構，以及您可以如何使用這個結構來定義自訂機密資訊讓它識別正確內容，很有幫助。</span><span class="sxs-lookup"><span data-stu-id="ec74a-122">Before you get started, it's helpful to understand the basic structure of the XML schema for a rule, and how you can use this structure to define your custom sensitive information type so that it will identify the right content.</span></span>
+  
+<span data-ttu-id="ec74a-p108">規則會定義一或多個實體 (機密資訊類型)，每個實體會定義一或多個模式。模式是 DLP 在評估內容 (例如電子郵件和文件) 時尋找的項目。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p108">A rule defines one or more entities (sensitive information types), and each entity defines one or more patterns. A pattern is what DLP looks for when it evaluates content such as email and documents.</span></span>
+  
+<span data-ttu-id="ec74a-p109">(術語快速附註 - 如果您熟悉 DLP 原則，就會知道原則包含一或多個由條件和動作組成的規則。但是在本主題中，XML 標記使用規則來表示會定義實體的模式，也稱為機密資訊類型。因此在本主題中，當您看到規則時，請將它視為實體或機密資訊類型，而不是條件和動作。)</span><span class="sxs-lookup"><span data-stu-id="ec74a-p109">(A quick note on terminology - if you're familiar with DLP policies, you know that a policy contains one or more rules comprised of conditions and actions. However, in this topic, the XML markup uses rule to mean the patterns that define an entity, also known as a sensitive information type. So in this topic, when you see rule, think entity or sensitive information type, not conditions and actions.)</span></span>
+  
+### <a name="simplest-scenario-entity-with-one-pattern"></a><span data-ttu-id="ec74a-128">最簡單的案例：具有一種模式的實體</span><span class="sxs-lookup"><span data-stu-id="ec74a-128">Simplest scenario: entity with one pattern</span></span>
+
+<span data-ttu-id="ec74a-p110">以下是最簡單的案例。您想要您的 DLP 原則可以識別內容，其中包含貴組織的員工識別碼，該識別碼的格式為 9 位數數字。因此模式是指規則中所包含的規則運算式，可以識別 9 位數數字。任何包含 9 位數數字的內容都會滿足模式。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p110">Here's the simplest scenario. You want your DLP policy to identify content that contains your organization's employee ID, which is formatted as a nine-digit number. So the pattern refers to a regular expression contained in the rule that identifies nine-digit numbers. Any content containing a nine-digit number satisfies the pattern.</span></span>
+  
+![具有一種模式的實體圖表](media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+  
+<span data-ttu-id="ec74a-134">不過，這個模式雖然簡單，但是可以藉由將其中包含不一定是員工識別碼的任何 9 位數數字內容進行比對，識別許多誤判。</span><span class="sxs-lookup"><span data-stu-id="ec74a-134">However, while simple, this pattern may identify many false positives by matching content that contains any nine-digit number that is not necessarily an employee ID.</span></span>
+  
+### <a name="more-common-scenario-entity-with-multiple-patterns"></a><span data-ttu-id="ec74a-135">更常見的案例：具有多種模式的實體</span><span class="sxs-lookup"><span data-stu-id="ec74a-135">More common scenario: entity with multiple patterns</span></span>
+
+<span data-ttu-id="ec74a-136">基於這個原因，使用一個以上的模式來定義實體更為常見，其中模式除了實體 (例如 9 位數數字) 之外，還會識別支援辨識項 (例如關鍵字或日期)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-136">For this reason, it's more common to define an entity by using more than one pattern, where the patterns identify supporting evidence (such as a keyword or date) in addition to the entity (such as a nine-digit number).</span></span>
+  
+<span data-ttu-id="ec74a-137">例如，若要增加識別內容 (包含員工識別碼) 的可能性，除了 9 位數數字之外，您可以定義同時會識別雇用日期的另一個模式，並且再定義另一個模式，同時識別雇用日期和關鍵字 (例如「員工識別碼」)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-137">For example, to increase the likelihood of identifying content that contains an employee ID, you can define another pattern that also identifies a hire date, and define yet another pattern that identifies both a hire date and a keyword (such as "employee ID"), in addition to the nine-digit number.</span></span>
+  
+![具有多種模式的實體圖表](media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+  
+<span data-ttu-id="ec74a-139">請注意此結構的幾個重要層面：</span><span class="sxs-lookup"><span data-stu-id="ec74a-139">Note a couple of important aspects of this structure:</span></span>
+  
+- <span data-ttu-id="ec74a-p111">需要更多辨識項的模式具有較高的信賴等級。這相當有用，因為當您稍後在 DLP 原則中使用這個機密資訊類型時，可以只對較高信賴相符項目使用更嚴格限制的動作 (例如封鎖內容)，以及對較低信賴相符項目使用較不具限制性的動作 (例如傳送通知)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p111">Patterns that require more evidence have a higher confidence level. This is useful because when you later use this sensitive information type in a DLP policy, you can use more restrictive actions (such as block content) with only the higher-confidence matches, and you can use less restrictive actions (such as send notification) with the lower-confidence matches.</span></span>
+    
+- <span data-ttu-id="ec74a-p112">支援 IdMatch 和 Match 元素會參考 regexes 與關鍵字，它們實際上是 Rule 元素的子項目，而不是 Pattern 元素的子項目。這些支援元素是由 Pattern 參考，但是包含在 Rule 中。這表示支援元素 (例如規則運算式或關鍵字清單) 的單一定義可以由多個實體和模式參考。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p112">The supporting IdMatch and Match elements reference regexes and keywords that are actually children of the Rule element, not the Pattern. These supporting elements are referenced by the Pattern but included in the Rule. This means that a single definition of a supporting element, like a regular expression or a keyword list, can be referenced by multiple entities and patterns.</span></span>
+    
+## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a><span data-ttu-id="ec74a-p113">您需要識別什麼實體？[Entity 元素、id 屬性]</span><span class="sxs-lookup"><span data-stu-id="ec74a-p113">What entity do you need to identify? [Entity element, id attribute]</span></span>
+
+<span data-ttu-id="ec74a-p114">實體是機密資訊類型 (例如信用卡號碼)，具有定義良好的模式。每個實體都有唯一的 GUID 作為其識別碼。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p114">An entity is a sensitive information type, such as a credit card number, that has a well-defined pattern. Each entity has a unique GUID as its ID.</span></span>
+  
+### <a name="name-the-entity-and-generate-its-guid"></a><span data-ttu-id="ec74a-149">為實體命名並產生其 GUID</span><span class="sxs-lookup"><span data-stu-id="ec74a-149">Name the entity and generate its GUID</span></span>
+
+<span data-ttu-id="ec74a-p115">新增 Rules 和 Entity 元素。然後新增註解，其中包含自訂實體的名稱 (在此範例中是員工識別碼)。稍後您會將實體名稱新增至當地語系化字串區段，該名稱就是當您建立 DLP 原則時出現在 UI 中的名稱。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p115">Add the Rules and Entity elements. Then add a comment that contains the name of your custom entity - in this example, Employee ID. Later, you'll add the entity name to the localized strings section, and that name is what appears in the UI when you create a DLP policy.</span></span>
+  
+<span data-ttu-id="ec74a-p116">接下來，為實體產生 GUID。有多種方法可以產生 GUID，但是您可以藉由在 PowerShell 中輸入 [guid]::NewGuid()，輕易地完成。稍後您也會將實體 GUID 新增至當地語系化字串區段。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p116">Next, generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing [guid]::NewGuid(). Later, you'll also add the entity GUID to the localized strings section.</span></span>
+  
+![XML 標記，顯示 Rules 和 Entity 元素](media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+  
+## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a><span data-ttu-id="ec74a-p117">您要比對什麼模式？[Pattern 元素、IdMatch 元素、Regex 元素]</span><span class="sxs-lookup"><span data-stu-id="ec74a-p117">What pattern do you want to match? [Pattern element, IdMatch element, Regex element]</span></span>
+
+<span data-ttu-id="ec74a-p118">模式包含機密資訊類型所尋找項目的清單。這些項目包含 regexes、關鍵字及內建函式 (執行像是執行 regexes 以尋找日期或地址的工作)。機密資訊類型可以有多個具有唯一信賴的模式。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p118">The pattern contains the list of what the sensitive information type is looking for. This can include regexes, keywords, and built-in functions (which perform tasks like running regexes to find dates or addresses). Sensitive information types can have multiple patterns with unique confidences.</span></span>
+  
+<span data-ttu-id="ec74a-p119">以下模式的共通點是都參考相同的規則運算式，該運算式會尋找 由空格 (\s) … (\s) 圍繞的 9 位數數字 (\d{9})。此規則運算式是由 IdMatch 元素參考，是所有模式 (尋找員工識別碼實體) 的通用需求。IdMatch 是模式嘗試比對的識別碼，例如員工識別碼或信用卡號碼或社會安全號碼。Pattern 元素必須確實只有一個 IdMatch 元素。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p119">What all of the below patterns have in common is that they all reference the same regular expression, which looks for a nine-digit number (\d{9}) surrounded by white space (\s) … (\s). This regular expression is referenced by the IdMatch element and is the common requirement for all patterns that look for the Employee ID entity. IdMatch is the identifier that the pattern is to trying to match, such as Employee ID or credit card number or social security number. A Pattern element must have exactly one IdMatch element.</span></span>
+  
+![XML 標記，顯示會參考單一 Regex 元素的多個 Pattern 元素](media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+  
+<span data-ttu-id="ec74a-p120">滿足條件時，模式會傳回計數和信賴等級，您可以在 DLP 原則的條件中使用。當您將會偵測機密資訊類型的條件新增至 DLP 原則時，可以編輯計數和信賴等級，如下所示。信賴等級 (也稱為比對正確性) 會在本主題稍後說明。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p120">When satisfied, a pattern returns a count and confidence level, which you can use in the conditions in your DLP policy. When you add a condition for detecting a sensitive information type to a DLP policy, you can edit the count and confidence level as shown here. Confidence level (also called match accuracy) is explained later in this topic.</span></span>
+  
+![執行個體計數和比對正確性選項](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+  
+<span data-ttu-id="ec74a-p121">當您建立規則運算式時，請記住，要注意潛在問題。例如，如果您撰寫及上傳會識別太多內容的 regex，則會影響到效能。若要深入了解這些潛在問題，請參閱稍後的[要注意的潛在驗證問題](#potential-validation-issues-to-be-aware-of)一節。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p121">When you create your regular expression, keep in mind that there are potential issues to be aware of. For example, if you write and upload a regex that identifies too much content, this can impact performance. To learn more about these potential issues, see the later section [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of).</span></span>
+  
+## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a><span data-ttu-id="ec74a-p122">是否想要要求其他辨識項？[Match 元素、minCount 屬性]</span><span class="sxs-lookup"><span data-stu-id="ec74a-p122">Do you want to require additional evidence? [Match element, minCount attribute]</span></span>
+
+<span data-ttu-id="ec74a-177">除了 IdMatch 之外，模式可以使用 Match 元素來要求其他支援辨識項，例如關鍵字、regex，日期或地址。</span><span class="sxs-lookup"><span data-stu-id="ec74a-177">In addition to the IdMatch, a pattern can use the Match element to require additional supporting evidence, such as a keyword, regex, date, or address.</span></span>
+  
+<span data-ttu-id="ec74a-p123">模式可以包含多個 Match 元素；它們可以直接包含在 Pattern 元素中，或是使用 Any 元素來合併。Match 是由隱含的 AND 運算子來加入；所有 Match 元素必須滿足要比對的模式。您可以使用 Any 元素來引入 AND 或 OR 運算子 (稍後章節會詳加說明)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p123">A Pattern can include multiple Match elements; they can be included directly in the Pattern element or combined by using the Any element. Match elements are joined by an implicit AND operator; all Match elements must be satisfied for the pattern to be matched. You can use the Any element to introduce AND or OR operators (more on that in a later section).</span></span>
+  
+<span data-ttu-id="ec74a-p124">您可以使用選擇性的 minCount 屬性，來指定針對每個 Match 元素必須找到多少個相符項目的執行個體。例如，您可以指定只有在找到關鍵字清單中的至少兩個關鍵字時，模式才會獲得滿足。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p124">You can use the optional minCount attribute to specify how many instances of a match need to be found for each of the Match elements. For example, you can specify that a pattern is satisfied only when at least two keywords from a keyword list are found.</span></span>
+  
+![XML 標記，顯示具有 minOccurs 屬性的 Match 元素](media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+  
+### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a><span data-ttu-id="ec74a-184">關鍵字 [Keyword、Group 及 Term 元素、matchStyle 和 caseSensitive 屬性]</span><span class="sxs-lookup"><span data-stu-id="ec74a-184">Keywords [Keyword, Group, and Term elements, matchStyle and caseSensitive attributes]</span></span>
+
+<span data-ttu-id="ec74a-p125">當您識別機密資訊 (例如員工識別碼) 時，通常想要要求關鍵字作為確切辨識項。例如，除了比對 9 位數數字之外，您可能想要尋找例如 "card"、"badge" 或 "ID" 的字詞。若要完成這項操作，您會使用 Keyword 元素。Keyword 元素具有 id 屬性，可以由多個模式或實體中的多個 Match 元素參考。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p125">When you identify sensitive information, like an employee ID, you often want to require keywords as corroborative evidence. For example, in addition to matching a nine-digit number, you may want to look for words like "card", "badge", or "ID". To do this, you use the Keyword element. The Keyword element has an id attribute that can be referenced by multiple Match elements in multiple patterns or entities.</span></span>
+  
+<span data-ttu-id="ec74a-p126">系統包含關鍵字作為 Group 元素中 Term 元素的清單。Group 元素具有 matchStyle 屬性，有兩個可能值：</span><span class="sxs-lookup"><span data-stu-id="ec74a-p126">Keywords are included as a list of Term elements in a Group element. The Group element has a matchStyle attribute with two possible values:</span></span>
+  
+- <span data-ttu-id="ec74a-p127">**matchStyle="word"** 字詞比對會識別空格或其他分隔符號圍繞的完整字詞。您應該永遠使用字詞，除非需要比對部分字詞或比對亞洲語言的字詞。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p127">**matchStyle="word"** Word match identifies whole words surrounded by white space or other delimiters. You should always use word unless you need to match parts of words or match words in Asian languages.</span></span> 
+    
+- <span data-ttu-id="ec74a-p128">**matchStyle="string"** 字串比對會識別字串，無論有任何符號圍繞。例如，"id" 會比對 "bid" 和 "idea"。只有在您需要比對亞洲字詞，或者如果您的關鍵字可能包含作為其他字串的一部分時，才使用字串。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p128">**matchStyle="string"** String match identifies strings no matter what they're surrounded by. For example, "id" will match "bid" and "idea". Use string only when you need to match Asian words or if your keyword may be included as part of other strings.</span></span> 
+    
+<span data-ttu-id="ec74a-196">最後，您可以使用 Term 元素的 caseSensitive 屬性，指定內容必須完全符合關鍵字，包括小寫和大寫字母。</span><span class="sxs-lookup"><span data-stu-id="ec74a-196">Finally, you can use the caseSensitive attribute of the Term element to specify that the content must match the keyword exactly, including lower- and upper-case letters.</span></span>
+  
+![XML 標記，顯示參考關鍵字的 Match 元素](media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+  
+### <a name="regular-expressions-regex-element"></a><span data-ttu-id="ec74a-198">規則運算式 [Regex 元素]</span><span class="sxs-lookup"><span data-stu-id="ec74a-198">Regular expressions [Regex element]</span></span>
+
+<span data-ttu-id="ec74a-p129">在此範例中，員工識別碼實體已經使用 IdMatch 元素來參考 regex 的模式 - 空格圍繞的 9 位數數字。此外，模式可以使用 Match 元素來參考額外的 Regex 元素，以識別確切識別碼，例如 5 位數或 9 位數數字格式的美國郵遞區號。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p129">In this example, the employee ID entity already uses the IdMatch element to reference a regex for the pattern - a nine-digit number surrounded by whitespace. In addition, a pattern can use a Match element to reference an additional Regex element to identify corroborative evidence, such as a five- or nine-digit number in the format of a US zip code.</span></span>
+  
+### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a><span data-ttu-id="ec74a-201">其他模式，例如日期或地址 [內建函式]</span><span class="sxs-lookup"><span data-stu-id="ec74a-201">Additional patterns such as dates or addresses [built-in functions]</span></span>
+
+<span data-ttu-id="ec74a-p130">除了內建機密資訊類型之外，DLP 也包含內建函式，可以識別確切識別碼，例如美國日期、歐洲日期、到期日或美國地址。DLP 不支援上傳您自己的自訂函式，但是當您建立自訂機密資訊類型時，您的實體可以參考內建函式。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p130">In addition to the built-in sensitive information types, DLP also includes built-in functions that can identify corroborative evidence such as a US date, EU date, expiration date, or US address. DLP does not support uploading your own custom functions, but when you create a custom sensitive information type, your entity can reference the built-in functions.</span></span>
+  
+<span data-ttu-id="ec74a-204">例如，員工識別碼識別證上面有雇用日期，因此這個自訂實體可以使用內建函式 `Func_us_date` 來識別以美國通用格式表示的日期。</span><span class="sxs-lookup"><span data-stu-id="ec74a-204">For example, an employee ID badge has a hire date on it, so this custom entity can use the built-in function  `Func_us_date` to identify a date in the format commonly used in the US.</span></span> 
+  
+<span data-ttu-id="ec74a-205">如需詳細資訊，請參閱 [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-205">For more information, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).</span></span>
+  
+![XML 標記，顯示參考內建函式的 Match 元素](media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+  
+## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a><span data-ttu-id="ec74a-207">不同的辨識項組合 [Any 元素、minMatches 和 maxMatches 屬性]</span><span class="sxs-lookup"><span data-stu-id="ec74a-207">Different combinations of evidence [Any element, minMatches and maxMatches attributes]</span></span>
+
+<span data-ttu-id="ec74a-p131">在 Pattern 元素中，所有 IdMatch 和 Match 元素是由隱含的 AND 運算子聯結 - 在滿足模式之前，必須滿足所有相符項目。但是，您可以藉由使用 Any 元素將 Match 元素群組在一起，建立更具彈性的比對邏輯。例如，您可以使用 Any 元素讓其子 Match 元素的子集完全相符、完全不相符或準確相符。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p131">In a Pattern element, all IdMatch and Match elements are joined by an implicit AND operator - all of the matches must be satisfied before the pattern can be satisfied. However, you can create more flexible matching logic by using the Any element to group Match elements. For example, you can use the Any element to match all, none, or an exact subset of its children Match elements.</span></span>
+  
+<span data-ttu-id="ec74a-p132">Any 元素具有選擇性的 minMatches 和 maxMatches 屬性，您可以用來定義在模式相符之前，必須滿足多少子 Match 元素。請注意，這些屬性會定義必須滿足的 Match 元素數目，而不是針對相符項目找到的辨識項執行個體數目。若要定義特定相符項目執行個體數目的下限 (例如清單中的關鍵字)，請針對 Match 元素使用 minCount 屬性 (如上所述)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p132">The Any element has optional minMatches and maxMatches attributes that you can use to define how many of the children Match elements must be satisfied before the pattern is matched. Note that these attributes define the number of Match elements that must be satisfied, not the number of instances of evidence found for the matches. To define a minimum number of instances for a specific match, such as two keywords from a list, use the minCount attribute for a Match element (see above).</span></span>
+  
+### <a name="match-at-least-one-child-match-element"></a><span data-ttu-id="ec74a-214">與至少一個子 Match 元素相符</span><span class="sxs-lookup"><span data-stu-id="ec74a-214">Match at least one child Match element</span></span>
+
+<span data-ttu-id="ec74a-p133">如果您想要要求只需符合 Match 元素數目的下限，可以使用 minMatches 屬性，事實上，這些 Match 元素是由隱含的 OR 運算子聯結。如果找到美國格式日期或清單中的關鍵字時，這個 Any 元素會獲得滿足。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p133">If you want to require that only a minimum number of Match elements must be met, you can use the minMatches attribute. In effect, these Match elements are joined by an implicit OR operator. This Any element is satisfied if a US-formatted date or a keyword from either list is found.</span></span>
+  
+![XML 標記，顯示具有 minMatches 屬性的 Any 元素](media/385db1b1-571b-4a05-81b3-db28f5099c17.png)
+  
+### <a name="match-an-exact-subset-of-any-children-match-elements"></a><span data-ttu-id="ec74a-219">比對任一子 Match 元素的精確子集</span><span class="sxs-lookup"><span data-stu-id="ec74a-219">Matching an exact subset of any children Match elements</span></span>
+
+<span data-ttu-id="ec74a-p134">如果您想要要求必須符合 Match 元素的準確數目，可以將 minMatches 和 maxMatches 設為相同值。只有在確實找到一個日期或關鍵字時，這個 Any 元素才會獲得滿足，超過的話，模式就不會相符。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p134">If you want to require that an exact number of Match elements must be met, you can set minMatches and maxMatches to the same value. This Any element is satisfied only if exactly one date or keyword is found - any more than that, and the pattern won't be matched.</span></span>
+  
+![XML 標記，顯示具有 minMatches 和 maxMatches 屬性的 Any 元素](media/97b10002-7781-42e8-ac5a-20ad8c5a887e.png)
+  
+### <a name="match-none-of-children-match-elements"></a><span data-ttu-id="ec74a-223">與子 Match 元素完全不相符</span><span class="sxs-lookup"><span data-stu-id="ec74a-223">Match none of children Match elements</span></span>
+
+<span data-ttu-id="ec74a-p135">如果您想要要求排除特定辨識項以讓模式獲得滿足，可以將 minMatches 和 maxMatches 都設為 0。如果您有很可能會誤判的關鍵字清單或辨識項時，這個方法很有用。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p135">If you want to require the absence of specific evidence for a pattern to be satisfied, you can set both minMatches and maxMatches to 0. This can be useful if you have a keyword list or other evidence that are likely to indicate a false positive.</span></span>
+  
+<span data-ttu-id="ec74a-p136">例如，員工識別碼實體會尋找關鍵字 "card"，因為它可能代表 "ID card"。但是，如果卡片只出現在片語 "credit card" 中，則該內容中的 "card" 不太可能是指 "ID card"。因此您可以將 "credit card" 作為關鍵字新增至術語清單，此清單是用來排除以免滿足模式。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p136">For example, the employee ID entity looks for the keyword "card" because it might refer to an "ID card". However, if card appears only in the phrase "credit card", "card" in this content is unlikely to mean "ID card". So you can add "credit card" as a keyword to a list of terms that you want to exclude from satisfying the pattern.</span></span>
+  
+![XML 標記，顯示 maxMatches 屬性值為零](media/f81d44e5-3db8-48a8-8919-f483a386afdf.png)
+  
+## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a><span data-ttu-id="ec74a-p137">其他辨識項必須多接近實體？[patternsProximity 屬性]</span><span class="sxs-lookup"><span data-stu-id="ec74a-p137">How close to the entity must the other evidence be? [patternsProximity attribute]</span></span>
+
+<span data-ttu-id="ec74a-p138">您的機密資訊類型正在尋找代表員工識別碼的模式，該模式的一部分正在尋找像是關鍵字 (例如 "ID") 的確切辨識項。此辨識項越接近，模式就更有可能是真正的員工識別碼。您可以使用 Entity 元素的必要 patternsProximity 屬性，決定模式中的其他辨識項必須與實體有多接近。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p138">Your sensitive information type is looking for a pattern that represents an employee ID, and as part of that pattern it's also looking for corroborative evidence like a keyword such as "ID". It makes sense that the closer together this evidence is, the more likely the pattern is to be an actual employee ID. You can determine how close other evidence in the pattern must be to the entity by using the required patternsProximity attribute of the Entity element.</span></span>
+  
+![XML 標記，顯示 patternsProximity 屬性](media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+  
+<span data-ttu-id="ec74a-p139">對實體中的每個模式來說，patternsProximity 屬性值可以定義所有其他針對該模式所指定的 Match 與 IdMatch 位置相隔的距離 (以 Unicode 字元形式)。近似值視窗會由 IdMatch 的位置來定位，且視窗會延展到 IdMatch 的左右兩側。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p139">Entity holds optional patternsProximity attribute value (integer, default = 300) used to find the Patterns.For each pattern the attribute value defines the distance (in Unicode characters) from the IdMatch location for all other Matches specified for that Pattern.The proximity window is anchored by the IdMatch location, with the window extending to the left and right of the IdMatch.</span></span>
+  
+![近似值視窗的圖表](media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+  
+<span data-ttu-id="ec74a-p140">以下範例說明近似值視窗會如何影響模式比對，其中員工識別碼自訂實體的 IdMatch 元素需要至少一個確切相符的關鍵字或日期。只有 ID1 相符，因為對於 ID2 和 ID3，在近似值視窗中只找到部分確切辨識項，或完全找不到。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p140">The example below illustrates how the proximity window affects the pattern matching where IdMatch element for the employee ID custom entity requires at least one corroborating match of keyword or date. Only ID1 matches because for ID2 and ID3, either no or only partial corroborating evidence is found within the proximity window.</span></span>
+  
+![確切辨識項和近似值視窗的圖表](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+  
+<span data-ttu-id="ec74a-p141">請注意，對於電子郵件，系統會將郵件內文和每個附件視為個別項目。這表示近似值視窗不會延伸超過每個項目結尾。對於每個項目 (附件或內文)，idMatch 和確切辨識項都必須位於該項目內。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p141">Note that for email, the message body and each attachment are treated as separate items. This means that the proximity window does not extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside in that item.</span></span>
+  
+## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a><span data-ttu-id="ec74a-p142">不同模式的正確信賴等級為何？[confidenceLevel 屬性、recommendedConfidence 屬性]</span><span class="sxs-lookup"><span data-stu-id="ec74a-p142">What are the right confidence levels for different patterns? [confidenceLevel attribute, recommendedConfidence attribute]</span></span>
+
+<span data-ttu-id="ec74a-p143">模式需要的辨識項越多，您就可以對於在模式相符時識別出真正實體 (例如員工識別碼) 更具信心。例如，相較於只需要 9 位數識別碼，您對於需要 9 位數數字、雇用日期、接近近似性的關鍵字的模式會更具信心。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p143">The more evidence that a pattern requires, the more confidence you have that an actual entity (such as employee ID) has been identified when the pattern is matched. For example, you have more confidence in a pattern that requires a nine-digit ID number, hire date, and keyword in close proximity, than you do in a pattern that requires only a nine-digit ID number.</span></span>
+  
+<span data-ttu-id="ec74a-p144">Pattern 元素具有必要的 confidenceLevel 屬性。您可以將 confidenceLevel (介於 1 與 100 之間的整數) 的值視為實體中每個模式的唯一識別碼 - 實體中的模式必須具有與您所指派不同的信賴等級。準確的整數值無關緊要 - 只要挑選對於您的合規性小組有意義的數字即可。在您上傳自訂機密資訊類型然後建立 DLP 原則之後，可以在您建立的規則條件中參考這些信賴等級。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p144">The Pattern element has a required confidenceLevel attribute. You can think of the value of confidenceLevel (an integer between 1 and 100) as a unique ID for each pattern in an entity - the patterns in an entity must have different confidence levels that you assign. The precise value of the integer doesn't matter - simply pick numbers that make sense to your compliance team. After you upload your custom sensitive information type and then create a DLP policy, you can reference these confidence levels in the conditions of the rules that you create.</span></span>
+  
+![XML 標記，顯示具有不同 confidenceLevel 屬性值的 Pattern 元素](media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+  
+<span data-ttu-id="ec74a-p145">除了每個 Pattern 的 confidenceLevel 之外，Entity 具有 recommendedConfidence 屬性。可以將建議的 confidence 屬性視為規則的預設信賴等級。當您在 DLP 原則中建立規則時，如果您未指定要讓規則使用的信賴等級，該規則會根據實體的建議信賴等級進行比對。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p145">In addition to confidenceLevel for each Pattern, the Entity has a recommendedConfidence attribute. The recommended confidence attribute can be thought of as the default confidence level for the rule. When you create a rule in a DLP policy, if you don't specify a confidence level for the rule to use, that rule will match based on the recommended confidence level for the entity.</span></span>
+  
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-security-amp-compliance-center-localizedstrings-element"></a><span data-ttu-id="ec74a-p146">您是否要在安全性與合規性中心的 UI 中支援其他語言？[LocalizedStrings 元素]</span><span class="sxs-lookup"><span data-stu-id="ec74a-p146">Do you want to support other languages in the UI of the Security &amp; Compliance Center? [LocalizedStrings element]</span></span>
+
+<span data-ttu-id="ec74a-p147">如果您的合規性小組使用 Office 365 安全性與合規性中心，以不同的地區設定和語言建立 DLP 原則，您可以提供當地語系化版本的自訂機密資訊類型名稱和描述。當您的合規性小組以您支援的語言使用 Office 365 時，他們會在 UI 中看到當地語系化名稱。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p147">If your compliance team uses the Office 365 Security &amp; Compliance Center to create DLP policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Office 365 in a language that you support, they'll see the localized name in the UI.</span></span>
+  
+![執行個體計數和比對正確性選項](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+  
+<span data-ttu-id="ec74a-p148">Rules 元素必須包含 LocalizedStrings 元素，後者包含 Resource 元素，它會參考您的自訂實體的 GUID。接下來，每個 Resource 元素包含一或多個 Name 和 Description 元素，每個元素會使用 langcode 屬性來提供特定語言的當地語系化字串。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p148">The Rules element must contain a LocalizedStrings element, which contains a Resource element that references the GUID of your custom entity. In turn, each Resource element contains one or more Name and Description elements that each use the langcode attribute to provide a localized string for a specific language.</span></span>
+  
+![XML 標記，顯示 LocalizedStrings 元素的內容](media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+  
+<span data-ttu-id="ec74a-p149">請注意，您只有針對自訂機密資訊類型在安全性與合規性中心 UI 中的外觀，才使用當地語系化字串。您無法使用當地語系化字串來提供不同當地語系化版本的關鍵字清單或規則運算式。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p149">Note that you use localized strings only for how your custom sensitive information type appears in the UI of the Security &amp; Compliance Center. You can't use localized strings to provide different localized versions of a keyword list or regular expression.</span></span>
+  
+## <a name="other-rule-package-markup-rulepack-guid"></a><span data-ttu-id="ec74a-267">其他規則套件標記 [RulePack GUID]</span><span class="sxs-lookup"><span data-stu-id="ec74a-267">Other rule package markup [RulePack GUID]</span></span>
+
+<span data-ttu-id="ec74a-p150">最後，每個 RulePackage 的開頭都包含您必須填入的一些一般資訊。您可以使用下列標記作為範本，並且以您自己的資訊來取代 ". . ." 預留位置。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p150">Finally, the beginning of each RulePackage contains some general information that you need to fill in. You can use the following markup as a template and replace the ". . ." placeholders with your own info.</span></span>
+  
+<span data-ttu-id="ec74a-p151">最重要的是，您必須為 RulePack 產生 GUID。前面您已經為實體產生 GUID；這是適用於 RulePack 的第二個 GUID。有數種方式可以產生 GUID，但是您可以藉由在 PowerShell 中輸入 [guid]::NewGuid()，輕易地完成。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p151">Most importantly, you'll need to generate a GUID for the RulePack. Above, you generated a GUID for the entity; this is a second GUID for the RulePack. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing [guid]::NewGuid().</span></span>
+  
+<span data-ttu-id="ec74a-p152">Version 元素也很重要。當您第一次上傳規則套件時，Office 365 會記下版本號碼。稍後如果您更新規則套件並且上傳新版本，請務必更新版本號碼，否則 Office 365 不會部署規則套件。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p152">The Version element is also important. When you upload your rule package for the first time, Office 365 notes the version number. Later, if you update the rule package and upload a new version, make sure to update the version number or Office 365 won't deploy the rule package.</span></span>
+  
+```
+<?xml version="1.0" encoding="utf-16"?>
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+  <RulePack id=". . .">
+    <Version major="1" minor="0" build="0" revision="0" />
+    <Publisher id=". . ." /> 
+    <Details defaultLangCode=". . .">
+      <LocalizedDetails langcode=" . . . ">
+         <PublisherName>. . .</PublisherName>
+         <Name>. . .</Name>
+         <Description>. . .</Description>
+      </LocalizedDetails>
+    </Details>
+  </RulePack>
+  
+ <Rules>
+    . . .
+ </Rules>
+</RulePackage>
+
+```
+
+<span data-ttu-id="ec74a-279">完成後，您的 RulePack 元素看起來應該像這樣。</span><span class="sxs-lookup"><span data-stu-id="ec74a-279">When complete, your RulePack element should look like this.</span></span>
+  
+![XML 標記，顯示 RulePack 元素](media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+  
+## <a name="changes-for-exchange-online"></a><span data-ttu-id="ec74a-281">針對 Exchange Online 變更</span><span class="sxs-lookup"><span data-stu-id="ec74a-281">Auditing for Exchange Online</span></span>
+
+<span data-ttu-id="ec74a-p153">以前，您可能已使用 Exchange Online PowerShell，針對 DLP 匯入您的自訂機密資訊類型。現在您的自訂機密資訊類型可以在 Exchange 系統管理中心及安全性與合規性中心中使用。作為此改進的一部分，您應該使用安全性與合規性中心 PowerShell 來匯入您的自訂機密資訊類型 - 您無法再從 Exchange PowerShell 匯入。您的自訂機密資訊類型會繼續如同以往一般運作；但是，在安全性與合規性中心中對於自訂機密資訊類型所做的變更，可能需要最多一個小時才會在 Exchange 系統管理中心中顯示。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p153">Previously, you might have used Exchange Online PowerShell to import your custom sensitive information types for DLP. Now your custom sensitive information types can be used in both the Exchange Admin Center and the Security &amp; Compliance Center. As part of this improvement, you should use Security &amp; Compliance Center PowerShell to import your custom sensitive information types - you can't import them from the Exchange PowerShell anymore. Your custom sensitive information types will continue to work just like before; however, it may take up to one hour for changes made to custom sensitive information types in the Security &amp; Compliance Center to appear in the Exchange Admin Center.</span></span>
+  
+<span data-ttu-id="ec74a-p154">請注意，在安全性與合規性中心中，您使用 `DlpSensitiveInformationTypeRulePackage` Cmdlet 來上傳規則套件。以前，在 Exchange 系統管理中心中，您使用 `ClassificationRuleCollection` Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p154">Note that in the Security &amp; Compliance Center, you use the  `DlpSensitiveInformationTypeRulePackage` cmdlet to upload a rule package. Previously, in the Exchange Admin Center, you used the  `ClassificationRuleCollection` cmdlet.</span></span> 
+  
+## <a name="upload-your-rule-package"></a><span data-ttu-id="ec74a-288">上傳您的規則套件</span><span class="sxs-lookup"><span data-stu-id="ec74a-288">Upload your rule package</span></span>
+
+<span data-ttu-id="ec74a-289">若要上傳您的規則套件，請執行下列步驟。</span><span class="sxs-lookup"><span data-stu-id="ec74a-289">To upload your rule package, do the following.</span></span>
+  
+1. <span data-ttu-id="ec74a-290">使用 Unicode 編碼方式將它儲存為 .xml 檔。</span><span class="sxs-lookup"><span data-stu-id="ec74a-290">Save it as an .xml file with Unicode encoding.</span></span>
+    
+2. <span data-ttu-id="ec74a-291">[使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)</span><span class="sxs-lookup"><span data-stu-id="ec74a-291">For connection instructions for Security  Compliance Center PowerShell, click [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).</span></span>
+    
+3. <span data-ttu-id="ec74a-292">在安全性與合規性中心 PowerShell 中，輸入 New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-292">In the Security &amp; Compliance Center PowerShell, type New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte).</span></span>
+    
+    <span data-ttu-id="ec74a-p155">請確定您使用規則套件儲存所在的確切檔案路徑。C:\custompath\ 是預留位置。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p155">Make sure that you use the file location where your rule pack is actually stored. C:\custompath\ is a placeholder.</span></span>
+    
+4. <span data-ttu-id="ec74a-295">若要確認，輸入 Y，並按下 ENTER 鍵。</span><span class="sxs-lookup"><span data-stu-id="ec74a-295">To confirm that you want to remove the GAL, type Y, and then press ENTER.</span></span>
+    
+5. <span data-ttu-id="ec74a-p156">藉由輸入 Get-DlpSensitiveInformationType 以查看所有機密類型的清單，確認您的新機密資訊類型已上傳。您可以藉由查看 [發行者] 資料行，快速地分隔自訂機密資訊類型與內建的類型。您可以藉由執行 Get-DlpSensitiveInformationType -Identity "name of sensitive information type"，將清單篩選為特定機密資訊類型。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p156">Verify that your new sensitive information type was uploaded by typing Get-DlpSensitiveInformationType to see a list of all sensitive types. You can quickly separate custom sensitive information types from those which come built in by looking at the Publisher column. You can filter the list to a specific sensitive information type by running Get-DlpSensitiveInformationType -Identity "name of sensitive information type".</span></span>
+    
+## <a name="potential-validation-issues-to-be-aware-of"></a><span data-ttu-id="ec74a-299">要注意的潛在驗證問題</span><span class="sxs-lookup"><span data-stu-id="ec74a-299">Potential validation issues to be aware of</span></span>
+
+<span data-ttu-id="ec74a-p157">當您上傳規則套件 XML 檔案時，系統會驗證 XML 並且檢查已知錯誤模式和明顯的效能問題。以下是驗證會針對規則運算式檢查的一些已知問題：</span><span class="sxs-lookup"><span data-stu-id="ec74a-p157">When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are some known issues that the validation checks for — a regular expression:</span></span>
+  
+- <span data-ttu-id="ec74a-302">不得以垂直線 "|" 開頭或結尾，它會比對所有項目，因為系統會將它視為空白比對。</span><span class="sxs-lookup"><span data-stu-id="ec74a-302">Cannot begin or end with alternator "|", which matches everything because it's considered an empty match.</span></span>
+    
+    <span data-ttu-id="ec74a-303">例如，"|a" 或 "b|" 不會通過驗證。</span><span class="sxs-lookup"><span data-stu-id="ec74a-303">For example, "|a" or "b|" will not pass validation.</span></span>
+    
+- <span data-ttu-id="ec74a-304">不得以 ".{0,m}" 模式開頭或結尾，它沒有功能目的，只會妨礙效能。</span><span class="sxs-lookup"><span data-stu-id="ec74a-304">Cannot begin or end with a ".{0,m}" pattern, which has no functional purpose and only impairs performance.</span></span>
+    
+    <span data-ttu-id="ec74a-305">例如，".{0,50}ASDF" 或 "ASDF.{0,50}" 不會通過驗證。</span><span class="sxs-lookup"><span data-stu-id="ec74a-305">For example, ".{0,50}ASDF" or "ASDF.{0,50}" will not pass validation.</span></span>
+    
+- <span data-ttu-id="ec74a-306">在群組中不能有 ".{0,m}" 或 ".{1,m}"，以及在群組中不能有 ".\*" 或 ".+"。</span><span class="sxs-lookup"><span data-stu-id="ec74a-306">Cannot have ".{0,m}" or ".{1,m}" in groups, and cannot have ".\*" or ".+" in groups.</span></span>
+    
+    <span data-ttu-id="ec74a-307">例如，"(.{0,50000})" 不會通過驗證。</span><span class="sxs-lookup"><span data-stu-id="ec74a-307">For example, "(.{0,50000})" will not pass validation.</span></span>
+    
+- <span data-ttu-id="ec74a-308">在群組中不能有具有 "{0,m}" 或 "{1,m}" 中繼器的任何字元。</span><span class="sxs-lookup"><span data-stu-id="ec74a-308">Cannot have any character with "{0,m}" or "{1,m}" repeaters in groups.</span></span>
+    
+    <span data-ttu-id="ec74a-309">例如，"(a\*)" 不會通過驗證。</span><span class="sxs-lookup"><span data-stu-id="ec74a-309">For example, "(a\*)" will not pass validation.</span></span>
+    
+- <span data-ttu-id="ec74a-310">不得以 ".{1,m}" 開頭或結尾；請改用 "."</span><span class="sxs-lookup"><span data-stu-id="ec74a-310">Cannot begin or end with ".{1,m}"; instead, use just "."</span></span>
+    
+    <span data-ttu-id="ec74a-311">例如，".{1,m}asdf" 不會通過驗證。請改用 ".asdf"。</span><span class="sxs-lookup"><span data-stu-id="ec74a-311">For example, ".{1,m}asdf" will not pass validation; instead, use just ".asdf".</span></span>
+    
+- <span data-ttu-id="ec74a-312">群組中不能有無限制的中繼器 (例如 "\*" 或 "+")。</span><span class="sxs-lookup"><span data-stu-id="ec74a-312">Cannot have an unbounded repeater (such as "\*" or "+") on a group.</span></span>
+    
+    <span data-ttu-id="ec74a-313">例如，"(xx)\*" 和 "(xx)+" 不會通過驗證。</span><span class="sxs-lookup"><span data-stu-id="ec74a-313">For example, "(xx)\*" and "(xx)+" will not pass validation.</span></span>
+    
+<span data-ttu-id="ec74a-314">如果自訂機密資訊類型包含可能會影響效能的問題，則無法上傳，您可能會看到下列其中一個錯誤訊息：</span><span class="sxs-lookup"><span data-stu-id="ec74a-314">If a custom sensitive information type contains an issue that may affect performance, it won't be uploaded and you may see one of these error messages:</span></span>
+  
+- <span data-ttu-id="ec74a-315">**比預期符合更多內容的一般數量詞 (例如 '+'、'\*')**</span><span class="sxs-lookup"><span data-stu-id="ec74a-315">**Generic quantifiers which match more content than expected (e.g., '+', '\*')**</span></span>
+    
+- <span data-ttu-id="ec74a-316">**查詢斷定**</span><span class="sxs-lookup"><span data-stu-id="ec74a-316">**Lookaround assertions**</span></span>
+    
+- <span data-ttu-id="ec74a-317">**與一般數量詞搭配使用的複雜群組**</span><span class="sxs-lookup"><span data-stu-id="ec74a-317">**Complex grouping in conjunction with general quantifiers**</span></span>
+    
+## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a><span data-ttu-id="ec74a-318">重新編目內容以識別機密資訊</span><span class="sxs-lookup"><span data-stu-id="ec74a-318">Recrawl your content to identify the sensitive information. See Manually request crawling and re-indexing of a site.</span></span>
+
+<span data-ttu-id="ec74a-p158">DLP 會使用搜尋編目程式來識別及分類網站內容中的機密資訊。SharePoint Online 和商務用 OneDrive 中的內容會在每次更新時自動重新編目。但是若要識別所有現有內容中，您的新自訂類型機密資訊，該內容必須重新編目。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p158">DLP uses the search crawler to identify and classify sensitive information in site content. Content in SharePoint Online and OneDrive for Business sites is recrawled automatically whenever it's updated. But to identify your new custom type of sensitive information in all existing content, that content must be recrawled.</span></span>
+  
+<span data-ttu-id="ec74a-322">在 Office 365 中，您無法手動要求對整個租用戶重新編目，但是您可以為網站集合、清單或文件庫這麼做，請參閱[手動要求網站、文件庫或清單的編目和重新編製索引](https://support.office.com/article/9afa977d-39de-4321-b4ca-8c7c7e6d264e) (機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-322">In Office 365, you can't manually request a recrawl of an entire tenant, but you can do this for a site collection, list, or library - see [Manually request crawling and re-indexing of a site, a library or a list](https://support.office.com/article/9afa977d-39de-4321-b4ca-8c7c7e6d264e).</span></span>
+  
+## <a name="remove-a-custom-sensitive-information-type"></a><span data-ttu-id="ec74a-323">移除自訂機密資訊類型</span><span class="sxs-lookup"><span data-stu-id="ec74a-323">Create a custom sensitive information type</span></span>
+
+1. <span data-ttu-id="ec74a-324">[使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)</span><span class="sxs-lookup"><span data-stu-id="ec74a-324">For connection instructions for Security  Compliance Center PowerShell, click [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).</span></span>
+    
+2. <span data-ttu-id="ec74a-325">在安全性與合規性中心 PowerShell 中，執行下列其中一個動作：</span><span class="sxs-lookup"><span data-stu-id="ec74a-325">In the Security &amp; Compliance Center PowerShell, do one of the following:</span></span>
+    
+  - <span data-ttu-id="ec74a-326">若要移除整個規則套件及其包含的所有實體</span><span class="sxs-lookup"><span data-stu-id="ec74a-326">To remove an entire rule package and all of the entities that it contains</span></span>
+    
+    <span data-ttu-id="ec74a-327">輸入 Remove-DlpSensitiveInformationTypeRulePackage "NameOfYourRulePack" - 針對上述範例 XML，您要輸入 Remove-DlpSensitiveInformationTypeRulePackage "Employee ID Custom Rule Pack"。</span><span class="sxs-lookup"><span data-stu-id="ec74a-327">Type Remove-DlpSensitiveInformationTypeRulePackage "NameOfYourRulePack" - for the example XML above, you would type Remove-DlpSensitiveInformationTypeRulePackage "Employee ID Custom Rule Pack".</span></span>
+    
+    <span data-ttu-id="ec74a-328">請注意，若要識別您的規則套件，可以在 \<Rule Pack\> 元素或 RulePack 元素之 id 屬性的 GUID 中，使用 \<Name\> 元素 (適用於任何語言)。</span><span class="sxs-lookup"><span data-stu-id="ec74a-328">Note that to identify your rule package, you can use the \<Name\> element (for any language) in the \<Rule Pack\> element or the GUID of the id attribute of the RulePack element.</span></span>
+    
+  - <span data-ttu-id="ec74a-329">若要從規則套件中移除單一實體</span><span class="sxs-lookup"><span data-stu-id="ec74a-329">To remove a single entity from a rule package</span></span>
+    
+    <span data-ttu-id="ec74a-p159">您必須使用 Set-DlpSensitiveInformationTypeRulePackage，在該特定實體已移除的請況下，上傳新版本的規則套件。您必須在移除之前，確定沒有 DLP 原則或 Exchange 傳輸規則仍在參考機密資訊類型。</span><span class="sxs-lookup"><span data-stu-id="ec74a-p159">You must upload a new version of your rulepack with that specific entity removed using Set-DlpSensitiveInformationTypeRulePackage. You'll need to make sure that no DLP policies or Exchange transport rules still reference the sensitive information type before removing it.</span></span>
+    
+3. <span data-ttu-id="ec74a-332">若要確認，輸入 Y，並按下 ENTER 鍵。</span><span class="sxs-lookup"><span data-stu-id="ec74a-332">To confirm that you want to remove the GAL, type Y, and then press ENTER.</span></span>
+    
+4. <span data-ttu-id="ec74a-333">藉由輸入 Get- DlpSensitiveInformationType 來確認您的新規則已移除，應該不會再顯示您的機密資訊類型的名稱。</span><span class="sxs-lookup"><span data-stu-id="ec74a-333">Verify that your new rule was removed by typing Get- DlpSensitiveInformationType, which should no longer display the name of your sensitive information type.</span></span>
+    
+## <a name="reference-rule-package-xml-schema-definition"></a><span data-ttu-id="ec74a-334">參考：規則套件 XML 結構描述定義</span><span class="sxs-lookup"><span data-stu-id="ec74a-334">Reference: Rule package XML schema definition</span></span>
+
+<span data-ttu-id="ec74a-335">您可以複製此標記、將它儲存為 XSD 檔，然後用它來驗證規則套件 XML 檔。</span><span class="sxs-lookup"><span data-stu-id="ec74a-335">You can copy this markup, save it as an XSD file, and use it to validate your rule package XML file.</span></span>
+  
+```
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
+           targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           id="RulePackageSchema">
+  <!-- Use include if this schema has the same target namespace as the schema being referenced, otherwise use import -->
+  <xs:element name="RulePackage" type="mce:RulePackageType"/>
+  <xs:simpleType name="LangType">
+    <xs:union memberTypes="xs:language">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value=""/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  <xs:simpleType name="GuidType" final="#all">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="RulePackageType">
+    <xs:sequence>
+      <xs:element name="RulePack" type="mce:RulePackType"/>
+      <xs:element name="Rules" type="mce:RulesType">
+        <xs:key name="UniqueRuleId">
+          <xs:selector xpath="mce:Entity|mce:Affinity|mce:Version/mce:Entity|mce:Version/mce:Affinity"/>
+          <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="UniqueProcessorId">
+          <xs:selector xpath="mce:Regex|mce:Keyword|mce:Fingerprint"></xs:selector>
+          <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="UniqueResourceIdRef">
+          <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
+          <xs:field xpath="@idRef"/>
+        </xs:key>        
+        <xs:keyref name="ReferencedRuleMustExist" refer="mce:UniqueRuleId">
+          <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
+          <xs:field xpath="@idRef"/>
+        </xs:keyref>
+        <xs:keyref name="RuleMustHaveResource" refer="mce:UniqueResourceIdRef">
+          <xs:selector xpath="mce:Entity|mce:Affinity|mce:Version/mce:Entity|mce:Version/mce:Affinity"/>
+          <xs:field xpath="@id"/>
+        </xs:keyref>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RulePackType">
+    <xs:sequence>
+      <xs:element name="Version" type="mce:VersionType"/>
+      <xs:element name="Publisher" type="mce:PublisherType"/>
+      <xs:element name="Details" type="mce:DetailsType">
+        <xs:key name="UniqueLangCodeInLocalizedDetails">
+          <xs:selector xpath="mce:LocalizedDetails"/>
+          <xs:field xpath="@langcode"/>
+        </xs:key>
+        <xs:keyref name="DefaultLangCodeMustExist" refer="mce:UniqueLangCodeInLocalizedDetails">
+          <xs:selector xpath="."/>
+          <xs:field xpath="@defaultLangCode"/>
+        </xs:keyref>
+      </xs:element>
+      <xs:element name="Encryption" type="mce:EncryptionType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="mce:GuidType" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="VersionType">
+    <xs:attribute name="major" type="xs:unsignedShort" use="required"/>
+    <xs:attribute name="minor" type="xs:unsignedShort" use="required"/>
+    <xs:attribute name="build" type="xs:unsignedShort" use="required"/>
+    <xs:attribute name="revision" type="xs:unsignedShort" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="PublisherType">
+    <xs:attribute name="id" type="mce:GuidType" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="LocalizedDetailsType">
+    <xs:sequence>
+      <xs:element name="PublisherName" type="mce:NameType"/>
+      <xs:element name="Name" type="mce:RulePackNameType"/>
+      <xs:element name="Description" type="mce:OptionalNameType"/>
+    </xs:sequence>
+    <xs:attribute name="langcode" type="mce:LangType" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="DetailsType">
+    <xs:sequence>
+      <xs:element name="LocalizedDetails" type="mce:LocalizedDetailsType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="defaultLangCode" type="mce:LangType" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="EncryptionType">
+    <xs:sequence>
+      <xs:element name="Key" type="xs:normalizedString"/>
+      <xs:element name="IV" type="xs:normalizedString"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="RulePackNameType">
+    <xs:restriction base="xs:token">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="64"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="NameType">
+    <xs:restriction base="xs:normalizedString">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="256"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OptionalNameType">
+    <xs:restriction base="xs:normalizedString">
+      <xs:minLength value="0"/>
+      <xs:maxLength value="256"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RestrictedTermType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="RulesType">
+    <xs:sequence>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Entity" type="mce:EntityType"/>
+        <xs:element name="Affinity" type="mce:AffinityType"/>
+        <xs:element name="Version" type="mce:VersionedRuleType"/>
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Regex" type="mce:RegexType"/>
+        <xs:element name="Keyword" type="mce:KeywordType"/>
+        <xs:element name="Fingerprint" type="mce:FingerprintType"/>
+        <xs:element name="ExtendedKeyword" type="mce:ExtendedKeywordType"/>
+      </xs:choice>
+      <xs:element name="LocalizedStrings" type="mce:LocalizedStringsType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityType">
+    <xs:sequence>
+      <xs:element name="Pattern" type="mce:PatternType" maxOccurs="unbounded"/>
+      <xs:element name="Version" type="mce:VersionedPatternType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" type="mce:GuidType" use="required"/>
+    <xs:attribute name="patternsProximity" type="mce:ProximityType" use="required"/>
+    <xs:attribute name="recommendedConfidence" type="mce:ProbabilityType"/>
+    <xs:attribute name="workload" type="mce:WorkloadType"/>
+  </xs:complexType>
+  <xs:complexType name="PatternType">
+    <xs:sequence>
+      <xs:element name="IdMatch" type="mce:IdMatchType"/>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Match" type="mce:MatchType"/>
+        <xs:element name="Any" type="mce:AnyType"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="AffinityType">
+    <xs:sequence>
+      <xs:element name="Evidence" type="mce:EvidenceType" maxOccurs="unbounded"/>
+      <xs:element name="Version" type="mce:VersionedEvidenceType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" type="mce:GuidType" use="required"/>
+    <xs:attribute name="evidencesProximity" type="mce:ProximityType" use="required"/>
+    <xs:attribute name="thresholdConfidenceLevel" type="mce:ProbabilityType" use="required"/>
+    <xs:attribute name="workload" type="mce:WorkloadType"/>
+  </xs:complexType>
+  <xs:complexType name="EvidenceType">
+    <xs:sequence>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Match" type="mce:MatchType"/>
+        <xs:element name="Any" type="mce:AnyType"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="IdMatchType">
+    <xs:attribute name="idRef" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="MatchType">
+    <xs:attribute name="idRef" type="xs:string" use="required"/>
+    <xs:attribute name="minCount" type="xs:positiveInteger" use="optional"/>
+    <xs:attribute name="uniqueResults" type="xs:boolean" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AnyType">
+    <xs:sequence>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Match" type="mce:MatchType"/>
+        <xs:element name="Any" type="mce:AnyType"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="minMatches" type="xs:nonNegativeInteger" default="1"/>
+    <xs:attribute name="maxMatches" type="xs:nonNegativeInteger" use="optional"/>
+  </xs:complexType>
+  <xs:simpleType name="ProximityType">
+    <xs:union>
+      <xs:simpleType>
+        <xs:restriction base='xs:string'>
+          <xs:enumeration value="unlimited"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType>
+        <xs:restriction base="xs:positiveInteger">
+          <xs:minInclusive value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  <xs:simpleType name="ProbabilityType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="WorkloadType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Exchange"/>
+      <xs:enumeration value="Outlook"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EngineVersionType">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="^\d{2}\.01?\.\d{3,4}\.\d{1,3}$"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="VersionedRuleType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="Entity" type="mce:EntityType"/>
+      <xs:element name="Affinity" type="mce:AffinityType"/>
+    </xs:choice>
+    <xs:attribute name="minEngineVersion" type="mce:EngineVersionType" use="required" />
+  </xs:complexType>
+  <xs:complexType name="VersionedPatternType">
+    <xs:sequence>
+      <xs:element name="Pattern" type="mce:PatternType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="minEngineVersion" type="mce:EngineVersionType" use="required" />
+  </xs:complexType>
+  <xs:complexType name="VersionedEvidenceType">
+    <xs:sequence>
+      <xs:element name="Evidence" type="mce:EvidenceType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="minEngineVersion" type="mce:EngineVersionType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="FingerprintValueType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="2732"/>
+      <xs:maxLength value="2732"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="FingerprintType">
+    <xs:simpleContent>
+      <xs:extension base="mce:FingerprintValueType">
+        <xs:attribute name="id" type="xs:token" use="required"/>
+        <xs:attribute name="threshold" type="mce:ProbabilityType" use="required"/>
+        <xs:attribute name="shingleCount" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="description" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RegexType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:token" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="KeywordType">
+    <xs:sequence>
+      <xs:element name="Group" type="mce:GroupType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:token" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="GroupType">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="Term" type="mce:TermType" maxOccurs="unbounded"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="matchStyle" default="word">
+      <xs:simpleType>
+        <xs:restriction base="xs:NMTOKEN">
+          <xs:enumeration value="word"/>
+          <xs:enumeration value="string"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="TermType">
+    <xs:simpleContent>
+      <xs:extension base="mce:RestrictedTermType">
+        <xs:attribute name="caseSensitive" type="xs:boolean" default="false"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ExtendedKeywordType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:token" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LocalizedStringsType">
+    <xs:sequence>
+      <xs:element name="Resource" type="mce:ResourceType" maxOccurs="unbounded">
+      <xs:key name="UniqueLangCodeUsedInNamePerResource">
+        <xs:selector xpath="mce:Name"/>
+        <xs:field xpath="@langcode"/>
+      </xs:key>
+      <xs:key name="UniqueLangCodeUsedInDescriptionPerResource">
+        <xs:selector xpath="mce:Description"/>
+        <xs:field xpath="@langcode"/>
+      </xs:key>
+    </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ResourceType">
+    <xs:sequence>
+      <xs:element name="Name" type="mce:ResourceNameType" maxOccurs="unbounded"/>
+      <xs:element name="Description" type="mce:DescriptionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="idRef" type="mce:GuidType" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="ResourceNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="default" type="xs:boolean" default="false"/>
+        <xs:attribute name="langcode" type="mce:LangType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="default" type="xs:boolean" default="false"/>
+        <xs:attribute name="langcode" type="mce:LangType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
+
+```
+
+## <a name="more-information"></a><span data-ttu-id="ec74a-336">詳細資訊</span><span class="sxs-lookup"><span data-stu-id="ec74a-336">More information</span></span>
+
+- [<span data-ttu-id="ec74a-337">資料外洩防護原則概觀</span><span class="sxs-lookup"><span data-stu-id="ec74a-337">Overview of data loss prevention policies</span></span>](data-loss-prevention-policies.md)
+    
+- [<span data-ttu-id="ec74a-338">機密資訊類型在找什麼</span><span class="sxs-lookup"><span data-stu-id="ec74a-338">What the sensitive information types look for</span></span>](what-the-sensitive-information-types-look-for.md)
+    
+- [<span data-ttu-id="ec74a-339">DLP 功能所尋找的項目</span><span class="sxs-lookup"><span data-stu-id="ec74a-339">What the DLP functions look for</span></span>](what-the-dlp-functions-look-for.md)
+    
+
