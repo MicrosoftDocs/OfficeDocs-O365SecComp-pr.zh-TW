@@ -3,7 +3,7 @@ title: 在 Office 365 系統管理員身分管理隔離的郵件和檔案
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '以系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。您可以設定原則，讓 Office 365 篩選郵件並傳送至隔離下列幾個原因： 因為他們已識別為垃圾郵件、 大量、 網路釣魚、 惡意程式碼、 或因為其符合某個 [郵件流程規則。 '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526804"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839097"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>在 Office 365 系統管理員身分管理隔離的郵件和檔案
 
@@ -34,7 +34,7 @@ ms.locfileid: "22526804"
   
 ## <a name="view-your-organizations-quarantined-messages"></a>檢視您的組織隔離的郵件
 
-1. 使用在 Office 365organization 中具有全域系統管理員權限工作或學校帳戶，登入 Office 365，並[移至 「 安全性及規範中心 」](go-to-the-securitycompliance-center.md)。
+1. 使用 Office 365 組織中具有全域系統管理員權限的工作或學校帳戶，登入 Office 365，並[移至 「 安全性及規範中心 」](go-to-the-securitycompliance-center.md)。
     
 2. 在左側清單中，依序展開 [ **Threat Management**，並選擇 [**檢閱**，然後選擇 [**隔離**。
     
