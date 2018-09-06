@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全的連結功能所提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。若要從網路釣魚和其他攻擊保護您的組織使用安全的連結。
-ms.openlocfilehash: dcb5f681d8d7c2ff92aeecb46388e59c406fa0f9
-ms.sourcegitcommit: ddfa0ac1f8ef95a78dcc1468241ef29363d56b5b
+ms.openlocfilehash: 24960aa20d2870c7aea37a4b76f1792de21f6b5b
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23520132"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839943"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 
@@ -46,31 +46,31 @@ Office 365 ATP 安全連結 （ATP 安全連結） （搭配[Office 365 ATP 安�
 
 在高層級，以下是 ATP 安全連結 protection 中的運作方式的 Url （架設在 Office 365 中，不在內部部署） 的電子郵件：
   
-1. 人員接收包含 Url 的電子郵件訊息。
+1. 人員接收電子郵件訊息，部份只包含 Url。
     
-2. 所有電子郵件通過 Exchange Online Protection，其中 IP 和信封篩選、 簽章型惡意程式碼保護、 套用反垃圾郵件和反惡意軟體篩選器。
+2. 所有電子郵件通過 Exchange Online Protection，其中網際網路通訊協定 (IP) 及信封篩選、 簽章型惡意程式碼保護，反垃圾郵件和反惡意軟體篩選器會套用。 
     
 3. 電子郵件會進入人的收件匣。
     
 4. 使用者登入 Office 365 中，並移至其電子郵件收件匣。
     
-5. 使用者開啟電子郵件訊息，並在電子郵件訊息的 URL，然後按一下。
+5. 使用者開啟電子郵件訊息，並按一下在電子郵件訊息的 URL。
     
 6. ATP 安全連結功能立即檢查才能開啟之網站的 URL。為封鎖惡意或安全可識別的 URL。
     
-1. 如果 URL 包含在[自訂 「 未修正"Url 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)將套用至使用者原則的網站，網站會隨即開啟。 
+    - 如果 URL 包含在[自訂 「 未修正"Url 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)將套用至使用者原則的網站，網站會隨即開啟。 
     
-2. 如果組織的[自訂封鎖的 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中包含的網站 URL，[警告] 頁面](atp-safe-links-warning-pages.md)隨即開啟。 
+    - 如果組織的[自訂封鎖的 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中包含的網站 URL，[警告] 頁面](atp-safe-links-warning-pages.md)隨即開啟。 
     
-3. 如果已決定要惡意的網站 URL，[警告] 頁面](atp-safe-links-warning-pages.md)隨即開啟。 
+    - 如果已決定要惡意的網站 URL，[警告] 頁面](atp-safe-links-warning-pages.md)隨即開啟。 
     
-4. 如果您的組織[ATP 安全連結原則](set-up-atp-safe-links-policies.md)中已掃描這類內容和 URL 會前往可下載的檔案，則會檢查可下載的檔案。 
+    - 如果您的組織[ATP 安全連結原則](set-up-atp-safe-links-policies.md)中已掃描這類內容和 URL 會前往可下載的檔案，則會檢查可下載的檔案。 
     
-5. 如果 URL 決定要安全，網站會隨即開啟。
+    - 如果 URL 決定要安全，網站會隨即開啟。
     
 ## <a name="how-atp-safe-links-in-office-documents-works"></a>ATP Office 文件中的安全連結的運作方式
 
-在高層級，以下是 ATP 安全連結 protection 中的運作方式 Url 的 Office 365 ProPlus 應用程式 （目前的 Word、 Excel 及 PowerPoint Windows 或 Mac iOS 或 Android 裝置上的 Office 應用程式與 Windows 上的 Visio 版本）：
+在高層級，以下是 ATP 安全連結 protection 中的運作方式 Url 的 Office 365 ProPlus 應用程式 （OneNote、 Word、 Excel 及 PowerPoint Windows 或 Mac 上 iOS 或 Android 裝置、 Windows 及 Office Online 上的 Visio 的 Office 應用程式上的目前版本）：
   
 1. 人員在其電腦、 智慧型手機、 或平板電腦上安裝 Office 365 ProPlus。
     
@@ -90,11 +90,13 @@ Office 365 ATP 安全連結 （ATP 安全連結） （搭配[Office 365 ATP 安�
     
 ## <a name="how-to-get-atp-safe-links-protection"></a>如何取得 ATP 安全連結保護
 
-ATP 安全連結功能是進階威脅保護，其中包含在 Office 365 企業版 E5 的一部分。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買進階威脅保護。(以全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[購買或編輯企業版的 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。
+ATP 安全連結功能是[進階威脅保護](office-365-atp.md)，包含在 Office 365 企業版 E5 的一部分。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買進階威脅保護。如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[購買或編輯企業版的 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。
   
 ATP 安全連結功能已啟用：
   
 - **ATP 安全連結原則已設定**用於電子郵件和 Word、 Excel、 PowerPoint 及 Visio 文件。（請參閱[Set up ATP Office 365 中的安全連結原則](set-up-atp-safe-links-policies.md)）。
+
+- **Office 365 用戶端應用程式設定為使用經過驗證**使用 Azure Active Directory 驗證文件庫。若要深入了解，請參閱[Office 2016 經過驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。 
     
 - **使用者已登入 Office 365**使用其工作或學校的帳戶。（請參閱[登入 Office 或 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)）。
     
@@ -102,9 +104,9 @@ ATP 安全連結功能已啟用：
     
 ## <a name="make-sure-atp-safe-links-protection-is-in-place"></a>請確定 ATP 安全連結保護已備妥
 
-請參閱 ATP 安全連結保護您的組織的運作方式的其中一個好方法是檢視[進階威脅 Protection 的報告](view-reports-for-atp.md)。此外，全域或安全性的系統管理員，請務必檢閱您[ATP 安全連結原則](set-up-atp-safe-links-policies.md)。ATP 安全連結原則會決定保護是否已套用至電子郵件訊息中的超連結只或 Office 文件。
+請參閱 ATP 安全連結保護您的組織的運作方式的其中一個好方法是檢視[進階威脅 Protection 的報告](view-reports-for-atp.md)。此外，全域或安全性的系統管理員，請務必檢閱您[ATP 安全連結原則](set-up-atp-safe-links-policies.md)。ATP 安全連結原則會決定是否保護適用於電子郵件訊息中有超連結只或 Url 中的 Office 文件。
   
-下表說明 ATP 安全連結保護可能的位置或備妥可能不是幾個案例。在所有這些情況下，我們假設組織有 Office 365 企業版 E5，其中包含進階威脅保護。
+下表說明 ATP 安全連結保護可能的位置或備妥可能不是幾個案例。在所有這些情況下，我們假設組織有 Office 365 企業版 E5。
   
 |**範例案例**|**ATP 安全連結保護沒有在此例中套用吗？**|
 |:-----|:-----|
@@ -115,7 +117,6 @@ ATP 安全連結功能已啟用：
 |李明、 Jean 的同事將電子郵件傳送至 Jean、 不知道電子郵件包含惡意 URL。  <br/> |針對在組織內傳送的電子郵件是否定義 ATP 安全連結原則而定。請參閱 ＜ [Set up Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。<br/> |
    
 ## <a name="related-topics"></a>相關主題
-<a name="howtosee"> </a>
 
 [Office 365 進階威脅防護](office-365-atp.md)
   

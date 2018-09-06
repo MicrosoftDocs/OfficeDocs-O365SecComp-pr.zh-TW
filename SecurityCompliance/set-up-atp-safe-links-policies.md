@@ -3,7 +3,6 @@ title: 設定 Office 365 ATP 安全連結原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 設定安全的連結原則來保護您的組織不在 Word、 Excel、 PowerPoint 及 Visio 檔案，以及在電子郵件訊息中的惡意連結。
-ms.openlocfilehash: 0f43cf1eec63df4b70f88abf36e8f097da72ebbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a0c88a81503555417c16501ec9283cf2316c6d09
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527191"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839973"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -38,13 +37,13 @@ ms.locfileid: "22527191"
 
 ## <a name="what-to-do"></a>該怎麼辦 
   
-1. [請先檢閱必要條件](#review-the-prerequisites)
+1. [請先檢閱必要條件](#review-the-prerequisites)。
     
-2. [定義可套用到所有人 ATP 安全連結原則](set-up-atp-safe-links-policies.md#reveddefaultscc)，包括[設定您自訂封鎖的 Url 清單 ATP 安全連結](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+2. [檢閱並編輯預設 ATP 安全連結原則可套用到所有人](#define-an-atp-safe-links-policy-that-applies-to-everyone)。例如，您可以[設定 ATP 安全連結您自訂封鎖 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)。
     
-3. [新增特定電子郵件收件者的原則](set-up-atp-safe-links-policies.md#addemailpolscc)，包括[設定您自訂 「 未修正"Url 清單 ATP 安全連結](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+3. [新增特定電子郵件收件者的原則](#add-a-policy-for-specific-email-recipients)，包括[您自訂 「 未修正"Url 清單 ATP 安全連結的設定](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
     
-4. [解 ATP 安全連結原則的選項](set-up-atp-safe-links-policies.md#policyoptions)，包括最近變更的設定
+4. [了解 ATP 安全連結原則選項](#learn-about-atp-safe-links-policy-options)（在本文中），包括 [最近變更的設定
     
 ## <a name="review-the-prerequisites"></a>請先檢閱必要條件
 
@@ -58,7 +57,7 @@ ms.locfileid: "22527191"
     
 ## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>定義套用至所有人 ATP 安全連結原則
 
-當您在 Office 365 企業版中有進階威脅保護時，您必須套用至組織中所有人 ATP 安全連結原則定義。您可以編輯您的原則可以是安全性&amp;規範中心 」 或 「 Exchange 系統管理中心。我們建議使用安全性&amp;規範中心檢閱或編輯的任何 ATP 原則。
+當您在 Office 365 企業版中有進階威脅保護時，您必須套用至組織中所有人預設 ATP 安全連結原則。您可以編輯您的原則可以是安全性&amp;規範中心 」 或 「 Exchange 系統管理中心。**建議使用安全性&amp;檢閱或編輯的任何 ATP 原則規範中心**。
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
@@ -76,7 +75,7 @@ ms.locfileid: "22527191"
     
 ## <a name="add-a-policy-for-specific-email-recipients"></a>新增特定電子郵件收件者原則
 
-您已定義的所有使用者的原則之後，請考慮為特定群組的電子郵件收件者新增的原則。這可讓您指定為預設原則的例外狀況。您可以新增使用任一安全性原則&amp;規範中心 （建議使用） 或 Exchange 系統管理中心。我們建議使用安全性&amp;規範中心檢閱或編輯的任何 ATP 原則。
+檢閱所有使用者的原則之後，請考慮其他原則定義的電子郵件收件者的特定群組。這可讓您指定為預設原則的例外狀況。您可以新增使用任一安全性原則&amp;規範中心 （建議使用） 或 Exchange 系統管理中心。**建議使用安全性&amp;檢閱或編輯的任何 ATP 原則規範中心**。
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
@@ -117,16 +116,16 @@ ms.locfileid: "22527191"
 |**此原則**|**此選項**|**執行動作**|
 |:-----|:-----|:-----|
 |預設值 （一旦定義預設原則可套用至組織中所有的人）  <br/> |**封鎖下列 Url** <br/> |可讓您的組織具有自訂清單的自動封鎖的 Url。當使用者按一下此清單中的 URL 時，他們會前往說明 URL 封鎖的原因[警告] 頁面](atp-safe-links-warning-pages.md)。<br/> 請參閱 ＜ [Set up 自訂封鎖 Url 清單使用 ATP 安全連結](set-up-a-custom-blocked-urls-list-wtih-atp.md)如需詳細資訊，例如新增支援多達三個萬用字元星號 (\*)。  <br/> |
-|預設  <br/> |**Office 365 ProPlus iOS 適用於 Office 及 android （英文）** <br/> |選取此選項時，ATP 保護套用至 Url 的文件內的安全連結中開啟 Office 365 ProPlus （Word、 Excel 及 PowerPoint Windows 或 Mac OS） iOS 或 Android 裝置上 Windows 及 Office Online (Word Visio 2016 上的 Office 文件線上、 PowerPoint Online、 Excel Online 和 OneNote Online），提供使用者已登入 Office 365。  <br/> > [!TIP]> 如果您看到只**在 Windows 的 Office 2016**，然後功能更新已無法連至 Office 365 環境尚未 （和它們即將推出）。加上 then，直到 ATP 安全連結保護適用於 Word 2016、 Excel 2016、 PowerPoint 2016 或 Visio 2016 Windows 上執行。           |
+|預設  <br/> |**Office 365 ProPlus iOS 適用於 Office 及 android （英文）** <br/> |選取此選項時，ATP 保護套用至 Url 的文件內的安全連結中開啟 Office 365 ProPlus （Word、 Excel 及 PowerPoint Windows 或 Mac OS） iOS 或 Android 裝置上 Windows 及 Office Online (Word Visio 2016 上的 Office 文件線上、 PowerPoint Online、 Excel Online 和 OneNote Online），提供使用者已登入 Office 365。 </br></br>如果您看到只**在 Windows 的 Office 2016**，然後功能更新已無法連至 Office 365 環境尚未 （和它們即將推出）。加上 then，直到 ATP 安全連結保護適用於 Word 2016、 Excel 2016、 PowerPoint 2016 或 Visio 2016 Windows 上執行。           |
 |預設  <br/> |**當使用者按一下 ATP 安全連結時不要追蹤** <br/> |選取此選項時，按一下資料中的不會儲存在 Word、 Excel、 PowerPoint 及 Visio 文件中的 Url。  <br/> |
 |預設  <br/> |**不讓使用者按一下 [透過 ATP 原始 URL 的安全連結** <br/> |選取此選項時，使用者無法繼續過去的[警告] 頁面上](atp-safe-links-warning-pages.md)決定為惡意的 URL。  <br/> |
 |建立特定電子郵件收件者的原則  <br/> |**Off** <br/> |不會掃描電子郵件訊息中的 Url。  <br/> 可讓您定義的例外狀況規則，例如不會掃描一組特定的收件者的電子郵件訊息中 Url 的規則。  <br/> |
 |建立特定電子郵件收件者的原則  <br/> |**在** <br/> |當使用者按一下 [Url] 中的電子郵件，路由使用者可透過 ATP 安全連結保護修正 Url。  <br/> 檢查當您按一下針對封鎖或惡意 Url 清單的 URL。  <br/> |
 |建立特定電子郵件收件者的原則  <br/> |**使用安全附件掃描的可下載內容** <br/> |選取此選項時，會掃描指向可下載內容的 Url。  <br/> |
-|建立特定電子郵件收件者的原則  <br/> |**套用至組織內傳送訊息的安全連結** <br/> | *年 3 月 2018年的開頭會啟用此功能。*  <br/> 當可用及選取此選項即 ATP 安全連結保護會套用至組織中所提供的電子郵件帳戶的人員之間所寄送的郵件都架設在 Office 365 的電子郵件。  <br/> |
-|建立特定電子郵件收件者的原則  <br/> |**不會追蹤使用者點選** <br/> |選取此選項時，按一下資料中的 Url 來自外部寄件者的電子郵件中不會儲存。  <br/> 目前不支援 URL click 追蹤組織內傳送的電子郵件訊息內的連結。  <br/> |
+|建立特定電子郵件收件者的原則  <br/> |**套用至組織內傳送訊息的安全連結** <br/> | 當可用及選取此選項即 ATP 安全連結保護會套用至組織中所提供的電子郵件帳戶的人員之間所寄送的郵件都架設在 Office 365 的電子郵件。  <br/> |
+|建立特定電子郵件收件者的原則  <br/> |**不會追蹤使用者點選** <br/> |選取此選項時，按一下資料中的 Url 來自外部寄件者的電子郵件中不會儲存。目前不支援 URL click 追蹤組織內傳送的電子郵件訊息內的連結。  <br/> |
 |建立特定電子郵件收件者的原則  <br/> |**不允許使用者透過按一下以原始 URL** <br/> |選取此選項時，使用者無法繼續過去的[警告] 頁面上](atp-safe-links-warning-pages.md)決定為惡意的 URL。  <br/> |
-|建立特定電子郵件收件者的原則  <br/> |**未修正下列 Url** <br/> |以離開 Url。保留自訂清單的安全不需要一組特定的組織中的電子郵件收件者的掃描的 Url。<br/> 請參閱 ＜ [Set up 自訂 「 未修正"Url 清單使用 ATP 安全連結](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)如需詳細資訊，包括支援的萬用字元星號最近的變更 (\*)。  <br/> |
+|建立特定電子郵件收件者的原則  <br/> |**未修正下列 Url** <br/> |以離開 Url。保留自訂清單的安全不需要一組特定的組織中的電子郵件收件者的掃描的 Url。 請參閱 ＜ [Set up 自訂 「 未修正"Url 清單使用 ATP 安全連結](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)如需詳細資訊，包括支援的萬用字元星號最近的變更 (\*)。<br/> |
    
 ## <a name="related-topics"></a>相關主題
 
