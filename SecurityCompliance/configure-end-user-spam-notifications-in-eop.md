@@ -3,7 +3,6 @@ title: 在 EOP 中設定使用者垃圾郵件通知
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 description: 您可以針對預設的全公司內容篩選原則或是網域所套用的自訂內容篩選原則，設定使用者垃圾郵件通知。
-ms.openlocfilehash: 990fa31cc22b33d235d6e8f106511996a52212a2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002922"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875795"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中設定使用者垃圾郵件通知
   
@@ -29,7 +28,19 @@ ms.locfileid: "23002922"
   
 使用者垃圾郵件通知包含使用者在您設定的時間期間 (您可指定 1 到 15 天之間的值) 內收到，被當成垃圾郵件隔離的所有郵件清單。您也可以設定用來撰寫通知郵件的語言。
   
-在收到通知郵件之後，使用者可以點擊以將垃圾郵件移至收件匣，或將垃圾郵件回報為「不是垃圾郵件」，在此情況下，該郵件會被傳送至 Microsoft 垃圾郵件分析小組。
+後接收通知訊息，使用者可以選擇下列選項：
+
+**預覽**郵件如果您想要預覽的內容或之前先進行動作的標頭。
+
+**下載**郵件] 如果您想要檢閱郵件和附件 （如果有的話） 之前先採取行動裝置上。
+
+**版本**如果郵件不是垃圾郵件和您希望 Office 365 將郵件傳送給您的信箱。
+
+**版本為允許寄件者**如果郵件不是垃圾郵件和您希望 Office 365 將寄件者新增至您的安全寄件者和未來的電子郵件的收件者清單。請記住您系統可能會有其他組織整體允許/封鎖設定會覆寫 [安全的寄件者清單。
+
+**版本與報告**、 如果郵件不是垃圾郵件和您想要將郵件傳送給您的信箱並向 Microsoft 報告進行分析。
+
+**封鎖**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 <a name="sectionSection0"> </a>

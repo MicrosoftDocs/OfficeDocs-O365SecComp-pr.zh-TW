@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 如果使用者持續傳送電子郵件訊息從歸類為垃圾郵件的 Office 365，他們會封鎖傳送任何詳細訊息。
-ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: ff5bb010f45b0c89e08239f0e37885bd7ae5c7cd
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839107"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875785"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>從封鎖清單移除使用者、 網域或 IP 位址傳送垃圾電子郵件之後
 
@@ -41,7 +41,7 @@ ms.locfileid: "23839107"
     > [!TIP]
     > 若要直接移至 [**限制使用者**頁面的安全性&amp;規範中心使用此 URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
-2. 此頁面可包含被封鎖傳送郵件給組織外的使用者清單。 尋找您想要移除限制，然後按一下 [**解除**從中。
+2. 此頁面可包含被封鎖傳送郵件給組織外的使用者清單。 尋找您想要移除限制上，然後按一下 [**解除**的使用者。
 
 3. 按一下 [**是]** 確認變更。 
     
