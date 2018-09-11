@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: 識別敏感資訊有時會需要尋找關鍵字，尤其在識別泛用內容 (例如醫療保健相關的通訊) 或不適當或明確的語言時更是需要。儘管您可以建立敏感資訊類型的關鍵字清單，但關鍵字清單的大小會受到限制，而且需要修改 XML 才能建立或編輯它們。關鍵字字典可提供更簡單的關鍵字管理以及更為龐大的關鍵字規模，每部字典最多可支援 100,000 個字詞。
-ms.openlocfilehash: 3a6557e14a3dd8bdc9e803915ea460c1fbda704b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013987"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849396"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -29,7 +29,7 @@ Office 365 中的資料外洩防護 (DLP) 可以識別、監視和保護您的�
 
 字典的關鍵字可以來自各種來源，最常來自檔案 (例如 .csv 或 .txt 清單)、來自您直接在 Cmdlet 中輸入的清單，或來自現有的字典。當建立關鍵字字典時，您會依照相同的核心步驟：
   
-1. **連接到安全性與合規性中心 PowerShell** - 請參閱[本主題](https://go.microsoft.com/fwlink/p/?linkid=799771) (機器翻譯)。
+1. **連接到安全性與合規性中心 PowerShell** - 請參閱[本主題](https://docs.microsoft.com/zh-TW/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) (機器翻譯)。
     
 2. **定義關鍵字或從您想要的來源載入關鍵字** - 建立關鍵字字典的 Cmdlet 接受逗點分隔的關鍵字清單，因此這個步驟會根據您的關鍵字來自何處而略有不同。 
     
@@ -39,7 +39,7 @@ Office 365 中的資料外洩防護 (DLP) 可以識別、監視和保護您的�
     
 ## <a name="create-a-keyword-dictionary-from-a-file"></a>從檔案建立關鍵字字典
 
-通常當您需要建立大型字典時，可以使用來自檔案或從其他來源匯出之清單的關鍵字。在此情況下，您將建立一部關鍵字字典，其中包含一個清單，列出要在外部電子郵件中篩檢的不適當語言。首先您需要[連接到安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=799771) (機器翻譯)。
+通常當您需要建立大型字典時，可以使用來自檔案或從其他來源匯出之清單的關鍵字。在此情況下，您將建立一部關鍵字字典，其中包含一個清單，列出要在外部電子郵件中篩檢的不適當語言。首先您需要[連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/zh-TW/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) (機器翻譯)。
   
 1. 將關鍵字複製到文字檔案，並確定每個關鍵字位於個別行。
     
