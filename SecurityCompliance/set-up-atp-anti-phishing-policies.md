@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: ATP 反網路釣魚保護、 組件的 Office 365 進階威脅保護，可協助保護您的組織從惡意的模擬網路釣魚攻擊和其他網路釣魚攻擊。如果您是將通用的 Office 365 企業版或安全性管理員，您可以設定 ATP 反網路釣魚原則。網路釣魚攻擊來自表單的各種商品型攻擊目標的矛網路釣魚或 whaling。日益增加複雜度，很難甚至是受過訓練眼識別一些這些複雜的攻擊。幸運地是，可以協助 Office 365 進階威脅保護。您可以設定 ATP 反網路釣魚原則以協助確保貴組織保護這類的攻擊。
-ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839963"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955445"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>設定 Office 365 的 ATP 防網路釣魚原則
 
@@ -38,7 +38,7 @@ ms.locfileid: "23839963"
 
 - 請確定您是**公司管理員**或**安全性管理員**角色群組的成員。 
     
-- [了解 ATP 反網路釣魚原則選項](set-up-atp-anti-phishing-policies.md#phishpolicyoptions)（在本文）。 
+- [了解 ATP 反網路釣魚原則選項](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options)（在本文）。 
     
 - 您可能會為您的組織設定多個 ATP 反網路釣魚原則。Office 365 強制執行它們在安全性**ATP 反網路釣魚**] 頁面上所列順序這些原則&amp;規範中心。一旦您已檢閱 [原則] 選項，請花一些時間來決定您將需要多少原則和優先順序各項。 
     
@@ -100,7 +100,7 @@ Office 365 中的每一個組織有一個預設反網路釣魚原則套用至所
 |:-----|:-----|
 |**設定或選項** <br/> |**範例** <br/> |
 |名稱  <br/> |網域和執行長  <br/> |
-|描述  <br/> |請確定該執行長與我們網域不要模擬。  <br/> |
+|說明  <br/> |請確定該執行長與我們網域不要模擬。  <br/> |
 |新增使用者以保護  <br/> |在最低限度下 CEO 的電子郵件地址。  <br/> |
 |新增網域，以保護  <br/> |包含執行長 office 組織的網域。  <br/> |
 |選取 [動作]  <br/> |如果模擬使用者所傳送電子郵件： 選擇 [**重新導向至另一個電子郵件地址的訊息**，然後例如輸入安全性系統管理員的電子郵件地址`securityadmin@contoso.com`。  <br/> 如果模擬網域所傳送電子郵件： 選擇 [**隔離郵件**。  <br/> |

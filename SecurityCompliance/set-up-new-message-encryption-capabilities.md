@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: 內建置於 Azure 資訊保護、 貴組織的功能可以使用新的 Office 365 郵件加密受保護的電子郵件通訊與組織內外的人。與其他 Office 365 組織、 Outlook.com、 Gmail、 及其他電子郵件服務搭配使用的新 OME 功能。
-ms.openlocfilehash: e59368f5854c86c04f4f0bdf376537d3f6b02d33
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527332"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955415"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>設定全新的 Office 365 郵件加密功能
 
@@ -25,7 +25,7 @@ ms.locfileid: "22527332"
   
 ## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>快速入門 OME 啟用 Azure Rights Management，Azure 資訊保護的一部分
 
-現在要並容易開始使用新的 OME 功能。年 2 月 2018 Office 365 會自動啟用合格組織內我們資料中心的新 OME 功能。如果它是新的 Office 365 租用戶和您的組織有適當訂閱，則合格貴組織。* * 如果 * * * * 您是否已啟用 Azure 版權管理 (Azure RMS) 一部分 Azure 資訊保護，則我們會自動為您啟用 Office 365 郵件加密。* * 您不需要執行任何動作啟用 OME。若要啟動 Azure Rights Management，請參閱 ＜[啟動 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。如需訂閱，請參閱"何種訂閱的我需要使用新的 OME capabilities?" [Office 365 郵件加密常見問題集](ome-faq.md)。如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。
+現在要並容易開始使用新的 OME 功能。年 2 月 2018 Office 365 會自動啟用合格組織內我們資料中心的新 OME 功能。如果它是新的 Office 365 租用戶和您的組織有適當訂閱，則合格貴組織。**如果您已啟用 Azure 版權管理 (Azure RMS) 一部分 Azure 資訊保護，則我們會自動為您啟用 Office 365 郵件加密。** 您不需要執行任何動作啟用 OME。若要啟動 Azure Rights Management，請參閱 ＜[啟動 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。如需訂閱，請參閱"何種訂閱的我需要使用新的 OME capabilities?" [Office 365 郵件加密常見問題集](ome-faq.md)。如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。
   
 如果您使用 Exchange Online 與 Active Directory Rights Management service (AD RMS)，就無法立即啟用這些新功能。而您需要先移轉從 AD RMS Azure 資訊保護。當您已經完成移轉時，您可以成功地完成這些步驟。
   
@@ -62,22 +62,18 @@ ms.locfileid: "22527332"
     
 2. 執行 Test-irmconfiguration 指令程式使用下列語法：
     
-  ```
-  Test-IRMConfiguration [-Sender <email address >]
-  ```
+    ```Test-IRMConfiguration [-Sender <email address >]```  
 
-    例如：
+   例如：
     
-  ```
-  Test-IRMConfiguration -Sender securityadmin@contoso.com
-  ```
+    ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
     其中電子郵件地址是 Office 365 組織中使用者的電子郵件地址。雖然選用、 提供寄件者電子郵件地址會強制執行其他檢查系統。
     
     結果應該類似下列：
     
-  ```
-  Results : Acquiring RMS Templates ...
+    ```
+    Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not 
             Forward.
             Verifying encryption ...
@@ -88,7 +84,7 @@ ms.locfileid: "22527332"
                 - PASS: IRM verified successfully.
             
             OVERALL RESULT: PASS
-  ```
+    ```
 
     其中*Contoso*被由 Office 365 組織的名稱取代。 
     
@@ -98,9 +94,7 @@ ms.locfileid: "22527332"
     
 3. 執行 Remove-pssession cmdlet 來中斷與版權管理服務的連線。
     
-  ```
-  Remove-PSSession $session
-  ```
+    ```Remove-PSSession $session```
 
 ## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>後續步驟： 定義新的郵件流程規則使用的新 OME 功能
 <a name="Rules_1"> </a>

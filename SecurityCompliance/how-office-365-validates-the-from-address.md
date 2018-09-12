@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: 若要協助防止網路釣魚，Office 365 及 Outlook.com 現在需要的 RFC 規範從： 地址。
-ms.openlocfilehash: 562e08aa54cb6544beccb6f0e8760735f67b834b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8425d4ef7635c2beddcd7915daf73736432d4ca9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526193"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955425"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 來阻止網路釣魚 From 地址的驗證
 
@@ -35,8 +35,6 @@ Microsoft 會啟動啟用 on 2017 年 11 月 9，本文中所述的原則強制�
 
 Office 365 進行變更其強制執行的 [使用的方法： 它會收到以便搭配成效更佳的訊息中的地址會將您免受網路釣魚攻擊。在本文內容：
   
-- [所有訊息必須都包含從有效： 地址](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
-    
 - [所有訊息必須都包含從有效： 地址](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
 - [格式為 [從： 地址如果您未加上的顯示名稱](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
