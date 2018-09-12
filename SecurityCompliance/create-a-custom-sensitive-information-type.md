@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 如果您需要識別及保護不同類型的機密資訊 (例如使用貴組織專屬格式的員工識別碼)，可以建立自訂機密資訊類型。機密資訊類型是在稱為規則套件的 XML 檔案中定義。本主題說明如何建立 XML 檔案，該檔案會定義您的自訂機密資訊類型。您必須知道如何建立規則運算式。
-ms.openlocfilehash: 65e55832a88ec7b31dba55930cc90960aa33a20d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 56683dd8ceac286f79084d2c2f19f48f5849a02f
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526304"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849426"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>建立自訂機密資訊類型
 
@@ -30,6 +30,12 @@ Office 365 中的資料外洩防護 (DLP) 包含許多[機密資訊類型](what-
 本主題說明如何建立 XML 檔案，該檔案會定義您的自訂機密資訊類型。您必須知道如何建立規則運算式。例如，本主題會建立自訂機密資訊類型，該類型會識別員工識別碼。您可以使用這個範例 XML 作為專屬 XML 檔案的起點。
   
 建立格式正確的 XML 檔案之後，您可以藉由使用 PowerShell 將它上傳至 Office 365。然後您就可以在 DLP 原則中使用自訂機密資訊類型，並且測試它是否會如您所望地偵測機密資訊。
+
+## <a name="important-disclaimer"></a>重要免責聲明
+
+因為客戶環境及內容需求的差異，Microsoft 支援服務無法協助提供自訂內容比對定義。例如，定義自訂分類或規則運算式模式 (「RegEx」)。針對自訂內容比對開發、測試及除錯，Office 365 客戶將會需要依賴內部 IT 資源，或使用外部諮詢資源如 Microsoft 諮詢服務 (MCS)。支援的工程師能為該功能提供有限的支援，但無法保證任何自訂內容比對開發能夠滿足客戶需求或義務。可提供支援類型的範例，像是提供範例規則運算模式進行測試，或者支援服務能夠以單一特定內容範例，協助疑難排解現有未如預期觸發的 RegEx 模式。
+
+ 如需用於處理文字 .NET regex 引擎的詳細資訊，請參閱＜[.NET 規則運算式](https://docs.microsoft.com/zh-TW/dotnet/standard/base-types/regular-expressions)＞一文。
     
 ## <a name="sample-xml-of-a-rule-package"></a>規則套件的範例 XML
 
