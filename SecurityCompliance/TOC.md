@@ -10,11 +10,9 @@
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
 ## [使用安全性與合規性中心中的 Explorer](use-explorer-in-security-and-compliance.md)
-
 # 保護資料與服務存取權
 ## [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
 ## [在 MDM 與 Intune 之間選擇](choose-between-mdm-and-intune.md)
-
 # [防止資料遺失 (DLP)](data-loss-prevention-policies.md)
 ## [觀看 DLP 的延伸概觀](https://go.microsoft.com/fwlink/?linkid=852300)
 ## 設定 DLP
@@ -34,7 +32,6 @@
 ### [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)
 ### [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
 ### [建立關鍵字字典](create-a-keyword-dictionary.md)
-
 # 管理資料控管        
 ## [匯入資料](importing-pst-files-to-office-365.md)
 ### [使用網路上傳來匯入 PST 檔案](use-network-upload-to-import-pst-files.md)
@@ -68,7 +65,6 @@
 ### [監督報告](supervision-reports.md)
 ## 資料控管的其他資訊
 ### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [防範威脅](protect-against-threats.md)
 ## [反垃圾郵件和反惡意程式碼防護](anti-spam-and-anti-malware-protection.md)
 ### [Office 365 的反網路釣魚保護](anti-phishing-protection.md)
@@ -142,12 +138,11 @@
 ### [以使用者身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
 ### [Office 365 隔離常見問題集](quarantine-faq.md)
 ### [利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件](use-spam-notifications-to-release-and-report-quarantined-messages.md)
-
-# 搜尋內容
+# [搜尋內容](search-for-content.md)
 ## [使用內容搜尋](content-search.md)
 ### [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
 ### [檢視內容搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md)
-### [匯出內容搜尋結果](content-search.md#export-search-results)
+### [匯出內容搜尋結果](export-search-results.md)
 ### [匯出內容搜尋報告](export-a-content-search-report.md)
 ### [搜尋並刪除電子郵件訊息](search-for-and-delete-messagesadmin-help.md)
 ### [搜尋 Office 365 中內部部署使用者的雲端式信箱](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -169,11 +164,10 @@
 ### [當您匯出內容搜尋結果時停用報告](disable-reports-when-you-export-content-search-results.md)
 ## 使用內容搜尋 PowerShell 指令碼
 ### [對目標集合使用內容搜尋](use-content-search-for-targeted-collections.md)
-### [使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [建立、回報及刪除多個內容搜尋](create-report-on-and-delete-multiple-content-searches.md)
 ### [複製內容搜尋](clone-a-content-search.md)
-
-# 管理法律調查
+# [管理法律調查](manage-legal-investigations.md)
 ## [建立及管理電子文件探索案例](ediscovery-cases.md)
 ## [指派電子文件探索權限](assign-ediscovery-permissions.md)
 ## [設定 Office 365 中電子文件探索調查的合規性界限](set-up-compliance-boundaries.md)
@@ -183,6 +177,7 @@
 ## [使用指令碼將使用者新增至電子文件探索案例中的保留](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [在電子文件探索案例中的保留建立報表](create-a-report-on-holds-in-ediscovery-cases.md)
 ## 管理保留
+### [建立電子文件探索保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
 ### [建立訴訟資料暫留](create-a-litigation-hold.md)
 ### [刪除雲端式信箱中可復原的項目資料夾中的保留項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [增加保留信箱可復原的項目配額](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
@@ -222,15 +217,13 @@
 ### [在 Office 365 進階電子文件探索中設定分析進階設定](set-analyze-options-in-advanced-ediscovery.md)
 ### [在 Office 365 進階電子文件探索中了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
 ### [標記與搜尋](search-and-tagging.md)
-
 # [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
 ## [啟用信箱稽核](enable-mailbox-auditing.md)
 ## [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)
 ## [使用稽核記錄中的共用稽核](use-sharing-auditing.md)
 ## [在稽核記錄中搜尋電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)
-
-# 監視安全性與合規性
+# [監視安全性與合規性](monitor-security-and-compliance.md)
 ## [警示原則](alert-policies.md)
 ### [建立活動警示](create-activity-alerts.md)
 ## [安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
@@ -244,7 +237,6 @@
 #### [下載現有的報表](download-existing-reports.md)
 ## [啟用或停用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 ## [啟用報告訊息增益集](enable-the-report-message-add-in.md)
-
 # 安全性解決方案
 ## [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指導方針](https://docs.microsoft.com/Office365/Enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)
 ### [設定政治活動開發/測試環境的群組和使用者](https://docs.microsoft.com/Office365/Enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
@@ -263,27 +255,26 @@
 # 合規性解決方案
 ## [使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/Office365/Enterprise/office-365-information-protection-for-gdpr)
-### [概觀：GDPR 的 Office 365 保護](https://docs.microsoft.com/Office365/Enterprise/office-365-info-protection-for-gdpr-overview)
-### [搜尋並尋找個人資料](https://docs.microsoft.com/Office365/Enterprise/search-for-and-find-personal-data)
-### [自訂或建立新的 GDPR 敏感性資訊類型](https://docs.microsoft.com/Office365/Enterprise/customize-or-create-a-new-sensitive-information-type)
-### [設計個人規劃的分類結構描述](https://docs.microsoft.com/Office365/Enterprise/architect-a-classification-schema-for-personal-data)
-### [將標籤套用至 Office 365 中的個人資料](https://docs.microsoft.com/Office365/Enterprise/apply-labels-to-personal-data-in-office-365)
-### [將保護套用至 Office 365 中的個人資料](https://docs.microsoft.com/Office365/Enterprise/apply-protection-to-personal-data-in-office-365)
-### [監視個人資料的外洩](https://docs.microsoft.com/Office365/Enterprise/monitor-for-leaks-of-personal-data)
-### [Office 365 GDPR 開發/測試環境](https://docs.microsoft.com/Office365/Enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
-## 適用於內部部署 Office 伺服器的 GDPR
-### [適用於 SharePoint Server 的 GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-sharepoint-server)
-### [適用於 Exchange Server 的 GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-exchange-server)
-### [適用於商務用 Skype Server 與 Lync Server 的 GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-skype-for-business-server)
-### [適用於 Project Server 的 GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-project-server)
-### [適用於 Office Web Apps Server 與 Office Online Server 的 GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-online-server)
-### [適用於內部部署 Windows Server 檔案共用的 GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
+## [GDPR 的 Office 365 資訊保護](office-365-information-protection-for-gdpr.md)
+### [概觀：GDPR 的 Office 365 保護](office-365-info-protection-for-gdpr-overview.md)
+### [搜尋並找出個人資料](search-for-and-find-personal-data.md)
+### [自訂或建立新的 GDPR 敏感資訊類型](customize-or-create-a-new-sensitive-information-type.md)
+### [設計個人規劃的分類結構描述](architect-a-classification-schema-for-personal-data.md)
+### [將標籤套用至 Office 365 中的個人資料](apply-labels-to-personal-data-in-office-365.md)
+### [將保護套用至 Office 365 中的個人資料](apply-protection-to-personal-data-in-office-365.md)
+### [監視個人資料的外洩](monitor-for-leaks-of-personal-data.md)
+### [Office 365 GDPR 開發/測試環境](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
+## [適用於內部部署 Office 伺服器的 GDPR](gdpr-for-office-servers.md)
+### [SharePoint Server 適用的 GDPR](gdpr-for-sharepoint-server.md)
+### [適用於 Exchange Server 的 GDPR](gdpr-for-exchange-server.md)
+### [適用於商務用 Skype Server 與 Lync Server 的 GDPR](gdpr-for-skype-for-business-server.md)
+### [適用於 Project Server 的 GDPR](gdpr-for-project-server.md)
+### [適用於 Office Web Apps Server 和 Office Online Server 的 GDPR](gdpr-for-office-online-server.md)
+### [適用於內部部署 Windows Server 檔案共用的 GDPR](gdpr-for-on-premises-file-shares.md)
 # 安全性事件管理
-## [Office 365 安全性事件回應](https://docs.microsoft.com/Office365/Enterprise/office365-security-incident-response-overview)
-## [偵測並修復 Office 365 中的非法同意授權](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-illicit-consent-grants)
-## [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-outlook-rules-forms-attack)
-
+## [Office 365 安全性事件回應](office365-security-incident-response-overview.md)
+## [偵測並修復 Office 365 中的非法同意授權](detect-and-remediate-illicit-consent-grants.md)
+## [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](detect-and-remediate-outlook-rules-forms-attack.md)
 # 服務保證
 ## [Office 365 安全性與合規性中心中的服務保證](service-assurance.md)
 ## [Office 365 中的租用戶隔離](office-365-tenant-isolation-overview.md)
@@ -330,7 +321,6 @@
 ### [Office 365 工程內部記錄](office-365-internal-logging.md)
 ### [Office 365 信箱移轉](office-365-mailbox-migrations.md)
 ### [Office 365 管理活動 API](office-365-management-activity-api.md)
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [EOP 功能](eop/eop-features.md)
 ## [EOP 中的功能權限](eop/feature-permissions-in-eop.md)
@@ -409,6 +399,5 @@
 ### [行動不便人士的協助工具](eop/accessibility-for-people-with-disabilities.md)
 ### [傳送郵件至 Office 365](sending-mail-to-office-365.md)
 ### [非客戶的服務](services-for-non-customers.md)
-
 # [Office 365 企業版](https://docs.microsoft.com/Office365/Enterprise)
 # [商務用 Office 365](https://support.office.com/office365admin)
