@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 當您不再需要保留的 Office 365 不在作用中信箱內容時，您可以藉由移除保留永久刪除非使用中的信箱。之後移除保留，非使用中信箱標記為待刪除，然後會永久刪除之後會處理。
-ms.openlocfilehash: 91b73fff6ca319735289abe7ea9351b5fba931a0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a7284be650d7ec6c89a6fdc43d8614603d6f1e19
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526225"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965250"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>刪除非作用中的信箱在 Office 365
 
@@ -104,11 +104,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. 在 EAC 中，移至 [**規範管理** \> **就地 eDiscovery&amp;保留**。
     
-<<<<<<< 標頭
 3. 選取您要刪除的就地保留，然後按一下 [**編輯**![編輯圖示](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
-=======
-3. 選取您要刪除的就地保留和 [**編輯**！[編輯圖示](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
->>>>>>> markjjo 轉換
     
 4. 在**就地 eDiscovery&amp;保留**屬性頁面、 按一下 [**就地保留**、 取消核取 [**比對搜尋查詢中所選取的信箱上進行內容保留**] 方塊中，然後再按一下 [**儲存**。
     
@@ -204,7 +200,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   Get-MailboxSearch $InPlaceHold.Name | FL Sources
 ```
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - **非使用中的信箱是一種虛刪除信箱。** 在 Exchange Online 虛刪除信箱是已遭刪除，但在特定的保留期間內可復原的信箱。Exchange Online 中的虛刪除信箱保留期間是 30 天。這表示信箱的可復原的正在虛刪除 30 天內。30 天後虛刪除信箱標記為永久刪除和無法復原。 
     

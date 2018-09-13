@@ -3,7 +3,6 @@ title: 動態傳遞和 Office 365 ATP 安全附件預覽
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/28/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: 當您設定好您 ATP 安全附件原則時，您選擇以避免郵件延遲，並啟用人員預覽會掃描附件的動態傳遞。
-ms.openlocfilehash: 23017f4f995dfe6a90479d83af9522531d7bf96b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526158"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965240"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和 Office 365 ATP 安全附件預覽
 
@@ -65,6 +64,8 @@ ms.locfileid: "22526158"
 - 處於錯誤狀態的使用者的信箱搜尋資料夾
     
 - Exchange Online 系統管理員已啟用 Exclaimer 的環境。（請參閱[附件的郵件不會傳遞 ATP 動態傳遞和 Exclaimer 可用時](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)）
+
+- 使用安全/多用途網際網路郵件延伸標準 ([S/MIME](s-mime-for-message-signing-and-encryption.md)) 加密的郵件
     
 ## <a name="related-topics"></a>相關主題
 
