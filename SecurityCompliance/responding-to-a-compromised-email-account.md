@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何將能辨識和回應 Office 365 的入侵的電子郵件帳戶
-ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782180"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977588"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>對於 Office 365 遭入侵電子郵件帳戶的回覆
 
@@ -66,10 +66,13 @@ ms.locfileid: "23782180"
 
 1. 請重設 Office 365 商務密碼執行某人的其他人的程序的[Admins： 重設 Office 365 商務密碼](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
 
-**注意：**
+**附註：**
 - 請確定密碼強式而且它包含小寫字母、 至少一個數字及至少一個特殊字元。 
 - 不要重複使用任何上次五個的密碼。即使密碼歷程記錄需求可讓您重複使用最近的密碼，您應該選取的攻擊者無法猜測的某個項目。
 - 如果您的內部識別同盟與 Office 365，您必須變更密碼內部，然後您必須通知您的危害的管理員。
+
+> [!TIP]
+> 強烈建議您啟用多重要素驗證 (MFA) 若要防止危害，特別適用於具有系統管理的權限的帳戶。 您可以深入了解[以下](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步驟 2 移除可疑的電子郵件轉寄地址
 1. 開啟**Office 365 系統管理中心 > 作用中使用者**。
