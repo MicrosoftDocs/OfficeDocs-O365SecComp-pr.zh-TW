@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解您可以使用 Office 365 安全性內容搜尋工具商務網站的搜尋在 Exchange Online 信箱及 SharePoint 或 OneDrive 的電子郵件和檔案屬性&amp;規範中心。  '
-ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a797a8d6dd616616c5dc8606c3e3043530e873c3
+ms.sourcegitcommit: 7675230c9cda25cbf7ad7d4cadf4372c03789cf6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782100"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24015354"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
-本主題說明您可以在 Exchange Online 與儲存在 SharePoint 文件中的電子郵件項目中搜尋的電子郵件和文件屬性及使用 Office 365 安全性內容的搜尋功能的網站 OneDrive for Business&amp;規範置中。您也可以使用**\*-ComplianceSearch**中安全性的指令程式&amp;規範中心 PowerShell 搜尋這些屬性。同時說明主題： 
+本主題說明您可以在 Exchange Online 與儲存在 SharePoint 文件中的電子郵件項目中搜尋的電子郵件和文件屬性及使用 Office 365 安全性內容的搜尋功能的網站 OneDrive for Business&amp;規範置中。您也可以使用**\*-ComplianceSearch**中安全性的指令程式&amp;規範中心 PowerShell 搜尋這些屬性。同時說明主題：   
   
 - 使用布林搜尋運算子、 搜尋條件及其他搜尋查詢技術 （英文） 調整您的搜尋結果。
     
