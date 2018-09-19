@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: 了解 Office 365 企業版如何協助保護您的組織各種包括詐騙、 惡意程式碼、 垃圾郵件、 網路釣魚嘗試及未經授權的存取資料的威脅。
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526623"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011265"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防範 Office 365 中的威脅
 
@@ -88,6 +88,14 @@ ms.locfileid: "22526623"
     
 - [Office 365 威脅情報快速入門](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>特許存取管理
+
+協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。啟用權限的存取管理、 之後使用者需要要求剛剛-時間存取完成核准工作流程高度範圍且時間繫結到提高權限與權限工作。
+  
+- [概略了解的權限存取管理](privileged-access-management-overview.md)
+    
+- [開始使用有權限存取管理](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>其他選項
 
 取得相關的 Microsoft 技術和協助安全威脅的 Office 365 的程序的詳細資訊。
