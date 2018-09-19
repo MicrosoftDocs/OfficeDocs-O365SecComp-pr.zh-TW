@@ -3,7 +3,6 @@ title: Office 365 中的資料保留、刪除及毀損
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Overview of Office 365 資料保留、 刪除、 和解構有關的 Microsoft 的原則。
-ms.openlocfilehash: 4d952058df8d0efb664f23e5495796fdb9e006f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
+ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526512"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999144"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的資料保留、刪除及毀損
 
@@ -68,8 +67,8 @@ Microsoft 也有位址回收和處置磁碟機和失敗或淘汰伺服器的資�
 訂閱的所有的時間期間字詞 at、 訂閱者都可以連絡 Microsoft 支援和快速式要求訂閱佈建。在此程序，所有使用者資料，包括資料的 SharePoint Online、 Exchange Online 下可能會保留或非使用中信箱中儲存為已刪除的三天後管理員進入 Microsoft 提供的鎖定程式碼。如需有關加速佈建的詳細資訊，請參閱[取消 Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
 
 ## <a name="related-links"></a>相關的連結
-- [Exchange Online 資料刪除](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [SharePoint Online 資料刪除](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [商務用 Skype 資料刪除](/office365/enterprise/office-365-skype-data-deletion)
-- [Office 365 中的不變性](/office365/enterprise/office-365-data-immutability)
-- [資料毀損](/office365/enterprise/office-365-data-destruction)
+- [Exchange Online 資料刪除](office-365-exchange-online-data-deletion.md)
+- [SharePoint Online 資料刪除](office-365-sharepoint-online-data-deletion.md)
+- [商務用 Skype 資料刪除](office-365-skype-data-deletion.md)
+- [Office 365 中的不變性](office-365-data-immutability.md)
+- [資料毀損](office-365-data-destruction.md)
