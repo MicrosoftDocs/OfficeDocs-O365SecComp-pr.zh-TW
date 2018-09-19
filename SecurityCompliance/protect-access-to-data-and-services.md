@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 保護存取 O365 資料及服務的登陸頁面
-ms.openlocfilehash: e6e2d8d3ba6482d4b80593bd9e09d49d6120af80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
+ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527013"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24009099"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>保護 Office 365 中的資料與服務存取權
 
@@ -54,13 +54,20 @@ ms.locfileid: "22527013"
   
 - [Azure Active Directory 中的設定格式化的條件存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>步驟 4： 設定 SharePoint 裝置存取原則
+## <a name="step-4-configure-privileged-access-management"></a>步驟 4： 設定權限的存取管理
+
+特殊存取權限管理 Office 365 中讓更精細的存取權限的管理工作的控制權。 它可協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。
+
+- [權限的概觀存取管理](privileged-access-managment-overview.md)
+- [設定權限的存取管理](privileged-access-management-configuration.md)
+
+## <a name="step-5-configure-sharepoint-device-access-policies"></a>步驟 5： 設定 SharePoint 裝置存取原則
 
 SharePoint Online 和 OneDrive for Business 的裝置存取原則建議進行保護機密、 機密、 和規範資料。即將推出則裝置存取原則套用至個別小組網站的能力。
   
 - [從未受控裝置中控制存取權](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
-## <a name="step-5-configure-app-and-data-protection-for-devices"></a>步驟 5： 設定應用程式及資料保護裝置
+## <a name="step-6-configure-app-and-data-protection-for-devices"></a>步驟 6： 設定應用程式及資料保護裝置
 
 您可以管理不論是否將裝置註冊的行動裝置管理的行動裝置上的應用程式。這會對意外 Office 365，包括郵件和檔案中的資料外洩保護。
   
@@ -72,13 +79,13 @@ SharePoint Online 和 OneDrive for Business 的裝置存取原則建議進行保
     
 - 未受管理的裝置：[建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則 intune](https://docs.microsoft.com/intune/windows-information-protection-policy-create)
     
-## <a name="step-6-manage-devices-with-intune"></a>步驟 6： 管理 intune 的裝置
+## <a name="step-7-manage-devices-with-intune"></a>步驟 7： 管理 intune 的裝置
 
 管理裝置可讓您以確保其皆為正常且符合標準前環境中允許資源的存取權。裝置以設定格式化條件規則可協助您確保攻擊者無法存取您的資源來自未受管理的裝置的存取。
   
 - [註冊裝置管理的 Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
     
-## <a name="step-7-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>步驟 7： 設定其他 Intune 原則和您環境的條件式存取規則
+## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>步驟 8： 設定其他 Intune 原則和您環境的條件式存取規則
 
 使用下列建議設定為起點的企業規模或複雜的存取安全使用情況。
   
