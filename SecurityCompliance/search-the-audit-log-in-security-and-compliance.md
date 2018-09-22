@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526403"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962969"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全與規範中心搜尋稽核記錄
 
@@ -122,7 +122,7 @@ ms.locfileid: "22526403"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步驟 1： 執行稽核記錄搜尋
 
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
     > [!TIP]
     > 使用私用的瀏覽工作階段 （不正常工作階段） 來存取 Office 365 安全性&amp;規範中心因為如此將會防止您目前登入與從正在使用的認證。若要開啟 [InPrivate 瀏覽工作階段在 Internet Explorer 或 Microsoft Edge，只是按 CTRL + SHIFT + P。若要開啟私用的瀏覽工作階段中 Google Chrome （稱為 incognito 視窗），請按 CTRL + SHIFT + N。 
@@ -647,3 +647,60 @@ Exchange 系統管理員稽核記錄-Office 365 中的預設會啟用其 — 當
     
 - 您也可以檢視 Exchange 管理員稽核記錄中的事件使用 Exchange 系統管理中心。指示，請參閱[檢視系統管理員稽核記錄](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)。
   
+## <a name="frequently-asked-questions"></a>常見問題集
+
+**何處可找到有關 Office 365 中的稽核服務所提供的功能？**
+
+如需 Office 365 中可用的稽核與報告功能的詳細資訊，請參閱[稽核與 Office 365 中的報告](office-365-auditing-and-reporting-overview.md)。 
+
+**不同 Office 365 服務目前稽核有哪些？**
+
+最常使用的 Office 365 服務 like Exchange Online、 SharePoint、 OneDrive、 Azure Active Directory、 的 Microsoft 小組、 CRM、 進階威脅保護及資料外洩防護稽核。請參閱本文的完整清單中的 [[簡介](#search-the-audit-log-in-the-office-365-security-amp-compliance-center)] 區段。
+
+**哪些活動的稽核 Office 365 服務稽核？**
+
+請參閱本文章的清單及稽核 Office 365 中的活動的描述[Audited 活動](#audited-activities)一節。
+
+**沒有多少時間針對稽核記錄的事件之後發生可供使用？**
+
+大部分的稽核資料有 30 分鐘內，但可能需要最多 24 小時之後事件發生於對應的稽核記錄項目顯示搜尋結果中。請參閱本文顯示所花費的不同 Office 365 服務中的事件可供使用的時間[開始之前](#before-you-begin)] 區段中的表格。
+
+**多久要保留稽核記錄吗？**
+
+目前的稽核的記錄的保留期為 90 天。若要增加此限制的計劃主動正在處理 Microsoft。 
+
+**我可以程式設計方式存取稽核資料吗？**
+
+[是]。Office 365 管理活動 API 用來以程式設計方式擷取稽核記錄。 若要開始，請參閱[開始使用 Office 365 管理 api （英文）](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
+
+**是否有其他方法可以取得稽核記錄檔之外 suing Office 365 安全性 & 規範中心或 Office 365 管理活動 API 吗？**
+
+[否]。這些是只有兩種方式從 Office 365 稽核服務取得資料。 
+
+**是否需要個別啟用 [我想要擷取稽核記錄中的每個服務中的稽核吗？**
+
+在大多數的 Office 365 服務稽核預設會啟用後您一開始開啟稽核功能的 Office 365 組織 （如本文中的 [[開始之前](#before-you-begin)] 區段中所述）。不過，您必須啟用信箱稽核針對您想要稽核的信箱在 Exchange Online。  我們正在工作的啟用信箱稽核由 Office 365 組織中所有信箱的預設值。如需詳細資訊，請參閱 「 Exchange 信箱稽核將會預設啟用" [Microsoft 安全性、 隱私權和規範部落](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171)格中。
+
+**沒有 Office 365 稽核服務支援重複資料刪除的記錄吗？**
+
+[否]。稽核服務管線接近，即時與因此無法支援重複資料刪除。
+ 
+**Office 365 稽核資料是否流程不同地理位置中吗？**
+
+[否]。我們目前有稽核 NA （北美洲）、 （歐洲、 中東及非洲） EMEA 和 APAC （亞太地區） 區域中的管線部署。不過，我們可能 flow 資料跨這些區域的負載平衡與僅在 live 網站問題。當我們執行執行這些活動時，已加密傳送過程中的資料。   
+ 
+**稽核加密資料吗？**
+
+稽核資料會儲存在其中部署稽核管線的相同區域中的 Exchange 信箱 （靜態資料）。此資料不會加密。但是，一律加密傳送過程中的資料。 
+
+
+
+
+
+
+
+
+
+
+
+

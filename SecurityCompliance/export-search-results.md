@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '從 Office 365 安全性內容搜尋匯出搜尋結果&amp;規範中心到本機電腦。Emaill 電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: a1ea1daef438225b5e65d835efbcdecdb2178da8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527228"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962959"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>從 Office 365 安全性匯出內容的搜尋結果&amp;規範中心
 
@@ -86,7 +86,7 @@ ms.locfileid: "22527228"
 
 第一個步驟是準備匯出搜尋結果。當您準備結果時，其上傳至 Microsoft 雲端 Azure 的儲存位置。請注意，從信箱和網站的內容上傳在 2 GB 的每小時最大速率。
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用您工作或學校的帳戶。
     
@@ -176,7 +176,7 @@ ms.locfileid: "22527228"
     
 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 <a name="moreinfo"> </a>
 
 以下是匯出搜尋結果的詳細資訊。
@@ -185,7 +185,7 @@ ms.locfileid: "22527228"
   
 [匯出報告](export-search-results.md#export-reports)
   
-[匯出未編製索引的項目](export-search-results.md#exporting-unindexed-items)
+[匯出部分已編製索引的項目](#exporting-partially-indexed-items)
   
 [匯出個別郵件或 PST 檔](export-search-results.md#Exporting-individual-messages-or-PST-files)
   
@@ -282,6 +282,8 @@ ms.locfileid: "22527228"
     C-匯出搜尋中的所有網站的所有部分已編製索引項目，不論網站是否包含符合搜尋準則的項目。
     
     如果您選擇要匯出部分已編製索引的項目，部分已編製索引的信箱項目會匯出在個別的 PST 檔案無論您選擇 [**匯出 Exchange 內容**下的選項。
+
+- 如果部分已編製索引的項目會傳回在搜尋結果 （因為其他屬性的部分已編製索引的項目符合搜尋準則），則這些部分已編製索引會匯出與一般的搜尋結果。因此，如果您選擇 [匯出已編製索引的項目和部分已編製索引的項目 （選取**所有項目，包括類有無法辨認的格式來加密或未編製索引的其他原因**的 [匯出] 選項），部分已編製索引的項目匯出與一般 reslts 將會列在 Results.csv 報表。他們將不會列在花很多的 items.csv 報表中。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>匯出個別郵件或 PST 檔
   
