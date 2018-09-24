@@ -3,7 +3,7 @@ title: 在 Office 365 安全與規範中心搜尋稽核記錄
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962969"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974683"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全與規範中心搜尋稽核記錄
 
@@ -47,7 +47,11 @@ ms.locfileid: "24962969"
 - Power bi for Office 365 的使用者和系統活動
     
 - 使用者和系統中的 Microsoft 小組的活動
+
+- Dynamics 365 中的使用者和系統活動
     
+- Microsoft 流程中的使用者和系統活動
+
 - Yammer 中的使用者和系統活動
     
 - Microsoft Stream 中的使用者和系統活動
@@ -57,7 +61,7 @@ ms.locfileid: "24962969"
 
 請務必先閱讀下列項目之前您啟動搜尋 Office 365 稽核記錄。
   
-- 您 （或另一個系統管理員） 必須先開啟稽核記錄才能開始搜尋的 Office 365 稽核記錄。若要加以開啟，只要按一下 * * 開始錄製使用者與系統活動 * * 安全性**稽核記錄搜尋**] 頁面上&amp;規範中心。（如果您沒有看到此連結，稽核已經已開啟您的組織。）您開啟之後，會顯示訊息指出做準備的稽核記錄及您可在幾小時準備完成後執行搜尋。您只能有一次執行這項作業。 
+- 您 （或另一個系統管理員） 必須先開啟稽核記錄才能開始搜尋的 Office 365 稽核記錄。若要將它開啟，剛**開始錄製使用者和系統活動**頁面上按一下 [**稽核記錄搜尋**安全性&amp;規範中心。（如果您沒有看到此連結，稽核已經已開啟您的組織。）您開啟之後，會顯示訊息指出做準備的稽核記錄及您可在幾小時準備完成後執行搜尋。您只能有一次執行這項作業。 
     
     > [!NOTE]
     > 我們已經程序開啟預設稽核。加上 then，直到您可以加以開啟為先前所述。 
@@ -91,11 +95,20 @@ ms.locfileid: "24962969"
     
 |**Office 365 服務**|**30 分鐘**|**24 小時**|
 |:-----|:-----|:-----|
-|Azure Active Directory （系統事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|進階的威脅保護和威脅智慧  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory （使用者登入事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory （系統事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory （使用者登入事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|資料遺失防護  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|eDiscovery  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft 表單  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |安全性&amp;規範中心  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |SharePoint Online 和商務用 OneDrive  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
