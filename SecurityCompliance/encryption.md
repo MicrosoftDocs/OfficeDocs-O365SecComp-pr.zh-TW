@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Office 365 的靜態及傳輸，使用最強大的加密、 通訊協定及可用的技術加密您的內容。取得 Office 365 加密的概觀。
-ms.openlocfilehash: e5c21cf456f9ccca2393b8985dd47e34745902cf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526762"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972285"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 
@@ -70,7 +70,7 @@ ms.locfileid: "22526762"
 |設定 「 我的組織的加密  <br/> |[設定 Office 365 企業版中的加密](set-up-encryption.md) <br/> |
 |Office 365 中檢視詳細的憑證、 技術及 TLS 加密套件  <br/> |[關於 Office 365 中加密的技術詳細資料](technical-reference-details-about-encryption.md) <br/> |
 |在行動裝置上使用加密的郵件  <br/> |[Android 裝置上檢視加密的郵件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [在 iPhone 或 iPad 上檢視加密的郵件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|加密使用密碼保護的文件  <br/></br>  目前 Office Online 中不支援密碼保護。使用桌面版本的 Word、 Excel 及 PowerPoint 的密碼保護。           |[文件、 活頁簿或簡報中新增或移除保護](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)（選擇 [**新增保護**] 區段中，且會看到 [**以密碼加密]** ）  <br/> |
+|加密使用密碼保護的文件  <br/><br/>  目前 Office Online 中不支援密碼保護。使用桌面版本的 Word、 Excel 及 PowerPoint 的密碼保護。           |[文件、 活頁簿或簡報中新增或移除保護](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)（選擇 [**新增保護**] 區段中，且會看到 [**以密碼加密]** ）  <br/> |
 |移除文件的加密  <br/> |[文件、 活頁簿或簡報中新增或移除保護](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)（選擇**移除保護**] 區段中，且會看到 [**移除密碼加密**）  <br/> |
    
 ## <a name="related-topics"></a>相關主題

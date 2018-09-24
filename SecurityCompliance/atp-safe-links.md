@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全的連結功能所提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。若要從網路釣魚和其他攻擊保護您的組織使用安全的連結。
-ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955455"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972345"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 
@@ -60,9 +60,9 @@ Office 365 ATP 安全連結 （ATP 安全連結） （搭配[Office 365 ATP 安�
     
 ## <a name="how-atp-safe-links-works-with-office-documents"></a>ATP 安全連結與 Office 文件的運作方式
 
-在高層級，以下是 ATP 安全連結 protection 中的運作方式 Url 的 Office 365 ProPlus 應用程式 （OneNote、 Word、 Excel 及 PowerPoint Windows 或 Mac 上 iOS 或 Android 裝置、 Windows 及 Office Online 上的 Visio 的 Office 應用程式上的目前版本）：
+在高層級，以下是 ATP 安全連結 protection 中的運作方式 Url 的 Office 365 ProPlus 應用程式 （Word、 Excel 及 PowerPoint Windows 或 Mac 上 iOS 或 Android 裝置、 Windows、 OneNote Online 與 Office Online 上的 Visio 的 Office 應用程式上的目前版本）：
   
-1. 人員在其電腦、 智慧型手機、 或平板電腦上安裝 Office 365 ProPlus。
+1. 人員在其電腦、 智慧型手機、 或平板電腦上安裝 Office 365 ProPlus。（或者，使用 Office Online 在其瀏覽器）。
     
 2. 使用者開啟 Word、 Excel、 PowerPoint 或 Visio 並登入 Office 365 企業版使用其工作或學校的帳戶。文件包含 Url。
     

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5602963c-a1f2-4c21-afb9-f66cd7dca1f0
 description: 本文說明如何使用 Windows PowerShell 來取得您設定的行動裝置管理 Office 365 組織中裝置的詳細資訊。
-ms.openlocfilehash: 2e406d3583e7892531b7c74bef0db374672956c7
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 90ee59c5afed1cd260e13134299a7cb4f17dc5bc
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272528"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972315"
 ---
 # <a name="get-details-about-devices-managed-by-mobile-device-management-mdm-for-office-365"></a>取得有關管理 Office 365 的行動裝置管理 (MDM) 的裝置的詳細資料
 
@@ -62,12 +62,12 @@ ms.locfileid: "23272528"
     
 ### <a name="step-2-connect-to-your-office-365-subscription"></a>步驟 2：連線至您的 Office 365 訂用帳戶
 
-1. 在 Windows Azure Active Directory 模組的 Windows PowerShell 中執行下列命令。</br>  
+1. 在 Windows Azure Active Directory 模組的 Windows PowerShell 中執行下列命令。<br/>  
   `$UserCredential = Get-Credential`
 
 2. 在**Windows PowerShell 認證要求**] 對話方塊中，輸入使用者名稱與您的 Office 365 全域管理員帳戶的密碼並再按一下 [**確定]**。
     
-3. 執行下列命令。</br>
+3. 執行下列命令。<br/>
     `
   Connect-MsolService -Credential $UserCredential
   `
@@ -81,7 +81,7 @@ ms.locfileid: "23272528"
   
 1. 從 Windows 桌面，按一下 [**開始**]，然後輸入 Windows PowerShell。以滑鼠右鍵按一下 [ **Windows PowerShell**] 和 [**以系統管理員身分執行**。
     
-2. 執行下列命令。</br>
+2. 執行下列命令。<br/>
   `Set-ExecutionPolicy RemoteSigned`
 
 3. 出現提示時，輸入`Y`，然後按 Enter。 
@@ -90,7 +90,7 @@ ms.locfileid: "23272528"
 
 1. 開啟適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
     
-2. 執行下列命令。</br>
+2. 執行下列命令。<br/>
   ```
   Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
   ```
@@ -101,7 +101,7 @@ ms.locfileid: "23272528"
 
 ### <a name="first-save-the-script-to-your-computer"></a>首先，將指令碼儲存到您的電腦
 
-1. 複製並貼入下列的文字貼入 [記事本]。</br> 
+1. 複製並貼入下列的文字貼入 [記事本]。<br/> 
   ```
   param (
       [PSObject[]]$users = @(),
@@ -166,21 +166,21 @@ ms.locfileid: "23272528"
   
   ```
 
-2. 將其儲存為 Windows PowerShell 指令碼檔案使用將副檔名 **.ps1**。 </br>範例：</br> `Get-MsolUserDeviceComplianceStatus.ps1`.
+2. 將其儲存為 Windows PowerShell 指令碼檔案使用將副檔名 **.ps1**。 <br/>範例：<br/> `Get-MsolUserDeviceComplianceStatus.ps1`.
     
 ### <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>執行指令碼，以取得單一使用者帳戶的裝置資訊
 
 1. 開啟適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
     
-2. 瀏覽至儲存指令碼的資料夾。例如，如果您儲存至 C:\PS-Scripts，會執行下列命令。</br>
+2. 瀏覽至儲存指令碼的資料夾。例如，如果您儲存至 C:\PS-Scripts，會執行下列命令。<br/>
     `cd C:\PS-Scripts`
 
-3. 執行下列命令來識別使用者想要取得裝置的詳細資料。此範例會取得 bar@example.com 的詳細資料。</br>
+3. 執行下列命令來識別使用者想要取得裝置的詳細資料。此範例會取得 bar@example.com 的詳細資料。<br/>
   ```
   $u = Get-MsolUser -UserPrincipalName bar@example.com
   ```
 
-4. 執行下列命令以啟動指令碼。</br>
+4. 執行下列命令以啟動指令碼。<br/>
   ```
   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
   ```
@@ -191,15 +191,15 @@ ms.locfileid: "23272528"
 
 1. 開啟適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
     
-2. 瀏覽至儲存指令碼的資料夾。例如，如果您儲存至 C:\PS-Scripts，會執行下列命令。</br>
+2. 瀏覽至儲存指令碼的資料夾。例如，如果您儲存至 C:\PS-Scripts，會執行下列命令。<br/>
   `cd C:\PS-Scripts`
 
-3. 執行下列命令來識別群組想要取得裝置的詳細資料。此範例會取得 FinanceStaff] 群組中的使用者的詳細資訊。</br>
+3. 執行下列命令來識別群組想要取得裝置的詳細資料。此範例會取得 FinanceStaff] 群組中的使用者的詳細資訊。<br/>
   ```
   $u = Get-MsolGroupMember -SearchString "FinanceStaff" | % { Get-MsolUser -ObjectId $_.ObjectId }
   ```
 
-4. 執行下列命令以啟動指令碼。</br>
+4. 執行下列命令以啟動指令碼。<br/>
   ```
   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
   ```

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何啟用報表訊息增益集 Outlook 和 Outlook web 針對個別使用者或整個組織。
-ms.openlocfilehash: 2260f8823132d23e0e1f57a421fd223ea3ab14bd
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229995"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972265"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -40,8 +40,8 @@ ms.locfileid: "23229995"
     
 增益集已安裝並啟用之後，您會看到下列圖示： 
 
-- 在 Outlook 中圖示外觀類似如下： </br> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)</br>
-- 在 Outlook Web App 圖示外觀類似如下：</br>![在 [網頁報表訊息增益集] 圖示上的 outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+- 在 Outlook 中圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
+- 在 Outlook Web App 圖示外觀類似如下：<br/>![在 [網頁報表訊息增益集] 圖示上的 outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
   
 下一個步驟中，以了解如何[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
