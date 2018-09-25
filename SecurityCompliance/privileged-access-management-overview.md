@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055258"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011859"
 ---
 # <a name="privileged-access-management-in-office-365"></a>權限存取 Office 365 中的管理
 
@@ -70,10 +70,14 @@ ms.locfileid: "24055258"
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>我需要哪些 Sku 使用特殊權限的存取 Office 365？
-特殊權限存取 Office 365 中的管理只有目前客戶 E5 和進階規範 Sku。
+特殊存取權限管理 」 目前僅適用於 Office 365 E5 與進階規範 Sku 的客戶。
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>何時將權限的存取可供使用 Office 365 工作負載超過 Exchange？
 我們想要推出提供這項功能的其他 Office 365 工作負載。當我們已經準備好要共用時間表時，它會提供透過 Office 365 藍圖。
+
+### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>「 我的組織需要多個 30 權限的存取原則，可增加此限制吗？
+
+我們打算要提高目前推出的 Office 365 組織每 30 權限的存取原則的限制。
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>是否需要是來管理 Office 365 中的權限的存取的全域系統管理員吗？
 您需要有全域管理員能夠管理 Office 365 中的權限的存取的最低權限。包含在核准者群組的使用者不需要是檢閱和核准要求的全域系統管理員。 

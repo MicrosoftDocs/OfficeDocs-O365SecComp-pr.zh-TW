@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解 Office 365 中設定權限的存取管理使用本主題
-ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055248"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011839"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定權限的存取管理
 
@@ -102,6 +102,8 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3---create-an-access-policy"></a>步驟 3-建立存取原則
 
+您可以建立及設定 Office 365 組織最多 30 個權限的存取原則。
+
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中的管理帳戶的認證。
@@ -144,6 +146,8 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>執行權限的工作要求的權限提高授權
 
+最多 24 小時之後送出要求權限存取要求已有效。如果不核准或拒絕，要求過期和存取未核准。
+
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您的認證。
@@ -160,7 +164,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **要求**： 選取 [從可用的原則
 
-    **持續時間 （小時）**： 要求存取權的時數
+    **持續時間 （小時）**： 要求存取權的時數。您可以要求的時數沒有限制。
 
     **註解**： 存取要求相關的註解的文字欄位
 
@@ -235,6 +239,31 @@ Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 範例：
 ```
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
+```
+
+## <a name="delete-a-privileged-access-policy-in-office-365"></a>刪除 Office 365 中的權限的存取原則
+您可以刪除權限的存取原則如果不再需要在組織中。
+
+### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
+
+1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中的管理帳戶的認證。
+
+2. 在管理中心中，移至 [**設定** > **安全性與隱私權** > **權限的存取**。
+
+3. 選取 [**管理存取原則及要求**。
+
+4. 選取 [**設定的原則**。
+
+5. 選取您要刪除之的原則然後選取 [**移除原則**。
+
+6. 選取 [**關閉**]。
+
+### <a name="using-exchange-management-powershell"></a>使用 Exchange Management PowerShell
+
+執行下列命令在 Exchange Online Powershell 刪除權限的存取原則：
+
+```
+Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
 ## <a name="disable-privileged-access-in-office-365"></a>停用 Office 365 中的權限的存取
