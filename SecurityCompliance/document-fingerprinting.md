@@ -6,16 +6,17 @@ manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
+search.appverid: MET150
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
 description: 在組織中的資訊工作者處理許多種期間一般 1 天的機密資訊。文件指紋讓您用來識別整個組織中使用的標準表單來保護這項資訊更容易。本主題說明的概念文件指紋，以及如何建立 web 應用程式使用 PowerShell。
-ms.openlocfilehash: d73b769e7a014f2642a0fcd66cc6a500c68c46c3
-ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
+ms.openlocfilehash: c33d7412fe4774b74efcd0928df4c99c7bcbb626
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23867489"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002646"
 ---
 # <a name="document-fingerprinting"></a>文件指紋
 

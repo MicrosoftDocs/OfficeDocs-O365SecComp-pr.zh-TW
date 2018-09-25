@@ -5,6 +5,7 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
+search.appverid: MET150
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
@@ -13,12 +14,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Office 365 安全性的資料遺失防護 (DLP)&amp;規範中心包含 80 準備好讓您能夠使用 DLP 原則中的敏感資訊類型。本主題列出所有的這些機密資訊類型及顯示新的 DLP 原則會尋找時被每個類型。
-ms.openlocfilehash: 2e59b322730ca7fa828a685ed3a80c48ebdbbfd8
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5097227d8efa833f255631febde50b937add48ef
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972355"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002686"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
 

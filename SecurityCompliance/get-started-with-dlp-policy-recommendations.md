@@ -8,17 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: 此洞察力導向建議可協助貴組織保護敏感內容安全性時已儲存並共用 Office 365 中通知您何時在可能缺口 DLP 原則涵蓋範圍。在 [安全性] 首頁上看到此建議&amp;規範中心，如果您的文件包含下列任何前五常用的敏感資訊類型，但不受保護的 DLP 原則。
-ms.openlocfilehash: 842387397b9b95d236660c5809174c2b356cf14a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527298"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002626"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>DLP 原則建議快速入門
 

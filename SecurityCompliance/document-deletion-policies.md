@@ -9,16 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 您的組織可能需要保留一段時間因規範、 法律文件或其他的業務需求。不過，如果您的組織會超過所需的文件，您會建立不必要的法律風險。與文件刪除原則，您可以主動降低風險藉由在一段特定時間之後刪除文件中的網站 — 例如，您可以刪除文件中的使用者 OneDrive 對於商務網站的五年後所建立的文件。
-ms.openlocfilehash: 495dd781c56e25e884d47f72a7e48410ea340208
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013657"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002666"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文件刪除原則概觀
 
