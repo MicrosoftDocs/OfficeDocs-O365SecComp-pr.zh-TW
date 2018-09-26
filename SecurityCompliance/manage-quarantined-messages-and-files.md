@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '以系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。您可以設定原則，讓 Office 365 篩選郵件並傳送至隔離下列幾個原因： 因為他們已識別為垃圾郵件、 大量、 網路釣魚、 惡意程式碼、 或因為其符合某個 [郵件流程規則。 '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839097"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018877"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>在 Office 365 系統管理員身分管理隔離的郵件和檔案
 
@@ -59,7 +59,7 @@ ms.locfileid: "23839097"
   
 您也可以篩選結果來尋找特定的郵件。提示，請參閱[來篩選結果和尋找隔離的郵件和檔案](manage-quarantined-messages-and-files.md#BKMK_AdvSearch)本文中。 
   
-找到特定隔離的郵件之後，按一下 [檢視詳細資訊，郵件並採取動作，類似釋放某個人的收件匣的訊息。
+找到特定隔離的郵件之後，按一下 [檢視詳細資訊，郵件並採取動作，例如釋放到某個人的信箱郵件。
   
 ## <a name="view-your-organizations-quarantined-files"></a>檢視您的組織隔離的檔案
 
