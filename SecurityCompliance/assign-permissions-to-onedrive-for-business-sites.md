@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: 您可以使用 SharePoint Online 中的 eDiscovery 中心來搜尋特定關鍵字、 敏感資訊及其他搜尋條件的組織中所有 OneDrive for Business 的網站。在組織中的每位使用者為其 OneDrive for Business 網站，位於名為網站集合的擁有人https://domain-my.sharepoint.com。根據預設，Office 365 全域管理員或規範管理員無法使用 SharePoint Online 中的 eDiscovery 中心搜尋任何 OneDrive for Business 的網站。若要搜尋 OneDrive for Business 網站、 系統管理員或規範經理必須是該 OneDrive for Business 網站的網站集合管理員。
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526775"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038086"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>將 eDiscovery 權限指派至 OneDrive for Business 網站
 
@@ -178,7 +177,7 @@ ms.locfileid: "22526775"
 
     系統會提示您輸入指令碼中所指定的系統管理員帳戶的密碼。如果指令碼執行成功，郵件`"Making  _\<user specified by $eDiscoveryUser\>_ a Site Collection Admin"`會顯示每個 OneDrive for Business 網站 **$MySiteListFile**所指定輸入檔案中所列出的。
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 您在步驟 3 中執行的指令碼使用**組 SPOUser**指令程式將指定的使用者作為網站集合管理員指派給每個 OneDrive for Business 傳回會列在 **$MySiteListFile**變數所指定的檔案。如果您有很大的組織使用千分位的使用者，請考慮下列 cmdlet 以方便管理指派的 eDiscovery 權限。 
     

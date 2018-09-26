@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.ComplianceSearch
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: '使用 Office 365 安全性內容搜尋&amp;規範中心來搜尋信箱、 SharePoint Online 站台及 OneDrive for Business 位置。 '
-ms.openlocfilehash: 61c6c3933a75567acb04f793cb6815322fb3fada
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d480579db1c39d51d4fa8b0931106f135c5339d2
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526596"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038316"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性執行內容的搜尋&amp;規範中心
 
@@ -77,7 +74,7 @@ ms.locfileid: "22526596"
 ## <a name="create-a-search"></a>建立搜尋
 <a name="create"> </a>
 
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用您工作或學校的帳戶。
     

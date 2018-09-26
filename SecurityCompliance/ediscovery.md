@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 提供的不同 eDiscovery 工具可用來搜尋並保留在不同位置，例如 Exchange 信箱、 SharePoint 及 OneDrive for Business 的網站、 Office 365 群組和 Skype 的商務交談中找到的內容。
-ms.openlocfilehash: 0e458e5b2ba83861e7b715ec66a30695045b2e57
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f137454291bcdcdae6f0c61e2639b223a3e310a8
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527154"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038236"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 中的 eDiscovery
 

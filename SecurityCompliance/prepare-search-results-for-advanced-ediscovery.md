@@ -11,17 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何準備 Office 365 安全性內容的搜尋結果&amp;規範中心供進一步分析與進階的 eDiscovery 工具。
-ms.openlocfilehash: 4e5668c88d62e99f7a5f40ed2e17f4687a7e9adb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527423"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038306"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>準備 Office 365 進階 eDiscovery 的搜尋結果
 
@@ -49,7 +47,7 @@ ms.locfileid: "22527423"
 
 您可以準備與 eDiscovery 案例具有相關聯的搜尋結果。當您準備進階 eDiscovery 搜尋結果時，將資料上傳且暫時儲存在 Microsoft cloud 中唯一 Windows Azure 的儲存區中。此時會 OCR 功能會從搜尋結果中的影像擷取文字。在 [[步驟 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery)，此文字和其他搜尋結果的資料會載入至進階 ediscovery 案例。
   
-1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+1. 在安全性與合規性中心，按一下 [搜尋和調查]**** \> [電子文件探索]****，來顯示貴組織中的案例清單。 
     
 2. 按一下您想要準備分析進階在 eDiscovery 中搜尋結果的大小寫] 旁的 [**開啟**]。 
     
@@ -82,11 +80,11 @@ ms.locfileid: "22527423"
 > [!NOTE]
 > 所花費的時間之資料的安全性&amp;規範中心可新增至進階 ediscovery 案例而異，eDiscovery 搜尋結果的大小。 
   
-1. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**可在組織中顯示的情況下的清單。 
+1. 在安全性與合規性中心，按一下 [搜尋和調查]**** \> [電子文件探索]****，來顯示貴組織中的案例清單。 
     
 2. 按一下您想要將資料載入的進階 ediscovery 案例] 旁的 [**開啟**]。 
     
-3. 在 [**首頁**] 頁面的大小寫上按一下 [**進階的 eDiscovery**。 
+3. 在案例的 [首頁]**** 頁面上，按一下 [進階電子文件探索]****。 
     
     ![若要開啟 [進階在 eDiscovery 中的 [大小寫的進階 ediscovery 按一下切換參數](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
@@ -102,7 +100,7 @@ ms.locfileid: "22527423"
 
 EDiscovery 的結果後搜尋會新增至案例中下, 一步是使用進階的 eDiscovery 工具來分析的資料並識別特定的法律案例回應的內容。如需使用進階的 eDiscovery 的資訊，請參閱[Office 365 進階 eDiscovery](office-365-advanced-ediscovery.md)。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 當您準備進階 ediscovery 分析會解密的搜尋結果中包含任何 RMS 加密電子郵件訊息。預設會啟用此解密功能的 eDiscovery 管理員角色群組的成員。這是因為 RMS 解密管理角色指派給此角色群組。保留有關解密電子郵件訊息記住下列事項：
   

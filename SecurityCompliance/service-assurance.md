@@ -9,17 +9,16 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - MOE150
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載協力廠商稽核、 了解 Microsoft 如何保留的客戶資料安全，並了解如何您可以遵守 ISO、 HIPAA、 FINRA 及 FedRAMP 當您使用 Office 365。
-ms.openlocfilehash: eeb1ac1c22bfdd0063c5e1dda3515e52c1bc8d80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 77fdc042639fb30d2c222148f3eea9f0e6470856
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526665"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038146"
 ---
 # <a name="service-assurance-in-the-office-365-security-amp-compliance-center"></a>服務 Office 365 安全性保證&amp;規範中心
 
@@ -54,7 +53,7 @@ ms.locfileid: "22526665"
   
 使用安全性服務保證是可存取&amp;規範中心。以下是如何到該處取得。
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用您工作或學校的帳戶。 
     

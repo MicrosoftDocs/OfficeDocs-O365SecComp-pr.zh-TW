@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '在 Office 365 匯入服務內使用新的智慧型匯入功能篩選的實際取得匯入至目標信箱項目。智慧型匯入可讓您主動決定何種資料匯入以及要保留背後的項目。智慧型匯入也提供前瞻您正在匯入至 Office 365 的資料。 '
-ms.openlocfilehash: 723a2e05a1f5d256e99bcf8497643435d0c98a23
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c90d9df62c7d8c411196b283acec37959fc95e57
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526164"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038196"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>篩選資料時將 PST 檔案匯入 Office 365
 
@@ -125,7 +123,7 @@ ms.locfileid: "22526164"
 7. 按一下匯入該工作以顯示更多詳細的資訊，例如每個 PST 檔案與您所設定的篩選器設定的狀態。
 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - Office 365 如何決定保留篩選的增量？當 Office 365 分析 PST 檔案時，則它會在每個項目的送出或收到的時間戳記 （如果項目已傳送和接收 timestamp，便會選取的最早日期）。然後 Office 365 的時間戳記的年份值會查看並比較判斷項目的存留期為目前日期。這些年齡然後用於下拉式清單中的值為**保留**篩選。例如，如果 PST 檔案具有來自 2016年、 2015、 和 2014、 郵件則中**保留**篩選值會是**1 年**、 **2 年**、 及**3 年**。
     

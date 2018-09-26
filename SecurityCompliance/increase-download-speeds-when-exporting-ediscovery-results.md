@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何設定 Windows 登錄，以增加資料輸送量下載搜尋結果時及搜尋資料從 Office 365 安全性&amp;規範中心與 Office 365 進階 eDiscovery。
-ms.openlocfilehash: 3f456f5ee0312d4d4d7b95f868520e6756a90fd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a05c2b786d1d1de7ff5014d12c708484345f908b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527412"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038116"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>匯出 eDiscovery 搜尋結果從 Office 365 時所增加的下載速度
 
@@ -55,7 +53,7 @@ ms.locfileid: "22527412"
     > [!IMPORTANT]
     > 建立或變更之後`DownloadConcurrency`登錄設定，請務必建立新的匯出工作或重新啟動現有匯出工作的搜尋結果或要下載的資料。請參閱如需詳細資訊[的詳細資訊](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo)] 區段。 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 新的登錄機碼會建立第一次執行您在此程序中建立的.reg 檔案。然後`DownloadConcurrency`登錄設定編輯每次您變更並重新執行.reg 編輯檔案。 
     

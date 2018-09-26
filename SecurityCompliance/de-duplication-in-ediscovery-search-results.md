@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您必須取消重複以便只有一個電子郵件的副本匯出即使多個執行個體相同訊息可能會有不同的信箱中找到都要匯出的 eDiscovery 搜尋結果的選項。
-ms.openlocfilehash: 02a4f9f6db0fb8831d5e5cc13adaffbd0c4dcecc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5e54f0e5841fdbd29d1ab8b6b9509ff06e827920
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527295"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038006"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子文件探索搜尋結果中的重複資料刪除
 
@@ -62,7 +60,7 @@ EDiscovery 匯出程序期間符合搜尋準則每封郵件比較這三個屬性
 > [!IMPORTANT]
 > 如果重複資料刪除演算法的限制可能會影響搜尋結果的品質，您不應該啟用重複資料刪除項目匯出時。若本節所述的情況可能互不因素在搜尋結果中，且您想要減少很有可能是重複的項目數，則應考慮啟用重複資料刪除。 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 匯出使用下列的 eDiscovery 工具之一的搜尋結果時適用本文中的資訊：
     

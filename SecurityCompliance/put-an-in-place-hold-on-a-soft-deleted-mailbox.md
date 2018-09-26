@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: 了解如何建立就地保留虛刪除信箱以進行非使用中並保留其內容。然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中的信箱。
-ms.openlocfilehash: abc0aa625a5483141f25111dc1858a3d989f32d0
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b4ef4ee26e98c8234f64d0879391f8fec89ffd3c
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003112"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038246"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>置於就地保留虛刪除信箱在 Exchange Online
 
@@ -86,7 +85,7 @@ ms.locfileid: "23003112"
   Get-Mailbox -InactiveMailboxOnly -Identity $SoftDeletedMailbox.DistinguishedName  | FL IsInactiveMailbox
   ```
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 <a name="sectionSection2"> </a>
 
 進行虛刪除信箱不在作用中的信箱後，有數種方式可以管理信箱。如需詳細資訊，請參閱：

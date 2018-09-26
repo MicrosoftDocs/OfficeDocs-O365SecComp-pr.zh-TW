@@ -8,16 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: 56e2978f-71b6-4141-b769-ad856d31bbec
 description: 在 Office 365 的 eDiscovery 中心，您可以搜尋所有的 Exchange Online 信箱、 SharePoint Online 網站及 OneDrive 單一 eDiscovery 搜尋中的商務網站。若要在組織中搜尋所有內容來源，eDiscovery 管理員必須具有每個內容來源的適當 eDiscovery 權限。
-ms.openlocfilehash: b3508d5929ca2b5b7a937eb2dccf677a2968cbbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5612faf6113ceef292f90b49ec70ad7b30905646
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526594"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038096"
 ---
 # <a name="search-all-mailboxes-and-sites-using-the-ediscovery-center"></a>搜尋所有信箱及使用 eDiscovery Center 的網站
 
@@ -61,7 +59,7 @@ ms.locfileid: "22526594"
     
 6. 完成或修改在搜尋查詢] 頁面上，例如關鍵字查詢、 日期範圍或縮小搜尋內容的特定類型的其他資訊。當您準備好執行查詢時，請按一下 [**搜尋**]。 
     
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 <a name="moreinfo"> </a>
 
 - 前 500 個信箱和前 500 個網站與大部分的結果會列在底下**來源****查詢**] 頁面上。 

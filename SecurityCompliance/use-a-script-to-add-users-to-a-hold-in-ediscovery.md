@@ -12,15 +12,14 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
-- MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 執行指令碼以快速新增信箱並 OneDrive for Business 至新的保留與 Office 365 安全性 eDiscovery 案例相關聯的網站&amp;規範中心。
-ms.openlocfilehash: eb53f01b4f1b7245e1411ac470db629115eb1ef5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2c93deb14bc8c1f89dab7bb054d2e94db06cfbd5
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526672"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038256"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>使用指令碼將使用者新增至 Office 365 安全性 eDiscovery 案例中保留&amp;規範中心
 
@@ -48,7 +47,7 @@ Office 365 安全性&amp;規範中心提供可讓您的 Windows PowerShell cmdle
     
 - 指令碼包括最少的錯誤處理。其主要用途是快速又輕鬆地放置信箱按住 OneDrive for Business 網站上的每位使用者。
     
-- 本主題中所提供的範例指令碼不支援任何 Microsoft 標準支援程式或服務底下。為 IS 提供範例指令碼沒有任何類型的瑕疵擔保。Microsoft 進一步不作所有默示之的擔保包括但不限於任何默示擔保售或適合特定用途。與您保持承擔使用或效能的範例指令碼及文件的風險。事件無法在 Microsoft、 其作者，或其他參與建立、 實際執行或指令碼傳遞的任何人對於而概之任何損害皆不 （包括但不限於，遺漏的商務利潤、 業務中斷、 遺失的損害商務資訊或其他金錢遺失） 引起的使用或無法使用的範例指令碼或文件即使 Microsoft 已被告知這類損害的可能性。
+- 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步驟 1：安裝 SharePoint Online 管理命令介面
 

@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台及文件共同作業平台至 Office 365 組織中的信箱。這可讓您封存 Office 365 中的 Facebook、 Twitter 與資料來源的資料。然後您可以與協力廠商資料 appply Office 365 的符合性功能 （例如法務保存措施、 內容搜尋和保留原則）。
-ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827087"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038106"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中封存協力廠商資料
 
@@ -647,11 +645,11 @@ Microsoft Lync (2010、2013)
 
 若要撤銷的協力廠商資料連接器的同意，您可以刪除應用程式 （刪除的對應的服務主要名稱） 從 Azure 入口網站，或使用[使用**企業應用程式**blade 部署 Azure Active Directory移除 MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) Office 365 PowerShell 中。您也可以使用 Azure Active Directory PowerShell 中的[移除 AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal)指令程式。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 為舊清楚，從協力廠商資料來源匯入至做為電子郵件的 Exchange 信箱的項目。協力廠商連接器匯入使用 Office 365 API 所需的結構描述的項目。下表說明郵件項目的屬性與協力廠商的資料來源之後匯入至 Exchange 信箱以電子郵件訊息。表也會指出是否 message 屬性是必要項目。必須填入必要屬性。如果項目缺少一個必要的屬性，將不會匯入至 Office 365。匯入程序將會傳回錯誤訊息說明為何項目未匯入和遺漏的屬性。
     
-    |**郵件屬性**|**必要？**|**描述**|**範例值**|
+    |**郵件屬性**|**必要項目？**|**描述**|**範例值**|
     |:-----|:-----|:-----|:-----|
     |**FROM** <br/> |是  <br/> |最初建立或傳送項目之協力廠商資料來源中的使用者。協力廠商連接器會嘗試將對應所有參與者 （FROM 和 TO 欄位中的使用者） 的 Office 365 使用者帳戶從來源項目 （例如 Twitter 控點） 的使用者識別碼。郵件的複本會匯入至每個參與者的信箱。如果任何項目從參與者可以對應至 Office 365 使用者帳戶，此項目將會匯入至 Office 365 中的第三方封存信箱。<br/> <br/> 項目的寄件者身分識別的參與者必須具備的項目以匯入 Office 365 組織中使用中信箱。如果寄件者沒有作用中的信箱，會傳回下列錯誤：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |是  <br/> |接收項目的使用者，如果適用於資料來源中的項目。  <br/> | `bob@contoso.com` <br/> |

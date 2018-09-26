@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的指令碼來產生報告包含與 Office 365 安全性的 eDiscovery 案例相關聯的所有保留的相關資訊&amp;規範中心。
-ms.openlocfilehash: 8bc1285f776e2b1aa0c0330c06ccffff8ce4585c
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258641"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038206"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的 eDiscovery 案例中保留上建立報告
   
@@ -32,7 +30,7 @@ ms.locfileid: "23258641"
     
 - 本文中的指令碼有最少的錯誤處理。主要目的是快速建立與您組織中的 eDiscovery 案例相關聯的保留報告。
     
-- 本主題中所提供的範例指令碼不支援任何 Microsoft 標準支援程式或服務底下。為 IS 提供範例指令碼沒有任何類型的瑕疵擔保。Microsoft 進一步不作所有默示之的擔保包括但不限於任何默示擔保售或適合特定用途。與您保持承擔使用或效能的範例指令碼及文件的風險。事件無法在 Microsoft、 其作者，或其他參與建立、 實際執行或指令碼傳遞的任何人對於而概之任何損害皆不 （包括但不限於，遺漏的商務利潤、 業務中斷、 遺失的損害商務資訊或其他金錢遺失） 引起的使用或無法使用的範例指令碼或文件即使 Microsoft 已被告知這類損害的可能性。
+- 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
     
 ## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>步驟 1： 連線至安全性&amp;規範中心使用遠端 PowerShell
 
@@ -175,7 +173,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     ![執行 CaseHoldsReport.ps1 指令碼之後輸出](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 大小寫包含當您在本文中執行指令碼時所建立的報告包含下列每個保留的相關資訊。如先前所述，您必須是 eDiscovery 管理員，才可傳回組織中的所有保留的資訊。如保留案例的詳細資訊，請參閱[Office 365 安全性的 eDiscovery 案例&amp;規範中心](ediscovery-cases.md)。
   

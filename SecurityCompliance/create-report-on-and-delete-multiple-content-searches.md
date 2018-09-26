@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何自動化建立搜尋和透過 Office 365 安全性的 PowerShell 指令碼執行報告類似的內容搜尋工作&amp;規範中心。
-ms.openlocfilehash: 2baa569c28ed5324e6674addeac688b854a65ed8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a32c003dfd9a27ea8c38b29b31001b612368bc4a
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526405"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038136"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、回報及刪除多個內容搜尋
 
@@ -35,7 +34,7 @@ ms.locfileid: "22526405"
     
 - 指令碼包括最少的錯誤處理。其主要用途是快速建立、 報告、 和刪除多個內容搜尋。
     
-- 本主題中所提供的範例指令碼不支援任何 Microsoft 標準支援程式或服務底下。為 IS 提供範例指令碼沒有任何類型的瑕疵擔保。Microsoft 進一步不作所有默示之的擔保包括但不限於任何默示擔保售或適合特定用途。與您保持承擔使用或效能的範例指令碼及文件的風險。事件無法在 Microsoft、 其作者，或其他參與建立、 實際執行或指令碼傳遞的任何人對於而概之任何損害皆不 （包括但不限於，遺漏的商務利潤、 業務中斷、 遺失的損害商務資訊或其他金錢遺失） 引起的使用或無法使用的範例指令碼或文件即使 Microsoft 已被告知這類損害的可能性。
+- 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>步驟 1： 建立包含您想要執行哪些搜尋的相關資訊的 CSV 檔案
 

@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Office 365 信箱進行非使用中之後，您可以變更保留或 Office 365 保留原則指派給非使用中信箱的工期。保留期間可復原的項目] 資料夾，可以保留中定義多久的項目。
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526789"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038056"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>變更 Office 365 中不在作用中信箱的保留期間
 
@@ -35,7 +33,7 @@ ms.locfileid: "22526789"
     
   - [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [連線至 Office 365 安全性&amp;規範中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [連接到 Office 365 安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - 保留 eDiscovery 案例相關聯的記事會無限期保留，這表示沒有可變更沒有保留持續時間。項目會保留不限次數或直到移除保留及刪除非使用中的信箱。
     
@@ -166,7 +164,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
      若要變更保留持續時間為不受限制的一段時間，請使用 _-ItemHoldPeriod 無限制_。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - **的保留持續時間計算方式為在非使用中的信箱項目？** 將信箱項目所接收或建立的原始日期被計算持續時間。 
     

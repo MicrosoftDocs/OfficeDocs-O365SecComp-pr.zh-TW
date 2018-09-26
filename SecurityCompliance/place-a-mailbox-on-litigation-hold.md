@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: ''
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: '將信箱置於訴訟暫止狀態以保留所有信箱內容，包括已刪除的項目和已修改項目的原始版本。 '
-ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 00f83d69d90f10659427986ffcb16f9e5358c054
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002842"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038036"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>將信箱設為訴訟暫止
  
@@ -148,7 +147,7 @@ P
 
     若信箱設為無限期訴訟暫止狀態， _LitigationHoldDuration_ 屬性信箱的值會設為  `Unlimited`。
     
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 <a name="moreinfo"> </a>
 
 - 如果貴組織要求所有信箱資料必須保留一段特定時間，在您將組織中的所有信箱設為訴訟暫止之前，請考慮下列事項。

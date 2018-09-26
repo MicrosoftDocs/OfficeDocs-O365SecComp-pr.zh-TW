@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 對於 Office 365、 Azure、 和 Dynamics 365 Online 法規遵循報表，若要查看協力廠商稽核，找出 Microsoft 如何保留的客戶資料安全，以及如何您可以為符合 ISO、 HIPAA、 NIST、 FINRA、 GDPR 及 FedRAMP 時使用這些線上服務。
-ms.openlocfilehash: a924ce157b89215e3c9909d791f0e8adb4cd684d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 886c6df96bfe0821dd277b279d5aa16d038fae18
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526595"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038216"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服務信任入口網站快速入門
 
@@ -121,26 +122,26 @@ STP 包含關於 Microsoft 的實作控制項和其中保護我們雲端服務�
   
 ### <a name="search"></a>搜尋
 
-![服務信任入口網站-搜尋輸入欄位](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![服務信任入口網站 - 搜尋輸入欄位](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-按一下放大鏡由頁的右上角中展開 [搜尋輸入的欄位中，輸入搜尋字詞並按 Enter。搜尋控制會出現內含搜尋字詞的搜尋窗格中輸入欄位中，且找到的搜尋結果出現下方。
+按一下頁面右上角的放大鏡，以展開 [搜尋] 輸入欄位，輸入您的搜尋字詞，然後按 Enter。搜尋控制項隨即出現，並在 [搜尋] 窗格輸入欄位中出現搜尋字詞，搜尋結果會顯示在下方。
   
-根據預設，搜尋未傳回文件結果，而您可以使用的篩選器的下拉式清單調整顯示，以新增或移除檢視中的搜尋結果的文件清單。您可以同時使用多個篩選屬性來縮小至特定的雲端服務、 類別規範或安全性作法裡或 industries 的區域 （英文） 傳回的文件。按一下 [文件下載的文件名稱連結。
+根據預設，搜尋會傳回文件結果，且您可使用 [篩選條件] 下拉式清單來調整所顯示的文件清單，以從檢視中新增或移除搜尋結果。您可以同時使用多個篩選條件屬性，將傳回的文件範圍縮小至特定雲端服務、合規性或安全性做法的類別、世界的區域或產業。按一下文件名稱連結來下載該文件。
   
-![服務信任入口網站位在與套用的篩選器的文件的搜尋](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![服務信任入口網站 - 套用篩選器搜尋文件](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 按一下 [顯示規範主管評估控制項的搜尋結果的規範管理員連結。在列出的搜尋結果顯示日期評估已建立、 分組評估適用於雲端服務的名稱及 [欄] 控制項是 Microsoft 或受管理的客戶。
   
-![服務信任 Portal 規範 Manager 控制項上的搜尋](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![服務信任入口網站 - 搜尋合規性管理員控制項](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> 服務信任入口網站報告和文件可用來下載至少十二個月的發佈或直到文件的新版本有空為止。 
+> 服務信任入口網站的報告和記錄在發佈之後，至少有 12 個月可供下載，直到提供新版文件為止。 
   
 ## <a name="localization-support"></a>當地語系化支援
 
-服務信任入口網站可讓您以不同語言檢視] 頁面上的內容。若要變更的頁面語言，只要在頁面的左下角的全球的環境圖示上按一下 [並選取您所選擇的語言。 
+服務信任入口網站可讓您以不同語言檢視頁面內容。若要變更頁面的語言，只要按一下頁面左上角的地球圖示，然後選取您想要的語言。 
   
-![服務信任入口網站-本地化內容的選項](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![服務信任入口網站 - 當地語系化的內容選項](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>意見反應
 

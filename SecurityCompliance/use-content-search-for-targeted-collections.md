@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用 Office 365 安全性內容搜尋&amp;規範中心來執行目標的集合。目標的集合表示您是有信心回應案例的項目或權限項目都位於特定信箱或站台資料夾。使用本文中的指令碼來取得資料夾 ID 或想要搜尋的特定信箱或站台資料夾的路徑。
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526276"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038296"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>使用 Office 365 中的內容搜尋目標集合
 
@@ -210,7 +208,7 @@ Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜
 > [!NOTE]
 > 使用`path`搜尋 OneDrive 位置屬性不會傳回搜尋結果中的媒體檔案，例如.png、.tiff、 或使用的.wav 檔。 
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 使用的帳戶與您用來執行指令碼在步驟 1 中的認證。
     
@@ -264,7 +262,7 @@ Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜
   path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 使用本文中的指令碼和執行目標集合時請記住下列事項。
   

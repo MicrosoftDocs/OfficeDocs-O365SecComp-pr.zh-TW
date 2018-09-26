@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何將搜尋 Office 365 稽核記錄的規範管理員可執行內容搜尋與 eDiscovery 案件工作安全性會記錄的事件&amp;規範中心。
-ms.openlocfilehash: 24bd629f5576fe042e59d5cbbdecf01b3fd59cf0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526857"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038346"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>搜尋 Office 365 稽核記錄中的 eDiscovery 活動
 
@@ -43,7 +41,7 @@ ms.locfileid: "22526857"
 
 目前，您必須執行檢視 Office 365 稽核記錄中的 eDiscovery 活動的一些特定動作。以下是如何。
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用您工作或學校的帳戶。
     

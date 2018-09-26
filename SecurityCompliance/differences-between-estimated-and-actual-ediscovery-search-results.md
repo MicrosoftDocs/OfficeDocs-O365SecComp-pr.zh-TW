@@ -12,15 +12,14 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解為何評估及實際的搜尋結果可能會有不同的 Office 365 中的 eDiscovery 工具以執行搜尋。 '
-ms.openlocfilehash: 15fd34fc4b2f7edaa4020043d3dd7ffc21d643ad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b68f5ea2a24d3229a65b360f390284374a1efd39
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526176"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037996"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的評估及實際的 eDiscovery 搜尋結果之間的差異
 

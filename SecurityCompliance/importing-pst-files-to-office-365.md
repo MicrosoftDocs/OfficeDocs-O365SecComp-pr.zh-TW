@@ -11,15 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 系統管理員： 了解如何使用 Office 365 安全性匯入服務&amp;規範中心以大量匯入電子郵件資料 （PST 檔案） 至 Exchange Online 中的使用者信箱。本主題提供常見問題集並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 1cbe5627ffb906b6a87541f4c4582a2806562ca4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527051"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038016"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>將您的組織 PST 檔案匯入 Office 365 的概觀
 

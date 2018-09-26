@@ -3,7 +3,6 @@ title: Office 365 的 Office 365 工程內部記錄
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,15 +11,15 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 說明如何內部登入的 Office 365 工程小組運作。
-ms.openlocfilehash: 1a613584b6b815524435acb20db7a8022d95e3bc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526461"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038186"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Office 365 工程內部記錄
-除了事件及記錄資料可供客戶，也有內部的記錄資料集合系統可供 Office 365 工程師。許多不同類型的記錄資料從 Office 365 的伺服器上傳至運算服務呼叫宇宙 internal，big 資料。每個服務小組可將稽核記錄檔從其各自的伺服器上傳到宇宙資料庫中的彙總及分析。此資料傳送發生透過 FIPS 140-2-驗證 TLS 連線特別核准的連接埠和通訊協定使用專屬的自動化工具呼叫 Office 資料載入器 (ODL)。
+除了事件及記錄資料可供客戶，也有內部的記錄資料集合系統可供 Office 365 工程師。許多不同類型的記錄資料從 Office 365 的伺服器上傳至運算服務呼叫宇宙 internal，big 資料。每個服務小組可將稽核記錄檔從其各自的伺服器上傳到宇宙資料庫中的彙總及分析。此資料傳送發生透過 FIPS 140-2-驗證 TLS 連線特別核准的連接埠和通訊協定使用專屬的自動化工具呼叫 Office 資料載入器 (ODL)。Office 365 中使用收集的工具與程序稽核記錄不允許永久或不能取消變更原始稽核記錄的內容或時間順序。
 
 服務小組作為宇宙集中存放庫進行分析的應用程式使用量測量系統以及操作效能，並尋找異常和可能表示問題或安全性問題的模式。每個服務小組上傳的基準記錄檔的宇宙，將根據他們尋求分析，通常包含：
 - 事件記錄檔

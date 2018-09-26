@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: Office 365 稽核記錄是整合的稽核記錄檔。整合的稽核記錄的為何？因為事件你的組織最多的 Office 365 服務訂閱會記錄在可搜尋的單一稽核記錄。這表示您可搜尋的使用者及這些服務的管理活動：
-ms.openlocfilehash: 7a6a552b1d2569c9e21fe20b39d474dafc026172
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 230502f331babeef8f89eacce0d19a7756cb96fc
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526606"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038026"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>在 Office 365 中搜尋使用者與系統管理活動的稽核記錄
 

@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.AuditingHelp
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- SPO160
-- MOE150
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用 Office 365 安全性&amp;規範中心若要取得的 SharePoint Online 和 Exchange Online 組織的各種報告以及 Azure Active Directory 報告。  '
-ms.openlocfilehash: 0b633583e14a18c7cf579d10462cf41714397812
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 019ccc49352db1aaf392287f62fa63f66913e293
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526233"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038336"
 ---
 # <a name="reports-in-the-office-365-security-amp-compliance-center"></a>Reports in Office 365 安全性&amp;規範中心
 
@@ -41,7 +38,7 @@ ms.locfileid: "22526233"
   
  **若要開啟 [檢視報告] 頁面上安全性&amp;規範中心：**
   
-1. 移至 [ [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports)。
+1. 請移至 [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports)。
     
 2. 登入 Office 365 使用 Office 365 組織中的使用者帳戶的認證。
     
