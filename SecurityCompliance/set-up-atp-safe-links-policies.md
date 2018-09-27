@@ -12,28 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 設定安全的連結原則來保護您的組織不在 Word、 Excel、 PowerPoint 及 Visio 檔案，以及在電子郵件訊息中的惡意連結。
-ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972305"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092949"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
 [ATP 安全連結](atp-safe-links.md)的[Office 365 進階威脅保護](office-365-atp.md)(ATP) 的功能可協助保護您的組織中用於網路釣魚和其他攻擊的惡意連結。如果您有必要[權限指派在 Office 365 安全性&amp;規範中心](permissions-in-the-security-and-compliance-center.md)、 您可以設定 ATP 安全連結原則以協助確保當使用者按一下 [網站位址 (Url)、 貴組織保護。ATP 安全連結原則可以設定要掃描電子郵件中的 Url 及 Office 文件中的 Url。
   
-持續 ATP 安全連結至新增的新功能：
-  
-- 在最新的年 10 月 2017 ATP 安全連結保護延伸至套用至電子郵件中的 Url 為 Office 365 ProPlus 的文件，例如 Word、 Excel、 Windows、 iOS 及 Android 裝置上的 PowerPoint 與 Visio 檔案在 Windows 中的 Url。
-    
-- 從開始年 3 月 2018年，ATP 安全連結保護會延伸至套用至組織中的人員之間所寄送的電子郵件。
-    
-- 從開始落後年 3 月 2018年，ATP 安全連結保護會延伸至套用至 Office Online （線上 Word、 Excel Online、 PowerPoint Online 和 OneNote Online） 和 Office 365 ProPlus Mac OS 上的 Url。
-    
-- 從開始 5 2018年，[警告頁面](atp-safe-links-warning-pages.md)更新新的色彩配置、 詳細資訊，與能夠繼續而不管指定建議的網站。 
-
-隨著增加新功能，您可能需要調整您現有的 ATP 安全連結原則。
+[新功能所需要經常新增至 ATP 安全的連結](atp-safe-links.md#new-features-added-to-atp-safe-links)。隨著增加新功能，您可能需要調整您現有的 ATP 安全連結原則。
 
 ## <a name="what-to-do"></a>該怎麼辦 
   
@@ -41,11 +31,11 @@ ms.locfileid: "24972305"
     
 2. [檢閱並編輯預設 ATP 安全連結原則可套用到所有人](#define-an-atp-safe-links-policy-that-applies-to-everyone)。例如，您可以[設定 ATP 安全連結您自訂封鎖 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)。
     
-3. [新增特定電子郵件收件者的原則](#add-a-policy-for-specific-email-recipients)，包括[您自訂 「 未修正"Url 清單 ATP 安全連結的設定](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
+3. [新增或編輯原則的特定電子郵件收件者](#add-a-policy-for-specific-email-recipients)，包括[您自訂 「 未修正"Url 清單 ATP 安全連結的設定](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
     
 4. [了解 ATP 安全連結原則選項](#learn-about-atp-safe-links-policy-options)（在本文中），包括 [最近變更的設定
     
-## <a name="review-the-prerequisites"></a>請先檢閱必要條件
+## <a name="step-1-review-the-prerequisites"></a>步驟 1： 檢閱必要條件
 
 - 請確定您的組織具有[Office 365 進階威脅保護](office-365-atp.md)。
     
@@ -57,9 +47,12 @@ ms.locfileid: "24972305"
     
 - 可讓您新增或更新原則散佈到所有 Office 365 資料中心的最多 30 分鐘。
     
-## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>定義套用至所有人 ATP 安全連結原則
+## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>步驟 2： 定義 （或檢閱） 套用至所有人 ATP 安全連結原則
 
-當您在 Office 365 企業版中有進階威脅保護時，您必須套用至組織中所有人預設 ATP 安全連結原則。您可以編輯您的原則可以是安全性&amp;規範中心 」 或 「 Exchange 系統管理中心。**建議使用安全性&amp;檢閱或編輯的任何 ATP 原則規範中心**。
+當您在 Office 365 企業版中有進階威脅保護時，您必須套用至組織中所有人預設 ATP 安全連結原則。 
+
+> [!TIP]
+> 您可以編輯您的原則可以是安全性&amp;規範中心 」 或 「 Exchange 系統管理中心。**建議使用安全性&amp;檢閱或編輯的任何 ATP 原則規範中心**。
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
@@ -75,9 +68,12 @@ ms.locfileid: "24972305"
     
 6. 選擇 [**儲存**]。
     
-## <a name="add-a-policy-for-specific-email-recipients"></a>新增特定電子郵件收件者原則
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>步驟 3： 新增 （或編輯） ATP 安全連結原則套用至特定電子郵件收件者
 
-檢閱所有使用者的原則之後，請考慮其他原則定義的電子郵件收件者的特定群組。這可讓您指定為預設原則的例外狀況。您可以新增使用任一安全性原則&amp;規範中心 （建議使用） 或 Exchange 系統管理中心。**建議使用安全性&amp;檢閱或編輯的任何 ATP 原則規範中心**。
+檢閱 ATP 安全連結原則的所有使用者之後，請考慮其他原則定義的電子郵件收件者的特定群組。這可讓您指定為預設原則的例外狀況。 
+
+> [!TIP]
+> 您可以新增使用任一安全性原則&amp;規範中心 （建議使用） 或 Exchange 系統管理中心。**建議使用安全性&amp;檢閱或編輯的任何 ATP 原則規範中心**。
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
@@ -111,9 +107,12 @@ ms.locfileid: "24972305"
     
 6. 選擇 [**儲存**]。
     
-## <a name="learn-about-atp-safe-links-policy-options"></a>了解 ATP 安全連結原則選項
+## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>步驟 5： 了解 ATP 安全連結原則選項
 
-當您設定或編輯 ATP 安全連結的原則時，會看到數個可用選項。您會知道這些選項為何下, 表說明每一個和其效果。請注意有兩種主要原則來定義或編輯： 套用至所有人、 的預設原則和其他原則所定義的特定收件者。
+當您設定或編輯 ATP 安全連結原則時，會看到數個可用選項。您會知道這些選項為何下, 表說明每一個和其效果。 
+
+> [!NOTE]
+> 有兩種主要原則來定義或編輯： 套用至所有人、 的預設原則和其他原則所定義的特定收件者。這些被區別下表中的 ["的此原則"] 欄中。
   
 |**此原則**|**此選項**|**執行動作**|
 |:-----|:-----|:-----|
