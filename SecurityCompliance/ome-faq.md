@@ -3,7 +3,7 @@ title: Office 365 郵件加密常見問題集
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/28/2018
+ms.date: 09/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 已在 Office 365 中的新郵件保護功能的運作方式的相關問題嗎？檢查的答案。
-ms.openlocfilehash: 8fc3fa2378dfc8dba6ed17c042269f726235bc58
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839953"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341428"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 
@@ -121,6 +121,10 @@ Office 365 郵件加密的新功能的現有 IRM 和舊版 OME 解決方案的�
 
 目前您可以僅設定郵件流程規則在 Exchange Online。透過安全性 DLP 目前不支援加密&amp;規範中心。
   
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>可開啟加密的郵件傳送至共用信箱吗？
+
+共用信箱不支援目前加密的郵件。
+
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>可自訂加密的郵件具有我的公司品牌吗？
 
 是 ！如需自訂電子郵件及 OME 入口網站，請參閱 ＜ 將您的組織的商標新增至加密的郵件。請參閱[將您的組織的商標新增至加密的郵件。](add-your-organization-brand-to-encrypted-messages.md)
