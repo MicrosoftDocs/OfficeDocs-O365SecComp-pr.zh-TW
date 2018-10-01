@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: 當您設定好您 ATP 安全連結原則時，您可以包含不要 not 修正 ' 要讓組織中某些使用者瀏覽您在您的清單中包含的網站 Url 的清單。
-ms.openlocfilehash: 0ee9c87c90e6e30d6c43fb0de5291dd85b03be07
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782160"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353259"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單
 
@@ -52,9 +52,9 @@ ATP 安全連結保護使用多個清單，包括您的組織已封鎖的 Url �
 
 - 您指定的收件者所掃描的 ATP 安全連結不包含任何您在 「 未修正"] 清單中指定的 Url。
  
-- 當您指定"未修正"ATP 安全連結原則的清單時，您可以包含多達三個萬用字元星號 (\*)。萬用字元 (\*) 會假設其值的項目如`contoso.com`，這不明確包含前置字元或子網域，如`http://`或`https://`。這表示項目，例如`contoso.com`類似於`\*contoso.com\*`您 「 未修正"的清單。
+- 當您指定"未修正"ATP 安全連結原則的清單時，您可以包含多達三個萬用字元星號 (\*)。萬用字元 (\*) 會假設其值的項目如`contoso.com`，這不明確包含前置字元或子網域，如`http://`或`https://`。這表示項目，例如`contoso.com`類似於`*contoso.com*`您 「 未修正"的清單。
 
-- 如果您已"未修正 」 清單中的 Url 清單，請務必檢閱該清單並視情況新增萬用字元。例如，如果您現有的清單項目，像是`http://contoso.com/a`與您想要包含子路徑 like`http://contoso.com/a/b`在您的原則中加入萬用字元項目讓它看起來像是`http://contoso.com/a\*`。
+- 如果您已"未修正 」 清單中的 Url 清單，請務必檢閱該清單並視情況新增萬用字元。例如，如果您現有的清單項目，像是`http://contoso.com/a`與您想要包含子路徑 like`http://contoso.com/a/b`在您的原則中加入萬用字元項目讓它看起來像是`http://contoso.com/a*`。
     
 - 不要"未修正 」 清單中指定的 Url 中包含正斜線 （/）。例如，而不是輸入`contoso.com/`您 「 未修正 」 清單中，輸入`contoso.com`。
     
@@ -62,9 +62,9 @@ ATP 安全連結保護使用多個清單，包括您的組織已封鎖的 Url �
     
 |**範例項目**|**及其作用**|
 |:-----|:-----|
-|`\*contoso.com\*`  <br/> |允許特定收件者瀏覽網域、 子網域，以及路徑，例如`http://www.contoso.com`、 `https://www.contoso.com`、 `https://maps.contoso.com`，或`http://www.contoso.com/a`  <br/> |
+|`*contoso.com*`  <br/> |允許特定收件者瀏覽網域、 子網域，以及路徑，例如`http://www.contoso.com`、 `https://www.contoso.com`、 `https://maps.contoso.com`，或`http://www.contoso.com/a`  <br/> |
 |`http://contoso.com/a`  <br/> |允許特定收件者類似的網站瀏覽`http://contoso.com/a`，但不是個子路徑 like`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |允許特定收件者類似的網站瀏覽`http://contoso.com/a`及 like 個子路徑`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |允許特定收件者類似的網站瀏覽`http://contoso.com/a`及 like 個子路徑`http://contoso.com/a/b`  <br/> |
    
   
 

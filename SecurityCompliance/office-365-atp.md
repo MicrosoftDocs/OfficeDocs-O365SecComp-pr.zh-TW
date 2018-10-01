@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 進階威脅保護包含詐騙智慧、 安全的連結、 安全附件及進階的反網路釣魚功能。進階的威脅保護也要延伸至檔案的 SharePoint Online、 OneDrive for Business 和 Microsoft 小組。
-ms.openlocfilehash: dbf604dfc6367ac225e57158e6b784952c081773
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 53488534d3a74f9e026142ed053dfcff5db6cbf9
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526790"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353269"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -34,7 +34,7 @@ Office 365 進階威脅保護 (ATP) 有幫助保護您的組織從惡意的攻�
     
 - 偵測當某人嘗試模擬您的使用者與您的組織與[Office 365 的 ATP 反網路釣魚功能](atp-anti-phishing.md)的自訂網域
     
-透過 Office 365 ATP 保護取決於您組織的安全性小組的安全連結、 安全附件及反網路釣魚定義的原則。[提供報告所](view-reports-for-atp.md)要顯示 ATP 組織的運作方式。然後您可以[提交給 Microsoft 進行分析可疑的檔案](office-365-atp.md#submitlalware)。
+**透過 Office 365 ATP 保護會由貴組織的安全性小組的安全連結、 安全附件及反網路釣魚定義的原則**。請務必定期檢閱並修改原則來保留其最新及才會加到服務的新功能的優點。[提供報告所](view-reports-for-atp.md)要顯示 ATP 組織的運作方式。這些報告也可顯示您您可能需要重新檢閱並更新您的原則的區域。而且，如果您有都會標記為惡意程式碼的不應該是相同網域或檔案您想要檢查的 Microsoft 的檔案，您可以[提交給 Microsoft 進行分析的檔案](office-365-atp.md#submitlalware)。
   
 > [!IMPORTANT]
 > Office 365 ATP 隨附於訂閱，例如 Office 365 企業版 E5 和 Office 365 教育版 A5，並從 2018 年 4 月 30，也[Microsoft 365 商務安全性功能](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc)。如果您的組織有不包含 Office 365 ATP Office 365 訂閱，可能可以做為附加元件購買 ATP。如需詳細資訊，請參閱[Office 365 進階威脅 Protection 服務說明](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)。 

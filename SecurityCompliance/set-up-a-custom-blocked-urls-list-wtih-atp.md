@@ -3,7 +3,6 @@ title: 設定自訂封鎖 Url 清單使用 Office 365 ATP 安全連結
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: 閱讀本文以了解如何設定您的組織使用 Office 365 進階威脅保護封鎖 Url 的清單。封鎖的 Url 將會套用至電子郵件與根據您 ATP 安全連結原則的 Office 文件。
-ms.openlocfilehash: cd1e7858c8929bf468b2a4d5e09ccde9d5adc7b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526797"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353249"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>設定自訂封鎖 Url 清單使用 Office 365 ATP 安全連結
 
@@ -56,9 +55,9 @@ ms.locfileid: "22526797"
     
 |**範例項目**|**及其作用**|
 |:-----|:-----|
-|`contoso.com`或`\*contoso.com\*`  <br/> |封鎖的網域子網域，且路徑，例如`https://www.contoso.com`、 `http://sub.contoso.com`、 和`http://contoso.com/abc`  <br/> |
+|`contoso.com`或`*contoso.com*`  <br/> |封鎖的網域子網域，且路徑，例如`https://www.contoso.com`、 `http://sub.contoso.com`、 和`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |封鎖網站`http://contoso.com/a`但沒有其他子路徑 like`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |封鎖網站`http://contoso.com/a`及其他子路徑 like`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |封鎖網站`http://contoso.com/a`及其他子路徑 like`http://contoso.com/a/b`  <br/> |
    
 5. 在螢幕右下角新增 Url、 完成時，選擇 [**儲存**]。
     
