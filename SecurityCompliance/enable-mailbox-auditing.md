@@ -3,7 +3,7 @@ title: 啟用 Office 365中的信箱稽核
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/19/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 在 Office 365 中，您可以開啟信箱稽核記錄來依信箱擁有者、 委派及系統管理員記錄信箱存取。根據預設，Office 365 中的信箱稽核無法開啟。啟用信箱稽核記錄功能信箱之後，您可以搜尋活動在信箱上執行的 Office 365 稽核記錄。
-ms.openlocfilehash: a31a96c8c5c65965746a3a31bc924731289795f0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526579"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358382"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>啟用 Office 365中的信箱稽核
   
@@ -129,14 +129,14 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
 |:-----|:-----|:-----|:-----|:-----|
 |**Copy** <br/> |郵件已複製到另一個資料夾。  <br/> |是  <br/> |否  <br/> |否  <br/> |
 |**Create** <br/> |在信箱 ； 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。請注意不稽核建立、 傳送或接收郵件。此外，不稽核建立信箱資料夾。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
-|**FolderBind** <br/> |已存取信箱資料夾。系統管理員或代理人開啟信箱時也會記錄此動作。  <br/> |[是]\*  <br/> |[是]\*\*  <br/> |否  <br/> |
+|**FolderBind** <br/> |已存取信箱資料夾。系統管理員或代理人開啟信箱時也會記錄此動作。  <br/> |是  <br/> |[是]\*\*  <br/> |否  <br/> |
 |**HardDelete** <br/> |郵件已經從 [可復原的項目] 資料夾清除。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
 |**MailboxLogin** <br/> |使用者已登入其信箱。  <br/> |否  <br/> |否  <br/> |是  <br/> |
 |**MessageBind** <br/> |在預覽窗格中檢視郵件或將它開啟。  <br/> |是  <br/> |否  <br/> |否  <br/> |
-|**Move** <br/> |郵件已移到另一個資料夾。  <br/> |是\*  <br/> |是  <br/> |是  <br/> |
-|**MoveToDeletedItems** <br/> |郵件已遭刪除並移至 [刪除的郵件] 資料夾。  <br/> |[是]\*  <br/> |是  <br/> |是  <br/> |
+|**Move** <br/> |郵件已移到另一個資料夾。  <br/> |是  <br/> |是  <br/> |是  <br/> |
+|**MoveToDeletedItems** <br/> |郵件已遭刪除並移至 [刪除的郵件] 資料夾。  <br/> |[是]\*  <br/> |是\*  <br/> |是  <br/> |
 |**SendAs** <br/> |已使用 SendAs 權限傳送郵件。這表示，另一個使用者已傳送郵件，就像此郵件是來自信箱擁有者一樣。  <br/> |[是]\*  <br/> |是\*  <br/> |否  <br/> |
-|**SendOnBehalf** <br/> |已使用 SendOnBehalf 權限傳送郵件。這表示，另一個使用者已代表信箱擁有者傳送郵件。此郵件會向收件者指示，此郵件是代表誰傳送，以及實際傳送郵件的人是誰。  <br/> |[是]\*  <br/> |是  <br/> |否  <br/> |
+|**SendOnBehalf** <br/> |已使用 SendOnBehalf 權限傳送郵件。這表示，另一個使用者已代表信箱擁有者傳送郵件。此郵件會向收件者指示，此郵件是代表誰傳送，以及實際傳送郵件的人是誰。  <br/> |[是]\*  <br/> |是\*  <br/> |否  <br/> |
 |**SoftDelete** <br/> |郵件已永久刪除或從 [刪除的郵件] 資料夾刪除。虛刪除的項目會移至 [可復原的項目] 資料夾。  <br/> |[是]\*  <br/> |是\*  <br/> |是  <br/> |
 |**更新** <br/> |郵件或其屬性已變更。  <br/> |[是]\*  <br/> |是\*  <br/> |是  <br/> |
 |**UpdateCalendarDelegation** <br/> |行事曆委派已指派給信箱。行事曆委派可讓其他人在相同的組織權限管理信箱擁有者的行事曆。  <br/> |是\*  <br/> |否  <br/> |是\*  <br/> |
@@ -144,7 +144,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
 |**UpdateInboxRules** <br/> |收件匣規則已新增、 移除或變更。收件匣規則可用來處理郵件的收件匣根據指定的條件和符合規則的條件，例如將郵件移至指定的資料夾或刪除郵件時採取的動作。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>如果已啟用信箱，稽核預設。><sup>\*</sup>資料夾繫結動作委派所執行的項目已合併。24 小時的時間範圍內的個別資料夾存取產生一個日誌項目。> <sup> \* \*</sup>已指派完整存取權給使用者的信箱的系統管理員會被視為委派使用者。 
+> <sup>\*</sup>如果已啟用信箱，稽核預設。<br/><br/>  <sup>\*\*</sup>合併資料夾繫結動作委派所執行的項目。24 小時的時間範圍內的個別資料夾存取產生一個日誌項目。<br/><br/><sup>\*\*\*</sup>已指派完整存取權給使用者的信箱的系統管理員會被視為委派使用者。 
   
 如果您不再需要特定類型的信箱稽核的動作，您應修改停用這些動作的信箱稽核記錄設定。現有的記錄項目未清除直到達到 90 天的存留期限制稽核記錄項目。
   
