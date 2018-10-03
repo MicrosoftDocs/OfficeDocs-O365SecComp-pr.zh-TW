@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974683"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363146"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全與規範中心搜尋稽核記錄
 
@@ -50,9 +50,9 @@ ms.locfileid: "24974683"
 
 - Dynamics 365 中的使用者和系統活動
     
-- Microsoft 流程中的使用者和系統活動
-
 - Yammer 中的使用者和系統活動
+ 
+- Microsoft 流程中的使用者和系統活動
     
 - Microsoft Stream 中的使用者和系統活動
     
@@ -71,6 +71,15 @@ ms.locfileid: "24974683"
     > [!IMPORTANT]
     > 如果您在 [安全性]**權限**] 頁面上的僅檢視稽核記錄或稽核記錄角色指派使用者&amp;規範中心他們不能搜尋 Office 365 稽核記錄。您必須指派 Exchange Online 中的權限。這是因為基礎指令程式來搜尋稽核記錄是 Exchange Online 指令程式。 
   
+- 當稽核的活動由使用者或系統管理員執行時、 稽核記錄會產生並儲存在貴組織的 Office 365 稽核記錄。稽核記錄已保留 （及搜尋稽核記錄檔中） 的時間長度取決於您的 Office 365 訂閱。
+
+     - **Office 365 E3** -稽核記錄的保留期為 90 天。這表示您可搜尋過去 90 天內所執行的活動的稽核記錄。
+
+     - **Office 365 E5** -稽核記錄會保留為 365 天 （一年以上）。這表示您可搜尋過去一年內所執行的活動的稽核記錄。不適用於擁有 E3 訂閱以及 Office 365 進階規範的附加元件訂閱的組織也是一年保留稽核記錄。
+
+        > [!NOTE]
+        > 一年保留期間稽核記錄是目前可用的 Office 365 Preview 一部分程式設計與只有在預覽計畫中註冊的組織的 E5 訂閱。此外，稽核記錄已執行年 10 月 2018年仍會保留僅 90 天前的活動。從開始年 10 月 2018年，新的稽核記錄將會保留一年含 E5 訂閱的組織或其 E3 訂閱和進階規範的附加元件訂閱。
+
 - 如果您想要關閉的 Office 365 組織的稽核記錄搜尋，您可以連線至 Exchange Online 組織的遠端 PowerShell 中執行下列命令：
     
   ```
@@ -88,8 +97,6 @@ ms.locfileid: "24974683"
 - 先前所述，基礎指令程式來搜尋稽核記錄檔會是 Exchange Online 指令程式，這是**搜尋 UnifiedAuditLog**。這表示您可以使用此指令程式來搜尋而非使用中 [安全性] 的 [**稽核記錄檔**] 頁面上的 Office 365 稽核記錄&amp;規範中心。您必須在連線至 Exchange Online 組織的遠端 PowerShell 執行這個指令程式。如需詳細資訊，請參閱 ＜[搜尋 UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
     
 - 如果您想要以程式設計方式從 Office 365 稽核記錄下載資料，我們建議您使用 Office 365 管理活動 API 而不是使用 PowerShell 指令碼。Office 365 管理活動 API 是您可以使用擬定作業、 安全性及規範的組織的監控解決方案的 REST web 服務。如需詳細資訊，請參閱[Office 365 管理活動 API 參考 （英文）](https://go.microsoft.com/fwlink/?linkid=852309)。
-    
-- 您可搜尋過去 90 天內所執行的活動的 Office 365 稽核記錄。
     
 - 它可以需要長達 30 分鐘或向上事件之後的 24 小時的週期定期發生相對應的稽核記錄項目顯示在搜尋結果中。下表顯示 Office 365 中的不同服務所花費的時間。
     
@@ -287,7 +294,8 @@ ms.locfileid: "24974683"
 |[Sway 活動](#sway-activities) <br/> |[使用者管理活動](#user-administration-activities) <br/> |[Azure AD 群組管理活動](#azure-ad-group-administration-activities) <br/> |
 |[應用程式管理活動](#application-administration-activities) <br/> |[角色管理活動](#role-administration-activities) <br/> |[目錄管理活動](#directory-administration-activities) <br/> |
 |[eDiscovery 活動](#ediscovery-activities) <br/> |[Power BI 活動](#power-bi-activities) <br/> |[Microsoft 小組活動](#microsoft-teams-activities) <br/> |
-|[Yammer 活動](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Exchange 管理員稽核記錄](#exchange-admin-audit-log) <br/> |
+|[Yammer 活動](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Exchange 管理員稽核記錄](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>檔案及] 頁面上的活動
@@ -640,6 +648,11 @@ ms.locfileid: "24974683"
 |更新的檔案名稱  <br/> |FileUpdateName  <br/> |使用者變更檔案的名稱。  <br/> |
 |檢視的檔案  <br/> |FileVisited  <br/> |使用者檢視檔案。  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+您可以在 Microsoft 流程中搜尋活動的稽核記錄。這些活動包括建立、 編輯和刪除流程、 及變更流程權限。如需流程活動的稽核，請參閱部落格[Microsoft 流程稽核事件現在可在 Office 365 的安全性與規範中心](https://flow.microsoft.com/blog/security-and-compliance-center)。
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 您可搜尋 Microsoft 資料流活動的稽核記錄。這些活動包括使用者、 群組通道活動，以及管理活動等管理使用者、 管理組織設定並匯出報告所執行的視訊活動。這些活動的說明，請參閱[Microsoft Stream 中的稽核記錄](https://docs.microsoft.com/stream/audit-logs)"活動登入 Microsoft 資料流 」 一節。
@@ -678,9 +691,16 @@ Exchange 系統管理員稽核記錄-Office 365 中的預設會啟用其 — 當
 
 大部分的稽核資料有 30 分鐘內，但可能需要最多 24 小時之後事件發生於對應的稽核記錄項目顯示搜尋結果中。請參閱本文顯示所花費的不同 Office 365 服務中的事件可供使用的時間[開始之前](#before-you-begin)] 區段中的表格。
 
-**多久要保留稽核記錄吗？**
+**長的稽核記錄保留？**
 
-目前的稽核的記錄的保留期為 90 天。若要增加此限制的計劃主動正在處理 Microsoft。 
+如先前所述的稽核記錄的保留期間取決於您組織的 Office 365 訂閱。  
+
+- **Office 365 E3** -稽核記錄的保留期為 90 天。
+
+- **Office 365 E5** -稽核記錄會保留為 365 天 （一年以上）。不適用於擁有 E3 訂閱以及 Office 365 進階規範的附加元件訂閱的組織也是一年保留稽核記錄。
+
+     > [!NOTE]
+     > 稽核記錄的一年保留期間是目前僅適用於在 Office 365 Preview 計畫中註冊的組織。
 
 **我可以程式設計方式存取稽核資料吗？**
 
