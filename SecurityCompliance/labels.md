@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的標籤可以幫助您對正確的內容採取正確的動作。使用標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 5507b694dc0c4655649a20c179ac2c49ce4a2ec9
+ms.sourcegitcommit: aa12f19b901d910e92e202d4e703aa2c31736bdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25342811"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25362778"
 ---
 # <a name="overview-of-labels"></a>標籤概觀
 
@@ -267,28 +267,15 @@ ms.locfileid: "25342811"
     
 ![用於識別機密資訊類型的選項](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>自動將標籤套用至包含關鍵字或可搜尋屬性的內容
+### <a name="auto-apply-labels-to-content-with-keywords"></a>自動將標籤套用至包含關鍵字的內容
 
-您可以自動將標籤套用至符合特定條件的內容。現在可用的條件支援將標籤套用至包含特定字詞、片語或可搜尋屬性的值。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。 
+您可以自動將標籤套用至符合特定條件的內容。現在可用的條件支援將標籤套用至包含特定字詞或片語。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。 
 
 如需查詢語法的詳細資訊，請參閱：
 
 - [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-查詢式標籤使用搜尋索引來識別內容。如需有效可搜尋屬性的詳細資訊，請參閱：
-
-- [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
-- [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/crawled-and-managed-properties-overview)
-  
-範例查詢：
-
-- Exchange
-    - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
-
-- SharePoint 和商務用 OneDrive
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
+查詢型標籤會使用搜尋索引來識別內容。
   
 ![查詢編輯器](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
