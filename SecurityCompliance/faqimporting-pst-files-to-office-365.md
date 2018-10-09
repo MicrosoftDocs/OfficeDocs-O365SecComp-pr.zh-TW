@@ -3,7 +3,7 @@ title: 關於將 PST 檔案匯入 Office 365 常見問題集
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/3/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '常見問題集管理員需使用 Office 365 匯入服務 organizaiton 的 PST 檔案匯入 Office 365 信箱。 '
-ms.openlocfilehash: 35080106f92b38e944ba31f74d5564e65ba1f752
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7230e68f896766df643f12b2a132f987670e9afa
+ms.sourcegitcommit: eecf6f3aafbf460ee2ff9988f2b055e62b1fdb9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527431"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454050"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>關於將 PST 檔案匯入 Office 365 常見問題集
 
@@ -48,7 +48,7 @@ ms.locfileid: "22527431"
   
  **哪裡可用的網路上傳？**
   
-網路上傳位於目前可用美國、 加拿大、 巴西、 英國、 歐洲、 印度、 中文、 東南亞洲 （日本）、 共和國的韓國及澳洲。網路上傳會提供多個地區中推出。
+網路上傳位於目前可用美國、 加拿大、 巴西、 英國、 法國、 歐洲、 印度、 中文、 東南亞洲 （日本）、 共和國的韓國及澳洲。網路上傳會提供多個地區中推出。
   
  **什麼是匯入 PST 檔案使用網路上傳定價？**
   
