@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須被指派 Office 365 安全性權限&amp;規範中心之前他們可以管理任一其安全性或規範功能。
-ms.openlocfilehash: c612c99f7d72b19d072d728eb4851532d4012414
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013797"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450738"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>讓使用者能夠存取 Office 365 安全性&amp;規範中心
 
@@ -41,11 +41,7 @@ ms.locfileid: "23013797"
 
 1. [登入 Office 365 以及移至 [系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=525275)。
     
-<<<<<<< 標頭
 2. 在 Office 365 系統管理中心中，開啟 [**系統管理置中**] 和 [**安全性&amp;規範**。 
-=======
-2. 在 Office 365 系統管理中心中，開啟 [**系統管理置中**] 和 [**安全性&amp;規範**。 
->>>>>>> master
     
 3. 安全性&amp;規範中心，請移至 [**權限**。
     

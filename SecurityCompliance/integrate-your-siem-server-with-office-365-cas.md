@@ -12,24 +12,26 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以使用 Office 365 雲端應用程式安全性整合 SIEM 伺服器。請閱讀本篇文章以取得它的運作方式，以及如何設定它的概觀。
-ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972325"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450758"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>將 SIEM 伺服器與 Office 365 雲端 App 安全性整合
   
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一個步驟](utilization-activities-for-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](utilization-activities-for-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
+## <a name="overview-and-prerequisites"></a>概觀和先決條件
+
 您可以整合[Office 365 雲端應用程式的安全性](get-ready-for-office-365-cas.md)與安全性資訊和事件管理 (SIEM) 伺服器以啟用集中式監視的提醒。這是特別有用的使用雲端服務的組織與內部伺服器應用程式。整合和 SIEM server 可讓您更妥善地保護同時維持自動化特定安全性程序並相互關聯有所助益之間雲端架構的一般安全性的工作流程] 的 [您的 Office 365 應用程式的安全性小組與內部事件。  
   
 當您第一次使用 Office 365 雲端應用程式安全性整合 SIEM 伺服器時，從最後一個兩天的通知轉寄給 SIEM 伺服器上，為所有的提醒從加上 then 上 （根據您選取任何篩選器）。此外，如果您停用此功能段，當您再次啟用它，它會轉寄過去兩天的警示，然後所有通知從然後起。
- 
-## <a name="siem-integration-architecture"></a>SIEM 整合架構
+
+### <a name="siem-integration-architecture"></a>SIEM 整合架構
 
 SIEM 代理程式已設定在貴組織的網路。當部署和設定 SIEM 代理程式會提取所設定的資料類型 （警示） 使用 Office 365 雲端應用程式安全性 RESTful api （英文）。連接埠 443 上加密 HTTPS 通道上再傳送流量。
   
@@ -37,13 +39,13 @@ SIEM 代理程式已設定在貴組織的網路。當部署和設定 SIEM 代理
 
 ![SIEM 與雲端應用程式安全性架構](media/siem-architecture.png)
 
-## <a name="supported-siem-servers"></a>支援的 SIEM 伺服器
+### <a name="supported-siem-servers"></a>支援的 SIEM 伺服器
 
 Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 - 微焦點討論 ArcSight
 - 一般 CEF
 
-## <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>必要條件
 
 - 您必須是全域管理員或安全性管理員可執行本文所述的工作。請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
 
@@ -63,9 +65,7 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 
 - 您必須下載[JAR 檔案](https://go.microsoft.com/fwlink/?linkid=838596)需要整合 SIEM server 同意[軟體授權](https://go.microsoft.com/fwlink/?linkid=862491)條款。
  
-## <a name="integrate-office-365-cloud-app-security"></a>整合 Office 365 雲端應用程式安全性
-    
-### <a name="step-1-set-it-up-in-the-office-365-cloud-app-security-portal"></a>步驟 1： 設定它在 Office 365 雲端應用程式安全性入口網站
+## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>步驟 1： 會將它設定 Office 365 雲端應用程式安全性 SIEM 代理程式
 
 1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
     
@@ -98,21 +98,22 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 
 ![建立 SIEM 代理程式](media/SIEMAgentCreated.png)
     
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>步驟 2： 下載糖檔案並在您的伺服器上執行
+## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>步驟 2： 糖檔案下載並執行 SIEM 伺服器上
 
 1. 下載[Microsoft 雲端應用程式安全性 SIEM 代理程式](https://go.microsoft.com/fwlink/?linkid=838596)並解壓縮資料夾。（您必須同意這些[軟體授權合約](https://go.microsoft.com/fwlink/?linkid=862491)才能繼續執行。） 
     
-2. .Jar 檔案解壓縮 zip 資料夾並在您的伺服器上執行。
+2. 擷取.jar 檔案、 資料夾及執行 SIEM 伺服器上。
     
 3. 在執行後檔案，請在命令提示字元中執行下列： 命令：<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
-#### <a name="important-notes"></a>重要附註
+### <a name="important-notes"></a>重要附註
 
 - 檔案名稱可能會有所不同根據 SIEM 代理程式的版本。 
 
-- 建議您的伺服器上執行糖填滿，server 安裝期間。
+- 我們建議您在 server 安裝期間執行 SIEM 伺服器上的糖檔案。
+
     - **Windows**： 執行為排定的工作，同時務必使用設定至**不論使用者登入與否均執行**工作並清除 [**如果它是執行超過停止的任務**] 選項。
 
     - **Linux**： 將執行的命令以**&** 至`rc.local`檔案。 <br/>範例：<br/> 
@@ -126,31 +127,13 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
     - **TOKEN**是您在第一個程序中複製的 SIEM 代理程式權杖。
     - 若要取得說明，請輸入`-h`。 
   
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>步驟 3： 驗證 SIEM 代理程式正常運作
+## <a name="step-3-validate-that-the-siem-agent-is-working"></a>步驟 3： 驗證 SIEM 代理程式正常運作
 
 1. 請務必在 Office 365 雲端應用程式安全性入口網站中的 SIEM 代理程式的狀態不會顯示為**連線錯誤**或**已中斷連線**及會有任何代理程式通知。<br/>例如，我們可以看到 SIEM 伺服器所連接：<br/>![SIEM 伺服器連線](media/siem-connected.png)<br/>然後，我們可以看到 SIEM 伺服器中斷連線：<br/>![未連接的 SIEM 伺服器](media/siem-not-connected.png) 
   
 2. 在您 Syslog/SIEM 的伺服器，請確定您會看到提醒已從 Office 365 雲端應用程式安全性抵達。
   
-## <a name="regenerating-your-token"></a>重新產生您權杖
-
-如果您遺失您權杖，您就可以永遠重新產生它。在表格中，找出 SIEM 代理程式的列。按一下省略符號、，然後選擇 [**重新產生的語彙基元**。
-
-![重新產生的語彙基元 SIEM 代理程式按一下省略符號](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
-  
-## <a name="editing-your-siem-agent"></a>編輯 SIEM 代理程式
-
-若要編輯您 SIEM 代理程式在表格中，找到列 SIEM 代理程式。按一下省略符號、，然後選擇 [**編輯**。如果您編輯 SIEM 代理程式，您不需要重新執行.jar 檔 ；自動更新。
-
-![若要編輯 SIEM 代理程式，並選擇 [省略符號，然後選擇 [編輯。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
-  
-## <a name="deleting-your-siem-agent"></a>刪除 SIEM 代理程式
-
-若要刪除您 SIEM 代理程式在表格中，找到列 SIEM 代理程式。按一下省略符號、，然後選擇 [**刪除**。
-
-![若要刪除的 SIEM 代理程式，並選擇 [省略符號，然後選擇 [刪除]。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
-
-## <a name="sample-logfiles"></a>範例的記錄檔
+## <a name="what-the-logfiles-look-like"></a>記錄檔的外觀
 
 以下是可能 SIEM 伺服器傳送的提醒記錄檔範例：
 
@@ -168,10 +151,10 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
 ```
 
-而以下是範例 CEF 格式
+而以下是另一個範例中，這次 CEF 格式：
 
 
-|CEF 欄位名稱  | 說明  |
+|CEF 欄位名稱  | 描述  |
 |---------|---------|
 |啟動     | 提醒的時間戳記        |
 |結束     | 提醒的時間戳記        |
@@ -181,6 +164,37 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 |destinationServiceName     | 提醒源自應用程式，例如 Office 365、 SharePoint、 或 OneDrive        |
 |csLabel     | 而異 （標籤有不同的意義）。一般而言，標籤是自我闡明的例如 targetObjects。        |
 |cs     | 對應的標籤 （例如如同標籤範例通知之目標使用者） 的資訊        |
+
+## <a name="additional-tasks-as-needed"></a>其他工作 （如需）
+
+您已設定 SIEM 伺服器並已整合與 Office 365 雲端應用程式安全性之後，您可能需要重新產生的語彙基元、 編輯 SIEM 代理程式或刪除 SIEM 代理程式。下列各節說明如何執行這些工作。
+
+### <a name="regenerate-a-token"></a>重新產生的語彙基元
+
+如果您遺失您權杖，您可以重新產生一個。 
+
+1. 在 Office 365 雲端應用程式安全性入口網站中選擇 [**設定** > **安全性延伸模組**。
+
+2. 在表格中，找出 SIEM 代理程式的列。 
+
+3. 按一下省略符號、，然後選擇 [**重新產生的語彙基元**。<br/>![重新產生的語彙基元 SIEM 代理程式按一下省略符號](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
+  
+### <a name="edit-a-siem-agent"></a>編輯 SIEM 代理程式
+
+1. 在 Office 365 雲端應用程式安全性入口網站中選擇 [**設定** > **安全性延伸模組**。
+
+2. 找到 SIEM 代理程式的列。 
+
+3. 按一下省略符號、，然後選擇 [**編輯**。（如果您編輯 SIEM 代理程式，您不需要重新執行.jar 檔案 ； 它會自動更新）。<br/>![若要編輯 SIEM 代理程式，並選擇 [省略符號，然後選擇 [編輯。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+  
+### <a name="delete-a-siem-agent"></a>刪除 SIEM 代理程式
+
+1. 在 Office 365 雲端應用程式安全性入口網站中選擇 [**設定** > **安全性延伸模組**。
+
+2. 找到 SIEM 代理程式的列。 
+
+3. 按一下省略符號、，然後選擇 [**刪除**。<br/>![若要刪除的 SIEM 代理程式，並選擇 [省略符號，然後選擇 [刪除]。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
+
   
 ## <a name="next-steps"></a>後續步驟
 
