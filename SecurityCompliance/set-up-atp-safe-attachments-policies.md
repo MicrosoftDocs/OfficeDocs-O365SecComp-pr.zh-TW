@@ -3,7 +3,6 @@ title: 設定 Office 365 ATP 安全附件原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092939"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454280"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -43,9 +42,6 @@ ms.locfileid: "25092939"
 - 可讓您新增或更新原則散佈到所有 Office 365 資料中心的最多 30 分鐘。
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步驟 2： 設定 （或編輯） ATP 安全附件原則
-
-> [!TIP]
-> 您可以設定使用下列任一 ATP 安全附件原則 Office 365 安全性&amp;規範中心 」 或 「 Exchange 系統管理中心 (EAC)。**建議使用 Office 365 安全性&amp;規範中心**。 
   
 1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     

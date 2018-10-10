@@ -3,7 +3,6 @@ title: 在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何尋找並使用您的組織與 Office 365 企業版的電子郵件安全性報告。安全性中有電子郵件安全性報告&amp;規範中心。
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527424"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454340"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 
-電子郵件安全性的各種報告提供安全性&amp;規範中心以幫助您查看如何在 Office 365 中的反垃圾郵件和反惡意程式碼功能會保護您的組織。如果您擁有的必要權限，您可以檢視這些報告安全性&amp;移至**報表**的規範中心\>**儀表板**。
+電子郵件安全性的各種報告提供安全性&amp;規範中心以幫助您查看如何在 Office 365 中的反垃圾郵件和反惡意程式碼功能會保護您的組織。如果您有[必要的權限](#what-permissions-are-needed-to-view-these-reports)，您可以檢視這些報告安全性&amp;移至**報表**的規範中心\>**儀表板**。
   
 ![安全性&amp;規範中心儀表板可協助您看到其用於進階威脅保護](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -186,7 +185,7 @@ ms.locfileid: "22527424"
   
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 電子郵件反垃圾郵件保護](anti-spam-protection.md)
+[Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
   
 [報告與 Office 365 安全性前瞻&amp;規範中心](reports-and-insights-in-security-and-compliance.md)
   

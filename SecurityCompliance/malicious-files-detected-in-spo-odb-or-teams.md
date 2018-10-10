@@ -3,7 +3,6 @@ title: 檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,19 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: 了解移至檢視 SharePoint、 OneDrive 或小組中偵測到惡意檔案的相關資訊的位置以及如何將這些檔案採取動作。
-ms.openlocfilehash: e9a68c1cee1f2f3fb7fba148365449f0136fe637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 370e5e3d4d7fd5f35caa8ef993f6245d15ee9999
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526736"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454270"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊
 
 [Office 365 ATP for SharePoint、 OneDrive 及 Microsoft 小組](atp-for-spo-odb-and-teams.md)提供貴組織保護文件庫和小組網站中的惡意檔案。當偵測到惡意檔案時，該檔案會封鎖，讓任何人可以開啟、 複製、 移動或共用直到組織的安全性小組所採取其他動作。閱讀本文以了解如何檢視偵測到的檔案的相關資訊以及要執行的動作。 
-  
-> [!TIP]
-> 若要執行本文所述的工作，您必須具備必要[權限指派在 Office 365 安全性&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
+
+若要執行本文所述的工作，您必須具備必要[權限指派在 Office 365 安全性&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>檢視報告與偵測到的檔案的相關資訊
 
@@ -40,9 +38,6 @@ ms.locfileid: "22526736"
 4. 若要檢視的詳細的資訊，包括採取的動作、 檔案名稱、 檔案路徑及其他清單中選取項目。
     
 5. 選擇 [**進階分析**] 索引標籤來檢視資訊，例如觀察到的行為與分析的詳細資訊。 
-    
-> [!TIP]
-> 若要深入了解可用的報告，請參閱[Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)。 
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>檢視及隔離區中檔案採取動作
 
@@ -63,9 +58,6 @@ ms.locfileid: "22526736"
   - 選擇 [**刪除**] 以從隔離的項目清單移除檔案。如果您選擇這個選項，您必須也檔案從刪除其各自的文件庫的 SharePoint Online、 OneDrive for Business 或 Microsoft 小組。此選項不會解除封鎖來自正在檔案開啟或共用。 
     
 5. 選擇 [**關閉**] 以關閉 [選取的項目詳細資料。 
-    
-> [!TIP]
-> 若要深入了解管理隔離的檔案，請參閱[管理隔離郵件和 Office 365 系統管理員身分的檔案](manage-quarantined-messages-and-files.md)。 
   
 ## <a name="related-topics"></a>相關主題
 
@@ -74,5 +66,7 @@ ms.locfileid: "22526736"
 [Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
   
 [Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
+
+[在 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
   
 

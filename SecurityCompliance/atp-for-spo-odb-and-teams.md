@@ -3,7 +3,6 @@ title: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,21 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: 擴充 Office 365 進階威脅保護 SharePoint Online、 OneDrive for Business 和 Microsoft 小組以啟用更安全共同作業您的組織中的檔案。
-ms.openlocfilehash: ea1c77273be70ce27f60bfaeae3544d605553a32
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527176"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454320"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的Office 365 ATP
 
-定期人員共用檔案並使用 SharePoint、 OneDrive 及 Microsoft 小組共同作業。[Office 365 進階威脅保護](office-365-atp.md)(ATP)，與您的組織共同作業更安全的方式。ATP 協助偵測和封鎖識別為惡意小組網站和文件庫中的檔案。閱讀本篇文章以概略 ATP SharePoint Online、 OneDrive for Business 和 Microsoft 小組並再執行您下一個步驟。 
+## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP for SharePoint、 OneDrive 及 Microsoft 小組的概觀
+
+定期人員共用檔案並使用 SharePoint、 OneDrive 及 Microsoft 小組共同作業。[Office 365 進階威脅保護](office-365-atp.md)(ATP)，與您的組織共同作業更安全的方式。ATP 協助偵測和封鎖識別為惡意小組網站和文件庫中的檔案。  
   
-> [!TIP]
-> 若要執行本文所述的工作，您必須是 Office 365 全域管理員或安全性管理員。請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
-  
-## <a name="how-it-works"></a>運作方式
+### <a name="how-it-works"></a>運作方式
 
 當 SharePoint Online 中的檔案時、 OneDrive for Business 和 Microsoft 小組已識別為惡意、 ATP 直接整合搭配鎖定該檔案的檔案存放區。下圖顯示在文件庫中偵測到惡意檔案的範例。
   
@@ -46,6 +44,8 @@ ms.locfileid: "22527176"
 ### <a name="keep-the-following-points-in-mind"></a>請記住下列重點
 
 - ATP 不會掃描 SharePoint Online、 OneDrive 中每一個單一檔案商務或 Microsoft 小組。這是根據設計。掃描檔案有以非同步方式，透過使用智慧 heuristics 和威脅有空的共用和來賓活動事件來識別惡意檔案的程序。
+
+- 請確定您的 SharePoint 網站已設為使用[現代經驗](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。檔案會被識別為惡意及封鎖、 人員即可看到此發生摩登的經驗，但不是 [傳統檢視。ATP 保護適用於是否使用現代經驗] 或 [傳統檢視;不過的封鎖檔案的視覺指標是存在只能在現代經驗。
     
 - 會被識別為惡意 SharePoint Online 中的檔案、 OneDrive for Business 或 Microsoft 小組會顯示在[Office 365 進階威脅 Protection 的報告](view-reports-for-atp.md)及威脅 Explorer （ [Office 365 威脅智慧](office-365-ti.md)的一部分）。
     
@@ -53,11 +53,11 @@ ms.locfileid: "22527176"
     
 - SharePoint Online 系統管理員可以決定是否要讓使用者能夠下載偵測到為惡意的檔案。做法是執行 Set-spotenant PowerShell 指令程式使用 DisallowInfectedFileDownload 參數 （請參閱[開啟 SharePoint、 OneDrive 及 Microsoft 小組的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)）。
     
-## <a name="new-quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>（新增 ！）隔離區中 ATP for SharePoint Online、 OneDrive for Business 和 Microsoft 小組
+## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>隔離區中 ATP for SharePoint Online、 OneDrive for Business 和 Microsoft 小組
 
- * * 開始落後 5 2018、 安全性[隔離](quarantine-email-messages.md)功能的&amp;規範中心會被擴充至 ATP for SharePoint Online、 OneDrive for Business 和 Microsoft 小組。 **
+ 開始在落後 5 2018、 安全性[隔離](quarantine-email-messages.md)功能&amp;規範中心會被擴充至 ATP for SharePoint Online、 OneDrive for Business 和 Microsoft 小組。
   
-當 SharePoint Online 中的檔案時、 OneDrive for Business 或 Microsoft 小組識別為惡意除了 ATP 封鎖防止開啟或共用檔案時，該檔案包含在隔離的項目清單。(安全性&amp;規範管理中心，移至**威脅管理** \> **檢閱** \> **隔離**及內容的篩選。) 
+當 SharePoint Online 中的檔案時、 OneDrive for Business 或 Microsoft 小組識別為惡意除了 ATP 封鎖防止開啟或共用檔案時，該檔案包含在隔離的項目清單。(安全性&amp;規範管理中心，移至**威脅管理** \> **檢閱** \> **隔離**及篩選的**內容**。) 
   
 如果您正在貴組織的 Office 365 安全性小組的一部分，且必須必要[權限指派在 Office 365 安全性&amp;規範中心](permissions-in-the-security-and-compliance-center.md)，您可以下載、 版本、 報告及刪除已偵測到為惡意的 ATP 的檔案從隔離區。
   
