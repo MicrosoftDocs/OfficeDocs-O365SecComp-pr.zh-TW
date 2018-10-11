@@ -3,7 +3,7 @@ title: Office 365 的反詐騙保護
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文說明如何 Office 365 可以降低對網路釣魚攻擊用途是寄件者的網域即詐騙的網域。其完成這同樣藉由分析郵件並封鎖過可驗證 neithe 使用標準的電子郵件的驗證方法或其他寄件者信譽技術 （英文）。這項變更被實減少網路釣魚攻擊的 Office 365 組織公開到數目。
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559218"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496897"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -25,7 +25,7 @@ ms.locfileid: "22559218"
   
 本文也說明為何此變更進行、 客戶如何準備這項變更、 如何檢視會影響的郵件、 如何報告的郵件、 如何減輕誤判，，以及給 Microsoft 的寄件者應如何準備進行這變更。
   
-Microsoft 的反詐騙技術一開始會部署到其 Office 365 進階威脅保護 (ATP) 及 E5 客戶。不過，因為所有其篩選了解從彼此的方式，而非 ATP 客戶及即使 Outlook.com 使用者可能也受到影響。
+Microsoft 的反詐騙技術最初已部署給其組織有的 Office 365 企業版 E5 訂閱或鎖購買其訂閱的 Office 365 進階威脅保護 (ATP) 附加元件。年 10 月、 2018年我們已擴充至組織的 Exchange Online Protection (EOP)，以及保護。此外，因此我們篩選的所有了解從彼此的方式，Outlook.com 使用者可能會影響。
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>在網路釣魚攻擊的詐騙使用方式
 
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-之後反詐騙如果您是進階威脅保護或 E5 客戶、 compauth 值會加上戳記 （非 ATP 和非 E5 客戶不受影響）：
+之後反詐騙如果您有 Office 365 企業版 E5、 EOP 或 ATP、 compauth 值會加上戳記：
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -408,27 +408,27 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>了解如何垃圾郵件、 網路釣魚及進階網路釣魚結合偵測
 
-Exchange Online 客戶-ATP 和非 ATP-要能夠指定服務識別為惡意程式碼、 垃圾郵件、 高信賴垃圾郵件、 網路釣魚、 及大量郵件時要採取的動作。不過，隨著 ATP 客戶的新反網路釣魚原則和事實上訊息可能會瀏覽多種偵測類型 （例如惡意程式碼、 網路釣魚、 與使用者模擬），可能有來此原則可套用一些混淆。 
+使用或不 ATP，使用 Exchange Online 的組織可以指定服務識別為惡意程式碼、 垃圾郵件、 高信賴垃圾郵件、 網路釣魚、 及大量郵件時要採取的動作。ATP 客戶 ATP 反網路釣魚原則和 EOP 客戶的反網路釣魚原則與訊息可能會瀏覽多種偵測類型 （例如惡意程式碼、 網路釣魚、 與使用者模擬） 事實，可能是一些不確定其原則可套用。 
   
 一般而言，CAT （類別） 屬性中的 X Forefront-反垃圾郵件報告標頭中所識別套用至郵件的原則。 
   
 |**Priority**|**原則**|**類別**|**其中 managed？**|**適用於**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有客戶  <br/> |
-|2  <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客戶  <br/> |
-|3  <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客戶  <br/> |
-|4  <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |僅限 ATP  <br/> |
-|5  <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客戶  <br/> |
-|6  <br/> |大量  <br/> |大量  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有客戶  <br/> |
-|7  <br/> |網域模擬  <br/> |DIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限 ATP  <br/> |
-|8  <br/> |使用者模擬  <br/> |UIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限 ATP  <br/> |
+|1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|2   <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|3   <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|4   <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
+|5   <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|6   <br/> |大量  <br/> |大量  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|7   <br/> |網域模擬  <br/> |DIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織  <br/> |
+|8   <br/> |使用者模擬  <br/> |UIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織 <br/> |
    
 如果您有多個不同的反網路釣魚原則，將套用一個在最高優先順序。例如，假設您有兩個原則：
   
 |**原則**|**Priority**|**使用者/網域模擬**|**反詐騙**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |On  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |On  <br/> |
    
 如果訊息有和識別身分詐騙與使用者模擬與相同的一組使用者範圍的原則及原則 B 則郵件會被視為詐騙但採取任何動作套用自反詐騙已關閉並詐騙執行在較高的優先順序 (4) 與使用者模擬 (8)。
   
@@ -683,7 +683,7 @@ Microsoft 本身先採用這項功能再將其部署至其客戶的其餘部分�
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>將 Microsoft 提到這項功能 Outlook.com 和非進階威脅保護的 Office 365 的客戶吗？
 
-反詐騙保護將會最初導 ATP/E5 客戶和未來可能會發行其其他使用者。不過，若是如此，可能不會套用等報告某些功能及自訂會覆寫。
+Microsoft 的反詐騙技術最初已部署給其組織有的 Office 365 企業版 E5 訂閱或鎖購買其訂閱的 Office 365 進階威脅保護 (ATP) 附加元件。年 10 月、 2018年我們已擴充至組織的 Exchange Online Protection (EOP)，以及保護。未來，我們可能如 Outlook.com 釋出其。不過，如果我們執行動作時，可能不會套用等報告某些功能及自訂會覆寫。
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>我如何可以回報垃圾郵件或非垃圾郵件訊息給 Microsoft？
 

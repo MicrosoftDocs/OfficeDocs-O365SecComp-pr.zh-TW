@@ -3,7 +3,7 @@ title: Office 365 的反網路釣魚保護
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/05/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 description: Office 365 提供各種網路釣魚防護預設和透過例如 ATP 反網路釣魚其他方案。本主題介紹可用來了解與 Office 365 中實作反網路釣魚選項和策略的線上資源。
-ms.openlocfilehash: b1a0f09aa34cf1bb2c57fcf415923568c063522a
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: 163d03ee49ccf18f7d50324e0ac13ac6d219a4ea
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435100"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496877"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Office 365 的反網路釣魚保護
 
@@ -31,7 +31,7 @@ Office 365 系統管理員身分使用這些資源來了解如何使用 Office 3
   
 最重要的是要怎麼做才能保護您的環境是對您使用者危險和網路釣魚攻擊的跡象教育訓練。若要開始，將您的使用者熟悉[保護自己網路釣魚配置和詐騙的其他表單](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)中的資訊。
   
-Office 365 組織中使用 Office Enterprise E5，您可以使用 ATP 反網路釣魚安全性&amp;規範中心。ATP 反網路釣魚適用於搭配模擬偵測演算法的機器學習模型的一組提供保護商品和矛網路釣魚攻擊的內送郵件。ATP 反網路釣魚保護您的組織根據您的 Office 365 全域或安全性管理員所設定的原則。若要深入了解，請參閱[Office 365 的 ATP 反網路釣魚功能](atp-anti-phishing.md)與[設定 Office 365 中的 ATP 反網路釣魚原則](set-up-atp-anti-phishing-policies.md)。
+Office 365 組織中使用 Office Enterprise E5，您可以使用 ATP 反網路釣魚安全性&amp;規範中心。ATP 反網路釣魚適用於搭配模擬偵測演算法的機器學習模型的一組提供保護商品和矛網路釣魚攻擊的內送郵件。ATP 反網路釣魚保護您的組織根據您的 Office 365 全域或安全性管理員所設定的原則。若要深入了解，請參閱[Office 365 的 ATP 反網路釣魚功能](atp-anti-phishing.md)與[設定 Office 365 中的反網路釣魚原則](set-up-anti-phishing-policies.md)。
   
 如需關於 Office 365 預設為您免受網路釣魚攻擊的設定方式的詳細資訊，請參閱[如何 Office 365 驗證 From： 地址，以防止網路釣魚](how-office-365-validates-the-from-address.md)。
   

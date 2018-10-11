@@ -3,7 +3,7 @@ title: 深入了解詐騙情報
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/14/2018
+ms.date: 10/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: 在 [安全性] 中使用詐騙智慧&amp;規範中心反垃圾郵件設定] 頁面上檢閱所有寄件者是詐騙屬於貴組織的其中一個網域或詐騙的外部網域。詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅保護和 Exchange Online Protection 的一部分。
-ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
-ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
+ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496554"
+ms.locfileid: "25496837"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 
@@ -58,7 +58,7 @@ ms.locfileid: "25496554"
 |**參數**|**描述**|
 |:-----|:-----|
 |Sender  <br/> |也稱為則為 true 的寄件者。這通常是詐騙電子郵件的來源的網域。Office 365 決定指標詐騙貴組織的傳送端 IP 位址 (PTR) DNS 記錄的網域。如果有不找到任何網域，報表會改用顯示寄件者的 IP 位址。  <br/> |
-|詐騙的使用者  <br/> |詐騙寄件者的使用者帳戶。  <br/> **內部**] 索引標籤僅。此欄位包含單一電子郵件地址或如果寄件者詐騙多個使用者帳戶，包含**一個以上**。<br/> 僅**外部**索引標籤。外部網域只包含傳送端網域，並不包含完整的電子郵件地址。<br/> > [!TIP]> **的進階 admins。** 詐騙的使用者是從也是由郵件用戶端顯示 From 地址的地址 (5322.From) 地址。這有時稱為 header.from 地址。由 SPF 不檢查此位址此有效性。           |
+|詐騙的使用者  <br/> |詐騙寄件者的使用者帳戶。  <br/> **內部**] 索引標籤僅。此欄位包含單一電子郵件地址或如果寄件者詐騙多個使用者帳戶，包含**一個以上**。<br/> 僅**外部**索引標籤。外部網域只包含傳送端網域，並不包含完整的電子郵件地址。<br/> **提示 ！進階系統管理員針對。** 詐騙的使用者是從也是由郵件用戶端顯示 From 地址的地址 (5322.From) 地址。這有時稱為 header.from 地址。由 SPF 並未取出這個位址的有效性。           |
 |訊息數目  <br/> |代表已識別詐騙的寄件者或寄件者您組織在過去 30 天內寄件者傳送的郵件數目。  <br/> |
 |使用者抱怨的數目  <br/> |過去 30 天內欄位所針對此寄件者的使用者使用您的使用者抱怨。客訴通常是向 Microsoft 垃圾送出表單中。  <br/> |
 |驗證結果  <br/> |這個值是**傳遞**如果寄件者通過 Exchange Online Protection (EOP) 寄件者驗證檢查，例如 SPF 或 DKIM、**失敗**如果寄件者失敗 EOP 寄件者驗證檢查或**未知**如果這些檢查的結果不是已知。  <br/> |
@@ -73,31 +73,31 @@ ms.locfileid: "25496554"
     
 2. 以您工作或學校的帳戶登入 Office 365。您的帳戶必須在 Office 365 組織中系統管理員認證。
     
-3. 安全性&amp;規範中心展開**Threat Management** \> **原則** \> **反垃圾郵件**。
+3. 安全性&amp;規範中心展開**Threat Management** \> **原則** \> **反垃圾郵件**。  
   
-![](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![這個螢幕擷取畫面顯示反垃圾郵件] 頁面上的存取](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
   
-4. 在右窗格中的**反垃圾郵件設定**] 頁面上選取 [**自訂**] 索引標籤，然後向下捲動和**詐騙智慧原則**。 
+4. 在右窗格中的**反垃圾郵件設定**] 頁面上選取 [**自訂**] 索引標籤，然後向下捲動和**詐騙智慧原則**。  
   
-![](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![這個螢幕擷取畫面顯示 access 的反垃圾郵件的自訂設定](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
   
-5. 若要檢視的詐騙網域的寄件者清單，選擇 [**檢閱新的寄件者**和選取 * * 您的網域 * *] 索引標籤。 
+5. 若要檢視詐騙網域的寄件者清單，請選擇 [**檢閱新的寄件者**並選取**您的網域**] 索引標籤。 
     
-    如果您已經過檢閱寄件者，並想要變更一些您先前的選擇，您可以選擇**我已檢閱 Show me 寄件者**而。不論執行哪項中會出現下列面板。 
+    如果您已經過檢閱寄件者，並想要變更一些您先前的選擇，您可以選擇**我已檢閱 Show me 寄件者**而。不論執行哪項中會出現下列面板。  
   
-![](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![這個螢幕擷取畫面顯示 [詐騙的寄件者] 索引標籤的存取](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
   
-詐騙的每個使用者會顯示在個別的資料列，讓您可以選擇是否要允許或封鎖來自詐騙每位使用者個別寄件者。
+    詐騙的每個使用者會顯示在個別的資料列，讓您可以選擇是否要允許或封鎖來自詐騙每位使用者個別寄件者。  
   
-將寄件者新增至使用者的 [允許] 清單中，從 [**允許] 詐騙**] 欄中選取 **[是]** 。若要將寄件者新增至使用者的 [封鎖] 清單中，選擇 [**否]**。
+    將寄件者新增至使用者的 [允許] 清單中，從 [**允許] 詐騙**] 欄中選取 **[是]** 。若要將寄件者新增至使用者的 [封鎖] 清單中，選擇 [**否]**。
+     
+    網域將原則設定您無法擁有，選取 [**外部網域**] 索引標籤變更任何寄件者為 **[是]** 允許未經驗證的電子郵件傳送至您的組織的寄件者的 [**允許詐騙**] 欄中。或者，如果您認為 Office 365 所做的 documents 傳送詐騙的電子郵件寄件者的錯誤，**允許以詐騙**資料行變更為 [**否]**。  
   
-網域將原則設定您無法擁有，選取 [**外部網域**] 索引標籤變更任何寄件者為 **[是]** 允許未經驗證的電子郵件傳送至您的組織的寄件者的 [**允許詐騙**] 欄中。或者，如果您認為 Office 365 所做的 documents 傳送詐騙的電子郵件寄件者的錯誤，**允許以詐騙**資料行變更為 [**否]**。 
-  
-![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![這個螢幕擷取畫面顯示是否允許寄件者詐騙](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. 選擇 [**儲存**] 以儲存任何變更。 
 
-如果您是 E5 或 ATP 客戶，您也可以管理寄件者詐騙網域透過[詐騙智慧洞察力](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)
+如果您的 Office 365 企業版 E5 訂閱或分開已購買做為附加元件進階威脅保護，您也可以管理寄件者詐騙透過[詐騙智慧洞察力](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)網域。
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>設定反詐騙原則
 <a name="Managespooflist"> </a>
@@ -122,15 +122,15 @@ Office 365 包含預設反詐騙保護一律執行。此預設保護看不見安
     
 5. 在出現，請在**詐騙**] 資料列] 頁面上選擇 [**編輯**]。 
     
-6. 下一步] 設定時為跨網域詐騙偵測到的郵件時要採取的動作。若要將郵件移至 [收件者的垃圾郵件] 資料夾是預設行為。若要將郵件傳送至隔離區是其他選項。如需管理傳送至隔離郵件的詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](quarantine-email-messages.md)。
+6. 下一步] 設定時為跨網域詐騙偵測到的郵件時要採取的動作。若要將郵件移至 [收件者的垃圾郵件] 資料夾是預設行為。若要將郵件傳送至隔離區是其他選項。如需管理傳送至隔離郵件的詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](quarantine-email-messages.md)。  
   
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
+    ![這個螢幕擷取畫面顯示反詐騙原則編輯選項](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. 選擇是否要啟用或停用反詐騙 safety 秘訣。Office 365 建議以警告時他們互動寄件者已不驗證身分識別的使用者啟用該**驗證會失敗**safety 提示。Office 365 也建議針對較小群使用者的**驗證虛複雜**啟用 safety 提示因為如果使用者接收電子郵件從許多合法，但未獲授權來源此 safety 提示可能會產生許多的警告。 
+7. 選擇是否要啟用或停用反詐騙 safety 秘訣。Office 365 建議以警告時他們互動寄件者已不驗證身分識別的使用者啟用該**驗證會失敗**safety 提示。Office 365 也建議針對較小群使用者的**驗證虛複雜**啟用 safety 提示因為如果使用者接收電子郵件從許多合法，但未獲授權來源此 safety 提示可能會產生許多的警告。  
   
-![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-  
-讓您選擇，然後選取 [**儲存**。 
+    ![這個螢幕擷取畫面顯示反詐騙 safety 提示選項](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
+
+8. 讓您選擇，然後選擇 [**儲存**。 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>若要管理詐騙和網路釣魚與 Office 365 的其他方式
 <a name="Managespooflist"> </a>
@@ -139,14 +139,14 @@ Office 365 包含預設反詐騙保護一律執行。此預設保護看不見安
   
 - 檢查您的例行工作的一部分的 Exchange Online Protection 詐騙的郵件] 報告。您可以使用這份報告通常以檢視和協助管理詐騙的寄件者。資訊，請參閱**詐騙郵件報告**中[使用郵件保護報告以檢視有關惡意程式碼、 垃圾郵件和規則偵測的 Office 365 中](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx)。
     
-- 更多進階 Office 365 系統管理員：
+更進階的 Office 365 系統管理員，您也可以完成下列檢查：
     
-  - 檢閱您的寄件者原則架構 (SPF) 設定。快速介紹 SPF 以及要取得其快速地設定，請參閱[Set up SPF 避免詐騙的 Office 365 中](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)。更深入了解 Office 365 如何使用 SPF，或者例如混合部署的疑難排解或非標準部署開始使用[Office 365 如何使用寄件者原則架構 (SPF) 若要防止詐騙](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)。
+- 檢閱您的寄件者原則架構 (SPF) 設定。快速介紹 SPF 以及要取得其快速地設定，請參閱[Set up SPF 避免詐騙的 Office 365 中](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)。更深入了解 Office 365 如何使用 SPF，或者例如混合部署的疑難排解或非標準部署開始使用[Office 365 如何使用寄件者原則架構 (SPF) 若要防止詐騙](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)。
     
-  - 檢閱您 DomainKeys 識別郵件 (DKIM) 的設定。您應該使用 DKIM 除了 SPF 和 DMARC 避免 spoofers 傳送看起來像它們來自您網域的郵件。DKIM 可讓您將數位簽章新增至郵件標頭中的電子郵件訊息。資訊，請參閱[使用 DKIM 驗證自 Office 365 中您網域傳送的輸出電子郵件](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)。
+- 檢閱您 DomainKeys 識別郵件 (DKIM) 的設定。您應該使用 DKIM 除了 SPF 和 DMARC 避免 spoofers 傳送看起來像它們來自您網域的郵件。DKIM 可讓您將數位簽章新增至郵件標頭中的電子郵件訊息。資訊，請參閱[使用 DKIM 驗證自 Office 365 中您網域傳送的輸出電子郵件](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)。
     
-  - 檢閱您網域式訊息驗證，Reporting，and Conformance (DMARC) 的設定。實作與 SPF 和 DKIM DMARC 提供其他保護詐騙和網路釣魚電子郵件。DMARC 協助接收的郵件系統決定如何處理郵件會從您網域傳送未通過 SPF 或 DKIM 檢查。資訊，請參閱[使用 DMARC 來驗證 Office 365 中的電子郵件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
+- 檢閱您網域式訊息驗證，Reporting，and Conformance (DMARC) 的設定。實作與 SPF 和 DKIM DMARC 提供其他保護詐騙和網路釣魚電子郵件。DMARC 協助接收的郵件系統決定如何處理郵件會從您網域傳送未通過 SPF 或 DKIM 檢查。資訊，請參閱[使用 DMARC 來驗證 Office 365 中的電子郵件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
     
-  - 使用[Get PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell 指令程式來收集詐騙的寄件者的詳細的資料、 產生允許與封鎖清單，並協助您決定如何產生更完整的 SPF、 DKIM 及 DMARC DNS 記錄而不需要您合法電子郵件取得攔截外部垃圾郵件篩選器中。如需詳細資訊，請參閱[antispoofing 保護 Office 365 中的運作方式](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/)。
+- 使用[Get PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell 指令程式來收集詐騙的寄件者的詳細的資料、 產生允許與封鎖清單，並協助您決定如何產生更完整的 SPF、 DKIM 及 DMARC DNS 記錄而不需要您合法電子郵件取得攔截外部垃圾郵件篩選器中。如需詳細資訊，請參閱[antispoofing 保護 Office 365 中的運作方式](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/)。
     
 

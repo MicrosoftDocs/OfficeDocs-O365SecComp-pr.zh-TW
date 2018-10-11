@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 進階威脅保護包含詐騙智慧、 安全的連結、 安全附件及進階的反網路釣魚功能。進階的威脅保護也要延伸至檔案的 SharePoint Online、 OneDrive for Business 和 Microsoft 小組。
-ms.openlocfilehash: fed816ec8cd0e3e7a6b5118fde35d81647b94f02
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454350"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496857"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -51,7 +51,7 @@ Office 365 進階威脅保護 (ATP) 有幫助保護您的組織從惡意的攻�
   
 ## <a name="define-policies-for-atp"></a>為 ATP 定義原則
 
-- **[設定 Office 365 中的 ATP 反網路釣魚原則](set-up-atp-anti-phishing-policies.md)** 包括模擬型攻擊以防止傳送電子郵件訊息的攻擊者顯示可從信任的人員或網域 
+- **[設定 Office 365 中的 ATP 反網路釣魚原則](set-up-anti-phishing-policies.md)** 包括模擬型攻擊以防止傳送電子郵件訊息的攻擊者顯示可從信任的人員或網域 
 
 - **[設定 Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)** 包括您的組織[自訂封鎖的 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)和[自訂 「 未修正"Url 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
     
@@ -69,7 +69,7 @@ ATP 原則已備妥之後，就有一個報表可用來顯示服務運作的方�
     
 3. 是否需要進行調整您的安全性原則。請參閱下列資源：
 
-  - [Office 365 中的 ATP 反網路釣魚原則](set-up-atp-anti-phishing-policies.md)
+  - [Office 365 中的 ATP 反網路釣魚原則](set-up-anti-phishing-policies.md)
     
   - [Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
     

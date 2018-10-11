@@ -3,7 +3,7 @@ title: 設定您的 Office 365 租用戶以提高安全性
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 帶領您完成建議的租用戶整個設定會影響您的 Office 365 環境的安全性設定。安全性需求可能需要更多或更少的安全性。使用這些建議為起點。
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013867"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496867"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定您的 Office 365 租用戶以提高安全性
 
@@ -32,7 +32,7 @@ Office 365 安全性&amp;規範中心包括保護您的環境的功能。它也�
   
 |區域 * * *|包含預設原則 * * *|建議 * * *|
 |:-----|:-----|:-----|
-|**ATP 反網路釣魚** <br/> |否  <br/> | 如果您有自訂的網域，建立反網路釣魚原則來保護您最重要的使用者，例如 CEO、 電子郵件帳戶及保護您的網域。檢閱[設定 ATP 反網路釣魚原則](set-up-atp-anti-phishing-policies.md)並建立原則使用做為指南的範例："範例： 反網路釣魚保護使用者和網域的原則。"|
+|**反網路釣魚** <br/> |是  <br/> | 如果您有自訂的網域，建立反網路釣魚原則來保護您最重要的使用者，例如 CEO、 電子郵件帳戶及保護您的網域。檢閱[設定反網路釣魚原則](set-up-anti-phishing-policies.md)並建立原則使用做為指南的範例："範例： 反網路釣魚保護使用者和網域的原則。"|
 |**反惡意程式碼引擎** <br/> |是  <br/> | 編輯預設原則：  <br/> • 一般附件篩選類型 — 選取 [開啟]  <br/><br>  您也可以建立自訂惡意程式碼篩選原則與您組織中套用至指定的使用者、 群組或網域。  <br/> <br> 詳細資訊：  <br/> •[反惡意程式碼保護](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> •[設定反惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
 |**ATP 安全附件** <br/> |否  <br/> | 在 [主要] 頁面的安全附件保護檔案 SharePoint、 OneDrive 及 Microsoft 小組中的核取此方塊：  <br/>  SharePoint、 OneDrive 及 Microsoft 小組 ATP • 開啟  <br/> <br> 使用這些設定中新增新的安全附件原則：  <br/>  • [封鎖-封鎖目前和未來的電子郵件和附件的偵測到惡意程式碼 （選擇這個選項）  <br/>  • [啟用重新導向 — （核取此方塊並輸入電子郵件地址，例如管理或隔離區的帳戶）  <br/>  • [套用上述的選取範圍惡意程式碼掃描附件的逾時則會發生錯誤 （核取此方塊）  <br/>  • [套用至 — 收件者選取的網域是 （網域）  <br/>  <br>更多資訊：[設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP 安全連結** <br/> |是  <br/> | 將此設定新增至整個組織的預設原則：  <br/> • [使用安全中的連結： Office 365 ProPlus、 iOS 適用於 Office 及 Android （選取這個選項）。  <br/> <br>建議的特定收件者原則：  <br/>  • Url 將會修正與使用者按下連結上時檢查已知惡意連結的清單 （選取這個選項）。  <br/>  • [使用安全附件要掃描的可下載內容 （核取此方塊）。  <br/>  • [套用至 — 收件者選取的網域是 （網域）。  <br/> <br> 更多資訊： [Office 365 ATP 安全的連結](atp-safe-links.md)。  <br/> |

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: 了解 Office 365 企業版如何協助保護您的組織各種包括詐騙、 惡意程式碼、 垃圾郵件、 網路釣魚嘗試及未經授權的存取資料的威脅。
-ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011265"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496847"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防範 Office 365 中的威脅
 
@@ -54,7 +54,7 @@ ms.locfileid: "24011265"
     
 - [了解詐騙智慧](learn-about-spoof-intelligence.md)
     
-- [設定 ATP 反網路釣魚原則](set-up-atp-anti-phishing-policies.md)
+- [設定反網路釣魚原則](set-up-anti-phishing-policies.md)
     
 - [設定 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
     
