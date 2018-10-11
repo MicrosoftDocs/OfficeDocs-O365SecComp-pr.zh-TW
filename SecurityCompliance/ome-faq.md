@@ -3,7 +3,7 @@ title: Office 365 郵件加密常見問題集
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/27/2018
+ms.date: 10/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 已在 Office 365 中的新郵件保護功能的運作方式的相關問題嗎？檢查的答案。
-ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
+ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341428"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25495517"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 
@@ -89,7 +89,7 @@ Office 365 郵件加密的新功能的現有 IRM 和舊版 OME 解決方案的�
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的組織具有 Exchange 混合部署。可以使用這項功能吗？
 
-內部使用者可以傳送加密的郵件使用 Exchange Online 郵件流程規則。為達成此目的，您需要透過 Exchange Online 電子郵件路由。
+內部使用者可以傳送加密的郵件使用 Exchange Online 郵件流程規則。為達成此目的，您需要透過 Exchange Online 電子郵件路由。如需詳細資訊，請參閱[第 2 部分： 設定郵件流程電子郵件伺服器的 Office 365 以](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>我需要哪些電子郵件用戶端使用，以建立 OME 加密的郵件？支援哪些應用程式傳送受保護的郵件？
 
@@ -119,7 +119,7 @@ Office 365 郵件加密的新功能的現有 IRM 和舊版 OME 解決方案的�
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>可以使用自動加密郵件所設定的原則中的資料遺失防護 (DLP) 透過安全性&amp;規範中心吗？
 
-目前您可以僅設定郵件流程規則在 Exchange Online。透過安全性 DLP 目前不支援加密&amp;規範中心。
+是 ！您可以設定郵件流程規則 in Exchange Online 或使用 DLP 安全性&amp;規範中心。
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>可開啟加密的郵件傳送至共用信箱吗？
 
