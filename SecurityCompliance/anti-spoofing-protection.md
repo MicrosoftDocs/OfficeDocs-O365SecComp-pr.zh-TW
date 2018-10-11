@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文說明如何 Office 365 可以降低對網路釣魚攻擊用途是寄件者的網域即詐騙的網域。其完成這同樣藉由分析郵件並封鎖過可驗證 neithe 使用標準的電子郵件的驗證方法或其他寄件者信譽技術 （英文）。這項變更被實減少網路釣魚攻擊的 Office 365 組織公開到數目。
-ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496897"
+ms.locfileid: "25498109"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -55,7 +55,7 @@ Microsoft 的反詐騙技術最初已部署給其組織有的 Office 365 企業�
   
 上述的郵件沒有來自 Microsoft、 但同時，使用者會用來取得網路釣魚訊息可能誘騙使用者按下連結及放棄其認證、 下載惡意程式碼、 或回覆有機密內容的郵件。因為很難告訴實際密碼重設與 fake 一個之間的差異，許多使用者略過這些訊息、 它們回報為垃圾郵件或整天郵件後向 Microsoft 報告為未接的網路釣魚詐騙。
     
-若要停止詐騙、 電子郵件篩選產業已開發[SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)、 [DKIM](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)及[DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx)等的電子郵件驗證通訊協定。DMARC 防止詐騙檢查郵件寄件者層的使用者會看到其電子郵件用戶端中 （在上述範例中，這是 service.outlook.com、 outlook.com，以及 accountprotection.microsoft.com）-與 SPF 或 DKIM 傳遞的網域。也就是使用者看到的網域已驗證與因此未詐騙。如需更完整的討論，請參閱區段"*瞭解為何電子郵件驗證不一定足夠停止詐騙"* 更新版本文件中。 
+若要停止詐騙、 電子郵件篩選產業已開發[SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、 [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)及[DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)等的電子郵件驗證通訊協定。DMARC 防止詐騙檢查郵件寄件者層的使用者會看到其電子郵件用戶端中 （在上述範例中，這是 service.outlook.com、 outlook.com，以及 accountprotection.microsoft.com）-與 SPF 或 DKIM 傳遞的網域。也就是使用者看到的網域已驗證與因此未詐騙。如需更完整的討論，請參閱區段"*瞭解為何電子郵件驗證不一定足夠停止詐騙"* 更新版本文件中。 
   
 不過，問題是記錄是選擇性的不需要該電子郵件驗證。因此時使用強式驗證原則的網域 like, microsoft.com 和 skype.com 受到來自詐騙網域的所有發佈弱的驗證原則或沒有原則] 是針對正在詐騙的目標。年 3 月 2018年僅 9%Fortune 500 在公司網域的發佈強式電子郵件驗證原則。可能會由 phisher 詐騙其餘 91%和除非電子郵件篩選器會偵測使用其他原則可能會傳遞至使用者欺騙它們：
   
@@ -619,11 +619,11 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 如果您是 Office 365 客戶與您使用 Office 365 傳送輸出電子郵件：
   
-- 為您[設定 SPF 避免詐騙的 Office 365 中](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)的網域
+- 為您[設定 SPF 避免詐騙的 Office 365 中](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)的網域
     
-- 主要網域，[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)
+- 主要網域，[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
     
-- [請考慮 DMARC 記錄設定](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx)為您的網域來判斷誰合法的寄件者 
+- [請考慮 DMARC 記錄設定](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)為您的網域來判斷誰合法的寄件者 
     
 Microsoft 不提供每個 SPF、 DKIM，以及 DMARC 詳細的實作指導方針。但是，有許多的線上發佈的資訊。也有 3rd 廠商公司專用協助組織設定電子郵件的驗證記錄。
   

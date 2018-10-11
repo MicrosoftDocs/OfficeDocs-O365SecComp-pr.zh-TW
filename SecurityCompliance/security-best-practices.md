@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: 儘量減少資料破壞或洩漏的帳戶可能會遵循下列建議的最佳作法。
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527315"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498089"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全性最佳做法
 
@@ -70,9 +70,9 @@ MFA 將額外的保護層級新增至強式密碼策略所需確認撥打的電�
     
 - 如果您組織在 Office 365 中使用自訂的網域，設定 SPF、 DKIM，然後 DMARC 來驗證您的組織所傳送的郵件，並協助防止詐騙：
     
-  - [設定 SPF 避免詐騙的 Office 365 中](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)。
+  - [設定 SPF 避免詐騙的 Office 365 中](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
     
-  - [使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)。
+  - [使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)。
     
   - [使用 DMARC 來驗證 Office 365 中的電子郵件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
     
