@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
-description: 在 [安全性] 中使用詐騙智慧&amp;規範中心反垃圾郵件設定] 頁面上檢閱所有寄件者是詐騙屬於貴組織的其中一個網域或詐騙的外部網域。詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅保護的一部分。
-ms.openlocfilehash: a6e5f2daeab20b86354c4bf0d8d8abe0907095d1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 在 [安全性] 中使用詐騙智慧&amp;規範中心反垃圾郵件設定] 頁面上檢閱所有寄件者是詐騙屬於貴組織的其中一個網域或詐騙的外部網域。詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅保護和 Exchange Online Protection 的一部分。
+ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526836"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496554"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 
-在 [安全性] 中使用詐騙智慧&amp;規範中心**反垃圾郵件設定] 頁面上**檢閱所有寄件者是詐騙屬於貴組織的其中一個網域或詐騙的外部網域上。詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅保護的一部分。 
+在 [安全性] 中使用詐騙智慧&amp;規範中心**反垃圾郵件設定] 頁面上**檢閱所有寄件者是詐騙屬於貴組織的其中一個網域或詐騙的外部網域上。使用 Office 365 企業版 E5 的一部分或分開一部分的進階威脅保護 (ATP) 和年 10 月、 2018 Exchange Online Protection (EOP) 詐騙智慧。 
   
 ## <a name="what-types-of-email-spoofing-can-i-review-and-which-should-i-protect-against-with-spoof-intelligence"></a>可以檢閱何種類型的電子郵件詐騙和其應該使用防止與詐騙智慧？
 
@@ -46,7 +46,7 @@ ms.locfileid: "22526836"
     
 您必須以確保不會在 Office 365 或外部的電子郵件系統中的垃圾郵件篩選器中取得的合法 spoofers 所傳送的信箱攔截一種方式。一般而言，Office 365 將這些電子郵件視為垃圾郵件。為 Office 365 系統管理員必須能夠設定安全性詐騙篩選器，以避免此&amp;規範中心。如果您擁有網域，您可以設定 SPF、 DKIM 及 DMARC 允許這些寄件者。
   
-另一方面，惡意 spoofers，那些詐騙網域或傳送垃圾郵件或網路釣魚電子郵件的外部網域的寄件者必須被封鎖。詐騙也是網路釣客取得使用者認證的常用方式。Office 365 內可協助保護組織的寄件者從這些惡意的電子郵件的內建詐騙保護。詐騙保護您的組織的網域一定是在所有 Office 365 客戶，且外部網域詐騙保護在預設的進階威脅保護客戶。若要進一步增強此保護，告訴我們的寄件者已授權可詐騙貴組織的網域並代替您撥打電話時，傳送電子郵件和如果任何外部網域允許的詐騙。任何未授權的寄件者傳送的電子郵件會被視為垃圾郵件或 Office 365 所詐騙。留意詐騙網域的寄件者和說明我們藉由使用安全性改進詐騙智慧&amp;規範中心。
+另一方面，惡意 spoofers，那些詐騙網域或傳送垃圾郵件或網路釣魚電子郵件的外部網域的寄件者必須被封鎖。詐騙也是網路釣客取得使用者認證的常用方式。Office 365 內可協助保護組織的寄件者從這些惡意的電子郵件的內建詐騙保護。詐騙保護您的組織的網域一定是在所有 Office 365 客戶，且外部網域詐騙保護在預設的進階威脅保護客戶及年 10 月、 2018 EOP 客戶也。若要進一步增強此保護，告訴我們的寄件者已授權可詐騙貴組織的網域並代替您撥打電話時，傳送電子郵件和如果任何外部網域允許的詐騙。任何未授權的寄件者傳送的電子郵件會被視為垃圾郵件或 Office 365 所詐騙。留意詐騙網域的寄件者和說明我們藉由使用安全性改進詐騙智慧&amp;規範中心。
   
 ## <a name="managing-spoof-intelligence-in-the-security-amp-compliance-center"></a>管理安全性詐騙智慧&amp;規範中心
 <a name="Managespooflist"> </a>
@@ -96,17 +96,19 @@ ms.locfileid: "22526836"
 ![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. 選擇 [**儲存**] 以儲存任何變更。 
+
+如果您是 E5 或 ATP 客戶，您也可以管理寄件者詐騙網域透過[詐騙智慧洞察力](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>設定反詐騙原則
 <a name="Managespooflist"> </a>
 
 除了允許或封鎖來自詐騙的電子郵件傳送至您的組織特定寄件者，您也可以設定您想要篩選方式嚴格、 詐騙郵件找到時，所採取的動作和要啟用 Safety 秘訣反詐騙。
   
-反詐騙保護會套用至電子郵件來自網域至 Office 365 組織外部的寄件者。您可以將原則套用至收件者的信箱已授權的 Office 365 企業版 E5 或進階威脅保護。您可以管理反詐騙及其他 ATP 反網路釣魚設定原則。如需 ATP 反網路釣魚設定的詳細資訊，請參閱[Set up Office 365 反網路釣魚原則](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions)。
+反詐騙保護會套用至電子郵件來自網域至 Office 365 組織外部的寄件者。您可以將原則套用至收件者的信箱已授權的 Office 365 企業版 E5、 進階威脅保護及年 10 月、 年 2018 EOP 客戶。您可以管理反詐騙及其他反網路釣魚設定原則。如需反網路釣魚設定的詳細資訊，請參閱[Set up Office 365 反網路釣魚原則](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions)。
   
 Office 365 包含預設反詐騙保護一律執行。此預設保護看不見安全性&amp;規範中心或透過 Windows PowerShell cmdlet 可擷取。您無法修改預設反詐騙保護。但是，您可以設定 Office 365 如何嚴格強制在您建立的每個反網路釣魚原則中的反詐騙保護。 
   
-即使反詐騙原則會出現 [安全性 ATP 反網路釣魚原則&amp;規範中心它不會繼承其預設行為從現有的網路釣魚底下的反垃圾郵件組態設定。如果您有之下**反垃圾郵件**設定\>**網路釣魚**想要複製的反詐騙，您必須建立反網路釣魚原則，然後編輯反網路釣魚原則以反映您詐騙的設定身分詐騙部分下一節，而不是接受在背景執行的預設設定中所述。 
+即使反詐騙原則會出現 [安全性反網路釣魚原則&amp;規範中心它不會繼承其預設行為從現有的網路釣魚底下的反垃圾郵件組態設定。如果您有之下**反垃圾郵件**設定\>**網路釣魚**想要複製的反詐騙，您必須建立反網路釣魚原則，然後編輯反網路釣魚原則以反映您詐騙的設定身分詐騙部分下一節，而不是接受在背景執行的預設設定中所述。 
   
  **使用 [安全性設定反詐騙保護反網路釣魚原則內&amp;規範中心**
   
@@ -114,21 +116,17 @@ Office 365 包含預設反詐騙保護一律執行。此預設保護看不見安
     
 2. 以您工作或學校的帳戶登入 Office 365。您的帳戶必須在 Office 365 組織中系統管理員認證。
     
-3. 安全性&amp;規範中心展開**Threat Management** \> **原則** \> **ATP 反網路釣魚**。 
+3. 安全性&amp;規範中心展開**Threat Management** \> **原則** \> **反網路釣魚**。 
     
 4. 在右窗格中的**反網路釣魚**] 頁面上，選取您想要設定的反網路釣魚原則。 
     
 5. 在出現，請在**詐騙**] 資料列] 頁面上選擇 [**編輯**]。 
     
-6. 在**詐騙臨界值**] 頁面上，如果您選取 [**預設值**，則會傳遞明確或隱含通過驗證的所有郵件，亦即會傳送一般電子郵件篩選。如果您選取**嚴格**，然後使用中型信賴隱含通過驗證的郵件也稱為"柔複雜"複合式驗證、 可以略過仍以及標示為詐騙電子郵件。嚴格的設定不積極並且將會產生誤判。讓您選擇，然後選取 [**動作**。 
+6. 下一步] 設定時為跨網域詐騙偵測到的郵件時要採取的動作。若要將郵件移至 [收件者的垃圾郵件] 資料夾是預設行為。若要將郵件傳送至隔離區是其他選項。如需管理傳送至隔離郵件的詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](quarantine-email-messages.md)。
   
-![](media/62327314-a65f-49b0-bf60-ab4775e0bc9e.jpg)
+![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
   
-7. 下一步] 設定時為跨網域詐騙偵測到的郵件時要採取的動作。若要將郵件移至 [收件者的垃圾郵件] 資料夾是預設行為。若要將郵件傳送至隔離區是其他選項。如需管理傳送至隔離郵件的詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](quarantine-email-messages.md)。
-  
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
-  
-8. 選擇是否要啟用或停用反詐騙 safety 秘訣。Office 365 建議以警告時他們互動寄件者已不驗證身分識別的使用者啟用該**驗證會失敗**safety 提示。Office 365 也建議針對較小群使用者的**驗證虛複雜**啟用 safety 提示因為如果使用者接收電子郵件從許多合法，但未獲授權來源此 safety 提示可能會產生許多的警告。 
+7. 選擇是否要啟用或停用反詐騙 safety 秘訣。Office 365 建議以警告時他們互動寄件者已不驗證身分識別的使用者啟用該**驗證會失敗**safety 提示。Office 365 也建議針對較小群使用者的**驗證虛複雜**啟用 safety 提示因為如果使用者接收電子郵件從許多合法，但未獲授權來源此 safety 提示可能會產生許多的警告。 
   
 ![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
   
