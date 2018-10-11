@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '從 Office 365 安全性內容搜尋匯出搜尋結果&amp;規範中心到本機電腦。Emaill 電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962959"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494064"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>從 Office 365 安全性匯出內容的搜尋結果&amp;規範中心
 
@@ -283,7 +283,7 @@ ms.locfileid: "24962959"
     
     如果您選擇要匯出部分已編製索引的項目，部分已編製索引的信箱項目會匯出在個別的 PST 檔案無論您選擇 [**匯出 Exchange 內容**下的選項。
 
-- 如果部分已編製索引的項目會傳回在搜尋結果 （因為其他屬性的部分已編製索引的項目符合搜尋準則），則這些部分已編製索引會匯出與一般的搜尋結果。因此，如果您選擇 [匯出已編製索引的項目和部分已編製索引的項目 （選取**所有項目，包括類有無法辨認的格式來加密或未編製索引的其他原因**的 [匯出] 選項），部分已編製索引的項目匯出與一般 reslts 將會列在 Results.csv 報表。他們將不會列在花很多的 items.csv 報表中。
+- 如果部分已編製索引的項目會傳回在搜尋結果 （因為其他屬性的部分已編製索引的項目符合搜尋準則），則這些部分已編製索引會匯出與一般的搜尋結果。因此，如果您選擇 [匯出已編製索引的項目和部分已編製索引的項目 （選取**所有項目，包括類有無法辨認的格式來加密或未編製索引的其他原因**的 [匯出] 選項），部分已編製索引的項目匯出與一般結果將會列在 Results.csv 報表。他們將不會列在花很多的 items.csv 報表中。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>匯出個別郵件或 PST 檔
   
