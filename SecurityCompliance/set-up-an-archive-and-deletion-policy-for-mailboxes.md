@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 建立封存及刪除原則會自動將項目移至使用者的封存信箱的 Office 365 中。
-ms.openlocfilehash: 807488f9ec7088adccdf1fc111d67b9dab8e0a38
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522294"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>設定 Office 365 組織中信箱的封存及刪除原則
 
@@ -60,7 +60,7 @@ ms.locfileid: "22526830"
 > [!NOTE]
 > 可以啟用封存信箱的這個程序期間隨時剛才為他們正在之前完成程序啟用在某個時間點。如果未啟用封存信箱，任何已指派給它的封存原則的項目會不採取任何動作。 
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 全域管理員帳戶。
     
@@ -238,7 +238,7 @@ ms.locfileid: "22526830"
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>（選用）步驟 5： 執行受管理的資料夾助理員來套用新的設定
 <a name="step3"> </a>
 
-將新的保留原則套用至步驟 4 中的信箱之後，可能很 7 天在 Exchange Online 新的保留設定套用至信箱。這是因為程序呼叫的受管理的資料夾助理員的程序信箱一次每 7 天。而非等候受管理的資料夾助理員執行，您可以強制此執行發生在 Exchange Online PowerShell **Start-managedfolderassistant**指令程式。 
+將新的保留原則套用至步驟 4 中的信箱之後，可能很 7 天在 Exchange Online 新的保留設定套用至信箱。這是因為程序呼叫的受管理的資料夾助理員的程序信箱一次每 7 天。而不是等待受管理的資料夾助理員執行，您可以強制執行**Start-managedfolderassistant**指令程式在 Exchange Online PowerShell 發生。 
   
  **當您執行受管理的資料夾助理員會發生什麼事？** 檢查信箱中的項目，並決定是否它們受限於保留套用保留原則中的設定。它然後具有適當保留標記，標受限於保留的項目，然後採取指定的保留動作保留保留天數舊的項目。 
   
@@ -285,7 +285,7 @@ ms.locfileid: "22526830"
 
 這是它 ！您已設定高山門牌組織封存及刪除原則。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 <a name="moreinfo"> </a>
 
 - 計算保留時間的方式信箱項目保留期間的計算傳遞的日期或建立日期等草稿未傳送的郵件項目，但使用者所建立的。受管理的資料夾助理員處理信箱中的項目、 時加上戳記開始日期和到期的所有具有與刪除並允許復原] 或 [永久刪除保留動作的保留標記的項目。已封存標記的項目是 move date 加上戳記。 

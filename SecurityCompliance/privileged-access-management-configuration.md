@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解 Office 365 中設定權限的存取管理使用本主題
-ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522254"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定權限的存取管理
 
 > [!IMPORTANT]
 > 本主題涵蓋功能僅在 Office 365 E5 和進階規範 Sku 中目前可用的部署和設定指導。
 
-本主題將引導您完成啟用及設定 Office 365 組織中的權限的存取管理。您可以使用其中一個 Microsoft 365 系統管理中心或 Exchange Management PowerShell 來管理並使用特殊權限存取。 
+本主題將引導您完成啟用及設定 Office 365 組織中的權限的存取管理。您可以使用 Microsoft 365 系統管理中心或 Exchange Management PowerShell 來管理並使用特殊權限的存取。 
 
 ## <a name="enable-and-configure-privileged-access-management"></a>啟用並設定權限的存取管理
 

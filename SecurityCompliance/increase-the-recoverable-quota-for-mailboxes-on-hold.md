@@ -3,7 +3,7 @@ title: 增加保留信箱的「可復原的項目」配額
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/22/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '啟用封存信箱並開啟自動展開封存增加的 Office 365 中的信箱 [可復原的項目] 資料夾的大小。 '
-ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522274"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱的「可復原的項目」配額
 
@@ -35,7 +35,7 @@ ms.locfileid: "23782090"
 |**[可復原的項目] 資料夾的儲存配額總計** <br/> |無限制  <br/> |無限制  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>封存信箱的初始儲存配額為 100 GB 具有 Exchange Online (Plan 2) 授權的使用者。不過，當自動展開封存在已開啟信箱保留、 儲存配額同時封存信箱與 [可復原的項目] 資料夾已增加到 110 GB。額外的封存儲存空間在佈建時所需結果中封存儲存區中不受限制的數量。如需關於自動展開封存，請參閱[Overview of Office 365 中沒有限制之封存](unlimited-archiving.md)。 
+> <sup>\*</sup>封存信箱的初始儲存配額為 100 GB 具有 Exchange Online (Plan 2) 授權的使用者。但是，自動展開封存開啟時上保留信箱、 封存信箱與 [可復原的項目] 資料夾的存放區配額增加為 110 GB。額外的封存儲存空間在佈建時所需結果中封存儲存區中不受限制的數量。如需關於自動展開封存，請參閱[Overview of Office 365 中沒有限制之封存](unlimited-archiving.md)。 
   
 在保留信箱的主要信箱中，當 [可復原的項目] 資料夾的儲存配額接近限制時，您可以執行下列動作︰
   
@@ -220,7 +220,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 啟用使用者的封存信箱之後，請考慮告知他們的信箱 （而不只可復原的項目] 資料夾中項目） 中的其他項目可能會移至封存信箱的使用者。這是因為預設 MRM 原則指派給 Exchange Online 信箱包含將項目移至封存信箱項目已傳遞至信箱或所建立的日期之後的兩個年度其保留標記 （具名的預設 2 年移至封存）使用者。如需詳細資訊，請參閱[Exchange Online 中的預設保留原則](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
