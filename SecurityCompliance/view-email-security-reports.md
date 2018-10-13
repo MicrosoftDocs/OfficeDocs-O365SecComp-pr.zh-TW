@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何尋找並使用您的組織與 Office 365 企業版的電子郵件安全性報告。安全性中有電子郵件安全性報告&amp;規範中心。
-ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454340"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552391"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 
@@ -43,15 +43,18 @@ ms.locfileid: "25454340"
     
 - [使用者報告的郵件報告](view-email-security-reports.md#userreported)（新增 ！） 
     
-## <a name="threat-protection-status-report-new"></a>威脅保護狀態報表 （新增 ！）
+## <a name="threat-protection-status-report-new"></a>威脅 （新增 ！） 的保護狀態報表
 
 新的**威脅保護狀態**報表是智慧顯示已偵測到並封鎖的 Exchange Online Protection 的惡意電子郵件。這份報告顯示電子郵件會被識別為惡意程式碼或網路釣魚嘗試的相關資訊。 
+
+> [!NOTE]
+> 威脅保護狀態報表是供使用者具有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP);不過，ATP 客戶的威脅保護狀態報表中所顯示的資訊可能會包含超過 EOP 客戶可以看到不同的資料。例如，EOP 客戶可以檢視電子郵件、 但不是[在 SharePoint Online、 OneDrive 或 Microsoft 小組中偵測到惡意檔案](atp-for-spo-odb-and-teams.md)的相關資訊、 ATP 特定功能中偵測到惡意程式碼的相關資訊。（[解更多關於 ATP 報告](view-reports-for-atp.md)）。
   
 若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **威脅保護狀態**。
   
 ![威脅保護狀態報表](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-當您首次開啟威脅保護狀態報表時，報告會顯示資料過去 7 天預設;不過，您可以按一下 [**篩選**及多達 90 天的詳細資料變更的日期範圍。這份報告 」 很適合用來檢視的效益與您組織的 Exchange Online Protection 功能的影響長期趨勢。 
+當您首次開啟威脅保護狀態報告時，報告會顯示資料過去 7 天預設;不過，您可以按一下 [**篩選**及多達 90 天的詳細資料變更的日期範圍。這份報告 」 很適合用來檢視的效益與您組織的 Exchange Online Protection 功能的影響長期趨勢。 
   
 ![威脅保護狀態報告的篩選器](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -176,8 +179,8 @@ ms.locfileid: "25454340"
   
 |**角色群組**|**其中指派**|**深入了解**|
 |:-----|:-----|:-----|
-| 下列其中之一：  <br/>  組織管理  <br/>  安全性管理員  <br/>  安全性讀者  <br/> |安全性&amp;規範中心  <br/> |[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 下列其中之一：  <br/>  組織管理  <br/>  僅限檢視組織管理  <br/>  僅檢視收件者角色  <br/>  規範管理  <br/> |Exchange 系統管理中心  <br/> |[Exchange Online 中的功能權限](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| 下列其中之一：  <br/><br/>-Organization Management  <br/>--安全性管理員  <br/>--安全性讀者  <br/> |安全性&amp;規範中心  <br/> |[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md) <br/> |
+| 下列其中之一：  <br/><br/>-Organization Management  <br/>-僅檢視組織管理  <br/>-View-Only 收件者角色  <br/>-相符性管理  <br/> |Exchange 系統管理中心  <br/> |[Exchange Online 中的功能權限](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報表不顯示資料吗？
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: 協助控制及管理行動裝置存取您的組織資料、 從資料遺失保護您的組織使用 Threat management 以及從惡意軟體和垃圾郵件保護輸入及輸出郵件。您也可以使用 threat management 來保護您的網域信譽並決定要惡意詐騙的寄件者從您的網域帳戶。
-ms.openlocfilehash: 88b2727b76fad1e8d700f15717a8aeedea934093
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011829"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552401"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>管理 Office 365 安全性威脅&amp;規範中心
 

@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-description: 使用新的安全性儀表板來檢閱 Office 365 威脅保護狀態、 檢視及對安全性提醒。
-ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+description: 使用新的安全性儀表板檢閱 Office 365 威脅保護狀態及檢視以及對安全性提醒。
+ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839077"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552361"
 ---
 # <a name="security-dashboard-overview"></a>安全性儀表板概觀 （英文)
 
