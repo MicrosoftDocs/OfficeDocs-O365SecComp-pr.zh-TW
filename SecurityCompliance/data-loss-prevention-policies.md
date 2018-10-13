@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: 與 Office 365 安全性資料外洩防護 (DLP) 原則&amp;規範中心，您可以識別、 監視和自動跨 Office 365 保護敏感資料。
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013737"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540419"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -304,7 +304,7 @@ DLP 原則可協助保護機密資訊，這會定義為**敏感資訊類型**。
     
 - 任何中間信賴等級通常範圍是從較低信賴等級設下方的較高的信賴等級的正上方。
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>使用標籤做為條件的 DLP 原則
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>使用標籤做為 DLP 原則的條件
 
 您可以建立標籤然後：
   
@@ -312,7 +312,7 @@ DLP 原則可協助保護機密資訊，這會定義為**敏感資訊類型**。
     
 - **自動套用**的內容符合您所選擇的條件。 
     
-如需標籤的詳細資訊，請參閱[Overview of 標籤。](labels.md)
+如需標籤的詳細資訊，請參閱[標籤概觀](labels.md)。
   
 建立標籤之後，然後 DLP 原則中使用該標籤做為條件。例如，您可能會想要因為執行這項作業：
   
@@ -332,7 +332,7 @@ DLP 原則可協助保護機密資訊，這會定義為**敏感資訊類型**。
 
 數項功能可套用至包含敏感資訊的內容：
   
-- [套用標籤自動根據條件](labels.md#applying-a-label-automatically-based-on-conditions)和[保留原則](retention-policies.md)兩者強制對此內容**保留**動作。 
+- [套用自動根據條件的標籤][保留標籤](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留原則](retention-policies.md)可以同時強制對此內容**保留**動作。 
     
 - DLP 原則可以強制**保護**動作的此內容。與之前強制執行這些動作，DLP 原則可能需要其他條件以符合除了包含標籤的內容。 
     
@@ -478,7 +478,7 @@ DLP 原則評估 Office 2016 中的設計目的不會影響效能的程式或內
 
 若要使用大部分的指令程式以安全性&amp;規範中心，您必須：
   
-1. [連線至 Office 365 安全性&amp;規範中心使用遠端 PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用下列任何一這些[Office 365 安全性&amp;規範中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
@@ -492,7 +492,7 @@ DLP 原則評估 Office 2016 中的設計目的不會影響效能的程式或內
     
   - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
     
