@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: 82def4182607e6dde4f9d6612cdb93f6f8564f2a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540399"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -259,7 +259,7 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>從保留原則中排除特定類型的 Exchange 項目
 您可以使用 PowerShell，從保留原則中排除特定類型的 Exchange 項目。例如，您可以排除語音信箱訊息、 IM 交談，以及信箱中的其他 商務用 Skype Online 內容。您也可以排除行事曆、附註和工作項目。僅使用 PowerShell 才能提供此功能；建立保留原則時，無法在 UI 中提供它。
   
-若要這麼做，請使用 `New-RetentionComplianceRule` 和 `Set-RetentionComplianceRule` Cmdlet 中的 `ExcludedItemClasses` 參數。如需 PowerShell 的詳細資訊，請參閱下節[尋找保留原則的 PowerShell Cmdlet](retention-policies.md#powershell)。
+若要這麼做，請使用 `New-RetentionComplianceRule` 和 `Set-RetentionComplianceRule` Cmdlet 中的 `ExcludedItemClasses` 參數。如需 PowerShell 的詳細資訊，請參閱下節[尋找保留原則的 PowerShell Cmdlet](#find-the-powershell-cmdlets-for-retention-policies)。
   
 ## <a name="locking-a-retention-policy"></a>鎖定保留原則
 有些組織可能需要遵守由監管機構定義的法規，例如證券交易委員會 (SEC) 法規 17a-4，要求在保留原則開啟之後，不能關閉或執行較不嚴格的限制。使用「保留鎖定」，您可以鎖定原則，讓任何人 (包括系統管理員) 均無法關閉原則或執行較不嚴格的限制。
@@ -268,7 +268,7 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
   
 因此，在您鎖定保留原則之前，**務必**了解您組織的法規需求，並且**不要鎖定原則**，除非您確定它是您需要的原則。
   
-您只能使用 PowerShell 來鎖定保留原則。請使用 `New-RetentionCompliancePolicy` 或 `Set-RetentionCompliancePolicy` Cmdlet 中的 `RestrictiveRetention` 參數。如需 PowerShell 的詳細資訊，請參閱下節[尋找保留原則的 PowerShell Cmdlet](retention-policies.md#powershell)。
+您只能使用 PowerShell 來鎖定保留原則。請使用 `New-RetentionCompliancePolicy` 或 `Set-RetentionCompliancePolicy` Cmdlet 中的 `RestrictiveRetention` 參數。如需 PowerShell 的詳細資訊，請參閱下節[尋找保留原則的 PowerShell Cmdlet](#find-the-powershell-cmdlets-for-retention-policies)。
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>原則保留，哪一個優先？
 
