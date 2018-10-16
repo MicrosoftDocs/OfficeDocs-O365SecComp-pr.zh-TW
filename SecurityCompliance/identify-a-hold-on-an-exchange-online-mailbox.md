@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何識別不同類型之可放置在 Office 365 信箱的保留。這些類型的保留包括訴訟暫止狀態、 eDiscovery 保留和 Office 365 的保留原則。您也可以判定是否使用者已被排除整個組織的保留原則
-ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965260"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577072"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -88,7 +88,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 下表說明不同類型的全組織保留，以及如何識別每種類型根據執行**Get-organizationconfig**指令程式時*InPlaceHolds*屬性中所含的 Guid。
 
 
-|保留類型  |範例值  |說明  |
+|保留類型  |範例值  |描述  |
 |---------|---------|---------|
 |Office 365 的保留原則套用至 Exchange 信箱、 Exchange 公共資料夾及小組聊天室    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   整個組織的保留原則套用至 Exchange 信箱、 Exchange 公共資料夾及 1xN 聊天室中的 Microsoft 小組所識別的開頭的 Guid`mbx`前置詞。請注意 1xN 聊天會儲存在個別的交談參與者的信箱。      |
 |Office 365 的保留原則套用至 Office 365 群組及小組通道郵件     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    整個組織的保留原則套用至 Office 365 群組和通道郵件中的 Microsoft 小組所識別的開頭的 Guid`grp`前置詞。請注意通道訊息會儲存群組信箱相關聯的 Microsoft 小組中。     |
@@ -107,7 +107,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 下表定義的三種可能的保留動作：
 
-|值  |說明  |
+|值  |描述  |
 |---------|---------|
 |**1**     | 會指出保留原則已刪除的項目 ；原則不會保留的項目。        |
 |**2**    |    會指出保留原則設定為要保留的項目 ；之後保留期間到期原則不會刪除項目。     |
@@ -172,7 +172,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>管理信箱延遲保留
 
-從信箱移除任何類型的保留之後， *DelayHoldApplied*信箱屬性的值是設定為**True**。這會呼叫*延遲保留*及表示保留的實際移除會防止資料要永久刪除的 30 天的延遲 （清除） 從信箱。這讓系統管理員有機會搜尋或復原之後真正移除保留將清除的信箱項目。當信箱處於延遲保留時，信箱會仍被視為不受限制的持續期間保留為信箱是否在訴訟暫止狀態。30 天後延遲保留過期，及 Office 365 將會自動嘗試移除 （由*DelayHoldApplied*屬性設**為 False**） 的延遲保留如此將會真的移除保留。*DelayHoldApplied*屬性設**為 False**之後目標記為要移除的項目將清除信箱由受管理的資料夾助理員處理下一次。
+從信箱移除任何類型的保留之後， *DelayHoldApplied*信箱屬性的值是設定為**True**。發生此情況下一次受管理的資料夾助理員處理的信箱並偵測已移除保留。這會呼叫*延遲保留*及表示保留的實際移除會防止資料要永久刪除的 30 天的延遲 （清除） 從信箱。這讓系統管理員有機會搜尋或復原之後真正移除保留將清除的信箱項目。當信箱處於延遲保留時，信箱會仍被視為不受限制的持續期間保留為信箱是否在訴訟暫止狀態。30 天後延遲保留過期，及 Office 365 將會自動嘗試移除 （由*DelayHoldApplied*屬性設**為 False**） 的延遲保留如此將會真的移除保留。*DelayHoldApplied*屬性設**為 False**之後目標記為要移除的項目將清除信箱由受管理的資料夾助理員處理下一次。
 
 若要檢視信箱*DelayHoldApplied*屬性的值，請在 Exchange Online PowerShell 中執行下列命令。
 

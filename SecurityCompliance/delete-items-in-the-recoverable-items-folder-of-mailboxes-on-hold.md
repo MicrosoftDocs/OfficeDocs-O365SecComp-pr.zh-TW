@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 系統管理員： 即使該信箱處於合法持有刪除 Exchange Online 的信箱使用者的可復原的項目] 資料夾中的項目。這是有效的方式刪除已意外溢出至 Office 365 的資料。
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566884"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577082"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除項目可復原的項目] 資料夾中的雲端架構信箱保留-Admin 說明
 
@@ -245,22 +245,22 @@ $CaseHold.Name
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步驟 4： 從信箱移除延遲保留
 
-從信箱移除任何類型的保留之後， *DelayHoldApplied*信箱屬性的值是設定為**True**。這會呼叫*延遲保留*及表示保留的實際移除會防止資料要永久刪除的 30 天的延遲 （清除） 從信箱。  當信箱處於延遲保留時，信箱會仍被視為不受限制的持續期間保留為信箱是否在訴訟暫止狀態。（延遲保留的用途是提供系統管理員有機會搜尋或復原之後移除保留為止，將清除的信箱項目）。過期的 30 天後延遲保留 Noe 與 Office 365 將會自動嘗試移除 （由*DelayHoldApplied*屬性設**為 False**） 的延遲保留如此將會真的移除保留。 
+從信箱移除任何類型的保留之後， *DelayHoldApplied*信箱屬性的值是設定為**True**。發生此情況下一次受管理的資料夾助理員處理的信箱並偵測已移除保留。這會呼叫*延遲按住*並表示保留的實際移除延遲防止資料會永久刪除信箱的 30 天。（延遲保留的用途是提供系統管理員有機會搜尋或復原之後移除保留為止，將清除的信箱項目）。 當信箱處於延遲保留時，信箱會仍被視為不受限制的持續期間保留為信箱是否在訴訟暫止狀態。30 天後延遲保留過期，及 Office 365 將會自動嘗試移除 （由*DelayHoldApplied*屬性設**為 False**） 的延遲保留使真正移除保留為止。 
 
-您可以刪除步驟 5 中的項目之前，您必須從信箱移除延遲保留。執行下列命令在 Exchange Online PowerShell 移除延遲保留： 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-請注意您必須具有的法律保留角色在 Exchange Online 使用*RemoveDelayHoldApplied*參數。
-
-若要確認已移除延遲保留，請執行下列命令。
+您可以刪除步驟 5 中的項目之前，您必須從信箱移除延遲保留。首先，決定是否延遲保留套用至信箱在 Exchange Online PowerShell 中執行下列命令：
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-*DelayHoldApplied*屬性值為**False**表示已移除的延遲。
+如果*DelayHoldApplied*屬性的值設為**False**，延遲保留尚未放在信箱上。您可以前往 [步驟 5 和刪除 [可復原的項目] 資料夾中的項目。
+
+如果*DelayHoldApplied*屬性的值設為**True**，執行下列命令以移除延遲保留：
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+請注意您必須具有的法律保留角色在 Exchange Online 使用*RemoveDelayHoldApplied*參數。
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步驟 5： 刪除 [可復原的項目] 資料夾中的項目
 
