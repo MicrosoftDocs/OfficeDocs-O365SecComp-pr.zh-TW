@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: 除了 [比較基準，透過 BitLocker 與分散式金鑰管理員 (DKM)、 已啟用的磁碟區層級加密 Office 365 提供新增一層的 Office 365，包括資料從 Exchange 中的客戶內容應用程式層級的加密線上商務、 SharePoint Online、 及 OneDrive for Business Skype。這會呼叫服務加密。
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559238"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575327"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 中使用客戶金鑰的服務加密常見問題集
 
@@ -29,8 +29,8 @@ ms.locfileid: "22559238"
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>什麼是服務加密與客戶金鑰？
 
-客戶機碼是一種功能，可讓您佈建和管理用來加密 Office 365 中的靜態資料的按鍵。此功能會運用服務加密是由 Office 365 Exchange 和 SharePoint 執行的加密。服務加密提供超過什麼 BitLocker 可以提供-也就是更大網深入針對攻擊者的優點。服務加密則攻擊者嘗試將略過用以處理所有客戶資料的存取權要求 Office 365 的存取控制系統的強式的對策。這是因為服務加密表示伺服器管理員並沒有控制項或偶數存取加密金鑰與無法停用加密，不同於使用 BitLocker。因此，伺服器裝載使用服務加密已加密的客戶資料的系統管理存取權的攻擊者將無法讀取的客戶資料並即使加密的資料複製到伺服器關閉它仍然失去作用。 
-  
+客戶金鑰增強了您的組織能夠符合指定按鍵的排列方式與雲端服務提供者的規範需求的需求。與客戶金鑰您提供並控制在 Office 365 的資料在-其餘應用程式層級的加密金鑰。因此，您可能會演練控制項和撤銷貴組織的機碼，您應該決定結束服務。由 grant 機碼，此資料是服務無法讀取。主要撤銷是向資料刪除路徑上的第一個步驟。
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>客戶鍵所涵蓋靜態何種 Office 365 資料？
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 

@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011859"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575337"
 ---
 # <a name="privileged-access-management-in-office-365"></a>權限存取 Office 365 中的管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "25011859"
 
 特殊存取權限管理補充 Office 365 的安全性架構內其他資料和存取功能保護設定。啟用整合式安全性方法的一部分的特殊權限的存取管理並保護您的組織，由分層的安全性模型可用來將機密資訊與 Office 365 組態設定的保護最大化。如下圖所示下方啟用權限存取管理可幫助是以原生 Office 365 資料的加密和 Office 365 服務的角色型存取控制安全性模型所提供的保護為基礎。時一起使用[Azure AD 權限的身分識別管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)，這兩項功能提供在不同的範圍上的剛剛-時間存取權的存取控制。
 
-![Office 365 中的分層的保護](media/pam-layered-protection.jpg)
+![Office 365 中的分層的保護](media/pam-layered-protection.png)
 
 特殊權限存取 Office 365 中的管理可定義及時 Azure AD 權限的身分識別管理適用於與能夠執行多個工作的保護層級的**角色**在**任務**層級設定範圍。 Azure AD 權限的身分識別管理主要是可讓管理 AD 角色和角色群組的存取，而有權限存取 Office 365 中的管理會套用只會在任務層級。
 
