@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 eDiscovery 及搜尋工具來管理，並在組織中建立資料 spillage 事件回應。
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526261"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566874"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery 解決方案系列： 資料 spillage 案例-搜尋和清除
 
@@ -159,6 +159,8 @@ EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。�
 - 請參閱 「 步驟 2： 準備信箱"中如需停用單一項目復原指示的 [[可復原的項目保留的雲端架構信箱上的資料夾內刪除項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)。 
     
 - 請參閱 「 步驟 3： 從信箱移除所有保留"中如需如何從信箱都移除保留或保留原則的指示的 [[可復原的項目保留的雲端架構信箱上的資料夾內刪除項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)。 
+
+- 請參閱 「 步驟 4： 延遲保留從信箱移除 」 中移除後移除任何類型的保留信箱處於延遲保留的相關指示的 [[可復原的項目保留的雲端架構信箱上的資料夾內刪除項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox)。
     
  **重要：** 記錄管理或法務部門檢查之前先移除保留或保留原則。您的組織可能會有定義是否在信箱保留原則或建立資料 spillage 事件採用優先順序。 
   
@@ -168,7 +170,7 @@ EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。�
 
 收集並準備步驟 6 和建立及精簡尋找包含 spilled 的資料的電子郵件訊息的步驟 3 中的搜尋查詢中的信箱位置，您可以使用現在永久刪除 spilled 的資料。如先前所述，您必須獲指派信箱匯入 / 匯出角色在 Exchange Online 從中刪除郵件使用下列程序。
   
-1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
+1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554) (機器翻譯)。
     
 2. 執行下列命令：
     
@@ -198,7 +200,7 @@ EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。�
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>回復至其先前狀態的信箱
 
-如果您變更任何信箱中的設定步驟 6，以準備信箱已刪除的 spilled 的資料之前，您必須將它們還原先前的狀態。請參閱 「 步驟 5： 還原成先前狀態的信箱 」 中[可復原的項目保留的雲端架構信箱上的資料夾內刪除項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state)。
+如果您變更任何信箱中的設定步驟 6，以準備信箱已刪除的 spilled 的資料之前，您必須將它們還原先前的狀態。請參閱 「 步驟 6： 還原成先前狀態的信箱 」 中[可復原的項目保留的雲端架構信箱上的資料夾內刪除項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)。
   
 ### <a name="deleting-the-search-query"></a>刪除搜尋查詢
 

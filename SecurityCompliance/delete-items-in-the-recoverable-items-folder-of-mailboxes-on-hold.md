@@ -3,7 +3,7 @@ title: 刪除項目可復原的項目] 資料夾中的雲端架構信箱保留-A
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/21/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 系統管理員： 即使該信箱處於合法持有刪除 Exchange Online 的信箱使用者的可復原的項目] 資料夾中的項目。這是有效的方式刪除已意外溢出至 Office 365 的資料。
-ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796879"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566884"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除項目可復原的項目] 資料夾中的雲端架構信箱保留-Admin 說明
 
@@ -33,16 +33,18 @@ ms.locfileid: "23796879"
 
 [步驟 3： 從信箱移除所有保留](#step-3-remove-all-holds-from-the-mailbox)
 
-[步驟 4： 刪除 [可復原的項目] 資料夾中的項目](#step-4-delete-items-in-the-recoverable-items-folder)
+[步驟 4： 從信箱移除延遲保留](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[步驟 5： 還原成先前狀態的信箱](#step-5-revert-the-mailbox-to-its-previous-state)
+[步驟 5： 刪除 [可復原的項目] 資料夾中的項目](#step-5-delete-items-in-the-recoverable-items-folder)
+
+[步驟 6： 還原成先前狀態的信箱](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
 > 本文所述的程序會導致資料要永久刪除 （清除） 從 Exchange Online 信箱。這表示您從 [可復原的項目] 資料夾中刪除的郵件無法復原並不會供法律調查或其他規範用途之用。如果您想要刪除的訴訟暫止狀態、 就地保留功能，一部分處於保留狀態的信箱的郵件 eDiscovery 保留，或 Office 365 保留原則建立 Office 365 安全性&amp;規範中心、 記錄管理或法務的核取然後再移除保留的部門。您的組織可能已定義是否在信箱保留原則或建立資料 spillage 事件採用優先順序。 
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須指派兩個以下的管理角色在 Exchange Online 來搜尋並刪除郵件從步驟 4 中的 [可復原的項目] 資料夾。
+- 您必須指派兩個以下的管理角色在 Exchange Online 來搜尋並刪除 [可復原的項目] 資料夾中之步驟 5 中的郵件。
     
   - **信箱搜尋**此角色可讓您在組織中搜尋信箱。Exchange 系統管理員未指派此角色預設。若要將自己指派此角色，新增您自己探索管理角色群組的成員身分在 Exchange Online。 
     
@@ -56,13 +58,13 @@ ms.locfileid: "23796879"
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>步驟 1： 收集信箱的相關資訊
 
-此第一個步驟是從目標信箱會影響此程序收集所選的屬性。請務必寫下這些設定或儲存至的文字檔案，因為在將變更這些屬性的一些且當您從 [可復原的項目] 資料夾刪除項目之後還原回到步驟 5 中的原始值。以下是您需要收集的信箱內容的清單。
+此第一個步驟是從目標信箱會影響此程序收集所選的屬性。請務必寫下這些設定或儲存至的文字檔案，因為在將變更這些屬性的一些且當您從 [可復原的項目] 資料夾刪除項目之後還原回到步驟 6 中的原始值。以下是您需要收集的信箱內容的清單。
   
 -  *SingleItemRecoveryEnabled*和*RetainDeletedItemsFor* ;若有需要，您將會停用單一復原並增加步驟 3 中的已刪除的項目保留期間。 
     
 -  *LitigationHoldEnabled*和*InPlaceHolds* ;您必須識別放置信箱上以便可以暫時移除這些步驟 3 中的所有保留。請參閱如需如何識別可能會被放置在信箱的類型保留的提示[的詳細資訊](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo)] 區段。 
     
-此外，您需要取得信箱用戶端存取設定讓您可以暫時停用它們，讓其擁有人 （或其他使用者） 無法在此程序期間存取信箱。最後，您可以在 [可復原的項目] 資料夾中取得目前的大小和項目數。刪除 [可復原的項目] 資料夾中步驟 4 中的項目之後，您將使用此資訊來確認已真正移除項目。
+此外，您需要取得信箱用戶端存取設定讓您可以暫時停用它們，讓其擁有人 （或其他使用者） 無法在此程序期間存取信箱。最後，您可以在 [可復原的項目] 資料夾中取得目前的大小和項目數。刪除 [可復原的項目] 資料夾中之步驟 5 中的項目之後，您將使用此資訊來確認已真正移除項目。
   
 1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。請務必使用已指派 Exchange Online 中的適當的管理角色的系統管理員帳戶的使用者名稱和密碼。 
     
@@ -114,7 +116,7 @@ ms.locfileid: "23796879"
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   當您刪除項目在步驟 4 中時，您可以選擇刪除或刪除使用者的主要封存信箱中 [可復原的項目] 資料夾中的項目。請注意是否啟用自動展開封存信箱，將不會被刪除輔助封存信箱中的項目。
+   當您刪除項目在步驟 5 中時，您可以選擇刪除或刪除使用者的主要封存信箱中 [可復原的項目] 資料夾中的項目。請注意是否啟用自動展開封存信箱，將不會被刪除輔助封存信箱中的項目。
   
 ## <a name="step-2-prepare-the-mailbox"></a>步驟 2： 準備信箱
 
@@ -122,11 +124,11 @@ ms.locfileid: "23796879"
   
 - **停用信箱的用戶端存取**信箱擁有者無法存取其信箱和信箱資料進行任何變更此程序期間。 
     
-- **提高刪除項目保留期間**為 30 天 （Exchange Online 中的最大值），讓才能刪除這些步驟 4 中將項目未從 [可復原的項目] 資料夾清除。 
+- **提高刪除項目保留期間**為 30 天 （Exchange Online 中的最大值），讓才能刪除這些步驟 5 中將項目未從 [可復原的項目] 資料夾清除。 
     
-- **停用單一項目復原**的項目因此將不會保留 （適用於已刪除的項目保留期間的持續期間） 之後您從步驟 4 中的 [可復原的項目] 資料夾刪除。 
+- **停用單一項目復原**的項目因此將不會保留 （適用於已刪除的項目保留期間的持續期間） 之後您刪除 [可復原的項目] 資料夾中之步驟 5。 
     
-- **停用受管理的資料夾助理員**，讓它不會處理的信箱並保留您在步驟 4 中刪除的項目。 
+- **停用受管理的資料夾助理員**，讓它不會處理的信箱並保留您在步驟 5 中刪除的項目。 
     
 在 Exchange Online PowerShell 中執行下列步驟。
   
@@ -162,7 +164,7 @@ ms.locfileid: "23796879"
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>步驟 3： 從信箱移除所有保留
 
-您可以從 [可復原的項目] 資料夾刪除項目之前的最後一個步驟是要移除所有保留 （即您在步驟 1 中識別） 信箱。如此當您從 [可復原的項目] 資料夾刪除之後將不會保留項目必須移除所有保留。下列各節包含移除不同類型的保留在信箱上的相關資訊。請參閱如需如何識別可能會被放置在信箱的類型保留的提示[的詳細資訊](#more-information)] 區段。 
+您可以從 [可復原的項目] 資料夾刪除項目之前的最後一個步驟是要移除所有保留 （即您在步驟 1 中識別） 信箱。如此當您從 [可復原的項目] 資料夾刪除之後將不會保留項目必須移除所有保留。下列各節包含移除不同類型的保留在信箱上的相關資訊。請參閱如需如何識別可能會被放置在信箱的類型保留的提示[的詳細資訊](#more-information)] 區段。如需詳細資訊，請參閱[如何識別的類型保留放在 Exchange Online 信箱](identify-a-hold-on-an-exchange-online-mailbox.md)。
   
 > [!CAUTION]
 > 先前所述，取出與記錄管理或法務部門才可從信箱移除保留。 
@@ -208,7 +210,21 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
 識別全組織的 Office 365 保留原則之後，請移至**日期控管** \> **保留**] 頁面的 [安全性] 中&amp;規範中心編輯中識別的每個整個組織的保留原則上一個步驟，並將信箱新增至已排除的收件者的清單。執行此動作會從保留原則中移除使用者的信箱。 
-  
+
+### <a name="office-365-retention-labels"></a>Office 365 保留標籤
+
+每當使用者套用設定成保留內容或保留與再刪除任何資料夾或信箱中的項目內容的標籤、 *ComplianceTagHoldApplied*信箱屬性是設定為**True**。在這種情況下，信箱會被視為在保留，就如同它已處於訴訟暫止狀態或指派給 Office 365 保留原則。
+
+若要檢視*ComplianceTagHoldApplied*屬性的值，請在 Exchange Online PowerShell 中執行下列命令：
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+您已識別信箱處於之後按住因為保留標籤套用到資料夾或項目、 您可以使用 「 內容搜尋工具中的安全性與規範中心來搜尋的標示使用 ComplianceTag 搜尋條件的項目。如需詳細資訊，請參閱 「 搜尋條件 」 一節[關鍵字查詢](keyword-queries-and-search-conditions.md#conditions-for-common-properties)和搜尋條件的內容搜尋。
+
+如需標籤的詳細資訊，請參閱[Office 365 概觀 （英文) 標籤](labels.md)。
+
  ### <a name="ediscovery-case-holds"></a>保留 eDiscovery 案例
   
 執行下列命令[安全性&amp;規範中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)識別保留套用到信箱的 eDiscovery 案例相關聯。使用 GUID (不包括`UniH`前置詞) 的 ediscovery （英文） 保留您在步驟 1 中識別。請注意第二個命令會顯示保留相關聯; eDiscovery 案例的名稱第三個命令會顯示的保留名稱。 
@@ -227,7 +243,26 @@ $CaseHold.Name
 
 您已識別的 eDiscovery 案例及保留名稱之後，請移至**搜尋&amp;調查** \> **eDiscovery**頁面的 [安全性]&amp;規範中心開啟情況下，並從保留移除信箱。如需詳細資訊，請參閱[管理 Office 365 安全性的 eDiscovery 案例&amp;規範中心](manage-ediscovery-cases.md)。
   
-## <a name="step-4-delete-items-in-the-recoverable-items-folder"></a>步驟 4： 刪除 [可復原的項目] 資料夾中的項目
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步驟 4： 從信箱移除延遲保留
+
+從信箱移除任何類型的保留之後， *DelayHoldApplied*信箱屬性的值是設定為**True**。這會呼叫*延遲保留*及表示保留的實際移除會防止資料要永久刪除的 30 天的延遲 （清除） 從信箱。  當信箱處於延遲保留時，信箱會仍被視為不受限制的持續期間保留為信箱是否在訴訟暫止狀態。（延遲保留的用途是提供系統管理員有機會搜尋或復原之後移除保留為止，將清除的信箱項目）。過期的 30 天後延遲保留 Noe 與 Office 365 將會自動嘗試移除 （由*DelayHoldApplied*屬性設**為 False**） 的延遲保留如此將會真的移除保留。 
+
+您可以刪除步驟 5 中的項目之前，您必須從信箱移除延遲保留。執行下列命令在 Exchange Online PowerShell 移除延遲保留： 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+請注意您必須具有的法律保留角色在 Exchange Online 使用*RemoveDelayHoldApplied*參數。
+
+若要確認已移除延遲保留，請執行下列命令。
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+*DelayHoldApplied*屬性值為**False**表示已移除的延遲。
+
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步驟 5： 刪除 [可復原的項目] 資料夾中的項目
 
 現在您已經準備好實際使用[Search-mailbox](https://go.microsoft.com/fwlink/?linkid=852595)指令程式在 Exchange Online PowerShell 中刪除 [可復原的項目] 資料夾中的項目。時執行**搜尋信箱**指令程式會有三個選項。 
   
@@ -308,7 +343,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,F
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
   
-## <a name="step-5-revert-the-mailbox-to-its-previous-state"></a>步驟 5： 還原成先前狀態的信箱
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>步驟 6： 還原成先前狀態的信箱
 
 最後一個步驟是要還原的信箱回到先前的設定。這表示您在步驟 2 中變更的屬性重設並重新套用您在步驟 3 中移除保留。這包括：
   
@@ -387,9 +422,11 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
-以下是描述如何識別不同類型的保留當您執行**Get-mailbox**或**Get-organizationconfig**指令程式根據*InPlaceHolds*屬性中的值的表格。如先前清楚，您必須移除所有保留與 Office 365 之前信箱的保留原則可以成功地刪除 [可復原的項目] 資料夾中的項目。 
+以下是描述如何識別不同類型的保留當您執行**Get-mailbox**或**Get-organizationconfig**指令程式根據*InPlaceHolds*屬性中的值的表格。如需詳細資訊，請參閱[如何識別的類型保留放在 Exchange Online 信箱](identify-a-hold-on-an-exchange-online-mailbox.md)。
+
+如先前清楚，您必須移除所有保留與 Office 365 之前信箱的保留原則可以成功地刪除 [可復原的項目] 資料夾中的項目。 
   
 |**保留類型**|**範例值**|**如何識別保留**|
 |:-----|:-----|:-----|
