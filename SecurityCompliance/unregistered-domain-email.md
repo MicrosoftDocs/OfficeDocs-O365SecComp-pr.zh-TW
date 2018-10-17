@@ -3,7 +3,7 @@ title: 取消登錄的網域電子郵件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如果傳送大量取消登錄的網域電子郵件，則會執行快速封鎖電子郵件的風險。請閱讀本篇文章以深入了解。
-ms.openlocfilehash: f2b60f492197bf0dadb702a1c3f184c2d7e56bf1
-ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
+ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "23998597"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596726"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>取消登錄的網域電子郵件： 您需要知道什麼
 
@@ -37,9 +37,14 @@ Office 365 允許以轉送某些郵件透過 Exchange Online Protection (EOP) �
 
 1. 請確定所有的網域註冊 Office 365 系統管理中心中。您可以找到更多的資訊[如下](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-2. 鎖定您的內部伺服器和確認他們不遭到入侵。有許多因素相關這裡，特別是如果這些是協力廠商伺服器，但您必須要能夠確定所有郵件離開該伺服器都是合法。
+2. 尋找不尋常的連接器。惡意執行者通常會在您的 Office 365 租用戶傳送垃圾郵件中建立新的輸入的連接器。在檢查您的連接器的詳細資訊可以找到[以下](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)。 
 
-一旦完成，您必須連絡 Microsoft 支援並要求要取得您一次傳送來自取消登錄的網域解除封鎖的租用戶。 提供錯誤碼相當有用，但是您將需要證明您的環境安全且不會在一次傳送垃圾郵件。您可以找到更多的資訊[如下](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
+3. 鎖定您的內部伺服器和確認他們不遭到入侵。
+
+> [!TIP]
+> 有許多因素相關這裡，特別是如果這些是協力廠商伺服器。無論如何，您將需要能夠確認離開伺服器的所有郵件都是否合法。
+
+4. 一旦完成，您必須連絡 Microsoft 支援並要求要取得您一次傳送來自取消登錄的網域解除封鎖的租用戶。 提供錯誤碼相當有用，但是您將需要證明您的環境安全且不會在一次傳送垃圾郵件。開啟支援案例的詳細資訊可以找到[以下](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
   
 ## <a name="for-more-information"></a>如需詳細資訊
 
