@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: 儘量減少資料破壞或洩漏的帳戶可能會遵循下列建議的最佳作法。
-ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498089"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25637997"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全性最佳做法
 
@@ -90,7 +90,7 @@ DLP 可讓您識別機密資料，並建立原則，協助使用者無法從有�
   
 ## <a name="use-customer-lockbox"></a>使用客戶 Lockbox
 
-為 Office 365 系統管理員，您可以使用客戶 Lockbox 控制 Microsoft 支援工程師說明工作階段期間所存取的資料。在其中工程師需要存取資料的疑難排解並修正問題的情況下，客戶 Lockbox 可讓您核准或拒絕存取要求。若加以核准、 工程師可以存取資料。每次要求有到期時間，並解決問題之後要求已關閉撤銷存取權。客戶 Lockbox 隨附的 Office 365 企業版 5 計劃或可購買與任何其他 Office 365 企業版方案的不同訂閱。資訊，請參閱[Office 365 客戶 Lockbox 要求](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
+為 Office 365 系統管理員，您可以使用客戶 Lockbox 控制 Microsoft 支援工程師說明工作階段期間所存取的資料。在其中工程師需要存取資料的疑難排解並修正問題的情況下，客戶 Lockbox 可讓您核准或拒絕存取要求。若加以核准、 工程師可以存取資料。每次要求有到期時間，並解決問題之後要求已關閉撤銷存取權。客戶 Lockbox 隨附的 Office 365 企業版 E5 計劃或可購買與任何其他 Office 365 企業版方案的不同訂閱。資訊，請參閱[Office 365 客戶 Lockbox 要求](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
   
 ## <a name="try-it-yourself"></a>試試看
 <a name="SecureScore"> </a>
