@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 4816770575d704d54e8a988142d3115d6fc549e8
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 7892cb54bff510cd4868b05385fd25fc440d9c49
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540429"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25638017"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -275,7 +275,7 @@ ms.locfileid: "25540429"
 
 如需查詢語法的詳細資訊，請參閱：
 
-- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 查詢型保留標籤會使用搜尋索引來識別內容。
   
@@ -441,7 +441,7 @@ ms.locfileid: "25540429"
 
 若要使用標籤 Cmdlet，您必須：
   
-1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
 2. 使用這些 [Office 365 安全性與合規性中心 Cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
