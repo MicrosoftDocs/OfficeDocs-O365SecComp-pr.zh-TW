@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 在 Office 365 中，您可以開啟信箱稽核記錄來依信箱擁有者、 委派及系統管理員記錄信箱存取。根據預設，Office 365 中的信箱稽核無法開啟。啟用信箱稽核記錄功能信箱之後，您可以搜尋活動在信箱上執行的 Office 365 稽核記錄。
-ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 6d3de226e7c0e03be824b14e1b16fadaae3f040e
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358382"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639662"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>啟用 Office 365中的信箱稽核
   
@@ -28,8 +28,6 @@ ms.locfileid: "25358382"
 ## <a name="before-you-begin"></a>開始之前
   
 - 您必須使用 Exchange Online PowerShell 來啟用信箱稽核記錄。您不能使用 Office 365 安全性&amp;規範中心 」 或 「 Exchange 系統管理中心。
-    
-- 啟用信箱稽核記錄功能信箱之後，存取權的信箱與特定管理員和委派動作會記錄預設。若要記錄信箱擁有者所採取的動作，您必須指定所要稽核的擁有者動作。請參閱啟用信箱稽核記錄之後的動作清單，以及哪些動作都可供每種類型的使用者登入"更多資訊 」 一節。
     
 - 您無法啟用信箱稽核記錄與 Office 365 群組或小組中的 Microsoft 小組關聯的信箱。
     
@@ -83,7 +81,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 ## <a name="step-3-specify-owner-actions-to-audit"></a>步驟 3：指定要稽核的擁有者動作
 
-當您啟用信箱稽核時，只有一個巨集指令 ( **UpdateFolderPermissions** ) 信箱擁有者執行是依預設稽核。您必須指定稽核其他擁有者動作。請參閱清單及描述要稽核的擁有者動作"信箱動作 」 一節中的表格。 
+當您啟用信箱稽核時，預設稽核信箱擁有者執行某些動作。您必須指定稽核其他擁有者動作。請參閱在[信箱稽核動作](#mailbox-auditing-actions)] 區段中的清單和說明會記錄預設的擁有者動作及其他要稽核的動作的表格。 
   
 本範例會新增到信箱的 Pilar Pinilla 信箱稽核**MailboxLogin**和**HardDelete**擁有者動作。本範例會假設該信箱稽核已經啟用此信箱。 
 
@@ -123,7 +121,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
     
 ## <a name="mailbox-auditing-actions"></a>信箱稽核的動作
   
-下表列出可以信箱所記錄的動作稽核記錄。表格包含可針對不同的使用者登入類型記錄的動作。在表格中，**無**表示巨集指令不會記錄以登入類型。星號 ( **\*** ) 會指出動作會記錄預設時信箱稽核記錄已啟用信箱。先前所述，當您開啟信箱的稽核時依預設稽核只擁有者動作是 UpdateFolderPermissions。若要記錄其他信箱擁有者所採取的動作，您必須指定其他的擁有者稽核的動作。若要這樣做，請參閱本主題中的[步驟 3](#step-3-specify-owner-actions-to-audit) 。 
+下表列出可以信箱所記錄的動作稽核記錄。表格包含可針對不同的使用者登入類型記錄的動作。在表格中，**無**表示巨集指令不會記錄以登入類型。星號 ( **\*** ) 會指出動作會記錄預設時信箱稽核記錄已啟用信箱。 
   
 |**動作**|**描述**|**Admin**|**委派\*\*\***|**擁有者**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -146,7 +144,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
 > [!NOTE]
 > <sup>\*</sup>如果已啟用信箱，稽核預設。<br/><br/>  <sup>\*\*</sup>合併資料夾繫結動作委派所執行的項目。24 小時的時間範圍內的個別資料夾存取產生一個日誌項目。<br/><br/><sup>\*\*\*</sup>已指派完整存取權給使用者的信箱的系統管理員會被視為委派使用者。 
   
-如果您不再需要特定類型的信箱稽核的動作，您應修改停用這些動作的信箱稽核記錄設定。現有的記錄項目未清除直到達到 90 天的存留期限制稽核記錄項目。
+如果您不再需要特定類型的信箱稽核的動作，您應修改停用這些動作的信箱稽核記錄設定。直到達到稽核記錄項目保留時間限制未清除現有的記錄項目。如需稽核記錄項目保留期間的詳細資訊，請參閱 ＜[的搜尋稽核記錄中的 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#before-you-begin)的 「 之前 」 一節。
   
 ## <a name="more-infotab"></a>[更多資訊](#tab/)
   
