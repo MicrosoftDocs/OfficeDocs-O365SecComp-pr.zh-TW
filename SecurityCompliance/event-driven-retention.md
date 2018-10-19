@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: 使用 Office 365 中的標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: 7a360ec665843db2e7fb3ec5dc11e286a99b3f12
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fca335d8218c2c22335592fd71bffd00a805f6fb
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540409"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -35,7 +35,7 @@ ms.locfileid: "23013707"
     
 事件導向保留通常作為記錄管理處理程序的一部分。這表示：
   
-- 根據事件的標籤通常也會將內容分類為記錄。如需詳細資訊，請參閱[使用內容搜尋來尋找套用特定標籤的所有內容](labels.md#using-content-search-to-find-all-content-with-a-specific-label-applied-to-it)。
+- 根據事件的標籤通常也會將內容分類為記錄。如需詳細資訊，請參閱[使用內容搜尋來尋找套用特定保留標籤的所有內容](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it)。
     
 - 已宣告為記錄但是其事件觸發程序尚未發生的文件，會無限期保留 (記錄無法永久刪除)，直到事件觸發該文件的保留期間。
     
@@ -163,7 +163,7 @@ ms.locfileid: "23013707"
 
 若要取得 [事件]**** 頁面的存取權，檢閱者必須是具有**處置管理**角色和**僅限檢視稽核記錄**角色之角色群組的成員。我們建議建立稱為「處置檢閱者」的新角色群組，將這兩個角色新增至該角色群組，然後將成員新增至角色群組。 
   
-如需詳細資訊，請參閱[讓使用者能夠存取 Office 365 安全性與合規性中心](grant-access-to-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](grant-access-to-the-security-and-compliance-center.md)。
   
 ## <a name="automate-events-by-using-powershell"></a>使用 PowerShell 讓事件自動化
 

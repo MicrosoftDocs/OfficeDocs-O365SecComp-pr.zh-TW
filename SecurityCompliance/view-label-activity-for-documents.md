@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: 使用 Office 365 安全性與合規性中心的標籤活動總管，您可以跨 SharePoint 和商務用 OneDrive 快速搜尋和檢視過去 30 天所有內容的標籤活動。這是即時資料，可讓您清楚檢視租用戶發生什麼情況。
-ms.openlocfilehash: b40d1f9bdad4d0fcb3647f0c79c265bfe0713cd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69e99ea7af683d7850cd56f356ad0ac99f8c084e
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540389"
 ---
 # <a name="view-label-activity-for-documents"></a>檢視文件的標籤活動
 
@@ -46,7 +46,7 @@ ms.locfileid: "23013957"
 
 在標籤活動總管的頂端，您可以選擇是否要檢視檔案或資料夾的活動。請注意，資料夾活動只包含資料夾本身，不包含資料夾內的檔案。
   
-您可能想要看到資料夾的標籤活動，因為若您標示資料夾，該資料夾內的所有檔案也會得到該標籤 (但已有標籤明確地套用至其中的檔案除外)。因此，標示資料夾可能會影響大量的檔案。如需詳細資訊，請參閱[將預設標籤套用至 SharePoint 文件庫、資料夾或文件集中的所有內容](labels.md#applying-a-default-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
+您可能想要看到資料夾的標籤活動，因為若您標示資料夾，該資料夾內的所有檔案也會得到該標籤 (但已有標籤明確地套用至其中的檔案除外)。因此，標示資料夾可能會影響大量的檔案。如需詳細資訊，請參閱[將預設保留標籤套用至 SharePoint 文件庫、資料夾或文件集中的所有內容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
   
 ![顯示檔案和資料夾之標籤活動的下拉式功能表](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   
