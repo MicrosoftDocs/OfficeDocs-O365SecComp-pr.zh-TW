@@ -1,5 +1,5 @@
 ---
-title: 標籤概觀
+title: 保留標籤概觀
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 7892cb54bff510cd4868b05385fd25fc440d9c49
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+ms.openlocfilehash: 6d2d42d9cb13490073c1313561d611f0a32bfb55
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25638017"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678112"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
