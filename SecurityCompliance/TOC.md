@@ -12,7 +12,9 @@
 # 保護資料與服務存取權
 ## [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
 ## [在 MDM 與 Intune 之間選擇](choose-between-mdm-and-intune.md)
-# [防止資料遺失 (DLP)](data-loss-prevention-policies.md)
+# 保護資訊
+## [敏感度標籤](sensitivity-labels.md)
+## [防止資料遺失 (DLP)](data-loss-prevention-policies.md)
 ## [觀看 DLP 的延伸概觀](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## 設定 DLP
 ### [DLP 原則建議快速入門](get-started-with-dlp-policy-recommendations.md)
@@ -47,11 +49,11 @@
 ### [啟用無限制封存](enable-unlimited-archiving.md)
 ### [設定信箱的封存與刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 ## 保留資料
-### [保留原則概觀](retention-policies.md)
-### [標籤概觀](labels.md)
-### [處置檢閱概觀](disposition-reviews.md)
-### [事件導向保留的概觀](event-driven-retention.md)
-### [檔案計劃管理員的概觀](file-plan-manager.md)
+### [保留原則](retention-policies.md)
+### [保留標籤](labels.md)
+### [處置檢閱](disposition-reviews.md)
+### [事件導向保留](event-driven-retention.md)
+### [檔案計劃管理員](file-plan-manager.md)
 ## [管理非使用中的信箱](inactive-mailboxes-in-office-365.md)
 ### [建立和管理非使用中信箱](create-and-manage-inactive-mailboxes.md)
 ### [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -70,7 +72,7 @@
 ## [反垃圾郵件和反惡意程式碼防護](anti-spam-and-anti-malware-protection.md)
 ### [Office 365 的反網路釣魚保護](anti-phishing-protection.md)
 #### [Office 365 中的 ATP 防網路釣魚功能](atp-anti-phishing.md)
-#### [設定 Office 365 的 ATP 防網路釣魚原則](set-up-atp-anti-phishing-policies.md)
+#### [設定反網路釣魚及 ATP 防網路釣魚原則](set-up-anti-phishing-policies.md)
 #### [Office 365 如何驗證寄件者地址以防止網路釣魚](how-office-365-validates-the-from-address.md)
 ### [Office 365 的反詐騙保護](anti-spoofing-protection.md)
 #### [深入了解詐騙情報](learn-about-spoof-intelligence.md)
