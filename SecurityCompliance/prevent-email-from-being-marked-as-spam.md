@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: 了解如何讓實際電子郵件不會成為垃圾郵件，以及在 Office 365 中避免被標示為垃圾郵件。
-ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002636"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596716"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件
 
@@ -59,7 +59,7 @@ Office 365 中許多有關垃圾郵件的問題可以透過[檢視電子郵件�
     
 - **停用 Outlook 中的 SmartScreen 篩選** 如果您的使用者是使用 Outlook 桌面用戶端，則他們應該停用已終止的 SmartScreen 篩選功能。如果執行已更新的桌面 Outlook 用戶端，應該不需要此功能。 
     
-- **為使用者開啟回報郵件增益集** 我們建議建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。身為系統管理員，您也可以檢視使用者傳送的意見反應，並使用任何模式，來調整任何可能造成問題的設定。
+- **為使用者開啟回報郵件增益集** 我們建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。身為系統管理員，您也可以檢視使用者傳送的意見反應，並使用任何模式，來調整任何可能造成問題的設定。
     
 - **立即允許寄件者** 在您需要立即允許寄件者的情況下，我們強烈建議您**只允許特定寄件者的 IP 位址**。或者，您可以允許寄件者，並同時確定寄件者通過 SPF 或 DKIM 這類的驗證檢查，方法為建立一個傳輸規則，**同時**找出寄件者網域和成功的 Authentication-Results 標頭。 
     

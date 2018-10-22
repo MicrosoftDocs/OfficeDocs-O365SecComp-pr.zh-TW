@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 的敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: fae238e4c8409288175a3de305d12c76efcec5c2
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549743"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577092"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -37,13 +37,11 @@ ms.locfileid: "25549743"
     
 - **防止敏感內容離開組織執行 Windows 的裝置**，方式是使用 Microsoft Intune 的端點保護。敏感度標籤套用至位於 Windows 裝置上的內容後，端點保護可以防止該內容複製到協力廠商應用程式，例如 Twitter 或 Gmail，或複製到卸除式儲存空間，如 USB 磁碟機。
 
-- 使用 Cloud App Security (CAS) **保護協力廠商應用程式和服務中的內容**。透過 CAS，您可以偵測、分類、標記並保護協力廠商服務和應用程式的內容，例如 SalesForce、Box 或 Dropbox，即使協力廠商應用程式或服務無法讀取或支援敏感度標籤。    
-
 - **將敏感度標籤擴充至協力廠商應用程式和服務。** 使用 Microsoft 資訊保護 SDK，Windows、Mac 和 Linux 上的協力廠商應用程式可以讀取敏感度標籤，並且套用保護設定。iOS 和 Android 應用程式的支援即將推出。
 
-- **將內容分類而不需使用任何保護設定。** 您只要將分類指派至內容 (就像貼紙)，分類就會在使用及共用內容時保留並跟隨內容。您可以使用此分類產生使用狀況報告，並查看敏感內容的活動資料。根據這項資訊，稍後您可以隨時選擇設定保護設定，其可根據文件的分類進行套用。
+- **將內容分類而不需使用任何保護設定。** 您只要將分類指派至內容 (就像貼紙)，分類就會在使用及共用內容時保留並跟隨內容。您可以使用此分類產生使用狀況報告，並查看敏感內容的活動資料。根據這項資訊，稍後您可以隨時選擇套用保護設定。
     
-在這些案例中，Office 365 中的敏感度標籤可以幫助您對正確的內容採取正確的動作。使用標籤，您可以分類整個組織中的資料，並根據該分類強制執行保護設定。
+在這些案例中，Office 365 中的敏感度標籤可以幫助您對正確的內容採取正確的動作。使用敏感度標籤，您可以分類整個組織中的資料，並根據該分類強制執行保護設定。
   
 您在 Office 365 安全性 &amp; 合規性中心建立敏感度標籤。安全性與合規性中心目前是在 Azure 資訊保護和 Office 365 中設定敏感度標籤和原則的單一位置。這些敏感度標籤可供 Azure 資訊保護、Office 應用程式和 Office 365 服務使用。
 
@@ -73,7 +71,7 @@ ms.locfileid: "25549743"
 
 - 僅**加密**電子郵件，或同時加密電子郵件與文件。您可以選擇哪些使用者或群組擁有權限執行哪些動作和執行時間。比方說，您可以選擇讓組織外特定網域中的使用者僅在內容標示後的 7 天擁有權限檢閱內容。
 
-- **標記內容**，將自訂浮水印、頁首或頁尾新增至已套用標籤的電子郵件或文件。(浮水印僅可套用至文件，非電子郵件。)
+- **標記內容**的方法為在電子郵件或已套用標籤的文件上新增自訂浮水印、頁首或頁尾。(請注意，浮水印僅適用於文件，不適用於電子郵件，並且限制為 255 個字元。此外，頁首和頁尾的限制為 1024 個字元，而 Excel 的限制為 253 個字元。)
 
     ![套用至文件的浮水印和頁首](media/Sensitivity_label_watermark_header.png)
 
@@ -142,7 +140,7 @@ ms.locfileid: "25549743"
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度標籤會顯示的位置
 
-敏感度標籤會顯示在 Office 應用程式的 UI 中。若要檢視針對特定應用程式與平台目前的可用性，請參閱[目前提供此功能的位置？](https://support.office.com/zh-TW/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)。
+敏感度標籤會顯示在 Office 應用程式的 UI 中。若要檢視針對特定應用程式與平台目前的可用性，請參閱**[目前提供此功能的位置？](https://support.office.com/zh-TW/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**
 
 ### <a name="office-apps-on-windows"></a>Windows 上的 Office 應用程式
 
@@ -208,22 +206,9 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 
 - 請確定您執行的是 Windows 10，版本 1809 或更新版本。
 - [設定 Windows Defender 進階威脅防護 (WDATP)](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-atp/get-started)，這會掃描內容以找出標籤，並套用對應的 WIP 保護。ATP 會在 WIP 之外獨立執行某些動作，例如報告異常狀況。
-- 建立可套用至端點裝置的 Windows 資訊保護 (WIP) 原則：
+- 建立可套用至端點裝置的 Windows 資訊保護 (WIP) 原則。您可以在下列任何位置執行此作業：
     - [為 Microsoft Intune 使用 Azure 入口網站透過 MDM 建立 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [使用 System Center Configuration Manager 建立及部署 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
-
-## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>使用 Microsoft Cloud App Security 保護協力廠商應用程式和服務中的內容
-
-使用 Cloud App Security (CAS) 保護協力廠商應用程式和服務中的內容。透過 CAS，您可以偵測、分類、標記並保護協力廠商服務和應用程式的內容，例如 SalesForce、Box 或 Dropbox。比方說，Dropbox 可能不了解敏感度標籤，但 CAS 可以聯繫並保護該位置中標記的內容。 
-
-如需詳細資訊，請參閱[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-information-protection)。
-
-### <a name="important-prerequisites"></a>重要的先決條件
-
-在敏感度標籤可使用 CAS 之前，您必須先執行下文所述的先決條件：[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-information-protection)。本主題將說明下列先決條件：
-
-- 為您的租用戶[啟用 Cloud App Security 和 Azure 資訊保護](https://docs.microsoft.com/zh-TW/cloud-app-security/azip-integration)。
-- [將應用程式連線](https://docs.microsoft.com/zh-TW/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)至 Cloud App Security。
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>使用 Microsoft 資訊保護 SDK 將敏感度標籤擴充至協力廠商應用程式和服務
 
