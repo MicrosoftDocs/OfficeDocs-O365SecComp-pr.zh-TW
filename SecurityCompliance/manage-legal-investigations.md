@@ -3,7 +3,7 @@ title: 管理 Office 365 中的法律調查
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Office 365 安全性使用 eDiscovery 案例&amp;規範中心來管理您的組織法律調查。如果您有 E5 訂閱，您可以進一步分析 case 資料使用的文字分析、 機器學習及預測編碼功能進階 eDiscovery 中。
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719047"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>管理 Office 365 中的法律調查
 
@@ -32,7 +32,7 @@ ms.locfileid: "25038266"
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>管理 eDiscovery 案例與法律調查
 
-eDiscovery 的情況下可讓您控制可以建立、 存取及管理組織中的 eDiscovery 案例。使用情況下新增成員並控制哪些類型的動作時可以執行、 置於保留的內容位置相關法律案例，並使用 「 內容搜尋工具來搜尋位置保留可能會有回應至您案例的內容。然後您也可以匯出並下載進一步外部檢閱者所使用的結果。如果您的 Office 365 組織有且 E5 訂閱可以也準備搜尋結果中進階 eDiscovery 的分析。
+eDiscovery 的情況下可讓您控制可以建立、 存取及管理組織中的 eDiscovery 案例。使用情況下新增成員並控制哪些類型的動作時可以執行、 置於保留的內容位置相關法律案例，並使用 「 內容搜尋工具來搜尋位置保留可能會有回應至您案例的內容。然後您也可以匯出並下載進一步外部檢閱者所使用的結果。如果您的 Office 365 組織擁有 E5 訂閱，也可以進行分析進階在 eDiscovery 中準備搜尋結果。
   
 - [管理 eDiscovery 工作流程](ediscovery-cases.md)來建立和使用 eDiscovery 案例的每個法律調查有關您的組織有 ps_1st_currentver 
     
@@ -59,7 +59,7 @@ Office 365 進階的 eDiscovery 建置在前文各節所述的內容搜尋與 eD
 > [!NOTE]
 > 若要分析使用進階的 eDiscovery 的使用者資料，使用者 (資料 okay) 必須指派 Office 365 E5 授權。或者，使用 Office 365 E1 或 E3 授權的使用者可以將指派進階的 eDiscovery 獨立授權。系統管理員及法務人員對於已指派給的情況下並使用進階的 eDiscovery 分析資料不需要的 E5 授權。 
   
-### <a name="get-started"></a>入門
+### <a name="get-started"></a>快速入門
 
 快速入門與進階 eDiscovery 最快的方法是建立案例並準備搜尋結果中安全性&amp;規範中心載入進階 ediscovery 這些結果，然後執行分析 Express 分析的案例資料，然後將匯出供外部檢閱結果。
   
