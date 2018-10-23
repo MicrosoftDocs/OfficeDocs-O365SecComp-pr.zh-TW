@@ -3,7 +3,7 @@ title: 深入了解詐騙情報
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: 在 [安全性] 中使用詐騙智慧&amp;規範中心反垃圾郵件設定] 頁面上檢閱所有寄件者是詐騙屬於貴組織的其中一個網域或詐騙的外部網域。詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅保護和 Exchange Online Protection 的一部分。
-ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: df5dedb6a9bdf9c25f570f960b9004524999bfdd
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715909"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 
@@ -102,7 +102,7 @@ ms.locfileid: "25496837"
 ## <a name="configuring-the-anti-spoofing-policy"></a>設定反詐騙原則
 <a name="Managespooflist"> </a>
 
-除了允許或封鎖來自詐騙的電子郵件傳送至您的組織特定寄件者，您也可以設定您想要篩選方式嚴格、 詐騙郵件找到時，所採取的動作和要啟用 Safety 秘訣反詐騙。
+除了允許或封鎖來自詐騙的電子郵件傳送至您的組織特定寄件者，您也可以設定如何嚴格您想要設為、 篩選和找到詐騙郵件時所採取的動作。
   
 反詐騙保護會套用至電子郵件來自網域至 Office 365 組織外部的寄件者。您可以將原則套用至收件者的信箱已授權的 Office 365 企業版 E5、 進階威脅保護及年 10 月、 年 2018 EOP 客戶。您可以管理反詐騙及其他反網路釣魚設定原則。如需反網路釣魚設定的詳細資訊，請參閱[Set up Office 365 反網路釣魚原則](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions)。
   
@@ -126,11 +126,7 @@ Office 365 包含預設反詐騙保護一律執行。此預設保護看不見安
   
     ![這個螢幕擷取畫面顯示反詐騙原則編輯選項](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. 選擇是否要啟用或停用反詐騙 safety 秘訣。Office 365 建議以警告時他們互動寄件者已不驗證身分識別的使用者啟用該**驗證會失敗**safety 提示。Office 365 也建議針對較小群使用者的**驗證虛複雜**啟用 safety 提示因為如果使用者接收電子郵件從許多合法，但未獲授權來源此 safety 提示可能會產生許多的警告。  
-  
-    ![這個螢幕擷取畫面顯示反詐騙 safety 提示選項](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-
-8. 讓您選擇，然後選擇 [**儲存**。 
+7. 讓您選擇，然後選擇 [**儲存**。 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>若要管理詐騙和網路釣魚與 Office 365 的其他方式
 <a name="Managespooflist"> </a>
@@ -140,6 +136,7 @@ Office 365 包含預設反詐騙保護一律執行。此預設保護看不見安
 - 檢查您的例行工作的一部分的 Exchange Online Protection 詐騙的郵件] 報告。您可以使用這份報告通常以檢視和協助管理詐騙的寄件者。資訊，請參閱**詐騙郵件報告**中[使用郵件保護報告以檢視有關惡意程式碼、 垃圾郵件和規則偵測的 Office 365 中](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx)。
     
 更進階的 Office 365 系統管理員，您也可以完成下列檢查：
+    
     
 - 檢閱您的寄件者原則架構 (SPF) 設定。快速介紹 SPF 以及要取得其快速地設定，請參閱[Set up SPF 避免詐騙的 Office 365 中](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)。更深入了解 Office 365 如何使用 SPF，或者例如混合部署的疑難排解或非標準部署開始使用[Office 365 如何使用寄件者原則架構 (SPF) 若要防止詐騙](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)。
     
