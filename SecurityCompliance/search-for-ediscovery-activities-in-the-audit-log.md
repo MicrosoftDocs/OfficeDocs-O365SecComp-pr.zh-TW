@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何將搜尋 Office 365 稽核記錄的規範管理員可執行內容搜尋與 eDiscovery 案件工作安全性會記錄的事件&amp;規範中心。
-ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038346"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698029"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>搜尋 Office 365 稽核記錄中的 eDiscovery 活動
 
@@ -41,9 +41,9 @@ ms.locfileid: "25038346"
 
 目前，您必須執行檢視 Office 365 稽核記錄中的 eDiscovery 活動的一些特定動作。以下是如何。
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在左窗格中，按一下 [**搜尋&amp;調查**，然後按一下 [**稽核記錄搜尋**。
     
@@ -94,7 +94,7 @@ ms.locfileid: "25038346"
 |已刪除的 eDiscovery 案例  <br/> |CaseRemoved  <br/> |移除 ComplianceCase  <br/> |已刪除 eDiscovery 案例。與案例相關聯任何保留具有要移除之前可刪除案例的附註。  <br/> |
 |刪除的搜尋權限篩選  <br/> |SearchPermissionRemoved  <br/> |移除 ComplianceSecurityFilter  <br/> |搜尋的權限篩選已遭刪除。  <br/> |
 |EDiscovery 案件保留已刪除的搜尋查詢  <br/> |HoldRemoved  <br/> |移除 CaseHoldRule  <br/> |EDiscovery 案例相關聯的查詢式保留已刪除。從保留移除查詢通常是刪除保留的結果。刪除保留或保留查詢時所保留的內容位置所發行。  <br/> |
-|下載的匯出的內容搜尋  <br/> |SearchResultDownloaded  <br/> |不適用  <br/> |使用者下載到他們的本機電腦的內容的搜尋結果。請注意**啟動匯出的內容搜尋**活動起始之前可以下載搜尋結果。<br/> |
+|下載的匯出的內容搜尋  <br/> |SearchExportDownloaded  <br/> |不適用  <br/> |使用者下載到他們的本機電腦的內容的搜尋結果。請注意**啟動匯出的內容搜尋**活動起始之前可以下載搜尋結果。<br/> |
 |預覽內容搜尋結果  <br/> |SearchPreviewed  <br/> |不適用  <br/> |使用者可預覽內容搜尋結果。  <br/> |
 |已清除內容的搜尋結果  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |使用者執行清除內容的搜尋結果**新增 ComplianceSearchAction-清除**命令。  <br/> |
 |已移除的內容搜尋分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |移除 ComplianceSearchAction  <br/> |內容搜尋準備動作 （若要準備 Office 365 進階 eDiscovery 搜尋結果） 已遭刪除。若 [準備] 動作小於兩週的舊，請從 Microsoft Azure 存放區刪除已備妥進階 eDiscovery 搜尋結果。如果 [準備] 動作已超過 2 週，此事件會指出已刪除的對應準備動作。  <br/> |
