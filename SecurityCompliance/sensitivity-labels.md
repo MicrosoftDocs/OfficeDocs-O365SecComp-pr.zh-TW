@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 的敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577092"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678122"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -71,7 +71,7 @@ ms.locfileid: "25577092"
 
 - 僅**加密**電子郵件，或同時加密電子郵件與文件。您可以選擇哪些使用者或群組擁有權限執行哪些動作和執行時間。比方說，您可以選擇讓組織外特定網域中的使用者僅在內容標示後的 7 天擁有權限檢閱內容。
 
-- **標記內容**的方法為在電子郵件或已套用標籤的文件上新增自訂浮水印、頁首或頁尾。(請注意，浮水印僅適用於文件，不適用於電子郵件，並且限制為 255 個字元。此外，頁首和頁尾的限制為 1024 個字元，而 Excel 的限制為 253 個字元。)
+- **標記內容**的方法為在電子郵件或已套用標籤的文件上新增自訂浮水印、頁首或頁尾。請注意，浮水印僅適用於文件，不適用於電子郵件，並且限制為 255 個字元。此外，頁首和頁尾的限制為 1024 個字元 (除了在 Excel 中的限制為 255 個字元或更少，根據文件是否包含其他頁首或頁尾或其他因素而定。)
 
     ![套用至文件的浮水印和頁首](media/Sensitivity_label_watermark_header.png)
 
@@ -92,7 +92,7 @@ ms.locfileid: "25577092"
 
 ### <a name="sublabels-grouping-labels"></a>子標籤 (分組標籤)
 
-使用子標籤，您可以將使用者在 Office 應用程式中看到的標題下一或多個標籤分組。比方說，在「機密」下方，您的組織可能針對該分類的特定類型使用數種不同標籤。在此範例中，標籤「機密」只是文字標籤而沒有保護設定，因此不能套用至內容。使用者必須改為選擇「機密」才能檢視子標籤，接著可選擇子標籤套用至內容。
+使用子標籤，您可以將使用者在 Office 應用程式中看到的標題下一或多個標籤分組。比方說，在「機密」下方，您的組織可能針對該分類的特定類型使用數種不同標籤。在此範例中，標籤「機密」只是文字標籤而沒有保護設定，且因為其具有子標籤，所以不能套用至內容。使用者必須改為選擇「機密」才能檢視子標籤，接著可選擇子標籤套用至內容。
 
 子標籤只是在邏輯群組中向使用者顯示標籤的方式。子標籤並不會繼承其上方標籤的任何設定。
 
@@ -148,7 +148,7 @@ ms.locfileid: "25577092"
 
 即將推出 Windows 中 Office 應用程式敏感度標籤的原生支援。
 
-如果您是現有的 Azure 資訊保護客戶，您可以部署 Azure 資訊保護整合標籤用戶端，其支援敏感度標籤且即將推出。(請參閱上一步的連結，以取得部署用戶端的相關資訊。)我們目前正在處理 Windows 中 Office 應用程式敏感度標籤的原生支援，將不再需要 Azure 資訊保護整合標籤用戶端。
+如果您是現有的 Azure 資訊保護客戶，您可以部署 Azure 資訊保護整合標籤用戶端，其支援敏感度標籤。如需下載用戶端的詳細資訊，請參閱 [Azure 資訊保護統一標籤客戶端：版本發行資訊](https://docs.microsoft.com/zh-TW/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。我們目前正在處理 Windows 中 Office 應用程式敏感度標籤的原生支援，將不再需要 Azure 資訊保護整合標籤用戶端。
 
 ![Windows 中 Excel 功能區上的敏感度按鈕](media/Sensitivity_label_Sensitivity_button.png)
 
