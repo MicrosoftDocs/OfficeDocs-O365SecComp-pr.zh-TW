@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: 了解 Office 365 威脅智慧以及如何開始。
-ms.openlocfilehash: 59da671b4d9b7b697ad4caf3573f954f2a446d24
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527018"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769892"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Office 365 威脅情報快速入門
 
@@ -92,7 +92,7 @@ Office 365 威脅智慧隨附於 Office 365 企業版 E5。如果貴組織要使
 |使用威脅儀表板 （或新的[安全性儀表板](security-dashboard.md)）  <br/> 檢視最新或目前的威脅的相關資訊  <br/> |Office 365 全域管理員  <br/> 安全性管理員 (安全性指派&amp;規範中心)  <br/> 安全性讀者 (安全性指派&amp;規範中心)  <br/> |
 |使用威脅瀏覽器 （也稱為瀏覽器）  <br/> 分析的威脅  <br/> |Office 365 全域管理員  <br/> 安全性管理員 (安全性指派&amp;規範中心)  <br/> 安全性讀者 (安全性指派&amp;規範中心)  <br/> |
 |檢視事件  <br/> 將電子郵件訊息新增至事件  <br/> |Office 365 全域管理員  <br/> 安全性管理員 (安全性指派&amp;規範中心)  <br/> 安全性讀者 (安全性指派&amp;規範中心)  <br/> |
-|在事件觸發電子郵件動作  <br/> 尋找並刪除可疑的電子郵件訊息  <br/> |Office 365 全域管理員  <br/> 搜尋並清除 (安全性指派&amp;規範中心)  <br/> |
+|在事件觸發電子郵件動作  <br/> 尋找並刪除可疑的電子郵件訊息  <br/> |Office 365 全域管理員或安全性管理員  <br/> 搜尋並清除 (安全性指派&amp;規範中心)  <br/> |
 |整合 Office 365 威脅情報與 Windows Defender 進階威脅防護  <br/> 整合 Office 365 威脅智慧 SIEM 伺服器  <br/> |Office 365 全域管理員  <br/> 安全性管理員 (安全性指派&amp;規範中心)  <br/> 適當的角色指派的其他應用程式 （例如 Windows 防禦者進階威脅保護入口網站或 SIEM 伺服器）  <br/> |
    
 角色、 角色群組和權限的相關資訊，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。

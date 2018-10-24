@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: '原則提示是通知或當有人會處理內容與 DLP 原則該發生衝突時出現的警告。您可以使用電子郵件通知及原則提示增加傳達及協助貴組織的原則相關的人員對教育訓練。您也可以的讓人員覆寫原則，以便他們不會封鎖如果有有效的商業選項需要或原則會偵測誤判。 '
-ms.openlocfilehash: a24afe6dd1203af4dc1f0f21468e828751bc5f3b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527361"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769912"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>傳送電子郵件通知，並顯示 DLP 原則的原則提示
 
@@ -49,7 +49,7 @@ Office 365 安全性&amp;規範中心，當您建立的 DLP 原則時，您可�
 
 當您建立的 DLP 原則時、 電子郵件通知及原則提示屬於**使用者通知**] 區段。 
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 前往 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用您工作或學校的帳戶。您現在是 Office 365 安全性&amp;規範中心。
     
@@ -206,6 +206,25 @@ DLP 原則會同步處理至網站，以便定期以非同步方式根據它們�
 ![您將可以覆寫原則提示的原則提示] 對話方塊](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 請注意當您將機密資訊新增至電子郵件時，有可能是新增的機密資訊時與該原則提示出現時之間的延遲。
+
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 及更新版本支援僅某些條件顯示原則提示
+
+目前 Outlook 2013 及更新版本支援顯示原則提示只有這些條件：
+
+- 內容包含
+- 共用內容
+
+我們目前使用的顯示其他條件的原則提示的支援。這些包括：
+
+- 任何電子郵件附件的內容可能不會掃描
+- 任何電子郵件附件的內容未完成掃描
+- 附件副檔名為
+- 附件均受密碼保護
+- 文件屬性
+- 收件者的網域是
+- 寄件者 IP 位址
+
+請注意這些條件的所有工作在 Outlook 中，他們會在此比對內容並強制執行防護動作的內容。但顯示原則提示使用者尚未支援。
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>原則提示的 Exchange 系統管理中心和 Office 365 安全性比較&amp;規範中心
 
@@ -218,8 +237,7 @@ DLP 原則會同步處理至網站，以便定期以非同步方式根據它們�
 ### <a name="default-text-for-policy-tips-in-email"></a>預設的電子郵件中的原則提示的文字
 
 預設原則提示會顯示類似下列的電子郵件的文字。
-  
-| |
+
 |**如果 DLP 原則規則執行此動作...**|**預設原則提示就會指出...**|
 |:-----|:-----|
 |傳送通知，但不允許覆寫  <br/> |您電子郵件與衝突貴組織中的原則。  <br/> |
@@ -255,8 +273,7 @@ DLP 原則會同步處理至網站，以便定期以非同步方式根據它們�
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 和 Word 2016 中的預設原則提示文字
 
 根據預設，原則提示會在已開啟文件的訊息列和 Backstage 檢視上顯示如下文字。每條規則的通知文字都是分開設定的，因此顯示的文字將依其對應的規則而有所不同。
-  
-| |
+
 |**如果 DLP 原則規則執行此動作...**|**預設原則提示就會指出...**|
 |:-----|:-----|
 |傳送通知，但不允許覆寫  <br/> |此檔案與衝突貴組織中的原則。移至 [**檔案**] 功能表中的詳細資訊。<br/> |
@@ -267,7 +284,7 @@ DLP 原則會同步處理至網站，以便定期以非同步方式根據它們�
 
 您可以自訂分開的電子郵件通知的原則提示的文字。不同的電子郵件通知 （如上一節） 的自訂文字、 自訂原則提示文字不接受 HTML 或權杖。而是自訂原則提示的文字是純文字只是 256 個字元限制。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     
