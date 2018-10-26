@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
+ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575337"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "25793548"
 ---
 # <a name="privileged-access-management-in-office-365"></a>權限存取 Office 365 中的管理
 
@@ -80,7 +80,7 @@ ms.locfileid: "25575337"
 我們打算要提高目前推出的 Office 365 組織每 30 權限的存取原則的限制。
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>是否需要是來管理 Office 365 中的權限的存取的全域系統管理員吗？
-您需要有全域管理員能夠管理 Office 365 中的權限的存取的最低權限。包含在核准者群組的使用者不需要是檢閱和核准要求的全域系統管理員。 
+否，您需要有 Exchange 角色管理角色指派給要管理 Office 365 中的權限的存取的帳戶。不過，全域管理員角色預設包含此角色和可用來管理特殊權限的存取如果您不想要設定的角色管理角色為獨立的帳戶權限。包含在核准者群組的使用者不需要是全域管理員或擁有 「 角色管理角色指派給檢閱和核准要求。 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>如何為客戶 Lockbox 相關的 Office 365 中的權限的存取管理？
 [客戶 Lockbox](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)允許存取控制組織依其服務提供者，例如 Microsoft 資料存取層級。特殊權限存取 Office 365 中的管理允許所有的特殊權限的 Office 365 工作的組織內的更精細的存取控制。
