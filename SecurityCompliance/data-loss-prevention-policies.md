@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: 與 Office 365 安全性資料外洩防護 (DLP) 原則&amp;規範中心，您可以識別、 監視和自動跨 Office 365 保護敏感資料。
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540419"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829194"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -312,7 +312,7 @@ DLP 原則可協助保護機密資訊，這會定義為**敏感資訊類型**。
     
 - **自動套用**的內容符合您所選擇的條件。 
     
-如需標籤的詳細資訊，請參閱[標籤概觀](labels.md)。
+如需標籤的詳細資訊，請參閱 ＜ [Overview of 保留標籤](labels.md)。
   
 建立標籤之後，然後 DLP 原則中使用該標籤做為條件。例如，您可能會想要因為執行這項作業：
   
@@ -327,12 +327,16 @@ DLP 原則可協助保護機密資訊，這會定義為**敏感資訊類型**。
 使用標籤作為 DLP 規則條件，可以您選擇性地強制上一組特定的內容、 位置、 或使用者的保護動作。
   
 ![做為條件的標籤](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>即將支援的敏感度標籤
+
+請注意您目前可使用保留標籤做為條件、 不[區分大小寫標籤](sensitivity-labels.md)。我們目前使用這種情況中使用的敏感度標籤的支援。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>這項功能與其他功能的方式
 
 數項功能可套用至包含敏感資訊的內容：
   
-- [套用自動根據條件的標籤][保留標籤](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留原則](retention-policies.md)可以同時強制對此內容**保留**動作。 
+- [保留標籤](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留原則](retention-policies.md)可以同時強制對此內容**保留**動作。 
     
 - DLP 原則可以強制**保護**動作的此內容。與之前強制執行這些動作，DLP 原則可能需要其他條件以符合除了包含標籤的內容。 
     

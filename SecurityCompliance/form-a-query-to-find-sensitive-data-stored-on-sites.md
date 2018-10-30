@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
 description: 與資料外洩防護 (DLP) SharePoint Online 中，您可以探索包含機密資料整個租用戶中的文件。之後探索文件，您可以使用以保護資料的文件擁有者。本主題可協助您的表單來搜尋機密資料的查詢。
-ms.openlocfilehash: 13954a856dd265e3b735d940c7d334d922713637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013857"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829184"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 
@@ -84,9 +84,7 @@ ms.locfileid: "23013857"
    
 ## <a name="for-more-information"></a>如需詳細資訊
 
-[尋找儲存在 SharePoint Online 網站上的敏感資料](https://support.office.com/article/ef788d8f-9748-4025-bfe4-40541ca4cfb2)
-  
-[敏感資訊類型詳細目錄](https://go.microsoft.com/fwlink/?LinkID=509999)
+[機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
   
 [Office 365 安全性執行內容的搜尋&amp;規範中心](run-a-content-search-in-the-security-and-compliance-center.md)
   
