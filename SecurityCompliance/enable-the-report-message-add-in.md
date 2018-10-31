@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何啟用報表訊息增益集 Outlook 和 Outlook web 針對個別使用者或整個組織。
-ms.openlocfilehash: ad07d594a78b8134984b48f08898ad1ba697e03a
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+ms.openlocfilehash: 8c9853c78a42d6eecd0989475ef8f0a44345f812
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25638007"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857261"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -41,7 +41,7 @@ ms.locfileid: "25638007"
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>您要報告郵件取得增益集
 
-1. 在[Office 存放區](https://appsource.microsoft.com/product/office/WA104381180?src=office)，請取得報告郵件增益集。
+1. 在[Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps)、 搜尋[報告郵件增益集](https://appsource.microsoft.com/product/office/wa104381180)。
     
 2. 選擇 [**取得 IT 現在**。<br/>![報告訊息-立即取得](media/ReportMessageGETITNOW.png)<br/> 
     

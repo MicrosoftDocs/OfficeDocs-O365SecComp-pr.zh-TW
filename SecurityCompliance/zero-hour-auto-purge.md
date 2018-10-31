@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: 零小時自動清除 (ZAP) 是電子郵件保護功能，可偵測到的郵件垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，並再轉譯無害惡意的內容。如何 ZAP 執行此動作而定的偵測到惡意內容類型。
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526357"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857241"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -74,7 +74,7 @@ ZAP 會開啟依預設，但您必須確認符合條件一些：
     
     如果您選擇**儲存**此時，原則可套用至 Office 365 租用戶。 
     
-    ![設定垃圾郵件和大量 Mpve 郵件至垃圾郵件] 資料夾的動作](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![設定垃圾郵件和大量動作，以將郵件移至 [垃圾郵件] 資料夾](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. 如果您建立新的原則，而您想要將原則套用至只有一組使用者，捲動至 [**套用至**] 區段中原則篩選器] 視窗中，與功能表控制項中選擇 [**收件者**、**網域**或**群組的成員資格**您要套用之原則。您也可以設定其他條件和例外狀況。 
     
@@ -121,7 +121,7 @@ ZAP 不會將郵件移至隔離區從收件匣這一次。
 ## <a name="related-topics"></a>相關主題
 <a name="BK_FAQ"> </a>
 
-[Office 365 電子郵件反垃圾郵件保護](anti-spam-protection.md)
+[Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
   
 [利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常](block-email-spam-to-prevent-false-negatives.md)
   
