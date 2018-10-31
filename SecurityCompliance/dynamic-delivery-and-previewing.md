@@ -3,6 +3,7 @@ title: 動態傳遞和 Office 365 ATP 安全附件預覽
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,26 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: 當您設定好您 ATP 安全附件原則時，您選擇以避免郵件延遲，並啟用人員預覽會掃描附件的動態傳遞。
-ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965240"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850817"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和 Office 365 ATP 安全附件預覽
 
-動態傳遞則可以針對選取此選項。請閱讀本篇文章以深入了解動態傳遞，在[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)的附件預覽功能。
+**摘要**： 動態傳遞，則可以針對[ATP 安全附件](atp-safe-attachments.md)選取此選項。請閱讀本篇文章以深入了解動態傳遞，在[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)的附件預覽功能。
   
-## <a name="how-dynamic-delivery-works"></a>如何動態傳遞運作
+## <a name="how-dynamic-delivery-works"></a>動態傳遞的運作方式
 
-當您[設定 Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)，您可以選擇從**封鎖**」、 「**取代**，與 「**動態傳遞**數個選項。根據您的原則設定的方式，電子郵件收件者可以體驗次要中電子郵件傳遞延遲時掃描其附件。若要避免郵件延遲回應，請選擇 [**動態傳遞**。
+當[ATP 安全附件原則已設定](set-up-atp-safe-attachments-policies.md)為您的組織有數種選項如何處理電子郵件附件。包括**封鎖**、**取代**、 及**動態的傳遞**。依 ATP 安全附件的原則設定電子郵件收件者可以體驗次要中電子郵件傳遞延遲時掃描其附件。若要避免郵件延遲回應，請選擇 [**動態傳遞**。
   
-動態的傳遞選項不傳送具有版面配置區的每個電子郵件附件透過電子郵件訊息的本文以電子郵件延遲。附件掃描的[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)之前，保持版面配置區。電子郵件收件者可讀取及回應其電子郵件訊息向右離開知道正在分析 [其附件。
-  
-大部分的 Pdf 和 Office 可以在安全模式中預覽文件時 ATP 掃描正在進行中。如果附件不相容的動態傳遞預覽程式，直到完成 ATP 安全附件掃描電子郵件收件者請參閱附件版面配置區。
-  
-清除 [每個附件時，它會自動重新附加到原始的電子郵件。如果設為惡意決定附件，它傳送至隔離某人在貴組織的安全性小組 （例如 Office 365 全域管理員或安全性管理員） 可以[管理 Office 365 中隔離的郵件](manage-quarantined-messages-and-files.md)。
+動態傳遞給收件者與版面配置區的每個電子郵件附件形式傳送透過電子郵件訊息本文以不電子郵件延遲。掃描附件的複本，且為安全由[ATP 安全的附件](atp-safe-attachments.md)之前會維持版面配置區。大部分的 Pdf 和 Office 可以在安全模式中預覽文件時 ATP 掃描正在進行中。如果附件不相容的動態傳遞預覽程式，直到完成 ATP 安全附件掃描電子郵件收件者請參閱附件版面配置區。
+
+- 清除 [每個附件時，它是可用來開啟或下載。 
+
+- 如果設為惡意決定附件，它傳送至隔離某人在貴組織的安全性小組 （例如 Office 365 全域管理員或安全性管理員） 可以[管理 Office 365 中隔離的郵件](manage-quarantined-messages-and-files.md)。
+
+具有動態傳遞電子郵件收件者可讀取及回應其電子郵件訊息向右離開知道正在分析 [其附件。 
+
+Office 365 資料所在的相同區域中放置 ATP 掃描取得安全的附件。多個資料中心地理位置的詳細資訊，請參閱[其中是位於資料？](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>當某人將轉送電子郵件的什麼包含附件？
 

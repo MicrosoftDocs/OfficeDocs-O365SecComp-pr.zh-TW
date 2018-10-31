@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454280"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850837"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -59,7 +59,7 @@ ms.locfileid: "25454280"
     
       - 在 [**描述**] 方塊中輸入描述 like 立即傳送郵件並將重新附加附件之後掃描。
     
-      - 在 [回應] 區段中，選擇 [**動態的傳遞**選項。（[解更多關於動態傳遞和 ATP 安全附件預覽](dynamic-delivery-and-previewing.md)）。
+      - 在 [回應] 區段中，選擇 [**動態的傳遞**選項。（[解更多關於動態傳遞和預覽 ATP 安全附件](dynamic-delivery-and-previewing.md)）。
     
       - **重新導向附件**] 區段中選取 [啟用重新導向及輸入 Office 365 全域管理員、 安全性管理員或安全性分析師將調查惡意附件的電子郵件地址] 選項。 
     
@@ -76,7 +76,7 @@ ms.locfileid: "25454280"
 |**選項**|**效果**|**當您想要使用：**|
 |:-----|:-----|:-----|
 |**Off** <br/> |不會掃描附件的惡意程式碼  <br/> 不會延遲郵件傳遞  <br/> |關閉掃描程式內部的寄件者、 掃描、 傳真] 或將只會將傳送已知的良好的附件的智慧主機  <br/> 防止不必要的路由的內部郵件的延遲  <br/> **此選項不建議大多數使用者使用。可讓您關閉 ATP 安全附件掃描程式內部的寄件者一小群。**           |
-|**監視** <br/> |將附件的郵件，然後時會有什麼與偵測到惡意程式碼來追蹤  <br/> |請參閱偵測到惡意程式碼會在組織中的其中  <br/> |
+|**監視器** <br/> |將附件的郵件，然後時會有什麼與偵測到惡意程式碼來追蹤  <br/> |請參閱偵測到惡意程式碼會在組織中的其中  <br/> |
 |**封鎖** <br/> |防止從繼續偵測到惡意程式碼附件的郵件  <br/> 將偵測到惡意程式碼的郵件傳送至[Office 365 中的隔離](manage-quarantined-messages-and-files.md)其中的安全性管理員或分析師可以檢閱及釋出 （或刪除） 那些郵件  <br/> 自動封鎖未來的訊息與附件  <br/> |可重複使用相同的惡意程式碼附件的攻擊貴組織保護  <br/> |
 |**取代** <br/> |會移除偵測到惡意程式碼的附件  <br/> 通知收件者已移除附件  <br/> 將偵測到惡意程式碼的郵件傳送至[Office 365 中的隔離](manage-quarantined-messages-and-files.md)其中的安全性管理員或分析師可以檢閱及釋出 （或刪除） 那些郵件  <br/> |引發給收件者的附件已移除因偵測到惡意程式碼的可見性  <br/> |
 |**動態傳遞** <br/> |傳送立即訊息  <br/> 直到掃描已完成，然後將偵測到任何惡意程式碼時重新附加附件的附件取代預留位置檔案  <br/> 包含附件預覽功能大部分的 Pdf 和 Office 檔案掃描期間  <br/> 將偵測到惡意程式碼的郵件傳送至其中的安全性管理員或分析師可以檢閱及釋出 （或刪除） 那些郵件隔離  <br/> [了解動態傳遞和 ATP 安全附件預覽](dynamic-delivery-and-previewing.md) <br/> |避免郵件延遲時防止惡意檔案中的收件者  <br/> 啟用時掃描正在進行預覽附件安全模式中的收件者  <br/> |

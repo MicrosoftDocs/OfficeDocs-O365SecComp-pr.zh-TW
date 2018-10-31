@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 進階威脅保護包含詐騙智慧、 安全的連結、 安全附件及進階的反網路釣魚功能。進階的威脅保護也要延伸至檔案的 SharePoint Online、 OneDrive for Business 和 Microsoft 小組。
-ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: def22368f8bc219ebceda797dd04b234bc3c4435
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496857"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850827"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -55,7 +55,7 @@ Office 365 進階威脅保護 (ATP) 有幫助保護您的組織從惡意的攻�
 
 - **[設定 Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)** 包括您的組織[自訂封鎖的 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)和[自訂 「 未修正"Url 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
     
-- **[Office 365 中的原則設定 ATP 安全附件](set-up-atp-safe-attachments-policies.md)** 內含[動態傳遞和預覽](dynamic-delivery-and-previewing.md)
+- **[設定 Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)** 可以包含[動態傳遞和預覽](dynamic-delivery-and-previewing.md)
   
 ## <a name="see-how-atp-is-working-by-viewing-reports"></a>請參閱 ATP 檢視報告的運作方式
 
@@ -86,6 +86,6 @@ ATP 原則已備妥之後，就有一個報表可用來顯示服務運作的方�
 
 [進階威脅保護的檢視報告](view-reports-for-atp.md)
   
-[管理 Office 365 安全性威脅&amp;規範中心](threat-management.md)
+[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 
