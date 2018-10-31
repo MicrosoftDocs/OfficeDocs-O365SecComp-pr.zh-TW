@@ -3,7 +3,7 @@ title: 設定 Office 365 郵件加密的 Azure 版權管理
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/3/2017
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: 'Office 365 郵件加密取決於 Microsoft Azure Rights Management （先前稱為 Windows Azure Active Directory Rights Management）。 '
-ms.openlocfilehash: 99c8de49330cf99545d28d81e0c99c2138797356
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 舊版的 Office 365 郵件加密取決於 Microsoft Azure Rights Management （先前稱為 Windows Azure Active Directory Rights Management）。
+ms.openlocfilehash: f8759da8628d4c78fe5409f5c47e3fc2b3e9484e
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526803"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853068"
 ---
-# <a name="set-up-azure-rights-management-for-office-365-message-encryption"></a>設定 Office 365 郵件加密的 Azure 版權管理
+# <a name="this-article-applies-to-the-previous-version-of-ome"></a>本文適用於 OME 的前一版
+如果您尚未尚未移動 Office 365 組織到新的 OME 功能，但您已部署 OME，本文資訊適用於您組織。Microsoft 建議您將移至新的 OME 功能一旦是組織的合理的計劃。指示，請參閱[Set up Office 365 郵件加密的新功能](set-up-new-message-encryption-capabilities.md)。如果您想要了解更多有關的新功能如何運作前，請參閱[Office 365 郵件加密](ome.md)。本文的其餘部分是指 OME 行為的新 OME 功能發行前。
+
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>設定舊版的 Office 365 郵件加密的 Azure Rights Management
 
 本主題說明您必須遵循以啟動，然後設定 [向上 Azure 版權管理 (RMS)、 Azure 資訊保護、 一部分使用與 Office 365 郵件加密 (OME) 的步驟。
   
-## <a name="prerequisites-for-using-office-365-message-encryption"></a>使用 Office 365 郵件加密的必要條件
+## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>使用舊版的 Office 365 郵件加密的必要條件
 <a name="warmprereqs"> </a>
 
 Office 365 郵件加密 (OME)，包括 IRM，取決於 Azure 版權管理 (Azure RMS)。Azure RMS 是 Azure 資訊保護所用的保護技術。若要使用 OME，Office 365 組織必須包含 Exchange Online 或 Exchange Online Protection，接著，包含訂閱 Azure 版權管理訂閱。
@@ -39,12 +42,12 @@ Office 365 郵件加密 (OME)，包括 IRM，取決於 Azure 版權管理 (Azure
     
 - 如果您已經設定 OME 使用 Azure 版權管理 Exchange Online 或 Exchange Online Protection，根據您如何設定它，您可能即可開始使用 OME 及新功能，其立即。本文說明如何決定是否您已設定 OME 正確，如果您需要變更您的安裝程式，該怎麼辦以及如果您選擇不要變更您的安裝程式會發生什麼事。例如，才可使用的新功能，您必須使用 Azure RMS 與 OME。您不能搭配內部部署 Active Directory RMS 的新功能。
     
-## <a name="activate-azure-rights-management-for-ome-in-office-365"></a>啟動 Office 365 中的 OME Azure Rights 的 Management
+## <a name="activate-azure-rights-management-for--the-previous-version-of-ome-in-office-365"></a>啟動先前版本的 Office 365 中的 OME Azure Rights Management
 <a name="activatewarm"> </a>
 
 您必須啟用 Azure 版權管理組織中的使用者可以將資訊保護套用到傳送時的訊息和開啟郵件與具備已受到 Azure 版權管理服務的檔案。指示，請參閱[啟動 Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=525775)。一旦您已經完成啟用，此處傳回並繼續執行本文中的工作。
   
-## <a name="set-up-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>設定 OME 使用 Azure RMS 匯入信任的發行網域 (TPDs)
+## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>設定 OME 的前一版使用 Azure RMS 匯入信任的發行網域 (TPDs)
 <a name="importTPDs"> </a>
 
 TPD 是 XML 檔案包含您的組織版權管理設定的相關資訊。例如，TPD 包含用於簽署和加密憑證和授權的伺服器授權人憑證 (SLC) 的相關資訊、 Url 用於授權和發佈、 等等。使用 Windows PowerShell TPD 匯 Office 365 組織中。
@@ -108,7 +111,7 @@ TPD 是 XML 檔案包含您的組織版權管理設定的相關資訊。例如�
 
 8. 若要確認您已成功匯入 TPD 並啟用 Azure Rights Management，請使用 Test-irmconfiguration 指令程式來測試 Azure 版權管理功能。如需詳細資訊，請參閱[Test-irmconfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx)中的 「 範例 1"。
     
-## <a name="i-have-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>我有 OME 設定與 Active Directory Rights Management 未 Azure 資訊保護，該怎麼辦吗？
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>我必須設定與 Active Directory Rights Management 未 Azure 資訊保護 OME 的前一版，該怎麼辦吗？
 <a name="importTPDs"> </a>
 
 您可以繼續使用現有的 Office 365 郵件加密郵件流程規則具有 Active Directory Rights Management，但您無法設定或使用新的 OME 功能。而您需要移轉至 Azure 資訊保護。如需移轉與這表示您的組織資訊，請參閱 ＜ [Migrating from AD RMS 以 Azure 資訊保護](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms)。

@@ -3,7 +3,7 @@ title: Office 365 中的電子郵件加密
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: 比較 Office 365 包括 Office 郵件加密 (OME)、 S/MIME、 資訊版權管理 (IRM) 中的加密方式並了解傳輸層安全性 (TLS)。
-ms.openlocfilehash: a705637b85e73c6d1e5bcb3595dcd0b7766411e2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526840"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853078"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 中的電子郵件加密
 
@@ -54,7 +54,7 @@ Office 365 提供可協助您滿足業務需求的電子郵件安全性的多個
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>比較 Office 365 中提供的電子郵件加密選項
 
-||**        ![OME 的說明概念圖](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 **|**        ![IRM 的說明概念圖](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 **|**        ![SMIME 的說明概念圖](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                 **|
+||        ![OME 的說明概念圖](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 |        ![IRM 的說明概念圖](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 |        ![SMIME 的說明概念圖](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                |
 |:-----|:-----|:-----|:-----|
 |這是什麼？  <br/> |Office 365 郵件加密 (OME) 是內建於 Azure 版權管理 (Azure RMS) 的服務，可讓您將加密的電子郵件傳送給組織內部或外部的人，無論目的地電子郵件地址為何 (Gmail、Yahoo! Mail、Outlook.com 等)。  <br/> 身為管理員，您可以設定用以定義加密條件的傳輸規則。當使用者傳送符合規則的郵件時，會自動套用加密。  <br/> 若要檢視加密的郵件，收件者可以取得單次密碼、 登入 Microsoft 帳戶或登入工作或學校與 Office 365 相關聯的帳戶。收件者也可以傳送加密的回覆。它們不需要檢視加密的郵件或傳送回覆加密的 Office 365 訂閱。  <br/> |IRM 是加密解決方案，也可對電子郵件套用使用限制。這有助於防止敏感資訊被未經授權的人員列印、轉寄或複製。  <br/> Office 365 中的 IRM 功能使用 Azure 版權管理 (Azure RMS)。 
   <br/> |S/MIME 是一種憑證型加密解決方案可讓您加密及數位簽署的訊息。訊息加密有助於確保只有預定的收件者可以開啟及讀取郵件。數位簽章可協助收件者驗證寄件者的身分識別。  <br/> 數位簽章和郵件加密之所以可行，皆因為使用了唯一數位憑證，此憑證包含用於驗證數位簽章及加密或解密郵件的金鑰。  <br/> 若要使用 S/MIME，您必須公用金鑰檔案上每個收件者。收件者必須維持必須保持安全自己私人機碼。如果收件者的私密金鑰遭到洩漏，收件者必須以取得新的私密金鑰和轉散佈給所有可能的寄件者的公開金鑰。  <br/> |
