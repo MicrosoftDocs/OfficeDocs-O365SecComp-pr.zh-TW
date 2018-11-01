@@ -3,7 +3,7 @@ title: 定義加密 Office 365 中的電子郵件的郵件流程規則
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 身為 Office 365 全域管理員，您可以建立郵件流程規則來啟用 Office 365 郵件加密 (OME)。您可以加密所有外寄電子郵件並從內部訊息或回覆加密郵件傳送自組織移除加密。
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853088"
+ms.locfileid: "25890031"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義加密 Office 365 中的電子郵件的郵件流程規則
 
@@ -29,7 +29,7 @@ ms.locfileid: "25853088"
 如需元件構成郵件流程規則與郵件流程規則運作的方式，請參閱[Exchange Online 中的郵件流程規則 （傳輸規則）](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)。如需搭配 Azure 資訊保護的郵件流程規則如何運作的其他資訊，請參閱[Azure 資訊保護標籤設定 Exchange Online 郵件流程規則](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)。
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>Exchange 的混合式環境： 先執行此作業
-內部使用者可以傳送加密的郵件路由傳送到 Exchange Online 電子郵件會使用 OME。若要這樣做，您需要設定郵件流程來流向您的電子郵件伺服器的 Office 365。一旦您已設定郵件以透過 Office 365 的流程，您可以利用郵件流程規則 OME 的本文。
+內部使用者可以傳送加密的郵件路由傳送到 Exchange Online 電子郵件會使用 OME。若要這樣做，您需要設定流程電子郵件伺服器的 Office 365 的郵件。一次您已設定郵件以透過 Office 365 的流程接著您可以使用本文的 OME 設定郵件流程規則。
 
 指示，請參閱[Set up Office 365 與電子郵件伺服器之間的郵件路由傳送連接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。特別是，完成的步驟 「 第 2 部分： 設定郵件流程電子郵件伺服器的 Office 365 以"。
 
