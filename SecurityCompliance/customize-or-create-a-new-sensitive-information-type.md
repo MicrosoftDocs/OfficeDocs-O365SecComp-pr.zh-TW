@@ -17,28 +17,28 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何為 GDPR 修改或建立新的 Office 365 敏感資訊類型。
-ms.openlocfilehash: e0e217ed44c5206828468b57d778bffa28c95da3
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ed1dca161b5580d67b5a9071ca1d5b32e8b23d80
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272258"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857281"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自訂或建立新的敏感資訊類型
 
 本文提供三個範例，示範如何為 GDPR 修改或建立新的 Office 365 敏感資訊類型。
 
--   修改現有的敏感資訊類型 — 歐盟轉帳卡卡號
+- 修改現有的敏感資訊類型 — 歐盟轉帳卡卡號
 
--   建立新的敏感資訊類型 — 電子郵件地址
+- 建立新的敏感資訊類型 — 電子郵件地址
 
--   利用 XML 檔案範例建立新的敏感資訊類型 — Contoso 客戶編號
+- 利用 XML 檔案範例建立新的敏感資訊類型 — Contoso 客戶編號
 
 另請參閱：
 
--   [建立自訂的敏感資訊類型](https://support.office.com/zh-TW/article/Create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)
+- [在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
--   [建立內建的敏感資訊類型](https://support.office.com/zh-TW/article/Customize-a-built-in-sensitive-information-type-2164ce3d-4d64-4283-b6b1-b81fbe835e8e)
+- [自訂內建的機密資訊類型](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>修改敏感資訊類型以提高精確度
 
@@ -142,7 +142,7 @@ ms.locfileid: "23272258"
 
 -   [關鍵字查詢語言 (KQL) 語法參考 (DMC)](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [在 Office 365 安全性與合規性中心執行內容搜尋](https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [在 Office 365 安全性與合規性中心執行內容搜尋](https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 內容搜尋提供另一種資源，協助您開發 KQL 查詢及敏感資訊類型 — 關鍵字。為什麼使用關鍵字清單？您可以取得統計資料，顯示多少個項目比對每一個關鍵字的。這可協助您快速識別哪些關鍵字的效率最好 (最差)。如需搜尋統計資料的詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](https://support.office.com/zh-TW/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
 
@@ -293,7 +293,7 @@ CCN 範例：
 
 Contoso 一律在內部通信、外部通信、文件等使用 CCN 來參照客戶。他們想要建立自訂的敏感資訊類型，來偵測 CCN 在 Office 365 中的使用情形，以便可在使用此形式的個人資料時套用保護。
 
-### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>為 Contoso 客戶編號 建立新的敏感資訊類型
+### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>為 Contoso 客戶編號建立新的敏感資訊類型
 
 <table>
 <thead>

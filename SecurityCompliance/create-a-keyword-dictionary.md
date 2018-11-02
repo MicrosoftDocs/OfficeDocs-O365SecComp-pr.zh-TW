@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: 識別敏感資訊有時會需要尋找關鍵字，尤其在識別泛用內容 (例如醫療保健相關的通訊) 或不適當或明確的語言時更是需要。儘管您可以建立敏感資訊類型的關鍵字清單，但關鍵字清單的大小會受到限制，而且需要修改 XML 才能建立或編輯它們。關鍵字字典可提供更簡單的關鍵字管理以及更為龐大的關鍵字規模，每部字典最多可支援 100,000 個字詞。
-ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
-ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
+ms.openlocfilehash: 1cf41df5475af7ac5018cd34ea26e66ad5d668ee
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857231"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -149,7 +149,7 @@ PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>使用自訂敏感資訊類型和 DLP 原則中的關鍵字字典
 
-關鍵字字典可以做為自訂敏感資訊類型之比對需求的一部分，或做為敏感資訊類型本身。兩者都需要[建立自訂敏感資訊類型](create-a-custom-sensitive-information-type.md)。請依照連結文章中的指示來建立敏感資訊類型。一旦有了 XML，您將需要字典的 GUID 識別碼才能使用它。
+關鍵字字典可以做為自訂機密資訊類型之比對需求的一部分，或做為機密資訊類型本身。兩者都需要[在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。請依照連結文章中的指示來建立機密資訊類型。一旦有了 XML，您將需要字典的 GUID 識別碼才能使用它。
   
 ```
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
