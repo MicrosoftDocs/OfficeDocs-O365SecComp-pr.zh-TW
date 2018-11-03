@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性&amp;規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435120"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935590"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全與規範中心搜尋稽核記錄
 
@@ -78,7 +78,7 @@ ms.locfileid: "25435120"
      - **Office 365 E5** -稽核記錄會保留為 365 天 （一年以上）。這表示您可搜尋過去一年內所執行的活動的稽核記錄。保留一年的稽核記錄是也可用於指派 E3/Exchange Online 計劃 1 授權、 具備的 Office 365 進階規範的附加元件授權使用者。
 
         > [!NOTE]
-        > 一年保留期間的稽核記錄將提供使用 Office 365 Preview 的一部分推出程式設計與將會是僅供組織預覽在計畫中註冊。稽核記錄較長的保留期間沒有變成可用中預覽 （及更新版本的正式公開上市）、 僅新的稽核記錄 （適用於之後發行的較長的保留期間執行的活動） 會保留一年。
+        > E5 組織 （或 E3 組織的進階規範的附加元件授權） 的 [稽核記錄的一年保留期間是目前可用做為私人預覽程式的一部分。若要在此預覽計畫中註冊，請檔案與[Microsoft 技術支援人員](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online)要求和如下所示為您需要協助的描述："長期 Office 365 稽核記錄檔私人 preview"。
 
 - 如果您想要關閉的 Office 365 組織的稽核記錄搜尋，您可以連線至 Exchange Online 組織的遠端 PowerShell 中執行下列命令：
     
@@ -111,7 +111,7 @@ ms.locfileid: "25435120"
 |eDiscovery  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Microsoft Flow  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft 表單  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Project  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Stream  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -142,12 +142,12 @@ ms.locfileid: "25435120"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步驟 1： 執行稽核記錄搜尋
 
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 前往 [https://protection.office.com](https://protection.office.com)。
     
     > [!TIP]
     > 使用私用的瀏覽工作階段 （不正常工作階段） 來存取 Office 365 安全性&amp;規範中心因為如此將會防止您目前登入與從正在使用的認證。若要開啟 [InPrivate 瀏覽工作階段在 Internet Explorer 或 Microsoft Edge，只是按 CTRL + SHIFT + P。若要開啟私用的瀏覽工作階段中 Google Chrome （稱為 incognito 視窗），請按 CTRL + SHIFT + N。 
   
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在 [安全性] 的左窗格中&amp;規範中心按一下**搜尋&amp;調查**，然後按一下 [**稽核記錄搜尋**。
     
@@ -485,7 +485,7 @@ ms.locfileid: "25435120"
 |新增的使用者  <br/> |新增使用者  <br/> |建立 Office 365 使用者帳戶。  <br/> |
 |已變更的使用者授權  <br/> |變更使用者授權  <br/> |指派授權給使用者有哪些變更。若要查看哪些授權已變更，請參閱對應的**更新使用者**活動。<br/> |
 |變更的使用者密碼  <br/> |變更使用者密碼  <br/> |系統管理員已變更使用者密碼的密碼。  <br/> |
-|已刪除的使用者  <br/> |刪除使用者  <br/> |Office 365 使用者帳戶已刪除。  <br/> |
+|已刪除的使用者  <br/> |Delete user  <br/> |Office 365 使用者帳戶已刪除。  <br/> |
 |重設使用者密碼  <br/> |重設使用者密碼  <br/> |系統管理員重設使用者密碼。  <br/> |
 |設定強制使用者變更密碼的屬性  <br/> |設定強制變更使用者密碼  <br/> |系統管理員設定強制使用者變更其密碼。 在下一次使用者登入 Office 365 的屬性。  <br/> |
 |設定授權屬性  <br/> |設定授權屬性  <br/> |系統管理員修改指派給使用者的授權的屬性。  <br/> |
@@ -700,7 +700,7 @@ Exchange 系統管理員稽核記錄-Office 365 中的預設會啟用其 — 當
 - **Office 365 E5** -稽核記錄會保留為 365 天 （一年以上）。不適用於擁有 E3 訂閱以及 Office 365 進階規範的附加元件訂閱的組織也是一年保留稽核記錄。
 
      > [!NOTE]
-     > 一年保留期限的稽核記錄很快就是可在 Office 365 Preview 計畫中註冊的組織的狀態。
+     > 為先前所述，E5 組織 （或 E3 組織的進階規範的附加元件授權） 的 [稽核記錄的一年保留期間是目前無法做為私人預覽程式的一部分。若要在此預覽計畫中註冊，請檔案與[Microsoft 技術支援人員](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online)要求和如下所示為您需要協助的描述："長期 Office 365 稽核記錄檔私人 preview"。
 
 也請注意持續時間內的稽核記錄的保留期間根據每個使用者授權。例如，如果您的組織中的使用者指派 Office 365 E3 授權，則該使用者所執行的活動的稽核記錄會保留期為 90 天。如果不同的使用者已指派 Office 365 E5 授權，則其稽核記錄會保留一年。 
 

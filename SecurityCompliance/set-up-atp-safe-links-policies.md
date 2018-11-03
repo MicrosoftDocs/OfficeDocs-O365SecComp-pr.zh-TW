@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 設定安全的連結原則來保護您的組織不在 Word、 Excel、 PowerPoint 及 Visio 檔案，以及在電子郵件訊息中的惡意連結。
-ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552341"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935550"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -40,11 +41,11 @@ ms.locfileid: "25552341"
 - 請確定您的組織具有[Office 365 進階威脅保護](office-365-atp.md)。
     
 - 請確定您已定義或編輯 ATP 原則的必要權限。請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。
+
+- 請確定 Office 用戶端設定為使用[經過驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)（這是 Office 文件中的 ATP 安全連結保護）。
     
 - [了解 ATP 安全連結原則選項](#learn-about-atp-safe-links-policy-options)（在本文）。 
 
-- 請確定 Office 用戶端設定為使用[經過驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。
-    
 - 可讓您新增或更新原則散佈到所有 Office 365 資料中心的最多 30 分鐘。
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>步驟 2： 定義 （或檢閱） 套用至所有人 ATP 安全連結原則

@@ -4,6 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/02/2018
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -19,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全的連結功能所提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。若要從網路釣魚和其他攻擊保護您的組織使用安全的連結。
-ms.openlocfilehash: 75703cbe6b6a5a5d102570288bb20e6814d095fc
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: fcb8fb5862a1b9b574008e91f8745e93b6d1a939
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454370"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935560"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 
@@ -88,7 +89,7 @@ ATP 安全連結功能已啟用：
   
 - **ATP 安全連結原則已設定**用於電子郵件和 Word、 Excel、 PowerPoint 及 Visio 文件。（請參閱[Set up ATP Office 365 中的安全連結原則](set-up-atp-safe-links-policies.md)）。
 
-- **Office 365 用戶端應用程式設定為使用經過驗證**。（請參閱[Office 2016 現代驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)）。 
+- **Office 365 用戶端應用程式設定為使用經過驗證**（這是 Office 文件中的 ATP 安全連結保護）。（請參閱[Office 2016 現代驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)）。 
     
 - **使用者已登入 Office 365**使用其工作或學校的帳戶。（請參閱[登入 Office 或 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)）。
     

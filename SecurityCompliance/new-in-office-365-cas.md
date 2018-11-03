@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: 請參閱 Office 365 雲端應用程式安全性的新功能
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796869"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935570"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Office 365 雲端應用程式安全性的新功能
 
@@ -27,11 +28,11 @@ ms.locfileid: "23796869"
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Office 365 雲端應用程式安全性版本 130
 
-*版本 2018 年 9 月 5、*
+*發行 2018 年 9 月 5、*
 
 **發佈與[版本 130 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**：
 
-- **新的功能表列**若要提供更一致的管理經驗 Microsoft 365 產品並可讓您更輕鬆地樞紐之間的 Microsoft 安全性方案、 雲端應用程式安全性入口網站的功能表列已移至螢幕左邊。此一致的瀏覽體驗可幫助您的方式放置自行時移動到另一個 Microsoft 安全性入口網站。
+- **新的功能表列**若要提供更一致的管理經驗 Microsoft 365 產品並可讓您更輕鬆地樞紐之間的 Microsoft 安全性方案、 雲端應用程式安全性入口網站的功能表列已移至螢幕左邊。此一致的瀏覽體驗可幫助您的方式放置自行時移動到另一個 Microsoft 安全性入口網站。<br/>![Office 雲端應用程式安全性的功能表列](media/OCAS-MenuBar.png)<br/>
 
 - **影響 OAuth app 分數**您現在可以傳送意見是否有發現似乎惡意您組織中的 OAuth 應用程式的雲端應用程式安全性小組意見反應。此新功能可讓您是我們安全性社群的一部分並加強 OAuth app 風險分數與分析。如需詳細資訊請參閱 ＜[管理應用程式權限](manage-app-permissions-in-ocas.md)。
 
