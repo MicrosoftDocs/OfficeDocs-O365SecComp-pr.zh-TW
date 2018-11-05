@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 了解如何在 Office 365 安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: cd7041ee9c20038fb7cb0c337f31d7cef7f7192d
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: 55c7476a1162f657194b9dab4376afb34a76c3f3
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857291"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895282"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>建立自訂機密資訊類型
 
-Office 365 中的資料外洩防護 (DLP) 包含許多[機密資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內件類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
+Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內件類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
 
 但是，如果您需要識別及保護不同類型的機密資訊 (例如使用貴組織專屬格式的員工識別碼或專案編號)，則可以建立自訂機密資訊類型。
 
@@ -53,21 +53,19 @@ Office 365 中的資料外洩防護 (DLP) 包含許多[機密資訊類型](what-
 
 |UI 中的自訂機密資訊類型|PowerShell 中的自訂機密資訊類型|
 |:-----|:-----|
-|名稱與描述為同一種語言|支援名稱與描述使用多種語言|
-|支援一種模式 (主要模式)。|除了主要模式外，還支援多種模式。|
+|名稱與描述為同一種語言。|支援名稱與描述使用多種語言。|
+|支援一種模式。|支援多種模式。|
 |支援辨識項可以是： <br/>• 規則運算式 <br/>• 關鍵字 <br/>• 關鍵字字典|支援辨識項可以是： <br/>• 規則運算式 <br/>• 關鍵字 <br/>• 關鍵字字典 <br/>• [內建 DLP 函數](what-the-dlp-functions-look-for.md)|
-|機密資訊類型的信賴等級是可設定的。|機密資訊類型的信賴等級是可設定的，而且可在每個個別模式中設定。|
+|自訂機密資訊類型會新增到名為 Microsoft.SCCManaged.CustomRulePack 的規則套件|您最多可以建立 10 個包含自訂機密資訊類型的規則套件。|
 |模式比對需要偵測主要模式及所有支援辨識項 (使用隱含的 AND 運算子)。|模式比對需要偵測主要模式及可設定數量的支援辨識項 (可以使用隱含的 AND 及 OR 運算子)。|
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 若要開啟安全性與合規性中心，請參閱[移至 Office 365 安全性與合規性中心](go-to-the-securitycompliance-center.md)。
 
-- 自訂機密資訊類型需要熟悉規則運算式 (RegEx)。如需用於處理文字之 .NET RegEx 引擎的詳細資訊，請參閱 [.NET 規則運算式](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)。
+- 自訂機密資訊類型需要熟悉規則運算式 (RegEx)。如需用於處理文字之 Boost.RegEx (先前稱為 RegEx++) 引擎的詳細資訊，請參閱 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
   Microsoft 客戶服務與支援中心無法協助提供自訂內容比對定義 (建立自訂分類或規則運算式模式)。支援工程師可以提供有限的功能支援 (例如，基於測試目的提供範例規則運算式模式，或協助對未如預期般觸發的現有規則運算式模式進行疑難排解)，但無法保證任何自訂內容比對開發作業將符合您的需求。
-
-- 如需用於處理文字之 .NET RegEx 引擎的詳細資訊，請參閱 [.NET 中的規則運算式](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)。
 
 - DLP 會使用搜尋編目程式來識別並分類 SharePoint Online 和商務用 OneDrive 中的機密資訊。若要識別現有內容中的新自訂機密資訊類型，必須重新編目內容。內容是根據排程來重新編目，但您可以手動重新編目網站集合、清單或文件庫的內容。如需詳細資訊，請參閱[手動要求編目或重新檢索網站、文件庫或清單](https://docs.microsoft.com/sharepoint/crawl-site-content)。
 
@@ -107,7 +105,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多[機密資訊類型](what-
  
     a 按一下 [**其中任一個**]，然後選取 [**規則運算式**]。
 
-    b. 在規則運算式方塊中，輸入 `(\s)(\d{9})(\s)` (以空格括住九位數的號碼)
+    b. 在規則運算式方塊中，輸入 `(\s)(\d{9})(\s)` (以空格括住九位數的號碼)。
   
   - **支援項目**：按一下 [**新增支援項目**]，然後選取 [**包含此關鍵字清單**]。
 

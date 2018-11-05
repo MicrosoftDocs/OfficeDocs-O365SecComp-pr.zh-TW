@@ -14,6 +14,7 @@
 ## [在 MDM 與 Intune 之間選擇](choose-between-mdm-and-intune.md)
 # 保護資訊
 ## [敏感度標籤](sensitivity-labels.md)
+## [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
 ## [防止資料遺失 (DLP)](data-loss-prevention-policies.md)
 ## [觀看 DLP 的延伸概觀](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## 設定 DLP
@@ -110,7 +111,7 @@
 ### [ATP 安全附件](atp-safe-attachments.md)
 #### [設定 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)
 #### [安全附件的動態傳送和預覽](dynamic-delivery-and-previewing.md)
-### [適用於 SharePoint、OneDrive 及 Microsoft Teams 的Office 365 ATP](atp-for-spo-odb-and-teams.md)
+### [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP](atp-for-spo-odb-and-teams.md)
 #### [開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](turn-on-atp-for-spo-odb-and-teams.md)
 #### [檢視惡意檔案的相關資訊](malicious-files-detected-in-spo-odb-or-teams.md)
 ### [檢視 ATP 報告](view-reports-for-atp.md)
@@ -149,7 +150,7 @@
 ## [使用內容搜尋](content-search.md)
 ### [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
 ### [檢視內容搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md)
-### [匯出內容搜尋結果](export-search-results.md)
+### [匯出內容搜尋結果 ](export-search-results.md)
 ### [匯出內容搜尋報告](export-a-content-search-report.md)
 ### [搜尋並刪除電子郵件訊息](search-for-and-delete-messagesadmin-help.md)
 ### [搜尋 Office 365 中內部部署使用者的雲端式信箱](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -258,6 +259,7 @@
 ### [部署獨立的 SharePoint Online 小組網站](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [管理獨立的 SharePoint Online 小組網站](manage-an-isolated-sharepoint-online-team-site.md)
 ### [獨立的 SharePoint Online 小組網站開發/測試環境](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [SIEM 伺服器整合](siem-server-integration.md)
 
 # 合規性解決方案
 ## [使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
