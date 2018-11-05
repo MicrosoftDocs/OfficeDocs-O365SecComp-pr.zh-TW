@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 了解如何在 Office 365 安全性與合規性中心建立及匯入 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: 46e3e0cc502eb6135e18c30df3d96ec2e083b54c
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: c1774b094163b5712519b3baeb5f0360d84896ea
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25866046"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895272"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型
 
-Office 365 中的資料外洩防護 (DLP) 包含許多[機密資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內件類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
+Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內件類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
   
 但是如果您需要識別及保護不同類型的機密資訊 (例如使用貴組織專屬格式的員工識別碼)，可以建立自訂機密資訊類型。機密資訊類型是在稱為_規則套件_的 XML 檔案中定義。
   
@@ -38,7 +38,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多[機密資訊類型](what-
 
 因為客戶環境及內容需求的差異，Microsoft 支援服務無法協助提供自訂內容比對定義。例如，定義自訂分類或規則運算式 (也稱為 RegEx)。針對自訂內容比對開發、測試及除錯，Office 365 客戶將會需要依賴內部 IT 資源，或使用外部諮詢資源如 Microsoft 諮詢服務 (MCS)。支援的工程師能為該功能提供有限的支援，但無法保證任何自訂內容比對開發能夠滿足客戶需求或義務。可提供支援類型的範例，像是提供範例規則運算模式進行測試，或者支援服務能夠以單一特定內容範例，協助疑難排解現有未如預期觸發的 RegEx 模式。
 
- 如需用於處理文字 .NET RegEx 引擎的詳細資訊，請參閱[.NET 規則運算式](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)一文。
+ 如需用於處理文字之 Boost.RegEx (先前稱為 RegEx++) 引擎的詳細資訊，請參閱 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).。
     
 ## <a name="sample-xml-of-a-rule-package"></a>規則套件的範例 XML
 
