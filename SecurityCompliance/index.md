@@ -12,12 +12,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9a8e7bdbd176c5852c43b35c9c56cd8f0aae58fb
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: af40426f626920ccd2c247a671a57958044d0388
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002658"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999969"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 安全性和規範
 
@@ -35,7 +35,7 @@ ms.locfileid: "23002658"
                     </div>
                     <div class="cardText">
                         <h3>快速入門-前 30 天</h3>
-                <p>這些基本安全性及規範工作可以快速完成且對使用者影響： <br> - <a href="https://securescore.office.com" target="_blank">檢查安全的分數</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">開啟稽核記錄</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">設定租用戶安全性</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">連線雲端應用程式安全性</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">啟用 Azure AD 身分識別保護</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">安全的 SharePoint 網站及檔案</a> <br> - <a href="configure-supervision-policies.md">啟用資料管理原則</a> </p>
+                <p>這些基本安全性及規範工作可以快速完成且對使用者影響： <br> - <a href="office-365-secure-score.md" target="_blank">檢查安全的分數</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">開啟稽核記錄</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">設定租用戶安全性</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">連線雲端應用程式安全性</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">啟用 Azure AD 身分識別保護</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">安全的 SharePoint 網站及檔案</a> <br> - <a href="configure-supervision-policies.md">啟用資料管理原則</a> </p>
                     </div>
                 </div>
             </div>
