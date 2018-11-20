@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用 Office 365 安全性內容搜尋 eDiscovery 工具&amp;規範中心以快速找到 Exchange 信箱中的 [電子郵件文件中的 SharePoint 網站和 OneDrive 位置及是否提供立即訊息交談中的商務 Skype。
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038226"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238395"
 ---
 # <a name="search-for-content-in-office-365"></a>搜尋 Office 365 中的內容
 
@@ -42,6 +42,8 @@ ms.locfileid: "25038226"
     
 - [大量編輯](bulk-edit-content-searches.md)的查詢和多個搜尋的內容位置 
     
+- [保留 [密件副本收件者](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)讓可以尋求 
+
 ## <a name="perform-actions-on-content-you-find"></a>在您找出的內容執行動作
 
 在執行搜尋並調整視之後下, 一步是執行某個項目與搜尋傳回的結果。您可以匯出並下載至本機電腦或但如果是在您組織的電子郵件攻擊的結果，您可以刪除使用者信箱中的搜尋結果。

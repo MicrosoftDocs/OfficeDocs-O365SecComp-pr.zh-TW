@@ -3,7 +3,7 @@ title: 支援透過 IPv6 的匿名輸入電子郵件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/4/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
-description: Exchange Online Protection (EOP) 和 Exchange Online 支援接收透過傳輸層安全性 (TLS) 進行不傳送郵件的寄件者的 IPv6 通訊的匿名輸入的電子郵件。您可以選擇加入-中接收訊息透過 IPv6 向 UNRESOLVED_TOKEN_VAL(exMCSS) 要求此功能開啟在 Office 365 系統管理中心https://portal.office.com/adminportal/home] 及 [支援]，再然後按一下 [新增服務要求)。如果您沒有加入確認程序-在您將繼續透過 IPv4 接收訊息的 IPv6。
-ms.openlocfilehash: 93575c57bb6eac5e0f92066dab3e6ed8b5f4b215
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: 了解如何設定 Exchange Online Protection 與 Exchange Online 的來源 IPv6 的匿名郵件支援。
+ms.openlocfilehash: 0d324ce6e0ff0ff9104ef597176b09a5a319abc7
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003012"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255808"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>支援透過 IPv6 的匿名輸入電子郵件
 
-Exchange Online Protection (EOP) 和 Exchange Online 支援接收透過傳輸層安全性 (TLS) 進行不傳送郵件的寄件者的 IPv6 通訊的匿名輸入的電子郵件。您可以選擇加入-中接收訊息透過 IPv6 向 UNRESOLVED_TOKEN_VAL(exMCSS) 要求此功能開啟在 Office 365 系統管理中心[https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)] 及 [**支援**]，再然後按一下 [**新增服務要求**)。如果您沒有加入確認程序-在您將繼續透過 IPv4 接收訊息的 IPv6。
+Exchange Online Protection (EOP) 和 Exchange Online 支援接收透過傳輸層安全性 (TLS) 進行不傳送郵件的寄件者的 IPv6 通訊的匿名輸入的電子郵件。您可以選擇加入-中透過 IPv6 接收訊息來要求來自 Microsoft 技術支援人員的這項功能開啟在 Office 365 系統管理中心[https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)] 及 [**支援**]，再然後按一下 [**新增服務要求**)。如果您沒有加入確認程序-在您將繼續透過 IPv4 接收訊息的 IPv6。
   
 透過 IPv6 將郵件傳輸至服務的寄件者必須符合下列兩項需求：
   

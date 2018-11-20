@@ -1,9 +1,10 @@
 ---
-title: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的Office 365 ATP
+title: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/08/2018
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,20 +13,20 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: 擴充 Office 365 進階威脅保護 SharePoint Online、 OneDrive for Business 和 Microsoft 小組以啟用更安全共同作業您的組織中的檔案。
-ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454320"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238445"
 ---
-# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的Office 365 ATP
+# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP for SharePoint、 OneDrive 及 Microsoft 小組的概觀
 
 定期人員共用檔案並使用 SharePoint、 OneDrive 及 Microsoft 小組共同作業。[Office 365 進階威脅保護](office-365-atp.md)(ATP)，與您的組織共同作業更安全的方式。ATP 協助偵測和封鎖識別為惡意小組網站和文件庫中的檔案。  
   
-### <a name="how-it-works"></a>運作方式
+## <a name="how-it-works"></a>運作方式
 
 當 SharePoint Online 中的檔案時、 OneDrive for Business 和 Microsoft 小組已識別為惡意、 ATP 直接整合搭配鎖定該檔案的檔案存放區。下圖顯示在文件庫中偵測到惡意檔案的範例。
   
@@ -41,7 +42,7 @@ ms.locfileid: "25454320"
   
 若要深入了解，請參閱[開啟 Office 365 ATP for SharePoint、 OneDrive 及 Microsoft 小組](turn-on-atp-for-spo-odb-and-teams.md)。
   
-### <a name="keep-the-following-points-in-mind"></a>請記住下列重點
+## <a name="keep-these-points-in-mind"></a>請記住以下幾點
 
 - ATP 不會掃描 SharePoint Online、 OneDrive 中每一個單一檔案商務或 Microsoft 小組。這是根據設計。掃描檔案有以非同步方式，透過使用智慧 heuristics 和威脅有空的共用和來賓活動事件來識別惡意檔案的程序。
 
@@ -69,16 +70,7 @@ ms.locfileid: "25454320"
     
 ## <a name="next-steps"></a>後續步驟
 
-- [在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組](turn-on-atp-for-spo-odb-and-teams.md)
+1. [在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組](turn-on-atp-for-spo-odb-and-teams.md)
     
-- [檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊](malicious-files-detected-in-spo-odb-or-teams.md)
+2. [檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊](malicious-files-detected-in-spo-odb-or-teams.md)
     
-## <a name="related-topics"></a>相關主題
-
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
-  
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-  
-

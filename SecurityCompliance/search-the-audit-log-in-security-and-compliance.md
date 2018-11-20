@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-f1_keywords:
-- O365AC_AlternativeEmailAddress
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
@@ -15,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用 Office 365 安全性&amp;規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+description: '使用 Office 365 的安全性與規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
+ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
+ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935590"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26522805"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全與規範中心搜尋稽核記錄
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 [Office 365 安全性及規範中心搜尋稽核記錄
 
 需要尋找是否使用者檢視特定文件或清除 [從他們的信箱項目吗？若如此，您可以使用 Office 365 安全性&amp;規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。整合的稽核記錄的為何？因為您可以搜尋下列類型的使用者與系統管理 Office 365 中的活動：
   
@@ -100,26 +98,26 @@ ms.locfileid: "25935590"
     
 - 它可以需要長達 30 分鐘或向上事件之後的 24 小時的週期定期發生相對應的稽核記錄項目顯示在搜尋結果中。下表顯示 Office 365 中的不同服務所花費的時間。
     
-|**Office 365 服務**|**30 分鐘**|**24 小時**|
-|:-----|:-----|:-----|
-|進階的威脅保護和威脅智慧  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-|Azure Active Directory （使用者登入事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Azure Active Directory （系統事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-|Azure Active Directory （使用者登入事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|資料遺失防護  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Dynamics 365 CRM <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|eDiscovery  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Exchange Online  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Microsoft Flow  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Forms  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Project  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Stream  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Teams  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|安全性&amp;規範中心  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online 和商務用 OneDrive  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sway  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Yammer  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |**Office 365 服務**|**30 分鐘**|**24 小時**|
+    |:-----|:-----|:-----|
+    |進階的威脅保護和威脅智慧  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory （使用者登入事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory （系統事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Azure Active Directory （使用者登入事件）  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |資料遺失防護  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Dynamics 365 CRM <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |eDiscovery  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Exchange Online  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Flow  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Project  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Stream  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Teams  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Power BI  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |安全性&amp;規範中心  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |SharePoint Online 和商務用 OneDrive  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sway  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Yammer  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (Azure AD) 是 Office 365 的目錄服務。整合的稽核記錄檔包含使用者、 群組、 應用程式、 網域和執行 Office 365 系統管理中心或在 Azure 中的目錄活動管理入口網站。Azure AD 事件的完整清單，請參閱[Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
     
@@ -160,18 +158,18 @@ ms.locfileid: "25935590"
   
 4. 設定下列搜尋準則：
     
-1. **活動**按一下下拉式清單以顯示您可以搜尋的活動。使用者和系統活動編組成群組相關的活動。您可以選取特定的活動或您可以按一下 [選取群組中的所有活動的活動群組名稱。您也可以按一下 [清除選取項目所選的活動。執行搜尋之後，會顯示只選取活動的稽核記錄項目。選取 [**顯示所有的活動的結果**會顯示所選的使用者或使用者群組所執行的所有活動的結果。 
+    a.**活動**按一下下拉式清單以顯示您可以搜尋的活動。使用者和系統活動編組成群組相關的活動。您可以選取特定的活動或您可以按一下 [選取群組中的所有活動的活動群組名稱。您也可以按一下 [清除選取項目所選的活動。執行搜尋之後，會顯示只選取活動的稽核記錄項目。選取 [**顯示所有的活動的結果**會顯示所選的使用者或使用者群組所執行的所有活動的結果。 
     
     超過 100 的使用者和系統活動會記錄在 Office 365 稽核記錄檔。按一下 [在本篇文章以查看每個不同的 Office 365 服務中的每個活動的說明主題**Audited 活動**] 索引標籤。 
     
-2. 預設會選取**開始日期**和**結束日期**過去 7 天。選取以顯示該期間內發生之事件的日期和時間範圍。以國際標準時間 (UTC) 格式所呈現的日期和時間。您可以指定的最大的日期範圍為 90 天。如果選取的日期範圍大於 90 天會顯示錯誤。 
+    預設會選取 b**開始日期**] 及 [**結束日期**過去 7 天。選取以顯示該期間內發生之事件的日期和時間範圍。以國際標準時間 (UTC) 格式所呈現的日期和時間。您可以指定的最大的日期範圍為 90 天。如果選取的日期範圍大於 90 天會顯示錯誤。 
     
     > [!TIP]
     > 如果您使用 90 天的最大的日期範圍、 選取目前時間的**開始日期**。否則，您會收到的錯誤說明的開始日期早於結束日期。如果您已開啟稽核過去 90 天內，最大的日期範圍無法啟動之前已開啟稽核的日期。 
   
-3. **使用者**在此方塊中按一下，然後選取 [顯示搜尋結果的一或多個使用者。選取您在此方塊中選取的使用者所執行的活動的稽核記錄項目所顯示的結果清單中。保留此方塊空白以傳回組織中的所有使用者 （及服務帳戶） 的項目。 
+    c.個**使用者**按一下 [在這個方塊和再選取一或多個使用者顯示搜尋結果。選取您在此方塊中選取的使用者所執行的活動的稽核記錄項目所顯示的結果清單中。保留此方塊空白以傳回組織中的所有使用者 （及服務帳戶） 的項目。 
     
-4. **檔案或資料夾**輸入某些或所有搜尋資料夾包含指定之的關鍵字的檔案相關的活動的檔案或資料夾名稱。您也可以指定的檔案或資料夾的 URL。如果您使用的 URL，請確定此類型的完整的 URL 路徑或如果您只需要輸入 URL 部分不會包含任何特殊字元或空格。 
+    d.**檔案或資料夾**輸入某些或所有搜尋資料夾包含指定之的關鍵字的檔案相關的活動的檔案或資料夾名稱。您也可以指定的檔案或資料夾的 URL。如果您使用的 URL，請確定此類型的完整的 URL 路徑或如果您只需要輸入 URL 部分不會包含任何特殊字元或空格。 
     
     保留此方塊空白以傳回組織中的所有檔案及資料夾的項目。
     

@@ -3,7 +3,7 @@ title: 動態傳遞和 Office 365 ATP 安全附件預覽
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: 當您設定好您 ATP 安全附件原則時，您選擇以避免郵件延遲，並啟用人員預覽會掃描附件的動態傳遞。
-ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: a272253594dda7ea720bb1e8b59e38e870f2f036
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850817"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238425"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和 Office 365 ATP 安全附件預覽
 
@@ -72,16 +72,3 @@ Office 365 資料所在的相同區域中放置 ATP 掃描取得安全的附件�
 
 - 使用安全/多用途網際網路郵件延伸標準 ([S/MIME](s-mime-for-message-signing-and-encryption.md)) 加密的郵件
     
-## <a name="related-topics"></a>相關主題
-
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)
-  
-[設定 Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)
-  
-[Office 365 中的 ATP 安全連結](atp-safe-links.md)
-
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-  
-

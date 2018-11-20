@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: 了解移至檢視 SharePoint、 OneDrive 或小組中偵測到惡意檔案的相關資訊的位置以及如何將這些檔案採取動作。
-ms.openlocfilehash: 37cd721c9ec2608ddcd74f9ae1ed6991b5f0cea7
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552381"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238505"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊
 
@@ -59,14 +59,5 @@ ms.locfileid: "25552381"
     
 5. 選擇 [**關閉**] 以關閉 [選取的項目詳細資料。 
   
-## <a name="related-topics"></a>相關主題
-
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
-  
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-
-[在 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
   
 

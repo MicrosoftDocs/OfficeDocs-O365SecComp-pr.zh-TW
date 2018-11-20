@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: 取得您可能會看到 Office 365 進階威脅保護位於工時警告頁面的概觀。
-ms.openlocfilehash: eae893da6bb2692ae4fb9f934bc892d2058beecd
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782130"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238265"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全連結警告頁面
 
@@ -107,14 +107,3 @@ Office 365 ATP 最近已更新數個警告頁面。如果尚未準備看到 [更
 
 ![發生錯誤](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    
-## <a name="related-topics"></a>相關主題
-
-[Office 如何協助您免受網路釣魚配置](https://support.office.com/article/be0de46a-29cd-4c59-aaaf-136cf177d593)
-  
-[Office 365 ATP 安全連結](atp-safe-links.md)
-  
-[Office 365 ATP 安全附件](atp-safe-attachments.md)
-  
-[Office 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)
-  
-

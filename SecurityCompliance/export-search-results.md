@@ -1,9 +1,9 @@
 ---
-title: 從 Office 365 安全性匯出內容的搜尋結果&amp;規範中心
+title: 從 Office 365 的安全性與規範中心匯出內容的搜尋結果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '從 Office 365 安全性內容搜尋匯出搜尋結果&amp;規範中心到本機電腦。Emaill 電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494064"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539115"
 ---
-# <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>從 Office 365 安全性匯出內容的搜尋結果&amp;規範中心
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>從 Office 365 的安全性與規範中心匯出內容的搜尋結果
 
 成功執行內容的搜尋之後，您可以將搜尋結果匯出到本機電腦。當您將電子郵件結果匯出時，他們正在為 PST 檔案下載到電腦。當您匯出 SharePoint 與內容 OneDrive for Business 的網站時，都要匯出的原生 Office 文件複本。有一些額外的文件和隨附匯出的搜尋結果的報告。
   
@@ -86,9 +86,9 @@ ms.locfileid: "25494064"
 
 第一個步驟是準備匯出搜尋結果。當您準備結果時，其上傳至 Microsoft 雲端 Azure 的儲存位置。請注意，從信箱和網站的內容上傳在 2 GB 的每小時最大速率。
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在安全性與合規性中心的左窗格中，按一下 [搜尋與調查]**** \> [內容搜尋]****。
     
@@ -177,23 +177,22 @@ ms.locfileid: "25494064"
 
   
 ## <a name="more-information"></a>詳細資訊
-<a name="moreinfo"> </a>
 
 以下是匯出搜尋結果的詳細資訊。
   
-[匯出的限制](export-search-results.md#export-limits)
+[匯出的限制](#export-limits)
   
-[匯出報告](export-search-results.md#export-reports)
+[匯出報告](#export-reports)
   
 [匯出部分已編製索引的項目](#exporting-partially-indexed-items)
+
+[匯出個別郵件或 PST 檔](#exporting-individual-messages-or-pst-files)
   
-[匯出個別郵件或 PST 檔](export-search-results.md#Exporting-individual-messages-or-PST-files)
+[解密受 RMS 加密的郵件](#decrypting-rms-encrypted-messages)
+
+[檔名的匯出的項目](#filenames-of-exported-items)  
   
-[解密受 RMS 加密的郵件](export-search-results.md#Decrypting-RMS-encrypted-messages)
-  
-[檔名的匯出的項目](export-search-results.md#Filenames-of-exported-items)
-  
-[其他](export-search-results.md#miscellaneous)
+[其他](#miscellaneous)
   
  ### <a name="export-limits"></a>匯出的限制
   
@@ -209,7 +208,7 @@ ms.locfileid: "25494064"
     
   - 匯出內容的搜尋報告不會計算針對任何匯出限制。 
     
-- 如先前所述，從信箱和網站的搜尋結果上傳至 Azure 儲存位置 (中所述[步驟 1： 準備搜尋結果的匯出](export-search-results.md#step1)) 在 2 GB 的每小時最大速率。
+- 如先前所述，從信箱和網站的搜尋結果上傳至 Azure 儲存位置 (中所述[步驟 1： 準備搜尋結果的匯出](#step-1-prepare-search-results-for-export)) 在 2 GB 的每小時最大速率。
     
 - 預設可匯出的 PST 檔案大小上限為 10 GB。這表示如果搜尋結果從使用者的信箱超過 10 GB，將兩個 （或多個） 不同的 PST 檔案中匯出信箱的搜尋結果。此外，如果您選擇要匯出單一的 PST 檔案中的所有搜尋結果，PST 檔案將會是濺至其他 PST 檔案，如搜尋結果的總大小大於 10 GB。如果您想要變更此預設大小，您可以編輯您用來匯出搜尋結果的電腦上的 Windows 登錄。請參閱 ＜ [Change 匯出 eDiscovery 搜尋結果時 PST 檔案的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     

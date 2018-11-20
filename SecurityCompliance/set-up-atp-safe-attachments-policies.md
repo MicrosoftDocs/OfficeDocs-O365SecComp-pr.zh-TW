@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850837"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238405"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -82,18 +82,9 @@ ms.locfileid: "25850837"
 |**動態傳遞** <br/> |傳送立即訊息  <br/> 直到掃描已完成，然後將偵測到任何惡意程式碼時重新附加附件的附件取代預留位置檔案  <br/> 包含附件預覽功能大部分的 Pdf 和 Office 檔案掃描期間  <br/> 將偵測到惡意程式碼的郵件傳送至其中的安全性管理員或分析師可以檢閱及釋出 （或刪除） 那些郵件隔離  <br/> [了解動態傳遞和 ATP 安全附件預覽](dynamic-delivery-and-previewing.md) <br/> |避免郵件延遲時防止惡意檔案中的收件者  <br/> 啟用時掃描正在進行預覽附件安全模式中的收件者  <br/> |
 |**啟用重新導向** <br/> |適用於選擇監視器、 封鎖或取代選項  <br/> 傳送給指定的電子郵件地址的附件安全性管理員或分析師其中調查  <br/> |啟用安全性管理員和分析師研究可疑的附件  <br/> |
    
-## <a name="related-topics"></a>相關主題
+## <a name="next-steps"></a>後續步驟
 
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)
-  
-[Office 365 中的 ATP 安全連結](atp-safe-links.md)
-  
-[設定 Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
-  
-[進階威脅保護的檢視報告](view-reports-for-atp.md)
-
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-  
-
+一旦您 ATP 安全附件原則已備妥，您可以看到 ATP 如何為組織運作檢視報告。請參閱下列資源以深入了解：
+- [Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
+- [使用瀏覽器安全性&amp;規範中心](use-explorer-in-security-and-compliance.md)
+ 

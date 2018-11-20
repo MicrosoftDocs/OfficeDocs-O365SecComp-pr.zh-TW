@@ -3,7 +3,7 @@ title: 使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/19/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 摘要： 本文將告訴您如何使用 DomainKeys 識別郵件 (DKIM) 與 Office 365 以確定目的地的電子郵件系統信任從自訂網域傳送的訊息。
-ms.openlocfilehash: 7dccab55ab86d9ecac14b7042b5a030c2415fece
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 6f09a75a96abda54e69833a8be14811c8113b5b1
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003212"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255818"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -91,23 +91,23 @@ SPF 將資訊新增至郵件信封，但 DKIM 真的要加密的郵件標頭中�
 Host name:          selector1._domainkey.<domain>
 Points to address or value: selector1-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
+
 Host name:          selector2._domainkey.<domain>
 Points to address or value: selector2-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
-
 ```
 
 其中：
   
--  Office 365 選取器一律是"selector1"或"selector2"。 
+- Office 365 選取器一律是"selector1"或"selector2"。 
     
--  _domainGUID_是在自訂 MX 記錄的自訂網域出現之前 mail.protection.outlook.com _domainGUID_相同。例如，在網域 contoso.com 的下列 MX 記錄， _domainGUID_是 contoso com: 
+- _domainGUID_是在自訂 MX 記錄的自訂網域出現之前 mail.protection.outlook.com _domainGUID_相同。例如，在網域 contoso.com 的下列 MX 記錄， _domainGUID_是 contoso com: 
     
-  ```
-  contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
-  ```
+    ```
+    contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
+    ```
 
--  _initialDomain_是註冊 Office 365 時所使用的網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
+- _initialDomain_是註冊 Office 365 時所使用的網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
     
 例如，如果您有 cohovineyardandwinery.onmicrosoft.com、 初始網域和兩個自訂網域 cohovineyard.com cohowinery.com，就必須設定兩個總共四個 CNAME 記錄的每個其他網域的 CNAME 記錄。
   
@@ -115,9 +115,11 @@ TTL:                3600
 Host name:          selector1._domainkey.cohovineyard.com  
 Points to address or value: selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
+
 Host name:          selector2._domainkey.cohovineyard.com  
 Points to address or value: selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
+
 Host name:          selector1._domainkey.cohowinery.com
 Points to address or value: selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com 
 TTL:                3600
@@ -134,7 +136,7 @@ TTL:                3600
   
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-office-365-admin-center"></a>若要啟用 DKIM 簽署的自訂網域透過 Office 365 系統管理中心
 
-1. 使用工作或學校帳戶，[登入 Office 365](https://support.office.microsoft.com/article/Sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) 。 
+1. 使用您的 公司或學校帳戶[登入 Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。 
     
 2. 選取左上角的應用程式啟動器圖示，然後選擇 [管理員]****。
     
@@ -146,21 +148,21 @@ TTL:                3600
     
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>若要啟用 DKIM 簽署的自訂網域透過 PowerShell
 
-1. [連線至 Exchange Online 使用遠端 PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)。
+1. [連線至 Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx) (機器翻譯)。
     
-2. 執行下列指令程式：
+2. 執行下列命令：
     
-  ```
-  New-DkimSigningConfig -DomainName <domain> -Enabled $true
-  ```
+    ```
+    New-DkimSigningConfig -DomainName <domain> -Enabled $true
+    ```
 
-    其中_網域_是您要啟用 DKIM 簽署的自訂網域名稱。 
+   其中_網域_是您想要啟用 DKIM 簽署的自訂網域名稱。 
     
-    例如，網域 contoso.com 的：
+   例如，網域 contoso.com 的：
     
-  ```
-  New-DkimSigningConfig -DomainName contoso.com -Enabled $true
-  ```
+    ```
+    New-DkimSigningConfig -DomainName contoso.com -Enabled $true
+    ```
 
 #### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>若要確認 DKIM 簽署的設定正確的 Office 365
 
@@ -171,18 +173,17 @@ TTL:                3600
 - 請勿使用 aol.com 帳戶針對測試用途。AOL 可能會略過 DKIM 檢查如果通過 SPF] 核取。這將會進行造成測試。
     
 - 開啟郵件並查看標頭。檢視郵件標頭指示目視郵件用戶端。如需在 Outlook 中檢視郵件標頭的指示，請參閱 ＜[檢視的電子郵件訊息標頭](https://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C)。
+
+  DKIM 簽署郵件會包含的主機名稱與您定義發佈 CNAME 項目時的網域。郵件的外觀類似此範例會如下： 
     
-     DKIM 簽署郵件會包含的主機名稱與您定義發佈 CNAME 項目時的網域。郵件的外觀類似此範例會如下： 
-    
-  ```
-  From: Example User <example@contoso.com> 
-  DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; 
-      s=selector1; d=contoso.com; t=1429912795; 
-      h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
-      bh=<body hash>; 
-      b=<signed field>;
-  
-  ```
+    ```
+    From: Example User <example@contoso.com> 
+    DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; 
+        s=selector1; d=contoso.com; t=1429912795; 
+        h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
+        bh=<body hash>; 
+        b=<signed field>;
+    ```
 
 - 尋找驗證結果標頭。雖然每個接收服務使用內送郵件加上戳記稍有不同的格式，其結果應該包含類似如下**DKIM = 傳遞**或**DKIM = 確定**。 
     
@@ -198,35 +199,33 @@ TTL:                3600
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>若要停用 DKIM 簽署原則使用 Windows PowerShell
 
-1. [連線至 Exchange Online 使用遠端 PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)。
+1. [連線至 Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx) (機器翻譯)。
     
 2. 執行下列命令為您要停用 DKIM 簽署每個網域。
     
-  ```
-  $p=Get-DkimSigningConfig -identity <domain>
-  $p[0] | set-DkimSigningConfig -enabled $false
-  
-  ```
+    ```
+    $p=Get-DkimSigningConfig -identity <domain>
+    $p[0] | set-DkimSigningConfig -enabled $false
+    ```
 
-    例如：
+   例如：
     
-  ```
-  $p=Get-DkimSigningConfig -identity contoso.com
-  $p[0] | set-DkimSigningConfig -enabled $false
-  ```
+    ```
+    $p=Get-DkimSigningConfig -identity contoso.com
+    $p[0] | set-DkimSigningConfig -enabled $false
+    ```
 
-    或者
+   或者
     
-  ```
-  Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
-  
-  ```
+    ```
+    Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
+    ```
 
     其中_號碼_是原則的索引。例如： 
     
-  ```
-  Set-DkimSigningConfig -identity $p[0].identity -enabled $false
-  ```
+    ```
+    Set-DkimSigningConfig -identity $p[0].identity -enabled $false
+    ```
 
 ## <a name="default-behavior-for-dkim-and-office-365"></a>DKIM 與 Office 365 的預設行為
 <a name="DefaultDKIMbehavior"> </a>
@@ -244,10 +243,9 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
     bh=<body hash>; 
     b=<signed field>;
-
 ```
 
-在此範例中的主機名稱與網域包含要 CNAME 會指向如果 fabrikam.com DKIM 簽署鎖網域系統管理員所啟用的值。最後，從 Office 365 傳送每一個單一訊息將會 DKIM 簽署。如果您自行啟用 DKIM，網域將會在 [從網域相同： 位址，在此案例的 fabrikam.com。如果您未將不會對齊並將改用貴組織的初始網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
+在此範例中的主機名稱與網域包含要 CNAME 會指向如果 fabrikam.com DKIM 簽署鎖網域系統管理員所啟用的值。最後，從 Office 365 傳送每一個單一訊息將會 DKIM 簽署。如果您自行啟用 DKIM，網域將會在 [從網域相同： 位址，在此案例的 fabrikam.com。如果您未將不會對齊並將改用貴組織的初始網域。如需決定在初始網域的資訊，請參閱 ＜[網域常見問題集](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
   
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>設定 DKIM 才能讓協力廠商服務可傳送] 或詐騙代表自訂網域的電子郵件
 <a name="SetUp3rdPartyspoof"> </a>
@@ -273,9 +271,9 @@ Return-Path: <communication@bulkemailprovider.com>
     
 4. 接收的電子郵件系統來執行 DKIM] 核取驗證 DKIM 簽章 d =\<網域\>針對在 [從網域的值： (5322.From) 之郵件的地址。在此範例中的值符合：
     
-    寄件者 @ **contoso.com**
+    寄件者 @**contoso.com**
     
-    d = **contoso.com**
+    d =**contoso.com**
     
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>後續步驟： 您針對 Office 365 設定 DKIM 之後
 <a name="DKIMNextSteps"> </a>

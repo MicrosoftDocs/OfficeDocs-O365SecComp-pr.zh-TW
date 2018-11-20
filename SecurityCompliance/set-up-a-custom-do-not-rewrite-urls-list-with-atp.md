@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: 當您設定好您 ATP 安全連結原則時，您可以包含不要 not 修正 ' 要讓組織中某些使用者瀏覽您在您的清單中包含的網站 Url 的清單。
-ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353259"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238385"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單
 
@@ -66,20 +66,4 @@ ATP 安全連結保護使用多個清單，包括您的組織已封鎖的 Url �
 |`http://contoso.com/a`  <br/> |允許特定收件者類似的網站瀏覽`http://contoso.com/a`，但不是個子路徑 like`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |允許特定收件者類似的網站瀏覽`http://contoso.com/a`及 like 個子路徑`http://contoso.com/a/b`  <br/> |
    
-  
-
-## <a name="related-topics"></a>相關主題
-
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 中的 ATP 安全連結](atp-safe-links.md)
-  
-[設定 Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
-  
-[設定自訂封鎖 Url 清單使用 ATP 安全連結](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
-[Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
-
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-  
-
+ 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: 閱讀本文以了解如何設定您的組織使用 Office 365 進階威脅保護封鎖 Url 的清單。封鎖的 Url 將會套用至電子郵件與根據您 ATP 安全連結原則的 Office 文件。
-ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454360"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238365"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>設定自訂封鎖 Url 清單使用 Office 365 ATP 安全連結
 
@@ -64,17 +64,5 @@ ms.locfileid: "25454360"
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>如何在組織中定義的特定使用者的例外狀況
 
 如果您想要能夠檢視 Url 可能會封鎖其他人的特定群組，您可以指定套用至特定收件者 ATP 安全連結原則。請參閱 ＜ [Set up 自訂 「 未修正"Url 清單使用 ATP 安全的連結](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
-  
-## <a name="related-topics"></a>相關主題
-
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 中的 ATP 安全連結](atp-safe-links.md)
-  
-[設定 Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
-  
-[Office 365 中的 ATP 安全附件](atp-safe-attachments.md)
-
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
   
 

@@ -3,7 +3,7 @@ title: 啟用報告訊息增益集
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/18/2018
+ms.date: 11/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何啟用報表訊息增益集 Outlook 和 Outlook web 針對個別使用者或整個組織。
-ms.openlocfilehash: 8c9853c78a42d6eecd0989475ef8f0a44345f812
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: a62e3e6250d2eccd2109a71f994713e2dd1b262e
+ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857261"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "26618919"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -37,7 +37,7 @@ ms.locfileid: "25857261"
   
 如果您是個別使用者，您還可以[讓報表訊息的增益集自己](#get-the-report-message-add-in-for-yourself)。 
   
-如果您是 Exchange Online 管理員，您可以[啟用報表訊息增益集的組織](#get-and-enable-the-report-message-add-in-for-your-organization)。
+如果您是 Office 365 全域管理員或 Exchange Online 管理員，而 Exchange 設定為使用 OAuth 驗證，您可以[啟用報表訊息增益集的組織](#get-and-enable-the-report-message-add-in-for-your-organization)。報告郵件增益集現在已可透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>您要報告郵件取得增益集
 
@@ -49,7 +49,6 @@ ms.locfileid: "25857261"
     
 4. 登入 Office 365 電子郵件使用您的工作或學校帳戶 （供商務使用） 或您的 Microsoft 帳戶 （適用於個人使用）。
     
-
 增益集已安裝並啟用之後，您會看到下列圖示： 
 
 - 在 Outlook 中圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
@@ -60,33 +59,24 @@ ms.locfileid: "25857261"
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>取得並啟用報表訊息增益集的組織
 
 > [!IMPORTANT]
-> 您必須是 Office 365 全域管理員或 Exchange Online 管理員，才可完成此工作。
+> 您必須是 Office 365 全域管理員或 Exchange Online 管理員，才可完成此工作。另外，Exchange 必須設定為使用 OAuth 驗證來深入了解，請參閱[Exchange 需求 （增益集的集中式部署）](https://docs.microsoft.com/en-us/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
 
-1. 移至 [[https://portal.office.com](https://portal.office.com)並使用您工作或學校的帳戶登入。 
+1. 移至的[服務與增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)中新的 Microsoft 365 系統管理中心。<br/>![在新的 Microsoft 365 系統管理中心服務與增益集] 頁面上](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
-2. 選擇 [移至 [系統管理中心的**管理**。 
+2. 選擇 [ **+ 部署增益集**。<br/>![選擇部署增益集](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
-3. 選擇 [ **Admin 中心** \> **Exchange**移至 Exchange 系統管理中心 (EAC)。 
+3. 在新增益集] 畫面上，檢閱資訊，並再選擇 [**下一步**。<br/>![新的增益集詳細資料](media/NewAddInScreen1.png)<br/>
     
-4. 選擇**組織** \> **增益集**。 
+4. 選取 [**我想要新增增益集來自 Office 市集**、，然後選擇 [**下一步**。<br/>![我想要新增新增益集](media/NewAddInScreen2.png)<br/> 
     
-5. 選擇 [ **+**  > **新增來自 Office 市集**。<br/>![選擇 [新增來自 Office 市集](media/EAC-Org-AddFromOfficeStore.png)<br/>這會在網頁瀏覽器中開啟 Office 市集。
+5. 搜尋報告郵件與結果] 旁的報告訊息增益集的清單中，選擇 [新增]。<br/>![搜尋報告的郵件，然後選擇 [新增]](media/NewAddInScreen3.png)<br/>
     
-6. 搜尋報告的郵件。<br/>![搜尋報告郵件](media/ReportMessageSearchOfficeStore.png)<br/>
-    
-7. 在 [**應用程式**] 清單中，選取**報表訊息**，然後選擇**現在取得 IT**。<br/>![選擇 [取得 IT 現在](media/ReportMessageGETITNOW.png)<br/> 
-    
-8. 檢閱使用及隱私權原則的字詞。然後選擇 [**繼續]**。 
-    
-    ![按一下 [繼續] 以接受條款和隱私權原則](media/ReportMessageTermsAndConditions.png)
-  
-9. 精靈隨即開啟以協助您設定報表訊息增益集檢閱資訊，並選擇 [**下一步]** 繼續。<br/>![報表訊息增益集精靈] 的 Office 365](media/ReportMessageAdminInstallUI.png)<br/> 
+6. 在報表訊息] 畫面上，檢閱資訊，然後選擇 [**下一步**。<br/>![報告郵件詳細資料](media/ReportMessageAdd-InNewScreen4.png)<br/>
 
-10. 指定您要使用者具有報表訊息增益集的預設設定。<br/>![指定報表訊息增益集的預設設定](media/ReportMessageUserOptionsAdminsSet.png)<br/>
-    
-11. 指定誰取得報表訊息增益集。 <br/>![指定誰取得報表訊息增益集 （英文）](media/ReportMessageChooseWhoGetsItAdminSettings.png)<br/>
+7. 指定 Outlook 使用者預設設定，然後選擇 [**下一步**。<br/>![報告 for Outlook 訊息預設設定](media/ReportMessageOptionsScreen5.png)<br/>
 
-12. 選擇 [**儲存**]。 <br/>
+8. 指定誰取得報表訊息增益集] 中，然後選擇 [**儲存**。 <br/>![誰可以取得報表訊息增益集](media/ReportMessageOptionsScreen6.png)<br/>
+
 > [!TIP]
 > 建議您[設定要取得一份報告的使用者的電子郵件郵件規則設定](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
 
@@ -110,41 +100,33 @@ ms.locfileid: "25857261"
     
 4. **如果套用此規則**] 清單中選擇 [**收件者的地址包含...**]。 
     
-5. 在 [**指定單字或片語**] 畫面中，新增 junk@office365.microsoft.com 和 phish@office365.microsoft.com，並再選擇 **[確定]**。 
-    
-    ![指定之規則的垃圾郵件] 及 [phish 電子郵件地址](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
+5. 在 [**指定單字或片語**] 畫面中，新增`junk@office365.microsoft.com`和`phish@office365.microsoft.com`，然後選擇 **[確定]**。<br/>![指定之規則的垃圾郵件] 及 [phish 電子郵件地址](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)<br/>
   
 6. 在**執行下列動作...** ] 清單中，選擇 [ **[密件副本郵件到...**。 
     
-7. 新增全域管理員、 安全性管理員及/或安全性讀者應該接收人員向 Microsoft 報告每個電子郵件訊息的複本並再選擇 **[確定]**。 
-    
-    ![新增全域或安全性管理員接收每個報告的郵件的複本](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
+7. 新增全域管理員、 安全性管理員及/或安全性讀者應該接收人員向 Microsoft 報告每個電子郵件訊息的複本並再選擇 **[確定]**。<br/>![新增全域或安全性管理員接收每個報告的郵件的複本](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)<br/>
   
 8. 選取 [**此規則使用嚴重性層級的稽核**，然後選擇 [**中等**。 
     
-9. [**選擇此規則模式**] 下選擇 [**強制執行**。 
-    
-    ![設定規則，以取得每個報告的郵件的複本](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+9. [**選擇此規則模式**] 下選擇 [**強制執行**。<br/>![設定規則，以取得每個報告的郵件的複本](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
 10. 選擇 [**儲存**]。 
     
 與備妥此規則，每當您組織中某人報告電子郵件訊息的報告訊息 」 增益集，使用您全域管理員、 安全性管理員及/或安全性讀取者會收到該郵件的複本。這項資訊可讓您設定或調整原則，例如[Office 365 ATP 安全連結](atp-safe-links.md)原則。 
 
-## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>檢閱或編輯報表訊息增益集的預設設定
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>檢閱或編輯報表訊息增益集設定
 
-您可以檢閱並編輯使用系統管理中心報告郵件增益集的預設設定。 
+您可以檢閱並編輯的報告訊息增益集的[服務與增益集] 頁面上](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)的預設設定。 
 
 > [!IMPORTANT]
 > 您必須是 Office 365 全域管理員或 Exchange Online 管理員，才可完成此工作。
     
-1. 如果您剛已安裝您的組織報告郵件增益集、 您已經將會在 [服務與增益集] 頁面。否則移[此處](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns)及登入 Office 365 中使用工作或學校帳戶。
+1. 移至的[服務與增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)中新的 Microsoft 365 系統管理中心。<br/>![在新的 Microsoft 365 系統管理中心服務與增益集] 頁面上](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
 
-2. 搜尋**報表訊息**，並加以選取。<br/>![服務和 Office 365 的增益集](media/ReportMessage-o365servicesaddins.png)<br/> 
+2. 尋找並選取 [報表訊息增益集。<br/>![尋找並選取 [郵件報告增益集](media/FindReportMessageAddIn.png)<br/> 
     
-3. 開啟一個窗格會顯示已在部署期間選取報表訊息增益集的設定。<br/>![設定報表訊息增益集 (英文）](media/ReportMessage-reviewaddinsettings.png)<br/> 
+3. 在報表訊息] 畫面上，檢閱並編輯設定最適合您的組織。<br/>![設定報表訊息增益集 (英文）](media/EditReportMessageAddIn.png)<br/> 
 
-4. 檢閱並必要時，編輯設定的報告訊息 」 增益集，並儲存變更。
-    
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用報告郵件增益集
 
 請參閱[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。

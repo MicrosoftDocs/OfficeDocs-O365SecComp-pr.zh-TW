@@ -1,7 +1,7 @@
 ---
 title: 在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組
-ms.author: derng
-author: derng
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: 了解如何開啟 ATP for SharePoint、 OneDrive 及小組，包括如何設定提醒的偵測到的檔案。
-ms.openlocfilehash: eb3687f6afd2e7f9a3698944019bcdb8dcbff5ae
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454290"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238415"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組
 
@@ -31,19 +31,17 @@ ms.locfileid: "25454290"
   
 1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)，並登入工作或學校帳戶。
     
-2. Office 365 安全性&amp;規範中心的左的功能窗格的 [**威脅管理**] 下選擇**原則** \> **安全的附件**。
-    
-    ![安全性&amp;規範中心選擇 Threat management\>原則](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. Office 365 安全性&amp;規範中心的左的功能窗格的 [**威脅管理**] 下選擇**原則** \> **安全的附件**。 <br/>![安全性&amp;規範中心選擇 Threat management\>原則](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. 選取 [**開啟 SharePoint、 OneDrive 及 Microsoft 小組 ATP**。
-    
-    ![開啟進階的威脅 Protection for SharePoint Online、 OneDrive for Business 和 Microsoft 小組](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. 選取 [**開啟 SharePoint、 OneDrive 及 Microsoft 小組 ATP**。<br/>![開啟進階的威脅 Protection for SharePoint Online、 OneDrive for Business 和 Microsoft 小組](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. 按一下 [儲存]****。
+4. 按一下 **[儲存]**。
     
 5. 檢閱 （和視需要編輯） 您組織的[安全附件原則](set-up-atp-safe-attachments-policies.md)和[安全連結原則](set-up-atp-safe-links-policies.md)。
     
-6. （建議）以全域管理員或 SharePoint Online 管理員、 執行**[Set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet 搭配**DisallowInfectedFileDownload**參數設為*true* 。 <br/>設定參數，*則為 true*組塊 （除了刪除） 的所有動作的偵測到的檔案。使用者無法開啟、 移動、 複製或共用偵測到的檔案。<br/>將此參數設定為*false*會封鎖刪除和下載以外的所有動作。使用者可以選擇接受風險和下載偵測到的檔案。<br/>建議您將此參數設*為 true*。 
+6. （建議）以全域管理員或 SharePoint Online 管理員、 執行**[Set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet 搭配**DisallowInfectedFileDownload**參數設為*true*。 <br/>
+  - 設定參數，*則為 true*組塊 （除了刪除） 的所有動作的偵測到的檔案。使用者無法開啟、 移動、 複製或共用偵測到的檔案。
+  - 將此參數設定為*false*會封鎖刪除和下載以外的所有動作。使用者可以選擇接受風險和下載偵測到的檔案。  
    
 7. 可讓您的變更傳播到所有 Office 365 資料中心的最多 30 分鐘。
     
@@ -71,22 +69,16 @@ ms.locfileid: "25454290"
     
 6. **傳送到此警示...** ] 區段中選取一或多個全域管理員、 安全性管理員或安全性讀者應該會偵測到惡意檔案時收到通知。 
     
-7. 按一下 [儲存]****。
+7. 按一下 **[儲存]**。
     
 若要深入了解提醒，請參閱[建立 Office 365 安全性活動提醒&amp;規範中心](create-activity-alerts.md)。 
   
 ## <a name="next-steps"></a>後續步驟
 
-- [檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊](malicious-files-detected-in-spo-odb-or-teams.md)
+1. [檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊](malicious-files-detected-in-spo-odb-or-teams.md)
     
-- [在 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
+2. [在 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
     
-## <a name="related-topics"></a>相關主題
 
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
-  
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
   
 

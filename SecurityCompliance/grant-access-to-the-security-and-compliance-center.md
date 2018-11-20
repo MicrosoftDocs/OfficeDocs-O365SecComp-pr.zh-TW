@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須被指派 Office 365 安全性權限&amp;規範中心之前他們可以管理任一其安全性或規範功能。
-ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450738"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539105"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>讓使用者能夠存取 Office 365 安全性&amp;規範中心
 
@@ -63,7 +63,7 @@ ms.locfileid: "25450738"
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>使用 PowerShell 來授與其他使用者存取安全性&amp;規範中心
 
-1. [連線至 Office 365 安全性&amp;規範中心使用遠端 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084)。
+1. [連線至 Office 365 的安全性與規範中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
     
 2. 使用 **Add-RoleGroupMember** 命令，以將使用者新增至組織管理角色，如下列範例所示。 
     
