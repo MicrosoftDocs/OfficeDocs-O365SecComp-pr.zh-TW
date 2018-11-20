@@ -21,6 +21,7 @@
 ### [DLP 原則建議快速入門](get-started-with-dlp-policy-recommendations.md)
 ### [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)
 ### [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
+### [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 ### [使用 DLP 原則中的通知和原則提示](use-notifications-and-policy-tips.md)
 ### [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
 ### [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](protect-documents-that-have-fci-or-other-properties.md)
