@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 的安全性與規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
+ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522805"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26626149"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 [Office 365 安全性及規範中心搜尋稽核記錄
 
@@ -40,9 +40,9 @@ ms.locfileid: "26522805"
     
 - Sway 中的使用者和系統活動
     
-- Office 365 安全性 eDiscovery 活動&amp;規範中心
+- 在 [Office 365 安全性及規範中心中的 eDiscovery 活動
     
-- Power bi for Office 365 的使用者和系統活動
+- 使用者和系統活動 Power bi
     
 - 使用者和系統中的 Microsoft 小組的活動
 
@@ -123,7 +123,7 @@ ms.locfileid: "26522805"
     
 - Exchange Online 稽核記錄檔包含兩種類型的事件： Exchange admin 事件 （系統管理員所採取的動作） 和信箱事件 （上信箱的使用者所採取的動作）。請注意預設未啟用信箱稽核。其必須之前信箱事件可以搜尋的 Office 365 稽核記錄中的每個使用者信箱啟用。如需信箱稽核及信箱稽核記錄的動作的詳細資訊，請參閱[啟用信箱稽核 Office 365 中](enable-mailbox-auditing.md)。
     
-- 預設未啟用的 Power BI 稽核記錄。若要搜尋的 Office 365 稽核記錄中的 Power BI 活動，您必須啟用 [Power BI 系統入口網站中的稽核。指示，請參閱[稽核 Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal)。
+- 預設未啟用的 Power BI 稽核記錄。若要搜尋的 Office 365 稽核記錄中的 Power BI 活動，您必須啟用 [Power BI 系統入口網站中的稽核。指示，請參閱[Power BI 系統入口網站](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)的 「 稽核記錄 」 一節。
     
     
 ## <a name="search-the-audit-log"></a>搜尋稽核記錄
@@ -276,7 +276,6 @@ ms.locfileid: "26522805"
     
     當您下載所有結果，以及服務每一個 CSV 檔案中的 [ **AuditData** ] 欄中所列的屬性描述一套用於，請參閱[Office 365 中的詳細的內容稽核記錄](detailed-properties-in-the-office-365-audit-log.md)。
 
-  
 ## <a name="audited-activities"></a>稽核的活動
 
 本節中的表格說明 Office 365 中您可以稽核的活動。您可以搜尋的安全性將這些事件來搜尋稽核記錄&amp;規範中心。按一下 [**搜尋稽核記錄**] 索引標籤的逐步指示。 
@@ -565,32 +564,9 @@ ms.locfileid: "26522805"
   
 ### <a name="power-bi-activities"></a>Power BI 活動
   
-下表列出使用者與 Power bi 系統活動的 Office 365 稽核記錄檔中。
+您可以在 Power BI 搜尋活動的稽核記錄。如 Power BI 活動的相關資訊，請參閱"活動的稽核依 Power Power BI"] 區段中的[稽核組織內使用](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi)。
   
- **重要：** 預設未啟用的 Power BI 稽核記錄。若要搜尋的 [Office 365 稽核記錄中的 Power BI 活動，您必須啟用 [Power BI 系統入口網站中的稽核。指示，請參閱[稽核 Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal)。
-  
-|**易記名稱**|**作業**|**描述**|
-|:-----|:-----|:-----|
-|已新增的 Power BI 群組成員  <br/> |AddGroupMembers  <br/> |成員會新增至 Power BI 群組工作區。  <br/> |
-|分析的 Power BI 資料集  <br/> |AnalyzedByExternalApplication  <br/> |資料集是由外部應用程式分析。  <br/> |
-|建立的 Power BI 儀表板  <br/> |CreateDashboard  <br/> |會建立新的儀表板。  <br/> |
-|建立的 Power BI 群組  <br/> |CreateGroup  <br/> |建立群組。  <br/> |
-|建立組織的 Power BI 內容的套件  <br/> |CreateOrgApp  <br/> |建立組織內容的套件。  <br/> |
-|已刪除的 Power BI 儀表板  <br/> |DeleteDashboard  <br/> |會刪除在儀表板。  <br/> |
-|已刪除的 Power BI 資料集  <br/> |DeleteDataset  <br/> |會刪除資料集。  <br/> |
-|已刪除的 Power BI 報表  <br/> |DeleteReport  <br/> |報表會在刪除。  <br/> |
-|下載的 Power BI 報表  <br/> |DownloadReport  <br/> |使用者會從服務 Power BI 報表下載到電腦。  <br/> |
-|已編輯的 Power BI 儀表板  <br/> |EditDashboard  <br/> |在重新命名儀表板。  <br/> |
-|匯出的 Power BI 報告視覺資料  <br/> |ExportReport  <br/> |從報表磚匯出資料。  <br/> |
-|匯出的 Power BI 並排顯示資料  <br/> |ExportTile  <br/> |從儀表板磚匯出資料。  <br/> |
-|列印的 Power BI 儀表板  <br/> |PrintDashboard  <br/> |列印儀表板。  <br/> |
-|Power BI 報表的列印的頁面  <br/> |PrintReport  <br/> |列印報表。  <br/> |
-|Power BI 報表發佈至網頁  <br/> |PublishToWebReport  <br/> |報表發佈至網頁。  <br/> |
-|共用的 Power BI 儀表板  <br/> |ShareDashboard  <br/> |共用儀表板。  <br/> |
-|啟動的 Power BI 試用版  <br/> |OptInForProTrial  <br/> |使用者啟動 Power BI 專業人員的試用版訂閱。  <br/> |
-|更新的組織的 Power BI 設定  <br/> |UpdatedAdminFeatureSwitch  <br/> |系統管理員已變更的 Power BI 系統入口網站中的組織] 設定。  <br/> |
-|檢視的 Power BI 儀表板  <br/> |ViewDashboard  <br/> |在儀表板來檢視。  <br/> |
-|檢視的 Power BI 報表  <br/> |ViewReport  <br/> |會檢視報表。  <br/> |
+Power BI 的稽核記錄不預設啟用的附註。若要搜尋的 Office 365 稽核記錄中的 Power BI 活動，您必須啟用 [Power BI 系統入口網站中的稽核。指示，請參閱[Power BI 系統入口網站](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)的 「 稽核記錄 」 一節。
   
 ### <a name="microsoft-teams-activities"></a>Microsoft 小組活動
   
