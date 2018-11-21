@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698039"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299247"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -52,9 +52,10 @@ ms.locfileid: "25698039"
   - 您不需要仰賴使用者正確地將所有內容分類。
     
   - 使用者不再需要了解資料控管原則，就可以專心工作。
-    
-    請注意，使用自動套用標籤需要有 Office 365 企業版 E5 訂用帳戶。
-    
+
+  > [!NOTE]
+  > 自動套用標籤的功能需要每位使用者均擁有 Office 365 Enterprise E5 授權，這些使用者有權編輯網站或信箱中已自動標籤的內容。
+      
 - 將**預設保留標籤套用**至 SharePoint 和 Office 365 群組網站的文件庫，以便讓該文件庫中的所有文件取得預設保留標籤。 
     
 - **在 Office 365 中實作記錄管理**，包括電子郵件和文件。您可以使用保留標籤將內容分類成記錄。在這種情況下，無法變更或移除標籤，且不能編輯或刪除內容。 

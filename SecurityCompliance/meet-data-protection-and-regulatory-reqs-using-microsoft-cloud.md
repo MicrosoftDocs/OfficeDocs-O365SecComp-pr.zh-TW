@@ -3,7 +3,7 @@ title: 使用合規性管理員來符合使用Microsoft 雲端服務時的資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服務信任入口網站中的合規性管理員會提供工具，可追蹤、實作及管理控制項，在針對 Microsoft 雲端服務 (例如 Office 365 和 Microsoft Azure) 進行測量時，可協助貴組織達到安全性和資料保護法規遵循產業標準 (例如 GDPR、ISO 27001 與 27018，與 HIPAA)。合規性管理員可協助監督資料保護和隱私策略的人員，讓貴組織可管理法規遵循和風險評估程序。
-ms.openlocfilehash: b8493775210be14a44c6d8185c56371b55634329
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
+ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526929"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "26618929"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求
 
- 法規遵循管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。** 
+ 合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。** 
   
-法規遵循管理員是 Microsoft 工作流程為基礎的風險評估工具，[開始使用 Microsoft 服務信任入口網站](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)，可讓您追蹤、指派及驗證貴組織與 Microsoft 專業服務和 Microsoft 雲端服務相關的法規遵循活動，例如 Microsoft Office 365、Microsoft Dynamics 365，以及 Microsoft Azure。法規遵循管理員：
+合規性管理員是 Microsoft [服務信任入口網站](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及驗證貴組織與 Microsoft 專業服務和 Microsoft 雲端服務相關的法規遵循活動，例如 Microsoft Office 365、Microsoft Dynamics 365，以及 Microsoft Azure。合規性管理員：
   
 - 將針對各種標準的 Microsoft 雲端服務進行的各種協力廠商稽核中，Microsoft 提供給稽核員及管理者的詳細資訊 (例如 ISO 27001、ISO 27018 和 NIST)，以及 Microsoft 在內部編譯以遵循法規的資訊 (例如 HIPAA 和歐盟一般資料保護規範或稱 GDPR)，結合貴組織遵循這些標準和法規的自我評估。
     
@@ -37,7 +37,7 @@ ms.locfileid: "22526929"
 - 在 Microsoft Excel 中產生豐富詳細的報告，以記錄由 Microsoft 與貴組織執行的合規性活動，可提供給稽核員、管理者，以及其他法規遵循專案關係人。
     
 > [!IMPORTANT]
-> 法規遵循管理員是一個儀表板，提供您資料保護與合規性結構的摘要，以及改善資料保護與合規性的建議。合規性管理員中所提供的「客戶動作」也是建議；每個組織皆可選擇在實作之前，評估這些建議在其個別法規環境中的效果。合規性管理員中所找到的建議不應視為規範的保證。
+> 合規性管理員是一個儀表板，提供您資料保護與合規性結構的摘要，以及改善資料保護與合規性的建議。合規性管理員中所提供的「客戶動作」也是建議；每個組織皆可選擇在實作之前，評估這些建議在其個別法規環境中的效果。合規性管理員中所找到的建議不應視為規範的保證。
     
 ## <a name="what-is-compliance-manager"></a>合規性管理員為何？
 
@@ -831,8 +831,8 @@ ms.locfileid: "22526929"
    
 ## <a name="see-also"></a>另請參閱
 
-- [宣布合規性管理員正式公開上市 (英文)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-    
-- [Microsoft 365 提供資訊保護策略來協助符合 GDPR](https://blogs.office.com/zh-TW/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
-    
+- [合規性管理員互動指南](https://content.cloudguides.com/guides/Compliance%20Manager) (英文)
 
+- [宣布合規性管理員正式公開上市](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922) (英文)
+
+- [Microsoft 365 提供資訊保護策略來協助符合 GDPR](https://blogs.office.com/zh-TW/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

@@ -3,7 +3,7 @@ title: 敏感度標籤概觀
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 的敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: d08f0e630aeec185ac36998e611fa11ba5c5e007
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: ad6137ad00fa2e7eb83a405e429d6c7826cf6a90
+ms.sourcegitcommit: d7e87ce4b1579ac47af2e853ef59ef058c40191f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769902"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547215"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -69,7 +69,7 @@ ms.locfileid: "25769902"
 
 敏感度標籤套用至電子郵件或文件後，會對內容強制執行該標籤的保護設定。使用敏感度標籤，您可以：
 
-- 僅**加密**電子郵件，或同時加密電子郵件與文件。您可以選擇哪些使用者或群組擁有權限執行哪些動作和執行時間。比方說，您可以選擇讓組織外特定網域中的使用者僅在內容標示後的 7 天擁有權限檢閱內容。
+- 僅**加密**電子郵件，或同時加密電子郵件與文件。您可以選擇哪些使用者或群組擁有權限執行哪些動作和執行時間。比方說，您可以選擇讓組織外特定網域中的使用者僅在內容標示後的 7 天擁有權限檢閱內容。如需詳細資訊，請參閱[使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
 
 - **標記內容**的方法為在電子郵件或已套用標籤的文件上新增自訂浮水印、頁首或頁尾。請注意，浮水印僅適用於文件，不適用於電子郵件，並且限制為 255 個字元。此外，頁首和頁尾的限制為 1024 個字元 (除了在 Excel 中的限制為 255 個字元或更少，根據文件是否包含其他頁首或頁尾或其他因素而定。)
 
