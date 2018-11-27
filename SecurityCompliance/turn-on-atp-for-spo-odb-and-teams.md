@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: 了解如何開啟 ATP for SharePoint、 OneDrive 及小組，包括如何設定提醒的偵測到的檔案。
-ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
+ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238415"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26699936"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組
 
@@ -40,14 +40,16 @@ ms.locfileid: "26238415"
 5. 檢閱 （和視需要編輯） 您組織的[安全附件原則](set-up-atp-safe-attachments-policies.md)和[安全連結原則](set-up-atp-safe-links-policies.md)。
     
 6. （建議）以全域管理員或 SharePoint Online 管理員、 執行**[Set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet 搭配**DisallowInfectedFileDownload**參數設為*true*。 <br/>
-  - 設定參數，*則為 true*組塊 （除了刪除） 的所有動作的偵測到的檔案。使用者無法開啟、 移動、 複製或共用偵測到的檔案。
-  - 將此參數設定為*false*會封鎖刪除和下載以外的所有動作。使用者可以選擇接受風險和下載偵測到的檔案。  
+      - 設定參數，*則為 true*組塊 （除了刪除） 的所有動作的偵測到的檔案。使用者無法開啟、 移動、 複製或共用偵測到的檔案。
+      - 將此參數設定為*false*會封鎖刪除和下載以外的所有動作。使用者可以選擇接受風險和下載偵測到的檔案。  
    
 7. 可讓您的變更傳播到所有 Office 365 資料中心的最多 30 分鐘。
     
 8. （建議）請繼續進行設定提醒的偵測到的檔案。
     
-若要深入了解 Office 365 搭配使用 PowerShell，請參閱[使用 PowerShell 管理 Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。> 若要深入了解使用者經驗時已偵測到為惡意的檔案，請參閱[如何在 SharePoint Online、 OneDrive 或 Microsoft 小組中找到惡意檔案時](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。 
+若要深入了解 Office 365 搭配使用 PowerShell，請參閱[使用 PowerShell 管理 Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。 
+
+若要深入了解使用者經驗時已偵測到為惡意的檔案，請參閱[如何在 SharePoint Online、 OneDrive 或 Microsoft 小組中找到惡意檔案時](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。 
   
 ## <a name="set-up-alerts-for-detected-files"></a>設定提醒的偵測到的檔案
 
@@ -63,9 +65,9 @@ ms.locfileid: "26238415"
     
 5. **傳送此提醒時...** ] 區段中執行下列動作： 
     
-  - 在 [**活動**] 清單中選擇**檔案中的偵測到惡意程式碼**。
+    a.[**活動**] 清單中選擇 [**檔案中的偵測到惡意程式碼**]。
     
-  - **使用者**欄位請保留空白。 
+    b.保留**使用者**欄位空白。 
     
 6. **傳送到此警示...** ] 區段中選取一或多個全域管理員、 安全性管理員或安全性讀者應該會偵測到惡意檔案時收到通知。 
     
