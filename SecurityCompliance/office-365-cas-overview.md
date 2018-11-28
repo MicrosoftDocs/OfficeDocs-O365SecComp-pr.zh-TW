@@ -3,7 +3,6 @@ title: Office 365 雲端 App 安全性概觀
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 雲端應用程式安全性可讓您算可疑活動在 Office 365 中讓您可以調查可能有問題且，如果需要採取動作可解決安全性問題的情況。 '
-ms.openlocfilehash: 84d5b412b62bf113101d6322032f3b643d87d741
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526479"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706397"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性概觀
   
@@ -40,13 +39,9 @@ Office 365 雲端應用程式安全性可讓您深入了解可疑活動在 Offic
   
 您可以取得 Office 365 雲端應用程式安全性入口網站透過 Office 365 安全性&amp;規範中心。以下是執行它的其中一個好方法：
   
-1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
     
-2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。 
-    
-    ![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    （如果尚未未啟用 Office 365 雲端應用程式安全性，而且會[開啟 [Office 365 雲端應用程式安全性](turn-on-office-365-cas.md)全域系統管理員）。
+2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。 <br/>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未未啟用 Office 365 雲端應用程式安全性，而且會[開啟 [Office 365 雲端應用程式安全性](turn-on-office-365-cas.md)全域系統管理員）。
     
 3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。 
     
@@ -66,7 +61,7 @@ Office 365 雲端應用程式安全性適用於您組織所定義的原則。與
     
 - [Office 365 雲端 App 安全性中的異常偵測原則](anomaly-detection-policies-in-ocas.md)
     
-## <a name="alerts"></a>警示
+## <a name="alerts"></a>警報
 
 時所定義的原則，提醒通知您需可疑或公休所偵測到的活動。若要檢視您組織的提醒，請選擇**提醒**導覽列中不同螢幕頂端。 
   

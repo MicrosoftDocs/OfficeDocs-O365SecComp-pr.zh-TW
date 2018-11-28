@@ -3,7 +3,6 @@ title: Office 365 雲端應用程式安全性說明與使用方法
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/16/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,19 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: 尋找 Office 365，現在稱為 「 Office 365 雲端應用程式安全性的進階安全性管理 [說明] 內容。
-ms.openlocfilehash: 06d134e1db8a8693a509fb6273042ca6ff1e6812
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526611"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706267"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Office 365 雲端應用程式安全性說明與使用方法
-
- **Office 365 進階安全性管理是現在 Office 365 雲端應用程式安全性**。 
   
 > [!NOTE]
-> Office 365 雲端應用程式安全性且可在 Office 365 企業版 E5 或以作為 Office 365 訂閱的附加元件。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買 Office 365 雲端應用程式安全性。(全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需計劃選項的詳細資訊，請參閱[比較各種 Office 365 商務計劃](https://go.microsoft.com/fwlink/?linkid=844053)。 
+> 使用在 Office 365 企業版 E5 或至 Office 365 的附加元件訂閱為 office 365 雲端應用程式安全性 （前身為 Office 365 進階安全性管理）。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買 Office 365 雲端應用程式安全性。(全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需計劃選項的詳細資訊，請參閱[比較各種 Office 365 商務計劃](https://go.microsoft.com/fwlink/?linkid=844053)。 
   
 Office 365 雲端應用程式安全性]，以全域管理員、 安全性管理員及安全性讀取者可以看到可疑或進階的威脅偵測到的異常活動決定在組織中的人員可用來存取資訊的應用程式在 Office 365，以及取得快照的不同 Office 365 及其他雲端服務的組織的雲端流量。所有的這可以協助保護使用者與資料並無需不必安裝任何端點代理程式。
   

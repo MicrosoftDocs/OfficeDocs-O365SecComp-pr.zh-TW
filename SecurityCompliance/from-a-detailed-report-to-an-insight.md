@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: 了解如何您可以從移動的詳細報告到洞察力安全性建議的動作 （英文）&amp;規範中心。
-ms.openlocfilehash: be2af8916f70f9cf9fbacfcad8d26819c5001014
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552371"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706247"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>逐步解說 - 從詳細報告到深入解析
 
@@ -30,21 +30,13 @@ ms.locfileid: "25552371"
 
 我們逐步流程的詳細報告從洞察力及動作。（這是簡短[反垃圾郵件和反惡意程式碼](anti-spam-and-anti-malware-protection.md)範例）。 
   
-1. 我們首先安全性&amp;規範中心報告。(請移至**報表** \> **儀表板**。)
-    
-    ![安全性&amp;規範管理中心，移至報表\>儀表板](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. 我們首先[安全性&amp;規範中心](https://security.microsoft.com)報告。(請移至**報表** \> **儀表板**。)<br/>![安全性&amp;規範管理中心，移至報表\>儀表板](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. 我們選擇以取得更詳細的檢視的報告。（選擇的報表，例如**威脅保護狀態**報表）。 
-    
-    ![顯示前瞻威脅保護狀態報表](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. 我們選擇以取得更詳細的檢視的報告。（選擇的報表，例如**威脅保護狀態**報表）。<br/>![顯示前瞻威脅保護狀態報表](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. 我們注意到圖表中以及報表低於前瞻指標。將滑鼠指標置於前瞻標記提供一些其他的詳細資訊。（將滑鼠停留在前瞻標記查看其他的詳細資訊。）
     
-4. 按一下是圖表中的觀點標記或前瞻 widget 有關圖表下方的惡意程式碼會開啟詳細資料窗格。(圖表、 下方選取 [前瞻 widget)。
-    
-    ![提供有關惡意程式碼的詳細資料](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)
-  
-    詳細資料窗格中提供的資訊和建議考量，包括檢閱原則、 進行進一步探索，以及編輯狀態。（[解更多有關 Office 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)）。
+4. 按一下是圖表中的觀點標記或前瞻 widget 有關圖表下方的惡意程式碼會開啟詳細資料窗格。(圖表、 下方選取 [前瞻 widget)。<br/>![提供有關惡意程式碼的詳細資料](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>詳細資料窗格中提供的資訊和建議考量，包括檢閱原則、 進行進一步探索，以及編輯狀態。（[解更多有關 Office 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)）。
     
 如此一來，我們可以從詳細報告移到見解與建議的動作。 
   

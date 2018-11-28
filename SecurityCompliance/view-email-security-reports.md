@@ -3,6 +3,7 @@ title: 在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何尋找並使用您的組織與 Office 365 企業版的電子郵件安全性報告。安全性中有電子郵件安全性報告&amp;規範中心。
-ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552391"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706417"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 
-電子郵件安全性的各種報告提供安全性&amp;規範中心以幫助您查看如何在 Office 365 中的反垃圾郵件和反惡意程式碼功能會保護您的組織。如果您有[必要的權限](#what-permissions-are-needed-to-view-these-reports)，您可以檢視這些報告安全性&amp;移至**報表**的規範中心\>**儀表板**。
+提供各種電子郵件安全性報告所[安全性&amp;規範中心](https://security.microsoft.com)可協助您查看如何在 Office 365 中的反垃圾郵件和反惡意程式碼功能會保護您的組織。如果您有[必要的權限](#what-permissions-are-needed-to-view-these-reports)，您可以檢視這些報告安全性&amp;移至**報表**的規範中心\>**儀表板**。
   
 ![安全性&amp;規範中心儀表板可協助您看到其用於進階威脅保護](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -50,7 +51,7 @@ ms.locfileid: "25552391"
 > [!NOTE]
 > 威脅保護狀態報表是供使用者具有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP);不過，ATP 客戶的威脅保護狀態報表中所顯示的資訊可能會包含超過 EOP 客戶可以看到不同的資料。例如，EOP 客戶可以檢視電子郵件、 但不是[在 SharePoint Online、 OneDrive 或 Microsoft 小組中偵測到惡意檔案](atp-for-spo-odb-and-teams.md)的相關資訊、 ATP 特定功能中偵測到惡意程式碼的相關資訊。（[解更多關於 ATP 報告](view-reports-for-atp.md)）。
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **威脅保護狀態**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **威脅保護狀態**。
   
 ![威脅保護狀態報表](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -66,7 +67,7 @@ ms.locfileid: "25552391"
 
 **惡意程式碼偵測**] 報告顯示為包含您的組織的惡意程式碼偵測多少的內送和外寄郵件。 
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **惡意程式碼偵測**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **惡意程式碼偵測**。
   
 ![惡意程式碼偵測] 報告範例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -76,7 +77,7 @@ ms.locfileid: "25552391"
 
 **前惡意程式碼**」 報告顯示各種類型的 Exchange Online 會利用偵測到惡意程式碼。 
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **前惡意程式碼**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **前惡意程式碼**。
   
 ![SCC-EOP 上方惡意程式碼](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
@@ -92,7 +93,7 @@ ms.locfileid: "25552391"
 
 **Top 寄件者和收件者**報表是顯示在上方的電子郵件寄件者的圓形圖。 
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **頂端的寄件者和收件者**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **頂端的寄件者和收件者**。
   
 ![若要檢視這份報告，安全性&amp;規範管理中心，移至報表\>儀表板\>頂端的寄件者和收件者](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
@@ -110,7 +111,7 @@ ms.locfileid: "25552391"
 
 **詐騙郵件**報告顯示偵測多少詐騙郵件訊息，並的那些、 哪些已被視為 「 良好 」 （完成所需的合法的商業原因詐騙郵件）。 
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **詐騙郵件**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **詐騙郵件**。
   
 ![若要檢視這份報告，安全性&amp;規範管理中心，移至報表\>儀表板\>詐騙郵件](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -122,7 +123,7 @@ ms.locfileid: "25552391"
 
 [**垃圾郵件偵測**] 報告顯示封鎖的 Exchange Online 中的垃圾郵件內容。 
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **垃圾郵件偵測**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **垃圾郵件偵測**。
   
 ![若要檢視這份報告，安全性&amp;規範管理中心，移至報表\>儀表板\>EOP 垃圾郵件偵測](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -138,7 +139,7 @@ ms.locfileid: "25552391"
 
 **已傳送及接收之電子郵件**報表是智慧來顯示資訊關於內送和外寄電子郵件，包括垃圾郵件偵測和惡意程式碼、 電子郵件會被識別為 [好]。 
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **傳送與接收之電子郵件**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **傳送與接收之電子郵件**。
   
 ![若要檢視這份報告，安全性&amp;規範管理中心，移至報表\>儀表板\>傳送與接收之電子郵件](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
@@ -162,7 +163,7 @@ ms.locfileid: "25552391"
   
 ![User-Reported 郵件報告顯示標示為垃圾郵件、 未垃圾郵件或網路釣魚嘗試的郵件使用者。](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-若要檢視這份報告，安全性&amp;規範中心，執行下列其中一個動作：
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)，執行下列其中一個動作：
   
 - 移至 [ **Threat management** \> **儀表板** \> **使用者報告的郵件**。
     
@@ -175,12 +176,25 @@ ms.locfileid: "25552391"
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>若要檢視這些報告需要哪些權限？
 
-若要檢視及使用本文所述的電子郵件安全性報告，您必須具有適當的角色指派安全性&amp;規範中心及 Exchange 系統管理中心中。
-  
-|**角色群組**|**其中指派**|**深入了解**|
-|:-----|:-----|:-----|
-| 下列其中之一：  <br/><br/>-Organization Management  <br/>--安全性管理員  <br/>--安全性讀者  <br/> |安全性&amp;規範中心  <br/> |[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 下列其中之一：  <br/><br/>-Organization Management  <br/>-僅檢視組織管理  <br/>-View-Only 收件者角色  <br/>-相符性管理  <br/> |Exchange 系統管理中心  <br/> |[Exchange Online 中的功能權限](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+若要檢視及使用本文所述的報告，您必須具備適當的角色指派兩個安全性&amp;規範中心及 Exchange 系統管理中心。
+
+- Security&amp;規範中心，您必須具備一個指派的下列角色：
+    - 組織管理
+    - 安全性管理員
+    - 安全性讀者
+
+- Exchange Online 的您必須具備下列角色指派其中一項：
+    - 組織管理
+    - 僅檢視組織管理
+    - 僅檢視收件者角色
+    - 合規性管理
+
+若要深入了解，請參閱下列資源：
+
+- [Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
+
+- [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+   
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報表不顯示資料吗？
 

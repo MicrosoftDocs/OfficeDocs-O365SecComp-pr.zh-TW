@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: 了解如何您可以前往儀表板洞察力安全性建議的動作 （英文）&amp;規範中心。
-ms.openlocfilehash: 9245d26a98bac34836772cb1d895c638ed5e5564
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527141"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706147"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>逐步解說 - 從儀表板到深入解析
 
@@ -30,7 +30,7 @@ ms.locfileid: "22527141"
 
 我們逐步流程儀表板報表上的見解和巨集指令。（這是一個簡短[詐騙智慧](learn-about-spoof-intelligence.md)範例）。 
   
-1. 請先安全性安全性儀表板&amp;規範中心。(請移至**Threat management** \> **儀表板**。)
+1. 請先在安全性儀表板[安全性&amp;規範中心](https://security.microsoft.com)。(請移至**Threat management** \> **儀表板**。)
     
     ![安全性&amp;規範中心選擇 Threat management\>儀表板](media/05a38660-eb13-4960-a266-11809c453d95.png)
   

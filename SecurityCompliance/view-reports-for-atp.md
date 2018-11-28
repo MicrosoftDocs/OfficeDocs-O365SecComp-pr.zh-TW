@@ -3,6 +3,7 @@ title: Office 365 進階威脅保護的檢視報告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 了解如何尋找及使用報表的 Office 365 進階威脅保護安全性&amp;規範中心。
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552331"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706317"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 進階威脅保護的檢視報告
 
@@ -34,7 +35,7 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
 > [!NOTE]
 > 威脅保護狀態報表是供使用者具有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP);不過，ATP 客戶的威脅保護狀態報表中所顯示的資訊可能會包含超過 EOP 客戶可以看到不同的資料。例如，ATP 客戶的威脅保護狀態報表會包含[SharePoint Online、 OneDrive 或 Microsoft 小組中偵測到惡意檔案](atp-for-spo-odb-and-teams.md)的相關資訊。這類資訊是專屬於 ATP、，因此有 EOP，但不是 ATP 的客戶不會看到這些其威脅保護狀態報告的詳細資訊。
   
-若要檢視安全性威脅保護狀態報表&amp;規範管理中心，移至**報表** \> **儀表板** \> **威脅保護狀態**。
+若要檢視中的潛在威脅保護狀態報表[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **威脅保護狀態**。
   
 ![ATP 威脅保護狀態報表](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
 
 **ATP 檔案類型**報表顯示偵測到為惡意的[ATP 安全附件](atp-safe-attachments.md)的檔案類型。
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **ATP 檔案類型**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **ATP 檔案類型**。
   
 ![ATP 檔案類型的報告](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
 
 **ATP 郵件處理**報告顯示的電子郵件訊息所偵測到為具有惡意內容所採取的動作。 
   
-若要檢視這份報告，安全性&amp;規範管理中心，移至**報表** \> **儀表板** \> **ATP 郵件處理**。
+若要檢視中的這份報告，[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板** \> **ATP 郵件處理**。
   
 ![ATP 郵件處理報告](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -89,12 +90,24 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>若要檢視 ATP 報告需要哪些權限？
 
-若要檢視及使用本文所述的報告，您必須具備適當的角色指派安全性&amp;規範中心及 Exchange 系統管理中心中。
-  
-|**角色群組**|**其中指派**|**深入了解**|
-|:-----|:-----|:-----|
-| 下列其中之一：  <br/><br/>-Organization Management  <br/>--安全性管理員  <br/>--安全性讀者  <br/> |安全性&amp;規範中心  <br/> |[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 下列其中之一：  <br/><br/>-Organization Management  <br/>-僅檢視組織管理  <br/>-View-Only 收件者角色  <br/>-相符性管理  <br/> |Exchange 系統管理中心  <br/> |[Exchange Online 中的功能權限](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+若要檢視及使用本文所述的報告，您必須具備適當的角色指派兩個安全性&amp;規範中心及 Exchange 系統管理中心。
+
+- Security&amp;規範中心，您必須具備一個指派的下列角色：
+    - 組織管理
+    - 安全性管理員
+    - 安全性讀者
+
+- Exchange Online 的您必須具備下列角色指派其中一項：
+    - 組織管理
+    - 僅檢視組織管理
+    - 僅檢視收件者角色
+    - 合規性管理
+
+若要深入了解，請參閱下列資源：
+
+- [Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
+
+- [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報表不顯示資料吗？
 

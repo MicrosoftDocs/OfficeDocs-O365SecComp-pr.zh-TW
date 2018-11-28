@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: 閱讀本文以了解如何設定您的組織使用 Office 365 進階威脅保護封鎖 Url 的清單。封鎖的 Url 將會套用至電子郵件與根據您 ATP 安全連結原則的 Office 文件。
-ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: cd17fe61b7ecd5becd0918323952f304a73a4ce0
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238365"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706207"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>設定自訂封鎖 Url 清單使用 Office 365 ATP 安全連結
 
@@ -33,17 +33,11 @@ ms.locfileid: "26238365"
 
 [Office 365 中的 ATP 安全連結](atp-safe-links.md)會使用多個清單，包括您的組織自訂封鎖的 Url 的清單。如果您擁有的必要權限，您可以設定您的組織自訂清單。藉由編輯貴組織的預設安全連結原則達成此目的。
   
-1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
+1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)和登入工作或學校帳戶。 
     
 2. 在左導覽列中， **Threat management**] 下選擇 [**原則** \> **安全的連結**。
     
-3. **套用至整個組織的原則**] 區段中選取 [**預設**]，然後選擇**編輯**（[編輯] 按鈕以鉛筆）。 
-    
-    ![按一下 [編輯] 以編輯您的預設原則的安全連結保護](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-  
-    這是您前往檢視您的封鎖 Url 的清單。請注意在第一筆、 您將不會有任何列出的 Url。
-    
-    ![封鎖的 Url 清單預設會套用至整個組織的安全連結原則。](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. **套用至整個組織的原則**] 區段中選取 [**預設**]，然後選擇**編輯**（[編輯] 按鈕以鉛筆）。<br/>![按一下 [編輯] 以編輯您的預設原則的安全連結保護](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>這是您前往檢視您的封鎖 Url 的清單。請注意在第一筆、 您將不會有任何列出的 Url。<br/>![封鎖的 Url 清單預設會套用至整個組織的安全連結原則。](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. 選取 [**輸入有效的 URL** ] 方塊中，然後輸入 URL 並選擇 [加號 （+）。以下是一些事項謹記下列事項： 
     

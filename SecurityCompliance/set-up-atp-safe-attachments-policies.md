@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238405"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706067"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -35,7 +35,7 @@ ms.locfileid: "26238405"
 
 - 請確定您的組織具有[Office 365 進階威脅保護](office-365-atp.md)。
     
-- 請確定您具有必要[權限指派在 Office 365 安全性&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。
+- 請確定您具有必要[的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。
     
 - [了解 ATP 安全附件原則選項](#learn-about-atp-safe-attachments-policy-options)（在本文）。雖然掃描附件有一些選項，例如 [監視] 或 [取代] 選項，可能會導致次要電子郵件的延遲。若要避免郵件延遲回應，請考慮使用[動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
     
@@ -43,7 +43,7 @@ ms.locfileid: "26238405"
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步驟 2： 設定 （或編輯） ATP 安全附件原則
   
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
+1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)和登入工作或學校帳戶。 
     
 2. Office 365 安全性&amp;規範中心的左的功能窗格的 [**威脅管理**] 下選擇**原則** \> **安全的附件**。
     
@@ -51,9 +51,7 @@ ms.locfileid: "26238405"
     
 4. 選擇 [**新增**] ([新增] 按鈕的格式類似於加號 ( **+**))，開始建立您的原則。
     
-5. 指定名稱、 描述與原則設定。
-    
-    **範例：** 若要設定的原則稱為 「 沒有延遲 」 立即將所有人的郵件，然後將它們掃描後重新附加的附件，您可能會指定下列設定： 
+5. 指定名稱、 描述與原則設定。<br/><br/>**範例：** 若要設定的原則稱為 「 沒有延遲 」 立即將所有人的郵件，然後將它們掃描後重新附加的附件，您可能會指定下列設定： 
     
       - 在 [**名稱**] 方塊中輸入沒有延遲。
     

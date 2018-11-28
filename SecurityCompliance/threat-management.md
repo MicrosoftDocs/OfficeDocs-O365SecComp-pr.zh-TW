@@ -1,5 +1,5 @@
 ---
-title: 管理 Office 365 安全性威脅&amp;規範中心
+title: Threat management in the Office 365 Security &amp; Compliance Center
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: 協助控制及管理行動裝置存取您的組織資料、 從資料遺失保護您的組織使用 Threat management 以及從惡意軟體和垃圾郵件保護輸入及輸出郵件。您也可以使用 threat management 來保護您的網域信譽並決定要惡意詐騙的寄件者從您的網域帳戶。
-ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 6aac4e7c3af0f1d2b7adc767f696653252674e6a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552401"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706427"
 ---
-# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>管理 Office 365 安全性威脅&amp;規範中心
+# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
 協助控制及管理行動裝置存取您的組織資料、 從資料遺失保護您的組織使用 Threat management 以及從惡意軟體和垃圾郵件保護輸入及輸出郵件。您也可以使用 threat management 來保護您的網域信譽並決定要惡意詐騙的寄件者從您的網域帳戶。
   
@@ -29,9 +29,9 @@ Office 365 中使用安全性&amp;規範中心來管理在組織中的威脅。
   
  **若要直接移至 [安全性]&amp;規範中心：**
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在左窗格中，選取 [ **Threat management**。
     
@@ -39,7 +39,7 @@ Office 365 中使用安全性&amp;規範中心來管理在組織中的威脅。
   
  **若要移至 [安全性]&amp;使用 Office 365 應用程式啟動器規範中心：**
   
-1. 登入 Office 365 中，使用您工作或學校的帳戶。
+1. 使用公司或學校帳戶登入 Office 365。
     
 2. 選取 [應用程式啟動器![Office 365 中的應用程式啟動器圖示](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)在左上方角落、，，然後選取**安全性&amp;規範**並排顯示。 
     

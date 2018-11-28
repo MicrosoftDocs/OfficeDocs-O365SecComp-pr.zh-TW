@@ -3,7 +3,6 @@ title: 威脅追蹤器 - 新增和值得注意的功能
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/15/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: 了解威脅追蹤者，包括新值得注意的追蹤者，以協助組織保持在最上方安全性考量。
-ms.openlocfilehash: 1ec772d367446b20f1846a71a86d6f62a2370e6c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526648"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706377"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
-[Office 365 威脅智慧](office-365-ti.md)可讓您組織的安全性小組可探索，並採取行動 cybersecurity 威脅。**開始在落後年 3 月 2018年及向下一個幾週數 Office 365 威脅智慧將會包含威脅 tracker （英文） 的新功能**，包括值得注意的追蹤者。請閱讀本篇文章以取得這些新功能與下一個步驟的概觀。 
+[Office 365 威脅智慧](office-365-ti.md)可讓您組織的安全性小組可探索，並採取行動 cybersecurity 威脅。開始在落後年 3 月 2018年及向下一個幾週，Office 365 威脅智慧將會包含新的威脅 tracker （英文） 功能，包括值得注意的追蹤者。請閱讀本篇文章以取得這些新功能與下一個步驟的概觀。 
   
 ## <a name="what-are-threat-trackers"></a>什麼是威脅追蹤者？
 
@@ -36,7 +35,7 @@ ms.locfileid: "22526648"
   
 追蹤者都只是一些您取得[Office 365 威脅智慧](office-365-ti.md)具有許多強大的功能。時，新的威脅追蹤者將會包含[值得注意的追蹤者](threat-trackers.md#notey)、 [[趨勢追蹤者](threat-trackers.md#trending)、[追蹤查詢](threat-trackers.md#trackedq)和[Saved 查詢](threat-trackers.md#savedq)。
   
-若要檢視和使用威脅追蹤者可供您的組織時，請移至 [安全性&amp;規範中心 ([https://protection.office.com](https://protection.office.com)) 選擇**Threat management** \> **威脅 tracker （英文)**。
+若要檢視和使用威脅追蹤者可供您的組織時，請移至 [安全性&amp;規範中心 ([https://security.microsoft.com](https://security.microsoft.com)) 選擇**Threat management** \> **威脅 tracker （英文)**。
   
 > [!NOTE]
 > 若要使用威脅追蹤者，您必須是 Office 365 全域管理員、 安全性管理員或安全性讀者。請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
@@ -75,7 +74,7 @@ ms.locfileid: "22526648"
   
 您可以使用威脅追蹤者時，請嘗試它們出層，並請記住您可以永遠提供我們意見反應上 this 或其他 Office 365 的安全性功能中右下角[Overview of Office 365 的**意見反應**] 按鈕上按一下 [安全性&amp;規範中心](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)。
   
-![Office 365 安全性&amp;規範中心](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 安全性與合規性中心](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>追蹤者與 Office 365 的進階的威脅保護
 

@@ -3,7 +3,7 @@ title: Office 365 安全分數
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/05/2018
+ms.date: 11/27/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: 屬於不知道如何安全您的組織是這麼 in Office 365？安全的分數以下是可協助。安全的分數分析您的組織安全性根據規則活動和 Offic 365 中的安全性設定並指派分數。
-ms.openlocfilehash: 0be9b68653ccdf17afedf7e22e1af5577f8a2caf
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999987"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706177"
 ---
 # <a name="office-365-secure-score"></a>Office 365 安全分數
 
@@ -28,7 +28,7 @@ ms.locfileid: "25999987"
 
 如果您的組織有包含[Office 365 企業版](https://docs.microsoft.com/office365/enterprise/)、 [Microsoft 365 商務](https://docs.microsoft.com/microsoft-365/business/)或 Office 365 企業進階版訂閱且您具有必要的權限，您可以檢視您組織的安全分數造訪[https://securescore.office.com](https://securescore.office.com)。 
 
-或者，您可以造訪安全性與規範中心 ([https://protection.office.com](https://protection.office.com)) 中，您將在此找到您目前的分數可提供安全分數 widget。
+或者，您可以造訪安全性與規範中心 ([https://security.microsoft.com](https://security.microsoft.com)) 中，您將在此找到您目前的分數可提供安全分數 widget。
 
 ![安全的分數 widget](media/SecureScoreWidget-o365.png)
 
@@ -65,8 +65,6 @@ Widget 包括 Microsoft 安全分數，其會引導您到安全的分數儀表�
   
 但是不只是我們 word 針對它。使用安全分數的客戶看過增加五次以上客戶不使用其分數。（其分數增加對應於目前用於組織的安全性功能）。
   
-若要深入了解檢查出我們的[部落格貼文](https://go.microsoft.com/fwlink/?linkid=836898)。 
-  
 > [!NOTE]
 > 安全的分數不 express 絕對的量值的方式有可能您所要取得達到。它來表示您要採用控制項可以位移要達到的風險的程度。沒有服務可確保您將無法達到、 和安全分數不應該解譯成保證郵件以任何方法。 
   
@@ -74,7 +72,7 @@ Widget 包括 Microsoft 安全分數，其會引導您到安全的分數儀表�
 
 ### <a name="who-can-use-secure-score"></a>誰可以使用安全分數？
 
-任何人都具有系統管理員權限 （全域管理員或自訂的管理角色） for Office 365 企業版、 Microsoft 365 商務或 Office 365 企業進階版訂閱可以存取在安全分數[https://securescore.office.com](https://securescore.office.com)。未指派的管理角色的使用者將無法存取 Secure 分數。不過，系統管理員可以使用與組織其他人共用其結果的工具。我們要尋找在其他、 非系統管理角色的權限清單中包括未來。如果您想我們要考慮的特定角色，讓我們知道上張貼[Office 安全性、 隱私權&amp;規範社群](https://go.microsoft.com/fwlink/?linkid=836898)。
+任何人都具有系統管理員權限 （全域管理員或自訂的管理角色） for Office 365 企業版、 Microsoft 365 商務或 Office 365 企業進階版訂閱可以存取在安全分數[https://securescore.office.com](https://securescore.office.com)。未指派的管理角色的使用者將無法存取 Secure 分數。不過，系統管理員可以使用與組織其他人共用其結果的工具。我們要尋找在其他、 非系統管理角色的權限清單中包括未來。如果您想我們要考慮的特定角色，讓我們知道中張貼[Office 安全性、 隱私權&amp;規範社群](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)。
   
 ### <a name="what-does-not-scored-mean"></a>[不計分] 何種實務的意思是？
 
@@ -108,7 +106,7 @@ Widget 包括 Microsoft 安全分數，其會引導您到安全的分數儀表�
   
 ### <a name="something-isnt-working-right-who-should-i-contact"></a>向右並未運作的某個項目。我應該連絡誰？
 
-如果您有任何問題，請我們知道上張貼[Office 安全性、 隱私權&amp;規範社群](https://go.microsoft.com/fwlink/?linkid=836898)。我們正在監視社群，並將提供協助。
+如果您有任何問題，請我們知道中張貼[Office 安全性、 隱私權&amp;規範社群](hhttps://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)。我們正在監視社群，並將提供協助。
   
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>我的組織只有特定安全性功能。這會影響我分數吗？
 

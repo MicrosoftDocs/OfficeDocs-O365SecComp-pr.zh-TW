@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 description: 整合 Office 365 進階威脅保護與 Windows 防禦者進階威脅保護查看 threat management 的詳細的資訊。
-ms.openlocfilehash: 574594d5881853b268713e0bb74444ae80ffcf46
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1198f53c47811d69b93106c413e3d3a09d83e736
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526462"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706137"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>整合 Office 365 威脅情報與 Windows Defender 進階威脅防護
 
@@ -34,7 +34,7 @@ ms.locfileid: "22526462"
 
 - 您的組織必須具有 Office 365 威脅智慧及 Windows 防禦者 ATP。
     
-- 您必須是 Office 365 全域管理員或已指派安全性的安全性管理員角色&amp;規範中心。(請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md))
+- 您必須是 Office 365 全域管理員或已指派中的安全性管理員角色[安全性&amp;規範中心](https://security.microsoft.com)。(請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md))
     
 - 您必須具有 Office 365 威脅智慧及 Windows 防禦者 ATP 入口網站存取權。
     
@@ -42,7 +42,7 @@ ms.locfileid: "22526462"
 
 整合 Office 365 威脅智慧與 Windows 防禦者 ATP 已設定在 Office 365 和 Windows 防禦者 ATP 入口網站中。
   
-1. 為 Office 365 全域或安全性管理員，請移至[https://portal.office.com](https://portal.office.com)和登入 Office 365 您工作或學校的帳戶。 
+1. 為 Office 365 全域或安全性管理員，請移至[https://security.microsoft.com](https://security.microsoft.com)和登入 Office 365 您工作或學校的帳戶。 
     
 2. 選擇 [ **Threat management** \> **威脅瀏覽器**。
     

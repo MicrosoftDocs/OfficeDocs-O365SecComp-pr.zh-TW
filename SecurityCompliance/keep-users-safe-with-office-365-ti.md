@@ -13,16 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 description: 了解 Office 365 威脅智慧能如何協助貴組織偵測入侵和威脅，快速地降低以及復原威脅。
-ms.openlocfilehash: f628b941f824e7ad2e327b476288c93f2fc535ad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527309"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706097"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>使用 Office 365 威脅情報保護您的 Office 365 使用者安全
 
- *您知道哪些 Office 365 使用者受到攻擊，或糟-危害？知道如何減輕及復原的目標使用者的攻擊？您知道您可以這麼做確實已在 Office 365 中可用的安全性功能嗎？* 
+## <a name="overview"></a>概觀
+
+您知道哪些 Office 365 使用者受到攻擊，或糟-危害？知道如何減輕及復原的目標使用者的攻擊？您知道您可以這麼做確實已在 Office 365 中可用的安全性功能嗎？ 
   
 [Office 365 威脅智慧](office-365-ti.md)是一組包含在您的 Office 365 E5 訂閱的功能。Office 365 威脅智慧有助於減少的平均時間來解析社交事件 80%並增加大小寫的輸送量每月相較於舊版 2 季 37%的 Microsoft IT ！ 
   
@@ -30,9 +32,9 @@ ms.locfileid: "22527309"
   
 ## <a name="detect-intrusions-and-threats"></a>偵測入侵和威脅
 
-**Office 365 威脅瀏覽器**協助安全性管理員及分析師識別並了解因為甚至是最複雜安全性設定可以規避類似的表面上無害使用者設定是在您企業中的威脅安全寄件者 whitelists。威脅瀏覽器協助 Office 365 全域或安全性管理員快速判斷使用者是否已遭到惡意程式碼或 phish 的威脅。這有助於優先順序哪些使用者最風險的威脅及必要的回應。 
+[瀏覽器](use-explorer-in-security-and-compliance.md)（也稱為威脅 Explorer） 可協助安全性系統管理員和分析師識別並了解因為甚至是最複雜安全性設定可以規避像安全的表面上無害使用者設定是在您企業中的威脅寄件者 whitelists。瀏覽器協助 Office 365 全域或安全性管理員快速判斷使用者是否已遭到惡意程式碼或 phish 的威脅。這有助於優先順序哪些使用者最風險的威脅及必要的回應。 
   
-威脅 Explorer 也可協助系統管理員瀏覽使用者與郵件之間的關係。了解特定郵件的已錯誤吗？搜尋它以查看哪些使用者接收到郵件、 然後遵循事件系列並查看新的使用者接著已完成。
+瀏覽器也可協助系統管理員瀏覽使用者與郵件之間的關係。了解特定郵件的已錯誤吗？搜尋它以查看哪些使用者接收到郵件、 然後遵循事件系列並查看新的使用者接著已完成。
 
 如果您沒有已威脅智慧、[立即試用](https://aka.ms/tryo365threatintel3)！並[了解更多關於 Office 365 威脅智慧](https://aka.ms/readmoreabouto365threatintel)。
   

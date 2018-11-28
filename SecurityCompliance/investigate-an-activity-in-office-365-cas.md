@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: '與 Office 365 雲端應用程式安全性]，您可以查看有什麼新鮮事 Office 365 環境中所要尋找一段與調查活動和帳戶。 '
-ms.openlocfilehash: 03db572ebddbdf27371f8e6fd2f0cdd91c14a12f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6b5aca33a73fbfaecf8133368a33956ddc92da7a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526343"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706457"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>調查 Office 365 雲端 App 安全性中的活動
   
@@ -30,17 +30,13 @@ Office 365 雲端應用程式安全性適用於您的[Office 365 稽核記錄](d
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>如何取得活動記錄檔] 頁面上
 
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。(請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。)
+1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。(請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。)
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-    ![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。<br/>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. 在不同螢幕頂端導覽列中，選擇 [**調查** \> **活動記錄檔**。
-    
-    ![在 O365 CAS 入口網站中選擇 [調查]。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+4. 在不同螢幕頂端導覽列中，選擇 [**調查** \> **活動記錄檔**。<br/>![在 O365 CAS 入口網站中選擇 [調查]。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>檢閱並調查活動
 

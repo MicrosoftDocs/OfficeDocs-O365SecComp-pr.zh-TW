@@ -3,7 +3,6 @@ title: 開啟 Office 365 雲端 App 安全性
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: 閱讀本文以了解如何在 Office 365 進階安全性管理，由 Microsoft Azure 中的雲端應用程式安全性提供開啟。
-ms.openlocfilehash: 6e40dcf1abeae4f9e01502282d00b934431a8258
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526205"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706287"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>開啟 Office 365 雲端 App 安全性
   
@@ -31,17 +30,13 @@ ms.locfileid: "22526205"
 > [!IMPORTANT]
 > 您必須是全域管理員或安全性管理員可執行下列工作。若要深入了解，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。為了讓 Office 365 雲端為搭配使用的應用程式安全性修正，**必須開啟稽核記錄功能**會針對 Office 365 環境。如需詳細資訊，請參閱[開啟 Office 365 稽核記錄搜尋開啟或關閉](turn-audit-log-search-on-or-off.md)。 
   
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
     
 2. 移至 [**提醒** \> **管理進階提醒**。
     
 3. 選取 [**開啟 Office 365 的雲端應用程式安全性**]。
     
-4. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-    ![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    這會帶您至 Office 365 雲端應用程式安全性入口網站，您可以在其中檢視報告及建立或編輯您的原則。
+4. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。<br/>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>這會帶您至 Office 365 雲端應用程式安全性入口網站，您可以在其中檢視報告及建立或編輯您的原則。
     
 > [!NOTE]
 > 當您開啟 Office 365 雲端應用程式安全性時，請您的 Office 365 使用者帳戶和使用者活動的稽核資訊會傳送到[Microsoft 雲端應用程式安全性](https://aka.ms/whatiscas)。這可讓提供進階的提醒、 篩選和其他功能，讓您可以取得資訊並採取行動可疑活動的相關的 Office 365。 

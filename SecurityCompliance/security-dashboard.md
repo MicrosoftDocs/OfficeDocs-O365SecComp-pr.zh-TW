@@ -3,7 +3,7 @@ title: 安全性儀表板概觀 （英文)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: 使用新的安全性儀表板檢閱 Office 365 威脅保護狀態及檢視以及對安全性提醒。
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552361"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706277"
 ---
 # <a name="security-dashboard-overview"></a>安全性儀表板概觀 （英文)
 
-安全性&amp;規範中心可讓您管理資料保護與規範的組織。證券的開頭的年 3 月 2018年&amp;規範中心功能的新安全性儀表板可用來檢閱您威脅的保護狀態、 檢視及對安全性提醒。 
+[安全性&amp;規範中心](go-to-the-securitycompliance-center.md)可讓您管理資料保護與規範的組織。證券的開頭的年 3 月 2018年&amp;規範中心功能的新安全性儀表板可用來檢閱您威脅的保護狀態、 檢視及對安全性提醒。 
   
 觀賞影片，以取得概觀 （英文）、，然後閱讀本篇文章以深入了解。
   
@@ -41,7 +41,7 @@ ms.locfileid: "25552361"
 若要檢視中的 [安全性儀表板[Office 365 安全性&amp;規範中心](go-to-the-securitycompliance-center.md)、 移至 [ **Threat management** \> **儀表板**。
   
 > [!NOTE]
-> 您必須是 Office 365 全域管理員、 安全性管理員或安全性讀者檢視安全性儀表板。請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
+> 您必須是 Office 365 全域管理員、 安全性系統管理員或安全性讀者檢視安全性儀表板。請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
   
 ## <a name="threat-protection-status"></a>威脅保護狀態
 

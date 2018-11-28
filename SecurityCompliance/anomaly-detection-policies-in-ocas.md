@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Office 365 雲端應用程式安全性異常偵測原則使用內建的演算法可協助從抽出潛在的問題。您應該會有至少一個異常偵測原則] 中，您可以使用篩選器來調整 （當您建立它）。 '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527335"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706337"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的異常偵測原則
 
@@ -51,7 +51,7 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
     
 ## <a name="view-your-anomaly-detection-policies"></a>檢視您異常偵測原則
 
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。 
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     
@@ -93,7 +93,7 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
 
 當提醒甚至，您可以快速分辨這些提醒並決定哪些先處理。具有內容的通知可讓您查看更大的圖片，並決定是否遭到惡意的某個項目確實正在進行的活動。使用下列程序開始探索提醒：
   
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。 
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     
@@ -118,7 +118,6 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
 在多個登入失敗通知可能確實可疑，因此可以表示潛在的暴力破解攻擊。但是，這類通知也可以是應用程式設定錯誤，導致設為良性 true 誤判提醒。如果您看到其他可疑活動與多重失敗 logins 提醒，就會危害帳戶的較高機率。例如，假設為多個失敗登通知後面接活動從 TOR IP 位址和無法運用旅行活動危害這兩個強式指標。您甚至可能會看到相同的使用者執行大量下載 （英文） 活動，這通常是執行 exfiltration 資料的攻擊者的指標。它的之類的可探索 Office 365 雲端應用程式安全性檢視和分辨您提醒，並採取動作在需要時。
   
 ## <a name="next-steps"></a>後續步驟
-<a name="nextsteps"> </a>
 
 - [整合 SIEM server](integrate-your-siem-server-with-office-365-cas.md)
     

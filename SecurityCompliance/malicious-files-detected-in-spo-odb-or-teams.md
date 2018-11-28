@@ -12,24 +12,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: 了解移至檢視 SharePoint、 OneDrive 或小組中偵測到惡意檔案的相關資訊的位置以及如何將這些檔案採取動作。
-ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238505"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706197"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊
 
 [Office 365 ATP for SharePoint、 OneDrive 及 Microsoft 小組](atp-for-spo-odb-and-teams.md)提供貴組織保護文件庫和小組網站中的惡意檔案。當偵測到惡意檔案時，該檔案會封鎖，讓任何人可以開啟、 複製、 移動或共用直到組織的安全性小組所採取其他動作。閱讀本文以了解如何檢視偵測到的檔案的相關資訊以及要執行的動作。 
 
-若要執行本文所述的工作，您必須具備必要[權限指派在 Office 365 安全性&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
+若要執行本文所述的工作，您必須具備必要[的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>檢視報告與偵測到的檔案的相關資訊
 
 若要檢視狀態和已偵測到的 Office 365 ATP 的檔案的詳細的資訊，您可以使用威脅保護狀態報表。
   
-1. Office 365 安全性&amp;規範中心選擇**報告** \> **儀表板** \> **威脅保護狀態**。
+1. 在[Office 365 安全性&amp;規範中心](https://security.microsoft.com)、 選擇 [**報表** \> **儀表板** \> **威脅保護狀態**。
     
 2. 在報表的左上角中選擇 [**檢視詳細資料表格**。
     
