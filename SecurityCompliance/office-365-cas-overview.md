@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 雲端應用程式安全性可讓您算可疑活動在 Office 365 中讓您可以調查可能有問題且，如果需要採取動作可解決安全性問題的情況。 '
-ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
+ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706397"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26864554"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性概觀
   
@@ -47,7 +47,7 @@ Office 365 雲端應用程式安全性可讓您深入了解可疑活動在 Offic
     
 ## <a name="policies"></a>Policies
 
-Office 365 雲端應用程式安全性適用於您組織所定義的原則。與 Office 365 雲端應用程式安全性]，您的組織可以取得 10 個預先定義的異常偵測原則及數個活動的原則範本。這些原則的設計被用來偵測一般異常、 識別 risky 的 IP 位址從登入的使用者、 偵測 ransomware 活動、 偵測來自非公司的 IP 位址和更多的系統管理員活動。
+Office 365 雲端應用程式安全性適用於您組織所定義的原則。與 Office 365 雲端應用程式安全性]，您的組織會取得許多預先定義的異常偵測原則與數個活動的原則範本。這些原則的設計被用來偵測一般異常、 識別 risky 的 IP 位址從登入的使用者、 偵測 ransomware 活動、 偵測來自非公司的 IP 位址和更多的系統管理員活動。
   
 ![CAS 入口網站中選擇 [控制\>來檢視或建立原則範本的範本](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   
