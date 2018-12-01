@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 的安全性與規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
-ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
+ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
+ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26626149"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118139"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 [Office 365 安全性及規範中心搜尋稽核記錄
 
@@ -140,7 +140,7 @@ ms.locfileid: "26626149"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步驟 1： 執行稽核記錄搜尋
 
-1. 前往 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
     > [!TIP]
     > 使用私用的瀏覽工作階段 （不正常工作階段） 來存取 Office 365 安全性&amp;規範中心因為如此將會防止您目前登入與從正在使用的認證。若要開啟 [InPrivate 瀏覽工作階段在 Internet Explorer 或 Microsoft Edge，只是按 CTRL + SHIFT + P。若要開啟私用的瀏覽工作階段中 Google Chrome （稱為 incognito 視窗），請按 CTRL + SHIFT + N。 
@@ -169,7 +169,7 @@ ms.locfileid: "26626149"
   
     c.個**使用者**按一下 [在這個方塊和再選取一或多個使用者顯示搜尋結果。選取您在此方塊中選取的使用者所執行的活動的稽核記錄項目所顯示的結果清單中。保留此方塊空白以傳回組織中的所有使用者 （及服務帳戶） 的項目。 
     
-    d.**檔案或資料夾**輸入某些或所有搜尋資料夾包含指定之的關鍵字的檔案相關的活動的檔案或資料夾名稱。您也可以指定的檔案或資料夾的 URL。如果您使用的 URL，請確定此類型的完整的 URL 路徑或如果您只需要輸入 URL 部分不會包含任何特殊字元或空格。 
+    d.**檔案、 資料夾或站台**輸入某些或所有搜尋資料夾包含指定之的關鍵字的檔案相關的活動的檔案或資料夾名稱。您也可以指定的檔案或資料夾的 URL。如果您使用的 URL，請確定此類型的完整的 URL 路徑或如果您只需要輸入 URL 部分不會包含任何特殊字元或空格。 
     
     保留此方塊空白以傳回組織中的所有檔案及資料夾的項目。
     
