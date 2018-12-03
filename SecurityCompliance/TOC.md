@@ -265,6 +265,7 @@
 ## [SIEM 伺服器整合](siem-server-integration.md)
 
 # 合規性解決方案
+## [開始使用 Microsoft 服務信任入口網站](get-started-with-service-trust-portal.md)
 ## [使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [GDPR 的 Office 365 資訊保護](office-365-information-protection-for-gdpr.md)
