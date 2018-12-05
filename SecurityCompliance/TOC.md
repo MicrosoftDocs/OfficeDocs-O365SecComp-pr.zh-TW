@@ -233,6 +233,7 @@
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
 ## [啟用信箱稽核](enable-mailbox-auditing.md)
 ## [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)
+## [使用稽核記錄檔對常見案例進行疑難排解](auditing-troubleshooting-scenarios.md)
 ## [使用稽核記錄中的共用稽核](use-sharing-auditing.md)
 ## [在稽核記錄中搜尋電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)
 # [監視安全性與合規性]()
