@@ -3,7 +3,7 @@ title: 使用 PST 集合工具來尋找、 複製及刪除組織中的 PST 檔�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,17 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 集合工具來搜尋您組織的網路取得散佈整個組織中的 PST 檔案的存貨。尋找 PST 檔案之後，您可以使用 PST 集合工具讓您可以將其匯入 Office 365 中的集中位置複製它們。
-ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 34395eee7776d8bff1ddccb7fed5b683e97c02c7
+ms.sourcegitcommit: c59a082dca6593d0e35e58124ee6ba240547bfa5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038126"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27154209"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具來尋找、 複製及刪除組織中的 PST 檔案
+
+> [!IMPORTANT]
+> 本文所述的 PST 集合工具不支援任何 Microsoft 標準支援程式或服務底下。此工具會提供為 IS 沒有任何類型的瑕疵擔保。Microsoft 進一步不作所有默示之的擔保包括但不限於任何默示擔保售或適合特定用途。承擔使用或效能的工具與文件風險自行承擔您。事件無法在 Microsoft、 其作者，或其他參與建立、 實際執行或傳遞工具的任何人對於而概之任何損害皆不 （包括但不限於，遺漏的商務利潤、 業務中斷、 遺失的損害商務資訊或其他金錢遺失） 引起的使用或無法使用的工具或文件即使 Microsoft 已被告知這類損害的可能性。
 
 您可以使用 Microsoft PST 集合工具來搜尋您組織的網路的 PST 檔案。此工具可協助您取得散佈整個組織中的 PST 檔案的存貨。尋找 PST 檔案之後，您可以使用 PST 集合工具將其複製集中的位置。集中一處具有 Pst 則可讓您匯入至 Exchange Online 信箱 （或單一 Exchange Online 信箱），其中您可以再套用一組豐富的 Office 365 中的符合性功能。包含將 Pst 匯入使用者的封存信箱，搜尋您匯入使用 eDiscovery 搜尋工具使用 eDiscovery 保留郵件的 PST 檔案中的特定郵件的保留與 Office 365 的保留原則和管理生命週期使用訊息上述訊息的循環記錄管理功能的 Exchange Online。您確信您收集 PST 檔案都已成功匯入至 Office 365 後，您可以使用此工具在網路上從其原始位置刪除這些。 
   
