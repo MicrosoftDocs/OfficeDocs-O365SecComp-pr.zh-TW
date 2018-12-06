@@ -3,7 +3,7 @@ title: 零時差自動清除 - 防範垃圾郵件和惡意程式碼
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: 零小時自動清除 (ZAP) 是電子郵件保護功能，可偵測到的郵件垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，並再轉譯無害惡意的內容。如何 ZAP 執行此動作而定的偵測到惡意內容類型。
-ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999970"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180843"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
 ## <a name="overview"></a>概觀
 
-零小時自動清除 (ZAP) 是電子郵件保護功能，可偵測到的郵件垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，並再轉譯無害惡意的內容。如何 ZAP 執行此動作而定的偵測到惡意內容類型。
+零小時自動清除 (ZAP) 是電子郵件保護功能，可偵測到的郵件 phish、 垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，並再轉譯無害惡意的內容。如何 ZAP 執行此動作而定的偵測到; 惡意內容類型郵件可以 zapped 因為郵件內容、 Url 或附件。
   
 ZAP 皆可使用的預設值是包含任何包含 Exchange Online 信箱的 Office 365 訂閱的 Exchange Online Protection。
 
@@ -39,7 +39,11 @@ ZAP 皆可使用的預設值是包含任何包含 Exchange Online 信箱的 Offi
 ## <a name="how-does-zap-work"></a>ZAP 如何運作？
 
 Office 365 更新反垃圾郵件引擎和惡意程式碼中的簽章即時每天。不過，您的使用者可能仍屬惡意郵件傳遞至其收件匣的各種包括如果內容 weaponized 之後會傳遞至使用者的原因。ZAP 解決此問題持續監視更新至 Office 365 垃圾郵件和惡意程式碼簽章。ZAP 可以尋找及移除已在使用者的收件匣中的先前已傳遞的郵件。 
+
 - 識別為垃圾郵件的郵件，ZAP 會將未讀取的郵件移至使用者的垃圾郵件資料夾。 
+
+- 識別為垃圾郵件的郵件，ZAP 會將郵件移至使用者的垃圾郵件資料夾，不論是否已讀取的電子郵件。
+
 - 為新偵測到惡意程式碼、 ZAP 會移除電子郵件，不論是否已讀取的電子郵件附件。 
   
 ZAP 動作是一致的信箱使用者;它們不會收到通知如果移動電子郵件訊息。
@@ -49,8 +53,11 @@ ZAP 動作是一致的信箱使用者;它們不會收到通知如果移動電子
 ## <a name="to-review-or-set-up-a-spam-filter-policy"></a>若要檢閱或設定垃圾郵件篩選器原則
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。
+
 2. **威脅管理**] 下選擇 [**反垃圾郵件**]。
+
 3. 檢閱的標準設定。 
+
 4. 如果您想要自訂您的設定，選取 [**自訂**] 索引標籤，並開啟的**自訂設定**。編輯您的設定，如果您想選擇 **+ 建立原則**來新增新的原則。 
     
 ## <a name="to-see-if-zap-moved-your-message"></a>若要查看 ZAP 是否移動郵件

@@ -3,7 +3,7 @@ title: 啟用或停用 Office 365 中的安全提示
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: 指示 Office 365 和 EOP 系統管理員如何啟用和停用的電子郵件安全性提示。
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526855"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180853"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>啟用或停用 Office 365 中的安全提示
 
@@ -36,9 +36,9 @@ Office 365 讓組織的預設安全秘訣和建議您保留這些功能可協助
 ## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>若要啟用或停用 safety 祕訣使用 Office 365 安全性&amp;規範中心
 <a name="SandCCsafetytip"> </a>
 
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 以您的工作或學校帳戶登入 Office 365。
+2. 以公司或學校帳戶登入 Office 365。
     
 3. 選擇 [ **Threat Management** \> **原則**。 
     
@@ -75,7 +75,7 @@ Office 365 讓組織的預設安全秘訣和建議您保留這些功能可協助
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    其中：
+其中：
     
   -  *原則名稱*是您要修改，例如**預設**原則的名稱。
     
@@ -89,9 +89,9 @@ Office 365 讓組織的預設安全秘訣和建議您保留這些功能可協助
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    如需此 cmdlet 的詳細資訊，請參閱[Set-hostedcontentfilterpolicy](https://technet.microsoft.com/library/jj200781.aspx)。
+如需此 cmdlet 的詳細資訊，請參閱[Set-hostedcontentfilterpolicy](https://technet.microsoft.com/library/jj200781.aspx)。
     
-## <a name="still-need-help"></a>仍然需要說明嗎？
+## <a name="still-need-help"></a>仍需要協助嗎？
 <a name="pshellsafetytip"> </a>
 
 如果您停用安全秘訣，但卻還是看到這些電子郵件訊息中，檢查下列事項：
