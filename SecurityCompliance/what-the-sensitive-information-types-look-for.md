@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Office 365 安全性的資料遺失防護 (DLP)&amp;規範中心包含 80 準備好讓您能夠使用 DLP 原則中的敏感資訊類型。本主題列出所有的這些機密資訊類型及顯示新的 DLP 原則會尋找時被每個類型。
-ms.openlocfilehash: 5097227d8efa833f255631febde50b937add48ef
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002686"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194734"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
 
@@ -286,8 +286,6 @@ OR
 - international driving permits
 - 
 australian automobile association
-- 
-sydney nsw
 - 
 international driving permit
 - DriverLicence
@@ -2215,13 +2213,13 @@ no. do cartao
 
 ### <a name="format"></a>格式
 
-10 位數
+11 位數
 
 ### <a name="pattern"></a>模式
 
-10 位數：
-- DDMMYY 格式的六位數，代表出生日期 
-- 四位數，最後一個數字是檢查碼
+11 位數：
+- 10 位數 
+- 最後一個數字是基於的國際資料交換] 核取數字，字母 HR 會新增前面另外的數字。
 
 ### <a name="checksum"></a>總和檢查碼
 
@@ -2262,18 +2260,31 @@ no. do cartao
  
 
    
-## <a name="czech-national-identity-card-number"></a>	捷克國民身分證號碼
+## <a name="czech-personal-identity-number"></a>捷克個人身分識別號碼
 
 ### <a name="format"></a>格式
 
-10 位數包含正斜線
+使用選用的九個位數正斜線 （舊格式） 與選用的 10 位數字正斜線 （新格式）
 
 ### <a name="pattern"></a>模式
 
-10 位數：
-- 六位數的出生日期 
+九個位數 （舊格式）：
+- 九位數
+
+OR
+
+- 代表出生日期的六個數字
+- 一個正斜線
+- 三位數
+
+10 位數 （新格式）：
+- 10 位數
+
+或
+
+- 代表出生日期的六個數字
 - 一個正斜線 
-- 四位數，最後一個數字是檢查碼
+- 其中的最後一個數字是核取數字的四位數
 
 ### <a name="checksum"></a>總和檢查碼
 
@@ -2284,21 +2295,18 @@ no. do cartao
 DLP 原則是 85%有信心它已偵測到這種類型的機密資訊時，300 個字元的距離： 函數 Func_czech_id_card 會找出符合模式的內容。從 Keyword_czech_id_card 關鍵字是找到。總和檢查碼會傳遞。
 
 ```
-<!-- Czech National Identity Card Number -->
-<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_czech_id_card"/>
-     <Match idRef="Keyword_czech_id_card"/>
-  </Pattern>
+<!-- Czech Personal Identity Number -->
+<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
+   <Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_czech_id_card" />
+      <Match idRef="Keyword_czech_id_card" />
+   </Pattern>
 </Entity>
 ```
-
-
 ### <a name="keywords"></a>關鍵字
 
-- Keyword_czech_id_card
-- Czech national identity card
-- Občanský průka
+- 捷克個人身分識別號碼
+- Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	丹麥個人識別碼
 
@@ -3746,13 +3754,47 @@ bnationalit.t
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- Hong Kong Identity Card
-- HKID
-- ID card
+- 香港特別行政區識別卡
+- HKIDC
+- 識別碼卡片
+- identity card
+- hk 識別卡
+- 香港特別行政區識別碼
 - 香港身份證
- 
+
 - 香港永久性居民身份證
- 
+
+- 身份證
+
+- 身份証
+- 身分證 
+- 身分証
+- 香港身份証
+- 香港身分證
+- 香港身分証
+- 香港身份證
+
+- 香港居民身份證
+- 香港居民身份証
+- 香港居民身分證
+- 香港居民身分証
+- 香港永久性居民身份証
+- 香港永久性居民身分證
+- 香港永久性居民身分証
+- 香港永久性居民身份證
+
+- 香港非永久性居民身份證
+- 香港非永久性居民身份証
+- 香港非永久性居民身分證
+- 香港非永久性居民身分証
+- 香港特別行政區永久性居民身份證
+- 香港特別行政區永久性居民身份証
+- 香港特別行政區永久性居民身分證
+- 香港特別行政區永久性居民身分証
+- 香港特別行政區非永久性居民身份證
+- 香港特別行政區非永久性居民身份証
+- 香港特別行政區非永久性居民身分證
+- 香港特別行政區非永久性居民身分証
    
 ## <a name="india-permanent-account-number-pan"></a>印度永久帳戶號碼 (PAN)
 
@@ -4671,6 +4713,48 @@ Otemachi
  
 - 社会保険番号
  
+
+## <a name="japanese-residence-card-number"></a>日文我卡卡號
+
+### <a name="format"></a>格式
+
+12 字母和數字
+
+### <a name="pattern"></a>模式
+
+12 字母和數字：
+- 兩個字母 (不區分大小寫)
+- 八位數 
+- 兩個字母 (不區分大小寫)
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+- 規則運算式 Regex_jp_residence_card_number 會找出符合模式的內容。
+- 從 Keyword_jp_residence_card_number 關鍵字是找到。
+
+```
+<!--Japan Residence Card Number-->
+-<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_jp_residence_card_number"/>
+      <Match idRef="Keyword_jp_residence_card_number"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+
+- 我卡卡號
+- 我卡片否
+- 我卡 #
+- 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>馬來西亞身分證號碼
 
@@ -4713,16 +4797,30 @@ Otemachi
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- MyKad 
-- Identity Card 
-- 識別碼卡片 
-- 識別卡 
-- Digital Application Card
- 
-- Kad Akuan Diri
- 
-- Kad Aplikasi Digital
- 
+- 數位應用程式卡片
+- i / c
+- i / c 沒有
+- ic
+- ic 無
+- 識別碼卡片
+- 識別卡
+- identity card
+- k/p
+- k/p 無
+- kad akuan diri
+- kad aplikasi 數位
+- kad pengenalan 馬來西亞
+- kp
+- kp 沒有
+- mykad
+- mykas
+- mykid
+- mypr
+- mytentera
+- 馬來西亞識別卡
+- 德識別卡
+- nric
+- 個人識別卡
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>荷蘭公民服務 (BSN) 號碼
 
@@ -4821,7 +4919,7 @@ Keyword_nz_terms
 - NHI
  
 - 紐西蘭 
-- 狀況良好 
+- 健康情況 
 - treatment
  
    
@@ -4955,12 +5053,16 @@ DLP 原則就是有信心它已偵測到這種敏感資訊類型的 75 %if，300
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
+- Dowód osobisty
+- 數目 dowodu osobistego
+- Nazwa 我數目 dowodu osobistego
+- Nazwa 我編號 dowodu osobistego
 - Nazwa i nr dowodu tożsamości
- 
+
 - Dowód Tożsamości
- 
+
 - dow. os.
- 
+
 
    
 ## <a name="poland-national-id-pesel"></a>波蘭國民身分證 (PESEL)
@@ -5038,12 +5140,9 @@ DLP 原則就是有信心它已偵測到這種敏感資訊類型的 75 %if，300
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Nazwa i nr dowodu tożsamości
- 
-- Dowód Tożsamości
- 
-- dow. os.
- 
+- 數目 paszportu
+- Paszportu 編號。
+- Paszport
 
    
 ## <a name="portugal-citizen-card-number"></a>葡萄牙公民證號碼
@@ -5731,7 +5830,101 @@ Passeport n °
  
 - 台灣地區居留證
  
-   
+
+## <a name="thai-population-identification-code"></a>泰文母體識別程式碼
+
+### <a name="format"></a>格式
+
+13 位數
+
+### <a name="pattern"></a>模式
+
+13 位數：
+- 第一個數字不是 0 或 9 
+- 12 位數
+
+### <a name="checksum"></a>總和檢查碼
+
+是
+
+### <a name="definition"></a>定義
+
+如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+- 函數 Func_Thai_Citizen_Id 會找出符合模式的內容。
+- 從 Keyword_Thai_Citizen_Id 關鍵字是找到。
+
+如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+- 函數 Func_Thai_Citizen_Id 會找出符合模式的內容。
+
+```
+<!-- Thai Citizen ID -->
+-<Entity id="44ca9e86-ead7-4c5d-884a-e2eaa401515e" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+      <Match idRef="Keyword_Thai_Citizen_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+
+- ID Number
+- 識別碼號碼
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+  
+## <a name="turkish-national-identification-number"></a>土耳其文的國家識別碼
+
+### <a name="format"></a>格式
+
+11 位數
+
+### <a name="pattern"></a>模式
+
+11 位數
+
+### <a name="checksum"></a>總和檢查碼
+
+是
+
+### <a name="definition"></a>定義
+
+如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+- 函數 Func_Turkish_National_Id 會找出符合模式的內容。
+- 從 Keyword_Turkish_National_Id 關鍵字是找到。
+
+如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+- 函數 Func_Turkish_National_Id 會找出符合模式的內容。
+
+```
+<!-- Turkish National Identity -->
+-<Entity id="fb621f20-3876-4cfc-acec-8c8e73ca32c7" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+      <Match idRef="Keyword_Turkish_National_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+
+- 繁體中文 Kimlik 否
+- 繁體中文 Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık 無
+
 ## <a name="uk-drivers-license-number"></a>英國駕照號碼
 
 ### <a name="format"></a>格式

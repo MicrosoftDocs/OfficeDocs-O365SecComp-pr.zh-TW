@@ -3,7 +3,7 @@ title: Office 365 的反詐騙保護
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文說明如何 Office 365 可以降低對網路釣魚攻擊用途是寄件者的網域即詐騙的網域。其完成這同樣藉由分析郵件並封鎖過可驗證 neithe 使用標準的電子郵件的驗證方法或其他寄件者信譽技術 （英文）。這項變更被實減少網路釣魚攻擊的 Office 365 組織公開到數目。
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498109"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194714"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -302,17 +302,17 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
   
 ![反網路釣魚預設原則的詳細資訊](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-稍後中 2018，來設定透過 PowerShell 您預設保護：
+若要設定預設保護您透過 PowerShell：
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 您應該僅停用反詐騙保護如果您有其他郵件伺服器或伺服器在 Office 365 前方 （請參閱合法情況來停用反詐騙如需詳細資訊）。 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -412,9 +412,9 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 一般而言，CAT （類別） 屬性中的 X Forefront-反垃圾郵件報告標頭中所識別套用至郵件的原則。 
   
-|**Priority**|**原則**|**類別**|**其中 managed？**|**適用於**|
+|**Priority (優先順序)**|**原則**|**類別**|**其中 managed？**|**適用於**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|1   <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
 |2   <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
 |3   <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
 |4   <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
@@ -425,9 +425,9 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
    
 如果您有多個不同的反網路釣魚原則，將套用一個在最高優先順序。例如，假設您有兩個原則：
   
-|**原則**|**Priority**|**使用者/網域模擬**|**反詐騙**|
+|**原則**|**Priority (優先順序)**|**使用者/網域模擬**|**反詐騙**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
 |B  <br/> |2   <br/> |Off  <br/> |On  <br/> |
    
 如果訊息有和識別身分詐騙與使用者模擬與相同的一組使用者範圍的原則及原則 B 則郵件會被視為詐騙但採取任何動作套用自反詐騙已關閉並詐騙執行在較高的優先順序 (4) 與使用者模擬 (8)。
