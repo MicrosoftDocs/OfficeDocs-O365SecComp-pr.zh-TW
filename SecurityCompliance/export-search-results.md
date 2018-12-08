@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: '從 Office 365 安全性內容搜尋匯出搜尋結果&amp;規範中心到本機電腦。Emaill 電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+description: '在 [Office 365 安全性及規範中心內容搜尋搜尋結果匯出到本機電腦。電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
+ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539115"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201577"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>從 Office 365 的安全性與規範中心匯出內容的搜尋結果
 
@@ -333,3 +333,5 @@ ms.locfileid: "26539115"
 - 所有的搜尋結果並匯出報告都包含在具有相同名稱作為內容的搜尋資料夾。已匯出的電子郵件訊息位於名為**Exchange**的資料夾。文件位於名為**SharePoint**的資料夾。 
     
 - 當文件都要匯出至您的本機電腦維護上 SharePoint 和 OneDrive for Business 的網站的文件的檔案系統中繼資料。表示文件摘要資訊、 例如建立和上次修改日期、 都要匯出的文件時不變更。
+
+- 如果您的搜尋結果包含從符合搜尋查詢的 SharePoint 清單項目，以及符合搜尋查詢的項目要匯出清單中的所有資料列。此清單中包含任何附件。此原因是提供內容的搜尋結果中傳回的清單項目。也請注意的其他清單項目及附件可能會造成匯出的項目設為與原始的預估搜尋結果的不同的計數。
