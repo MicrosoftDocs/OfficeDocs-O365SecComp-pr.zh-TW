@@ -3,7 +3,7 @@ title: 保留原則概觀
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540399"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194704"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -110,7 +110,7 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
     
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>保留原則如何使用網站中的文件版本
 
-版本設定是 SharePoint Online 和商務用 OneDrive 中所有文件庫的功能。根據預設，版本設定會保留至少一百個主要版本，但您也可以提高此限制。如需詳細資訊，請參閱[啟用和設定清單或文件庫的版本設定](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
+版本設定是 SharePoint Online 和商務用 OneDrive 中所有文件庫的功能。根據預設，版本設定會保留至少五百個主要版本，但您也可以提高此限制。如需詳細資訊，請參閱[啟用和設定清單或文件庫的版本設定](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
   
 保留原則會保留 SharePoint 網站或 OneDrive 帳戶中文件的所有版本。每次編輯或刪除受限於保留原則的文件時，版本會複製到文件保留庫。文件保留庫中文件的每個版本都會以個別項目存在，並有自己的保留期間：
   
@@ -197,17 +197,13 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
 - 原則可以包含的信箱或網站數目沒有任何限制。
     
 - 對於 Exchange，在套用原則後建立的任何新信箱都會自動繼承此原則。
-    
-不過，每個租用戶最多可有 10 個組合的全組織原則和整個位置原則 (請參閱下一節)。
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>套用到整個組織的原則
 
 當選擇位置時，您可以輕鬆地包含或排除整個位置，例如 Exchange 電子郵件或 OneDrive 帳戶。若要這麼做，只需將該位置的 [狀態]**** 切換為開啟或關閉。 
   
 如同全組織原則一般，若原則套用到整個位置的任何組合，則原則可以包含的信箱或網站數目沒有限制。例如，如果原則包含所有 Exchange 電子郵件和所有 SharePoint 網站，則所有網站和信箱都會包含在內，無論有多少。對於 Exchange，套用原則後建立的任何新信箱都會自動繼承此原則。
-  
-不過，每個租用戶最多可有 10 個組合的全組織原則和整個位置原則。
-  
+ 
 ![選擇位置頁面](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>具有特定包含或排除的原則
