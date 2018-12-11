@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須被指派 Office 365 安全性權限&amp;規範中心之前他們可以管理任一其安全性或規範功能。
-ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
+ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539105"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27221064"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>讓使用者能夠存取 Office 365 安全性&amp;規範中心
 
@@ -74,9 +74,9 @@ ms.locfileid: "26539105"
 
  **參數**
   
--  _-Identity_ 是要新增成員的角色群組。 
+- _-Identity_ 是要新增成員的角色群組。 
     
-- - _成員_是要新增至角色群組的信箱、 萬用安全性群組 (USG) 或電腦。您可以指定只有一個成員一次。 
+- _成員_是要新增至角色群組的信箱、 萬用安全性群組 (USG) 或電腦。您可以指定只有一個成員一次。 
     
 如需詳細的語法及參數的詳細資訊，請參閱[Add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)。
   
