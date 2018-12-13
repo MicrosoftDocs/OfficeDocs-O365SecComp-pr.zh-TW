@@ -3,7 +3,7 @@ title: 使用 Office 365 中的內容搜尋目標集合
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用 Office 365 安全性內容搜尋&amp;規範中心來執行目標的集合。目標的集合表示您是有信心回應案例的項目或權限項目都位於特定信箱或站台資料夾。使用本文中的指令碼來取得資料夾 ID 或想要搜尋的特定信箱或站台資料夾的路徑。
-ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
+ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522284"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245060"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>使用 Office 365 中的內容搜尋目標集合
 
-Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜尋特定的資料夾中 Exchange 信箱或 SharePoint 和 OneDrive 商務網站直接的方式。不過，它是可以藉由指定的資料夾識別碼或路徑實際的搜尋查詢語法中搜尋特定的資料夾 （稱為 「 目標的集合）。當您確信回應案例的項目或權限項目都位於特定信箱或站台資料夾，使用內容搜尋執行目標的集合特別有用。您可以使用本文中的指令碼來取得信箱資料夾的資料夾識別碼或商務網站上的 SharePoint 和 OneDrive 資料夾的路徑。然後您可以使用的資料夾識別碼或路徑搜尋查詢中要傳回的項目位於資料夾中。
+Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜尋特定的資料夾中 Exchange 信箱或 SharePoint 和 OneDrive 商務網站直接的方式。不過，它是可以藉由指定的資料夾識別碼或路徑實際的搜尋查詢語法中搜尋特定的資料夾 （稱為 「*目標集合*）。當您確信回應案例的項目或權限項目都位於特定信箱或站台資料夾，使用內容搜尋執行目標的集合特別有用。您可以使用本文中的指令碼來取得信箱資料夾的資料夾識別碼或商務網站上的 SharePoint 和 OneDrive 資料夾的路徑。然後您可以使用的資料夾識別碼或路徑搜尋查詢中要傳回的項目位於資料夾中。
   
 ## <a name="before-you-begin"></a>開始之前
 
@@ -44,7 +44,7 @@ Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜
 
 您在此第一個步驟中執行的指令碼會傳回清單中的信箱資料夾或 SharePoint 或 OneDrive for Business 資料夾和對應的資料夾識別碼或針對每個資料夾的路徑。當您執行此指令碼時，它會提示您下列資訊。
   
-- **電子郵件地址或網站的 URL**輸入要傳回的 Exchange 信箱資料夾清單及摺疊識別碼 okay 電子郵件地址。或輸入要傳回的指定網站的路徑清單的 [SharePoint 網站的 URL 或 OneDrive for Business 網站。以下是一些範例： 
+- **電子郵件地址或網站的 URL**輸入要傳回的 Exchange 信箱資料夾和資料夾識別碼清單 okay 電子郵件地址。或輸入要傳回的指定網站的路徑清單的 [SharePoint 網站的 URL 或 OneDrive for Business 網站。以下是一些範例： 
     
   - **Exchange** -stacig@contoso.onmicrosoft.com 
     
@@ -138,7 +138,7 @@ Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜
       }while ($complianceSearch.Status -ne 'Completed')
       if ($complianceSearch.Items -gt 0)
       {
-          # Create a Complinace Search Action and wait for it to complete. The folders will be listed in the .Results parameter
+          # Create a Compliance Search Action and wait for it to complete. The folders will be listed in the .Results parameter
           $complianceSearchAction = New-ComplianceSearchAction -SearchName $searchName -Preview
           do
           {
@@ -216,7 +216,7 @@ Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜
     
 4. 在 [**新的搜尋**] 頁面上輸入內容搜尋的名稱。此名稱必須是唯一的組織中。 
     
-5. 下**執行您想我們看起來**，請執行下列其中一個動作根據是否在搜尋信箱資料夾或網站] 資料夾：
+5. 下**執行您想我們看起來**，請執行下列其中一個動作根據您搜尋信箱資料夾或網站] 資料夾：
     
     - 按一下 [**選擇来搜尋的特定信箱**，然後新增您在步驟 1 中執行指令碼時所指定的相同信箱。 
     
@@ -264,14 +264,16 @@ Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜
   
 ## <a name="more-information"></a>詳細資訊
 
-使用本文中的指令碼和執行目標集合時請記住下列事項。
+使用本文中的指令碼來執行目標的集合時請記住下列事項。
   
 - 指令碼不會從結果中移除任何資料夾。讓某些資料夾中所列的結果可能是無法搜尋 （或傳回零的項目） 因為它們包含系統產生的內容。
     
 - 此指令碼只會傳回使用者的主要信箱資料夾資訊。它不會傳回使用者的封存信箱資料夾的相關資訊。
     
-- 搜尋信箱資料夾，只有在指定的資料夾時 (識別由其`folderid`屬性) 拼寫須符合。將不會搜尋子資料夾。若要搜尋的子資料夾，您需要使用`folderid`針對您想要搜尋的子資料夾。 
+- 搜尋信箱資料夾，只有在指定的資料夾時 (識別由其`folderid`屬性) 拼寫須符合。將不會搜尋子資料夾。若要搜尋的子資料夾，您需要使用資料夾識別碼為您要搜尋的子資料夾。 
     
 - 搜尋網站資料夾、 資料夾時 (識別由其`path`屬性) 並將搜尋的所有子資料夾。 
     
 - 先前所述，您無法使用`path`屬性來搜尋的媒體檔案，例如.png、.tiff、 或使用的.wav 檔位於 OneDrive 位置。使用不同的[站台屬性](keyword-queries-and-search-conditions.md#searchable-site-properties)來搜尋 OneDrive 資料夾中的媒體檔案。 
+
+- 匯出在其中您只指定搜尋結果時`folderid`在搜尋查詢的屬性，您可以選擇第一個匯出選項"排除類具有無法辨識的格式的所有項目已加密或未編製索引的其他原因"。因為資料夾 ID 一律編製索引的資料夾中的所有項目一律要匯出不論其索引狀態為何。

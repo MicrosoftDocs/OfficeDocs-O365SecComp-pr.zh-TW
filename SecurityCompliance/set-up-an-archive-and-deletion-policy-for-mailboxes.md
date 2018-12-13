@@ -3,7 +3,7 @@ title: 設定 Office 365 組織中信箱的封存及刪除原則
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/9/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,20 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 建立封存及刪除原則會自動將項目移至使用者的封存信箱的 Office 365 中。
-ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 903a91c590c47ad5de0b89ae51a25983221d2ffe
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522294"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240576"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>設定 Office 365 組織中信箱的封存及刪除原則
 
- **本文適用於系統管理員。想要新增至您的信箱中的項目封存和保留原則嗎？請參閱[將電子郵件的保留原則指派](https://support.office.com/article/3e5fd2dc-633f-4a38-b313-b31b81f7cf7a) | [企業網路上的 Outlook 中的保留和封存原則](https://support.office.com/article/465372e4-e16b-47db-bee0-aba44799085e)**
+ 在 Office 365 系統管理員可以建立封存及刪除原則會自動將項目移至使用者的封存信箱與自動刪除信箱中的項目。管理員會執行此動作所建立的保留原則指派給信箱，並將項目移至使用者的封存信箱後一段時間和，也會刪除項目從信箱之後達到特定存留期限制。決定哪些項目已移動或刪除並發生該情況時所呼叫的保留標記實際規則。保留標記連結到接下來是指派給使用者的信箱的保留原則。保留標記會套用至個別郵件和使用者的信箱資料夾的保留設定。它會定義多久一則訊息仍會保留在信箱與郵件達到指定的保留時間時不會採取哪些動作。當郵件達到其保留期間時，它也會移至使用者的封存信箱或將其刪除。 
   
-在 Office 365 中，您可以建立的封存及刪除原則會自動將項目移至使用者的封存信箱與自動刪除信箱中的項目。您可以這麼做所建立的保留原則 ' s 後段特定時間內且也會刪除項目從信箱後達到特定存留期限制指派給信箱與使用者的封存信箱的移動項目。決定哪些項目已移動或刪除並發生該情況時所呼叫的保留標記實際規則。保留標記連結到接下來是指派給使用者的信箱的保留原則。保留標記會套用至個別郵件和使用者的信箱資料夾的保留設定。它會定義多久一則訊息仍會保留在信箱與郵件達到指定的保留時間時不會採取哪些動作。當郵件達到其保留期間時，它也會移至使用者的封存信箱或將其刪除。 
-  
-本主題中的步驟會設定名為 [高山門牌虛構組織封存和保留原則。設定此原則包含下列工作：
+本文中的步驟會設定名為 [高山門牌虛構組織封存和保留原則。設定此原則包含下列工作：
   
 - 讓組織中的每位使用者的封存信箱。這讓使用者加入信箱儲存區，且需要以便將保留原則可將項目移至封存信箱。它也讓我們所移動的使用者存放區封存資訊的項目封存信箱。 
     
@@ -37,7 +35,7 @@ ms.locfileid: "25522294"
     
   - 自動移動項目是 3 年舊使用者的封存信箱。將項目移至封存信箱釋出空間以使用者的主要信箱。
     
-  - 自動刪除舊的 5 年是從 [刪除的郵件] 資料夾的項目。這也釋出空間以使用者的主要信箱。使用者必須有機會視復原這些項目。請參閱如需詳細資訊[的詳細資訊](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo)] 區段中的註腳。 
+  - 自動刪除舊的 5 年是從 [刪除的郵件] 資料夾的項目。這也釋出空間以使用者的主要信箱。使用者必須有機會視復原這些項目。請參閱如需詳細資訊[的詳細資訊](#more-information)] 區段中的註腳。 
     
   - 自動 （和永久） 會刪除舊來自這兩個主要的 7 年和封存信箱的項目。因為規範要求，而某些組織所需的一段時間保留電子郵件。這段時間到期後，組織可能會想要永久移除這些項目的使用者信箱。 
     
@@ -104,7 +102,7 @@ ms.locfileid: "25522294"
     
 2. 在 Office 365 系統管理中心的左的功能窗格、 [**系統置中**，和 [ **Exchange**。
     
-    ![這個螢幕擷取畫面顯示管理 Office 365 系統管理中心置中展開的選項和 Exchange 選取。](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. 在 EAC 中，移至 [**規範管理** \> **保留標記**
     
@@ -232,11 +230,8 @@ ms.locfileid: "25522294"
 2. 在所選使用者信箱內容頁面上，按一下 [**信箱功能**]。
     
     新原則指派給信箱的名稱會顯示在 [**保留原則**] 下拉式清單中。 
-    
 
-  
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>（選用）步驟 5： 執行受管理的資料夾助理員來套用新的設定
-<a name="step3"> </a>
 
 將新的保留原則套用至步驟 4 中的信箱之後，可能很 7 天在 Exchange Online 新的保留設定套用至信箱。這是因為程序呼叫的受管理的資料夾助理員的程序信箱一次每 7 天。而不是等待受管理的資料夾助理員執行，您可以強制執行**Start-managedfolderassistant**指令程式在 Exchange Online PowerShell 發生。 
   
@@ -271,7 +266,7 @@ ms.locfileid: "25522294"
     ```
 
     > [!NOTE]
-    > 如需詳細資訊或如果您無法連線到您的 Exchange Online 組織，請參閱[使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283)。 
+    > 如需詳細資訊或如果您有連線至 Exchange Online 組織的問題，請參閱[Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)。 
   
 5. 執行下列兩個命令，以啟動 [在組織中的 [受管理的資料夾助理員的所有使用者信箱。
     
@@ -285,8 +280,27 @@ ms.locfileid: "25522294"
 
 這是它 ！您已設定高山門牌組織封存及刪除原則。
   
+## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>（選用）步驟 6： 將新的保留原則貴組織的預設值
+
+在步驟 4 中，您必須將新的保留原則指派給現有的信箱。但是您可以設定 Exchange Online，讓新的保留原則指派給新未來建立的信箱。若要更新組織的預設信箱計劃使用 Exchange Online PowerShell 達成此目的。*信箱計劃*會自動設定新的信箱中的 [屬性的範本。 您可以在此選用的步驟，取代目前指派給信箱計劃 （根據預設，預設 MRM 原則） 與保留原則您在步驟 3 中建立的保留原則。更新信箱計劃之後，新的保留原則會指派至新的信箱。
+
+1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)或請參閱 ＜ 步驟 5。
+
+2. 執行下列命令以顯示您組織中的信箱計劃的相關資訊。
+
+    ```
+    Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
+    ```
+    請注意設為預設信箱計劃。
+
+3. 執行下列命令以將您在步驟 3 （例如**高山門牌封存與保留原則**） 中建立新保留原則指派至預設信箱計劃。本範例會假設預設信箱計劃的名稱是**ExchangeOnlineEnterprise**。
+
+    ```
+    Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
+    ```
+4. 您可以重新執行此命令在步驟 2 以確認已變更指派給預設信箱計劃的保留原則。
+
 ## <a name="more-information"></a>詳細資訊
-<a name="moreinfo"> </a>
 
 - 計算保留時間的方式信箱項目保留期間的計算傳遞的日期或建立日期等草稿未傳送的郵件項目，但使用者所建立的。受管理的資料夾助理員處理信箱中的項目、 時加上戳記開始日期和到期的所有具有與刪除並允許復原] 或 [永久刪除保留動作的保留標記的項目。已封存標記的項目是 move date 加上戳記。 
     
@@ -294,9 +308,9 @@ ms.locfileid: "25522294"
     
     |**保留標記**|**此標籤的沒有**|**內建或自訂？**|**類型**|
     |:-----|:-----|:-----|:-----|
-    |高山門牌 3 年移至封存  <br/> |會移動 1095 天 （3 年） 至封存信箱的項目。  <br/> |自訂 (請參閱[步驟 2： 建立新的封存及刪除原則的保留標記](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |預設原則標記 （封存）;此標籤會自動套用至整個信箱。  <br/> |
-    |高山門牌 7 年永久刪除  <br/> |永久刪除主要信箱或封存信箱中的項目時發出 7 年舊。  <br/> |自訂 (請參閱[步驟 2： 建立新的封存及刪除原則的保留標記](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |預設原則標記 （刪除）;此標籤會自動套用至整個信箱。  <br/> |
-    |高山門牌刪除項目 5 年刪除並允許復原  <br/> |是舊 5 年刪除的郵件資料夾刪除項目。使用者可復原設定在刪除後的 14 天這些項的目。<sup>\*</sup> <br/> |自訂 (請參閱[步驟 2： 建立新的封存及刪除原則的保留標記](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |保留原則標記 （已刪除項目）;此標籤會自動套用到 [刪除的項目] 資料夾中的項目。  <br/> |
+    |高山門牌 3 年移至封存  <br/> |會移動 1095 天 （3 年） 至封存信箱的項目。  <br/> |自訂 (請參閱[步驟 2： 建立新的封存及刪除原則的保留標記](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |預設原則標記 （封存）;此標籤會自動套用至整個信箱。  <br/> |
+    |高山門牌 7 年永久刪除  <br/> |永久刪除主要信箱或封存信箱中的項目時發出 7 年舊。  <br/> |自訂 (請參閱[步驟 2： 建立新的封存及刪除原則的保留標記](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |預設原則標記 （刪除）;此標籤會自動套用至整個信箱。  <br/> |
+    |高山門牌刪除項目 5 年刪除並允許復原  <br/> |是舊 5 年刪除的郵件資料夾刪除項目。使用者可復原設定在刪除後的 14 天這些項的目。<sup>\*</sup> <br/> |自訂 (請參閱[步驟 2： 建立新的封存及刪除原則的保留標記](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |保留原則標記 （已刪除項目）;此標籤會自動套用到 [刪除的項目] 資料夾中的項目。  <br/> |
     |可復原的項目 14 天移至封存  <br/> |移至封存信箱中 [可復原的項目] 資料夾的 14 天內都已在 [可復原的項目] 資料夾中的項目。  <br/> |內建  <br/> |保留原則標記 （可復原的項目）;此標籤會自動套用到可復原的項目] 資料夾中的項目。  <br/> |
     |垃圾郵件  <br/> |永久刪除已在垃圾郵件] 資料夾中的 30 天的項目。使用者可復原設定在刪除後的 14 天這些項的目。<sup>\*</sup> <br/> |內建  <br/> |保留原則標記 （垃圾郵件）;此標籤會自動套用到垃圾郵件] 資料夾中的項目。  <br/> |
     |1 個月刪除  <br/> |永久刪除 30 天的項目。使用者可復原設定在刪除後的 14 天這些項的目。<sup>\*</sup> <br/> |內建  <br/> |個人;使用者可以套用此標籤。  <br/> |

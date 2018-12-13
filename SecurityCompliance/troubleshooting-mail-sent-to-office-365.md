@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: 本文提供寄件者嘗試傳送電子郵件給收件匣中 Office 365 與大量郵件給 Office 365 客戶的最佳作法時所發生問題的疑難排解的資訊。
-ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003202"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240556"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>將疑難排解郵件傳送艮 Office 365
 
@@ -115,7 +115,7 @@ IP 位址不先前用來傳送電子郵件通常不需要我們系統中的內�
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>我無法接收電子郵件從 Office 365 中的寄件者
 <a name="AllowEOPIPs"> </a>
 
- 若要從我們使用者接收郵件，請確定您的網路允許來自 EOP 會使用在我們的資料中心的 IP 位址的連線。如需詳細資訊，請參閱[Exchange Online Protection IP 位址](eop/exchange-online-protection-ip-addresses.md)。記錄的所有 IP 位址已新增、 變更，或在過去一年中已被取代，請參閱[EOP IP 位址的變更通知](eop/change-notification-for-eop-ip-addresses.md)。
+ 若要從我們使用者接收郵件，請確定您的網路允許來自 EOP 會使用在我們的資料中心的 IP 位址的連線。如需詳細資訊，請參閱[Exchange Online Protection IP 位址](eop/exchange-online-protection-ip-addresses.md)。 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>大量以電子郵件傳送至 Office 365 使用者的最佳作法
 <a name="BulkMailer"> </a>
