@@ -3,7 +3,7 @@ title: 使用 Office 365 標籤與 DLP 來保護 SharePoint Online 檔案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：使用各種資訊保護層級，對 SharePoint Online 小組網站套用 Office 365 標籤和資料外洩防護 (DLP) 原則。
-ms.openlocfilehash: f8d835481c0eac00be11f7934c1d74b8a2d08d78
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 38ded352c91a4c7f0138a6b9932840842d730926
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345965"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240566"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>使用 Office 365 標籤與 DLP 來保護 SharePoint Online 檔案
 
@@ -68,13 +68,13 @@ ms.locfileid: "25345965"
     
 4. 從瀏覽器的新 [首頁 - 安全性 &amp; 合規性]**** 索引標籤中，按一下 [分類] > [標籤]****。
     
-5. 從 [首頁] > [標籤]**** 窗格中，按一下 [建立標籤]****。
+5. 從 [首頁] > [標籤]**** 窗格中，按一下 [保留]**** 索引標籤，然後按一下 [建立標籤]****。
     
-6. 在 [命名您的標籤]**** 窗格中，鍵入標籤的名稱，然後按一下 [下一步]****。
-    
+6. 在 [命名您的標籤]**** 窗格中，鍵入標籤名稱和系統管理員與使用者的描述，然後按一下 [下一步]****。
+
 7. 在 [標籤設定]**** 窗格中，按一下 [下一步]****。
     
-8. 在 [檢閱您的設定]**** 窗格中，按一下 [建立此標籤]****，然後按一下 [關閉]****。
+8. 在 [檢閱您的設定]**** 窗格中，按一下 [建立]****，然後按一下 [關閉]****。
     
 9. 針對其他標籤重複步驟 5 至 8。
     
@@ -89,9 +89,11 @@ ms.locfileid: "25345965"
 ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
   ```
 
+### <a name="publish-your-new-labels"></a>發佈新標籤
+
 接下來，使用下列步驟來發佈新的 Office 365 標籤。
   
-1. 從安全性 &amp; 合規性的 [首頁] > [標籤]**** 窗格中，按一下 [發佈標籤]****。
+1. 從安全性 &amp; 合規性中心的 [首頁] > [標籤]**** 窗格中，按一下 [保留]**** 索引標籤，然後按一下 [發佈標籤]****。
     
 2. 在 [選擇要發佈的標籤]**** 窗格中，按一下 [選擇要發佈的標籤]****。
     
@@ -106,6 +108,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 7. 在 [命名您的原則]**** 窗格的 [名稱]**** 中，鍵入標籤集的名稱，然後按一下 [下一步]****。
     
 8. 在 [檢閱您的設定]**** 窗格中，按一下 [發佈標籤]****，然後按一下 [關閉]****。
+
     
 ### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>階段 3：將 Office 365 標籤套用至 SharePoint Online 網站
 
@@ -134,14 +137,16 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>適用於 SharePoint Online 網站的 DLP 原則
 
 使用下列步驟來設定 DLP 原則，以在使用者共用組織外部 SharePoint Online 機密小組網站上的文件時通知使用者。
-  
-1. 從瀏覽器的 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [安全性 &amp; 合規性]**** 磚。
+
+1. 從 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
     
-2. 在瀏覽器的新 [安全性 &amp; 合規性]**** 索引標籤上，按一下 [資料外洩防護] > [原則]****。
+2. 從瀏覽器的新 [Office 系統管理中心]**** 索引標籤中，按一下 [系統管理中心] > [安全性 &amp; 合規性]****。
     
-3. 在 [資料外洩防護]**** 窗格中，按一下 [+ 建立原則]****。
+3. 在瀏覽器的新 [安全性 &amp; 合規性]**** 索引標籤上，按一下 [資料外洩防護] > [原則]****。
     
-4. 在 [從範本開始或建立自訂原則]**** 窗格中，按一下 [自訂]****，然後按一下 [下一步]****。
+4. 在 [資料外洩防護]**** 窗格中，按一下 [+ 建立原則]****。
+    
+5. 在 [從範本開始或建立自訂原則]**** 窗格中，按一下 [自訂]****，然後按一下 [下一步]****。
     
 5. 在 [命名您的原則]**** 窗格的 [名稱]**** 中，鍵入機密層級 DLP 原則的名稱，然後按一下 [下一步]****。
     
@@ -158,7 +163,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 11. 在 [Choose the types of content to protect]\(選擇要保護的內容類型)**** 窗格中，按一下 [儲存]****。
     
 12. 在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型)**** 窗格中，按一下 [下一步]****。
-    
+
 13. 在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?)**** 窗格中，按一下 [Customize the tip and email]\(自訂提示和電子郵件)****。
     
 14. 在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知)**** 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)****。
@@ -172,7 +177,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 16. 按一下 [確定]****。
     
-17. 在 [如果偵測到機密資訊要如何處理?]**** 窗格中，清除 [禁止人員共用及限制共用內容的存取]**** 核取方塊，然後按一下 [下一步]****。
+17. 在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?)**** 窗格中，按一下 [下一步]****。
     
 18. 在 [要先開啟原則或測試內容嗎?]**** 窗格中，按一下 [是]**** 立即將它開啟，然後按一下 [下一步]****。
     
@@ -220,7 +225,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 16. 按一下 [確定]****。
     
-17. 在 [如果偵測到機密資訊要如何處理?]**** 窗格中，選取 [需要有業務上的正當理由才能覆寫]****，然後按一下 [下一步]****。
+17. 在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?)**** 窗格中，按一下 [下一步]****。
     
 18. 在 [要先開啟原則或測試內容嗎?]**** 窗格中，按一下 [是]**** 立即將它開啟，然後按一下 [下一步]****。
     
