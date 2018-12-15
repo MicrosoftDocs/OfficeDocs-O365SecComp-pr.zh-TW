@@ -3,7 +3,7 @@ title: 匯出內容搜尋報告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 而不是實際的 Office 365 安全性內容的搜尋結果匯出&amp;規範中心，您可以只將匯出的搜尋結果報表。報表會包含在搜尋結果和每個項目會匯出的詳細資訊與文件的摘要。
-ms.openlocfilehash: 45415f25754b4549a919e4ce56853a6ae09a9bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
+ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526160"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283139"
 ---
 # <a name="export-a-content-search-report"></a>匯出內容搜尋報告
 
@@ -50,12 +50,14 @@ ms.locfileid: "22526160"
     
     - Microsoft Edge
     
-      或
+      或 
     
     - Microsoft Internet Explorer 10 或更新版本
     
     **附註：** Microsoft 不會製造協力廠商擴充功能或 ClickOnce 應用程式的附加元件。不支援將匯出使用不受支援的瀏覽器與協力廠商擴充功能或附加元件的搜尋結果。 
-    
+
+- 如果內容的搜尋所傳回的結果的估計總大小超過 20&nbsp;TB、 匯出報表將會失敗。若要成功匯出報表，請嘗試縮小範圍並重新執行搜尋結果的估計的大小小於 20 讓&nbsp;TB。
+
 ## <a name="generate-and-download-a-content-search-report"></a>產生及下載的內容搜尋報告
 
 產生及下載的內容搜尋報表的步驟是非常類似實際匯出搜尋結果。
@@ -64,9 +66,9 @@ ms.locfileid: "22526160"
 
 第一個步驟是準備報表下載到電腦匯出。當您報表，報表文件上傳至 Azure 中儲存區是由 Microsoft 雲端。
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在安全性與合規性中心的左窗格中，按一下 [搜尋與調查]**** \> [內容搜尋]****。
     
