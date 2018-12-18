@@ -3,7 +3,7 @@ title: Office 365 安全性的 eDiscovery 案例&amp;規範中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用 Office 365 安全性&amp;規範中心來建立及管理組織中的 eDiscovery 案例。您可以將成員指派給大小寫、 放置內容保留執行內容 Searchs 位置相關聯情況下，並匯出搜尋結果。您也可以準備進一步分析進階 ediscovery 案例的資料。
-ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
+ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965270"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27299359"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性的 eDiscovery 案例&amp;規範中心
 
@@ -53,9 +53,9 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步驟 1：將 eDiscovery 權限指派給潛在的案例成員
 
-第一個步驟是將適當的 eDiscovery 相關權限指派給人員讓您可以將其新增至 eDiscovery 案例在步驟 2。您必須是 「 組織管理角色群組的成員 （或要指派的角色管理角色） Office 365 安全性&amp;規範中心指派 eDiscovery 權限。下列清單說明 eDiscovery 相關的角色群組安全性&amp;規範中心。
+第一個步驟是將適當的 eDiscovery 相關權限指派給人員讓您可以將其新增至 eDiscovery 案例在步驟 2。您必須是 「 組織管理角色群組的成員 （或要指派的角色管理角色） Office 365 安全性&amp;規範中心指派 eDiscovery 權限。下列清單說明 eDiscovery 相關的角色群組安全性&amp;規範中心。 
   
-- **檢閱**此角色群組具有最嚴格的 eDiscovery 相關權限。此群組的成員只能看到並在 [安全性] 中開啟 [ **eDiscovery** ] 頁面上的案例清單&amp;他們是成員的規範中心。他們無法建立的情況下，將成員新增至案例、 建立保留、 建立搜尋、 匯出搜尋結果或準備進階 eDiscovery 的結果。不過，成員可存取執行分析工作的進階 ediscovery 案例。 
+- **檢閱**此角色群組具有最嚴格的 eDiscovery 相關權限。此角色群組的主要目的是要允許成員檢視及存取 case Office 365 進階在 eDiscovery 中的資料。此群組的成員只能看到並在 [安全性] 中開啟 [ **eDiscovery** ] 頁面上的案例清單&amp;他們是成員的規範中心。使用者存取案例中的安全性與規範中心之後，他們可以按一下 [**進階 ediscovery 參數**來存取及分析中進階 eDiscovery 案例的資料。他們無法建立的情況下，將成員新增至案例、 建立保留、 建立搜尋、 預覽搜尋結果、 匯出搜尋結果或準備進階 eDiscovery 的結果。 
     
 - **eDiscovery 管理員**此角色群組的成員可以建立與管理 eDiscovery 案例。他們可以新增和移除成員、 放置的內容上的位置保留、 建立及編輯與案例相關聯的內容搜尋]、 [匯出搜尋結果的內容，並準備分析進階在 eDiscovery 中搜尋結果。有兩個此角色群組中的子群組。這些子群組之間的差異根據範圍。
     
@@ -65,20 +65,22 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
     
     - 在 [ **eDiscovery** ] 頁面上檢視所列的所有案例。 
     
-    - 管理組織中的任何 eDiscovery 案例之後他們將自己新增為大小寫的成員。
+    - 管理組織中的任何案例之後他們將自己新增為大小寫的成員。
     
-    - 執行進階 eDiscovery，例如處理案例資料以供分析、 設定案例，及從進階 eDiscovery 匯出資料的系統管理工作。這是因為 eDiscovery 安全性的系統管理員的人員&amp;規範中心會自動新增為進階 eDiscovery 的管理員。
+    - 存取 case 進階 eDiscovery 針對在組織中任何案例中的資料。
     
-    請參閱[More information](ediscovery-cases.md#moreinfo_1)一節以了解為何您可能希望組織中有 eDiscovery 系統管理員的原因。 
+    請參閱[More information](#more-information)一節以了解為何您可能希望組織中有 eDiscovery 系統管理員的原因。 
     
 > [!IMPORTANT]
 > 如果使用者不是其中一個這些 eDiscovery 相關的角色群組的成員或不是已指派的檢閱者 」 角色的角色群組的成員，您無法將其新增為 eDiscovery 案例的成員。 
+
+如需 eDiscovery 權限的詳細資訊，請參閱[指派 Office 365 安全性 eDiscovery 權限&amp;規範中心](assign-ediscovery-permissions.md)。
   
  **若要指派 eDiscovery 權限：**
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 安全性&amp;規範中心 [**權限**，然後再執行作業根據想要指定 eDiscovery 權限的下列其中之一。
     
@@ -94,9 +96,9 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
 
 下一步是建立新的 eDiscovery 案例。您必須是要建立 eDiscovery 案例的 eDiscovery 管理員角色群組的成員。如先前清楚，您在 [安全性] 建立新案例之後&amp;規範中心、 您 （和其他案例的成員） 將能夠存取進階 eDiscovery 如果您組織中的相同案例具有 Office 365 E5 訂閱。
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**，然後按一下 [![新增圖示](media/ITPro-EAC-AddIcon.gif)**建立案例**。
     
@@ -142,7 +144,10 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
 ## <a name="step-4-place-content-locations-on-hold"></a>步驟 4： 就地保留上的內容位置
 
 您可以使用 eDiscovery 案例來建立保留来保留可能案例相關的內容。您可以置於保留信箱和 OneDrive 商務網站的是 custodians 案例中的人員。您也可以將保留群組信箱、 SharePoint 網站及 OneDrive 商務網站的 Office 365 群組。同樣地，您可以利用保留對信箱和相關聯的 Microsoft 小組網站。當您保留上放置的內容位置時，內容會保留直到您移除保留內容的位置或直到您刪除保留。
-  
+
+> [!NOTE]
+> 內容位置置於保留之後，所花費 24 小時的時間的保留才會生效。 
+>   
 當您建立保留時，您有下列選項的範圍會保留在指定的內容位置的內容：
   
 - 您建立的所有內容都處於保留狀態設為無限期保留。或者，您可以建立查詢式的保留僅符合內容的搜尋查詢處於保留狀態。
@@ -170,7 +175,7 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
   
 6. （選用）在 [**描述**] 方塊中新增的保留的描述。 
     
-7. 按 [下一步]****。
+7. 按 [下一步]。
     
 8. 選擇您想要進行的內容位置保留。您可以在保留上放置信箱、 網站及公用資料夾。
     
@@ -183,7 +188,7 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
   
    b. **SharePoint 網站**-按一下 [**選擇的網站**] 和 [**選擇網站**一次以指定 SharePoint 和 OneDrive for Business 網站置於保留。輸入您想要保留每個網站的 URL。您也可以針對 Office 365 群組或 Microsoft 小組新增 SharePoint 網站的 URL。按一下 [**選擇**] 和 [**完成**。
     
-    請參閱[的詳細資訊](ediscovery-cases.md#moreinfo_1)] 區段中放入保留的 Office 365 群組及 Microsoft 小組的秘訣。 
+    請參閱[的詳細資訊](#more-information)] 區段中放入保留的 Office 365 群組及 Microsoft 小組的秘訣。 
     
     > [!NOTE]
     > 在極罕見的情況下變更人員的使用者主體名稱 (UPN) 時，其 OneDrive 帳戶的 URL 會變更要併入新的 UPN。如果發生這種情況，您必須新增使用者的新 OneDrive URL 並移除舊來修改保留。 
@@ -391,7 +396,7 @@ While 後的新保留的相關資訊會顯示所選保留的 [**保留**] 頁面
 
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>步驟 7： 準備搜尋結果進階 ediscovery （英文）
 
-如果貴組織的 Office 365 E5 訂閱，您可以準備內容進行分析進階 ediscovery 案例相關聯的搜尋的結果。準備好搜尋結果之後，您可以前往進階的 eDiscovery (請參閱[步驟 8： 移至 [進階 ediscovery 案例](ediscovery-cases.md#gotoAeD_1)) 及處理供進一步分析進階在 eDiscovery 中搜尋結果資料。
+如果貴組織的 Office 365 E5 訂閱，您可以準備內容進行分析進階 ediscovery 案例相關聯的搜尋的結果。準備好搜尋結果之後，您可以前往進階的 eDiscovery (請參閱[步驟 8： 移至 [進階 ediscovery 案例](#step-8-go-to-the-case-in-advanced-ediscovery)) 及處理供進一步分析進階在 eDiscovery 中搜尋結果資料。
   
 當您準備進階 eDiscovery 搜尋結果時，光學字元辨識 (OCR) 功能自動擷取文字的圖像。OCR 支援寬鬆的檔案、 電子郵件附件、 和內嵌圖像。這可讓您將文字分析功能的進階 eDiscovery （接近重複項目、 電子郵件執行緒、 佈景主題及預測編碼） 套用至圖像檔案中的任何文字。
   
@@ -530,7 +535,7 @@ While 後的新保留的相關資訊會顯示所選保留的 [**保留**] 頁面
     
     最後，如先前清楚、 eDiscovery 管理員可以在 [安全性]&amp;規範中心會自動新增為進階 ediscovery 的管理員。這表示 eDiscovery 管理員的人員可執行的使用者設定、 建立的情況下，並將資料新增到的情況下進階 eDiscovery 的管理工作。
     
-- **授權的內容位置置於保留需求為何吗？** 一般而言，組織需要的 Office 365 E3 訂閱或更高的內容位置置於保留。若要將信箱就地保留，皆需有 Exchange Online 計劃 2 授權。
+- **授權的內容位置置於保留需求為何吗？** 一般而言，組織需要的 Office 365 E3 訂閱或更高的內容位置置於保留。若要將信箱就地保留，Exchange Online 計劃 2 授權，則需要針對您想要保留的信箱。
     
 - **還有什麼應該您了解在步驟 5 中搜尋所有案例的內容？** 如先前所述，您可以搜尋有已處於保留狀態的大小寫的內容位置。當您這麼做時，保留條件會比對的內容為 [搜尋]。如果沒有任何保留準則，將搜尋所有內容。如果內容上查詢式保留，只會比對這兩個保留準則 （放在步驟 4 中保留） 的內容及搜尋準則 （從步驟 5 中搜尋） 會傳回與搜尋結果。
     
