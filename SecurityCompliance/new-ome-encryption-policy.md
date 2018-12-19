@@ -1,7 +1,7 @@
 ---
 title: 新的 Office 365 郵件加密原則敏感資訊
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
 ms.date: 12/13/2018
 ROBOTS: NOINDEX, NOFOLLOW
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 新 Office 365 郵件加密的原則機密資訊。
-ms.openlocfilehash: 180050d1bf9303f6d29bc126e66ac53211c2fb34
-ms.sourcegitcommit: 3aae959ea1ac5ef61a9942c681d334831e6b6038
+ms.openlocfilehash: d0ec5ef22da4742c8cd3d1c56d27b505911fca58
+ms.sourcegitcommit: af8e503f20588e8fb992fc5b95d571b7bd89b15d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "27271089"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371261"
 ---
 # <a name="new-office-365-message-encryption-policy-for-sensitive-information"></a>新的 Office 365 郵件加密原則敏感資訊
 
@@ -45,7 +45,10 @@ ms.locfileid: "27271089"
 
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何準備，這項變更？
 
-您沒有更新或修改這個新的變更之前的任何現有 Office 365 組態設定。不過，您可能要更新任何適用的使用者文件及準備，這項變更組織中的人員的訓練教材。
+您沒有更新或修改這個新的變更之前的任何現有 Office 365 組態設定。不過，您可能要更新任何適用的使用者文件及準備，這項變更組織中的人員的訓練教材。與視使用者共用這些 Office 365 郵件加密的資源：
+
+- [傳送、 檢視和回覆加密郵件的電腦在 Outlook 中](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Office 365 Essentials 影片： Office 郵件加密](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>此變更會表示在稽核記錄檔的方式？
 
