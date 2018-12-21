@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
+ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194704"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380613"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -214,7 +214,7 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
   
 - 這類保留原則最多可包含 1,000 個信箱和 100 個網站。
     
-- 一個租用戶最多可包含 1,000 個這類保留原則。
+- 一個租用戶最多可包含 10,000 個保留原則。
     
 雖然有這些限制，但請了解您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
   
