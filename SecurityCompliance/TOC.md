@@ -186,7 +186,6 @@
 ## [設定 Office 365 中電子文件探索調查的合規性界限](set-up-compliance-boundaries.md)
 ## [電子文件探索解決方案系列 - 資料外洩案例 - 搜尋及清除](data-spillage-scenariosearch-and-purge.md)
 ## [準備進階電子文件探索的搜尋結果](prepare-search-results-for-advanced-ediscovery.md)
-## [將電子文件探索權限指派至商務用 OneDrive 網站](assign-permissions-to-onedrive-for-business-sites.md)
 ## [使用指令碼將使用者新增至電子文件探索案例中的保留](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [在電子文件探索案例中的保留建立報表](create-a-report-on-holds-in-ediscovery-cases.md)
 ## 管理保留
