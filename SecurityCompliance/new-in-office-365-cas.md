@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 11/28/2018
+ms.date: 12/26/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,18 +13,41 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: 請參閱 Office 365 雲端應用程式安全性的新功能
-ms.openlocfilehash: a3ca4504d80cbb39b51ecbcf3a5165bc5139e07c
-ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
+ms.openlocfilehash: 9f0c93d0de6ae8be72456c874ef8f5e3d42264e2
+ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26872011"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27447061"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Office 365 雲端應用程式安全性的新功能
 
 **摘要**請閱讀本篇文章以取得 Office 365 雲端應用程式安全性 （前身為 Office 365 進階安全性管理），這由[Microsoft 雲端應用程式安全性](https://aka.ms/whatiscas)提供更新及新功能的快速概觀。
   
-＞ 本文已更新頻率，新增或改良功能時。Office 365 雲端應用程式的安全性更新發行約兩週後 Microsoft 雲端應用程式的安全性更新並不是所有的 Microsoft 雲端應用程式的安全性更新套用至 Office 365 雲端應用程式安全性。此外，新功能可能需要一週或更多 Office 365 雲端應用程式安全性環境中顯示其發行日期之後。
+> [!TIP]
+> ＞ 本文已更新頻率，新增或改良功能時。Office 365 雲端應用程式的安全性更新發行約兩週後 Microsoft 雲端應用程式的安全性更新並不是所有的 Microsoft 雲端應用程式的安全性更新套用至 Office 365 雲端應用程式安全性。此外，新功能可能需要一週或更多 Office 365 雲端應用程式安全性環境中顯示其發行日期之後。
+
+## <a name="office-365-cloud-app-security-release-138"></a>Office 365 雲端應用程式安全性版本 138
+
+*發行 2018 年 12 月 23、*
+
+在**下列[版本 138 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-138)**：
+
+- **使用 windows Docker 自動記錄檔上傳**雲端應用程式安全性的 Windows 10 現在也支援自動記錄檔上傳 ([改建立者更新](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)和更新版本) 和 Windows Server ([版本 1709年](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1709)和更新版本) 使用 Docker windows。請參閱[本文章](https://docs.microsoft.com/cloud-app-security/discovery-docker-windows)以深入了解及設定 Docker。  
+
+- **Microsoft 流程整合**雲端應用程式安全性現在能與[Microsoft 流程](https://docs.microsoft.com/flow/getting-started)來提供自訂的警示自動化及協調流程 playbooks 整合。請參閱[本文章](https://docs.microsoft.com/cloud-app-security/flow-integration)以深入了解及設定 Microsoft 流程整合。 
+
+
+## <a name="office-365-cloud-app-security-release-137"></a>Office 365 雲端應用程式安全性版本 137
+
+*發行 2018 年 12 月 8、*
+
+在**下列[版本 137 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-137)**：
+
+- **已新增支援動態**雲端應用程式安全性現在包括支援的 Office 365 稽核記錄中所支援的 Microsoft Dynamics 活動。 
+
+- **朝九晚五設定新的術語 ！** 應用程式的權限功能的名稱已變更為避免混淆 – 它現稱為 「 OAuth 應用程式。 
+
 
 ## <a name="office-365-cloud-app-security-release-136"></a>Office 365 雲端應用程式安全性版本 136
 
@@ -73,7 +96,7 @@ ms.locfileid: "26872011"
 
 - **新的功能表列**若要提供更一致的管理經驗 Microsoft 365 產品並可讓您更輕鬆地樞紐之間的 Microsoft 安全性方案、 雲端應用程式安全性入口網站的功能表列已移至螢幕左邊。此一致的瀏覽體驗可幫助您的方式放置自行時移動到另一個 Microsoft 安全性入口網站。<br/>![Office 雲端應用程式安全性的功能表列](media/OCAS-MenuBar.png)<br/>
 
-- **影響 OAuth app 分數**您現在可以傳送意見是否有發現似乎惡意您組織中的 OAuth 應用程式的雲端應用程式安全性小組意見反應。此新功能可讓您是我們安全性社群的一部分並加強 OAuth app 風險分數與分析。如需詳細資訊請參閱 ＜[管理應用程式權限](manage-app-permissions-in-ocas.md)。
+- **影響 OAuth app 分數**您現在可以傳送意見是否有發現似乎惡意您組織中的 OAuth 應用程式的雲端應用程式安全性小組意見反應。此新功能可讓您是我們安全性社群的一部分並加強 OAuth app 風險分數與分析。如需詳細資訊，請參閱[管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)。
 
 - **新雲端探索剖析器**雲端探索剖析器現在支援 iboss Secure Cloud 閘道和 Sophos XG。
 
@@ -84,9 +107,9 @@ ms.locfileid: "26872011"
   
 在**下列[版本 128 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**： 
   
-- **跨多個應用程式的應用程式權限**對於已授予應用程式權限的應用程式，您可以立即禁止或核准多個應用程式中的單一動作。例如，您可以檢閱已授與權限由您組織中使用者、 選取您想要禁止、 的所有應用程式，然後按一下 [要撤銷權限授與所有同意禁止應用程式的所有應用程式並將不再允許授與這些應用程式的權限的使用者。 
+- **跨多個應用程式的 OAuth 應用程式**OAuth 應用程式可以立即禁止或核准多個應用程式中的單一動作。例如，您可以檢閱已授與權限由您組織中使用者、 選取您想要禁止、 的所有應用程式，然後按一下 [要撤銷權限授與所有同意禁止應用程式的所有應用程式並將不再允許授與這些應用程式的權限的使用者。若要深入了解，請參閱[使用 Office 365 雲端應用程式安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)。 
     
-- **新增建議的查詢： GDPR 就緒**沒有可讓您識別探索到的應用程式的已準備好 GDPR 建議新的查詢。GDPR 最近已變成安全性管理員的最高優先順序。此查詢可協助您輕鬆地識別應用程式的已準備好，GDPR 並降低所評估的應用程式不風險的威脅。 
+- **新增建議的查詢： GDPR 就緒雲端應用程式**沒有可讓您識別探索到的應用程式的已準備好 GDPR 建議新的查詢。當您可能已經知道 GDPR 具有最近變成安全性管理員的最高優先順序。此查詢可協助您輕鬆地識別應用程式的已準備好，GDPR 並降低所評估的應用程式不風險的威脅。若要使用新的查詢，在**雲端探索**儀表板的**Discovered 應用程式**] 索引標籤上選擇 [**查詢** > **GDPR 就緒雲端應用程式**。<br/>![GDPR 準備雲端應用程式的查詢](media/OCAS-FindGDPRQueries.png)<br/>
     
 ## <a name="office-365-cloud-app-security-release-126"></a>Office 365 雲端應用程式安全性版本 126
 
@@ -96,7 +119,7 @@ ms.locfileid: "26872011"
   
 - **自動修復可疑的活動**您現在可以設定自動修復動作可疑異常偵測原則所觸發的工作階段。此增強功能可讓您能夠立即當缺口發生提醒與自動套用控管動作，例如暫停使用者。如需詳細資訊，請參閱[Office 365 雲端應用程式安全性異常偵測原則](anomaly-detection-policies-in-ocas.md)。
     
-- **自動偵測 risky OAuth 應用程式**連線至您的環境的 OAuth 應用程式現有調查，以及 Office 365 雲端應用程式安全性現在可讓您設定讓您知道 OAuth 應用程式時符合特定準則的自動化的通知。例如，您可自動警示應用程式時需要較高的權限層級且已超過 50 個使用者授權。如需詳細資訊，請參閱[管理使用 Office 365 雲端應用程式安全性的應用程式權限](manage-app-permissions-in-ocas.md)。
+- **自動偵測 risky OAuth 應用程式**連線至您的環境的 OAuth 應用程式現有調查，以及 Office 365 雲端應用程式安全性現在可讓您設定讓您知道 OAuth 應用程式時符合特定準則的自動化的通知。例如，您可自動警示應用程式時需要較高的權限層級且已超過 50 個使用者授權。如需詳細資訊，請參閱[管理 OAuth 應用程式使用 Office 365 雲端應用程式安全性](manage-app-permissions-in-ocas.md)。
     
 - **受管理的安全性服務提供者管理 (MSSP) 支援**Office 365 雲端應用程式安全性現在提供較佳的管理經驗 MSSPs，並可讓您設定外部合作夥伴與任何目前無法在 Office 365 雲端應用程式安全性角色的系統管理員身分。此外，使用多個承租人的存取權限的系統管理員可以立即輕鬆樞紐分析租用戶之間。 
     
@@ -132,7 +155,7 @@ ms.locfileid: "26872011"
   
 - **為使用者活動的內部應用程式**。Office 365 和 Azure Active Directory (Azure AD)，我們會立即逐漸推出偵測內部應用程式為使用者帳戶活動的 Office 365 和 Azure AD 應用程式 （內部和外部） 所執行的功能。這可讓您建立原則來提醒您如果應用程式執行未預期和未經授權的活動。 
     
-- **匯出應用程式的權限清單中的多個欄位**。應用程式的權限清單匯出至 csv，例如發行者、 其他欄位時的權限層級和社群的使用方式是以協助的規範與調查有關的程序。 
+- **匯出 OAuth 應用程式清單中的多個欄位**。OAuth 應用程式清單匯出至 csv，例如發行者、 其他欄位時的權限層級和社群的使用方式是以協助的規範與調查有關的程序。 
     
 ## <a name="office-365-cloud-app-security-release-119"></a>Office 365 雲端應用程式安全性版本 119
 
@@ -189,83 +212,8 @@ ms.locfileid: "26872011"
 在**下列[版本 113 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**： 
   
 - **記錄剖析器支援一般的格式**。雲端探索記錄剖析器現在則支援下列一般格式： LEEF、 CEF、 及 W3C。 
-    
-## <a name="office-365-cloud-app-security-release-112"></a>Office 365 雲端應用程式安全性版本 112
 
-*發行 2017 年 12 月 24、* 
-  
-在**下列[版本 112 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**： 
-  
-- **相關的獨到抽屜**。活動記錄檔中您現在已可存取相關的獨到抽屜按一下使用者名稱或 IP 位址。 
-    
-    ![按一下 [使用者名稱或 IP 位址來查看相關洞察力抽屜活動記錄檔中。](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
-  
-- **能夠檢視按一下多項活動**。在相關的獨到抽屜中，您可以按一下以檢視在所選活動的 48 小時內執行的所有活動的時鐘圖示。 
-    
-    ![在相關的見解抽屜中，您可以按一下 [查看所選活動的 48 小時內執行的活動的時鐘圖示](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
-  
-- **Juniper SRX 記錄剖析器增強功能**。改良功能已對 Juniper SRX 雲端探索記錄剖析器。 
-    
-## <a name="office-365-cloud-app-security-release-111"></a>Office 365 雲端應用程式安全性版本 111
+## <a name="releases-prior-to-113"></a>113 以前的版本
 
-*發行 2017 年 12 月 10，* 
-  
-在**下列[版本 111 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**： 
-  
-- **時間篩選器增強功能**。時間篩選現在容易使用。若要存取時間篩選，檢視，例如活動記錄檔、 原則、 提醒、 使用 [進階] 檢視中的選擇 [篩選器的清單中的**日期**。然後選擇一個選項，例如之前、 之後，或在之間套用時間篩選。 
+[請參閱 2017年更新 Office 365 雲端應用程式安全性](new-in-office-365-cas-2017.md)
     
-    ![使用日期篩選器來檢視資訊之前、 之後，或傳來的日期。](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
-  
-## <a name="office-365-cloud-app-security-release-110"></a>Office 365 雲端應用程式安全性版本 110
-
-*發行 2017 年 11 月 26* 
-  
-在**下列[版本 110 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**： 
-  
-- **現在通常可用的 SIEM 伺服器整合**。您的 SIEM 伺服器連線至 Office 365 雲端應用程式安全性。您可以立即傳送提醒與活動自動選擇的 SIEM 伺服器 SIEM 代理程式進行設定。請參閱[整合您 SIEM 的伺服器與 Office 365 雲端應用程式安全性](integrate-your-siem-server-with-office-365-cas.md)。
-    
-- **更輕鬆地說明內容的存取**權。使用新的問號的右上角中，您現在已可存取 Office 365 雲端應用程式安全性入口網站的頁面中的 [從的說明內容。每個連結是即時線上、 採取了您所需要的資訊、 根據你所在的頁面。 
-    
-- **傳送意見反應**。使用笑臉中的右上角，可以從 Office 365 雲端應用程式安全性入口網站的每一頁立即傳送意見反應。這可讓您回報錯誤、 要求的新功能並直接與 Office 365 雲端應用程式安全性小組共用您的功能。 
-    
-## <a name="office-365-cloud-app-security-release-102"></a>Office 365 雲端應用程式安全性版本 102
-
-*發行 2017 年 8 月 13、* 
-  
-在**下列[版本 102 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**： 
-  
-- **新的使用者將正在調查動作**啟用的向下鑽研新增層級至使用者調查。調查] 索引標籤上您可以將滑鼠指標移入活動、 user 或帳戶並將其套用做為篩選條件，並從該處，您可以檢視相關的活動或事件。 
-    
-## <a name="office-365-cloud-app-security-release-100"></a>Office 365 雲端應用程式安全性版本 100
-
-*發行 2017 年 7 月 17* 
-  
-在**下列[版本 100 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**： 
-  
-- **安全性副檔名**為新的儀表板其中您可以集中管理所有安全性延伸模組的 Office 365 雲端應用程式安全性，包括 API 權杖和 SIEM 代理程式。若要檢視安全性 extensions 儀表板，請遵循下列步驟： 
-    
-1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
-    
-2. 移至 [**提醒** \> **管理進階提醒**。
-    
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-    ![安全性&amp;規範中心選擇提醒\>管理進階提醒\>移至 [進階安全性管理](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
-  
-4. 選擇 [**設定** \> **安全性延伸模組**。
-    
-    ![在 ASM 入口網站中選擇 [設定\>安全性延伸模組](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
-  
-- **剖析的改善**。剖析機制雲端探索記錄檔中所做的改良。內部錯誤是大幅可能發生的。 
-    
-- **預期記錄格式**。雲端探索記錄檔的預期的記錄檔格式現在提供範例 Syslog 格式和 FTP 格式。 
-    
-## <a name="related-topics"></a>相關主題
-
-[Office 365 雲端應用程式安全性說明內容](office-365-cas-help.md)
-  
-[推出 Office 365 雲端 App 安全性後的使用活動](utilization-activities-for-ocas.md)
-  
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-  
-
