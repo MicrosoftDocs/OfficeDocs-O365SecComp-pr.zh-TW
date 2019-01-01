@@ -1,9 +1,8 @@
 ---
-title: 定義加密 Office 365 中的電子郵件的郵件流程規則
+title: 定義郵件流規則以加密 Office 365 中的電子郵件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 系統管理員可以了解如何建立郵件流程規則 （也稱為傳輸規則） 來加密和解密郵件使用 Office 365 郵件加密 (OME) 中。
-ms.openlocfilehash: 35867d45bb8ad5cb8de2fa1aa0c870ee9a66fe5d
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
+ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194674"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466922"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義加密 Office 365 中的電子郵件的郵件流程規則
+# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 
 身為 Office 365 全域管理員，您可以建立郵件流程規則 （也稱為傳輸規則） 來保護您傳送和接收的電子郵件訊息。您可以設定加密所有外寄電子郵件並從加密的郵件來自組織內或回覆加密郵件傳送自組織移除加密的規則。您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange Online PowerShell 來建立這些規則。除了整體加密的郵件，您也可以選擇啟用或停用使用者的個別郵件加密選項。
 
@@ -189,7 +188,7 @@ ms.locfileid: "27194674"
 
      - 收件者是信箱、 郵件使用者、 群組或擁有郵件功能在組織中的公用資料夾。
 
-       或
+       或 
 
      - 收件者的電子郵件地址是設定為授權網域] 或 [內部轉送網域_與_郵件已傳送或接收透過未經過驗證的連線在組織中公認的網域中。
 
