@@ -3,7 +3,7 @@ title: Office 365 中的攻擊模擬器
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: 身為 Office 365 全域管理員，您可以使用攻擊模擬器您組織中執行真實感化的攻擊案例。這可協助您識別及之前實際攻擊拜訪人次業務找出遭到入侵的使用者。
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27471996"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
@@ -49,7 +49,7 @@ ms.locfileid: "26706437"
     
 - 您是 Office 365 全域管理員
     
-- 您的組織使用[的 Office 365 使用者的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)
+- 您的組織使用[的 Office 365 使用者的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
 - 您的組織具有[Office 365 威脅智慧](office-365-ti.md)與可見安全性攻擊模擬器&amp;規範中心 (移至 [ **Threat management** \> **攻擊模擬器**)<br/>![Threat management-攻擊模擬器](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "26706437"
 
 ![撰寫電子郵件內文](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-您可以製作直接在**電子郵件內文**] 欄位中本身豐富的 HTML 編輯器或與 HTML 來源搭配使用。有兩個重要納入 HTML 欄位： 
+您可以製作直接在**電子郵件內文**] 欄位中本身豐富的 HTML 編輯器或與 HTML 來源搭配使用。
   
 1. 在[安全性&amp;規範中心](https://security.microsoft.com)、 選擇 [ **Threat management** \> **攻擊模擬器**。
     
@@ -118,7 +118,7 @@ ms.locfileid: "26706437"
     
 3. 指定目標收件者。目標的收件者必須有 Exchange Online 信箱的攻擊順序設為 [成功。
     
-4. 指定一組要用於攻擊的密碼。您可以使用的文字 (.txt) 檔案的清單中的密碼。將文字檔不可超過 10 MB 的檔案大小。使用一個密碼每行，並確認清單中的最後一個密碼之後加上固定傳回。
+4. 指定一組要用於攻擊的密碼。為達成此目的，您可以使用的文字 (.txt) 檔案的清單中的密碼。將文字檔不可超過 10 MB 的檔案大小。使用一個密碼每行，並確認清單中的最後一個密碼之後加上固定傳回。
     
 5. 選擇 [**完成**] 以啟動攻擊。 
     
