@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '在 [Office 365 安全性及規範中心內容搜尋搜尋結果匯出到本機電腦。電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201577"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544114"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>從 Office 365 的安全性與規範中心匯出內容的搜尋結果
 
@@ -77,10 +77,6 @@ ms.locfileid: "27201577"
        </defaultProxy>
     </system.net>
     ```
-
-- 請參閱] 區段中的限制匯出搜尋結果的說明。 
-    
-- 要匯出的 PST 檔案大小上限為 10 GB。如果您想要變更此預設大小，您可以編輯您用來匯出搜尋結果的電腦上的 Windows 登錄。請參閱 ＜ [Change 匯出 eDiscovery 搜尋結果時 PST 檔案的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     
 ## <a name="step-1-prepare-search-results-for-export"></a>步驟 1： 準備搜尋結果的匯出
 
@@ -99,13 +95,13 @@ ms.locfileid: "27201577"
     > [!NOTE]
     > 如果超過 7 天的搜尋結果，系統會提示您更新的搜尋結果。如果發生這種情況，取消匯出、 所選的搜尋] 的詳細資料] 窗格中按一下 [**更新搜尋結果**並更新結果之後再啟動匯出。 
   
-6. 在**匯出搜尋結果**頁面] 下方**包含這些項目] 搜尋中的**，選擇下列選項之一：
+6. 在 [**匯出搜尋結果**] 頁面 [**輸出選項**] 下選擇下列選項之一：
     
-    - 僅匯出已編製索引的項目
+    - 排除類具有無法辨識的格式的所有項目已加密或未編製索引的其他考量
     
-    - 已編製索引和部分已編製索引的項目匯出
+    - 包括類具有無法辨識的格式的所有項目已加密或未編製索引的其他考量
     
-    - 只有部分已編製索引的項目匯出
+    - 僅有無法辨識的格式的項目會加密或未編製索引的其他考量
     
     如需說明如何部分已編製索引的項目相關[的詳細資訊](#more-information)] 區段，請參閱都要匯出。如需詳細部分已編製索引的項目，請參閱[部分編製索引內容的搜尋中的項目](partially-indexed-items-in-content-search.md)。
     
@@ -205,8 +201,9 @@ ms.locfileid: "27201577"
   - 您最多可以在組織內同時執行 10 個匯出。
     
   - 單一使用者可以同時執行三個匯出的最大的值。
-    
-  - 匯出內容的搜尋報告不會計算針對任何匯出限制。 
+
+  > [!NOTE]
+  > 從內容搜尋匯出只報告也計算匯出執行於同一時間及匯出單一使用者可以執行的數目的數。
     
 - 如先前所述，從信箱和網站的搜尋結果上傳至 Azure 儲存位置 (中所述[步驟 1： 準備搜尋結果的匯出](#step-1-prepare-search-results-for-export)) 在 2 GB 的每小時最大速率。
     
