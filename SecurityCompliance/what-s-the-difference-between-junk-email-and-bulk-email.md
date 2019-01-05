@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: 客戶 askwhat 有時的垃圾郵件與大量電子郵件的差異吗？本主題的目的是以說明的差異並提供兩者在 Exchange Online 和 Exchange Online Protection (EOP) 中的不同選項的相關資訊。
-ms.openlocfilehash: 87f946c7309589595efd3e11e998e0a9f503b651
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: ea3f27bdd9ec2aa586dd55139825fc90390ca736
+ms.sourcegitcommit: b4e69c54c7bf405d37dfeadc5611803bea9554e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003152"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27733299"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾郵件和大量電子郵件有什麼不同?
 
@@ -41,6 +41,6 @@ ms.locfileid: "23003152"
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>啟用大量郵件敏感度控制項中的內容篩選原則
 
-根據大量電子郵件訊息的公司的原則，系統管理員可以選取要指派大量電子郵件的閾值。設定為可透過在 EAC 中的內容篩選原則設定。請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)） 的步驟。您可以從 1-9，其中 1 會標示為垃圾郵件，大部分的大量電子郵件和 9 允許大部分的大量電子郵件傳遞選擇臨界值設定。服務再執行設定的動作，例如將郵件傳送給收件者的垃圾郵件] 資料夾。 
+根據大量電子郵件訊息的公司的原則，系統管理員可以選取要指派大量電子郵件的閾值。設定為可透過在 EAC 中的內容篩選原則設定。先取出[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)的步驟。您可以從 1-9，其中 1 會標示為垃圾郵件，大部分的大量電子郵件和 9 允許大部分的大量電子郵件傳遞選擇臨界值設定。服務再執行設定的動作，例如將郵件傳送給收件者的垃圾郵件] 資料夾。 
   
 
