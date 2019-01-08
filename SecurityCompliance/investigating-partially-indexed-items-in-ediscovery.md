@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分編製索引的項目 （也是呼叫未建立索引項目） 的 Exchange 信箱項目和 SharePoint 的文件和 OneDrive 網站的因任何原因未完全編製索引內容的搜尋。針對本文中了解為何無法編製索引的搜尋項目，以及部分已編製索引的項目所傳回、 識別搜尋錯誤的部分已編製索引的項目，並使用 PowerShell 指令碼來判斷您的組織衝擊部分已編製索引的電子郵件項目。
-ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c1003f9907fffa37042ba62d01e4d938250cf570
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038076"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749337"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>調查 Office 365 電子文件探索中已局部編製索引的項目
 
-您執行從 Office 365 安全性內容搜尋&amp;規範中心自動包含部分已編製索引的項目中預估的搜尋結果時執行搜尋。部分已編製索引的項目是 Exchange 信箱項目及 SharePoint 和 OneDrive 上的商務網站因任何原因未完全編入搜尋索引的文件。大部分的電子郵件與網站的文件已成功編製索引因為其落在[編製索引的電子郵件的限制](limits-for-content-search.md#indexinglimits)內。不過，某些項目超過這些索引的限制，並將部分編製索引。以下是其他項目為何無法編製索引的搜尋及部分已編製索引的項目執行內容的搜尋時所傳回的原因：
+您執行從 Office 365 安全性內容搜尋&amp;規範中心自動包含部分已編製索引的項目中預估的搜尋結果時執行搜尋。部分已編製索引的項目是 Exchange 信箱項目及 SharePoint 和 OneDrive 上的商務網站因任何原因未完全編入搜尋索引的文件。大部分的電子郵件與網站的文件已成功編製索引因為其落在[編製索引的電子郵件的限制](limits-for-content-search.md#indexing-limits-for-email-messages)內。不過，某些項目超過這些索引的限制，並將部分編製索引。以下是其他項目為何無法編製索引的搜尋及部分已編製索引的項目執行內容的搜尋時所傳回的原因：
   
 - 電子郵件已附加的檔案不能索引 ； 的檔案類型在大多數情況下，此檔案類型是[無法辨識或不支援為編製索引](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     

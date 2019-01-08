@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: 零小時自動清除 (ZAP) 是電子郵件保護功能，可偵測到的郵件垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，並再轉譯無害惡意的內容。如何 ZAP 執行此動作而定的偵測到惡意內容類型。
-ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180843"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749317"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -30,7 +30,7 @@ ms.locfileid: "27180843"
   
 ZAP 皆可使用的預設值是包含任何包含 Exchange Online 信箱的 Office 365 訂閱的 Exchange Online Protection。
 
-依預設，會開啟 ZAP 但必須符合 method 條件：
+依預設，會開啟 ZAP 但必須符合下列條件：
   
 - **垃圾郵件動作**設為**移至 [垃圾郵件] 資料夾的郵件**。 <br/>您也可以建立新的垃圾郵件篩選器原則只套用一組使用者如果您不想要 ZAP 所篩選的所有信箱。
 
@@ -62,7 +62,7 @@ ZAP 動作是一致的信箱使用者;它們不會收到通知如果移動電子
     
 ## <a name="to-see-if-zap-moved-your-message"></a>若要查看 ZAP 是否移動郵件
 
-如果您想要查看 ZAP 如果移動郵件，您可以使用[威脅保護狀態報表](view-email-security-reports.md#threat-protection-status-report-new)（或[威脅 Explorer](use-explorer-in-security-and-compliance.md)）。
+如果您想要查看 ZAP 如果移動郵件，您可以使用[威脅保護狀態報表](view-email-security-reports.md#threat-protection-status-report)（或[威脅 Explorer](use-explorer-in-security-and-compliance.md)）。
     
 ## <a name="to-disable-zap"></a>若要停用 ZAP
   

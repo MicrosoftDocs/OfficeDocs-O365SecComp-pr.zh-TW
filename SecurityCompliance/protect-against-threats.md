@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: 了解 Office 365 企業版如何協助保護您的組織各種包括詐騙、 惡意程式碼、 垃圾郵件、 網路釣魚嘗試及未經授權的存取資料的威脅。
-ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 38fc2590b8693989befcf399e32ef378ab89495d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706057"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749307"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防範 Office 365 中的威脅
 
@@ -27,11 +27,11 @@ ms.locfileid: "26706057"
 
 如果您使用 Office 365 中的自訂網域，停止從您的組織的寄件者詐騙、 改善電子郵件安全性及保護您的網域信譽的協助。
   
-- [防止與 SPF 詐騙]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
+- [在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-- [驗證使用 DKIM 外寄電子郵件]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
+- [使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)
     
-- [驗證與 DMARC 的電子郵件]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
+- [使用 DMARC 來驗證 Office 365 電子郵件](use-dmarc-to-validate-email.md)
     
 ## <a name="anti-spam-amp-anti-malware"></a>反垃圾郵件&amp;反惡意程式碼
 
@@ -39,11 +39,11 @@ ms.locfileid: "26706057"
   
 - [反垃圾郵件&amp;反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)
     
-- [開啟的電子郵件記錄]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
+- [啟用 Office 365中的信箱稽核](enable-mailbox-auditing.md)
     
 - [隔離 Office 365 中的電子郵件](quarantine-email-messages.md)
     
-- [提交給 Microsoft 的可疑內容]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
+- [將惡意程式碼與非惡意程式碼提交給 Microsoft 進行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
     
 ## <a name="advanced-threat-protection"></a>進階威脅防護
 

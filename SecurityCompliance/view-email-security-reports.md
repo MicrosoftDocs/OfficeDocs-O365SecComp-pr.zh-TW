@@ -3,7 +3,7 @@ title: 在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 了解如何尋找並使用您的組織與 Office 365 企業版的電子郵件安全性報告。安全性中有電子郵件安全性報告&amp;規範中心。
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706417"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749327"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706417"
   
 您的電子郵件安全性報告包含下列各項：
   
-- [威脅保護狀態報表](view-email-security-reports.md#tps)（新增 ！） 
+- [威脅保護狀態報表](view-email-security-reports.md#tps) 
     
 - [惡意程式碼偵測] 報告](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ ms.locfileid: "26706417"
     
 - [使用者報告的郵件報告](view-email-security-reports.md#userreported)（新增 ！） 
     
-## <a name="threat-protection-status-report-new"></a>威脅 （新增 ！） 的保護狀態報表
+## <a name="threat-protection-status-report"></a>威脅保護狀態報表
 
 新的**威脅保護狀態**報表是智慧顯示已偵測到並封鎖的 Exchange Online Protection 的惡意電子郵件。這份報告顯示電子郵件會被識別為惡意程式碼或網路釣魚嘗試的相關資訊。 
 
@@ -176,7 +176,7 @@ ms.locfileid: "26706417"
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>若要檢視這些報告需要哪些權限？
 
-若要檢視及使用本文所述的報告，您必須具備適當的角色指派兩個安全性&amp;規範中心及 Exchange 系統管理中心。
+若要檢視和使用本文所述的報告**您必須具有適當的角色指派兩個安全性&amp;規範中心及 Exchange 系統管理中心**。
 
 - Security&amp;規範中心，您必須具備一個指派的下列角色：
     - 組織管理

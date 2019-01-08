@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 系統管理員可以了解如何建立郵件流程規則 （也稱為傳輸規則） 來加密和解密郵件使用 Office 365 郵件加密 (OME) 中。
-ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
-ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
+ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27466922"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749357"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 
@@ -61,10 +61,10 @@ ms.locfileid: "27466922"
    例如，若要將規則套用只有在收件者為組織外部，選取 [**新增條件**，然後選取 [**收件者是外部/內部** \> **組織外** \> **[確定]**。
 
 8. 若要啟用加密使用新的 OME 功能，從**執行下列動作**，選取 [**修改郵件安全性**，然後選擇**適用於 Office 365 郵件加密和權限保護**。從清單中選取的 RMS 範本、 選擇 [**儲存**]，然後選擇 **[確定]**。
+  
+  範本的清單會包含所有的預設範本及 Office 365 所使用的選項為您已建立的任何自訂範本。如果清單是空的請確定您已設定 Office 365 郵件加密的新功能與[設定在 Azure 資訊保護頂端上建立新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)所述。如需預設範本的資訊，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。[**不要轉寄**] 選項的相關資訊，請參閱[不要轉寄的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。**僅限加密**] 選項的相關資訊，請參閱[只加密的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
-   範本的清單會包含所有的預設範本及 Office 365 所使用的選項為您已建立的任何自訂範本。如果清單是空的請確定您已設定 Office 365 郵件加密的新功能與[設定在 Azure 資訊保護頂端上建立新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)所述。如需預設範本的資訊，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。[**不要轉寄**] 選項的相關資訊，請參閱[不要轉寄的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。**僅限加密**] 選項的相關資訊，請參閱[只加密的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
-
-   您可以選擇**加入動作**如果您想要指定另一個巨集指令。
+  您可以選擇**加入動作**如果您想要指定另一個巨集指令。
 
 ### <a name="use-the-eac-to-update-an-existing-mail-flow-rule-to-use-the-new-ome-capabilities"></a>使用 EAC 來更新現有的郵件流程規則使用的新 OME 功能
 
@@ -118,11 +118,11 @@ ms.locfileid: "27466922"
 
    例如，若要將規則套用只有在收件者為組織外部，選取 [**新增條件**，然後選取 [**收件者是外部/內部** \> **組織外** \> **[確定]**。
 
-  8. 若要啟用加密沒有使用新的 OME 功能，**請執行下列操作**，請選取 [**修改郵件安全性** \> **套用 OME 的前一版**]，然後選擇 [**儲存**。
+8. 若要啟用加密沒有使用新的 OME 功能，**請執行下列操作**，請選取 [**修改郵件安全性** \> **套用 OME 的前一版**]，然後選擇 [**儲存**。
 
-    如果您收到未啟用 IRM 授權，則您尚未為您的組織尚未設定 OME 的錯誤。如果您想要立即設定 OME，您必須設定為使用新的 OME 功能。資訊，請參閱[設定新的 Office 365 郵件加密功能建置於 Azure 資訊保護](set-up-new-message-encryption-capabilities.md)。Microsoft 不再支援的 OME 而的新功能的新部署的設定。
+  如果您收到未啟用 IRM 授權，則您尚未為您的組織尚未設定 OME 的錯誤。如果您想要立即設定 OME，您必須設定為使用新的 OME 功能。資訊，請參閱[設定新的 Office 365 郵件加密功能建置於 Azure 資訊保護](set-up-new-message-encryption-capabilities.md)。Microsoft 不再支援的 OME 而的新功能的新部署的設定。
 
-    您可以選擇**加入動作**如果您想要指定另一個巨集指令。
+  您可以選擇**加入動作**如果您想要指定另一個巨集指令。
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 建立可加密電子郵件的新 OME 功能而郵件流程規則
 
