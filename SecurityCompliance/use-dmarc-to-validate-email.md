@@ -13,12 +13,12 @@ search.appverid:
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: 了解如何設定網域型訊息驗證，Reporting，and Conformance (DMARC) 來驗證 Office 365 組織傳送的訊息。
-ms.openlocfilehash: f8c310e5efb6859bff392a89a3ad325400aa369f
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 2f8e712028b5b5ee8950b48780083a20c7dce6ab
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255868"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750042"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 來驗證 Office 365 電子郵件
 
@@ -136,16 +136,16 @@ contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.p
 雖然還有其他此處未提及的語法選項，以下是 Office 365 最常使用的選項。以下列格式為您的網域形成 DMARC TXT 記錄：
   
 ```
-_dmarc.domainTTL IN TXT "v=DMARC1; pct=100; p=policy
+_dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 ```
 
 其中：
   
 - *網域*是您想要保護的網域。根據預設，記錄會從網域和所有子網域保護郵件。例如，如果您指定\_dmarc.contoso.com，則 DMARC 會從網域和所有子網域，例如 housewares.contoso.com 或 plumbing.contoso.com 保護郵件。 
     
-- *TTL* 一律相當於一小時。TTL 所使用的單位，無論是小時 (1 小時)、分鐘 (60 分鐘) 或秒 (3600 秒)，會取決於您的網域註冊機構。 
+- *TTL*應該永遠為相當於一小時。TTL，其中一個小時 （1 小時） 所使用的單位分 （60 分鐘） 或秒 （3600 秒） 隨您的網域的登錄器。 
     
-- pct=100 指出這項規則應 100% 用於電子郵件。
+- *pct = 100*指出此規則應用於電子郵件的 100%。
     
 - *原則*會指定要接收伺服器來追蹤 DMARC 失敗時哪些原則。您可以將原則設定為 none、 隔離或拒絕。 
     

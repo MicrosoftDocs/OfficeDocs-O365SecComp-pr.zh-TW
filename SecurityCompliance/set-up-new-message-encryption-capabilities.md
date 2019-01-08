@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: 內建置於 Azure 資訊保護、 貴組織的功能可以使用新的 Office 365 郵件加密受保護的電子郵件通訊與組織內外的人。與其他 Office 365 組織、 Outlook.com、 Gmail、 及其他電子郵件服務搭配使用的新 OME 功能。
-ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 0f601b425da294fbb2ddbfe1d7497c0d582e3238
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955415"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750032"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>設定全新的 Office 365 郵件加密功能
 
@@ -43,34 +43,33 @@ ms.locfileid: "23955415"
   
 ### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>若要手動設定 OME 的新功能
 
-1. 請確定您的組織有右訂閱。訂閱的詳細資訊，請參閱"何種訂閱我需要使用新的 OME capabilities?"中[Office 365 郵件加密常見問題集。](ome-faq.md)如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。
-    
+1. 請確定您的組織有右訂閱。訂閱的詳細資訊，請參閱"何種訂閱我需要使用新的 OME capabilities?"中[Office 365 郵件加密常見問題集。](ome-faq.md)。如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。
+
 2. 決定您是否希望 Microsoft Azure 資訊保護 （預設值），管理根金鑰或產生和 （稱為將您自己的索引鍵或 BYOK） 自行管理此機碼。如果您想要產生及自行管理此機碼，您需要完成某些步驟，才可設定的新功能的 OME。如需詳細資訊，請參閱[規劃及實作您 Azure 資訊保護租用戶金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。Microsoft 建議您設定 OME 之前完成這些步驟。
-    
+
 3. 啟用來啟用 Azure Rights Management OME 的新功能。指示，請參閱[啟動 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。當您這麼做時，Office 365 自動為您啟用新 OME 功能。
-    
+
     > [!TIP]
-    > 在 Web 上的 outlook 快取其使用者介面，讓它是不錯的選項等待您嘗試將新功能的 OME 套用至使用此用戶端的電子郵件的前一天。使用者介面更新以反映新的設定之前，將不可以使用 OME 新功能。使用者介面更新之後，使用者可以使用 OME 的新功能來保護電子郵件訊息。 
+    > 在 Web 上的 outlook 快取其使用者介面，讓它是不錯的選項等待您嘗試將新功能的 OME 套用至使用此用戶端的電子郵件的前一天。使用者介面更新以反映新的設定之前，將不可以使用 OME 新功能。使用者介面更新之後，使用者可以使用 OME 的新功能來保護電子郵件訊息。
   
 4. （選用）設定新的郵件流程規則或更新現有的郵件流程規則，以定義如何及何時您希望 Office 365 加密郵件傳送從您的組織。
-    
+
 ## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>確認 OME 新功能均已正確設定使用 Windows PowerShell
 
 遵循下列步驟以確認您的租用戶已正確設定要用於 OME 透過 Exchange Online PowerShell 中的新功能。
   
-1. 使用 Office 365 組織中具有全域系統管理員權限的工作或學校帳戶，請啟動 Windows PowerShell 工作階段並連線至 Exchange Online。指示，請參閱[Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
-    
+1. 使用 Office 365 組織中具有全域系統管理員權限的工作或學校帳戶，請啟動 Windows PowerShell 工作階段並連線至 Exchange Online。指示，請參閱[Connect to Exchange Online PowerShell](https://aka.ms/exopowershell)。
+
 2. 執行 Test-irmconfiguration 指令程式使用下列語法：
-    
+
     ```Test-IRMConfiguration [-Sender <email address >]```  
 
    例如：
-    
+
     ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
-    其中電子郵件地址是 Office 365 組織中使用者的電子郵件地址。雖然選用、 提供寄件者電子郵件地址會強制執行其他檢查系統。
-    
-    結果應該類似下列：
+    其中電子郵件地址是 Office 365 組織中使用者的電子郵件地址。雖然選用、 提供寄件者電子郵件地址會強制執行其他檢查系統。結果應該類似下列：
+
     
     ```
     Results : Acquiring RMS Templates ...
@@ -87,11 +86,11 @@ ms.locfileid: "23955415"
     ```
 
     其中*Contoso*被由 Office 365 組織的名稱取代。 
-    
+
     在結果中傳回的預設範本的名稱可能會不同顯示在上面的結果。
-    
+
     範本和預設範本的相關資訊的簡介，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。[不要轉寄的相關資訊的選項，僅加密] 選項，及如何建立其他範本，了解權限包括或現有的範本，請參閱 ＜[設定 Azure 版權管理使用權限](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights)。
-    
+
 3. 執行 Remove-pssession cmdlet 來中斷與版權管理服務的連線。
     
     ```Remove-PSSession $session```
@@ -106,7 +105,6 @@ ms.locfileid: "23955415"
 如需郵件流程規則的詳細資訊，請參閱 ＜ [Define 郵件流程規則來加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="related-topics"></a>相關主題
-<a name="Rules_1"> </a>
 
 [傳送、 檢視和回覆加密郵件在 Outlook 中](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
   
@@ -114,6 +112,4 @@ ms.locfileid: "23955415"
   
 [使用遠端 PowerShell 連線到 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
   
-[定義加密 Office 365 中的電子郵件的郵件流程規則](define-mail-flow-rules-to-encrypt-email.md)
-  
-
+[定義郵件流規則以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)
