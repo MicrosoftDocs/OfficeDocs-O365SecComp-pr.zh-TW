@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 01/08/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: 安全的附件功能提供時間按一下 [驗證電子郵件附件。使用安全附件來自惡意檔案人員保護您的組織傳送或接收電子郵件中。
-ms.openlocfilehash: e09c9abec7485408f102fa6c20d14b91d9c2bf36
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 85c1ec3e0126a155f863b9fef9ddb36b13d0b3fb
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238435"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769837"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -39,13 +39,13 @@ ATP 安全附件功能會檢查您的組織中的人員的電子郵件附件。�
     
 - **範例 2： SharePoint Online 中的檔案**假設 Jean 接收到的檔案和上載到 SharePoint Online 中的文件庫。Jean 共用檔案的連結與其餘的小組不知道該檔案實際惡意。幸運地是， [SharePoint、 OneDrive 及 Microsoft 小組 ATP](atp-for-spo-odb-and-teams.md)偵測到惡意檔案並封鎖它。稍後，在幾天後 Chris 會移到開啟的文件。雖然 Chris 可以看到該檔案有，Chris 無法開啟或共用，以防止 Chris 的電腦與其他人從惡意的檔案。 
     
-ATP 安全附件原則可套用到特定的人員或組織中的群組或整個網域。若要深入了解，請參閱**[Set up Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)**。 
+Office 365 資料所在的相同區域中放置 ATP 掃描取得安全的附件。多個資料中心地理位置的詳細資訊，請參閱[其中是位於資料？](https://products.office.com/where-is-your-data-located?geo=All) 
+
+ATP 安全附件原則可套用到特定的人員或組織中的群組或整個網域。此外，ATP 安全附件原則可以設定為使用時要掃描實際附件的版面配置區的附件。若要深入了解，請參閱**[Set up Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)**。 
   
 ## <a name="how-to-get-atp-safe-attachments"></a>如何取得 ATP 安全附件
 
-ATP 安全附件功能是[進階威脅保護](office-365-atp.md)Microsoft 365 企業版、 Office 365 企業版 E5，以及 Microsoft 365 Business 中隨附的一部分。 
-  
-ATP 安全附件功能才適用情況：
+ATP 安全附件功能是[Office 365 進階威脅保護](office-365-atp.md)的一部分。ATP 安全附件功能適用於時：
   
 - ATP 安全附件的原則設定。（請參閱[Set up Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)）。
     
@@ -53,11 +53,12 @@ ATP 安全附件功能才適用情況：
     
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>如何知道 ATP 安全附件保護是否就緒
 
- [ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)必須設為就地 ATP 安全附件 protection 順序定義。 
-  
 請參閱服務正常運作方式的其中一個好方法是檢視[進階威脅 Protection 的報告](view-reports-for-atp.md)。
+
+
+[ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)必須設為就地 ATP 安全附件 protection 順序定義。   
   
-此外下, 表說明幾個案例。在所有這些情況下，我們假設組織有 Office 365 企業版 E5，其中包含進階威脅保護。
+下表說明幾個案例。在所有這些情況下，我們假設組織有包含進階威脅保護的 Office 365 訂閱。
   
 |**範例案例**|**ATP 安全附件保護沒有在此例中套用吗？**|
 |:-----|:-----|

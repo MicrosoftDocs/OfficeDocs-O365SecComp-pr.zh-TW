@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文說明如何 Office 365 可以降低對網路釣魚攻擊用途是寄件者的網域即詐騙的網域。其完成這同樣藉由分析郵件並封鎖過可驗證 neithe 使用標準的電子郵件的驗證方法或其他寄件者信譽技術 （英文）。這項變更被實減少網路釣魚攻擊的 Office 365 組織公開到數目。
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194714"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769857"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -414,21 +414,21 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 |**Priority (優先順序)**|**原則**|**類別**|**其中 managed？**|**適用於**|
 |:-----|:-----|:-----|:-----|:-----|
-|1   <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|2   <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|3   <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|4   <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
-|5   <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|6   <br/> |大量  <br/> |大量  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|7   <br/> |網域模擬  <br/> |DIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織  <br/> |
-|8   <br/> |使用者模擬  <br/> |UIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織 <br/> |
+|1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|2  <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|3  <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|4  <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
+|5  <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|6  <br/> |大量  <br/> |大量  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|7  <br/> |網域模擬  <br/> |DIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織  <br/> |
+|8  <br/> |使用者模擬  <br/> |UIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織 <br/> |
    
 如果您有多個不同的反網路釣魚原則，將套用一個在最高優先順序。例如，假設您有兩個原則：
   
 |**原則**|**Priority (優先順序)**|**使用者/網域模擬**|**反詐騙**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |On  <br/> |
+|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |On  <br/> |
    
 如果訊息有和識別身分詐騙與使用者模擬與相同的一組使用者範圍的原則及原則 B 則郵件會被視為詐騙但採取任何動作套用自反詐騙已關閉並詐騙執行在較高的優先順序 (4) 與使用者模擬 (8)。
   
@@ -444,7 +444,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 ![客戶 MX 記錄未指向 Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-另一部伺服器可能是 Exchange 內部部署郵件伺服器，篩選裝置 Ironport，例如郵件或其他雲端託管服務。
+Exchange 內部部署郵件伺服器，篩選裝置 Ironport，例如郵件或其他雲端託管服務可能是另一部伺服器。
   
 如果收件者的網域的 MX 記錄未指向 Office 365，然後有不需要在停用反詐騙因為 Office 365 查詢接收網域的 MX 記錄並隱藏反詐騙如果其指向另一個服務。如果您不知道您的網域是否在前端具有記憶體另一部伺服器，您可以使用 MX 工具箱類似的網站来查詢的 MX 記錄。它可能之後類似以下的某個項目：
   
@@ -635,7 +635,7 @@ Microsoft 不提供每個 SPF、 DKIM，以及 DMARC 詳細的實作指導方針
     
 - 如果您有大量寄件者傳輸代替您撥打電話的電子郵件，您應該進行處理的方式傳送電子郵件如此來源中的傳送端網域： 地址 （如果它是屬於您） 配合通過 SPF 或 DMARC 的網域。
     
-- 如果您有內部部署郵件伺服器，或傳送軟體為-a-服務提供者或從雲端主控像 Microsoft Azure、 機構 GoDaddy、 Rackspace、 Amazon Web 服務、 服務或類似，您應該確認他們會新增至 SPF 記錄。
+- 如果您有內部部署郵件伺服器，或傳送軟體為-a-服務提供者或從雲端主控像 Microsoft Azure、 機構 GoDaddy、 Rackspace、 Amazon Web 服務、 服務或類似，您應該確定他們已新增至 SPF 記錄。
     
 - 如果您是主控的 ISP 小型網域，您應設定的指示 SPF 記錄您的 ISP 所提供給您。大部分 Isp 提供這些類型的指示並收錄公司支援頁面上。
     

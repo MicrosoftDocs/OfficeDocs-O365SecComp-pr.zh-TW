@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如果傳送大量取消登錄的網域電子郵件，則會執行快速封鎖電子郵件的風險。請閱讀本篇文章以深入了解。
-ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
-ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
+ms.openlocfilehash: f632c5f7ab94a200a364828408b13c0026335869
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25596726"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769779"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>取消登錄的網域電子郵件： 您需要知道什麼
 
@@ -25,7 +25,7 @@ Office 365 允許以轉送某些郵件透過 Exchange Online Protection (EOP) �
 
 ## <a name="problems-with-unregistered-domains"></a>取消登錄的網域的問題
 
-內部部署伺服器取得危害和最後轉送大量的不在 EOP 的垃圾郵件時的問題。在幾乎所有的情況下，右連接器已設定但從取消登錄、 也稱為取消提供這項、 網域傳送電子郵件。Office 365 沒有可合理的郵件來自取消登錄的網域]，但應在您計劃傳送出的每個網域系統管理中心設定公認的網域。
+內部部署伺服器取得危害和最後轉送大量的垃圾郵件移出 EOP 時問題。在幾乎所有的情況下，右連接器已設定但從取消登錄、 也稱為取消提供這項、 網域傳送電子郵件。Office 365 沒有可合理的郵件來自取消登錄的網域]，但應在您計劃傳送出的每個網域系統管理中心設定公認的網域。
 
 一旦危害，承租人會禁止傳送輸出郵件取消登錄的網域。使用者會收到未傳遞報告 (NDR) 表示：
 
@@ -39,7 +39,7 @@ Office 365 允許以轉送某些郵件透過 Exchange Online Protection (EOP) �
 
 2. 尋找不尋常的連接器。惡意執行者通常會在您的 Office 365 租用戶傳送垃圾郵件中建立新的輸入的連接器。在檢查您的連接器的詳細資訊可以找到[以下](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)。 
 
-3. 鎖定您的內部伺服器和確認他們不遭到入侵。
+3. 鎖定的內部伺服器和確認他們不遭到入侵。
 
 > [!TIP]
 > 有許多因素相關這裡，特別是如果這些是協力廠商伺服器。無論如何，您將需要能夠確認離開伺服器的所有郵件都是否合法。
@@ -52,7 +52,7 @@ Office 365 允許以轉送某些郵件透過 Exchange Online Protection (EOP) �
 
 [Office 365 中的電子郵件未傳遞回報](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 
-[設定信箱的郵件轉寄](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
+[設定信箱的電子郵件轉寄功能](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
 [如何將多功能裝置或應用程式設定為使用 Office 365 傳送電子郵件](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 

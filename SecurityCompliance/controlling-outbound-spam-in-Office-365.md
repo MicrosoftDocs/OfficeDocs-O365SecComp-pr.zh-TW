@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: 如果您的組織傳送大量大宗郵件標記為垃圾郵件，您無法取得封鎖，禁止傳送電子郵件與 Office 365。請閱讀本篇文章以深入了解發生的原因以及可以怎麼有關它。
-ms.openlocfilehash: 947ea4ed7a37b2ba1c5332aa07582fa4c4949eb0
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 2d198bc1b61da429f45f0d1f54c63876d59d890f
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972245"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769807"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>控制 Office 365 的輸出垃圾郵件
 
@@ -47,7 +47,7 @@ ms.locfileid: "24972245"
 
 很難將客戶想要傳送大量電子郵件和比較防止入侵的帳戶和大量 emailers 與不良清單取得作法的服務之間的平衡。同樣地，輸出 IP 登陸 3rd 的廠商封鎖清單上的成本是高於封鎖客戶傳送輸出電子郵件。[Exchange Online 服務說明](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)所述，使用 EOP 來傳送大量電子郵件不支援使用的服務與只允許"最佳投入比 」 為基礎。要傳送大量電子郵件的客戶，我們建議下列項目：
 
-1. **傳送到其本身的內部部署郵件伺服器的大量電子郵件**。這表示客戶必須維護自己電子郵件的基礎結構這種類型的電子郵件。
+1. **傳送大量電子郵件到其本身的內部部署郵件伺服器**。這表示客戶必須維護自己電子郵件的基礎結構這種類型的電子郵件。
 
 2. **使用第 3 協力廠商對大量 emailer 傳送大量的通訊**。有數個 3rd 廠商大量 emailers 要事業很傳送大量電子郵件。它們可搭配客戶確認他們具有良好電子作法擁有專用於強制執行它的資源。 
 
