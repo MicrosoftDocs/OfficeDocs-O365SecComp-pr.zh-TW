@@ -3,7 +3,7 @@ title: 新的 Office 365 郵件加密原則敏感資訊
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 自動套用至所有的承租人啟用的敏感資訊類型的 Office 365 郵件加密原則。
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752082"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789451"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>敏感資訊的 office 365 郵件加密原則
 
@@ -30,7 +30,7 @@ ms.locfileid: "27752082"
 
 ## <a name="sensitive-information-type-policy-details"></a>敏感資訊類型原則的詳細資訊
 
-Exchange 郵件流程規則將會自動加密不必與組織外部的電子郵件在組織中建立*僅加密*如果它們包含以下敏感資訊類型的原則：
+Exchange 郵件流程規則將會自動加密不必與組織外部的電子郵件在組織中建立*僅限加密的*電子郵件或其附件包含以下敏感資訊類型的原則：
 
 - 阿拉巴馬州路由號碼
 - 信用卡號
@@ -70,6 +70,6 @@ Exchange 郵件流程規則將會自動加密不必與組織外部的電子郵�
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>如何停用自動原則？
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>如何停用或自訂自動原則？
 
-如果您沒有選擇出這項變更與 Exchange 郵件規則已建立，您可以[停用規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)移至 [**郵件流程** > **規則**中 Exchange admin center (EAC) 並停用"*輸出加密的規則機密的電子郵件 （不在] 方塊中的規則）*"。
+如果您沒有選擇出這項變更與 Exchange 郵件流程規則已建立，您可以[停用或編輯的規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)移至 [**郵件流程** > **規則**中 Exchange admin center (EAC) 和停用"*加密的規則輸出機密電子郵件 （不在] 方塊中的規則）*"。

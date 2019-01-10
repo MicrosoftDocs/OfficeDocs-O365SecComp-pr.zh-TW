@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: 當您設定好您 ATP 安全附件原則時，您選擇以避免郵件延遲，並啟用人員預覽會掃描附件的動態傳遞。
-ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769827"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789461"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和 Office 365 ATP 安全附件預覽
 
@@ -35,6 +35,9 @@ ms.locfileid: "27769827"
 - 如果設為惡意決定附件，它傳送至隔離某人在貴組織的安全性小組 （例如 Office 365 全域管理員或安全性管理員） 可以[管理 Office 365 中隔離的郵件](manage-quarantined-messages-and-files.md)。
 
 大部分的 Pdf 和 Office 可以在安全模式中預覽文件時 ATP 掃描正在進行中。如果附件不相容的動態傳遞預覽程式，直到完成 ATP 安全附件掃描電子郵件收件者請參閱附件版面配置區。
+
+> [!TIP]
+> 如果您使用的行動裝置與 Pdf 不會呈現在第一次的動態傳遞預覽程式，請嘗試登入 Office 365 使用行動裝置瀏覽器。
 
 具有動態傳遞人員可讀取及回應其電子郵件訊息向右離開時正在分析其附件。 
 
@@ -73,4 +76,4 @@ Office 365 資料所在的相同區域中放置 ATP 掃描取得安全的附件�
 - Exchange Online 系統管理員已啟用 Exclaimer 的環境。若要解決這個問題，請參閱[ATP 動態傳遞和 Exclaimer 可用時不會傳遞附件的郵件](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
 - 使用[安全/多用途網際網路郵件延伸標準 (S/MIME)](s-mime-for-message-signing-and-encryption.md)加密的郵件）
-    
+
