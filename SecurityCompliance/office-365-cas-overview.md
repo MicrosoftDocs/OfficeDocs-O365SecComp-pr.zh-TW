@@ -3,6 +3,7 @@ title: Office 365 雲端 App 安全性概觀
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 雲端應用程式安全性可讓您算可疑活動在 Office 365 中讓您可以調查可能有問題且，如果需要採取動作可解決安全性問題的情況。 '
-ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
-ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
+ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26864554"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014925"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性概觀
   
@@ -39,7 +40,7 @@ Office 365 雲端應用程式安全性可讓您深入了解可疑活動在 Offic
   
 您可以取得 Office 365 雲端應用程式安全性入口網站透過 Office 365 安全性&amp;規範中心。以下是執行它的其中一個好方法：
   
-1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。 <br/>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未未啟用 Office 365 雲端應用程式安全性，而且會[開啟 [Office 365 雲端應用程式安全性](turn-on-office-365-cas.md)全域系統管理員）。
     
@@ -91,17 +92,17 @@ Office 365 雲端應用程式安全性適用於您組織所定義的原則。與
   
 [了解網頁流量記錄檔與資料來源的 Office 365 雲端應用程式安全性](web-traffic-logs-and-data-sources-for-ocas.md)
   
-## <a name="app-permissions"></a>應用程式權限
+## <a name="oauth-apps"></a>OAuth 應用程式
 
 與 Office 365 雲端應用程式安全性]，您可以允許或防止使用協力廠商應用程式存取 Office 365 中的資料在組織中的人員。
   
-![O365 CAS 中您可以從調查] 功能表存取 [管理應用程式權限] 頁面。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
+![O365 CAS 中您可以從調查] 功能表存取 [管理 OAuth 應用程式] 頁面。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
   
-若要取得這個] 頁面上，移至**調查** \> **應用程式權限**。 
+若要取得這個] 頁面上，移至**調查** \> **OAuth 應用程式**。 
   
 ![在 O365 CAS 入口網站中選擇 [調查]。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[使用 Office 365 雲端 App 安全性管理 App 權限](manage-app-permissions-in-ocas.md)
+[使用 Office 365 雲端 App 安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>雲端探索儀表板
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: 當您設定好您 ATP 安全連結原則時，您可以包含不要 not 修正 ' 要讓組織中某些使用者瀏覽您在您的清單中包含的網站 Url 的清單。
-ms.openlocfilehash: 89fafd5ff7def491a231bc8bc3eb19ef8db16a59
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d3883d6aff29b9a061b62e4854e7aad52656769f
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26705977"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015045"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單
 
@@ -29,7 +29,7 @@ ms.locfileid: "26705977"
 
 ATP 安全連結保護使用多個清單，包括您的組織已封鎖的 Url 清單和 「 未修正"例外狀況的清單。如果您擁有的必要權限，您可以設定自訂的 「 未修正 」 清單。當您新增或編輯套用至組織中特定收件者的安全連結原則，您可以這麼做。 
   
-1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)和登入工作或學校帳戶。 
+1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
 2. 在左導覽列中，[ **Threat management** \> **原則** \> **安全的連結**。
     

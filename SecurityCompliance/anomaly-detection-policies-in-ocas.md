@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Office 365 雲端應用程式安全性異常偵測原則使用內建的演算法可協助從抽出潛在的問題。您應該會有至少一個異常偵測原則] 中，您可以使用篩選器來調整 （當您建立它）。 '
-ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706337"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015074"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的異常偵測原則
 
@@ -51,7 +51,7 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
     
 ## <a name="view-your-anomaly-detection-policies"></a>檢視您異常偵測原則
 
-1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     
@@ -89,11 +89,10 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
 |多個失敗的登入嘗試次數  <br/> |失敗的單一工作階段中的多個登入嘗試的使用者會識別相對於學到的基準，這可能表示上破壞嘗試。  <br/> |
    
 ## <a name="triage-anomaly-detection-alerts"></a>分辨異常偵測警示
-<a name="triage"> </a>
 
 當提醒甚至，您可以快速分辨這些提醒並決定哪些先處理。具有內容的通知可讓您查看更大的圖片，並決定是否遭到惡意的某個項目確實正在進行的活動。使用下列程序開始探索提醒：
   
-1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     

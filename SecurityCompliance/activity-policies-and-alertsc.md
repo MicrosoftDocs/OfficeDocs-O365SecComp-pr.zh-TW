@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: 定義活動原則與 Office 365 雲端應用程式的安全性設定以特定活動發生或太常發生時觸發提醒。藉由設定原則以觸發提醒，您可通知及監視特定的活動。
-ms.openlocfilehash: ff1f0acd3c622f20bff26f6a77cc686193cf76fc
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: a239e2bf453a01bf852a702a66cb2f09c02b8c96
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706467"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014935"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的活動原則和警訊
 
@@ -47,7 +47,7 @@ Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性
     
 ## <a name="create-a-new-activity-policy"></a>建立新的活動原則
 
-1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     

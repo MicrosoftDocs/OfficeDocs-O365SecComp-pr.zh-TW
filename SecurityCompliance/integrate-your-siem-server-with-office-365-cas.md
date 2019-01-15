@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以使用 Office 365 雲端應用程式安全性整合 SIEM 伺服器。請閱讀本篇文章以取得它的運作方式，以及如何設定它的概觀。
-ms.openlocfilehash: f0965f822b50a0f06dfb69620a9d64c6ca509864
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 0e185dec44bed7657bed126f70dfc64ffc135611
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706407"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015025"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>將 SIEM 伺服器與 Office 365 雲端 App 安全性整合
   
@@ -67,7 +67,7 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>步驟 1： 會將它設定 Office 365 雲端應用程式安全性 SIEM 代理程式
 
-1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
     
 2. 移至 [**提醒** \> **管理進階提醒**。
     

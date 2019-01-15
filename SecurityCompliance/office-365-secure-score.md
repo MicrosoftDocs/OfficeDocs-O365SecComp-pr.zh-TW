@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: 屬於不知道如何安全您的組織是這麼 in Office 365？安全的分數以下是可協助。安全的分數分析您的組織安全性根據規則活動和 Offic 365 中的安全性設定並指派分數。
-ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 08d452f2b297948c13243a5eb36ae6e22839e545
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706177"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015065"
 ---
 # <a name="office-365-secure-score"></a>Office 365 安全分數
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706177"
 
 如果您的組織有包含[Office 365 企業版](https://docs.microsoft.com/office365/enterprise/)、 [Microsoft 365 商務](https://docs.microsoft.com/microsoft-365/business/)或 Office 365 企業進階版訂閱且您具有必要的權限，您可以檢視您組織的安全分數造訪[https://securescore.office.com](https://securescore.office.com)。 
 
-或者，您可以造訪安全性與規範中心 ([https://security.microsoft.com](https://security.microsoft.com)) 中，您將在此找到您目前的分數可提供安全分數 widget。
+或者，您可以造訪安全性與規範中心 ([https://protection.office.com](https://protection.office.com)) 中，您將在此找到您目前的分數可提供安全分數 widget。
 
 ![安全的分數 widget](media/SecureScoreWidget-o365.png)
 
@@ -55,7 +55,7 @@ Widget 包括 Microsoft 安全分數，其會引導您到安全的分數儀表�
   
 ![Office 365 安全分數工具的分數分析] 索引標籤](media/SecureScore-ScoreAnalyzer-7days.png)
   
-圖表下方您會看見分數和動作 lsit 依類別排列。
+圖表下方您將了依類別排列的分數和動作的清單。
   
 ![顯示所選取的資料點分數分析] 索引標籤上的圖形](media/SecureScore-Analyzer-breakdownbelowchart.png)
   

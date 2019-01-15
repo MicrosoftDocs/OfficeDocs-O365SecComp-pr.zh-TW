@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: 設定安全的連結原則來保護您的組織不在 Word、 Excel、 PowerPoint 及 Visio 檔案，以及在電子郵件訊息中的惡意連結。
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706087"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015055"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706087"
 
 當您有[Office 365 進階威脅保護](office-365-atp.md)時，您必須套用至組織中所有人預設 ATP 安全連結原則。請務必檢閱，並視需要編輯預設原則。
   
-1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)和登入工作或學校帳戶。 
+1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
 2. 在左導覽列中， **Threat management**] 下選擇**原則\>****安全的連結**。
     
@@ -67,7 +67,7 @@ ms.locfileid: "26706087"
 
 您已檢閱 （或編輯） 套用至所有人預設 ATP 安全連結原則之後下, 一步是定義會套用至特定收件者的其他原則。例如，您可以指定例外狀況為預設原則所定義的其他原則。 
   
-1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)和登入工作或學校帳戶。 
+1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
 2. 在左導覽列中， **Threat management**] 下選擇 [**原則**]。
     

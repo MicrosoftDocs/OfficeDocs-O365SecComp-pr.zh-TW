@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: 了解威脅追蹤者，包括新值得注意的追蹤者，以協助組織保持在最上方安全性考量。
-ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706377"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014995"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
@@ -35,7 +35,7 @@ ms.locfileid: "26706377"
   
 追蹤者都只是一些您取得[Office 365 威脅智慧](office-365-ti.md)具有許多強大的功能。時，新的威脅追蹤者將會包含[值得注意的追蹤者](threat-trackers.md#notey)、 [[趨勢追蹤者](threat-trackers.md#trending)、[追蹤查詢](threat-trackers.md#trackedq)和[Saved 查詢](threat-trackers.md#savedq)。
   
-若要檢視和使用威脅追蹤者可供您的組織時，請移至 [安全性&amp;規範中心 ([https://security.microsoft.com](https://security.microsoft.com)) 選擇**Threat management** \> **威脅 tracker （英文)**。
+若要檢視和使用威脅追蹤者可供您的組織時，請移至 [安全性&amp;規範中心 ([https://protection.office.com](https://protection.office.com)) 選擇**Threat management** \> **威脅 tracker （英文)**。
   
 > [!NOTE]
 > 若要使用威脅追蹤者，您必須是 Office 365 全域管理員、 安全性管理員或安全性讀者。請參閱[中的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 

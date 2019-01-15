@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: 了解如何使用威脅智慧尋找及調查惡意的電子郵件。
-ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706037"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014915"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>尋找與調查惡意的電子郵件已傳遞 （Office 365 威脅智慧）
 
@@ -48,7 +48,7 @@ ms.locfileid: "26706037"
 > [!TIP]
 > [威脅瀏覽器](get-started-with-ti.md#threat-explorer)（也稱為 Explorer），是功能強大的適合多種目的，例如尋找和刪除郵件、 識別惡意的電子郵件寄件者的 IP 位址或開始進一步調查事件。下列程序著重於使用總管來尋找並從收件者的信箱中刪除惡意的電子郵件。 
   
-1. 移至 [[https://security.microsoft.com](https://security.microsoft.com)及使用 Office 365 工作或學校帳戶登入。這會引導您安全性&amp;規範中心。 
+1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。這會引導您安全性&amp;規範中心。 
     
 2. 在左導覽列中，選擇 [ **Threat management** \> **瀏覽器**。
     

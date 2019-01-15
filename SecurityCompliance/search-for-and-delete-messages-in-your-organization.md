@@ -3,7 +3,7 @@ title: 搜尋並刪除您的 Office 365 組織-Admin 說明中的電子郵件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用搜尋並清除 Office 365 安全性功能&amp;規範中心來搜尋並刪除您組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: d9ca212585f1cb7e98e5f577ce47fcdef7ea979f
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531866"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015015"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>搜尋並刪除您的 Office 365 組織-Admin 說明中的電子郵件
 
@@ -99,20 +99,31 @@ ms.locfileid: "23531866"
   
 ## <a name="step-3-delete-the-message"></a>步驟 3： 刪除郵件
 
-您已建立並精簡內容搜尋以傳回您想要移除並連接到安全性訊息之後&amp;規範中心 PowerShell 中的最後一個步驟是執行**新增 ComplianceSearchAction** cmdlet 來刪除郵件。已刪除的郵件會移到使用者的 [可復原的項目] 資料夾。 
+您已建立並精簡內容搜尋以傳回您想要移除並連接到安全性訊息之後&amp;規範中心 PowerShell 中的最後一個步驟是執行**新增 ComplianceSearchAction** cmdlet 來刪除郵件。您可以虛或硬-刪除郵件。虛刪除的郵件會移至使用者的 [可復原的項目] 資料夾及保留，直到刪除項目保留期間到期為止。硬碟已刪除的郵件標記為永久移除從信箱並將會永久移除受管理的資料夾助理員處理此信箱的下一次。如果信箱啟用單一項目復原，則硬碟已刪除的項目將永久移除後刪除項目保留期間到期。如果信箱處於保留狀態，刪除的郵件會保留項目的保留期間到期直到或從信箱移除保留為止。
   
-在下列範例中，命令將會刪除名為「移除網路釣魚郵件」的內容搜尋所傳回的搜尋結果。 
+在下列範例中，此命令將會虛刪除名為"移除網路釣魚 Message"的內容搜尋所傳回的搜尋結果。 
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-  
+在下列範例中，命令會完全刪除名為"移除網路釣魚 Message"的內容搜尋所傳回的搜尋結果。 
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
+
 *SearchName*參數所指定的搜尋是您在步驟 1 中建立內容搜尋。 
+
+硬碟-刪除"移除網路釣魚訊息 「 內容搜尋傳回的項目，則會執行此命令：
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
   
 如需詳細資訊，請參閱[新增 ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
   
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - **如何取得的搜尋狀態及移除作業嗎？**
 
@@ -120,11 +131,9 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **刪除郵件之後會發生什麼事？**
 
-    使用已刪除的訊息`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令移至使用者的 [可復原的項目] 資料夾中的 [刪除] 資料夾。它不是立即清除來自 Office 365。使用者可以設定信箱已刪除的項目保留期間為基礎的持續期間復原刪除的郵件] 資料夾中的郵件。此保留期間到期 （或如果使用者清除前的郵件會到期後），郵件移至 [清除] 資料夾，並不會再使用者存取。一次 [清除] 資料夾中郵件會再次保留已刪除的項目保留期間如果單一項目復原已啟用信箱的信箱設定為基礎的工期。（Office 365 的單一項目復原預設會啟用時建立新的信箱。）刪除項目保留期間到期後，標記為永久刪除郵件，並將來自 Office 365 清除信箱由受管理的資料夾助理員處理下一次。 
-    
-- **如何知道郵件的刪除和移至使用者的 [可復原的項目] 資料夾？**
+   使用已刪除的訊息`New-ComplianceSearchAction -Purge -PurgeType HardDelete`命令移至 [清除] 資料夾，且無法供使用者存取。將郵件移至 [清除] 資料夾之後，郵件會保留已刪除的項目保留期間的持續期間如果單一項目復原已啟用信箱。（Office 365 的單一項目復原預設會啟用時建立新的信箱。）刪除項目保留期間到期後，標記為永久刪除郵件，並將來自 Office 365 清除信箱由受管理的資料夾助理員處理下一次。 
 
-    如果您執行相同的內容搜尋您刪除一則訊息之後，您仍會看到相同數目的搜尋結果 （和可能會假設未從使用者信箱中刪除郵件）。這是因為內容的搜尋會搜尋 [可復原的項目] 資料夾中，這是其中已刪除的郵件移至執行之後`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令。若要確認郵件已移至 [可復原的項目] 資料夾，您可以執行就地 eDiscovery 搜尋 （使用相同的來源信箱及搜尋準則做為在步驟 1 中建立內容搜尋），並再將搜尋結果複製到探索信箱。然後您可以檢視搜尋結果中的探索信箱並確認郵件已移至 [可復原的項目] 資料夾。如需建立就地 eDiscovery 搜尋所使用的來源信箱和內容搜尋的搜尋查詢的清單的詳細資訊，請參閱[使用 eDiscovery 工作流程中的內容搜尋](use-content-search-in-ediscovery.md)。 
+   如果您使用`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令郵件會移到使用者的 [可復原的項目] 資料夾中的 [刪除] 資料夾。它不是立即清除來自 Office 365。使用者可以設定信箱已刪除的項目保留期間為基礎的持續期間復原刪除的郵件] 資料夾中的郵件。此保留期間到期 （或如果使用者清除前的郵件會到期後），郵件移至 [清除] 資料夾，並不會再使用者存取。一次 [清除] 資料夾中郵件會保留已刪除的項目保留期間如果單一項目復原已啟用信箱的信箱設定為基礎的工期。（Office 365 的單一項目復原預設會啟用時建立新的信箱。）刪除項目保留期間到期後，標記為永久刪除郵件，並將來自 Office 365 清除信箱由受管理的資料夾助理員處理下一次。 
     
 - **如果您必須刪除超過 50000 個信箱的郵件吗？**
 
@@ -132,12 +141,12 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **將會刪除包含在搜尋結果中編製索引的項目吗？**
 
-    否，`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令不會刪除編製索引的項目。 
+    否，' 新增 ComplianceSearchAction-Purge 命令不會刪除編製索引的項目。 
     
 - **如果從已處於就地保留或訴訟暫止狀態或指派給 Office 365 保留原則的信箱刪除郵件發生什麼情況？**
 
-    郵件會清除 （由使用者或後刪除項目保留期間到期） 之後，郵件會保留直到保留期間到期。若無限制保留持續時間，則會保留項目，直到移除保留或變更的保留期間。
+    郵件已清除，並移至 [清除資料夾之後，郵件會保留直到保留期間到期。若無限制保留持續時間，則會保留項目，直到移除保留或變更的保留期間。
     
-- **為什麼要選擇搜尋及移除工作流程分屬於不同的安全性&amp;規範中心角色群組？**
+- **為什麼要選擇搜尋及移除這些分散不同的安全性與規範中心角色群組的工作流程？**
 
     如先前所述人員有 eDiscovery 管理員角色群組的成員或來搜尋信箱的規範搜尋管理角色指派。若要刪除的郵件，人員必須是 「 組織管理角色群組的成員或搜尋和清除管理角色指派。這可讓控制項誰可在組織中搜尋信箱和誰可以刪除郵件。 

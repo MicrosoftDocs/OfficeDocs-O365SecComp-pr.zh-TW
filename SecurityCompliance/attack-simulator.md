@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: 身為 Office 365 全域管理員，您可以使用攻擊模擬器您組織中執行真實感化的攻擊案例。這可協助您識別及之前實際攻擊拜訪人次業務找出遭到入侵的使用者。
-ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
-ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
+ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27471996"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015035"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
@@ -66,7 +66,7 @@ ms.locfileid: "27471996"
   
 您可以製作直接在**電子郵件內文**] 欄位中本身豐富的 HTML 編輯器或與 HTML 來源搭配使用。
   
-1. 在[安全性&amp;規範中心](https://security.microsoft.com)、 選擇 [ **Threat management** \> **攻擊模擬器**。
+1. 在[安全性&amp;規範中心](https://protection.office.com)、 選擇 [ **Threat management** \> **攻擊模擬器**。
     
 2. 指定攻擊的有意義的行銷活動名稱或選取範本。 <br/>![網路釣魚起始頁面](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ ms.locfileid: "27471996"
   
 ### <a name="to-simulate-a-password-spray-attack"></a>若要模擬密碼噴灑攻擊
 
-1. 在[安全性&amp;規範中心](https://security.microsoft.com)、 選擇 [ **Threat management** \> **攻擊模擬器**。
+1. 在[安全性&amp;規範中心](https://protection.office.com)、 選擇 [ **Threat management** \> **攻擊模擬器**。
     
 2. 指定攻擊的有意義的行銷活動名稱。
     
@@ -112,7 +112,7 @@ ms.locfileid: "27471996"
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>若要模擬暴力密碼攻擊
 
-1. 在[安全性&amp;規範中心](https://security.microsoft.com)、 選擇 [ **Threat management** \> **攻擊模擬器**。
+1. 在[安全性&amp;規範中心](https://protection.office.com)、 選擇 [ **Threat management** \> **攻擊模擬器**。
     
 2. 指定攻擊的有意義的行銷活動名稱。
     
