@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: 了解如何您可以前往儀表板洞察力安全性建議的動作 （英文）&amp;規範中心。
-ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: cbea4dadefa498ac164773718ef8a4dbad351fb7
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706147"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014725"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>逐步解說 - 從儀表板到深入解析
 
@@ -30,27 +30,15 @@ ms.locfileid: "26706147"
 
 我們逐步流程儀表板報表上的見解和巨集指令。（這是一個簡短[詐騙智慧](learn-about-spoof-intelligence.md)範例）。 
   
-1. 請先在安全性儀表板[安全性&amp;規範中心](https://security.microsoft.com)。(請移至**Threat management** \> **儀表板**。)
-    
-    ![安全性&amp;規範中心選擇 Threat management\>儀表板](media/05a38660-eb13-4960-a266-11809c453d95.png)
+1. 請先在安全性儀表板[安全性&amp;規範中心](https://protection.office.com)。(請移至**Threat management** \> **儀表板**。)<br>![安全性&amp;規範中心選擇 Threat management\>儀表板](media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
   
-2. 在**前瞻**] 列中，我們會發現洞察力表示我們需要檢閱一些可能可疑的網域。(在**前瞻**] 列中，按一下 [**網域配對**)。
-    
-    ![前瞻列提及潛在詐騙的考量](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)
+2. 在**前瞻**] 列中，我們會發現洞察力表示我們需要檢閱一些可能可疑的網域。(在**前瞻**] 列中，按一下 [**網域配對**)。<br>![前瞻列提及潛在詐騙的考量](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
   
-3. 我們要取得詐騙智慧與相關的活動清單。這些是已傳送電子郵件的目的地執行個體看起來像它們是來自我們組織但、 事實上，傳送來自其他組織。目標是判斷詐騙的郵件是否已獲得授權或不。
+3. 我們要取得詐騙智慧與相關的活動清單。這些是已傳送電子郵件的目的地執行個體看起來像它們是來自我們組織但、 事實上，傳送來自其他組織。目標是判斷詐騙的郵件是否已獲得授權或不。<br>![詐騙智慧前瞻](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>在此清單中，我們可以排序郵件計數、 上次偵測詐騙、 日期及其他資訊。（按一下欄標題，例如**訊息計數**或**最後一次看到**查看如何排序 works）。 
     
-    ![詐騙智慧前瞻](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)
+4. 在清單中選取項目會開啟其中我們可以看到的其他資訊，包括類似所偵測到的電子郵件的詳細資料] 窗格。（按一下 [] 清單中的項目及檢閱資訊和建議）。<br>![選取項目會開啟詳細資料窗格](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-    在此清單中，我們可以排序郵件計數、 上次偵測詐騙、 日期及其他資訊。（按一下欄標題，例如**訊息計數**或**最後一次看到**查看如何排序 works）。 
-    
-4. 在清單中選取項目會開啟其中我們可以看到的其他資訊，包括類似所偵測到的電子郵件的詳細資料] 窗格。（按一下 [] 清單中的項目及檢閱資訊和建議）。
-    
-    ![選取項目會開啟詳細資料窗格](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)
-  
-5. 請注意在窗格的最頂端，我們可以選擇將寄件者新增至我們的組織允許寄件者清單。（請勿選取 [**新增] 以 'AllowedtoSpoof' 寄件者允許清單**直到您確定要執行這項作業。[解更多關於詐騙智慧](learn-about-spoof-intelligence.md)。）
-    
-    ![您可以授權寄件者](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. 請注意在窗格的最頂端，我們可以選擇將寄件者新增至我們的組織允許寄件者清單。（請勿選取 [**新增] 以 'AllowedtoSpoof' 寄件者允許清單**直到您確定要執行這項作業。[解更多關於詐騙智慧](learn-about-spoof-intelligence.md)。）<br>![您可以授權寄件者](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 如此一來，我們可以從儀表板移到見解與建議的動作。
   

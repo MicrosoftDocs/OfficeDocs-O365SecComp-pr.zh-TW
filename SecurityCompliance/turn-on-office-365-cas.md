@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: 閱讀本文以了解如何在 Office 365 進階安全性管理，由 Microsoft Azure 中的雲端應用程式安全性提供開啟。
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706287"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014785"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>開啟 Office 365 雲端 App 安全性
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706287"
 > [!IMPORTANT]
 > 您必須是全域管理員或安全性管理員可執行下列工作。若要深入了解，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。為了讓 Office 365 雲端為搭配使用的應用程式安全性修正，**必須開啟稽核記錄功能**會針對 Office 365 環境。如需詳細資訊，請參閱[開啟 Office 365 稽核記錄搜尋開啟或關閉](turn-audit-log-search-on-or-off.md)。 
   
-1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://security.microsoft.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
     
 2. 移至 [**提醒** \> **管理進階提醒**。
     

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: 了解如何設定安全性的報表排程&amp;規範中心。
-ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706017"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014775"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在 [安全性] 中建立報表的排程&amp;規範中心
 
@@ -29,7 +29,7 @@ ms.locfileid: "26706017"
 > [!IMPORTANT]
 > 請確定您具有執行這項工作的必要權限。一般而言，Office 365 全域管理員、 安全性管理員及安全性讀取者可以存取報告安全性&amp;規範中心。若要深入了解權限，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。
   
-1. 在[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板**。
+1. 在[安全性&amp;規範中心](https://protection.office.com)、 移至 [**報表** \> **儀表板**。
     
 2. 選擇 [報告]。此範例中，我們將會選擇威脅保護狀態報表。
     

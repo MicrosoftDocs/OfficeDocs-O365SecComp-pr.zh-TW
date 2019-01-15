@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: 使用 Office 365 雲端應用程式安全性提醒] 頁面上檢視潛在的問題，採取的動作。您可以關閉或解析提醒，並如有必要，擱置的使用者帳戶。
-ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706117"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014825"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>檢閱並對 Office 365 雲端 App 安全性中的警示採取動作
   
@@ -32,7 +32,7 @@ ms.locfileid: "26706117"
   
 ## <a name="how-to-get-to-the-alerts-page"></a>如何取得提醒] 頁面上
 
-1. 以全域管理員或安全性管理員中，移至[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     

@@ -3,7 +3,7 @@ title: 在 SharePoint Online 中的病毒偵測
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/17/2018
+ms.date: 01/14/2019
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 description: Office 365 可協助您的環境免受病毒偵測使用者上傳至 SharePoint Online 的檔案中的惡意程式碼。掃描檔案有病毒之後其上傳。若檔案已發現受到感染、 屬性設定，讓使用者無法下載或同步處理檔案。
-ms.openlocfilehash: 22e983d35283ff96e1469fdf913e25b8d1d1c485
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ab02d2d4e82e9427ec6b512490f94ccc9c14b54e
+ms.sourcegitcommit: 5ccc3dd0d1c087bffd3a8fc807d5d1750f046eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527009"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "28009589"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>在 SharePoint Online 中的病毒偵測
 
@@ -48,7 +48,10 @@ Office 365 使用一般的病毒偵測引擎。引擎會以非同步方式執行
   
 1. 使用者開啟網頁瀏覽器，並嘗試從 SharePoint Online 下載受到感染的檔案。
     
-2. 使用者是指定警告病毒已偵測到，並授與下載檔案的選項和嘗試清除其使用自己的防毒軟體。
+2. 使用者是指定已偵測到病毒警告。使用者是指定下載檔案，並嘗試清除其使用自己的防毒軟體的選項。
+
+> [!NOTE]
+> 您可以使用**DisallowInfectedFileDownload**參數 Set-spotenant 指令程式不允許使用者下載偵測到的檔案，甚至是在 [防毒] 警告視窗中。請參閱 [DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)。
     
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>當 OneDrive sync 用戶端嘗試以同步處理受到感染的檔案會發生什麼事？
 

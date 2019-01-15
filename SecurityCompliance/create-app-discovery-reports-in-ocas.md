@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: 建立報表與 Office 365 雲端應用程式安全性可讓您了解如何在組織中的人員會使用 Office 365 和其他應用程式。
-ms.openlocfilehash: f801c70e839a62b5bbb5423ff5e7c513dd1f09b4
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706297"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014865"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>使用 Office 365 雲端 App 安全性建立 App 探索報表
 
@@ -44,7 +44,7 @@ Office 365 雲端應用程式安全性協助全域管理員、 安全性管理�
   
 1. 收集您的[網頁流量記錄檔與資料來源為 Office 365 雲端應用程式安全性](web-traffic-logs-and-data-sources-for-ocas.md)。
     
-2. 移至 [[https://security.microsoft.com](https://security.microsoft.com)並使用您工作或學校的帳戶登入。 
+2. 移至 [[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
     
 3. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     

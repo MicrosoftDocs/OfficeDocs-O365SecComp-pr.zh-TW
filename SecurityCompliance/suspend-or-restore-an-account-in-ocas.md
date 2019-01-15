@@ -3,7 +3,7 @@ title: 暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: '與 Office 365 雲端應用程式安全性]，可採取的控管動作會暫停或 unsuspend 的使用者帳戶。 '
-ms.openlocfilehash: a5c75edefc6ddb87b5676c4253aafe04817f6a1d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526346"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014845"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶
 
@@ -44,9 +44,7 @@ Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性
     
 2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
     
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-    ![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。<br>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
 4. 在不同螢幕頂端導覽列中，選擇 [**提醒**]。
     
@@ -62,7 +60,7 @@ Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性
 
 - [檢閱並對 Office 365 雲端 App 安全性中的警示採取動作](review-office-365-cas-alerts.md)
     
-- [使用 Office 365 雲端 App 安全性管理 App 權限](manage-app-permissions-in-ocas.md)
+- [使用 Office 365 雲端 App 安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)
     
 - 檢閱您[的 Office 365 雲端應用程式安全性使用率活動](utilization-activities-for-ocas.md)
     

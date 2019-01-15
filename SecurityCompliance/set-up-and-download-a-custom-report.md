@@ -12,23 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 description: 了解如何設定和下載以自訂日期範圍與安全性篩選的報表&amp;規範中心。
-ms.openlocfilehash: 4bfd2b0cc9d0076085e312c7478a0f356b4f39d5
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706027"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014745"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>設定並下載安全性的自訂報告&amp;規範中心
 
-在[安全性&amp;規範中心](https://security.microsoft.com)、 多個[報表及前瞻](reports-and-insights-in-security-and-compliance.md)可用以協助貴組織的安全性小組減輕及解決貴組織的威脅。如果您組織的安全性小組的成員，您可以設定報表自訂日期範圍與篩選器]，然後再下載自訂報告。 
+在[安全性&amp;規範中心](https://protection.office.com)、 多個[報表及前瞻](reports-and-insights-in-security-and-compliance.md)可用以協助貴組織的安全性小組減輕及解決貴組織的威脅。如果您組織的安全性小組的成員，您可以設定報表自訂日期範圍與篩選器]，然後再下載自訂報告。 
   
 ## <a name="download-a-custom-report"></a>下載的自訂報告
 
 > [!IMPORTANT]
 > 請確定您具有必要[的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。一般而言，Office 365 全域管理員、 安全性管理員及安全性讀取者可以存取報告安全性&amp;規範中心。 
   
-1. 在[安全性&amp;規範中心](https://security.microsoft.com)、 移至 [**報表** \> **儀表板**。
+1. 在[安全性&amp;規範中心](https://protection.office.com)、 移至 [**報表** \> **儀表板**。
     
 2. 選擇 [報告]。（例如，我們將使用郵件處理報告）。<br/>![選擇 [下載報告要求報告](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
