@@ -156,7 +156,7 @@
 ### [檢視內容搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md)
 ### [匯出內容搜尋結果 ](export-search-results.md)
 ### [匯出內容搜尋報告](export-a-content-search-report.md)
-### [搜尋並刪除電子郵件訊息](search-for-and-delete-messagesadmin-help.md)
+### [搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)
 ### [搜尋 Office 365 中內部部署使用者的雲端式信箱](search-cloud-based-mailboxes-for-on-premises-users.md)
 ### [大量編輯多個內容搜尋](bulk-edit-content-searches.md)
 ### [準備識別碼清單內容搜尋的 CSV 檔案](csv-file-for-an-id-list-content-search.md)
@@ -264,9 +264,9 @@
 ## [SIEM 伺服器整合](siem-server-integration.md)
 
 # 合規性解決方案
-## [開始使用 Microsoft 服務信任入口網站](get-started-with-service-trust-portal.md)
-## [使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Microsoft 服務信任入口網站](get-started-with-service-trust-portal.md)
+## [合規性管理員](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [GDPR 資料主體要求工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [GDPR 的 Office 365 資訊保護](office-365-information-protection-for-gdpr.md)
 ### [概觀：GDPR 的 Office 365 保護](office-365-info-protection-for-gdpr-overview.md)
 ### [搜尋並找出個人資料](search-for-and-find-personal-data.md)
