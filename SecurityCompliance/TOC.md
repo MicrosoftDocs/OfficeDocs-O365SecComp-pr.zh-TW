@@ -255,6 +255,7 @@
 ### [在政治活動開發/測試環境中建立小組網站](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [保護 SharePoint Online 網站與檔案](secure-sharepoint-online-sites-and-files.md)
 ### [部署三種保護層級的 SharePoint Online 網站](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
+### [使用 Office 365 標籤與 DLP 來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [使用 Azure 資訊保護來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
 ### [設計獨立的 SharePoint Online 小組網站](design-an-isolated-sharepoint-online-team-site.md)
