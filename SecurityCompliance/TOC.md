@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328129"
+---
 # [開始使用]()
 ## [Office 365 安全性藍圖](security-roadmap.md)
 ## [設定您的 Office 365 租用戶以提高安全性](tenant-wide-setup-for-increased-security.md)
@@ -239,7 +247,7 @@
 # [監視安全性與合規性]()
 ## [警示原則](alert-policies.md)
 ## [安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
-### [ 檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)
+### [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)
 #### [逐步解說 - 從詳細報告到深入解析](from-a-detailed-report-to-an-insight.md)
 #### [逐步解說 - 從深入解析到詳細報告](from-an-insight-to-a-detailed-report.md)
 #### [逐步解說 - 從儀表板到深入解析](from-a-dashboard-to-an-insight.md)
@@ -249,6 +257,14 @@
 #### [下載現有的報表](download-existing-reports.md)
 ## [啟用或停用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 ## [啟用報告訊息增益集](enable-the-report-message-add-in.md)
+# 郵件流程
+## [安全性與合規性中心內的訊息追蹤](message-trace-scc.md)
+## [安全性與合規性中心內的郵件流程深入解析](mail-flow-insights.md)
+### [自動轉寄訊息的報告](mfi-auto-forwarded-messages-report.md)
+### [郵件迴圈深入解析](mfi-mail-loop-insight.md)
+### [外寄和內送的郵件流程](mfi-outbound-and-inbound-mail-flow.md)
+### [佇列的警示和佇列](mfi-queue-alerts-and-queues.md)
+### [緩慢的郵件流程規則深入解析](mfi-slow-mail-flow-rules-insight.md)
 # 安全性解決方案
 ## [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 ### [設定政治活動開發/測試環境的群組和使用者](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
@@ -263,7 +279,6 @@
 ### [管理獨立的 SharePoint Online 小組網站](manage-an-isolated-sharepoint-online-team-site.md)
 ### [獨立的 SharePoint Online 小組網站開發/測試環境](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [SIEM 伺服器整合](siem-server-integration.md)
-
 # 合規性解決方案
 ## [Microsoft 服務信任入口網站](get-started-with-service-trust-portal.md)
 ## [合規性管理員](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
