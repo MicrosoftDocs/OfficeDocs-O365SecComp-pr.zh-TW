@@ -3,7 +3,7 @@ title: 內容搜尋的關鍵字查詢和搜尋條件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解您可以使用 Office 365 安全性內容搜尋工具商務網站的搜尋在 Exchange Online 信箱及 SharePoint 或 OneDrive 的電子郵件和檔案屬性&amp;規範中心。  '
-ms.openlocfilehash: 49dab5c26516f0549a6f72a24c98618db459dcc6
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962949"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328159"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -50,7 +50,7 @@ ms.locfileid: "24962949"
 |類別  <br/> | 要搜尋的類別。使用者可以使用 Outlook 或 Outlook Web App 定義類別。可能的值為：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙色  <br/>  紫色  <br/>  紅色  <br/>  黃色  <br/> |`category:"Red Category"`  <br/> |來源信箱中已指派紅色類別的郵件。   <br/> |
 |副本  <br/> |電子郵件訊息的 [副本] 欄位。<sup>1</sup> <br/> |`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`  <br/> |在這兩個範例中，具有在 [副本] 欄位中指定 Pilar Pinilla 的郵件。  <br/> |
 |Folderid  <br/> |識別碼 (GUID) 特定信箱資料夾的資料夾。如果您使用此屬性，請務必搜尋指定的資料夾位於的信箱。請注意只有在指定的資料夾拼寫須符合。將不會搜尋的資料夾中的任何子資料夾。若要搜尋的子資料夾，您需要使用 Folderid 屬性針對您想要搜尋的子資料夾。<br/> 如需搜尋 Folderid 屬性以及如何使用指令碼來取得特定信箱的識別碼資料夾的詳細資訊，請參閱[使用 Office 365 中的目標集合的內容搜尋](use-content-search-for-targeted-collections.md)。  <br/> |`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`  <br/> |第一個範例會傳回指定的信箱資料夾中的所有項目。第二個範例會傳回已傳送或接收 garthf@contoso.com 所指定的信箱資料夾中的所有項目。  <br/> |
-|寄件者  <br/> |電子郵件訊息的寄件者。<sup>1</sup> <br/> |`from:pilarp@contoso.com`  <br/> `from:contoso.com`  <br/> |指定的使用者或從指定的網域傳送的郵件。  <br/> |
+|從  <br/> |電子郵件訊息的寄件者。<sup>1</sup> <br/> |`from:pilarp@contoso.com`  <br/> `from:contoso.com`  <br/> |指定的使用者或從指定的網域傳送的郵件。  <br/> |
 |HasAttachment  <br/> |會指出將郵件具有附件。使用的值則為**true**或**false**。<br/> |`from:pilar@contoso.com AND hasattachment:true`  <br/> |所傳送的郵件指定的使用者具有附件。  <br/> |
 |Importance  <br/> |電子郵件寄件者可以在傳送郵件時指定的重要性。根據預設，郵件是傳送使用標準的重要性，除非寄件者設定為**高**或**低**重要性。<br/> |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`  <br/> |標示為高重要性、中重要性或低重要性的郵件。  <br/> |
 |IsRead  <br/> |會指出已讀取的郵件。使用的值則為**true**或**false**。<br/> |`isread:true`  <br/> `isread:false`  <br/> |第一個範例會傳回郵件並將 IsRead 屬性設定為**True**。第二個範例會傳回郵件 IsRead 屬性設定為**False**。<br/> |
@@ -62,7 +62,7 @@ ms.locfileid: "24962949"
 |寄件日期  <br/> |寄件者傳送電子郵件的日期。  <br/> |`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`  <br/> |在特定日期傳送或指定的日期範圍內所傳送的郵件。  <br/> |
 |大小  <br/> |項目的大小 (以位元組為單位)。  <br/> |`size>26214400`  <br/> `size:1..1048567`  <br/> |郵件大於 25??MB。第二個範例會傳回介於 1 到 1,048,567 位元組 (1 MB) 的大小的郵件。  <br/> |
 |主旨  <br/> |電子郵件的主旨行中的文字。  <br/> **附註：** 當您在查詢中使用 Subject 屬性時，???the 搜尋會傳回所有在其中的主旨行包含您要搜尋的文字的郵件。換句話說，查詢不會傳回僅有完全相符的郵件。例如，如果您搜尋`subject:"Quarterly Financials"`、 結果將會包含 「 Quarterly Financials 2018"之主旨的郵件。<br/> |`subject:"Quarterly Financials"`  <br/> `subject:northwind`  <br/> |包含片語"Quarterly Financials"的主旨行文字中的任何位置的郵件。第二個範例會傳回包含 word northwind 主旨行中的所有郵件。  <br/> |
-|收件者  <br/> |電子郵件的 [收件者] 欄位。<sup>1</sup> <br/> |`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`  <br/> |所有範例會傳回在 [收件者:] 行中指定 Ann Beebe 的郵件。  <br/> |
+|到  <br/> |電子郵件的 [收件者] 欄位。<sup>1</sup> <br/> |`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`  <br/> |所有範例會傳回在 [收件者:] 行中指定 Ann Beebe 的郵件。  <br/> |
    
 > [!NOTE]
 > <sup>1</sup>個收件者屬性的值，您可以使用電子郵件地址 （也稱為的*使用者主體名稱*或 UPN）、 顯示名稱或別名為指定的使用者。例如，您可以使用 annb@contoso.com、 annb、 或"Ann Beebe"來指定 Ann Beebe 的使用者。<br/><br/>搜尋任何收件者屬性 （From、 To、 [副本]、 [密件副本、 參與者及收件者） 的 Office 365 嘗試展開每位使用者的身分識別所要尋找 Azure Active Directory 中向上它們。 如果在 Azure Active Directory 中找到使用者，就會包含使用者的電子郵件地址 （或 UPN）、 別名、 顯示名稱以及 LegacyExchangeDN 擴充查詢。<br/><br/>例如，例如查詢`participants:ronnie@contoso.com`就會展開成`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`。
@@ -84,9 +84,9 @@ ms.locfileid: "24962949"
 |FileName  <br/> |檔案的名稱。  <br/> |`filename:"marketing plan"`  <br/> `filename:estimate`  <br/> |第一個範例會傳回在標題中具有精準字詞「marketing plan」的檔案。第二個範例會傳回檔案名稱中具有「estimate」字詞的檔案。  <br/> |
 |LastModifiedTime  <br/> |項目上次變更日期。  <br/> |`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`  <br/> |第一個範例會傳回在或之後 2016 年 5 月 1，已變更的項目。第二個範例會傳回 2016 年 5 月 1，與 2016 年 6 月 1、 之間變更的項目。  <br/> |
 |ModifiedBy  <br/> |上次變更項目的人員。請務必使用這個屬性的使用者的顯示名稱。  <br/> |`modifiedby:"Garth Fort"`  <br/> |上次由 Garth Fort 變更的所有項目。  <br/> |
-|路徑  <br/> |在 SharePoint 或 OneDrive 商務網站的特定的資料夾路徑 (URL)。如果您使用此屬性，請務必在指定的資料夾位於網站中搜尋。<br/> 若要傳回在您為 path 屬性所指定資料夾的子資料夾中的項目，您必須新增 /\*至指定的資料夾的 URL例如， `path: https://contoso.sharepoint.com/Shared Documents/*`。  <br/> <br/> **附註：** 使用`Path`搜尋 OneDrive 位置屬性不會傳回搜尋結果中的媒體檔案，例如.png、.tiff、 或使用的.wav 檔。使用搜尋查詢中的不同網站屬性來搜尋 OneDrive 資料夾中的媒體檔案。<br/> <br/> 如需搜尋的 Path 屬性以及如何使用指令碼來取得特定站台上的資料夾路徑 Url 的詳細資訊，請參閱[使用 Office 365 中的目標集合的內容搜尋](use-content-search-for-targeted-collections.md)。  <br/> |`path:https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |第一個範例會傳回指定之 OneDrive for Business 資料夾中的所有項目。第二個範例會傳回指定的網站] 資料夾 （和所有子資料夾） 中含有單字"confidential"檔案名稱] 中的文件。  <br/> |
+|路徑  <br/> |在 SharePoint 或 OneDrive 商務網站的特定的資料夾路徑 (URL)。如果您使用此屬性，請務必在指定的資料夾位於網站中搜尋。<br/> 若要傳回在您為 path 屬性所指定資料夾的子資料夾中的項目，您必須新增 /\*至指定的資料夾的 URL例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **附註：** 使用`Path`搜尋 OneDrive 位置屬性不會傳回搜尋結果中的媒體檔案，例如.png、.tiff、 或使用的.wav 檔。使用搜尋查詢中的不同網站屬性來搜尋 OneDrive 資料夾中的媒體檔案。<br/> <br/> 如需搜尋的 Path 屬性以及如何使用指令碼來取得特定站台上的資料夾路徑 Url 的詳細資訊，請參閱[使用 Office 365 中的目標集合的內容搜尋](use-content-search-for-targeted-collections.md)。  <br/> |`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |第一個範例會傳回指定之 OneDrive for Business 資料夾中的所有項目。第二個範例會傳回指定的網站] 資料夾 （和所有子資料夾） 中含有單字"confidential"檔案名稱] 中的文件。  <br/> |
 |SharedWithUsersOWSUser  <br/> |指定的使用者與共用及顯示在使用者的 OneDrive for Business 網站**與我共用**] 頁面上的文件。這些是已明確指定的使用者藉由與共用其他人您組織中的文件。當您匯出符合搜尋查詢使用 SharedWithUsersOWSUser 屬性的文件時、 文件都要匯出從指定的使用者與共用的文件的人員原始內容的位置。如需詳細資訊，請參閱[您的組織內的搜尋網站內容的共用](keyword-queries-and-search-conditions.md#internal)。<br/> |`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`  <br/> |這兩個範例會傳回所有內部文件的已與阮建輝明確共用和會出現在阮建輝**與我共用**] 頁面上 OneDrive for Business 帳戶。  <br/> |
-|網站  <br/> |網站的 URL 或組織中的網站群組。  <br/> |`site:https://contoso-my.sharepoint.com`  <br/> `site:https://contoso.sharepoint.com/sites/teams`  <br/> |第一個範例會從 OneDrive for Business 網站的組織中的所有使用者傳回的項目。第二個範例會傳回所有小組網站的項目。  <br/> |
+|網站  <br/> |網站的 URL 或組織中的網站群組。  <br/> |`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`  <br/> |第一個範例會從 OneDrive for Business 網站的組織中的所有使用者傳回的項目。第二個範例會傳回所有小組網站的項目。  <br/> |
 |大小  <br/> |項目的大小 (以位元組為單位)。  <br/> |`size>=1`  <br/> `size:1..10000`  <br/> |第一個範例會傳回大於 1 個位元組的項目。第二個範例會傳回 1 到 10,000 個位元組大小的項目。  <br/> |
 |標題  <br/> |文件的標題。Title 屬性是在 Microsoft Office 文件中所指定的中繼資料。它是不同的文件的檔案名稱。  <br/> |`title:"communication plan"`  <br/> |Office 文件的 [標題] 中繼資料屬性中包含「communication plan」一詞的任何文件。  <br/> |
    
@@ -95,7 +95,7 @@ ms.locfileid: "24962949"
 下表列出的連絡人的內容編製索引及您可搜尋的使用內容搜尋。這些是可供使用者 （也稱為個人連絡人） 位於使用者信箱的個人通訊錄中的連絡人設定的屬性。若要搜尋連絡人，您可以選取的信箱搜尋，並再使用關鍵字查詢中的一或多個連絡人的屬性。
   
 > [!TIP]
-> 若要搜尋的值包含空格，請使用包含詞語; 雙引號 ("??")例如， `businessaddress:"123 Main Street"`。 
+> 若要搜尋的值包含空格或特殊字元，請使用雙引號 ("") 來包含片語;例如， `businessaddress:"123 Main Street"`。 
   
 |**屬性**|**屬性描述**|
 |:-----|:-----|
@@ -139,7 +139,7 @@ ms.locfileid: "24962949"
 |NOT  <br/> |keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> Im 不種類：  <br/> |排除關鍵字所指定的項目或`property:value`運算式。在第二個範例會排除 Ann Beebe 所傳送的郵件。第三個範例會排除任何立即訊息交談，例如 Skype 商務儲存至交談記錄的信箱資料夾的交談。<sup>2</sup> <br/> |
 |-  <br/> |keyword1 -keyword2  <br/> |相同**不**運算子。因此這個查詢會傳回包含的項目`keyword1`會排除包含的項目和`keyword2`。<br/> |
 |NEAR  <br/> |keyword1 NEAR(n) keyword2  <br/> |傳回與彼此、 相近的單字的項目其中 n 等於字數分開。例如，`best NEAR(5) worst`會傳回任何項目單字"百分比顯示"所在內的"最佳"的五個字。如果未不指定任何數字，則預設距離是八個單字。<sup>2</sup> <br/> |
-|ONEAR  <br/> |keyword1 ONEAR(n) keyword2  <br/> |類似**附近**，但傳回的項目中指定的順序靠近彼此的單字。例如，`best ONEAR(5) worst`會傳回其中的字"適合使用 「 發生"最糟"字詞前面且兩個文字內的其他每五個字的任何項目。如果未不指定任何數字，則預設距離是八個單字。<sup>2</sup> <br/> > [!NOTE]> 搜尋信箱; 時不支援將**ONEAR**運算子僅適用於搜尋 SharePoint 和 OneDrive for Business 的網站時。如果您在相同的搜尋中搜尋信箱和網站及查詢包含**ONEAR**運算子，搜尋會傳回信箱項目如果當您使用**NEAR**運算子。換句話說，搜尋未傳回項目之指定的文字的彼此附近不論發生之文字的順序。           |
+|ONEAR  <br/> |keyword1 ONEAR(n) keyword2  <br/> |類似**附近**，但傳回的項目中指定的順序靠近彼此的單字。例如，`best ONEAR(5) worst`會傳回其中的字"適合使用 「 發生"最糟"字詞前面且兩個文字內的其他每五個字的任何項目。如果未不指定任何數字，則預設距離是八個單字。<sup>2</sup> <br/> > [!NOTE]搜尋信箱; 時不支援將 > **ONEAR**運算子僅適用於搜尋 SharePoint 和 OneDrive for Business 的網站時。如果您在相同的搜尋中搜尋信箱和網站及查詢包含**ONEAR**運算子，搜尋會傳回信箱項目如果當您使用**NEAR**運算子。換句話說，搜尋未傳回項目之指定的文字的彼此附近不論發生之文字的順序。           |
 |:  <br/> |property:value  <br/> |冒號 （:） 中的`property:value`語法會指定要搜尋的屬性的值包含指定的值。例如，`recipients:garthf@contoso.com`傳回傳送至 garthf@contoso.com 任何訊息。<br/> |
 |=  <br/> |property=value  <br/> |相同 **:** 運算子。  <br/> |
 |\<  <br/> |屬性\<值  <br/> |代表所搜尋的屬性小於指定的值。 <sup>1</sup> <br/> |
@@ -196,7 +196,7 @@ ms.locfileid: "24962949"
 |寄件者  <br/> |電子郵件訊息的寄件者。  <br/> |
 |寄件日期  <br/> |寄件者傳送的電子郵件的日期。這是傳送電子郵件屬性相同的屬性。  <br/> |
 |主旨  <br/> |電子郵件的主旨行中的文字。  <br/> |
-|收件者  <br/> |電子郵件收件者。  <br/> |
+|到  <br/> |電子郵件收件者。  <br/> |
   
 ### <a name="conditions-for-document-properties"></a>文件屬性的條件
 
@@ -322,11 +322,11 @@ ms.locfileid: "24962949"
     
 - 可讓具有此連結無須來驗證存取資源的任何人匿名來賓連結。
     
-以下為一些範例：
+以下列舉幾個想法︰
   
 - 查詢`ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"`會傳回已與組織外部人員共用且包含信用卡號的所有項目。 
     
-- 查詢`ViewableByExternalUsers:true AND ContentType:document AND Site:https://contoso.sharepoint.com/Sites/Teams`會傳回所有在組織中已與外部使用者共用的小組網站上的文件的清單。 
+- 查詢`ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"`會傳回所有在組織中已與外部使用者共用的小組網站上的文件的清單。 
     
 > [!TIP]
 > 例如在搜尋查詢`ViewableByExternalUsers:true AND ContentType:document`可能會傳回許多.aspx 檔案的搜尋結果中。若要避免這些 （或其他類型的檔案），您可以使用`FileExtension`排除特定檔案類型的屬性例如`ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx`。 
