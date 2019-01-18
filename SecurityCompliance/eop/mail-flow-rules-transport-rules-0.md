@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 您可以使用郵件流程規則 (也稱為傳輸規則)，找出經過 Office 365 組織的郵件並採取相應動作。
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026610"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723240"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的郵件流程規則 (傳輸規則)
 
@@ -32,7 +32,7 @@ ms.locfileid: "22026610"
   
 - [Use mail flow rules to inspect message attachments in Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [在 Office 365 企業版的加密設定](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [設定 Office 365 企業版中的加密](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
@@ -54,7 +54,7 @@ ms.locfileid: "22026610"
   
 - **條件** 識別您要套用動作的郵件。有些條件會檢查郵件標頭欄位 (例如 [收件者]、[寄件者] 或 [副本] 欄位)。有些條件則會檢查郵件屬性 (例如郵件主旨、內文、附件、郵件大小或郵件分類)。在使用大部分的條件時，您都必須指定比較運算子 (例如等於、不等於或包含) 以及要比對的值。如果沒有條件或例外狀況，則規則會套用至所有郵件。 
     
-    如需詳細資訊的郵件流程規則條件在 Exchange Online Protection，請參閱[郵件流程規則條件和例外狀況 （述詞） 在 [Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)。
+    如需 Exchange Online Protection 中的郵件流程規則條件的詳細資訊，請參閱[Exchange Online 中的郵件流程規則條件和例外狀況 （述詞）。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
     
 - **例外狀況** 選擇性地識別不應該套用動作的郵件。可在條件中使用的訊息識別碼也可用於例外狀況。例外狀況可覆寫條件並防止規則動作套用到郵件，即使郵件符合所有設定的條件也是如此。 
     

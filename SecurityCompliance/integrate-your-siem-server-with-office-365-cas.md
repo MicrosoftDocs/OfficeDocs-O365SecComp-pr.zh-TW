@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以使用 Office 365 雲端應用程式安全性整合 SIEM 伺服器。請閱讀本篇文章以取得它的運作方式，以及如何設定它的概觀。
-ms.openlocfilehash: 0e185dec44bed7657bed126f70dfc64ffc135611
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015025"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723260"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>將 SIEM 伺服器與 Office 365 雲端 App 安全性整合
   
@@ -74,8 +74,8 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。<br/>
     ![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. 按一下 [**設定** \> **安全性延伸模組**。<br/>
-![選擇 [設定] > 安全性延伸模組](media/Settings-SecurityExtensions.png)
+4. 按一下 [**設定** \> **安全性延伸模組**，然後選擇 [SIEM 代理程式。<br/>
+![選擇 [設定 > 安全性延伸模組](media/Settings-SecurityExtensions.png)
 
 5. 選擇 [**新增 SIEM 代理程式**。<br/>![選擇 [新增 SIEM 代理程式。](media/SIEMAgents.png)
     
@@ -158,7 +158,7 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 而以下是另一個範例中，這次 CEF 格式：
 
 
-|CEF 欄位名稱  | 描述  |
+|CEF 欄位名稱  | 說明  |
 |---------|---------|
 |啟動     | 提醒的時間戳記        |
 |結束     | 提醒的時間戳記        |
