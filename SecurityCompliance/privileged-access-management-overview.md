@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793548"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723230"
 ---
 # <a name="privileged-access-management-in-office-365"></a>權限存取 Office 365 中的管理
 
 > [!IMPORTANT]
 > 本主題涵蓋功能僅在 Office 365 E5 和進階規範 Sku 中目前可用的部署和設定指導。
 
-特殊存取權限管理 Office 365 中讓更精細的存取權限的管理工作的控制權。 它可協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。啟用權限的存取管理、 之後使用者需要要求剛剛-時間存取完成核准工作流程高度範圍且時間繫結到提高權限與權限工作。這提供使用者剛-充份-存取可執行工作，反之，而不致洩露機密資料或重要的組態設定。啟用 Office 365 中的權限的存取管理可讓您的組織操作以零出位置的權限，並提供一層的防禦措施弱點引起因為這類出位置管理存取。 
+特殊存取權限管理 Office 365 中讓更精細的存取權限的管理工作的控制權。它可協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。啟用權限的存取管理、 之後使用者需要要求剛剛-時間存取完成核准工作流程高度範圍且時間繫結到提高權限與權限工作。這提供使用者剛-充份-存取可執行工作，反之，而不致洩露機密資料或重要的組態設定。啟用 Office 365 中的權限的存取管理可讓您的組織操作以零出位置的權限，並提供一層的防禦措施弱點引起因為這類出位置管理存取。 
 
 ## <a name="layers-of-protection"></a>保護層級
 
@@ -57,7 +57,7 @@ ms.locfileid: "25793548"
 
 ### <a name="step-3-access-approval"></a>步驟 3： 存取權核准
 
-產生核准要求並核准群組通知電子郵件的擱置的要求。如果核准被授與、 特殊權限的存取要求處理核准為及工作已完成。如果要求遭到拒絕，工作會封鎖，並且沒有存取權授與 reqeustor。要求者將收到的要求核准或拒絕透過電子郵件通知。
+產生核准要求並核准群組通知電子郵件的擱置的要求。如果核准被授與、 特殊權限的存取要求處理核准為及工作已完成。如果要求遭到拒絕，工作會封鎖並沒有存取權授與 reqeustor。要求者將收到的要求核准或拒絕透過電子郵件通知。
 
 ![步驟 3-存取權核准](media/pam-step3-access-approval.jpg)
 
@@ -73,7 +73,7 @@ ms.locfileid: "25793548"
 特殊存取權限管理 」 目前僅適用於 Office 365 E5 與進階規範 Sku 的客戶。
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>何時將權限的存取可供使用 Office 365 工作負載超過 Exchange？
-我們想要推出提供這項功能的其他 Office 365 工作負載。當我們已經準備好要共用時間表時，它會提供透過 Office 365 藍圖。
+我們想要推出提供這項功能的其他 Office 365 工作負載。當我們已經準備好要共用時間表時，將可以透過[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>「 我的組織需要多個 30 權限的存取原則，可增加此限制吗？
 
@@ -83,4 +83,4 @@ ms.locfileid: "25793548"
 否，您需要有 Exchange 角色管理角色指派給要管理 Office 365 中的權限的存取的帳戶。不過，全域管理員角色預設包含此角色和可用來管理特殊權限的存取如果您不想要設定的角色管理角色為獨立的帳戶權限。包含在核准者群組的使用者不需要是全域管理員或擁有 「 角色管理角色指派給檢閱和核准要求。 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>如何為客戶 Lockbox 相關的 Office 365 中的權限的存取管理？
-[客戶 Lockbox](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)允許存取控制組織依其服務提供者，例如 Microsoft 資料存取層級。特殊權限存取 Office 365 中的管理允許所有的特殊權限的 Office 365 工作的組織內的更精細的存取控制。
+[客戶 Lockbox](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests)允許存取控制組織依其服務提供者，例如 Microsoft 資料存取層級。特殊權限存取 Office 365 中的管理允許所有的特殊權限的 Office 365 工作的組織內的更精細的存取控制。
