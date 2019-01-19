@@ -3,7 +3,7 @@ title: 啟用報告訊息增益集
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/19/2018
+ms.date: 01/18/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,27 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: 了解如何啟用報表訊息增益集 Outlook 和 Outlook web 針對個別使用者或整個組織。
-ms.openlocfilehash: f35899d3f0be9ee07cb6dae5c5fec40395948340
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 013145813e8feb3e7389f6248ee26195c1df3d08
+ms.sourcegitcommit: 1169a5759b9c2336fbc89d4651daf29e556f62fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706367"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28727867"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
 ## <a name="overview"></a>概觀
 
-報告訊息的增益集 Outlook 和 Outlook Web 上的啟用人員輕鬆地回報被歸類電子郵件是否安全或惡意、 Microsoft 及分析及其子公司。Microsoft 使用這些送出改善電子郵件保護技術的有效性。此外，如果您的組織會使用[Office 365 進階威脅保護](office-365-atp.md)或[Office 365 威脅智慧](office-365-ti.md)、 報告郵件增益集提供實用的資訊可用於檢閱及更新您的組織安全性小組安全性原則。 
+報告訊息的增益集 Outlook 和 Outlook web 上的啟用人員輕鬆地回報被歸類電子郵件是否安全或惡意、 Microsoft 及分析及其子公司。Microsoft 使用這些送出改善電子郵件保護技術的有效性。此外，如果您的組織會使用[Office 365 進階威脅保護](office-365-atp.md)或[Office 365 威脅智慧](office-365-ti.md)、 報告郵件增益集提供實用的資訊可用於檢閱及更新您的組織安全性小組安全性原則。 
 
 例如，假設人員會報告為網路釣魚許多的郵件。此資訊以循[安全性儀表板](security-dashboard.md)和其他報表中。貴組織的安全性小組可以使用這項資訊以反網路釣魚原則可能需要更新的指示。或者，如果人員所報告的郵件已標示為垃圾郵件郵件不是垃圾郵件報告增益集使用許多組織的安全性小組可能需要調整[反垃圾郵件原則](configure-the-anti-spam-policies.md)。 
 
 報告郵件增益集的運作方式與您的 Office 365 訂閱及下列產品：
- - 在 Web 上的 outlook
+ - Outlook 網頁版
  - Outlook 2013 SP1
  - Outlook 2016
  - Mac 版 Outlook 2016
  - Office 365 ProPlus 所含的 outlook
+
+> [!NOTE]
+> 報告訊息的增益集 Outlook 和 Outlook web 上的是不完全相同兩回事[Outlook 垃圾郵件篩選](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)，但兩者都可以用來將電子郵件標示為垃圾郵件、 未垃圾郵件或網路釣魚嘗試。報告訊息的增益集 Outlook 和 Outlook web 上的而 Outlook 垃圾郵件篩選工具用來將組織中使用者信箱的電子郵件會被歸類電子郵件的相關通知 Microsoft。 
   
 如果您是個別使用者，您還可以[讓報表訊息的增益集自己](#get-the-report-message-add-in-for-yourself)。 
   
@@ -47,43 +50,47 @@ ms.locfileid: "26706367"
     
 3. 檢閱使用及隱私權原則的字詞。然後選擇 [**繼續]**。 
     
-4. 登入 Office 365 電子郵件使用您的工作或學校帳戶 （供商務使用） 或您的 Microsoft 帳戶 （適用於個人使用）。
+4. 登入 Office 365 中，使用您的工作或學校帳戶 （供商務使用） 或 Microsoft 帳戶 （適用於個人使用）。
     
 增益集已安裝並啟用之後，您會看到下列圖示： 
 
-- 在 Outlook 中圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
-- 在 Outlook Web App 圖示外觀類似如下：<br/>![在 [網頁報表訊息增益集] 圖示上的 outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- 在 Outlook 中，圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
+- 在 Outlook Web App （或 [網路上的 Outlook） 圖示外觀類似如下：<br/>![Outlook 郵件報告增益集的 web 圖示](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
-下一個步驟中，以了解如何[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+> [!TIP]
+> 下一個步驟中，以了解如何[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
   
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>取得並啟用報表訊息增益集的組織
 
 > [!IMPORTANT]
 > 您必須是 Office 365 全域管理員或 Exchange Online 管理員，才可完成此工作。另外，Exchange 必須設定為使用 OAuth 驗證來深入了解，請參閱[Exchange 需求 （增益集的集中式部署）](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
 
-1. 移至的[服務與增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)中新的 Microsoft 365 系統管理中心。<br/>![在新的 Microsoft 365 系統管理中心服務與增益集] 頁面上](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
+1. 前往 Microsoft 365 系統管理中心[服務 & 增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![在新的 Microsoft 365 系統管理中心服務與增益集] 頁面上](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
 2. 選擇 [ **+ 部署增益集**。<br/>![選擇部署增益集](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
-3. 在新增益集] 畫面上，檢閱資訊，並再選擇 [**下一步**。<br/>![新的增益集詳細資料](media/NewAddInScreen1.png)<br/>
+3. 在**新增益集**] 畫面上，檢閱資訊，並再選擇 [**下一步**。<br/>![新的增益集詳細資料](media/NewAddInScreen1.png)<br/>
     
 4. 選取 [**我想要新增增益集來自 Office 市集**、，然後選擇 [**下一步**。<br/>![我想要新增新增益集](media/NewAddInScreen2.png)<br/> 
     
-5. 搜尋報告郵件與結果] 旁的報告訊息增益集的清單中，選擇 [新增]。<br/>![搜尋報告的郵件，然後選擇 [新增]](media/NewAddInScreen3.png)<br/>
+5. 搜尋**報表訊息**，並的結果旁的**報表訊息增益集**清單中，選擇 [**新增]**。<br/>![搜尋報告的郵件，然後選擇 [新增]](media/NewAddInScreen3.png)<br/>
     
-6. 在報表訊息] 畫面上，檢閱資訊，然後選擇 [**下一步**。<br/>![報告郵件詳細資料](media/ReportMessageAdd-InNewScreen4.png)<br/>
+6. 在**報表訊息**] 畫面上，檢閱資訊，然後選擇 [**下一步**。<br/>![報告郵件詳細資料](media/ReportMessageAdd-InNewScreen4.png)<br/>
 
 7. 指定 Outlook 使用者預設設定，然後選擇 [**下一步**。<br/>![報告 for Outlook 訊息預設設定](media/ReportMessageOptionsScreen5.png)<br/>
 
 8. 指定誰取得報表訊息增益集] 中，然後選擇 [**儲存**。 <br/>![誰可以取得報表訊息增益集](media/ReportMessageOptionsScreen6.png)<br/>
 
 > [!TIP]
-> 建議您[設定要取得一份報告的使用者的電子郵件郵件規則設定](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
+> 建議您[設定要取得一份報告的使用者的電子郵件的規則](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)。
 
-為何您選取 [使用精靈，視您組織中的人員有[報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)可用。在組織中的人員會看到下列圖示： 
+根據您選取的項目設定時的增益集 (步驟 7-8 上方)、 人員在組織中的有[報表訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)提供。在組織中的人員會看到下列圖示： 
 
-- 在 Outlook 中圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
-- 在 Outlook Web App 圖示外觀類似如下：<br/>![在 [網頁報表訊息增益集] 圖示上的 outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- 在 Outlook 中，圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
+- 在 Outlook Web App （或 [網路上的 Outlook） 圖示外觀類似如下：<br/>![在 [網頁報表訊息增益集] 圖示上的 outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+
+> [!TIP]
+> 當您通知使用者有關郵件報告增益集時，包含要[使用的報表訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的連結。
 
 ## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>若要取得一份報告的使用者的電子郵件設定的規則
 
@@ -112,24 +119,24 @@ ms.locfileid: "26706367"
   
 10. 選擇 [**儲存**]。 
     
-與備妥此規則，每當您組織中某人報告電子郵件訊息的報告訊息 」 增益集，使用您全域管理員、 安全性管理員及/或安全性讀取者會收到該郵件的複本。這項資訊可讓您設定或調整原則，例如[Office 365 ATP 安全連結](atp-safe-links.md)原則。 
-
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>檢閱或編輯報表訊息增益集設定
-
-您可以檢閱並編輯的報告訊息增益集的[服務與增益集] 頁面上](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)的預設設定。 
-
-> [!IMPORTANT]
-> 您必須是 Office 365 全域管理員或 Exchange Online 管理員，才可完成此工作。
-    
-1. 移至的[服務與增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)中新的 Microsoft 365 系統管理中心。<br/>![在新的 Microsoft 365 系統管理中心服務與增益集] 頁面上](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
-
-2. 尋找並選取 [報表訊息增益集。<br/>![尋找並選取 [郵件報告增益集](media/FindReportMessageAddIn.png)<br/> 
-    
-3. 在報表訊息] 畫面上，檢閱並編輯設定最適合您的組織。<br/>![設定報表訊息增益集 (英文）](media/EditReportMessageAddIn.png)<br/> 
+與備妥此規則，每當您組織中某人報告電子郵件訊息的報告訊息 」 增益集，使用您全域管理員、 安全性管理員及/或安全性讀取者會收到該郵件的複本。這項資訊可讓您設定或調整原則，例如[Office 365 ATP 安全連結](atp-safe-links.md)原則或[反垃圾郵件](anti-spam-protection.md)設定。 
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用報告郵件增益集
 
 請參閱[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>檢閱或編輯報表訊息增益集設定
+
+您可以檢閱並編輯報表訊息增益集在[服務 & 增益集] 頁面上](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)的預設設定。 
+
+> [!IMPORTANT]
+> 您必須是 Office 365 全域管理員或 Exchange Online 管理員，才可完成此工作。
+    
+1. 前往 Microsoft 365 系統管理中心[服務 & 增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![在新的 Microsoft 365 系統管理中心服務與增益集] 頁面上](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
+
+2. 尋找並選取 [郵件報告增益集。<br/>![尋找並選取 [郵件報告增益集](media/FindReportMessageAddIn.png)<br/> 
+    
+3. 在報表訊息] 畫面上，檢閱並編輯設定最適合您的組織。<br/>![設定報表訊息增益集 (英文）](media/EditReportMessageAddIn.png)<br/> 
   
 ## <a name="related-topics"></a>相關主題
 
