@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 安全性中建立警示原則&amp;規範中心来監視的潛在威脅、 資料遺失及權限問題。然後您可以檢視及管理使用者在執行活動的警示原則條件符合時所產生的警示。
-ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 28ea842c74f2d3d232218e582d3de31f3841284e
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426028"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>警示 Office 365 安全性原則&amp;規範中心
 
@@ -34,11 +34,11 @@ ms.locfileid: "28328139"
   
 ![如何警示原則工作的概觀](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. 在組織中的系統管理員建立、 設定，並使用安全性**提醒的原則**] 頁面開啟警示原則&amp;規範中心。您也可以使用 PowerShell 中的**新 ProtectionAlert**指令程式建立提醒的原則。 
+1. 在組織中的系統管理員建立、 設定，並使用的安全性 & 規範中心**提醒的原則**] 頁面開啟提醒的原則。您也可以使用 PowerShell 中的**新 ProtectionAlert**指令程式建立提醒的原則。若要建立提醒的原則，您必須指派組織組態角色管理提醒中或角色安全性 & 規範中心。
     
 2. 會在使用者執行的警示原則條件會比對的活動。但如果是惡意程式碼攻擊受到感染的電子郵件傳送給組織中的使用者將會觸發提醒。
     
-3. Office 365 產生通知會顯示在 [安全性]**檢視提醒**] 頁面上，&amp;規範中心。此外，如果警示原則啟用電子郵件通知，Office 365 會將通知傳送至] 清單的收件者。 
+3. Office 365 產生通知會顯示在 [安全性]**檢視提醒**] 頁面上，&amp;規範中心。此外，如果警示原則啟用電子郵件通知，Office 365 會將通知傳送至] 清單的收件者。系統管理員或其他使用者可以看到 [**檢視提醒**] 頁面的提醒取決於已指派給使用者的角色。如需詳細資訊，請參閱 ＜[檢視提醒所需的 RBAC 權限](#rbac-permissions-required-to-view-alerts)] 區段中。
     
 4. 系統管理員管理安全性提醒&amp;規範中心。管理提醒指派來追蹤及管理任何調查警示狀態所組成。
     
