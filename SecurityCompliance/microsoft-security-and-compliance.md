@@ -3,18 +3,18 @@ title: 備妥可供 Microsoft 365 安全性和規範
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 01/23/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 description: 備妥可供所有新的 Microsoft 365 安全性中心及規範中心
-ms.openlocfilehash: 3bd0dd1d47df252dfdb024e0f90f3437604d8e07
-ms.sourcegitcommit: 5764af937f40731e29f855c568d7a3365a12c913
+ms.openlocfilehash: 35f7e04ca2d51efe69c0f6d4842fe25856b1b3f9
+ms.sourcegitcommit: 0ac3e50150b48b5c633fb3bfc989d5047c160739
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "29383559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29436159"
 ---
 # <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>準備新的 Microsoft 365 安全性中心和 Microsoft 365 規範中心
 
@@ -48,7 +48,7 @@ ms.locfileid: "29383559"
 
 ## <a name="what-to-expect"></a>所預期的結果
 
-### <a name="coming-soon"></a>即將推出 ！
+### <a name="coming-soon"></a>即將推出
 
 新的 Microsoft 365 安全性中心及新的 Microsoft 365 規範中心已啟用出開頭落後年 1 月及年 3 月 2019年透過。您應該有權存取新的 Microsoft 365 安全性中心和 Microsoft 365 規範中心在此時間範圍內。
 
@@ -70,7 +70,7 @@ ms.locfileid: "29383559"
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權及權限
 
-您的組織必須具備 Microsoft 365 企業版 E3 或 E5 以取得新的 Microsoft 365 安全性中心和 Microsoft 365 規範中心。
+若要取得新的 Microsoft 365 安全性中心及 Microsoft 365 規範中心，您的組織必須具備 Microsoft 365 E3 或 E5，或大量授權對等 （其中包含 Office 365 企業版 E3 或 E5、 企業行動性 + 安全性的訂閱E3 或 E5、 和 Windows 10 企業 E3/E5）。
 
 使用者必須被指派全域管理員、 規範管理員、 安全性管理員或安全性讀者角色來存取新的 Microsoft 365 安全性中心或 Microsoft 365 規範中心的 Azure Active Directory 中。
 
@@ -87,20 +87,20 @@ ms.locfileid: "29383559"
 
 |入口網站  |全域<br/>系統管理員  |安全性 <br/>系統管理員<br>或<br>安全性<br>讀者 |合規性<br/>系統管理員  |
 |---------|---------|---------|---------|
-|[Office 365 安全性與合規性中心](https://protection.office.com) |是 |是  |是 |
-|[Microsoft 365 安全性中心](https://security.microsoft.com) |是  | 是  | 否        |
+|[Office 365 安全性與合規性中心](https://protection.office.com) |是 |是   |可以 |
+|[Microsoft 365 安全性中心](https://security.microsoft.com) |是  | 有  | 否        |
 |[Microsoft 365 規範中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
-|[合規性管理員](https://aka.ms/compliancemanager) |是 | 是 |是  |
-|[Azure 資訊保護](https://docs.microsoft.com/azure/information-protection) |是 |是 |否 |
-|[Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/)  |是 |是 |否 |
-|[Azure 進階的威脅保護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |是 |是 |否 |
-|[Windows 防禦者 ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)和[端點偵測及回應](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |是 |是 |否 |
-|[身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection)     |是 |是 |否 |
-|[權限的身分識別管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |是 |是 |否 |
-|[Intune](https://docs.microsoft.com/intune)     |是 |是 |是 |
-|[雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/)     |是 |是 |是 |
-|[安全的分數](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |是 |是 |否 |
-|[Exchange](https://docs.microsoft.com/exchange/)     |是 |是 |是 |
+|[合規性管理員](https://aka.ms/compliancemanager) |是 | 是  |可以  |
+|[Azure 資訊保護](https://docs.microsoft.com/azure/information-protection) |是 |有 |否 |
+|Azure 資訊安全中心  |是 |有 |否 |
+|[Azure 進階的威脅保護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |是 |有 |否 |
+|[Windows 防禦者 ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)和[端點偵測及回應](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |是 |有 |否 |
+|身分識別保護     |是 |有 |否 |
+|特殊權限身分識別管理     |是 |有 |否 |
+|[Intune](https://docs.microsoft.com/intune)     |是 |是  |可以 |
+|[雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/)     |是 |是  |可以 |
+|[安全的分數](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |是 |有 |否 |
+|[Exchange](https://docs.microsoft.com/exchange/)     |是 |是  |可以 |
 
 ## <a name="additional-resources"></a>其他資源
 
