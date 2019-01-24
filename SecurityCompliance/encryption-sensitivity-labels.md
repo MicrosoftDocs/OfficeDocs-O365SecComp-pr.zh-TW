@@ -34,7 +34,7 @@ ms.locfileid: "25842602"
 
 - 只有標籤加密設定授權的使用者才能將其解密。
 - 即使檔案重新命名，無論其位於您組織內部或外部，仍保持加密狀態。
-- 同時靜態加密 (例如，在 OneDrive 帳戶中) 及傳輸中加密 (例如，已傳送的電子郵件)。
+- 同時進行靜態加密 (例如，在 OneDrive 帳戶中) 及傳輸中加密 (例如，已傳送的電子郵件)。
 
 可在 [Office 365 安全性與合規性中心] > [**標籤**] 頁面 > [**敏感度**] 索引標籤 > [**建立標籤**] 中使用加密設定。
 
@@ -46,9 +46,9 @@ ms.locfileid: "25842602"
 
 若要開始，只需將 [**加密**] 切換為 [**開啟**]，然後使用下列選項來控制誰可以存取此標套用至其中的電子郵件或文。您可以：
 
-1. **將加密同時套用至電子郵件和文件，或只套用至電子郵件。** 如果您選擇只套用至電子郵件，則將在 Outlook 中加密具有此標籤的訊息，但不會在其他應用程式 (例如 Word 或 PowerPoint) 中加密具有此標籤的文件。 
+1. **將加密同時套用至電子郵件和文件，或只套用至電子郵件。** 如果您選擇只套用至電子郵件，則將在 Outlook 中加密具有此標籤的郵件，但不會在其他應用程式 (例如 Word 或 PowerPoint) 中加密具有此標籤的文件。 
 2. 在套用標籤之後**允許標籤內容的存取在特定日期或在特定天數之後到期**。在此之後，使用者將無法開啟標籤項目。如果您指定日期，則有效時間直到您的目前時區中該日期的午夜。 
-3. 在套用標籤之後**允許離線存取**可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該臨界值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
+3. 在套用標籤之後**允許離線存取**可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該閾值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
 
 ![敏感度標籤的加密設定](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "25842602"
 
 除了重新驗證外，還會重新評估原則和使用者群組成員資格。這表示，如果上次使用者存取內容後，原則或群組成員資格發生變更，則這些使用者可能遇到相同的文件或電子郵件，卻有不同的存取結果。
 
-若要了解如何變更預設 30 天設定，請參閱 [Rights Management 使用授權](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-management-use-license)。
+若要了解如何變更預設的 30 天設定，請參閱 [Rights Management 使用授權](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-management-use-license)。
 
 ## <a name="assign-permissions-to-specific-users-or-groups"></a>將權限指派給特定使用者或群組
 
@@ -83,11 +83,11 @@ ms.locfileid: "25842602"
 
 當您選擇所有租用戶成員或瀏覽目錄時，使用者或群組必須具有電子郵件地址。
 
-最佳作法是使用群組，而非使用者。此策略可讓您保持更簡單的組態。
+最佳做法是使用群組，而非使用者。此策略可讓您保持更簡單的組態。
 
 ### <a name="choose-permissions"></a>選擇權限
 
-當您選擇要對那些使用者或群組允許的權限時，您可以選取下列一項：
+當您選擇要對那些使用者或群組允許的權限時，您可以選取下列任一項：
 
 - [預先定義的權限層級](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
 - 一組自訂的權限，您可在其中選擇任何您想要的權限。
@@ -104,7 +104,7 @@ ms.locfileid: "25842602"
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 簽發者 (套用敏感度標籤的使用者) 一律具有完全控制權
 
-敏感度標籤的加密會使用 Azure RMS。當使用者套用敏感度標籤，以使用 Azure RMS 保護文件或電子郵件時，該使用者就會變成該內容的 Rights Management 簽發者。
+敏感度標籤的加密會使用 Azure RMS。當使用者套用敏感度標籤以使用 Azure RMS 保護文件或電子郵件時，該使用者就會變成該內容的 Rights Management 簽發者。
 
 Rights Management 簽發者一律會被授與文件或電子郵件的完全控制權限，此外：
 
@@ -130,11 +130,11 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>設定 Exchange 進行 Azure 資訊保護
 
-在使用者可在 Outlook 中套用標籤，以保護其電子郵件之前，不必設定 Exchange 進行 Azure 資訊保護。不過，直到設定 Exchange 進行 Azure 資訊保護前，您都無法取得使用 Azure Rights Management 保護與 Exchange 搭配的完整功能。
+在使用者可在 Outlook 中套用標籤以保護其電子郵件之前，不必設定 Exchange 進行 Azure 資訊保護。不過，直到設定 Exchange 進行 Azure 資訊保護前，您都無法取得使用 Azure Rights Management 保護與 Exchange 搭配的完整功能。
  
 例如，使用者無法在行動電話上檢視受保護的電子郵件，也無法在 Web 上使用 Outlook 這樣做，受保護的電子郵件無法編製索引進行搜尋，以及您無法設定 Exchange Online DLP 進行 Rights Management 保護。 
 
 若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
 
-- 若為 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-office365#exchange-online-irm-configuration)的指示。
-- 若為 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/zh-TW/azure/information-protection/deploy-rms-connector)。 
+- 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-office365#exchange-online-irm-configuration)的指示。
+- 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/zh-TW/azure/information-protection/deploy-rms-connector)。 
