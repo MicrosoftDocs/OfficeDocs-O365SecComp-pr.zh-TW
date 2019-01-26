@@ -5,16 +5,16 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 12/03/2018
+ms.date: 01/25/2019
 ms.service: o365-administration
 localization_priority: Normal
-description: 請參閱什麼 Office 365 雲端應用程式安全性於 2017年發行
-ms.openlocfilehash: f30df4313b40007440aa37c9cc9aa17e16e5208f
-ms.sourcegitcommit: ce61b1ea9df1a69c6eef06a4de1f644ecb9b941d
+description: 請參閱新發行的 2017 for Office 365 雲端應用程式安全性
+ms.openlocfilehash: a5f17f626876298d1551c9ca4439448c536a4d62
+ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "27135075"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570179"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2017"></a>Office 365 雲端應用程式的安全性更新期間 2017
     
@@ -91,9 +91,8 @@ ms.locfileid: "27135075"
 ## <a name="related-topics"></a>相關主題
 
 [Office 365 雲端應用程式安全性說明內容](office-365-cas-help.md)
+
+[Office 365 雲端應用程式安全性的新功能](new-in-office-365-cas.md)
   
 [推出 Office 365 雲端 App 安全性後的使用活動](utilization-activities-for-ocas.md)
-  
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-  
 
