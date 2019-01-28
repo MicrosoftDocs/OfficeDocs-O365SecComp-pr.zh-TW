@@ -1,4 +1,4 @@
-# [開始使用]()
+# 開始使用
 ## [Office 365 安全性藍圖](security-roadmap.md)
 ## [設定您的 Office 365 租用戶以提高安全性](tenant-wide-setup-for-increased-security.md)
 ## [前往 Office 365 安全性與合規性中心](go-to-the-securitycompliance-center.md)。
@@ -129,6 +129,7 @@
 ### [使用安全性與合規性中心中的 Explorer](use-explorer-in-security-and-compliance.md)
 ## [Office 365 雲端 App 安全性](office-365-cas-overview.md)
 ### [Office 365 雲端 App 安全性中的新增功能](new-in-office-365-cas.md)
+#### [2018 年期間的更新](new-in-office-365-cas-2018.md)
 #### [2017 年期間的更新](new-in-office-365-cas-2017.md)
 ### [準備好使用 Office 365 雲端 App 安全性](get-ready-for-office-365-cas.md)
 ### [設定 Office 365 雲端 App 安全性](turn-on-office-365-cas.md)
@@ -195,41 +196,54 @@
 ### [刪除雲端式信箱中可復原的項目資料夾中的保留項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [增加保留信箱可復原的項目配額](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)
+
 ## [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
-### [快速設定 Office 365 進階電子文件探索](quick-setup-for-advanced-ediscovery.md)
-### [針對進階電子文件探索分析匯入非 Office 365 內容](import-non-office-365-data-into-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中設定使用者與案例](set-up-users-and-cases-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中匯出結果](export-results-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中執行處理程序模組](run-the-process-module-in-advanced-ediscovery.md)
-### [使用 Office 365 進階電子文件探索分析案例資料](analyze-case-data-with-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中匯出案例資料](export-case-data-in-advanced-ediscovery.md)
-### [使用 Office 365 進階電子文件探索公用程式](use-advanced-ediscovery-utilities.md)
-### [Office 365 進階電子文件探索中的使用者角色與存取](user-roles-and-access-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中管理相關性設定](manage-relevance-setup-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中使用相關性模組](use-relevance-in-advanced-ediscovery.md)
-### [Office 365 進階電子文件探索中的標記與相關性訓練](tagging-and-relevance-training-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中執行處理程序模組及載入資料](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中定義案例與租用戶設定](define-case-and-tenant-settings-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中執行報告](run-reports-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中檢視分析結果](view-analyze-results-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中使用快速分析](use-express-analysis-in-advanced-ediscovery.md)
-### [準備 Office 365 進階電子文件探索的資料](prepare-data-for-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中匯出報告欄位](export-report-fields-in-advanced-ediscovery.md)
-### [Office 365 進階電子文件探索中的標記與評估](tagging-and-assessment-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中了解文件相似性](understand-document-similarity-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中定義反白顯示關鍵字與進階選項](define-highlighted-keywords-and-advanced-options.md)
-### [在 Office 365 進階電子文件探索中設定略過文字分析選項](set-ignore-text-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中檢視批次歷程記錄及匯出過去的結果](view-batch-history-and-export-past-results.md)
-### [在 Office 365 進階電子文件探索中設定分析選項](set-analyze-options-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中檢視處理程序模組結果](view-process-module-results-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中追蹤相關性分析](track-relevance-analysis-in-advanced-ediscovery.md)
-### [根據 Office 365 進階電子文件探索中的結果所作的決策](decision-based-on-the-results-in-advanced-ediscovery.md)
-### [Office 365 進階電子文件探索中的測試相關性分析](test-relevance-analysis-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中設定載入要新增匯入的檔案](set-up-loads-to-add-imported-files.md)
-### [在 Office 365 進階電子文件探索中定義問題及指派使用者](define-issues-and-assign-users.md)
-### [在 Office 365 進階電子文件探索中設定分析進階設定](set-analyze-options-in-advanced-ediscovery.md)
-### [在 Office 365 進階電子文件探索中了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
-### [標記與搜尋](search-and-tagging.md)
+### [開始使用進階電子文件探索](quick-setup-for-advanced-ediscovery.md)
+
+### [設定案例](set-up-users-and-cases-in-advanced-ediscovery.md)
+#### [定義案例的問題](define-issues-and-assign-users.md)
+
+### 收集案例資料
+#### [準備進階電子文件探索的資料](prepare-data-for-advanced-ediscovery.md)
+#### [將非 Office 365 的內容匯入至案例](import-non-office-365-data-into-advanced-ediscovery.md)
+
+### [處理案例資料](run-the-process-module-in-advanced-ediscovery.md)
+#### [執行處理程序模組及載入資料](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+#### [檢視處理序模組結果](view-process-module-results-in-advanced-ediscovery.md)
+
+### 檢閱案例資料
+#### [搜尋並標記案例資料](search-and-tagging.md)
+#### [有關檢閱集的決策](decision-based-on-the-results-in-advanced-ediscovery.md)
+
+### [分析案例資料](analyze-case-data-with-advanced-ediscovery.md)
+#### [執行快速分析](use-express-analysis-in-advanced-ediscovery.md)
+#### [文件相似性 (近似重複項) 概觀](understand-document-similarity-in-advanced-ediscovery.md)
+#### [檢視分析結果](view-analyze-results-in-advanced-ediscovery.md)
+
+### [使用相關性模組](use-relevance-in-advanced-ediscovery.md)
+#### [相關性評量的概觀](assessment-in-relevance-in-advanced-ediscovery.md)
+#### [執行相關性評量和標記](tagging-and-assessment-in-advanced-ediscovery.md)
+#### [設定相關性訓練](manage-relevance-setup-in-advanced-ediscovery.md)
+#### [執行相關性訓練和標記](tagging-and-relevance-training-in-advanced-ediscovery.md)
+#### [追蹤相關性訓練程序](track-relevance-analysis-in-advanced-ediscovery.md)
+#### [測試相關性分析的結果](test-relevance-analysis-in-advanced-ediscovery.md)
+#### [載入相關性訓練的其他資料](set-up-loads-to-add-imported-files.md)
+
+### [匯出案例資料](export-case-data-in-advanced-ediscovery.md)
+#### [匯出資料](export-results-in-advanced-ediscovery.md)
+#### [匯出報告欄位](export-report-fields-in-advanced-ediscovery.md)
+#### [檢視批次歷程記錄及匯出過去的結果](view-batch-history-and-export-past-results.md)
+
+### 設定進階電子文件探索
+#### [設定案例和組織設定](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+#### [設定分析設定](set-analyze-options-in-advanced-ediscovery.md)
+#### [設定略過文字設定](set-ignore-text-in-advanced-ediscovery.md)
+#### [設定醒目提示的關鍵字和其他相關性設定](define-highlighted-keywords-and-advanced-options.md)
+
+### 進階電子文件探索參考資料
+#### [使用進階電子文件探索公用程式](use-advanced-ediscovery-utilities.md)
+#### [執行報告](run-reports-in-advanced-ediscovery.md)
+
 # [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
 ## [啟用信箱稽核](enable-mailbox-auditing.md)
