@@ -3,7 +3,7 @@ title: Office 365 雲端 App 安全性中的異常偵測原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Office 365 雲端應用程式安全性異常偵測原則使用內建的演算法可協助從抽出潛在的問題。您應該會有至少一個異常偵測原則] 中，您可以使用篩選器來調整 （當您建立它）。 '
-ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
+ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015074"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604414"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的異常偵測原則
 
@@ -28,13 +28,13 @@ Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性
 |:-----|:-----|:-----|:-----|
 |[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](integrate-your-siem-server-with-office-365-cas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
-Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用程式安全性](https://docs.microsoft.com/cloud-app-security/release-notes)，包括數個預先定義的異常偵測原則原則 （"現成可用"），包括使用者和實體行為上有無分析 (UEBA) 和學習 （毫升） 的電腦。
+Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用程式安全性](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3)，包括數個預先定義的異常偵測原則原則 （"現成可用"），包括使用者和實體行為上有無分析 (UEBA) 和學習 （毫升） 的電腦。
   
 ![若要檢視您異常偵測原則，請選擇 [控制\>原則。](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
 這些異常偵測原則提供立即偵測、 目標許多行為上有無異常為您的使用者在機器和裝置連線到您的網路之間提供立即的結果。此外，新的原則會公開可協助您加速調查程序，包含持續威脅的雲端應用程式安全性偵測引擎的詳細資料。
   
-以[全域管理員或安全性管理員](permissions-in-the-security-and-compliance-center.md)，您可以檢閱及必要時修改可用來搭配 Office 365 雲端應用程式安全性的預設原則。
+為 Office 365 全域管理員或安全性管理員，您可以檢閱及必要時修改可用來搭配 Office 365 雲端應用程式安全性的預設原則。
   
  > [!IMPORTANT]
 > 有七 （7） 天的期間異常行為提醒不會觸發初始學習期間。異常偵測演算法已最佳化來減少 false 正數的提醒數目。 
@@ -51,23 +51,13 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
     
 ## <a name="view-your-anomaly-detection-policies"></a>檢視您異常偵測原則
 
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 並登入。<br>這會帶您至 [Office 365 雲端應用程式的安全性原則] 頁面上。
     
-2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
-    
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-    這會帶您至 [Office 365 雲端應用程式的安全性原則] 頁面上。
-    
-4. 在 [**類型**] 清單中選擇 [**異常偵測原則**]。
-    
-    貴組織的預設值 （或現有） 顯示異常偵測原則。
-    
-    ![Office 365 雲端應用程式安全性的預設數個異常偵測原則原則可用](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
+2. 在 [**類型**] 清單中選擇 [**異常偵測原則**]。<br>貴組織的預設值 （或現有） 顯示異常偵測原則。<br>![Office 365 雲端 App 安全性中的異常偵測原則](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
   
-5. 選取要檢視或編輯其設定的原則。
+3. 選取要檢視或編輯其設定的原則。
     
-6. 選擇 [**更新**] 以儲存變更。 
+4. 選擇 [**更新**] 以儲存變更。 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>深入了解異常偵測原則
 
@@ -92,27 +82,19 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
 
 當提醒甚至，您可以快速分辨這些提醒並決定哪些先處理。具有內容的通知可讓您查看更大的圖片，並決定是否遭到惡意的某個項目確實正在進行的活動。使用下列程序開始探索提醒：
   
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
+1. 以全域管理員或安全性管理員中，移至雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 並登入。 
     
-2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
+2. 選擇 [以檢視您提醒的**提醒**。 
     
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
+3. 若要取得快顯通知，請遵循下列步驟：
     
-4. 選擇 [以檢視您提醒的**提醒**。 
+4. 選擇**調查** \> **活動記錄檔**。
     
-5. 若要取得快顯通知，請遵循下列步驟：
-    
-1. 選擇**調查** \> **活動記錄檔**。
-    
-2. 選取項目，例如使用者或 IP 位址。如此會開啟相關的見解抽屜。
-    
-    ![您可以在活動記錄檔調查 IP 位址。](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
+5. 選取項目，例如使用者或 IP 位址。如此會開啟相關的見解抽屜。<br>![您可以在活動記錄檔調查 IP 位址。](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
   
-3. 在相關的見解抽屜中，按一下 [可用的命令，例如**顯示如下**一節中的圖示。 
-    
-    ![在相關的見解抽屜中，您可以按一下 [查看所選活動的 48 小時內執行的活動的時鐘圖示](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+6. 在相關的見解抽屜中，按一下 [可用的命令，例如**顯示如下**一節中的圖示。<br> ![按一下 [時鐘] 圖示以查看所選活動的 48 小時內執行的活動](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-4. 深入了解選取的項目來繼續探索表示項目詳細資料。
+7. 深入了解選取的項目來繼續探索表示項目詳細資料。
     
 在多個登入失敗通知可能確實可疑，因此可以表示潛在的暴力破解攻擊。但是，這類通知也可以是應用程式設定錯誤，導致設為良性 true 誤判提醒。如果您看到其他可疑活動與多重失敗 logins 提醒，就會危害帳戶的較高機率。例如，假設為多個失敗登通知後面接活動從 TOR IP 位址和無法運用旅行活動危害這兩個強式指標。您甚至可能會看到相同的使用者執行大量下載 （英文） 活動，這通常是執行 exfiltration 資料的攻擊者的指標。它的之類的可探索 Office 365 雲端應用程式安全性檢視和分辨您提醒，並採取動作在需要時。
   
