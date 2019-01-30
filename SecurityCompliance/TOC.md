@@ -1,4 +1,4 @@
-# 開始使用
+# [開始使用]
 ## [Office 365 安全性藍圖](security-roadmap.md)
 ## [設定您的 Office 365 租用戶以提高安全性](tenant-wide-setup-for-increased-security.md)
 ## [前往 Office 365 安全性與合規性中心](go-to-the-securitycompliance-center.md)。
@@ -7,7 +7,6 @@
 ## [安全規範中心的權限](permissions-in-the-security-and-compliance-center.md)
 ## [讓使用者能夠存取安全性與合規性中心](grant-access-to-the-security-and-compliance-center.md)
 ## [安全性儀表板概觀](security-dashboard.md)
-## [安裝 Outlook 電腦版的監督增益集 ](install-the-supervision-add-in-for-outlook-desktop.md)
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
 # 保護資料與服務存取權
@@ -59,6 +58,8 @@
 ### [處置檢閱](disposition-reviews.md)
 ### [事件導向保留](event-driven-retention.md)
 ### [檔案計劃管理員](file-plan-manager.md)
+## [監督通訊內容](supervision-policies.md)
+### [為您的組織設定監督原則](configure-supervision-policies.md)
 ## [管理非使用中的信箱](inactive-mailboxes-in-office-365.md)
 ### [建立和管理非使用中信箱](create-and-manage-inactive-mailboxes.md)
 ### [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -68,9 +69,6 @@
 ## 監視資料控管
 ### [檢視資料控管報告](view-the-data-governance-reports.md)
 ### [檢視文件的標籤活動](view-label-activity-for-documents.md)
-### [為您的組織設定監督原則](configure-supervision-policies.md)
-### [安裝 Outlook 電腦版的監督增益集 ](install-the-supervision-add-in-for-outlook-desktop.md)
-### [監督報告](supervision-reports.md)
 ## 資料控管的其他資訊
 ### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 # [防範威脅](protect-against-threats.md)
@@ -196,6 +194,67 @@
 ### [刪除雲端式信箱中可復原的項目資料夾中的保留項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [增加保留信箱可復原的項目配額](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)
+
+## [Microsoft 365 中的進階電子文件探索 (預覽)](compliance20/overview-ediscovery-20.md)
+### [版本資訊](compliance20/release-notes-ediscovery20.md)
+### [建立新案例](compliance20/create-new-ediscovery-case.md)
+
+### [與監管人共同作業](compliance20/managing-custodians.md)
+#### [將監管人新增至案例](compliance20/add-custodians-to-case.md)
+#### [管理監管人](compliance20/manage-new-custodians.md)
+#### [檢視監管人活動](compliance20/view-custodian-activity.md)
+
+### [以溝通的方式共同作業](compliance20/managing-custodian-communications.md)
+#### [建立保留通知](compliance20/create-hold-notification.md)
+#### [使用溝通編輯器](compliance20/using-communications-editor.md)
+#### [管理保留通知](compliance20/manage-hold-notification.md)
+#### [編輯保留通知](compliance20/edit-hold-notification.md)
+#### [確認保留通知](compliance20/acknowledge-hold-notification.md)
+
+### [管理保留](compliance20/managing-holds.md)
+
+### [修正處理錯誤](compliance20/processing-data-for-case.md)
+#### [進階的監管人資料索引](compliance20/indexing-custodian-data.md)
+#### [處理資料時發生補救錯誤](compliance20/error-remediation.md)
+
+### [收集適用於案例的資料](compliance20/collecting-data-for-ediscovery.md)
+#### [建立搜尋以收集資料](compliance20/create-search-to-collect-data.md)
+#### [建立搜尋查詢](compliance20/building-search-queries.md)
+#### [搜尋統計資料](compliance20/search-statistics.md)
+#### [將搜尋結果新增至工作集](compliance20/add-data-to-working-set.md)
+
+### [檢閱案例資料](compliance20/reviewing-data-in-working-set.md)
+#### [管理工作集](compliance20/managing-working-sets.md)
+#### [管理載入集合](compliance20/manage-load-sets.md)
+#### [將非 Office 365 的資料載入至工作集](compliance20/load-non-office365-data.md)
+#### [在工作集中查詢資料](compliance20/working-set-search.md)
+#### [在工作集中檢視文件](compliance20/annotating-and-redacting-documents.md)
+#### [在工作集中標記文件](compliance20/tagging-documents.md)
+
+### [分析案例資料](compliance20/analyzing-data-in-working-set.md)
+#### [近似重複項偵測](compliance20/near-duplicates.md)
+#### [電子郵件威脅](compliance20/email-threading.md)
+#### [佈景主題](compliance20/themes.md)
+#### [使用相關性模組以分析資料](compliance20/using-relevance.md)
+
+### [匯出案例資料](compliance20/exporting-data-ediscover20.md)
+#### [從工作集匯出文件](compliance20/export-documents-from-working-set.md)
+#### [下載匯出工作](compliance20/download-export-jobs.md)
+
+### [管理工作](compliance20/managing-jobs-ediscovery20.md)
+
+### [設定案例設定](compliance20/configuring-case-settings-ediscovery20.md)
+#### [關閉或刪除案例](compliance20/close-or-delete-case.md)
+#### [從案例新增或移除成員](compliance20/add-remove-members.md)
+#### [設定搜尋和分析設定](compliance20/configure-search-analytics-settings.md)
+
+### 進階電子文件探索 (預覽) 參考資料
+#### [搜尋限制](compliance20/search-limits-ediscovery20.md)
+#### [索引限制](compliance20/indexing-limits-ediscovery20.md)
+#### [匯出限制](compliance20/export-limits-ediscovery20.md)
+#### [下載限制](compliance20/download-limits-ediscovery20.md)
+#### [支援的檔案類型](compliance20/supported-filetypes-ediscovery20.md)
+#### [下載中繼資料欄位](compliance20/document-metadata-fields.md)
 
 ## [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
 ### [開始使用進階電子文件探索](quick-setup-for-advanced-ediscovery.md)
