@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 如果使用者持續傳送電子郵件訊息從歸類為垃圾郵件的 Office 365，他們會封鎖傳送任何詳細訊息。
-ms.openlocfilehash: 0f58f9f2270c8be38b3ea2ea81f04656eb10e7fb
-ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
+ms.openlocfilehash: 6f6f4504a9c79463aadc21f2eaeadcd769e8b151
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25899654"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614397"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>從封鎖清單移除使用者、 網域或 IP 位址傳送垃圾電子郵件之後
 
@@ -28,16 +28,25 @@ ms.locfileid: "25899654"
 
 - 因為未被視為有效的寄件者無法傳遞郵件。最常見原因是您的電子郵件地址可疑的垃圾郵件的傳送和它已不再允許傳送到組織外的郵件。如需協助連絡電子郵件系統。 遠端伺服器傳回 '550 5.1.8 「 拒絕存取 」、 損壞的撥出寄件者 」
 
-您可以設定您的輸出垃圾郵件原則設定，讓您在 Office 365 使用者禁止傳送電子郵件時收到通知。與使用者的信箱問題已解決之後，您可以移除該寄件者在區塊。
-  
-## <a name="unblock-a-blocked-office-365-email-account"></a>解除封鎖封鎖的 Office 365 電子郵件帳戶
+租用戶系統管理員也將會收到警告指出受限已傳送任何其他輸出的郵件使用者。
 
-您完成此工作中的 Office 365 的安全性與規範中心 」 (SCC)。如需詳細資訊 SCC [[移至 [Office 365 安全性及規範中心](go-to-the-securitycompliance-center.md)]。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
+<a name="sectionSection0"> </a>
+
+預估完成時間：5 分鐘
+  
+您必須獲得權限才能執行此程序或程序。若您需要哪些權限，請參閱 「 反垃圾郵件項目[Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主題中。
+
+您也可以透過遠端 PowerShell 執行下列程序。使用 Get BlockedSenderAddress 指令程式來取得受限制的使用者和 Remove-BlockedSenderAddress 若要移除限制的清單。若要了解如何使用 Windows PowerShell 連線至 Exchange Online，請參閱[Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+
+## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>移除封鎖的 Office 365 電子郵件帳戶的限制
+
+您完成這項工作的 Office 365 安全性 & 規範中心 」 (SCC)。如需詳細資訊 SCC [[移至 Office 365 安全性 & 規範中心](go-to-the-securitycompliance-center.md)]。您必須是**組織管理**或**安全性管理員**角色群組中，才能執行這些功能。如需詳細資訊 SCC 角色群組的 [[移至 Office 365 安全性 & 規範中心中的權限](permissions-in-the-security-and-compliance-center.md)]。
 
 1. 使用工作或學校的帳戶具備 Office 365 全域管理員權限，登入 Office 365 安全性和規範中心及在左側清單中，依序展開 [ **Threat Management**，並選擇 [**檢閱**，然後選擇 [**限制使用者**。
     
     > [!TIP]
-    > 若要直接移至**受限制的使用者**] 頁面 （前身為巨集指令中心） 安全性&amp;規範中心使用此 URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > 若要直接移至**受限制的使用者**] 頁面 （前身為巨集指令中心） 安全性&amp;規範中心使用下列 URL： >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. 此頁面可包含被封鎖傳送郵件給組織外的使用者清單。 尋找您想要移除限制上，然後按一下 [**解除**的使用者。
 
@@ -61,7 +70,7 @@ Exchange Online Protection 也會使用第三方封鎖清單來提升決策的�
   
 [外寄郵件的高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)
 
-  
+[在 Office 365 安全性 & 規範中心的權限](permissions-in-the-security-and-compliance-center.md)
 
   
 

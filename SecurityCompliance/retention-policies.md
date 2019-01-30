@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380613"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607165"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -262,9 +262,33 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
   
 鎖定原則之後，任何人均無法關閉它，或從原則中移除位置。也不能修改或刪除在保留期間受限於原則的內容。鎖定原則之後，修改保留原則的唯一方式是藉由在其中新增位置，或延長其持續時間。鎖定的原則可以增加或擴充，但是無法減少或關閉。
   
-因此，在您鎖定保留原則之前，**務必**了解您組織的法規需求，並且**不要鎖定原則**，除非您確定它是您需要的原則。
+因此，在您鎖定保留原則之前，**務必**了解您組織的合規性需求，並且**不要鎖定原則**，除非您確定它是您需要的原則。
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>使用 PowerShell 鎖定保留原則
   
-您只能使用 PowerShell 來鎖定保留原則。請使用 `New-RetentionCompliancePolicy` 或 `Set-RetentionCompliancePolicy` Cmdlet 中的 `RestrictiveRetention` 參數。如需 PowerShell 的詳細資訊，請參閱下節[尋找保留原則的 PowerShell Cmdlet](#find-the-powershell-cmdlets-for-retention-policies)。
+您僅可以使用 PowerShell 鎖定保留原則。
+
+第一，[連接到 Office 365 安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
+
+第二，若要檢視您的保留原則清單，並尋找您想要鎖定的原則名稱，請執行 `Get-RetentionCompliancePolicy`。
+
+![PowerShell 中保留原則的清單](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+第三，若要在保留原則上放置保留鎖定，請執行含有將 `RestrictiveRetention` 參數設為 True 的 `Set-RetentionCompliancePolicy`，例如：
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![PowerShell 中的 RestrictiveRetention 參數](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+執行 Cmdlet 之後，您會看到確認提示。請選擇 [全部同意]****。
+
+![確認您在 PowerShell 想要鎖定保留原則的提示。](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+現已在保留原則上放置保留鎖定。如果您執行 `Get-RetentionCompliancePolicy`，並將 `RestrictiveRetention` 參數設為 True，例如：
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![顯示在 PowerShell 中已鎖定所有參數的原則](media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>原則保留，哪一個優先？
 

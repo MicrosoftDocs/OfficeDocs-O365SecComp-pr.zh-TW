@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 摘要： 本文將告訴您如何使用 DomainKeys 識別郵件 (DKIM) 與 Office 365 以確定目的地的電子郵件系統信任從自訂網域傳送的訊息。
-ms.openlocfilehash: 1bafae2a1e1e5de390fd0b8d81c1cf2513092d8e
-ms.sourcegitcommit: 4f776e1cf8872ce90e632d4305cb727d31754767
+ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27263912"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614447"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -88,7 +88,10 @@ SPF 將資訊新增至郵件信封，但 DKIM 真的要加密的郵件標頭中�
 使用下列格式的 CNAME 記錄。
 
 > [!IMPORTANT]
-> 如果您是其中一個我們 GCC 客戶，domainGUID 方法將無法運作您 ！請務必使用適當的 MX 值為您的網域。使用：`selector2-<domain-key>._domainkey.<initialDomain>`的下面的範例。使用[本文](https://docs.microsoft.com/en-us/office365/admin/get-help-with-domains/information-for-dns-records?view=o365-worldwide)來找出所需的*網域機碼*值的 MX 記錄。
+> 如果您是其中一個我們 GCC 高的客戶，我們計算_domainGuid_不同 ！而不是查閱計算_domainGuid_您_initialDomain_的 MX 記錄，但是我們計算它直接從自訂的網域。例如，如果您的自訂的網域為"contoso.com"您 domainGuid 會變成"contoso com"、 任何期間已取代為虛線。
+
+如此，不論什麼 MX 記錄您 initialDomain 指向，您將一律使用上述方法來計算 CNAME 記錄中使用 domainGuid。
+
   
 ```
 Host name:          selector1._domainkey

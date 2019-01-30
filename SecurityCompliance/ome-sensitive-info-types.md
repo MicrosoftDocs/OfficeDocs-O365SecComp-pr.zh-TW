@@ -3,7 +3,7 @@ title: 新的 Office 365 郵件加密原則敏感資訊
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 自動套用至所有的承租人啟用的敏感資訊類型的 Office 365 郵件加密原則。
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789451"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614377"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>敏感資訊的 office 365 郵件加密原則
 
-我們會建立新的自動原則將會套用至所有電子郵件包含敏感資訊及的寄往組織外部的 Office 365 郵件加密的 Office 365 租用戶中。這個新的 Exchange 郵件流程規則將會自動建立 Office 365 租用戶中使預設會保護您的組織。
+選取 [群組依據其組織大小與複雜性郵件流程的承租人我們執行的動作將會套用至含有機密特定類型的電子郵件的 Office 365 郵件加密的 Office 365 租用戶中的新自動原則低速 roll 出資訊。我們要測試此承租人一小群具有。此原則將不會導所有組織及考量等組織大小與複雜性郵件流程將可用來判斷此 roll 延展的資格。如果您的組織已選取此聯播 （英文） 時，您會收到通知在 Office 365 郵件內通知您在其建立此自動原則和至少 30 天的通知] 與 [加入確認程序擴充選項指定的日期。如果您不想要建立此原則的 Microsoft 等待，但想要這麼自己，您可以建立使用 Exchange Mail Flow 規則此自動原則。
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>預期更新您的租用戶的時機
 
@@ -52,7 +52,7 @@ Exchange 郵件流程規則將會自動加密不必與組織外部的電子郵�
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>此變更會表示在稽核記錄檔的方式？
 
-此活動您可以稽核和客戶使用。 作業是 'New-transportrule' 和程式碼片段的稽核記錄檔中搜尋的安全性與規範中心範例稽核項目是下方：
+此活動您可以稽核和客戶使用。 作業是 'New-transportrule' 和程式碼片段的稽核記錄檔中搜尋的安全性 & 規範中心範例稽核項目是下方：
 
 |     |
 | --- |

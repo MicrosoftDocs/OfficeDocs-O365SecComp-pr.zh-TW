@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 的敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: ad6137ad00fa2e7eb83a405e429d6c7826cf6a90
-ms.sourcegitcommit: d7e87ce4b1579ac47af2e853ef59ef058c40191f
+ms.openlocfilehash: 2804785362b504137319f5560287b6b2319e840b
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547215"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607155"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -78,6 +78,11 @@ ms.locfileid: "26547215"
 - 
   **防止資料遺失**，方法是在 Intune 中開啟端點保護。如果下載了敏感內容，您可協助防止 Windows 裝置的資料遺失。比方說，您無法將已標示的內容複製到 Dropbox、Gmail 或 USB 磁碟機。在敏感度標籤可使用 Windows 資訊保護 (WIP) 之前，您需要先在 Azure 入口網站中建立應用程式保護原則。如需詳細資訊，請參閱 [Windows 資訊保護如何保護具有敏感度標籤的檔案](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。
 
+- **自動將標籤套用到包含敏感性資訊的內容。** 您可以選擇想要將標籤套用到哪些類型的敏感性資訊，以及自動套用標籤或您建議使用者套用標籤的提示。如果您有建議的標籤，提示會顯示您選擇的任何文字。如需詳細資訊，請參閱[自動將敏感度標籤套用到內容](apply_sensitivity_label_automatically.md)。
+
+    ![指派必要標籤的提示](media/Sensitivity_label_Prompt_for_required_label.png)
+
+
 在安全性與合規性中心建立標籤時，這些選項皆可使用。
 
 ![建立敏感度標籤的選項](media/Sensitivity_label_create_options.png)
@@ -117,6 +122,10 @@ ms.locfileid: "26547215"
 - **變更標籤需要理由。** 如果內容標示為「機密」，而使用者想要移除該標籤，或取代為較低的分類，如「公用」標籤，則您可以要求使用者在執行此動作時提供理由。這些理由可供系統管理員檢閱。我們目前正在處理系統管理員可在其中檢視使用者理由的報告。
 
     ![提示使用者輸入理由](media/Sensitivity_label_justification_required.png)
+
+- **要求使用者將標籤套用到他們的電子郵件和文件。** 如果您想要將所有使用者的內容套用標籤，您可以要求必須將標籤套用到所有已儲存的文件和傳送的電子郵件。基於自動或預設 (預設標籤選項如上所述) 指派的條件，使用者可以手動指派標籤。當使用者需要指派標籤時，Outlook 中會顯示提示。
+
+    ![Outlook 中詢問使用者套用必要標籤的提示](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
 
 - **提供說明連結至自訂說明頁面。** 如果使用者不確定敏感度標籤代表的意義或使用方式，您可以提供「深入了解」URL，其顯示在 Office 應用程式中 [敏感度] 標籤功能表的底部。
 
