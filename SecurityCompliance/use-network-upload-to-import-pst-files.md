@@ -3,7 +3,7 @@ title: 使用網路上傳至您的組織 PST 檔案匯入 Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 系統管理員： 了解如何使用網路上傳至大量匯入至 Office 365 中的使用者信箱的多個 PST 檔案。
-ms.openlocfilehash: c5bcaed9075939d098ac4bf9fbf4d8a94007232c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 81c799a8c820e9d9287f4792fe463d6a99b90e36
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526505"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666153"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用網路上傳至您的組織 PST 檔案匯入 Office 365
 
@@ -81,17 +81,19 @@ ms.locfileid: "22526505"
     > [!TIP]
     > 若要找出郵件的接收大小的信箱，您可以執行此命令在 Exchange Online PowerShell: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
 
-### <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步驟 1： 複製 SAS URL 並安裝 Azure AzCopy
+## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步驟 1： 複製 SAS URL 並安裝 Azure AzCopy
 
 第一個步驟是下載並安裝 Azure AzCopy 工具，這是您用來執行步驟 2 中 PST 檔案上傳至 Office 365 的工具。您也將您的組織複製 SAS URL。此 URL 會在 Microsoft 雲端組織和共用存取簽章 (SAS) 金鑰 Azure 儲存位置的網路 URL 的組合。此機碼提供 PST 檔案上傳至 Azure 儲存位置的必要權限。請務必採取預防措施保護 SAS URL。它是唯一的您的組織並將用於在步驟 2。
-  
- **重要：** 我們建議您使用 Azure AzCopy 版本 7.1.0 使用網路匯入 PST 檔案上傳方法。版本 7.1.0 是以下列程序中的步驟 6b 下載。 
+
+> [!IMPORTANT]
+> 匯入 PST 檔案使用網路上傳方法，建議您依照下列程序中的步驟 6b 可以下載的 Azure AzCopy 的版本。
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)並登入使用 Office 365 組織中系統管理員帳戶的認證。 
     
 2. 在 [安全性] 的左窗格中&amp;規範中心，按一下 [**資料控管** \> **匯入**。
     
-    **附註：** 您必須被指派存取安全性 [**匯入**] 頁面上的適當權限&amp;規範中心。請參閱 ＜**開始之前**] 區段中的詳細資訊。 
+    > [!NOTE]
+    > 您必須被指派存取安全性 [**匯入**] 頁面上的適當權限&amp;規範中心。請參閱 ＜**開始之前**] 區段中的詳細資訊。 
     
 3. 在 [**匯入**] 頁面上，按一下 [![新增圖示](media/ITPro-EAC-AddIcon.gif)**新增匯入工作**。
     
@@ -109,9 +111,10 @@ ms.locfileid: "22526505"
   
     a.在步驟 2 中，按一下 [**顯示網路上傳 SAS URL**。顯示 SAS URL 後，按一下 [**複製到剪貼簿**然後將其貼並將其儲存至檔案，讓您可以稍後存取。
     
-    b.在步驟 3 中，按一下 [**下載 Azure AzCopy**下載並安裝 Azure AzCopy 工具。為先前所述，將會下載版本 7.1.0。在快顯視窗中，按一下 [**執行**] 表示安裝 AzCopy。 
+    b.在步驟 3 中，按一下 [**下載 Azure AzCopy**下載並安裝 Azure AzCopy 工具。在快顯視窗中，按一下 [**執行**] 表示安裝 AzCopy。 
     
-  **附註：** 您可以 [**匯入資料**] 頁面上保持在開啟狀態 （以防您需要再次複製 SAS URL） 或按一下 [**取消**] 以關閉它。 
+> [!NOTE]
+> 您可以 [**匯入資料**] 頁面上保持在開啟狀態 （以防您需要再次複製 SAS URL） 或按一下 [**取消**] 以關閉它。 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>步驟 2： 將 PST 檔案上傳至 Office 365
 
@@ -146,8 +149,9 @@ ms.locfileid: "22526505"
 ```
 
 在您執行命令後，便會顯示 PST 檔案上傳進度的狀態訊息。最終狀態訊息會顯示已成功上傳的檔案總數。 
-    
-**提示：** 您已順利執行 AzCopy.exe 命令並確認所有參數正確都無誤後，命令列語法到您複製資訊相同 （安全） 檔案的複本儲存您取得在步驟 1 中。然後您可以命令複製並貼入此命令提示字元中每一個您想要執行 AzCopy.exe 工具至 PST 檔案上傳至 Office 365 的時間。您可能必須變更的唯一值是針對該組`/Source:`參數。這取決於 PST 檔案的所在位置的來源目錄。 
+
+> [!TIP]
+> 您已順利執行 AzCopy.exe 命令並確認所有參數正確都無誤後，命令列語法到您複製資訊相同 （安全） 檔案的複本儲存您取得在步驟 1 中。然後您可以命令複製並貼入此命令提示字元中每一個您想要執行 AzCopy.exe 工具至 PST 檔案上傳至 Office 365 的時間。您可能必須變更的唯一值是針對該組`/Source:`參數。這取決於 PST 檔案的所在位置的來源目錄。
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>（選用）步驟 3： 檢視清單中的 PST 檔案上傳至 Office 365
 
@@ -159,7 +163,8 @@ ms.locfileid: "22526505"
     
 Microsoft Azure 儲存在檔案總管處於預覽。
   
- **重要：** 您無法使用 Azure 儲存在檔案總管上傳或修改 PST 檔案。將 PST 檔案匯入 Office 365 唯一支援的方法是使用 AzCopy。此外，您無法刪除您已上傳至 Azure blob 的 PST 檔案。如果您嘗試刪除 PST 檔案，將會收到有關不會察覺必要的權限的錯誤。請注意 Azure 儲存區域會自動刪除所有 PST 檔案。如果沒有匯入中的工作進度，則中的所有 PST 檔案 * * ingestiondata * * 容器會刪除 30 天後所建立的最新的匯入工作。 
+> [!IMPORTANT]
+> 您無法使用 Azure 儲存在檔案總管上傳或修改 PST 檔案。將 PST 檔案匯入 Office 365 唯一支援的方法是使用 AzCopy。此外，您無法刪除您已上傳至 Azure blob 的 PST 檔案。如果您嘗試刪除 PST 檔案，將會收到有關不會察覺必要的權限的錯誤。請注意 Azure 儲存區域會自動刪除所有 PST 檔案。如果有任何匯入工作進行，然後所有 PST 檔案中的 [ **ingestiondata** ] 容器中會不刪除 30 天後所建立的最新的匯入工作。
   
 若要安裝 Azure 儲存在檔案總管並連線至 Azure 儲存區：
   
@@ -283,7 +288,7 @@ Azure 儲存位置的 Office 365 組織已上載的 PST 檔案之後下, 一步�
     
     ![您可以修剪 PST 檔案中的資料或將其所有匯入](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. 執行下列其中一項動作：
+3. 執行下列其中一項操作：
     
     a.以修剪您匯入的資料，按一下 [**是，我要匯入之前加以篩選**。
     
@@ -319,7 +324,7 @@ Azure 儲存位置的 Office 365 組織已上載的 PST 檔案之後下, 一步�
     
 6. **啟動 PST 匯入工作**-開始匯入工作之後，Office 365 資訊檔案中使用 PST 匯入對應從他 Azure 儲存位置的 Pst 檔案匯入至使用者信箱。在 [安全性] 的 [**匯入**] 頁面上會顯示狀態資訊 （包括要匯入每個 PST 檔案的相關資訊） 匯入工作&amp;規範中心。匯入工作完成時，設置**完成**之工作的狀態。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 為什麼要選擇 PST 檔案匯入 Office 365？
     
@@ -361,11 +366,11 @@ Azure 儲存位置的 Office 365 組織已上載的 PST 檔案之後下, 一步�
     AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
 ``
 
-- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  `True` so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
+- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  **True** so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
     
-    - After a certain period of time, you can turn off the retention hold by running the  `Set-Mailbox -RetentionHoldEnabled $false` command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+    - After a certain period of time, you can turn off the retention hold by running the **Set-Mailbox -RetentionHoldEnabled $false** command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the  `Set-Mailbox -EndDateForRetentionHold <date>` command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  `Set-Mailbox -EndDateForRetentionHold 8/1/2016`. In this scenario, you would leave the  *RetentionHoldEnabled*  property set to  *True*  . For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the **Set-Mailbox -EndDateForRetentionHold *date*** command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  **Set-Mailbox -EndDateForRetentionHold 8/1/2016**. In this scenario, you would leave the  **RetentionHoldEnabled**  property set to  *True*. For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
    - You can change the settings for the retention policy that's assigned to the mailbox so that older items that were imported won't be immediately deleted or moved to the user's archive mailbox. For example, you could lengthen the retention age for a deletion or archive policy that's assigned to the mailbox. In this scenario, you would turn off the retention hold on the mailbox after you changed the settings of the retention policy. For more information, see [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     

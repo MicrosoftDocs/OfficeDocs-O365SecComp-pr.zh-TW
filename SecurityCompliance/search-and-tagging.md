@@ -3,7 +3,7 @@ title: 搜尋與標記
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/13/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,51 +12,64 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，並將組織中您案例的文件。目前的本單元處於 beta。
-ms.openlocfilehash: fde887e496e9a40aa88d841053a0c66e48f04200
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526833"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666143"
 ---
 # <a name="search-and-tagging"></a>搜尋與標記
 
-進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，並將組織中您案例的文件。目前的本單元處於 beta。
+進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，並將組織中您案例的文件。目前的本單元處於 beta。搜尋及標記的簡短示範，請參閱[管理您的資料與進階 eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I)影片。
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 ## <a name="search-the-documents-in-your-case"></a>在您的案例中搜尋文件
 
-一旦您已處理文件中的進階 eDiscovery 並選擇性地執行分析模組或相關性模組，您可以使用搜尋和標記搜尋透過案例中的文件並將它們組織使用特定案例的標籤。您可以定義您使用所提供的條件卡的查詢或透過 KQL 類似的查詢語言中的關鍵字條件卡片。一般 KQL 語法，例如 AND、 OR、 NOT、 NEAR(n) 且支援，以及行尾的多重字元萬用字元 （*）。這些屬性所支援的查詢語言屬性名稱：
+您已處理文件中的進階的 eDiscovery 案例 （並選擇性地執行分析或相關性模組之後），您可以使用搜尋及標記搜尋文件並再將它們組織套用特定案例的標籤 （也稱為標籤）。您可以定義搜尋查詢使用所提供的條件卡或使用 KQL 類似的查詢語言中的關鍵字條件卡片。一般 KQL 語法，例如 AND、 OR、 NOT、 NEAR(n) 且支援，以及行尾的多重字元萬用字元 （*）。 
 
-- caselabel： 建立/套用標記中搜尋和標記針對此案例 
-- custodians: custodians 指派的情況下-受限於限制
-- 日期： 傳送電子郵件的日期、 修改日期為文件
-- 所 fileid： 檔案內大小寫的識別碼
-- filetype： 原生副檔名
-- fileclass： 電子郵件、 文件或附件
-- senderauthor： 寄件者的電子郵件、 文件的作者
-- 大小： KB 的檔案大小
-- subjecttitle： 主旨的電子郵件、 文件的標題
-- bcc
-- cc
-- 參與者： 電子郵件地址的電子郵件執行緒，包括的連結遺漏中的所有參與者
-- 收到： 接收日期
-- 收件者： 電子郵件收件者的名稱或位址 （、 [副本]、 [密件副本)
-- sender
-- lastmodifieddate： 上次修改日期的文件
-- 傳送： 傳送電子郵件的日期
-- 到
-- 作者： 作者的電子郵件
-- 標題： 文件標題
-- dominanttheme： 主佈景主題的項目\*
-- themeslist： 與項目相關聯的佈景主題\*
-- readpercentile_ [issuenum]： 閱讀百分位數的問題 [issuenum] 項目\*\*
-- relevancescore_ [issuenum]: 問題 [issuenum] 項目的相關性分數\*\*
-- relevancetag_ [issuenum]： 如果項目已手動標記的相關性，其標籤的 [issuenum]\*\*
+下表列出您可以搜尋使用 KQL 關鍵字查詢的屬性。或者，您可以使用進階的 eDiscovery 搜尋工具中的條件卡片新增至搜尋查詢的條件 （適用於選取的內容）。
 
-\*如果已經執行 [佈景主題] 模組的唯一可用\*\*只能如果已經執行 [相關性] 模組
+|**屬性**|**描述**|
+|:-----|:-----|
+|**caselabel** <br/> | 建立/時套用標記的文件的標記名稱。 <br/> |
+|**okay** <br/> | 文件 ； 相關聯 okay主旨來限制。 <br/> |
+|**日期** <br/> | 傳送電子郵件 ； 日期網站文件的修改的日期。 <br/> |
+|**所 fileid** <br/> | 檔案中的識別碼大小寫。 <br/> |
+|**filetype** <br/> | 原生副檔名。 <br/> |
+|**fileclass** <br/> | 電子郵件、 文件或附件。 <br/> |
+|**senderauthor** <br/> | 寄件者的電子郵件 ；網站文件的作者。 <br/> |
+|**大小** <br/> | Kb 的檔案大小。 <br/> |
+|**subjecttitle** <br/> | 電子郵件 ； 主旨網站文件的標題。 <br/> |
+|**bcc** <br/> | 電子郵件的密件副本] 欄位。 <br/> |
+|**cc** <br/> | 電子郵件的 [副本] 欄位。 <br/> |
+|**參與者** <br/> | 所有參與者的電子郵件執行緒，其中包含連結遺漏的電子郵件地址。 <br/> |
+|**接收** <br/> | 接收的電子郵件的日期。 <br/> |
+|**收件者** <br/> | 收件者電子郵件中包含 [收件者]、 [副本] 或 [密件副本] 欄位。 <br/> |
+|**sender** <br/> | 電子郵件的寄件者。 <br/> |
+|**lastmodifieddate** <br/> | 上次修改日期的網站文件。 <br/> |
+|**傳送** <br/> | 傳送電子郵件的日期。 <br/> |
+|**若要** <br/> | 電子郵件] 欄位中所列的收件者。 <br/> |
+|**作者** <br/> | 網站文件的作者。 <br/> |
+|**標題** <br/> | 網站文件的標題。 <br/> |
+|**dominanttheme**\* <br/> | 項目主佈景主題。 <br/> |
+|**themeslist**\* <br/> | 與項目相關聯的佈景主題。 <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | 讀取百分位數的項目，如 [issuenum] 所定義的問題。 <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | [Issuenum] 所定義的問題項目、 相關性分數。 <br/> |
+|**relevancetag_ [tagname]**\*\* <br/> | 如果項目有手動已標記為 [tagname] 所定義之標籤的相關性。 <br/> |
+|||
+
+\*如果已經執行 [佈景主題模組只提供。
+
+\*\*如果已經執行 [相關性] 模組只提供。
+
+或者，您可以使用進階的 eDiscovery 搜尋工具中的條件卡新增至搜尋查詢的條件 （適用於選取的內容）。下列螢幕擷取畫面顯示可以新增至查詢的條件。[**群組**] 欄會指出是否將屬性套用至電子郵件、 網站文件或這兩者 （以*通用*值）。此欄也會識別之後執行相關性模組都是可用的可搜尋屬性。
+
+![進階的 eDiscovery 搜尋工具中的搜尋條件](media/AeDSearchConditions.png)
+
+如需可搜尋的內容的詳細資訊，請參閱[關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
 ## <a name="see-also"></a>另請參閱
 
