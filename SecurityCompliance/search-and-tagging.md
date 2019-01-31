@@ -3,7 +3,7 @@ title: 搜尋與標記
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/13/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,65 +12,78 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，並將組織中您案例的文件。目前的本單元處於 beta。
-ms.openlocfilehash: fde887e496e9a40aa88d841053a0c66e48f04200
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526833"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666143"
 ---
-# <a name="search-and-tagging"></a><span data-ttu-id="511cc-104">搜尋與標記</span><span class="sxs-lookup"><span data-stu-id="511cc-104">Search and Tagging</span></span>
+# <a name="search-and-tagging"></a><span data-ttu-id="93aca-104">搜尋與標記</span><span class="sxs-lookup"><span data-stu-id="93aca-104">Search and Tagging</span></span>
 
-<span data-ttu-id="511cc-p102">進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，並將組織中您案例的文件。目前的本單元處於 beta。</span><span class="sxs-lookup"><span data-stu-id="511cc-p102">In Advanced eDiscovery, the Search and Tagging module enables you to search, preview, and organize the documents in your case. Currently, this module is in beta.</span></span>
+<span data-ttu-id="93aca-p102">進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，並將組織中您案例的文件。目前的本單元處於 beta。搜尋及標記的簡短示範，請參閱[管理您的資料與進階 eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I)影片。</span><span class="sxs-lookup"><span data-stu-id="93aca-p102">In Advanced eDiscovery, the Search and Tagging module enables you to search, preview, and organize the documents in your case. Currently, this module is in beta. For a brief demonstration of searching and tagging, see the [Manage your data with Advanced eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) video.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="511cc-p103">進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="511cc-p103">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="93aca-p103">進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="93aca-p103">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-## <a name="search-the-documents-in-your-case"></a><span data-ttu-id="511cc-109">在您的案例中搜尋文件</span><span class="sxs-lookup"><span data-stu-id="511cc-109">Search the documents in your case</span></span>
+## <a name="search-the-documents-in-your-case"></a><span data-ttu-id="93aca-110">在您的案例中搜尋文件</span><span class="sxs-lookup"><span data-stu-id="93aca-110">Search the documents in your case</span></span>
 
-<span data-ttu-id="511cc-p104">一旦您已處理文件中的進階 eDiscovery 並選擇性地執行分析模組或相關性模組，您可以使用搜尋和標記搜尋透過案例中的文件並將它們組織使用特定案例的標籤。您可以定義您使用所提供的條件卡的查詢或透過 KQL 類似的查詢語言中的關鍵字條件卡片。一般 KQL 語法，例如 AND、 OR、 NOT、 NEAR(n) 且支援，以及行尾的多重字元萬用字元 （\*）。這些屬性所支援的查詢語言屬性名稱：</span><span class="sxs-lookup"><span data-stu-id="511cc-p104">Once you have processed documents in Advanced eDiscovery and optionally run the Analyze module or the Relevance module, you can use Search and Tagging to search through the documents in the case and organize them using case-specific tags. You can define your queries using the provided condition cards, or through a KQL-like query language in the Keywords condition card. Common KQL syntax, such as AND, OR, NOT, and NEAR(n) are supported, as well as trailing multi-character wildcard (\*). These properties are supported in the query language property name:</span></span>
+<span data-ttu-id="93aca-p104">您已處理文件中的進階的 eDiscovery 案例 （並選擇性地執行分析或相關性模組之後），您可以使用搜尋及標記搜尋文件並再將它們組織套用特定案例的標籤 （也稱為標籤）。您可以定義搜尋查詢使用所提供的條件卡或使用 KQL 類似的查詢語言中的關鍵字條件卡片。一般 KQL 語法，例如 AND、 OR、 NOT、 NEAR(n) 且支援，以及行尾的多重字元萬用字元 （\*）。</span><span class="sxs-lookup"><span data-stu-id="93aca-p104">After you have processed documents in an Advanced eDiscovery case (and optionally run the Analyze or Relevance module), you can use the Search and Tagging to search documents and then organize them by applying case-specific tags (also called labels). You can define a search query using the provided condition cards or by using a KQL-like query language in the Keywords condition card. Common KQL syntax, such as AND, OR, NOT, and NEAR(n) are supported, as well as trailing multi-character wildcard (\*).</span></span> 
 
-- <span data-ttu-id="511cc-114">caselabel： 建立/套用標記中搜尋和標記針對此案例</span><span class="sxs-lookup"><span data-stu-id="511cc-114">caselabel: tags created/applied in Search and Tagging for this case</span></span> 
-- <span data-ttu-id="511cc-115">custodians: custodians 指派的情況下-受限於限制</span><span class="sxs-lookup"><span data-stu-id="511cc-115">custodians: custodians assigned in the case - subject to limitations</span></span>
-- <span data-ttu-id="511cc-116">日期： 傳送電子郵件的日期、 修改日期為文件</span><span class="sxs-lookup"><span data-stu-id="511cc-116">date: sent date for email, modified date for documents</span></span>
-- <span data-ttu-id="511cc-117">所 fileid： 檔案內大小寫的識別碼</span><span class="sxs-lookup"><span data-stu-id="511cc-117">fileid: file ID within the case</span></span>
-- <span data-ttu-id="511cc-118">filetype： 原生副檔名</span><span class="sxs-lookup"><span data-stu-id="511cc-118">filetype: native file extension</span></span>
-- <span data-ttu-id="511cc-119">fileclass： 電子郵件、 文件或附件</span><span class="sxs-lookup"><span data-stu-id="511cc-119">fileclass: email, document, or attachment</span></span>
-- <span data-ttu-id="511cc-120">senderauthor： 寄件者的電子郵件、 文件的作者</span><span class="sxs-lookup"><span data-stu-id="511cc-120">senderauthor: sender for emails, author for documents</span></span>
-- <span data-ttu-id="511cc-121">大小： KB 的檔案大小</span><span class="sxs-lookup"><span data-stu-id="511cc-121">size: size of the file in KB</span></span>
-- <span data-ttu-id="511cc-122">subjecttitle： 主旨的電子郵件、 文件的標題</span><span class="sxs-lookup"><span data-stu-id="511cc-122">subjecttitle: subject for emails, title for documents</span></span>
-- <span data-ttu-id="511cc-123">bcc</span><span class="sxs-lookup"><span data-stu-id="511cc-123">bcc</span></span>
-- <span data-ttu-id="511cc-124">cc</span><span class="sxs-lookup"><span data-stu-id="511cc-124">cc</span></span>
-- <span data-ttu-id="511cc-125">參與者： 電子郵件地址的電子郵件執行緒，包括的連結遺漏中的所有參與者</span><span class="sxs-lookup"><span data-stu-id="511cc-125">participants: Email addresses of all participants in an email thread, including for missing links</span></span>
-- <span data-ttu-id="511cc-126">收到： 接收日期</span><span class="sxs-lookup"><span data-stu-id="511cc-126">received: received date</span></span>
-- <span data-ttu-id="511cc-127">收件者： 電子郵件收件者的名稱或位址 （、 [副本]、 [密件副本)</span><span class="sxs-lookup"><span data-stu-id="511cc-127">recipients: email recipient names or addresses (to, cc, bcc)</span></span>
-- <span data-ttu-id="511cc-128">sender</span><span class="sxs-lookup"><span data-stu-id="511cc-128">sender</span></span>
-- <span data-ttu-id="511cc-129">lastmodifieddate： 上次修改日期的文件</span><span class="sxs-lookup"><span data-stu-id="511cc-129">lastmodifieddate: last modified date of a document</span></span>
-- <span data-ttu-id="511cc-130">傳送： 傳送電子郵件的日期</span><span class="sxs-lookup"><span data-stu-id="511cc-130">sent: sent date of an email</span></span>
-- <span data-ttu-id="511cc-131">到</span><span class="sxs-lookup"><span data-stu-id="511cc-131">to</span></span>
-- <span data-ttu-id="511cc-132">作者： 作者的電子郵件</span><span class="sxs-lookup"><span data-stu-id="511cc-132">author: author of an email</span></span>
-- <span data-ttu-id="511cc-133">標題： 文件標題</span><span class="sxs-lookup"><span data-stu-id="511cc-133">title: title of a document</span></span>
-- <span data-ttu-id="511cc-134">dominanttheme： 主佈景主題的項目\*</span><span class="sxs-lookup"><span data-stu-id="511cc-134">dominanttheme: dominant theme of an item\*</span></span>
-- <span data-ttu-id="511cc-135">themeslist： 與項目相關聯的佈景主題\*</span><span class="sxs-lookup"><span data-stu-id="511cc-135">themeslist: themes that are associated with an item\*</span></span>
-- <span data-ttu-id="511cc-136">readpercentile_ [issuenum]： 閱讀百分位數的問題 [issuenum] 項目\*\*</span><span class="sxs-lookup"><span data-stu-id="511cc-136">readpercentile_[issuenum]: read percentile of an item for issue [issuenum]\*\*</span></span>
-- <span data-ttu-id="511cc-137">relevancescore_ [issuenum]: 問題 [issuenum] 項目的相關性分數\*\*</span><span class="sxs-lookup"><span data-stu-id="511cc-137">relevancescore_[issuenum]: relevance score of an item for issue [issuenum]\*\*</span></span>
-- <span data-ttu-id="511cc-138">relevancetag_ [issuenum]： 如果項目已手動標記的相關性，其標籤的 [issuenum]\*\*</span><span class="sxs-lookup"><span data-stu-id="511cc-138">relevancetag_[issuenum]: if an item has been manually tagged for relevance, its tag for [issuenum]\*\*</span></span>
+<span data-ttu-id="93aca-p105">下表列出您可以搜尋使用 KQL 關鍵字查詢的屬性。或者，您可以使用進階的 eDiscovery 搜尋工具中的條件卡片新增至搜尋查詢的條件 （適用於選取的內容）。</span><span class="sxs-lookup"><span data-stu-id="93aca-p105">The following table lists the properties that you can search for using a KQL keyword query. Alternatively, you can use a condition card for in the Advanced eDiscovery Search tool to add a condition (for selected properties) to a search query.</span></span>
 
-<span data-ttu-id="511cc-139">\*如果已經執行 [佈景主題] 模組的唯一可用\*\*只能如果已經執行 [相關性] 模組</span><span class="sxs-lookup"><span data-stu-id="511cc-139">\* Only available if the Themes module has been run \*\* Only available if the Relevance module has been run</span></span>
-  
-## <a name="see-also"></a><span data-ttu-id="511cc-140">另請參閱</span><span class="sxs-lookup"><span data-stu-id="511cc-140">See also</span></span>
+|<span data-ttu-id="93aca-116">**屬性**</span><span class="sxs-lookup"><span data-stu-id="93aca-116">**Property**</span></span>|<span data-ttu-id="93aca-117">**描述**</span><span class="sxs-lookup"><span data-stu-id="93aca-117">**Description**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="93aca-118">**caselabel**</span><span class="sxs-lookup"><span data-stu-id="93aca-118">**caselabel**</span></span> <br/> | <span data-ttu-id="93aca-119">建立/時套用標記的文件的標記名稱。</span><span class="sxs-lookup"><span data-stu-id="93aca-119">The name of the tag created/applied when a document is tagged.</span></span> <br/> |
+|<span data-ttu-id="93aca-120">**okay**</span><span class="sxs-lookup"><span data-stu-id="93aca-120">**custodian**</span></span> <br/> | <span data-ttu-id="93aca-121">文件 ； 相關聯 okay主旨來限制。</span><span class="sxs-lookup"><span data-stu-id="93aca-121">The custodian associated with a document; subject to limitations.</span></span> <br/> |
+|<span data-ttu-id="93aca-122">**日期**</span><span class="sxs-lookup"><span data-stu-id="93aca-122">**date**</span></span> <br/> | <span data-ttu-id="93aca-123">傳送電子郵件 ； 日期網站文件的修改的日期。</span><span class="sxs-lookup"><span data-stu-id="93aca-123">Sent date for email; the modified date for site documents.</span></span> <br/> |
+|<span data-ttu-id="93aca-124">**所 fileid**</span><span class="sxs-lookup"><span data-stu-id="93aca-124">**fileid**</span></span> <br/> | <span data-ttu-id="93aca-125">檔案中的識別碼大小寫。</span><span class="sxs-lookup"><span data-stu-id="93aca-125">The File ID within the case.</span></span> <br/> |
+|<span data-ttu-id="93aca-126">**filetype**</span><span class="sxs-lookup"><span data-stu-id="93aca-126">**filetype**</span></span> <br/> | <span data-ttu-id="93aca-127">原生副檔名。</span><span class="sxs-lookup"><span data-stu-id="93aca-127">The native file extension.</span></span> <br/> |
+|<span data-ttu-id="93aca-128">**fileclass**</span><span class="sxs-lookup"><span data-stu-id="93aca-128">**fileclass**</span></span> <br/> | <span data-ttu-id="93aca-129">電子郵件、 文件或附件。</span><span class="sxs-lookup"><span data-stu-id="93aca-129">Email, document, or attachment.</span></span> <br/> |
+|<span data-ttu-id="93aca-130">**senderauthor**</span><span class="sxs-lookup"><span data-stu-id="93aca-130">**senderauthor**</span></span> <br/> | <span data-ttu-id="93aca-131">寄件者的電子郵件 ；網站文件的作者。</span><span class="sxs-lookup"><span data-stu-id="93aca-131">The sender for email; the author for site documents.</span></span> <br/> |
+|<span data-ttu-id="93aca-132">**大小**</span><span class="sxs-lookup"><span data-stu-id="93aca-132">**size**</span></span> <br/> | <span data-ttu-id="93aca-133">Kb 的檔案大小。</span><span class="sxs-lookup"><span data-stu-id="93aca-133">The size of the file in KB.</span></span> <br/> |
+|<span data-ttu-id="93aca-134">**subjecttitle**</span><span class="sxs-lookup"><span data-stu-id="93aca-134">**subjecttitle**</span></span> <br/> | <span data-ttu-id="93aca-135">電子郵件 ； 主旨網站文件的標題。</span><span class="sxs-lookup"><span data-stu-id="93aca-135">The subject for email; the title for site documents.</span></span> <br/> |
+|<span data-ttu-id="93aca-136">**bcc**</span><span class="sxs-lookup"><span data-stu-id="93aca-136">**bcc**</span></span> <br/> | <span data-ttu-id="93aca-137">電子郵件的密件副本] 欄位。</span><span class="sxs-lookup"><span data-stu-id="93aca-137">The Bcc field of an email.</span></span> <br/> |
+|<span data-ttu-id="93aca-138">**cc**</span><span class="sxs-lookup"><span data-stu-id="93aca-138">**cc**</span></span> <br/> | <span data-ttu-id="93aca-139">電子郵件的 [副本] 欄位。</span><span class="sxs-lookup"><span data-stu-id="93aca-139">The Cc field of an email.</span></span> <br/> |
+|<span data-ttu-id="93aca-140">**參與者**</span><span class="sxs-lookup"><span data-stu-id="93aca-140">**participants**</span></span> <br/> | <span data-ttu-id="93aca-141">所有參與者的電子郵件執行緒，其中包含連結遺漏的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="93aca-141">The email address of all participants in an email thread, including for missing links.</span></span> <br/> |
+|<span data-ttu-id="93aca-142">**接收**</span><span class="sxs-lookup"><span data-stu-id="93aca-142">**received**</span></span> <br/> | <span data-ttu-id="93aca-143">接收的電子郵件的日期。</span><span class="sxs-lookup"><span data-stu-id="93aca-143">The date an email was received.</span></span> <br/> |
+|<span data-ttu-id="93aca-144">**收件者**</span><span class="sxs-lookup"><span data-stu-id="93aca-144">**recipients**</span></span> <br/> | <span data-ttu-id="93aca-145">收件者電子郵件中包含 [收件者]、 [副本] 或 [密件副本] 欄位。</span><span class="sxs-lookup"><span data-stu-id="93aca-145">Recipients of an email, included on the To, Cc, or Bcc fields.</span></span> <br/> |
+|<span data-ttu-id="93aca-146">**sender**</span><span class="sxs-lookup"><span data-stu-id="93aca-146">**sender**</span></span> <br/> | <span data-ttu-id="93aca-147">電子郵件的寄件者。</span><span class="sxs-lookup"><span data-stu-id="93aca-147">The sender of an email.</span></span> <br/> |
+|<span data-ttu-id="93aca-148">**lastmodifieddate**</span><span class="sxs-lookup"><span data-stu-id="93aca-148">**lastmodifieddate**</span></span> <br/> | <span data-ttu-id="93aca-149">上次修改日期的網站文件。</span><span class="sxs-lookup"><span data-stu-id="93aca-149">The last modified date of a site document.</span></span> <br/> |
+|<span data-ttu-id="93aca-150">**傳送**</span><span class="sxs-lookup"><span data-stu-id="93aca-150">**sent**</span></span> <br/> | <span data-ttu-id="93aca-151">傳送電子郵件的日期。</span><span class="sxs-lookup"><span data-stu-id="93aca-151">The sent date of an email.</span></span> <br/> |
+|<span data-ttu-id="93aca-152">**若要**</span><span class="sxs-lookup"><span data-stu-id="93aca-152">**to**</span></span> <br/> | <span data-ttu-id="93aca-153">電子郵件] 欄位中所列的收件者。</span><span class="sxs-lookup"><span data-stu-id="93aca-153">The recipient listed in the To field of an email.</span></span> <br/> |
+|<span data-ttu-id="93aca-154">**作者**</span><span class="sxs-lookup"><span data-stu-id="93aca-154">**author**</span></span> <br/> | <span data-ttu-id="93aca-155">網站文件的作者。</span><span class="sxs-lookup"><span data-stu-id="93aca-155">The author of a site document.</span></span> <br/> |
+|<span data-ttu-id="93aca-156">**標題**</span><span class="sxs-lookup"><span data-stu-id="93aca-156">**title**</span></span> <br/> | <span data-ttu-id="93aca-157">網站文件的標題。</span><span class="sxs-lookup"><span data-stu-id="93aca-157">The title of a site document.</span></span> <br/> |
+|<span data-ttu-id="93aca-158">**dominanttheme**\*</span><span class="sxs-lookup"><span data-stu-id="93aca-158">**dominanttheme**\*</span></span> <br/> | <span data-ttu-id="93aca-159">項目主佈景主題。</span><span class="sxs-lookup"><span data-stu-id="93aca-159">The dominant theme of an item.</span></span> <br/> |
+|<span data-ttu-id="93aca-160">**themeslist**\*</span><span class="sxs-lookup"><span data-stu-id="93aca-160">**themeslist**\*</span></span> <br/> | <span data-ttu-id="93aca-161">與項目相關聯的佈景主題。</span><span class="sxs-lookup"><span data-stu-id="93aca-161">Themes that are associated with an item.</span></span> <br/> |
+|<span data-ttu-id="93aca-162">**readpercentile_ [issuenum]**\*\*</span><span class="sxs-lookup"><span data-stu-id="93aca-162">**readpercentile_[issuenum]**\*\*</span></span> <br/> | <span data-ttu-id="93aca-163">讀取百分位數的項目，如 [issuenum] 所定義的問題。</span><span class="sxs-lookup"><span data-stu-id="93aca-163">The read percentile of an item, for the issue defined by [issuenum].</span></span> <br/> |
+|<span data-ttu-id="93aca-164">**relevancescore_ [issuenum]**\*\*</span><span class="sxs-lookup"><span data-stu-id="93aca-164">**relevancescore_[issuenum]**\*\*</span></span> <br/> | <span data-ttu-id="93aca-165">[Issuenum] 所定義的問題項目、 相關性分數。</span><span class="sxs-lookup"><span data-stu-id="93aca-165">The relevance score of an item, for the issue defined by [issuenum].</span></span> <br/> |
+|<span data-ttu-id="93aca-166">**relevancetag_ [tagname]**\*\*</span><span class="sxs-lookup"><span data-stu-id="93aca-166">**relevancetag_[tagname]**\*\*</span></span> <br/> | <span data-ttu-id="93aca-167">如果項目有手動已標記為 [tagname] 所定義之標籤的相關性。</span><span class="sxs-lookup"><span data-stu-id="93aca-167">If an item has been manually tagged for relevance, the tag defined by  [tagname].</span></span> <br/> |
+|||
 
-[<span data-ttu-id="511cc-141">Office 365 進階電子文件探索</span><span class="sxs-lookup"><span data-stu-id="511cc-141">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
+<span data-ttu-id="93aca-168">\*如果已經執行 [佈景主題模組只提供。</span><span class="sxs-lookup"><span data-stu-id="93aca-168">\* Only available if the Themes module has been run.</span></span>
+
+<span data-ttu-id="93aca-169">\*\*如果已經執行 [相關性] 模組只提供。</span><span class="sxs-lookup"><span data-stu-id="93aca-169">\*\* Only available if the Relevance module has been run.</span></span>
+
+<span data-ttu-id="93aca-p106">或者，您可以使用進階的 eDiscovery 搜尋工具中的條件卡新增至搜尋查詢的條件 （適用於選取的內容）。下列螢幕擷取畫面顯示可以新增至查詢的條件。[**群組**] 欄會指出是否將屬性套用至電子郵件、 網站文件或這兩者 （以*通用*值）。此欄也會識別之後執行相關性模組都是可用的可搜尋屬性。</span><span class="sxs-lookup"><span data-stu-id="93aca-p106">Alternatively, you can use a condition card in the Advanced eDiscovery Search tool to add a condition (for selected properties) to a search query. The following screenshot shows the conditions that can be added to a query. The **Group** column indicates whether the property applies to email, site documents, or both (indicated by the value *Common*). This column also identifies the searchable properties that are available after you run the Relevance module.</span></span>
+
+![進階的 eDiscovery 搜尋工具中的搜尋條件](media/AeDSearchConditions.png)
+
+<span data-ttu-id="93aca-175">如需可搜尋的內容的詳細資訊，請參閱[關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。</span><span class="sxs-lookup"><span data-stu-id="93aca-175">For more information about searchable properties, see [Keyword queries and search conditions](keyword-queries-and-search-conditions.md).</span></span>
   
-[<span data-ttu-id="511cc-142">了解評估的相關性</span><span class="sxs-lookup"><span data-stu-id="511cc-142">Understanding Assessment in Relevance</span></span>](assessment-in-relevance-in-advanced-ediscovery.md)
+## <a name="see-also"></a><span data-ttu-id="93aca-176">另請參閱</span><span class="sxs-lookup"><span data-stu-id="93aca-176">See also</span></span>
+
+[<span data-ttu-id="93aca-177">Office 365 進階電子文件探索</span><span class="sxs-lookup"><span data-stu-id="93aca-177">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="511cc-143">標記及評估</span><span class="sxs-lookup"><span data-stu-id="511cc-143">Tagging and Assessment</span></span>](tagging-and-assessment-in-advanced-ediscovery.md)
+[<span data-ttu-id="93aca-178">了解評估的相關性</span><span class="sxs-lookup"><span data-stu-id="93aca-178">Understanding Assessment in Relevance</span></span>](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="511cc-144">標記及相關性訓練</span><span class="sxs-lookup"><span data-stu-id="511cc-144">Tagging and Relevance training</span></span>](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[<span data-ttu-id="93aca-179">標記及評估</span><span class="sxs-lookup"><span data-stu-id="93aca-179">Tagging and Assessment</span></span>](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="511cc-145">追蹤相關性分析</span><span class="sxs-lookup"><span data-stu-id="511cc-145">Tracking Relevance analysis</span></span>](track-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="93aca-180">標記及相關性訓練</span><span class="sxs-lookup"><span data-stu-id="93aca-180">Tagging and Relevance training</span></span>](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="511cc-146">決定所得的結果</span><span class="sxs-lookup"><span data-stu-id="511cc-146">Deciding based on the results</span></span>](decision-based-on-the-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="93aca-181">追蹤相關性分析</span><span class="sxs-lookup"><span data-stu-id="93aca-181">Tracking Relevance analysis</span></span>](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="511cc-147">測試相關性分析</span><span class="sxs-lookup"><span data-stu-id="511cc-147">Testing Relevance analysis</span></span>](test-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="93aca-182">決定所得的結果</span><span class="sxs-lookup"><span data-stu-id="93aca-182">Deciding based on the results</span></span>](decision-based-on-the-results-in-advanced-ediscovery.md)
+  
+[<span data-ttu-id="93aca-183">測試相關性分析</span><span class="sxs-lookup"><span data-stu-id="93aca-183">Testing Relevance analysis</span></span>](test-relevance-analysis-in-advanced-ediscovery.md)
 
