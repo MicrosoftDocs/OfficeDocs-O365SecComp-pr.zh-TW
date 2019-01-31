@@ -15,6 +15,7 @@
 # 保護資訊
 ## [敏感度標籤](sensitivity-labels.md)
 ### [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
+### [自動將敏感度標籤套用到內容](apply_sensitivity_label_automatically.md)
 ## [防止資料遺失 (DLP)](data-loss-prevention-policies.md)
 ### [觀看 DLP 的延伸概觀](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## 設定 DLP
@@ -37,6 +38,15 @@
 ### [在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [建立關鍵字字典](create-a-keyword-dictionary.md)
 ### [文件指紋](document-fingerprinting.md) 
+# 記錄管理
+## [保留原則](retention-policies.md)
+## [保留標籤](labels.md)
+## [使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [處置檢閱](disposition-reviews.md)
+## [事件導向保留](event-driven-retention.md)
+## [自動化事件型保留](automate-event-driven-retention.md)
+## [檔案計劃管理員](file-plan-manager.md)
+## [使用 PowerShell 大量建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 # 管理資料控管        
 ## [匯入資料](importing-pst-files-to-office-365.md)
 ### [使用網路上傳來匯入 PST 檔案](use-network-upload-to-import-pst-files.md)
@@ -54,10 +64,12 @@
 ## 保留資料
 ### [保留原則](retention-policies.md)
 ### [保留標籤](labels.md)
-### [使用 PowerShell 大量建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
 ### [處置檢閱](disposition-reviews.md)
 ### [事件導向保留](event-driven-retention.md)
+### [自動化事件型保留](automate-event-driven-retention.md)
 ### [檔案計劃管理員](file-plan-manager.md)
+### [使用 PowerShell 大量建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ## [監督通訊內容](supervision-policies.md)
 ### [為您的組織設定監督原則](configure-supervision-policies.md)
 ## [管理非使用中的信箱](inactive-mailboxes-in-office-365.md)
