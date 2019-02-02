@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1e1f2704042a9f94a91858035c01d201d9412c9f
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 9ff7cf4a1d66271f2e7aa83ba05fc6997001c724
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607598"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694969"
 ---
-# <a name="reviewing-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="4db6b-102">檢閱 case 進階 eDiscovery (Preview) 中的資料</span><span class="sxs-lookup"><span data-stu-id="4db6b-102">Reviewing case data in Advanced eDiscovery (Preview)</span></span>
+# <a name="review-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="e1c06-102">檢閱 case 進階 eDiscovery (Preview) 中的資料</span><span class="sxs-lookup"><span data-stu-id="e1c06-102">Review case data in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="4db6b-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="4db6b-103">Content coming soon.</span></span>
+<span data-ttu-id="e1c06-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="e1c06-103">Content coming soon.</span></span>
