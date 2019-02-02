@@ -1,5 +1,5 @@
 ---
-title: 修復進階 eDiscovery (Preview) 中的處理錯誤
+title: 修正進階 eDiscovery (Preview) 中處理錯誤
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 457ee5ae019091275621cd29d66313852dff5425
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607601"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694809"
 ---
-# <a name="fixing-processing-errors-in-advanced-ediscovery-preview"></a>修復進階 eDiscovery (Preview) 中的處理錯誤
+# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>修正進階 eDiscovery (Preview) 中處理錯誤
 
 已處理的檔案識別碼的程序、 文字擷取、 OCR （光學字元辨識） 的圖像檔案及編製索引內容的內嵌文件和附件的擴充。 當 okay 處於保留狀態時，Office 365 的所有部分已編製索引項目處理，使其完全可供搜尋。 同樣地，當內容從 Office 365 的資料來源或非 Office 365 的資料來源加入至工作集，也會處理內容。
 

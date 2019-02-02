@@ -1,5 +1,5 @@
 ---
-title: 設定進階 eDiscovery (Preview) 中的管理工作
+title: 管理進階的 eDiscovery (Preview) 中的工作集
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3341236f568177480615d4572bb25407f6c3ad92
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 04078141e9a515cf7a3c34aa353759039cc00283
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607571"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694829"
 ---
-# <a name="managing-working-sets-in-advanced-ediscovery-preview"></a>設定進階 eDiscovery (Preview) 中的管理工作  
+# <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>管理進階的 eDiscovery (Preview) 中的工作集  
 
 內容即將推出。
 
