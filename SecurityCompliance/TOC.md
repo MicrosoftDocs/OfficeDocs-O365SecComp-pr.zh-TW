@@ -270,9 +270,8 @@
 
 ### [使用通訊](compliance20/managing-custodian-communications.md)
 #### [建立保留通知](compliance20/create-hold-notification.md)
-#### [使用溝通編輯器](compliance20/using-communications-editor.md)
+#### [使用通訊編輯器](compliance20/using-communications-editor.md)
 #### [管理保留通知](compliance20/manage-hold-notification.md)
-#### [編輯保留通知](compliance20/edit-hold-notification.md)
 #### [確認保留通知](compliance20/acknowledge-hold-notification.md)
 
 ### [管理保留](compliance20/managing-holds.md)
