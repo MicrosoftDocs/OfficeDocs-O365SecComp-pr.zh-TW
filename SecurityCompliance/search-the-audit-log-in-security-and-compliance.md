@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用 Office 365 的安全性與規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+description: '使用 Office 365 安全性 & 規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
+ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
+ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118139"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735465"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 [Office 365 安全性及規範中心搜尋稽核記錄
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性 & 規範中心中搜尋稽核記錄
 
 需要尋找是否使用者檢視特定文件或清除 [從他們的信箱項目吗？若如此，您可以使用 Office 365 安全性&amp;規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。整合的稽核記錄的為何？因為您可以搜尋下列類型的使用者與系統管理 Office 365 中的活動：
   
@@ -40,7 +40,7 @@ ms.locfileid: "27118139"
     
 - Sway 中的使用者和系統活動
     
-- 在 [Office 365 安全性及規範中心中的 eDiscovery 活動
+- Office 365 安全性 & 規範中心中的 eDiscovery 活動
     
 - 使用者和系統活動 Power bi
     
@@ -172,6 +172,9 @@ ms.locfileid: "27118139"
     d.**檔案、 資料夾或站台**輸入某些或所有搜尋資料夾包含指定之的關鍵字的檔案相關的活動的檔案或資料夾名稱。您也可以指定的檔案或資料夾的 URL。如果您使用的 URL，請確定此類型的完整的 URL 路徑或如果您只需要輸入 URL 部分不會包含任何特殊字元或空格。 
     
     保留此方塊空白以傳回組織中的所有檔案及資料夾的項目。
+    
+    > [!TIP]
+    > 如果您正在尋找所有**網站**相關的活動，新增萬用字元符號 (\*) 之後傳回該站台 ； 的所有項目 URL例如， **"https://contoso-my.sharepoint.com/personal/*"**。
     
 5. 按一下 [**搜尋**來執行使用搜尋準則的 [搜尋]。 
     
@@ -400,7 +403,8 @@ ms.locfileid: "27118139"
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |新增免除使用者代理程式  <br/> |ExemptUserAgentSet  <br/> |為 SharePoint 或全域管理員新增的使用者代理程式在 SharePoint 系統管理中心免除使用者代理程式的清單。  <br/> |
-|新增的網站集合管理員  <br/> |SiteCollectionAdminAdded  <br/> |網站集合管理員或擁有者會新增個人網站之網站集合管理員。網站集合管理員擁有網站集合及所有子網站的完全控制權限。  <br/> |
+|新增的網站集合管理員  <br/> |SiteCollectionAdminAdded  <br/> |網站集合管理員或擁有者會新增個人網站之網站集合管理員。網站集合管理員擁有網站集合及所有子網站的完全控制權限。當系統管理員提供其本身存取使用者 OneDrive 帳戶 （由編輯 SharePoint 系統管理中心或[使用 Office 365 系統管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)中的使用者設定檔） 也會記錄此活動。<br/> |
+|（無）  <br/> |SiteCollectionAdminRemoved <br/> |網站集合管理員或擁有者會移除網站的網站集合管理員的人員。此活動也會記錄時系統本身從清單中移除的網站集合管理員使用者的 OneDrive 帳戶 （由編輯 SharePoint 系統管理中心內的使用者設定檔）。 請注意若要傳回此活動的稽核記錄搜尋結果，可以搜尋所有的活動。 <br/> |
 |新增的使用者或群組至 SharePoint 群組  <br/> |AddedToGroup  <br/> |使用者會新增至 SharePoint 群組的成員或來賓。這可能已刻意的動作或另一項活動，如共用的事件的結果。  <br/> |
 |允許使用者建立群組  <br/> |AllowGroupCreationSet  <br/> |網站管理員或擁有者會新增至網站，可讓使用者權限等級指派該權限來建立該網站群組。  <br/> |
 |取消的網站地理位置移動  <br/> |SiteGeoMoveCancelled  <br/> |為 SharePoint 或全域管理員成功會取消 SharePoint 或 OneDrive 網站地理位置移動。多個地理位置功能可讓跨越多個 Office 365 datacenter 地理位置，稱為 geos Office 365 組織。如需詳細資訊，請參閱[OneDrive 和 SharePoint Online 中的 Office 365 的多重地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。<br/> |
@@ -421,7 +425,7 @@ ms.locfileid: "27118139"
 |已啟用的 RSS 摘要  <br/> |NewsFeedEnabledSet  <br/> |網站管理員或擁有者可讓網站的 RSS 摘要。全域管理員可以啟用整個組織在 SharePoint 管理中心的 RSS 摘要。  <br/> |
 |已修改的存取權要求設定  <br/> |WebRequestAccessModified  <br/> |存取要求設定已修改在網站上。  <br/> |
 |已修改的成員可以共用設定  <br/> |WebMembersCanShareModified  <br/> |**成員可以共用**設定已修改在網站上。  <br/> |
-|修改的網站權限  <br/> |SitePermissionsModified  <br/> |網站管理員或擁有者 （或系統帳戶） 變更指派給網站上群組的權限層級。如果所有的權限會從群組移除，也會記錄此活動。<br/> > [!NOTE]> 在 SharePoint Online 中已被取代這項作業。若要尋找相關的事件，您可搜尋的其他權限相關活動等**已新增網站集合管理員**、**已新增使用者或群組至 SharePoint 群組**、**允許使用者建立群組**、**建立日期群組**及**Deleted群組。**         |
+|修改的網站權限  <br/> |SitePermissionsModified  <br/> |網站管理員或擁有者 （或系統帳戶） 變更指派給網站上群組的權限層級。如果所有的權限會從群組移除，也會記錄此活動。<br/> > [!NOTE]這項作業已被取代的 SharePoint Online 的 >。若要尋找相關的事件，您可搜尋的其他權限相關活動等**已新增網站集合管理員**、**已新增使用者或群組至 SharePoint 群組**、**允許使用者建立群組**、**建立日期群組**及**Deleted群組。**         |
 |從 SharePoint 群組移除使用者或群組  <br/> |RemovedFromGroup  <br/> |使用者會移除 SharePoint 群組的成員或來賓。這可能已刻意的動作或另一項活動，如取消事件的結果。  <br/> |
 |重新命名的網站  <br/> |SiteRenamed  <br/> |網站管理員或擁有者重新命名網站  <br/> |
 |要求的網站管理員權限  <br/> |SiteAdminChangeRequest  <br/> |若要新增為網站集合的網站集合管理員的使用者要求。網站集合管理員擁有網站集合及所有子網站的完全控制權限。  <br/> |
@@ -624,7 +628,7 @@ Power BI 的稽核記錄不預設啟用的附註。若要搜尋的 Office 365 �
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
-您可以在 Microsoft 流程中搜尋活動的稽核記錄。這些活動包括建立、 編輯和刪除流程、 及變更流程權限。如需流程活動的稽核，請參閱部落格[Microsoft 流程稽核事件現在可在 Office 365 的安全性與規範中心](https://flow.microsoft.com/blog/security-and-compliance-center)。
+您可以在 Microsoft 流程中搜尋活動的稽核記錄。這些活動包括建立、 編輯和刪除流程、 及變更流程權限。如需流程活動的稽核，請參閱部落格[Microsoft 流程稽核事件現在可在 Office 365 安全性 & 規範中心](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
@@ -682,7 +686,7 @@ Exchange 系統管理員稽核記錄-Office 365 中的預設會啟用其 — 當
 
 [是]。Office 365 管理活動 API 用來以程式設計方式擷取稽核記錄。 若要開始，請參閱[開始使用 Office 365 管理 api （英文）](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
-**是否有其他方法可以取得稽核記錄檔之外 suing Office 365 安全性 & 規範中心或 Office 365 管理活動 API 吗？**
+**是否有其他方法可以取得稽核記錄檔不使用 Office 365 安全性 & 規範中心或 Office 365 管理活動 API 吗？**
 
 [否]。這些是只有兩種方式從 Office 365 稽核服務取得資料。 
 
