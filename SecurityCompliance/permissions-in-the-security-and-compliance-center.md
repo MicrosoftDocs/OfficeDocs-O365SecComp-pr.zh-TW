@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: Office 365 安全性&amp;規範中心可讓您授與權限執行類似裝置管理、 資料外洩防護、 eDiscovery、 保留、 等等的符合性工作的人員。這些人員可執行您明確授與存取權的工作。若要存取 [安全性]&amp;規範中心，為 Office 365 全域管理員或成員的一或多個安全性的使用者需要&amp;規範中心角色群組。
-ms.openlocfilehash: e393bad7c3a57b0734835e56fcd781cc31327c18
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ef281ca7cda706ff78fbf1a5584674cdf41e9025
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013427"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741056"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性權限&amp;規範中心
 
@@ -54,12 +54,12 @@ Office 365 安全性&amp;規範中心可讓您授與權限執行類似裝置管�
 |**角色群組**|**描述**|
 |:-----|:-----|
 |**規範系統管理員**<sup>1</sup> <br/> |成員可以管理裝置管理、 資料外洩防護、 報告及保留的設定。  <br/> |
-|**eDiscovery 管理員** <br/> | 成員可以在信箱、SharePoint Online 網站和商務用 OneDrive 地點執行搜尋和保留。成員也可以建立及管理 eDiscovery 案例、在案例中新增和移除成員、建立及編輯與案例相關聯的規範搜尋。<br/>  eDiscovery 系統管理員是已被指派其他權限的 eDiscovery 管理員角色群組的成員。eDiscovery 系統管理員可以：<br/>  檢視組織中的所有 eDiscovery 案例。  <br/>  在自行新增為案例的成員之後管理任何 eDiscovery 案例。  <br/>  存取 Office 365 進階 eDiscovery。這是因為 eDiscovery 管理員會自動新增為進階 ediscovery 的管理員。您必須是 eDiscovery 安全性的系統管理員的附註&amp;規範中心以存取進階的 eDiscovery。如需讓使用者 eDiscovery 管理員的詳細資訊，請參閱[Office 365 安全性的 eDiscovery 案例&amp;規範中心](https://go.microsoft.com/fwlink/p/?LinkId=780738)。<br/> 如果您想要授與使用者管理權限進階在 eDiscovery 中但不想要在 [安全性] 中進行 eDiscovery 管理員&amp;規範中心您可以將其新增至 eDiscovery 管理員角色群組，然後將其新增為管理員進階的 eDiscovery。指示，請參閱[設定使用者和 Office 365 進階 ediscovery 案例](https://go.microsoft.com/fwlink/p/?LinkId=780696)。           |
+|**eDiscovery 管理員** <br/> | 成員可執行搜尋和就地保留信箱、 SharePoint Online 網站及 OneDrive 商務位置。成員可以也建立與管理 eDiscovery 案例、 新增和移除成員案例、 建立及編輯與案例中為及存取 Office 365 進階 ediscovery case 資料相關聯的內容搜尋。<br/><br/>EDiscovery 管理員是尚未指派的其他權限之 eDiscovery 管理員角色群組的成員。EDiscovery 管理員可以執行的工作，除了 eDiscovery 管理員可以：<br/><br/>  • [檢視組織中所有的 eDiscovery 案例。  <br/>  • [伺服器陣列之後大小寫的成員身分新增自行管理任何 eDiscovery 案例。  <br/><br/>EDiscovery 管理員和 eDiscovery 管理員的主要差異在於 eDiscovery 管理員可以存取已列在 [安全性] 中的**eDiscovery 案例**] 頁面上的所有案例&amp;規範中心。EDiscovery 管理員只能存取他們所建立的情況下或之成員的情況。 如需讓使用者 eDiscovery 管理員的詳細資訊，請參閱[指派 Office 365 安全性 eDiscovery 權限&amp;規範中心](assign-ediscovery-permissions.md)。<br/>           |
 |**組織管理**<sup>1</sup> <br/> |成員可以控制存取安全性功能的權限&amp;規範中心及也管理的裝置管理、 資料外洩防護、 報告及保留設定。  <br/> 請注意，為了讓不是以查看由 MDM 管理 Office 365 的裝置清單的全域管理員的使用者及這些裝置上執行動作，例如 Office 365 中淘汰 MDM 從裝置，使用者必須是 Exchange 系統管理員。  <br/> Office 365 全域管理員會自動新增為此角色群組的成員。           |
 |**記錄管理** <br/> |成員可以管理並處置記錄的內容。  <br/> |
 |**檢閱者** <br/> |成員只能在 [安全性] eDiscovery 案例] 頁面上檢視的情況下清單&amp;規範中心。他們無法建立、 開啟或管理 eDiscovery 案例。此角色群組的主要目的是要允許成員檢視及存取 case 進階在 eDiscovery 中的資料。  <br/> 這個角色群組具有最嚴格的 eDiscovery 相關權限。  <br/> |
-|**安全性管理員** <br/> |此角色群組的成員資格是整個服務進行同步處理與集中管理。此角色群組不是可透過管理員入口網站。此角色群組的成員可能包括跨服務管理員，以及外部合作夥伴群組和 Microsoft 技術支援人員。根據預設，此群組可能未指派任何角色。不過，它會是安全性管理員角色群組的成員，而且會繼承該角色群組的功能。  <br/> 所有的安全性讀者角色加上額外的管理權限的相同服務的數字的唯讀權限： Azure 資訊保護、 身分識別保護中心、 權限的身分識別管理、 監視 Office 365 服務健康情況及 Office 365 安全性&amp;規範中心。  <br/> |
-|**安全性讀者** <br/> |成員具有唯讀存取權的身分識別保護中心、 權限的身分識別管理、 監視 Office 365 服務健康情況及 Office 365 安全性的安全性功能的數字&amp;規範中心。  <br/> 此角色群組的成員資格是整個服務進行同步處理與集中管理。此角色群組不是可透過管理員入口網站。此角色群組的成員可能包括跨服務管理員，以及外部合作夥伴群組和 Microsoft 技術支援人員。根據預設，此群組可能未指派任何角色。不過，它會是安全性讀者角色群組的成員並將會繼承該角色群組的功能。  <br/> |
+|**安全性管理員** <br/> |此角色群組的成員可能包括跨服務管理員，以及外部合作夥伴群組和 Microsoft 技術支援人員。根據預設，此群組可能未指派任何角色。不過，它會在 Azure Active Directory 中的安全性管理員角色的成員並將會繼承該角色的功能。集中管理的權限，變更此角色在 Azure Active Directory 系統管理中心-如需詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。如果您編輯安全性 & 規範中心在此角色群組，這些變更僅適用於安全性 & 規範中心並沒有任何其他服務，而在 Azure Active Directory 管理中心內所做的變更會影響所有服務。<br/> 所有的安全性讀者角色加上額外的管理權限的相同服務的數字的唯讀權限： Azure 資訊保護、 身分識別保護中心、 權限的身分識別管理、 監視 Office 365 服務健康情況及 Office 365 安全性&amp;規範中心。  <br/> |
+|**安全性讀者** <br/> |成員具有唯讀存取權的身分識別保護中心、 權限的身分識別管理、 監視 Office 365 服務健康情況及 Office 365 安全性的安全性功能的數字&amp;規範中心。  <br/> 此角色群組的成員資格是整個服務進行同步處理與集中管理。此角色群組的成員可能包括跨服務管理員，以及外部合作夥伴群組和 Microsoft 技術支援人員。根據預設，此群組可能未指派任何角色。不過，它會在 Azure Active Directory 中的安全性管理員角色的成員並將會繼承該角色的功能。集中管理的權限，變更此角色在 Azure Active Directory 系統管理中心-如需詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。如果您編輯安全性 & 規範中心在此角色群組，這些變更僅適用於安全性 & 規範中心並沒有任何其他服務，而在 Azure Active Directory 管理中心內所做的變更會影響所有服務。<br/> |
 |**服務保證使用者** <br/> |成員可以存取 Office 365 安全性服務保證區段&amp;規範中心。服務保證提供報表及說明 Microsoft 的安全性作法儲存在 Office 365 的客戶資料的文件。它也可提供獨立的協力廠商稽核報告在 Office 365。如需詳細資訊，請參閱[服務 Office 365 安全性保證&amp;規範中心](http://go.microsoft.com/fwlink/p/?LinkID=717765)。<br/> |
 |**監督檢閱** <br/> |成員可以建立和管理原則可定義其通訊會受到組織中的檢閱。如需詳細資訊，請參閱 ＜ [Configure 監督檢閱您的組織的原則](configure-supervision-policies.md)。<br/> |
    

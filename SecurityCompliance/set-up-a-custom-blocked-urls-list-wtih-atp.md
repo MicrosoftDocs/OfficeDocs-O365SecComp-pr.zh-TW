@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 12/11/2018
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: 了解如何設定您的組織使用 Office 365 進階威脅保護封鎖 Url 的清單。封鎖的 Url 將會套用至電子郵件與根據您 ATP 安全連結原則的 Office 文件。
-ms.openlocfilehash: 2b2fa78a4dbd6fc8bd0e46d7f23402aff732e096
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 4146424056c9a5b30f51a58fd020df912fa048ef
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014955"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741016"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>設定自訂封鎖 Url 清單使用 Office 365 ATP 安全連結
 
@@ -33,6 +33,14 @@ ms.locfileid: "28014955"
 ## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>檢視或編輯封鎖 Url 的自訂清單
 
 [Office 365 中的 ATP 安全連結](atp-safe-links.md)會使用多個清單，包括您的組織自訂封鎖的 Url 的清單。如果您擁有的必要權限，您可以設定您的組織自訂清單。藉由編輯貴組織的預設安全連結原則達成此目的。
+
+若要編輯 （或定義） ATP 原則，您必須具有角色如下表所示的其中一個： 
+
+|角色  |Where/如何指派  |
+|---------|---------|
+|Office 365 全域管理員 |若要購買 Office 365 設定簽署者為預設的全域系統管理員。（請參閱若要深入了[解 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+|Office 365 安全性管理員 |系統管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     

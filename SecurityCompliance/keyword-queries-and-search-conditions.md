@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解您可以使用 Office 365 安全性內容搜尋工具商務網站的搜尋在 Exchange Online 信箱及 SharePoint 或 OneDrive 的電子郵件和檔案屬性&amp;規範中心。  '
-ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 865affa06e32b440a71721487153044e036cc487
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328159"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741166"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -206,7 +206,7 @@ ms.locfileid: "28328159"
 |:-----|:-----|
 |Author  <br/> |[作者] 欄位從 Office 文件可保存如果複製文件。例如，如果使用者建立文件和電子郵件它給其他人，然後將其上傳至 SharePoint 文件將仍保留原始作者。  <br/> |
 |職稱  <br/> |文件的標題。Title 屬性是在 Office 文件中所指定的中繼資料。它會不同於文件的檔案名稱。  <br/> |
-|建立日期  <br/> |建立文件的日期。  <br/> |
+|建立時間  <br/> |建立文件的日期。  <br/> |
 |上次修改日期  <br/> |上次變更文件的日期。  <br/> |
 |檔案類型  <br/> |檔案 ； 的副檔名例如 docx、 一、 pptx、 或 xlsx。這是做為 FileExtension site 屬性為相同的屬性。  <br/> |
   
@@ -401,4 +401,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - 搜尋屬性、 時使用雙引號 ("") 如果搜尋的值包含多個單字。例如`subject:budget Q1`會傳回包含**預算**中的郵件的主旨行且包含**Q1**無所不在郵件或中的任何郵件屬性。使用`subject:"budget Q1"`會傳回包含**預算 Q1**主旨行中的任何位置的所有郵件。 
     
 - 若要排除標示為具有特定屬性值從搜尋結果的內容，放置減號 （-） 屬性的名稱之前。例如，`-from:"Sara Davis"`就會排除任何 Sara Davis 所傳送的郵件。
-- 您可以將匯出的項目類型為基礎的項目。例如，若要匯出 Skype IM 訊息 recived 由使用者，使用語法 ' 種類： IM'。此搜尋查詢 returen 所有 IM 訊息。 
+
+- 您可以將匯出郵件類型為基礎的項目。例如，若要匯出 Skype 交談和聊天室的 Microsoft 小組中，使用語法`kind:im`。若要傳回僅電子郵件訊息，您可以使用`kind:email`。若要傳回的聊天室、 會議及電話中的 Microsoft 小組，請使用`kind:microsoftteams`。

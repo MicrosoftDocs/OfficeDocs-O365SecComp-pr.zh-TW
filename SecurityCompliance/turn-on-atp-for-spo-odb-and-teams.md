@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,30 +13,36 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: 了解如何開啟 ATP for SharePoint、 OneDrive 及小組，包括如何設定提醒的偵測到的檔案。
-ms.openlocfilehash: 770af7078166857bcb9784112710262b7de788bb
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 23eaa4def0fafdcd0df0ae30f8358104c0f877b6
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014885"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741026"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組
 
 [Office 365 ATP for SharePoint、 OneDrive 及 Microsoft 小組](atp-for-spo-odb-and-teams.md)提供貴組織保護不慎共用惡意的檔案。當偵測到惡意檔案時，該檔案會封鎖，讓任何人可以開啟、 複製、 移動或共用直到組織的安全性小組所採取其他動作。閱讀本篇文章以開啟 ATP for SharePoint、 OneDrive 及小組設定提醒通知關於偵測到的檔案並執行您的下一個步驟。 
   
-若要執行本文所述的工作，您必須指派 Office 365 及安全性的必要權限&amp;規範中心。
+若要定義 （或編輯） ATP 原則，您必須具有角色如下表所示的其中一個：
+
+|角色  |Where/如何指派  |
+|---------|---------|
+|Office 365 全域管理員 |若要購買 Office 365 設定簽署者為預設的全域系統管理員。（請參閱若要深入了[解 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+|Office 365 安全性管理員 |系統管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
 
- **開始此程序，確定稽核記錄已經開啟 Office 365 環境**。這通常是由某人具有 「 稽核記錄 」 角色指派 Exchange Online。如需詳細資訊，請參閱[開啟 Office 365 稽核記錄搜尋開啟或關閉](turn-audit-log-search-on-or-off.md)。
+**開始此程序，確定稽核記錄已經開啟 Office 365 環境**。這通常是由某人具有 「 稽核記錄 」 角色指派 Exchange Online。如需詳細資訊，請參閱[開啟 Office 365 稽核記錄搜尋開啟或關閉](turn-audit-log-search-on-or-off.md)。
   
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)，並登入工作或學校帳戶。
+1. 移至 [ [https://protection.office.com](https://protection.office.com)，並登入工作或學校帳戶。
     
 2. Office 365 安全性&amp;規範中心的左的功能窗格的 [**威脅管理**] 下選擇**原則** \> **安全的附件**。 <br/>![安全性&amp;規範中心選擇 Threat management\>原則](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
 3. 選取 [**開啟 SharePoint、 OneDrive 及 Microsoft 小組 ATP**。<br/>![開啟進階的威脅 Protection for SharePoint Online、 OneDrive for Business 和 Microsoft 小組](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. 按一下 **[儲存]**。
+4. 按一下 [儲存]****。
     
 5. 檢閱 （和視需要編輯） 您組織的[安全附件原則](set-up-atp-safe-attachments-policies.md)和[安全連結原則](set-up-atp-safe-links-policies.md)。
     
@@ -71,7 +78,7 @@ ms.locfileid: "28014885"
     
 6. **傳送到此警示...** ] 區段中選取一或多個全域管理員、 安全性管理員或安全性讀者應該會偵測到惡意檔案時收到通知。 
     
-7. 按一下 **[儲存]**。
+7. 按一下 [儲存]****。
     
 若要深入了解提醒，請參閱[建立 Office 365 安全性活動提醒&amp;規範中心](create-activity-alerts.md)。 
   

@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014875"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741116"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -35,7 +36,13 @@ ms.locfileid: "28014875"
 
 - 請確定您的組織具有[Office 365 進階威脅保護](office-365-atp.md)。
     
-- 請確定您具有必要[的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。
+- 請確定您具有必要的權限。若要定義 （或編輯） ATP 原則，您必須具有角色如下表所示的其中一個： <br>
+
+    |角色  |Where/如何指派  |
+    |---------|---------|
+    |Office 365 全域管理員 |若要購買 Office 365 設定簽署者為預設的全域系統管理員。（請參閱若要深入了[解 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+    |Office 365 安全性管理員 |系統管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 - [了解 ATP 安全附件原則選項](#learn-about-atp-safe-attachments-policy-options)（在本文）。雖然掃描附件有一些選項，例如 [監視] 或 [取代] 選項，可能會導致次要電子郵件的延遲。若要避免郵件延遲回應，請考慮使用[動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
     
@@ -43,7 +50,7 @@ ms.locfileid: "28014875"
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步驟 2： 設定 （或編輯） ATP 安全附件原則
   
-1. 以全域管理員或安全性管理員中，移至[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
+1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
 2. Office 365 安全性&amp;規範中心的左的功能窗格的 [**威脅管理**] 下選擇**原則** \> **安全的附件**。
     
@@ -85,4 +92,6 @@ ms.locfileid: "28014875"
 一旦您 ATP 安全附件原則已備妥，您可以看到 ATP 如何為組織運作檢視報告。請參閱下列資源以深入了解：
 - [Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
 - [使用瀏覽器安全性&amp;規範中心](use-explorer-in-security-and-compliance.md)
+
+隨時掌握置於 ATP 傳入的新功能。請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)並了解[新功能，要新增至 ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp)。
  

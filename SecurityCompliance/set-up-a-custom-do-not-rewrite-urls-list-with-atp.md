@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: 當您設定好您 ATP 安全連結原則時，您可以包含不要 not 修正 ' 要讓組織中某些使用者瀏覽您在您的清單中包含的網站 Url 的清單。
-ms.openlocfilehash: d3883d6aff29b9a061b62e4854e7aad52656769f
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: f97abdb0f4e20ed968b4f71761a60cda79658d18
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015045"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741066"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單
 
@@ -28,6 +29,14 @@ ms.locfileid: "28015045"
 ## <a name="set-up-a-do-not-rewrite-list"></a>設定 「 未修正 」 清單
 
 ATP 安全連結保護使用多個清單，包括您的組織已封鎖的 Url 清單和 「 未修正"例外狀況的清單。如果您擁有的必要權限，您可以設定自訂的 「 未修正 」 清單。當您新增或編輯套用至組織中特定收件者的安全連結原則，您可以這麼做。 
+
+若要編輯 （或定義） ATP 原則，您必須具有角色如下表所示的其中一個：
+
+|角色  |Where/如何指派  |
+|---------|---------|
+|Office 365 全域管理員 |若要購買 Office 365 設定簽署者為預設的全域系統管理員。（請參閱若要深入了[解 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
+|Office 365 安全性管理員 |系統管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)和登入工作或學校帳戶。 
     
