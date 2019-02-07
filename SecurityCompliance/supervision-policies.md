@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603523"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760075"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
@@ -69,12 +69,7 @@ Office 365 中的監督原則可讓您擷取員工檢查所指定檢閱者通訊
 
 監督原則，您可以選擇監視中一或多個下列通訊平台的郵件：
 
-- **Exchange 電子郵件：** 您的 Office 365 訂閱的一部分託管於 Exchange Online 的信箱位於所有合格的訊息監督。電子郵件和附件符合監督原則條件會立即可用的監控和監督報告中。支援的附件類型如下：
-
-    - Microsoft Word (.docx)
-    - Microsoft Excel (.xlsx)
-    - Microsoft PowerPoint (.pptx)
-
+- **Exchange 電子郵件：** 您的 Office 365 訂閱的一部分託管於 Exchange Online 的信箱位於所有合格的訊息監督。電子郵件和附件符合監督原則條件會立即可用的監控和監督報告中。支援的附件類型的監督的[檔案類型支援 Exchange 郵件流程規則內容操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 - **的 Microsoft 小組：** 可以指導聊天通訊和中公用及私人的 Microsoft 小組通道和個別的聊天室關聯的附件。比對監督原則條件的小組聊天室處理一次每 24 個小時和則都可監視和監督報告中。
 - **協力廠商來源：** 您可以管理通訊從協力廠商來源 (從 Facebook 或投寄箱 like) 如果您已在組織中此資料匯入到 Office 365 信箱。[解如何將 Office 365 的第 3 廠商資料匯入](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)。
 

@@ -16,12 +16,12 @@ ms.assetid: ''
 search.appverid:
 - MET150
 description: 了解如何辨識及修復 Office 365 中的非法同意授與攻擊。
-ms.openlocfilehash: 412b601af30ce87332225d271ec1a9e622012405
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 457279e6d9498ac132ed3fb77b7c0fef68a293fa
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527409"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755234"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -34,7 +34,7 @@ ms.locfileid: "22527409"
 您需要搜尋 Office 365**稽核記錄**來尋找告示牌，也稱為指標的危害 (IOC) 這類攻擊。對於組織中具有許多 Azure 登錄的應用程式及大型使用者群、 最佳做法是檢閱您的組織同意授與每週為基礎。
 ### <a name="steps-for-finding-signs-of-this-attack"></a>用於搜尋的此跡象的步驟
 1. 在您的 Office 365 租用戶中開啟的**安全性和規範中心 」** 。
-2. 瀏覽至 [**搜尋與調查有關**] 節點並選取 [**稽核記錄**搜尋。
+2. 瀏覽至 [**搜尋 & 調查**] 節點並選取 [**稽核記錄**搜尋。
 3. 建立搜尋 （所有活動和所有的使用者） 及篩選結果的同意應用程式，並新增 OAuth2PermissionGrant。
 4. 檢查擴充屬性和] 核取以查看 IsAdminContent 是否設為 True。
 
@@ -65,7 +65,7 @@ ms.locfileid: "22527409"
 讓您的使用者移至https://myapps.microsoft.com並檢閱那里其專屬應用程式存取。應該可以看到的存取權的所有應用程式、 檢視關於這些 （包括 access 的範圍） 的詳細資訊，且能夠撤銷可疑或非法應用程式的權限。
 
 ### <a name="steps-for-doing-this-with-powershell"></a>使用 PowerShell 中執行此步驟
-若要確認非法同意授與攻擊的最簡單方式是執行[Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，其會與傾印所有 OAuth 同意授與所有使用者的應用程式權限在租用成一個.csv 檔案。 
+若要確認非法同意授與攻擊的最簡單方式是執行[Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，這會將傾印所有 OAuth 同意授與和 OAuth 應用程式的所有使用者在租用成一個.csv 檔案。 
 
 #### <a name="pre-requisites"></a>先決條件
 - Azure AD PowerShell 文件庫安裝。
@@ -79,7 +79,7 @@ ms.locfileid: "22527409"
 2. 下載或從 GitHub[取得 AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)指令碼複製到您要從中執行 scruipt 資料夾。 這是將會寫入輸出"permissions.csv"檔案的相同資料夾。
 3. 開啟 [以系統管理員身分的 PowerShell 執行個體，並開啟至儲存指令碼的資料夾。
 4. 連線至您的目錄[連線 AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0)指令程式。
-5. 執行此 PowerShell 命令列如下所示：`.Get-AzureASPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
+5. 執行此 PowerShell 命令列如下所示：`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 指令碼會產生一個名為 Permissions.csv 的檔案。請遵循下列步驟來尋找非法應用程式的權限授與： 
 1. ConsentType 欄 （欄 G） 中搜尋"AllPrinciples"的值。AllPrincipals 權限可讓所有人的內容存取租用中的用戶端應用程式。原生 Office 365 應用程式需要此權限才能正常運作。具有此權限的每一個非 Microsoft 應用程式應該謹慎檢閱。

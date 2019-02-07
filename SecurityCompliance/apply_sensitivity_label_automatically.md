@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 8464847704b5e724b97b4af9b51397f2985311a8
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
+ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610580"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760764"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -36,7 +36,7 @@ ms.locfileid: "29610580"
 
 ![敏感度標籤的自動標籤選項](media/Sensitivity_labels_Auto_labeling_options.png)
 
-# <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>根據條件自動套用敏感度標籤
+## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>根據條件自動套用敏感度標籤
 
 敏感度標籤最強大的功能之一，是能夠自動套用至符合特定條件的內容。在此情況下，貴組織中的人員不需要套用敏感度標籤，Office 365 會替他們做這些事。
    
@@ -52,7 +52,7 @@ ms.locfileid: "29610580"
 
 ![文件已自動套用標籤的通知](media/sensitivity_labels_msg_doc_was_auto_labeled.PNG)
 
-# <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>建議使用者套用敏感度標籤
+## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>建議使用者套用敏感度標籤
 
 您可以視需要建議使用者套用標籤，而不自動將敏感度標籤套用到內容。此選項可讓使用者享有接受分類和任何關聯保護的彈性，或在標籤不適用於其文件或電子郵件時關閉建議。
 
@@ -64,7 +64,7 @@ ms.locfileid: "29610580"
 
 ![套用建議標籤的提示](media/Sensitivity_label_Prompt_for_required_label.png)
 
-# <a name="how-automatic-or-recommended-labels-are-applied"></a>如何套用自動或建議標籤
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何套用自動或建議標籤
 
 - 自動標籤可在儲存文件時套用到 Word、Excel 和 PowerPoint，並在傳送電子郵件時套用到 Outlook。這些條件會偵測文件本文和電子郵件內文以及頁首和頁尾中的敏感性資訊，但不會偵測主旨列或電子郵件附件中的敏感性資訊。
 
@@ -74,6 +74,6 @@ ms.locfileid: "29610580"
 
 - 如果文件之前已使用較高分類標示，則無法使用建議分類功能。在此情況下，當內容已使用較高分類標示時，使用者將無法看到含有建議和原則提示的提示。
 
-# <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>將多個條件套用到多個標籤時的評估方式
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>將多個條件套用到多個標籤時的評估方式
 
 標籤會根據您在原則中指定的標籤位置，針對評估進行排序：位於第一個位置的標籤具有最低的位置 (敏感度最低)，而位於最後一個位置的標籤具有最高的位置 (敏感度最高)。如需有關原則的詳細資訊，請參閱[標籤優先順序 (排序事項)](sensitivity-labels.md#label-priority-order-matters)。

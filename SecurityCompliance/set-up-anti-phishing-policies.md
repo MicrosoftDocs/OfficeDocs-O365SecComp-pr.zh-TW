@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/04/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: 反網路釣魚保護，以作為 Office 365 進階威脅保護與 Office 365 Exchange Online Protection 中的基本保護的一部分更完整的保護可協助保護您的組織從惡意的模擬網路釣魚攻擊與其他網路釣魚攻擊。
-ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741146"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755264"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>設定 Office 365 ATP 反網路釣魚和反網路釣魚原則
 
@@ -43,9 +43,11 @@ ms.locfileid: "29741146"
     |角色  |Where/如何指派  |
     |---------|---------|
     |Office 365 全域管理員 |若要購買 Office 365 設定簽署者為預設的全域系統管理員。（請參閱若要深入了[解 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
-    |Office 365 安全性管理員 |系統管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |安全性管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    若要深入了解角色和權限，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。
+
 - 您可能會為您的組織設定多個反網路釣魚原則。Office 365 強制執行這些原則他們正在**反網路釣魚頁面**和**ATP 反網路釣魚**中 [安全性] 頁面上所列順序&amp;規範中心。一旦您已檢閱您的[原則選項](#learn-about-atp-anti-phishing-policy-options)，請花一些時間來決定您將需要多少原則和優先順序各項。 
     
 - 規劃如何設定您的第一個反網路釣魚原則花費約 5-15 分鐘。

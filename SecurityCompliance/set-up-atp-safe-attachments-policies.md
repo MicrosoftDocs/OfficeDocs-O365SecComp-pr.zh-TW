@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 2f33114d46778f2f01f5a263a05c320f75fad49e
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741116"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755214"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -41,9 +41,11 @@ ms.locfileid: "29741116"
     |角色  |Where/如何指派  |
     |---------|---------|
     |Office 365 全域管理員 |若要購買 Office 365 設定簽署者為預設的全域系統管理員。（請參閱若要深入了[解 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)）。         |
-    |Office 365 安全性管理員 |系統管理中心 ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |安全性管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    若要深入了解角色和權限，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。
+
 - [了解 ATP 安全附件原則選項](#learn-about-atp-safe-attachments-policy-options)（在本文）。雖然掃描附件有一些選項，例如 [監視] 或 [取代] 選項，可能會導致次要電子郵件的延遲。若要避免郵件延遲回應，請考慮使用[動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
     
 - 可讓您新增或更新原則散佈到所有 Office 365 資料中心的最多 30 分鐘。
