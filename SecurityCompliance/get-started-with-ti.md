@@ -3,7 +3,7 @@ title: Office 365 威脅情報快速入門
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: 了解 Office 365 威脅智慧以及如何開始。
-ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
-ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
+ms.openlocfilehash: 141bc0d2ffc2084f56f50333c756507d04a37d44
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29426038"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770788"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Office 365 威脅情報快速入門
 
 如果您組織的安全性小組的一部分，您可以使用 Office 365 威脅智慧來保護使用者免於遭受攻擊。Office 365 威脅智慧有助於安全性分析師和管理員保留使用者安全由昇前瞻並識別根據什麼動作正在進行的活動在其 Office 365 環境。這些觀點根據完整存放庫的威脅智慧資料和系統以對應至攻擊行為和可疑活動的特別色模式。
-  
-![威脅智慧可協助您了解攻擊的目標設為您的組織](media/6ce67cf2-3bbb-4008-9c55-1b4c7af0471f.png)
   
 請閱讀本篇文章以深入了解 Office 365 威脅智慧所包含的內容，以及如何開始。
   
