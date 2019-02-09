@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: 本主題提供有關託管隔離區的常見問題與解答。
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003192"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792494"
 ---
 # <a name="quarantine-faq"></a>隔離常見問題集
 
@@ -50,7 +50,7 @@ A.若要存取使用者垃圾郵件隔離區，使用者必須具備有效的 Of
   
  **問：郵件會保留在隔離區中多久？**
   
-A.預設垃圾郵件隔離的郵件會保留在隔離區 15 天時被隔離的郵件符合傳輸規則為 7 天存留在隔離區中。在這段時間內的郵件會刪除並不是可擷取。無法可設定隔離的郵件符合傳輸規則的保留期間。不過，透過 **（天） 的保留天數垃圾郵件**設定內容篩選器原則中可以降低垃圾郵件隔離的郵件的保留期間。如需詳細資訊，請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)。
+A.預設垃圾郵件隔離的郵件會保留在隔離區 30 天的時被隔離的郵件符合傳輸規則為 7 天存留在隔離區中。在這段時間內的郵件會刪除並不是可擷取。無法可設定隔離的郵件符合傳輸規則的保留期間。不過，透過 **（天） 的保留天數垃圾郵件**設定內容篩選器原則中可以降低垃圾郵件隔離的郵件的保留期間。如需詳細資訊，請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)。
   
  **問：我可以一次釋出或報告多個隔離的郵件嗎？**
   

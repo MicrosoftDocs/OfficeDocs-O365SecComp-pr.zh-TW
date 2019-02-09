@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '以系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。您可以設定原則，讓 Office 365 篩選郵件並傳送至隔離下列幾個原因： 因為他們已識別為垃圾郵件、 大量、 網路釣魚、 惡意程式碼、 或因為其符合某個 [郵件流程規則。 '
-ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180883"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792504"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>在 Office 365 系統管理員身分管理隔離的郵件和檔案
 
@@ -27,10 +27,10 @@ ms.locfileid: "27180883"
   
 根據預設，Office 365 傳送網路釣魚郵件包含惡意程式碼的直接至隔離的郵件。除非您已設定原則以將傳送給他們隔離其他篩選後的郵件傳送到使用者的垃圾郵件] 資料夾。
   
-您必須在 Office 365 中使用 [傳送至其他使用者的隔離郵件和使用隔離檔案系統管理員權限。
+在 Office 365 中使用 [傳送至其他使用者的隔離郵件和使用隔離檔案必須全域管理員 (GA) 的權限。
   
 > [!IMPORTANT]
-> 根據預設，垃圾郵件、 大量、 惡意程式碼、 網路釣魚、 及因為它們相符的郵件流程規則已隔離的郵件中保留隔離 30 天。您可以自訂安全性的反垃圾郵件設定] 中的隔離時間&amp;規範中心。當 Office 365 會從隔離刪除郵件時，您無法回復取得。如果想您可以在您的反垃圾郵件篩選器原則中變更隔離郵件的保留的期間。如需詳細資訊，請參閱本文中的[設定隔離保留期限](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。 
+>根據預設，垃圾郵件、 大量和網路釣魚郵件隔離區中保留 30 天。因為它們相符的郵件流程規則隔離的郵件中隔離保留為 7 天。惡意程式碼的郵件中隔離保留 15 天。您可以自訂安全性的反垃圾郵件設定] 中的垃圾郵件隔離區時間&amp;規範中心。當 Office 365 會從隔離刪除郵件時，您無法回復取得。如果想您可以在您的反垃圾郵件篩選器原則中變更隔離郵件的保留的期間。如需詳細資訊，請參閱本文中的[設定隔離保留期限](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>檢視您的組織隔離的郵件
 
@@ -39,7 +39,7 @@ ms.locfileid: "27180883"
 2. 在左側清單中，依序展開 [ **Threat Management**，並選擇 [**檢閱**，然後選擇 [**隔離**。
     
     > [!TIP]
-    > 若要直接移至 [**隔離**] 頁面上的 [安全性]&amp;規範中心使用此 URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > 若要直接移至 [**隔離**] 頁面上的 [安全性]&amp;規範中心使用下列 URL： >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
     根據預設，安全性&amp;規範中心顯示所有已隔離的電子郵件為垃圾郵件。郵件是從最新到最舊依據排序收到郵件的**日期**。**寄件者**、**主旨**和 （在**到期日**） 的到期日期也會顯示每則訊息。您可以按一下 [對應] 欄標題 ； 排序欄位按一下欄標題第二次反向的排序順序。 
     
@@ -67,7 +67,7 @@ ms.locfileid: "27180883"
     
 2. 在左邊，依序展開 [ **Threat Management**，並選擇 [**檢閱**，然後選擇 [**隔離**。 <br/>
     > [!TIP]
-    > 若要直接移至 [**隔離**] 頁面上的 [安全性]&amp;規範中心使用此 URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > 若要直接移至 [**隔離**] 頁面上的 [安全性]&amp;規範中心使用下列 URL： >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
 3. 根據預設，頁面會顯示隔離的電子郵件訊息。若要檢視隔離的檔案，設定篩選器顯示的**檔案**，因為**惡意程式碼**隔離頁面頂端。您必須在 Office 365 中使用隔離檔案系統管理員權限。 
     
@@ -190,7 +190,7 @@ ms.locfileid: "27180883"
     
 2. 在左邊，依序展開 [ **Threat Management**、 選擇 [**原則**]，然後選擇**反垃圾郵件**。 <br/>
     > [!TIP]
-    > 若要直接移至 [安全性] 中的**反垃圾郵件**] 頁面上&amp;規範中心使用此 URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > 若要直接移至 [安全性] 中的**反垃圾郵件**] 頁面上&amp;規範中心使用下列 URL： >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
 3. 選擇 [**自訂**] 以顯示 [**自訂設定**] 索引標籤。 
     
