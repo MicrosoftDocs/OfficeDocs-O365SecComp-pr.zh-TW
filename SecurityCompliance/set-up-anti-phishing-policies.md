@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: 反網路釣魚保護，以作為 Office 365 進階威脅保護與 Office 365 Exchange Online Protection 中的基本保護的一部分更完整的保護可協助保護您的組織從惡意的模擬網路釣魚攻擊與其他網路釣魚攻擊。
-ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755264"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792278"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>設定 Office 365 ATP 反網路釣魚和反網路釣魚原則
 
@@ -24,7 +24,7 @@ ms.locfileid: "29755264"
 網路釣魚攻擊來自表單的各種商品型攻擊目標的矛網路釣魚或 whaling。日益增加複雜度，很難甚至是受過訓練眼識別一些這些複雜的攻擊。幸運地是，可以協助 Office 365 進階威脅保護。您可以設定 ATP 反網路釣魚原則以協助確保貴組織保護這類的攻擊。
   
 > [!NOTE]
-> ATP 反網路釣魚只有在進階威脅保護 (ATP)。ATP 隨附於中訂閱，例如[Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、 Office 365 企業版 E5、 Office 365 教育版 A5 等。如果您的組織有不包含 Office 365 ATP Office 365 訂閱，可能可以做為附加元件購買 ATP。如需詳細資訊，請參閱[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。請確定您的組織使用的 Office 365 ProPlus 的最新版本 Windows 上為完全利用 ATP 反網路釣魚保護。 
+> ATP 反網路釣魚只有在進階威脅保護 (ATP)。ATP 隨附於中訂閱，例如[Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、 Office 365 企業版 E5、 Office 365 教育版 A5 等。如果您的組織有不包含 Office 365 ATP Office 365 訂閱，可能可以做為附加元件購買 ATP。如需詳細資訊，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。請確定您的組織使用的 Office 365 ProPlus 的最新版本 Windows 上為完全利用 ATP 反網路釣魚保護。 
 
 反網路釣魚原則也會提供 Office 365 Exchange Online Protection 的一組有限的為了防止驗證和要求描述攻擊的反詐騙保護。
   
