@@ -3,7 +3,7 @@ title: Office 365 威脅情報
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/7/2018
+ms.date: 02/08/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,47 +12,63 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
-description: 深入了解 Office 365 威脅智慧如何協助您研究威脅對貴組織、 回應惡意程式碼、 網路釣魚、 及其他 Office 365 已偵測代替您撥打電話的攻擊及搜尋威脅指標。威脅智慧是內建到 Office 365 E5 安全性及規範的系統可以為。
-ms.openlocfilehash: fb273b7d8f71cecb04722dfd6ea4b69b103123f5
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+description: 深入了解威脅智慧功能的進階威脅保護如何協助您研究威脅對貴組織、 回應惡意程式碼、 網路釣魚、 及其他 Office 365 已偵測代替您撥打電話的攻擊及搜尋威脅指標。
+ms.openlocfilehash: 5dfd0377c4cafe89c5f69ea080f07d04d892329e
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26705847"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792258"
 ---
-# <a name="office-365-threat-intelligence"></a><span data-ttu-id="32466-104">Office 365 威脅情報</span><span class="sxs-lookup"><span data-stu-id="32466-104">Office 365 Threat Intelligence</span></span>
+# <a name="office-365-threat-intelligence"></a><span data-ttu-id="55db1-103">Office 365 威脅情報</span><span class="sxs-lookup"><span data-stu-id="55db1-103">Office 365 Threat Intelligence</span></span>
 
-<span data-ttu-id="32466-105">Office 365 威脅智慧協助安全性分析師和管理員保護組織的 Office 365 使用者使用：</span><span class="sxs-lookup"><span data-stu-id="32466-105">Office 365 Threat Intelligence helps security analysts and administrators protect their organization's Office 365 users by:</span></span>
+<span data-ttu-id="55db1-104">威脅智慧功能的 Office 365 進階威脅保護協助安全性分析師和管理員保護組織的 Office 365 使用者使用：</span><span class="sxs-lookup"><span data-stu-id="55db1-104">Threat intelligence capabilities in Office 365 Advanced Threat Protection help security analysts and administrators protect their organization's Office 365 users by:</span></span>
   
-1. <span data-ttu-id="32466-106">變得容易識別、 監視和了解攻擊</span><span class="sxs-lookup"><span data-stu-id="32466-106">Making it easy to identify, monitor and understand attacks</span></span>
+1. <span data-ttu-id="55db1-105">變得容易識別、 監視和了解攻擊</span><span class="sxs-lookup"><span data-stu-id="55db1-105">Making it easy to identify, monitor and understand attacks</span></span>
     
-2. <span data-ttu-id="32466-107">協助快速地址威脅在 Exchange Online 和 SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="32466-107">Helping to quickly address threats in Exchange Online and SharePoint Online</span></span>
+2. <span data-ttu-id="55db1-106">協助快速地址威脅在 Exchange Online 和 SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="55db1-106">Helping to quickly address threats in Exchange Online and SharePoint Online</span></span>
     
-3. <span data-ttu-id="32466-108">提供的見解與建議以協助防止對其組織的攻擊的知識</span><span class="sxs-lookup"><span data-stu-id="32466-108">Providing insights and knowledge to help prevent attacks against their organization</span></span>
+3. <span data-ttu-id="55db1-107">提供的見解與建議以協助防止對其組織的攻擊的知識</span><span class="sxs-lookup"><span data-stu-id="55db1-107">Providing insights and knowledge to help prevent attacks against their organization</span></span>
     
 > [!IMPORTANT]
-> <span data-ttu-id="32466-p102">在 Office 365 企業版 E5 中使用 office 365 威脅智慧。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買 Office 365 威脅智慧。(全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[購買或編輯企業版的 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。</span><span class="sxs-lookup"><span data-stu-id="32466-p102">Office 365 Threat Intelligence is available in Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Office 365 Threat Intelligence can be purchased as an add-on. (As a global administrator, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).</span></span> 
+> <span data-ttu-id="55db1-p101">**威脅智慧屬於立即在 Office 365 進階威脅保護計劃 2**，這包含在特定的訂閱，如[Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、 Office 365 企業版 E5，在 Office 365教育 A5 等。如果組織有不包含 Office 365 ATP 訂閱，則您可能可以購買 ATP 做為附加元件。如需詳細資訊，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。</span><span class="sxs-lookup"><span data-stu-id="55db1-p101">**Threat Intelligence is now part of in Office 365 Advanced Threat Protection Plan 2**, which is included in in certain subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection) and the [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp).</span></span> 
   
-## <a name="what-do-you-want-to-do"></a><span data-ttu-id="32466-112">您想要做什麼？</span><span class="sxs-lookup"><span data-stu-id="32466-112">What do you want to do?</span></span>
+## <a name="whats-changing"></a><span data-ttu-id="55db1-110">什麼變更？</span><span class="sxs-lookup"><span data-stu-id="55db1-110">What's changing?</span></span>
 
-<span data-ttu-id="32466-113">下列文章，您將深入了解 Office 365 威脅智慧服務可以包括如何使用您利用來保護您的使用者的安全。</span><span class="sxs-lookup"><span data-stu-id="32466-113">In the following articles, you will learn more about the Office 365 Threat Intelligence service offering, including how to use it to your advantage to keep your users safe.</span></span>
-  
-- <span data-ttu-id="32466-114">[Office 365 威脅智慧快速入門](get-started-with-ti.md)（這包括資訊所需的角色）</span><span class="sxs-lookup"><span data-stu-id="32466-114">[Get started with Office 365 Threat Intelligence](get-started-with-ti.md) (this includes information about required roles)</span></span> 
-    
-- [<span data-ttu-id="32466-115">了解威脅追蹤者最新及值得</span><span class="sxs-lookup"><span data-stu-id="32466-115">Learn about Threat Trackers - New and Noteworthy</span></span>](threat-trackers.md)
-    
-- [<span data-ttu-id="32466-116">尋找與調查惡意已傳送的電子郵件</span><span class="sxs-lookup"><span data-stu-id="32466-116">Find and investigate malicious email that was delivered</span></span>](investigate-malicious-email-that-was-delivered.md)
-    
-- [<span data-ttu-id="32466-117">使用攻擊模擬器 (Office 365)</span><span class="sxs-lookup"><span data-stu-id="32466-117">Use Attack Simulator (Office 365)</span></span>](attack-simulator.md)
-    
-- [<span data-ttu-id="32466-118">整合 Office 365 威脅情報與 Windows Defender 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="32466-118">Integrate Office 365 Threat Intelligence with Windows Defender Advanced Threat Protection</span></span>](integrate-office-365-ti-with-wdatp.md)
-    
-## <a name="related-topics"></a><span data-ttu-id="32466-119">相關主題</span><span class="sxs-lookup"><span data-stu-id="32466-119">Related topics</span></span>
+<span data-ttu-id="55db1-p102">Office 365 威脅智慧以前，隨附於訂閱，例如 Office 365 企業版 E5。這是仍情況下，雖然威脅智慧功能現在是 Office 365 進階威脅保護計劃 2 的一部分 （和這包含在 Office 365 企業版 E5）。</span><span class="sxs-lookup"><span data-stu-id="55db1-p102">Formerly, Office 365 Threat Intelligence was included in subscriptions, such as Office 365 Enterprise E5. This is still the case, although Threat Intelligence features are now part of Office 365 Advanced Threat Protection Plan 2 (and this is included in Office 365 Enterprise E5).</span></span> 
 
-[<span data-ttu-id="32466-120">防範 Office 365 中的威脅</span><span class="sxs-lookup"><span data-stu-id="32466-120">Protect against threats in Office 365</span></span>](protect-against-threats.md)
+<span data-ttu-id="55db1-p103">此外，Office 365 威脅智慧當成 Office 365 的企業客戶的附加元件的舊名為可供購買。現在，威脅智慧隨附於 Office 365 進階威脅保護計劃 2。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)。</span><span class="sxs-lookup"><span data-stu-id="55db1-p103">In addition, Office 365 Threat Intelligence was formerly available for purchase as an add-on for Office 365 for business customers. Now, Threat Intelligence is included in Office 365 Advanced Threat Protection Plan 2. To learn more, see [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection).</span></span>
+
+<span data-ttu-id="55db1-116">以下是所有這意味著：</span><span class="sxs-lookup"><span data-stu-id="55db1-116">Here's what all this means:</span></span>
+
+- <span data-ttu-id="55db1-117">**如果您的組織已有 Office 365 企業版 E5**，則您已經具備進階威脅保護計劃 2，及這包括威脅智慧功能。</span><span class="sxs-lookup"><span data-stu-id="55db1-117">**If your organization already has Office 365 Enterprise E5**, then you already have Advanced Threat Protection Plan 2, and this includes Threat Intelligence capabilities.</span></span>
+
+- <span data-ttu-id="55db1-p104">**如果您的組織原本 Office 365 威脅智慧 （但不是 Office 365 進階威脅保護） 做為附加元件**至另一個 Office 365 訂閱，則會有 Office 365 進階威脅保護計劃 2。這包括進階威脅保護和威脅智慧功能。</span><span class="sxs-lookup"><span data-stu-id="55db1-p104">**If your organization previously had Office 365 Threat Intelligence (but not Office 365 Advanced Threat Protection) as an add-on** to another Office 365 subscription, then you will have Office 365 Advanced Threat Protection Plan 2. This includes Advanced Threat Protection and Threat Intelligence capabilities.</span></span> 
+
+- <span data-ttu-id="55db1-p105">**如果您的組織原本 Office 365 進階威脅保護 （但不是 Office 365 威脅智慧） 做為附加元件**至另一個 Office 365 訂閱，則會有 Office 365 進階威脅保護計劃 1。這包括進階威脅保護 （但不是威脅智慧功能）。</span><span class="sxs-lookup"><span data-stu-id="55db1-p105">**If your organization previously had Office 365 Advanced Threat Protection (but not Office 365 Threat Intelligence) as an add-on** to another Office 365 subscription, then you will have Office 365 Advanced Threat Protection Plan 1. This includes Advanced Threat Protection (but not Threat Intelligence capabilities).</span></span>
+
+<span data-ttu-id="55db1-122">如需詳細資訊，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)</span><span class="sxs-lookup"><span data-stu-id="55db1-122">For more information, see [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection) and the [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)</span></span>
+
+## <a name="get-started-with-threat-intelligence-capabilities"></a><span data-ttu-id="55db1-123">開始使用威脅智慧功能</span><span class="sxs-lookup"><span data-stu-id="55db1-123">Get started with threat intelligence capabilities</span></span>
+
+<span data-ttu-id="55db1-124">若要深入了解威脅智慧及如何使用它可保留在組織中的人員更安全地使用下列資源。</span><span class="sxs-lookup"><span data-stu-id="55db1-124">Use the following resources to learn more about threat intelligence, and how you can use it to keep people in your organization safer.</span></span>
   
-[<span data-ttu-id="32466-121">Office 365 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="32466-121">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
+- <span data-ttu-id="55db1-125">[威脅智慧快速入門](get-started-with-ti.md)（這包括資訊所需的角色）</span><span class="sxs-lookup"><span data-stu-id="55db1-125">[Get started with Threat Intelligence](get-started-with-ti.md) (this includes information about required roles)</span></span> 
+    
+- [<span data-ttu-id="55db1-126">了解威脅追蹤者最新及值得</span><span class="sxs-lookup"><span data-stu-id="55db1-126">Learn about Threat Trackers - New and Noteworthy</span></span>](threat-trackers.md)
+    
+- [<span data-ttu-id="55db1-127">尋找與調查惡意已傳送的電子郵件</span><span class="sxs-lookup"><span data-stu-id="55db1-127">Find and investigate malicious email that was delivered</span></span>](investigate-malicious-email-that-was-delivered.md)
+    
+- [<span data-ttu-id="55db1-128">使用攻擊模擬器</span><span class="sxs-lookup"><span data-stu-id="55db1-128">Use Attack Simulator</span></span>](attack-simulator.md)
+    
+- [<span data-ttu-id="55db1-129">整合 Windows 防禦者進階威脅保護威脅智慧</span><span class="sxs-lookup"><span data-stu-id="55db1-129">Integrate Threat Intelligence with Windows Defender Advanced Threat Protection</span></span>](integrate-office-365-ti-with-wdatp.md)
+    
+## <a name="related-topics"></a><span data-ttu-id="55db1-130">相關主題</span><span class="sxs-lookup"><span data-stu-id="55db1-130">Related topics</span></span>
+
+[<span data-ttu-id="55db1-131">防範 Office 365 中的威脅</span><span class="sxs-lookup"><span data-stu-id="55db1-131">Protect against threats in Office 365</span></span>](protect-against-threats.md)
   
-[<span data-ttu-id="32466-122">Office 365 安全性權限&amp;規範中心</span><span class="sxs-lookup"><span data-stu-id="32466-122">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
+[<span data-ttu-id="55db1-132">Office 365 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="55db1-132">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
+  
+[<span data-ttu-id="55db1-133">Office 365 安全性權限&amp;規範中心</span><span class="sxs-lookup"><span data-stu-id="55db1-133">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
   
 
