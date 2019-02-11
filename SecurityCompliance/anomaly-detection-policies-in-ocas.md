@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Office 365 雲端應用程式安全性異常偵測原則使用內建的演算法可協助從抽出潛在的問題。您應該會有至少一個異常偵測原則] 中，您可以使用篩選器來調整 （當您建立它）。 '
-ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604414"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29612706"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的異常偵測原則
 
@@ -28,7 +28,7 @@ Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性
 |:-----|:-----|:-----|:-----|
 |[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](integrate-your-siem-server-with-office-365-cas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
-Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用程式安全性](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3)，包括數個預先定義的異常偵測原則原則 （"現成可用"），包括使用者和實體行為上有無分析 (UEBA) 和學習 （毫升） 的電腦。
+Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用程式安全性](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116)，包括數個預先定義的異常偵測原則原則 （"現成可用"），包括使用者和實體行為上有無分析 (UEBA) 和學習 （毫升） 的電腦。
   
 ![若要檢視您異常偵測原則，請選擇 [控制\>原則。](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   

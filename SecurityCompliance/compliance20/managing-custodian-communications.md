@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b27d6cca0382b18123cae4106f77ce0dcdf5e525
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607611"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695039"
 ---
-# <a name="working-with-communications-in-advanced-ediscovery-preview"></a>使用進階的 eDiscovery (Preview) 中的通訊
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>使用進階的 eDiscovery (Preview) 中的通訊
 
 進階的 eDiscovery （預覽） 可讓法務部門簡化追蹤和散佈合法持有通知繞其程序。Okay 通訊功能可讓管理及自動化其整個合法持有程序-從通知、 提醒、 和呈報-所有集中一處法務部門。
 

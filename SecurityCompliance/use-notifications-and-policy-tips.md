@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: '原則提示是通知或當有人會處理內容與 DLP 原則該發生衝突時出現的警告。您可以使用電子郵件通知及原則提示增加傳達及協助貴組織的原則相關的人員對教育訓練。您也可以的讓人員覆寫原則，以便他們不會封鎖如果有有效的商業選項需要或原則會偵測誤判。 '
-ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769912"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25803994"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>傳送電子郵件通知，並顯示 DLP 原則的原則提示
 
@@ -49,7 +49,7 @@ Office 365 安全性&amp;規範中心，當您建立的 DLP 原則時，您可�
 
 當您建立的 DLP 原則時、 電子郵件通知及原則提示屬於**使用者通知**] 區段。 
   
-1. 前往 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用您工作或學校的帳戶。您現在是 Office 365 安全性&amp;規範中心。
     
@@ -90,7 +90,7 @@ Office 365 安全性&amp;規範中心，當您建立的 DLP 原則時，您可�
 - 自訂使用 HTML 或權杖通知中包含的文字。請參閱下方] 區段中的詳細資訊。
     
 > [!NOTE]
->  僅為個別的收件者可以傳送電子郵件通知 — 不群組或通訊群組清單。> 新內容只會觸發的電子郵件通知。編輯現有的內容會觸發原則提示，但不是的電子郵件通知。 
+>  僅為個別的收件者可以傳送電子郵件通知 — 不群組或通訊群組清單。> 新的內容會觸發的電子郵件通知。編輯現有的內容會觸發原則提示，但不是的電子郵件通知。 
   
 ![電子郵件通知選項](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -101,8 +101,7 @@ Office 365 安全性&amp;規範中心，當您建立的 DLP 原則時，您可�
 ![通知訊息](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 根據預設，通知會針對網站上的項目顯示如下文字。每條規則的通知文字都是分開設定的，因此顯示的文字將依其對應的規則而有所不同。
-  
-| |
+
 |**如果 DLP 原則規則執行此動作...**|**然後 SharePoint 或 OneDrive for Business 文件的預設通知指出此...]**|**然後預設通知 for Outlook 訊息會指出這個...]**|
 |:-----|:-----|:-----|
 |傳送通知，但不允許覆寫  <br/> |此項目與您組織中的原則衝突。  <br/> |您的組織中的原則與您電子郵件訊息發生衝突。  <br/> |
@@ -114,8 +113,7 @@ Office 365 安全性&amp;規範中心，當您建立的 DLP 原則時，您可�
 您可以建立自訂電子郵件通知，而不是預設的電子郵件通知傳送給您的使用者或系統管理員。自訂電子郵件通知支援 HTML 和有 5000 個字元的限制。您可以使用 HTML 包含影像、 格式及其他商標通知中。
   
 您也可以使用下列語彙基元來協助自訂電子郵件通知。這些語彙基元是由傳送通知中的特定資訊所取代的變數。
-  
-| |
+
 |**Token**|**描述**|
 |:-----|:-----|
 |%%Appliedactions %%  <br/> |套用至內容動作。  <br/> |
@@ -177,8 +175,7 @@ DLP 原則會同步處理至網站，以便定期以非同步方式根據它們�
 ### <a name="default-text-for-policy-tips-on-sites"></a>網站上的預設原則提示文字
 
 根據預設，原則提示會針對網站上的項目顯示如下文字。每條規則的通知文字都是分開設定的，因此顯示的文字將依其對應的規則而有所不同。
-  
-| |
+
 |**如果 DLP 原則規則執行此動作...**|**預設原則提示就會指出...**|
 |:-----|:-----|
 |傳送通知，但不允許覆寫  <br/> |此項目與您組織中的原則衝突。  <br/> |

@@ -3,7 +3,7 @@ title: 使用 Office 365 雲端 App 安全性建立 App 探索報表
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: 建立報表與 Office 365 雲端應用程式安全性可讓您了解如何在組織中的人員會使用 Office 365 和其他應用程式。
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014865"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603714"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>使用 Office 365 雲端 App 安全性建立 App 探索報表
 
@@ -44,28 +44,17 @@ Office 365 雲端應用程式安全性協助全域管理員、 安全性管理�
   
 1. 收集您的[網頁流量記錄檔與資料來源為 Office 365 雲端應用程式安全性](web-traffic-logs-and-data-sources-for-ocas.md)。
     
-2. 移至 [[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。 
-    
-3. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
-    
-4. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-5. 選擇 [**搜索** \> **建立新的報表**。
-    
-    ![在 Office 365 CAS 入口網站中選擇 [搜索](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+2. 移至雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 並登入。 
+       
+3. 選擇 [**搜索** \> **建立新的報表**。 <br>![在 Office 365 CAS 入口網站中選擇 [搜索](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-6. 指定的名稱和描述您的報表，並在 [**資料來源**] 清單中選取 web 流量記錄檔的資料來源。 
-    
-    ![O365 CAS 中選擇 [搜索\>建立新的報表](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)
+4. 指定的名稱和描述您的報表，並在 [**資料來源**] 清單中選取 web 流量記錄檔的資料來源。 <br>![O365 CAS 中選擇 [搜索\>建立新的報表](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>如果未列出您想要使用的資料來源，您可以要求要新增。選取 [**其他****資料來源**，然後輸入 [您嘗試將上傳的資料來源的名稱。我們將檢閱記錄檔，並且可讓您知道是否我們將新增其產生的資料來源的支援。 
   
-    > [!NOTE]
-    > 如果未列出您想要使用的資料來源，您可以要求要新增。選取 [**其他****資料來源**，然後輸入 [您嘗試將上傳的資料來源的名稱。我們將檢閱記錄檔，並且可讓您知道是否我們將新增其產生的資料來源的支援。 
-  
-7. 瀏覽至您收集記錄檔的位置及選取的檔案。您選擇的報告的資料來源必須已產生記錄檔。
+5. 瀏覽至您收集記錄檔的位置及選取的檔案。您選擇的報告的資料來源必須已產生記錄檔。
     
-8. 按一下 [**建立**] 以啟動報表建立程序。 
+6. 按一下 [**建立**] 以啟動報表建立程序。 
     
-9. 若要查看報告的狀態，請按一下 [**管理快照報告**]。準備報表時，您會看到 [**檢視報告**] 選項。 
+7. 若要查看報告的狀態，請按一下 [**管理快照報告**]。準備報表時，您會看到 [**檢視報告**] 選項。 
     
 ## <a name="next-steps"></a>後續步驟
 

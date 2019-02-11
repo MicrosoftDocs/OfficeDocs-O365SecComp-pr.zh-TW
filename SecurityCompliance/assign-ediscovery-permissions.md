@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 指派權限才能執行 eDiscovery 相關的工作使用安全性&amp;規範中心。
 ms.openlocfilehash: 95f0ed171c37ec84ca8bb8f00e69ab0318cd31cd
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
+ms.lasthandoff: 02/11/2019
 ms.locfileid: "29741156"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性 eDiscovery 權限指派&amp;規範中心

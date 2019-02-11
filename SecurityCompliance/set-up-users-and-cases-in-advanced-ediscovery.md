@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '了解如何設定使用者角色、 建立的情況下，並將使用者指派給 Office 365 進階 ediscovery 案例。  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527010"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559056"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定使用者與案例
 
 本主題說明如何設定使用者和 Office 365 進階 ediscovery 案例。
   
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 ## <a name="prerequisites"></a>必要條件
 
@@ -61,7 +61,5 @@ ms.locfileid: "22527010"
 
 [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
   
-[準備資料](prepare-data-for-advanced-ediscovery.md)
-  
-[使用者角色及存取](user-roles-and-access-in-advanced-ediscovery.md)
-
+[準備安裝](prepare-data-for-advanced-ediscovery.md)
+ 

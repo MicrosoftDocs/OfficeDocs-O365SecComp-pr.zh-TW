@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 系統管理員： 即使該信箱處於合法持有刪除 Exchange Online 的信箱使用者的可復原的項目] 資料夾中的項目。這是有效的方式刪除已意外溢出至 Office 365 的資料。
-ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: e80f5182bc425d71c6219decd48d41cf3dce6bba
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577082"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28009639"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除項目可復原的項目] 資料夾中的雲端架構信箱保留-Admin 說明
 
@@ -221,7 +221,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-您已識別信箱處於之後按住因為保留標籤套用到資料夾或項目、 您可以使用 「 內容搜尋工具中的安全性與規範中心來搜尋的標示使用 ComplianceTag 搜尋條件的項目。如需詳細資訊，請參閱 「 搜尋條件 」 一節[關鍵字查詢](keyword-queries-and-search-conditions.md#conditions-for-common-properties)和搜尋條件的內容搜尋。
+您已識別信箱是保留因為保留標籤套用到資料夾或項目之後，您可以使用安全性 & 規範中心中的內容搜尋工具來使用 ComplianceTag 搜尋條件來搜尋已標記的項目。如需詳細資訊，請參閱 「 搜尋條件 」 一節[關鍵字查詢](keyword-queries-and-search-conditions.md#conditions-for-common-properties)和搜尋條件的內容搜尋。
 
 如需標籤的詳細資訊，請參閱[Office 365 概觀 （英文) 標籤](labels.md)。
 
@@ -272,7 +272,7 @@ Set-Mailbox <username> -RemoveDelayHoldApplied
     
 - 刪除項目而不將其複製到目標信箱。 
     
-請注意，在使用者的主要封存信箱 [可復原的項目] 資料夾中的項目也都會刪除當您執行 * * Search-mailbox * * 指令程式。若要避免此問題，您可以包含*DoNotIncludeArchive*參數。與先前所述，如果自動展開封存啟用信箱、 * * Search-mailbox * * 指令程式不會刪除輔助封存信箱中的項目。如需關於自動展開封存，請參閱 ＜ [Overview of Office 365 中沒有限制之封存](unlimited-archiving.md)。
+請注意在使用者的主要封存信箱 [可復原的項目] 資料夾中的項目也都會刪除時執行**搜尋信箱**指令程式。若要避免此問題，您可以包含*DoNotIncludeArchive*參數。與先前所述，如果自動展開封存啟用信箱、 * * Search-mailbox * * 指令程式不會刪除輔助封存信箱中的項目。如需關於自動展開封存，請參閱 ＜ [Overview of Office 365 中沒有限制之封存](unlimited-archiving.md)。
   
 > [!NOTE]
 > 如果您包括在搜尋查詢 （使用*SearchQuery*參數）， **Search-mailbox**指令程式會在搜尋結果中傳回最大值為 10000 個項目。因此如果您包括在搜尋查詢時，您可能必須執行**搜尋信箱**命令多次刪除 10000 個以上的項目。 
@@ -431,9 +431,9 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 |**保留類型**|**範例值**|**如何識別保留**|
 |:-----|:-----|:-----|
 |訴訟暫止  <br/> | `True` <br/> |*LitigationHoldEnabled*屬性設為`True`。  <br/> |
-|原有範圍暫止  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |*InPlaceHolds*屬性會包含信箱處於就地保留 GUID。您可以分清這是就地保留由於 GUID 不會開始使用前置詞。<br/> 您可以使用 ' Get MailboxSearch InPlaceHoldIdentity<hold GUID> | FL' 取得資訊就地保留信箱上的 Exchange Online PowerShell 中的命令。  <br/> |
-| 在 [安全性] 中的 office 365 保留原則&amp;規範中心套用至特定信箱  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> 或  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |當您執行**Get-mailbox**指令程式時， *InPlaceHolds*屬性也會包含 Office 365 Guid 保留原則套用至信箱。您可以識別保留原則因為 GUID 開頭`mbx`前置詞。請注意，如果保留原則的 GUID 開頭`skp`前置詞表示保留原則套用至 Skype 商務交談。<br/> 到 Office 365 身分識別保留原則套用至信箱執行下列命令安全性&amp;規範中心 PowerShell： <br/> <br/>' 取得 RetentionCompliancePolicy<retention policy GUID without prefix> | FL 名稱`<br/><br/>Be sure to remove the  `mbx` or  `skp' prefix 當您執行此命令。  <br/> |
-|整個組織的 Office 365 中安全性的保留原則&amp;規範中心  <br/> |沒有值  <br/> 或  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`（表示信箱不排除全組織的原則）  <br/> |即使當您執行**Get-mailbox**指令程式*InPlaceHolds*屬性是空的還是可能有一或多個整個組織的 Office 365 保留原則套用至信箱。  <br/> 若要確認此，您可以執行 ' Get-organizationconfig | FL InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide Office 365 retention policies. The GUID for organization-wide retention policies applied to Exchange mailboxes start with the  `mbx` prefix; for example  `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> To identity the organization-wide Office 365 retention policy that's applied to the mailbox, run the following command in Security &amp; Compliance Center PowerShell: <br/><br/> `Get RetentionCompliancePolicy<retention policy GUID without prefix> | FL 名稱`<br/><br/>Note that if a mailbox is excluded from an organization-wide Office 365 retention policy, the GUID for the retention policy is displayed in the  *InPlaceHolds*  property of the user's mailbox when you run the **Get-Mailbox** cmdlet; it's identified by the prefix  `-mbx`; for example,  `-mbxe9b52bf7ab3b46a286308ecb29624696' <br/> |
-|eDiscovery 案例保留安全性&amp;規範中心  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*屬性也會包含任何保留 eDiscovery 案例安全性相關聯的 GUID&amp;可能會被放置在信箱的規範中心。您可以分清這是因為 GUID 開頭的 eDiscovery 案件保留`UniH`前置詞。<br/> 您可以使用`Get-CaseHoldPolicy`指令程式的安全性&amp;規範中心 PowerShell 取得信箱保留相關聯的 eDiscovery 案例的相關資訊。例如，您可以執行此命令 ' Get CaseHoldPolicy<hold GUID without prefix> | FL 名稱` to display the name of the case hold that's on the mailbox. Be sure to remove the  `UniH` prefix when you run this command.  <br/><br/> To identity the eDiscovery case that the hold on the mailbox is associated with, run the following commands:<br/><br/>`$CaseHold = Get CaseHoldPolicy <hold GUID without prefix> `<br/><br/>`Get ComplianceCase $CaseHold.CaseId | FL 名稱 '
+|原有範圍暫止  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |*InPlaceHolds*屬性會包含信箱處於就地保留 GUID。您可以分清這是就地保留由於 GUID 不會開始使用前置詞。<br/> 您可以使用`Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL`取得資訊就地保留信箱上的 Exchange Online PowerShell 中的命令。  <br/> |
+| 在 [安全性] 中的 office 365 保留原則&amp;規範中心套用至特定信箱  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> 或  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |當您執行**Get-mailbox**指令程式時， *InPlaceHolds*屬性也會包含 Office 365 Guid 保留原則套用至信箱。您可以識別保留原則因為 GUID 開頭`mbx`前置詞。請注意，如果保留原則的 GUID 開頭`skp`前置詞表示保留原則套用至 Skype 商務交談。<br/> 到 Office 365 身分識別保留原則套用至信箱執行下列命令安全性&amp;規範中心 PowerShell： <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>請務必移除`mbx`或`skp`prefix 當您執行此命令。  <br/> |
+|整個組織的 Office 365 中安全性的保留原則&amp;規範中心  <br/> |沒有值  <br/> 或  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`（表示信箱不排除全組織的原則）  <br/> |即使當您執行**Get-mailbox**指令程式*InPlaceHolds*屬性是空的還是可能有一或多個整個組織的 Office 365 保留原則套用至信箱。  <br/> 若要確認此，您可以執行`Get-OrganizationConfig | FL InPlaceHolds`命令在 Exchange Online PowerShell 取得整個組織的 Office 365 保留原則之 Guid 的清單。整個組織的保留原則套用至 Exchange 信箱開始 GUID`mbx`首碼 ；例如`mbxa3056bb15562480fadb46ce523ff7b02`。<br/> 身分識別整個組織的 Office 365 保留原則套用至信箱，請執行下列命令安全性&amp;規範中心 PowerShell： <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>請注意是否信箱排除在整個組織的 Office 365 保留原則、 保留原則的 GUID 顯示在使用者信箱的*InPlaceHolds*屬性當您執行**Get-mailbox**指令程式 ；識別前置字元`-mbx`;例如，`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|eDiscovery 案例保留安全性&amp;規範中心  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*屬性也會包含任何保留 eDiscovery 案例安全性相關聯的 GUID&amp;可能會被放置在信箱的規範中心。您可以分清這是因為 GUID 開頭的 eDiscovery 案件保留`UniH`前置詞。<br/> 您可以使用`Get-CaseHoldPolicy`指令程式的安全性&amp;規範中心 PowerShell 取得信箱保留相關聯的 eDiscovery 案例的相關資訊。例如，您可以執行此命令`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`顯示上信箱的大小寫保留的名稱。請務必移除`UniH`prefix 當您執行此命令。<br/><br/> 身分識別與關聯信箱的保留 eDiscovery 案例中，執行下列命令：<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
 
 

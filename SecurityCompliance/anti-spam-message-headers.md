@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Exchange Online Protection 掃描內送電子郵件訊息時加以插入**X Forefront-反垃圾郵件報告**標題每則訊息。
-ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 5632aa28a0d23186e6a36fdf63f7968322c93e39
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614457"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686443"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
@@ -38,7 +38,7 @@ Exchange Online Protection 掃描內送電子郵件訊息時加以插入**X Fore
 |CTRY|郵件連線到服務的來源國家。這是由連線的 IP 位址來判斷，這可能與原始傳送的 IP 位址不同。|
 |LANG|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
 |SCL|郵件的垃圾郵件信賴等級 (SCL) 值。如需解譯這些值的詳細資訊，請參閱[Spam confidence levels](spam-confidence-levels.md)。|
-|PCL|網路釣魚信賴等級 (PCL) 值的郵件。請參閱[PCL](anti-spam-message-headers.md#PCL) PCL 值的詳細資訊。|
+|PCL|網路釣魚信賴等級 (PCL) 值的郵件。 |
 |SRV:BULK|郵件已被識別為大量電子郵件訊息。如果已啟用**封鎖所有大量電子郵件訊息進階垃圾郵件篩選選項**都，它將會標示為垃圾郵件。如果未啟用，它只時才會標示為垃圾郵件篩選規則的其餘部分決定郵件為垃圾郵件。|
 |SFV:SFE|已略過篩選作業並允許郵件傳入是因為它從個人的安全寄件者清單上的地址傳送。|
 |SFV:BLK|已略過篩選和封鎖該郵件是因為它從個人的封鎖寄件者清單上的地址傳送。  <br/> **提示**： 如需如何使用者建立安全及封鎖的寄件者清單的詳細資訊，請參閱[封鎖或允許 （垃圾郵件設定）](https://go.microsoft.com/fwlink/p/?LinkId=294862) (在 web 上的 Outlook) 和[垃圾郵件篩選工具的概觀](https://go.microsoft.com/fwlink/p/?LinkId=270065)(Outlook)。|

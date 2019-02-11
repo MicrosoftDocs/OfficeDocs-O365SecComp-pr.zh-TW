@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607577"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706104"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>新增 custodians （預覽） 進階 ediscovery 案例
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>將 custodians 新增至進階的 eDiscovery （預覽） 案例
 
 使用進階的 eDiscovery （預覽），您可以運用協調繞管理 custodians 和相關、 custodial 資料來源的案例中用來識別您工作流程內建 okay 管理工具。當您新增 okay 時，系統可以自動識別、 和就地保留在其主要 Exchange 信箱和 OneDrive 商務網站。當您進行您探索，也可能會從抽出和對應其他信箱或網站確認 okay 存取過去或小組中 okay 是今天的成員。
 

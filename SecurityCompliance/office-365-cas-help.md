@@ -3,6 +3,7 @@ title: Office 365 雲端應用程式安全性說明與使用方法
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: 尋找 Office 365，現在稱為 「 Office 365 雲端應用程式安全性的進階安全性管理 [說明] 內容。
-ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 45f45812251d17a7a58d8c5f6cbd23d27407daf1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706267"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27131833"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Office 365 雲端應用程式安全性說明與使用方法
   
@@ -35,7 +36,7 @@ Office 365 雲端應用程式安全性]，以全域管理員、 安全性管理�
 |設定原則和提醒您的組織  <br/> |[Office 365 雲端 App 安全性中的活動原則和警訊](activity-policies-and-alerts.md) <br/> [Office 365 雲端應用程式安全性異常偵測原則](anomaly-detection-policies-in-ocas.md)（新更新 ！）  <br/> [與 Office 365 雲端應用程式安全性 SIEM 整合](integrate-your-siem-server-with-office-365-cas.md) <br/> [Office 365 雲端應用程式安全性的安全性原則參考資訊](security-policy-reference-information-for-ocas.md) <br/> |
 |微調 Office 365 雲端應用程式安全性設定  <br/> |[將您的 IP 位址分組，以簡化 Office 365 雲端 App 安全性中的管理](group-your-ip-addresses-in-ocas.md) <br/> [推出 Office 365 雲端 App 安全性後的使用活動](utilization-activities-for-ocas.md) <br/> |
 |調查活動並採取動作  <br/> |[檢閱並在 Office 365 雲端應用程式安全性警訊採取動作](review-office-365-cas-alerts.md) <br/> [調查 Office 365 雲端 App 安全性中的活動](investigate-an-activity-in-office-365-cas.md) <br/> [暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶](suspend-or-restore-an-account-in-ocas.md) <br/> |
-|管理 Office 365 中的第三方應用程式  <br/> |[使用 Office 365 雲端 App 安全性管理 App 權限](manage-app-permissions-in-ocas.md) <br/> |
+|管理 Office 365 中的第三方應用程式  <br/> |[使用 Office 365 雲端 App 安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md) <br/> |
 |建立及檢視應用程式探索報告  <br/> |[Office 365 雲端 App 安全性的網路流量記錄與資料來源](web-traffic-logs-and-data-sources-for-ocas.md) <br/> [在 Office 365 雲端應用程式安全性中建立應用程式探索報告](create-app-discovery-reports-in-ocas.md) <br/> [Office 365 雲端應用程式安全性檢閱應用程式探索偵測](review-app-discovery-findings-in-ocas.md)（新更新 ！）  <br/> |
 |在 Office 365 雲端應用程式安全性的新功能迴圈中保持  <br/> |[Office 365 雲端 App 安全性中的新增功能](new-in-office-365-cas.md) <br/> |
    

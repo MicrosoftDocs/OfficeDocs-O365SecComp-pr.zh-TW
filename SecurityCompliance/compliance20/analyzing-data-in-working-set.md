@@ -1,5 +1,5 @@
 ---
-title: 進階 eDiscovery (Preview) 中使用組中分析資料
+title: 分析進階 eDiscovery (Preview) 中使用集中的資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607537"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695139"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>進階 eDiscovery (Preview) 中使用組中分析資料
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>分析進階 eDiscovery (Preview) 中使用集中的資料
 
 大型收集文件數目時，它可以是很難將所有加以檢閱。進階的 eDiscovery （預覽） 提供工具來分析來降低文件檢閱沒有任何遺失的資訊，並協助您組織的文件一致的方式數量的文件的數。若要深入了解這些功能，請參閱：
 

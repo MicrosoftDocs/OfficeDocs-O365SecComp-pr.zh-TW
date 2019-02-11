@@ -12,18 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 系統管理員可以了解如何建立郵件流程規則 （也稱為傳輸規則） 來加密和解密郵件使用 Office 365 郵件加密 (OME) 中。
-ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: db421c808f1eed69ddbece2b333f9edd61712235
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749357"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696277"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 
 身為 Office 365 全域管理員，您可以建立郵件流程規則 （也稱為傳輸規則） 來保護您傳送和接收的電子郵件訊息。您可以設定加密所有外寄電子郵件並從加密的郵件來自組織內或回覆加密郵件傳送自組織移除加密的規則。您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange Online PowerShell 來建立這些規則。除了整體加密的郵件，您也可以選擇啟用或停用使用者的個別郵件加密選項。
 
-如果您最近移轉從 AD RMS Azure 資訊保護，您需要檢閱現有的郵件流程規則以確保其繼續在新環境中運作。此外，如果您想要利用新的 Office 365 郵件加密 (OME) 功能給您透過 Azure 資訊保護，您需要更新現有的郵件流程規則。否則，您的使用者會繼續接收加密的郵件而不是新的且相當順暢 OME 經驗會使用先前的 HTML 附件格式。如果您尚未設定 OME 尚未，請參閱[Set up 新建置上方的 Azure 資訊保護的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)資訊。
+||
+|:-----|
+|本文屬於較大的一系列有關 Office 365 郵件加密的文章。本文適用於系統管理員和 ITPros 的。如果您只尋找的資訊在傳送或接收加密的郵件，請參閱[Office 365 郵件加密 (OME)](ome.md)中的文章的清單並找出最適合您需求的文章。 |
+||
+
+如果您最近移轉從 AD RMS Azure 資訊保護，您需要檢閱現有的郵件流程規則以確保其繼續在新環境中運作。此外，如果您想要利用新的 Office 365 郵件加密 (OME) 功能給您透過 Azure 資訊保護，您需要更新現有的郵件流程規則。否則，您的使用者會繼續接收加密的郵件而不是新的且相當順暢 OME 經驗會使用先前的 HTML 附件格式。如果您尚未設定 OME 尚未，請參閱[Set up Office 365 郵件加密的新功能](set-up-new-message-encryption-capabilities.md)的資訊。
 
 如需元件構成郵件流程規則與郵件流程規則運作的方式，請參閱[Exchange Online 中的郵件流程規則 （傳輸規則）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。如需搭配 Azure 資訊保護的郵件流程規則如何運作的其他資訊，請參閱[Azure 資訊保護標籤設定 Exchange Online 郵件流程規則](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)。
 
@@ -51,7 +56,7 @@ ms.locfileid: "27749357"
    1. 在**套用此規則**，請選取 [**收件者**。
 
    2. 從連絡人清單中選取現有名稱或 [**檢查名稱**] 方塊中輸入新的電子郵件地址。
-    
+
       - 若要選取現有名稱，從清單中選取然後再按一下 [**確定]**。
 
       - 輸入新名稱、 在 [**檢查名稱**] 方塊中輸入電子郵件地址，然後選取 [**檢查名稱** \> **[確定]**。
@@ -62,7 +67,7 @@ ms.locfileid: "27749357"
 
 8. 若要啟用加密使用新的 OME 功能，從**執行下列動作**，選取 [**修改郵件安全性**，然後選擇**適用於 Office 365 郵件加密和權限保護**。從清單中選取的 RMS 範本、 選擇 [**儲存**]，然後選擇 **[確定]**。
   
-  範本的清單會包含所有的預設範本及 Office 365 所使用的選項為您已建立的任何自訂範本。如果清單是空的請確定您已設定 Office 365 郵件加密的新功能與[設定在 Azure 資訊保護頂端上建立新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)所述。如需預設範本的資訊，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。[**不要轉寄**] 選項的相關資訊，請參閱[不要轉寄的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。**僅限加密**] 選項的相關資訊，請參閱[只加密的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+  範本的清單會包含所有的預設範本及 Office 365 所使用的選項為您已建立的任何自訂範本。如果清單是空的請確定您已設定 Office 365 郵件加密的新功能與[設定 Office 365 郵件加密的新功能](set-up-new-message-encryption-capabilities.md)所述。如需預設範本的資訊，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。[**不要轉寄**] 選項的相關資訊，請參閱[不要轉寄的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。**僅限加密**] 選項的相關資訊，請參閱[只加密的電子郵件] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
   您可以選擇**加入動作**如果您想要指定另一個巨集指令。
 
@@ -104,7 +109,7 @@ ms.locfileid: "27749357"
 
 5. 在 [**名稱**] 輸入規則名稱，例如 Encrypt mail for DrToniRamos@hotmail.com。
 
-6. 在**套用此規則**選取條件和必要時輸入的值。例如，若要加密郵件移至 DrToniRamos@hotmail.com： 
+6. 在**套用此規則**選取條件和必要時輸入的值。例如，若要加密郵件移至 DrToniRamos@hotmail.com：
 
    1. 在**套用此規則**，請選取 [**收件者**。
 
@@ -132,7 +137,7 @@ ms.locfileid: "27749357"
 
    這個範例需要在所有的電子郵件訊息傳送給 DrToniRamos@hotmail.com 必須進行加密。
 
-   ```
+   ```powershell
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
@@ -176,7 +181,7 @@ ms.locfileid: "27749357"
 
    此範例會移除所有傳送給 Office 365 組織中的收件者的郵件加密。
 
-   ```
+   ```powershell
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
@@ -184,11 +189,11 @@ ms.locfileid: "27749357"
 
    - 新規則的唯一名稱為"Remove encryption from incoming mail"。
 
-   - _SentToScope_參數會指定郵件的收件者的位置。在這個範例中，此值`InOrganization`會使用值，這表示： 
+   - _SentToScope_參數會指定郵件的收件者的位置。在這個範例中，此值`InOrganization`會使用值，這表示：
 
      - 收件者是信箱、 郵件使用者、 群組或擁有郵件功能在組織中的公用資料夾。
 
-       或 
+       或
 
      - 收件者的電子郵件地址是設定為授權網域] 或 [內部轉送網域_與_郵件已傳送或接收透過未經過驗證的連線在組織中公認的網域中。
 
@@ -198,7 +203,7 @@ ms.locfileid: "27749357"
 
 [Office 365 中的加密](encryption.md)
 
-[設定新的 Office 365 郵件加密功能建置於 Azure 資訊保護](set-up-new-message-encryption-capabilities.md)
+[設定全新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)
 
 [將商標新增至加密郵件](add-your-organization-brand-to-encrypted-messages.md)
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以使用 Office 365 雲端應用程式安全性整合 SIEM 伺服器。請閱讀本篇文章以取得它的運作方式，以及如何設定它的概觀。
-ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723260"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603764"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>將 SIEM 伺服器與 Office 365 雲端 App 安全性整合
   
@@ -67,29 +67,24 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>步驟 1： 會將它設定 Office 365 雲端應用程式安全性 SIEM 代理程式
 
-1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
-    
-2. 移至 [**提醒** \> **管理進階提醒**。
-    
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。<br/>
-    ![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. 移至雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 並登入。
   
-4. 按一下 [**設定** \> **安全性延伸模組**，然後選擇 [SIEM 代理程式。<br/>
+2. 按一下 [**設定** \> **安全性延伸模組**，然後選擇 [SIEM 代理程式。<br/>
 ![選擇 [設定 > 安全性延伸模組](media/Settings-SecurityExtensions.png)
 
-5. 選擇 [**新增 SIEM 代理程式**。<br/>![選擇 [新增 SIEM 代理程式。](media/SIEMAgents.png)
+3. 選擇 [**新增 SIEM 代理程式**。<br/>![選擇 [新增 SIEM 代理程式。](media/SIEMAgents.png)
     
-6. 選擇 [**啟動精靈**]。<br/>![取得說明或啟動精靈](media/HelpOrWizard.png) 
+4. 選擇 [**啟動精靈**]。<br/>![取得說明或啟動精靈](media/HelpOrWizard.png) 
     
-7. 在**一般**步驟中，指定的名稱，然後**選取 [SIEM 格式**並設定任何**進階設定**相關的格式。然後選擇 [**下一步**。<br/>![指定的名稱與類型](media/ChooseAgentTypeAndName.png)
+5. 在**一般**步驟中，指定的名稱，然後**選取 [SIEM 格式**並設定任何**進階設定**相關的格式。然後選擇 [**下一步**。<br/>![指定的名稱與類型](media/ChooseAgentTypeAndName.png)
     
-8. 在 [**遠端 Syslog** ] 步驟中指定的 IP 位址或**遠端 syslog 主機**及**Syslog 連接埠號碼**組成的主機名稱。選取 [TCP] 或 [UDP] 做為遠端 Syslog 通訊協定。（您可以使用您的網路管理員或安全性管理員以取得這些詳細資料若您尚未擁有工作）。然後選擇 [**下一步**。<br/>![指定遠端 Syslog 詳細資料](media/ArcSightS1Syslog.png)
+6. 在 [**遠端 Syslog** ] 步驟中指定的 IP 位址或**遠端 syslog 主機**及**Syslog 連接埠號碼**組成的主機名稱。選取 [TCP] 或 [UDP] 做為遠端 Syslog 通訊協定。（您可以使用您的網路管理員或安全性管理員以取得這些詳細資料若您尚未擁有工作）。然後選擇 [**下一步**。<br/>![指定遠端 Syslog 詳細資料](media/ArcSightS1Syslog.png)
   
-9. 在 [**資料類型**的步驟，執行下列其中一個動作] 和 [**下一步**：
+7. 在 [**資料類型**的步驟，執行下列其中一個動作] 和 [**下一步**：
     - 保留預設設定的**所有提醒**<br/>或
     - 按一下 [**所有提醒**、，然後選擇 [**特定篩選器**。定義篩選器以選取您想要 SIEM 伺服器傳送的提醒的類型。<br/>![精靈] 的資料類型步驟](media/ArcSightS1ExportOptions.png)
   
-10. 在 [恭喜] 畫面上複製的權杖並將其儲存供日後。<br/>![SIEM 代理程式建立畫面](media/SIEMAgentFinished.png) 
+8. 在 [恭喜] 畫面上複製的權杖並將其儲存供日後。<br/>![SIEM 代理程式建立畫面](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > 此時，您已設定好 SIEM 代理程式在 Office 365 雲端應用程式安全性]，但尚未完成 SIEM server 的整合。繼續下一個步驟以繼續 SIEM server 的整合。
@@ -177,7 +172,7 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 
 如果您遺失您權杖，您可以重新產生一個。 
 
-1. 在 Office 365 雲端應用程式安全性入口網站中選擇 [**設定** > **安全性延伸模組**。
+1. 在 Office 365 雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))、 選擇 [**設定** > **安全性延伸模組**。
 
 2. 在表格中，找出 SIEM 代理程式的列。 
 
@@ -185,7 +180,7 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
   
 ### <a name="edit-a-siem-agent"></a>編輯 SIEM 代理程式
 
-1. 在 Office 365 雲端應用程式安全性入口網站中選擇 [**設定** > **安全性延伸模組**。
+1. 在 Office 365 雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))、 選擇 [**設定** > **安全性延伸模組**。
 
 2. 找到 SIEM 代理程式的列。 
 
@@ -193,7 +188,7 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
   
 ### <a name="delete-a-siem-agent"></a>刪除 SIEM 代理程式
 
-1. 在 Office 365 雲端應用程式安全性入口網站中選擇 [**設定** > **安全性延伸模組**。
+1. 在 Office 365 雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))、 選擇 [**設定** > **安全性延伸模組**。
 
 2. 找到 SIEM 代理程式的列。 
 

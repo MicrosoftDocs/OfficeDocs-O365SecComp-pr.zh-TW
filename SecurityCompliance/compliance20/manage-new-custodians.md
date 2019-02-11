@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607603"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706094"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>管理進階的 eDiscovery （預覽） 案例中的 custodians
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>管理進階的 eDiscovery （預覽） 案例中的 custodians
 
 [Custodians] 索引標籤包含案例中的所有 custodians 可排序的清單。Custodians 新增至案例之後，Azure Active Directory 中會自動收集有關每個 okay 的詳細資料。
 
@@ -70,7 +70,7 @@ ms.locfileid: "29607603"
   
 4. 依序按一下 [**選擇資料來源**中更新 Exchange 和 OneDrive 位置的選項。
   
-5. 新增或移除小組、 SharePoint、 或 Exchange 信箱對應使用者按一下以**選取其他資料來源**。如需您可以將對應的資料來源以 okay 的方式的詳細資訊，請參閱[進階的 ediscovery （預覽） 新增 custodians 案例](add-custodians-to-case.md)。
+5. 新增或移除小組、 SharePoint、 或 Exchange 信箱對應使用者按一下以**選取其他資料來源**。如需您可以將對應的資料來源以 okay 的方式的詳細資訊，請參閱 ＜ [Add custodians 案例](add-custodians-to-case.md)。
   
 6. 若要更新之 okay 持有狀態，按一下 [ **custodial 就地保留**，並啟用或停用 custodians 保留。
 
@@ -95,7 +95,7 @@ ms.locfileid: "29607603"
 
 5. 也可以在 [**工作**] 索引標籤上追蹤重新索引程序的狀態。
 
-如需重新索引及補救部分已編製索引的項目的詳細資訊，請參閱 ＜[正在修復處理進階 eDiscovery (Preview) 中的錯誤](processing-data-for-case.md)。
+如需重新索引及補救部分已編製索引項目的詳細資訊，請參閱[修正處理錯誤](processing-data-for-case.md)。
 
 ## <a name="releasing-a-custodian-from-a-case"></a>釋放 okay 從案例
 
@@ -118,6 +118,5 @@ Okay 發行情況其中關閉案例、 okay 不再下義務来保留內容的案
 
 ## <a name="related-information"></a>相關資訊
 
- - Active Directory 中的使用者屬性 
  - [處理資料時發生補救錯誤](error-remediation.md) 
- - [以溝通的方式共同作業](managing-custodian-communications.md)
+- [使用通訊](managing-custodian-communications.md)

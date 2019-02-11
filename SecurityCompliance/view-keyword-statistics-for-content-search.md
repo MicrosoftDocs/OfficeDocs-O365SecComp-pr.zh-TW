@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用搜尋統計資料功能來顯示和比較統計資料的 Office 365 安全性的多個內容搜尋&amp;規範中心。您也可以在建立或編輯搜尋查詢來取得增強顯示多少個項目比對每個關鍵字或關鍵字文句的統計資料時設定 [關鍵字] 清單。
-ms.openlocfilehash: cb71b30b32ff6a24cd68ea5728063c2997d8ada0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526817"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27209804"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>檢視內容搜尋結果的關鍵字統計資料
 
@@ -100,6 +100,10 @@ ms.locfileid: "22526817"
 ## <a name="get-keyword-statistics-for-content-searches"></a>取得內容的搜尋關鍵字統計資料
 
 為舊清楚、 [**查詢**] 頁面上顯示搜尋查詢和數字 （與大小） 符合查詢的項目。如果您建立或編輯搜尋查詢時使用關鍵字] 清單中，您可以取得增強顯示多少個項目比對每個關鍵字或關鍵字文句的統計資料。這可協助您快速識別出哪些組件的查詢是最 （且至少） 有效。例如，如果關鍵字傳回大量的項目，您可能會選擇調整來縮小搜尋結果的關鍵字查詢。您可以設定關鍵字清單時建立或編輯內容的搜尋。 
+
+
+
+
   
 若要建立關鍵字清單並檢視內容的搜尋關鍵字統計資料：
   
@@ -130,3 +134,6 @@ ms.locfileid: "22526817"
     - 每個關鍵字，其中包含搜尋查詢從任何條件實際的搜尋查詢。 
     
     - （識別為**主要****組件**] 欄中） 的完整的搜尋查詢和完整的查詢的統計資料。請注意以下是顯示在 [**摘要**] 頁面上的相同統計資料。 
+
+> [!NOTE]
+> 若要協助減少大型關鍵字清單所導致的問題，現在是限制最大值為 20 列在 [關鍵字] 清單中的搜尋查詢。

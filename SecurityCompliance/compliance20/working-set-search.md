@@ -1,5 +1,5 @@
 ---
-title: 查詢中的工作集的資料
+title: 查詢工作集中的資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 03c82741b3a4433c43ef709701ab40330ac5fd1f
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 3a503dd825cf65bef0dde537862561887d908563
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607566"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29694989"
 ---
-# <a name="querying-data-in-a-working-set"></a>查詢中的工作集的資料
+# <a name="query-the-data-in-a-working-set"></a>查詢工作集中的資料
 
 在大多數情況下，將能夠深入探討項目有工作集中並將它們更有效率地檢閱組織很有用。工作集內的查詢可讓您不要讓來可讓您聚焦符合準則所定義您的文件的子集。
 

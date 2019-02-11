@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9949fcc5876e1d0fa2f877333c5a9e5abae8c2a7
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 8db5a21f60a1d73c11e28bc2765a95c23646115d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607627"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706074"
 ---
 # <a name="create-a-legal-hold-notice"></a>建立的合法持有通知
 
@@ -56,7 +56,7 @@ ms.locfileid: "29607627"
 3. 按 [下一步]。
 
   >[!Tip]
-  >若要了解更多有關可自訂的內容與格式的入口網站的內容，請參閱[使用通訊編輯器](using-communications-editor.md)。
+  >若要了解更多有關可自訂的內容與格式的入口網站的內容，請參閱 ＜ [Use 通訊編輯器](using-communications-editor.md)。
 
 ## <a name="step-3-set-the-required-notifications"></a>步驟 3： 設定必要的通知
 

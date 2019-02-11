@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 若要建立 Office 365 組織內控制 eDiscovery 管理員可搜尋的使用者內容位置的邏輯界限使用規範界限。規範界限使用搜尋篩選 （也稱為的規範安全性篩選） 若要控制哪些信箱、 SharePoint 網站的權限，並可由特定使用者搜尋 OneDrive 帳戶。
-ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 23594673e70be4b960c463ae2344c2f4b0fd0cbe
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299237"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29768014"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>設定 Office 365 中電子文件探索調查的合規性界限
 
@@ -55,8 +55,6 @@ ms.locfileid: "26299237"
 以下是您可以使用規範界限的 Azure Active Directory 使用者屬性的清單：
   
 - Company
-    
-- CountryCode
     
 - CustomAttribute1-CustomAttribute15
     
@@ -123,7 +121,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     
   -  `Site`-指定角色群組中所定義的 OneDrive 帳戶`Users`參數可搜尋。使用 OneDrive 篩選器的實際字串`ComplianceAttribute`;這會對應至您在步驟 1 中識別和同步處理至 OneDrive 帳戶是您在步驟 2; 送出的支援要求的相同屬性 *AttributeValue*指定機構。此篩選允許只在特定的機構 ； 搜尋 OneDrive 帳戶的角色群組的成員例如， `"Site_ComplianceAttribute -eq 'FourthCoffee'"`。
     
-  -  `Site_Path`-指定角色群組中所定義的 SharePoint 網站`Users`參數可搜尋。*SharePointURL*指定網站中的角色群組的成員可以搜尋 ； 機構例如，`Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path`-指定角色群組中所定義的 SharePoint 網站`Users`參數可搜尋。*SharePointURL*指定網站中的角色群組的成員可以搜尋 ； 機構例如，`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
 -  `Action`-指定篩選條件套用到規範搜尋動作的類型。例如，`-Action Search`就只會套用篩選器時中所定義的角色群組的成員`Users`參數執行內容的搜尋。在此例中匯出搜尋結果時不會套用篩選。規範界限使用`-Action All`所以篩選條件套用到所有搜尋動作。 
     
@@ -207,7 +205,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 |KOR  <br/> |組織的預設資料中心  <br/> |
 |GBR  <br/> |歐洲  <br/> |
 |JPN  <br/> |亞太地區  <br/> |
-|尋找  <br/> |亞太地區  <br/> |
+|IND  <br/> |亞太地區  <br/> |
 |LAM  <br/> |US  <br/> |
    
  **附註：** 如果您沒有指定搜尋的權限篩選 Region 參數，拼寫須符合組織的預設 SharePoint 區域，然後搜尋結果匯出至最接近的資料中心。 

@@ -3,7 +3,7 @@ title: 啟用封存信箱在 Office 365 安全性&amp;規範中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 安全性&amp;規範中心啟用封存信箱來支援您的組織訊息保留 eDiscovery 和保留需求。
-ms.openlocfilehash: 5ba578ba611f619194ac4f475121bd485b75f9e0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526844"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28327095"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>啟用封存信箱在 Office 365 安全性&amp;規範中心
   
@@ -36,9 +36,9 @@ Office 365 （也稱為就地封存） 中的封存提供使用者與其他信�
   
 ## <a name="enable-an-archive-mailbox"></a>啟用封存信箱
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在 [安全性] 的左窗格中&amp;規範中心，按一下 [**資料控管** \> **封存**。
     
@@ -67,9 +67,9 @@ Office 365 （也稱為就地封存） 中的封存提供使用者與其他信�
   
 若要停用封存信箱：
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在 [安全性] 的左窗格中&amp;規範中心，按一下 [**資料控管** \> **封存**。
     
@@ -88,7 +88,43 @@ Office 365 （也稱為就地封存） 中的封存提供使用者與其他信�
 > [!TIP]
 > 您可以也大量-停用封存信箱中選取多位使用者以啟用的封存信箱 （使用 shift 鍵或 Ctrl 鍵）。選取多個信箱、 之後按一下 [詳細資料窗格中**停用**。 
   
-## <a name="more-information"></a>其他資訊
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 來啟用或停用封存信箱
+
+您也可以使用 Exchange Online PowerShell 啟用封存信箱。若要使用 PowerShell 的主要原因是您快速可以啟用封存信箱的所有使用者在組織中。
+
+第一個步驟是連線至 Exchange Online PowerShell。指示，請參閱[Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+
+您連線至 Exchange Online 後，您可以執行下列各節中啟用或停用封存信箱的命令。
+
+### <a name="enable-archive-mailboxes"></a>啟用封存信箱
+
+執行下列命令以啟用單一使用者的封存信箱。
+    
+  ```
+  Enable-Mailbox -Identity <username> -Archive
+  ```
+
+執行下列命令以啟用 （封存信箱目前未啟用） 您組織中的所有使用者的封存信箱。
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+  ```
+  
+### <a name="disable-archive-mailboxes"></a>停用封存信箱
+
+執行下列命令以停用單一使用者的封存信箱。
+    
+  ```
+  Disable-Mailbox -Identity <username> -Archive
+  ```
+
+執行下列命令以停用 （目前啟用封存信箱） 您組織中的所有使用者的封存信箱。
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+  ```
+
+## <a name="more-information"></a>詳細資訊
   
 - 封存信箱協助您和使用者以符合您的組織保留 eDiscovery 和保留需求。例如，您可用於您組織的 Exchange 保留原則信箱內容移至使用者的封存信箱。當您使用 「 內容搜尋工具安全性&amp;也可搜尋規範中心來搜尋特定的內容、 使用者的封存信箱的使用者的信箱。並放置訴訟暫止狀態或 Office 365 保留原則套用至使用者的信箱、 時也會保留在封存信箱中的項目。
   
@@ -102,7 +138,6 @@ Office 365 （也稱為就地封存） 中的封存提供使用者與其他信�
     
 - 如需封存信箱及 Exchange 保留原則的詳細資訊，請參閱：
   
-  - [Exchange Online 中的封存信箱](https://go.microsoft.com/fwlink/?LinkId=404421)
     
   - [保留標記和保留原則](https://go.microsoft.com/fwlink/?LinkId=404424)
     

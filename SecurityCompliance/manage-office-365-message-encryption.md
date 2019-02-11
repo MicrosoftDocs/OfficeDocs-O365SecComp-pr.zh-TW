@@ -3,7 +3,6 @@ title: 管理 Office 365 郵件加密
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,24 +11,25 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 description: 您已完成設定 up Office 365 郵件加密 (OME)，您可以自訂在數種方式部署的設定。例如，您可以設定是否要啟用一次性複雜代碼、 網頁伺服器與多上的 Outlook 中顯示 [保護] 按鈕。本文中的工作說明如何。
-ms.openlocfilehash: 460ac0bba4d10fe8bef896a23a20f74527f031b2
-ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
+ms.openlocfilehash: 6a9eddae2d3d166d96979d88b15845c3b7379bd9
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27750052"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696227"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 郵件加密
 
-您已完成設定 up Office 365 郵件加密 (OME)，您可以自訂在數種方式部署的設定。例如，您可以設定是否要啟用一次性複雜代碼、 網頁伺服器與多上的 Outlook 中顯示 [**保護**] 按鈕。本文中的工作說明如何。 
+您已完成設定 up Office 365 郵件加密 (OME)，您可以自訂在數種方式部署的設定。例如，您可以設定是否要啟用一次性複雜代碼、 網頁伺服器與多上的 Outlook 中顯示 [**保護**] 按鈕。本文中的工作說明如何。
   
 ||
 |:-----|
-|本文屬於較大的一系列有關 Office 365 郵件加密的文章。本文適用於系統管理員及 IT 專業人員的。如果您只尋找的資訊在傳送或接收加密的郵件，請參閱[Office 365 郵件加密 (OME)](ome.md)中的文章的清單並找出最適合您需求的文章。 |
+|本文屬於較大的一系列有關 Office 365 郵件加密的文章。本文適用於系統管理員和 ITPros 的。如果您只尋找的資訊在傳送或接收加密的郵件，請參閱[Office 365 郵件加密 (OME)](ome.md)中的文章的清單並找出最適合您需求的文章。 |
+||
 
 ## <a name="managing-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>管理是否 Google、 Yahoo、 及 Microsoft 帳戶的收件者可以使用這些帳戶來登入 Office 365 郵件加密入口網站
 
-根據預設，當您設定新的 Office 365 郵件加密功能，您組織中的使用者可以傳送郵件給 Office 365 組織外收件者。收件者若收件者使用*社交識別碼*例如 Google 帳戶、 Yahoo 帳戶或 Microsoft 帳戶，則可以登入 OME 入口網站使用社交 id。如果您想您可以選擇不允許使用社交識別碼來登入 OME 入口網站的收件者。 
+根據預設，當您設定新的 Office 365 郵件加密功能，您組織中的使用者可以傳送郵件給 Office 365 組織外收件者。收件者若收件者使用*社交識別碼*例如 Google 帳戶、 Yahoo 帳戶或 Microsoft 帳戶，則可以登入 OME 入口網站使用社交 id。如果您想您可以選擇不允許使用社交識別碼來登入 OME 入口網站的收件者。
   
 ### <a name="to-manage-whether-or-not-to-allow-recipients-to-use-social-ids-to-sign-in-to-the-ome-portal"></a>若要管理要允許使用社交識別碼來登入 OME 入口網站的收件者
   
@@ -37,21 +37,21 @@ ms.locfileid: "27750052"
 
 2. 執行 Set-omeconfiguration 指令程式搭配 SocialIdSignIn 參數如下所示：
 
-  ```
-  Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
-  ```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
+   ```
 
-  例如，若要停用社交 Id：
-  
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
-  ```
+   例如，若要停用社交 Id：
 
-  若要啟用社交 Id：
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
+   ```
 
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
-  ```
+   若要啟用社交 Id：
+
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
+   ```
 
 ## <a name="managing-the-use-of-one-time-pass-codes-for-signing-in-to-the-office-365-message-encryption-portal"></a>管理一次性複雜代碼用於登入 Office 365 郵件加密入口網站
 
@@ -63,19 +63,25 @@ ms.locfileid: "27750052"
 
 2. 使用 OTPEnabled 參數執行 Set-omeconfiguration 指令程式：
 
-   ```Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   ```
 
    例如，若要停用一次性複雜的程式碼：
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false
+   ```
 
    若要啟用一次性複雜的程式碼：
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
+   ```
 
 ## <a name="managing-the-display-of-the-protect-button-in-outlook-on-the-web"></a>管理 Outlook web 上的 [保護] 按鈕的顯示
 
-根據預設，在網路上的 Outlook [**保護**] 按鈕未啟用設定 OME 時。以系統管理員可以管理要對使用者顯示此按鈕。 
+根據預設，在網路上的 Outlook [**保護**] 按鈕未啟用設定 OME 時。以系統管理員可以管理要對使用者顯示此按鈕。
   
 ### <a name="to-manage-whether-or-not-the-protect-button-appears-in-outlook-on-the-web"></a>若要管理 [保護] 按鈕會出現在網路上的 Outlook
   
@@ -83,15 +89,21 @@ ms.locfileid: "27750052"
 
 2. 執行 Set-irmconfiguration 指令程式搭配-SimplifiedClientAccessEnabled 參數：
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
+   ```
 
    例如，若要停用 [**保護**] 按鈕：
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
    若要啟用 [**保護**] 按鈕：
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $true```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>啟用服務端解密的 iOS 郵件應用程式使用者的電子郵件
 
@@ -99,7 +111,7 @@ IOS 郵件應用程式無法解密受保護與 Office 365 郵件加密的郵件�
   
 如果您選擇不要允許解密的郵件傳送至 iOS 郵件應用程式的使用者，使用者會收到訊息表示它們不需要檢視郵件的權限。根據預設，未啟用服務端解密的電子郵件訊息。
   
-如需詳細資訊及用戶端體驗的檢視，請參閱] 區段中，在[檢視加密的郵件 iPhone 或 iPad 上](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf)的 「[檢視加密的郵件 iPhone 或 iPad 上](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf#iOSEncryptedMail)」。
+如需詳細資訊及用戶端體驗的檢視，請參閱[檢視加密郵件 iPhone 或 iPad 上](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf)。
   
 ### <a name="to-manage-whether-or-not-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>若要管理 iOS 郵件應用程式的使用者可以檢視受保護之 Office 365 郵件加密的郵件
   
@@ -107,19 +119,25 @@ IOS 郵件應用程式無法解密受保護與 Office 365 郵件加密的郵件�
 
 2. 執行 AllowRMSSupportForUnenlightenedApps 參數集 ActiveSyncOrganizations 指令程式：
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
+   ```
 
    例如，若要設定解密的郵件前它們傳送到 unenlightened 應用程式的服務例如 iOS 郵件應用程式：
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
+   ```
 
    或者，若要設定服務未將解密的郵件傳送至 unenlightened 應用程式：
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>啟用服務端解密的網頁瀏覽器郵件用戶端的電子郵件附件
 
-一般而言，當您使用 Office 365 郵件加密時，會自動加密附件。Office 365 系統管理員身分您可以套用服務端解密使用者下載從網頁瀏覽器中的電子郵件附件。 
+一般而言，當您使用 Office 365 郵件加密時，會自動加密附件。Office 365 系統管理員身分您可以套用服務端解密使用者下載從網頁瀏覽器中的電子郵件附件。
   
 當您選擇這樣做時，服務會將解密檔案的複本傳送至裝置。仍處於加密郵件。即使在瀏覽器不會套用至使用者的用戶端使用權限電子郵件附件也會保留 usage 權限的相關資訊。這表示使用者可以複製或列印電子郵件附件即使因原本沒有要執行這項操作的權限。但如果使用者嘗試完成動作所需的 Office 365 郵件伺服器，例如轉寄附件，伺服器不如果使用者原本沒有這樣的 usage 權限允許巨集指令。
   
@@ -135,15 +153,21 @@ IOS 郵件應用程式無法解密受保護與 Office 365 郵件加密的郵件�
 
 2. 使用 DecryptAttachmentFromPortal 參數執行 Set-irmconfiguration 指令程式：
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   ```
 
    例如，服務設定為解密電子郵件附件時使用者下載這些從網頁瀏覽器：
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $true```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   ```
 
    若要設定為它們在下載時保留加密的電子郵件附件服務：
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $false```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   ```
 
 ## <a name="customizing-the-appearance-of-email-messages-and-the-ome-portal"></a>自訂電子郵件和 OME 入口網站的外觀
 
@@ -159,8 +183,12 @@ IOS 郵件應用程式無法解密受保護與 Office 365 郵件加密的郵件�
 
 2. 如果您啟用的網路上的 Outlook [**保護**] 按鈕，停用它與 SimplifiedClientAccessEnabled 參數執行 Set-irmconfiguration 指令程式。否則請略過此步驟。
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
 3. 執行 Set-irmconfiguration 指令程式搭配 AzureRMSLicensingEnabled 參數設為 false 以停用的新功能的 OME：
 
-   ```Set-IRMConfiguration -AzureRMSLicensingEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -AzureRMSLicensingEnabled $false
+   ```

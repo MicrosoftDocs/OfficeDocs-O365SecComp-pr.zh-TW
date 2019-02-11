@@ -3,7 +3,7 @@ title: Office 365 中的內容搜尋
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 安全性內容搜尋&amp;規範中心搜尋的內容信箱、 SharePoint Online 網站、 OneDrive 帳戶、 的 Microsoft 小組、 Office 365 群組和 Skype 商務交談。您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。然後您可預覽及匯出搜尋結果。內容搜尋也是有效的工具來搜尋 GDPR 資料主體要求可能相關的內容。
-ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: befd2060e65cea73d3c8432b77727e27dd91b82a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782080"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686114"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -43,7 +43,7 @@ ms.locfileid: "23782080"
 
 若要讓**內容搜尋**] 頁面上執行的搜尋及預覽，並將搜尋結果匯出至 access，系統管理員、 法務或 eDiscovery 管理員必須是安全性 eDiscovery 管理員角色群組的成員&amp;規範中心。如需詳細資訊，請參閱[指派 Office 365 安全性 eDiscovery 權限&amp;規範中心](assign-ediscovery-permissions.md)。
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用您的 Office 365 電子郵件地址和密碼登入。 
     
@@ -74,10 +74,12 @@ ms.locfileid: "23782080"
     或者，您可以按一下 [**顯示關鍵字清單**] 核取方塊和類型中的每一列的關鍵字。如果您這樣做，在每一列的關鍵字連接的作用與**OR**運算子會建立搜尋查詢中相似的邏輯運算子 ( **c:s**) 所連接。 
     
     為什麼要選擇使用 [關鍵字] 清單？您可以取得顯示多少個項目比對每個關鍵字的統計資料。這可協助您快速識別出哪些關鍵字是最 （且至少） 有效。您也可以使用 （以括弧括住） 的關鍵字文句] 列中。如需搜尋統計資料的詳細資訊，請參閱 ＜[檢視內容的搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md)。
+
+    [!NOTE] 若要協助減少大型關鍵字清單所導致的問題，現在是限制最大值為 20 列在 [關鍵字] 清單中。
     
 - **條件**-您可以新增要將搜尋縮小並傳回結果集更精簡的搜尋條件。每個條件將子句新增至搜尋查詢，建立及執行當您啟動搜尋。條件是以邏輯方式連線到 （在 [關鍵字] 方塊中指定） 的關鍵字查詢類似的作用**和**運算子的邏輯運算子 （**列**）。這表示項目必須滿足的關鍵字查詢與結果中包含的一或多個條件。這是條件，縮減結果協助的方式。清單和說明您可以在搜尋查詢中使用的條件，請參閱 「 搜尋條件 」 一節[關鍵字查詢和搜尋條件的內容搜尋](keyword-queries-and-search-conditions.md#search-conditions)。
     
-- **位置**選擇来搜尋的內容位置。
+- **位置**-選擇要搜尋的內容位置。
     
   - **所有位置**-使用此選項可在組織中搜尋所有內容的位置。這包括電子郵件 （包括所有非使用中信箱、 Office 365 的所有群組的信箱、 信箱的所有的 Microsoft 小組） 的所有 Exchange 信箱中的商務交談，所有 SharePoint 和 OneDrive for Business 網站 （包括網站的所有 Skype為所有 Office 365 群組和 Microsoft 小組），並在所有 Exchange 公用資料夾中的項目。
     
@@ -189,7 +191,7 @@ ms.locfileid: "23782080"
     
 - Microsoft 收集所有 Office 365 組織所執行的內容搜尋的效能資訊。雖然搜尋查詢的複雜性可能會影響搜尋時間，搜尋會影響搜尋讓有的信箱數目多長的最大因素。雖然 Microsoft 不會提供搜尋時間服務層級協議下, 表列出根據包含在搜尋中的信箱數目內容搜尋平均搜尋時間。
     
-|**信箱數目**|**平均搜尋時間**|
+|**信箱數量**|**平均搜尋時間**|
 |:-----|:-----|
 |100  <br/> |30 秒  <br/> |
 |1,000  <br/> |45 秒  <br/> |
@@ -268,7 +270,7 @@ ms.locfileid: "23782080"
 - 或者，是 [聊天室] 清單中的 Microsoft 小組的一部分的交談會儲存在 Exchange Online 信箱的使用者參與交談。與使用者共用聊天交談中的檔案都會儲存在 OneDrive for Business 共用檔案的使用者帳戶。因此，您必須新增個別使用者信箱和 OneDrive for Business 帳戶做為在 [聊天室] 清單中搜尋交談和檔案的內容位置。
     
     > [!NOTE]
-    > 參與交談屬於 [聊天室] 清單中的 Microsoft 小組的使用者必須擁有為了讓您可以搜尋聊天室交談 Exchange Online （雲端型） 信箱。那是因為交談屬於 [聊天室] 清單會儲存在雲端架構信箱的交談參與者。如果交談參與者都不會有 Exchange Online 信箱，將不能夠搜尋交談的交談。例如，在 Exchange 混合部署，可能會能夠參與交談屬於 [聊天室] 清單中的 Microsoft 小組與內部部署信箱的使用者。但在此例中，這些交談的內容都可供搜尋因為使用者沒有雲端架構信箱。 
+    > 在 Exchange 混合部署中與內部部署信箱的使用者可能會參與交談屬於 [聊天室] 清單中的 Microsoft 小組。在此例中，從這些交談內容也是可搜尋因為具有內部部署信箱的使用者將它儲存至雲端儲存區域 （稱為 「*雲端架構信箱的內部使用者*）。如需詳細資訊，請參閱 ＜[搜尋雲端架構信箱的內部部署 Office 365 中的使用者](search-cloud-based-mailboxes-for-on-premises-users.md)。
   
 - 每個 Microsoft 小組或小組通道包含 Wiki 筆記記錄與共同作業。Wiki 內容會自動儲存至含有.mht 格式的檔案。此檔案儲存在團隊的 SharePoint 網站上的小組 Wiki 資料文件庫。您可以使用 「 內容搜尋工具來搜尋 wiki （英文） 指定為要搜尋的內容位置的團隊的 SharePoint 網站。 
     

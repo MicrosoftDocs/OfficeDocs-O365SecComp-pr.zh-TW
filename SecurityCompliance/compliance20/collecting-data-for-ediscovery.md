@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607580"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695049"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>收集資料的進階 eDiscovery (Preview) 中的案例
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>收集資料的進階 eDiscovery (Preview) 中的案例
 
 一旦您識別 custodians 與您的案例感興趣的資料來源，該是時候來識別的探究的文件]。您可以使用進階的 eDiscovery (Preview) 中的搜尋工具來識別這些從 custodial 和非 custodial Office 365 中的位置。
 

@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b0d1bcd8ddb1e29853a633a386becfd1688b9cd1
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d4f6b457880a4c4029e331e5488ea31a61781765
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607531"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706124"
 ---
 # <a name="themes"></a>主題
+
 當某人所撰寫的文件時，它們不要選擇單字隨機;他們嘗試傳達一些想法或概念，並據此選擇這個單字。佈景主題模組叢集討論類似的主旨不僅以便檢閱者可以更有效率經由文件中的文件。
 
 ## <a name="how-does-themes-work"></a>佈景主題的運作方式

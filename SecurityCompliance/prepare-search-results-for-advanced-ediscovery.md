@@ -3,7 +3,7 @@ title: 準備 Office 365 進階 eDiscovery 的搜尋結果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/10/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,18 +14,24 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何準備 Office 365 安全性內容的搜尋結果&amp;規範中心供進一步分析與進階的 eDiscovery 工具。
-ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038306"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27280166"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>準備 Office 365 進階 eDiscovery 的搜尋結果
 
 與 Office 365 安全性 eDiscovery 案例具有相關聯的搜尋之後&amp;成功執行規範中心、 準備進一步分析與 Office 365 進階 eDiscovery 可讓您分析大型、 的搜尋結果非結構化的資料設定，並減少法律案例相關的資料量。進階的 eDiscovery 功能包括：
   
-- **光學字元辨識**-當您在準備搜尋結果進階 eDiscovery 光學字元辨識 (OCR) 功能自動從圖像、 擷取文字及包含這與在載入至搜尋結果進階的 eDiscovery 的分析。OCR 支援寬鬆的檔案、 電子郵件附件、 和內嵌圖像。這可讓您將文字分析功能的進階 eDiscovery （接近重複項目、 電子郵件執行緒、 佈景主題及預測編碼） 套用至圖像檔案中的文字內容。 
+- **光學字元辨識**-當您在準備搜尋結果進階 eDiscovery 光學字元辨識 (OCR) 功能自動從圖像、 擷取文字及包含這與在載入至搜尋結果進階的 eDiscovery 的分析。OCR 支援寬鬆的檔案、 電子郵件附件、 和內嵌圖像。這可讓您將文字分析功能的進階 eDiscovery （接近重複項目、 電子郵件執行緒、 佈景主題及預測編碼） 套用至圖像檔案中的文字內容。進階的 eDiscovery OCR 影像檔支援下列格式：
+
+    - GIF
+    - JPEG
+    - JPG
+    - PNG
+    - TIFF
     
 - **接近重複資料偵測**-可讓您更有效率地建構資料檢閱讓某個人檢閱一群類似的文件。這有助於防止多位檢閱者不必檢視不同版本的相同文件。 
     
@@ -41,7 +47,7 @@ ms.locfileid: "25038306"
 
 - 若要分析使用進階的 eDiscovery 的使用者資料，使用者 (資料 okay) 必須指派 Office 365 E5 授權。或者，使用 Office 365 E1 或 E3 授權的使用者可以將指派進階的 eDiscovery 獨立授權。系統管理員及法務人員對於已指派給的情況下並使用進階的 eDiscovery 分析資料不需要的 E5 授權。 
     
-- 您必須是 eDiscovery 管理員或 Office 365 安全性管理員 eDiscovery&amp;規範中心準備進階 eDiscovery 搜尋結果。EDiscovery 管理員是 eDiscovery 管理員角色群組的成員。EDiscovery 管理員也是 eDiscovery 管理員角色群組成員，但已指派其他 eDiscovery 權限。如需指派 eDiscovery 管理員權限的指示，請參閱[[Office 365 安全性及規範中心中的 eDiscovery 案例](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)中的步驟 1。
+- 您必須是 eDiscovery 管理員或 Office 365 安全性管理員 eDiscovery&amp;規範中心準備進階 eDiscovery 搜尋結果。EDiscovery 管理員是 eDiscovery 管理員角色群組的成員。EDiscovery 管理員也是 eDiscovery 管理員角色群組成員，但已指派其他 eDiscovery 權限。如需指派 eDiscovery 管理員權限的指示，請參閱[Office 365 安全性 & 規範中心中的 eDiscovery 案例](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)中的步驟 1。
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>步驟 1： 準備搜尋結果進階 ediscovery （英文）
 

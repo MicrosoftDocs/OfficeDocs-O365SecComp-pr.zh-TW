@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: 基本的垃圾郵件篩選設定包括選取會被識別為垃圾郵件的郵件上所採取的動作和選擇是否要篩選以特定語言編寫或寄自特定國家或地區的郵件。
-ms.openlocfilehash: c425be1814f9f04329f30254763cbbb5bd8b861e
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180893"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614477"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
   
@@ -51,7 +51,7 @@ ms.locfileid: "27180893"
     
       - **刪除郵件** 刪除整個郵件，包括所有附件。 
         
-      - **隔離郵件**傳送至隔離而不是預定的收件者的訊息。如果您選取這個選項，請輸入 **（天） 的保留天數垃圾郵件**] 方塊中，指定要垃圾郵件隔離的期間的天數。（它將自動刪除後經過的時間。預設值為 15 天這是最大值。最小值是 1 天）。<br/><br/>秘訣： 如需如何管理員可以管理位於隔離在 EAC 中信箱的電子郵件訊息，請參閱[隔離區](quarantine.md)並[尋找和釋出隔離的郵件系統管理員身分](find-and-release-quarantined-messages-as-an-administrator.md)。> 如需如何設定垃圾郵件通知訊息傳送給使用者的資訊，請參閱[設定使用者垃圾郵件通知中 EOP](configure-end-user-spam-notifications-in-eop.md)或[設定使用者垃圾郵件通知在 Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md)。 
+      - **隔離郵件**傳送至隔離而不是預定的收件者的訊息。如果您選取這個選項，請輸入 **（天） 的保留天數垃圾郵件**] 方塊中，指定要垃圾郵件隔離的期間的天數。（它將自動刪除後經過的時間。預設值為 15 天這是最大值。最小值是 1 天）。<br/><br/>秘訣： 如需如何管理員可以管理位於隔離在 EAC 中信箱的電子郵件訊息，請參閱[隔離區](quarantine.md)並[尋找和釋出隔離的郵件系統管理員身分](find-and-release-quarantined-messages-as-an-administrator.md)。> 如需如何設定垃圾郵件通知訊息傳送給使用者，請參閱[設定使用者垃圾郵件通知中 EOP](configure-end-user-spam-notifications-in-eop.md)或[設定使用者垃圾郵件通知在 Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md)。 
   
       - **將郵件移動到 [垃圾郵件] 資料夾** 將郵件傳送到指定收件者的 [垃圾郵件] 資料夾。這是兩種信賴閾值等級的預設動作。<br/><br/>**重要： Exchange Online Protection (EOP) 客戶的： 若要讓此巨集指令來搭配內部部署信箱，您必須設定兩個 Exchange 傳輸規則來偵測垃圾郵件標頭新增 EOP 的內部部署伺服器上。如需詳細資訊，請參閱[確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。**
   
@@ -62,6 +62,8 @@ ms.locfileid: "27180893"
       - 如果您包括空格內自訂的標題文字，或如果您新增冒號自行 (例如"X 這是我自訂的標頭"或"X-This-is-my-custom-header:")、 x-header 文字回復成預設值為"X 此-是-垃圾郵件： This message 看起來垃圾郵件。 」
     
       - 您無法指定的標題文字的格式\<*標頭*\>：\<*值*\>。如果您這樣做，同時值之前和之後冒號都會被忽略，並改用預設 x-header 文字出現:"X 此-是-垃圾郵件： This message 看起來垃圾郵件。 」       
+      
+      - 請注意此 x-header 與信箱可能仍移至信箱垃圾設定信箱的垃圾郵件資料夾。您可以藉由停用此功能與 Set-mailboxjunkemailconfiguration 變更此設定。
         
       - **Prepend 主旨行文字**將郵件傳送給預定的收件者，但是前面加上**前置詞與此文字的主旨行**輸入方塊中指定的文字具有的主旨行。使用此文字做為識別碼，您可以選擇性地建立篩選或路由傳送訊息所需的規則。 
         
@@ -112,7 +114,7 @@ ms.locfileid: "27180893"
 16. 按一下 **[儲存]**。原則設定的摘要隨即出現在右側窗格中。
 
 > [!TIP]
->  您可以選取或清除核取方塊以啟用或停用您的自訂原則的 [**啟用**] 欄中。根據預設，會啟用所有原則。無法停用預設原則。> 若要刪除的自訂原則，請選取的原則，按一下 [![刪除圖示](media/ITPro-EAC-DeleteIcon.gif)**刪除**圖示，然後確認您想要刪除之原則。無法刪除預設原則。> 自訂原則一律優先預設原則。自訂原則執行相反順序在其中建立它們 （從最舊到最新），但您可以依序按一下 [變更您的自訂原則的優先順序 （執行順序）![向上箭號圖示](media/ITPro-EAC-UpArrowIcon.gif)向上鍵及![向下箭號圖示](media/ITPro-EAC-DownArrowIcon.gif)向下箭號。具有**優先順序** **0**的原則將會執行第一筆、 後面接著**1**，則**2**，依此類推。 
+>  您可以選取或清除核取方塊以啟用或停用您的自訂原則的 [**啟用**] 欄中。根據預設，會啟用所有原則。無法停用預設原則。若要刪除的自訂原則、 選取的原則，按一下 [>![刪除圖示](media/ITPro-EAC-DeleteIcon.gif)**刪除**圖示，然後確認您想要刪除之原則。無法刪除預設原則。> 自訂原則一律優先預設原則。自訂原則執行相反順序在其中建立它們 （從最舊到最新），但您可以依序按一下 [變更您的自訂原則的優先順序 （執行順序）![向上箭號圖示](media/ITPro-EAC-UpArrowIcon.gif)向上鍵及![向下箭號圖示](media/ITPro-EAC-DownArrowIcon.gif)向下箭號。具有**優先順序** **0**的原則將會執行第一筆、 後面接著**1**，則**2**，依此類推。 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>使用遠端 PowerShell 設定垃圾郵件篩選原則
 

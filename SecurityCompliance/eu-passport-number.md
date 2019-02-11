@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: 本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟護照號碼敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
-ms.openlocfilehash: 71acc39b885c057e1771ec13b2f3c25017ac1bb6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526837"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25840322"
 ---
 # <a name="eu-passport-number"></a>歐盟護照號碼
 
@@ -429,7 +429,7 @@ ms.locfileid: "22526837"
 |:-----|
 |護照號碼  <br/> 匈牙利文護照號碼  <br/> passport 無  <br/> útlevél száma  <br/> |
    
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>愛爾蘭
 
 ### <a name="format"></a>格式
 
@@ -759,7 +759,7 @@ ms.locfileid: "22526837"
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|護照號碼  <br/> 葡萄牙護照號碼  <br/> passport 無  <br/> número 不要 passaporte  <br/> |
+|護照號碼  <br/> 葡萄牙文護照號碼  <br/> passport 無  <br/> número 不要 passaporte  <br/> |
    
 ## <a name="romania"></a>羅馬尼亞
 

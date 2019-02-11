@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Office 365 雲端應用程式安全性的 OAuth 應用程式可協助您管理您的使用者下載 Office 365 資料搭配使用的應用程式
-ms.openlocfilehash: 2e3c6d9d42b22aa8bb666211431197744471e84f
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+ms.openlocfilehash: ae32e3c6b15f4ad4794a3dd08c3992adaeba655c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447041"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603684"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>使用 Office 365 雲端 App 安全性管理 OAuth 應用程式
 
@@ -35,13 +35,9 @@ ms.locfileid: "27447041"
 > [!NOTE]
 > 在 Office 365 雲端應用程式安全性入口網站管理 OAuth 應用程式。您必須是全域管理員或安全性管理員可執行下列工作。若要了解更多，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
   
-1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
-    
-2. 移至 [**提醒** \> **管理進階提醒**。
-    
-3. 按一下 （或點選）**移至 Office 365 雲端應用程式安全性**。<br/>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>**請注意**： 如果 Office 365 雲端應用程式安全性不會開啟尚未，您就可以執行的動作在此頁面上。請參閱[備妥可供 Office 365 雲端應用程式安全性](get-ready-for-office-365-cas.md)。 
+1. 移至雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 並登入。
   
-4. 選擇**調查** \> **OAuth 應用程式**。<br/>![在 O365 CAS 入口網站中選擇 [調查]。](media/OCAS-OAuthApps.png)<br/>
+2. 選擇**調查** \> **OAuth 應用程式**。<br/>![在 O365 CAS 入口網站中選擇 [調查]。](media/OCAS-OAuthApps.png)<br/>
   
 ## <a name="what-youll-see-on-the-manage-oauth-apps-page"></a>您會看到管理 OAuth 應用程式] 頁面上
 

@@ -1,5 +1,5 @@
 ---
-title: 管理通訊
+title: 管理保留通知
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607633"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706044"
 ---
-# <a name="manage-communications"></a>管理通訊
+# <a name="manage-hold-notifications"></a>管理保留通知
 
 已啟動後您法律保留通知工作流程，您可以運用進階的 eDiscovery （預覽） 來追蹤狀態的通訊]。[通訊] 索引標籤展示所有進階的 eDiscovery （預覽） 案例中保留通知。這裡，您可以查看詳細資料，例如 custodians 已指派或已認可的通知數目。
 
@@ -71,6 +71,8 @@ Case 隨著 custodians 可能需要比先前指示保留其他或更少的資料
 
 ## <a name="related-information"></a>相關資訊 
 
-    - [建立的合法持有通知](~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [確認的合法持有通知](~/acknowledge-hold-notification.md)
-    - [新增至案例 Custodians]
+- [建立的合法持有通知](create-hold-notification.md)
+    
+- [確認保留通知](acknowledge-hold-notification.md)
+    
+- [將監管人新增至案例](add-custodians-to-case.md)

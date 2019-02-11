@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何使用 Office 365 安全性 & 規範中心新資料調查 （預覽） 工具來管理資料 spillage 事件。
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636614"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706174"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的建立資料 spillage 事件 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的建立資料 spillage 事件 
 
 機密文件發行至不受信任的環境時資料 spillage。當偵測到資料 spillage 事件時，務必快速評估的大小及位置的 spillage、 檢查周圍、 使用者活動及則從系統永久清除 spilled 的資料。
 
@@ -141,6 +141,7 @@ ms.locfileid: "29636614"
 若要刪除調查：
 
 1. 在 [**設定**] 索引標籤上按一下 [**將正在調查資訊**]。
+
 2. 按一下 [**刪除案例**。 
 
 如果您不需要刪除調查或您要儲存您收集期間調查有關的資訊，您可以按一下 [**關閉案例**。日後，您可以重新開啟關閉的調查。

@@ -3,7 +3,7 @@ title: Office 365 雲端 App 安全性概觀
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 12/03/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 雲端應用程式安全性可讓您算可疑活動在 Office 365 中讓您可以調查可能有問題且，如果需要採取動作可解決安全性問題的情況。 '
-ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: edce16edca822bed30c78f34cf141b23f2b2fb8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014925"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29382546"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性概觀
   
@@ -28,7 +28,7 @@ ms.locfileid: "28014925"
 |您在此處 ！  <br/> [下一步](get-ready-for-office-365-cas.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> 在 Office 365 企業版 E5 中使用 office 365 雲端應用程式安全性。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買 Office 365 雲端應用程式安全性。(全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[購買或編輯企業版的 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> 在 Office 365 企業版 E5 中使用 office 365 雲端應用程式安全性。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買 Office 365 雲端應用程式安全性。(全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[購買或編輯企業版的 Office 365 的附加元件](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)。 
   
 Office 365 雲端應用程式安全性可讓您深入了解可疑活動在 Office 365 中讓您可以調查可能有問題且，如果需要採取動作可解決安全性問題的情況。與 Office 365 雲端應用程式安全性] 您可以接收通知的公休或可疑活動的觸發提醒，請參閱如何在 Office 365 組織的資料是存取和使用擱置呈現可疑活動的使用者帳戶，且需要若要重新登入 Office 365 應用程式之後觸發通知使用者。請閱讀本篇文章以取得 Office 365 雲端應用程式安全性特性與功能的概觀。
   
@@ -36,13 +36,15 @@ Office 365 雲端應用程式安全性可讓您深入了解可疑活動在 Offic
 ## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>如何尋找 Office 365 雲端應用程式安全性入口網站
 
 > [!NOTE]
-> 若要存取 Office 365 雲端應用程式安全性入口網站，您必須是全域管理員、 安全性管理員或安全性讀者。若要深入了解，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
+> 若要存取 Office 365 雲端應用程式安全性入口網站，您必須是 Office 365 全域管理員、 安全性管理員或安全性讀者。若要深入了解，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。 
   
-您可以取得 Office 365 雲端應用程式安全性入口網站透過 Office 365 安全性&amp;規範中心。以下是執行它的其中一個好方法：
+您可以取得 Office 365 雲端應用程式安全性入口網站移至[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)及登入。 
+
+您也可以取得那里從 Office 365 安全性&amp;規範中心。以下是執行它的其中一個好方法：
   
-1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。)
     
-2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。 <br/>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未未啟用 Office 365 雲端應用程式安全性，而且會[開啟 [Office 365 雲端應用程式安全性](turn-on-office-365-cas.md)全域系統管理員）。
+2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。 <br/>![選擇 [管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>（如果尚未未啟用 Office 365 雲端應用程式安全性，而且會[開啟 [Office 365 雲端應用程式安全性](turn-on-office-365-cas.md)全域系統管理員）。
     
 3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。 
     

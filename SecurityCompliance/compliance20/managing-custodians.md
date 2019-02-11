@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607590"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706014"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>使用 custodians 進階 ediscovery （預覽）
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>使用 custodians 進階 ediscovery （預覽）
 
 通常，當組織在回應法律調查，識別、 保留，以及收集可能相關的內容周圍的工作流程所根據其組織內的人員或資料 custodians 關閉。在 eDiscovery 中這些個人稱為資料 custodians 並定義為 「 人員擁有系統管理控制權的文件或電子檔案 」。例如，電子郵件資料 okay 可能包含相關郵件的信箱擁有者。  
 

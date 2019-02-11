@@ -1,5 +1,5 @@
 ---
-title: 將非 Office 365 的資料載入至工作集
+title: 將非 Office 365 的資料載入工作集
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 427b4c8c9dfffe351827a6869ae26a5356d646d8
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 1dad52075303450673e7f48b87e2952e35629a5e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607574"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706084"
 ---
-# <a name="load-non-office-365-data-into-a-working-set"></a>將非 Office 365 的資料載入至工作集
+# <a name="load-non-office-365-data-into-a-working-set"></a>將非 Office 365 的資料載入工作集
 
 您可能需要使用 Office 365 進階 eDiscovery 分析的不是所有文件將會在 Office 365 live。非 Office 365 內容匯入進階 eDiscovery 可以上傳不 live Office 365 中使用組分析進階 eDiscovery 與因此的文件中的功能。此程序將示範如何將非 Office 365 文件移入進階 eDiscovery 進行分析。
 
@@ -30,14 +30,21 @@ ms.locfileid: "29607574"
 
 ## <a name="before-you-begin"></a>開始之前
 使用此程序所述的上傳非 Office 365 功能需要您：
-* 進階規範的附加元件或 E5 訂閱 Office 365 E3
-* 將上傳其非 Office 365 內容的所有 custodians 必須有都已 E3 進階規範的附加元件或 E5 授權
-* 現有的 eDiscovery 案例
-* 所有上傳的檔案所收集到資料夾，其中有 okay 每一個資料夾以及的資料夾名稱是在此格式*alias@domainname* 。*Alias@domainname*必須是 Office 365 的使用者別名及網域。您可以將根資料夾收集所有*alias@domainname*資料夾。根資料夾只能含有*alias@domainname*資料夾、 根資料夾中必須有沒有寬鬆的檔案
-* 帳戶是 eDiscovery 管理員或 eDiscovery 管理員 Microsoft Azure 儲存安裝工具可存取的非 Office 365 內容的資料夾結構的電腦上。
-* 安裝 AzCopy，您可以這麼做從這裡：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+
+- 進階規範的附加元件或 E5 訂閱 Office 365 E3。
+
+- 將上傳其非 Office 365 內容的所有 custodians 必須有都已 E3 進階規範的附加元件或 E5 授權。
+
+- 現有的 eDiscovery 案例。
+
+- 所有上傳的檔案所收集到資料夾，其中有 okay 每一個資料夾以及的資料夾名稱是在此格式*alias@domainname* 。*Alias@domainname*必須是 Office 365 的使用者別名及網域。您可以將根資料夾收集所有*alias@domainname*資料夾。根資料夾只能含有*alias@domainname*資料夾、 根資料夾中必須有沒有寬鬆的檔案。
+
+- 帳戶是 eDiscovery 管理員或 eDiscovery 管理員 Microsoft Azure 儲存安裝工具可存取的非 Office 365 內容的資料夾結構的電腦上。
+
+- 安裝 AzCopy，您可以從這裡執行動作：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>將非 Office 365 內容上載至進階的 eDiscovery
+
 1. EDiscovery 管理員或 eDiscovery 管理員，以開啟 [進階的 eDiscovery，然後將上傳至非 Office 365 資料的大小寫。 按一下 [**處理設定**] 索引標籤上，然後選取您想要將非 Office 365 資料載入工作設定。 如果您無法建立工作集，您可以立即達成。 最後，按一下 [**管理起步設定**則非 Office 365 資料] 區段中的**檢視上傳**
 
 2. 按一下 [**上傳檔案**] 按鈕來啟動非 Office 365 資料匯入精靈]。

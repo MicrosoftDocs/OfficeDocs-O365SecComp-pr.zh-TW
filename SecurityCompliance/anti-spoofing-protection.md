@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: 本文說明如何 Office 365 可以降低對網路釣魚攻擊用途是寄件者的網域即詐騙的網域。其完成這同樣藉由分析郵件並封鎖過可驗證 neithe 使用標準的電子郵件的驗證方法或其他寄件者信譽技術 （英文）。這項變更被實減少網路釣魚攻擊的 Office 365 組織公開到數目。
-ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769857"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614507"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -99,7 +99,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**原因**|**描述**|
-|0xx|郵件無法複合式驗證。<br/>**000**表示郵件無法 DMARC 與拒絕或隔離區的動作。                   -001 表示郵件無法隱含的電子郵件的驗證。這表示的傳送端網域沒有電子郵件驗證記錄發佈，或如果初採取了幾，他們有弱的失敗原則 (SPF 軟體失敗或 neutral、 DMARC 原則的 p = none)。<br/>**002**表示組織有組明確禁止傳送詐騙的電子郵件的寄件者/網域的原則，以系統管理員手動設定此設定。  <br/>**010**表示郵件無法拒絕或隔離的動作與 DMARC 及傳送端網域是其中一個貴組織的公認的網域 (這是以自我自我或組織內部的一部分詐騙)。  <br/>**011**表示郵件無法隱含的電子郵件驗證及傳送端網域是其中一個貴組織的公認的網域 (這是以自我自我或組織內部的一部分詐騙)。|
+|0xx|郵件無法複合式驗證。<br/>**000**表示郵件無法 DMARC 與拒絕或隔離區的動作。  <br/>**001**表示郵件無法隱含的電子郵件的驗證。這表示的傳送端網域沒有電子郵件驗證記錄發佈，或如果初採取了幾，他們有弱的失敗原則 (SPF 軟體失敗或 neutral、 DMARC 原則的 p = none)。<br/>**002**表示組織有組明確禁止傳送詐騙的電子郵件的寄件者/網域的原則，以系統管理員手動設定此設定。  <br/>**010**表示郵件無法拒絕或隔離的動作與 DMARC 及傳送端網域是其中一個貴組織的公認的網域 (這是以自我自我或組織內部的一部分詐騙)。  <br/>**011**表示郵件無法隱含的電子郵件驗證及傳送端網域是其中一個貴組織的公認的網域 (這是以自我自我或組織內部的一部分詐騙)。|
 |所有其他代碼 （1xx、 2xx、 3xx、 4xx、 5xx）|將郵件傳遞隱含驗證或有無驗證但採取任何動作所套用的原因會對應到的各種內部代碼。|
    
 透過查看之郵件標頭，系統管理員或甚至是使用者可以決定如何 Office 365 抵達寄件者可能詐騙結論。
@@ -415,20 +415,20 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 |**Priority (優先順序)**|**原則**|**類別**|**其中 managed？**|**適用於**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|2  <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|3  <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|4  <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
-|5  <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|6  <br/> |大量  <br/> |大量  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|7  <br/> |網域模擬  <br/> |DIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織  <br/> |
-|8  <br/> |使用者模擬  <br/> |UIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織 <br/> |
+|2   <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|3   <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|4   <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
+|5   <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|6   <br/> |大量  <br/> |大量  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|7   <br/> |網域模擬  <br/> |DIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織  <br/> |
+|8   <br/> |使用者模擬  <br/> |UIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織 <br/> |
    
 如果您有多個不同的反網路釣魚原則，將套用一個在最高優先順序。例如，假設您有兩個原則：
   
 |**原則**|**Priority (優先順序)**|**使用者/網域模擬**|**反詐騙**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |On  <br/> |
+|A  <br/> |1  <br/> |開啟  <br/> |Off  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |開啟  <br/> |
    
 如果訊息有和識別身分詐騙與使用者模擬與相同的一組使用者範圍的原則及原則 B 則郵件會被視為詐騙但採取任何動作套用自反詐騙已關閉並詐騙執行在較高的優先順序 (4) 與使用者模擬 (8)。
   

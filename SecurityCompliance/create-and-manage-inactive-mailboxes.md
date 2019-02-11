@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 您可以建立 Office 365 中的非使用中的信箱將保留或 Office 365 保留原則套用至信箱並再將其刪除對應的 Office 365 使用者帳戶。保留或保留原則套用至其已進行非使用中之前的期間，會保留不在作用中的信箱中的項目。若要永久刪除非作用中的信箱，只是移除保留或保留原則。
-ms.openlocfilehash: ed0af9077222d9151dc41010bca10590769118b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526527"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740835"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>建立及管理 Office 365 中的非使用中信箱
 
@@ -122,8 +122,6 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
 ## <a name="recover-an-inactive-mailbox"></a>復原非使用中的信箱
 
 如果先前的員工會傳回您組織中，或將新的員工雇用採取 departed 員工的工作職責，您可以復原不在作用中信箱的內容。當您復原不在作用中的信箱時，信箱轉換成新的信箱、 保留的內容和非使用中的信箱資料夾結構，及信箱連結至新的使用者帳戶。它會復原之後，非使用中的信箱不存在。逐步程序及詳細資訊發生問題時復原不在作用中的信箱，請參閱[Office 365 中的不在作用中信箱復原](recover-an-inactive-mailbox.md)。
-  
-[管理非使用中信箱](create-and-manage-inactive-mailboxes.md#manageinactivemailboxes)
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>還原至另一個信箱不在作用中信箱的內容
 

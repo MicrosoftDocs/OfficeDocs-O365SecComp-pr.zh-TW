@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: 檢閱在 [進階安全性管理應用程式探索報告可協助您深入了解如何在組織中的人員使用雲端應用程式。您已建立應用程式探索報告使用來自防火牆及 proxy 記錄檔之後，請檢閱應用程式探索儀表板中的結果。
-ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706257"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603744"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>檢閱 Office 365 雲端 App 安全性中的 App 探索結果
   
@@ -27,19 +27,15 @@ ms.locfileid: "26706257"
    
 雲端探索儀表板適用於您組織的網頁流量記錄以提供雲端應用程式使用方式的詳細的資訊。如果您正在全域管理員、 安全性管理員或安全性讀者和您的組織有[建立 Office 365 雲端應用程式安全性的應用程式探索報告](create-app-discovery-reports-in-ocas.md)、 您可以使用雲端探索儀表板的入侵深入了解如何人員在您組織使用 Office 365 及其他雲端應用程式。（雲端探索儀表板也稱為是產能應用程式探索）。
   
- **年 3 月 2018年雲端探索儀表板有新的功能**可讓您輕鬆將檢視您組織中的人員如何使用 Office 365 及其他應用程式的詳細的資訊。 
+ 雲端探索儀表板可讓您檢視組織中的人員如何使用 Office 365 及其他應用程式的詳細的資訊。 
   
 ![已更新雲端探索儀表板](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
 ## <a name="go-to-the-cloud-discovery-dashboard"></a>移至雲端探索儀表板
 
-1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 移至雲端應用程式安全性入口網站 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) 並登入。
     
-2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。<br/>（如果尚未未啟用 Office 365 雲端應用程式安全性，而且會[開啟 [Office 365 雲端應用程式安全性](turn-on-office-365-cas.md)全域系統管理員）。
-    
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-4. 移至 [**搜索** \> **雲端探索儀表板**。
+2. 移至 [**搜索** \> **雲端探索儀表板**。
     
 ## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>請參閱您的主要使用者、 IP 位址、 應用程式] 及風險層級
 

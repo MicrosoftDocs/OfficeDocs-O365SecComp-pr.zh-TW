@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: 本主題提供有關已排入佇列、延遲，或在 Microsoft Exchange Online Protection (EOP) 篩選程序中退回之郵件的常見問題解答。
-ms.openlocfilehash: 17e5955195c4e38299712fb9161822984b2a643a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4b2c902adacd6e72e587aadaceecd22dd0084d85
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026220"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686423"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP 排入佇列、延後和退回的訊息常見問題集
 
@@ -32,7 +32,7 @@ ms.locfileid: "22026220"
   
  **問：郵件維持延遲的時間有多長，而重試間隔時間有多長？**
   
-答：延遲中的郵件會保留在我們的佇列中 2 天。郵件重試次數是以從收件者的郵件系統傳回的錯誤為基礎。一般而言，郵件會每隔 5 分鐘重試一次。
+A.郵件延期中仍然我們佇列中的 2 天。郵件重試次數根據我們得到收件者的郵件系統中的錯誤。第幾個 deferrals 為 15 分鐘或小於與後續的重試次數 （透過下的半數十或賣） 增加透過多個最大值為 60 分鐘重試的間隔。時間間隔期間擴充是動態，考慮到多個佇列大小和內部郵件優先順序的變數。在基本、 它是 15 分鐘 （小於或等於） 若要啟動，然後展開從該處透過後續的幾個小時為最大 60 分鐘。
   
  **問：還原您的電子郵件伺服器後，已排入佇列的郵件如何散佈？**
   

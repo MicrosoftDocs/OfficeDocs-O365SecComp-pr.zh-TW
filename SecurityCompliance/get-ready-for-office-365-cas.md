@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: 開始使用 Office 365 雲端應用程式安全性
-ms.openlocfilehash: 906570c6607c70b63fa9d2059d56b50f7807124a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229985"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603694"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>準備好使用 Office 365 雲端 App 安全性
   
@@ -41,17 +41,15 @@ Office 365 雲端應用程式安全性運作正確的順序，必須先開啟稽
   
 ## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>步驟 3： 移至 Office 365 雲端應用程式安全性入口網站
 
-1. 移至 [[https://protection.office.com](https://protection.office.com)及使用 Office 365 工作或學校帳戶登入。(這會引導您安全性&amp;規範中心。) 
+您可以取得 Office 365 雲端應用程式安全性入口網站移至[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)及登入。 
+
+您也可以取得那里從 Office 365 安全性&amp;規範中心。以下是執行它的其中一個好方法：
+
+1. 移至 [[https://protection.office.com](https://protection.office.com)和登入 (這會引導您安全性&amp;規範中心。)
     
 2. 移至 [**提醒** \> **管理進階提醒**。
     
-3. 選擇 [移至 Office 365 雲端應用程式安全性入口網站的 [**移至 Office 365 雲端應用程式安全性**]。 
-    
-    ![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    當您移至 Office 365 雲端應用程式安全性入口網站時，您會看到的第一頁為下列影像的格式類似於 [原則] 頁面上：
-    
-    ![當您移至 Office 365 雲端應用程式安全性入口網站時，啟動 [原則] 頁面上](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+3. 選擇 [移至 Office 365 雲端應用程式安全性入口網站的 [**移至 Office 365 雲端應用程式安全性**]。<br> ![選擇 [管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>當您移至 Office 365 雲端應用程式安全性入口網站時，您會看到的第一頁為下列影像的格式類似於 [原則] 頁面上：<br>![當您移至 Office 365 雲端應用程式安全性入口網站時，啟動 [原則] 頁面上](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
 ## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>步驟 4： 定義原則和設定提醒&amp;動作
 
@@ -85,7 +83,7 @@ Office 365 雲端應用程式安全性運作正確的順序，必須先開啟稽
     
 ## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>步驟 6： 管理您的組織用來存取 Office 365 的應用程式
 
-以全域管理員或安全性管理員，您可以管理應用程式，例如自訂應用程式或協力廠商應用程式] 與 Office 365 其裝置上使用您的組織中的人員。例如，假設某人已下載他們想要搭配 Office 365 使用的自訂應用程式。您可以檢閱人員所使用的應用程式、 禁止不受信任的應用程式]，或將應用程式標示為已核准追蹤用途。[管理應用程式使用 Office 365 雲端應用程式安全性的權限](manage-app-permissions-in-ocas.md)。
+以全域管理員或安全性管理員，您可以管理應用程式，例如自訂應用程式或協力廠商應用程式] 與 Office 365 其裝置上使用您的組織中的人員。例如，假設某人已下載他們想要搭配 Office 365 使用的自訂應用程式。您可以檢閱人員所使用的應用程式、 禁止不受信任的應用程式]，或將應用程式標示為已核准追蹤用途。[使用 Office 365 雲端應用程式安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)。
   
 ## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>步驟 7： 使用 SIEM 伺服器與 Office 365 雲端應用程式安全性
 

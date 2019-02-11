@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607589"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695179"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>管理進階的 eDiscovery (Preview) 中的保留
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>管理進階的 eDiscovery (Preview) 中的保留
 
 您可以使用進階的 eDiscovery （預覽） 案例來建立保留来保留可能是您案例相關的內容。使用進階的 eDiscovery （預覽） 保留功能，您可以利用保留 custodians 和其資料來源。此外，您可以利用非 custodial 保留對信箱和 OneDrive for Business 的網站。您也可以將保留群組信箱、 SharePoint 網站及 OneDrive 商務網站的 Office 365 群組。同樣地，您可以利用保留對信箱和相關聯的 Microsoft 小組網站。當您保留上放置的內容位置時，內容會保留直到您放開 okay、 移除特定資料位置，或完全刪除保留原則。
 

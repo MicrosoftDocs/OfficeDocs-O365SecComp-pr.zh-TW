@@ -3,7 +3,6 @@ title: 撤銷由 Office 365 郵件加密所加密的電子郵件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/29/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 系統管理員身分您可以撤銷已加密的 Office 365 郵件加密特定電子郵件。
-ms.openlocfilehash: a3f5c08d2c8660e56c378fc5fa7a850ff2c12eb5
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 018f12105e19382372a8a4b3a91248bb60b228be
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614387"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696237"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Office 365 郵件加密的電子郵件撤銷
 
@@ -59,22 +58,41 @@ ms.locfileid: "29614387"
 2. 選擇 [**檢視詳細資料**] 表格，並找出您想要撤銷的訊息。
 3. 按兩下 [檢視詳細資料] 包含郵件識別碼的訊息
 
-### <a name="step-2-revoke-the-mail"></a>步驟 2。撤消郵件  
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>步驟 2。確認便可撤銷之電子郵件
 
-一旦您知道您想要撤銷的電子郵件訊息識別碼，您可以使用組 OMEMessageRevocation 指令程式撤銷電子郵件。
+若要確認可以撤銷特定電子郵件訊息，請完成下列步驟。
 
-1. [連線至 Exchange Online 使用遠端 PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用 Office 365 組織中具有全域系統管理員權限的工作或學校帳戶，請啟動 Windows PowerShell 工作階段並連線至 Exchange Online。指示，請參閱[Connect to Exchange Online PowerShell](https://aka.ms/exopowershell)。
+
+2. 執行設定 OMEMessageStatus 指令程式，如下所示：
+     ```powershell
+     Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
+     ```
+
+   這會傳回郵件以及是否可撤銷之郵件的主旨。例如，
+
+     ```text
+     Subject IsRevocable
+     ------- -----------
+     “Test message”  True
+     ```
+
+### <a name="step-3-revoke-the-mail"></a>步驟 3。撤消郵件  
+
+一旦您知道您想要撤銷權限、 電子郵件訊息識別碼，並確認郵件可撤銷之，您可以使用組 OMEMessageRevocation 指令程式撤銷電子郵件。
+
+1. [連線至 Exchange Online PowerShell](https://aka.ms/exopowershell) (機器翻譯)。
 
 2. 執行設定 OMEMessageRevocation 指令程式，如下所示：
 
     ```powershell
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
-    ```  
+    ```
 
 3. 若要檢查是否已遭撤銷電子郵件，如下執行 Get OMEMessageStatus cmdlet：
 
     ```powershell
-    Get-OMEMessageStatus -MessageId "<messageId>" | fl Revoked
+    Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
     ```  
     如果撤銷成功，指令程式會傳回下列結果：  
 

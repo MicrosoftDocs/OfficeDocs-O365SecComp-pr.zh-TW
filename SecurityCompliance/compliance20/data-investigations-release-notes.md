@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明 Microsoft 365 中的進階 eDiscovery （預覽） 的新版本。
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636613"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695059"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的資料調查 （預覽） 版本資訊
 
-您可以使用新的資料調查 （預覽） 工具中的 [Microsoft 365 來分辨、 調查及修復資料的相關事件，例如資料 spillage 事件或內部調查。資料預覽公用調查提供早期的存取權的即將推出的功能和更新。若要取得早期的存取權的最新的功能，建立 Office 365 安全性 & 規範中心新將正在調查資料調查 (Preview) 中。若要了解如何，請參閱[管理 Microsoft 365 中的建立資料 spillage 事件](manage-data-spillage-incidents.md)。
+您可以使用新的資料調查 （預覽） 工具中的 [Microsoft 365 來分辨、 調查及修復資料的相關事件，例如資料 spillage 事件或內部調查。資料預覽公用調查提供早期的存取權的即將推出的功能和更新。若要取得早期的存取權的最新的功能，建立 Office 365 安全性 & 規範中心新將正在調查資料調查 (Preview) 中。若要了解如何，請參閱 ＜ [Manage Microsoft 365 中建立資料 spillage 事件](manage-data-spillage-incidents.md)。
 
 ## <a name="whats-new"></a>新功能 
 

@@ -3,7 +3,7 @@ title: Office 365 中不受限制封存概觀
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自動展開封存 Office 365 中，其會提供的 Exchange Online 信箱執行不受限制的封存儲存區。
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782120"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740815"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中不受限制封存概觀
 
@@ -69,11 +69,11 @@ Office 365 中封存信箱會提供使用者對其他信箱的儲存空間。啟
 
 若要存取儲存在自動展開封存中的郵件，使用者必須使用下列 Outlook 用戶端之一：
   
-- Windows outlook 2016
+- Outlook 2016 或 Outlook 2019 windows
     
-- 網頁型 Outlook 
+- Outlook 網頁版 
     
-- Outlook 2016 for Mac 
+- Outlook 2016 或 Outlook 2019 for Mac 
     
 > [!NOTE]
 > Outlook 2013 使用者可以原本已儲存封存信箱的存取項目。他們將無法存取項目移至其他封存存放區。 
@@ -96,12 +96,12 @@ Office 365 中封存信箱會提供使用者對其他信箱的儲存空間。啟
   
 - **eDiscovery** -使用 Office 365 eDiscovery 工具，例如內容搜尋] 或 [就地 eDiscovery 自動展開封存中的額外儲存空間區域時也會搜尋。
     
-- **保留**-當您將信箱保留放在 Exchange Online 中使用工具，例如訴訟暫止狀態或保留 eDiscovery 案例和 Office 365 安全性的保留原則&amp;規範中心位於自動展開封存的內容也是處於保留狀態。
+- **保留**-時讓信箱處於功能使用工具，例如訴訟暫止狀態 Exchange 線上] 或 [eDiscovery 案例包含，也是位於自動展開封存 Office 365 安全性 & 內容的規範中心中的保留原則處於保留狀態。
     
 - **通訊記錄管理 (MRM)** -如果您在 Exchange Online 中使用 MRM 刪除原則永久刪除過期的信箱項目、 到期的項目位於自動展開封存也都會刪除。
     
 - **匯入服務**-您可以使用匯入 Office 365 服務至 PST 檔案匯入的使用者自動展開封存。您可以在使用者的封存信箱 PST 檔案匯最大 100 GB 的資料。 
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 如需自動展開封存，請參閱更多技術詳細資料[Office 365： 自動展開封存常見問題集](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)。

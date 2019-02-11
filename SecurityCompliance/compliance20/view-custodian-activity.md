@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8219ae8a061f6d08dd37da5b7f2974dd86c68f04
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607546"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706144"
 ---
-# <a name="viewing-custodian-audit-activity"></a>檢視 okay 稽核活動
+# <a name="view-custodian-audit-activity"></a>檢視 okay 稽核活動
 
 需要尋找是否使用者檢視特定文件或清除 [從他們的信箱項目吗？進階的 eDiscovery （預覽） 現在整合安全性 & 規範中心中現有的稽核記錄搜尋工具。使用此內嵌的經驗，您可以使用進階的 eDiscovery （預覽） Okay 管理工具來協助您調查由輕鬆地存取和搜尋中您案例的 custodians 活動。
 
@@ -101,8 +101,4 @@ ms.locfileid: "29607546"
 
 3. 選取 [匯出] 選項後，會提示您開啟 CSV 檔案，將它儲存到 [下載項目] 資料夾中，或將其儲存至特定資料夾視窗底部顯示訊息
 
-[!NOTE] 
- 如需檢視、 篩選或匯出稽核記錄搜尋結果的詳細資訊，請參閱：
-   - 檢視清單中的稽核活動 
-   - 開始之前： 整合的稽核記錄
- 
+如需檢視的詳細資訊，篩選，或匯出稽核記錄搜尋結果，請參閱[稽核登入 Office 365 安全性 & 規範中心的搜尋](../search-the-audit-log-in-security-and-compliance.md)。

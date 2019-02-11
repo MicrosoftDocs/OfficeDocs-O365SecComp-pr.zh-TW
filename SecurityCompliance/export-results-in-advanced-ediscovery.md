@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定義要用於匯出結果從 Office 365 進階 eDiscovery，包括指定匯出批次參數的程序的選項。 '
-ms.openlocfilehash: 92ee107ad096393fbccbc9a3dbe81d8e7dd28da9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 49dab9820735af3bf5c322fc531c78a6baab2f8e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527345"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559046"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出結果
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 本主題說明進階的 eDiscovery 匯出的安裝程式選項。
   
@@ -62,118 +62,116 @@ EDiscovery 匯出工具來進階 eDiscovery 搜尋結果匯出至本機電腦。
   
 1. 進階 eDiscovery 中選取 [大小寫並按一下 [**匯出** \> **安裝程式**。
     
-  - 從**匯出批次**] 清單中，選取批次名稱，或將結果匯出至匯出批次 01、 （預設批次）。 
+    - 從**匯出批次**] 清單中，選取批次名稱，或將結果匯出至匯出批次 01、 （預設批次）。 
     
-  - 若要匯出之新檔案新增至現有案例的結果，繼續執行您目前的批次。批次中建立工作階段、 選取相同的批次數目，並按一下 [**建立匯出工作階段**您可以以累加方式將相同參數匯出成先前的批次，請使用此選項。 
+    - 若要匯出之新檔案新增至現有案例的結果，繼續執行您目前的批次。批次中建立工作階段、 選取相同的批次數目，並按一下 [**建立匯出工作階段**您可以以累加方式將相同參數匯出成先前的批次，請使用此選項。 
     
-  - 若要匯出至新的批次，請按一下 [**新增**![新增圖示](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)及**批次名稱**] 中輸入新名稱 （或接受預設值） 和**批次描述**中的描述。按一下 [**確定]**。
+    - 若要匯出至新的批次，請按一下 [**新增**![新增圖示](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)及**批次名稱**] 中輸入新名稱 （或接受預設值） 和**批次描述**中的描述。按一下 [**確定]**。
     
-  - 若要編輯的批次名稱或描述，選取中**匯出批次**名稱、 按一下 [**編輯**![編輯圖示](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，並修改欄位。
+    - 若要編輯的批次名稱或描述，選取中**匯出批次**名稱、 按一下 [**編輯**![編輯圖示](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，並修改欄位。
     
-    > [!NOTE]
-    > 您已執行匯出批次的工作階段之後，他們無法刪除。此外，僅部分參數可以編輯之後執行第一個工作階段。 
+      > [!NOTE]
+      > 您已執行匯出批次的工作階段之後，他們無法刪除。此外，僅部分參數可以編輯之後執行第一個工作階段。 
   
-  - 若要建立的重複匯出批次，請選擇 [**重複匯出批次**![建立重複匯出批次圖示](media/3f6d5f59-e842-4946-a493-473528af0119.jpg)並在 [控制台] 中輸入名稱和描述的重複的批次。 
+    - 若要建立的重複匯出批次，請選擇 [**重複匯出批次**![建立重複匯出批次圖示](media/3f6d5f59-e842-4946-a493-473528af0119.jpg)並在 [控制台] 中輸入名稱和描述的重複的批次。 
     
-  - 若要刪除匯出批次，請選擇 [**刪除**![刪除匯出批次圖示](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)。
+    - 若要刪除匯出批次，請選擇 [**刪除**![刪除匯出批次圖示](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)。
     
-  - 若要檢視的批次的歷程記錄，請選擇 [**批次歷程記錄**![檢視歷程記錄圖示](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)。
+    - 若要檢視的批次的歷程記錄，請選擇 [**批次歷程記錄**![檢視歷程記錄圖示](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)。
     
 2. [**母體**、 選取**包括上方相關性截止分數的檔案**和/或**精選匯出批次**如果您想要微調匯出批次的設定。 
     
 3. 如果您選取 [**包括上方相關性截止分數的檔案**，會啟用**問題**。如果選取問題截止分數大於檔案的相關性分數，除非排除 '供檢閱' 篩選器所要匯出檔案。 
   
-如果您選取 [**精選匯出批次**，**取消 dupe**及篩選所 '檢閱' 欄位選項按鈕隨即啟用。如果您選擇**取消 dupe**，然後重複檔案將會根據所定義的原則來篩選掉 [案例層級 （預設值）： 從重複檔案在整個案例中的每個集，所有但一個檔案將會被取消 duped。Okay 層級： 從重複檔案的相同 okay 每組，所有但一個檔案將會被取消 duped。]匯出輸出中包含所有的重複檔案的記錄。如果您選擇**Filter by '供檢閱'** 欄位，選取 [**修改] 底下的中繼資料**輸入您 **'供檢閱'** 欄位設定。選取要納入套件內容的來源檔案**包含輸入的檔案**。您可以清除此設定可加速匯出程序。請注意會匯出在任何情況下的原生檔案。 
+    如果您選取 [**精選匯出批次**，**取消 dupe**及篩選所 '檢閱' 欄位選項按鈕隨即啟用。如果您選擇**取消 dupe**，然後重複檔案將會根據所定義的原則來篩選掉 [案例層級 （預設值）： 從重複檔案在整個案例中的每個集，所有但一個檔案將會被取消 duped。Okay 層級： 從重複檔案的相同 okay 每組，所有但一個檔案將會被取消 duped。]匯出輸出中包含所有的重複檔案的記錄。如果您選擇**Filter by '供檢閱'** 欄位，選取 [**修改] 底下的中繼資料**輸入您 **'供檢閱'** 欄位設定。選取要納入套件內容的來源檔案**包含輸入的檔案**。您可以清除此設定可加速匯出程序。請注意會匯出在任何情況下的原生檔案。 
     
 4. **中繼資料**、 下選取 [從下列選項中**匯出範本**] 清單中 （一次每個工作階段）。 
     
-  - **標準**： 基本組資料的項目、 中繼資料、 及屬性。匯入資料已處理的進階 eDiscovery 並將資料匯出至已包含的檔案系統上傳時使用此選項。根據預設，匯出資料行是建立和填滿的範本。
+    - **標準**： 基本組資料的項目、 中繼資料、 及屬性。匯入資料已處理的進階 eDiscovery 並將資料匯出至已包含的檔案系統上傳時使用此選項。根據預設，匯出資料行是建立和填滿的範本。
     
-  - **所有**： 整組包括所有處理資料以及分析與相關性分數的標準中繼資料。此範本時所需進階的 eDiscovery 執行處理及檔案資料上傳至外部系統的第一次。
+    - **所有**： 整組包括所有處理資料以及分析與相關性分數的標準中繼資料。此範本時所需進階的 eDiscovery 執行處理及檔案資料上傳至外部系統的第一次。
     
-  - **問題**： 選取 [**所有問題**] 或都選取您建立的特定問題。 
+    - **問題**： 選取 [**所有問題**] 或都選取您建立的特定問題。 
     
 5. 在 [**目的地**]：
     
-  - **下載至本機電腦**
+    - **下載至本機電腦**
     
-  - **匯出至使用者定義的 Azure blob**： 如果這檢查，您可以指定容器 URL 及 SAS 權杖。
+    - **匯出至使用者定義的 Azure blob**： 如果這檢查，您可以指定容器 URL 及 SAS 權杖。
     
-    > [!NOTE]
-    > 一旦匯出套件儲存至使用者定義的 Azure blob、 進階 eDiscovery ； 不再管理資料它被管理 Azure blob。這表示如果您刪除案例，匯出的檔案仍會維持在 Azure blob。 
+      > [!NOTE]
+      > 一旦匯出套件儲存至使用者定義的 Azure blob、 進階 eDiscovery ； 不再管理資料它被管理 Azure blob。這表示如果您刪除案例，匯出的檔案仍會維持在 Azure blob。 
   
-  - **儲存 SAS 權杖未來匯出工作階段**： 如果檢查，要 SAS 權杖加密供日後使用進階的 eDiscovery 內部資料庫中。
+    - **儲存 SAS 權杖未來匯出工作階段**： 如果檢查，要 SAS 權杖加密供日後使用進階的 eDiscovery 內部資料庫中。
     
-    > [!NOTE]
-    > 目前 SAS 權杖會在每個月後到期。如果您嘗試下載您要復原最後一個工作階段有多個月之後，然後再次匯出。 
+      > [!NOTE]
+      > 目前 SAS 權杖會在每個月後到期。如果您嘗試下載您要復原最後一個工作階段有多個月之後，然後再次匯出。 
   
-6. 按一下 [**修改**設定"檢閱 ' 欄位設定。 
+6. 按一下 [**修改**設定 '供檢閱' 欄位設定]。 
     
-> ![設定的檢閱欄位 seetings 匯出批次](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![匯出批次的檢閱欄位設定為設定](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
-    In **For review field settings** panel, in **Select scenario**, select the scenario and scope of the review. The settings are displayed based on your selection.
+   - [**檢閱] 欄位設定**、**選取案例**下拉清單中，選取案例和範圍的檢閱。根據您的選取範圍會顯示設定。
     
-    **Review all** (default): All emails, attachments, and documents are selected by default. 
+      - **檢閱所有**（預設值）： 預設選取所有的電子郵件、 附件及文件。 
     
-    **Review all unique content in a set**: Inclusives and unique inclusive copies, unique attachments in email set level, representative from every set of exact duplicates.
+      - **檢閱一組中的所有唯一內容**： 電子郵件中的唯一附件 Inclusives 及唯一 （含） 的副本，設定層級、 代表性完全重複的每一組。
     
-    **Review all unique content in a set - no inclusive copies**: Inclusives, unique attachments in email set level, representative from every set of exact duplicates.
+      - **檢閱一組-無 （含） 的複本中的所有唯一內容**： Inclusives、 電子郵件中的唯一附件設定層級、 代表性完全重複的每一組。
     
-    **Review all unique content and related family files**: Inclusives, unique attachments in email set level, representative from every set of exact duplicates, expand to include family files.
+      - **檢閱所有唯一內容及相關系列檔**： Inclusives、 電子郵件設定層級、 服務代表洽談完全重複的每一組中的唯一附件展開到包含系列的檔案。
     
-    **Custom** (allows you to define the options in the dialog): The default is to keep current selections and enable all dialog options, to allow their selection. 
+      - **自訂**（可讓您定義的選項] 對話方塊中）： 預設會保留目前的選取項目並啟用所有的對話方塊選項，允許其選取項目。如果您選取這個選項，然後自訂 [電子郵件、 文件、 附件的設定及其他。
     
-    If you select custom, you can then customize the settings for emails, documents, attachments and miscellaneous.
+    - 在 [**電子郵件**，選取您想要匯出的電子郵件。
     
-> **電子郵件**中選取您想要匯出的電子郵件： 
+      - **所有電子郵件**： （預設值） 不會選取所有的電子郵件。
     
-    **All emails**: (default) All emails are selected.
+      - **Inclusives**: （含） 的電子郵件執行緒的最後一個電子郵件而且它包含所有其他電子郵件從執行緒。
     
-    **Inclusives**: An inclusive email is a last email of a thread, and it contains all the other emails from the thread.
+      - **Inclusives 和唯一的 （含） 副本**: （含） 的複本，並具有相同的主旨、 本文和附件; inclusives唯一的 （含） 副本是唯一的這些電子郵件的複本。
     
-    **Inclusives and unique inclusive copies**: Inclusive copies and inclusives with the same subject, body and attachments; unique inclusive copies are unique copies of these emails .
+    - 在 [**文件**選取您想要匯出的文件。 
     
-> **文件**中選取您想要匯出的文件： 
+      - **所有文件**： （預設值） 會選取所有文件。
     
-    **All documents**: (default) All documents are selected.
+      - **樞紐分析表**： 選擇作為代表性接近重複項目組，通常用於當做基準檢閱集的檔案。
     
-    **Pivots**: A file chosen as representative of near-duplicates set, which is typically used as the baseline when reviewing the set.
+      - **從完全重複每組代表性**： 唯一接近重複檔案 （包括 [樞紐分析表）。
     
-    **Representative from every set of exact duplicates**: Unique near-duplicate files (including the pivot).
+    - 在 [**附件**，選取您想要匯出的附件。 
     
-> 在**附件**中選取您想要匯出的附件 
+      - **所有附件**: （預設值） 會選取所有附件。
     
-    **All attachments**: (default) All attachments are selected.
+      - **在案例層級的唯一附件**： 中指定之案例的唯一的附件檔案。
     
-    **Unique attachment in case level**: Unique attachment files within the specified case.
+      - **電子郵件中的唯一附件設定層級**： 中指定的電子郵件案例的唯一的附件檔案。
     
-    **Unique attachment in email set level**: Unique attachment files within the specified email case.
+   - 下**Micellaneous**，您可以選擇**將附件文件**、**將文件的電子郵件**，或**展開包含系列的檔案**。當您選擇**展開包含系列檔案**，檢閱標幟的每個檔案時，也會標示相同系列的所有檔案。
     
-> 在**Micellaneous**您可以選擇**將附件文件**、**將文件的電子郵件**，或**展開包含系列的檔案**。當您選擇**展開包含系列檔案**，檢閱標幟的每個檔案時，也會標示相同系列的所有檔案。
+7. 選擇 [**儲存**] 以儲存設定。 
     
-    Choose **Save** to save the settings. 
-    
-7. 指定匯出參數後，啟動匯出批次，請按一下 [**建立匯出工作階段**]。
+8. 指定匯出參數後，啟動匯出批次，請按一下 [**建立匯出工作階段**]。
     
     在匯出期間狀態會顯示在 [**工作狀態**。結果會顯示在**匯出摘要**。
     
-8. 在 [**檔案下載**] 視窗中，按一下 [**複製到剪貼簿**複製匯出金鑰]。 
+9. 在 [**檔案下載**] 視窗中，按一下 [**複製到剪貼簿**複製匯出金鑰]。 
     
     ![下載檔案](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
-9. 按一下 [關閉]****。 
+10. 按一下 [關閉]。 
     
     啟動 eDiscovery 匯出工具。
     
     ![eDiscovery 匯出工具](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
-10. **EDiscovery 匯出工具**：
+11. **EDiscovery 匯出工具**：
     
-1. 在**貼上共用存取簽章的會用來連線至來源**，在步驟 7 中該 youcopied 到剪貼簿貼入匯出金鑰。
+    -  在**貼上共用存取簽章的會用來連線至來源**，在步驟 7 中該 youcopied 到剪貼簿貼入匯出金鑰。
     
-2. 按一下 [**瀏覽**至選取的儲存在本機電腦上的已下載的匯出檔案的目標位置。 
+    - 按一下 [**瀏覽**至選取的儲存在本機電腦上的已下載的匯出檔案的目標位置。 
     
-11. 按一下 [**啟動**]。匯出檔案下載至本機電腦。如果您在步驟 4 中選擇**匯出至使用者定義的 Azure blob** ，工作階段匯出至您選擇的 Blob 存放區 URL 目的地。 
+    - 按一下 [**啟動**]。匯出檔案下載至本機電腦。如果您在步驟 4 中選擇**匯出至使用者定義的 Azure blob** ，工作階段匯出至您選擇的 Blob 存放區 URL 目的地。
     
 匯出報表中的欄位的完整說明，請參閱[匯出報表欄位](export-report-fields-in-advanced-ediscovery.md)。
   
@@ -193,7 +191,6 @@ EDiscovery 匯出工具來進階 eDiscovery 搜尋結果匯出至本機電腦。
 |成功標記  <br/> |txt  <br/> |只建立匯出至第 3 協力廠商對 Azure blob 時。如果匯出完全成功，就會建立該檔案。發生失敗，或部分將不會建立成功檔案。檔案會建立在根資料夾中允許在不同的匯出批次/工作階段狀態的自動的追蹤。這是空的檔案。其名稱是： TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt。  <br/> |
    
 ## <a name="see-also"></a>另請參閱
-<a name="BK_ExportOutputFIles"> </a>
 
 [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
   
@@ -201,7 +198,7 @@ EDiscovery 匯出工具來進階 eDiscovery 搜尋結果匯出至本機電腦。
   
 [快速設定 Office 365 進階電子文件探索](quick-setup-for-advanced-ediscovery.md)
 
-[匯出報表欄位](export-report-fields-in-advanced-ediscovery.md)
+[匯出報告欄位](export-report-fields-in-advanced-ediscovery.md)
   
 [匯出 eDiscovery 搜尋結果從 Office 365 時所增加的下載速度](increase-download-speeds-when-exporting-ediscovery-results.md)
 

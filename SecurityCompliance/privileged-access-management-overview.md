@@ -13,19 +13,21 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 85141ae885132095692683b766d5550cc538e2e8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723230"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652258"
 ---
 # <a name="privileged-access-management-in-office-365"></a>權限存取 Office 365 中的管理
 
 > [!IMPORTANT]
 > 本主題涵蓋功能僅在 Office 365 E5 和進階規範 Sku 中目前可用的部署和設定指導。
 
-特殊存取權限管理 Office 365 中讓更精細的存取權限的管理工作的控制權。它可協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。啟用權限的存取管理、 之後使用者需要要求剛剛-時間存取完成核准工作流程高度範圍且時間繫結到提高權限與權限工作。這提供使用者剛-充份-存取可執行工作，反之，而不致洩露機密資料或重要的組態設定。啟用 Office 365 中的權限的存取管理可讓您的組織操作以零出位置的權限，並提供一層的防禦措施弱點引起因為這類出位置管理存取。 
+特殊存取權限管理 Office 365 中讓更精細的存取權限的管理工作的控制權。它可協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。啟用權限的存取管理、 之後使用者需要要求剛剛-時間存取完成核准工作流程高度範圍且時間繫結到提高權限與權限工作。這提供使用者剛-充份-存取可執行工作，反之，而不致洩露機密資料或重要的組態設定。啟用 Office 365 中的權限的存取管理可讓您的組織操作以零出位置的權限，並提供一層的防禦措施弱點引起因為這類出位置管理存取。
+
+整合式的客戶 Lockbox 和權限的存取管理端對端工作流程的快速概觀，請參閱此[客戶 Lockbox 及視訊的 Office 365 中的權限的存取管理](https://go.microsoft.com/fwlink/?linkid=2066800)。
 
 ## <a name="layers-of-protection"></a>保護層級
 

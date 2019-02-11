@@ -12,16 +12,21 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 已在 Office 365 中的新郵件保護功能的運作方式的相關問題嗎？檢查的答案。
-ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
-ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
+ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25495517"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696267"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 
-已在 Office 365 中的新郵件保護功能的運作方式的相關問題嗎？檢查的答案。此外，仔細[常見問題集關於 Azure 資訊保護中的資料保護](https://docs.microsoft.com/information-protection/get-started/faqs-rms)的資料保護服務、 Azure 版權管理] 的相關問題的答案在 Azure 資訊保護。 
+已在 Office 365 中的新郵件保護功能的運作方式的相關問題嗎？檢查的答案。此外，仔細[常見問題集關於 Azure 資訊保護中的資料保護](https://docs.microsoft.com/information-protection/get-started/faqs-rms)的資料保護服務、 Azure 版權管理] 的相關問題的答案在 Azure 資訊保護。
+
+||
+|:-----|
+|本文屬於較大的一系列有關 Office 365 郵件加密的文章。本文適用於系統管理員和 ITPros 的。如果您只尋找的資訊在傳送或接收加密的郵件，請參閱[Office 365 郵件加密 (OME)](ome.md)中的文章的清單並找出最適合您需求的文章。 |
+||
   
 ## <a name="what-is-office-365-message-encryption-ome"></a>什麼是 Office 365 郵件加密 (OME)？
 
@@ -73,7 +78,7 @@ Office 365 郵件加密的新功能的現有 IRM 和舊版 OME 解決方案的�
 |**版權管理**|-|不要轉寄選項和自訂範本|不要轉寄] 選項、 僅加密的選項、 預設和自訂範本|
 |**支援的收件者類型**|僅外部收件者|僅限內部收件者|內部和外部收件者|
 |**收件者經驗**|外部收件者接收到的 HTML 郵件他們下載和瀏覽器中開啟或下載行動裝置應用程式。|內部收件者只在收到的 PC Outlook、 Outlook for Mac 及 web 上的 Outlook 中加密的電子郵件。|內部和外部收件者電子郵件中接收的 PC Outlook、 Outlook for Mac、 網路上的 Outlook、 Outlook for android （英文)、 和 Outlook iOS，或透過入口網站，不論都在相同的 Office 365 組織或任何 Office 365組織。OME 入口網站需要沒有個別下載。|
-|**將您自己的金鑰支援**|無|無| BYOK 支援|
+|**將您自己的金鑰支援**|無法使用|無法使用| BYOK 支援|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>如何在 「 我的組織啟用新 OME 功能？
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3ebb9a40d3fb055fbb88b32175a4a22df3da44af
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607605"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706134"
 ---
 # <a name="create-a-search-to-collect-data"></a>建立搜尋以收集資料
 
@@ -31,11 +31,11 @@ ms.locfileid: "29607605"
 
 ## <a name="define-your-conditions"></a>定義您的條件
 
-您可以定義您搜尋使用預先建置的條件卡或使用關鍵字查詢語言 (KQL) 的條件。如需詳細資訊，請參閱[建立搜尋查詢](building-search-queries.md)。
+您可以定義您搜尋使用預先建置的條件卡或使用關鍵字查詢語言 (KQL) 的條件。如需詳細資訊，請參閱 ＜[建立搜尋查詢](building-search-queries.md)。
 
 ## <a name="choose-the-custodians-to-search-from"></a>選擇要從搜尋 custodians
 
-一旦您已定義您的條件，您需要選擇您要搜尋的位置。若要執行的其中一個方法是藉由指定想要搜尋哪些 custodians 已經新增至案例。選取 okay，您將針對所有的資料來源對應至 okay 執行搜尋。如需如何將 custodians 新增至您的案例和管理其資料來源的詳細資訊，請參閱[使用 custodians](managing-custodians.md) 。
+一旦您已定義您的條件，您需要選擇您要搜尋的位置。若要執行的其中一個方法是藉由指定想要搜尋哪些 custodians 已經新增至案例。選取 okay，您將針對所有的資料來源對應至 okay 執行搜尋。如需如何將 custodians 新增至您的案例和管理其資料來源的詳細資訊，請參閱[Work with custodians](managing-custodians.md) 。
 
 ## <a name="choose-non-custodial-locations"></a>選擇 [非 custodial 位置
 

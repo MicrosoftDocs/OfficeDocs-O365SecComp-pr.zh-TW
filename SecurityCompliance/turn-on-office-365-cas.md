@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: 閱讀本文以了解如何在 Office 365 進階安全性管理，由 Microsoft Azure 中的雲端應用程式安全性提供開啟。
-ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014785"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603774"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>開啟 Office 365 雲端 App 安全性
   
@@ -37,6 +37,8 @@ ms.locfileid: "28014785"
 3. 選取 [**開啟 Office 365 的雲端應用程式安全性**]。
     
 4. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。<br/>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>這會帶您至 Office 365 雲端應用程式安全性入口網站，您可以在其中檢視報告及建立或編輯您的原則。
+
+您已在 Office 365 雲端應用程式安全性開啟之後，您可以造訪移至雲端應用程式安全性入口網站[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)及登入。
     
 > [!NOTE]
 > 當您開啟 Office 365 雲端應用程式安全性時，請您的 Office 365 使用者帳戶和使用者活動的稽核資訊會傳送到[Microsoft 雲端應用程式安全性](https://aka.ms/whatiscas)。這可讓提供進階的提醒、 篩選和其他功能，讓您可以取得資訊並採取行動可疑活動的相關的 Office 365。 
