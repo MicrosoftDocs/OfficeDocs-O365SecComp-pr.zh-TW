@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
-description: '閱讀在 Office 365 進階電子文件探索設定相關性訓練的建議，依其相關性為檔案評分，並產生分析結果。  '
-ms.openlocfilehash: b2f1f848d14bdf77444c2026cbc675042c792542
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 閱讀在 Office 365 進階電子文件探索設定相關性訓練的建議，依其相關性為檔案評分，並產生分析結果。
+ms.openlocfilehash: 189c81bd415f94d4ded06fd13eaf5aea861b283d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526344"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27446344"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中管理相關性設定
 
