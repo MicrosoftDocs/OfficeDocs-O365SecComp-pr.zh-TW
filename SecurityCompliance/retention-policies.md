@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
-ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
+ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690414"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770818"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -53,8 +53,6 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
   
 ![安全性與合規性中心內的保留頁面](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
   
-> [!NOTE]
-> 若要在保留原則中包含 Exchange Online 信箱，必須指派 Exchange Online 方案 2 授權給信箱。如果指派 Exchange Online 方案 1 授權給信箱，您必須為它指派另一個 Exchange Online 封存授權，才能將它包含在保留原則中。 
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留原則如何就地使用內容
 
