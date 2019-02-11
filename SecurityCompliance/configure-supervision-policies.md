@@ -1,9 +1,8 @@
 ---
 title: 為您的組織設定監督原則
-ms.author: brendonb
-author: brendonb
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 5/12/2017
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,184 +15,248 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 設定監督檢閱原則以擷取員工通訊供檢閱。
-ms.openlocfilehash: a919d65f5c0967a44ac12b7e02d477dac2113704
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 898ef9951ea20dec1e0cc6c28ad1ed6f9a0ded6e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527430"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29768034"
 ---
-# <a name="configure-supervision-policies-for-your-organization"></a><span data-ttu-id="d2940-103">為您的組織設定監督原則</span><span class="sxs-lookup"><span data-stu-id="d2940-103">Configure supervision policies for your organization</span></span>
+# <a name="configure-supervision-policies-for-your-organization"></a><span data-ttu-id="c7646-103">為您的組織設定監督原則</span><span class="sxs-lookup"><span data-stu-id="c7646-103">Configure supervision policies for your organization</span></span>
 
-<span data-ttu-id="d2940-104">使用監督原則來擷取由內部或外部檢閱者檢查 「 員工通訊。</span><span class="sxs-lookup"><span data-stu-id="d2940-104">Use supervision policies to capture employee communications for examination by internal or external reviewers.</span></span>
+<span data-ttu-id="c7646-p101">使用監督原則來擷取由內部或外部檢閱者檢查 「 員工通訊。如需監督原則可幫助您監視組織中的通訊的詳細資訊，請參閱[Office 365 中的監督原則](supervision-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="c7646-p101">Use supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Supervision policies in Office 365](supervision-policies.md).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="c7646-p102">監督原則受監控的使用者必須具有進階規範附加元件可以是 Office 365 企業版 E3 授權或包含在 Office 365 企業版 E5 訂閱。如果您未有現有的企業 E5 計劃以及要嘗試監督，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="c7646-p102">Users monitored by supervision policies must have either an Office 365 Enterprise E3 license with the Advanced Compliance add-on or be included in an Office 365 Enterprise E5 subscription. If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span>
+  
+<span data-ttu-id="c7646-108">請遵循下列步驟來設定和 Office 365 組織中使用監督：</span><span class="sxs-lookup"><span data-stu-id="c7646-108">Follow these steps to set up and use supervision in your Office 365 organization:</span></span>
+  
+- <span data-ttu-id="c7646-109">**步驟 1 （選用）** - [設定的監督群組](configure-supervision-policies.md#exampledist)</span><span class="sxs-lookup"><span data-stu-id="c7646-109">**Step 1 (optional)** - [Set up groups for Supervision](configure-supervision-policies.md#exampledist)</span></span>
+
+    <span data-ttu-id="c7646-p103">在您開始使用監督之前，請決定誰將其通訊檢閱和誰可以執行這些檢閱 （英文）。如果您想要開始使用少數使用者看到監督的運作方式，您可以略過現在群組設定。</span><span class="sxs-lookup"><span data-stu-id="c7646-p103">Before you start using supervision, determine who will have their communications reviewed and who will perform those reviews. If you want to get started with just a few users to see how supervision works, you can skip setting up groups for now.</span></span>
+
+- <span data-ttu-id="c7646-112">**步驟 2 （必要）** - [讓組織中可用的監督](configure-supervision-policies.md#MakeAvailable)</span><span class="sxs-lookup"><span data-stu-id="c7646-112">**Step 2 (required)** - [Make supervision available in your organization](configure-supervision-policies.md#MakeAvailable)</span></span>
+
+    <span data-ttu-id="c7646-p104">新增您自己監督檢閱角色群組讓您可以設定原則。已指派給此角色的任何人可以存取**資料控管**下 [**監督**頁面的安全性 & 規範中心。若要檢閱的電子郵件裝載於 Exchange Online，每一個檢閱者也必須具有[遠端 PowerShell 存取至 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="c7646-p104">Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page under **Data Governance** in the Security & Compliance Center. If email to be reviewed is hosted on Exchange Online, each reviewer must also have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).</span></span>
+
+- <span data-ttu-id="c7646-116">**步驟 3 （選用）** - [設定自訂的敏感資訊類型或自訂的關鍵字字典/lexicons](configure-supervision-policies.md#sensitiveinfo)</span><span class="sxs-lookup"><span data-stu-id="c7646-116">**Step 3 (optional)** - [Configure custom sensitive information types or custom keyword dictionaries/lexicons](configure-supervision-policies.md#sensitiveinfo)</span></span>
+
+    <span data-ttu-id="c7646-117">如果您需要使用自訂的敏感資訊類型或自訂的關鍵字字典監督原則，您需要建立開始監督精靈之前。</span><span class="sxs-lookup"><span data-stu-id="c7646-117">If you need to use a custom sensitive info type or a custom keyword dictionary for your supervision policy, you'll need to create it before starting the supervision wizard.</span></span>
+
+- <span data-ttu-id="c7646-118">**步驟 4 （必要）** - [設定的監督原則](configure-supervision-policies.md#setupsuper)</span><span class="sxs-lookup"><span data-stu-id="c7646-118">**Step 4 (required)** - [Set up a supervision policy](configure-supervision-policies.md#setupsuper)</span></span>
+
+    <span data-ttu-id="c7646-p105">您將建立監督原則中安全性 & 規範中心。這些原則定義的通訊會受到組織中的檢閱和指定誰應該執行檢閱 （英文）。通訊包含電子郵件和 Microsoft 小組通訊，以及第 3 廠商平台通訊 （例如 Facebook、 Twitter、 等）</span><span class="sxs-lookup"><span data-stu-id="c7646-p105">You'll create supervision policies in the Security & Compliance Center. These policies define which communications are subject to review in your organization and specifies who should perform reviews. Communications include email and Microsoft Teams communications, as well as 3rd-party platform communications (such as Facebook, Twitter, etc.)</span></span>
+
+- <span data-ttu-id="c7646-122">**步驟 5-（選用）**[測試您的新監督原則](configure-supervision-policies.md#TestPolicy)</span><span class="sxs-lookup"><span data-stu-id="c7646-122">**Step 5 - (optional)** [Test your new supervision policy](configure-supervision-policies.md#TestPolicy)</span></span>
+
+    <span data-ttu-id="c7646-123">測試以確保能運作視您監督原則是確保合規策略會議您標準重要的一部分。</span><span class="sxs-lookup"><span data-stu-id="c7646-123">Testing your supervision policy to make sure it is functioning as desired is an important part of ensuring that your compliance strategy is meeting your standards.</span></span>
+
+- <span data-ttu-id="c7646-124">**步驟 6-（選用）**[Outlook 增益集不想要使用 Office 365 監督儀表板或 OWA 檢閱監督的通訊的檢閱者的設定](configure-supervision-policies.md#UseOutlook)</span><span class="sxs-lookup"><span data-stu-id="c7646-124">**Step 6 - (optional)** [Set up Outlook add-in for reviewers who do not want to use Office 365 supervision dashboard or OWA to review supervised communications](configure-supervision-policies.md#UseOutlook)</span></span>
+
+    <span data-ttu-id="c7646-125">監督的增益集 Outlook 可以讓檢閱者存取 Outlook 用戶端內的監督的功能權限，讓他們可以評估並將每個項目。</span><span class="sxs-lookup"><span data-stu-id="c7646-125">The Supervision add-in for Outlook gives reviewers access to the supervision functionality right within the Outlook client so they can assess and categorize each item.</span></span>
+
+<span data-ttu-id="c7646-126"><a name="exampledist"> </a></span><span class="sxs-lookup"><span data-stu-id="c7646-126"></span></span>
+
+## <a name="step-1---set-up-groups-for-supervision-optional"></a><span data-ttu-id="c7646-127">步驟 1-設定群組的監督 （選用）</span><span class="sxs-lookup"><span data-stu-id="c7646-127">Step 1 - Set up groups for Supervision (optional)</span></span>
+
+ <span data-ttu-id="c7646-p106">當您建立監督原則時，您將決定誰會有檢閱其通訊及誰可以執行這些檢閱 （英文）。在原則中，您將使用電子郵件地址來識別的個人或群組的人員。若要簡化您的安裝程式，建立人員有其檢閱的通訊群組和人員將檢閱這些通訊群組。如果您使用的群組，您可能需要數個 — 例如，如果您想要監視的人員、 兩個不同的群組之間的通訊，或者您想要指定無法移至要指導的群組。如需此的運作方式的詳細資訊，請參閱[範例通訊群組](configure-supervision-policies.md#GroupExample)。</span><span class="sxs-lookup"><span data-stu-id="c7646-p106">When you create a supervision policy, you'll determine who will have their communications reviewed and who will perform those reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, create groups for people who will have their communication reviewed and groups for people who will review those communications. If you're using groups, you might need several—for example, if you want to monitor communications between two distinct groups of people, or if you want to specify a group that isn't going to be supervised. See [Example distribution groups](configure-supervision-policies.md#GroupExample) for details about how this works.</span></span>
+  
+<span data-ttu-id="c7646-p107">若要管理組織中的群組內或之間的通訊、 設定通訊群組在 Exchange 系統管理中心 (移至 [**收件者** \> **群組**)。如需設定通訊群組的詳細資訊，請參閱[管理通訊群組](http://go.microsoft.com/fwlink/?LinkId=613635)</span><span class="sxs-lookup"><span data-stu-id="c7646-p107">To supervise communications between or within groups in your organization, set up distribution groups in the Exchange admin center (go to **recipients** \> **groups**). For more information about setting up distribution groups, see [Manage distribution groups](http://go.microsoft.com/fwlink/?LinkId=613635)</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="d2940-p101">使用監督原則您的組織需要的 Office 365 E5 訂閱。如果您不具有該對應並想要嘗試監督，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="d2940-p101">Using supervision policies requires an Office 365 E5 subscription for your organization. If you don't have that plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="c7646-p108">您也可以使用動態通訊群組或安全性群組的監督若您偏好。若要協助您決定是否這些更適合您組織需求，請參閱[管理擁有郵件功能的安全性群組](http://go.microsoft.com/fwlink/?LinkId=627033)及[管理動態通訊群組](http://go.microsoft.com/fwlink/?LinkId=627058)。</span><span class="sxs-lookup"><span data-stu-id="c7646-p108">You can also use dynamic distribution groups or security groups for supervision if you prefer. To help you decide if these better fit your organization needs, see [Manage mail-enabled security groups](http://go.microsoft.com/fwlink/?LinkId=627033), and [Manage dynamic distribution groups](http://go.microsoft.com/fwlink/?LinkId=627058).</span></span>
   
-<span data-ttu-id="d2940-107">請遵循下列步驟來設定和 Office 365 組織中使用監督：</span><span class="sxs-lookup"><span data-stu-id="d2940-107">Follow these steps to set up and use supervision in your Office 365 organization:</span></span> 
-  
-- [<span data-ttu-id="d2940-108">設定群組的監督</span><span class="sxs-lookup"><span data-stu-id="d2940-108">Set up groups for Supervision</span></span>](configure-supervision-policies.md#exampledist)
-    
-    <span data-ttu-id="d2940-p102">在您開始使用監督之前，請決定誰將其通訊檢閱和誰可以執行這些檢閱 （英文）。如果您想要開始使用少數使用者看到監督的運作方式，您可以略過現在群組設定。</span><span class="sxs-lookup"><span data-stu-id="d2940-p102">Before you start using supervision, determine who will have their communications reviewed and who will perform those reviews. If you want to get started with just a few users to see how supervision works, you can skip setting up groups for now.</span></span>
-    
-- [<span data-ttu-id="d2940-111">在組織中讓監督</span><span class="sxs-lookup"><span data-stu-id="d2940-111">Make supervision available in your organization</span></span>](configure-supervision-policies.md#SRavailable)
-    
-    <span data-ttu-id="d2940-p103">新增您自己監督檢閱角色群組讓您可以設定原則。已指派給此角色的任何人可以存取下**資料管理**安全性的**監督**頁面&amp;規範中心。</span><span class="sxs-lookup"><span data-stu-id="d2940-p103">Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page under **Data Governance** in the Security &amp; Compliance Center.</span></span> 
-    
-- [<span data-ttu-id="d2940-114">設定的監督原則</span><span class="sxs-lookup"><span data-stu-id="d2940-114">Set up a supervision policy</span></span>](configure-supervision-policies.md#setupsuper)
-    
-    <span data-ttu-id="d2940-p104">您將建立安全性的監督原則&amp;規範中心。這些原則定義的通訊會受到組織中的檢閱和指定誰應該執行檢閱 （英文）。通訊包含電子郵件時 （例如 Facebook、 Twitter、 等） 的第 3 廠商平台通訊</span><span class="sxs-lookup"><span data-stu-id="d2940-p104">You'll create supervision policies in the Security &amp; Compliance Center. These policies define which communications are subject to review in your organization, and specifies who should perform reviews. Communications include email as well as 3rd-party platform communications (such as Facebook, Twitter, etc.)</span></span>
-    
-- [<span data-ttu-id="d2940-118">使用 Outlook web app 檢閱監督原則所識別的通訊</span><span class="sxs-lookup"><span data-stu-id="d2940-118">Use Outlook web app to review communications identified by a supervision policy</span></span>](configure-supervision-policies.md#UseOutlook)
-    
-    <span data-ttu-id="d2940-p105">監督增益集可以讓檢閱者存取 Outlook web app 右邊的監督功能，讓他們可以評估並將每個項目。即將推出的桌面的 Outlook 版本支援。</span><span class="sxs-lookup"><span data-stu-id="d2940-p105">The Supervision add-in gives reviewers access to the supervision functionality right within Outlook web app so they can assess and categorize each item. Support for the desktop version of Outlook is coming soon.</span></span>
-    
-- <span data-ttu-id="d2940-121">**執行監督報告**</span><span class="sxs-lookup"><span data-stu-id="d2940-121">**Run the supervision report**</span></span>
-    
-    <span data-ttu-id="d2940-p106">若要查看檢閱活動層級原則和檢閱者使用監督報告。每個原則，您也可以檢閱活動的目前狀態檢視 live 的統計資料。如需詳細資訊，請參閱[監督報告](supervision-reports.md)。</span><span class="sxs-lookup"><span data-stu-id="d2940-p106">Use the supervision reports to see the review activity at the policy and reviewer level. For each policy, you can also view live statistics on the current state of review activity. For details, see [Supervision reports](supervision-reports.md).</span></span>
-    
-## <a name="set-up-groups-for-supervision"></a><span data-ttu-id="d2940-125">設定群組的監督</span><span class="sxs-lookup"><span data-stu-id="d2940-125">Set up groups for Supervision</span></span>
-<span data-ttu-id="d2940-126"><a name="exampledist"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-126"></span></span>
+<span data-ttu-id="c7646-137"><a name="GroupExample"> </a></span><span class="sxs-lookup"><span data-stu-id="c7646-137"></span></span>
 
- <span data-ttu-id="d2940-p107">當您建立監督原則時，您將決定誰會有檢閱其通訊及誰可以執行這些檢閱 （英文）。在原則中，您將使用電子郵件地址來識別的個人或群組的人員。若要簡化您的安裝程式，建立人員有其檢閱的通訊群組和人員將檢閱這些通訊群組。如果您使用的群組，您可能需要數個 — 例如，如果您想要監視的人員、 兩個不同的群組之間的通訊，或者您想要指定無法移至要指導的群組。如需此的運作方式的詳細資訊，請參閱[範例通訊群組](configure-supervision-policies.md#GroupExample)。</span><span class="sxs-lookup"><span data-stu-id="d2940-p107">When you create a supervision policy, you'll determine who will have their communications reviewed and who will perform those reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, create groups for people who will have their communication reviewed and groups for people who will review those communications. If you're using groups, you might need several—for example, if you want to monitor communications between two distinct groups of people, or if you want to specify a group that isn't going to be supervised. See [Example distribution groups](configure-supervision-policies.md#GroupExample) for details about how this works.</span></span> 
-  
-<span data-ttu-id="d2940-p108">若要管理組織中的群組內或之間的通訊、 設定通訊群組在 Exchange 系統管理中心 (移至 [**收件者** \> **群組**)。如需設定通訊群組的詳細資訊，請參閱[管理通訊群組](http://go.microsoft.com/fwlink/?LinkId=613635)</span><span class="sxs-lookup"><span data-stu-id="d2940-p108">To supervise communications between or within groups in your organization, set up distribution groups in the Exchange admin center (go to **recipients** \> **groups**). For more information about setting up distribution groups, see [Manage distribution groups](http://go.microsoft.com/fwlink/?LinkId=613635)</span></span>
-  
-> [!NOTE]
-> <span data-ttu-id="d2940-p109">您也可以使用動態通訊群組或安全性群組的監督若您偏好。若要協助您決定是否這些更適合您組織需求，請參閱[管理擁有郵件功能的安全性群組](http://go.microsoft.com/fwlink/?LinkId=627033)及[管理動態通訊群組](http://go.microsoft.com/fwlink/?LinkId=627058)。</span><span class="sxs-lookup"><span data-stu-id="d2940-p109">You can also use dynamic distribution groups or security groups for supervision if you prefer. To help you decide if these better fit your organization needs, see [Manage mail-enabled security groups](http://go.microsoft.com/fwlink/?LinkId=627033), and [Manage dynamic distribution groups](http://go.microsoft.com/fwlink/?LinkId=627058).</span></span> 
-  
-### <a name="example-distribution-groups"></a><span data-ttu-id="d2940-136">通訊群組範例</span><span class="sxs-lookup"><span data-stu-id="d2940-136">Example distribution groups</span></span>
-<span data-ttu-id="d2940-137"><a name="GroupExample"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-137"></span></span>
+### <a name="example-distribution-groups"></a><span data-ttu-id="c7646-138">通訊群組範例</span><span class="sxs-lookup"><span data-stu-id="c7646-138">Example distribution groups</span></span>
 
-<span data-ttu-id="d2940-138">此範例會包含已針對名為 Contoso 財務國際財務組織設定的通訊群組。</span><span class="sxs-lookup"><span data-stu-id="d2940-138">This example includes a distribution group that has been set up for a financial organization called Contoso Financial International.</span></span> 
+<span data-ttu-id="c7646-139">此範例會包含已針對名為 Contoso 財務國際財務組織設定的通訊群組。</span><span class="sxs-lookup"><span data-stu-id="c7646-139">This example includes a distribution group that has been set up for a financial organization called Contoso Financial International.</span></span>
   
-<span data-ttu-id="d2940-p110">在 Contoso Financial International 中，必須抽樣監管美國境內各代理人間的通訊。不過，不需要監管該群組內的法務人員。在此範例中，我們可以建立下列群組：</span><span class="sxs-lookup"><span data-stu-id="d2940-p110">In Contoso Financial International, a sampling of communications between brokers in the United States must be supervised. However, compliance officers within that group do not require supervision. For this example, we can create the following groups:</span></span>
+<span data-ttu-id="c7646-p109">在 Contoso Financial International 中，必須抽樣監管美國境內各代理人間的通訊。不過，不需要監管該群組內的法務人員。在此範例中，我們可以建立下列群組：</span><span class="sxs-lookup"><span data-stu-id="c7646-p109">In Contoso Financial International, a sampling of communications between brokers in the United States must be supervised. However, compliance officers within that group do not require supervision. For this example, we can create the following groups:</span></span>
   
-|<span data-ttu-id="d2940-142">**設定此通訊群組**</span><span class="sxs-lookup"><span data-stu-id="d2940-142">**Set up this distribution group**</span></span>|<span data-ttu-id="d2940-143">**群組地址 (別名)**</span><span class="sxs-lookup"><span data-stu-id="d2940-143">**Group address (alias)**</span></span>|<span data-ttu-id="d2940-144">**描述**</span><span class="sxs-lookup"><span data-stu-id="d2940-144">**Description**</span></span>|
+|<span data-ttu-id="c7646-143">**設定此通訊群組**</span><span class="sxs-lookup"><span data-stu-id="c7646-143">**Set up this distribution group**</span></span>|<span data-ttu-id="c7646-144">**群組地址 (別名)**</span><span class="sxs-lookup"><span data-stu-id="c7646-144">**Group address (alias)**</span></span>|<span data-ttu-id="c7646-145">**描述**</span><span class="sxs-lookup"><span data-stu-id="c7646-145">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="d2940-145">所有美國代理人</span><span class="sxs-lookup"><span data-stu-id="d2940-145">All US brokers</span></span>  <br/> |<span data-ttu-id="d2940-146">US_Brokers@Contoso.com</span><span class="sxs-lookup"><span data-stu-id="d2940-146">US_Brokers@Contoso.com</span></span>  <br/> |<span data-ttu-id="d2940-147">此群組包含於 Contoso 任職，所有位於美國的代理人的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="d2940-147">This group includes email addresses for all US-based brokers who work for Contoso.</span></span>  <br/> |
-|<span data-ttu-id="d2940-148">所有美國法務人員</span><span class="sxs-lookup"><span data-stu-id="d2940-148">All US compliance officers</span></span>  <br/> |<span data-ttu-id="d2940-149">US_Compliance@Contoso.com</span><span class="sxs-lookup"><span data-stu-id="d2940-149">US_Compliance@Contoso.com</span></span>  <br/> |<span data-ttu-id="d2940-p111">此群組包含所有的美國型法務人員合作 Contoso 的電子郵件地址。因為此群組的所有美國型經紀人子集，您可用於此別名免除法務人員從監督原則。</span><span class="sxs-lookup"><span data-stu-id="d2940-p111">This group includes email addresses for all US-based compliance officers who work for Contoso. Because this group is a subset of all US-based brokers, you can use this alias to exempt compliance officers from a supervision policy.</span></span>  <br/> |
-   
-<span data-ttu-id="d2940-152">[監督原則設定](configure-supervision-policies.md#setupsuper)] 區段中會說明如何使用這些群組，當您設定的原則。</span><span class="sxs-lookup"><span data-stu-id="d2940-152">The [Set up a supervision policy](configure-supervision-policies.md#setupsuper) section describes how you can use these groups when you configure the policy.</span></span> 
+|<span data-ttu-id="c7646-146">所有美國代理人</span><span class="sxs-lookup"><span data-stu-id="c7646-146">All US brokers</span></span> | <span data-ttu-id="c7646-147">US_Brokers@Contoso.com</span><span class="sxs-lookup"><span data-stu-id="c7646-147">US_Brokers@Contoso.com</span></span> | <span data-ttu-id="c7646-148">此群組包含於 Contoso 任職，所有位於美國的代理人的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="c7646-148">This group includes email addresses for all US-based brokers who work for Contoso.</span></span> |
+| <span data-ttu-id="c7646-149">所有美國法務人員</span><span class="sxs-lookup"><span data-stu-id="c7646-149">All US compliance officers</span></span> | <span data-ttu-id="c7646-150">US_Compliance@Contoso.com</span><span class="sxs-lookup"><span data-stu-id="c7646-150">US_Compliance@Contoso.com</span></span>  | <span data-ttu-id="c7646-p110">此群組包含所有的美國型法務人員合作 Contoso 的電子郵件地址。因為此群組的所有美國型經紀人子集，您可用於此別名免除法務人員從監督原則。</span><span class="sxs-lookup"><span data-stu-id="c7646-p110">This group includes email addresses for all US-based compliance officers who work for Contoso. Because this group is a subset of all US-based brokers, you can use this alias to exempt compliance officers from a supervision policy.</span></span> |
   
-## <a name="make-supervision-available-in-your-organization"></a><span data-ttu-id="d2940-153">在組織中讓監督</span><span class="sxs-lookup"><span data-stu-id="d2940-153">Make supervision available in your organization</span></span>
-<span data-ttu-id="d2940-154"><a name="SRavailable"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-154"></span></span>
+<span data-ttu-id="c7646-153"><a name="MakeAvailable"> </a></span><span class="sxs-lookup"><span data-stu-id="c7646-153"></span></span>
 
-<span data-ttu-id="d2940-155">在 [安全性] 進行**監督**可作為功能表選項&amp;規範中心，您必須指派監督檢閱系統管理員角色。</span><span class="sxs-lookup"><span data-stu-id="d2940-155">To make **Supervision** available as a menu option in the Security &amp; Compliance Center, you must be assigned the Supervisory Review Administrator role.</span></span> 
-  
-<span data-ttu-id="d2940-156">為達成此目的，您也可以新增您自己做監督檢閱角色群組的成員，或您可以建立新的角色群組。</span><span class="sxs-lookup"><span data-stu-id="d2940-156">To do this, you can either add yourself as a member of the Supervisory Review role group, or you can create a new role group.</span></span>
-  
-### <a name="add-members-to-the-supervisory-review-role-group"></a><span data-ttu-id="d2940-157">新增成員至監督檢閱角色群組</span><span class="sxs-lookup"><span data-stu-id="d2940-157">Add members to the Supervisory Review role group</span></span>
+## <a name="step-2---make-supervision-available-in-your-organization-required"></a><span data-ttu-id="c7646-154">步驟 2-產生監督提供組織 （必要）</span><span class="sxs-lookup"><span data-stu-id="c7646-154">Step 2 - Make supervision available in your organization (required)</span></span>
 
-1. <span data-ttu-id="d2940-158">登入[https://protection.office.com](https://protection.office.com)使用 Office 365 組織中的管理帳戶的認證。</span><span class="sxs-lookup"><span data-stu-id="d2940-158">Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.</span></span> 
-    
-2. <span data-ttu-id="d2940-159">安全性&amp;規範中心，請移至 [**權限**。</span><span class="sxs-lookup"><span data-stu-id="d2940-159">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
-    
-3. <span data-ttu-id="d2940-160">選取 [**監督檢閱**角色群組，然後按一下 [編輯] 圖示。</span><span class="sxs-lookup"><span data-stu-id="d2940-160">Select the **Supervisory Review** role group and then click the Edit icon.</span></span> 
-    
-4. <span data-ttu-id="d2940-161">在 [**成員**] 區段中，新增您想要管理您的組織的監督的人員。</span><span class="sxs-lookup"><span data-stu-id="d2940-161">In the **Members** section, add the people who you want to manage supervision for your organization.</span></span> 
-    
-### <a name="create-a-new-role-group"></a><span data-ttu-id="d2940-162">建立新的角色群組</span><span class="sxs-lookup"><span data-stu-id="d2940-162">Create a new role group</span></span>
+<span data-ttu-id="c7646-155">在安全性 & 規範中心進行**監督**可作為功能表選項，您必須指派監督檢閱系統管理員角色。</span><span class="sxs-lookup"><span data-stu-id="c7646-155">To make **Supervision** available as a menu option in the Security & Compliance Center, you must be assigned the Supervisory Review Administrator role.</span></span>
+  
+<span data-ttu-id="c7646-156">為達成此目的，您也可以新增您自己做監督檢閱角色群組的成員，或您可以建立新的角色群組。</span><span class="sxs-lookup"><span data-stu-id="c7646-156">To do this, you can either add yourself as a member of the Supervisory Review role group, or you can create a new role group.</span></span>
+  
+### <a name="add-members-to-the-supervisory-review-role-group"></a><span data-ttu-id="c7646-157">新增成員至監督檢閱角色群組</span><span class="sxs-lookup"><span data-stu-id="c7646-157">Add members to the Supervisory Review role group</span></span>
 
-1. <span data-ttu-id="d2940-163">登入[https://protection.office.com](https://protection.office.com)使用 Office 365 組織中的管理帳戶的認證。</span><span class="sxs-lookup"><span data-stu-id="d2940-163">Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.</span></span> 
-    
-2. <span data-ttu-id="d2940-164">安全性&amp;規範中心移至 [**權限**] 和 [新增] ( **+**)。</span><span class="sxs-lookup"><span data-stu-id="d2940-164">In the Security &amp; Compliance Center, go to **Permissions** and then click Add ( **+**).</span></span>
-    
-3. <span data-ttu-id="d2940-p112">在 [**角色**] 區段中，按一下 [新增] ( **+**) 和**監督檢閱管理員**下的捲軸。將此角色新增至角色群組。</span><span class="sxs-lookup"><span data-stu-id="d2940-p112">In the **Roles** section, click Add ( **+**) and scroll down to **Supervisory Review Administrator**. Add this role to the role group.</span></span>
-    
-4. <span data-ttu-id="d2940-167">在 [**成員**] 區段中，新增您想要管理您的組織的監督的人員。</span><span class="sxs-lookup"><span data-stu-id="d2940-167">In the **Members** section, add the people who you want to manage supervision for your organization.</span></span> 
-    
-<span data-ttu-id="d2940-168">如需有關角色群組和權限的詳細資訊，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="d2940-168">For more information about role groups and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center ](permissions-in-the-security-and-compliance-center.md).</span></span>
-  
-## <a name="set-up-a-supervision-policy"></a><span data-ttu-id="d2940-169">設定的監督原則</span><span class="sxs-lookup"><span data-stu-id="d2940-169">Set up a supervision policy</span></span>
-<span data-ttu-id="d2940-170"><a name="setupsuper"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-170"></span></span>
+1. <span data-ttu-id="c7646-158">登入[https://protection.office.com](https://protection.office.com)使用 Office 365 組織中的管理帳戶的認證。</span><span class="sxs-lookup"><span data-stu-id="c7646-158">Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="d2940-171">之前建立的監督原則，您必須先移除任何現有的監督檢閱原則。</span><span class="sxs-lookup"><span data-stu-id="d2940-171">Before creating a supervision policy, you must first remove any existing supervisory review policies.</span></span> 
-  
-1. <span data-ttu-id="d2940-172">登入[https://protection.office.com](https://protection.office.com)使用 Office 365 組織中的管理帳戶的認證。</span><span class="sxs-lookup"><span data-stu-id="d2940-172">Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.</span></span> 
-    
-2. <span data-ttu-id="d2940-173">安全性&amp;規範管理中心，移至按一下 [**資料控管** \> **監督**。</span><span class="sxs-lookup"><span data-stu-id="d2940-173">In the Security &amp; Compliance Center, go to click **Data governance** \> **Supervision**.</span></span>
-    
-    > [!NOTE]
-    > <span data-ttu-id="d2940-p113">舊版的功能可能會顯示在左導覽中做為**監督檢閱 （淘汰很快）**。此版本將推出已被取代的和移除。呼叫**監督**的新版本需要其位置。</span><span class="sxs-lookup"><span data-stu-id="d2940-p113">The previous version of the feature may show in the left-hand navigation as **Supervisory Review (retiring soon)**. This version will soon be deprecated and removed. The new version called **Supervision** will take its place.</span></span> 
-  
-3. <span data-ttu-id="d2940-177">按一下 [**建立**，然後遵循精靈來設定下列原則的頁面。</span><span class="sxs-lookup"><span data-stu-id="d2940-177">Click **Create** and then follow the wizard to set up the following pages of the policy.</span></span> 
-    
-### <a name="policy-name-and-description"></a><span data-ttu-id="d2940-178">原則名稱與描述</span><span class="sxs-lookup"><span data-stu-id="d2940-178">Policy name and description</span></span>
+2. <span data-ttu-id="c7646-159">在安全性 & 規範中心中，移至 [**權限**。</span><span class="sxs-lookup"><span data-stu-id="c7646-159">In the Security & Compliance Center, go to **Permissions**.</span></span>
 
-<span data-ttu-id="d2940-p114">輸入名稱與您的原則的描述。基於範例中，我們將命名原則 Contoso 美國經紀人。</span><span class="sxs-lookup"><span data-stu-id="d2940-p114">Enter a name and a description for your policy. For example purposes, we'll name the policy Contoso US Brokers.</span></span>
-  
-### <a name="choose-users-to-supervise"></a><span data-ttu-id="d2940-181">選擇 [管理使用者</span><span class="sxs-lookup"><span data-stu-id="d2940-181">Choose users to supervise</span></span>
+3. <span data-ttu-id="c7646-160">選取 [**監督檢閱**角色群組，然後按一下 [編輯] 圖示。</span><span class="sxs-lookup"><span data-stu-id="c7646-160">Select the **Supervisory Review** role group and then click the Edit icon.</span></span>
 
-- <span data-ttu-id="d2940-p115">在 [ **Supervise 這些使用者或群組**] 方塊中，選擇 [使用者或群組您想来管理其通訊。如果為 Contoso 美國經紀人堅持與我們的範例，我們將會選擇群組 US_Brokers@Contoso.com 此處。</span><span class="sxs-lookup"><span data-stu-id="d2940-p115">In the **Supervise these users or groups** box, choose the users or groups whose communications your want to supervise. Sticking with our example for Contoso US Brokers, we'll choose the group US_Brokers@Contoso.com here.</span></span> 
-    
-- <span data-ttu-id="d2940-p116">如果您選擇以管理群組，您可以使用 [**排除這些使用者**] 方塊中選擇免除監督時群組的成員。使用的範例，我們將排除的群組 US_Compliance@Contoso.com 此處。</span><span class="sxs-lookup"><span data-stu-id="d2940-p116">If you chose a group to supervise, you can use the **Exclude these users** box to choose members of the group who are exempt from supervision . Using the example , we'll exclude the group US_Compliance@Contoso.com here.</span></span> 
-    
-### <a name="choose-communications-to-review"></a><span data-ttu-id="d2940-186">選擇 [可供檢閱的通訊</span><span class="sxs-lookup"><span data-stu-id="d2940-186">Choose communications to review</span></span>
-<span data-ttu-id="d2940-187"><a name="CommsToReview"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-187"></span></span>
+4. <span data-ttu-id="c7646-161">在 [**成員**] 區段中，新增您想要管理您的組織的監督的人員。</span><span class="sxs-lookup"><span data-stu-id="c7646-161">In the **Members** section, add the people who you want to manage supervision for your organization.</span></span>
 
-<span data-ttu-id="d2940-p117">根據預設，**方向是**條件會顯示，且無法移除。如果您想要的範圍 （例如僅檢閱含有特定單字或片語的內容） 進一步的檢閱，按一下 [**新增條件**。您可以在必要時指定多個條件。</span><span class="sxs-lookup"><span data-stu-id="d2940-p117">By default, the **Direction is** condition is displayed and can't be removed. If you want to scope the review further (such as only reviewing content that contains certain words or phrases), click **Add a condition**. You can specify multiple conditions if needed.</span></span>
-  
-<span data-ttu-id="d2940-p118">您選擇的條件將套用通訊 (從 Facebook 或投寄箱 like) 您組織中的電子郵件和第 3 廠商來源。如需 Office 365 組織將匯入第 3 廠商通訊的詳細資訊，請參閱[Office 365 中的封存與協力廠商資料](https://technet.microsoft.com/EN-US/library/mt621583.aspx)。</span><span class="sxs-lookup"><span data-stu-id="d2940-p118">The conditions you choose will apply to communications from both email and 3rd-party sources in your organization (like from Facebook or DropBox). For details about importing 3rd-party communications into your Office 365 organization, see [Archiving third-party data in Office 365](https://technet.microsoft.com/EN-US/library/mt621583.aspx).</span></span>
-  
-<span data-ttu-id="d2940-193">下表說明更多關於每一項條件。</span><span class="sxs-lookup"><span data-stu-id="d2940-193">The following table explains more about each condition.</span></span>
-  
-|<span data-ttu-id="d2940-194">**條件**</span><span class="sxs-lookup"><span data-stu-id="d2940-194">**Condition**</span></span>|<span data-ttu-id="d2940-195">**如何使用此條件**</span><span class="sxs-lookup"><span data-stu-id="d2940-195">**How to use this condition**</span></span>|
-|:-----|:-----|
-|<span data-ttu-id="d2940-196">指示如下</span><span class="sxs-lookup"><span data-stu-id="d2940-196">Direction is</span></span>  <br/> |<span data-ttu-id="d2940-197">選擇**輸入**檢閱就會傳送**至**管理**從**人員選擇的人員不包含在原則中的通訊。</span><span class="sxs-lookup"><span data-stu-id="d2940-197">Choose **Inbound** to review communications that are sent **to** the people you chose to supervise **from** people not included in the policy.</span></span>  <br/> <span data-ttu-id="d2940-198">如果您想要檢閱通訊所選擇**輸出****寄件者選擇管理人員*** * 以 * * 不包含在原則中的人員。</span><span class="sxs-lookup"><span data-stu-id="d2940-198">Choose **Outbound** if you want to review communications that are sent **from** the people you chose to supervise ** to ** people not included in the policy.</span></span>  <br/> <span data-ttu-id="d2940-199">選擇**內部**通訊傳送**之間**檢閱您指定的人員原則中。</span><span class="sxs-lookup"><span data-stu-id="d2940-199">Choose **Internal** to review communications sent **between** the people you identified in the policy.</span></span>  <br/> |
-|<span data-ttu-id="d2940-200">郵件包含任何這些字詞</span><span class="sxs-lookup"><span data-stu-id="d2940-200">Message contains any of these words</span></span>  <br/> <span data-ttu-id="d2940-201">郵件包含任何這些字詞</span><span class="sxs-lookup"><span data-stu-id="d2940-201">Message contains none of these words</span></span>  <br/> |<span data-ttu-id="d2940-p119">若要將原則套用包含或排除在郵件中特定單字或片語時，輸入每個單字或片語分列一行。您輸入的文字的每一行會分別套用 （僅需一個的這些行必須套用適用於將原則套用至郵件）。如需輸入單字或片語的詳細資訊，請參閱 [下一步] 區段中[比對字與詞至電子郵件或附件](configure-supervision-policies.md#Matchwords)。</span><span class="sxs-lookup"><span data-stu-id="d2940-p119">To apply the policy when certain words or phrases are included or excluded in a message, enter each word or phrase on a separate line. Each line of words you enter will be applied separately (only one of these lines must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](configure-supervision-policies.md#Matchwords).  </span></span><br/> |
-|<span data-ttu-id="d2940-205">附件中包含任何這些字詞</span><span class="sxs-lookup"><span data-stu-id="d2940-205">Attachment contains any of these words</span></span>  <br/> <span data-ttu-id="d2940-206">附件包含任何這些字詞</span><span class="sxs-lookup"><span data-stu-id="d2940-206">Attachment contains none of these words</span></span>  <br/> |<span data-ttu-id="d2940-p120">若要將原則套用包含或排除在郵件附件 （例如 Word 文件） 中特定單字或片語時，輸入每個單字或片語分列一行。您輸入的文字的每一行會分別套用 （僅限一行必須套用適用於將原則套用至附件）。如需輸入單字或片語的詳細資訊，請參閱 [下一步] 區段中[比對字與詞至電子郵件或附件](configure-supervision-policies.md#Matchwords)。</span><span class="sxs-lookup"><span data-stu-id="d2940-p120">To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word or phrase on a separate line. Each line of words you enter will be applied separately (only one line must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](configure-supervision-policies.md#Matchwords).  </span></span><br/> |
-|<span data-ttu-id="d2940-210">附件是任何這些檔案類型</span><span class="sxs-lookup"><span data-stu-id="d2940-210">Attachment is any of these file types</span></span>  <br/> <span data-ttu-id="d2940-211">附件為 none 這些檔案類型</span><span class="sxs-lookup"><span data-stu-id="d2940-211">Attachment is none of these file types</span></span>  <br/> |<span data-ttu-id="d2940-p121">若要管理包括或排除特定類型的附件的通訊，請輸入副檔名 （例如.exe 或.pdf）。如果您想要包含或排除多個副檔名，輸入這些在個別行上。只有一個附件副檔名必須套用之原則的相符。</span><span class="sxs-lookup"><span data-stu-id="d2940-p121">To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter these on separate lines. Only one attachment extension needs to match for the policy to apply.</span></span>  <br/> |
-|<span data-ttu-id="d2940-215">郵件大小大於</span><span class="sxs-lookup"><span data-stu-id="d2940-215">Message size is larger than</span></span>  <br/> <span data-ttu-id="d2940-216">郵件大小大於不</span><span class="sxs-lookup"><span data-stu-id="d2940-216">Message size is not larger than</span></span>  <br/> |<span data-ttu-id="d2940-p122">若要檢閱根據特定大小的郵件，請使用這些條件來指定一則訊息可以隨時檢閱之前的最大值或最小大小。例如，如果您指定**的郵件大小大於** \> **1.0 MB**，所有郵件 1.01 MB 且更大會遵循檢閱。您可以選擇位元組、 kb、 （mb） 或 gb 此情況。</span><span class="sxs-lookup"><span data-stu-id="d2940-p122">To review messages based on a certain size, use these conditions to specify the maximum or minimum size a message can be before it is subject to review. For example, if you specify **Message size is larger than** \> **1.0 MB**, all messages that are 1.01 MB and larger will be subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.  </span></span><br/> |
-|<span data-ttu-id="d2940-220">附件為大於</span><span class="sxs-lookup"><span data-stu-id="d2940-220">Attachment is larger than</span></span>  <br/> <span data-ttu-id="d2940-221">附件是不大於</span><span class="sxs-lookup"><span data-stu-id="d2940-221">Attachment is not larger than</span></span>  <br/> |<span data-ttu-id="d2940-p123">若要檢閱其附件的大小為基礎的郵件，請指定附件的最大值或最小大小可以是之前郵件和其附件會受到檢閱。例如，如果您指定**附件大於** \> **2.0 MB**附件的所有郵件 2.01 MB 及移轉會遵循檢閱。您可以選擇位元組、 kb、 （mb） 或 gb 此情況。</span><span class="sxs-lookup"><span data-stu-id="d2940-p123">To review messages based on the size of their attachments, specify the maximum or minimum size an attachment can be before the message and its attachments are subject to review. For example, if you specify **Attachment is larger than** \> **2.0 MB**, all messages with attachments 2.01 MB and over will be subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.  </span></span><br/> |
-   
-#### <a name="matching-words-and-phrases-to-emails-or-attachments"></a><span data-ttu-id="d2940-225">對電子郵件或附件比對單字和字詞</span><span class="sxs-lookup"><span data-stu-id="d2940-225">Matching words and phrases to emails or attachments</span></span>
-<span data-ttu-id="d2940-226"><a name="Matchwords"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-226"></span></span>
+### <a name="create-a-new-role-group"></a><span data-ttu-id="c7646-162">建立新的角色群組</span><span class="sxs-lookup"><span data-stu-id="c7646-162">Create a new role group</span></span>
 
-<span data-ttu-id="d2940-p124">您輸入的文字的每一行會分別套用 （僅限一行必須套用適用於電子郵件或附件套用原則條件）。例如，我們使用條件、**郵件包含任何這些字詞**，關鍵字"也"及"內部貿易"在個別行上。原則會套用到任何包含"也"一字或片語"內部貿易"的訊息。僅有一個這些單字或片語的必須發生以套用此原則條件。在訊息或附件中的文字必須完全符合您的輸入。</span><span class="sxs-lookup"><span data-stu-id="d2940-p124">Each line of words you enter will be applied separately (only one line must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker" and "insider trading" on separate lines. The policy will apply to any messages that includes the word "banker" or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.</span></span>
-  
-#### <a name="entering-multiple-conditions"></a><span data-ttu-id="d2940-232">輸入多個條件</span><span class="sxs-lookup"><span data-stu-id="d2940-232">Entering multiple conditions</span></span>
-<span data-ttu-id="d2940-233"><a name="Matchwords"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-233"></span></span>
+1. <span data-ttu-id="c7646-163">登入[https://protection.office.com](https://protection.office.com)使用 Office 365 組織中的管理帳戶的認證。</span><span class="sxs-lookup"><span data-stu-id="c7646-163">Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.</span></span>
 
-<span data-ttu-id="d2940-p125">如果您輸入多個條件、 Office 365 使用的所有條件一起決定何時要將原則套用至通訊項目。當您設定多個條件時，他們必須所有符合將原則套用，除非您輸入的例外狀況。例如，假設您需要建立如果郵件包含單字"貿易"且大於 2 MB 應套用原則。不過，如果郵件也包含單字"Contoso 財務的已核准 」，應該不會套用原則。因此，在此例中的三種條件就是，如下所示：</span><span class="sxs-lookup"><span data-stu-id="d2940-p125">If you enter multiple conditions, Office 365 uses all the conditions together to determine when to apply the policy to communication items. When you set up multiple conditions, they must all be met for the policy to apply, unless you enter an exception. For example, let's say you need to create a policy that should apply if a message contains the word "trade", and is larger than 2MB. However, if the message also contains the words "Approved by Contoso financial", the policy should not apply. Thus, in this case, the three conditions would be as follows:</span></span> 
-  
-- <span data-ttu-id="d2940-239">**郵件包含任何這些字詞**、 使用關鍵字"貿易"</span><span class="sxs-lookup"><span data-stu-id="d2940-239">**Message contains any of these words**, with the keywords "trade"</span></span>
-    
-- <span data-ttu-id="d2940-240">**郵件大小大於**，以值 2 MB</span><span class="sxs-lookup"><span data-stu-id="d2940-240">**Message size is larger than**, with the value 2 MB</span></span>
-    
-- <span data-ttu-id="d2940-241">**郵件包含不含這些字**、 使用關鍵字"Contoso 財務小組的已核准 」。</span><span class="sxs-lookup"><span data-stu-id="d2940-241">**Message contains none of these words**, with the keywords "Approved by Contoso financial team".</span></span>
-    
-### <a name="specify-percentage-to-review"></a><span data-ttu-id="d2940-242">指定要檢閱百分比</span><span class="sxs-lookup"><span data-stu-id="d2940-242">Specify percentage to review</span></span>
-<span data-ttu-id="d2940-243"><a name="CommsToReview"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-243"></span></span>
+2. <span data-ttu-id="c7646-164">在安全性 & 規範中心中，移至 [**權限**和 [新增 (**+**)。</span><span class="sxs-lookup"><span data-stu-id="c7646-164">In the Security & Compliance Center, go to **Permissions** and then click Add (**+**).</span></span>
 
-<span data-ttu-id="d2940-p126">如果您想要減少可供檢閱的內容量，指定百分比。我們隨機將選取的內容量從總符合您所選擇的條件。如果您想檢閱者的所有項目，請輸入**100%**。</span><span class="sxs-lookup"><span data-stu-id="d2940-p126">If you want to reduce the amount of content to review, specify a percentage. We'll randomly select that amount of content from the total that matched the conditions you chose. If you want reviewers to review all items, enter **100%**.</span></span>
-  
-### <a name="choose-reviewers"></a><span data-ttu-id="d2940-247">選擇 [檢閱者</span><span class="sxs-lookup"><span data-stu-id="d2940-247">Choose reviewers</span></span>
-<span data-ttu-id="d2940-248"><a name="CommsToReview"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-248"></span></span>
+3. <span data-ttu-id="c7646-p111">在 [**角色**] 區段中，按一下 [新增] (**+**) 和**監督檢閱管理員**下的捲軸。將此角色新增至角色群組。</span><span class="sxs-lookup"><span data-stu-id="c7646-p111">In the **Roles** section, click Add (**+**) and scroll down to **Supervisory Review Administrator**. Add this role to the role group.</span></span>
 
-<span data-ttu-id="d2940-p127">使用者和群組您選擇要用以監督應用程式 Outlook web app 中檢查傳回依此原則的通訊。您可以在內部或外部檢閱者的包含電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="d2940-p127">The users and groups you choose will use the Supervision app in Outlook web app to examine the communications that are returned by this policy. You can include email addresses for internal or external reviewers.</span></span> 
-  
-### <a name="review-your-settings"></a><span data-ttu-id="d2940-251">檢閱您的設定</span><span class="sxs-lookup"><span data-stu-id="d2940-251">Review your settings</span></span>
-<span data-ttu-id="d2940-252"><a name="CommsToReview"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-252"></span></span>
+4. <span data-ttu-id="c7646-167">在 [**成員**] 區段中，新增您想要管理您的組織的監督的人員。</span><span class="sxs-lookup"><span data-stu-id="c7646-167">In the **Members** section, add the people who you want to manage supervision for your organization.</span></span>
 
-<span data-ttu-id="d2940-p128">在完成所有章節的監督原則後，檢閱您的設定和 [**完成**] 以儲存您的原則。可能需要幾個小時開始捕捉 communications 原則。監督將供檢閱的所有通訊都傳遞到檢閱者可以存取 Outlook web app 中的共用資料夾。</span><span class="sxs-lookup"><span data-stu-id="d2940-p128">After you've completed all sections of the supervision policy, review your settings and then click **Finish** to save your policy. It might take a few hours for the policy to start capturing communications. Supervision delivers all communications for review into a shared folder that reviewers can access in Outlook web app.</span></span> 
-  
-## <a name="use-outlook-web-app-to-review-communications-identified-by-a-supervision-policy"></a><span data-ttu-id="d2940-256">使用 Outlook web app 檢閱監督原則所識別的通訊</span><span class="sxs-lookup"><span data-stu-id="d2940-256">Use Outlook web app to review communications identified by a supervision policy</span></span>
-<span data-ttu-id="d2940-257"><a name="UseOutlook"> </a></span><span class="sxs-lookup"><span data-stu-id="d2940-257"></span></span>
+<span data-ttu-id="c7646-168">如需有關角色群組和權限的詳細資訊，請參閱[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="c7646-168">For more information about role groups and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-<span data-ttu-id="d2940-p129">檢閱者將會使用監督增益集的 Outlook web app 檢閱通訊。增益集會自動安裝 Outlook web app 中所指定之原則的所有檢閱者的。即將推出的桌面的 Outlook 版本支援。</span><span class="sxs-lookup"><span data-stu-id="d2940-p129">Reviewers will use the Supervision add-in for Outlook web app to review communications. The add-in is installed automatically in Outlook web app for all reviewers you specified in the policy. Support for the desktop version of Outlook is coming soon.</span></span>
-  
- <span data-ttu-id="d2940-261">**檢閱在 Outlook web app 中的通訊**</span><span class="sxs-lookup"><span data-stu-id="d2940-261">**Reviewing communications in Outlook web app**</span></span>
-  
-1. <span data-ttu-id="d2940-262">在 Outlook web app 中，依序展開 [**監督-\<原則名稱\>** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="d2940-262">In Outlook web app, expand the **Supervision - \<policy name\>** folder.</span></span> 
-    
-2. <span data-ttu-id="d2940-263">在**\<原則名稱\>** 子資料夾、 檢閱者將會看到該監督原則所識別的所有通訊。</span><span class="sxs-lookup"><span data-stu-id="d2940-263">In the **\<policy name\>** subfolder, reviewers will see all the communications identified by that supervision policy.</span></span> 
-    
-    ![監督增益集在 Outlook web app 顯示所選取的監督原則子資料夾](media/eef329bf-2bd0-477e-a715-76ca19b3347f.jpg)
-  
-3. <span data-ttu-id="d2940-265">開啟檢閱並按一下 [**監督**增益集的項目。</span><span class="sxs-lookup"><span data-stu-id="d2940-265">Open an item to review and click the **Supervision** add-in.</span></span> 
-    
-4. <span data-ttu-id="d2940-p130">使用增益集將分類為**符合標準**、**非符合標準**、 **Questionable**或**已解決**的項目。您是否已分類項目之後，將會移至相對應的子資料夾下**\<原則名稱\>** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="d2940-p130">Use the add-in to classify the item as **Compliant**, **Non-Compliant**, **Questionable,** or **Resolved**. After you've classified an item, it will be moved to the corresponding subfolder under the **\<policy name\>** folder.</span></span> 
-    
+### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a><span data-ttu-id="c7646-169">啟用遠端 PowerShell 存取檢閱者 （若電子郵件會被託管在 Exchange Online）</span><span class="sxs-lookup"><span data-stu-id="c7646-169">Enable remote PowerShell access for reviewers (if email is hosted on Exchange Online)</span></span>
 
+1. <span data-ttu-id="c7646-170">請遵循[啟用或停用 access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)中的指引。</span><span class="sxs-lookup"><span data-stu-id="c7646-170">Follow the guidance in [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).</span></span>
+
+<span data-ttu-id="c7646-171"><a name="sensitiveinfo"> </a></span><span class="sxs-lookup"><span data-stu-id="c7646-171"></span></span>
+  
+## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a><span data-ttu-id="c7646-172">步驟 3-建立自訂的敏感資訊類型或自訂的關鍵字字典 （選用）</span><span class="sxs-lookup"><span data-stu-id="c7646-172">Step 3 - Create custom sensitive information types or custom keyword dictionaries (optional)</span></span>
+
+<span data-ttu-id="c7646-173">若要挑選的現有自訂的敏感資訊類型或自訂的關鍵字字典監督原則] 精靈中，您需要視建立這些項目。</span><span class="sxs-lookup"><span data-stu-id="c7646-173">In order to pick from existing custom sensitive information types or custom keyword dictionaries in the supervision policy wizard, you first need to create these items if needed.</span></span>
+
+### <a name="create-custom-sensitive-information-types"></a><span data-ttu-id="c7646-174">建立自訂的敏感資訊類型</span><span class="sxs-lookup"><span data-stu-id="c7646-174">Create custom sensitive information types</span></span>
+
+1. <span data-ttu-id="c7646-p112">在 Office 365 安全性 & 規範中心中建立新的敏感資訊類型。瀏覽至 [**分類** \> **敏感資訊類型**並遵循**新增敏感資訊類型] 精靈**中的步驟。將以下：</span><span class="sxs-lookup"><span data-stu-id="c7646-p112">Create a new sensitive information type in the Office 365 Security & Compliance Center. Navigate to **Classifications** \> **Sensitive info types** and follow the steps in the **New sensitive info type wizard**. Here you will:</span></span>
+
+    - <span data-ttu-id="c7646-178">定義的名稱和描述的敏感資訊類型</span><span class="sxs-lookup"><span data-stu-id="c7646-178">Define a name and description for the sensitive info type</span></span>
+    - <span data-ttu-id="c7646-179">定義鄰近、 信賴等級和主要圖樣元素</span><span class="sxs-lookup"><span data-stu-id="c7646-179">Define the proximity, confidence level, and primary pattern elements</span></span>
+    - <span data-ttu-id="c7646-180">檢閱您的選項，並建立的敏感資訊類型</span><span class="sxs-lookup"><span data-stu-id="c7646-180">Review your selections and create the sensitive info type</span></span>
+
+    <span data-ttu-id="c7646-181">如需詳細資訊，請參閱[建立自訂的敏感資訊類型](create-a-custom-sensitive-information-type.md)。</span><span class="sxs-lookup"><span data-stu-id="c7646-181">For more detailed information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).</span></span>
+
+### <a name="create-custom-keyword-dictionarylexicon"></a><span data-ttu-id="c7646-182">建立自訂的關鍵字字典/lexicon</span><span class="sxs-lookup"><span data-stu-id="c7646-182">Create custom keyword dictionary/lexicon</span></span>
+
+1. <span data-ttu-id="c7646-p113">使用文字編輯器 （例如 [記事本])，建立新的檔案包含您想要監視監督原則中的關鍵字詞組。確定每個字詞是以一行和**Unicode/utf-16 (一點 Endian)** 格式儲存檔案。</span><span class="sxs-lookup"><span data-stu-id="c7646-p113">Using a text editor (like Notepad), create a new file that includes the keyword terms you'd like to monitor in a supervision policy. Make sure each term is on a separate line and save the file in the **Unicode/UTF-16 (Little Endian)** format.</span></span>
+2. <span data-ttu-id="c7646-p114">關鍵字檔案匯入您的 Office 365 租用戶使用 PowerShell。若要連線至 Office 365 powershell，請參閱[Connect to Office 365 安全性 & 規範中心 PowerShell。](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)</span><span class="sxs-lookup"><span data-stu-id="c7646-p114">Import the keyword file into your Office 365 tenant using PowerShell. To connect to Office 365 with PowerShell, see [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
+
+    <span data-ttu-id="c7646-187">您已連線至 Office 365 with PowerShell 之後，請執行下列命令以匯入關鍵字字典：</span><span class="sxs-lookup"><span data-stu-id="c7646-187">After you've connected to Office 365 with PowerShell, run the following commands to import your keyword dictionary:</span></span>
+
+    ```
+    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
+
+    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
+    ```
+    <span data-ttu-id="c7646-188">如需詳細資訊，請參閱 ＜ [Create 關鍵字字典](create-a-keyword-dictionary.md)。</span><span class="sxs-lookup"><span data-stu-id="c7646-188">For more detailed information, see [Create a keyword dictionary](create-a-keyword-dictionary.md).</span></span>
+
+3. <span data-ttu-id="c7646-p115">在 Office 365 安全性 & 規範中心中建立新的敏感資訊類型。瀏覽至 [**分類** \> **敏感資訊類型**並遵循**新增敏感資訊類型] 精靈**中的步驟。將以下：</span><span class="sxs-lookup"><span data-stu-id="c7646-p115">Create a new sensitive information type in the Office 365 Security & Compliance Center. Navigate to **Classifications** \> **Sensitive info types** and follow the steps in the **New sensitive info type wizard**. Here you will:</span></span>
+
+    - <span data-ttu-id="c7646-192">定義的名稱和描述的敏感資訊類型</span><span class="sxs-lookup"><span data-stu-id="c7646-192">Define a name and description for the sensitive info type</span></span>
+    - <span data-ttu-id="c7646-193">將您的自訂字典新增為必要項目相符的項目</span><span class="sxs-lookup"><span data-stu-id="c7646-193">Add your custom dictionary as a requirement for the matching element</span></span>
+    - <span data-ttu-id="c7646-194">檢閱您的選項，並建立的敏感資訊類型</span><span class="sxs-lookup"><span data-stu-id="c7646-194">Review your selections and create the sensitive info type</span></span>
+
+    <span data-ttu-id="c7646-195">建立自訂字典/lexicon 之後，您可以檢視已設定使用[Get DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)指令程式的關鍵字或新增和移除字詞[組 DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)指令程式。</span><span class="sxs-lookup"><span data-stu-id="c7646-195">After the custom dictionary/lexicon is created, you can view the configured keywords using the [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet or add and remove terms using the [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet.</span></span>
+
+    <span data-ttu-id="c7646-196">如需詳細資訊，請參閱[建立自訂的敏感資訊類型](create-a-custom-sensitive-information-type.md)。</span><span class="sxs-lookup"><span data-stu-id="c7646-196">For more detailed information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).</span></span>
+
+<span data-ttu-id="c7646-197"><a name="setupsuper"> </a></span><span class="sxs-lookup"><span data-stu-id="c7646-197"></span></span>
+
+## <a name="step-4---set-up-a-supervision-policy-required"></a><span data-ttu-id="c7646-198">步驟 4-設定 （必要） 的監督原則</span><span class="sxs-lookup"><span data-stu-id="c7646-198">Step 4 - Set up a supervision policy (required)</span></span>
+  
+1. <span data-ttu-id="c7646-199">登入[https://protection.office.com](https://protection.office.com)使用 Office 365 組織中的管理帳戶的認證。</span><span class="sxs-lookup"><span data-stu-id="c7646-199">Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.</span></span>
+
+2. <span data-ttu-id="c7646-200">在 [安全性 & 規範中心中，選取**監督**。</span><span class="sxs-lookup"><span data-stu-id="c7646-200">In the Security & Compliance Center, select **Supervision**.</span></span>
+  
+3. <span data-ttu-id="c7646-p116">選取 [**建立**，然後遵循精靈來設定下列原則的頁面。您使用精靈，將會：</span><span class="sxs-lookup"><span data-stu-id="c7646-p116">Select **Create** and then follow the wizard to set up the following pages of the policy. Using the wizard, you will:</span></span>
+
+    - <span data-ttu-id="c7646-203">提供該原則的名稱和描述。</span><span class="sxs-lookup"><span data-stu-id="c7646-203">Give the policy a name and description.</span></span>
+    - <span data-ttu-id="c7646-204">選擇 [使用者或群組管理，包括 [選擇使用者或您想要排除的群組。</span><span class="sxs-lookup"><span data-stu-id="c7646-204">Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.</span></span>
+    - <span data-ttu-id="c7646-205">定義監督原則條件。</span><span class="sxs-lookup"><span data-stu-id="c7646-205">Define the supervision policy conditions.</span></span>
+    - <span data-ttu-id="c7646-p117">選擇 [是否您想要包含敏感資訊類型。這是您可以在其中選取預設和自訂的敏感資訊類型。</span><span class="sxs-lookup"><span data-stu-id="c7646-p117">Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types.</span></span>
+    - <span data-ttu-id="c7646-208">定義可供檢閱的通訊的百分比。</span><span class="sxs-lookup"><span data-stu-id="c7646-208">Define the percentage of communications to review.</span></span>
+    - <span data-ttu-id="c7646-p118">選擇 [原則檢閱者。檢閱者可以是個別使用者或[擁有郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。</span><span class="sxs-lookup"><span data-stu-id="c7646-p118">Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group).</span></span>
+    - <span data-ttu-id="c7646-211">檢閱您的原則選項並建立原則。</span><span class="sxs-lookup"><span data-stu-id="c7646-211">Review your policy selections and create the policy.</span></span>
+
+<span data-ttu-id="c7646-212"><a name="TestPolicy"> </a></span><span class="sxs-lookup"><span data-stu-id="c7646-212"></span></span>
+
+## <a name="step-5---test-your-supervision-policy-optional"></a><span data-ttu-id="c7646-213">步驟 5-測試您的監督原則 （選用）</span><span class="sxs-lookup"><span data-stu-id="c7646-213">Step 5 - Test your supervision policy (optional)</span></span>
+
+<span data-ttu-id="c7646-p119">建立監督原則之後，它會是不錯的選項進行測試以確定您定義的條件會被正確強制原則。如果您監督原則包含敏感資訊類型也可能會想要[測試您的資料外洩防護 (DLP) 原則](create-test-tune-dlp-policy.md)。請遵循下列步驟來測試您的監督原則：</span><span class="sxs-lookup"><span data-stu-id="c7646-p119">After you create a supervision policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your supervision policies include sensitive information types. Follow the steps below to test your supervision policy:</span></span>
+
+1. <span data-ttu-id="c7646-217">開啟的電子郵件用戶端或 Microsoft 小組以登入您想要測試該的原則所定義的監督使用者。</span><span class="sxs-lookup"><span data-stu-id="c7646-217">Open an email client or Microsoft Teams logged in as a supervised user defined in the policy you want to test.</span></span>
+2. <span data-ttu-id="c7646-p120">傳送電子郵件或符合您已定義的監督原則中之準則的 Microsoft 小組聊天室。這可以是關鍵字附件大小、 網域、 等。請確定您決定是否太嚴格或太寬鬆原則中設定格式化的條件組態的設定。</span><span class="sxs-lookup"><span data-stu-id="c7646-p120">Send an email or Microsoft Teams chat that meets the criteria you've defined in the supervision policy. This can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy is too restrictive or too lenient.</span></span>
+
+    > [!Note]
+    > <span data-ttu-id="c7646-p121">電子郵件受限於定義的原則會以幾近即時地處理及之後設定的原則就可以測試。聊天室中的 Microsoft 小組可能需要 24 小時的時間來完全處理原則中。</span><span class="sxs-lookup"><span data-stu-id="c7646-p121">Emails subject to defined policies are processed in near real-time and can be tested immediately after the policy is configured. Chats in Microsoft Teams can take up to 24 hours to fully process in a policy.</span></span> 
+
+3. <span data-ttu-id="c7646-p122">登入您的 Office 365 租用戶為監督原則中指定檢閱者。瀏覽至 [**監督** > *您的自訂原則* > **開啟**以檢視該原則的報告。</span><span class="sxs-lookup"><span data-stu-id="c7646-p122">Log into your Office 365 tenant as a reviewer designated in the supervision policy. Navigate to **Supervision** > *Your Custom Policy* > **Open** to view the report for the policy.</span></span>
+
+<span data-ttu-id="c7646-224"><a name="UseOutlook"> </a></span><span class="sxs-lookup"><span data-stu-id="c7646-224"></span></span>
+
+## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a><span data-ttu-id="c7646-225">步驟 6-設定 Outlook 增益集的檢閱者 （選用）</span><span class="sxs-lookup"><span data-stu-id="c7646-225">Step 6 - Set up Outlook add-in for reviewers (optional)</span></span>
+
+<span data-ttu-id="c7646-226">想要使用 Outlook，而非使用 Office 365 或網路上的 Outlook 中的監督儀表板檢閱通訊的檢閱者必須安裝的監督增益集其 Outlook 用戶端。</span><span class="sxs-lookup"><span data-stu-id="c7646-226">Reviewers that want to use Outlook instead of using the Supervision dashboard in Office 365 or Outlook on the web to review communications must install the Supervision add-in for their Outlook client.</span></span>
+
+### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a><span data-ttu-id="c7646-227">步驟 1： 將複製的監督信箱的地址</span><span class="sxs-lookup"><span data-stu-id="c7646-227">Step 1: Copy the address for the supervision mailbox</span></span>
+
+<span data-ttu-id="c7646-228">若要安裝的 Outlook 桌面增益集，您將需要位址監督信箱建立為監督原則安裝程式的一部分。</span><span class="sxs-lookup"><span data-stu-id="c7646-228">To install the add-in for Outlook desktop, you'll need the address for the supervision mailbox that was created as part of the supervision policy setup.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="c7646-229">如果別人建立原則，您需要從其安裝增益集取得此位址。</span><span class="sxs-lookup"><span data-stu-id="c7646-229">If someone else created the policy, you'll need to get this address from them to install the add-in.</span></span>
+
+ <span data-ttu-id="c7646-230">**若要尋找的監督信箱地址**</span><span class="sxs-lookup"><span data-stu-id="c7646-230">**To find the supervision mailbox address**</span></span>
+  
+1. <span data-ttu-id="c7646-231">登入[安全性&amp;規範中心](https://protection.office.com)使用 Office 365 組織中的管理帳戶的認證。</span><span class="sxs-lookup"><span data-stu-id="c7646-231">Sign into the [Security &amp; Compliance Center](https://protection.office.com) using credentials for an admin account in your Office 365 organization.</span></span>
+
+2. <span data-ttu-id="c7646-232">移至**監督**。</span><span class="sxs-lookup"><span data-stu-id="c7646-232">Go to **Supervision**.</span></span>
+
+3. <span data-ttu-id="c7646-233">按一下 [收集您想要檢閱的通訊的監督原則。</span><span class="sxs-lookup"><span data-stu-id="c7646-233">Click the supervision policy that's gathering the communications you want to review.</span></span>
+
+4. <span data-ttu-id="c7646-234">原則的詳細資訊彈出式、 下**監督信箱**中複製的位址。</span><span class="sxs-lookup"><span data-stu-id="c7646-234">In the policy details flyout, under **Supervision mailbox**, copy the address.</span></span><br/><span data-ttu-id="c7646-235">!['監督信箱'] 區段中的監督原則的詳細資訊彈出式顯示醒目提示的監督信箱地址](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)</span><span class="sxs-lookup"><span data-stu-id="c7646-235">![The 'Supervision Mailbox' section of a supervision policy's details flyout showing the supervision mailbox address highlighted](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)</span></span>
+  
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a><span data-ttu-id="c7646-236">步驟 2： 設定 Outlook 桌面 access 監督信箱</span><span class="sxs-lookup"><span data-stu-id="c7646-236">Step 2: Configure the supervision mailbox for Outlook desktop access</span></span>
+
+<span data-ttu-id="c7646-237">接下來，檢閱者需要讓他們可以將 Outlook 連接到監督信箱執行幾個的 Exchange Online PowerShell 命令。</span><span class="sxs-lookup"><span data-stu-id="c7646-237">Next, reviewers will need to run a couple Exchange Online PowerShell commands so they can connect Outlook to the supervision mailbox.</span></span>
+  
+1. <span data-ttu-id="c7646-p123">連線到 Exchange Online PowerShell。[如何執行這？](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)</span><span class="sxs-lookup"><span data-stu-id="c7646-p123">Connect to Exchange Online PowerShell. [How do I do this?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)</span></span>
+
+2. <span data-ttu-id="c7646-240">執行下列命令，其中*SupervisoryReview{GUID}@domain.onmicrosoft.com*是您在上述步驟 1 中複製的地址和*使用者*是檢閱者都要連線至步驟 3 中的監督信箱的名稱。</span><span class="sxs-lookup"><span data-stu-id="c7646-240">Run the following commands, where  *SupervisoryReview{GUID}@domain.onmicrosoft.com*  is the address you copied in Step 1 above, and  *User*  is the name of the reviewer who will be connecting to the supervision mailbox in Step 3.</span></span>
+
+    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
+
+    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
+
+3. <span data-ttu-id="c7646-241">等待至少一小時前將移至下的步驟 3。</span><span class="sxs-lookup"><span data-stu-id="c7646-241">Wait at least an hour before moving on to Step 3 below.</span></span>
+
+### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a><span data-ttu-id="c7646-242">步驟 3： 建立 Outlook 設定檔連線至監督信箱</span><span class="sxs-lookup"><span data-stu-id="c7646-242">Step 3: Create an Outlook profile to connect to the supervision mailbox</span></span>
+
+<span data-ttu-id="c7646-243">最後一個步驟中，檢閱者必須建立 Outlook 設定檔連線至監督信箱。</span><span class="sxs-lookup"><span data-stu-id="c7646-243">For the final step, reviewers will need to create an Outlook profile to connect to the supervision mailbox.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="c7646-p124">若要建立新的 Outlook 設定檔，您將在 Windows 控制台中使用 [郵件設定。您需要以取得這些設定的路徑可能會取決於您使用的 Windows 作業系統 （Windows 7、 Windows 8 或 Windows 10），並且已安裝的 Outlook 版本。</span><span class="sxs-lookup"><span data-stu-id="c7646-p124">To create a new Outlook profile, you'll use the Mail settings in the Windows Control Panel. The path you take to get to these settings might depend on which Windows operating system (Windows 7, Windows 8, or Windows 10) you're using, and which version of Outlook is installed.</span></span>
+  
+1. <span data-ttu-id="c7646-246">開啟 [控制台] 中，並在視窗頂端的 [**搜尋**] 方塊中輸入**郵件**。</span><span class="sxs-lookup"><span data-stu-id="c7646-246">Open the Control Panel, and in the **Search** box at the top of the window, type **Mail**.</span></span><br/><span data-ttu-id="c7646-p125">(不確定如何取得 Control panel？請參閱[所在控制台吗？](https://support.microsoft.com/help/13764/windows-where-is-control-panel))</span><span class="sxs-lookup"><span data-stu-id="c7646-p125">(Not sure how to get to the Control Panel? See [Where is Control Panel?](https://support.microsoft.com/help/13764/windows-where-is-control-panel))</span></span>
+  
+2. <span data-ttu-id="c7646-249">開啟**郵件**應用程式。</span><span class="sxs-lookup"><span data-stu-id="c7646-249">Open the **Mail** app.</span></span>
+
+3. <span data-ttu-id="c7646-250">在 [**郵件設定-Outlook**中，按一下 [**顯示設定檔**]。</span><span class="sxs-lookup"><span data-stu-id="c7646-250">In **Mail Setup - Outlook**, click **Show Profiles**.</span></span><br/><span data-ttu-id="c7646-251">!['郵件安裝-Outlook'' 顯示設定檔 」 按鈕醒目提示] 對話方塊](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)</span><span class="sxs-lookup"><span data-stu-id="c7646-251">![The 'Mail Setup - Outlook' dialog box with the 'Show Profiles' button highlighted](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)</span></span>
+  
+4. <span data-ttu-id="c7646-p126">在 [**郵件**] 按一下 [**新增**]。然後，在**新的設定檔**、 輸入的名稱 （例如**監督**） 監督信箱。</span><span class="sxs-lookup"><span data-stu-id="c7646-p126">In **Mail**, click **Add**. Then, in **New Profile**, enter a name for the supervision mailbox (such as **Supervision**).</span></span><br/><span data-ttu-id="c7646-254">![在 [設定檔名稱] 方塊中顯示名稱 '監督' ' 新設定檔 」 對話方塊](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)</span><span class="sxs-lookup"><span data-stu-id="c7646-254">![The 'New Profile' dialog showing the name 'Supervision' in the 'Profile Name' box](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)</span></span>
+  
+5. <span data-ttu-id="c7646-255">在 [**連線至 Office 365 的 Outlook**中，按一下 [**連接到不同的帳戶**。</span><span class="sxs-lookup"><span data-stu-id="c7646-255">In **Connect Outlook to Office 365**, click **Connect to a different account**.</span></span><br/><span data-ttu-id="c7646-256">![' 連線至 Office 365 Outlook' 郵件與反白顯示 「 連接至不同的帳戶' 連結](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)</span><span class="sxs-lookup"><span data-stu-id="c7646-256">![The 'Connect Outlook to Office 365' message with the 'Connect to a different account' link highlighted](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)</span></span>
+  
+6. <span data-ttu-id="c7646-257">在 [**自動帳戶設定**] 選擇**手動安裝程式] 或 [其他伺服器類型**，並再按 [**下一步**。</span><span class="sxs-lookup"><span data-stu-id="c7646-257">In **Auto Account Setup**, choose **Manual setup or additional server types**, and then click **Next**.</span></span>
+
+7. <span data-ttu-id="c7646-p127">在 [**選擇您的帳戶類型**，選擇 [ **Office 365**]。然後，在 [**電子郵件地址**] 方塊中輸入您在先前複製監督信箱的地址。</span><span class="sxs-lookup"><span data-stu-id="c7646-p127">In **Choose Your Account Type**, choose **Office 365**. Then, in the **Email Address** box, enter the address of the supervision mailbox you copied previously.</span></span><br/><span data-ttu-id="c7646-260">![Outlook 顯示醒目提示 [' 電子郵件地址 」] 方塊中的 [新增帳戶] 對話方塊的 「 選擇您的帳戶類型 」 頁面。](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)</span><span class="sxs-lookup"><span data-stu-id="c7646-260">![The 'Choose Your Account Type' page of the 'Add Account' dialog in Outlook showing the 'Email Address' box highlighted.](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)</span></span>
+  
+8. <span data-ttu-id="c7646-261">出現提示時，輸入您的 Office 365 認證。</span><span class="sxs-lookup"><span data-stu-id="c7646-261">When prompted, enter your Office 365 credentials.</span></span>
+
+9. <span data-ttu-id="c7646-262">如果成功，您會看見**監督-\<原則名稱\>** 在 Outlook 中的資料夾清單檢視中列出的資料夾。</span><span class="sxs-lookup"><span data-stu-id="c7646-262">If successful, you'll see the **Supervision - \<policy name\>** folder listed in the Folder List view in Outlook.</span></span>
+
+## <a name="powershell-reference"></a><span data-ttu-id="c7646-263">PowerShell 參考 （英文)</span><span class="sxs-lookup"><span data-stu-id="c7646-263">PowerShell reference</span></span>
+
+<span data-ttu-id="c7646-264">必要時，您可建立並管理使用下列 PowerShell cmdlet 的監督原則：</span><span class="sxs-lookup"><span data-stu-id="c7646-264">If needed, you can create and manage supervision policies using the following PowerShell cmdlets:</span></span>
+
+- [<span data-ttu-id="c7646-265">新 SupervisoryReviewPolicyV2</span><span class="sxs-lookup"><span data-stu-id="c7646-265">New-SupervisoryReviewPolicyV2</span></span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
+- [<span data-ttu-id="c7646-266">取得 SupervisoryReviewPolicyV2</span><span class="sxs-lookup"><span data-stu-id="c7646-266">Get-SupervisoryReviewPolicyV2</span></span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)
+- [<span data-ttu-id="c7646-267">設定 SupervisoryReviewPolicyV2</span><span class="sxs-lookup"><span data-stu-id="c7646-267">Set-SupervisoryReviewPolicyV2</span></span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2?view=exchange-ps)
+- [<span data-ttu-id="c7646-268">移除 SupervisoryReviewPolicyV2</span><span class="sxs-lookup"><span data-stu-id="c7646-268">Remove-SupervisoryReviewPolicyV2</span></span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2?view=exchange-ps)
+- [<span data-ttu-id="c7646-269">新 SupervisoryReviewRule</span><span class="sxs-lookup"><span data-stu-id="c7646-269">New-SupervisoryReviewRule</span></span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule?view=exchange-ps)
+- [<span data-ttu-id="c7646-270">設定 SupervisoryReviewRule</span><span class="sxs-lookup"><span data-stu-id="c7646-270">Set-SupervisoryReviewRule</span></span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule?view=exchange-ps)
+- [<span data-ttu-id="c7646-271">取得 SupervisoryReviewActivity</span><span class="sxs-lookup"><span data-stu-id="c7646-271">Get-SupervisoryReviewActivity</span></span>](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity)
+- [<span data-ttu-id="c7646-272">取得 SupervisoryReviewOverallProgressReport</span><span class="sxs-lookup"><span data-stu-id="c7646-272">Get-SupervisoryReviewOverallProgressReport</span></span>](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewoverallprogressreport)
+- [<span data-ttu-id="c7646-273">取得 SupervisoryReviewTopCasesReport</span><span class="sxs-lookup"><span data-stu-id="c7646-273">Get-SupervisoryReviewTopCasesReport</span></span>](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewtopcasesreport)
