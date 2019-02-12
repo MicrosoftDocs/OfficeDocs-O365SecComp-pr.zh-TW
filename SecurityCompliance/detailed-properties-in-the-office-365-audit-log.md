@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: 包含 Office 365 中的其他屬性的說明稽核記錄。
-ms.openlocfilehash: 0c50001a51c0b4097da1080c9dc1f9247506dd08
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: e2450f8d4f9a613d6b21e373d2a2de841cfc7ca0
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740855"
+ms.locfileid: "29890044"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 稽核記錄中的詳細內容
 
@@ -66,7 +66,7 @@ ms.locfileid: "29740855"
 |OrganizationID  <br/> |Office 365 組織的 GUID。  <br/> |全部  <br/> |
 |路徑  <br/> |存取訊息所在的信箱資料夾的名稱。此屬性也會識別位置的資料夾中建立或複製/移至郵件。  <br/> |Exchange （信箱活動）  <br/> |
 |參數  <br/> |Exchange admin 活動、 名稱與使用中的 Operation 屬性識別指令程式所使用的所有參數的值。  <br/> |Exchange （admin 活動）  <br/> |
-|RecordType  <br/> |指定記錄的作業類型。下列的值表示記錄類型。<br/><br/> **1** -會指出從 Exchange 管理員稽核記錄的記錄。 <br/>**2** -會指出來自挑信箱項目上執行作業的 Exchange 信箱稽核記錄的記錄。 <br/>**3** -還會指出從 Exchange 信箱稽核記錄的記錄。此記錄類型表示 （例如將多個項目移至 [刪除的郵件] 資料夾或是永久刪除多個項目） 的來源信箱中的多個項目上執行作業。<br/>**4** -會指出網站管理作業 sharepoint，例如系統管理員或使用者指派至網站的權限。 <br/>**6** -會指出檔案或資料夾相關的作業 sharepoint，例如使用者檢視或修改檔案。 <br/>**8** -會指出在 Azure Active Directory 中執行的系統作業。 <br/>**9** -會指出 OrgId Azure Active Directory 中的登入事件。是要取代這個記錄類型。<br/>**10** -會指出由 Microsoft 資料中心中的人員所執行的安全性指令程式事件。 <br/>第**11**位在 SharePoint 中指出的資料遺失防護 (DLP) 事件。<br/> **12** -會指出 Sway 事件。 <br/>**13** -會指出 DLP 事件 Exchange 時設定整合的 DLP 原則中。不支援 Exchange 傳輸規則為基礎的 DLP 事件。<br>**14** -會指出在 SharePoint 中的共用事件。<br/> **15** -Azure Active Directory 中的指示 Secure Token Service (STS) 登入事件。 <br/>**18** -會指出安全性&amp;規範中心事件。 <br/>**20** -會指出 Power BI 事件。 <br/>第**21**-會指出 Dynamics 365 事件。<br/>第**22** -會指出 Yammer 事件。 <br/>**23** -會指出 Skype 商務事件。 <br/>**24** -會指出 eDiscovery 事件。這個記錄類型會指出由執行內容的搜尋及管理安全性的 eDiscovery 案例所執行的活動&amp;規範中心。如需詳細資訊，請參閱 Search Office 365 中的 eDiscovery 活動的稽核記錄。<br/>**25、 26、 或 27** -會指出 Microsoft 小組事件。 <br/>**28** -會指出網路釣魚和惡意程式碼事件從 Exchange Online Protection 和 Office 365 進階威脅保護事件。<br/> **30** -會指出 Microsoft 流程事件。<br/> **32**位指示 Microsoft 資料流事件。<br/> **35** -會指出 Microsoft Project 事件。 <br/> **36** -會指出 SharePoint 清單事件。<br/> **40** -會指出由安全性及規範的警示信號所產生的事件。<br/> **41** -會指出在 Office 365 進階威脅保護的安全連結時間的封鎖和封鎖覆寫事件。<br/>**47** -會指出網路釣魚和惡意程式碼事件從 Office 365 進階威脅保護 SharePoint、 OneDrive 及 Microsoft 小組中的檔案。 |全部  <br/> |
+|RecordType  <br/> |指定記錄的作業類型。下列的值表示記錄類型。<br/><br/> **1** -會指出從 Exchange 管理員稽核記錄的記錄。 <br/>**2** -會指出來自挑信箱項目上執行作業的 Exchange 信箱稽核記錄的記錄。 <br/>**3** -還會指出從 Exchange 信箱稽核記錄的記錄。此記錄類型表示 （例如將多個項目移至 [刪除的郵件] 資料夾或是永久刪除多個項目） 的來源信箱中的多個項目上執行作業。<br/>**4** -會指出網站管理作業 sharepoint，例如系統管理員或使用者指派至網站的權限。 <br/>**6** -會指出檔案或資料夾相關的作業 sharepoint，例如使用者檢視或修改檔案。 <br/>**8** -會指出在 Azure Active Directory 中執行的系統作業。 <br/>**9** -會指出 OrgId Azure Active Directory 中的登入事件。是要取代這個記錄類型。<br/>**10** -會指出由 Microsoft 資料中心中的人員所執行的安全性指令程式事件。 <br/>第**11**位在 SharePoint 中指出的資料遺失防護 (DLP) 事件。<br/> **12** -會指出 Sway 事件。 <br/>**13** -會指出 DLP 事件 Exchange 時設定整合的 DLP 原則中。不支援 Exchange 傳輸規則為基礎的 DLP 事件。<br>**14** -會指出在 SharePoint 中的共用事件。<br/> **15** -Azure Active Directory 中的指示 Secure Token Service (STS) 登入事件。 <br/>**18** -會指出安全性&amp;規範中心事件。 <br/>**20** -會指出 Power BI 事件。 <br/>第**21**-會指出 Dynamics 365 事件。<br/>第**22** -會指出 Yammer 事件。 <br/>**23** -會指出 Skype 商務事件。 <br/>**24** -會指出 eDiscovery 事件。這個記錄類型會指出由執行內容的搜尋及管理安全性的 eDiscovery 案例所執行的活動&amp;規範中心。如需詳細資訊，請參閱 Search Office 365 中的 eDiscovery 活動的稽核記錄。<br/>**25、 26、 或 27** -會指出 Microsoft 小組事件。 <br/>**28** -會指出網路釣魚和惡意程式碼事件從 Exchange Online Protection 和 Office 365 進階威脅保護事件。<br/> **30** -會指出 Microsoft 流程事件。<br/> **32**位指示 Microsoft 資料流事件。<br/> **35** -會指出 Microsoft Project 事件。 <br/> **36** -會指出 SharePoint 清單事件。<br/> **40** -會指出由安全性及規範的警示信號所產生的事件。<br/> **41** -會指出在 Office 365 進階威脅保護的安全連結時間的封鎖和封鎖覆寫事件。<br/>**44** -會指出工作場所分析事件。 <br/>**47** -會指出網路釣魚和惡意程式碼事件從 Office 365 進階威脅保護 SharePoint、 OneDrive 及 Microsoft 小組中的檔案。 |全部  <br/> |
 |ResultStatus  <br/> |會指出動作 （**作業**屬性中所指定） 是否已成功。  <br/> Exchange admin 活動的值為**True** （成功） 或**False** （失敗）。  <br/> |全部  <br/>|
 |SecurityComplianceCenterEventType  <br/> |會指出活動已安全性&amp;規範中心事件。所有安全性&amp;規範中心活動會有**0**這個屬性的值。<br/> |Office 365 安全性與合規性中心  <br/> |
 |SharingType  <br/> |已指派給與已共用的資源之使用者的共用權限類型。**UserSharedWith**屬性中所識別此使用者。<br/> |SharePoint  <br/> |
@@ -87,7 +87,8 @@ ms.locfileid: "29740855"
 |UserSharedWith  <br/> |與已共用資源的使用者。如果此屬性為包含**作業**屬性的值是**SharingSet**。這位使用者也會列在報表中的 [**共用對象**] 欄中。<br/> |SharePoint  <br/> |
 |UserType  <br/> |使用者執行作業的類型。下列的值會指出使用者類型。<br/> <br/> **0** -一般使用者。 <br/>**2** -Office 365 組織中系統管理員。 <br/>**3** -Microsoft 資料中心系統管理員或資料中心系統帳戶。 <br/>**4** -系統帳戶。 <br/>**5** -應用程式。 <br/>**6** -服務主要名稱。<br/>**7**的自訂原則。<br/>**8** -系統原則。 |全部  <br/> |
 |版本  <br/> |會指出活動 （**作業**屬性識別） 已登入的版本號碼。  <br/> |全部  <br/> |
-|工作量  <br/> |Office 365 服務發生活動。此屬性的可能值是：<br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>規範<br/>Sway<br/>for Business Skype<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>專案<br/>PowerApps**|全部  <br/> |
+|工作量  <br/> |Office 365 服務發生活動。此屬性的可能值是：<br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>規範<br/>Sway<br/>for Business Skype<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>專案<br/>PowerApps<br/>工作場所分析**|全部  <br/> |
+||||
    
 請注意，上述屬性也會顯示當您按一下檢視特定事件的詳細資料時的**詳細資訊**。 
   

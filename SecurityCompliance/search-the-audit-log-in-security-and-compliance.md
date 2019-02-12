@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性 & 規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
-ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
+ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735465"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29890054"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性 & 規範中心中搜尋稽核記錄
 
@@ -281,7 +281,7 @@ ms.locfileid: "29735465"
 
 ## <a name="audited-activities"></a>稽核的活動
 
-本節中的表格說明 Office 365 中您可以稽核的活動。您可以搜尋的安全性將這些事件來搜尋稽核記錄&amp;規範中心。按一下 [**搜尋稽核記錄**] 索引標籤的逐步指示。 
+本節中的表格說明 Office 365 中您可以稽核的活動。您可以藉由搜尋稽核記錄在安全性 & 規範中心中搜尋這些事件。
   
 這些表格群組相關的活動] 或 [從特定的 Office 365 服務活動。表格包含顯示在 [**活動**] 下拉式清單中的易記名稱和對應作業時匯出搜尋結果出現在稽核記錄的詳細資訊及 CSV 檔案的名稱。如需詳細資訊的說明，請參閱[Office 365 中的詳細的內容稽核記錄](detailed-properties-in-the-office-365-audit-log.md)。
   
@@ -293,9 +293,10 @@ ms.locfileid: "29735465"
 |[同步處理活動](#synchronization-activities)<br/> |[網站管理活動](#site-administration-activities)<br/> |[Exchange 信箱的活動](#exchange-mailbox-activities)<br/> |
 |[Sway 活動](#sway-activities) <br/> |[使用者管理活動](#user-administration-activities) <br/> |[Azure AD 群組管理活動](#azure-ad-group-administration-activities) <br/> |
 |[應用程式管理活動](#application-administration-activities) <br/> |[角色管理活動](#role-administration-activities) <br/> |[目錄管理活動](#directory-administration-activities) <br/> |
-|[eDiscovery 活動](#ediscovery-activities) <br/> |[Power BI 活動](#power-bi-activities) <br/> |[Microsoft 小組活動](#microsoft-teams-activities) <br/> |
-|[Yammer 活動](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange 管理員稽核記錄](#exchange-admin-audit-log) <br/> |
+|[eDiscovery 活動](#ediscovery-activities) <br/> |[Power BI 活動](#power-bi-activities) <br/> |[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)<br/>|
+[Microsoft 小組活動](#microsoft-teams-activities) <br/> |[Yammer 活動](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
+|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange admin 活動](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>檔案及] 頁面上的活動
@@ -326,6 +327,7 @@ ms.locfileid: "29735465"
 |上傳的檔案  <br/> |FileUploaded  <br/> |使用者將文件上傳至網站上的資料夾。  <br/> |
 |檢視的頁面  <br/> |PageViewed  <br/> |使用者檢視網站頁面。這不包括使用網頁瀏覽器中檢視中的文件庫的檔案。  <br/> |
 |（無）  <br/> |PageViewedExtended  <br/> |這與相關"Viewed 頁面 」 (PageViewed) 活動。PageViewedExtended 事件會記錄時同一人士持續檢視網頁的一段時間 （最多 3 小時）。記錄 PageViewedExtended 事件的目的是以減少需要經常檢視頁面時所登入 PageViewed 事件的次數。這有助於減少雜訊的什麼基本上是相同的多個 PageViewed 記錄的使用者活動與可讓您焦點放在初始 （及更重要） PageViewed 事件。  <br/> |
+||||
   
 ### <a name="folder-activities"></a>資料夾的活動
   
@@ -342,6 +344,7 @@ ms.locfileid: "29735465"
 |移動的資料夾  <br/> |FolderMoved  <br/> |使用者在網站上將資料夾移至不同的位置。  <br/> |
 |重新命名的資料夾  <br/> |FolderRenamed  <br/> |使用者會重新命名網站上的資料夾。  <br/> |
 |還原的資料夾  <br/> |FolderRestored  <br/> |使用者從網站上的資源回收筒還原刪除的郵件] 資料夾。  <br/> |
+||||
   
 ### <a name="sharing-and-access-request-activities"></a>共用和存取要求活動
   
@@ -382,6 +385,7 @@ ms.locfileid: "29735465"
 |使用者新增至安全連結  <br/> |AddedToSecureLink  <br/> |使用者已新增到實體可以使用共用的安全連結清單。  <br/> |
 |從安全連結中移除的使用者  <br/> |RemovedFromSecureLink  <br/> |使用者已從實體可以使用共用的安全連結清單移除。  <br/> |
 |拖共用邀請  <br/> |SharingInvitationRevoked  <br/> |使用者拖至資源共用邀請。  <br/> |
+||||
   
 ### <a name="synchronization-activities"></a>同步處理活動
   
@@ -395,6 +399,7 @@ ms.locfileid: "29735465"
 |下載的檔案變更電腦  <br/> |FileSyncDownloadedPartial  <br/> |使用者已順利會下載至檔案的任何變更文件庫中。這項活動會指出文件庫中的檔案所做的任何變更已下載到使用者的電腦。只有變更已下載因為 （如以**下載到電腦檔案**活動） 先前的文件庫下載使用者。<br/> |
 |上傳的檔案至文件庫  <br/> |FileSyncUploadedFull  <br/> |使用者會建立的同步處理關係，並已順利將檔案上傳至文件庫第一次從其電腦。  <br/> |
 |將變更上傳的檔案至文件庫  <br/> |FileSyncUploadedPartial  <br/> |使用者已順利將變更上載的文件庫上的檔案。此事件會指出文件庫中做為檔案的本機版本的任何變更會成功上傳至文件庫。僅卸載變更是因為這些檔案先前由使用者上傳 (所指示 * * 上傳檔案至文件庫 * * 活動)。  <br/> |
+||||
   
 ### <a name="site-administration-activities"></a>網站管理活動
   
@@ -432,6 +437,7 @@ ms.locfileid: "29735465"
 |已排程的站台地理位置移動  <br/> |SiteGeoMoveScheduled  <br/> |為 SharePoint 或全域管理員成功排程 SharePoint 或 OneDrive 網站地理位置移動。多個地理位置功能可讓跨越多個 Office 365 datacenter 地理位置，稱為 geos Office 365 組織。如需詳細資訊，請參閱[OneDrive 和 SharePoint Online 中的 Office 365 的多重地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。<br/> |
 |設定主機網站  <br/> |HostSiteSet  <br/> |SharePoint 或全域管理員變更指定架設個人網站或 OneDrive for Business 的網站。  <br/> |
 |更新的群組  <br/> |GroupUpdated  <br/> |網站管理員或擁有者變更網站群組的設定。它可以包含變更群組的名稱、 可檢視或編輯群組成員資格及如何處理成員資格要求。  <br/> |
+||||
   
 ### <a name="exchange-mailbox-activities"></a>Exchange 信箱的活動
   
@@ -454,6 +460,7 @@ ms.locfileid: "29735465"
 |更新的郵件  <br/> |更新  <br/> |郵件或其屬性已變更。  <br/> |
 |使用者登入信箱  <br/> |MailboxLogin  <br/> |使用者已登入其信箱。  <br/> |
 |（無）  <br/> |UpdateInboxRules  <br/> |收件匣規則已新增、 移除或變更。收件匣規則可用來處理郵件的收件匣根據指定的條件和符合規則的條件，例如將郵件移至指定的資料夾或刪除郵件時採取的動作。<br/> 若要傳回的收件匣規則活動項目，您必須選取 [**活動**] 清單中的 [**顯示所有的活動的結果**。使用 [日期範圍] 方塊和 [**使用者**] 清單來縮小搜尋結果。<br/> |
+||||
   
 ### <a name="sway-activities"></a>Sway 活動
   
@@ -475,6 +482,7 @@ ms.locfileid: "29735465"
 |關閉 Sway 服務  <br/> |SwayServiceOff  <br/> |系統管理員停用 Sway 整個組織的使用在 Office 365 系統管理中心。  <br/> |
 |開啟 Sway 服務  <br/> |SwayServiceOn  <br/> |系統管理員為整個組織啟用 Sway 使用 Office 365 系統管理中心 (預設會啟用服務 Sway)。  <br/> |
 |檢視的 Sway  <br/> |SwayView  <br/> |使用者檢視 Sway。  <br/> |
+||||
 
   
 ### <a name="user-administration-activities"></a>使用者管理活動
@@ -491,6 +499,7 @@ ms.locfileid: "29735465"
 |設定強制使用者變更密碼的屬性  <br/> |設定強制變更使用者密碼  <br/> |系統管理員設定強制使用者變更其密碼。 在下一次使用者登入 Office 365 的屬性。  <br/> |
 |設定授權屬性  <br/> |設定授權屬性  <br/> |系統管理員修改指派給使用者的授權的屬性。  <br/> |
 |更新的使用者  <br/> |更新使用者  <br/> |系統管理員變更使用者帳戶的一或多個的屬性。如需可更新的使用者屬性的清單，請參閱[Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)的"更新使用者屬性 」 一節。<br/> |
+||||
   
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 群組管理活動
   
@@ -503,6 +512,7 @@ ms.locfileid: "29735465"
 |已刪除的群組  <br/> |刪除群組  <br/> |已刪除的群組。  <br/> |
 |從群組移除的成員  <br/> |從群組中移除成員  <br/> |已將成員從群組中移除。  <br/> |
 |更新的群組  <br/> |更新群組  <br/> |已變更群組的屬性。  <br/> |
+||||
    
 ### <a name="application-administration-activities"></a>應用程式管理活動
   
@@ -517,6 +527,7 @@ ms.locfileid: "29735465"
 |移除從目錄服務主要名稱  <br/> |移除服務主要名稱  <br/> |應用程式已刪除/取消註冊從 Azure AD。在目錄服務主要名稱代表應用程式。  <br/> |
 |已移除從主體服務的認證  <br/> |移除服務主體認證  <br/> |認證已移除從主體 Azure AD 的服務。服務當中代表的目錄中應用程式。  <br/> |
 |設定委派項目  <br/> |設定委派項目  <br/> |驗證權限已更新在 Azure AD 應用程式。  <br/> |
+||||
 
 ### <a name="role-administration-activities"></a>角色管理活動
   
@@ -527,6 +538,7 @@ ms.locfileid: "29735465"
 |將成員新增至角色  <br/> |將角色成員新增至角色  <br/> |新增使用者至 Office 365 系統管理員角色。  <br/> |
 |從目錄角色移除使用者  <br/> |從角色移除角色成員  <br/> |Office 365 中移除使用者從系統管理員角色。  <br/> |
 |設定公司連絡人資訊  <br/> |設定公司連絡人資訊  <br/> |更新 Office 365 組織層級的公司連絡人喜好設定。這包括訂閱相關的電子郵件傳送的 Office 365 中，為 Office 365 服務相關的技術通知的電子郵件地址。  <br/> |
+||||
    
 ### <a name="directory-administration-activities"></a>目錄管理活動
   
@@ -546,6 +558,7 @@ ms.locfileid: "29735465"
 |更新的網域  <br/> |更新網域  <br/> |更新 Office 365 組織中的網域的設定。  <br/> |
 |已驗證的網域  <br/> |確認網域  <br/> |確認您的組織已將網域的擁有者。  <br/> |
 |已驗證的電子郵件已驗證的網域  <br/> |確認電子郵件已驗證的網域  <br/> |用來確認貴組織的網域擁有者的電子郵件的驗證。  <br/> |
+||||
    
 ### <a name="ediscovery-activities"></a>eDiscovery 活動
   
@@ -572,6 +585,24 @@ ms.locfileid: "29735465"
   
 Power BI 的稽核記錄不預設啟用的附註。若要搜尋的 Office 365 稽核記錄中的 Power BI 活動，您必須啟用 [Power BI 系統入口網站中的稽核。指示，請參閱[Power BI 系統入口網站](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)的 「 稽核記錄 」 一節。
   
+### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作場所分析活動
+
+下表列出系統和分析師活動登入 Office 365 的 Microsoft 工作場所分析中的稽核記錄。工作場所分析提供群組跨 Office 365 組織的共同作業。如需詳細資訊，請參閱 ＜[工作場所分析](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
+
+|**易記名稱**|**作業**|**描述**|
+|:-----|:-----|:-----|
+|存取的 OData 連結 <br/> |AccessedOdataLink <br/> |分析師 」 來存取 OData 連結的查詢。|
+|已取消的查詢 <br/> |CanceledQuery <br/> |分析師取消此事件執行的查詢。|
+|建立的會議排除 <br/> |MeetingExclusionCreated <br/> |建立新的分析師會議排除規則。|
+|已刪除的結果 <br/> |DeletedResult <br/> |分析師 」 刪除查詢結果。|
+|下載的報告 <br/> |DownloadedReport <br/> |分析師下載查詢結果檔案。|
+|執行的查詢 <br/> |ExecutedQuery <br/> |分析師 」 執行查詢。|
+|更新的資料存取設定 <br/> |UpdatedDataAccessSetting <br/> |系統管理更新的資料存取設定。|
+|更新的隱私權設定 <br/> |UpdatedPrivacySetting <br/> |系統管理更新隱私權設定例如，最小的群組大小。|
+|上傳的組織資料 <br/> |UploadedOrgData <br/> |管理組織的資料上傳的檔案。|
+|檢視探索 <br/> |ViewedExplore <br/> |分析師 」 檢視中一或多個瀏覽頁面索引標籤的視覺效果。|
+||||
+
 ### <a name="microsoft-teams-activities"></a>Microsoft 小組活動
   
 下表列出使用者與在登入 Office 365 的 Microsoft 小組管理活動的稽核記錄。Microsoft 小組是 Office 365 中的聊天室置中對齊工作區。它結合團隊的交談、 會議、 檔案及備忘稿至單一的位置。如需詳細資訊以及的說明主題的連結，請參閱：
@@ -601,6 +632,7 @@ Power BI 的稽核記錄不預設啟用的附註。若要搜尋的 Office 365 �
 |更新的連接器  <br/> |ConnectorUpdated  <br/> |使用者修改通道中的連接器。  <br/> |
 |更新] 索引標籤  <br/> |TabUpdated  <br/> |使用者修改日期] 索引標籤中使用的通道。  <br/> |
 |使用者登入小組  <br/> |TeamsSessionStarted  <br/> |使用者的 Microsoft 小組用戶端登入。  <br/> |
+||||
 
 ### <a name="yammer-activities"></a>Yammer 活動
   
@@ -625,6 +657,7 @@ Power BI 的稽核記錄不預設啟用的附註。若要搜尋的 Office 365 �
 |更新的檔案描述  <br/> |FileUpdateDescription  <br/> |使用者變更檔案的描述。  <br/> |
 |更新的檔案名稱  <br/> |FileUpdateName  <br/> |使用者變更檔案的名稱。  <br/> |
 |檢視的檔案  <br/> |FileVisited  <br/> |使用者檢視檔案。  <br/> |
+||||
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 

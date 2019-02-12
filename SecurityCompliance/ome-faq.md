@@ -3,7 +3,7 @@ title: Office 365 郵件加密常見問題集
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2018
+ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 已在 Office 365 中的新郵件保護功能的運作方式的相關問題嗎？檢查的答案。
-ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696267"
+ms.locfileid: "29890034"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 
@@ -48,7 +48,7 @@ OME 合併電子郵件加密和權限管理功能。版權管理功能是由 Azu
 
 若要使用的新 OME 功能，您需要下列計劃其中一項：
   
-- Office 365 郵件加密被提供 Office 365 E3 和 E5、 Microsoft E3 和 E5、 Office 365 A1、 A3 和 A5、 與 Office 365 G3 及 G5 的一部分。客戶不需要以接收新的保護功能由 Azure 資訊保護提供額外的授權。 
+- Office 365 郵件加密被提供 Office 365 企業版 E3 和 E5、 Microsoft 企業 E3 和 E5、 Microsoft 365 Business、 Office 365 A1、 A3 和 A5、 與 Office 365 政府 G3 及 G5 的一部分。客戶不需要以接收新的保護功能由 Azure 資訊保護提供額外的授權。 
     
 - 您也可以新增 Azure 資訊保護計劃 1 的下列計劃以接收新的 Office 365 郵件加密功能： Exchange Online 計劃 1、 Exchange Online 計劃 2、 Office 365 F1、 Office 365 商務 Essentials、 Office 365 企業進階版或Office 365 企業版 E1。
     
