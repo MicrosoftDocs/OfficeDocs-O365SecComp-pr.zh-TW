@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: fff787e980b7dbbfea227734bb6caad0985cf158
-ms.sourcegitcommit: 77c50332c3dbb026f47da3ac2534198202d9ef64
+ms.openlocfilehash: 154be1d4dd1e891913e1b64d8f1ae5dfa34706bf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "25842602"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "26547315"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度標籤中的加密來限制內容的存取
 
@@ -44,7 +44,7 @@ ms.locfileid: "25842602"
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>如何開啟敏感度標籤的加密
 
-若要開始，只需將 [**加密**] 切換為 [**開啟**]，然後使用下列選項來控制誰可以存取此標套用至其中的電子郵件或文。您可以：
+若要開始，只需將 [加密] **** 切換為 [開啟]****，然後使用下列選項來控制誰可以存取套用此標籤的電子郵件或文件。您可以：
 
 1. **將加密同時套用至電子郵件和文件，或只套用至電子郵件。** 如果您選擇只套用至電子郵件，則將在 Outlook 中加密具有此標籤的郵件，但不會在其他應用程式 (例如 Word 或 PowerPoint) 中加密具有此標籤的文件。 
 2. 在套用標籤之後**允許標籤內容的存取在特定日期或在特定天數之後到期**。在此之後，使用者將無法開啟標籤項目。如果您指定日期，則有效時間直到您的目前時區中該日期的午夜。 

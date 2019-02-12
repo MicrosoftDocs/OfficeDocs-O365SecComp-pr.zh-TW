@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: e356dcfcd921f96ee242e21d34ff691d8520f09c
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 4b4f310950f25e2a72dffa83de39b13c0b34cd97
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610600"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740865"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
@@ -365,8 +365,8 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 <tbody>
 <tr class="odd">
 <td><p>param([string]$baseUri)</p>
-<p>$userName = &quot;admin@o365ediscoverydemo.onmicrosoft.com&quot;</p>
-<p>$password = &quot;EDiscoO365Demo&quot;</p>
+<p>$userName = &quot;使用者名稱&quot;</p>
+<p>$password = &quot;密碼&quot;</p>
 <p>$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</p>
 <p>$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</p>
 <p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>

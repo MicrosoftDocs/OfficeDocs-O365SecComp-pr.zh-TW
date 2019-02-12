@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299247"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614497"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -266,22 +266,34 @@ ms.locfileid: "26299247"
     
 - 偵測到的敏感資訊類型的比對精確度 (或信賴等級) 下限為 75。許多敏感資訊類型會定義多個模式，模式的比對精確度愈高，便需要尋找愈多證據 (例如關鍵字、日期、地址)，而較低比對精確度的模式則需要較少的證據。簡單來說，比對精確度的 **min** (下限) 愈低，就越容易找到與條件相符的內容。 
     
-    如果變更比對精確度 (或信賴等級)，應該使用該類型敏感資訊的模式中所使用的信賴等級之一，如[敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md) (機器翻譯) 中所述。
+如需這些選項的詳細資訊，請參閱[調整規則，讓規則更容易或更難相符](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
     
 ![用於識別機密資訊類型的選項](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-retention-labels-to-content-with-keywords"></a>自動將保留標籤套用至包含關鍵字的內容
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>自動將標籤套用至包含關鍵字或可搜尋屬性的內容
 
-您可以自動將保留標籤套用至符合特定條件的內容。現在可用的條件支援將保留標籤套用至包含特定字詞或片語。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。 
+您可以自動將標籤套用至符合特定條件的內容。現在可用的條件支援將標籤套用至包含特定字詞、片語或可搜尋屬性的值。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。
 
 如需查詢語法的詳細資訊，請參閱：
 
-- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-查詢型保留標籤會使用搜尋索引來識別內容。
-  
+查詢式標籤使用搜尋索引來識別內容。如需有效可搜尋屬性的詳細資訊，請參閱：
+
+- [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
+- [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+
+範例查詢：
+
+- Exchange
+    - subject:"Quarterly Financials"
+    - recipients:garthf<!--nolink-->@contoso.com
+- SharePoint 和商務用 OneDrive
+    - contenttype:contract
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
+
 ![查詢編輯器](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-  
+
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>將預設保留標籤套用至 SharePoint 文件庫、資料夾或文件集中的所有內容
 
 除了讓使用者將保留標籤套用至個別文件，您也可以將預設保留標籤套用到 SharePoint 文件庫、資料夾或文件集，讓該位置的所有文件套用預設保留標籤。
@@ -346,7 +358,7 @@ ms.locfileid: "26299247"
     
 ### <a name="who-can-classify-content-as-a-record"></a>誰可以將內容分類為記錄
 
-針對 SharePoint 內容，預設成員群組 (「參與」權限等級) 中的任何使用者皆可以將記錄標籤套用至內容。只有網站集合管理員可以移除或變更已套用的保留標籤。此外，必須以手動方式套用將內容歸類為記錄的保留標籤，它無法自動套用。
+針對 SharePoint 內容，預設成員群組 (「參與」權限等級) 中的任何使用者皆可以將記錄標籤套用至內容。只有網站集合管理員可以移除或變更已套用的保留標籤。此外，可以將內容分類為記錄的保留標籤[自動套用至內容](#auto-apply-retention-labels)。
   
 ### <a name="records-and-folders"></a>記錄和資料夾
 
