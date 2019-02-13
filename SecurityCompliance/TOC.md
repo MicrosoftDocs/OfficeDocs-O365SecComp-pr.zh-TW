@@ -10,7 +10,6 @@
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
 # 保護資料與服務存取權
 ## [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
-## [在 MDM 與 Intune 之間選擇](choose-between-mdm-and-intune.md)
 
 # 保護資訊
 ## [敏感度標籤](sensitivity-labels.md)
