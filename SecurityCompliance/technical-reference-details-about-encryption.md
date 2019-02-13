@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 檢視關於 Office 365 中的加密技術詳細資料。
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326934"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966187"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>關於 Office 365 中加密的技術參考細節
 
@@ -89,6 +89,9 @@ ms.locfileid: "28326934"
 <a name="TLSCipherSuites"> </a>
 
 加密套件是 TLS 用來建立安全連線的加密演算法集合。下表依強度列出 Office 365 支援的加密套件，強度最大的加密套件列在最上面。Office 365 在收到連線要求時，會先嘗試使用最上面的加密套件進行連線，如果不成功，則嘗試清單中的第二個加密套件，依此類推。當 Office 365 傳送連線要求給另一部伺服器或用戶端時，則全由接收端的伺服器或用戶端選擇加密套件，或是否使用 TLS。
+
+> [!IMPORTANT]
+> 請注意 TLS 版本取代，且的已被取代的版本*不應使用*較新版本可用的位置。換句話說，它將已列於該 TLS 1.0 版無所不在支援 1.1 和 1.2，並選擇 [*最新*版本 (TLS 1.2)。
   
 |**通訊協定**|**加密套件名稱**|**金鑰交換演算法/強度**|**完整轉寄密碼支援**|**驗證演算法/強度**|**加密/強度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
