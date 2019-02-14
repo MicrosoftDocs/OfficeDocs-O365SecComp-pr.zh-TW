@@ -6,17 +6,18 @@ author: robmazz
 manager: laurawi
 layout: LandingPage
 ms.service: office-365
+ms.collection: M365-security-compliance
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
-ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
+ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27449877"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995174"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 安全性和規範
 
@@ -51,7 +52,7 @@ ms.locfileid: "27449877"
                     </div>
                     <div class="cardText">
                         <h3>90 天內的下一個步驟</h3>
-                        <p>這些工作需要更多時間規劃和實作但大幅增加安全性狀態： <br> - <a href="attack-simulator.md">進行攻擊模擬</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">檢閱規範管理員</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">設定 Azure 權限的身分識別管理</a> <br> - <a href="privileged-access-management-configuration.md">設定權限的存取管理</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">啟用多重要素驗證</a> <br> - <a href="protect-against-threats.md">檢閱與更新的保護原則</a> </p>
+                        <p>這些工作需要更多時間規劃和實作但大幅增加安全性狀態： <br> - <a href="attack-simulator.md">進行攻擊模擬</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">檢閱規範管理員</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">設定 Azure 權限的身分識別管理</a> <br> - <a href="privileged-access-management-configuration.md">設定權限的存取管理</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">啟用多重要素驗證</a> <br> - <a href="protect-against-threats.md">檢閱 & 更新保護原則</a> </p>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@ ms.locfileid: "27449877"
                     <div class="cardText">
                         <h3>保持相容</h3>
                         <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Microsoft 信任中心</a></p>
-                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft Service 信任入口網站</a></p>
+                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft 服務信任入口網站</a></p>
                     </div>
                 </div>
             </div>
