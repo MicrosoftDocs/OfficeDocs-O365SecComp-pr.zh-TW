@@ -3,7 +3,7 @@ title: Office 365 中的攻擊模擬器
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/02/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,17 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.collection:
+- M365-security-compliance
 description: 身為 Office 365 全域管理員，您可以使用攻擊模擬器您組織中執行真實感化的攻擊案例。這可協助您識別及之前實際攻擊拜訪人次業務找出遭到入侵的使用者。
-ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 77de6af6546ae584e3bd25c0d1a59d9f26928f33
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015035"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995164"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
 **摘要**如果您的組織具有[Office 365 威脅智慧](office-365-ti.md)Office 365 全域管理員，您可以使用攻擊模擬器您組織中執行真實感化的攻擊案例。這可協助您識別並尋找遭到入侵的使用者才能實際攻擊影響底部線條。請閱讀本篇文章以深入了解。
+
+> [!IMPORTANT]
+> 開始在年 2 月 2019年及後續的幾個月內啟用，Office 365 威脅智慧會變成 Office 365 進階威脅保護計劃 2，與其他威脅保護功能。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="the-attacks"></a>攻擊
 

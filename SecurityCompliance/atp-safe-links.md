@@ -10,7 +10,9 @@ f1_keywords:
 - "197503"
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全的連結功能所提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。若要從網路釣魚和其他攻擊保護您的組織使用安全的連結。
-ms.openlocfilehash: 4d83aa65af47ea6723d6e2042c230fb2b07c174c
-ms.sourcegitcommit: 065f5e72676511b5ecf7f10a17685999780e92d8
+ms.openlocfilehash: 77b7ac4af8cd9ad27f18af6fd55588e320da69ac
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29888029"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995344"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 

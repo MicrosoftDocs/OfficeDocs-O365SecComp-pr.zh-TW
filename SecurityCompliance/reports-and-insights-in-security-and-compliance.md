@@ -1,5 +1,5 @@
 ---
-title: 智慧與 Office 365 安全性前瞻&amp;規範中心
+title: 智慧報表與 Office 365 安全性 & 規範中心的觀點
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
+ms.collection: M365-security-compliance
 description: 安全性概略了解的報告與前瞻 avialable&amp;規範中心。
-ms.openlocfilehash: bdd04301c7a6e6d5230e5a74d6757ff81ac81bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 30c6dcd324770a519f1501c6e7bfa85b28aa6969
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013947"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995274"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智慧報表和 Office 365 安全性前瞻&amp;規範中心
 
@@ -46,7 +47,7 @@ ms.locfileid: "23013947"
   
 |**資訊類型**|**如何到該處**|**若要深入了解哪個位置對**|
 |:-----|:-----|:-----|
-|**安全性&amp;規範中心報告**（全部向上）  <br/> 最常用的見解與建議，以及連結安全性&amp;規範報表，包括資料遺失防護報告、 標籤、 電子郵件安全性報告、 進階威脅保護報告及其他  <br/> |安全性&amp;規範管理中心，移至**報表** \> **儀表板** <br/> |[監視安全性與 Office 365 的守規](monitor-security-and-compliance.md) <br/> |
+|**安全性&amp;規範中心報告**（全部向上）  <br/> 最常用的見解與建議，以及連結安全性&amp;規範報表，包括資料遺失防護報告、 標籤、 電子郵件安全性報告、 進階威脅保護報告及其他  <br/> |安全性&amp;規範管理中心，移至**報表** \> **儀表板** <br/> |[監視 Office 365 中的安全性與合規性](monitor-security-and-compliance.md) <br/> |
 |**資料外洩防護** <br/> 資料外洩防護原則比對、 誤判及覆寫並連結到建立或編輯原則  <br/> |安全性&amp;規範管理中心，移至 [**資料外洩防護** \> **原則** <br/> |[檢視資料外洩防護報告](view-the-dlp-reports.md) <br/> |
 |**資料管理** <br/> 如何套用標籤的相關資訊，分類為記錄、 label 趨勢等等的標籤  <br/> |安全性&amp;規範管理中心，移至**資料控管** \> **儀表板** <br/> |[檢視資料控管報告](view-the-data-governance-reports.md) <br/> |
 |**威脅管理儀表板**（這也稱為安全性儀表板和威脅智慧儀表板）  <br/> 威脅偵測、 惡意程式碼趨勢、 主要目標的使用者、 傳送和接收的電子郵件訊息的相關詳細資料及其他  <br/> |安全性&amp;規範管理中心，移至**威脅管理** \> **儀表板** <br/> |[安全性儀表板概觀 （英文)](security-dashboard.md) <br/> |
@@ -71,7 +72,7 @@ ms.locfileid: "23013947"
     
 ## <a name="related-topics"></a>相關主題
 
-[監視安全性與 Office 365 的守規](monitor-security-and-compliance.md)
+[監視 Office 365 中的安全性與合規性](monitor-security-and-compliance.md)
   
 [防範 Office 365 中的威脅](protect-against-threats.md)
   

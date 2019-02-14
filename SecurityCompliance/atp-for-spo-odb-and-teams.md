@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
+ms.collection:
+- M365-security-compliance
 description: 擴充 Office 365 進階威脅保護 SharePoint Online、 OneDrive for Business 和 Microsoft 小組以啟用更安全共同作業您的組織中的檔案。
-ms.openlocfilehash: 29676bf7c326adf366cca79a59f5b4c40c672baa
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: bf2285ac8c78d8a652861b5c635f5764677f0915
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014815"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995244"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
 

@@ -3,7 +3,7 @@ title: 使用瀏覽器安全性&amp;規範中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: 了解安全性 （也稱為威脅瀏覽器） 的瀏覽器&amp;規範中心。
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699926"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995114"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>使用瀏覽器安全性&amp;規範中心
 
@@ -27,6 +28,9 @@ ms.locfileid: "26699926"
 ![移至 [Threat management\>瀏覽器](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 若要使用總管]、 [安全性&amp;規範管理中心，移至**威脅管理** \> **瀏覽器**。
+
+> [!IMPORTANT]
+> 開始在年 2 月 2019年及後續的幾個月內啟用，Office 365 威脅智慧會變成 Office 365 進階威脅保護計劃 2，與其他威脅保護功能。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
       
 ## <a name="explorer-overview"></a>Explorer 概觀 （英文)
 

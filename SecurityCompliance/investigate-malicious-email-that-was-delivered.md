@@ -3,7 +3,7 @@ title: 尋找與調查惡意的電子郵件已傳遞 （Office 365 威脅智慧�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
+ms.collection: M365-security-compliance
 description: 了解如何使用威脅智慧尋找及調查惡意的電子郵件。
-ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014915"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995184"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>尋找與調查惡意的電子郵件已傳遞 （Office 365 威脅智慧）
 
 [Office 365 威脅智慧](office-365-ti.md)可讓您調查放在風險的使用者，並採取動作來保護您的組織的活動。例如，如果您組織的安全性小組的一部分，可以尋找及調查可疑的電子郵件已傳遞給您的使用者。您可以使用[瀏覽器威脅](get-started-with-ti.md#threat-explorer)。
   
-> [!NOTE]
-> 在 Office 365 企業版 E5 中使用 office 365 威脅智慧。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買 Office 365 威脅智慧。(全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[購買或編輯企業版的 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> [!IMPORTANT]
+> 開始在年 2 月 2019年及後續的幾個月內啟用，Office 365 威脅智慧會變成 Office 365 進階威脅保護計劃 2，與其他威脅保護功能。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="before-you-begin"></a>開始之前...]
 

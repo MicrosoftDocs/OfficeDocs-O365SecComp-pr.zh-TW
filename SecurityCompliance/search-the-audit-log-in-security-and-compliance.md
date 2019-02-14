@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性 & 規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890054"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995404"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性 & 規範中心中搜尋稽核記錄
 
@@ -53,6 +53,8 @@ ms.locfileid: "29890054"
 - Microsoft 流程中的使用者和系統活動
     
 - Microsoft Stream 中的使用者和系統活動
+
+- 在 Microsoft 工作場所分析分析師和管理員活動
     
    
 ## <a name="before-you-begin"></a>開始之前
@@ -562,7 +564,7 @@ ms.locfileid: "29890054"
    
 ### <a name="ediscovery-activities"></a>eDiscovery 活動
   
-內容搜尋及執行 Office 365 安全性的 eDiscovery 與相關活動&amp;規範中心或執行相對應的 Windows PowerShell 指令程式會記錄在 Office 365 稽核記錄檔。這包括下列活動：
+內容搜尋與 eDiscovery 相關的活動在 Office 365 安全性 & 規範中心或執行的相對應的 Windows PowerShell cmdlet 所執行的登入 Office 365 稽核記錄。這包括下列活動：
   
 - 建立及管理 eDiscovery 案例
     
@@ -587,7 +589,7 @@ Power BI 的稽核記錄不預設啟用的附註。若要搜尋的 Office 365 �
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作場所分析活動
 
-下表列出系統和分析師活動登入 Office 365 的 Microsoft 工作場所分析中的稽核記錄。工作場所分析提供群組跨 Office 365 組織的共同作業。如需詳細資訊，請參閱 ＜[工作場所分析](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
+工作場所分析提供群組跨 Office 365 組織的共同作業。下表列出系統管理員角色或在工作場所分析中的分析師角色指派的使用者所執行的活動。分析師角色指派的使用者擁有的所有服務功能的完整存取並使用產品進行分析。指派管理員角色的使用者可設定隱私權設定與系統預設值，並可以準備、 上傳及確認組織中的工作場所分析資料。如需詳細資訊，請參閱 ＜[工作場所分析](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|

@@ -12,15 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
+ms.collection:
+- M365-security-compliance
 description: Office 365 進階威脅保護包含詐騙智慧、 安全的連結、 安全的附件、 進階的反網路釣魚功能及威脅智慧。
-ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4899073247f4b39e7cda39f8f35544c436c0b2d7
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792248"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995214"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
+
+> [!IMPORTANT]
+> 本文適用於企業客戶的。如果您是家庭使用者尋找關於在 Outlook 中的安全連結的資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="overview-of-office-365-advanced-threat-protection"></a>Overview of Office 365 的進階的威脅保護
 

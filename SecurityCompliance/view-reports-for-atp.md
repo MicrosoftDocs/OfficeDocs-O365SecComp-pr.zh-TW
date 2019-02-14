@@ -3,7 +3,7 @@ title: Office 365 進階威脅保護的檢視報告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
+ms.collection: M365-security-compliance
 description: 了解如何尋找及使用報表的 Office 365 進階威脅保護安全性&amp;規範中心。
-ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: a27fdf6c7d04a2526873047d4e2a33bb283878b3
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014945"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995224"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 進階威脅保護的檢視報告
 
@@ -79,7 +80,6 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
 
 除了本文所述 ATP 報告、 數個其他報告可用，如下表所述：
 
-
 |報告類型  |深入了解  |
 |---------|---------|
 |**電子郵件安全性報表**，例如頂端的寄件者和收件者報告、 詐騙郵件報表及垃圾郵件偵測] 報告。 | [在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心](view-email-security-reports.md)        |
@@ -90,14 +90,14 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>若要檢視 ATP 報告需要哪些權限？
 
-若要檢視和使用本文所述的報告**您必須具有適當的角色指派兩個安全性&amp;規範中心及 Exchange 系統管理中心**。
+若要檢視和使用本文所述的報告**您必須具有適當的角色指派給這兩種安全性&amp;規範中心及 Exchange 系統管理中心**。
 
 - Security&amp;規範中心，您必須具備一個指派的下列角色：
     - 組織管理
-    - 安全性管理員
+    - 安全性管理員 (這可被指派在 Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - 安全性讀者
 
-- Exchange Online 的您必須具備下列角色指派其中一項：
+- Exchange online，您必須具備一個指派 Exchange 系統管理中心中的下列角色 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或使用 PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps))：
     - 組織管理
     - 僅檢視組織管理
     - 僅檢視收件者角色

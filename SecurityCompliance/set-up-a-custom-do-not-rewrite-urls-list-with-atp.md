@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
+ms.collection: M365-security-compliance
 description: 當您設定好您 ATP 安全連結原則時，您可以包含不要 not 修正 ' 要讓組織中某些使用者瀏覽您在您的清單中包含的網站 Url 的清單。
-ms.openlocfilehash: 5eb2d09f1d1d77fa9d6ffdb9f14ba9e7522da287
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755284"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995374"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單
+
+> [!IMPORTANT]
+> 本文適用於企業客戶的。如果您是家庭使用者尋找關於在 Outlook 中的安全連結的資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 與[Office 365 進階威脅保護](office-365-atp.md)(ATP)，您的組織可以[自訂封鎖的 Url](set-up-a-custom-blocked-urls-list-wtih-atp.md)如此人員時在 web 上按一下 [位址 (Url) 中有電子郵件訊息或特定 Office 文件、 其禁止移至這些 Url。您的組織也可以在組織中有特定群組中 「 未修正"的自訂清單。"不 rewrite"清單可讓有些人以造訪否則封鎖透過[ATP Office 365 中的安全連結](atp-safe-links.md)的 Url。 
   

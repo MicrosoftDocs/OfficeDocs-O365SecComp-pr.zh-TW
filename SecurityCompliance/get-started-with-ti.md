@@ -3,7 +3,7 @@ title: Office 365 威脅情報快速入門
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/07/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,27 +12,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
+ms.collection:
+- M365-security-compliance
 description: 了解 Office 365 威脅智慧以及如何開始。
-ms.openlocfilehash: 141bc0d2ffc2084f56f50333c756507d04a37d44
-ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
+ms.openlocfilehash: f4480e6cdf5a845f591ad118858703dee4d4e631
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29770788"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995234"
 ---
-# <a name="get-started-with-office-365-threat-intelligence"></a>Office 365 威脅情報快速入門
+# <a name="get-started-with-office-365-advanced-threat-protection-plan-2-formerly-office-365-threat-intelligence"></a>開始使用 Office 365 進階威脅保護計劃 2 （前身為 Office 365 威脅智慧）
 
-如果您組織的安全性小組的一部分，您可以使用 Office 365 威脅智慧來保護使用者免於遭受攻擊。Office 365 威脅智慧有助於安全性分析師和管理員保留使用者安全由昇前瞻並識別根據什麼動作正在進行的活動在其 Office 365 環境。這些觀點根據完整存放庫的威脅智慧資料和系統以對應至攻擊行為和可疑活動的特別色模式。
+如果您組織的安全性小組的一部分，您可以使用威脅智慧功能來保護使用者免於遭受攻擊。Office 365 進階威脅保護計劃 2 （前身為 Office 365 威脅智慧） 安全性分析師與協助保護使用者的安全由昇觀點的系統管理員和識別根據什麼動作中有新鮮事其 Office 365 環境。這些觀點根據完整存放庫的威脅智慧資料和系統以對應至攻擊行為和可疑活動的特別色模式。
   
-請閱讀本篇文章以深入了解 Office 365 威脅智慧所包含的內容，以及如何開始。
+請閱讀本篇文章以深入了解威脅智慧及如何開始。
   
-## <a name="what-is-office-365-threat-intelligence"></a>什麼是 Office 365 威脅智慧？
+## <a name="what-is-threat-intelligence"></a>什麼是威脅智慧？
 
-Office 365 威脅智慧是一組的見解與建議提供 Office 365 安全性資訊&amp;規範中心。這些提供可協助您組織的安全性小組保護免於遭受攻擊的 Office 365 使用者。Office 365 威脅智慧監視有空及從等使用者活動、 驗證、 電子郵件、 洩漏的 Pc 及安全性事件的多個來源收集資料。商務決策負責人和 Office 365 全域管理員、 安全性管理員及安全性分析師所有可用的資訊 Office 365 威脅智慧提供了解及回應針對 Office 365 的使用者和智慧財產的威脅屬性。
+> [!IMPORTANT]
+> 開始在年 2 月 2019年及後續的幾個月內啟用，Office 365 威脅智慧會變成 Office 365 進階威脅保護計劃 2，與其他威脅保護功能。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+
+威脅智慧是一組的見解與建議提供 Office 365 安全性資訊&amp;規範中心。這些提供可協助您組織的安全性小組保護免於遭受攻擊的 Office 365 使用者。威脅智慧監視有空及從等使用者活動、 驗證、 電子郵件、 洩漏的 Pc 及安全性事件的多個來源收集資料。商務決策負責人和 Office 365 全域管理員、 安全性管理員及安全性分析師所有可用的資訊 Office 365 威脅智慧提供了解及回應針對 Office 365 的使用者和智慧財產的威脅屬性。
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>瞭解威脅儀表板、 總管]、 [及事件
 
-Office 365 威脅智慧會呈現安全性&amp;規範中心，做為一組工具和報告，包括[威脅儀表板](get-started-with-ti.md#dashboard)、[威脅檔案總管](get-started-with-ti.md#explorer)]、 [及[事件](get-started-with-ti.md#incidents)。
+威脅安全性智慧表面&amp;規範中心，做為一組工具和報告，包括[威脅儀表板](get-started-with-ti.md#dashboard)、[威脅檔案總管](get-started-with-ti.md#explorer)]、 [及[事件](get-started-with-ti.md#incidents)。
   
 ### <a name="threat-dashboard"></a>威脅儀表板
 
@@ -62,34 +67,31 @@ Office 365 威脅智慧會呈現安全性&amp;規範中心，做為一組工具�
   
 ## <a name="learn-more-about-malware-amp-threats"></a>深入了解惡意程式碼&amp;威脅
 
-Office 365 威脅智慧可以的一部分，安全性分析師可以檢閱詳細已知的威脅。這是以判斷是否有其他預防措施/採取的步驟可以保留使用者安全很有用。
+Office 365 進階威脅保護計劃 2 可以的一部分，安全性分析師可以檢閱詳細已知的威脅。這是以判斷是否有其他預防措施/採取的步驟可以保留使用者安全很有用。
   
 ![顯示最近的威脅的相關資訊的安全性趨勢](media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
-## <a name="how-do-we-get-office-365-threat-intelligence"></a>我們要如何取得 Office 365 威脅智慧？
+## <a name="how-do-we-get-threat-intelligence"></a>我們要如何取得威脅智慧？
 
-Office 365 威脅智慧隨附於 Office 365 企業版 E5。 
-
-> [!TIP]
-> 如果您的組織有不包含 Office 365 威脅智慧 Office 365 訂閱，可能可以做為附加元件購買威脅智慧。如需規劃選項的詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)和[購買或編輯企業版的 Office 365 的附加元件](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)。
+**威脅智慧屬於立即在 Office 365 進階威脅保護計劃 2**，這包含在特定的訂閱，如[Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、 Office 365 企業版 E5，在 Office 365教育 A5 等。如果組織有不包含 Office 365 ATP 訂閱，則您可能可以購買 ATP 做為附加元件。如需詳細資訊，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。
   
 1. 身為 Office 365 全域管理員，請移至[https://portal.office.com](https://portal.office.com)及使用 Office 365 工作或學校帳戶登入。 
     
 2. 選擇 [**管理** \> **帳務**查看您目前的訂閱所包含的內容。 
 
-    - 如果您看到**Office 365 企業版 E5**，您的組織具有 Office 365 威脅智慧。 
-    - 如果您看到不同的訂閱，例如**Office 365 企業版 E3**或**Office 365 企業版 E1**、 考慮新增威脅智慧。(若要這樣做，選擇 [ **+ 新增訂閱**)。
+    - 如果您看到**Office 365 企業版 E5**，您的組織具有 Office 365 進階威脅保護計劃 2，包括威脅智慧。 
+    - 如果您看到不同的訂閱，例如**Office 365 企業版 E3**或**Office 365 企業版 E1**，請考慮新增計劃 2 進階威脅保護。(若要這樣做，選擇 [ **+ 新增訂閱**)。
     
 3. 在 Office 365 系統管理中心中，選擇 [**使用者** \> **作用中使用者**。
     
-5. 將 Office 365 威脅智慧授權指派給作用中的所有使用者。（僅限威脅智慧已授權的使用者將會顯示報告，例如瀏覽器中。）
+5. 將 Office 365 進階威脅 Protection 授權指派給作用中的所有使用者。（僅限具有威脅智慧功能的授權的使用者將會顯示報告，例如瀏覽器中。）
     
-6. 將角色指派給您組織中將會使用 Office 365 威脅智慧功能的人。請參閱[授與使用者存取 Office 365 安全性&amp;規範中心](grant-access-to-the-security-and-compliance-center.md)，並參考下表：
+6. 將角色指派給您組織中將會使用 Office 365 進階威脅保護功能的人。請參閱[授與使用者存取 Office 365 安全性&amp;規範中心](grant-access-to-the-security-and-compliance-center.md)，並參考下表：
     
 |||
 |:-----|:-----|
 |**若要執行這項活動...]** <br/> |**您必須具備一個這些角色** <br/> |
-|使用威脅儀表板 （或新的[安全性儀表板](security-dashboard.md)）  <br/> 檢視最新或目前的威脅的相關資訊  <br/> |Office 365 全域管理員  <br/> 安全性管理員 (安全性指派&amp;規範中心)  <br/> 安全性讀者 (安全性指派&amp;規範中心)  <br/> |
+|使用威脅儀表板 （或新的[安全性儀表板](security-dashboard.md)）  <br/> 檢視最新或目前的威脅的相關資訊  <br/> |Office 365 全域管理員  <br/> 安全性管理員 （指派在 Azure Active Directory 系統管理中心）  <br/> 安全性讀者 （指派在 Azure Active Directory 系統管理中心）  <br/> |
 |使用威脅 Explorer （也稱為瀏覽器）  <br/> 分析的威脅  <br/> |Office 365 全域管理員  <br/> 安全性管理員 (安全性指派&amp;規範中心)  <br/> 安全性讀者 (安全性指派&amp;規範中心)  <br/> |
 |檢視事件 （也稱為調查） <br/> 將電子郵件訊息新增至事件  <br/> |Office 365 全域管理員  <br/> 安全性管理員 (安全性指派&amp;規範中心)  <br/> 安全性讀者 (安全性指派&amp;規範中心)  <br/> |
 |在事件觸發電子郵件動作  <br/> 尋找並刪除可疑的電子郵件訊息  <br/> |Office 365 全域管理員或安全性管理員  <br/> 其中一個以上的角色及搜尋和清除 (安全性指派&amp;規範中心)  <br/> |

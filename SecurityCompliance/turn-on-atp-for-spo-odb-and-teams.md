@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
+ms.collection: M365-security-compliance
 description: 了解如何開啟 ATP for SharePoint、 OneDrive 及小組，包括如何設定提醒的偵測到的檔案。
-ms.openlocfilehash: 9745d45428035cc52346d19aa42e5e134123d016
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 8c63110baf391fd727e296f34361047b4b67b0cb
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755294"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995334"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組
 

@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: 了解威脅追蹤者，包括新值得注意的追蹤者，以協助組織保持在最上方安全性考量。
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014995"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995304"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
 [Office 365 威脅智慧](office-365-ti.md)可讓您組織的安全性小組可探索，並採取行動 cybersecurity 威脅。開始在落後年 3 月 2018年及向下一個幾週，Office 365 威脅智慧將會包含新的威脅 tracker （英文） 功能，包括值得注意的追蹤者。請閱讀本篇文章以取得這些新功能與下一個步驟的概觀。 
+
+> [!IMPORTANT]
+> 開始在年 2 月 2019年及後續的幾個月內啟用，Office 365 威脅智慧會變成 Office 365 進階威脅保護計劃 2，與其他威脅保護功能。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="what-are-threat-trackers"></a>什麼是威脅追蹤者？
 

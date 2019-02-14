@@ -3,7 +3,7 @@ title: 使用 Office 365 威脅情報保護您的 Office 365 使用者安全
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/12/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
+ms.collection: M365-security-compliance
 description: 了解 Office 365 威脅智慧能如何協助貴組織偵測入侵和威脅，快速地降低以及復原威脅。
-ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706097"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995364"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>使用 Office 365 威脅情報保護您的 Office 365 使用者安全
 
@@ -27,6 +28,9 @@ ms.locfileid: "26706097"
 您知道哪些 Office 365 使用者受到攻擊，或糟-危害？知道如何減輕及復原的目標使用者的攻擊？您知道您可以這麼做確實已在 Office 365 中可用的安全性功能嗎？ 
   
 [Office 365 威脅智慧](office-365-ti.md)是一組包含在您的 Office 365 E5 訂閱的功能。Office 365 威脅智慧有助於減少的平均時間來解析社交事件 80%並增加大小寫的輸送量每月相較於舊版 2 季 37%的 Microsoft IT ！ 
+
+> [!IMPORTANT]
+> 開始在年 2 月 2019年及後續的幾個月內啟用，Office 365 威脅智慧會變成 Office 365 進階威脅保護計劃 2，與其他威脅保護功能。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 我們已最近新增以協助提升如何偵測及復原威脅的新功能 ！以下是快速的逐步執行的方式更新的威脅智慧服務可讓您即使工作更有效率。
   

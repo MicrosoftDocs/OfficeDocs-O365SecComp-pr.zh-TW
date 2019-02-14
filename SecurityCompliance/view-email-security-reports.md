@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
+ms.collection: M365-security-compliance
 description: 了解如何尋找並使用您的組織與 Office 365 企業版的電子郵件安全性報告。安全性中有電子郵件安全性報告&amp;規範中心。
-ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014985"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995294"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 
@@ -176,14 +177,14 @@ ms.locfileid: "28014985"
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>若要檢視這些報告需要哪些權限？
 
-若要檢視和使用本文所述的報告**您必須具有適當的角色指派兩個安全性&amp;規範中心及 Exchange 系統管理中心**。
+若要檢視和使用本文所述的報告**您必須具有適當的角色指派給這兩種安全性&amp;規範中心及 Exchange 系統管理中心**。
 
 - Security&amp;規範中心，您必須具備一個指派的下列角色：
     - 組織管理
-    - 安全性管理員
+    - 安全性管理員 (這可被指派在 Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - 安全性讀者
 
-- Exchange Online 的您必須具備下列角色指派其中一項：
+- Exchange online，您必須具備一個指派 Exchange 系統管理中心中的下列角色 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或使用 PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps))：
     - 組織管理
     - 僅檢視組織管理
     - 僅檢視收件者角色

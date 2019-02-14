@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft 的 cybersecurity 小組實作安全性功能來保護您的 Office 365 環境的最佳建議。 '
-ms.openlocfilehash: 58767ea9a2b825d1583d9135f9d8edcb0d20d7c2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ce7b4371a284763c506ea4e1a06a63dbf2968ae5
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25450078"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995284"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Office 365 安全性藍圖上方的前 30 天 90 天和以外的優先順序
 
@@ -57,7 +58,7 @@ ms.locfileid: "25450078"
   
 |||
 |:-----|:-----|
-|範圍  <br/> |工作  <br/> |
+|範圍  <br/> |Tasks  <br/> |
 |安全性管理  <br/> |• [檢查安全分數並記下您目前的分數 ( [https://securescore.office.com](https://securescore.office.com))。  <br/>  • [開啟的 Office 365 的稽核記錄。請參閱[Office 365 安全性搜尋稽核記錄&amp;規範中心](search-the-audit-log-in-security-and-compliance.md)。<br/> • [[設定您的 Office 365 租用戶增加安全性](tenant-wide-setup-for-increased-security.md)。  <br/>  • [定期檢閱儀表板和 reports in Office 365 安全性和規範中心 」 及雲端應用程式安全性。  <br/> |
 |威脅防護  <br/> |若要啟動監控使用異常行為預設威脅偵測原則[連線至 Microsoft 雲端應用程式安全性的 Office 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) 。延長建置異常偵測的比較基準 7 日間。<br><br/>  實作保護系統帳戶：  <br/> • [使用專用系統帳戶管理活動。  <br/>  • [強制執行管理帳戶的多重要素的驗證 (MFA)。  <br/>  • 使用[高度安全 Windows 10 裝置](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure)的系統活動。  <br/> |
 |身分識別和存取管理  <br/> |• [[啟用 Azure Active Directory 識別保護](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)。  <br/> • [同盟身分識別環境中，強制執行帳戶安全性 （密碼長度、 保留時間下限、 複雜性等）。  <br/> |
