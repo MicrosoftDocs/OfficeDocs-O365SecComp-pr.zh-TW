@@ -15,19 +15,19 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅保護包含詐騙智慧、 安全的連結、 安全的附件、 進階的反網路釣魚功能及威脅智慧。
-ms.openlocfilehash: 4899073247f4b39e7cda39f8f35544c436c0b2d7
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: d78b37ca048187a298b6e083b54ad68b949638ef
+ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995214"
+ms.locfileid: "30051174"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
+## <a name="overview-of-office-365-advanced-threat-protection"></a>Overview of Office 365 的進階的威脅保護
+
 > [!IMPORTANT]
 > 本文適用於企業客戶的。如果您是家庭使用者尋找關於在 Outlook 中的安全連結的資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
-
-## <a name="overview-of-office-365-advanced-threat-protection"></a>Overview of Office 365 的進階的威脅保護
 
 Office 365 進階威脅保護 (ATP) 有幫助保護您的組織從惡意的攻擊：
   
@@ -60,8 +60,6 @@ Office 365 進階威脅保護 (ATP) 有幫助保護您的組織從惡意的攻�
 |從開始年 3 月 2018年，ATP 安全連結保護會延伸至套用至組織內的人員之間所寄送的電子郵件。 |[檢閱並編輯 ATP 安全連結原則](set-up-atp-safe-links-policies.md) |
 |從開始落後年 10 月 2017年，ATP 安全連結保護會延伸至 Url 中電子郵件時的 Url 是以套用至 Office 365 ProPlus 的文件，例如 Word、 Excel、 PowerPoint 及 Visio 在 Windows，以及 Office iOS 及 Android 裝置上的應用程式。  |請確定您使用[Office 的現代驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) |
 
-
-      
 ## <a name="get-office-365-atp"></a>取得 Office 365 ATP
 
 Office 365 ATP 隨附於訂閱，例如[Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、 Office 365 企業版 E5，以及 Office 365 教育版 A5。如果您的組織有不包含 Office 365 ATP Office 365 訂閱，可能可以做為附加元件購買 ATP。如需詳細資訊，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。 
@@ -98,9 +96,9 @@ ATP 原則已備妥之後，就有一個報表可用來顯示服務運作的方�
 2. 移至 [**報表** > **儀表板**。（若要取得這些報告的說明，請參閱[進階威脅保護的檢視報告](view-reports-for-atp.md)）。
     
 3. 是否需要進行調整您的安全性原則。若要取得與此說明，請參閱下列資源：
-      - [Office 365 中的 ATP 反網路釣魚原則](set-up-anti-phishing-policies.md)
-      - [Office 365 中的 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
-      - [Office 365 中的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)
+    - [ATP 反網路釣魚原則](set-up-anti-phishing-policies.md)
+    - [ATP 安全連結原則](set-up-atp-safe-links-policies.md)
+    - [ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)
     
     
 ## <a name="submit-a-suspicious-file-to-microsoft-for-analysis"></a>提交給 Microsoft 進行分析可疑的檔案

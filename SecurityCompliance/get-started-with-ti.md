@@ -15,14 +15,14 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅智慧以及如何開始。
-ms.openlocfilehash: f4480e6cdf5a845f591ad118858703dee4d4e631
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 6412f575bbe581aa469c7ad615213564b728d0aa
+ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995234"
+ms.locfileid: "30051164"
 ---
-# <a name="get-started-with-office-365-advanced-threat-protection-plan-2-formerly-office-365-threat-intelligence"></a>開始使用 Office 365 進階威脅保護計劃 2 （前身為 Office 365 威脅智慧）
+# <a name="get-started-with-threat-intelligence"></a>威脅智慧快速入門
 
 如果您組織的安全性小組的一部分，您可以使用威脅智慧功能來保護使用者免於遭受攻擊。Office 365 進階威脅保護計劃 2 （前身為 Office 365 威脅智慧） 安全性分析師與協助保護使用者的安全由昇觀點的系統管理員和識別根據什麼動作中有新鮮事其 Office 365 環境。這些觀點根據完整存放庫的威脅智慧資料和系統以對應至攻擊行為和可疑活動的特別色模式。
   
@@ -30,10 +30,10 @@ ms.locfileid: "29995234"
   
 ## <a name="what-is-threat-intelligence"></a>什麼是威脅智慧？
 
+威脅智慧是一組的見解與建議提供 Office 365 安全性資訊&amp;規範中心。這些提供可協助您組織的安全性小組保護免於遭受攻擊的 Office 365 使用者。威脅智慧監視有空及從等使用者活動、 驗證、 電子郵件、 洩漏的 Pc 及安全性事件的多個來源收集資料。商務決策負責人和 Office 365 全域管理員、 安全性管理員及安全性分析師所有可用的資訊 Office 365 威脅智慧提供了解及回應針對 Office 365 的使用者和智慧財產的威脅屬性。
+
 > [!IMPORTANT]
 > 開始在年 2 月 2019年及後續的幾個月內啟用，Office 365 威脅智慧會變成 Office 365 進階威脅保護計劃 2，與其他威脅保護功能。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
-
-威脅智慧是一組的見解與建議提供 Office 365 安全性資訊&amp;規範中心。這些提供可協助您組織的安全性小組保護免於遭受攻擊的 Office 365 使用者。威脅智慧監視有空及從等使用者活動、 驗證、 電子郵件、 洩漏的 Pc 及安全性事件的多個來源收集資料。商務決策負責人和 Office 365 全域管理員、 安全性管理員及安全性分析師所有可用的資訊 Office 365 威脅智慧提供了解及回應針對 Office 365 的使用者和智慧財產的威脅屬性。
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>瞭解威脅儀表板、 總管]、 [及事件
 
