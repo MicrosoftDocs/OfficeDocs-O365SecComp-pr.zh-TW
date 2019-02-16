@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: M365-security-compliance
 description: 了解如何尋找及使用報表的 Office 365 進階威脅保護安全性&amp;規範中心。
-ms.openlocfilehash: a27fdf6c7d04a2526873047d4e2a33bb283878b3
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: c45224155d2e72edda1e0f0eced879e152b49629
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995224"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30062611"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 進階威脅保護的檢視報告
 
@@ -94,7 +94,7 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
 
 - Security&amp;規範中心，您必須具備一個指派的下列角色：
     - 組織管理
-    - 安全性管理員 (這可被指派在 Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))
+    - 安全性管理員 (這可被指派在 Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
     - 安全性讀者
 
 - Exchange online，您必須具備一個指派 Exchange 系統管理中心中的下列角色 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或使用 PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps))：
