@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 description: ATP 反網路釣魚是 Office 365 進階威脅保護的一部分。ATP 反網路釣魚適用於搭配模擬偵測演算法的機器學習模型的一組提供保護商品和矛網路釣魚攻擊的內送郵件。所有訊息都是因偵測網路釣魚郵件，以及用來防止各種使用者和網域模擬攻擊的進階演算法一組經過訓練的機器學習模型廣泛設定而異。
-ms.openlocfilehash: c3e44a313bf9c823fbfda138fc5a10294993d509
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 3cd786de403bd2fe4fcdd5d53f3f825c6e4e8a40
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792268"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29889246"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 中的 ATP 防網路釣魚功能
 
@@ -45,7 +45,7 @@ ATP 反網路釣魚原則必須定義 protection 設為 [作用中的順序。�
 
 此外，報表可用來顯示服務組織的運作方式。若要深入了解，請參閱[Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)。
 
-ATP 反網路釣魚機器學習作用中的特定使用者的模型，使用者必須已定義的[ATP 安全附件功能](atp-safe-attachments.md)、 [ATP 安全連結](atp-safe-links.md)或 ATP 反網路釣魚原則的一部分。 
+ATP 反網路釣魚機器學習作用中的特定使用者的模型，使用者必須已定義的[ATP 安全附件](atp-safe-attachments.md)、 [ATP 安全連結](atp-safe-links.md)或 ATP 反網路釣魚原則的一部分。 
 
 下表說明幾個範例案例。在每個這些範例中，組織使用 Office 365 企業版 E5，其中包含進階威脅保護。
   

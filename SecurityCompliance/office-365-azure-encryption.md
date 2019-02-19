@@ -1,9 +1,8 @@
 ---
 title: 在 Azure 中的 office 365 加密
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 在 Azure 中加密的說明。
-ms.openlocfilehash: 5e1d0fc02daa7fe057e14045d1948762612b3674
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f169744933a304dc92ba46021ea647403a75bbd9
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526802"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664109"
 ---
 # <a name="office-365-encryption-in-azure"></a>在 Azure 中的 office 365 加密
 

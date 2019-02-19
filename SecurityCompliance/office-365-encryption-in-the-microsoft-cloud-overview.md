@@ -1,9 +1,8 @@
 ---
 title: Microsoft Cloud 中的加密
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Microsoft 雲端中加密的概觀。
-ms.openlocfilehash: b8dee7ca7a791878763b885ada40a1d87f074e8e
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 75ed88d4755ab37f03b4821125e175a66015afa8
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527171"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664129"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud 中的加密
 

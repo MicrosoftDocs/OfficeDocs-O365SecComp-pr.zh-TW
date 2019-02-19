@@ -3,7 +3,7 @@ title: Office 365 安全分數
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/25/2019
+ms.date: 02/13/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: 屬於不知道如何安全您的組織是這麼 in Office 365？安全的分數以下是可協助。安全的分數分析您的組織安全性根據規則活動和 Office 365 中的安全性設定並指派分數。
-ms.openlocfilehash: bc0379e40b09e63e5fded1b1a289d40c306def91
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: cf272869981dd73e1ceb4bd7180cc16acaed0516
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559086"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29992357"
 ---
 # <a name="office-365-secure-score"></a>Office 365 安全分數
 
@@ -73,7 +73,7 @@ Widget 包含安全分數儀表板的連結。
   
 ## <a name="required-permissions"></a>必要權限
 
-若要檢視及使用安全分數儀表板，您必須指派一個 Azure Active Directory 中的下列角色：
+若要檢視及使用安全分數儀表板，您必須指派一個[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的下列角色：
 - 全域管理員
 - 計費管理員
 - 使用者系統管理員

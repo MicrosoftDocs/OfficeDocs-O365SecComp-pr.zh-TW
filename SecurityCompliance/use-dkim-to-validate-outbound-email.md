@@ -1,5 +1,5 @@
 ---
-title: 使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
+title: 使用 DKIM 自訂網域在 Office 365 中的電子郵件
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 摘要： 本文將告訴您如何使用 DomainKeys 識別郵件 (DKIM) 與 Office 365 以確定目的地的電子郵件系統信任從自訂網域傳送的訊息。
-ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a076e70b72711d1b812ffb0d30fba0ffb322d6b7
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696330"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29954256"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
- **摘要：** 本文將告訴您如何使用 DomainKeys 識別郵件 (DKIM) 與 Office 365 以確定目的地的電子郵件系統信任從自訂網域傳送的訊息。 
+ **摘要：** 本文將告訴您如何使用 DomainKeys 識別郵件 (DKIM) 與 Office 365 以確定目的地的電子郵件系統信任從自訂網域送出的郵件。 
   
 您應該使用 DKIM 除了 SPF 和 DMARC 避免 spoofers 傳送看起來像它們來自您網域的郵件。DKIM 可讓您將數位簽章新增至郵件標頭中的電子郵件訊息。複雜的聲音，但其確實不是。當您設定 DKIM 時，您授權網域建立關聯，或登入電子郵件訊息使用密碼編譯驗證其名稱。從您的網域接收電子郵件的電子郵件系統可以使用此數位簽章可協助判斷其接收內送電子郵件是否合法。
   

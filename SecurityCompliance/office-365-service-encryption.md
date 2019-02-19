@@ -1,9 +1,8 @@
 ---
 title: Office 365 服務加密
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 了解 Microsoft Office 365 中的資料恢復能力。
-ms.openlocfilehash: 1273cd5556bf51dcdac9bbde1b3e8003ab818811
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09ba8408176627c3aa9833bb59dde8be86aefd51
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526756"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664079"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 服務加密
 

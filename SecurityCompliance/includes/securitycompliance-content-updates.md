@@ -3,18 +3,6 @@
 
 
 
-## <a name="week-of-december-31-2018"></a>2018 年 12 月 31 日當週
-
-
-| 發佈時間 |主題標題 | 變更 |
-|------|------------|--------|
-| 1/2/2019 | [Office 365 中的攻擊模擬器](/Office365/SecurityCompliance/attack-simulator) | 修改時間 |
-| 1/3/2019 | [匯出內容搜尋報告](/Office365/SecurityCompliance/export-a-content-search-report) | 修改時間 |
-| 1/3/2019 | [從 Office 365 安全性 & 規範中心匯出內容的搜尋結果](/Office365/SecurityCompliance/export-search-results) | 修改時間 |
-| 1/3/2019 | [Office 365 安全性內容的搜尋限制&amp;規範中心](/Office365/SecurityCompliance/limits-for-content-search) | 修改時間 |
-| 1/4/2019 | [垃圾郵件和大量電子郵件有什麼不同?](/Office365/SecurityCompliance/what-s-the-difference-between-junk-email-and-bulk-email) | 修改時間 |
-
-
 ## <a name="week-of-january-07-2019"></a>2019 年 1 月 7 日當週
 
 
@@ -137,7 +125,7 @@
 | 1/25/2019 | [Office 365 雲端應用程式安全性的新功能](/Office365/SecurityCompliance/new-in-office-365-cas-2018) | 新增 |
 
 
-## <a name="week-of-january-28-2019"></a>2019 年 1 月 28 日當週
+## <a name="week-of-january-28-2019"></a>2019 年 1 月28 日當週
 
 
 | 發佈時間 |主題標題 | 變更 |
@@ -306,3 +294,61 @@
 | 2/1/2019 | [敏感度標籤概觀](/Office365/SecurityCompliance/sensitivity-labels) | 修改時間 |
 | 2/1/2019 | [Office 365 ATP 安全連結](/Office365/SecurityCompliance/atp-safe-links) | 修改時間 |
 | 2/1/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
+
+
+## <a name="week-of-february-04-2019"></a>2019 年 2 月 4 日當週
+
+
+| 發佈時間 |主題標題 | 變更 |
+|------|------------|--------|
+| 2/4/2019 | 編輯保留通知 | 移除 |
+| 2/4/2019 | [在 Office 365 安全與規範中心搜尋稽核記錄](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改時間 |
+| 2/5/2019 | [自動化事件導向保留](/Office365/SecurityCompliance/automate-event-driven-retention) | 修改時間 |
+| 2/5/2019 | [建立及管理 Office 365 中的非使用中信箱](/Office365/SecurityCompliance/create-and-manage-inactive-mailboxes) | 修改時間 |
+| 2/5/2019 | [Office 365 稽核記錄中的詳細內容](/Office365/SecurityCompliance/detailed-properties-in-the-office-365-audit-log) | 修改時間 |
+| 2/5/2019 | [SharePoint Server 適用的 GDPR](/Office365/SecurityCompliance/gdpr-for-sharepoint-server) | 修改時間 |
+| 2/5/2019 | [置於就地保留虛刪除信箱在 Exchange Online](/Office365/SecurityCompliance/put-an-in-place-hold-on-a-soft-deleted-mailbox) | 修改時間 |
+| 2/5/2019 | [Office 365 中不受限制封存概觀](/Office365/SecurityCompliance/unlimited-archiving) | 修改時間 |
+| 2/5/2019 | [Office 365 安全性權限&amp;規範中心](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 修改時間 |
+| 2/5/2019 | [Office 365 安全性 eDiscovery 權限指派&amp;規範中心](/Office365/SecurityCompliance/assign-ediscovery-permissions) | 修改時間 |
+| 2/5/2019 | [內容搜尋的關鍵字查詢與搜尋條件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 修改時間 |
+| 2/5/2019 | [防禦措施來拒絕服務攻擊的 office 365 核心原則](/Office365/SecurityCompliance/office-365-core-principles-of-defense-against-dos-attacks) | 修改時間 |
+| 2/5/2019 | [Office 365 ATP 安全附件](/Office365/SecurityCompliance/atp-safe-attachments) | 修改時間 |
+| 2/5/2019 | [Office 365 ATP 安全連結](/Office365/SecurityCompliance/atp-safe-links) | 修改時間 |
+| 2/5/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
+| 2/5/2019 | [設定自訂封鎖 Url 清單使用 Office 365 ATP 安全連結](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | 修改時間 |
+| 2/5/2019 | [設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | 修改時間 |
+| 2/5/2019 | [設定 Office 365 的 ATP 防網路釣魚原則](/Office365/SecurityCompliance/set-up-anti-phishing-policies) | 修改時間 |
+| 2/5/2019 | [設定 Office 365 ATP 安全附件原則](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 修改時間 |
+| 2/5/2019 | [設定 Office 365 ATP 安全連結原則](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 修改時間 |
+| 2/5/2019 | [在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | 修改時間 |
+| 2/6/2019 | [Office 365 ATP 安全附件](/Office365/SecurityCompliance/atp-safe-attachments) | 修改時間 |
+| 2/6/2019 | [Office 365 ATP 安全連結](/Office365/SecurityCompliance/atp-safe-links) | 修改時間 |
+| 2/6/2019 | [偵測並修復 Office 365 中的非法同意授權](/Office365/SecurityCompliance/detect-and-remediate-illicit-consent-grants) | 修改時間 |
+| 2/6/2019 | [Office 365 安全性的 eDiscovery 案例&amp;規範中心](/Office365/SecurityCompliance/ediscovery-cases) | 修改時間 |
+| 2/6/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
+| 2/6/2019 | [搜尋並刪除您的 Office 365 組織-Admin 說明中的電子郵件](/Office365/SecurityCompliance/search-for-and-delete-messages-in-your-organization) | 修改時間 |
+| 2/6/2019 | [設定自訂封鎖 Url 清單使用 Office 365 ATP 安全連結](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | 修改時間 |
+| 2/6/2019 | [設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | 修改時間 |
+| 2/6/2019 | [設定 Office 365 的 ATP 防網路釣魚原則](/Office365/SecurityCompliance/set-up-anti-phishing-policies) | 修改時間 |
+| 2/6/2019 | [設定 Office 365 ATP 安全附件原則](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 修改時間 |
+| 2/6/2019 | [設定 Office 365 ATP 安全連結原則](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 修改時間 |
+| 2/6/2019 | [在 Office 365 ATP 開啟 SharePoint、 OneDrive 及 Microsoft 小組](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | 修改時間 |
+| 2/6/2019 | [Office 365 中的監督原則](/Office365/SecurityCompliance/supervision-policies) | 修改時間 |
+| 2/6/2019 | [自動將敏感度標籤套用到內容](/Office365/SecurityCompliance/apply_sensitivity_label_automatically) | 修改時間 |
+| 2/7/2019 | [警示 Office 365 安全性原則&amp;規範中心](/Office365/SecurityCompliance/alert-policies) | 修改時間 |
+| 2/7/2019 | [為您的組織設定監督原則](/Office365/SecurityCompliance/configure-supervision-policies) | 修改時間 |
+| 2/7/2019 | [設定 Office 365 中電子文件探索調查的合規性界限](/Office365/SecurityCompliance/set-up-compliance-boundaries) | 修改時間 |
+| 2/7/2019 | [Office 365 威脅情報快速入門](/Office365/SecurityCompliance/get-started-with-ti) | 修改時間 |
+| 2/7/2019 | [保留原則概觀](/Office365/SecurityCompliance/retention-policies) | 修改時間 |
+| 2/7/2019 | [安全性儀表板概觀 （英文)](/Office365/SecurityCompliance/security-dashboard) | 修改時間 |
+| 2/8/2019 | [開始使用 Microsoft 服務信任入口網站](/Office365/SecurityCompliance/get-started-with-service-trust-portal) | 修改時間 |
+| 2/8/2019 | [設定您的 Office 365 租用戶以提高安全性](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | 修改時間 |
+| 2/8/2019 | [Office 365 中的 ATP 防網路釣魚功能](/Office365/SecurityCompliance/atp-anti-phishing) | 修改時間 |
+| 2/8/2019 | [Office 365 ATP 安全附件](/Office365/SecurityCompliance/atp-safe-attachments) | 修改時間 |
+| 2/8/2019 | [Office 365 ATP 安全連結](/Office365/SecurityCompliance/atp-safe-links) | 修改時間 |
+| 2/8/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
+| 2/8/2019 | [Office 365 威脅情報](/Office365/SecurityCompliance/office-365-ti) | 修改時間 |
+| 2/8/2019 | [設定 Office 365 的 ATP 防網路釣魚原則](/Office365/SecurityCompliance/set-up-anti-phishing-policies) | 修改時間 |
+| 2/8/2019 | [在 Office 365 系統管理員身分管理隔離的郵件和檔案](/Office365/SecurityCompliance/manage-quarantined-messages-and-files) | 修改時間 |
+| 2/8/2019 | [隔離常見問題集](/Office365/SecurityCompliance/quarantine-faq) | 修改時間 |

@@ -1,9 +1,8 @@
 ---
 title: Office 365 客戶管理加密功能
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 了解 Microsoft Office 365 中的資料恢復能力。
-ms.openlocfilehash: e835587e07246154cd700555cc7263370bde8755
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 26abb93e491a183c5c307dde8055f1050e16068c
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526163"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664119"
 ---
 # <a name="customer-managed-encryption-features-in-office-365"></a>在 Office 365 的客戶管理加密功能
 

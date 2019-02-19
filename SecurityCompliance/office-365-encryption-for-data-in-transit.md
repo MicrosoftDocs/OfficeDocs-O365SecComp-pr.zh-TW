@@ -1,9 +1,8 @@
 ---
 title: Office 365 加密傳送過程中的資料
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 簡短說明 Microsoft 加密傳送過程中的資料的方式。
-ms.openlocfilehash: 8f4781cf1127fb1b6bf742c267c76e3df39b8209
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcb93bdda792a174c00bc5b2fc2153faeb049465
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526207"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664149"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Office 365 加密傳送過程中的資料
 

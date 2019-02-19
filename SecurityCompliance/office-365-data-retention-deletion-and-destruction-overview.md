@@ -11,64 +11,42 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Overview of Office 365 資料保留、 刪除、 和解構有關的 Microsoft 的原則。
-ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
-ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
+ms.openlocfilehash: 8a773ebafba0d7cdd36b9da30878dcc487685846
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "23999144"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "24961569"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的資料保留、刪除及毀損
 
-## <a name="introduction"></a>簡介
-Microsoft Office 365 的客戶資料之後要刪除的保留期限會指定具有資料處理標準的原則。一般而言，Office 365 中有兩種案例客戶資料都會被刪除：
-- **作用中刪除**使用者刪除資料，或私人給使用者的資料會刪除該使用者會由作用中的租用戶系統管理員在刪除之後。
+Microsoft Office 365 的客戶資料之後要刪除的保留期限會指定具有資料處理標準的原則。通常有兩種情況客戶資料都會被刪除：
+
+- **作用中刪除**承租人具有作用中的訂閱與使用者刪除資料，或由系統管理員刪除使用者所提供的資料。
 - **被動刪除**租用戶訂閱綵帶橫幅。
 
-Microsoft Office 365 的資料處理標準原則會指定資料在每個這些案例中的保留期限。下列各節說明類別的資料 （根據 Microsoft Office 365 資產分類標準） 和主動與被動刪除案例的保留期間。
+## <a name="data-retention"></a>資料保留
 
-## <a name="active-deletion-retention"></a>作用中刪除保留
+每個這些刪除案例下, 表會顯示由資料類別與分類的最大資料保留期間：
 
-| 資料類別 | 至少保留 | 最多只保留 |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| 存取控制資料 | 不適用 | 不適用 |
-| 客戶的內容 | 7 天 | 30 天 |
-| 使用者識別資訊 | 90 天 | 180 天 |
-| 帳戶資料 | 1 年 | 3 年 |
-| 組織識別資訊 | 90 天 | 180 天 |
-| 系統的中繼資料 | 請參閱安全性記錄檔 | 請參閱安全性記錄檔 |
-| 安全性記錄檔 | Min 1 年 | 最大 1 年 |
-| Exchange Online 封存記錄檔 | Min 3 年 | 最大 3 年 |
+| 資料類別 | 資料分類 | 描述 | 範例 | 保留期間 |
+|-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
+| 客戶資料 | 客戶的內容| 建立的內容直接提供/由系統管理員和使用者 <br><br> 這包括所有文字、 聲音、 視訊及圖像檔案和軟體建立並儲存在 Microsoft 資料中心時使用 Office 365 中的服務 | 範例的最常用的 Office 365 應用程式可讓使用者在作者資料包括 Word、 Excel、 PowerPoint、 Outlook 及 OneNote <br><br> 客戶內容也包含客戶擁有/提供機密資料 （密碼、 憑證、 加密金鑰和儲存機碼） | **作用中刪除案例：** 最 30 天 <br><br> **被動刪除案例：** 最 180 天 |
+| 客戶資料 | 一般使用者識別資訊 (EUII) | 識別或無法用來識別使用者的 Microsoft 服務的資料。EUII 不包含客戶內容 | 使用者名稱或顯示名稱 (DOMAIN\UserName) <br><br> 使用者主要名稱 (name@domain) <br><br>  使用者專用的 IP 位址 | **作用中刪除案例：** 最 180 天 （僅限租用戶系統管理員動作） <br><br> **被動刪除案例：** 最 180 天 |
+| 個人資料 <br> （不包含客戶資料的資料） | 一般使用者 Pseudonymous 識別碼 (EUPI) | Microsoft 繫結至 Microsoft 服務的使用者所建立的識別碼。當 EUPI 結合其他資訊，例如對應表，它會識別使用者 <br><br> EUPI 不包含上傳或建立由客戶資訊 | 使用者的 Guid、 PUIDs、 或 Sid <br><br> 工作階段識別碼 | **作用中刪除案例：** 最 30 天 <br><br> **被動刪除案例：** 最 180 天 |
 
-## <a name="passive-deletion-retention"></a>被動刪除保留
+## <a name="subscription-retention"></a>訂閱保留
 
-| 資料類別 | 至少保留 | 最多只保留 |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| 存取控制資料 | 90 天 （適用於內容復原） | 180 天 （適用於內容復原） |
-| 客戶的內容 | 90 天 （有限函數帳戶） | 180 天 |
-| 使用者識別資訊 | 90 天 | 180 天 |
-| 帳戶資料 | 1 年 | 3 年 |
-| 組織識別資訊 | 90 天 | 180 天 |
-| 系統的中繼資料 | 請參閱安全性記錄檔 | 請參閱安全性記錄檔 |
-| 安全性記錄檔 | Min 1 年 | 最大 1 年 |
-| Exchange Online 封存記錄檔 | Min 3 年 | 最大 3 年 |
+作用中的訂閱的所有的時間期間字詞 at、 訂閱者可以存取、 「 解壓縮 」 或刪除儲存在 Office 365 的客戶資料。如果付費的訂閱結束或已終止、 Microsoft 將保留中啟用擷取資料訂戶 90 天的限制函數帳戶儲存在 Office 365 的客戶資料。90 天保留期間結束後，Microsoft 將會停用帳戶並刪除客戶資料。不得超過 180 天之後到期日或 Office 365 訂閱的終止 Microsoft 會停用帳戶及帳戶中刪除所有的客戶資料。一旦經過任何資料的最大的保留期間，資料會呈現商業上無法復原。
 
-## <a name="subscription-rentention"></a>訂閱 Rentention
-
-客戶的內容會定義為 Exchange Online 信箱內容 (電子郵件內文、 行事曆項目和電子郵件附件的內容及如果有的話，Skype 商務內容)、 SharePoint Online 網站內容儲存在網站中的檔案與檔案上傳至 OneDrive 商務或 Skype for Business。
-
-訂閱的所有的時間期間字詞 at、 訂閱者可以存取並擷取儲存在 Office 365 的客戶資料。除了免費試用版和 LinkedIn 服務，Microsoft 保留客戶資料儲存在 Office 365 中限制函數帳戶 90 天的到期日或訂閱啟用訂閱者擷取資料的終止之後。（但如果是免費的試用版，當試用版到期時，它將移入寬限期給予購買 Office 365 的 30 天 （適用於大部分試用版，在大部分的國家和地區）。如果您決定不要購買 Office 365，您可以讓您試用版到期或取消該程序。推出 30 天寬限期間之後，您的試用帳戶資訊和資料是永久清除。）
-
-90 天保留期間結束之後，Microsoft 帳戶會停用和刪除客戶資料。不得超過 180 天之後到期日或 Office 365 訂閱的終止 Microsoft 會停用帳戶及帳戶中刪除所有的客戶資料。一旦經過任何資料的最大的保留期間，資料會呈現商業上無法復原。
-
-Microsoft 也有位址回收和處置磁碟機和失敗或淘汰伺服器的資料處理標準原則。然後再重新使用 Office 365 內任何磁碟機，Microsoft 會執行與 NIST SP 800 88 相容的實體的病毒掃描程序。不能重複使用的磁碟機都會予以處置所執行含有正在終結磁碟的資料中心內的離站實際銷毀程序。依 Microsoft Cloud 基礎結構及操作 (MCIO) 會執行這些程序。如需詳細資訊，請參閱稽核報告在[服務信任預覽](https://aka.ms/STP)MCIO。
+但如果是免費的試用版，您的帳戶會移動到寬限期狀態 30 天的大部分的國家和地區。在此寬限期間，您必須購買 Office 365 選項。如果您決定不要購買 Office 365，您可以取消您的試用版或讓寬限期間到期，並將刪除您的試用帳戶資訊和資料。
 
 ## <a name="expedited-deletion"></a>加速的刪除
-訂閱的所有的時間期間字詞 at、 訂閱者都可以連絡 Microsoft 支援和快速式要求訂閱佈建。在此程序，所有使用者資料，包括資料的 SharePoint Online、 Exchange Online 下可能會保留或非使用中信箱中儲存為已刪除的三天後管理員進入 Microsoft 提供的鎖定程式碼。如需有關加速佈建的詳細資訊，請參閱[取消 Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
+任何訂閱的所有的時間期間字詞 at、 訂閱者都可以連絡 Microsoft 支援和快速式要求訂閱佈建。在此程序，所有使用者資料，包括資料的 SharePoint Online、 Exchange Online 下可能會保留或非使用中信箱中儲存為已刪除的三天後管理員進入 Microsoft 提供的鎖定程式碼。如需有關加速佈建的詳細資訊，請參閱[取消 Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
 
 ## <a name="related-links"></a>相關的連結
+- [資料毀損](office-365-data-destruction.md)
+- [Office 365 中的不變性](office-365-data-immutability.md)
 - [Exchange Online 資料刪除](office-365-exchange-online-data-deletion.md)
 - [SharePoint Online 資料刪除](office-365-sharepoint-online-data-deletion.md)
 - [商務用 Skype 資料刪除](office-365-skype-data-deletion.md)
-- [Office 365 中的不變性](office-365-data-immutability.md)
-- [資料毀損](office-365-data-destruction.md)

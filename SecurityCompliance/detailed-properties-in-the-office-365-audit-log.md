@@ -16,10 +16,10 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: 包含 Office 365 中的其他屬性的說明稽核記錄。
 ms.openlocfilehash: e2450f8d4f9a613d6b21e373d2a2de841cfc7ca0
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "29890044"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 稽核記錄中的詳細內容

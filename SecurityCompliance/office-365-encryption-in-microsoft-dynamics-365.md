@@ -1,9 +1,8 @@
 ---
 title: Microsoft Dynamics 365 中的 office 365 加密
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 5/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 了解 Microsoft Dynamics 365 中的加密。
-ms.openlocfilehash: 181db1724f140c86fb1ac1dbf4a4bfb7063d25a3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: faf9df09b8dcd8a76a38671e4f5d5145094eec88
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526153"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664069"
 ---
 # <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 中的 office 365 加密
 
