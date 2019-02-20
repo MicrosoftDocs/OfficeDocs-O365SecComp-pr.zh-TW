@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Microsoft 如何強制執行 Office 365 租用戶隔離的摘要。
-ms.openlocfilehash: fcf66ee65c2a4cfdf73ae0eac77f54bd555d059d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c0b58f149ace1e6b1ecf179534bdd75d15840a7f
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526816"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090985"
 ---
 # <a name="tenant-isolation-in-office-365"></a>在 Office 365 租用戶隔離
 

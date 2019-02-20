@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: 整合您的組織 SIEM server 與 Office 365 威脅智慧及進階威脅保護的 Office 365 活動管理 api。
-ms.openlocfilehash: 057d8ac101b96f37846ac751645934279d45dc88
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 854f763b72dfac1a5dc1442b1d9d123ed5439257
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972255"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087242"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>與 Office 365 威脅智慧及進階威脅保護 SIEM 整合
 
@@ -28,7 +28,7 @@ Office 365 活動管理 API 從您組織的 Office 365 和 Azure Active Director
 SIEM 伺服器或其他類似系統應輪詢 access 偵測事件**audit.general**工作量。若要了解，請參閱[開始使用 Office 365 管理 api （英文）](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。 
 
 > [!IMPORTANT]
-> 您必須是 Office 365 全域管理員或已指派的安全性與規範中心來設定與 Office 365 威脅智慧及進階威脅保護 SIEM 整合安全性管理員角色。<br/>稽核記錄必須針對 Office 365 環境開啟。若要取得與此說明，請參閱[開啟 Office 365 稽核記錄搜尋開啟或關閉](turn-audit-log-search-on-or-off.md)。
+> 您必須是 Office 365 全域管理員或已指派給安全性 & 規範中心來設定與 Office 365 進階威脅保護 SIEM 整合安全性管理員角色。<br/>稽核記錄必須針對 Office 365 環境開啟。若要取得與此說明，請參閱[開啟 Office 365 稽核記錄搜尋開啟或關閉](turn-audit-log-search-on-or-off.md)。
 
 ## <a name="related-topics"></a>相關主題
 

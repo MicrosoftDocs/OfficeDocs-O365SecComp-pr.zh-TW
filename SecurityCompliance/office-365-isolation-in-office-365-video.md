@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： 在 Office 365 視訊的租用戶隔離說明。
-ms.openlocfilehash: 9476047d56161ec2589fdf743d7ee837ea558865
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e153605a0e8d938ab7bddb92e46d7d54a94f612a
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527017"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091045"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 影片中的租用戶隔離
 

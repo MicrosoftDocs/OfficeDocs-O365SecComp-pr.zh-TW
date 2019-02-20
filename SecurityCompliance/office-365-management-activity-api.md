@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-analytics
 description: 關於 Office 365 管理活動 API 簡短摘要。
-ms.openlocfilehash: 4753be89c008676d5244b5c659c3dd1a545975b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ca5517d3049830cd7be912b2e2e47a34a866aca0
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526249"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090556"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365 管理活動 API
 Microsoft 提供 reporting services 可讓系統管理員以取得其 Office 365 租用戶交易式彙總的資訊。[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)使用業界標準 RESTful 設計與 OAuth v2 進行驗證，方便您開始體驗擷取資料與 ingesting 到的視覺化工具和應用程式。API 提供資料摘要包含 Office 365 中的使用者、 管理員、 作業及安全性活動的相關資訊。資料可以保持在法規基於或結合採購從內部部署基礎結構或其他來源]，以建立作業、 安全性及規範的監視解決方案整個企業的記錄資料。

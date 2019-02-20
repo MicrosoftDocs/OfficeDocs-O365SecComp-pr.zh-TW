@@ -9,14 +9,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Overview of Office 365 資料保留、 刪除、 和解構有關的 Microsoft 的原則。
-ms.openlocfilehash: 8a773ebafba0d7cdd36b9da30878dcc487685846
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: c6c5e1f28ee9d2d4dc8ac85a8af47bdd18037fb0
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "24961569"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090845"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的資料保留、刪除及毀損
 

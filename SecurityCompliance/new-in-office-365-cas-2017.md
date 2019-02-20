@@ -9,12 +9,12 @@ ms.date: 01/25/2019
 ms.service: o365-administration
 localization_priority: Normal
 description: 請參閱新發行的 2017 for Office 365 雲端應用程式安全性
-ms.openlocfilehash: a5f17f626876298d1551c9ca4439448c536a4d62
-ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+ms.openlocfilehash: cfc5d9d06c1b2296b82c35fc5fdd6e4bc0deb42b
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570179"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087402"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2017"></a>Office 365 雲端應用程式的安全性更新期間 2017
     
@@ -77,8 +77,6 @@ ms.locfileid: "29570179"
 2. 移至 [**提醒** \> **管理進階提醒**。
     
 3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。
-    
-    ![安全性&amp;規範中心選擇提醒\>管理進階提醒\>移至 [進階安全性管理](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
   
 4. 選擇 [**設定** \> **安全性延伸模組**。
     

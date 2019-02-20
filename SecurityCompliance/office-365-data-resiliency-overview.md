@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 了解 Microsoft Office 365 中的資料恢復能力。
-ms.openlocfilehash: 7d43c766615ff1520c6529427116c42795da8565
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 126e00c53e578b287538617a0e1ad84ae86ce7f1
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527029"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090535"
 ---
 # <a name="data-resiliency-in-office-365"></a>Office 365 中的資料復原
 

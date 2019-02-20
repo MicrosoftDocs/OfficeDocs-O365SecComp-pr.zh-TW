@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Microsoft 的防禦策略與拒絕服務 (DoS) 攻擊的概觀。
-ms.openlocfilehash: f172db5080ef73402c7e9bc61720eb0f87e844ac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0b0cf20e6282c85ede05edda3979ae5a7295ac78
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526156"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090815"
 ---
 # <a name="microsofts-denial-of-service-defense-strategy"></a>Microsoft 的拒絕服務防禦策略
 

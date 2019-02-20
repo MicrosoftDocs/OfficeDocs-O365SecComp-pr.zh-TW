@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： 在 Office 365 的各種應用程式內的隔離及存取控制說明。
-ms.openlocfilehash: c1989bc546df357740ea963a1a241dfa14557931
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a03b2807be4044fa7d9f9d702e148a34377fa56c
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527305"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090865"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Office 365 中的隔離與存取控制
 

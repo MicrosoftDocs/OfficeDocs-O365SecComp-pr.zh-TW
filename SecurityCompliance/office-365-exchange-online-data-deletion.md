@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 如何軟及完全資料刪除全天候內 Exchange Online。
-ms.openlocfilehash: 3a17b09e9c21ae309e00bcb0ddc0b51b93478bc1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 879d4a0351720780667333502c6caa30dffc8996
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526604"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090735"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 中的 Exchange Online 資料刪除
 Exchange Online 中，有兩種類型的刪除： 軟體的刪除和硬碟的刪除。這適用於信箱與信箱內的項目。

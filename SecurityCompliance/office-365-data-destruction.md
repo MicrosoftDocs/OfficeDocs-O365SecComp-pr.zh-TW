@@ -9,14 +9,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Microsoft 的原則有關的回收、 處置或損毀的 Office 365 datacenter 磁碟機與伺服器的概觀。
-ms.openlocfilehash: d273640dc12370386f08d16fe3f254800ede47b3
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 638f1964be0573f5f053a95b1dfa475776dd7b25
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29696320"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091085"
 ---
 # <a name="office-365-data-destruction"></a>Office 365 資料毀損
 

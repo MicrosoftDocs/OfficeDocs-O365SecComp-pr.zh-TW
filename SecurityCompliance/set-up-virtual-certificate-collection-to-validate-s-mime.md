@@ -1,5 +1,5 @@
 ---
-title: 設定驗證 S/MIME 的虛擬憑證集合
+title: 設定虛擬憑證集合以驗證 S/MIME
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: s 承租人管理員必須設定用以驗證 S/MIME 憑證的虛擬憑證集合。
-ms.openlocfilehash: 88d12b3c1d5f36c58f278cf304237a569a8b92c4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 0e8226ca35e872cd8c7da16ba353bf8b99a6954d
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003032"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091055"
 ---
-# <a name="set-up-virtual-certificate-collection-to-validate-smime"></a>設定驗證 S/MIME 的虛擬憑證集合
+# <a name="set-up-virtual-certificate-collection-to-validate-smime"></a>設定虛擬憑證集合以驗證 S/MIME
 
 如果您是租用戶系統管理員，您將必須設定用來驗證 S/MIME 憑證的虛擬憑證集合。此虛擬憑證集合會設定為具有 SST 副檔名的憑證存放區檔案類型。此 SST 檔案中包含所有在驗證 S/MIME 憑證時所將使用的根憑證和中繼憑證。
   
@@ -29,7 +29,7 @@ ms.locfileid: "23003032"
 
 您僅可使用命令介面執行此程序。若要了解如何在內部部署 Exchange 組織中開啟 Exchange 管理命令介面，請參閱**開啟命令介面**。若要了解如何使用 Windows PowerShell 連線至 Exchange Online，請參閱[Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
   
-如果您是系統管理員，則可以使用  `Export-Certificate` 指令程式並將類型指定為 SST，從信任的機器匯出憑證，以建立此 SST 檔案。如需  `Export-Certificate` 指令程式的相關資訊，請參閱 [Export-Certificate](https://technet.microsoft.com/en-us/library/hh848628.aspx) 參考主題。 
+如果您是系統管理員，則可以使用  `Export-Certificate` 指令程式並將類型指定為 SST，從信任的機器匯出憑證，以建立此 SST 檔案。如需  `Export-Certificate` 指令程式的相關資訊，請參閱 [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps) 參考主題。 
   
 SST 檔案產生後，請使用  `Set-Smimeconfig` 指令程式與  _-SMIMECertificateIssuingCA_ 參數，將其儲存在虛擬憑證存放區中。例如：  `Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content filename.sst -Encoding Byte)`
   

@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： 各種監視和稽核存取控制項可在 Office 365 中的摘要。
-ms.openlocfilehash: 7ef25d62ce3c4fa320dd0b164183c6f67be7d76d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7a7023f61a72bd1368bb25754b33e40581a403b9
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527273"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090905"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-office-365"></a>監控和稽核存取 Office 365 中的控制項
 

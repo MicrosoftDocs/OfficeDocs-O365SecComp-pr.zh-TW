@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： 在 Office 365 搜尋的租用戶隔離說明。
-ms.openlocfilehash: cc73f3c157ffd20b3891a6b7c58e7d0b2adf4e55
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b9faae9f1d61af181807f60243890b5115c0d679
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526151"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090805"
 ---
 # <a name="tenant-isolation-in-office-365-search"></a>Office 365 搜尋中的租用戶隔離
 SharePoint Online 搜尋使用平衡與理想的資訊洩漏租用戶之間的共用的資料結構的效率的租用戶分離模型。使用此模型中，我們會防止從搜尋功能：
@@ -40,7 +42,7 @@ SharePoint Online 搜尋使用平衡與理想的資訊洩漏租用戶之間的�
 ## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>租用戶識別碼篩選與租用戶識別碼字詞前面加上
 搜尋的前置詞索引與租用戶識別碼全文檢索索引中每個字詞例如，當詞"*foo*"租用戶識別碼為"*123*"編製索引，全文檢索索引中的項目是"*123foo。*"
 
-每個查詢會轉換成包含租用戶識別碼呼叫租用戶識別碼篩選程序。例如，"*foo*"的查詢會轉換為"<*guid*>。*foo*和*tenantID*: <*guid*>"，其中 <*guid*> 代表承租人執行查詢。此查詢轉換此時間內每個索引節點及查詢皆內容處理影響它。租用戶識別碼為新增至每個查詢，因為無法推斷其他租用戶中某個字詞的頻率來尋找在最佳排名一個租用戶中比對。
+每個查詢會轉換成包含租用戶識別碼呼叫租用戶識別碼篩選程序。例如，"*foo*"的查詢會轉換成"<*guid*>。*foo*和*tenantID*: <*guid*>"，其中 <*guid*> 代表承租人執行查詢。此查詢轉換此時間內每個索引節點及查詢皆內容處理影響它。租用戶識別碼為新增至每個查詢，因為無法推斷其他租用戶中某個字詞的頻率來尋找在最佳排名一個租用戶中比對。
 
 租用戶識別碼字詞前面加上發生只能在全文檢索索引。擁有搜尋，例如"*標題： foo*"移至 [綜合搜尋索引不租用戶識別碼所前面上字詞而是擁有搜尋被以欄位名稱。例如，"*標題： foo*"的查詢轉換成"*fields.title:foo AND fields.tenantID*: <*guid*>。 」由於字詞的頻率不會影響排名的拜訪人次綜合搜尋索引中，有不需要由字詞前面加上的租用戶分離。Like"*標題： foo*"fielded 搜尋承租人內容分隔取決於查詢轉換所篩選的租用戶識別碼。
 

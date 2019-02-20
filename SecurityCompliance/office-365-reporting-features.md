@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-analytics
 description: 報告功能在 Office 365 中的說明。
-ms.openlocfilehash: 5a448089de5d517b81551269416c4a6f91599725
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f750ac6647199ef14bd6605535797e00c1cab961
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527340"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090895"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 回報功能 
 
@@ -59,7 +61,7 @@ Exchange Online 稽核報告包含信箱存取及組織的 Exchange Online 租�
 | [檢視管理員稽核記錄](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log) | 管理員稽核記錄報告清單所有建立、 更新及刪除 Exchange Online 中的系統管理員所執行的功能。記錄項目提供的哪些 cmdlet 所執行、 哪些參數所使用、 誰執行此指令程式，以及哪些物件所影響的資訊。 |
 | [信箱內容搜尋並保留](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) | 在信箱上提供任何變更為就地 eDiscovery 或就地保留設定的詳細的資訊。 |
 | [匯出管理員稽核記錄](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes) | 系統稽核記錄檔記錄管理的特定動作例如建立、 更新及刪除 Exchange Online。記錄檔的結果匯出至 XML 和系統管理員可以選擇將此記錄傳送至一組使用者。 |
-| [執行個別信箱訴訟資料暫留報告](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report) | 提供的任何訴訟暫止的變更詳細資料保留在信箱上設定。 |
+| [執行每個信箱的訴訟資料暫留報告](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report) | 提供的任何訴訟暫止的變更詳細資料保留在信箱上設定。 |
 | [檢視和匯出外部管理員稽核記錄](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-external-admin-audit-log) | 包含外部系統管理員所執行的動作的詳細的資訊。項目提供哪些指令程式已執行、 使用哪些參數與任何動作的建立、 修改或刪除物件在 Exchange Online 中的資訊。 |
 
 ## <a name="device-compliance-reports"></a>裝置規範報告

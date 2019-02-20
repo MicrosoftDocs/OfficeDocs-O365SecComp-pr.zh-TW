@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Exchange Online 與 Office 365 中的資料恢復能力的各個方面的說明。
-ms.openlocfilehash: 8d0448a95f010b766faf852a374513a1c2da61fa
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5c0f42d1abc48b497a915354e3056b47a41326c5
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526647"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090945"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 中的 Exchange Online 資料恢復能力
 

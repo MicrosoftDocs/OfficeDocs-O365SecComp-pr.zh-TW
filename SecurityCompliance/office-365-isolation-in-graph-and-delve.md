@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： 租用戶隔離 Delve 及 Office 圖形中說明。
-ms.openlocfilehash: bdc0f34d558f25ec139861c9a91261a72418f18a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7e4951889ffd5dd52b6e3cb61c4b62a120843077
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526591"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091115"
 ---
 # <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Office Graph 與 Delve 中的租用戶隔離
 

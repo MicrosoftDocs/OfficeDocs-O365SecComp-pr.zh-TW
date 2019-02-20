@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Office 365 的監控和自我樣本與功能的相關資訊。
-ms.openlocfilehash: ff9471eaa6117ca3d7761549bca9ab629020fe79
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526353"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090515"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Office 365 監視和自我
 授與 Office 365 的向外，就是之前可保留沒有內建的監控全方位的客戶資料彈性和惡意程式碼中安全、 警示那智慧型、 和自我修復的是快速且可靠。監視服務 Office 365 的向外延展的一組為極具挑戰性。新思維模式和方法所需導入，並操作與管理的服務連線的全域環境中建立所需的全新組的技術。我們已移開傳統的監視資料集合的方法和篩選至建立提醒根據資料分析; 方法利用有空及建置該資料中的信賴，然後使用自動化來復原或解決問題。這個方法可協助採取人們不在復原方程式，接下來進行作業較不昂貴、 速度較快，且較少的錯誤容易出錯。 

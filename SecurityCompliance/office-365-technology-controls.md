@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： Microsoft 的技術控制 practices for Office 365 的概觀。
-ms.openlocfilehash: 2ef04b558f5fa82075d9aa602b83d437aa4b2ee6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 3fe7f47a2a1903d17c5240a0efec1c2abb94a25d
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526642"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090765"
 ---
 # <a name="office-365-technology-controls"></a>Office 365 技術控制措施 
 

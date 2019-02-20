@@ -9,16 +9,18 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解 Office 365 中設定權限的存取管理使用本主題
-ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 63780da59afb245b35916a1e7a5b2eb780d535a8
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522254"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090915"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定權限的存取管理
 
@@ -76,7 +78,7 @@ ms.locfileid: "25522254"
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中的管理帳戶的認證。
 
-2. 在管理中心中，移至**設定 > 安全性與隱私權** > **權限的存取**。
+2. 在管理中心中，移至 [**設定 > 安全性 & 隱私權** > **權限的存取**。
 
 3. 啟用**需要核准權限的存取**控制。
 
@@ -108,7 +110,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中的管理帳戶的認證。
 
-2. 在管理中心中，移至 [**設定** > **安全性與隱私權** > **權限的存取**。
+2. 在管理中心中，移至 [**設定** > **安全性 & 隱私權** > **權限的存取**。
 
 3. 選取 [**管理存取原則及要求**。
 
@@ -152,7 +154,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您的認證。
 
-2. 在管理中心中，移至 [**設定** > **安全性與隱私權** > **權限的存取**。
+2. 在管理中心中，移至 [**設定** > **安全性 & 隱私權** > **權限的存取**。
 
 3. 選取 [**管理存取原則及要求**。
 
@@ -187,7 +189,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您的認證。
 
-2. 在管理中心中，移至 [**設定** > **安全性與隱私權** > **權限的存取**。
+2. 在管理中心中，移至 [**設定** > **安全性 & 隱私權** > **權限的存取**。
 
 3. 選取 [**管理存取原則及要求**。
 
@@ -211,7 +213,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您的認證。
 
-2. 在管理中心中，移至 [**設定** > **安全性與隱私權** > **權限的存取**。
+2. 在管理中心中，移至 [**設定** > **安全性 & 隱私權** > **權限的存取**。
 
 3. 選取 [**管理存取原則及要求**。
 
@@ -248,7 +250,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中的管理帳戶的認證。
 
-2. 在管理中心中，移至 [**設定** > **安全性與隱私權** > **權限的存取**。
+2. 在管理中心中，移至 [**設定** > **安全性 & 隱私權** > **權限的存取**。
 
 3. 選取 [**管理存取原則及要求**。
 
@@ -274,7 +276,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中的管理帳戶的認證。
 
-2. 在管理中心中，移至 [**設定** > **安全性與隱私權** > **權限的存取**。
+2. 在管理中心中，移至 [**設定** > **安全性 & 隱私權** > **權限的存取**。
 
 3. 啟用**需要核准權限的存取**控制。
 

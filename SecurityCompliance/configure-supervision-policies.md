@@ -9,18 +9,20 @@ f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 設定監督檢閱原則以擷取員工通訊供檢閱。
-ms.openlocfilehash: 898ef9951ea20dec1e0cc6c28ad1ed6f9a0ded6e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: dee9f21d4b88338a092a64538cca33b41cc481c4
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29768034"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090955"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 

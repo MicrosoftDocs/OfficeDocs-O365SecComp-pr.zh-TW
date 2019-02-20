@@ -9,16 +9,18 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: 85141ae885132095692683b766d5550cc538e2e8
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 78107ceb497a546ef4d19ba33b8b72ec1406de1b
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29652258"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090795"
 ---
 # <a name="privileged-access-management-in-office-365"></a>權限存取 Office 365 中的管理
 

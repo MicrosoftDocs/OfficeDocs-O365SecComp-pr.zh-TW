@@ -9,14 +9,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 在 SharePoint Online 中的資料刪除說明。
-ms.openlocfilehash: 8a84859ce170a4c3ca713c751aef2b6d5b911c55
-ms.sourcegitcommit: 29ba4c36af8e90ddc8d885863ef25bac2cffbe94
+ms.openlocfilehash: 48b108637e53b8ca4ab18b7b37e2fad7fbbd779c
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27411159"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090855"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365 中的 SharePoint Online 資料刪除
 

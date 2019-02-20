@@ -13,17 +13,15 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: 建立報表與 Office 365 雲端應用程式安全性可讓您了解如何在組織中的人員會使用 Office 365 和其他應用程式。
-ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: e0d515ddd9b08aa4a70276177060f273cc89949e
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603714"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087292"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>使用 Office 365 雲端 App 安全性建立 App 探索報表
 
-Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性。
-  
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
 |[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](#next-steps) <br/> |

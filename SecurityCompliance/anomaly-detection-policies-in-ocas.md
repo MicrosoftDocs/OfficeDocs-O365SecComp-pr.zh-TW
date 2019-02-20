@@ -3,7 +3,7 @@ title: Office 365 雲端 App 安全性中的異常偵測原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/28/2019
+ms.date: 02/15/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,20 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Office 365 雲端應用程式安全性異常偵測原則使用內建的演算法可協助從抽出潛在的問題。您應該會有至少一個異常偵測原則] 中，您可以使用篩選器來調整 （當您建立它）。 '
-ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a3c7fb16ab10b0bcfaca444093e4e1f52468f0c8
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29612706"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087362"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的異常偵測原則
 
-Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性。
-  
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](integrate-your-siem-server-with-office-365-cas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](ocas-conditional-access-app-control.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
 Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用程式安全性](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116)，包括數個預先定義的異常偵測原則原則 （"現成可用"），包括使用者和實體行為上有無分析 (UEBA) 和學習 （毫升） 的電腦。
   
@@ -100,10 +98,13 @@ Office 365 雲端應用程式安全性開頭[版本 116 Microsoft 雲端應用�
   
 ## <a name="next-steps"></a>後續步驟
 
+- [部署 Office 365 應用程式的設定格式化的條件的 Access 應用程式控制項](ocas-deploy-conditional-access-app-control.md)
+
+- [群組簡化管理 IP 位址](group-your-ip-addresses-in-ocas.md)
+
 - [整合 SIEM server](integrate-your-siem-server-with-office-365-cas.md)
     
 - [檢閱並採取行動提醒](review-office-365-cas-alerts.md)
     
-- [群組簡化管理 IP 位址](group-your-ip-addresses-in-ocas.md)
     
 

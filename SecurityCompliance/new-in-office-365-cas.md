@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: 請參閱 Office 365 雲端應用程式安全性的新功能
-ms.openlocfilehash: ad16a215332e183c2bf821095610f6379a88be01
-ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+ms.openlocfilehash: 9c0a93a29efb71704cf4ed0f9219018b5dd79d88
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570189"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087352"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Office 365 雲端應用程式安全性的新功能
 
-**摘要**請閱讀本篇文章以取得 Office 365 雲端應用程式安全性 （前身為 Office 365 進階安全性管理），這由[Microsoft 雲端應用程式安全性](https://aka.ms/whatiscas)提供更新及新功能的快速概觀。
+**摘要**請閱讀本篇文章以取得 Office 365 雲端應用程式安全性]，這由[Microsoft 雲端應用程式安全性](https://aka.ms/whatiscas)提供更新及新功能的快速概觀。
   
 > [!TIP]
 > ＞ 本文已更新頻率，新增或改良功能時。Office 365 雲端應用程式的安全性更新發行約兩週後 Microsoft 雲端應用程式的安全性更新並不是所有的 Microsoft 雲端應用程式的安全性更新套用至 Office 365 雲端應用程式安全性。此外，新功能可能需要一週或更多 Office 365 雲端應用程式安全性環境中顯示其發行日期之後。

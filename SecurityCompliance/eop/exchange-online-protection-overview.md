@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服務，它能協助組織抵禦垃圾郵件和惡意軟體，同時也包括預防組織發生訊息原則違規的功能。
-ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686362"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087342"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -48,7 +48,7 @@ EOP 會在資料中心之間執行負載平衡，但只在一個區域內。如�
 - 在歐洲、中東和非洲 (EMEA)，所有 Exchange Online 信箱都位於 EMEA 資料中心，且所有郵件都透過 EMEA 資料中心傳送供 EOP 篩選。
     
 - 在亞太地區 (APAC)，所有的 Exchange Online 信箱都位於 APAC 資料中心，但郵件目前都透過 EOP 篩選 APAC 資料中心。
-=======
+
 - 美洲中所有的 Exchange Online 信箱位於 US 資料中心，除了南美洲可用巴西和智利中的資料中心及加拿大可用資料中心來 Canada 中。所有的電子郵件訊息的客戶南美洲和加拿大包括訊息都被透過 EOP 篩選; 本機資料中心quaratined 電子郵件會儲存在用戶所在的資料中心。
     
 - 在歐洲、中東和非洲 (EMEA)，所有 Exchange Online 信箱都位於 EMEA 資料中心，且所有郵件都透過 EMEA 資料中心傳送供 EOP 篩選。

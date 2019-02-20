@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： Office 365 系統管理存取控制項和資料分類的概觀。
-ms.openlocfilehash: afa15d37aa8542985c59dbd9e3d82368421530e8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5cac8b6161ea7eab6ea390e32caec1c5ddb9bac
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526760"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091023"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 中的系統管理存取控制 
 

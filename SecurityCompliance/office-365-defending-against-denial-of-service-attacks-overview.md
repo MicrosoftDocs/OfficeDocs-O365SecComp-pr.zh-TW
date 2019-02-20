@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Overview of 拒絕服務 (DoS) 攻擊。
-ms.openlocfilehash: b5a51ae332b32142d9ab993a29763b2160c3ce97
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cd099bcb225cfa5dd1f44f14d4b7813bef8f7442
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526146"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091015"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>防禦與 Office 365 中的拒絕服務攻擊
 

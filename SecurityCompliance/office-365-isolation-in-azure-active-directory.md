@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： 隔離及存取控制 Azure Active Directory 中的運作方式。
-ms.openlocfilehash: db4fa0d026c6c608f09252c65bf1e0de5354f68c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 01103361a084d50adbc6c0a8351d9af8311a39fd
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527281"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090505"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Azure Active Directory 中的隔離與存取控制
 

@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
+ms.date: 02/15/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: 開始使用 Office 365 雲端應用程式安全性
-ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603694"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087432"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>準備好使用 Office 365 雲端 App 安全性
   
@@ -25,7 +26,7 @@ ms.locfileid: "29603694"
 |:-----|:-----|:-----|:-----|
 |[啟動評估](office-365-cas-overview.md) <br/> |您在此處 ！  <br/> [下一步](turn-on-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
-若要開啟並實作您的組織的 Office 365 雲端應用程式安全性 （前身為進階安全性管理） 準備時，有幾點事項。使用本文做指南以規劃 Office 365 雲端應用程式安全性。
+若要開啟並為您組織中實作 Office 365 雲端應用程式安全性準備時，有幾點事項。使用本文做指南以規劃 Office 365 雲端應用程式安全性。
     
 ## <a name="step-1-identify-and-protect-your-global-and-security-administrator-accounts"></a>步驟 1： 識別及保護您的通用和安全性管理員帳戶
 
@@ -65,7 +66,18 @@ Office 365 雲端應用程式安全性運作正確的順序，必須先開啟稽
     
 - [檢閱並在 Office 365 雲端應用程式安全性警訊採取動作](review-office-365-cas-alerts.md)
     
-## <a name="step-5-learn-about-your-organizations-cloud-usage"></a>步驟 5︰ 了解您組織的雲端流量
+
+## <a name="step-5-set-up-conditional-access-app-control"></a>步驟 5： 設定條件式存取應用程式的控制項
+
+設定並強制執行您的組織應用程式]，根據特定條件，例如哪些使用者可以使用哪些應用程式] 上的控制項和位置。定義使用者應用程式存取及工作階段原則決定是否機密文件可以下載並加密，封鎖特定應用程式的存取、 設定唯讀模式的特定應用程式]，然後將使用者工作階段限制從非公司網路。
+
+請參閱下列資源以深入了解：
+
+- [保護與 Office 365 雲端應用程式的安全性設定格式化的條件的 Access 應用程式控制項的應用程式](ocas-conditional-access-app-control.md)
+
+- [部署 Office 365 應用程式的設定格式化的條件的 Access 應用程式控制項](ocas-deploy-conditional-access-app-control.md)
+
+## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>步驟 6︰ 了解您組織的雲端流量
 
 以全域管理員、 安全性管理員或安全性讀者，您可以了解您組織的雲端用法透過報告和雲端探索儀表板 （也稱為產能應用程式探索）。此儀表板顯示使用者、 應用程式、 網頁流量及風險層級的相關資訊。
   
@@ -81,11 +93,15 @@ Office 365 雲端應用程式安全性運作正確的順序，必須先開啟稽
     
 - [檢閱 Office 365 雲端 App 安全性中的 App 探索結果](review-app-discovery-findings-in-ocas.md)
     
-## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>步驟 6： 管理您的組織用來存取 Office 365 的應用程式
+## <a name="step-7-manage-apps-that-your-organization-is-using-to-access-office-365"></a>步驟 7： 管理您的組織用來存取 Office 365 的應用程式
 
 以全域管理員或安全性管理員，您可以管理應用程式，例如自訂應用程式或協力廠商應用程式] 與 Office 365 其裝置上使用您的組織中的人員。例如，假設某人已下載他們想要搭配 Office 365 使用的自訂應用程式。您可以檢閱人員所使用的應用程式、 禁止不受信任的應用程式]，或將應用程式標示為已核准追蹤用途。[使用 Office 365 雲端應用程式安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)。
   
-## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>步驟 7： 使用 SIEM 伺服器與 Office 365 雲端應用程式安全性
+## <a name="step-8-create-a-maintenance-plan"></a>步驟 8： 建立維護計劃
+
+您已設定好並設定 Office 365 雲端應用程式安全性之後，您將要執行特定使用率工作做為 Office 365 全域管理員或組織的安全性管理員。執行這些工作，您將會協助確保已正確設定 Office 365 雲端應用程式安全性、 原則是最新以及組織實現來自 Office 365 的值。使用本文做指南可協助您規劃這些工作。請參閱[使用率活動之後啟用 Office 365 雲端應用程式安全性](utilization-activities-for-ocas.md)。
+
+## <a name="optional-step-9-use-your-siem-server-with-office-365-cloud-app-security"></a>（選用）步驟 9： 使用 SIEM 伺服器與 Office 365 雲端應用程式安全性
 
 您的組織使用的安全性資訊和事件管理 (SIEM) 伺服器吗？Office 365 雲端應用程式安全性現在可以整合與 SIEM 伺服器若要啟用集中式監控的提醒。整合和 SIEM 服務可讓您更妥善地保護您的雲端應用程式時維護您的一般安全性工作流程、 自動化安全性程序及相互關聯有所助益之間雲端和內部事件。SIEM 代理程式會在您的伺服器上執行、 從 Office 365 雲端應用程式安全性] 提取提醒及入 SIEM 伺服器串流傳送這些通知。請參閱[Office 365 雲端應用程式安全性 SIEM 整合](integrate-your-siem-server-with-office-365-cas.md)。
   

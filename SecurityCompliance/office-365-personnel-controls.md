@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： Microsoft 的人員檢測 practices for Office 365 的概觀。
-ms.openlocfilehash: 282a361dadba344ace557fe2056908aaea9fdfaa
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 126be117c790e4d8fc0328ee2dab6b97d516ab88
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526504"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091075"
 ---
 # <a name="office-365-personnel-controls"></a>Office 365 人員控制措施 
 

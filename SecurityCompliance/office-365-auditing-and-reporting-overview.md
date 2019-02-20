@@ -10,14 +10,17 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- M365-analytics
 description: 稽核與報告內 Office 365，以及服務保證功能概觀。
-ms.openlocfilehash: 54cc4d353545396084c0206abe1bbb1035b3a78f
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 0167239e854d9b96d9505f4264ada225804eef96
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "27131883"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091035"
 ---
 # <a name="auditing-and-reporting-in-office-365"></a>Office 365 中的稽核與回報
 
@@ -28,7 +31,7 @@ Microsoft 雲端服務包含數個稽核與報告客戶可用來追蹤使用者�
 [Office 365 安全性 & 規範中心](https://support.office.com/article/Go-to-the-Office-365-Security-Compliance-Center-7e696a40-b86b-4a20-afcc-559218b7b1b8)是個停駐點入口網站的 Office 365 的資料保護和其包含許多稽核和報告功能。它是 Office 365 規範中心 」 的發展。規範中心的設計之組織的資料保護或規範需求或安全性 & 想要稽核使用者與管理員的活動。您可以使用安全性 & 規範中心管理所有組織的 Office 365 資料的符合性。您可以存取安全性 & 規範中心[http://protection.office.com](http://protection.office.com/)使用您的 Office 365 系統管理帳戶。
 
 安全性 & 規範中心包括提供數項功能的存取權給您的導覽窗格：
-- **提醒**-可讓您管理提醒、 檢視安全性相關的提醒及管理使用[進階安全性管理](https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475)進階的提醒。 
+- **提醒**-可讓您管理提醒、 檢視安全性相關的提醒及管理使用[Office 365 雲端應用程式安全性](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/office-365-cas-overview)的進階的提醒。 
 - **權限**-可讓您[指派權限](https://support.office.com/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76)等規範管理員、 eDiscovery 管理員] 中，與其他組織內的人，讓他們可以執行的安全性 & 規範中心的工作。您可以將指派權限的安全性 & 規範中心中的大部分功能，但必須使用 Exchange 系統管理中心和 SharePoint 系統管理中心來設定其他權限。
 - **Threat management** -可讓您建立與套用資料裝置管理原則使用[Office 365 行動裝置管理](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)] 來設定您的組織設定電子郵件篩選的[資料外洩防護](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)(DLP) 原則反惡意程式碼、 DomainKeys 識別郵件 (DKIM)、 安全的附件、 安全的連結，與 OAuth 應用程式。
 - **資料管理**-可讓您若要[匯入電子郵件或其他系統到 Office 365 的 SharePoint 資料](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84)，[設定封存信箱](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce)，並將[保留原則](https://support.office.com/article/Retention-in-the-Office-365-Security-Compliance-Center-2a0fc432-f18c-45aa-a539-30ab035c608c)的電子郵件和其他組織內的內容。

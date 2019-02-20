@@ -11,13 +11,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
-description: 檢閱在 [進階安全性管理應用程式探索報告可協助您深入了解如何在組織中的人員使用雲端應用程式。您已建立應用程式探索報告使用來自防火牆及 proxy 記錄檔之後，請檢閱應用程式探索儀表板中的結果。
-ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 檢閱 Office 365 雲端應用程式安全性的應用程式探索報告可協助您深入了解如何在組織中的人員使用雲端應用程式。您已建立應用程式探索報告使用來自防火牆及 proxy 記錄檔之後，請檢閱應用程式探索儀表板中的結果。
+ms.openlocfilehash: fa5ab7c6cd734feb26878cf1a97f7ce708aa1478
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603744"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087332"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>檢閱 Office 365 雲端 App 安全性中的 App 探索結果
   

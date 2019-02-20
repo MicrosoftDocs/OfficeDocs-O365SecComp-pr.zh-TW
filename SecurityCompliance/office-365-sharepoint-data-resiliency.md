@@ -10,14 +10,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 在 SharePoint Online 在 Office 365 中的資料恢復能力的概觀。
-ms.openlocfilehash: ba6259e8e582a4abcf0f184b162177119a57718f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c550cb6572cb71b53cd544af64339129f72b888f
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526754"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090885"
 ---
 # <a name="sharepoint-online-data-resiliency"></a>SharePoint Online 資料恢復能力
 主要這當中的 SharePoint Online 是一部分的不會有任何資料的單一複本。SharePoint Online 使用 SQL Server 複寫，這是一組的複製並散發資料和資料庫物件從一個資料庫至另一個，並再同步處理維持一致的資料庫之間的技術。 

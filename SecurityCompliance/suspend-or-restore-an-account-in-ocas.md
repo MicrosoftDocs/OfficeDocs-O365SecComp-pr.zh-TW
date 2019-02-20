@@ -13,17 +13,15 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: '與 Office 365 雲端應用程式安全性]，可採取的控管動作會暫停或 unsuspend 的使用者帳戶。 '
-ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 6c34c04b6a1e389809b611db0ca2f30ecd8c0ada
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014845"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087392"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶
 
-Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性。
-  
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
 |[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |

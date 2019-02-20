@@ -9,18 +9,20 @@ f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
-ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
-ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
+ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29760075"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090975"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
