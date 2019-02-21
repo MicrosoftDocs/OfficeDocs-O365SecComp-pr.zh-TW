@@ -56,7 +56,7 @@ ms.locfileid: "26547315"
 
 當使用者離線開啟受到敏感度標籤保護的文件或電子郵件時，該內容的 Azure Rights Management 使用授權會授與使用者。此使用授權是一種憑證，其中包含使用者對文件或電子郵件的使用權，以及用來加密內容的加密金鑰。使用授權也會包含到期日 (若已設定的話)，以及使用授權的有效期限。
 
-如果未設定到期日，則租用戶的預設使用授權有效期間為 30 天。在這段期間，不會針對內容重新驗證或重新授權使用者。這可讓使用者在沒有網際網路連線的情況下繼續開啟受保護文件或電子郵件。 使用授權有效期間到期時，下次使用者存取受保護文件或電子郵件時，必須重新驗證和重新授權使用者。
+如果未設定到期日，則租用戶的預設使用授權有效期間為 30 天。在這段期間，不會針對內容重新驗證或重新授權使用者。這可讓使用者在沒有網際網路連線的情況下繼續開啟受保護文件或電子郵件。使用授權有效期間到期時，下次使用者存取受保護文件或電子郵件時，必須重新驗證和重新授權使用者。
 
 除了重新驗證外，還會重新評估原則和使用者群組成員資格。這表示，如果上次使用者存取內容後，原則或群組成員資格發生變更，則這些使用者可能遇到相同的文件或電子郵件，卻有不同的存取結果。
 
@@ -112,7 +112,7 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 - Rights Management 簽發者一律可以離線存取文件或電子郵件。
 - Rights Management 簽發者仍可以開啟撤銷後的文件。
 
-如需詳細資訊，請參閱[Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
+如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>將加密內容儲存在 OneDrive 和 SharePoint 中
 
@@ -126,13 +126,13 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 
 ### <a name="activating-azure-rights-management"></a>啟動 Azure Rights Management
 
-若要使用敏感度標籤中的加密，需要在您的租用戶中啟動 Azure Rights Management 服務。在較新的租用戶中，此服務預設為開啟，但您可能需要手動啟動此服務。如需詳細資訊，請參閱[啟動 Azure Rights Management](https://docs.microsoft.com/zh-TW/azure/information-protection/activate-service)。
+若要使用敏感度標籤中的加密，需要在您的租用戶中啟動 Azure Rights Management 服務。在較新的租用戶中，此服務預設為開啟，但您可能需要手動啟動此服務。如需詳細資訊，請參閱[啟用 Azure Rights Management](https://docs.microsoft.com/zh-TW/azure/information-protection/activate-service)。
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>設定 Exchange 進行 Azure 資訊保護
 
 在使用者可在 Outlook 中套用標籤以保護其電子郵件之前，不必設定 Exchange 進行 Azure 資訊保護。不過，直到設定 Exchange 進行 Azure 資訊保護前，您都無法取得使用 Azure Rights Management 保護與 Exchange 搭配的完整功能。
  
-例如，使用者無法在行動電話上檢視受保護的電子郵件，也無法在 Web 上使用 Outlook 這樣做，受保護的電子郵件無法編製索引進行搜尋，以及您無法設定 Exchange Online DLP 進行 Rights Management 保護。 
+例如，使用者無法在行動電話或 Outlook 網頁版上檢視受保護的電子郵件，無法為受保護的電子郵件編製索引進行搜尋，而且您無法設定 Exchange Online DLP 進行 Rights Management 保護。 
 
 若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
 
