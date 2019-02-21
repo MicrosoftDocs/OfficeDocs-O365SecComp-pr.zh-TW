@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: 安全的附件功能提供時間按一下 [驗證電子郵件附件。使用安全附件來自惡意檔案人員保護您的組織傳送或接收電子郵件中。
-ms.openlocfilehash: 48beec9b581055c0f4928434eaa8378ae2812e2c
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: f8cdfe8027804eaa06784502f72110173f8fa61f
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995324"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123904"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -54,7 +54,7 @@ ATP 安全附件原則可套用到特定的人員或組織中的群組或整個�
     
 - 使用者已登入 Office 365 使用其工作或學校的帳戶。（請參閱[登入 Office 或 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)）。
 
-若要定義 （或編輯） ATP 原則，您必須具有角色如下表所示的其中一個：
+若要定義 （或編輯） ATP 原則，您必須指派適當的角色。下表說明一些範例：
 
 |角色  |Where/如何指派  |
 |---------|---------|

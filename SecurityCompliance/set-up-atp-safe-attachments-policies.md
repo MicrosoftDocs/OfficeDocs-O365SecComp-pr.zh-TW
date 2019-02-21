@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection: M365-security-compliance
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: c089d46da2070f32f2452bab1fd2f7c15a39861c
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: dc3235dc8225a46ee28ea8bd0342721b4d55f4f0
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995384"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123934"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -37,7 +37,7 @@ ms.locfileid: "29995384"
 
 - 請確定您的組織具有[Office 365 進階威脅保護](office-365-atp.md)。
     
-- 請確定您具有必要的權限。若要定義 （或編輯） ATP 原則，您必須具有角色如下表所示的其中一個： <br>
+- 請確定您具有必要的權限。若要定義 （或編輯） ATP 原則，您必須指派適當的角色。下表說明一些範例： <br>
 
     |角色  |Where/如何指派  |
     |---------|---------|
@@ -96,5 +96,5 @@ ms.locfileid: "29995384"
 - [Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)
 - [使用瀏覽器安全性&amp;規範中心](use-explorer-in-security-and-compliance.md)
 
-隨時掌握置於 ATP 傳入的新功能。請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)並了解[新功能，要新增至 ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp)。
+隨時掌握置於 ATP 傳入的新功能。請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)並了解[新功能，要新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。
  

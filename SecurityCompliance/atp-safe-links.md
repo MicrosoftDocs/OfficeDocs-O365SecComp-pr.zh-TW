@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全的連結功能所提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。若要從網路釣魚和其他攻擊保護您的組織使用安全的連結。
-ms.openlocfilehash: 77b7ac4af8cd9ad27f18af6fd55588e320da69ac
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: dbcedc48cbda844054e5c06a91adf3cdf30a0634
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995344"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123944"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 
@@ -40,7 +40,7 @@ Office 365 ATP 安全連結 （[進階威脅保護](office-365-atp.md)的一部�
   
 一旦您 ATP 安全連結原則已備妥、 Office 365 全域管理員、 安全性管理員及安全性讀取者可以在[進階威脅保護的檢視報告](view-reports-for-atp.md)。這些報告中的資訊可協助您需要進一步的步驟來保護您的組織或研究安全性事件的安全性小組。
 
-為[新的功能會新增至 ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp)，您的 Office 365 安全性小組可以新增或編輯您的組織 ATP 安全連結的原則。此外，您可能會注意到的變更與改良功能，例如我們新修訂的[警告頁面](atp-safe-links-warning-pages.md)並呈現在 Outlook 中的原生連結。
+為[新的功能會新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)，您的 Office 365 安全性小組可以新增或編輯您的組織 ATP 安全連結的原則。此外，您可能會注意到的變更與改良功能，例如我們新修訂的[警告頁面](atp-safe-links-warning-pages.md)並呈現在 Outlook 中的原生連結。
          
 ## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP 安全連結中的運作方式與 Url 電子郵件
 
@@ -102,7 +102,7 @@ Office 365 ATP 安全連結 （[進階威脅保護](office-365-atp.md)的一部�
     
 - **貴組織的電子郵件通過 Exchange Online Protection**。  
 
-若要定義 （或編輯） ATP 原則，您必須具有角色如下表所示的其中一個：
+若要定義 （或編輯） ATP 原則，您必須指派適當的角色。下表說明一些範例：
 
 |角色  |Where/如何指派  |
 |---------|---------|

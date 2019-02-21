@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: 反網路釣魚保護，以作為 Office 365 進階威脅保護與 Office 365 Exchange Online Protection 中的基本保護的一部分更完整的保護可協助保護您的組織從惡意的模擬網路釣魚攻擊與其他網路釣魚攻擊。
-ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 94aa4ca6339ee0e0c250e96b9d8a499c83e964f7
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792278"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123964"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>設定 Office 365 ATP 反網路釣魚和反網路釣魚原則
 
@@ -38,7 +38,7 @@ ms.locfileid: "29792278"
     
 ## <a name="review-the-prerequisites"></a>請先檢閱必要條件
 
-- 若要定義 （或編輯） ATP 原則，您必須具有角色如下表所示的其中一個： <br>
+- 若要定義 （或編輯） ATP 原則，您必須指派適當的角色。下表說明一些範例： <br>
 
     |角色  |Where/如何指派  |
     |---------|---------|
@@ -114,7 +114,7 @@ Office 365 中的每一個組織有一個預設反網路釣魚原則套用至所
 |:-----|:-----|
 |**設定或選項** <br/> |**範例** <br/> |
 |名稱  <br/> |網域和執行長  <br/> |
-|說明  <br/> |請確定該執行長與我們網域不要模擬。  <br/> |
+|描述  <br/> |請確定該執行長與我們網域不要模擬。  <br/> |
 |新增使用者以保護  <br/> |在最低限度下 CEO 的電子郵件地址。  <br/> |
 |新增網域，以保護  <br/> |包含執行長 office 組織的網域。  <br/> |
 |選取 [動作]  <br/> |如果模擬使用者所傳送電子郵件： 選擇 [**重新導向至另一個電子郵件地址的訊息**，然後例如輸入安全性系統管理員的電子郵件地址`securityadmin@contoso.com`。  <br/> 如果模擬網域所傳送電子郵件： 選擇 [**隔離郵件**。  <br/> |
@@ -143,5 +143,5 @@ Office 365 中的每一個組織有一個預設反網路釣魚原則套用至所
 - [Office 365 進階威脅保護的檢視報告](view-reports-for-atp.md)或[檢視電子郵件安全性報告](view-email-security-reports.md)
 - [使用瀏覽器 （也稱為威脅瀏覽器）](use-explorer-in-security-and-compliance.md)
 
-隨時掌握置於 ATP 傳入的新功能。請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)並了解[新功能，要新增至 ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp)。
+隨時掌握置於 ATP 傳入的新功能。請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)並了解[新功能，要新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。
  

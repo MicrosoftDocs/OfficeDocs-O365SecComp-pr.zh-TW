@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection: M365-security-compliance
 description: 設定安全的連結原則來保護您的組織不在 Word、 Excel、 PowerPoint 及 Visio 檔案，以及在電子郵件訊息中的惡意連結。
-ms.openlocfilehash: 834b83efe505a399fd3744e97533b92f2fc156f4
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: ee60b8fa5824b5e7ff478370216b52d17a6dc94f
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995254"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123954"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -28,7 +28,7 @@ ms.locfileid: "29995254"
 
 [ATP 安全連結](atp-safe-links.md)的[Office 365 進階威脅保護](office-365-atp.md)(ATP) 的功能可協助保護您的組織中用於網路釣魚和其他攻擊的惡意連結。如果您有必要[的 Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)、 您可以設定 ATP 安全連結原則以協助確保當使用者按一下 [網站位址 (Url)、 貴組織保護。ATP 安全連結原則可以設定要掃描電子郵件中的 Url 及 Office 文件中的 Url。
   
-[ATP 持續所加入的新功能](office-365-atp.md#new-features-are-continually-being-added-to-atp)。隨著增加新功能，您可能需要調整您現有的 ATP 安全連結原則。
+[ATP 持續所加入的新功能](office-365-atp.md#new-features-in-office-365-atp)。隨著增加新功能，您可能需要調整您現有的 ATP 安全連結原則。
 
 ## <a name="what-to-do"></a>該怎麼辦 
   
@@ -44,7 +44,7 @@ ms.locfileid: "29995254"
 
 - 請確定您的組織具有[Office 365 進階威脅保護](office-365-atp.md)。
     
-- 請確定您具有必要的權限。若要定義 （或編輯） ATP 原則，您必須具有角色如下表所示的其中一個： <br>
+- 請確定您具有必要的權限。若要定義 （或編輯） ATP 原則，您必須指派適當的角色。下表說明一些範例： <br>
 
     |角色  |Where/如何指派  |
     |---------|---------|
@@ -145,4 +145,4 @@ ms.locfileid: "29995254"
 
 - [使用瀏覽器安全性&amp;規範中心](use-explorer-in-security-and-compliance.md)
 
-隨時掌握置於 ATP 傳入的新功能。請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)並了解[新功能，要新增至 ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp)。
+隨時掌握置於 ATP 傳入的新功能。請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)並了解[新功能，要新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。
