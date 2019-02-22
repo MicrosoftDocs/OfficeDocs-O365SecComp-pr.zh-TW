@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
-ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
+ms.openlocfilehash: a65b0848d6fb875366d35a0130ccc45cbe7adc75
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760764"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202784"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -56,7 +56,7 @@ ms.locfileid: "29760764"
 
 您可以視需要建議使用者套用標籤，而不自動將敏感度標籤套用到內容。此選項可讓使用者享有接受分類和任何關聯保護的彈性，或在標籤不適用於其文件或電子郵件時關閉建議。
 
-請注意，Word、PowerPoint 和 Excel 可支援建議標籤功能 (而且必須安裝 Azure 資訊保護統一標籤用戶端)。我們正在努力在 Outlook 中提供建議標籤支援。
+請注意，Word、PowerPoint 和 Excel 可支援建議標籤功能 (但必須安裝 Azure 資訊保護統一標籤用戶端)。我們正在努力在 Outlook 中提供建議標籤支援。
 
 ![向使用者建議敏感度標籤的選項](media/Sensitivity_labels_Recommended_label_option.png)
 

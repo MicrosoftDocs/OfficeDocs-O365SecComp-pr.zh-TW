@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 6599c9daf3cd2dc7c7c22179c132e58ba28aa487
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614497"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202764"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -229,6 +229,10 @@ ms.locfileid: "29614497"
 ### <a name="office-365-groups"></a>Office 365 群組
 
 當您將保留標籤發佈到 Office 365 群組時，保留標籤會顯示在群組網站和 Outlook 網頁版中的群組信箱。將保留標籤套用至內容和上述的套用至電子郵件和文件完全相同。
+
+若要保留 Office 365 群組的內容，您必須使用 Office 365 群組位置。雖然 Office 365 群組擁有 Exchange 信箱，包含整個 Exchange 位置的保留原則並不會包含 Office 365 群組信箱中的內容。
+
+此外，無法使用 Exchange 位置來包含或排除特定群組信箱。雖然 Exchange 位置最初允許選取群組信箱，但是當您嘗試儲存保留原則時，您會收到「RemoteGroupMailbox 不是Exchange 位置的有效選取項目」錯誤。
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>根據條件自動套用保留標籤
 

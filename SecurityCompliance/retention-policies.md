@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
-ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
+ms.openlocfilehash: e76ec96b83dd5870416d864cf9f3b0b5f43cb9b2
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29770818"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202754"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -224,7 +224,13 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
   
 ![選擇 Skype 使用者頁面](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-請注意，**交談歷程記錄** (Outlook 中的資料夾) 是與 Skype 封存無關的功能。使用者可以關閉**交談歷程記錄**，但會執行 Skype 的封存，方法為將 Skype 交談的複本儲存在使用者無法存取但 eDiscovery 可以使用的隱藏資料夾中。 
+請注意，**交談歷程記錄** (Outlook 中的資料夾) 是與 Skype 封存無關的功能。使用者可以關閉**交談歷程記錄**，但會執行 Skype 的封存，方法為將 Skype 交談的複本儲存在使用者無法存取但 eDiscovery 可以使用的隱藏資料夾中。
+
+### <a name="office-365-groups-locations"></a>Office 365 群組的位置
+
+若要保留 Office 365 群組的內容，您必須使用 Office 365 群組位置。即使 Office 365 群組有Exchange 信箱，包含整個 Exchange 位置的保留原則也不會包含 Office 365 群組信箱中的內容。套用至 Office 365 群組的保留原則會包含群組信箱和網站。
+
+此外，無法使用 Exchange 位置來包含或排除特定群組信箱。雖然 Exchange 位置最初允許選取群組信箱，但是當您嘗試儲存保留原則時，您會收到「RemoteGroupMailbox 不是Exchange 位置的有效選取項目」錯誤。 
   
 ### <a name="teams-locations"></a>Teams 位置
 
