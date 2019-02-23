@@ -8,19 +8,19 @@ ms.audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c2e588d3-8f4f-4937-a286-8c399f28953a
 description: Office 365 安全性的資料遺失防護 (DLP)&amp;規範中心包含解決常見的規範需求，例如協助您保護敏感資料受限於美國醫療保險法案 （的準備好用的原則範本HIPAA) US Gramm-leach-bliley 金融服務業現代化法案 (GLBA) 或美國愛國法案。本主題將列出的所有原則範本、 何種類型的機密資訊時看起來，以及預設條件和動作為何。
-ms.openlocfilehash: 345738244b9573b1af4d55ede86a568bf136f048
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a8c39d2ee3f8bf2097c07386bc1f775d947950c3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526916"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213833"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP 原則範本包含哪些內容
 

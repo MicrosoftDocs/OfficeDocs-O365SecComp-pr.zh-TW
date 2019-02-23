@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '檢閱 Office 365 進階在 eDiscovery 中的文件相似性值、 最小程度跟必須考量接近重複、 兩個檔案的運作方式。 '
-ms.openlocfilehash: 39cd8c31204f0164f6b52c71fa707253cb22758a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: eb8f07ceedb10bd0152693dd1e82a28797d86a5a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526583"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220423"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中了解文件相似性
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 進階 ediscovery 文件相似性是跟為接近重複項目必須考量兩個文件所需的最低層級。
   

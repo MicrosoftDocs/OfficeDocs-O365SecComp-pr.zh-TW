@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 01/14/2019
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 description: Office 365 可協助您的環境免受病毒偵測使用者上傳至 SharePoint Online 的檔案中的惡意程式碼。掃描檔案有病毒之後其上傳。若檔案已發現受到感染、 屬性設定，讓使用者無法下載或同步處理檔案。
-ms.openlocfilehash: ab02d2d4e82e9427ec6b512490f94ccc9c14b54e
-ms.sourcegitcommit: 5ccc3dd0d1c087bffd3a8fc807d5d1750f046eeb
+ms.openlocfilehash: d39a5be525e25de8206e8d4219d9c83bfa6eaae0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "28009589"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212963"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>在 SharePoint Online 中的病毒偵測
 

@@ -1,5 +1,5 @@
 ---
-title: 為郵件簽章和加密的 S/MIME
+title: S/MIME 郵件簽章與 Exchange Online 中的加密
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: S/MIME 可讓您加密電子郵件與數位簽章它們。當您使用 S/MIME 與電子郵件訊息時，它可協助的人員接收該訊息是特定看到其收件匣中是完全入門寄件者的郵件。
-ms.openlocfilehash: 26c50fb6e4d1b07b7dba26948ae46e7f36eeaec5
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 41a84d5332092748f9a8cc8fe4936c39e5fd2012
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002762"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206506"
 ---
 # <a name="smime-for-message-signing-and-encryption"></a>為郵件簽章和加密的 S/MIME
 
@@ -29,13 +29,11 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 ## <a name="supported-scenarios-and-technical-considerations"></a>支援的案例和技術考量
 <a name="sectionSection0"> </a>
 
-如果組織使用 Exchange 2013 SP1 或 Exchange Online，您可以設定 S/MIME 供下列任何端點使用： 
+您可以設定 S/MIME 供任何下列的結束點： 
   
-- Outlook 2010
+- Outlook 2010 或更新版本
     
-- Outlook 2013
-    
-- Outlook Web App
+- 網頁型 Outlook (先前為 Outlook Web App)
     
 - Exchange ActiveSync (EAS)
     
@@ -47,16 +45,16 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
     
 - 在 Exchange Online 組織中，使用適當的 DirSync 版本，將使用者憑證從 AD DS 同步至 Azure Active Directory。這些憑證會從 Azure Active Directory 同步至 Exchange Online 目錄，並於加密寄給收件者的郵件時使用。
     
-- 設定虛擬憑證集合以驗證 S/MIME。OWA 會使用此資訊來驗證電子郵件的簽章，以確保電子郵件是以信任的憑證所簽署。
+- 為了驗證 S/MIME 設定的虛擬憑證集合。此資訊由 （前身為網路上的 Outlook） 在 web 上的 Outlook 驗證電子郵件和確認它已由受信任的憑證簽署的簽章時。
     
 - 設定 Outlook 或 EAS 端點來使用 S/MIME。 
     
-## <a name="setup-smime-with-outlook-web-app"></a>設定 Outlook Web App 的 S/MIME
+## <a name="setup-smime-with-outlook-on-the-web"></a>設定 S/MIME 網路上的 Outlook
 <a name="sectionSection1"> </a>
 
-設定 Exchange 2013 SP1 或 Exchange Online 的 Outlook Web App 來使用 S/MIME 包含下列幾個主要步驟：
+Exchange Online 與 Outlook web 上的設定來使用 S/MIME 包含下列主要步驟：
   
-1. [設定 Outlook Web App 的 S/MIME 設定](configure-s-mime-settings-for-outlook-web-app.md)
+1. [設定 outlook web 上的 S/MIME 設定](configure-s-mime-settings-for-outlook-web-app.md)
     
 2. [設定虛擬憑證集合以驗證 S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
     
@@ -77,10 +75,10 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 
 S/MIME 需要憑證和發佈基礎結構 (常用於企業對企業及企業對消費者情況)。在 S/MIME 中，由使用者控制密碼編譯金鑰，且在他們所傳送的每一封郵件上，都可選擇是否使用金鑰。電子郵件程式 (例如 Outlook) 會搜尋受信任的根憑證授單位，以進行數位簽署並驗證簽章。Office 365 郵件加密是系統管理員 (而不是個別使用者) 可設定的原則型加密服務，可將傳送給組織內外任何人的郵件加密。它是以 Azure 版權管理 (RMS) 為基礎的線上服務，且不依賴任何公開金鑰基礎結構。Office 365 郵件加密還提供其他功能，例如以組織的品牌來自訂郵件。如需 Office 365 郵件加密的相關資訊，請參閱 [Office 365 郵件加密](https://go.microsoft.com/fwlink/?LinkID=392525)。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 <a name="sectionSection3"> </a>
 
-[Outlook Web App](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[網頁型 Outlook](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
   
 [安全郵件 (2000)](https://technet.microsoft.com/en-us/library/cc962043.aspx)
   

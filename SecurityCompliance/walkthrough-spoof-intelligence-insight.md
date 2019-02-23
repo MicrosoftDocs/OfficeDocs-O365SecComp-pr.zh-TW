@@ -5,19 +5,19 @@ author: kccross
 ms.date: 7/30/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 description: 請參閱新詐騙智慧洞察力的運作方式。
-ms.openlocfilehash: ca9c4ae6f2d65ef2700a2e02acd5b4f1dfbfe903
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 83fa1580a0e7c4717581cc5f23b8f525d6b918e0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22596092"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220323"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>逐步解說： 詐騙智慧洞察力
 

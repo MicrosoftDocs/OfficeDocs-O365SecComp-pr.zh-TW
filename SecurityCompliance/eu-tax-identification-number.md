@@ -6,16 +6,16 @@ manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
 description: 本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟稅識別碼敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
-ms.openlocfilehash: 5192496b393d15fd6d063e09c9bfe1cb3dd7e2dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526727"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213823"
 ---
 # <a name="eu-tax-identification-number"></a>歐盟稅識別碼
 
@@ -349,7 +349,7 @@ tic #
   
 ΚΩΔΙΚΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
   
-## <a name="czech-republic"></a>捷克
+## <a name="czech-republic"></a>捷克共和國
 
 ### <a name="format"></a>格式
 
@@ -904,7 +904,7 @@ adószám
   
 adóhatóság szám
   
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>愛爾蘭
 
 ### <a name="format"></a>格式
 

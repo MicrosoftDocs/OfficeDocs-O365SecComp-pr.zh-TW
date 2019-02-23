@@ -5,18 +5,18 @@ author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
 ms.audience: ITPro
-ms.topic: get-started-article
-ms.service: o365-administration
+ms.topic: article
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 帶領您完成建議的租用戶整個設定會影響您的 Office 365 環境的安全性設定。安全性需求可能需要更多或更少的安全性。使用這些建議為起點。
-ms.openlocfilehash: 0ec9d739f1347eee55c4c49df2abfcb7178b6d05
-ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
+ms.openlocfilehash: 95b00d2f5a5c77eff1fcef2450ffb20ce5c57617
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29966197"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213923"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定您的 Office 365 租用戶以提高安全性
 

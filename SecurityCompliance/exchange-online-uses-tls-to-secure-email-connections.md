@@ -1,25 +1,26 @@
 ---
 title: Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/2/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 description: 了解 Exchange Online 與 Office 365 使用傳輸層安全性 (TLS) 和轉寄加密 (FS) 來保護電子郵件通訊。也取得由 Microsoft 發行 Exchange Online 的憑證的相關資訊。
-ms.openlocfilehash: 079a6f574838f5710dbbbcb53726799abfae1d3a
-ms.sourcegitcommit: ddfa0ac1f8ef95a78dcc1468241ef29363d56b5b
+ms.openlocfilehash: 2621bb325c5bf97baa0a25f1e5eb590339856549
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23520142"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220493"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線
 

@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 12/21/2016
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您必須取消重複以便只有一個電子郵件的副本匯出即使多個執行個體相同訊息可能會有不同的信箱中找到都要匯出的 eDiscovery 搜尋結果的選項。
-ms.openlocfilehash: 5e54f0e5841fdbd29d1ab8b6b9509ff06e827920
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: a8615a1a6504bd9eb4848af89eb3bf1aec52cad2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038006"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220383"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子文件探索搜尋結果中的重複資料刪除
 

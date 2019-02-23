@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 038d4b83fc547713e537c29592e1dcf96e1cc4a7
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d01a0c8951ff1ae203bca54c4e196b747a79c378
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29629035"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220333"
 ---
 # <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>進階 eDiscovery (Preview) 中建立新的案例    
 
