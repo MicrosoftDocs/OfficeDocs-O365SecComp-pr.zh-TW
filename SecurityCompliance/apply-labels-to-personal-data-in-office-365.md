@@ -12,17 +12,15 @@ ms.collection:
 - GDPR
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為 GDPR 保護計劃的一部分。
-ms.openlocfilehash: 1ba410b4ff6471c5e32587f5f213033eef4c6c18
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d92d132190296e2243bf7ea00c3c0dba4e38930f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221233"
+ms.locfileid: "30223152"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>將標籤套用至 Office 365 中的個人資料
 
