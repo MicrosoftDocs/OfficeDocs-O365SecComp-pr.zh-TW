@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 定義並說明資料不變性或必須是可供搜尋的資料並無法移除或變更。
-ms.openlocfilehash: ab7bfc3795da761eacc9e9aa7d41e69e482fc411
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090875"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215563"
 ---
 # <a name="immutability-in-office-365"></a>Office 365 中的不變性
 有些組織、 規範、 內部控管需求或訴訟資料暫留風險需要保留電子郵件和可供搜尋的表單中的相關的資料。系統中的所有資料都必須可供搜尋、 且完全沒有可移除或變更。這的業界標準字詞是"不變性。 」 

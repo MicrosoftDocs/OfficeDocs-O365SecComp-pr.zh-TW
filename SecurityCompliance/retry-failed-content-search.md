@@ -5,7 +5,7 @@ author: markjjo
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 重試] 按鈕可用於解決有內容位置錯誤的內容搜尋。
-ms.openlocfilehash: 0fdc11593fec42e1f9f9b76fbbb408d9c16fd183
-ms.sourcegitcommit: d5f841744b716fcf368c670009b61441f5a5eed2
+ms.openlocfilehash: 032d93ef0990ed1dd7c1ea7bf2ba16653b3a862f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210180"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218853"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重試內容搜尋以解決錯誤的內容位置
 
-當您可以使用在 Office 365 安全性和規範中心] 中的內容搜尋來搜尋超大 （例如搜尋 100000 信箱或其他單一內容搜尋功能） 的信箱數目時，您可能會得到類似下列的搜尋錯誤：
+當您使用內容搜尋在 Office 365 安全性 & 規範中心來搜尋超大 （例如搜尋 100000 信箱或其他單一內容搜尋功能） 的信箱數目，您可能會得到類似下列的搜尋錯誤：
 
 ```
 Error

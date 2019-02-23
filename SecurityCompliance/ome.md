@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 6/6/2018
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 與 Office 365 郵件加密，您的組織可以傳送和接收組織內外的人員之間的加密電子郵件訊息。電子郵件訊息加密有助於確保只有預定的收件者可以檢視郵件內容。
-ms.openlocfilehash: 57b1d34902bb1522a7974e97f8cd90e9f19b76f5
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: eae2b6ca4756fc90837c2bfac4b5eae20001d37a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696257"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220283"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 郵件加密
 
@@ -52,7 +52,7 @@ ms.locfileid: "29696257"
 
 Office 365 郵件加密是一種線上服務的內建 Microsoft Azure 版權管理 (Azure RMS) 的 Azure 資訊保護的一部分。Office 365 系統管理員可以定義郵件流程規則來決定加密的條件。例如，規則可能需要所有寄給特定收件者的郵件的加密。
   
-當有人傳送電子郵件訊息 Exchange Online 中符合加密郵件流程規則時，將郵件加密之前已傳送。使用 Outlook 用戶端讀取郵件的所有 Office 365 使用者會都收到原生、 頂級即使它們不位於相同組織為寄件者讀取加密和權限保護之郵件的體驗。支援的 Outlook 用戶端包括 Outlook 桌面、 Outlook Mac 行動裝置上 iOS 及 android （英文）、 Outlook 和 Outlook Web App。
+當有人傳送電子郵件訊息 Exchange Online 中符合加密郵件流程規則時，將郵件加密之前已傳送。使用 Outlook 用戶端讀取郵件的所有 Office 365 使用者會都收到原生、 頂級即使它們不位於相同組織為寄件者讀取加密和權限保護之郵件的體驗。支援的 Outlook 用戶端包括 Outlook 桌面、 Outlook Mac、 Outlook 行動裝置上 iOS 以及 Android，而且 （前身為 Outlook Web App） 在 web 上的 Outlook。
   
 收件者加密郵件的接收加密或權限受到保護的郵件傳送給其 Outlook.com、 Gmail、 和 Yahoo 帳戶可以輕鬆地 OME 入口網站使用其 Microsoft 帳戶或 Gmail 或 Yahoo 認證來驗證。
   

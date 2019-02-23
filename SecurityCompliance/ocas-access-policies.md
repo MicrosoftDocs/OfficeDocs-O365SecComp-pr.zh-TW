@@ -1,5 +1,5 @@
 ---
-title: Office 365 雲端應用程式安全性存取原則
+title: Office 365 雲端 App 安全性中的存取原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,21 +7,21 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 雲端應用程式安全性存取原則啟用即時監視和存取使用者、 位置、 裝置為基礎的雲端應用程式及應用程式的控制權。您可以建立任何裝置，包括不網域加入，並啟用受管理的裝置的用戶端憑證或使用現有的憑證，例如協力廠商 MDM 憑證未受 Windows Intune 的裝置存取的原則。例如，您可以部署用戶端憑證以受管理的裝置，然後封鎖來自沒有憑證的裝置存取。
-ms.openlocfilehash: bb4404793647c65ab8addc148e6efe24242f3079
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a8651cb51419c93998f2ce6e176fab7c1651b6ea
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103308"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219773"
 ---
-# <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 雲端應用程式安全性存取原則
+# <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的存取原則
 
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](group-your-ip-addresses-in-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](group-your-ip-addresses-in-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
 
 Office 365 雲端應用程式安全性存取原則啟用即時監視和存取使用者、 位置、 裝置為基礎的雲端應用程式及應用程式的控制權。您可以建立任何裝置，包括不網域加入，並啟用受管理的裝置的用戶端憑證或使用現有的憑證，例如協力廠商 MDM 憑證未受 Windows Intune 的裝置存取的原則。例如，您可以部署用戶端憑證以受管理的裝置，然後封鎖來自沒有憑證的裝置存取。
 

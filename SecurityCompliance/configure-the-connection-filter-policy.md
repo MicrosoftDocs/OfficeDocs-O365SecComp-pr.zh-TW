@@ -1,7 +1,7 @@
 ---
 title: 設定連線篩選原則
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
+ms.collection:
+- M365-security-compliance
 description: 若要確定未被封鎖從您信任的人員所傳送的電子郵件，您可以使用連線篩選原則建立允許清單中，也稱為安全寄件者清單中，您信任的 IP 位址。您也可以建立封鎖的寄件者清單。
-ms.openlocfilehash: 2f8ec3d01de4358d7394c68d0efae9222db08282
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793558"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216903"
 ---
 # <a name="configure-the-connection-filter-policy"></a>設定連線篩選原則
  
@@ -59,7 +61,7 @@ ms.locfileid: "25793558"
 
     在其中？ （\d{3}） 是從 0 到 255 的數字格式 nnn.nnn.nnn.nnn 指定 IPV4 IP 位址。您也可以在其中 rr 是從 24 到 32 的數字格式 nnn.nnn.nnn.nnn/rr 中指定無網域間路由選擇 (CIDR) 範圍。若要指定 24 至 32 範圍的範圍，請參閱 ＜[其他考量時設定 IP 允許清單](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)。 
 
-    您可以指定 1273年個項目，其中項目是單一 IP 位址或 CIDR 範圍的 IP 位址從/24 至/32 的最大值。> 如果您正在傳送 TLS 加密訊息，IPv6 位址與位址範圍不支援。 
+    您可以指定 1273年個項目，其中項目是單一 IP 位址或 CIDR 範圍的 IP 位址從/24 至/32 的最大值。如果您正在傳送 TLS 加密訊息 >、 IPv6 位址與位址範圍不受支援。 
   
 3. （選用） 選取 [**啟用安全清單**] 核取方塊以避免遺失某些已知寄件者的電子郵件。如何？Microsoft 訂閱的受信任的寄件者的協力廠商來源。使用此安全清單表示這些受信任的寄件者未誤標示為垃圾郵件。建議您選取這個選項，因為它應該減少誤判 （歸類為垃圾郵件的良好郵件） 的數目，您會收到。 
     

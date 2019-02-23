@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: '了解 Office 365 進階 eDiscovery，包括工作流程和指導方針及訓練與檔案的檢閱步驟中的相關性模組。  '
-ms.openlocfilehash: 2cf75ef95291c5393367ce01fb0cd660f9b99145
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526514"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217453"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中使用相關性模組
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 進階 ediscovery 相關性模組包含相關性訓練及檢閱與案例相關的檔案。相關性工作流程會顯示及說明如下：
   

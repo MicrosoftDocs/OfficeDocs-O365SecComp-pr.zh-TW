@@ -8,7 +8,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須被指派 Office 365 安全性權限&amp;規範中心之前他們可以管理任一其安全性或規範功能。
-ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
-ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
+ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27221064"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216303"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>讓使用者能夠存取 Office 365 安全性&amp;規範中心
 
@@ -63,7 +63,7 @@ ms.locfileid: "27221064"
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>使用 PowerShell 來授與其他使用者存取安全性&amp;規範中心
 
-1. [連線至 Office 365 的安全性與規範中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [連線至 Office 365 的安全性 & 規範中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
     
 2. 使用 **Add-RoleGroupMember** 命令，以將使用者新增至組織管理角色，如下列範例所示。 
     

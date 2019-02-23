@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 組織常會基於符合性、法律或其他法規，而必須在特定的一段時間內保留文件。但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。為此，您的組織可能會為站台建立文件刪除原則，一般商業文件可能必須在建立的五年之後刪除。
-ms.openlocfilehash: abee0da7adfba6f653743d503f8b30770ee93c40
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527164"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219163"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>套用或移除站台的文件刪除原則
 
@@ -75,7 +75,7 @@ ms.locfileid: "22527164"
     > [!NOTE]
     > 除非已指派原則至網站集合將不會出現 [**文件刪除原則**] 連結。原則已指派給網站後立即不會出現連結的同時，— 約 24 小時的時間從時原則指派給**文件刪除原則**連結出現時。 
   
-3. 執行下列其中一項動作：
+3. 執行下列其中一項操作：
     
   - **若要套用原則**選取原則\>選取該原則中的規則\>**儲存**。
     

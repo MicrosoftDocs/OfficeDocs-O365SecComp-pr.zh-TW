@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: 您可以建立 Exchange 傳輸規則，以防止使用者傳送電子郵件訊息給 Microsoft 進行分析並用於您自己的安全性程序
-ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 7ee8fb2bca1071ccd4080379485c1670a5e66a73
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002620"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206406"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容
 
@@ -27,7 +27,7 @@ ms.locfileid: "23002620"
 
 預估完成時間：5 分鐘
   
-您必須獲得權限才能執行此程序或程序。若您需要哪些權限，請參閱[訊息原則及符合性權限](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)主題中的 「 傳輸規則 」 項目和[用戶端和行動裝置權限](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)主題中的 「 Outlook Web App 信箱原則 」 項目。 
+您必須獲得權限才能執行此程序或程序。若您需要哪些權限，請參閱[訊息原則及符合性權限](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)主題中的 「 傳輸規則 」 項目和[用戶端和行動裝置權限](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)主題中的 「 web 信箱原則時 outlook 的 App 」 項目。 
   
 如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Exchange 系統管理中心的鍵盤快速鍵**。
   

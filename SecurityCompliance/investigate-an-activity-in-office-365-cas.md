@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: '與 Office 365 雲端應用程式安全性]，您可以查看有什麼新鮮事 Office 365 環境中所要尋找一段與調查活動和帳戶。 '
-ms.openlocfilehash: e463323cf28738e1d54fcdb65ed0d15290c79994
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 0cc3860d953b40b0b0c247af6fb2b157d1abb235
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603654"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218963"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>調查 Office 365 雲端 App 安全性中的活動
   

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 933dfafb0f103f072966cb7ae455ba3a977ae03f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706014"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218183"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>使用 custodians 進階 ediscovery （預覽）
 

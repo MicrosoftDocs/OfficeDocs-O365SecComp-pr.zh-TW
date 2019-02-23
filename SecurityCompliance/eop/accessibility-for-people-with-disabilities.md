@@ -1,5 +1,5 @@
 ---
-title: 殘障人士的協助工具
+title: 行動不便人士的協助工具
 ms.author: scotv
 author: scotvidican
 manager: laurawi
@@ -12,22 +12,22 @@ localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft 會經過認可傳送至其產品和服務進行更容易使用的任何人。
-ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026210"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206376"
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>殘障人士的協助工具
+# <a name="accessibility-for-people-with-disabilities"></a>行動不便人士的協助工具
 
 ## <a name="accessibility-features-of-exchange"></a>Exchange 的協助工具功能
 
 下列功能可協助讓殘障人士更容易存取 Microsoft Exchange：
   
-- [在 Exchange 2013 Preview 中的鍵盤快速鍵](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Exchange Server 中的鍵盤快速鍵](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
-- [在 Outlook Web App 鍵盤快速鍵](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+- [在網路上的 Outlook 的快速鍵](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
 此外，一些協助工具功能和公用程式的 Windows 可能會受益殘障人士的 Exchange 使用者。此外，Windows PowerShell 大小及色彩變更時使用 Exchange 管理命令介面提供協助工具選項。如需 Windows PowerShell 協助工具選項的詳細資訊，請參閱[Windows PowerShell 2.0 ISE 中的協助工具](https://go.microsoft.com/fwlink/p/?LinkId=258240)。
   

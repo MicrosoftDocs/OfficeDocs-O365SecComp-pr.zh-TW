@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: 屬於不知道如何安全您的組織是這麼 in Office 365？安全的分數以下是可協助。安全的分數分析您的組織安全性根據規則活動和 Office 365 中的安全性設定並指派分數。
-ms.openlocfilehash: cf272869981dd73e1ceb4bd7180cc16acaed0516
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29992357"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220353"
 ---
 # <a name="office-365-secure-score"></a>Office 365 安全分數
 

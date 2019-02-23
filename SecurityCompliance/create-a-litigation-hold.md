@@ -6,16 +6,16 @@ manager: laurawi
 ms.date: 3/13/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: aa78d12046108aa1f1b974f01c02ff923b99b97b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f2d3793eac84e8f80158842c833c30986b0549c5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037956"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218653"
 ---
 # <a name="create-a-litigation-hold-in-office-365"></a>在 Office 365 中建立訴訟暫止狀態
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection: M365-security-compliance
 description: 了解安全性 （也稱為威脅瀏覽器） 的瀏覽器&amp;規範中心。
-ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 439a7d53e185e12ddd5d2e19b9d88bd8c9b47dad
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995114"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218983"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>使用瀏覽器安全性&amp;規範中心
 

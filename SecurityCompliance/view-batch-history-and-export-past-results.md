@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '了解如何檢視所選的匯出批次工作階段的詳細的資訊以及如何復原 Office 365 進階在 eDiscovery 中的最後一個匯出工作階段。  '
-ms.openlocfilehash: 545449e296789508c5f13f8f012549129969d282
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a55f299669c2a404ee176153aa766210a3141199
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527157"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214943"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中檢視批次歷程記錄及匯出過去的結果
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 下節說明批次檢視和匯出資料的進階 eDiscovery 的其他選項。 
   
@@ -63,5 +63,5 @@ ms.locfileid: "22527157"
   
 [匯出結果](export-results-in-advanced-ediscovery.md)
 
-[匯出報表欄位](export-report-fields-in-advanced-ediscovery.md)
+[匯出報告欄位](export-report-fields-in-advanced-ediscovery.md)
 

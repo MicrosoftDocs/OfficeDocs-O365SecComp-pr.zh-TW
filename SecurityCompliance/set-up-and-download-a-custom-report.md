@@ -5,19 +5,19 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 description: 了解如何設定和下載以自訂日期範圍與安全性篩選的報表&amp;規範中心。
-ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 7e4d152509a6e904c7df5ea7c8ccddf9503a35da
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014745"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219703"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>設定並下載安全性的自訂報告&amp;規範中心
 

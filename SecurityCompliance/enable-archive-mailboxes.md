@@ -3,12 +3,11 @@ title: 啟用封存信箱在 Office 365 安全性&amp;規範中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 安全性&amp;規範中心啟用封存信箱來支援您的組織訊息保留 eDiscovery 和保留需求。
-ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 10e20d09c531d6758d8011030aea64a6c30cdf9b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28327095"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217283"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>啟用封存信箱在 Office 365 安全性&amp;規範中心
   
-Office 365 （也稱為就地封存） 中的封存提供使用者與其他信箱的儲存空間。開啟封存信箱之後，使用者可以存取和使用 Microsoft Outlook 存放在其封存信箱的郵件及 Outlook Web app 使用者也可以移動或複製主要信箱和封存信箱之間的郵件。他們也可以從其封存信箱中的 [可復原的項目] 資料夾復原刪除的項目使用復原刪除的項目工具。 
+Office 365 （也稱為就地封存） 中的封存提供使用者與其他信箱的儲存空間。開啟封存信箱之後，使用者可以存取和使用 Microsoft Outlook 和 Outlook web （前身為 Outlook Web App） 上的儲存其封存信箱中的郵件。使用者也可以移動或複製主要信箱和封存信箱之間的郵件。他們也可以從其封存信箱中的 [可復原的項目] 資料夾復原刪除的項目使用復原刪除的項目工具。 
   
 > [!TIP]
 > Office 365 提供封存存放區與 「 自動展開的封存功能的數量不受限制。如果自動展開封存已開啟，然後到達使用者的封存信箱中的初始儲存配額，Office 365 會自動新增額外儲存空間。這表示使用者不會執行移出信箱的儲存空間和您不必最初管理的任何項目之後啟用封存信箱並開啟自動展開您的組織的封存。如需詳細資訊，請參閱 ＜ [Overview of Office 365 中沒有限制之封存](unlimited-archiving.md)。 
@@ -128,7 +127,7 @@ Office 365 （也稱為就地封存） 中的封存提供使用者與其他信�
   
 - 封存信箱協助您和使用者以符合您的組織保留 eDiscovery 和保留需求。例如，您可用於您組織的 Exchange 保留原則信箱內容移至使用者的封存信箱。當您使用 「 內容搜尋工具安全性&amp;也可搜尋規範中心來搜尋特定的內容、 使用者的封存信箱的使用者的信箱。並放置訴訟暫止狀態或 Office 365 保留原則套用至使用者的信箱、 時也會保留在封存信箱中的項目。
   
-- 啟用封存信箱時，使用者可以封存信箱中儲存的郵件。使用者可以存取封存信箱使用 Microsoft Outlook 和 Outlook Web app 使用其中一個這些用戶端應用程式的使用者可以檢視其封存信箱中的郵件及移動或複製主要信箱和封存信箱之間的郵件。使用者可以復原刪除的項目從其封存信箱中的 [可復原的項目] 資料夾使用復原刪除的項目工具。 
+- 啟用封存信箱時，使用者可以封存信箱中儲存的郵件。使用者可以使用 Microsoft Outlook 與 web 上的 Outlook 來存取封存信箱。使用下列任一這些用戶端應用程式，使用者可以檢視他們的封存信箱中的郵件及移動或複製主要信箱和封存信箱之間的郵件。使用者可以復原刪除的項目從其封存信箱中的 [可復原的項目] 資料夾使用復原刪除的項目工具。 
   
 - 啟用信箱的封存之後, 您的組織可以利用預設 Exchange 保留原則的 （也稱為 「 郵件記錄管理或 MRM 原則 」） 會自動指派給每個信箱。啟用封存信箱時，預設 Exchange 保留原則會自動執行下列作業： 
   

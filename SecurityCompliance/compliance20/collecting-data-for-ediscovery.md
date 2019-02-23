@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 2e9e7836a2dc777410b88ffac1aea0c5137b7b89
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695049"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218993"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>收集資料的進階 eDiscovery (Preview) 中的案例
 

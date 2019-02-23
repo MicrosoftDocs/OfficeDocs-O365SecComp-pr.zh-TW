@@ -3,7 +3,6 @@ title: Office 365 中的郵件流程情報
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可了解與 Office 365 （也稱為擁有郵件流程智慧） 中使用連接器的郵件傳遞相關聯的錯誤碼。
-ms.openlocfilehash: 9f27dfd4c265eb62028d68c27764183202692ef4
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a679a3a50c2333a9f66509b69ec06ee96960bc83
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28327085"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218713"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的郵件流程情報
 

@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 已在 Office 365 中的新郵件保護功能的運作方式的相關問題嗎？檢查的答案。
-ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 651d3f5953f0a6864259ed3a0c8ecde79f40d631
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890034"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217113"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 

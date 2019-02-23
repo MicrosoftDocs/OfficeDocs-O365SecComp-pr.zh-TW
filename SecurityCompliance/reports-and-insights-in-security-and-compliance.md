@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 7/19/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection: M365-security-compliance
 description: 安全性概略了解的報告與前瞻 avialable&amp;規範中心。
-ms.openlocfilehash: 30c6dcd324770a519f1501c6e7bfa85b28aa6969
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 194a7198e05e6d13cada9712f884f232abe2a8d1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995274"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217213"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智慧報表和 Office 365 安全性前瞻&amp;規範中心
 

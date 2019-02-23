@@ -1,5 +1,5 @@
 ---
-title: 保護與 Office 365 雲端應用程式的安全性設定格式化的條件的 Access 應用程式控制項的應用程式
+title: 使用 Office 365 雲端 App 安全性條件式存取應用程式控制來保護應用程式
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,21 +7,21 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 停止缺口和遺漏即時與 Office 365 雲端應用程式的安全性設定格式化的條件存取應用程式的控制項。
-ms.openlocfilehash: 8656bf9d3e028bf6b44731c397b74d9c883db707
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 23c4b29e86eb8ba92cfa8a544d6484965ec6372b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103358"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217083"
 ---
-# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>保護與 Office 365 雲端應用程式的安全性設定格式化的條件的 Access 應用程式控制項的應用程式
+# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>使用 Office 365 雲端 App 安全性條件式存取應用程式控制來保護應用程式
 
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](ocas-deploy-conditional-access-app-control.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](ocas-deploy-conditional-access-app-control.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
 
 在今天的工作場所不常足夠知道有什麼新鮮事雲端環境中的事實之後。您想要停止缺口和即時，遺漏之前員工有意或無意放入您的資料與您組織在風險。請務必讓使用者在組織中的最大的服務和工具提供給他們的雲端應用程式]，讓它們將他們自己的裝置能夠運作。同時，您需要的工具來協助保護您的組織從資料外洩和資料竊取、 即時。Azure Active Directory 與 Office 365 雲端應用程式安全性會將這些功能全面性及整合經驗中具有設定格式化的條件的 Access 應用程式控制項。
 
@@ -104,7 +104,7 @@ Office 365 的設定格式化的條件 Access 應用程式控制項支援下列�
 
 ## <a name="next-steps"></a>後續步驟
 
-- [部署 Office 365 應用程式的設定格式化的條件的 Access 應用程式控制項](ocas-deploy-conditional-access-app-control.md)
+- [為 Office 365 應用程式部署條件式存取應用程式控制](ocas-deploy-conditional-access-app-control.md)
 
 - [深入了解 Office 365 雲端應用程式安全性的工作階段原則](ocas-session-policies.md)
 

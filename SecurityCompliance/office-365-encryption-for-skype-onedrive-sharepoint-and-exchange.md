@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 加密 Skype、 OneDrive、 SharePoint 及 Exchange Online 的描述。
-ms.openlocfilehash: c8f3658a2d76bd9184babe7729236309ec1feb30
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: b08b9d00dc83ab59cf2f5b979fb9b6079990a8e8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664139"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216933"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for Business、 OneDrive for Business、 SharePoint Online、 and Exchange Online 的 office 365 加密
 

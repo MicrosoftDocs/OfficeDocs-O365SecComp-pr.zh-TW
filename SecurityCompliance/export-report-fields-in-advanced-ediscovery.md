@@ -6,28 +6,28 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 說明進階 ediscovery 匯出報告所包含的所有欄位。
-ms.openlocfilehash: a578523098248bcfa16ea8ba97d756d97ba060fa
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a910fa94a1361e48099ef5792ce93d5934fdccc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526440"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216653"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出報告欄位
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 本主題說明進階的 eDiscovery 匯出報表欄位標準與所有的範本。
   
-## <a name="export-report-fields"></a>匯出報表欄位
+## <a name="export-report-fields"></a>匯出報告欄位
 
 下表列出每個匯出範本的欄位。
   
@@ -91,19 +91,19 @@ ms.locfileid: "22526440"
 |Input_path  <br/> |處理   <br/> |輸入檔案的路徑。  <br/> |是  <br/> |是  <br/> |
 |Input_date_modified  <br/> |處理   <br/> |上次修改日期的輸入檔。  <br/> |是  <br/> |是  <br/> |
 |ND_ET_sort_excl_attach  <br/> |分析  <br/> |連鎖電子郵件設定和 ND 設定供檢閱。有 ' ND 集及 'E' 首碼新增至電子郵件 ssets 新增。  <br/> |是  <br/> |是  <br/> |
-|ND_ET_sort_incl_attach  <br/> |分析  <br/> |連鎖電子郵件設定和設定供檢閱的 ND 嗎 ' 時新增至 ND 集與 'E' 首碼新增至電子郵件設定。每個電子郵件內 Email_set 此外，後面接著其適當的附件。  <br/> |是  <br/> |是  <br/> |
-|Deduped_custodians  <br/> |一般  <br/> |取消上當檔案的 custodians  <br/> |是  <br/> |是  <br/> |
-|Deduped_file_IDs  <br/> |一般  <br/> |取消上當檔案的識別碼  <br/> |是  <br/> |是  <br/> |
-|Deduped_paths  <br/> |一般  <br/> |取消上當檔案的路徑  <br/> |是  <br/> |是  <br/> |
-|File_key  <br/> |一般  <br/> |供日後使用的內部識別項。  <br/> |是  <br/> |是  <br/> |
-|Export_native_path  <br/> |處理   <br/> |匯出套件中的原生檔案的路徑。  <br/> |是  <br/> |是  <br/> |
-|Extracted_text_path  <br/> |處理   <br/> |解壓縮檔案的路徑。  <br/> |是  <br/> |是  <br/> |
-|Process_batch  <br/> |處理   <br/> |批次匯入批次的識別碼。  <br/> |是  <br/> |是  <br/> |
-|Process_status_ID  <br/> |處理   <br/> |表示程序階段狀態識別碼。  <br/> |是  <br/> |是  <br/> |
-|Process_status_description  <br/> |處理   <br/> |程序階段狀態描述： 成功或錯誤的描述。  <br/> |是  <br/> |是  <br/> |
-|Export_status_ID  <br/> |處理   <br/> |匯出狀態的識別碼。  <br/> |是  <br/> |是  <br/> |
-|Export_status_description  <br/> |處理   <br/> |匯出狀態 ； 的描述成功或錯誤的描述。  <br/> |是  <br/> |是  <br/> |
-|Read_percent  <br/> |相關性  <br/> |讀取 %(0-100)。每個問題。  <br/> |是  <br/> |是  <br/> |
+|ND_ET_sort_incl_attach  <br/> |分析  <br/> |連鎖電子郵件設定和設定供檢閱的 ND 嗎 ' 時新增至 ND 集與 'E' 首碼新增至電子郵件設定。每個電子郵件內 Email_set 此外，後面接著其適當的附件。  <br/> |是  <br/> |可以  <br/> |
+|Deduped_custodians  <br/> |一般  <br/> |取消上當檔案的 custodians  <br/> |是  <br/> |可以  <br/> |
+|Deduped_file_IDs  <br/> |一般  <br/> |取消上當檔案的識別碼  <br/> |是  <br/> |可以  <br/> |
+|Deduped_paths  <br/> |一般  <br/> |取消上當檔案的路徑  <br/> |是  <br/> |可以  <br/> |
+|File_key  <br/> |一般  <br/> |供日後使用的內部識別項。  <br/> |是  <br/> |可以  <br/> |
+|Export_native_path  <br/> |處理   <br/> |匯出套件中的原生檔案的路徑。  <br/> |是  <br/> |可以  <br/> |
+|Extracted_text_path  <br/> |處理   <br/> |解壓縮檔案的路徑。  <br/> |是  <br/> |可以  <br/> |
+|Process_batch  <br/> |處理   <br/> |批次匯入批次的識別碼。  <br/> |是  <br/> |可以  <br/> |
+|Process_status_ID  <br/> |處理   <br/> |表示程序階段狀態識別碼。  <br/> |是  <br/> |可以  <br/> |
+|Process_status_description  <br/> |處理   <br/> |程序階段狀態描述： 成功或錯誤的描述。  <br/> |是  <br/> |可以  <br/> |
+|Export_status_ID  <br/> |處理   <br/> |匯出狀態的識別碼。  <br/> |是  <br/> |可以  <br/> |
+|Export_status_description  <br/> |處理   <br/> |匯出狀態 ； 的描述成功或錯誤的描述。  <br/> |是  <br/> |可以  <br/> |
+|Read_percent  <br/> |相關性  <br/> |讀取 %(0-100)。每個問題。  <br/> |是  <br/> |可以  <br/> |
 |Doc_author  <br/> |文件屬性  <br/> |文件屬性： 作者。  <br/> |否  <br/> |是  <br/> |
 |Doc_comments  <br/> |文件屬性  <br/> |文件屬性： 註解。  <br/> |否  <br/> |是  <br/> |
 |Doc_keywords  <br/> |文件屬性  <br/> |文件屬性： 關鍵字。  <br/> |否  <br/> |是  <br/> |

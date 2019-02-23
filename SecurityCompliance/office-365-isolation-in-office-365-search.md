@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 摘要： 在 Office 365 搜尋的租用戶隔離說明。
-ms.openlocfilehash: b9faae9f1d61af181807f60243890b5115c0d679
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: fa9ba75f6ae5b0b89e3565ffb0e6f022ab36f81b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090805"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216863"
 ---
 # <a name="tenant-isolation-in-office-365-search"></a>Office 365 搜尋中的租用戶隔離
 SharePoint Online 搜尋使用平衡與理想的資訊洩漏租用戶之間的共用的資料結構的效率的租用戶分離模型。使用此模型中，我們會防止從搜尋功能：

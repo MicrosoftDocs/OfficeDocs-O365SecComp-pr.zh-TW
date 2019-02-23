@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何使用 Office 365 安全性 & 規範中心新資料調查 （預覽） 工具來管理資料 spillage 事件。
-ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 93cbbed8763f0af31ab8d4e32348f01bfda17a2a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706174"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218123"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的建立資料 spillage 事件 
 

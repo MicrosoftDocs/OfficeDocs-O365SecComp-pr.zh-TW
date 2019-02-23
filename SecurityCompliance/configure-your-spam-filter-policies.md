@@ -1,7 +1,7 @@
 ---
 title: 設定您的垃圾郵件篩選原則
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/05/2018
 ms.audience: ITPro
@@ -12,17 +12,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
+ms.collection:
+- M365-security-compliance
 description: 基本的垃圾郵件篩選設定包括選取會被識別為垃圾郵件的郵件上所採取的動作和選擇是否要篩選以特定語言編寫或寄自特定國家或地區的郵件。
-ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 20c1e60f10b2cdf12bb2a62afa80f56904a7a3f2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614477"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216783"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
   
-基本的垃圾郵件篩選設定包括選取會被識別為垃圾郵件的郵件上所採取的動作和選擇是否要篩選以特定語言編寫或寄自特定國家或地區的郵件。垃圾郵件篩選器原則設定會套用至內送的郵件。您可以編輯預設垃圾郵件篩選器原則來設定全公司的垃圾郵件篩選器組態及建立自訂垃圾郵件篩選器原則，然後套用至特定使用者、 群組或組織中的網域。自訂原則一律優先預設原則。您可以變更您的自訂原則執行所變更的每個自訂原則優先順序的順序。
+基本的垃圾郵件篩選設定包含選取會被識別為垃圾郵件的郵件上所採取的動作。垃圾郵件篩選器原則設定會套用至內送的郵件。您可以編輯預設垃圾郵件篩選器原則來設定全公司的垃圾郵件篩選器組態及建立自訂垃圾郵件篩選器原則，然後套用至特定使用者、 群組或組織中的網域。自訂原則一律優先預設原則。您可以變更您的自訂原則執行所變更的每個自訂原則 ； 優先順序的順序不過，最高優先順序原則將套用如果多個原則符合準則集。 
   
 > [!IMPORTANT]
 > Exchange Online Protection (EOP) 獨立客戶： 根據預設，EOP 垃圾郵件篩選器將垃圾郵件偵測到的郵件傳送至每個收件者的垃圾郵件] 資料夾。不過，以確保 [**移至 [垃圾郵件] 資料夾的郵件**] 動作運作的內部部署信箱，您必須設定 Exchange 傳輸規則來偵測新增的 EOP 的垃圾郵件標頭的內部伺服器上。如需詳細資訊，請參閱[確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
@@ -33,17 +35,17 @@ ms.locfileid: "29614477"
   
 您必須獲得權限才能執行此程序或程序。若您需要哪些權限，請參閱[Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主題中的反垃圾郵件項目。 
   
-如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Keyboard shortcuts in Exchange 2013**。
+如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Exchange 系統管理中心的鍵盤快速鍵**。
   
-## <a name="use-the-exchange-admin-center-eac-to-configure-spam-filter-policies"></a>使用 Exchange 系統管理中心 (EAC) 來設定垃圾郵件篩選原則
+## <a name="use-the-security--compliance-center-scc-to-configure-spam-filter-policies"></a>若要設定垃圾郵件篩選器原則使用安全性 & 規範中心 」 (SCC)
 
-1. 在 Exchange 系統管理中心 (EAC)，瀏覽至 **[保護]** \> **[垃圾郵件篩選]**。
+1. 在 [安全性 & 規範中心 」 (SCC) 中，瀏覽至**Threat management** \> **原則** \> **反垃圾郵件**。
     
-2. 在 **[一般]** 頁面上執行下列其中一項動作： 
+2. 執行 [**反垃圾郵件設定**] 頁面上的下列其中一個動作： 
     
-      - 按兩下預設原則，以編輯這個全公司的原則。
+      - 檢閱 [標準設定] 下的預設全公司的原則。
     
-      - 按一下 ![加入圖示](media/ITPro-EAC-AddIcon.gif) **[新建]** 圖示，建立新的自訂垃圾郵件篩選原則，此原則可以套用到組織內的使用者、群組和網域。您也可以按兩下現有的自訂原則來編輯它們。 
+      - 按一下 [**自訂**] 索引標籤上，變更的**自訂設定**選取器**上**，並按一下 [* *![新增圖示](media/ITPro-EAC-AddIcon.gif) **Creatge 原則**] 按鈕以建立新的自訂垃圾郵件篩選器原則可套用至使用者、 群組與您組織中的網域。您也可以按兩下它們來編輯現有的自訂原則。 
     
 3. 僅限自訂原則，指定此原則的名稱。或者，您也可以指定詳細的說明。您不能重新命名的預設原則。<br/><br/>附註： 當您建立原則時，在單一畫面上會出現的所有組態設定。相反地，當您編輯原則，您必須瀏覽到多個畫面。設定都是相同的兩種情況，但此程序的其餘部分說明如何編輯原則時存取這些設定。 
   
@@ -113,8 +115,10 @@ ms.locfileid: "29614477"
   
 16. 按一下 **[儲存]**。原則設定的摘要隨即出現在右側窗格中。
 
+無法停用或刪除預設原則和自訂原則優先順序一律優於預設原則。自訂原則，您可以選取或清除核取方塊以啟用或停用它們的 [**啟用**] 欄中。根據預設，會啟用所有原則。若要刪除的自訂原則，請選取的原則，按一下 [![刪除圖示](media/ITPro-EAC-DeleteIcon.gif)**刪除**圖示，然後確認您想要刪除之原則。
+
 > [!TIP]
->  您可以選取或清除核取方塊以啟用或停用您的自訂原則的 [**啟用**] 欄中。根據預設，會啟用所有原則。無法停用預設原則。若要刪除的自訂原則、 選取的原則，按一下 [>![刪除圖示](media/ITPro-EAC-DeleteIcon.gif)**刪除**圖示，然後確認您想要刪除之原則。無法刪除預設原則。> 自訂原則一律優先預設原則。自訂原則執行相反順序在其中建立它們 （從最舊到最新），但您可以依序按一下 [變更您的自訂原則的優先順序 （執行順序）![向上箭號圖示](media/ITPro-EAC-UpArrowIcon.gif)向上鍵及![向下箭號圖示](media/ITPro-EAC-DownArrowIcon.gif)向下箭號。具有**優先順序** **0**的原則將會執行第一筆、 後面接著**1**，則**2**，依此類推。 
+>  您可以依序按一下 [變更您的自訂原則的優先順序 （執行順序）![向上箭號圖示](media/ITPro-EAC-UpArrowIcon.gif)向上鍵及![向下箭號圖示](media/ITPro-EAC-DownArrowIcon.gif)向下箭號。具有**優先順序** **0**的原則將會執行第一筆、 後面接著**1**，則**2**，依此類推。 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>使用遠端 PowerShell 設定垃圾郵件篩選原則
 

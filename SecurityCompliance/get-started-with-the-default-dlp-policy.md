@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 8/10/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 description: 您甚至可以建立您第一個資料外洩防護 (DLP) 原則之前，DLP 協助保護您的機密資訊與預設原則。此預設原則和敏感內容安全的電子郵件或包含信用文件介面卡數目時通知您已與組織外的某個人共用其建議 （如下所示） 說明保留。
-ms.openlocfilehash: 1b522a2c04e72353970ef5dfcd62183023a01994
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 25d42a7c7598a82fcf153ce05b64ee990e104b40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527416"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216583"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>預設的 DLP 原則快速入門
 

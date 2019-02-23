@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 7/31/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: 除了 [比較基準，透過 BitLocker 與分散式金鑰管理員 (DKM)、 已啟用的磁碟區層級加密 Office 365 提供新增一層的 Office 365，包括資料從 Exchange 中的客戶內容應用程式層級的加密線上商務、 SharePoint Online、 及 OneDrive for Business Skype。這會呼叫服務加密。
-ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: a9001db0f63183bf4694dfc880ab0940309d0375
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575327"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216503"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 中使用客戶金鑰的服務加密常見問題集
 
@@ -222,7 +222,7 @@ Exchange online 必須授權"user"信箱和 「 郵件使用者 」 的信箱。
 
 除了授權所需的客戶索引鍵、 客戶將可能會形成機碼存放庫使用的成本。[Azure 機碼存放庫定價的詳細資訊](https://azure.microsoft.com/en-us/pricing/details/key-vault/)說明成本模型，並將會協助進行評估。沒有預測因為使用模式而異可能會形成任何客戶會實際成本方法。經驗顯示成本很低及通常落在範圍的 $0.002 以 $0.005 每位使用者每月加上 HSM 備份金鑰的成本。成本也將會根據由客戶及 Azure 使用的儲存總量 Azure 機碼存放庫記錄檔選擇的記錄組態而不同。 
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 若要開始使用客戶金鑰，請參閱[控制您使用客戶金鑰的 Office 365 中的資料](controlling-your-data-using-customer-key.md)。

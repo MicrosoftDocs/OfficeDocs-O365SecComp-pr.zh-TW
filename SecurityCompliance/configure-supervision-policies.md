@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 設定監督檢閱原則以擷取員工通訊供檢閱。
-ms.openlocfilehash: dee9f21d4b88338a092a64538cca33b41cc481c4
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090955"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216733"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 
@@ -53,7 +53,7 @@ ms.locfileid: "30090955"
 
     測試以確保能運作視您監督原則是確保合規策略會議您標準重要的一部分。
 
-- **步驟 6-（選用）**[Outlook 增益集不想要使用 Office 365 監督儀表板或 OWA 檢閱監督的通訊的檢閱者的設定](configure-supervision-policies.md#UseOutlook)
+- **步驟 6-（選用）**[Outlook 增益集不想要使用 Office 365 監督儀表板或 （前身為 Outlook Web App） 在 web 上的 Outlook 檢閱監督的通訊的檢閱者的設定](configure-supervision-policies.md#UseOutlook)
 
     監督的增益集 Outlook 可以讓檢閱者存取 Outlook 用戶端內的監督的功能權限，讓他們可以評估並將每個項目。
 

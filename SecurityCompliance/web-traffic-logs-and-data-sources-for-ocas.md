@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: Office 365 雲端應用程式安全性適用於從各種提供者的網頁流量記錄。閱讀本篇文章以深入了解網頁流量記錄和支援的 Office 365 雲端應用程式安全性的資料來源。
-ms.openlocfilehash: ab962e4a030d06c133ad9fc4aa62a60755793bc3
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+ms.openlocfilehash: 67246ded0e3d39c81b5b906f753b91298309d1d8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447051"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218103"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性的網路流量記錄與資料來源
   

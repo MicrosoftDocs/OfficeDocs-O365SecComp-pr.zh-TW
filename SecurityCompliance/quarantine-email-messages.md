@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 description: 您可以設定隔離的 Office 365 其中大量已為垃圾郵件篩選的內送電子郵件、 網路釣魚郵件中的內送電子郵件和惡意程式碼可以保留供日後檢閱。
-ms.openlocfilehash: a336e1fed0bd9a3c1e347610f6a42b70f5c80b1b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fe8e59718a6b7293821875d19ba2b98070396f0f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526605"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217763"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>隔離 Office 365 中的電子郵件
 

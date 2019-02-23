@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 可協助說明在兩個繼續以共同運作的方式與不同版本的 Office 365 郵件加密，以及傳送的功能差異。
-ms.openlocfilehash: a418d840c7e0eb50ae076bf2b03164bef9488058
-ms.sourcegitcommit: 88f3982217c29b558e3f9e838bcb425da395dd5e
+ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "29708540"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216673"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 
@@ -32,10 +32,10 @@ ms.locfileid: "29708540"
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**功能**                     | **舊版 OME**    | **IRM**           | **OME 的新功能** |
 |*傳送加密的郵件*        |透過 Exchange 郵件流程規則|從 Outlook 桌面或 Outlook Web; 上的起始的使用者或透過 Exchange 郵件流程規則|從 Outlook 桌面、 Outlook for Mac 或 Outlook Web; 上的起始的使用者透過 Exchange 傳輸規則和 Office 365 資料外洩防護 (DLP)|
-|*權限管理範本*       |   無      |不要轉寄選項和自訂範本|不要轉寄] 選項、 僅限加密的選項和自訂範本|
+|*權限管理範本*       |   不適用      |不要轉寄選項和自訂範本|不要轉寄] 選項、 僅限加密的選項和自訂範本|
 |*收件者類型*                   |內部和外部收件者|僅限內部收件者         |內部和外部收件者|
 |*內部收件者的體驗*|收件者會收到他們下載並在網頁瀏覽器或行動裝置應用程式中開啟 HTML 郵件|在 Outlook 用戶端的原生內嵌經驗|Office 365 的收件者的原生內嵌體驗。所有其他收件者可以讀取郵件從 OME 入口網站 （沒有下載 （英文） 或應用程式所需）。|
-|*外部收件者經驗*|收件者會收到他們下載並在網頁瀏覽器或行動裝置應用程式中開啟 HTML 郵件|無|Office 365 的收件者的原生內嵌體驗。所有其他收件者可以讀取郵件從 OME 入口網站 （沒有下載 （英文） 或應用程式所需）。|
+|*外部收件者經驗*|收件者會收到他們下載並在網頁瀏覽器或行動裝置應用程式中開啟 HTML 郵件|不適用|Office 365 的收件者的原生內嵌體驗。所有其他收件者可以讀取郵件從 OME 入口網站 （沒有下載 （英文） 或應用程式所需）。|
 |*附件的權限*           |不受限制的附件|保護|保護不要轉寄選項和自訂範本。系統管理員可以選擇是否或未保護加密唯讀] 選項的附件。|
 |*將您自己的索引鍵 (BYOK) 支援*|無                |無               |BYOK 支援          |
 ||

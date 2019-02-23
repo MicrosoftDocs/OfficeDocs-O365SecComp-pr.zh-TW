@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 description: 請參閱如何您可以從移洞察力到安全性的詳細報告&amp;資料遺失防護範例透過規範中心。
-ms.openlocfilehash: d8ef40b000f9e5fcf7ee1826b020efc95776709c
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 4b6fee45ebd48a0bd6d5c6c166fb200b28cb9442
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014855"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217323"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>逐步解說 - 從深入解析到詳細報告
 

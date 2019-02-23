@@ -1,12 +1,12 @@
 ---
-title: 隔離的 SharePoint Online 小組網站開發/測試環境
+title: 獨立的 SharePoint Online 小組網站開發/測試環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
@@ -14,14 +14,14 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：設定 SharePoint Online 小組網站，該網站與 Office 365 開發/測試環境中組織的其他網站隔離。
-ms.openlocfilehash: 0aa5e6e47344134b1e103fb287f627afd2808af6
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: a8a02c10f799b136b299801a3636820e4f64e087
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345815"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217133"
 ---
-# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>隔離的 SharePoint Online 小組網站開發/測試環境
+# <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 
  **摘要：** 設定 SharePoint Online 小組網站，該網站與 Office 365 開發/測試環境中組織的其他網站隔離。
   
@@ -234,7 +234,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 10. 複製 ProjectX 文件資料夾的 URL，並將它貼至記事本或文字編輯器中新的一行。
     
-11. 在 [新**ProjectX 文件**] 索引標籤在瀏覽器中按一下 [**新增 > Word 文件**。
+11. 在 [新**ProjectX 文件**] 索引標籤在瀏覽器中按一下 [**新 > Word 文件**。
     
 12. **Word Online** ] 頁面中輸入一些文字、 等待以指出**儲存**] 和 [上一頁] 按鈕在瀏覽器中，然後重新整理] 頁面上的狀態。您應該會看見新**Document.docx** **文件**] 資料夾中。
     
@@ -286,7 +286,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
   
 ## <a name="see-also"></a>另請參閱
 
-[隔離的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
+[獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
   
 [雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   

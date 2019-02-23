@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '取得可讓您設定參數、 執行選項，並檢視 Office 365 進階 eDiscovery 結果、 分析處理程序的概觀。 '
-ms.openlocfilehash: d20ce3acb9c21e8c35b098df2ffae3fa6c871c3e
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527278"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217463"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>使用 Office 365 進階電子文件探索分析案例資料
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 **準備** \> **分析**處理程序進階在 eDiscovery 中的包含的檔案套用下列功能： 
   

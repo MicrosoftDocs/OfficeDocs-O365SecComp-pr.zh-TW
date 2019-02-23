@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 10/12/2018
 ms.audience: End User
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 description: 上次更新： 5 2017
-ms.openlocfilehash: 75714c097690b222ebd3b8d25ab2e0eca8fe8d91
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: bd49b496685b94ed4555e6d8b0ff82c0aff5a202
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522234"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219153"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>針對 Office 365 Secure Email Portal 隱私權聲明
 

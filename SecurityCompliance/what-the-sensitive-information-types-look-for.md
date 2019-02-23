@@ -9,17 +9,17 @@ search.appverid: MET150
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Office 365 安全性的資料遺失防護 (DLP)&amp;規範中心包含 80 準備好讓您能夠使用 DLP 原則中的敏感資訊類型。本主題列出所有的這些機密資訊類型及顯示新的 DLP 原則會尋找時被每個類型。
-ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194734"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216353"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
 
@@ -246,7 +246,7 @@ iaea
 - 兩位數 
 - 五個數字或字母 (不區分大小寫)
 
-OR
+或
 
 - 1-2 選用字母 (不區分大小寫) 
 - 4-9 位數
@@ -814,7 +814,7 @@ identité
 ### <a name="pattern"></a>模式
 14 位數，加上分隔符號：
 - 兩位數 
-- 句點  
+- 句點 
 - 三位數 
 - 句點  
 - 三位數 (此前 8 位數為登記碼)  
@@ -904,9 +904,9 @@ Registro de Identidade (RIC) （新格式）： 11 位數
 
 Registro Geral (舊格式)：
 - 兩位數 
-- 句點  
+- 句點 
 - 三位數 
-- 句點  
+- 句點 
 - 三位數 
 - 一個連字號 
 - 一位數的檢查碼
@@ -1642,7 +1642,7 @@ national id
 - 1-2 位數 
 - 句點  
 - 三位數 
-- 句點  
+- 句點 
 - 三位數 
 - 一個破折號 
 - 一位數或字母 (不區分大小寫) 的檢查碼
@@ -1748,8 +1748,7 @@ national id
 
 - Resident Identity Card
  
-- PRC
- 
+- 中國 
 - National Identification Card
  
 - 身份证  
@@ -5818,8 +5817,7 @@ Passeport n °
 - 識別卡 
 - Alien Resident Certificate
  
-- ARC
- 
+- 弧線 
 - Taiwan Area Resident Certificate
  
 - TARC

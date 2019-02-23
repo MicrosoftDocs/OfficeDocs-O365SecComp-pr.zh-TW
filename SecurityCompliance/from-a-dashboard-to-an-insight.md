@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: 了解如何您可以前往儀表板洞察力安全性建議的動作 （英文）&amp;規範中心。
-ms.openlocfilehash: cbea4dadefa498ac164773718ef8a4dbad351fb7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 1c43d529d02872563bf6e1c9643b542ab6b8db9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014725"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220523"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>逐步解說 - 從儀表板到深入解析
 

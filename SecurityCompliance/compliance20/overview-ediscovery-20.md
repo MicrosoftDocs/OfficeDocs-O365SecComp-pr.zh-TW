@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明 Microsoft 365 中的進階 eDiscovery （預覽） 的新版本。
-ms.openlocfilehash: cb82541037983ca21cefbefb7f72fffa3b054373
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a7b134cb527ae98b9df659a9377903f8fcdb3e9f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706154"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219573"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Microsoft 365 中的進階 eDiscovery （預覽） 的概觀
 

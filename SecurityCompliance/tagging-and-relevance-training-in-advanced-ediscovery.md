@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: '了解標記的步驟，然後與訓練樣本的 40 檔案搭配使用 Office 365 進階 eDiscovery 相關性訓練階段。  '
-ms.openlocfilehash: 90272452c8c1317957e542eba07bc43722f9c0e9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526788"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221063"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索中的標記與相關性訓練
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 本主題說明使用進階的 eDiscovery 相關性訓練單元的程序。 
   

@@ -1,5 +1,5 @@
 ---
-title: 部署 Office 365 應用程式的設定格式化的條件的 Access 應用程式控制項
+title: 為 Office 365 應用程式部署條件式存取應用程式控制
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,21 +7,21 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 請遵循下列步驟來設定 Office 365 雲端應用程式的安全性設定格式化的條件 Access 應用程式控制項所控制的 Azure AD Office 365 應用程式。
-ms.openlocfilehash: ba3980615815fa45b1385a67560cc635506e2c22
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: cfb3d885fdfaf0e4698b1f8f9a0e13baacf43f66
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103288"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221053"
 ---
-# <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>部署 Office 365 應用程式的設定格式化的條件的 Access 應用程式控制項
+# <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>為 Office 365 應用程式部署條件式存取應用程式控制
 
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](ocas-session-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](ocas-session-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
 
 請遵循下列步驟來設定 Office 365 雲端應用程式的安全性設定格式化的條件 Access 應用程式控制項所控制的 Azure AD Office 365 應用程式。
 

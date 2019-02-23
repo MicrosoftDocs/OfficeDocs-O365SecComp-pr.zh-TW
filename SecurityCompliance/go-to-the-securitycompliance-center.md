@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - PCOverview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: Office 365 安全性&amp;規範中心是 Office 365 的資料保護您一層停駐點入口網站。使用 Office 365 安全性&amp;來管理您的組織資料的所有規範跨 Office 365 規範中心。
-ms.openlocfilehash: fddecb9ab6cdc9dce6d57c8ac44762eaacb3ace3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 31cb275b8a961d597db06a6597660c3a07b7e8d7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526619"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219293"
 ---
 # <a name="go-to-the-office-365-security-amp-compliance-center"></a>移至 Office 365 安全性&amp;規範中心
 
@@ -35,9 +35,9 @@ Office 365 安全性&amp;規範中心是 Office 365 的資料保護您一層停�
     
 以下是最直接的方式來取得安全性&amp;規範中心：
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 ![Office 365 安全性&amp;規範中心首頁](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
   

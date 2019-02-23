@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: 了解如何下載安全性的一或多個現有報告&amp;規範中心。
-ms.openlocfilehash: b4231a29fd9c3282bd36bed6197f811de36de092
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014835"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219123"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>下載現有報告安全性&amp;規範中心
 

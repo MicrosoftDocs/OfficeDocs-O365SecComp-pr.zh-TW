@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -13,12 +13,12 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: M365-security-compliance
 description: 了解 Office 365 企業版如何協助保護您的組織各種包括詐騙、 惡意程式碼、 垃圾郵件、 網路釣魚嘗試及未經授權的存取資料的威脅。
-ms.openlocfilehash: 6caf891acb8c96d17a3aa1b4ffc222380ed9341b
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: ca2bfda0403a1f482989977f7bc018bbd94afeb5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995134"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220483"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防範 Office 365 中的威脅
 

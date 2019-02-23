@@ -5,25 +5,25 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
-description: 閱讀本文以了解如何在 Office 365 進階安全性管理，由 Microsoft Azure 中的雲端應用程式安全性提供開啟。
-ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 閱讀本文以了解如何在 Office 365 雲端應用程式安全性]，由 Microsoft Azure 中的雲端應用程式安全性提供開啟。
+ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603774"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220363"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>開啟 Office 365 雲端 App 安全性
   
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](activity-policies-and-alerts.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](activity-policies-and-alerts.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
   
 ## <a name="turn-on-office-365-cloud-app-security"></a>開啟 Office 365 雲端 App 安全性
 

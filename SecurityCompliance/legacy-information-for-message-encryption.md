@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 1/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 description: 如果您尚未尚未移動 Office 365 組織到新的 OME 功能，但您已部署 OME，本文資訊適用於您組織。Microsoft 建議您將移至新的 OME 功能一旦是組織的合理的計劃。指示，請參閱 ＜ Set up 新建置上方的 Azure 資訊保護的 Office 365 郵件加密功能。如果您想要了解更多有關的新功能如何運作前，請參閱 Office 365 郵件加密。本文的其餘部分是指 OME 行為的新 OME 功能發行前。
-ms.openlocfilehash: d5b21cbe0004ca7bda38085bd5d8ef5f2a22b04e
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1f809ca996f072269f40bcb6c7ce6f7a420cccb1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526839"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219253"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 郵件加密的舊版資訊
 
@@ -25,7 +25,7 @@ ms.locfileid: "22526839"
   
 與 Office 365 郵件加密，您的組織可以傳送和接收組織內外的人員之間的加密電子郵件訊息。Office 365 郵件加密適用於 Outlook.com、 Yahoo、 Gmail、 及其他電子郵件服務。電子郵件訊息加密有助於確保只有預定的收件者可以檢視郵件內容。
   
-以下為一些範例：
+以下列舉幾個想法︰
   
 - 銀行員工將信用卡帳單傳送給客戶
     
@@ -95,10 +95,10 @@ Office 365 郵件加密是一種線上服務的內建 Microsoft Azure 版權管�
 
 |**若要自訂此加密經驗功能**|**請使用這些 Windows PowerShell 命令**|
 |:-----|:-----|
-|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
-|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
-|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-|標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **範例：**`Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支援的檔案格式：.png、.jpg、.bmp 或 .tiff  <br/> 標誌檔案的最佳大小：小於 40 KB  <br/> 標誌影像的最佳大小：170x70 像素  <br/> |
+|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
+|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
+|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
+|標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **範例：** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支援的檔案格式：.png、.jpg、.bmp 或 .tiff  <br/> 標誌檔案的最佳大小：小於 40 KB  <br/> 標誌影像的最佳大小：170x70 像素  <br/> |
    
  **若要移除的商標自訂加密電子郵件和加密入口網站**
   
@@ -110,8 +110,8 @@ Office 365 郵件加密是一種線上服務的內建 Microsoft Azure 版權管�
 
 |**將加密體驗的這項功能回復為預設文字和影像**|**請使用這些 Windows PowerShell 命令**|
 |:-----|:-----|
-|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
-|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
+|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
+|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
 |出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **回復為預設的範例：**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
 |標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **回復為預設的範例：**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
    

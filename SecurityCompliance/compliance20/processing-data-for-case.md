@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 1e473ee3813e53600d8843c0db399e54fc16915f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694809"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219553"
 ---
 # <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>修正進階 eDiscovery (Preview) 中處理錯誤
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Cmdlet 可用於適用於 Office 365 信箱移轉簡短摘要。
-ms.openlocfilehash: 195497d94ab434c66a176e37fb84f6cd1da48baa
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 8e0f23a3efbbcf6f84364c09e667678972120e18
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090775"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219143"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365 信箱移轉
 Exchange 型混合部署，客戶可以選擇內部部署 Exchange 信箱移至[Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)組織或將 Exchange Online 信箱移至[Exchange 內部](https://docs.microsoft.com/Exchange/exchange-server)部署組織。遷移批次所使用的內部部署和 Exchange Online 組織之間移動信箱時。客戶可以檢閱統計資料和信箱移轉使用下列 cmdlet 的其他資訊：

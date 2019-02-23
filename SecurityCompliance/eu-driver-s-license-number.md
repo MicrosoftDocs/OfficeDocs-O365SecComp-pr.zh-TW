@@ -6,16 +6,16 @@ manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: c3923cd3-ec84-435f-bf41-cadc37996a4b
 description: 本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟駕照編號敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
-ms.openlocfilehash: 065684249f9766d567c63e6b8170d36f56692e45
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 86be7b52aed7581fd62ab595ac2c4b63ab33aab3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526716"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217743"
 ---
 # <a name="eu-drivers-license-number"></a>歐盟駕照編號
 
@@ -220,7 +220,7 @@ ms.locfileid: "22526716"
 |:-----|
 |dl #  <br/> 驅動程式授權  <br/> 驅動程式照編號  <br/> 驅動程式授權  <br/> 發行的驅動程式 lic。  <br/> 發行的驅動程式授權  <br/> drivers licence  <br/> 駕照編號  <br/> 驅動程式的授權數目  <br/> 主導照編號  <br/> dlno #  <br/> ΆΔΕΙΑ ΟΔΉΓΗΣΗΣ  <br/> |
    
-## <a name="czech-republic"></a>捷克
+## <a name="czech-republic"></a>捷克共和國
 
 ### <a name="format"></a>格式
 
@@ -485,7 +485,7 @@ permis de conduire  <br/> |
 |:-----|
 |dl #  <br/> 驅動程式授權  <br/> 驅動程式照編號  <br/> 驅動程式授權  <br/> 發行的驅動程式 lic。  <br/> 發行的驅動程式授權  <br/> drivers licence  <br/> 駕照  <br/> 駕照編號  <br/> 驅動程式的授權數目  <br/> 主導照編號  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>愛爾蘭
 
 ### <a name="format"></a>格式
 

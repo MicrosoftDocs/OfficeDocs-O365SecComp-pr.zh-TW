@@ -3,22 +3,21 @@ title: Office 365 進階 eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: 了解 Office 365 進階 eDiscovery 可協助您在 Office 365 中分析資料、 簡化文件檢閱 （英文），並制定決策有效率 ediscovery （英文）。
-ms.openlocfilehash: e13d320d633cc0b3a6ab4566f54afa982de317f9
-ms.sourcegitcommit: 0f5a75d1cea0e61a7ac7e0459447fd785566b75d
+ms.openlocfilehash: 7bef666b4b178fee883f52549ae75717bd55f45a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "29559036"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219273"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 進階 eDiscovery
 

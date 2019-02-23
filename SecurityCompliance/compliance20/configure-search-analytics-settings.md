@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9528a4bcfaa77f2e232b25d03eda46cce42ebb9
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 253650bb9916da8260491870d1a0bc899d6245c8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607559"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217103"
 ---
 # <a name="configure-search-and-analytics-settings"></a>設定搜尋和分析設定
 

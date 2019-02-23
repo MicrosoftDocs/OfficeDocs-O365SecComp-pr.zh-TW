@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 10/11/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - OWC150
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: 若要協助防止網路釣魚，Office 365 及 Outlook.com 現在需要的 RFC 規範從： 地址。
-ms.openlocfilehash: 8425d4ef7635c2beddcd7915daf73736432d4ca9
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: df2f399e4044e9e96eab20e6789a8a53fad9015c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955425"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217163"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 來阻止網路釣魚 From 地址的驗證
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection: M365-security-compliance
 description: 了解如何尋找並使用您的組織與 Office 365 企業版的電子郵件安全性報告。安全性中有電子郵件安全性報告&amp;規範中心。
-ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 809bfbdfdda8bd1ed9b88c9bca7e9ce14d774868
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995294"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216413"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>在 [安全性] 中檢視電子郵件安全性報表&amp;規範中心
 

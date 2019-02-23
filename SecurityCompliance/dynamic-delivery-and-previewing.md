@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 01/08/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: 當您設定好您 ATP 安全附件原則時，您選擇以避免郵件延遲，並啟用人員預覽會掃描附件的動態傳遞。
-ms.openlocfilehash: ae027986cf5114bd024c679a59975d1e4be52d32
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 1fb221d28a4089db8a4278903107c610d6825f5e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995144"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218393"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和 Office 365 ATP 安全附件預覽
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/1/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: 了解保留先前的員工的信箱內容的忘記轉換為非作用中信箱的信箱。您可以將 Office 365 保留原則套用至信箱並再移除對應的 Office 365 帳戶或在訴訟暫止狀態通信箱來這麼做。
-ms.openlocfilehash: 5b421e32df99a10d13528fe7a75e6a0e8fb54fdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 67027ecd06771c0369e7f150c9eaa3e2030e2aab
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526824"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216683"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 中的非使用中信箱的概觀
 

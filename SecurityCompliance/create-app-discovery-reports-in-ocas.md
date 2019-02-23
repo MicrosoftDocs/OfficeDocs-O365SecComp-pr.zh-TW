@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: 建立報表與 Office 365 雲端應用程式安全性可讓您了解如何在組織中的人員會使用 Office 365 和其他應用程式。
-ms.openlocfilehash: e0d515ddd9b08aa4a70276177060f273cc89949e
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 23165a52a09e5bcde46ee3ab2110dc17d0faf7f4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087292"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220293"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>使用 Office 365 雲端 App 安全性建立 App 探索報表
 

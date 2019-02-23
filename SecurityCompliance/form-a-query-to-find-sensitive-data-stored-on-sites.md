@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
 description: 與資料外洩防護 (DLP) SharePoint Online 中，您可以探索包含機密資料整個租用戶中的文件。之後探索文件，您可以使用以保護資料的文件擁有者。本主題可協助您的表單來搜尋機密資料的查詢。
-ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
-ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
+ms.openlocfilehash: 3dc1081d4627f1a26c50eed84f733c31a3f6c194
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "25829184"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217233"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 
@@ -63,9 +63,9 @@ ms.locfileid: "25829184"
 |**查詢**|**說明**|
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |因為它是這麼久，但該機密類型的正確名稱似乎怪異名稱。請務必使用[敏感資訊類型詳細目錄](https://go.microsoft.com/fwlink/?LinkID=509999)中的實際名稱。您也可以使用您為組織建立[自訂的敏感資訊類型](create-a-custom-sensitive-information-type.md)的名稱。<br/> |
-| ' SensitiveType:"信用卡號|1..4294967295|1..100"' <br/> |這會具有至少一個相符的文件傳回成機密類型"信用卡號"。每個範圍的值是個別的最小和最大值。更簡單的方法來撰寫此查詢是`SensitiveType:"Credit Card Number"`，但所在中的樂趣吗？<br/> |
-| ' SensitiveType:"信用卡號| 5..25"AND LastSensitiveContentScan:"8/11/2018..8/13/2018"' <br/> |這會從 2018 年 8 月 11、 透過 2018 年 8 月 13、 傳回 5-25 信用卡號所掃描的文件。  <br/> |
-| ' SensitiveType:"信用卡號| 5..25"AND LastSensitiveContentScan:"8/11/2018..8/13/2018"不 FileExtension:XLSX' <br/> |這會從 2018 年 8 月 11、 透過 2018 年 8 月 13、 傳回 5-25 信用卡號所掃描的文件。XLSX 副檔名的檔案不包含在查詢結果。 `FileExtension`是其中一個可以包含在查詢中的許多屬性。如需詳細資訊，請參閱[使用搜尋屬性與使用 eDiscovery 的運算子](https://go.microsoft.com/fwlink/?LinkId=510093)。<br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |這會具有至少一個相符的文件傳回成機密類型"信用卡號"。每個範圍的值是個別的最小和最大值。更簡單的方法來撰寫此查詢是`SensitiveType:"Credit Card Number"`，但所在中的樂趣吗？<br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |這會從 2018 年 8 月 11、 透過 2018 年 8 月 13、 傳回 5-25 信用卡號所掃描的文件。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |這會從 2018 年 8 月 11、 透過 2018 年 8 月 13、 傳回 5-25 信用卡號所掃描的文件。XLSX 副檔名的檔案不包含在查詢結果。 `FileExtension`是其中一個可以包含在查詢中的許多屬性。如需詳細資訊，請參閱[使用搜尋屬性與使用 eDiscovery 的運算子](https://go.microsoft.com/fwlink/?LinkId=510093)。<br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |這會傳回包含信用卡號碼或身分證字號的文件。  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>範例
@@ -74,13 +74,13 @@ ms.locfileid: "25829184"
   
 |**不受支援的查詢**|**原因**|
 |:-----|:-----|
-| ' SensitiveType:"信用卡號|.."` <br/> |您必須至少新增一個數值。  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |您必須至少新增一個數值。  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule"不是有效的機密類型名稱。DLP 查詢中運作僅[敏感資訊類型詳細目錄](https://go.microsoft.com/fwlink/?LinkID=509999)中的名稱。<br/> |
-| ' SensitiveType:"信用卡號|0"' <br/> |最小值或範圍中的最大值為零而言無效。  <br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |最小值或範圍中的最大值為零而言無效。  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |很可能很難將看到，但是沒有額外"信用"和"卡片"讓查詢無效之間的空格。使用[敏感資訊類型詳細目錄](https://go.microsoft.com/fwlink/?LinkID=509999)中的確切機密類型名稱。<br/> |
-| ' SensitiveType:"信用卡號|1.。 3"' <br/> |不應該以空格分隔的兩個週期部分。  <br/> |
-| ' SensitiveType:"信用卡號| |1.|80。。 {3}"' <br/> |有太多管道分隔符號 （|).請改為遵循此格式： ' SensitiveType:"信用卡號|1.|80。。 {3}"' <br/> |
-| ' SensitiveType:"信用卡號|1.|80..101"' <br/> |信賴值都代表百分比，因為它們不能超過 100。而是介於 1 到 100 選擇數字。  <br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |不應該以空格分隔的兩個週期部分。  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |有太多管道分隔符號 （|).請改為遵循此格式：`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |信賴值都代表百分比，因為它們不能超過 100。而是介於 1 到 100 選擇數字。  <br/> |
    
 ## <a name="for-more-information"></a>如需詳細資訊
 

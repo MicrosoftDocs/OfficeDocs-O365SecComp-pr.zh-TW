@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 41eb4324-c513-4fa5-91c8-8fbd8aaba83b
 description: 與 Office 365 的 DLP 報告，您可以快速檢視 DLP 原則比對、 覆寫或誤判; 的數目請參閱是否他們正在趨勢向上或向下一段時間 ；以不同方式 ； 篩選報表與其他詳細資料檢視中選取圖形上線條上的一點。
-ms.openlocfilehash: 379e66fc3f2611cf338739d030c2b1d48e7416d8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4e9e5405b5c35719c1b14efca91cdf87f416e7bd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013907"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217573"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 
@@ -74,7 +74,7 @@ ms.locfileid: "23013907"
 
 若要使用大部分的指令程式以安全性&amp;規範中心，您必須：
   
-1. [連線至 Office 365 安全性&amp;規範中心使用遠端 PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用下列任何一這些[Office 365 安全性&amp;規範中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     

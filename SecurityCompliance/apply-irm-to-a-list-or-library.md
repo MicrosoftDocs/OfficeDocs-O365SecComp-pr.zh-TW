@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 7/2/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
@@ -14,13 +14,15 @@ search.appverid:
 - OSU160
 - MET150
 ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
+ms.collection:
+- M365-security-compliance
 description: 您可以使用資訊版權管理 (IRM) 協助控制及保護從清單或文件庫下載的檔案。
-ms.openlocfilehash: 5a48abf13841716d4dba34311d69ca2e6a5ea422
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ae07136cf128f167695f667cc8a149492287f498
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526683"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220413"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>套用至清單或文件庫的資訊版權管理 (IRM)
 

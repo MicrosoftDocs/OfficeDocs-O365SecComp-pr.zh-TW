@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/18/2016
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
 description: 敏感資訊類型尋找特定模式與證實來確保適當格式、 強制執行總和檢查碼，以及尋找相關的關鍵字或其他資訊。某些這項功能是由內部函數執行。本主題說明這些函數外觀，以協助您瞭解預先定義的敏感資訊類型的運作方式。
-ms.openlocfilehash: 510f98e2b4e1d2480550f11026cf445be6ffc931
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013757"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219353"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 功能所尋找的項目
 

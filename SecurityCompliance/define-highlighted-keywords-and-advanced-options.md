@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: '了解如何將使用者定義的關鍵字新增至相關性來協助識別相關的檔案時的 Office 365 進階 eDiscovery 標記，並指定成本參數。  '
-ms.openlocfilehash: c7e16fc18ba724d5b778b42e3782e04df10c50ec
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e380f63691d30216a082a51aac406329a9d0159f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526587"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220653"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中定義反白顯示關鍵字與進階選項
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 進階 ediscovery 很可能以協助您識別相關的檔案時標記將使用者定義的關鍵字新增至相關性。關鍵字將會顯示在內指定的色彩**相關性\>標記**。 
   
@@ -74,7 +74,7 @@ ms.locfileid: "22526587"
 
 [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
   
-[定義的問題和指派使用者](define-issues-and-assign-users.md)
+[定義問題並指派使用者](define-issues-and-assign-users.md)
   
-[若要新增匯入的檔案載入設定](set-up-loads-to-add-imported-files.md)
+[設定負載以新增匯入的檔案](set-up-loads-to-add-imported-files.md)
 

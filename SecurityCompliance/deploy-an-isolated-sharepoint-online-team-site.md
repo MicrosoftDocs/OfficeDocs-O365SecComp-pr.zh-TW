@@ -1,25 +1,25 @@
 ---
-title: 部署隔離的 SharePoint Online 小組網站
+title: 部署獨立的 SharePoint Online 小組網站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要： 部署新隔離的 SharePoint Online 小組網站與這些逐步指示。
-ms.openlocfilehash: d233ec46b1e7257a92451c781afd6c61312f44b8
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 6a552e7ce8982f3b7d943136907764385fa33115
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345975"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216603"
 ---
-# <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署隔離的 SharePoint Online 小組網站
+# <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
  **摘要：** 部署新隔離的 SharePoint Online 小組網站與這些逐步指示。
   
@@ -187,7 +187,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 4. **存取要求設定**] 對話方塊中，清除 [**允許成員共用網站和個別的檔案及資料夾**，以及**允許存取權要求**（使已取消選取所有的三個核取方塊），然後按一下 [**確定]**。
     
-5. 在瀏覽器中的 [**權限**] 索引標籤中，按一下 [**\<站台名稱 > 成員**清單中。
+5. 在瀏覽器中的 [**權限**] 索引標籤中，按一下 [**\<網站 name> 成員**清單中。
     
 6. 在 [人員與群組]**** 中，按一下 [新增]****。
     
@@ -195,7 +195,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 8. 按一下瀏覽器上的 [上一頁] 按鈕。
     
-9. 按一下 [**\<站台名稱 > 擁有者**清單中。
+9. 按一下 [**\<網站 name> 擁有者**清單中。
     
 10. 在 [人員與群組]**** 中，按一下 [新增]****。
     
@@ -203,7 +203,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 12. 按一下瀏覽器上的 [上一頁] 按鈕。
     
-13. 按一下 [**\<站台名稱 > 訪客**清單中。
+13. 按一下 [**\<網站 name> 訪客**清單中。
     
 14. 在 [人員與群組]**** 中，按一下 [新增]****。
     
@@ -213,11 +213,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 這些權限設定的結果是：
   
-- **\<站台名稱 > 擁有者**SharePoint 群組包含網站管理員存取群組中的所有成員具有 [**完全控制**」 權限層級。
+- **\<網站 name> 擁有者**SharePoint 群組包含網站管理員存取群組中的所有成員具有 [**完全控制**」 權限層級。
     
-- **\<站台名稱 > 成員**SharePoint 群組包含網站成員存取群組，其中的所有成員擁有 「**編輯**」 權限層級。
+- **\<網站 name> 成員**SharePoint 群組包含網站成員存取群組，其中的所有成員擁有 「**編輯**」 權限層級。
     
-- **\<站台名稱 > 訪客**SharePoint 群組包含網站檢視者存取群組中的所有成員具有 「**讀取**」 權限等級。
+- **\<網站 name> 訪客**SharePoint 群組包含網站檢視者存取群組中的所有成員具有 「**讀取**」 權限等級。
     
 - 若要邀請其他成員的成員或非成員要求存取的功能已停用。
     
@@ -227,13 +227,13 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 您與網站，透過群組成員資格之一的存取群組的成員可以立即共同作業網站的資源。
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 當您需要變更網站的存取群組成員資格或建立自訂的權限的文件資料夾時，請參閱[管理隔離的 SharePoint Online 小組網站](manage-an-isolated-sharepoint-online-team-site.md)。
   
 ## <a name="see-also"></a>另請參閱
 
-[隔離的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
+[獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
   
 [設計獨立的 SharePoint Online 小組網站](design-an-isolated-sharepoint-online-team-site.md)
   

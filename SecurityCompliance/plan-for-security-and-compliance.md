@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 3/15/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 規劃安全性及規範的登陸頁面
-ms.openlocfilehash: 9a0f41b44d92d093c16f97e5eed4060b33fb294c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 71d814fbbc946fddbc57d4528f43b83589454e31
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527004"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218463"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>規劃安全性&amp;Office 365 的守規
 
@@ -38,7 +38,7 @@ ms.locfileid: "22527004"
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步驟 3： 規劃存取保護身分識別與裝置
 
-保護您的 Office 365 資料及服務的存取很重要防禦適當攻擊及防範資料遺失。
+保護 Office 365 的資料與服務存取權，對於防禦網路攻擊與防止資料遺失而言很重要。
   
 - [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
     
@@ -77,7 +77,7 @@ ms.locfileid: "22527004"
 |**訂閱**|**管理 URL**|**儀表板與管理中心**|
 |:-----|:-----|:-----|
 |Office 365  <br/> |`https://portal.office.com`  <br/> | Office 365 系統管理中心  <br/>  安全性&amp;規範中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint 系統管理中心和 OneDrive for Business 系統管理中心  <br/> |
-|Enterprise 行動性 + 安全性  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 行動應用程式管理  <br/>  Microsoft Intune  <br/> |
-|Enterprise 行動性 + 安全性  <br/> |`https://portal.cloudappsecurity.com`  <br/> | 雲端應用程式安全性  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 行動應用程式管理  <br/>  Microsoft Intune  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | 雲端 App 安全性  <br/> |
    
 

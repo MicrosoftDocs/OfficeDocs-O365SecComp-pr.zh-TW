@@ -1,23 +1,25 @@
 ---
 title: 使用客戶金鑰控制 Office 365 中的資料
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/1/2018
 ms.audience: ITPro
-ms.topic: get-started-article
-ms.service: o365-administration
+ms.topic: article
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
+ms.collection:
+- M365-security-compliance
 description: 了解如何設定客戶金鑰 for Office 365 的 Exchange Online、 Skype Business、 SharePoint Online 和 OneDrive for Business。與客戶金鑰您控制您組織的加密金鑰及使用方式來加密的 Microsoft 資料中心的靜態資料的 Office 365，則設定。
-ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: a14a213951bc87e4106e150c88c6b1461a5e685e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723250"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218753"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>使用客戶金鑰控制 Office 365 中的資料
 

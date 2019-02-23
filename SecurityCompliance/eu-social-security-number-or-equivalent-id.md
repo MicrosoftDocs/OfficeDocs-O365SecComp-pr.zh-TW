@@ -6,16 +6,16 @@ manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
 description: 本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟社會安全號碼或對等識別碼敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
-ms.openlocfilehash: 6f1027dcfb648ed937b8180d74d4bc6348dab650
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526634"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216523"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>歐盟社會安全號碼或對等資格識別碼
 
@@ -253,7 +253,7 @@ oib
   
 osobni identifikacijski broj
   
-## <a name="czech-republic"></a>捷克
+## <a name="czech-republic"></a>捷克共和國
 
 ### <a name="format"></a>格式
 

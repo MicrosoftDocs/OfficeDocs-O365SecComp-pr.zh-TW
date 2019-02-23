@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '以系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。您可以設定原則，讓 Office 365 篩選郵件並傳送至隔離下列幾個原因： 因為他們已識別為垃圾郵件、 大量、 網路釣魚、 惡意程式碼、 或因為其符合某個 [郵件流程規則。 '
-ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: d62aded09f3560de6ba4485757c1bb5ce3f8cb6d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792504"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219193"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>在 Office 365 系統管理員身分管理隔離的郵件和檔案
 

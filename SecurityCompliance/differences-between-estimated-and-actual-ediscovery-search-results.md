@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 4/13/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解為何評估及實際的搜尋結果可能會有不同的 Office 365 中的 eDiscovery 工具以執行搜尋。 '
-ms.openlocfilehash: b68f5ea2a24d3229a65b360f390284374a1efd39
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 35aa1163e33e6c8a07c765d620803e93a8e6290d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037996"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217343"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的評估及實際的 eDiscovery 搜尋結果之間的差異
 

@@ -8,19 +8,19 @@ ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: 與 Office 365 安全性資料外洩防護 (DLP) 原則&amp;規範中心，您可以識別、 監視和自動跨 Office 365 保護敏感資料。
-ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
-ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
+ms.openlocfilehash: bf30e7de625903c3cce53407901f627ef1345d66
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "25829194"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218973"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 

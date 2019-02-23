@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: IT Pro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 取得您可能會看到 Office 365 進階威脅保護位於工時警告頁面的概觀。
-ms.openlocfilehash: ac8de545fd5e54d66168c83671cbe262665bb135
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: c854b32b3750f2ccd71e1d66f9dc8f8c54564f08
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995264"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217143"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全連結警告頁面
 

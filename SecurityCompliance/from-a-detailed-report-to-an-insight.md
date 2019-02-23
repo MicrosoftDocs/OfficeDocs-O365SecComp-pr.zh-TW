@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: 了解如何您可以從移動的詳細報告到洞察力安全性建議的動作 （英文）&amp;規範中心。
-ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014975"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219083"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>逐步解說 - 從詳細報告到深入解析
 

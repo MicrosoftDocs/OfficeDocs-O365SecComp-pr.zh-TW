@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: 了解如何設定安全性的報表排程&amp;規範中心。
-ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014775"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216753"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在 [安全性] 中建立報表的排程&amp;規範中心
 

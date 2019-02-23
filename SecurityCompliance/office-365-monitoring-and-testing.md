@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 摘要： 如何說明 Microsoft 來進行監視及測試 Office 365 承租人界限。
-ms.openlocfilehash: 25b6f713d766b4b12e1c250b54421ad99dff8a1c
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: fce217bfcb5fec1ba3fb6da70eb6f9da9a2c1d44
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090935"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221093"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>監視及測試租用戶界限
 Microsoft 持續來進行監視及明確地測試的缺點和弱點的租用戶界限包括入侵、 權限違規嘗試及資源耗竭監控。我們也會使用多個內部系統持續監控不適當的資源使用情況，如果偵測到，會觸發內建的節流設定。

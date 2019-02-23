@@ -6,16 +6,16 @@ manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
 description: 本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟國家識別碼敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
-ms.openlocfilehash: 29d2126b937ff46039284a74eb2a84f2ebbacb41
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526694"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220633"
 ---
 # <a name="eu-national-identification-number"></a>歐盟國家識別碼
 
@@ -211,7 +211,7 @@ edinen grazhdanski nomer
   
 ΤΑΥΤΟΤΗΤΑΣ
   
-## <a name="czech-republic"></a>捷克
+## <a name="czech-republic"></a>捷克共和國
 
 如需詳細資訊，請參閱節"捷克文國民身分識別 Number"中[尋找敏感資訊類型](what-the-sensitive-information-types-look-for.md)。
   
@@ -363,7 +363,7 @@ identification number
   
 személyazonosító igazolvány
   
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>愛爾蘭
 
 ### <a name="format"></a>格式
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 158af8acf4acdb8ad6650c377a23b44ed28c6f54
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: f8f1a92f001bf8f9e23f54bbb05fbbcf443bf4b9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607534"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218663"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>進階的監管人資料索引
 

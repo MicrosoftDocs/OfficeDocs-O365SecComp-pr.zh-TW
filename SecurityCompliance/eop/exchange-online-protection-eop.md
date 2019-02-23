@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 以下是一些您應該要知道您開始使用 EOP 之前。
-ms.openlocfilehash: 21d1bfe34485e97b35755bc2f88f3ba13066a616
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026380"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206556"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -69,11 +69,11 @@ ms.locfileid: "22026380"
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) 說明使用者如何在垃圾郵件隔離使用者介面中尋找和釋出其自己的垃圾隔離郵件，並選擇性地向 Microsoft 報告這些郵件不是垃圾郵件。 
         
-- [提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 進行分析。](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)說明使用者可以提交垃圾郵件 （垃圾） 和非垃圾郵件 （不是垃圾郵件） 郵件給 Microsoft 的不同方式。本主題包含 Microsoft Outlook 與 OWA 中可用的報告工具的連結。 
+- [提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 進行分析。](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)說明使用者可以提交垃圾郵件 （垃圾） 和非垃圾郵件 （不是垃圾郵件） 郵件給 Microsoft 的不同方式。本主題包含 Microsoft Outlook 與 （前身為 Outlook Web App） 在 web 上的 Outlook 中可用的報告工具的連結。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) 描述使用者可以如何提交惡意程式碼使其通過篩選器，或者提交錯誤識別為惡意程式碼的檔案。 
     
-- 使用者可以新增特定使用者或網域的安全寄件者清單] 或 [封鎖的寄件者清單由 Microsoft OWA 或 Outlook 中設定其垃圾郵件設定。請注意從封鎖的寄件者傳送的訊息將標記為垃圾郵件，不會拒絕，這表示他們可以擷取來自垃圾郵件] 資料夾或隔離 （根據其中您系統已設定傳送垃圾郵件服務）。如需詳細資訊，請參閱[使用報告郵件增益集](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+- 使用者可以新增特定使用者或網域的安全寄件者清單] 或 [封鎖的寄件者清單進行其垃圾郵件設定在 Outlook 或 Outlook web 上。請注意從封鎖的寄件者傳送的訊息將標記為垃圾郵件，不會拒絕，這表示他們可以擷取來自垃圾郵件] 資料夾或隔離 （根據其中您系統已設定傳送垃圾郵件服務）。如需詳細資訊，請參閱[使用報告郵件增益集](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
     
 - [EOP 的說明和支援](help-and-support-for-eop.md) 提供有關取得說明和技術支援的資訊。 
     
