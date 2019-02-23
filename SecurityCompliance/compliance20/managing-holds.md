@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8dbcc73dac14dddfeb8dd86bbf03d9e845dac510
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695179"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215843"
 ---
 # <a name="manage-holds-in-advanced-ediscovery-preview"></a>管理進階的 eDiscovery (Preview) 中的保留
 
@@ -60,7 +60,7 @@ ms.locfileid: "29695179"
  
 6. （選用）在 [**描述**] 方塊中新增的保留的描述。
   
-7. 按 [下一步]。
+7. 按 [下一步]****。
   
 8. 選擇您想要進行的內容位置保留。您可以在保留上放置信箱、 網站及公用資料夾。
 

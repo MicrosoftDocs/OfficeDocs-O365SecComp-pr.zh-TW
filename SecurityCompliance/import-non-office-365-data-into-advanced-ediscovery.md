@@ -6,26 +6,26 @@ manager: laurawi
 ms.date: 5/25/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - OEC150
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 如何匯入的內容，不會儲存在 O365 Azure 到步驟 blob 以便其可以使用 AeD 分析
-ms.openlocfilehash: ab6c7ac76a159603a34719aa8edb51de3a4fabbb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1019fa2e2429aeff8bd20bc3dfb266ab5fb25eaf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527417"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217063"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>針對進階電子文件探索分析匯入非 Office 365 內容
 
 您可能需要使用 Office 365 進階 eDiscovery 分析的不是所有文件將會在 Office 365 live。非 Office 365 內容匯入進階 eDiscovery 可以上傳不到案例的連結、 Azure 儲存 blob live 在 （除了 PST 檔案） 的 Office 365 及分析它們與進階 eDiscovery 的文件中的功能。此程序將示範如何將非 Office 365 文件移入進階 eDiscovery 進行分析。
   
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 > [!NOTE]
 > 您可以購買 Office 365 進階 eDiscovery 資料儲存區的附加元件訂閱的非 Office 365 內容。這是以獨佔方式適用於要分析與進階 eDiscovery 的內容。請遵循的步驟[購買或編輯與 Office 365 企業版的附加元件](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6)和購買 Office 365 進階 eDiscovery 儲存附加元件。 

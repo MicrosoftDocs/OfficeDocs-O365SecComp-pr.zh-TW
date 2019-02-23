@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection: M365-security-compliance
 description: 了解 Office 365 威脅智慧能如何協助貴組織偵測入侵和威脅，快速地降低以及復原威脅。
-ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: c2c601c7828e947c6cfa1c91723a19acee9e09ee
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995364"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213693"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>使用 Office 365 威脅情報保護您的 Office 365 使用者安全
 
@@ -70,7 +70,7 @@ Office 365 威脅智慧被開機 Microsoft 智慧型安全性圖的資料。此�
     
 ## <a name="why-threat-intelligence"></a>為什麼要選擇威脅智慧？
 
-Gartner 估計 cybersecurity 上所花費 2017 單獨透過 $90B 中。Sid Deshpande、 主要參考資料分析師 」 在 Gartner，加上引號做為預警的"產業 shift 鍵來偵測及回應...傳送純訊息除非它繫結至偵測及回應能力防護為難度。 」威脅智慧是每個企業之產品組合的服務的重要部分及可以為獨立服務或 Office 365 E5 的一部分使用。
+Gartner 估計 cybersecurity 上所花費 2017 單獨透過 $90B 中。Sid Deshpande、 主要參考資料分析師 」 在 Gartner，加上引號做為預警該"產業 shift 鍵來偵測及回應...傳送純訊息除非它繫結至偵測及回應能力防護為難度"。威脅智慧是每個企業之產品組合的服務的重要部分及可以為獨立服務或 Office 365 E5 的一部分使用。
   
 ## <a name="whats-next"></a>下一步是什麼
 

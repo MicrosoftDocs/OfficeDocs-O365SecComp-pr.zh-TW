@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection: M365-security-compliance
 description: 使用新的安全性儀表板檢閱 Office 365 威脅保護狀態及檢視以及對安全性提醒。
-ms.openlocfilehash: 403c47ed09e9652a66abeafb93be02589c9b1702
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 7fcf570887e5ed720e2e62d627b442597b824e84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995124"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215170"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 

@@ -1,23 +1,25 @@
 ---
 title: Exchange Online 如何保護您的電子郵件機密資料
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/24/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
+ms.collection:
+- M365-security-compliance
 description: Office 365 信任中心提供 Office 365 的安全性、 隱私與規範資訊，以及可能會想要知道 Office 365 如何協助保護您提供其資料中心中的機密資料。我們使用稱為分散式金鑰管理員 (DKM) 的技術。
-ms.openlocfilehash: a8fe1a2c9393958a391ec69a9a476a06de8c7576
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ba4c661899273f5e07c2468631298f5500d0e32f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527277"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218073"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online 如何保護您的電子郵件機密資料
 

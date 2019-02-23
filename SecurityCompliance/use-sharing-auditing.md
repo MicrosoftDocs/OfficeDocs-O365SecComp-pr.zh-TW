@@ -1,12 +1,12 @@
 ---
-title: 使用共用的 Office 365 稽核記錄中的稽核
+title: 稽核共用來找出與外部使用者共用的資源
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 2/13/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共用是 SharePoint Online 和 OneDrive for Business 的主要活動。管理員可以立即使用共用的 Office 365 稽核記錄中的稽核來判斷如何共用所要使用其組織中。 '
-ms.openlocfilehash: 511f8b0e61d450659d78177d5b87fac9ee636cd4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 919592bff43379b552b83258c7b22b7eddb14e7a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526863"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219883"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>使用共用的 Office 365 稽核記錄中的稽核
+# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>稽核共用來找出與外部使用者共用的資源
 
 共用是主要活動 SharePoint Online 和 OneDrive for Business，並加以廣泛使用在 Office 365 組織中。管理員可以立即使用共用的 Office 365 稽核記錄中的稽核來判斷如何共用所要使用其組織中。 
   
@@ -75,9 +75,9 @@ Sharing 架構提供兩個額外的欄位與共用事件相關的稽核記錄檔
 
 第一個步驟是搜尋共用事件的 Office 365 稽核記錄。如需詳細資訊 （包括必要的權限） 的相關搜尋稽核記錄，請參閱[Office 365 安全性搜尋稽核記錄&amp;規範中心](search-the-audit-log-in-security-and-compliance.md)。
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在 [安全性] 的左窗格中&amp;規範中心按一下**搜尋&amp;調查**，然後按一下 [**稽核記錄搜尋**。
     

@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 在 Azure 中加密的說明。
-ms.openlocfilehash: f169744933a304dc92ba46021ea647403a75bbd9
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 317fafe34c642d6c78cdf856e7391715770c1659
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664109"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219833"
 ---
 # <a name="office-365-encryption-in-azure"></a>在 Azure 中的 office 365 加密
 

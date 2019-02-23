@@ -1,26 +1,26 @@
 ---
-title: 在 SharePoint 系統管理中心中設定 「 資訊版權管理 (IRM)
+title: Set up Information Rights Management (IRM) in SharePoint admin center
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何使用 SharePoint Online IRM 透過 Microsoft Azure Active Directory Rights Management Services (RMS) 來保護 SharePoint 清單和文件庫。
-ms.openlocfilehash: dea8c71ce67207b3c40a1f934f90e63740f70f29
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a5ac2cf5f33f3957e4cf17660461ad2d719d7c83
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526755"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217703"
 ---
-# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>在 SharePoint 系統管理中心中設定 「 資訊版權管理 (IRM)
+# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
 在 SharePoint Online、 IRM 保護套用至清單和文件庫層級的檔案。您的組織可以使用 IRM 保護之前，您必須先設定版權管理。IRM 依賴 Azure 加密及指派流量限制的資訊保護 Azure 版權管理服務。某些 Office 365 計劃包括 Azure Rights Management，但非全部。如需了解，請先閱讀[如何 Office 應用程式及服務支援 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)。
   

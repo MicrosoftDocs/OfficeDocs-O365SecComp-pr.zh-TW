@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 11/7/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: 新增及管理安全性的活動提醒&amp;當使用者執行特定 Office 365 中的規範中心讓 Office 365 將會傳送給您電子郵件通知。
-ms.openlocfilehash: 2a579e850d16b730a777ce6c4e5c0446305a027d
-ms.sourcegitcommit: 3a376619dbae472495c29da7c061f5c5faeeaddb
+ms.openlocfilehash: 25262105332b5317ddf29d49e0364faed57f3d3a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "26282737"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214903"
 ---
 # <a name="create-activity-alerts-in-the-office-365-security-amp-compliance-center"></a>建立 Office 365 安全性活動提醒&amp;規範中心
 
@@ -29,7 +29,7 @@ ms.locfileid: "26282737"
  **為何，而不是搜尋稽核記錄中使用活動提醒？** 可能會有某種活動或真正想要知道的特定使用者所執行的活動。而不必搜尋這些活動的稽核記錄，請記得您可以讓使用者在執行這些活動時傳送電子郵件訊息給您的 Office 365 使用活動提醒。例如，您可以建立活動提醒通知您的使用者會刪除在 SharePoint 中的檔案或您可以建立的提醒通知您從他們的信箱使用者永久刪除的郵件。傳送給您的電子郵件通知包含執行哪些活動和執行該使用者的相關資訊。 
 
 > [!NOTE]
-> 我們建議在您開始使用中的安全性與規範中心的警示原則而不建立新的活動提醒。警示原則提供新增功能，例如若要建立的任何使用者執行指定的活動，並在 [**檢視提醒**] 頁面上顯示提醒的安全性與規範中心時觸發通知警示原則的能力。如需詳細資訊，請參閱[警示 Office 365 安全性原則&amp;規範中心](alert-policies.md)。
+> 我們建議在您開始使用安全性 & 規範中心中的警示原則而不建立新的活動提醒。警示原則提供新增功能，例如若要建立的任何使用者執行指定的活動，並在安全性 & 規範中心**檢視提醒**] 頁面上顯示提醒時觸發通知警示原則的能力。如需詳細資訊，請參閱[警示 Office 365 安全性原則&amp;規範中心](alert-policies.md)。
   
 ## <a name="before-you-begin"></a>開始之前
 
@@ -64,7 +64,7 @@ ms.locfileid: "26282737"
 
     d.**傳送此提醒時**按一下 [**傳送此警示何時**然後設定下列兩個欄位：
     
-    - **活動**-按一下下拉式清單以顯示您可以建立的提醒的活動。這是搜尋 Office 365 稽核記錄時顯示相同活動清單。您可以選取一或多個特定活動或您可以按一下 [選取群組中的所有活動的活動群組名稱。如需這些活動的說明，請參閱"稽核活動 」 區段中的[搜尋稽核記錄中的 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#audited-activities)。當使用者執行任何已新增至警示的活動時，就會傳送電子郵件通知。 
+    - **活動**-按一下下拉式清單以顯示您可以建立的提醒的活動。這是搜尋 Office 365 稽核記錄時顯示相同活動清單。您可以選取一或多個特定活動或您可以按一下 [選取群組中的所有活動的活動群組名稱。如需說明這些活動，請參閱"稽核活動 」 區段中的[搜尋稽核登入 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#audited-activities)。當使用者執行任何已新增至警示的活動時，就會傳送電子郵件通知。 
     
      - **使用者**-按一下此方塊，然後選取 [一或多個使用者。如果使用者在此方塊中的執行您加入至 [**活動**] 方塊中，將傳送通知。保留 [**使用者**] 方塊為空白時要傳送提醒您組織中的任何使用者執行此通知所指定的活動。 
 
@@ -100,7 +100,7 @@ ms.locfileid: "26282737"
     
     ![活動通知傳送給電子郵件 notifcation 的範例](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
-- 以下是一些常見文件和電子郵件的活動您可以建立活動的提醒。表格說明活動、 建立提醒活動的名稱及活動會列在下 [**活動**] 下拉式清單中的 [活動] 群組的名稱。若要查看您可以建立的活動提醒的活動的完整清單，請參閱[的搜尋稽核記錄中的 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#audited-activities)」 稽核活動"區段。
+- 以下是一些常見文件和電子郵件的活動您可以建立活動的提醒。表格說明活動、 建立提醒活動的名稱及活動會列在下 [**活動**] 下拉式清單中的 [活動] 群組的名稱。若要查看您可以建立的活動提醒的活動的完整清單，請參閱[的搜尋稽核記錄在 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#audited-activities)」 稽核活動"區段。
     
     > [!TIP]
     > 您可能會想要建立只是一個活動所執行的任何使用者活動提醒。或是要建立追蹤多個活動由下列一或完了執行活動通知使用者。 

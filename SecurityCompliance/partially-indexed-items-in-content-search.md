@@ -8,7 +8,7 @@ ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.UnindexedItemsLearnMore
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '了解 Exchange 和您可以透過 Office 365 安全性執行內容搜尋中包含的 SharePoint 中編製索引項目&amp;規範中心。 '
-ms.openlocfilehash: 4624985a9c80313d0222470e6cfb2c56495f2142
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1f307f3ecff1bb63c30ff6ce1f792901475fe2c4
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526281"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223432"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>位於 Office 365 中內容搜尋的已局部編製索引項目
 
@@ -96,7 +96,7 @@ ms.locfileid: "22526281"
   
 同樣地，如果您選擇包含部分已編製索引的項目匯出搜尋結果時，將不會匯出已從搜尋結果中排除的部分已編製索引項目。
   
-此規則的一個例外是當您建立查詢式保留與 eDiscovery 案例相關聯。如果您建立查詢式保留，部分已編製索引的所有項目被處於保留狀態。這包括部分已編製索引的項目不符合搜尋查詢準則和部分已編製索引的項目可能屬於以外的日期範圍條件。如保留建立查詢為基礎的詳細資訊，請參閱步驟 4 中[的 [Office 365 安全性及規範中心的 eDiscovery 案例](ediscovery-cases.md#step-4-place-content-locations-on-hold)。
+此規則的一個例外是當您建立查詢式保留與 eDiscovery 案例相關聯。如果您建立查詢式保留，部分已編製索引的所有項目被處於保留狀態。這包括部分已編製索引的項目不符合搜尋查詢準則和部分已編製索引的項目可能屬於以外的日期範圍條件。如需關於建立查詢式保留，請參閱[Office 365 安全性 & 規範中心中的 eDiscovery 案例](ediscovery-cases.md#step-4-place-content-locations-on-hold)中的步驟 4。
   
 ## <a name="indexing-limits-for-messages-in-content-search"></a>編製索引內容搜尋中的郵件的限制
 
@@ -104,7 +104,7 @@ ms.locfileid: "22526281"
   
 限制 SharePoint 文件編製索引的清單，請參閱[SharePoint Online 的搜尋限制](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)。
   
-|**索引限制**|**附註**|**描述**|
+|**索引限制**|**最大值**|**描述**|
 |:-----|:-----|:-----|
 |附件大小上限 （不包括結尾的 Excel 檔案）  <br/> |150 MB  <br/> |將剖析為編製索引的電子郵件附件的大小上限。任何附件大於此限制將不會剖析為編製索引，並加以標示附件的郵件為部分編製索引。<br/><br/> **附註：** 剖析為索引服務出附件中擷取文字、 移除不必要的字元標點符號和空格，以及然後，將文字插入文字 （在程序呼叫 token 化），然後儲存在索引中的程序。           |
 |Excel 檔案的大小上限  <br/> |4 MB  <br/> |Excel 檔案的大小上限位在網站上或附加至電子郵件訊息會剖析為編製索引。任何過大，而不會剖析此限制，並將檔案或電子郵件檔案附件的郵件將會標示為未建立索引的 Excel 檔案。  <br/> |

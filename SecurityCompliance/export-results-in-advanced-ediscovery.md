@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定義要用於匯出結果從 Office 365 進階 eDiscovery，包括指定匯出批次參數的程序的選項。 '
-ms.openlocfilehash: 49dab9820735af3bf5c322fc531c78a6baab2f8e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559046"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218093"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出結果
 

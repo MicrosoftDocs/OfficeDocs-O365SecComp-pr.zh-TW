@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 10/18/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以在 Office 365 安全性稽核記錄搜尋功能中開啟&amp;規範中心。如果您變更您注意，您可以開啟時關閉任何時候。關閉稽核記錄搜尋時，系統管理員無法在組織中搜尋使用者與系統管理活動的 Office 365 稽核記錄。
-ms.openlocfilehash: 4fa6ac095222addce578294813cbd22dfc50a2ab
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f0532ae7ba205001d89164ac3f00822d14aa81cd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526768"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218003"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>開啟或關閉 Office 365 稽核記錄搜尋
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 系統管理員： 了解如何啟用自動展開 Office 365，您的使用者與不受限制的存放區提供其 Exchange Online 信箱的封存。您可以啟用自動展開封存為整個組織或只是特定的使用者。
-ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 39098ffc78d0379436cafb20e5a484ec0e7aa283
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809698"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215393"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>啟用 Office 365-說明系統中沒有限制之封存
 
@@ -100,7 +100,7 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
     ![在您啟用自動展開封存之後會略過 ArchiveQuota 和 ArchiveWarningQuota 屬性](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 您也可以使用 PowerShell 啟用封存信箱。例如，您可以執行下列命令在 Exchange Online PowerShell 啟用封存信箱不已啟用的所有使用者的封存信箱。
 

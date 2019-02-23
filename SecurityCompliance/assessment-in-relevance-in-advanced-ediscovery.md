@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: '取得評估階段和其在 Office 365 進階 ediscovery 的相關性訓練期間判定問題的豐富的角色的概觀。  '
-ms.openlocfilehash: a54a4134609b16568586f3cb6b60ebdeba860bac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 取得評估階段和其在 Office 365 進階 ediscovery 的相關性訓練期間判定問題的豐富的角色的概觀。
+ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526763"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212973"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中了解相關性評估
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 進階的 eDiscovery 啟用早期評估，例如已定義的問題和資料匯入的案例。進階的 eDiscovery 可讓專家制定決策相關採行的方法和套用至文件檢閱專案。
   
@@ -48,7 +48,7 @@ ms.locfileid: "22526763"
 您可以接受的相關性建議或根據您的需求來調整目前的錯誤限度。錯誤的預設目前界取決於的重新叫用在等於或高於 75%。
   
 > [!NOTE]
-> 評估階段可以會略過，在**相關性\>追蹤**中有問題，清除個別問題，然後針對 「 所有問題"**評估**核取方塊的延伸檢視] 索引標籤。不過，因此，會有這個問題沒有統計資料。> 清除**評估**] 核取方塊可以只完成之前執行評估。評估案例中多個問題有，已略過只有當] 核取方塊已清除每個問題 
+> 評估階段可以會略過，在**相關性\>追蹤**中有問題，清除個別問題，然後針對 「 所有問題"**評估**核取方塊的延伸檢視] 索引標籤。不過，因此，會有這個問題沒有統計資料。之前執行評估只可以完成 > 清除**評估**] 核取方塊。評估案例中多個問題有，已略過只有當] 核取方塊已清除每個問題 
   
 ## <a name="see-also"></a>另請參閱
 

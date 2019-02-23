@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 92ad9179d5d62fdf25c1ae78e9c367f509bf6ccf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695039"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214253"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery-preview"></a>使用進階的 eDiscovery (Preview) 中的通訊
 

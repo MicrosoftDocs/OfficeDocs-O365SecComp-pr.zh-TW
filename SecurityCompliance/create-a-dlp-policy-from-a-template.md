@@ -8,7 +8,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '若要開始使用 DLP 原則的最簡單的、 最常見方式是使用其中一個包含在 Office 365 中的範本。 '
-ms.openlocfilehash: 4e3a5d731538e4998858b5f9f7a296c43e6774ac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 32c16ca69e624e009591316cccc70a7faafb4bc6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526807"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219433"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>從範本建立 DLP 原則
 
@@ -55,7 +55,7 @@ OneDrive for Business 帳戶輕鬆人員整個組織共同作業及共用文件�
     
 ### <a name="create-a-dlp-policy-from-a-template"></a>從範本建立 DLP 原則
 
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用您工作或學校的帳戶。您現在是 Office 365 安全性&amp;規範中心。
     
@@ -181,7 +181,7 @@ OneDrive for Business 帳戶輕鬆人員整個組織共同作業及共用文件�
   
 此外，您可以關閉每個規則個別編輯原則，然後關閉該規則**狀態**切換如前文所述。 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     

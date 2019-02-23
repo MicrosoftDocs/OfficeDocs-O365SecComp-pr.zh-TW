@@ -9,19 +9,17 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: 了解如何辨識及修復 Office 365 中的非法同意授與攻擊。
-ms.openlocfilehash: 457279e6d9498ac132ed3fb77b7c0fef68a293fa
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 1d8df4db94129bcdcb6ecf4859f9f89a1974edbe
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755234"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223352"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 

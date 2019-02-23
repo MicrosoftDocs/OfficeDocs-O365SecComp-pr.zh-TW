@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 4/26/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 指令碼來快速複製現有內容的搜尋安全性&amp;Compliane 中心搜尋。當您複製搜尋時、 新的搜尋 （使用新的名稱） 會建立包含原始搜尋相同的屬性。然後您可以編輯新的搜尋 （由變更關鍵字查詢或日期範圍），然後再執行它。
-ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 15f1ca5d00f03f510745fef7ae8418192a9eb448
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038046"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213543"
 ---
 # <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>複製內容的搜尋 Office 365 安全性&amp;規範中心
 

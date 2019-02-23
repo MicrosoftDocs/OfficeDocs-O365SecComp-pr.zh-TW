@@ -4,27 +4,27 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
-ms.topic: overview
+ms.topic: article
 ms.date: 02/15/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: 開始使用 Office 365 雲端應用程式安全性
-ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 89718adcbb7c77735db3009937d887e88d4a8bc3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087432"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223712"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>準備好使用 Office 365 雲端 App 安全性
   
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |您在此處 ！  <br/> [下一步](turn-on-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |您在此處 ！  <br/> [後續步驟](turn-on-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
 若要開啟並為您組織中實作 Office 365 雲端應用程式安全性準備時，有幾點事項。使用本文做指南以規劃 Office 365 雲端應用程式安全性。
     
@@ -73,9 +73,9 @@ Office 365 雲端應用程式安全性運作正確的順序，必須先開啟稽
 
 請參閱下列資源以深入了解：
 
-- [保護與 Office 365 雲端應用程式的安全性設定格式化的條件的 Access 應用程式控制項的應用程式](ocas-conditional-access-app-control.md)
+- [使用 Office 365 雲端 App 安全性條件式存取應用程式控制來保護應用程式](ocas-conditional-access-app-control.md)
 
-- [部署 Office 365 應用程式的設定格式化的條件的 Access 應用程式控制項](ocas-deploy-conditional-access-app-control.md)
+- [為 Office 365 應用程式部署條件式存取應用程式控制](ocas-deploy-conditional-access-app-control.md)
 
 ## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>步驟 6︰ 了解您組織的雲端流量
 

@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 如何 Microsoft 使用吸收、 偵測和減輕在其防禦拒絕服務 (DoS) 攻擊的核心原則。
-ms.openlocfilehash: 17dc583258cdb4781dbe2a715e1ce153ee769ed3
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: dfe179924f7414b0120697023f3daf7e6b6661b6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091005"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216003"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>防禦阻斷服務攻擊的核心原則
 

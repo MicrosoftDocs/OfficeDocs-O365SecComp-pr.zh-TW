@@ -5,21 +5,14 @@ services: office-365-security-compliance
 author: robmazz
 manager: laurawi
 layout: LandingPage
-ms.service: office-365
-ms.collection: M365-security-compliance
+ms.service: O365-seccomp
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
-ms.translationtype: MT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995174"
 ---
-# <a name="office-365-security-and-compliance"></a>Office 365 安全性和規範
+# <a name="office-365-security-and-compliance"></a>Office 365 安全性與合規性
 
 如果您的組織需要保護您的資料或遵守法律或法規標準 （英文），則已正確的地方。下列區域是深入了解安全性與 Office 365 的守規您第一個停駐點。
 

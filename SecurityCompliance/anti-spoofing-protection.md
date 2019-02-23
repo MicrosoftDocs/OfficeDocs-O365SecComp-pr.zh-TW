@@ -6,18 +6,20 @@ manager: laurawi
 ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
+ms.collection:
+- M365-security-compliance
 description: 本文說明如何 Office 365 可以降低對網路釣魚攻擊用途是寄件者的網域即詐騙的網域。其完成這同樣藉由分析郵件並封鎖過可驗證 neithe 使用標準的電子郵件的驗證方法或其他寄件者信譽技術 （英文）。這項變更被實減少網路釣魚攻擊的 Office 365 組織公開到數目。
-ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 041d2ee2cbad1c051c0ca4724d42b189215f0e82
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614507"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223872"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -144,7 +146,7 @@ SFTY 是之郵件的安全層級、 第一個數字 (9) 表示郵件是網路釣
   
 發生此動作時的傳送端網域中寄： 地址是接收組織外部的網域。由於跨網域詐騙失敗複合式驗證的郵件包含標頭中的下列值：
   
-驗證結果:...compauth = 失敗原因 = 000/001
+驗證結果:...]compauth = 失敗原因 = 000/001
   
 X Forefront-反垃圾郵件報告：...]CAT:SPOOF;...]SFTY:9.22
   
@@ -415,10 +417,10 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 |**Priority (優先順序)**|**原則**|**類別**|**其中 managed？**|**適用於**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|2   <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|3   <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
-|4   <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
-|5   <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|2  <br/> |網路釣魚  <br/> |PHSH  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|3  <br/> |高度信賴垃圾郵件  <br/> |HSPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
+|4  <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)、[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |所有組織  <br/> |
+|5  <br/> |垃圾郵件  <br/> |SPM  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
 |6   <br/> |大量  <br/> |大量  <br/> |[主控的內容篩選原則](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |所有組織  <br/> |
 |7   <br/> |網域模擬  <br/> |DIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織  <br/> |
 |8   <br/> |使用者模擬  <br/> |UIMP  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |僅限具有 ATP 組織 <br/> |
@@ -428,7 +430,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 |**原則**|**Priority (優先順序)**|**使用者/網域模擬**|**反詐騙**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |開啟  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |開啟  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |開啟  <br/> |
    
 如果訊息有和識別身分詐騙與使用者模擬與相同的一組使用者範圍的原則及原則 B 則郵件會被視為詐騙但採取任何動作套用自反詐騙已關閉並詐騙執行在較高的優先順序 (4) 與使用者模擬 (8)。
   

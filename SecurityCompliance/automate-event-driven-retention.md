@@ -3,22 +3,21 @@ title: 自動化事件導向保留
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: 4b4f310950f25e2a72dffa83de39b13c0b34cd97
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 799f831e937d3f676bb05eb188b813b1ca23622c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740865"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223752"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
@@ -485,4 +484,4 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 本主題的檢閱者：
 
-Antonio Maio</br>Microsoft Office Apps and Services MVP</br> Antonio.Maio@Protiviti.com
+Antonio Maio<br/>Microsoft Office Apps and Services MVP<br/> Antonio.Maio@Protiviti.com

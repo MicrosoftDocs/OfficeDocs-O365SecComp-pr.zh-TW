@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: '了解如何定義的規則時使用的分析和程序的模組中 Office 365 進階 eDiscovery 搜尋時忽略特定的文字。  '
-ms.openlocfilehash: eb7e7052979087b7dba98aac3b0c9ab75ec0d02a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526796"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214243"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定略過文字分析選項
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 搜尋時忽略文字功能可以套用至所有或任何下列的進階的 eDiscovery 模組： 分析 （附近-重複、 電子郵件執行緒佈景主題） 與相關性。已忽略的文字不會出現在檔案中的相關性，顯示和分析/計算會捨棄已忽略的文字。
   

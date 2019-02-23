@@ -3,10 +3,9 @@ title: 關於將 PST 檔案匯入 Office 365 常見問題集
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '常見問題集管理員需使用 Office 365 匯入服務 organizaiton 的 PST 檔案匯入 Office 365 信箱。 '
-ms.openlocfilehash: 7230e68f896766df643f12b2a132f987670e9afa
-ms.sourcegitcommit: eecf6f3aafbf460ee2ff9988f2b055e62b1fdb9d
+ms.openlocfilehash: 9ca2e206a1d06c1398181c51e41b4dc68d8d965c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454050"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218403"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>關於將 PST 檔案匯入 Office 365 常見問題集
 
@@ -208,7 +207,7 @@ PST 檔案上傳至 Azure 儲存區之後，Office 365 以方式分析 PST 檔�
   
  **可以使用自訂 courier 傳送服務，例如 FedEx 自訂傳送，以隨附我硬碟向 Microsoft 吗？**
   
-會。
+是。
   
  **如果我有隨附我硬碟至另一個國家/地區、 是否有我需要執行的任何項目吗？**
   

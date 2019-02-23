@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 如何 Microsoft 進行防禦拒絕服務 (DoS) 攻擊對其雲端服務。
-ms.openlocfilehash: 64a99347e22612bba2035092764ed3714b596228
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: d284ace935e0f90417b3b009d76e3b282b08bc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090995"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212793"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>防禦抵禦拒絕服務攻擊的 Microsoft 雲端服務
 

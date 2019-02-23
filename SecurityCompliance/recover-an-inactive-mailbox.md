@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/21/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果先前的員工會傳回您組織中，或將新的員工雇用採取 departed 員工的工作職責，您可以復原 Office 365 中的非使用中信箱的內容。當您復原不在作用中的信箱時，它會轉換成新的信箱包含非作用中信箱的內容。 '
-ms.openlocfilehash: dcc84e44454a75f8b4dac953599632d632f340b9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bebcf5cbb569c9e2e591294a084defea15af4c0f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527311"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216133"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>復原 Office 365 中不在作用中信箱
 
@@ -70,7 +70,7 @@ ms.locfileid: "22527311"
     
 不在作用中的信箱復原之後，也會建立新的 Office 365 使用者帳戶。您必須將授權指派啟動此使用者帳戶。若要指派 Office 365 系統管理中心中的授權，請參閱[指派或取消指派 Office 365 企業版授權](https://go.microsoft.com/fwlink/p/?LinkId=276798)。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - **什麼是復原及還原不在作用中信箱的主要差異？** 當您復原不在作用中的信箱時，信箱基本上會轉換為新的信箱、 保留的內容和非使用中的信箱資料夾結構，及信箱連結至新的使用者帳戶。它復原、 非使用中的信箱不存在，以及對新的信箱中的內容進行任何變更會影響原本的內容之後保留在非使用中的信箱。反之，當您還原非使用中的信箱，內容純粹都會複製到另一個信箱。非使用中的信箱已受保護而會維持不在作用中的信箱。目標信箱中的內容進行任何變更將不會影響保存在非使用中信箱的原始內容。非使用中信箱仍可使用就地 eDiscovery 搜尋、 其內容可以還原至另一個信箱或復原或刪除日後。 
     

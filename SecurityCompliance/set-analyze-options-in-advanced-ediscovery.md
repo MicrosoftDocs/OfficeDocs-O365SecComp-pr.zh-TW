@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '請檢閱步驟來設定 Office 365 進階 eDiscovery，包括接近重複項目、 電子郵件執行緒及佈景主題中的分析程序的選項。  '
-ms.openlocfilehash: a0ebbadb180321a3094cb1056ed8e0e6500ee66a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 12bbe4043803c165a58adac80b72d03afd48adc7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526744"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218223"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定分析選項
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 在 [進階 eDiscovery 設定在執行分析的 [分析] 選項。
   

@@ -3,7 +3,6 @@ title: 反垃圾郵件訊息標頭
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
+ms.collection:
+- M365-security-compliance
 description: Exchange Online Protection 掃描內送電子郵件訊息時加以插入**X Forefront-反垃圾郵件報告**標題每則訊息。
-ms.openlocfilehash: 5632aa28a0d23186e6a36fdf63f7968322c93e39
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 4851c05f4db8d120eb54b9c22025fe2972e1e515
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686443"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223582"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 

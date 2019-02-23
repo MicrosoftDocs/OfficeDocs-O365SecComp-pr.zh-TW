@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: 下列的 Microsoft 資料中心 IP 位址所使用的 Microsoft Exchange Online Protection (EOP) 傳送電子郵件、 時接收電子郵件、 或 Exchange Online Protection 入口網站及管理服務。為了傳送和接收來自 EOP 的郵件或使用管理服務，請確定您的網路允許來自這些 IP 位址的連線。
-ms.openlocfilehash: 5ea1a3df2ba1ea6853e2e44983fa7a97877c0778
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.openlocfilehash: 6c7d8c78a012be3928317eac1e9b6fcdeab64a24
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240506"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222822"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Exchange Online Protection IP 位址
 

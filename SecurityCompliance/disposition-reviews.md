@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
 description: 當您建立會保留在 Office 365 中的內容的標籤時，您可以選擇觸發結尾處的保留期間處理檢閱。
-ms.openlocfilehash: c0a2933f597c9b314ac4ce2e72de9619fac90082
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0948d61131595d4111f656c385c58258c5cce99c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013717"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215003"
 ---
 # <a name="overview-of-disposition-reviews"></a>處置檢閱概觀
 
@@ -63,7 +63,7 @@ ms.locfileid: "23013717"
   
 處理檢閱 Office 365 中建立的標籤時的選項。請注意此選項並不提供但只在含有保留設定的標籤中的保留原則。
   
-如需標籤的詳細資訊，請參閱[Overview of 標籤。](labels.md)
+如需標籤的詳細資訊，請參閱[標籤概觀](labels.md)。
   
 ![Label 的保留設定](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
   

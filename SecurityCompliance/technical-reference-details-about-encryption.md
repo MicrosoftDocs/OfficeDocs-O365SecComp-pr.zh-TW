@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 檢視關於 Office 365 中的加密技術詳細資料。
-ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
-ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
+ms.openlocfilehash: 77e12d0d4872d29e9cc33571b2cd5040d8d45677
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29966187"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213623"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>關於 Office 365 中加密的技術參考細節
 

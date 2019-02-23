@@ -8,7 +8,7 @@ ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: Office 365 安全性&amp;規範中心可讓您授與權限執行類似裝置管理、 資料外洩防護、 eDiscovery、 保留、 等等的符合性工作的人員。這些人員可執行您明確授與存取權的工作。若要存取 [安全性]&amp;規範中心，為 Office 365 全域管理員或成員的一或多個安全性的使用者需要&amp;規範中心角色群組。
-ms.openlocfilehash: ef281ca7cda706ff78fbf1a5584674cdf41e9025
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29741056"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223502"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性權限&amp;規範中心
 
@@ -59,7 +59,7 @@ Office 365 安全性&amp;規範中心可讓您授與權限執行類似裝置管�
 |**記錄管理** <br/> |成員可以管理並處置記錄的內容。  <br/> |
 |**檢閱者** <br/> |成員只能在 [安全性] eDiscovery 案例] 頁面上檢視的情況下清單&amp;規範中心。他們無法建立、 開啟或管理 eDiscovery 案例。此角色群組的主要目的是要允許成員檢視及存取 case 進階在 eDiscovery 中的資料。  <br/> 這個角色群組具有最嚴格的 eDiscovery 相關權限。  <br/> |
 |**安全性管理員** <br/> |此角色群組的成員可能包括跨服務管理員，以及外部合作夥伴群組和 Microsoft 技術支援人員。根據預設，此群組可能未指派任何角色。不過，它會在 Azure Active Directory 中的安全性管理員角色的成員並將會繼承該角色的功能。集中管理的權限，變更此角色在 Azure Active Directory 系統管理中心-如需詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。如果您編輯安全性 & 規範中心在此角色群組，這些變更僅適用於安全性 & 規範中心並沒有任何其他服務，而在 Azure Active Directory 管理中心內所做的變更會影響所有服務。<br/> 所有的安全性讀者角色加上額外的管理權限的相同服務的數字的唯讀權限： Azure 資訊保護、 身分識別保護中心、 權限的身分識別管理、 監視 Office 365 服務健康情況及 Office 365 安全性&amp;規範中心。  <br/> |
-|**安全性讀者** <br/> |成員具有唯讀存取權的身分識別保護中心、 權限的身分識別管理、 監視 Office 365 服務健康情況及 Office 365 安全性的安全性功能的數字&amp;規範中心。  <br/> 此角色群組的成員資格是整個服務進行同步處理與集中管理。此角色群組的成員可能包括跨服務管理員，以及外部合作夥伴群組和 Microsoft 技術支援人員。根據預設，此群組可能未指派任何角色。不過，它會在 Azure Active Directory 中的安全性管理員角色的成員並將會繼承該角色的功能。集中管理的權限，變更此角色在 Azure Active Directory 系統管理中心-如需詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。如果您編輯安全性 & 規範中心在此角色群組，這些變更僅適用於安全性 & 規範中心並沒有任何其他服務，而在 Azure Active Directory 管理中心內所做的變更會影響所有服務。<br/> |
+|**安全性讀者** <br/> |成員具有唯讀存取權的身分識別保護中心、 權限的身分識別管理、 監視 Office 365 服務健康情況及 Office 365 安全性的安全性功能的數字&amp;規範中心。  <br/> 此角色群組的成員資格是整個服務進行同步處理與集中管理。此角色群組的成員可能包括跨服務管理員，以及外部合作夥伴群組和 Microsoft 技術支援人員。根據預設，此群組可能未指派任何角色。不過，它會在 Azure Active Directory 中的安全性讀取者角色的成員並將會繼承該角色的功能。集中管理的權限，變更此角色在 Azure Active Directory 系統管理中心-如需詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。如果您編輯安全性 & 規範中心在此角色群組，這些變更僅適用於安全性 & 規範中心並沒有任何其他服務，而在 Azure Active Directory 管理中心內所做的變更會影響所有服務。<br/> |
 |**服務保證使用者** <br/> |成員可以存取 Office 365 安全性服務保證區段&amp;規範中心。服務保證提供報表及說明 Microsoft 的安全性作法儲存在 Office 365 的客戶資料的文件。它也可提供獨立的協力廠商稽核報告在 Office 365。如需詳細資訊，請參閱[服務 Office 365 安全性保證&amp;規範中心](http://go.microsoft.com/fwlink/p/?LinkID=717765)。<br/> |
 |**監督檢閱** <br/> |成員可以建立和管理原則可定義其通訊會受到組織中的檢閱。如需詳細資訊，請參閱 ＜ [Configure 監督檢閱您的組織的原則](configure-supervision-policies.md)。<br/> |
    

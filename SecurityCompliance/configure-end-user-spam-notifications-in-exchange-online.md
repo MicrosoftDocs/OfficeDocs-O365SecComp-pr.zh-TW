@@ -1,7 +1,7 @@
 ---
 title: Exchange Online 中設定使用者垃圾郵件通知
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
+ms.collection:
+- M365-security-compliance
 description: 您可以設定使用者垃圾郵件通知或自訂的垃圾郵件篩選器原則套用至網域的預設全公司的垃圾郵件篩選器原則。
-ms.openlocfilehash: 77ca32224cecaca2f558119db909ad74fdb6e858
-ms.sourcegitcommit: cc8550452d099b4c5852c6559f6ca94a77f1d93b
+ms.openlocfilehash: ea2994a3f772b407a35be2d64e8afcc639d24f31
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "27134767"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214493"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online 中設定使用者垃圾郵件通知
 
@@ -36,9 +38,9 @@ ms.locfileid: "27134767"
 
 **版本**如果郵件不是垃圾郵件和您希望 Office 365 將郵件傳送給您的信箱。
 
-**版本為允許寄件者**如果郵件不是垃圾郵件和您希望 Office 365 將寄件者新增至您的安全寄件者和未來的電子郵件的收件者清單。請記住您系統可能會有其他組織整體允許/封鎖設定會覆寫 [安全的寄件者清單。
+**釋出 & 允許寄件者**如果郵件不是垃圾郵件和您想要新增至安全的寄件者和收件者清單未來的電子郵件的寄件者的 Office 365。請記住您系統可能會有其他組織整體允許/封鎖設定會覆寫 [安全的寄件者清單。
 
-**版本與報告**、 如果郵件不是垃圾郵件和您想要將郵件傳送給您的信箱並向 Microsoft 報告進行分析。
+**版本 & 報表**，如果郵件不是垃圾郵件和您想要將郵件傳送給您的信箱並向 Microsoft 報告進行分析。
 
 **封鎖**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
   
@@ -69,7 +71,7 @@ ms.locfileid: "27134767"
 5. 按一下 [**儲存**]。在右窗格中會出現在垃圾郵件篩選器原則設定，包括您使用者垃圾郵件通知的設定，摘要。
     
 > [!NOTE]
->  使用者垃圾郵件通知只會啟用的垃圾郵件篩選原則作用。> 每天一次只能傳送使用者垃圾郵件通知。傳送通知的時間無法向任何特定客戶保證和且無法加以設定。 
+>  使用者垃圾郵件通知只會啟用的垃圾郵件篩選原則作用。每天一次只能傳送 > 使用者垃圾郵件通知。傳送通知的時間無法向任何特定客戶保證和且無法加以設定。 
   
  **提示：** 如果您想要測試使用者垃圾郵件通知完整實作它們之前將它們傳送至一組有限的使用者，建立自訂垃圾郵件篩選器原則可讓使用者都位於之網域的使用者垃圾郵件通知。然後，在 EAC 中下,**郵件流程\>規則**、 例外狀況為您想要接收通知的使用者與來自 quarantine@messaging.microsoft.com （傳送通知電子郵件位址） 建立傳輸規則封鎖的郵件。下圖是來自網域 Contoso.com 建立兩個使用者 （SaraD 和 AlexD） 的例外狀況的範例： 
   

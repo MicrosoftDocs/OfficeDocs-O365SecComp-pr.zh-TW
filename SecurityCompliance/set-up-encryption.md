@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 4/2/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: 使用 Office 365 某些加密功能的預設開啟;其他功能可以設定成符合特定規範或法律規定。
-ms.openlocfilehash: 80deced80283ac36d82ac15cee9af6d390c4749a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5447f8c9a2074ce586ad38b0c1881afa6d948ad1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526502"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213453"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>設定 Office 365 企業版中的加密
 

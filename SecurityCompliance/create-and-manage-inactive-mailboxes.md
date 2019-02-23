@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 您可以建立 Office 365 中的非使用中的信箱將保留或 Office 365 保留原則套用至信箱並再將其刪除對應的 Office 365 使用者帳戶。保留或保留原則套用至其已進行非使用中之前的期間，會保留不在作用中的信箱中的項目。若要永久刪除非作用中的信箱，只是移除保留或保留原則。
-ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8f798873da7d787b54932438e81aebf2dfe85181
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740835"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217773"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>建立及管理 Office 365 中的非使用中信箱
 

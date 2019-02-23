@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 01/23/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 備妥可供所有新的 Microsoft 365 安全性中心及規範中心
-ms.openlocfilehash: 35f7e04ca2d51efe69c0f6d4842fe25856b1b3f9
-ms.sourcegitcommit: 0ac3e50150b48b5c633fb3bfc989d5047c160739
+ms.openlocfilehash: 6eb30c8439424a60b5cf02d55d771e11cf24ad10
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29436159"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214963"
 ---
-# <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>準備新的 Microsoft 365 安全性中心和 Microsoft 365 規範中心
+# <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>準備好使用新的 Microsoft 365 安全性中心和 Microsoft 365 合規性中心
 
 **我們很高興聲明的所有新的[Microsoft 365 安全性中心](#microsoft-365-security-center)及[Microsoft 365 規範中心](#microsoft-365-compliance-center)、 啟用啟動結尾 2019 年 1 月和年 3 月 2019年透過**。請閱讀本篇文章以取得新即將、[所預期的結果](#what-to-expect)，以及[所需的授權與所需的權限](#required-licenses-and-permissions)的概觀。
 
@@ -48,7 +48,7 @@ ms.locfileid: "29436159"
 
 ## <a name="what-to-expect"></a>所預期的結果
 
-### <a name="coming-soon"></a>即將推出
+### <a name="coming-soon"></a>即將推出 ！
 
 新的 Microsoft 365 安全性中心及新的 Microsoft 365 規範中心已啟用出開頭落後年 1 月及年 3 月 2019年透過。您應該有權存取新的 Microsoft 365 安全性中心和 Microsoft 365 規範中心在此時間範圍內。
 
@@ -92,15 +92,15 @@ ms.locfileid: "29436159"
 |[Microsoft 365 規範中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
 |[合規性管理員](https://aka.ms/compliancemanager) |是 | 是  |可以  |
 |[Azure 資訊保護](https://docs.microsoft.com/azure/information-protection) |是 |有 |否 |
-|Azure 資訊安全中心  |是 |有 |否 |
+|[Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/)  |是 |有 |否 |
 |[Azure 進階的威脅保護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |是 |有 |否 |
 |[Windows 防禦者 ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)和[端點偵測及回應](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |是 |有 |否 |
-|身分識別保護     |是 |有 |否 |
-|特殊權限身分識別管理     |是 |有 |否 |
+|[身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection)     |是 |有 |否 |
+|[權限的身分識別管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |是 |有 |否 |
 |[Intune](https://docs.microsoft.com/intune)     |是 |是  |可以 |
 |[雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/)     |是 |是  |可以 |
 |[安全的分數](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |是 |有 |否 |
-|[Exchange](https://docs.microsoft.com/exchange/)     |是 |是  |可以 |
+|[Exchange](https://docs.microsoft.com/exchange/)     |是 |是 |是 |
 
 ## <a name="additional-resources"></a>其他資源
 

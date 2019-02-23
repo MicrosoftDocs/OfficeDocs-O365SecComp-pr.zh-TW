@@ -6,20 +6,21 @@ manager: laurawi
 ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 整合 Office 365 進階威脅保護與 Windows 防禦者進階威脅保護查看 threat management 的詳細的資訊。
-ms.openlocfilehash: f8f5f50af10fb668aa67b68604e95e8dd19c9e69
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 892d04152d6029c48a52d37c6235d45a8ba67b81
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995204"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222812"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>整合 Office 365 威脅情報與 Windows Defender 進階威脅防護
 

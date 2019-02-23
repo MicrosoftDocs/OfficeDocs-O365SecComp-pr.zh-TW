@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 1/15/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 安全性與合規性中心會根據貴組織目前的環境設定來提供資料控管建議，您只要按幾下就可以完成各項設定。某些建議會先偵測貴組織中的特定內容，然後提供管理該內容的建議步驟。例如，建議可能會偵測包含營運關鍵內容的項目 (如律師-委託人權限或 NDA 資訊)，然後讓您在這些項目上自動套用保留標籤，確保這些項目按照需求予以分類和保留。此主題列出您可能會看到的資料控管建議，並說明提出之每個建議所偵測到的內容。
-ms.openlocfilehash: a3f803105ea5c2626c8c2a26ad898df5f45af2f0
-ms.sourcegitcommit: c7737903ff2e1d047682ee61f7ac21b0bdd1c6fd
+ms.openlocfilehash: 24e41501ed11d54e60f8b3d9f27a2e96f3cde112
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "28263938"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220433"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>如何辨識內容以提供資料控管建議
 

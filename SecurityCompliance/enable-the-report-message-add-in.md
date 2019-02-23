@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 01/18/2019
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何啟用報表訊息增益集 Outlook 和 Outlook web 針對個別使用者或整個組織。
-ms.openlocfilehash: 8c061d14d11aa868567487186c5dcca534b86215
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 48bd8937622588bbf5a1e07b9d4341e937c5cf7f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995154"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217383"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -57,7 +57,7 @@ ms.locfileid: "29995154"
 增益集已安裝並啟用之後，您會看到下列圖示： 
 
 - 在 Outlook 中，圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
-- 在 Outlook Web App （或 [網路上的 Outlook） 圖示外觀類似如下：<br/>![Outlook 郵件報告增益集的 web 圖示](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- 在 Outlook 中 （前身為 Outlook Web App） 在 web 上，圖示起來如下：<br/>![Outlook 郵件報告增益集的 web 圖示](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
 > [!TIP]
 > 下一個步驟中，以了解如何[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
@@ -89,7 +89,7 @@ ms.locfileid: "29995154"
 根據您選取的項目設定時的增益集 (步驟 7-8 上方)、 人員在組織中的有[報表訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)提供。在組織中的人員會看到下列圖示： 
 
 - 在 Outlook 中，圖示外觀類似如下： <br/> ![報告郵件增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
-- 在 Outlook Web App （或 [網路上的 Outlook） 圖示外觀類似如下：<br/>![在 [網頁報表訊息增益集] 圖示上的 outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- 在網路上的 Outlook、 圖示外觀類似如下：<br/>![在 [網頁報表訊息增益集] 圖示上的 outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
 > [!TIP]
 > 當您通知使用者有關郵件報告增益集時，包含要[使用的報表訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的連結。

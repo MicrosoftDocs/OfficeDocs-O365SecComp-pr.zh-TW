@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c36e0a2228db042d50361460e2e22f13556e8715
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706104"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218213"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>將 custodians 新增至進階的 eDiscovery （預覽） 案例
 
@@ -60,6 +60,7 @@ ms.locfileid: "29706104"
 根據您的案例中，可能也想要新增給定的 okay 可能已經使用過去的信箱群組的 okay 那過去其中 okay 目前成員或網站。除了主要 okay 資料來源而言，您可以為 okay 新增其他 Office 365 的資料來源或利用 Office 365 可協助您識別也可能相關的資料來源。 
 
 若要將信箱、 網站或小組對應至特定 okay：
+
 1. 選取要指派給特定 okay 的信箱、 網站和小組類似的內容位置**更新**。 
 
 2. 彈出式中指定下列項目：
@@ -83,7 +84,7 @@ ms.locfileid: "29706104"
 
 若要放置在所選 custodians 與資料來源上的保留：
 
-1. 確認 okay 選項，然後選取每個 okay 置於保留 checkox。一旦 okay 處於保留狀態，將會自動建立包含所有 custodial 來源 okay 保留原則。如果未選取這個選項，okay & 選取資料來源會新增至案例但不是會保留內容。
+1. 確認 okay 選項，然後選取每個 okay 置於保留的核取方塊。一旦 okay 處於保留狀態，將會自動建立包含所有 custodial 來源 okay 保留原則。如果未選取這個選項，okay & 選取資料來源會新增至案例但不是會保留內容。
 
 2. 移至 [**保留**] 索引標籤並選取**Okay 保留原則**。 
 

@@ -3,10 +3,9 @@ title: 設定 Office 365 組織中信箱的封存及刪除原則
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 建立封存及刪除原則會自動將項目移至使用者的封存信箱的 Office 365 中。
-ms.openlocfilehash: 903a91c590c47ad5de0b89ae51a25983221d2ffe
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.openlocfilehash: 09fef681884dd12b76bf0e30aa757d6e656f99a7
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240576"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223512"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>設定 Office 365 組織中信箱的封存及刪除原則
 
@@ -318,6 +317,6 @@ ms.locfileid: "27240576"
     |永不刪除  <br/> |此標籤避免保留原則所要刪除的項目。  <br/> |內建  <br/> |個人;使用者可以套用此標籤。  <br/> |
     |個人 1 年移至封存  <br/> |1 年後中移至封存信箱項目。  <br/> |內建  <br/> |個人;使用者可以套用此標籤。  <br/> |
    
-    > <sup>\*</sup>使用者可以使用 Outlook 和 Outlook Web App 中復原刪除的郵件工具在刪除項目保留期間內，其預設值為 14 天在 Exchange Online 中復原刪除的項目。系統管理員可以使用 Windows PowerShell 來增加最大值為 30 天內刪除項目保留期間。如需詳細資訊，請參閱：[復原已刪除的 Outlook for Windows 中的項目](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)及[變更 Exchange Online 信箱的刪除項目保留期間](https://go.microsoft.com/fwlink/p/?LinkId=286940)
+    > <sup>\*</sup>使用者可以使用 Outlook 與 （前身為 Outlook Web App） 在 web 上的 Outlook 中復原刪除的郵件工具在刪除項目保留期間內，其預設值為 14 天在 Exchange Online 中復原刪除的項目。系統管理員可以使用 Windows PowerShell 來增加最大值為 30 天內刪除項目保留期間。如需詳細資訊，請參閱：[復原已刪除的 Outlook for Windows 中的項目](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)及[變更 Exchange Online 信箱的刪除項目保留期間](https://go.microsoft.com/fwlink/p/?LinkId=286940)
   
 - 使用 [**可復原的項目 14 天移至封存**保留標籤有助於免費中使用者的主要信箱 [可復原的項目] 資料夾中的儲存空間。這在使用者信箱處於保留狀態，這表示不屬於永久刪除使用者信箱時很有用。不將項目移至封存信箱，很可能會達到儲存配額主要信箱中的 [可復原的項目] 資料夾。如需此憑證與如何避免它的詳細資訊，請參閱[增加保留上的信箱配額可復原的項目](https://go.microsoft.com/fwlink/p/?LinkId=786479)。

@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/30/2016
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 編輯 Windows 登錄本機電腦上的 Office 365 安全性匯出內容的搜尋結果時停用報告&amp;Comliance 中心。停用這些報告可加速下載時間及儲存的磁碟空間。
-ms.openlocfilehash: 62782c472adca892e1dcf239a45fe80f0fa7251b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 0be2be18eaccb618a49e1b58a5c0e53d0a339d1e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037976"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213473"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>當您將 Office 365 安全性的內容的搜尋結果匯出停用報告&amp;規範中心
 

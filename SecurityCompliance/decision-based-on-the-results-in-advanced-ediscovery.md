@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解如何在 Office 365 進階 eDiscovery 決定] 索引標籤提供資料可幫助您決定正確的檢閱一組 case 檔案大小。 '
-ms.openlocfilehash: 58a181e00ad5843ccbbde4dcb47050eccf199225
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c4767e703d03ef5dbdb808332e873d22094d7bca
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526468"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216103"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>根據 Office 365 進階電子文件探索中的結果所作的決策
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
  進階 ediscovery 決定] 索引標籤會提供檢視和使用來決定檢閱一組 case 檔案的大小決策支援統計資料的其他資訊。 
   

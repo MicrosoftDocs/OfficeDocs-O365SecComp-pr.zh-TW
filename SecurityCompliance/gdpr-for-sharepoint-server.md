@@ -5,16 +5,15 @@ author: MikePlumleyMSFT
 manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.custom: ''
+ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 SharePoint Server 中解決 GDPR 需求。
-ms.openlocfilehash: 05c64c10c2fea80ed410258433c35efc33c4a9de
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 84692799222be595d69f7a33a31b0ec3fe767c3d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740825"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221113"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>SharePoint Server 適用的 GDPR
 

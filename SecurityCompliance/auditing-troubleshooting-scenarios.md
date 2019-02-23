@@ -5,19 +5,19 @@ author: markjjo
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 稽核記錄搜尋工具來協助您疑難排解常見問題，例如調查洩漏的帳戶或找出誰設定信箱的電子郵件轉寄。
-ms.openlocfilehash: 930e311712e49214ca2a51e256c29e5f959deab8
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+ms.openlocfilehash: 301c8a19c5e268b1c4e3ff0e9633c85a31fd3f4d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27123896"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220873"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>搜尋 Office 365 稽核記錄來疑難排解常見的案例
 
@@ -30,7 +30,7 @@ ms.locfileid: "27123896"
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>使用 Office 365 稽核記錄搜尋工具
 
-每個本文所述的疑難排解案例根據使用中 [Office 365 安全性及規範中心的稽核記錄搜尋工具。本節列出搜尋稽核記錄所需的權限，並說明的步驟來存取並執行稽核記錄搜尋。每個案例一節提供如何設定稽核記錄搜尋查詢及要符合搜尋準則的稽核記錄中的詳細資訊中尋找的項目相關的特定指示。
+每個本文所述的疑難排解案例根據使用 Office 365 安全性 & 規範中心中的稽核記錄搜尋工具。本節列出搜尋稽核記錄所需的權限，並說明的步驟來存取並執行稽核記錄搜尋。每個案例一節提供如何設定稽核記錄搜尋查詢及要符合搜尋準則的稽核記錄中的詳細資訊中尋找的項目相關的特定指示。
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>若要使用稽核記錄搜尋工具所需的權限
 
@@ -38,13 +38,13 @@ ms.locfileid: "27123896"
 
 ### <a name="running-audit-log-searches"></a>執行稽核記錄搜尋
 
-本節說明建立和執行稽核記錄搜尋基礎。本文中的每個疑難排解案例中使用這些指示為起點。如需詳細的逐步指示，請參閱 ＜[的搜尋稽核記錄中的 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)。
+本節說明建立和執行稽核記錄搜尋基礎。本文中的每個疑難排解案例中使用這些指示為起點。如需詳細的逐步指示，請參閱 ＜[的搜尋稽核登入 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)。
 
 1. 移至 [https://protection.office.com](https://protection.office.com)。
   
 2. 使用公司或學校帳戶登入 Office 365。
 
-3. 在 [安全性及規範中心的左窗格中，按一下 [**搜尋與調查有關** > **稽核記錄搜尋**。
+3. 在 [安全性 & 規範中心的左窗格中，按一下 [**搜尋 & 調查** > **稽核記錄搜尋**。
     
     會顯示 [**稽核記錄搜尋**] 頁面。 
     
@@ -137,7 +137,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 - **從 [刪除的郵件] 資料夾刪除的郵件**-此活動會對應至**SoftDelete**信箱稽核巨集指令。此活動也會記錄使用者選取它，並按下**Shift + Delete**永久刪除項目。永久刪除項目之後，使用者可以復原它直到刪除項目保留期間到期。
 
-- **從信箱 Purged 郵件**-此活動會對應至**HardDelete**信箱稽核巨集指令。這會記錄時使用者清除項目從 [可復原的項目] 資料夾。系統管理員可以使用在 Office 365 安全性和規範中心] 中的內容搜尋工具來搜尋並保留清除復原的項目直到刪除項目保留期間到期或更久是否為使用者的信箱。
+- **從信箱 Purged 郵件**-此活動會對應至**HardDelete**信箱稽核巨集指令。這會記錄時使用者清除項目從 [可復原的項目] 資料夾。系統管理員可以使用在 Office 365 安全性 & 規範中心內容搜尋工具來搜尋並保留清除復原的項目直到刪除項目保留期間到期或更久是否為使用者的信箱。
 
 **開始日期**和**結束日期**-選取適用於您正在調查的日期範圍。
 
@@ -157,7 +157,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ### <a name="recovering-deleted-email-items"></a>復原刪除的電子郵件項目
 
-如果刪除的項目保留期間未過期的使用者可以復原虛刪除的項目。在 Exchange Online 中，預設已刪除的項目保留期間為 14 天，但系統管理員可以增加此設定最大值為 30 天。[復原刪除的項目或 Outlook Web App 中的電子郵件](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)本文的指示在復原點使用者刪除項目。
+如果刪除的項目保留期間未過期的使用者可以復原虛刪除的項目。在 Exchange Online 中，預設已刪除的項目保留期間為 14 天，但系統管理員可以增加此設定最大值為 30 天。[復原刪除的項目或網路上的 Outlook 電子郵件](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)本文的指示在復原點使用者刪除項目。
 
 如先前所述，系統管理員可能會無法復原硬碟已刪除的項目如果已刪除的項目保留期間未過期或信箱時保留，直到保留期間到期的項目保留在此情況下。當您執行內容的搜尋時，虛刪除與硬刪除 [可復原的項目] 資料夾中的項目會傳回搜尋結果中符合搜尋查詢。如需執行內容的搜尋的詳細資訊，請參閱[Office 365 中的內容搜尋](content-search.md)。
 

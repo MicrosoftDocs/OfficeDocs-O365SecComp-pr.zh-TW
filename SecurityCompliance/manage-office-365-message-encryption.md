@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 description: 您已完成設定 up Office 365 郵件加密 (OME)，您可以自訂在數種方式部署的設定。例如，您可以設定是否要啟用一次性複雜代碼、 網頁伺服器與多上的 Outlook 中顯示 [保護] 按鈕。本文中的工作說明如何。
-ms.openlocfilehash: 6a9eddae2d3d166d96979d88b15845c3b7379bd9
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8b044898efb1ef86790773cd3f8e8061523b0ec0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696227"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213753"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 郵件加密
 

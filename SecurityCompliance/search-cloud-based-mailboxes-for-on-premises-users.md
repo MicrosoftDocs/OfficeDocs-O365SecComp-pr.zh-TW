@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用 Office 365 安全性內容搜尋工具&amp;規範中心來搜尋並匯出 MicrosoftTeams 聊天室資料 （稱為 1xN 聊天） Exchange 混合部署中的內部部署使用者。
-ms.openlocfilehash: a504dfcf4c82bec036137b90312c01a0b2326ccc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5707f9ed814bf6d4e040db8ec61290507def258f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526562"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214383"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>搜尋 Office 365 中的雲端架構信箱的內部使用者
 

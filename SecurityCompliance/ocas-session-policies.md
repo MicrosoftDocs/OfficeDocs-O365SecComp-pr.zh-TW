@@ -1,5 +1,5 @@
 ---
-title: Office 365 雲端應用程式安全性的工作階段原則
+title: Office 365 雲端 App 安全性中的工作階段原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,21 +7,21 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 的雲端應用程式安全性工作階段的原則啟用即時工作階段層級監控、 可更精細的可見性到 Office 365 應用程式和功能需要您設定的使用者工作階段的原則不同的動作。允許或完全封鎖存取，而非工作階段控制您可以同時監控使用設定格式化的條件的 Access 應用程式控制項的反向 proxy 功能的工作階段和/或限制特定的工作階段活動允許存取。
-ms.openlocfilehash: 0dbfb3e5827fb76e52f0262333d372860f0cb58a
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a57b62073e93c95217a829f8aa381f4a585dacc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103338"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218603"
 ---
-# <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 雲端應用程式安全性的工作階段原則
+# <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的工作階段原則
 
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](ocas-access-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](ocas-access-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
 
 Office 365 的雲端應用程式安全性工作階段的原則啟用即時工作階段層級監控、 可更精細的可見性到 Office 365 應用程式和功能需要您設定的使用者工作階段的原則不同的動作。允許或完全封鎖存取，而非工作階段控制您可以同時監控使用設定格式化的條件的 Access 應用程式控制項的反向 proxy 功能的工作階段和/或限制特定的工作階段活動允許存取。
 

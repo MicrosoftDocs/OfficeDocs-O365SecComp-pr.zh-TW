@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 description: 如果您的系統可讓使用者的通知，您會收到列出訊息傳送給您的信箱已識別為垃圾郵件、 大量或網路釣魚郵件通知訊息。您可以釋出或報告的郵件之後被通知。
-ms.openlocfilehash: e355a94af5ac295503a8e205b1a896afc1c54fb6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: eb51d8f73ff00781b74cfba4e580668710ce7a76
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526499"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216393"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件
 

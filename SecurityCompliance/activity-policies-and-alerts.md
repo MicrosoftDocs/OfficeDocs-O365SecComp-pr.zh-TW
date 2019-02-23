@@ -6,27 +6,25 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: 定義活動原則與 Office 365 雲端應用程式的安全性設定以特定活動發生或太常發生時觸發提醒。藉由設定原則以觸發提醒，您可通知及監視特定的活動。
-ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29604090"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219763"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的活動原則和警訊
 
-Office 365 進階安全性管理現在是 Office 365 雲端應用程式安全性。
-  
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](anomaly-detection-policies-in-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](anomaly-detection-policies-in-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
 與 Office 365 雲端應用程式安全性] 進階的雲端管理的原則會觸發發生或太常發生特定活動的提醒。例如，假設使用者嘗試登入 Office 365 和一分鐘內 70 時間會失敗。假設另一位使用者下載 7000 檔案，或出現在進行登入加拿大，當使用者應該要放在另一個位置。或糟的是，假設已遭洩露某個人的帳戶，而且攻擊者使用該帳戶存取您的組織的雲端應用程式和機密資料。
   

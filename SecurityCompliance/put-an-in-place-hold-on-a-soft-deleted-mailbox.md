@@ -3,7 +3,6 @@ title: 置於就地保留虛刪除信箱在 Exchange Online
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +11,12 @@ localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: 了解如何建立就地保留虛刪除信箱以進行非使用中並保留其內容。然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中的信箱。
-ms.openlocfilehash: e666ac608ec224bf97caa947be2cb42b742c6fa9
-ms.sourcegitcommit: ca97beff215d154b6ab006ce1222056434fde1a9
+ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29740795"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223522"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>置於就地保留虛刪除信箱在 Exchange Online
 

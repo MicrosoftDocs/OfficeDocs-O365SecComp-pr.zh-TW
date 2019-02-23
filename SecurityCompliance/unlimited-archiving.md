@@ -3,10 +3,9 @@ title: Office 365 中不受限制封存概觀
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自動展開封存 Office 365 中，其會提供的 Exchange Online 信箱執行不受限制的封存儲存區。
-ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: fa1fc2a8b2de577232a50ecb1f89b53d52012096
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740815"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223482"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中不受限制封存概觀
 

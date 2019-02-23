@@ -1,7 +1,7 @@
 ---
 title: 確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 7/16/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
+ms.collection:
+- M365-security-compliance
 description: EOP 客戶的預設反垃圾郵件動作是要將垃圾郵件移至 [收件者的垃圾郵件] 資料夾。為了讓此巨集指令來搭配內部部署信箱，您必須設定 Exchange 傳輸規則來偵測垃圾郵件標頭新增的 EOP 與內部邊緣] 或 [集線伺服器上。這些傳輸規則設定由 SclJunkThreshold 屬性使用 Set-organizationconfig 指令程式將垃圾郵件移至每個信箱的垃圾郵件] 資料夾的垃圾郵件信賴等級 (SCL)。
-ms.openlocfilehash: 1b0a9e5ee39820baade714612ca0b0bdb7a81bb9
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002852"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222882"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾
 

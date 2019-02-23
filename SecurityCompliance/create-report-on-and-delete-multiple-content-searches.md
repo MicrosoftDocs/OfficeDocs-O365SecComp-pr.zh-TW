@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/26/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何自動化建立搜尋和透過 Office 365 安全性的 PowerShell 指令碼執行報告類似的內容搜尋工作&amp;規範中心。
-ms.openlocfilehash: a32c003dfd9a27ea8c38b29b31001b612368bc4a
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c61a62c7b31d24346fd58b7562872a7c45d1c65d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038136"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213233"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、回報及刪除多個內容搜尋
 
@@ -66,7 +66,7 @@ ms.locfileid: "25038136"
    
 3. 儲存為 CSV 檔案的資料夾的 Excel 檔案本機電腦上。您在步驟 3 中建立的指令碼會使用此 CSV 檔案中的資訊來建立搜尋。 
   
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2： 連線至安全性與規範中心 PowerShell
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2： 連線至安全性 & 規範中心 PowerShell
 
 下一步是連線至安全性的 Windows PowerShell&amp;貴組織的規範中心。
   

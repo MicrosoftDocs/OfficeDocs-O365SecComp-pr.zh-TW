@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Office 365 雲端應用程式安全性的 OAuth 應用程式可協助您管理您的使用者下載 Office 365 資料搭配使用的應用程式
-ms.openlocfilehash: ae32e3c6b15f4ad4794a3dd08c3992adaeba655c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 510cb64f2267c99b783f86a69f7b7a84db8d84dd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603684"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219823"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>使用 Office 365 雲端 App 安全性管理 OAuth 應用程式
 

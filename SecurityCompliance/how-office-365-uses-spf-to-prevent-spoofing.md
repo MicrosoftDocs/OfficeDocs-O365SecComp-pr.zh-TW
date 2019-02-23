@@ -5,7 +5,7 @@ author: kccross
 manager: laurawi
 ms.date: 12/15/2016
 ms.audience: ITPro
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 description: 摘要： 本文說明如何 Office 365 使用 DNS 中以確定目的地的電子郵件系統信任從自訂網域傳送的郵件寄件者原則架構 (SPF) TXT 記錄。這適用於從 Office 365 傳送的輸出郵件。從 Office 365 傳送至 Office 365 中的收件者的郵件將會一律傳遞 SPF。
-ms.openlocfilehash: b42c2528f7a6a272e11d2434cce1e1735649962a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b4898bf8b607e7ad600455c915f99baaab21f6f6
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003282"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223562"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 可防止詐騙所使用的寄件者原則架構 (SPF)
 
@@ -155,7 +155,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
     
 - 強制執行規則通常是下列其中一項：
     
-  - -全部
+  - -all
     
     會指出完全未通過。如果您知道授權的 IP 位址的所有網域，其列出 SPF TXT 記錄中並使用-全部 （完全未通過） 辨識符號。此外，如果您只使用 SPF，也就是您不使用 DMARC 或 DKIM、 您應該使用-所有辨識符號。我們建議您一律使用此辨識符號。
     
@@ -240,7 +240,7 @@ cust-spf.exacttarget.com
 
 您可以使用 nslookup 來檢視您的 DNS 記錄，其中包括 SPF TXT 記錄。或者，如果您偏好，有許多免費的線上工具提供可用來檢視您 SPF TXT 記錄的內容。透過查看 SPF TXT 記錄並接在鏈結包含陳述式和重新導向，您可決定記錄需要多少 DNS 查閱。某些線上工具將偶數計數並顯示這些查閱。追蹤的此號碼可協助防止從您的組織從觸發永久錯誤、 permerror 從未接收伺服器傳送的郵件。
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="SPFTroubleshoot"> </a>
 
 需要協助新增 TXT SPF 記錄吗？使用來更新在常用的網域註冊機構各種 SPF (TXT) 記錄的[逐步指示](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)。[反垃圾郵件郵件標頭](anti-spam-message-headers.md)包含 SPF 檢查 Office 365 所使用的語法和標頭欄位。 

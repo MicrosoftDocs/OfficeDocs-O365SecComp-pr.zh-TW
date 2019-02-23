@@ -8,16 +8,16 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: '使用 Office 365 安全性內容搜尋&amp;規範中心來搜尋信箱、 SharePoint Online 站台及 OneDrive for Business 位置。 '
-ms.openlocfilehash: d480579db1c39d51d4fa8b0931106f135c5339d2
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 31db6f7b56e1866064e7a008ce4fd704b5333347
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038316"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223732"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性執行內容的搜尋&amp;規範中心
 
@@ -35,7 +35,7 @@ ms.locfileid: "25038316"
     
 內容搜尋是新的 eDiscovery 搜尋工具新增及改良的延展性與效能功能。使用內容搜尋執行非常大的 eDiscovery 搜尋。您可以搜尋所有信箱、 所有的 Exchange 公用資料夾中，所有 SharePoint Online 網站和 OneDrive 單一內容都搜尋中的商務帳戶。有無限制的可搜尋的內容位置數目而定。也有可以同時執行的搜尋數目沒有限制。之後執行內容搜尋] 的內容位置數目，並在**內容搜尋**] 頁面上的 [詳細資料] 窗格中顯示預估的搜尋結果數目。執行搜尋後您可以預覽結果、 取得關鍵字統計資料的一個或多個搜尋大量編輯內容的搜尋，並將結果匯出至本機電腦。 
   
- **目錄**
+ **Contents**
   
 [建立搜尋](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
@@ -74,9 +74,9 @@ ms.locfileid: "25038316"
 ## <a name="create-a-search"></a>建立搜尋
 <a name="create"> </a>
 
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 在安全性與合規性中心的左窗格中，按一下 [搜尋與調查]**** \> [內容搜尋]****。
     
@@ -120,7 +120,7 @@ ms.locfileid: "25038316"
     
     公用資料夾，您可以選擇在 Exchange Online 組織中搜尋所有的公用資料夾或搜尋任何公用資料夾。
     
-7. 按 [下一步]。
+7. 按 [下一步]****。
     
 8. 您可以在 [**新的搜尋**] 頁面上新增關鍵字和條件來建立搜尋查詢。 
     
@@ -281,7 +281,7 @@ ms.locfileid: "25038316"
     
 - Microsoft 收集所有 Office 365 組織所執行的內容搜尋的效能資訊。雖然搜尋查詢的複雜性可能會影響搜尋時間，搜尋會影響搜尋讓有的信箱數目多長的最大因素。雖然 Microsoft 不會提供搜尋時間服務層級協議下, 表列出根據包含在搜尋中的信箱數目內容搜尋平均搜尋時間。
     
-|**信箱數目**|**平均搜尋時間**|
+|**信箱數量**|**平均搜尋時間**|
 |:-----|:-----|
 |100  <br/> |30 秒  <br/> |
 |1,000  <br/> |45 秒  <br/> |

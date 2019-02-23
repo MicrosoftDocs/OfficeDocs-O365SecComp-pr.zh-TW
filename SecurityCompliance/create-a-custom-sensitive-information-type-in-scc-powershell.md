@@ -3,10 +3,9 @@ title: 在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機�
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 了解如何在 Office 365 安全性與合規性中心建立及匯入 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: c1774b094163b5712519b3baeb5f0360d84896ea
-ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
+ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25895272"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223302"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型
 

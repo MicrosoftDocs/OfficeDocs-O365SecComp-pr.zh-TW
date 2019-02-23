@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,14 +15,14 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅智慧以及如何開始。
-ms.openlocfilehash: 6412f575bbe581aa469c7ad615213564b728d0aa
-ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
+ms.openlocfilehash: f116b7a01ab3b27760b597527cc1e5a4440a6586
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051164"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217853"
 ---
-# <a name="get-started-with-threat-intelligence"></a>威脅智慧快速入門
+# <a name="get-started-with-threat-intelligence"></a>威脅情報快速入門
 
 如果您組織的安全性小組的一部分，您可以使用威脅智慧功能來保護使用者免於遭受攻擊。Office 365 進階威脅保護計劃 2 （前身為 Office 365 威脅智慧） 安全性分析師與協助保護使用者的安全由昇觀點的系統管理員和識別根據什麼動作中有新鮮事其 Office 365 環境。這些觀點根據完整存放庫的威脅智慧資料和系統以對應至攻擊行為和可疑活動的特別色模式。
   

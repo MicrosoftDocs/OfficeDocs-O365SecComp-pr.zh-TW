@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: '檢閱將匯入的檔案新增至最後一個已定義的負載或批次檔案，再執行相關性訓練 Office 365 進階 ediscovery 的步驟。  '
-ms.openlocfilehash: 2c986578b969b671351930fd6939a90e3a821dc2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527276"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215983"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定載入要新增匯入的檔案
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 進階 ediscovery 負載為新的批次的檔案新增至案例。根據預設，定義一個負載並所有匯入的檔案新增至其中。執行相關性訓練、 之前先匯入的檔案必須加入至負載。 
   
@@ -137,7 +137,7 @@ ms.locfileid: "22527276"
 
 [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
   
-[定義的問題和指派使用者](define-issues-and-assign-users.md)
+[定義問題並指派使用者](define-issues-and-assign-users.md)
   
-[定義反白顯示關鍵字和進階選項](define-highlighted-keywords-and-advanced-options.md)
+[定義反白顯示的關鍵字和進階選項](define-highlighted-keywords-and-advanced-options.md)
 

@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: 輕鬆地識別設定之 IP 位址的實際辦公室 IP 位址，例如您將使用 Office 365 雲端應用程式安全性您可以設定群組的 IP 位址範圍。
-ms.openlocfilehash: 42a62d2dd9771fb7d3ac992f4e0f8b5f6826efe3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: b8f5c1dd46b2e3990d53a65881d12ca8f3961b16
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603734"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220443"
 ---
 # <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>將您的 IP 位址分組，以簡化 Office 365 雲端 App 安全性中的管理
   

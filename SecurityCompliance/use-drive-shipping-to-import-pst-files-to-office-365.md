@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/14/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '系統管理員： 了解如何將大量匯入您的組織至 Office 365 信箱的 PST 檔案複製到硬碟的 PST 檔案，然後將其傳送給 Microsoft。 '
-ms.openlocfilehash: ebe88918b6c25e18562db7817d22fbf71f05e4c7
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 44ca6e58d9273c73a807ba0b186c47721949c6f6
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526668"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223682"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>使用的磁碟機傳送至您的組織 PST 檔案匯入 Office 365
 
@@ -170,7 +170,7 @@ ms.locfileid: "22526668"
     | `/t:` <br/> |指定當硬碟連接至本機電腦時的磁碟機代號。  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |指定複製工作階段的名稱。工作階段的定義是每次執行 WAImportExport.exe 工具，將檔案複製到硬碟的動作。PST 檔案會複製到資料夾，該資料夾是以此參數所指定的工作階段名稱來命名。   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |指定包含要複製工作階段期間的 PST 檔案在組織中的來源目錄。請務必環繞雙引號使用此參數的值 ("")。  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |在 Azure 的存放區] 區域中 Pst 要上傳 Microsoft cloud 指定目的地目錄。您必須使用值`ingestiondata/`。請務必環繞雙引號使用此參數的值 ("")。<br/> （選用） 您也可以新增其他檔案路徑為此參數的值。例如，您可以使用在硬碟上 （轉換成的 URL 格式），來源目錄中指定的檔案路徑`/srcdir:`參數。例如，`\\FILESERVER01\PSTs`變更為`FILESERVER01/PSTs`。在此例中，您仍必須包含`ingestiondata`中的檔案路徑。在此範例中的值是`/dstdir:`參數就是`"ingestiondata/FILESERVER01/PSTs"`。<br/> 若要新增其他檔案路徑的其中一個原因是如果您必須具有相同的檔名的 Pst 檔案。  <br/> > [!NOTE]> PST 檔案上傳至 Azure 儲存區域後的命名空間如果您包括選用 pathname，將會包含路徑名稱及 PST 檔案名稱 ；例如， `FILESERVER01/PSTs/annb.pst`。如果您未包含路徑名稱、 命名空間是僅限 PST 檔案名稱 ；例如`annb.pst`。           | `/dstdir:"ingestiondata/"` <br/> 或  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |在 Azure 的存放區] 區域中 Pst 要上傳 Microsoft cloud 指定目的地目錄。您必須使用值`ingestiondata/`。請務必環繞雙引號使用此參數的值 ("")。<br/> （選用） 您也可以新增其他檔案路徑為此參數的值。例如，您可以使用在硬碟上 （轉換成的 URL 格式），來源目錄中指定的檔案路徑`/srcdir:`參數。例如，`\\FILESERVER01\PSTs`變更為`FILESERVER01/PSTs`。在此例中，您仍必須包含`ingestiondata`中的檔案路徑。在此範例中的值是`/dstdir:`參數就是`"ingestiondata/FILESERVER01/PSTs"`。<br/> 若要新增其他檔案路徑的其中一個原因是如果您必須具有相同的檔名的 Pst 檔案。  <br/> > [!NOTE]如果您包括選用 pathname >、 PST 檔案上傳至 Azure 儲存區域後的命名空間將會包含路徑名稱及 PST 檔案名稱 ；例如， `FILESERVER01/PSTs/annb.pst`。如果您未包含路徑名稱、 命名空間是僅限 PST 檔案名稱 ；例如`annb.pst`。           | `/dstdir:"ingestiondata/"` <br/> 或  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |在步驟 1 中指定您取得儲存帳戶機碼。請務必環繞雙引號使用此參數的值 ("")。  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
     | `/encrypt` <br/> |此參數會開啟硬碟的 BitLocker。首次執行 WAImportExport.exe 工具時需要此參數。  <br/> BitLocker 加密金鑰複製到日誌檔案和記錄檔會建立如果您使用`/logfile:`參數。如先前所述的日誌檔案會儲存到 WAImportExport.exe 工具所在的相同資料夾中。<br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |此選用參數會指定儲存記錄檔的資料夾。如果未指定，記錄檔會儲存至相同 WAImportExport.exe 工具所在的資料夾。請務必環繞雙引號使用此參數的值 ("")。  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
@@ -228,11 +228,11 @@ ms.locfileid: "22526668"
     |:-----|:-----|:-----|
     | `Workload` <br/> |指定要匯入資料至 Office 365 服務。若要匯入 PST 檔案至使用者信箱，請使用`Exchange`。<br/> | `Exchange` <br/> |
     | `FilePath` <br/> | PST 檔案會複製到運送硬碟時向 Microsoft Azure 儲存區域中指定的資料夾位置。  <br/>  您新增此資料行中的 CSV 檔案取決於內容中所指定的`/dstdir:`先前步驟中的參數。  <br/>  如果您是使用`/dstdir:"ingestiondata/"`，然後將此參數保留空白 CSV 檔案中。  <br/>  如果您包含的值選用 pathname`/dstdir:`參數 (例如`/dstdir:"ingestiondata/FILESERVER01/PSTs"`，然後使用 CSV 檔案中的此參數 （不包括"ingestiondata"） 的路徑名稱。此參數的值是區分大小寫。<br/>  無論如何，*不*包含"ingestiondata"中的值`FilePath`參數。將此參數保留空白，或指定的選用路徑名稱。<br/> > [!IMPORTANT]> 大小寫的檔案路徑名稱必須是相同的案例中所指定`/dstdir:`先前步驟中的參數。例如，如果您是使用`"ingestiondata/FILESERVER01/PSTs"`子資料夾名稱在先前步驟中，但接著會使用`fileserver01/psts`中`FilePath`CSV 檔中的參數，將會失敗 PST 檔案匯入。請務必在兩個執行個體中使用相同的大小寫。           |(保留空白)  <br/> 或  <br/>  `FILESERVER01/PSTs` <br/> |
-    | `Name` <br/> |指定要匯入至使用者信箱的 PST 檔案的名稱。此參數的值是區分大小寫。<br/> > [!IMPORTANT]> CSV 檔案中的 PST 檔案名稱的大小寫必須已上傳至步驟 2 中的 Azure 儲存位置的 PST 檔案相同。例如，如果您使用`annb.pst`中`Name`參數中的 CSV 檔案，但實際的 PST 檔案的名稱是`AnnB.pst`，該 PST 檔案匯入就會失敗。請務必 PST CSV 檔案中的名稱會使用為實際的 PST 檔案的大小寫相同。           | `annb.pst` <br/> |
-    | `Mailbox` <br/> |會指定 PST 檔案將會匯入至信箱的電子郵件地址。請注意您無法指定公用資料夾因為 PST 匯入服務不支援將 PST 檔案匯入的公用資料夾。<br/> 匯入 PST 檔案至不在作用中的信箱，您必須指定此參數的信箱 GUID。若要取得這個 GUID，請執行下列 PowerShell 命令 in Exchange Online： ' Get-mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-mailbox<identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command:  `Get-mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid'。           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `Name` <br/> |指定要匯入至使用者信箱的 PST 檔案的名稱。此參數的值是區分大小寫。<br/> > [!IMPORTANT]> CSV 檔案中的 PST 檔案名稱的大小寫必須是已上傳至步驟 2 中的 Azure 儲存位置的 PST 檔案相同。例如，如果您使用`annb.pst`中`Name`參數中的 CSV 檔案，但實際的 PST 檔案的名稱是`AnnB.pst`，該 PST 檔案匯入就會失敗。請務必 PST CSV 檔案中的名稱會使用為實際的 PST 檔案的大小寫相同。           | `annb.pst` <br/> |
+    | `Mailbox` <br/> |會指定 PST 檔案將會匯入至信箱的電子郵件地址。請注意您無法指定公用資料夾因為 PST 匯入服務不支援將 PST 檔案匯入的公用資料夾。<br/> 匯入 PST 檔案至不在作用中的信箱，您必須指定此參數的信箱 GUID。若要取得這個 GUID，請執行下列 PowerShell 命令 in Exchange Online：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> 在某些情況下，您可能會有多個信箱使用同一個電子郵件地址，其中一個信箱不在作用中信箱和其他信箱位於虛刪除 （或非使用中） 的狀態。在下列情況下，您必須指定信箱的信箱來唯一地識別要匯入至 PST 檔案的信箱 GUID。若要取得這個作用中信箱的 GUID，請執行下列 PowerShell 命令： `Get-Mailbox <identity of active mailbox> | FL Guid`。若要取得虛刪除 （或非使用中） 的信箱的 GUID，請執行下列命令： `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`。           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | 指定是否要匯入 PST 檔案至使用者的封存信箱。其中有兩個選項：<br/> **FALSE**將 PST 檔案匯入使用者的主要信箱。  <br/> **True 是表示**將 PST 檔案匯入使用者的封存信箱。本範例假設[已啟用使用者的封存信箱](enable-archive-mailboxes.md)。如果您將這個參數設定為`TRUE`和未啟用使用者的封存信箱、 匯入的使用者將會失敗。請注意，如果匯入失敗的一位使用者 (因為其封存未啟用且此屬性設為`TRUE`)，將不會影響其他使用者匯入工作。<br/>  如果您將此參數保留空白，PST 檔案匯入使用者的主要信箱。  <br/> **附註：** 匯入 PST 檔案到雲端式封存信箱的主要信箱位於內部部署的使用者，剛指定`TRUE`為此參數指定使用者的內部部署信箱的電子郵件地址`Mailbox`參數。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要匯入 PST 檔案的信箱資料夾。  <br/>  如果您將此參數保留空白，PST 會匯入至名為的**匯入**位於信箱 （相同層級 [收件匣] 資料夾和其他預設信箱資料夾） 的根層級的新資料夾。  <br/>  如果您指定`/`、 PST 檔案中的項目會被匯入直接在使用者的 [收件匣] 資料夾。  <br/>  如果您指定`/<foldername>`、 PST 檔案中的項目將會匯入至名為資料夾*\<foldername\> * 。例如，如果您使用`/ImportedPst`、 項目會匯入至名為**ImportedPst**的資料夾。這個資料夾會位於 [收件匣] 資料夾相同層級的使用者的信箱。<br/> |(保留空白)  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |此選用參數會指定要用於匯入 PST 檔案中的 ANSI 檔案格式的字碼頁的數值。此參數用於從中文、 日文及韓文 (CJK) 的組織中匯入 PST 檔案，因為這些語言通常使用雙位元組字元集 (DBCS) 的字元編碼。如果此參數不用來匯入 PST 檔案的信箱資料夾名稱使用 DBCS 的語言，則他們正在匯入後通常被混亂資料夾名稱。<br/> 如需使用此參數，請參閱[程式碼頁面識別碼](https://go.microsoft.com/fwlink/p/?LinkId=328514)支援值的清單。  <br/> > [!NOTE]> 之前另有說明，這是選用的參數與您沒有包含 CSV 檔案中。或者您可以將它包含並將此值保留空白的一或多個資料列。           |(保留空白)  <br/> 或  <br/>  `932`（這是程式碼] 頁面上的識別碼 ANSI/OEM 日文）  <br/> |
+    | `ContentCodePage` <br/> |此選用參數會指定要用於匯入 PST 檔案中的 ANSI 檔案格式的字碼頁的數值。此參數用於從中文、 日文及韓文 (CJK) 的組織中匯入 PST 檔案，因為這些語言通常使用雙位元組字元集 (DBCS) 的字元編碼。如果此參數不用來匯入 PST 檔案的信箱資料夾名稱使用 DBCS 的語言，則他們正在匯入後通常被混亂資料夾名稱。<br/> 如需使用此參數，請參閱[程式碼頁面識別碼](https://go.microsoft.com/fwlink/p/?LinkId=328514)支援值的清單。  <br/> > [!NOTE]> 如先前所述，這是選用的參數與您沒有包含 CSV 檔案中。或者您可以將它包含並將此值保留空白的一或多個資料列。           |(保留空白)  <br/> 或  <br/>  `932`（這是程式碼] 頁面上的識別碼 ANSI/OEM 日文）  <br/> |
     | `SPFileContainer` <br/> |針對 PST 匯入，請將此參數保留空白。   <br/> |不適用  <br/> |
     | `SPManifestContainer` <br/> |針對 PST 匯入，請將此參數保留空白。   <br/> |不適用  <br/> |
     | `SPSiteUrl` <br/> |針對 PST 匯入，請將此參數保留空白。   <br/> |不適用  <br/> |
@@ -369,7 +369,7 @@ PST 檔案上傳至 Azure 之後，狀態會變更為**進行中的分析**。�
     
     ![您可以修剪 PST 檔案中的資料或將其所有匯入](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-6. 執行下列其中一項動作：
+6. 執行下列其中一項操作：
     
     a.以修剪您匯入的資料，按一下 [**是，我要匯入之前加以篩選**。
     
@@ -446,7 +446,7 @@ Microsoft Azure 儲存在檔案總管處於預覽。
   
 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 磁碟機傳送是有效的方式大量的封存訊息資料匯入 Office 365 善用可用來在組織的符合性功能。封存的資料匯入至使用者信箱後，您可以：
     

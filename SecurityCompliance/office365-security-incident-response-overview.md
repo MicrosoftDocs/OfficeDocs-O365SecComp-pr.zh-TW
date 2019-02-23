@@ -9,19 +9,17 @@ ms.topic: overview
 ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: 此解決方案會告訴您何種最常見網路安全性攻擊看起來像在 Office 365 和給他們的回應方式
-ms.openlocfilehash: d2caea8cc7ceecb18cd477b8a1ff12352d83c3df
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: ac0a61e31f50846547517d721456a5229a7fb64c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494074"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223282"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全性事件回應
 

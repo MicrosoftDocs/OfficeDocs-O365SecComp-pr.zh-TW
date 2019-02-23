@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 4/17/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 保護存取 O365 資料及服務的登陸頁面
-ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 95933c5a7bc95f9fd70e8f3470055b57193971d4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011275"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213533"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>保護 Office 365 中的資料與服務存取權
 
@@ -59,7 +59,7 @@ ms.locfileid: "24011275"
 特殊存取權限管理 Office 365 中讓更精細的存取權限的管理工作的控制權。 它可協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。
 
 - [權限的概觀存取管理](privileged-access-management-overview.md)
-- [設定權限的存取管理](privileged-access-management-configuration.md)
+- [設定特殊權限存取管理](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>步驟 5： 設定 SharePoint 裝置存取原則
 

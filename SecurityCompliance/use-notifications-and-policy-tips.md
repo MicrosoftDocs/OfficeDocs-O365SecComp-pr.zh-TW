@@ -8,7 +8,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: '原則提示是通知或當有人會處理內容與 DLP 原則該發生衝突時出現的警告。您可以使用電子郵件通知及原則提示增加傳達及協助貴組織的原則相關的人員對教育訓練。您也可以的讓人員覆寫原則，以便他們不會封鎖如果有有效的商業選項需要或原則會偵測誤判。 '
-ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 1e161aa1b8de48cea32718f2c04b05436b25c0ff
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25803994"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216443"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>傳送電子郵件通知，並顯示 DLP 原則的原則提示
 

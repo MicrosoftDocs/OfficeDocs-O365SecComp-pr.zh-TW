@@ -1,25 +1,25 @@
 ---
-title: 管理隔離的 SharePoint Online 小組網站
+title: 管理獨立的 SharePoint Online 小組網站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 摘要： 管理隔離這些程序與 SharePoint Online 小組網站。
-ms.openlocfilehash: 22b4cbbdd926635286d23570e1f61b64529d0e76
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 81a6fcd80bb3e4950eb7b783d1ad964b9bc67cc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345935"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214483"
 ---
-# <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理隔離的 SharePoint Online 小組網站
+# <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理獨立的 SharePoint Online 小組網站
 
  **摘要：** 管理隔離這些程序與 SharePoint Online 小組網站。
   
@@ -155,37 +155,37 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 4. 按一下 **[共用]**。
     
-5. 按一下 [**與共用 > 進階**。
+5. 按一下 [**與 > 進階共用**]。
     
 6. 按一下 [**停止繼承權限**] 和 [**確定]**。
     
 7. 按一下 **[共用]**。
     
-8. 按一下 [**與共用 > 進階**。
+8. 按一下 [**與 > 進階共用**]。
     
-9. 按一下 [**授與權限 > 與共用 > 進階**。
+9. 按一下 [**授與權限 > 與 > 進階共用**]。
     
-10. 在 [權限] 頁面上，按一下 [**\<站台名稱 > 清單中的成員**。
+10. 在 [權限] 頁面上，按一下 [**\<網站清單中的 name> 成員**。
     
-11. 在**\<站台名稱 > 成員**] 頁面上、 選取網站成員存取群組旁邊的核取記號表示、 按一下 [**動作]**、 按一下 [**移除從群組中的使用者**，然後按一下 [**確定]**。
+11. 在**\<網站 name> 成員**] 頁面上、 選取網站成員存取群組旁邊的核取記號表示、 按一下 [**動作]**、 按一下 [**移除從群組中的使用者**，然後按一下 [**確定]**。
     
-12. 若要將特定成員新增到這個子資料夾中，按一下 [**新增 > 新增使用者**。
+12. 特定成員新增到這個子資料夾中，按一下 [**新 > 新增使用者**]。
     
 13. 在 [**共用**] 對話方塊中，輸入可以共同作業的子資料夾中的檔案，然後按一下 [**共用**的使用者帳戶的名稱。
     
 14. 重新整理 web 頁面才能看見新的結果。
     
-15. [**群組**的左方導覽中，按一下 [**\<站台名稱 > 訪客**群組及使用步驟 11 14 指定可以檢視中的檔案的子資料夾 （視） 的使用者帳戶的設定。
+15. [**群組**的左方導覽中，按一下 [**\<網站 name> 訪客**群組及使用步驟 11 14 指定可以檢視中的檔案的子資料夾 （視） 的使用者帳戶的設定。
     
-16. [**群組**的左方導覽中，按一下 [**\<站台名稱 > 擁有者**群組及使用步驟 11 14 指定 （視） 可以管理子資料夾中的權限的使用者帳戶的設定。
+16. [**群組**的左方導覽中，按一下 [**\<網站 name> 擁有者**群組及使用步驟 11 14 指定 （視） 可以管理子資料夾中的權限的使用者帳戶的設定。
     
 17. 關閉瀏覽器中的 [**人員與群組**] 索引標籤。
     
 ## <a name="see-also"></a>另請參閱
 
-[隔離的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
+[獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
   
-[設計隔離的 SharePoint Online 小組網站](design-an-isolated-sharepoint-online-team-site.md)
+[設計獨立的 SharePoint Online 小組網站](design-an-isolated-sharepoint-online-team-site.md)
 
 [部署獨立的 SharePoint Online 小組網站](deploy-an-isolated-sharepoint-online-team-site.md)
 

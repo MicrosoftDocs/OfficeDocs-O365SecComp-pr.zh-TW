@@ -6,20 +6,21 @@ manager: laurawi
 ms.date: 1/3/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Office 365 的靜態及傳輸，使用最強大的加密、 通訊協定及可用的技術加密您的內容。取得 Office 365 加密的概觀。
-ms.openlocfilehash: 5f64d6e758818d410f54370adee549f565d4f042
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 6371bc7fabfccfca30d1e8fec94d4f22c1c6f492
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995104"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223662"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 

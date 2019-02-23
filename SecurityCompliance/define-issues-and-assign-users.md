@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
-description: '了解如何新增或編輯有問題，包括將使用者指派給它，或刪除 Office 365 進階 eDiscovery 案例的問題。  '
-ms.openlocfilehash: 90c3b90fe1fc3728613cfc1713fa1a2eeaabd016
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 了解如何新增或編輯有問題，包括將使用者指派給它，或刪除 Office 365 進階 eDiscovery 案例的問題。
+ms.openlocfilehash: b8ed024983c527246236b355c81ef226c98f404b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526584"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218233"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中定義問題及指派使用者
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 進階 eDiscovery 中一或多個問題可定義內案例。定義問題進一步允許分類的主題。連線至新的案例時，會提供單一的預設問題。您可以編輯預設問題名稱並將使用者指派給此問題。 
   
@@ -76,7 +76,7 @@ ms.locfileid: "22526584"
 
 [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
   
-[若要新增匯入的檔案載入設定](set-up-loads-to-add-imported-files.md)
+[設定負載以新增匯入的檔案](set-up-loads-to-add-imported-files.md)
   
-[定義反白顯示關鍵字和進階選項](define-highlighted-keywords-and-advanced-options.md)
+[定義反白顯示的關鍵字和進階選項](define-highlighted-keywords-and-advanced-options.md)
 

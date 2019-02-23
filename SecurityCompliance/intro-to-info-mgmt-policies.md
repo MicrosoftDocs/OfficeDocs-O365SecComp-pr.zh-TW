@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/16/2014
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - WSU150
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 description: 資訊管理原則是內容的一組規則類型。資訊管理原則可讓組織控制及追蹤之類的內容保留期限或哪些動作使用者可能需要與該內容。資訊管理原則可協助組織符合法律或政府法規或他們只是強制執行內部商務程序。
-ms.openlocfilehash: 9ec64cd7e015acc6a7d8da324ba18cf74405cc71
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0ac273a62464e8a02668396dbeabb6bbd473dc0d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526649"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218353"
 ---
 # <a name="introduction-to-information-management-policies"></a>資訊管理原則簡介
 

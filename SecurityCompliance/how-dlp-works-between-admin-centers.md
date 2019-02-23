@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 8/4/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解如何在 [安全性] 中的 DLP&amp;規範中心可以與 Exchange 系統管理中心的 DLP 和傳輸規則搭配使用。
-ms.openlocfilehash: bc7494f504c2c0ffa668562d6e64b9f29992e24f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 531a45308594d03dc219f50d989a08236b8b5e20
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527030"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215643"
 ---
 # <a name="how-dlp-works-between-the-security-amp-compliance-center-and-exchange-admin-center"></a>DLP 安全性之間的運作方式&amp;規範中心及 Exchange 系統管理中心
 

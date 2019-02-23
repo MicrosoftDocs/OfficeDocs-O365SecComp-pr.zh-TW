@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 description: '您和使用者可以送出 false 負值和 false 正數垃圾郵件訊息給 Microsoft 進行分析。 '
-ms.openlocfilehash: 8966dcb513c727527cc809bb2fde5b3181dc94a2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 80eef1ad5612509080f92b103084b248cf8d1369
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002862"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223342"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 
@@ -58,7 +58,7 @@ ms.locfileid: "23002862"
     > [!NOTE]
     > 您可以附加多個郵件至新的郵件。請確定所有訊息都是相同的類型 — 網路釣魚詐騙郵件或垃圾郵件訊息。> 是空白新郵件內的文。 
   
-4. 按一下 [傳送]****。
+4. 按一下 [**傳送**]。
     
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>提交郵件已標記為垃圾郵件但應該允許通過
 <a name="sectionSection1"> </a>
@@ -69,11 +69,11 @@ ms.locfileid: "23002862"
   
 您可以透過下列方式提交非垃圾郵件：
   
-- 如果您使用 [**移至 [垃圾郵件] 資料夾的郵件**] 動作設定內容篩選器 （這是預設動作） 時，使用者可以釋出其 Outlook 或 OWA 垃圾郵件] 資料夾中誤判的郵件。 
+- 如果當您設定內容篩選器 （這是預設動作） 時使用 [**移至 [垃圾郵件] 資料夾的郵件**] 動作，使用者可以釋出其 Outlook 或 Outlook web （前身為 Outlook Web App） 的 [垃圾郵件] 資料夾上誤判的郵件. 
     
   - Outlook 使用者可以使用**不是垃圾郵件**上按一下滑鼠右鍵功能表選項來釋放誤判的郵件。但必須提交給 Microsoft 透過電子郵件訊息本文中的程序所示。 
     
-  - OWA 使用者釋出誤判的郵件，並進行分析**標示為不是垃圾郵件**巨集指令將將其提交給 Microsoft。如需如何執行這項作業的詳細資訊，請參閱[報表垃圾郵件和網路釣魚詐騙在網路上的 Outlook ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
+  - Outlook web 使用者在釋出誤判的郵件，並進行分析**標示為不是垃圾郵件**巨集指令將將其提交給 Microsoft。如需如何執行這項作業的詳細資訊，請參閱[報表垃圾郵件和網路釣魚詐騙在網路上的 Outlook ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
     
 - 如果您設定內容篩選器的**隔離郵件**動作使用，而不是 [**移至 [垃圾郵件] 資料夾的郵件**] 動作： 
     
@@ -114,7 +114,7 @@ ms.locfileid: "23002862"
   
 垃圾郵件評估為無論原始語言或字元組適用於持續程序。因為垃圾郵件可以含糊或甚至是不具主旨或郵件內文中的文字、 垃圾郵件小組會依賴執行篩選其他郵件特性。這表示的垃圾郵件小組指定為垃圾郵件訊息的旗標，並讓其規則基底必要的變更之後，該郵件會被封鎖未來之前已修改足夠避免我們篩選它的特性。持續部署新的垃圾郵件規則。在個別的送出的規則的時間範圍而異數量和送出的品質。針對所有客戶全域設定新的垃圾郵件規則，因為不是所有的個別的垃圾郵件提交會產生新的垃圾郵件規則。
    
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection4"> </a>
 
 [反垃圾郵件和反惡意程式碼防護](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)

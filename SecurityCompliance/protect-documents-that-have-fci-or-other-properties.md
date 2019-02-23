@@ -8,19 +8,19 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Strat_O365_IP
 ms.assetid: 1b9e3c6c-4308-4a20-b11e-c37b8013e177
 description: 許多組織已識別及分類敏感資訊是使用分類屬性在 Windows Server 檔案分類基礎結構 (FCI)、 SharePoint 中的文件屬性或文件屬性中的程序套用的協力廠商系統。如果此說明您的組織，您可以建立的 DLP 原則可辨識屬性已由 Windows Server FCI 或其他系統，套用至文件以便 DLP 原則可以在 Office 文件與特定 FCI 或其他強制執行 Office 365 中屬性的值。
-ms.openlocfilehash: 057cdad981249e39d6f39f231d8d60ab977e717a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 71f37d616c6bb6c3e63bad8707b650b36f66fa62
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013687"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214363"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>建立 DLP 原則來保護具有 FCI 或其他內容的文件
 
@@ -94,7 +94,7 @@ DLP 原則只會尋找特定的屬性名稱/值組。可以使用任何文件屬
   
 如需這些 cmdlet 的詳細資訊，請參閱[Office 365 安全性&amp;規範中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
   
-1. [連線至 Office 365 安全性&amp;規範中心使用遠端 PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用建立原則`New-DlpCompliancePolicy`。
     
@@ -137,7 +137,7 @@ DLP 原則只會尋找特定的屬性名稱/值組。可以使用任何文件屬
     
 2. 在 [**搜尋**] 下選擇**搜尋與離線可用性** \> **網站重新編製索引**。
     
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: M365-security-compliance
 description: 了解如何使用威脅智慧尋找及調查惡意的電子郵件。
-ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: adf4066b5119f131b90dc88b99be4011582931c2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995184"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215493"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>尋找與調查惡意的電子郵件已傳遞 （Office 365 威脅智慧）
 

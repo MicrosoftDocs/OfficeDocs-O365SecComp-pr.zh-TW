@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 9/11/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的指令碼來產生報告包含與 Office 365 安全性的 eDiscovery 案例相關聯的所有保留的相關資訊&amp;規範中心。
-ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: cf547ff7c76ba6e16a3bde18465ae0aef9ab4075
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038206"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217434"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的 eDiscovery 案例中保留上建立報告
   

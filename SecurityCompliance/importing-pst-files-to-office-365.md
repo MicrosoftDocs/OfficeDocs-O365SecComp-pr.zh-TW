@@ -1,5 +1,5 @@
 ---
-title: 將您的組織 PST 檔案匯入 Office 365 的概觀
+title: Overview of importing your organization PST files to Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,20 +8,20 @@ ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.IngestionHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 系統管理員： 了解如何使用 Office 365 安全性匯入服務&amp;規範中心以大量匯入電子郵件資料 （PST 檔案） 至 Exchange Online 中的使用者信箱。本主題提供常見問題集並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 3a6c3db966513be5c63588dac75643ffc1962323
-ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
+ms.openlocfilehash: b6f32a6b5552773c197003ddac41c138539bb6ef
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "25639672"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218043"
 ---
-# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>將您的組織 PST 檔案匯入 Office 365 的概觀
+# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
 > [!NOTE]
 > 本文適用於系統管理員。您嘗試 PST 檔案匯入您自己的信箱吗？請參閱[匯入電子郵件、 連絡人和行事曆從 Outlook.pst 檔案](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -296,7 +296,7 @@ PST 檔案上傳至 Azure 儲存區之後，Office 365 以方式分析 PST 檔�
   
  **可以使用自訂 courier 傳送服務，例如 FedEx 自訂傳送，以隨附我硬碟向 Microsoft 吗？**
   
-會。
+是。
   
  **如果我有隨附我硬碟至另一個國家/地區、 是否有我需要執行的任何項目吗？**
   

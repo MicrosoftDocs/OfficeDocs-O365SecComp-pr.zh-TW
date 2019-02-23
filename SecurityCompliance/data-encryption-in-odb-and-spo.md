@@ -6,19 +6,21 @@ manager: laurawi
 ms.date: 7/2/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
+ms.collection:
+- M365-security-compliance
 description: 了解 OneDrive for Business 和 SharePoint Online 中的資料安全性加密基本項目。
-ms.openlocfilehash: 807ef2a195b5c29e769bd0f6757a0319b154b9d3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a43db3da6e4663aee4437689ff51276972298872
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527405"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223212"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>商務用 OneDrive 和 SharePoint Online 中的資料加密
 

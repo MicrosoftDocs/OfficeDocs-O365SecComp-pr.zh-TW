@@ -3,21 +3,20 @@ title: 搜尋與標記
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，並將組織中您案例的文件。目前的本單元處於 beta。
-ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
-ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
+ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "29666143"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222962"
 ---
 # <a name="search-and-tagging"></a>搜尋與標記
 

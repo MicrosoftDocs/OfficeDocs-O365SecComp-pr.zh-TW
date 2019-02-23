@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/14/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 使用內容搜尋篩選，讓搜尋 Office 365 組織中信箱和網站的子集 eDiscovery 管理員的權限。
-ms.openlocfilehash: 2b6968a097e7abe5943a84b9ceb9b6d126057cc2
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: 61db727646f4158419c4afd0201acf0fc167d382
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258621"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223672"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>設定內容搜尋的權限篩選
 
@@ -220,7 +220,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
 **移除 ComplianceSecurityFilter**用來刪除的搜尋篩選器。使用_FilterName_參數指定您想要刪除的篩選。 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - **方式的搜尋篩選工作的權限？** 權限篩選新增至搜尋查詢時執行內容的搜尋。搜尋查詢基本上被加入權限篩選所**AND**布林運算子。例如，假設您有權限允許的篩選器 Bob 工作者通訊群組成員的信箱上執行搜尋的所有動作。然後 Bob 的搜尋查詢與組織中所有信箱上執行內容的搜尋`sender:jerry@adatum.com`。由於權限篩選器和搜尋查詢以邏輯方式來使用**AND**運算子結合，搜尋會傳回由 jerry@adatum.com 傳送到任何工作者通訊群組成員的任何訊息。 
     

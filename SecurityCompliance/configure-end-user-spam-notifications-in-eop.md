@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
+ms.collection:
+- M365-security-compliance
 description: 您可以針對預設的全公司內容篩選原則或是網域所套用的自訂內容篩選原則，設定使用者垃圾郵件通知。
-ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
-ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
+ms.openlocfilehash: 2cab65347c726cab482eb127f5068586f4f3afd3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23875795"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222972"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中設定使用者垃圾郵件通知
   
@@ -36,9 +38,9 @@ ms.locfileid: "23875795"
 
 **版本**如果郵件不是垃圾郵件和您希望 Office 365 將郵件傳送給您的信箱。
 
-**版本為允許寄件者**如果郵件不是垃圾郵件和您希望 Office 365 將寄件者新增至您的安全寄件者和未來的電子郵件的收件者清單。請記住您系統可能會有其他組織整體允許/封鎖設定會覆寫 [安全的寄件者清單。
+**釋出 & 允許寄件者**如果郵件不是垃圾郵件和您想要新增至安全的寄件者和收件者清單未來的電子郵件的寄件者的 Office 365。請記住您系統可能會有其他組織整體允許/封鎖設定會覆寫 [安全的寄件者清單。
 
-**版本與報告**、 如果郵件不是垃圾郵件和您想要將郵件傳送給您的信箱並向 Microsoft 報告進行分析。
+**版本 & 報表**，如果郵件不是垃圾郵件和您想要將郵件傳送給您的信箱並向 Microsoft 報告進行分析。
 
 **封鎖**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
   

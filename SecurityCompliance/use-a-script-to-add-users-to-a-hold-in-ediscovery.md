@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 1/23/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 執行指令碼以快速新增信箱並 OneDrive for Business 至新的保留與 Office 365 安全性 eDiscovery 案例相關聯的網站&amp;規範中心。
-ms.openlocfilehash: 2c93deb14bc8c1f89dab7bb054d2e94db06cfbd5
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: b9d34f4576299dccf0f751c7f204639b5a770b32
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038256"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214283"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>使用指令碼將使用者新增至 Office 365 安全性 eDiscovery 案例中保留&amp;規範中心
 
@@ -284,7 +284,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 輸入指令碼會提示您輸入的資訊。
     
-    指令碼連線到安全性與規範中心 PowerShell]，然後 eDiscovery 案例中建立新的保留並新增信箱和 OneDrive for Business 的清單中的使用者。您可以在 [ **eDiscovery** ] 頁面上的 [安全性] 移至大小寫&amp;規範中心檢視新的保留。 
+    指令碼連線到安全性 & 規範中心 PowerShell]，然後 eDiscovery 案例中建立新的保留並新增信箱和 OneDrive for Business 的清單中的使用者。您可以在 [ **eDiscovery** ] 頁面上的 [安全性] 移至大小寫&amp;規範中心檢視新的保留。 
     
 指令碼完成之後執行，它會建立下列記錄檔，並將它們儲存到指令碼所在的資料夾。
   

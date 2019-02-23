@@ -1,14 +1,13 @@
 ---
-title: 從 Office 365 的安全性與規範中心匯出內容的搜尋結果
+title: 從 Office 365 安全性 & 規範中心匯出內容的搜尋結果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExport
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,15 +15,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: '在 [Office 365 安全性及規範中心內容搜尋搜尋結果匯出到本機電腦。電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
-ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
+description: '從 Office 365 安全性 & 規範中心中的內容搜尋的搜尋結果匯出至本機電腦。電子郵件結果會匯出成 PST 檔案。內容從 SharePoint 和 OneDrive for Business 的網站會匯出為原生 Office 文件。 '
+ms.openlocfilehash: 5ec1456c7d1a787a1ede70c15b109e7f0358f60a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27544114"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219943"
 ---
-# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>從 Office 365 的安全性與規範中心匯出內容的搜尋結果
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>從 Office 365 安全性 & 規範中心匯出內容的搜尋結果
 
 成功執行內容的搜尋之後，您可以將搜尋結果匯出到本機電腦。當您將電子郵件結果匯出時，他們正在為 PST 檔案下載到電腦。當您匯出 SharePoint 與內容 OneDrive for Business 的網站時，都要匯出的原生 Office 文件複本。有一些額外的文件和隨附匯出的搜尋結果的報告。
   
@@ -176,7 +175,7 @@ ms.locfileid: "27544114"
 
 以下是匯出搜尋結果的詳細資訊。
   
-[匯出的限制](#export-limits)
+[匯出限制](#export-limits)
   
 [匯出報告](#export-reports)
   
@@ -190,7 +189,7 @@ ms.locfileid: "27544114"
   
 [其他](#miscellaneous)
   
- ### <a name="export-limits"></a>匯出的限制
+ ### <a name="export-limits"></a>匯出限制
   
 - 匯出搜尋結果的安全性&amp;規範中心 」 有下列限制：
     

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8db5a21f60a1d73c11e28bc2765a95c23646115d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 7d2746699a427fa3c7ad3afd7cf791c61cd55249
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706074"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213093"
 ---
 # <a name="create-a-legal-hold-notice"></a>建立的合法持有通知
 
@@ -41,7 +41,7 @@ ms.locfileid: "29706074"
     
     - **發行主管**： 下拉式清單會顯示 case 成員的清單。每個通知傳送給 custodians 將傳送代表指定之發行主管人員。
 
-4. 按 [下一步]。
+4. 按 [下一步]****。
 
 ## <a name="step-2-define-the-portal-content"></a>步驟 2： 定義入口網站的內容
 
@@ -53,7 +53,7 @@ ms.locfileid: "29706074"
 
 2. 合併變數插入您的通知，以自訂通知及共用 Okay 規範入口網站。
 
-3. 按 [下一步]。
+3. 按 [下一步]****。
 
   >[!Tip]
   >若要了解更多有關可自訂的內容與格式的入口網站的內容，請參閱 ＜ [Use 通訊編輯器](using-communications-editor.md)。

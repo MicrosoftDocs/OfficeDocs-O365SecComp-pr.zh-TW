@@ -3,10 +3,9 @@ title: Office 365 安全性內容的搜尋限制&amp;規範中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '了解 Office 365 安全性內容的搜尋功能作用中的限制&amp;規範中心，例如同時搜尋數量上限。 '
-ms.openlocfilehash: 79142edf2e80378bf6f22474fca55c54fe5cc776
-ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
+ms.openlocfilehash: 0d114db30e9c5b61477789f8a2b91b88c936b253
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27544104"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223112"
 ---
 # <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性內容的搜尋限制&amp;規範中心
 
@@ -36,7 +35,7 @@ ms.locfileid: "27544104"
 |:-----|:-----|
 |信箱或單一內容搜尋可搜尋的網站數目上限  <br/> |無限制  <br/> |
 |可以在組織中的同一時間執行的內容搜尋的數目上限。  <br/> |無限制  <br/> |
-|單一使用者可以同時啟動的內容搜尋的數目上限。請注意此限制很有可能瀏覽當使用者嘗試使用啟動多個搜尋**Get ComplianceSearch\|開始 ComplianceSearch**的安全性與規範中心 PowerShell 命令。<br/> |10   <br/> |
+|單一使用者可以同時啟動的內容搜尋的數目上限。請注意此限制很有可能瀏覽當使用者嘗試使用啟動多個搜尋**Get ComplianceSearch\|開始 ComplianceSearch**中安全性 & 規範中心 PowerShell 命令。<br/> |10   <br/> |
 |每個使用者信箱預覽內容搜尋結果時顯示在 [預覽] 頁面的項目數目上限。  <br/> |100  <br/> |
 |在預覽內容搜尋結果時顯示在 [預覽] 頁面的所有使用者信箱中找到的項目數目上限。顯示最新的項目。  <br/> |1,000  <br/> |
 |可以預覽搜尋結果的使用者信箱的數目上限。如果有超過 1000 個信箱內含符合搜尋查詢的內容，與大部分的搜尋結果只前 1000年信箱可用於預覽。  <br/> |1,000  <br/> |

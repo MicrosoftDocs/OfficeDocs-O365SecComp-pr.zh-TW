@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.date: 10/29/2018
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
@@ -14,12 +14,12 @@ ms.custom:
 - SIEM
 - M365-security-compliance
 description: 摘要： 閱讀本篇文章以取得 Microsoft 365 SIEM server 整合的概觀。
-ms.openlocfilehash: a6e139d14a7ea3625b2d2fffec5ad5d913ea9184
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: 56ac1b244bc7bfc62bd6edb097a733e8477baa26
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995194"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215653"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 與 Microsoft 365 服務及應用程式的整合
 

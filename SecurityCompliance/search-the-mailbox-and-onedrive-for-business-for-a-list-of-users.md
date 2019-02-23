@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 1/3/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 本文中使用內容搜尋與指令碼來搜尋信箱和 OneDrive 商務網站的使用者群組。
-ms.openlocfilehash: e7f16ec0ca34d9f7f6155cab7e473119de3966cb
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 758c9b9e756f6830f207b76392ad808fc14f0caa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038166"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218883"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 
@@ -181,4 +181,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 搜尋查詢 （離開此空白以傳回所有項目中的內容位置）。
     
-    指令碼的每個 OneDrive for Business 網站取得 Url 然後會建立並啟動搜尋。您可以執行**Get ComplianceSearch**指令程式的安全性及規範中心 PowerShell，以顯示搜尋統計資料及結果，或可以移至 [**內容搜尋**] 頁面上的 [安全性]&amp;規範中心檢視搜尋的相關資訊。 
+    指令碼的每個 OneDrive for Business 網站取得 Url 然後會建立並啟動搜尋。您可以執行**Get ComplianceSearch**指令程式的安全性 & 規範中心 PowerShell 來顯示搜尋統計資料及結果，或可以移至 [**內容搜尋**] 頁面上的 [安全性]&amp;規範中心檢視搜尋的相關資訊。 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: 了解如何使用網路上傳至 RMS 加密 PST 檔案匯入 Office 365 中的使用者信箱。
-ms.openlocfilehash: 6460512e2d6085df684841248dc286d39dbd9d87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c552e8a4d1ddc4163fefaeff18b75a4dbd5ee4cb
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527369"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223642"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>使用網路上傳將 RMS 加密的 PST 檔案匯入 Office 365
 
@@ -117,7 +117,7 @@ Azure RMS 已停用根據預設，但寄件者或組織中的其他系統管理�
     
     |**位置**|**RMS 金鑰共用位置**|
     |:-----|:-----|
-    |北美洲  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
+    |北美  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |歐盟  <br/> | `https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |亞洲  <br/> | `https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |南美洲  <br/> | `https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
@@ -220,7 +220,7 @@ Azure RMS 已停用根據預設，但寄件者或組織中的其他系統管理�
 > [!IMPORTANT]
 > 您必須使用 Azure AzCopy 5.0 版成功 PST 檔案上傳至 Azure 儲存位置。較新版本的 AzCopy 工具不支援將 PST 檔案匯入 Office 365。請務必 AzCopy 工具從**上傳檔案透過網路**頁面下載遵循此步驟中的程序。 
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 使用 Office 365 組織中系統管理員帳戶的認證。
     
@@ -364,7 +364,7 @@ PST 檔案已加密及上傳至 Office 365 組織 Azure 儲存位置之後下, �
     | `Workload` <br/> |指定要匯入資料至 Office 365 服務。若要匯入 PST 檔案至使用者信箱，請使用`Exchange`。<br/> | `Exchange` <br/> |
     | `FilePath` <br/> |在 Azure 的儲存位置上傳至 PST 檔案中之步驟 5 中指定的資料夾位置。  <br/>  如果您沒有加入選用的子資料夾名稱中的網路 URL 中`/upload-dest:`參數在步驟 5 中，將此參數保留空白 CSV 檔案中。如果在包含子資料夾名稱，請將它指定這個參數中。此參數的值是區分大小寫。無論如何，*不*包含"ingestiondata"中的值`FilePath`參數。<br/> <br/>**重要：** 大小寫的檔案路徑名稱必須是所用如果 SAS URL 中包含的選用子資料夾名稱相同案例`/upload-dest:`在步驟 5 中的參數。例如，如果您是使用`EncryptedPSTs`的子資料夾名稱在步驟 5 中，然後使用`encryptedpsts`中`FilePath`CSV 檔中的參數，將會失敗 PST 檔案匯入。請務必在兩個執行個體中使用相同的大小寫。           |(保留空白)  <br/> 或  <br/>  `EncryptedPSTs` <br/> |
     | `Name` <br/> |指定要匯入至使用者信箱的 PST 檔案的名稱。此參數的值是區分大小寫。因為加密 PST 檔案上傳至 Azure 儲存位置、`.pfile`副檔名新增至 PST 檔案名稱。您必須新增`.pfile`延伸模組名稱的 PST 檔案 CSV 檔案中。<br/><br/> **重要：** CSV 檔案中的 PST 檔案名稱的大小寫必須已上傳至 Azure 儲存位置中之步驟 5 的 PST 檔案相同。例如，如果您使用`annb.pst.pfile`中`Name`參數中的 CSV 檔案，但實際的 PST 檔案的名稱是`AnnB.pst`，該 PST 檔案匯入就會失敗。請務必 PST CSV 檔案中的名稱會使用為實際的 PST 檔案的大小寫相同。           | `annb.pst.pfile` <br/> |
-    | `Mailbox` <br/> |指定將匯入 PST 檔案的信箱電子郵件地址。   <br/> 匯入 PST 檔案至不在作用中的信箱，您必須指定此參數的信箱 GUID。若要取得這個 GUID，請執行下列 PowerShell 命令 in Exchange Online： ' Get-mailbox InactiveMailboxOnly<identity of inactive mailbox> | FL Guid` <br/><br/> **Note:** In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-mailbox-<identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-mailbox- <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid'           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `Mailbox` <br/> |指定將匯入 PST 檔案的信箱電子郵件地址。   <br/> 匯入 PST 檔案至不在作用中的信箱，您必須指定此參數的信箱 GUID。若要取得這個 GUID，請執行下列 PowerShell 命令 in Exchange Online：`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **附註：** 在某些情況下，您可能會有多個信箱使用同一個電子郵件地址，其中一個信箱不在作用中信箱和其他信箱位於虛刪除 （或非使用中） 的狀態。在下列情況下，您有指定信箱的信箱來唯一地識別要匯入至 PST 檔案的信箱 GUID。若要取得這個作用中信箱的 GUID，請執行下列 PowerShell 命令： `Get-Mailbox - <identity of active mailbox> | FL Guid`。若要取得虛刪除 （或非使用中） 的信箱的 GUID，請執行此命令`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | 指定是否要匯入 PST 檔案至使用者的封存信箱。其中有兩個選項：<br/> **FALSE**將 PST 檔案匯入使用者的主要信箱。  <br/> **True 是表示**將 PST 檔案匯入使用者的封存信箱。  <br/>  如果您將此參數保留空白，PST 檔案匯入使用者的主要信箱。  <br/><br/> **附註：** 匯入 PST 檔案到雲端式封存信箱的主要信箱位於內部部署的使用者，只要指定此參數 **，則為 TRUE** ，並指定使用者的內部部署信箱的電子郵件地址`Mailbox`參數。           | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要匯入 PST 檔案的信箱資料夾。  <br/>  如果您將此參數保留空白，PST 會匯入至名為的**匯入**位於信箱 （相同層級 [收件匣] 資料夾和其他預設信箱資料夾） 的根層級的新資料夾。  <br/>  如果您指定`/`、 PST 檔案中的項目會被匯入直接在使用者的 [收件匣] 資料夾。  <br/>  如果您指定`/<foldername>`、 PST 檔案中的項目將會匯入至名為子資料夾*\<foldername\> * 。例如，如果您是使用`/ImportedPst`、 項目會匯入至名為**ImportedPst**子資料夾。這個子資料夾會位於使用者的 [收件匣] 資料夾。<br/><br/> **提示：** 請考慮執行一些測試批次到實驗這個參數讓您可以決定要匯入至 Pst 檔案的最佳資料夾位置。           |(保留空白)  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |此選用參數會指定要用於匯入 PST 檔案中的 ANSI 檔案格式的字碼頁的數值。此參數用於從中文、 日文及韓文 (CJK) 的組織中匯入 PST 檔案，因為這些語言通常使用雙位元組字元集 (DBCS) 的字元編碼。如果此參數不用來匯入 PST 檔案的信箱資料夾名稱使用 DBCS 的語言，則他們正在匯入後通常被混亂資料夾名稱。如需使用此參數，請參閱[程式碼頁面識別碼](https://go.microsoft.com/fwlink/p/?LinkId=328514)支援值的清單。<br/><br/> **附註：** 如先前另有說明，這是選用的參數與您沒有包含 CSV 檔案中。或者您可以將它包含並將此值保留空白的一或多個資料列。           |(保留空白)  <br/> 或  <br/>  `932`（這是程式碼] 頁面上的識別碼 ANSI/OEM 日文）  <br/> |
@@ -376,7 +376,7 @@ PST 檔案已加密及上傳至 Office 365 組織 Azure 儲存位置之後下, �
 
 最後一個步驟是在 Office 365 中的匯入服務中建立 PST 匯入工作。如先前所述，您會將提交您在步驟 7 中建立之 PST 匯入對應檔案。匯入服務建立新的工作之後，將會解除對應檔案中使用的資訊層加密和 （您所上傳到步驟 5 中的 Office 365） PST 檔案匯入指定的使用者信箱。 
   
-1. 移至 [ [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 使用 Office 365 組織中系統管理員帳戶的認證。
     
@@ -409,7 +409,7 @@ PST 檔案已加密及上傳至 Office 365 組織 Azure 儲存位置之後下, �
     
 13. 在 [詳細資料] 窗格中，按一下 [**檢視詳細資料]** 以取得最新狀態的選取工作]。 
  
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - 為什麼要選擇 PST 檔案匯入 Office 365？
     

@@ -6,24 +6,24 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: '了解如何檢視及轉譯的相關性訓練狀態與 Office 365 進階 ediscovery 案件問題的結果。  '
-ms.openlocfilehash: a19f7eaabf5dc15eefaa7209ded8261020d0d557
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527408"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218172"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中追蹤相關性分析
 
 > [!NOTE]
-> 進階的 eDiscovery 需要您組織與進階規範附加元件或 E5 訂閱 Office 365 E3。如果您不具有該對應並想要嘗試進階的 eDiscovery，您還可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 進階 ediscovery 相關性追蹤] 索引標籤會顯示在 [標籤] 索引標籤中執行的相關性訓練的計算的有效性並會指出在相關性採取反覆訓練程序中下一個步驟。 
   
@@ -46,7 +46,7 @@ ms.locfileid: "22527408"
     [延伸] 檢視會顯示其他資訊和選項。顯示目前的錯誤邊界是在評估，指定現有 （已標記） 評估檔案的目前狀態重新叫用錯誤邊界。
     
     > [!NOTE]
-    >  評估階段可以略過清除個別問題，然後針對 「 所有問題"**評估**核取方塊。不過，因此，會有這個問題沒有統計資料。> 清除**評估**] 核取方塊可以只完成之前執行評估。評估案例中多個問題有，已略過只有當] 核取方塊已清除每個問題 
+    >  評估階段可以略過清除個別問題，然後針對 「 所有問題"**評估**核取方塊。不過，因此，會有這個問題沒有統計資料。之前執行評估只可以完成 > 清除**評估**] 核取方塊。評估案例中多個問題有，已略過只有當] 核取方塊已清除每個問題 
   
     當評估就不會完成與第一個範例設定檔的、 評估可能會接著標記多個檔案。 
     

@@ -6,16 +6,16 @@ manager: laurawi
 ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: 本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟護照號碼敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
-ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25840322"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218263"
 ---
 # <a name="eu-passport-number"></a>歐盟護照號碼
 
@@ -222,7 +222,7 @@ ms.locfileid: "25840322"
 |:-----|
 |護照號碼  <br/> 賽普勒斯護照號碼  <br/> passport 無  <br/> ΑΡΙΘΜΌ ΔΙΑΒΑΤΗΡΊΟΥ  <br/> |
    
-## <a name="czech-republic"></a>捷克
+## <a name="czech-republic"></a>捷克共和國
 
 ### <a name="format"></a>格式
 

@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載協力廠商稽核、 了解 Microsoft 如何保留的客戶資料安全，並了解如何您可以遵守 ISO、 HIPAA、 FINRA 及 FedRAMP 當您使用 Office 365。
-ms.openlocfilehash: 77fdc042639fb30d2c222148f3eea9f0e6470856
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 6596eadac1702f286d57b516e11334a06553af51
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038146"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213933"
 ---
 # <a name="service-assurance-in-the-office-365-security-amp-compliance-center"></a>服務 Office 365 安全性保證&amp;規範中心
 
@@ -53,9 +53,9 @@ ms.locfileid: "25038146"
   
 使用安全性服務保證是可存取&amp;規範中心。以下是如何到該處取得。
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。 
+2. 使用公司或學校帳戶登入 Office 365。 
     
 3. 在左窗格中，選取**服務保證**。下一步]，[選擇您產業與地區設定](service-assurance.md#Chooseyourindustryregional)及[Onboard 其他服務保證使用者或群組](service-assurance.md#addother)。
     

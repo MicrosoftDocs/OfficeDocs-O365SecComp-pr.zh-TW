@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
+ms.collection:
+- M365-security-compliance
 description: 非法回應郵件已傳送的郵件伺服器，通常是因為傳入的垃圾郵件的自動化的彈跳訊息。Backscatterer DNSBL 是非法回應郵件傳送的 IP 位址清單。不是垃圾郵件] 清單中，然後我們不嘗試從 Backscatterer DNSBL 移除伺服器。
-ms.openlocfilehash: 2ab5c6a3bec347446452acd3bdfd8c5d309994a9
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002678"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222772"
 ---
 # <a name="backscatter-messages-and-eop"></a>非法回應郵件與 EOP
 

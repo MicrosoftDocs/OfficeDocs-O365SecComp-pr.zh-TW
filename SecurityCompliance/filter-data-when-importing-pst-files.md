@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 10/24/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '在 Office 365 匯入服務內使用新的智慧型匯入功能篩選的實際取得匯入至目標信箱項目。智慧型匯入可讓您主動決定何種資料匯入以及要保留背後的項目。智慧型匯入也提供前瞻您正在匯入至 Office 365 的資料。 '
-ms.openlocfilehash: c90d9df62c7d8c411196b283acec37959fc95e57
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 49399f11a71069059ffae2d03482ac7ffe03daf0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038196"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219813"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>篩選資料時將 PST 檔案匯入 Office 365
 

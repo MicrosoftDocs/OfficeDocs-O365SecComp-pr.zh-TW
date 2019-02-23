@@ -5,11 +5,11 @@ author: brendonb
 manager: laurawi
 ms.date: 8/5/2016
 ms.audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 f1_keywords:
 - O365M_APNCertMDM
 - O365E_APNCertMDM
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
 description: 若要管理 iOS 裝置 iPad 和 Iphone 在行動裝置管理 Office 365，請遵循下列步驟，先建立一個 APNs 憑證。
-ms.openlocfilehash: 28e8888d7dd57c3052cdcb5994725f11a5f0445f
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272048"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220453"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>建立 APNs 憑證 iOS 裝置
 

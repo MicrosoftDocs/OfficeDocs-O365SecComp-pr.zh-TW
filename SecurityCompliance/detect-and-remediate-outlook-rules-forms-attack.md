@@ -9,17 +9,17 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何將能辨識和修復 Outlook 規則和 Office 365 中的自訂表單資料隱碼攻擊攻擊
-ms.openlocfilehash: 1067d7c791217c146fedea839754e45f76ef5d8e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 214be3e8492c2896d2a4010c30768e41bc149078
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603754"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215233"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊
 

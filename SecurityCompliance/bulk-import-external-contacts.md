@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: End User
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解如何系統管理員可以使用 Exchange Online PowerShell 及 CSV 檔案大量匯入全域通訊清單的外部連絡人。
-ms.openlocfilehash: 4bde56d49ccf94dc91993df90e1ae693e25c961a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a38565d5cbff61a954914bf156fb1bac0814c815
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526241"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215913"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Exchange online 大量匯入外部連絡人
 
@@ -132,7 +132,7 @@ ms.locfileid: "22526241"
 > [!NOTE]
 > 當您執行命令以建立新連絡人時，您可能會收到預警先前已建立的連絡人所存在的錯誤。而是建立任何新的連絡人加入至 CSV 檔案。 
   
-## <a name="hide-external-contacts-from-the-shared-address-book"></a>隱藏共用的通訊錄中的外部連絡人 >
+## <a name="hide-external-contacts-from-the-shared-address-book"></a>隱藏共用的位址 book> 從外部連絡人
 
 有些公司可能會使用外部連絡人只能讓他們可以新增為通訊群組的成員。在此案例中，它們可能會想要隱藏共用的通訊錄中的外部連絡人。以下是如何：
   

@@ -6,19 +6,21 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
 description: 了解反垃圾郵件設定和篩選可協助您避免在 Exchange Online 與 Office 365 中的垃圾郵件。取得 Office 365 太多垃圾郵件吗？您可以自訂您的垃圾郵件篩選和反垃圾郵件原則設定。
-ms.openlocfilehash: 0a23ddd0610599bbd6478781c61e5e32b06726bc
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29652268"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223422"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 電子郵件的反垃圾郵件保護
 

@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: 了解如何檢視、 編輯及管理安全性報告的排程&amp;規範中心。
-ms.openlocfilehash: e1b27b5c9797f7c8eae9ad22d251998f894565b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 045f539345613774fa38fe921e668e1dce7f2e7a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014905"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218833"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>管理安全性的多份報表的排程&amp;規範中心
 
@@ -31,7 +31,7 @@ ms.locfileid: "28014905"
   
 ![安全性&amp;規範中心選擇報告\>管理排程](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. 移至 [[https://protection.office.com](https://protection.office.com)並登入。這會帶您至 [安全性及規範中心。
+1. 移至 [[https://protection.office.com](https://protection.office.com)並登入。這會帶您至安全性 & 規範中心。
 
 2. 安全性&amp;規範管理中心，移至**報表** \> **管理排程**。
     

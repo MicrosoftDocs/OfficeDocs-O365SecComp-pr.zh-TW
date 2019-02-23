@@ -3,12 +3,11 @@ title: 建立、測試及調整 DLP 原則
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -16,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '若要開始使用 DLP 原則的最簡單的、 最常見方式是使用其中一個包含在 Office 365 中的範本。 '
-ms.openlocfilehash: 1d4697811a5d8dd426fed80d3d60bcd2fbea6335
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 14582a6507d271bc569aeb0c5456a662962d20a9
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522785"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223742"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
-**主要作者** </br>
-Paul Cunningham、 Microsoft MVP </br>
-[實用 365](https://practical365.com/) </br>
-[@Practical365](https://twitter.com/practical365)</br>
+**主要作者** <br/>
+Paul Cunningham、 Microsoft MVP <br/>
+[實用 365](https://practical365.com/) <br/>
+[@Practical365](https://twitter.com/practical365)<br/>
 __________________________________________________
 
 資料外洩防護是專門設計來協助防止有意或意外的敏感資訊公開給不想要對象貴組織的 Office 365 的符合性功能。DLP 有其不在 Exchange Server 與 Exchange Online 中的根目錄，也適用於 SharePoint Online 和 OneDrive for Business。
@@ -60,7 +59,7 @@ DLP 使用內容分析引擎来檢查的電子郵件及檔案內容尋找敏感�
 
 當資料外洩的風險不完全明顯時，很難出其中完全應開始實作 DLP 運作。幸運地是，DLP 原則可以在 「 測試模式 」，讓您若要量測其有效性和正確性您開啟之前執行。
 
-可透過 Exchange 系統管理中心中管理 Exchange Online 的 DLP 原則。但是您可以設定透過 [安全性及規範中心的所有工作負載的 DLP 原則讓我將使用此文章中示範的。在 [安全性及規範中心您會發現**資料外洩防護**底下的 DLP 原則 > **原則**。按一下 [在**建立原則**來啟動。
+可透過 Exchange 系統管理中心中管理 Exchange Online 的 DLP 原則。但是您可以設定透過安全性 & 規範中心的所有工作負載的 DLP 原則讓我將使用此文章中示範的。您將在安全性 & 規範中心尋找**資料外洩防護**底下的 DLP 原則 > **原則**。按一下 [在**建立原則**來啟動。
 
 Office 365 提供的[DLP 原則範本](what-the-dlp-policy-templates-include.md)可用來建立 DLP 原則的範圍。假設您已準備澳大利亞商務。您可以當做篩選可分為三大類別的財務、 醫療和健康情況及隱私權原則範本以顯示只澳大利亞，相關。
 
@@ -122,7 +121,7 @@ Office 365 提供的[DLP 原則範本](what-the-dlp-policy-templates-include.md)
 
 當您分析可能會想要之原則的行為方式有些調整您原則是落在圖形。為簡單的範例中，您可能會決定電子郵件中的一個 TFN 不 （I 認為它仍是，但開始吧與其這是因為示範） 的問題，但兩個或多個執行個體未發生問題。多個執行個體可能是例如員工從 HR 資料庫 CSV 匯出至外部廠商，例如外部的會計服務以電子郵件傳送 risky 案例。必定為某些項目您偏好偵測和封鎖。
 
-在 [安全性及規範中心您可以編輯現有的原則以調整行為。
+在 [安全性 & 規範中心您可以編輯現有的原則以調整行為。
 
 ![若要編輯原則] 選項](media/DLP-create-test-tune-edit-policy.png)
  
@@ -204,7 +203,7 @@ DLP 原則範本不完美官方現成可用。很有可能您會發現發生在�
 
 ![若要開啟 [原則] 選項](media/DLP-create-test-tune-turn-on-policy.png)
  
-如果您正在等待原則會生效，[連線至 Office 365 的安全性與規範中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)並執行[Get DlpCompliancePolicy 指令程式](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)，請參閱 DistributionStatus 時。
+如果您正在等待原則會生效，[連線至 Office 365 安全性 & 規範中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)並執行[Get DlpCompliancePolicy 指令程式](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)，請參閱 DistributionStatus 時。
 
 ![在 PowerShell 中執行指令程式](media/DLP-create-test-tune-PowerShell.png)
 

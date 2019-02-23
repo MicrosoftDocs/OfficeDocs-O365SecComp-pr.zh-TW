@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 9/5/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台及文件共同作業平台至 Office 365 組織中的信箱。這可讓您封存 Office 365 中的 Facebook、 Twitter 與資料來源的資料。然後您可以與協力廠商資料 appply Office 365 的符合性功能 （例如法務保存措施、 內容搜尋和保留原則）。
-ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 37811fdbee52cf956c6371deea53a242c2a3c550
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038106"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218493"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中封存協力廠商資料
 
@@ -47,7 +47,7 @@ Office 365 可讓系統管理員匯入及封存立即訊息平台和文件共同
 
 [步驟 5： 在 Azure Active Directory 中登錄的協力廠商資料連接器](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
-## <a name="how-the-third-party-data-import-process-works"></a>如何將第三方的資料匯入程序的運作方式 >
+## <a name="how-the-third-party-data-import-process-works"></a>如何將第三方的資料匯入程序 works>
 
 下圖和描述會說明協力廠商資料匯入程序的運作方式。
   
@@ -376,7 +376,6 @@ Microsoft Lync (2010、2013)
 
     
 - Box
-
     
 - CipherCloud for Salesforce Chatter
     

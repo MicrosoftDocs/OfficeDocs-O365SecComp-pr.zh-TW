@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 9/24/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: 協助控制及管理行動裝置存取您的組織資料、 從資料遺失保護您的組織使用 Threat management 以及從惡意軟體和垃圾郵件保護輸入及輸出郵件。您也可以使用 threat management 來保護您的網域信譽並決定要惡意詐騙的寄件者從您的網域帳戶。
-ms.openlocfilehash: fc7d0a3fd73c03e6eec6cfd265edbf3c47ce1803
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 30083c1e030921598d950afbedc78acab2a24910
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29652248"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221163"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 

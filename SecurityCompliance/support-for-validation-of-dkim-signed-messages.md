@@ -3,7 +3,6 @@ title: 支援 DKIM 簽署郵件的驗證
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 description: 了解 DKIM 驗證簽署 Exchange Online Protection 和 Exchange Online 中的郵件
-ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 7b40769e18c01199669043c42031987695bba639
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255828"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223322"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支援 DKIM 簽署郵件的驗證
 

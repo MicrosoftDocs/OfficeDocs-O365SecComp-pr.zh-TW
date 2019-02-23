@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 11/30/2016
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 檢查錯誤及錯字，例如不支援字元的內容搜尋關鍵字查詢及小寫布林運算子，才能執行搜尋。如果我們尋找錯誤，我們會建議修訂的查詢。
-ms.openlocfilehash: 6ae14edc29bb7f8bab5dd2306282a69443872633
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 00612116f345e2a01471d5c83df77f4bc8db9ce5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038286"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215933"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>檢查您的內容搜尋查詢是否有錯誤
 

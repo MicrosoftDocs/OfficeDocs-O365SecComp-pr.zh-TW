@@ -8,19 +8,17 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: 了解如何將能辨識和回應 Office 365 的入侵的電子郵件帳戶
-ms.openlocfilehash: b10bf58aaebc46938e3962494ff30dfb1e226130
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+ms.openlocfilehash: 6692c63d6cf349af3f3debea10251880d8d1e16c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341418"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223402"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>對於 Office 365 遭入侵電子郵件帳戶的回覆
 
@@ -36,21 +34,19 @@ ms.locfileid: "25341418"
 - 未預期的使用者或系統管理員所建立的收件匣規則的目前狀態。這些規則可能會自動轉寄未知的地址的電子郵件或將其移至的**註解**、**垃圾郵件**或**RSS 訂閱**的資料夾。
 - 全域通訊清單中，可能會變更使用者的顯示名稱。
 - 使用者的信箱會禁止傳送電子郵件。
-- 在 Microsoft Outlook 或 Microsoft Outlook Web App 中的寄件備份或刪除的郵件資料夾包含一般駭客入侵帳戶訊息，例如"I 倫敦、 傳送 money 中前"。
+- 在 Microsoft Outlook 或 Outlook web （前身為 Outlook Web App） 上的寄件備份或刪除的郵件資料夾包含一般駭客入侵帳戶訊息，例如"I 倫敦、 傳送 money 中前"。
 - 已更新不尋常的設定檔的變更，例如名稱、 電話號碼或的郵遞區號。
 - 不尋常的認證的變更，例如多項的密碼變更是必要的。
 - 最近新增郵件轉寄。
 - 最近新增不尋常的簽章，例如假銀行業簽章或解決方法藥物簽章。
 
-如果使用者回報任何上述徵狀，您應該執行進一步調查。Office 365 安全性與規範中心和 Azure 入口網站提供工具來協助您調查的使用者帳戶的懷疑可能遭到洩漏活動。
-- 在 [安全性及規範中心-office 365 整合稽核記錄檢閱可疑帳戶的所有活動篩選的日期範圍跨越來自可疑活動發生為目前日期之前的結果。不要在搜尋期間篩選活動。
+如果使用者回報任何上述徵狀，您應該執行進一步調查。Office 365 安全性 & 規範中心和 Azure 入口網站提供工具來協助您調查的使用者帳戶的懷疑可能遭到洩漏活動。
+- Office 365 整合稽核記錄檔中安全性 & 規範中心-檢閱可疑帳戶的所有活動篩選的日期範圍跨越來自可疑活動發生為目前日期之前的結果。不要在搜尋期間篩選活動。
 - 使用 Azure AD 登入記錄檔和其他 Azure AD 入口網站中可用的風險報告。檢查這些資料行中的值：
     - 檢閱 IP 位址
     - 登入位置
     - 登入時間
     - 登入成功或失敗
-
-
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>如何保護及還原至可疑的電子郵件函數危害 Office 365 帳戶和信箱
 
@@ -81,7 +77,7 @@ ms.locfileid: "25341418"
 4. 移除任何可疑轉寄地址。
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>步驟 3 停用任何可疑的收件匣規則
-1. 登入使用者的信箱使用 Outlook Web App (OWA)。
+1. 登入使用者的信箱使用網路上的 Outlook。
 2. 齒輪圖示上按一下 [並按一下 [**郵件**]。
 3. 按一下 [**收件匣及延伸的規則**並檢閱的規則。
 4. 停用或刪除可疑的規則。
@@ -99,7 +95,7 @@ ms.locfileid: "25341418"
 3. 選取您要封鎖、 員工，然後選擇 [使用者] 窗格中的 [**登入狀態**] 旁的 [**編輯**
 4. 在 [**登入狀態**] 窗格中，選擇 [**登入封鎖**，然後**儲存**。 
 5. 在 Office 365 系統管理中心，左下功能窗格中，依序展開 [**管理中心**並選取 [ **Exchange**。
-6. 在 Exchange 系統管理中心中，瀏覽至**收件者 > 信箱**。
+6. 在 Exchange 系統管理中心中，瀏覽至 [**收件者 > 信箱**。
 7. 選取使用者、 使用者屬性] 頁面上的 [**行動裝置**，按一下 [**停用 Exchange ActivcSync**和**停用裝置的 OWA**和回答**皆**為兩者。
 8. [**電子郵件連線**、**停用**和答覆 **[是]**。 
 
@@ -109,7 +105,7 @@ ms.locfileid: "25341418"
 
 1. Office 365 系統管理中心以全域管理員帳戶登入並開啟 [**作用中使用者**。
 2. 尋找可疑危害帳戶及手動檢查是否有任何系統管理角色指派給帳戶。
-3. 開啟 [**安全性與規範中心**]。
+3. 開啟**安全性 & 規範中心**。
 4. 按一下 [**權限**。
 5. 手動檢閱查看如果可疑危害帳戶屬於其中的任何角色群組。 如果是： a 按一下角色群組並按一下 [**編輯角色群組**。 b.按一下 [**選擇成員**與**編輯**若要從角色群組移除使用者。
 6. 開啟**Exchange 系統管理中心**

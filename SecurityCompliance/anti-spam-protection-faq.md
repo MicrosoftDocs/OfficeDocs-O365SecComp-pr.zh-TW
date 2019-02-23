@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+ms.collection:
+- M365-security-compliance
 description: 本主題提供有關反垃圾郵件保護的常見問題與解答。這些解答適用於 Microsoft Exchange Online 及 Exchange Online Protection (EOP) 客戶。
-ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003072"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223052"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
@@ -188,7 +190,7 @@ A.如果一半以上之郵件的傳送來自使用者透過在特定時間內 �
     
 ## <a name="for-more-information"></a>相關資訊
 
-[Office 365 電子郵件反垃圾郵件保護](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Office 365 電子郵件的反垃圾郵件保護](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
   
 [安全寄件者和封鎖寄件者清單在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
   

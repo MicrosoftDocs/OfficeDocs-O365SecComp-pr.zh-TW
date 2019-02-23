@@ -3,10 +3,9 @@ title: Office 365 安全性 eDiscovery 權限指派&amp;規範中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 指派權限才能執行 eDiscovery 相關的工作使用安全性&amp;規範中心。
-ms.openlocfilehash: 95f0ed171c37ec84ca8bb8f00e69ab0318cd31cd
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c4dcbf51282aa2887fd7d5032eb8587b5e9d56d7
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29741156"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223272"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性 eDiscovery 權限指派&amp;規範中心
 

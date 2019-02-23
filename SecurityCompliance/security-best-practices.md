@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/22/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: 儘量減少資料破壞或洩漏的帳戶可能會遵循下列建議的最佳作法。
-ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+ms.openlocfilehash: d40fa5e4534bef1bb8389989022c44967a162aee
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25637997"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212813"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全性最佳做法
 
@@ -44,7 +44,7 @@ ms.locfileid: "25637997"
 
 MFA 將額外的保護層級新增至強式密碼策略所需確認撥打的電話、 文字訊息或應用程式上的通知他們的智慧型手機之後正確地輸入其密碼的使用者。備妥 MFA，與 Office 365 使用者帳戶仍受到對抗未經授權存取即使危害使用者的密碼。帳戶會受到保護，因為沒有授與存取直到帳戶之後已滿足其他的挑戰。洩漏或竊密碼不足夠。
   
-- [規劃 Office 365 部署的多重要素驗證](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Office 365 部署多重要素驗證方案](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
 - [設定 Office 365 使用者的多重要素驗證](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     

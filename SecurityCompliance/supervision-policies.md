@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090975"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214113"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
@@ -215,7 +215,7 @@ Office 365 中的監督原則可讓您擷取員工檢查所指定檢閱者通訊
   
 ### <a name="how-to-use-the-report"></a>如何使用報告
 
-當監督原則識別檢閱通訊訊息時、 電子郵件會傳遞至檢閱者監督資料夾中 Outlook 和 Outlook web app。這份報告會列出每個原則的名稱及通訊數目檢閱程序中的每一階段。
+當監督原則識別檢閱通訊訊息時、 電子郵件會傳遞至 Outlook 和 Outlook web （前身為 Outlook Web App） 上的 [檢閱者監督資料夾。這份報告會列出每個原則的名稱及通訊數目檢閱程序中的每一階段。
   
 使用報告：
   
@@ -228,7 +228,7 @@ Office 365 中的監督原則可讓您擷取員工檢查所指定檢閱者通訊
   
 |**標記類型**|**其意思**|
 |:-----|:-----|
-| 不檢閱 | 尚未檢視的電子郵件數目。這些電子郵件送交檢閱 Office 365 監督儀表板中或 Outlook/Outlook Web App 中的檢閱者監督資料夾中。|
+| 不檢閱 | 尚未檢視的電子郵件數目。這些電子郵件送交檢閱或 Outlook/outlook web 上的檢閱者監督資料夾中的 Office 365 監督儀表板
 | 相容 | 檢閱並標示為相容的電子郵件數目。這些訊息還是需要解析。 |
 | 問題 | 檢閱並標示問題的電子郵件數目。這可以做為標幟 ；其他檢閱者可協助檢查電子郵件是否需要將正在調查規範。這些訊息還是需要解析。 |
 | 非相容 （使用中） | 非相容的目前調查檢閱者的電子郵件數目。 |

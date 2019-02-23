@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用 Office 365 安全性內容搜尋&amp;規範中心來執行目標的集合。目標的集合表示您是有信心回應案例的項目或權限項目都位於特定信箱或站台資料夾。使用本文中的指令碼來取得資料夾 ID 或想要搜尋的特定信箱或站台資料夾的路徑。
-ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
-ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
+ms.openlocfilehash: 81628c670f80053479b3b7987e8c4ece884793c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27245060"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215013"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>使用 Office 365 中的內容搜尋目標集合
 
@@ -224,7 +224,7 @@ Office 365 安全性內容的搜尋功能&amp;規範中心不提供在 UI 中搜
     
     - 按一下 [**選擇要搜尋的特定網站**來搜尋並再新增您在步驟 1 中執行指令碼時所指定的相同網站 URL。 
     
-6. 按 [下一步]。
+6. 按 [下一步]****。
     
 7. 在**您想什麼我們要尋找的**] 頁面上的 [關鍵字] 方塊中貼上`folderid:<folderid>`或`path:<path>`指令碼在步驟 1 中所傳回的值。 
     

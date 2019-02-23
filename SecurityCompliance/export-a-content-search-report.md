@@ -3,12 +3,11 @@ title: 匯出內容搜尋報告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -18,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 而不是實際的 Office 365 安全性內容的搜尋結果匯出&amp;規範中心，您可以只將匯出的搜尋結果報表。報表會包含在搜尋結果和每個項目會匯出的詳細資訊與文件的摘要。
-ms.openlocfilehash: db6ba2dd58befa782dc3a5968e0034bccfa46855
-ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
+ms.openlocfilehash: 12799474bfb099c521f72cd3902173d42b17d4dd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27544124"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216233"
 ---
 # <a name="export-a-content-search-report"></a>匯出內容搜尋報告
 
@@ -50,7 +49,7 @@ ms.locfileid: "27544124"
     
     - Microsoft Edge
     
-      或 
+      或
     
     - Microsoft Internet Explorer 10 或更新版本
     
@@ -58,7 +57,7 @@ ms.locfileid: "27544124"
 
 - 如果內容的搜尋所傳回的結果的估計總大小超過 20&nbsp;TB、 匯出報表將會失敗。若要成功匯出報表，請嘗試縮小範圍並重新執行搜尋結果的估計的大小小於 20 讓&nbsp;TB。
 
-- 匯出內容搜尋報告針對匯出執行於同一時間以及匯出單一使用者可以執行的最大數目的最大數目的計數。如需匯出限制的詳細資訊，請參閱[[Office 365 安全性及規範中心匯出內容的搜尋結果](export-search-results.md#export-limits)。
+- 匯出內容搜尋報告針對匯出執行於同一時間以及匯出單一使用者可以執行的最大數目的最大數目的計數。如需匯出限制的詳細資訊，請參閱[Office 365 安全性 & 規範中心匯出內容的搜尋結果](export-search-results.md#export-limits)。
 
 ## <a name="generate-and-download-a-content-search-report"></a>產生及下載的內容搜尋報告
 

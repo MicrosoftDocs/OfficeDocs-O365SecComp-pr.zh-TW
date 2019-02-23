@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 如果使用者持續傳送電子郵件訊息從歸類為垃圾郵件的 Office 365，他們會封鎖傳送任何詳細訊息。
-ms.openlocfilehash: 6f6f4504a9c79463aadc21f2eaeadcd769e8b151
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 3ffd8b65d6994699093237e9f9a0a3aaa802f5e2
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614397"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223082"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>從封鎖清單移除使用者、 網域或 IP 位址傳送垃圾電子郵件之後
 
@@ -53,7 +53,7 @@ ms.locfileid: "29614397"
 3. 按一下 [**是]** 確認變更。 
     
 > [!NOTE]
-> 有限制的帳戶可以解除封鎖承租人管理員的次數如果已超過此限制的使用者，就會出現錯誤訊息。然後您必須連絡支援人員以解除封鎖使用者。</br></br> 可能需要多達 1 小時之前使用者不封鎖。
+> 有限制的帳戶可以解除封鎖承租人管理員的次數如果已超過此限制的使用者，就會出現錯誤訊息。然後您必須連絡支援人員以解除封鎖使用者。<br/><br/> 可能需要多達 1 小時之前使用者不封鎖。
   
 ## <a name="third-party-block-lists"></a>協力廠商封鎖清單
 

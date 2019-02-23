@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 10/08/2018
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft 的 cybersecurity 小組實作安全性功能來保護您的 Office 365 環境的最佳建議。 '
-ms.openlocfilehash: ce7b4371a284763c506ea4e1a06a63dbf2968ae5
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.openlocfilehash: feb11c90272fc639aacb0a49cc3272627df18af6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995284"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220803"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Office 365 安全性藍圖上方的前 30 天 90 天和以外的優先順序
 

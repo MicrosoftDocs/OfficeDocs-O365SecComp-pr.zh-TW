@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 基於規範、法律或其他規定，組織通常必須將文件保留一段時間。但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。
-ms.openlocfilehash: 6bf4c0604708608ad7af064f4b32b57d33208a39
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f666d652e2e1a0a5ffd099fd0005f498598604db
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002656"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220553"
 ---
 # <a name="create-a-document-deletion-policy"></a>建立文件刪除原則
 
@@ -157,7 +157,7 @@ ms.locfileid: "25002656"
   
 3. 選擇 **[新增項目]**。
     
-4. 執行下列其中一項動作：
+4. 執行下列其中一項操作：
     
   - 若要將原則指派至網站集合範本如 「 小組網站範本、 選取**指派至網站集合範本**，，然後選取網站集合範本。
     

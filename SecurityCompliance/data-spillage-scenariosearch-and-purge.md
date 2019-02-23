@@ -3,21 +3,20 @@ title: eDiscovery 解決方案數列的資料 spillage 案例-搜尋和清除
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 eDiscovery 及搜尋工具來管理，並在組織中建立資料 spillage 事件回應。
-ms.openlocfilehash: d2c5a0a6efcc75a38df97c7c597503e5642f83eb
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 0da49dfbe8104d89a1abf4a14adce51ec0ef25f1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575347"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219423"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery 解決方案系列： 資料 spillage 案例-搜尋和清除
 
@@ -60,7 +59,7 @@ ms.locfileid: "25575347"
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>（選用）步驟 1： 管理人員可以存取案例和設定規範界限
 
-隨您組織的作法是，您必須控制可存取用來建立資料 spillage 事件的調查並設定規範界限 eDiscovery 案例的人員。執行這項作業的最簡單方式是將現場新增為 Office 365 的安全性與規範中心中的現有角色群組的成員並再新增 eDiscovery 案例的成員身分的角色群組。內建的 eDiscovery 角色群組以及如何將成員新增至 eDiscovery 案例的相關資訊，請參閱[指派 Office 365 安全性 eDiscovery 權限&amp;規範中心](assign-ediscovery-permissions.md)。
+隨您組織的作法是，您必須控制可存取用來建立資料 spillage 事件的調查並設定規範界限 eDiscovery 案例的人員。執行這項作業的最簡單方式是 Office 365 安全性 & 規範中心中的現有角色群組成員身分加入現場並再新增 eDiscovery 案例的成員身分的角色群組。內建的 eDiscovery 角色群組以及如何將成員新增至 eDiscovery 案例的相關資訊，請參閱[指派 Office 365 安全性 eDiscovery 權限&amp;規範中心](assign-ediscovery-permissions.md)。
   
 您也可以建立新的角色群組的對齊您組織的需求。例如，您可能會想存取及進行共同作業的所有資料 spillage 案例組織中的資料 spillage 現場群組。您可以這麼做建立"資料 Spillage 調查 」 角色群組、 指派適當的角色 （匯出、 RMS 解密、 檢閱、 Preview、 規範搜尋及案例管理）、 資料 spillage 現場新增至角色群組，然後將資料 spillage eDiscovery 案例的成員身分的角色群組。請參閱[Set up Office 365 中的 eDiscovery 調查的規範界限](set-up-compliance-boundaries.md)如何執行這項作業的詳細指示。 
   
@@ -68,13 +67,13 @@ ms.locfileid: "25575347"
 
 EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。您可以將成員新增至您在步驟 1 中建立的角色群組、 角色群組新增新的 eDiscovery 案例的成員身分執行反覆執行搜尋以尋找 spilled 的資料、 將共用、 追蹤的情況下，狀態報表匯出以及然後參照回 c 的詳細資訊如果需要，ase。請考慮建立用於資料 spillage 事件、 eDiscovery 案例的命名慣例及提供方式，儘可能案例名稱與描述，讓您可以找出並參照未來如有必要的資訊。
   
-若要建立新的案例，您可以使用 eDiscovery 安全性&amp;規範中心。請參閱[[Office 365 安全性及規範中心中的 eDiscovery 案例](ediscovery-cases.md#step-2-create-a-new-case)中的 「 建立新的案例 」。
+若要建立新的案例，您可以使用 eDiscovery 安全性&amp;規範中心。請參閱[Office 365 安全性 & 規範中心中的 eDiscovery 案例](ediscovery-cases.md#step-2-create-a-new-case)中的 「 建立新的案例 」。
   
 ## <a name="step-3-search-for-the-spilled-data"></a>步驟 3： 搜尋 spilled 資料
 
 既然您已經建立案例和受管理的存取，您可以使用反覆搜尋來尋找 spilled 的資料並找出包含 spilled 的資料之信箱的大小寫。您將會使用您用來找出要刪除那些相同的郵件在[步驟 7](#step-7-permanently-delete-the-spilled-data)中的電子郵件訊息的同一個搜尋查詢。
   
-若要建立內容的搜尋相關聯的 eDiscovery 案例，請參閱[[Office 365 安全性及規範中心中的 eDiscovery 案例](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case)中的 「 建立和執行與案例相關聯之內容的搜尋 」。
+若要建立內容的搜尋相關聯的 eDiscovery 案例，請參閱[Office 365 安全性 & 規範中心中的 eDiscovery 案例](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case)中的 「 建立和執行與案例相關聯之內容的搜尋 」。
   
  **重要：** 搜尋查詢中使用關鍵字可能包含您要搜尋的實際 spilled 的資料。例如，如果搜尋文件包含社會安全號碼與您使用 it 如搜尋關鍵字，您必須刪除事後以避免進一步 spillage 查詢。請參閱在步驟 8 中的 [[刪除的搜尋查詢](#deleting-the-search-query)。 
   
@@ -94,11 +93,11 @@ EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。�
   
 1. 移至 eDiscovery 案例中，在 [**搜尋**] 頁面上，按一下 [搜尋想要產生的報告。 
     
-2. 在 [彈出式] 頁面上，按一下 [**更多 > 匯出報告**。
+2. 按一下 [彈出式] 索引標籤的 [**更多 > 匯出報告**]。
  
       會顯示 [匯出報告] 頁面。
 
-    ![選取 [搜尋] 和 [更多 > 匯出彈出式] 頁面上的報表](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![選取搜尋]，然後按一下 [更多 > 彈出式] 頁面上的匯出報告](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. 選取**所有項目，包括類有無法辨認的格式來加密或未編製索引的其他原因**，然後按一下 [**產生報表**。
 
@@ -116,7 +115,7 @@ EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。�
 
 如果溢出資料的電子郵件的形式共用的進一步調查，您可以選擇性地查詢郵件追蹤記錄檔的寄件者資訊與您在步驟 4 中所收集的日期範圍資訊。請注意目的保留期間的郵件追蹤 30 天的即時資料及 90 天的歷程資料。
   
-您可以使用郵件追蹤的安全性與規範中心或使用對應 cmdlet 在 Exchange Online PowerShell。請務必注意郵件追蹤並不提供完整保證在傳回的資料完整性。如需使用郵件追蹤的詳細資訊，請參閱： 
+您可以使用安全性 & 規範中心中的郵件追蹤或使用對應 cmdlet 在 Exchange Online PowerShell。請務必注意郵件追蹤並不提供完整保證在傳回的資料完整性。如需使用郵件追蹤的詳細資訊，請參閱： 
   
 - [郵件追蹤的 Office 365 安全性&amp;規範中心](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
@@ -206,7 +205,7 @@ EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。�
 
 如果您建立及使用步驟 3 中的搜尋查詢中的關鍵字包含部分或所有實際 spilled 資料，您應該刪除搜尋查詢以避免進一步資料 spillage。
   
-1. 安全性及規範中心] 中開啟 eDiscovery 案例、 移至 [**搜尋**] 頁面上，並選取適當的內容搜尋。
+1. 在安全性 & 規範中心開啟 eDiscovery 案例、 移至 [**搜尋**] 頁面上，並選取適當的內容搜尋。
     
 2. 在 [彈出式] 頁面上按一下 [**刪除**]。
 
@@ -220,6 +219,6 @@ EDiscovery 案例提供有效的方法來管理您的資料 spillage 調查。�
 
 - [搜尋 Office 365 稽核記錄中的 eDiscovery 活動](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- 請參閱"稽核活動-Exchange 管理員稽核記錄 」 一節中的[搜尋稽核記錄中的 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#audited-activities)如需如何執行 Exchange Online 中的 cmdlet 與相關的稽核記錄搜尋的指引。
+- 請參閱"稽核活動-Exchange 管理員稽核記錄 」 一節中的[搜尋稽核登入 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#audited-activities)如需如何執行 Exchange Online 中的 cmdlet 與相關的稽核記錄搜尋的指引。
   
 

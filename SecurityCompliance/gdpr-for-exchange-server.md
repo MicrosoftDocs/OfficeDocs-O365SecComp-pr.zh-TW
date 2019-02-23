@@ -5,16 +5,15 @@ author: MikePlumleyMSFT
 manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.custom: ''
+ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 Exchange Server 中解決 GDPR 需求。
-ms.openlocfilehash: 44383447aea8e4cbc594d4c34a5592b9cfeccbaf
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 8c66787c7da8eef9a580361848499f9f336b49b9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272078"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219483"
 ---
 # <a name="gdpr-for-exchange-server"></a>適用於 Exchange Server 的 GDPR
 

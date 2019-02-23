@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 8/28/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新員工或另一位使用者需要存取 Office 365 中不在作用中信箱的內容，您可以還原 （或合併） 至現有的信箱不在作用中信箱的內容。
-ms.openlocfilehash: e0add2b63a48edc27795143324c83153b15dcf8c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 671b13b913cddcfc3a7784d621b01b864b07e4e3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526228"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214233"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>還原 Office 365 中的非使用中信箱
 
@@ -91,7 +91,7 @@ ms.locfileid: "22526228"
     ```
 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - **什麼是復原及還原不在作用中信箱的主要差異？** 當您復原不在作用中的信箱時，信箱基本上會轉換為新的信箱、 保留的內容和非使用中的信箱資料夾結構，及信箱連結至新的使用者帳戶。它復原、 非使用中的信箱不存在，以及對新的信箱中的內容進行任何變更會影響原本的內容之後保留在非使用中的信箱。反之，當您還原非使用中的信箱，內容純粹都會複製到另一個信箱。非使用中的信箱已受保護而會維持不在作用中的信箱。目標信箱中的內容進行任何變更將不會影響保存在非使用中信箱的原始內容。非使用中信箱仍可使用 Office 365 安全性[內容搜尋工具](run-a-content-search-in-the-security-and-compliance-center.md)來搜尋&amp;規範中心及其內容可以還原至另一個信箱或復原或刪除日後。 
     

@@ -10,19 +10,17 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: 判斷您的組織是否將實作標籤做為 GDPR 計劃的一部分。
-ms.openlocfilehash: 82eec50284f0aa4b0b74346c9fbbfc717dc08d07
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 4ec495d82a37742d1315673e2a7d089778cd52e4
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272248"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223532"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>設計個人資料的分類結構描述
 
@@ -30,7 +28,7 @@ ms.locfileid: "23272248"
 
 附註：定義組織的分類結構描述和設定原則、標籤和條件，需要仔細規劃和準備。了解這不是 IT 導向程序很重要。請務必與您的法律和規範小組合作，為您組織的資料開發適當的分類與標示結構描述。
 
-## <a name="decide-if-you-are-using-labels-in-addition-to-sensitive-data-types"></a>除了敏感資訊類型外，判斷您是否也使用標籤
+## <a name="decide-if-you-are-using-labels-in-addition-to-sensitive-data-types"></a>除了敏感性資料類型外，判斷您是否也使用標籤
 
 您可以在 Office 365 中採取兩種方法，對個人資訊進行分類。其中一種可以用於 GDPR 保護。如果決定僅使用敏感資訊類型進行分類，您可以跳過本主題的其餘部分。
 
@@ -44,7 +42,7 @@ ms.locfileid: "23272248"
 
 -   這些敏感資訊類型會使用 DLP 規則 (Office 標籤也一樣)。
 
--   未來，這些敏感資訊類型將使用 Cloud App Security，以便您可以偵測其他 SaaS 應用程式中的敏感資訊。
+-   未來，這些敏感資訊類型將使用雲端 App 安全性，以便您可以偵測其他 SaaS 應用程式中的敏感資訊。
 
 ### <a name="option-2-use-sensitive-information-types--office-labels"></a>選項 2：使用敏感資訊類型 + Office 標籤
 

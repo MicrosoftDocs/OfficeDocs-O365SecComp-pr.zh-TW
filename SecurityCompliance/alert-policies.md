@@ -3,10 +3,9 @@ title: 警示 Office 365 安全性原則&amp;規範中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 安全性中建立警示原則&amp;規範中心来監視的潛在威脅、 資料遺失及權限問題。然後您可以檢視及管理使用者在執行活動的警示原則條件符合時所產生的警示。
-ms.openlocfilehash: 58df2c7a711013f4953e5c4a4af2c2ff2fac3073
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 5c2d9dc7cf74198198036f062e8300f82fd69631
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29768024"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220663"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>警示 Office 365 安全性原則&amp;規範中心
 
@@ -101,7 +100,7 @@ Office 365 提供協助識別 Exchange 系統的權限不當使用、 惡意程�
   
 |**預設提醒的原則**|**描述**|**類別**|**Office 365 企業版訂閱**|
 |:-----|:-----|:-----|:-----|
-|**建立轉寄/重新導向規則** <br/> |當某人在組織中建立他們的信箱轉寄或將郵件重新導向至其他電子郵件帳戶的收件匣規則時就會產生警示。此原則僅會追蹤使用 Outlook Web App 或 Exchange Online PowerShell 所建立的收件匣規則。此原則含有**低**嚴重性設定。使用正向和重新導向 Outlook Web App 中的電子郵件收件匣規則的詳細資訊，請參閱[使用規則來自動轉寄郵件到其他帳戶的 Outlook Web App 中](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。<br/> |威脅管理 <br/> |E1/G1、 E3/G3 或 E5/G5  <br/> |
+|**建立轉寄/重新導向規則** <br/> |當某人在組織中建立他們的信箱轉寄或將郵件重新導向至其他電子郵件帳戶的收件匣規則時就會產生警示。此原則僅會追蹤使用 （前身為 Outlook Web App） 在 web 上的 Outlook 或 Exchange Online PowerShell 所建立的收件匣規則。此原則含有**低**嚴重性設定。使用正向和重新導向網路上的 Outlook 電子郵件收件匣規則的詳細資訊，請參閱[使用自動將郵件轉寄給另一個帳戶在 web 上的 Outlook 中的規則](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。<br/> |威脅管理 <br/> |E1/G1、 E3/G3 或 E5/G5  <br/> |
 |**啟動或匯出 eDiscovery 搜尋** <br/> |當某人在安全性 & 規範中心中使用 「 內容搜尋工具就會產生警示。下列內容的搜尋活動執行時觸發提醒：<br/><br/>• [內容搜尋已啟動<br/>• [匯出內容的搜尋結果<br/>• [匯出內容搜尋報告<br/><br/>提醒也被 trigged 時舊內容的搜尋活動會執行與 eDiscovery 案例的關聯。此原則含有**中型**嚴重性設定。如需內容的搜尋活動的詳細資訊，請參閱[Search Office 365 中的 eDiscovery 活動的稽核記錄](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。<br/> |威脅管理<br/> |E1/G1、 E3/G3 或 E5/G5  <br/> |
 |**Exchange admin 權限提高** <br/> |當某人指派系統管理權限的 Exchange Online 組織，就會產生警示例如，如果使用者已新增到 「 組織管理 」 角色群組在 Exchange Online。此原則含有**低**嚴重性設定。<br/> |權限 <br/> |E1/G1、 E3/G3 或 E5/G5  <br/> |
 |**郵件已延遲** <br/> |Office 365 無法傳送電子郵件至您的內部部署組織或協力廠商伺服器使用連接器時就會產生警示。當此發生時，郵件是 Office 365 中排入佇列。有 2000 訊息或其他已進入佇列的多個小時就會觸發此警示。此原則具有**高**的嚴重性設定。<br/> |郵件流程<br/> |E1/G1、 E3/G3 或 E5/G5  <br/> |
