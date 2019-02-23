@@ -1,24 +1,24 @@
 ---
-title: 搜尋 Office 365 中的內容
+title: 在 Office 365 中搜尋內容
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/4/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用 Office 365 安全性內容搜尋 eDiscovery 工具&amp;規範中心以快速找到 Exchange 信箱中的 [電子郵件文件中的 SharePoint 網站和 OneDrive 位置及是否提供立即訊息交談中的商務 Skype。
-ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 255ddbde4488ab5e7d13872cea95398ed5fd4d75
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238395"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214533"
 ---
-# <a name="search-for-content-in-office-365"></a>搜尋 Office 365 中的內容
+# <a name="search-for-content-in-office-365"></a>在 Office 365 中搜尋內容
 
 在 [安全性] 中使用 「 內容搜尋工具&amp;規範中心以快速找到 Exchange 信箱中的 [電子郵件文件中的 SharePoint 網站和 OneDrive 位置及是否提供立即訊息交談中的商務 Skype。您可以使用 「 內容搜尋工具來搜尋的電子郵件、 文件和立即訊息交談中的 Microsoft 小組與 Office 365 群組例如 Office 365 共同作業工具。
   

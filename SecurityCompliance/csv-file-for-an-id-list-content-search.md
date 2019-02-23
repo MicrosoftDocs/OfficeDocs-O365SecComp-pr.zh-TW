@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 使用 Results.csv 或花很多 Items.csv 檔案從現有的內容搜尋來建立識別碼清單搜尋會傳回特定電子郵件訊息。識別碼清單搜尋通常可用來傳回部分已編製索引的信箱項目。
-ms.openlocfilehash: 9a7583c8f83626afb8dc0452bf72d834c8a28275
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 940656fda58e37772471ba9d72d6bc3932bb8c48
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038276"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220233"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>準備 Office 365 中的內容搜尋識別碼清單的 CSV 檔案
 

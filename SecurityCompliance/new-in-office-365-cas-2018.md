@@ -6,18 +6,18 @@ manager: laurawi
 ms.audience: Admin
 ms.topic: reference
 ms.date: 01/25/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 description: 請參閱什麼發行期間 2018 for Office 365 雲端應用程式安全性
-ms.openlocfilehash: f206273b0eff63e6740d80cd2550ae9fcec9a41c
-ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+ms.openlocfilehash: 986fb64eedf8184e7835d1fec41845fde13b294b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29579811"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214343"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2018"></a>Office 365 雲端應用程式的安全性更新期間 2018
 

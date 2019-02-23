@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: 在 [安全性] 中使用詐騙智慧&amp;規範中心反垃圾郵件設定] 頁面上檢閱所有寄件者是詐騙屬於貴組織的其中一個網域或詐騙的外部網域。詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅保護和 Exchange Online Protection 的一部分。
-ms.openlocfilehash: df5dedb6a9bdf9c25f570f960b9004524999bfdd
-ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
+ms.openlocfilehash: b8c791dc47198fa0da08dec1de6fdab8ebfbdb32
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25715909"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214819"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 

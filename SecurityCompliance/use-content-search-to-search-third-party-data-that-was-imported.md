@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 10/27/2017
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 內容搜尋 eDiscovery 工具可用於搜尋的從協力廠商資料來源匯入至 Office 365 中的信箱項目。您可以建立搜尋匯入的所有項目或建立特定協力廠商資料類型的搜尋查詢的查詢。本文列出您可以使用關鍵字查詢中搜尋可匯入至 Office 365 的協力廠商資料類型的值。
-ms.openlocfilehash: 6829e894ba687fb09184c32201f76394e37bbbf8
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 793024f765aa1d016f7a043d14eb75ca6c2435c3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037966"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214873"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用內容搜尋來搜尋已匯入 Office 365 的協力廠商資料
 
@@ -76,8 +76,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Bloomberg 郵件
   <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg 通訊  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|Box
-  <br/> | `ipm.externaldata.Box*` <br/> |
+|Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM&amp;平台服務伺服器  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |

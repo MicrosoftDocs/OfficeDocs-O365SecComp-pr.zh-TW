@@ -6,18 +6,18 @@ manager: laurawi
 ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: 指示 Office 365 和 EOP 系統管理員如何啟用和停用的電子郵件安全性提示。
-ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: f4e85b45c1483111d9edeb39d00d3f2cbafbf3ab
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180853"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215553"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>啟用或停用 Office 365 中的安全提示
 

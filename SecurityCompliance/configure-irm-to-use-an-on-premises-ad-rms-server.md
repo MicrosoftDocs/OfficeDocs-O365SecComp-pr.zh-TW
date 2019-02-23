@@ -1,7 +1,7 @@
 ---
 title: 將 IRM 設定為使用內部部署 AD RMS 伺服器
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
 ms.audience: End User
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
+ms.collection:
+- M365-security-compliance
 description: 本主題示範如何設定 IRM 以使用 AD RMS 伺服器。
-ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002782"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215254"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>將 IRM 設定為使用內部部署 AD RMS 伺服器
   
@@ -99,7 +101,7 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>步驟 3： 使用 Exchange 管理命令介面來發佈 AD RMS 權限原則範本
 
-匯入 TPD 之後，您必須確定 AD RMS 權限原則範本已發佈。Outlook Web App 使用者可看見已發佈的範本，然後再將這些範本套用至電子郵件訊息。
+匯入 TPD 之後，您必須確保分散式 AD RMS 權限原則範本。分散式的範本看至網頁 （前身為 Outlook Web App） 使用者，然後以電子郵件訊息套用範本上的 Outlook。
   
 若要傳回預設 TPD 包含的所有範本清單，請執行下列命令：
   
@@ -107,7 +109,7 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
 Get-RMSTemplate -Type All | fl
 ```
 
-如果  _Type_ 參數的值為  `Archived`，使用者就無法看見此範本。在預設 TPD 中，只有已發佈的範本才能用於 Outlook Web App。
+如果_Type_參數的值是`Archived`、 範本不是可讓使用者看到。僅限分散式的範本預設 TPD 都可以在 web 上的 Outlook。
   
 若要發佈範本，請執行下列命令：
   
@@ -165,6 +167,6 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
   
 - 使用 **Test-IRMConfiguration** 指令程式來測試 IRM 功能。如需詳細資訊，請參閱 [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx) 中的「範例 1」。
     
-- 從延伸功能表 (**** 更多選項圖示![) 中選取 ](media/ITPro-EAC-MoreOptionsIcon.gif) 選項，以在 Outlook Web App 中撰寫新郵件，並以 IRM 予以保護。
+- 撰寫新郵件在網路上的 Outlook 和 IRM 保護其選取 [**設定權限**從延伸功能表選項 (![更多選項] 圖示](media/ITPro-EAC-MoreOptionsIcon.gif))。
     
 

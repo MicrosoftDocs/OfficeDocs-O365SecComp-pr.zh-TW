@@ -1,23 +1,22 @@
 ---
-title: 佇列提醒和佇列
+title: 佇列的警示和佇列
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 系統管理員可在 Office 365 安全性 & 規範中心中的郵件流程儀表板中了解佇列提醒和佇列。
-ms.openlocfilehash: fe750e32136af095bb0ccff8544306db76a7a667
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+ms.openlocfilehash: 45c03ae8d5f646c4514b19669ca83b3eac561f68
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685387"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220793"
 ---
-# <a name="queue-alerts-and-queues"></a>佇列提醒和佇列
+# <a name="queue-alerts-and-queues"></a>佇列的警示和佇列
 
 ## <a name="queue-alerts"></a>佇列提醒
 

@@ -3,7 +3,7 @@ title: 安全寄件者和封鎖寄件者清單在 Exchange Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: Exchange Online 或 Exchange Online Protection (EOP) 系統管理員身分有助於確保出差透過此服務的電子郵件不標示為垃圾郵件。若要執行這項作業的其中一個方法是針對在組織中的人員建立安全的寄件者和封鎖的寄件者清單。
-ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d785f5f605dd9b8610eaed95f3f2783d04bcbc14
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003102"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206346"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>安全寄件者和封鎖寄件者清單在 Exchange Online
 
@@ -38,9 +38,9 @@ Exchange Online 或 Exchange Online Protection (EOP) 系統管理員身分有助
     
 注意：
   
-您可能會遇到錯誤 KB 2590466 （"收到錯誤 「 垃圾電子郵件驗證錯誤 「 Outlook Web App 中的 Exchange Server 2010"） 中所述。若要解決此問題，請清除 「 信任的我的連絡人的電子郵件 」] 核取方塊。或者，減少是預設連絡人] 資料夾中將它移內允許的最大限制的 1024 在 Exchange Online 設定為"MaxSafeSenders"屬性的電子郵件地址的數量。如需此屬性與 Set-mailbox 指令程式的詳細資訊，seethe 下列主題：
+您可能會遇到錯誤[KB2590466](https://support.microsoft.com/help/2590466/you-receive-the-error-junk-e-mail-validation-error-in-outlook-web-app)中所述。若要解決此問題，請清除 「 信任的我的連絡人的電子郵件 」] 核取方塊。或者，減少是預設連絡人] 資料夾中將它移內允許的最大限制 1024年個在 Exchange Online 設定為"MaxSafeSenders"屬性的電子郵件地址的數量。如需此屬性與 Set-mailbox 指令程式的詳細資訊，seethe 下列主題：
   
-[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
   
 ## <a name="see-also"></a>另請參閱
 

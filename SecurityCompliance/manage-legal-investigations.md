@@ -3,22 +3,21 @@ title: 管理 Office 365 中的法律調查
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Office 365 安全性使用 eDiscovery 案例&amp;規範中心來管理您的組織法律調查。如果您有 E5 訂閱，您可以進一步分析 case 資料使用的文字分析、 機器學習及預測編碼功能進階 eDiscovery 中。
-ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
-ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
+ms.openlocfilehash: 5b3feb16b638235d46f67f6aa16ce49e1e7c11d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25719047"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214393"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>管理 Office 365 中的法律調查
 
@@ -59,7 +58,7 @@ Office 365 進階的 eDiscovery 建置在前文各節所述的內容搜尋與 eD
 > [!NOTE]
 > 若要分析使用進階的 eDiscovery 的使用者資料，使用者 (資料 okay) 必須指派 Office 365 E5 授權。或者，使用 Office 365 E1 或 E3 授權的使用者可以將指派進階的 eDiscovery 獨立授權。系統管理員及法務人員對於已指派給的情況下並使用進階的 eDiscovery 分析資料不需要的 E5 授權。 
   
-### <a name="get-started"></a>快速入門
+### <a name="get-started"></a>開始使用
 
 快速入門與進階 eDiscovery 最快的方法是建立案例並準備搜尋結果中安全性&amp;規範中心載入進階 ediscovery 這些結果，然後執行分析 Express 分析的案例資料，然後將匯出供外部檢閱結果。
   
@@ -123,11 +122,11 @@ Office 365 進階的 eDiscovery 建置在前文各節所述的內容搜尋與 eD
   
 - [了解匯出案例的資料](export-case-data-in-advanced-ediscovery.md)
     
-- [Case 資料匯出](export-results-in-advanced-ediscovery.md)
+- [匯出案例資料](export-results-in-advanced-ediscovery.md)
     
-- [檢視批次歷程記錄和匯出過去的結果](view-batch-history-and-export-past-results.md)
+- [檢視批次歷程記錄及匯出過去的結果](view-batch-history-and-export-past-results.md)
     
-- [匯出報表欄位](export-report-fields-in-advanced-ediscovery.md)
+- [匯出報告欄位](export-report-fields-in-advanced-ediscovery.md)
     
 ### <a name="other-advanced-ediscovery-tools"></a>其他進階的 eDiscovery 工具
 

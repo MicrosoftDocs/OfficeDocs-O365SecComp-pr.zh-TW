@@ -1,23 +1,22 @@
 ---
-title: 自動轉寄郵件報告
+title: 自動轉寄訊息的報告
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 系統管理員可了解 Office 365 安全性 & 規範中心中的郵件流程儀表板中自動轉寄郵件報告。
-ms.openlocfilehash: 98a2b8d17a914e631d720745e10d4c24924dd299
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+ms.openlocfilehash: 5097a2842eeae56e1eb51b9fae4c0caf5263ad80
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685380"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219303"
 ---
-# <a name="auto-forwarded-messages-report"></a>自動轉寄郵件報告
+# <a name="auto-forwarded-messages-report"></a>自動轉寄訊息的報告
 
 郵件流程儀表板中的**自動轉寄郵件**報表會自動轉寄給收件者的外部網域從 Office 365 組織的郵件上顯示資訊。
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0cfc1e5f04887cbdbcc0be8854fc50d6f9b5f1f2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 98999d3d82efaace7673d70b0334cb0efb80fc08
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706004"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215203"
 ---
 # <a name="search-statistics"></a>搜尋統計資料
 
@@ -64,7 +64,3 @@ ms.locfileid: "29706004"
 - 從下列位置符合搜尋條件的項目數。
 
 - 總量符合搜尋條件的項目。
-
-## <a name="refiners"></a>精簡器
-
-Exchange 信箱的精簡器檢視可讓您依 ItemClass、 寄件者和收件者的其他分類。針對每個精簡器及位置的值，您可以參閱文件數目所傳回的搜尋。

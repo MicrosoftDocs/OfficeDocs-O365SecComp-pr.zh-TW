@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 10/24/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何將搜尋 Office 365 稽核記錄的規範管理員可執行內容搜尋與 eDiscovery 案件工作安全性會記錄的事件&amp;規範中心。
-ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: 1e364e1d82acb7ad72c4a6d3fb27421a9a89916c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698029"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220893"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>搜尋 Office 365 稽核記錄中的 eDiscovery 活動
 
@@ -151,7 +151,7 @@ ms.locfileid: "25698029"
 下表說明當您按一下 [搜尋結果中所列的 eDiscovery 活動的**詳細資料**頁面**的詳細資訊**時所包含的屬性。當您匯出稽核記錄搜尋結果的 CSV 檔案也會包含這些屬性。請注意 eDiscovery 活動的稽核記錄檔記錄不會包含下面所列的每個詳細的屬性。 
   
 > [!TIP]
-> 當您匯出搜尋結果時，CSV 檔案會包含名為**詳細資訊**，其中包含下表中的多重值屬性中所述的詳細的內容欄。您可以使用 Excel 中的 Power 查詢功能此資料行分割成多個資料欄，，讓每個屬性將有其專屬資料行。這可讓您排序及篩選一或多個這些屬性。如需詳細資訊，請參閱 ＜[的搜尋稽核記錄中的 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)的 「 匯出至檔案的搜尋結果 」 一節。 
+> 當您匯出搜尋結果時，CSV 檔案會包含名為**詳細資訊**，其中包含下表中的多重值屬性中所述的詳細的內容欄。您可以使用 Excel 中的 Power 查詢功能此資料行分割成多個資料欄，，讓每個屬性將有其專屬資料行。這可讓您排序及篩選一或多個這些屬性。如需詳細資訊，請參閱 ＜[的搜尋稽核登入 Office 365 安全性 & 規範中心](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)的 「 匯出至檔案的搜尋結果 」 一節。 
   
 |**屬性**|**描述**|
 |:-----|:-----|

@@ -3,10 +3,9 @@ title: Office 365 安全性的 eDiscovery 案例&amp;規範中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用 Office 365 安全性&amp;規範中心來建立及管理組織中的 eDiscovery 案例。您可以將成員指派給大小寫、 放置內容保留執行內容 Searchs 位置相關聯情況下，並匯出搜尋結果。您也可以準備進一步分析進階 ediscovery 案例的資料。
-ms.openlocfilehash: d03ed0a16b74f1b073c2528fa2160ed182840ede
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 92ef00bbdd8de5b1ba6bdae40bce96720ac46089
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755244"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214013"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性的 eDiscovery 案例&amp;規範中心
 
@@ -175,7 +174,7 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
   
 6. （選用）在 [**描述**] 方塊中新增的保留的描述。 
     
-7. 按 [下一步]。
+7. 按 [下一步]****。
     
 8. 選擇您想要進行的內容位置保留。您可以在保留上放置信箱、 網站及公用資料夾。
     

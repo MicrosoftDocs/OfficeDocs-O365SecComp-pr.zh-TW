@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 04078141e9a515cf7a3c34aa353759039cc00283
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 56d0fc0e32c5370d912241e50d0ea0153e4496a1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694829"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214183"
 ---
 # <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>管理進階的 eDiscovery (Preview) 中的工作集  
 

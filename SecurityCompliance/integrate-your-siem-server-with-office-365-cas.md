@@ -5,25 +5,25 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以使用 Office 365 雲端應用程式安全性整合 SIEM 伺服器。請閱讀本篇文章以取得它的運作方式，以及如何設定它的概觀。
-ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603764"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215873"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>將 SIEM 伺服器與 Office 365 雲端 App 安全性整合
   
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](utilization-activities-for-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](utilization-activities-for-ocas.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
    
 ## <a name="overview-and-prerequisites"></a>概觀和先決條件
 
@@ -153,7 +153,7 @@ Office 365 雲端應用程式安全性目前支援下列 SIEM 伺服器：
 而以下是另一個範例中，這次 CEF 格式：
 
 
-|CEF 欄位名稱  | 說明  |
+|CEF 欄位名稱  | 描述  |
 |---------|---------|
 |啟動     | 提醒的時間戳記        |
 |結束     | 提醒的時間戳記        |

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 975b8ca988b5e5a268ecc5c9907f319a5038aa62
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 3344bd6e37a91608a29bcd59d1319fab4d84ebfc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607542"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215463"
 ---
 # <a name="ediscovery-in-the-microsoft-cloud"></a>Microsoft 雲端中的 eDiscovery
 

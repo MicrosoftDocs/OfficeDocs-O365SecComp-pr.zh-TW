@@ -3,19 +3,18 @@ title: 安全性 & 規範中心中的郵件流程觀點
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可了解安全性 & 規範中心中的郵件流程儀表板。
-ms.openlocfilehash: 481815430a91413cc96b92c074bd2d62771751ee
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+ms.openlocfilehash: 1312e7362cd7765a3fbf3df9410e2e777682ece0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685382"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215583"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性 & 規範中心中的郵件流程觀點
 
@@ -23,15 +22,15 @@ ms.locfileid: "28685382"
 
 觀點、 報告及郵件流程儀表板中可用的 widget 是：
 
-- [輸出及輸入郵件流程](mfi-outbound-and-inbound-mail-flow.md)
+- [外寄和內送的郵件流程](mfi-outbound-and-inbound-mail-flow.md)
 
-- [佇列提醒和佇列](mfi-queue-alerts-and-queues.md)
+- [佇列的警示和佇列](mfi-queue-alerts-and-queues.md)
 
-- [自動轉寄郵件報告](mfi-auto-forwarded-messages-report.md)
+- [自動轉寄訊息的報告](mfi-auto-forwarded-messages-report.md)
 
-- [郵件迴圈洞察力](mfi-mail-loop-insight.md)
+- [郵件迴圈深入解析](mfi-mail-loop-insight.md)
 
-- [慢速郵件流程規則洞察力](mfi-slow-mail-flow-rules-insight.md)
+- [緩慢的郵件流程規則深入解析](mfi-slow-mail-flow-rules-insight.md)
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>若要檢視郵件流程儀表板所需的權限
 

@@ -6,16 +6,16 @@ manager: laurawi
 ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: 使用 Office 365 安全性&amp;規範中心建立 eDiscovery 保留及來存取，並管理組織中的 eDiscovery 案例。
-ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: a3149110a39fb28bf7fa2f4fe5e4f09b2461cce1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522304"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214503"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>管理 Office 365 安全性的 eDiscovery 案例&amp;規範中心
 
@@ -73,9 +73,9 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
   
  **若要指派 eDiscovery 權限：**
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 安全性&amp;規範中心 [**權限**，然後再執行作業根據想要指定 eDiscovery 權限的下列其中之一。
     
@@ -94,9 +94,9 @@ EDiscovery 案例可讓您將成員新增至案例、 控制哪些類型的特�
 
 下一步是建立新的 eDiscovery 案例。您必須是要建立 eDiscovery 案例的 eDiscovery 管理員角色群組的成員。如先前清楚，您在 [安全性] 建立新案例之後&amp;規範中心、 您 （和其他案例的成員） 將能夠存取進階 eDiscovery 如果您組織中的相同案例具有 Office 365 E5 訂閱。
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 登入 Office 365 中，使用您工作或學校的帳戶。
+2. 使用公司或學校帳戶登入 Office 365。
     
 3. 安全性&amp;規範中心，按一下 [**搜尋&amp;調查** \> **eDiscovery**，然後按一下 [![新增圖示](media/ITPro-EAC-AddIcon.gif)**建立案例**。
     

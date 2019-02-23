@@ -6,18 +6,20 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: 摘要： 在 Office 365 中的各種應用程式限制資源的相關資訊。
-ms.openlocfilehash: a2e7ef42f9bf224363f3b10a5e450d6127f11585
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ee44bde8bd93d3628ed3f31f5bbbce024a3056b5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527418"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220213"
 ---
 # <a name="resource-limits"></a>資源限制
 

@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 您可以變更下載到您的電腦時匯出 eDiscovery 搜尋結果的 PST 檔案的預設大小。
-ms.openlocfilehash: c01f05a02fd94941eb2eb7a05b4c84ffecec9b39
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 8a956091f29ec1b564d3194c7e3ca2680fdeb564
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522244"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214623"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>匯出 eDiscovery 搜尋結果時變更 PST 檔案的大小
 

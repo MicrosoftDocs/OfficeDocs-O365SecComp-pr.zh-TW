@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/29/2016
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用 Office 365 安全性大量搜尋編輯器&amp;規範中心可快速變更一或多個內容搜尋查詢及內容的位置。
-ms.openlocfilehash: 9d6d48ff42bb3c99a30b9da1020253a5af24679b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: ff96beacdde3192db65c5eb31d14649c6bed4afc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038176"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214883"
 ---
 # <a name="bulk-edit-content-searches-in-the-office-365-security-amp-compliance-center"></a>大量編輯 Office 365 安全性內容搜尋&amp;規範中心
 

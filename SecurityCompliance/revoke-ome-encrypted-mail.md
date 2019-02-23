@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 系統管理員身分您可以撤銷已加密的 Office 365 郵件加密特定電子郵件。
-ms.openlocfilehash: 018f12105e19382372a8a4b3a91248bb60b228be
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 75b5e46e25f447ddac0de5a7911d0df8385da6b9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696237"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214893"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Office 365 郵件加密的電子郵件撤銷
 

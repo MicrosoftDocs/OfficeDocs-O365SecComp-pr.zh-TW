@@ -1,26 +1,26 @@
 ---
-title: 設定舊版的 Office 365 郵件加密的 Azure Rights Management
+title: 設定舊版 Office 365 郵件加密的 Azure Rights Management
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 舊版的 Office 365 郵件加密取決於 Microsoft Azure Rights Management （先前稱為 Windows Azure Active Directory Rights Management）。
-ms.openlocfilehash: 994364fd74881e40f97daa3c2d12e31282b421fd
-ms.sourcegitcommit: 1c00bba6ddcdd7ead6cc0153c8a2c20de05262ba
+ms.openlocfilehash: 89b86035f57699457c86fefb49888b8428f4e01c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27382924"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214373"
 ---
-# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>設定舊版的 Office 365 郵件加密的 Azure Rights Management
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>設定舊版 Office 365 郵件加密的 Azure Rights Management
 
 本主題說明您必須遵循以啟動，然後設定 [向上 Azure 版權管理 (RMS)、 一部分 Azure 資訊保護，先前版本的 Office 365 郵件加密 (OME) 搭配使用的步驟。
 

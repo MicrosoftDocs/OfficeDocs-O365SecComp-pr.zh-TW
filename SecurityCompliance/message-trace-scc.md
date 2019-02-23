@@ -3,19 +3,18 @@ title: 安全性 & 規範中心中的郵件追蹤
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 系統管理員可以使用郵件追蹤安全性 & 規範中心中找出郵件有何。
-ms.openlocfilehash: 9dfdab4adc5caba55664e93b49c8428791670ab3
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+ms.openlocfilehash: 843d6032faad69895c49b9c10976b26626dc3812
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685393"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213954"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性 & 規範中心中的郵件追蹤
 
@@ -337,7 +336,7 @@ ms.locfileid: "28685393"
 |`DI=SJ`|郵件已傳送給收件者的垃圾郵件] 資料夾。|
 |`DI=SN`|郵件已透過較高風險傳遞集區。如需詳細資訊，請參閱 ＜[高風險傳遞集區的外寄郵件](https://technet.microsoft.com/library/jj200746.aspx)。|
 |`DI=SO`|已透過標準輸出傳遞集區路由傳送郵件。|
-|' SFS = []|SFS = [b] '|這表示已符合垃圾郵件規則。|
+|`SFS=[a]|SFS=[b]`|這表示已符合垃圾郵件規則。|
 |`IPV=CAL`|因為 IP 位址指定於連線篩選的 [IP 允許] 清單中，所以已透過垃圾郵件篩選允許郵件。|
 |`H=<EHLOstring>`|連線的電子郵件伺服器的 HELO 或 EHLO 字串。|
 |`PTR=<ReverseDNS>`|傳送 IP 位址 (也稱為反向 DNS 位址) 的 PTR 記錄。|
@@ -352,7 +351,7 @@ ms.locfileid: "28685393"
 
 |**值**|**描述**|
 |:-----|:-----|
-|' AMA = SUM|v = 1|` or `AMA = EV|v = 1'|郵件已決定要包含惡意程式碼。`SUM`指出惡意程式碼可能已偵測到的任意數量的引擎。`EV`會指出特定引擎所偵測到惡意程式碼。當惡意程式碼會偵測引擎這會觸發後續動作。|
+|`AMA=SUM|v=1|`或`AMA=EV|v=1`|郵件已決定要包含惡意程式碼。`SUM`指出惡意程式碼可能已偵測到的任意數量的引擎。`EV`會指出特定引擎所偵測到惡意程式碼。當惡意程式碼會偵測引擎這會觸發後續動作。|
 |`Action=r`|已取代郵件。|
 |`Action=p`|已略過郵件。|
 |`Action=d`|已延遲郵件。|
@@ -375,7 +374,7 @@ ms.locfileid: "28685393"
 
 |**值**|**描述**|
 |:-----|:-----|
-|' ETR|ruleId =<guid>`|已符合的規則 ID。|
+|`ETR|ruleId=<guid>`|已符合的規則 ID。|
 |`St=<datetime>`|日期和時間 UTC 規則比對發生時。|
 |`Action=<ActionDefinition>`|所套用的動作。如需可用動作的清單，請參閱[Mail flow 規則動作在 Exchange Online](https://technet.microsoft.com/library/jj919237.aspx)。|
 |`Mode=<Mode>`|規則的模式。有效值如下：<br/>• **Enforce**： 將強制執行規則上的所有動作。 <br/>•**搭配原則提示來測試：**： 將會傳送任何 「 原則提示 」 動作，但在應對不到其他強制執行動作。 <br/>• [**不搭配原則提示的測試**： 動作將會列在記錄檔中，但不是會通知寄件者以任何方法，並在應對不到強制執行動作。|

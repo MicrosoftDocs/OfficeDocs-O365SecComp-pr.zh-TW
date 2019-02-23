@@ -6,19 +6,19 @@ manager: scotv
 ms.date: 10/6/2016
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 description: 介紹 EOP 與 Office 365 的垃圾郵件篩選器所篩選的電子郵件訊息的安全秘訣。
-ms.openlocfilehash: 206141fd516f6273a145f4f954c0994be39da26a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 54f41d1ae0b7d0ca883bf6be7e2dbe006536d1aa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22526145"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214303"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>在 Office 365 中的電子郵件訊息中的安全秘訣
 

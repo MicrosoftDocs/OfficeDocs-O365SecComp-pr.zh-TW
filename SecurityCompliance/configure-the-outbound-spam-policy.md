@@ -1,7 +1,7 @@
 ---
 title: 設定輸出垃圾郵件原則
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/10/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
+ms.collection:
+- M365-security-compliance
 description: 如果您使用該服務來傳送輸出電子郵件，便會一律啟用輸出垃圾郵件篩選功能，從而保護使用該服務的組織及其預期的收件者。
-ms.openlocfilehash: b6185cfded28613cb5a512882aefb1a99db158db
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 095098c058a5ca5165e0ad24ef48296c980eadcf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002402"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214523"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>設定輸出垃圾郵件原則
 
@@ -60,7 +62,7 @@ ms.locfileid: "23002402"
     
 4. 按一下 **[儲存]**。預設原則設定的摘要隨即出現在右側窗格中。
     
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection2"> </a>
 
 [外寄郵件的高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)
