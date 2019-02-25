@@ -6,19 +6,21 @@ manager: laurawi
 ms.date: 7/2/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
+ms.collection:
+- M365-security-compliance
 description: 設定 Office 365 垃圾郵件篩選器來協助封鎖垃圾郵件並避免誤判郵件的祕訣。系統管理員可使用 Office 365 反垃圾郵件篩選，來協助防止垃圾郵件傳送到使用者收件匣。
-ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4b2708b55cf44794552f1327c947c15598fe0b7f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769867"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222852"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題
 
@@ -34,7 +36,7 @@ Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務，可協�
 
 將寄件者 IP 位址新增到連線篩選器 IP 封鎖清單，來自訂您的 Office 365 垃圾郵件篩選器：
   
-1. 如[郵件標頭分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)所述，取得您想要在郵件用戶端 (例如 Outlook 或 Outlook Web App) 封鎖之郵件的標頭。
+1. 如[郵件標頭分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)所述，取得您想要在郵件用戶端 (例如 Outlook 或 Outlook 網頁版 (之前稱為 Outlook Web App)) 封鎖之郵件的標頭。
     
 2. 使用[郵件標頭分析器](https://testconnectivity.microsoft.com/?tabid=mha)或手動搜尋位在 X-Forefront-Antispam-Report 標頭中 CIP 標籤後面的 IP 位址。 
     
@@ -58,9 +60,9 @@ Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務，可協�
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>電子郵件使用者也可以使用 Office 365 垃圾郵件篩選器，來協助確定封鎖誤判和電子郵件垃圾郵件
 
-如果您告訴使用者將垃圾郵件寄件者地址新增至其封鎖的寄件者清單 (位於 [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) 或 [Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=294862) 中)，它將有助於您的 Office 365 反垃圾郵件工作，以防止誤判和垃圾郵件。在 Outlook Web App 中，開始按一下 [設定]**** \> [選項]**** \> [封鎖或允許]****，然後將地址新增至 [封鎖的寄件者]**** 清單，如下所示。 
+如果您告訴使用者將垃圾郵件寄件者地址新增至其封鎖的寄件者清單 (位於 [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) 或 [Outlook 網頁版](https://go.microsoft.com/fwlink/p/?LinkId=294862) 中)，它將有助於您的 Office 365 防止誤判和垃圾郵件的反垃圾郵件工作。在 Outlook 網頁版中，按一下 [設定]**** \> [選項]**** \> [封鎖或允許]****，然後將地址新增至 [封鎖的寄件者]**** 清單，如下所示。 
   
-![封鎖 Outlook Web App 中的寄件者](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![封鎖 Outlook 網頁版中的寄件者](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
 > 如需安全寄件者清單的詳細資訊，請參閱[安全寄件者和封鎖的寄件者清單常見問題集](https://technet.microsoft.com/zh-TW/library/dn133608%28v=exchg.150%29.aspx) (機器翻譯)。 

@@ -1,33 +1,39 @@
 ---
-title: 如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件
+title: 如何避免 Office 365 發生誤判
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
-description: 了解如何讓實際電子郵件不會成為垃圾郵件，以及在 Office 365 中避免被標示為垃圾郵件。
-ms.openlocfilehash: 4da27aea157d3d816f8ce9a9631dd608dd5cd164
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+description: 了解如何避免 Office 365 誤判，並篩選出真正的電子郵件與垃圾郵件。
+ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614427"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219413"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件
 
  **您的實際電子郵件將在 Office 365 中被標示為垃圾郵件嗎？請執行此動作。**
   
-Exchange Online Protection (EOP) 會嘗試篩選掉垃圾郵件，讓您的收件匣沒有使用者不想看到的內容。但有時候，EOP 會篩選掉您想看到的內容。
-  
-## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>判斷郵件為何被標示為垃圾郵件的原因
+Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務，可協助保護您的組織防範垃圾郵件與惡意程式碼。如果您在 Office 365 中設定了信箱，信箱會自動受到 EOP 保護，因為這是服務的一部分。
+
+EOP 會嘗試篩選掉垃圾郵件，讓您的收件匣沒有使用者不想看到的內容。但有時候，EOP 會篩選掉您想看到的內容。當垃圾郵件篩選器將郵件錯誤標示為垃圾郵件，這就叫做誤判。
+
+如果發生誤判，您應使用[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)向 Microsoft 回報該郵件。此外，您可以將郵件*以附件方式*轉寄到 not_junk@office365.microsoft.com。
+
+    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+    
+## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>判斷郵件被標示為垃圾郵件的原因
 
 您可以[檢視電子郵件訊息標頭](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)並判定發生何種問題，來解決 Office 365 中的許多垃圾郵件問題。您需要尋找名為 X-Forefront-Antispam-Report 的標頭。您可以[深入了解反垃圾郵件標頭](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)。
   
@@ -59,16 +65,44 @@ Exchange Online Protection (EOP) 會嘗試篩選掉垃圾郵件，讓您的收�
 
 - **將您的 DNS 記錄指向 Office 365** 為了讓 EOP 提供防護，所有網域的郵件交換程式 (MX) DNS 記錄都必須指向 Office 365，而且只能指向 Office 365。如果您的 MX 未指向 Office 365，則 EOP 不會為您的使用者提供垃圾郵件篩選功能。在您想要使用其他服務或應用裝置，為您的網域提供垃圾郵件篩選功能的情況下，您應該考慮在 EOP 中停用垃圾郵件保護。做法為建立一個傳輸規則，將 SCL 值設為 -1。如果您稍後決定要使用 EOP，請務必移除此傳輸規則。 
     
-- **停用 Outlook 中的 SmartScreen 篩選** 如果您的使用者是使用 Outlook 桌面用戶端，則他們應該停用已終止的 SmartScreen 篩選功能。如果執行已更新的桌面 Outlook 用戶端，應該不需要此功能。 
-    
 - **為使用者開啟回報郵件增益集** 我們建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。身為系統管理員，您也可以檢視使用者傳送的意見反應，並使用任何模式，來調整任何可能造成問題的設定。
     
-- **立即允許寄件者** 在您需要立即允許寄件者的情況下，我們強烈建議您**只允許特定寄件者的 IP 位址**。或者，您可以允許寄件者，並同時確定寄件者通過 SPF 或 DKIM 這類的驗證檢查，方法為建立一個傳輸規則，**同時**找出寄件者網域和成功的 Authentication-Results 標頭。 
-    
 ### <a name="for-users"></a>若為使用者
+    
+- **建立安全寄件者清單**使用者可從將他們所信任的寄件者地址新增到 [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) 或 [Outlook 網頁版](https://go.microsoft.com/fwlink/p/?LinkId=294862)中的安全寄件者清單。若要開始使用 Outlook 網頁版，請選擇 [設定]****![ConfigureAPowerBIAnalysisServicesConnector_settingsIcon](media/24bd5467-c8d2-4936-9c37-a179bd0e21ec.png) \>[選項]**** \> [封鎖或允許]****。下列圖表顯示新增某項目到安全寄件者清單的範例。
+  
+![在 Outlook 網頁版中新增安全寄件者](media/8de6b24e-429e-4e8f-8ce8-53ba659cbfcb.png)
+  
+EOP 將信任使用者的安全寄件者人和收件人，但不會信任安全的網域。不管是透過 Outlook 網頁版新增的網域，或是使用目錄同步處理新增到 Outlook 並進行同步處理的網域，都是如此。
 
-- **向 Microsoft 報告垃圾郵件** 透過[使用回報郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) (機器翻譯)，向 Microsoft 報告垃圾郵件。此外，您可以將郵件傳送至 junk@office365.microsoft.com，並將一或多封郵件附加到報告。
+- **停用 Outlook 中的 SmartScreen 篩選**如果您使用舊版 Outlook 桌面用戶端，您應該停用已終止的 SmartScreen 篩選功能。啟用將會造成誤判。如果執行已更新的桌面 Outlook 用戶端，並不需要此功能。
+
+## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>疑難排解：即使 EOP 將郵件標示為非垃圾郵件，它仍然跑到垃圾郵件資料夾。
+<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
+如果您的使用者在 Outlook 中啟用了「僅限安全清單：只有來自安全寄件者清單或安全收件者清單上的人員或網域所寄出的郵件才會傳送到您的收件匣」，除非寄件者位於收件者的安全寄件者清單中，否則所有電子郵件將進入垃圾郵件資料夾。無論 EOP 將郵件標示為非垃圾郵件，或是您在EOP 設定規則將郵件標示為非垃圾郵件，這個情況都會發生。
+  
+您可以遵照 [Outlook：可停用垃圾電子郵件 UI 和篩選機制的原則設定](https://support.microsoft.com/zh-TW/kb/2180568) (機器翻譯) 中的指示，為您的 Outlook 使用者停用 [僅限安全清單] 選項。
+  
+如果您是在 Outlook 網頁版中查看郵件，則會顯示一個黃色安全提示，指出郵件位於垃圾郵件資料夾，因為寄件者不在收件者的安全寄件者清單中。
+  
+當您查看郵件標題，它可能包含 SFV:SKN (IP 允許或 ETR 允許) 或 SFV:NSPM (非垃圾郵件) 戳記，但郵件仍然被放在使用者的垃圾郵件資料夾中。郵件標題中不會有任何資訊顯示使用者已啟用「僅限安全清單」。因為使用者在 Outlook 中設定的「僅限安全清單」選項會覆寫 EOP 設定，所以會發生這個情況。 
+  
+ **驗證為什麼來自安全寄件者的郵件在郵件標題中被標示為非垃圾郵件，但卻仍進入使用者的垃圾郵件資料夾**
+  
+1. 若要了解如何連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554) (機器翻譯)。 
     
-    **重要** 如果您未以附件形式轉寄郵件，則標頭將會遺失，而且我們將無法改善 (英文) Office 365 中的垃圾郵件篩選功能。 
+2. 執行下列命令，檢視使用者的垃圾電子郵件組態設定：
     
-- **將寄件者新增至您的允許清單 - 但謹慎使用** 做為最後的手段，您可以[封鎖或允許 (垃圾郵件設定)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) (機器翻譯)。如果這麼做，您應該注意可能允許以網路釣魚為目標的嘗試進入收件匣。
+  ```
+  Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
+  ```
+
+- 如果 TrustedListsOnly 設為 True，表示已啟用此設定
+- 如果 ContactsTrusted 設為 True，表示使用者信任連絡人和安全寄件者
+- TrustedSendersAndDomains 會列出使用者安全寄件者清單的內容
+
+
+## <a name="eop-only-customers-use-directory-synchronization"></a>只使用 EOP 的客戶：使用目錄同步處理
+
+如果您是只使用 EOP 的客戶，即您訂閱 EOP 服務以與內部部署 (Exchange) 電子郵件伺服器搭配使用，則應使用目錄同步處理將使用者設定與服務同步。這樣做可確保 EOP 信任您的安全寄件者清單。如需詳細資訊，請參閱[在 EOP 中管理郵件使用者](https://go.microsoft.com/fwlink/?LinkId=534098)中的「使用目錄同步處理來管理郵件使用者」(機器翻譯)。
