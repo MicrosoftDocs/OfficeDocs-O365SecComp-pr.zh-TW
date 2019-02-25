@@ -146,7 +146,7 @@
 #### [將 IRM 設定為使用內部部署 AD RMS 伺服器](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [S/MIME](s-mime-for-message-signing-and-encryption.md)
 #### [可用於訊息簽署和加密的 S/MIME](s-mime-for-message-signing-and-encryption.md)
-#### [設定 Outlook Web App 的 S/MIME 設定](configure-s-mime-settings-for-outlook-web-app.md)
+#### [設定 Outlook 網頁版的 S/MIME 設定](configure-s-mime-settings-for-outlook-web-app.md)
 #### [傳送及接收 S/MIME 簽署和加密的電子郵件](send-and-receive-s-mime-signed-and-encrypted-email.md)
 #### [將使用者憑證同步至 Office 365 進行 S/MIME 處理](sync-user-certificates-to-office-365-for-s-mime.md)
 #### [設定虛擬憑證集合以驗證 S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
@@ -282,7 +282,7 @@
 
 ### [管理保留](compliance20/managing-holds.md)
 
-### [修正處理錯誤](compliance20/processing-data-for-case.md)
+### [使用處理錯誤](compliance20/processing-data-for-case.md)
 #### [進階的監管人資料索引](compliance20/indexing-custodian-data.md)
 #### [處理資料時發生補救錯誤](compliance20/error-remediation.md)
 
