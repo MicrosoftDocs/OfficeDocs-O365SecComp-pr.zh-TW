@@ -22,19 +22,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全的連結功能所提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。若要從網路釣魚和其他攻擊保護您的組織使用安全的連結。
-ms.openlocfilehash: 3de79ec42a0d9534f93711741cb8427a0cde9fb1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4ae125d5a7bf8f98a87c4edb9e93e32a9b256420
+ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214053"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30245609"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Overview of Office 365 ATP 安全連結
 
 > [!IMPORTANT]
-> 本文適用於企業客戶的。如果您是家庭使用者尋找關於在 Outlook 中的安全連結的資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於 Office 365 企業版客戶的。如果您使用 Outlook.com、 Office 365 首頁] 或 [Office 365 個人，而且您要尋找在 Outlook 中的安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 Office 365 ATP 安全連結 （[進階威脅保護](office-365-atp.md)的一部分） 可協助保護您的組織所提供的[電子郵件](#how-atp-safe-links-works-with-email)和[Office 文件](#how-atp-safe-links-works-with-office-documents)中的網址 (Url) 的時間按一下 [驗證。保護是透過[ATP 安全連結原則](set-up-atp-safe-links-policies.md)設定 Office 365 安全性小組的定義。 
   

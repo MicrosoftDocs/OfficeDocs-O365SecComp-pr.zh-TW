@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 當您設定好您 ATP 安全連結原則時，您可以包含不要 not 修正 ' 要讓組織中某些使用者瀏覽您在您的清單中包含的網站 Url 的清單。
-ms.openlocfilehash: 7fbc7d0d0caec79dcdbb3dc5b1b5a8a4e085dc09
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 006dab44054f9cb707bb13d158588ab6606fab5c
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215023"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241975"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>設定使用 Office 365 ATP 安全連結的自訂不要-not-修正 Url 清單
 

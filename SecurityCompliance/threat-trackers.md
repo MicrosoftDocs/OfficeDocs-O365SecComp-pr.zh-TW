@@ -11,14 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 了解威脅追蹤者，包括新值得注意的追蹤者，以協助組織保持在最上方安全性考量。
-ms.openlocfilehash: ace0aab3131385f03c4be9287d860a1d29137f9a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 072d64a056d88000ad615a896328b0144aef3d0f
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218453"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241985"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 

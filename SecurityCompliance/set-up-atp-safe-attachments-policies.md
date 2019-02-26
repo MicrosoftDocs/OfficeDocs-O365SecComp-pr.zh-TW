@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 定義電子郵件中的惡意檔案的保護貴組織的原則安全的附件。
-ms.openlocfilehash: 782412cb39bf72676570c5a20344011449d878a8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ed7ba8b1e9bdb2957239690b98b6c793781340cd
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214563"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241945"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -84,7 +85,7 @@ ms.locfileid: "30214563"
 |**選項**|**效果**|**當您想要使用：**|
 |:-----|:-----|:-----|
 |**Off** <br/> |不會掃描附件的惡意程式碼  <br/> 不會延遲郵件傳遞  <br/> |關閉掃描程式內部的寄件者、 掃描、 傳真] 或將只會將傳送已知的良好的附件的智慧主機  <br/> 防止不必要的路由的內部郵件的延遲  <br/> **此選項不建議大多數使用者使用。可讓您關閉 ATP 安全附件掃描程式內部的寄件者一小群。**           |
-|**監視器** <br/> |將附件的郵件，然後時會有什麼與偵測到惡意程式碼來追蹤  <br/> |請參閱偵測到惡意程式碼會在組織中的其中  <br/> |
+|**監視** <br/> |將附件的郵件，然後時會有什麼與偵測到惡意程式碼來追蹤  <br/> |請參閱偵測到惡意程式碼會在組織中的其中  <br/> |
 |**封鎖** <br/> |防止從繼續偵測到惡意程式碼附件的郵件  <br/> 將偵測到惡意程式碼的郵件傳送至[Office 365 中的隔離](manage-quarantined-messages-and-files.md)其中的安全性管理員或分析師可以檢閱及釋出 （或刪除） 那些郵件  <br/> 自動封鎖未來的訊息與附件  <br/> |可重複使用相同的惡意程式碼附件的攻擊貴組織保護  <br/> |
 |**取代** <br/> |會移除偵測到惡意程式碼的附件  <br/> 通知收件者已移除附件  <br/> 將偵測到惡意程式碼的郵件傳送至[Office 365 中的隔離](manage-quarantined-messages-and-files.md)其中的安全性管理員或分析師可以檢閱及釋出 （或刪除） 那些郵件  <br/> |引發給收件者的附件已移除因偵測到惡意程式碼的可見性  <br/> |
 |**動態傳遞** <br/> |傳送立即訊息  <br/> 直到掃描已完成，然後將偵測到任何惡意程式碼時重新附加附件的附件取代預留位置檔案  <br/> 包含附件預覽功能大部分的 Pdf 和 Office 檔案掃描期間  <br/> 將偵測到惡意程式碼的郵件傳送至其中的安全性管理員或分析師可以檢閱及釋出 （或刪除） 那些郵件隔離  <br/> [了解動態傳遞和 ATP 安全附件預覽](dynamic-delivery-and-previewing.md) <br/> |避免郵件延遲時防止惡意檔案中的收件者  <br/> 啟用時掃描正在進行預覽附件安全模式中的收件者  <br/> |

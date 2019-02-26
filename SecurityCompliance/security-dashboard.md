@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 使用新的安全性儀表板檢閱 Office 365 威脅保護狀態及檢視以及對安全性提醒。
-ms.openlocfilehash: 7fcf570887e5ed720e2e62d627b442597b824e84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7a4535a0cc02a6ad046cadb99b8ebb94df5fd9fe
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215170"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241885"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 

@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 深入了解威脅智慧功能的進階威脅保護如何協助您研究威脅對貴組織、 回應惡意程式碼、 網路釣魚、 及其他 Office 365 已偵測代替您撥打電話的攻擊及搜尋威脅指標。
-ms.openlocfilehash: a55a17bae141c394ba01e1526615c5c1687340a2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 81a986c4b47d740313356b22fd1c23bd5e472a24
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216553"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241926"
 ---
 # <a name="office-365-threat-intelligence"></a>Office 365 威脅情報
 

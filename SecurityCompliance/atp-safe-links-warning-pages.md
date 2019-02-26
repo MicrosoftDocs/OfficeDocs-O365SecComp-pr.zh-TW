@@ -11,20 +11,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
-ms.collection:
-- M365-security-compliance
 description: 取得您可能會看到 Office 365 進階威脅保護位於工時警告頁面的概觀。
-ms.openlocfilehash: c854b32b3750f2ccd71e1d66f9dc8f8c54564f08
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e11592c5db0909171627cd163593d7e49cc6a5de
+ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217143"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30245589"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全連結警告頁面
 
 > [!IMPORTANT]
-> 本文適用於企業客戶的。如果您是家庭使用者尋找關於在 Outlook 中的安全連結的資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於 Office 365 企業版客戶的。如果您使用 Outlook.com、 Office 365 首頁] 或 [Office 365 個人，而且您要尋找在 Outlook 中的安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [Office 365 的進階的威脅保護](office-365-atp.md)(ATP) 可協助保護您的組織網路釣魚嘗試及透過功能，例如[ATP 安全連結](atp-safe-links.md)、 [ATP 安全附件](atp-safe-attachments.md)及[反網路釣魚保護](anti-phishing-protection.md)惡意程式碼。備妥保護時，就會檢查電子郵件訊息與 Office 文件中的連結 (Url)。如果 URL 會被識別為可疑或惡意，可能會遭到封鎖在按一下時開啟 URL。而非直接進入網站，您可能會看到警告] 頁面。 
   

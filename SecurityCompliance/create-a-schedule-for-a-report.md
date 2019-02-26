@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: 了解如何設定安全性的報表排程&amp;規範中心。
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216753"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241865"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在 [安全性] 中建立報表的排程&amp;規範中心
 
@@ -45,7 +45,7 @@ ms.locfileid: "30216753"
   
     如果您選擇自訂報表排程，您可以指定報表的頻率、 寄件者的電子郵件地址和收件者的電子郵件地址。 
     
-一旦您已建立的報表的報表將傳送電子郵件給收件者的 emali 位址透過自動排程。 
+一旦您已建立的報表的報表將傳送電子郵件給收件者的電子郵件地址透過自動排程。 
   
 ## <a name="related-topics"></a>相關主題
 

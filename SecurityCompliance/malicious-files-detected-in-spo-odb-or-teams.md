@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
+ms.collection:
+- M365-security-compliance
 description: 了解移至檢視 SharePoint、 OneDrive 或小組中偵測到惡意檔案的相關資訊的位置以及如何將這些檔案採取動作。
-ms.openlocfilehash: 6f44cd82241b4cd883fbd80e1b1dc2ea115e10af
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219563"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241895"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>檢視 SharePoint、 OneDrive 或 Microsoft 小組中偵測到惡意檔案的資訊
 
