@@ -11,74 +11,76 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: 內建置於 Azure 資訊保護、 貴組織的功能可以使用新的 Office 365 郵件加密受保護的電子郵件通訊與組織內外的人。與其他 Office 365 組織、 Outlook.com、 Gmail、 及其他電子郵件服務搭配使用的新 OME 功能。
-ms.openlocfilehash: eddafca15fa4efdd3f929145e7933a3b7dfb5f27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 90247a7e3cd7e5978eb144a2b6f66a9de21a8f96
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220643"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296186"
 ---
-# <a name="set-up-new-office-365-message-encryption-capabilities"></a><span data-ttu-id="625c6-104">設定全新的 Office 365 郵件加密功能</span><span class="sxs-lookup"><span data-stu-id="625c6-104">Set up new Office 365 Message Encryption capabilities</span></span>
+# <a name="set-up-new-office-365-message-encryption-capabilities"></a><span data-ttu-id="a51ca-104">設定全新的 Office 365 郵件加密功能</span><span class="sxs-lookup"><span data-stu-id="a51ca-104">Set up new Office 365 Message Encryption capabilities</span></span>
 
-<span data-ttu-id="625c6-p102">新的 Office 365 郵件加密 (OME) 功能運用在 Azure 資訊保護的保護功能，您的組織可以輕鬆地共用受保護的電子郵件與任何裝置上的任何人。使用者可以傳送及接收與其他 Office 365 組織以及非 Office 365 客戶使用 Outlook.com、 Gmail，以及其他電子郵件服務受保護的郵件。</span><span class="sxs-lookup"><span data-stu-id="625c6-p102">With the new Office 365 Message Encryption (OME) capabilities, which leverage the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other Office 365 organizations as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.</span></span>
+<span data-ttu-id="a51ca-p102">新的 Office 365 郵件加密 (OME) 功能允許與任何裝置上的任何人共用受保護的電子郵件組織。使用者可以交換受保護的訊息與其他 Office 365 組織以及非 Office 365 客戶使用 Outlook.com、 Gmail，以及其他電子郵件服務。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p102">The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other Office 365 organizations, as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.</span></span>
 
-||
-|:-----|
-|<span data-ttu-id="625c6-p103">本文屬於較大的一系列有關 Office 365 郵件加密的文章。本文適用於系統管理員和 ITPros 的。如果您只尋找的資訊在傳送或接收加密的郵件，請參閱[Office 365 郵件加密 (OME)](ome.md)中的文章的清單並找出最適合您需求的文章。</span><span class="sxs-lookup"><span data-stu-id="625c6-p103">This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs.</span></span> |
-||
 
-## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a><span data-ttu-id="625c6-110">快速入門 OME 啟用 Azure Rights Management，Azure 資訊保護的一部分</span><span class="sxs-lookup"><span data-stu-id="625c6-110">Get started with OME by activating Azure Rights Management, part of Azure Information Protection</span></span>
+>[!NOTE]
+><span data-ttu-id="a51ca-p103">本文適用於系統管理員及 IT 專業人員的。如果您是使用者，請參閱[Office 365 郵件加密 (OME)](ome.md)中的適當解決方案的文章的清單。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p103">This article is intended for administrators and IT professionals. If you're an end-user, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) for appropriate solutions.</span></span>
 
-<span data-ttu-id="625c6-p104">現在要並容易開始使用新的 OME 功能。年 2 月 2018 Office 365 會自動啟用合格組織內我們資料中心的新 OME 功能。如果它是新的 Office 365 租用戶和您的組織有適當訂閱，則合格貴組織。**如果您已啟用 Azure 版權管理 (Azure RMS) 一部分 Azure 資訊保護，則我們會自動為您啟用 Office 365 郵件加密。** 您不需要執行任何動作啟用 OME。若要啟動 Azure Rights Management，請參閱 ＜[啟動 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。如需訂閱，請參閱"何種訂閱的我需要使用新的 OME capabilities?" [Office 365 郵件加密常見問題集](ome-faq.md)。如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。</span><span class="sxs-lookup"><span data-stu-id="625c6-p104">It's now easy to get started with the new OME capabilities. As of February 2018, Office 365 automatically enables the new OME capabilities for eligible organizations within our datacenters. Your organization is eligible if it is a new Office 365 tenant and your organization has the appropriate subscriptions. **If you have enabled Azure Rights Management (Azure RMS), part of Azure Information Protection, then we automatically enable Office 365 Message Encryption for you.** You don't have to do anything else to enable OME. To activate Azure Rights Management, see [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). For information on subscriptions, see "What subscriptions do I need to use the new OME capabilities?" in the [Office 365 Message Encryption FAQ](ome-faq.md). For information about purchasing a subscription to Azure Information Protection, see [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).</span></span>
+<span data-ttu-id="a51ca-109">請遵循下列步驟來確保您的 Office 365 租用戶中可用的新 OME 功能。</span><span class="sxs-lookup"><span data-stu-id="a51ca-109">Follow the steps below to ensure that the New OME capabilities are available in your Office 365 tenant.</span></span> 
+
+## <a name="verify-azure-rights-management-arm-is-active"></a><span data-ttu-id="a51ca-110">確認已啟用 Azure 版權管理 (ARM)</span><span class="sxs-lookup"><span data-stu-id="a51ca-110">Verify Azure Rights Management (ARM) is active</span></span>
+
+>[!NOTE]
+><span data-ttu-id="a51ca-111">新的 OME 功能利用[Azure 資訊保護](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)、 [Azure 版權管理 (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)所用的技術中的保護功能。</span><span class="sxs-lookup"><span data-stu-id="a51ca-111">The new OME capabilities leverage the protection features in [Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection), the technology used by [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms).</span></span>
+
+<span data-ttu-id="a51ca-p104">使用新的 OME 功能僅必要條件是[Azure 版權管理 (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)必須要啟動 Office 365 租用戶中。如果它是 Office 365 會自動啟動新的 OME 功能和您不需要執行任何動作。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p104">The only prerequisite for using the new OME capabilities is that [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms) must be activated in your Office 365 tenant. If it is, Office 365 activates the new OME capabilities automatically and you don't need to do anything.</span></span> 
+
+<span data-ttu-id="a51ca-p105">ARM 也啟動自動最合格的計劃，因此您可能不需要執行任何動作在這方面也。如需詳細資訊，請參閱[啟動 Azure 版權管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service)。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p105">ARM is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service) for more.</span></span>
+
+>[!IMPORTANT]
+><span data-ttu-id="a51ca-p106">如果您使用 Active Directory Rights Management service (AD RMS) 與 Exchange Online 時，您需要移轉[至 Azure 資訊保護](https://docs.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-to-azure-rms)才能使用新的 OME 功能。AD RMS 不相容於 ARM。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p106">If you use Active Directory Rights Management service (AD RMS) with Exchange Online, you need to [migrate to Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-to-azure-rms) before you can use the new OME capabilities. AD RMS is not compatible with ARM.</span></span>  
+
+<span data-ttu-id="a51ca-118">如需詳細資訊，請參閱：</span><span class="sxs-lookup"><span data-stu-id="a51ca-118">For more, see:</span></span>
+
+- <span data-ttu-id="a51ca-119">[我需要使用新的 OME 功能何種訂閱？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)若要檢查您的訂閱計劃是否包含 Azure 資訊保護 （其中包括 ARM）。</span><span class="sxs-lookup"><span data-stu-id="a51ca-119">[What subscriptions do I need to use the new OME capabilities?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) to check whether your subscription plan includes Azure Information Protection (which includes ARM).</span></span>   
+-  <span data-ttu-id="a51ca-120">如需購買合格的訂閱資訊[Azure 資訊保護](https://azure.microsoft.com/en-us/services/information-protection/)。</span><span class="sxs-lookup"><span data-stu-id="a51ca-120">[Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) for information about purchasing an eligible subscription.</span></span>  
+
+### <a name="manually-activating-arm"></a><span data-ttu-id="a51ca-121">手動啟動 ARM</span><span class="sxs-lookup"><span data-stu-id="a51ca-121">Manually activating ARM</span></span>
+
+<span data-ttu-id="a51ca-122">如果您停用 ARM，或如果它尚未自動啟動任何原因，您可以啟動其以手動方式：</span><span class="sxs-lookup"><span data-stu-id="a51ca-122">If you disabled ARM, or if it was not automatically activated for any reason, you can activated it manually in the :</span></span>
+
+- <span data-ttu-id="a51ca-123">**Office 365 系統管理中心**： 了解[如何啟用 Azure 版權管理 Office 365 系統管理中心中](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365)的指示</span><span class="sxs-lookup"><span data-stu-id="a51ca-123">**Office 365 admin center**: See [How to activate Azure Rights Management from the Office 365 admin center](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) for instructions</span></span>
+- <span data-ttu-id="a51ca-124">**Azure 入口網站**： 了解[如何啟動 Azure Rights Management 從 Azure 入口網站](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)的指示。</span><span class="sxs-lookup"><span data-stu-id="a51ca-124">**Azure portal**: See [How to activate Azure Rights Management from the Azure portal](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) for instructions.</span></span> 
+
+
+## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a><span data-ttu-id="a51ca-125">設定管理 Azure 資訊保護承租人索引鍵</span><span class="sxs-lookup"><span data-stu-id="a51ca-125">Configure management of your Azure Information Protection tenant key</span></span>
+
+<span data-ttu-id="a51ca-p107">這是選用的步驟。允許 Microsoft Azure 資訊保護管理根機碼是預設設定與大部分的 Office 365 租用戶的建議最佳作法。如果是這樣，您不需要執行任何動作。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p107">This is an optional step. Allowing Microsoft to manage the root key for Azure Information Protection is the default setting and recommended best practice for most Office 365 tenants. If this is the case, you don't need to do anything.</span></span> 
+
+<span data-ttu-id="a51ca-p108">有許多原因，例如規範需求，也許您產生及管理自己根 （也稱為將您自己的金鑰 (BYOK)） 的索引鍵。如果是這樣，建議您設定的新 OME 功能之前完成的必要的步驟。如需詳細資訊，請參閱[規劃及實作您 Azure 資訊保護租用戶金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p108">There are many reasons, for example compliance requirements, that may necessitate you generating and managing your own root key (also known as bring your own key (BYOK)). If this is the case, we recommend that you complete the required steps before setting up the new OME capabilities. See [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) for more.</span></span> 
+
+
+## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a><span data-ttu-id="a51ca-132">確認 Exchange Online PowerShell 中的新 OME 組態</span><span class="sxs-lookup"><span data-stu-id="a51ca-132">Verify new OME configuration in Exchange Online PowerShell</span></span>
+
+<span data-ttu-id="a51ca-133">您可以驗證您的 Office 365 租用戶正確設定為在[Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)中使用的新 OME 功能。</span><span class="sxs-lookup"><span data-stu-id="a51ca-133">You can verify that your Office 365 tenant is properly configured to use the new OME capabilities in [Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).</span></span>
   
-<span data-ttu-id="625c6-p105">如果您使用 Exchange Online 與 Active Directory Rights Management service (AD RMS)，就無法立即啟用這些新功能。而您需要先移轉從 AD RMS Azure 資訊保護。當您已經完成移轉時，您可以成功地完成這些步驟。</span><span class="sxs-lookup"><span data-stu-id="625c6-p105">If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to migrate from AD RMS to Azure Information Protection first. When you've finished the migration, you can successfully complete these steps.</span></span>
-  
-<span data-ttu-id="625c6-123">如果您選擇繼續使用內部部署 AD RMS 與 Exchange Online 而不是移轉至 Azure 資訊保護，您將無法使用這些新功能。</span><span class="sxs-lookup"><span data-stu-id="625c6-123">If you choose to continue to use on-premises AD RMS with Exchange Online instead of migrating to Azure Information Protection, you will not be able to use these new capabilities.</span></span>
-  
-## <a name="how-the-new-capabilities-for-ome-work"></a><span data-ttu-id="625c6-124">OME 新功能的運作方式</span><span class="sxs-lookup"><span data-stu-id="625c6-124">How the new capabilities for OME work</span></span>
+1. <span data-ttu-id="a51ca-134">[Connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)使用的帳戶具有您的 Office 365 租用戶中的全域系統管理員權限。</span><span class="sxs-lookup"><span data-stu-id="a51ca-134">[Connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) using an account with global administrator permissions in your Office 365 tenant.</span></span>
 
-<span data-ttu-id="625c6-p106">新的 Office 365 郵件加密功能使用的保護功能，又稱為 Azure 版權管理 (Azure RMS) 從 Azure 資訊保護。這包括加密、 identity 及授權原則，以協助保護您的電子郵件。您可以使用權限管理範本、[不要轉寄] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)，並[僅加密的選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)來加密的郵件。使用者接著可以加密電子郵件訊息與 Office 365 附件各種使用這些選項。支援的附件類型的完整清單，請參閱["的檔案類型涵蓋它們是貼附至郵件的 IRM 原則 」 中的電子郵件的 IRM 的簡介](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)。身為管理員，您也可以定義要套用此保護的郵件流程規則。例如，您可以定義的規則其中的預設傳送給特定收件者或包含特定字詞的主旨行中的所有未受保護的郵件保護免於未經授權存取，而收件者無法複製或列印郵件的內容。</span><span class="sxs-lookup"><span data-stu-id="625c6-p106">The new Office 365 Message Encryption capabilities use the protection capabilities, also called Azure Rights Management (Azure RMS), from Azure Information Protection. This includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails). Users can then encrypt email messages and a variety of Office 365 attachments by using these options. For a full list of supported attachment types, see ["File types covered by IRM policies when they are attached to messages" in Introduction to IRM for email messages](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM). As an administrator, you can also define mail flow rules to apply this protection. For example, you can define a rule where all unprotected messages that are addressed to a specific recipient or that contain specific words in the subject line are protected from unauthorized access, and the recipients can't copy or print the contents of the message.</span></span>
-  
-<span data-ttu-id="625c6-p107">不同於 OME 先前的版本，這些新功能提供統一的寄件者經驗無論您在貴組織內或 Office 365 外部的收件者傳送郵件。此外，收件者收到受保護的電子郵件訊息傳送至 Outlook 2016 或在網頁上的 Outlook 中的 Office 365 帳戶不需要採取任何其他檢視郵件。順暢地運作。收件者使用其他電子郵件用戶端和電子郵件服務提供者也有體驗。資訊，請參閱[了解 Office 365 中受保護的郵件](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67)及[如何開啟受保護的郵件](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)。</span><span class="sxs-lookup"><span data-stu-id="625c6-p107">Unlike the previous version of OME, these new capabilities provide a unified sender experience whether you're sending mail inside your organization or to recipients outside of Office 365. In addition, recipients who receive a protected email message sent to an Office 365 account in Outlook 2016 or Outlook on the web, don't have to take any additional action to view the message. It works seamlessly. Recipients using other email clients and email service providers also have an improved experience. For information, see [Learn about protected messages in Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) and [How do I open a protected message](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).</span></span>
-
-<span data-ttu-id="625c6-137">舊版 OME 與新的 OME 功能差異的詳細清單，請參閱[比較 OME 的版本](ome-version-comparison.md)。</span><span class="sxs-lookup"><span data-stu-id="625c6-137">For a detailed list of the differences between the previous version of OME and the new OME capabilities, see [Compare versions of OME](ome-version-comparison.md).</span></span>
-  
-## <a name="steps-to-manually-set-up-the-new-capabilities-for-ome"></a><span data-ttu-id="625c6-138">若要手動設定的新功能的 OME 步驟</span><span class="sxs-lookup"><span data-stu-id="625c6-138">Steps to manually set up the new capabilities for OME</span></span>
-
-<span data-ttu-id="625c6-p108">大部分的 Office 365 組織已自動啟用新的 OME 功能。如果您的組織自動沒有 OME 啟用，或開啟關閉的新 OME 功能，請遵循下列步驟以手動方式設定 OME 的新功能。</span><span class="sxs-lookup"><span data-stu-id="625c6-p108">The new OME capabilities are automatically enabled for most Office 365 organizations. If your organization does not automatically have OME enabled, or if you turned the new OME capabilities off, follow these steps to manually set up the new capabilities for OME.</span></span>
-  
-### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a><span data-ttu-id="625c6-141">若要手動設定 OME 的新功能</span><span class="sxs-lookup"><span data-stu-id="625c6-141">To manually set up the new capabilities for OME</span></span>
-
-1. <span data-ttu-id="625c6-p109">請確定您的組織有右訂閱。訂閱的詳細資訊，請參閱"何種訂閱我需要使用新的 OME capabilities?"中[Office 365 郵件加密常見問題集。](ome-faq.md)。如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。</span><span class="sxs-lookup"><span data-stu-id="625c6-p109">Ensure you have the right subscription for your organization. For information on subscriptions, see "What subscriptions do I need to use the new OME capabilities?" in the [Office 365 Message Encryption FAQ.](ome-faq.md). For information about purchasing a subscription to Azure Information Protection, see [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).</span></span>
-
-2. <span data-ttu-id="625c6-p110">決定您是否希望 Microsoft Azure 資訊保護 （預設值），管理根金鑰或產生和 （稱為將您自己的索引鍵或 BYOK） 自行管理此機碼。如果您想要產生及自行管理此機碼，您需要完成某些步驟，才可設定的新功能的 OME。如需詳細資訊，請參閱[規劃及實作您 Azure 資訊保護租用戶金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。Microsoft 建議您設定 OME 之前完成這些步驟。</span><span class="sxs-lookup"><span data-stu-id="625c6-p110">Decide whether you want Microsoft to manage the root key for Azure Information Protection (the default), or generate and manage this key yourself (known as bring your own key, or BYOK). If you want to generate and manage this key yourself, you need to complete some steps before you set up the new capabilities for OME. For more information, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key). Microsoft recommends that you complete these steps before you set up OME.</span></span>
-
-3. <span data-ttu-id="625c6-p111">啟用來啟用 Azure Rights Management OME 的新功能。指示，請參閱[啟動 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。當您這麼做時，Office 365 自動為您啟用新 OME 功能。</span><span class="sxs-lookup"><span data-stu-id="625c6-p111">Enable the new capabilities for OME by activating Azure Rights Management. For instructions, see [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). When you do this, Office 365 automatically enables the new OME capabilities for you.</span></span>
-
-    > [!TIP]
-    > <span data-ttu-id="625c6-p112">在 Web 上的 outlook 快取其使用者介面，讓它是不錯的選項等待您嘗試將新功能的 OME 套用至使用此用戶端的電子郵件的前一天。使用者介面更新以反映新的設定之前，將不可以使用 OME 新功能。使用者介面更新之後，使用者可以使用 OME 的新功能來保護電子郵件訊息。</span><span class="sxs-lookup"><span data-stu-id="625c6-p112">Outlook on the Web caches its UI, so it's a good idea to wait a day before you try applying the new capabilities for OME to email messages using this client. Before the UI updates to reflect the new configuration, the new capabilities for OME won't be available. After the UI updates, users can protect email messages by using the new capabilities for OME.</span></span>
-  
-4. <span data-ttu-id="625c6-156">（選用）設定新的郵件流程規則或更新現有的郵件流程規則，以定義如何及何時您希望 Office 365 加密郵件傳送從您的組織。</span><span class="sxs-lookup"><span data-stu-id="625c6-156">(Optional) Set up new mail flow rules or update existing mail flow rules that define how and when you want Office 365 to encrypt messages sent from your organization.</span></span>
-
-## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a><span data-ttu-id="625c6-157">確認 OME 新功能均已正確設定使用 Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="625c6-157">Verify that the new capabilities for OME are configured properly by using Windows PowerShell</span></span>
-
-<span data-ttu-id="625c6-158">遵循下列步驟以確認您的租用戶已正確設定要用於 OME 透過 Exchange Online PowerShell 中的新功能。</span><span class="sxs-lookup"><span data-stu-id="625c6-158">Follow these steps to verify that your tenant is properly configured to use the new capabilities for OME through Exchange Online PowerShell.</span></span>
-  
-1. <span data-ttu-id="625c6-p113">使用 Office 365 組織中具有全域系統管理員權限的工作或學校帳戶，請啟動 Windows PowerShell 工作階段並連線至 Exchange Online。指示，請參閱[Connect to Exchange Online PowerShell](https://aka.ms/exopowershell)。</span><span class="sxs-lookup"><span data-stu-id="625c6-p113">Using a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).</span></span>
-
-2. <span data-ttu-id="625c6-161">執行 Test-irmconfiguration 指令程式使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="625c6-161">Run the Test-IRMConfiguration cmdlet using the following syntax:</span></span>
+2. <span data-ttu-id="a51ca-135">執行 Test-irmconfiguration 指令程式使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="a51ca-135">Run the Test-IRMConfiguration cmdlet using the following syntax:</span></span>
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
      ```  
 
-   <span data-ttu-id="625c6-162">例如：</span><span class="sxs-lookup"><span data-stu-id="625c6-162">For example:</span></span>
-
+   <span data-ttu-id="a51ca-136">**範例**：</span><span class="sxs-lookup"><span data-stu-id="a51ca-136">**Example**:</span></span> 
+   
      ```powershell
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
-
-    <span data-ttu-id="625c6-p114">其中電子郵件地址是 Office 365 組織中使用者的電子郵件地址。雖然選用、 提供寄件者電子郵件地址會強制執行其他檢查系統。結果應該類似下列：</span><span class="sxs-lookup"><span data-stu-id="625c6-p114">Where email address is the email address of a user in your Office 365 organization. While optional, providing a sender email address forces the system to perform additional checks. Your results should look like these:</span></span>
+     
+     - <span data-ttu-id="a51ca-p109">提供的寄件者電子郵件是選擇性的但會強制執行其他檢查系統。在您的 Office 365 租用戶中使用之任何使用者的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p109">Providing a sender email is optional, but forces the system to perform additional checks. Use the email address of any user in your Office 365 tenant.</span></span> 
+     
+    <span data-ttu-id="a51ca-139">您的結果應該會類似：</span><span class="sxs-lookup"><span data-stu-id="a51ca-139">Your results should be similar to:</span></span>
 
      ```text
     Results : Acquiring RMS Templates ...
@@ -94,32 +96,34 @@ ms.locfileid: "30220643"
             OVERALL RESULT: PASS
     ```
 
-    <span data-ttu-id="625c6-166">其中*Contoso*被由 Office 365 組織的名稱取代。</span><span class="sxs-lookup"><span data-stu-id="625c6-166">Where *Contoso* is replaced with the name of your Office 365 organization.</span></span>
+   - <span data-ttu-id="a51ca-140">Office 365 組織的名稱將會取代*Contoso*。</span><span class="sxs-lookup"><span data-stu-id="a51ca-140">Your Office 365 organization name will replace *Contoso*.</span></span>
 
-    <span data-ttu-id="625c6-167">在結果中傳回的預設範本的名稱可能會不同顯示在上面的結果。</span><span class="sxs-lookup"><span data-stu-id="625c6-167">The names of the default templates returned in the results may be different from those displayed in the results above.</span></span>
+   - <span data-ttu-id="a51ca-p110">預設範本名稱可能會不同顯示上方。如需詳細資訊，請參閱[Azure 資訊保護的設定及管理範本](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy-templates)。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p110">The default template names may be different from those displayed above. See [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy-templates) for more.</span></span>
 
-    <span data-ttu-id="625c6-p115">範本和預設範本的相關資訊的簡介，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。[不要轉寄的相關資訊的選項，僅加密] 選項，及如何建立其他範本，了解權限包括或現有的範本，請參閱 ＜[設定 Azure 版權管理使用權限](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights)。</span><span class="sxs-lookup"><span data-stu-id="625c6-p115">For an introduction to templates and information about the default templates, see [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). For information about the Do Not Forward option, encrypt-only option, and how to create additional templates, or find out what rights are included in an existing template, see [Configuring usage rights for Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights).</span></span>
-
-3. <span data-ttu-id="625c6-170">執行 Remove-pssession cmdlet 來中斷與版權管理服務的連線。</span><span class="sxs-lookup"><span data-stu-id="625c6-170">Run the Remove-PSSession cmdlet to disconnect from the Rights Management service.</span></span>
+3. <span data-ttu-id="a51ca-143">執行 Remove-pssession cmdlet 來中斷與版權管理服務的連線。</span><span class="sxs-lookup"><span data-stu-id="a51ca-143">Run the Remove-PSSession cmdlet to disconnect from the Rights Management service.</span></span>
     
      ```powershell
      Remove-PSSession $session
      ```
 
-## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a><span data-ttu-id="625c6-171">後續步驟： 定義新的郵件流程規則使用的新 OME 功能</span><span class="sxs-lookup"><span data-stu-id="625c6-171">Next steps: Define new mail flow rules that use the new OME capabilities</span></span>
+## <a name="update-mail-flow-rules-to-use-new-ome-capabilities"></a><span data-ttu-id="a51ca-144">若要使用 OME 的新功能的郵件流程規則更新</span><span class="sxs-lookup"><span data-stu-id="a51ca-144">Update mail flow rules to use new OME capabilities</span></span>
 
-<span data-ttu-id="625c6-p116">這是選用的新 OME 部署步驟，不過，則已有郵件流程設定規則最多加密外寄郵件的現有 OME 部署需要此步驟。如果您想要利用新 OME 功能，您必須更新現有的郵件流程規則。否則，您的使用者會繼續接收加密的郵件而不是新的且相當順暢 OME 經驗會使用先前的 HTML 附件格式。</span><span class="sxs-lookup"><span data-stu-id="625c6-p116">This step is optional for new OME deployments, however, this step is required for existing OME deployments that already have mail flow rules set up to encrypt outgoing mail. If you want to take advantage of the new OME capabilities, you must update your existing mail flow rules. Otherwise, your users will continue to receive encrypted mail that uses the previous HTML attachment format instead of the new, seamless OME experience.</span></span>
-  
-<span data-ttu-id="625c6-p117">郵件流程規則決定下何種條件電子郵件訊息應加密，以及移除該加密的條件。當您設定規則動作時，他們正在傳送時將會加密任何符合的規則條件的郵件。</span><span class="sxs-lookup"><span data-stu-id="625c6-p117">Mail flow rules determine under what conditions email messages should be encrypted, as well as conditions for removing that encryption. When you set an action for a rule, any messages that match the rule conditions are encrypted when they're sent.</span></span>
-  
-<span data-ttu-id="625c6-177">如需郵件流程規則的詳細資訊，請參閱 ＜ [Define 郵件流程規則來加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。</span><span class="sxs-lookup"><span data-stu-id="625c6-177">For more information about mail flow rules, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).</span></span>
-  
-## <a name="related-topics"></a><span data-ttu-id="625c6-178">相關主題</span><span class="sxs-lookup"><span data-stu-id="625c6-178">Related Topics</span></span>
+<span data-ttu-id="a51ca-p111">如果您的 Office 365 租用戶中有先前已設定的[來加密電子郵件的郵件流程規則](define-mail-flow-rules-to-encrypt-email.md)，您需要更新下列現有的規則來使用新的 OME 功能。新部署的這個步驟是不需要此階段。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p111">If there are previously configured [mail flow rules to encrypt email](define-mail-flow-rules-to-encrypt-email.md) in your Office 365 tenant, you need to update these existing rules to use the new OME capabilities. For new deployments, this step is unnecessary at this stage.</span></span>   
 
-[<span data-ttu-id="625c6-179">傳送、 檢視和回覆加密郵件在 Outlook 中</span><span class="sxs-lookup"><span data-stu-id="625c6-179">Send, view, and reply to encrypted messages in Outlook</span></span>](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
+>[!Note]
+><span data-ttu-id="a51ca-p112">郵件流程規則定義的電子郵件訊息會經過加密，以及何時應該移除加密的條件。如需詳細資訊，請參閱[定義郵件流程規則來加密 Office 365 中的電子郵件訊息](define-mail-flow-rules-to-encrypt-email.md)。</span><span class="sxs-lookup"><span data-stu-id="a51ca-p112">Mail flow rules define the conditions under which email messages are encrypted, and when encryption should be removed. See [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md) for more.</span></span>
+
+<span data-ttu-id="a51ca-149">若要更新現有規則，以使用新的 OME 功能：</span><span class="sxs-lookup"><span data-stu-id="a51ca-149">To update existing rules to use the new OME capabilities:</span></span>
+
+1. <span data-ttu-id="a51ca-150">在 Office 365 系統管理中心，移至**系統中心 > Exchange**。</span><span class="sxs-lookup"><span data-stu-id="a51ca-150">In the Office 365 admin center, go to **Admin centers > Exchange**.</span></span>
+
+2. <span data-ttu-id="a51ca-151">在 Exchange 系統管理中心，移至 [**郵件流程 > 規則**。</span><span class="sxs-lookup"><span data-stu-id="a51ca-151">In the Exchange admin center, go to **Mail flow > Rules**.</span></span> 
+3. <span data-ttu-id="a51ca-152">針對每個規則中**執行下列動作**：</span><span class="sxs-lookup"><span data-stu-id="a51ca-152">For each rule, in **Do the following**:</span></span>
+    - <span data-ttu-id="a51ca-153">選取 [**修改郵件安全性**]。</span><span class="sxs-lookup"><span data-stu-id="a51ca-153">Select **Modify the message security**.</span></span>
+    - <span data-ttu-id="a51ca-154">選取**適用於 Office 365 郵件加密和權限保護**。</span><span class="sxs-lookup"><span data-stu-id="a51ca-154">Select **Apply Office 365 Message Encryption and rights protection**.</span></span>
+    - <span data-ttu-id="a51ca-155">從清單中選取的 RMS 範本</span><span class="sxs-lookup"><span data-stu-id="a51ca-155">Select an RMS template from the list</span></span>
+    - <span data-ttu-id="a51ca-156">選取 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="a51ca-156">Select **Save**.</span></span>
+    - <span data-ttu-id="a51ca-157">選取 [確定]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="a51ca-157">Select **OK**.</span></span>
   
-[<span data-ttu-id="625c6-180">啟用 Aadrm</span><span class="sxs-lookup"><span data-stu-id="625c6-180">Enable-Aadrm</span></span>](https://docs.microsoft.com/powershell/module/aadrm/enable-aadrm?view=azureipps)
-  
-[<span data-ttu-id="625c6-181">使用遠端 PowerShell 連線到 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="625c6-181">Connect to Exchange Online PowerShell</span></span>](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
-  
-[<span data-ttu-id="625c6-182">定義郵件流規則以加密 Office 365 中的電子郵件</span><span class="sxs-lookup"><span data-stu-id="625c6-182">Define mail flow rules to encrypt email messages in Office 365</span></span>](define-mail-flow-rules-to-encrypt-email.md)
+>[!IMPORTANT]
+><span data-ttu-id="a51ca-158">如果您未更新現有的郵件流程規則，您的使用者會繼續接收加密的郵件而不是新的 OME 功能使用先前的 HTML 附件格式。</span><span class="sxs-lookup"><span data-stu-id="a51ca-158">If you do not update existing mail flow rules, your users will continue to receive encrypted mail that uses the previous HTML attachment format, instead of the new OME capabilities.</span></span>
