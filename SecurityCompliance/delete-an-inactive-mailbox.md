@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 當您不再需要保留的 Office 365 不在作用中信箱內容時，您可以藉由移除保留永久刪除非使用中的信箱。之後移除保留，非使用中信箱標記為待刪除，然後會永久刪除之後會處理。
-ms.openlocfilehash: 0dddbb7c5093519914cbf3a2fc33daf709f0a160
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6af107face519ac18d5b072d675e76f70dc4c4a6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220843"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295736"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>刪除非作用中的信箱在 Office 365
 

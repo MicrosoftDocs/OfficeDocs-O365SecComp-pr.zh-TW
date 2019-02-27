@@ -10,15 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 提供歐盟市民 （稱為 「 資料主旨） 的特定權限至其個人的資料 ；這些權限包括取得它的複本、 要求給它的變更、 限制其處理、 刪除，或收到電子格式。正式受限於讓資料所要求在其個人的資料巨集指令會呼叫資料主體要求或 DSR。您可以使用 Office 365 安全性 DSR 的情況下&amp;規範中心來管理您的組織 DSR 調查。
-ms.openlocfilehash: 8338ca2eed4f5120571f642a1cbb4408ce36e2c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fe702ab9050e76b6b8f00fbc8d2670505a030756
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213493"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296586"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>管理 Office 365 安全性 DSR case 工具 GDPR 資料主體要求&amp;規範中心
 

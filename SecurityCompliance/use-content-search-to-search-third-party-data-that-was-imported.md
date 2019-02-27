@@ -5,18 +5,19 @@ author: markjjo
 manager: laurawi
 ms.date: 10/27/2017
 ms.audience: Admin
-ms.topic: reference
+ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 內容搜尋 eDiscovery 工具可用於搜尋的從協力廠商資料來源匯入至 Office 365 中的信箱項目。您可以建立搜尋匯入的所有項目或建立特定協力廠商資料類型的搜尋查詢的查詢。本文列出您可以使用關鍵字查詢中搜尋可匯入至 Office 365 的協力廠商資料類型的值。
-ms.openlocfilehash: 793024f765aa1d016f7a043d14eb75ca6c2435c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f1ab3cfc8dd866aa0d70014b22a301de2a65f3c5
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214873"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296036"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用內容搜尋來搜尋已匯入 Office 365 的協力廠商資料
 

@@ -1,7 +1,7 @@
 ---
 title: 使用客戶金鑰控制 Office 365 中的資料
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: krowley
+author: kccross
 manager: laurawi
 ms.date: 8/1/2018
 ms.audience: ITPro
@@ -14,16 +14,16 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定客戶金鑰 for Office 365 的 Exchange Online、 Skype Business、 SharePoint Online 和 OneDrive for Business。與客戶金鑰您控制您組織的加密金鑰及使用方式來加密的 Microsoft 資料中心的靜態資料的 Office 365，則設定。
-ms.openlocfilehash: a14a213951bc87e4106e150c88c6b1461a5e685e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218753"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296666"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>使用客戶金鑰控制 Office 365 中的資料
 
-與客戶金鑰您控制組織的加密金鑰並使用這些加密 Microsoft 資料中心的靜態資料的 Office 365，則設定。靜態資料包括從 Exchange Online 和 Skype 會儲存在信箱和 SharePoint Online 中儲存的檔案中的企業版及 OneDrive for Business 的資料。
+與客戶金鑰您控制組織的加密金鑰並使用這些加密 Microsoft 資料中心的靜態資料的 Office 365，則設定。換句話說，客戶機碼可讓客戶加上一層的屬於，其機碼與加密。靜態資料包括從 Exchange Online 和 Skype 會儲存在信箱和 SharePoint Online 中儲存的檔案中的企業版及 OneDrive for Business 的資料。
   
 您必須設定 Azure 才可以使用 Office 365 的客戶機碼。本主題說明您必須遵循以建立並設定必要的 Azure 資源的步驟，然後步驟安裝 Office 365 中的客戶索引鍵設定。Azure 安裝程式完成之後，您可以決定哪個原則，與因此哪些機碼，將指派給信箱與您組織中的檔案。信箱與檔案的未指派的原則將會使用加密原則控制及管理 microsoft。客戶機碼的詳細資訊或的一般概觀，請參閱[Office 365 常見問題集的客戶機碼](service-encryption-with-customer-key-faq.md)。
   

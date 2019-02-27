@@ -7,16 +7,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 eDiscovery 及搜尋工具來管理，並在組織中建立資料 spillage 事件回應。
-ms.openlocfilehash: 0da49dfbe8104d89a1abf4a14adce51ec0ef25f1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 50fab420ae0769e4675c5b6ff31307fa195d3950
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219423"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296596"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery 解決方案系列： 資料 spillage 案例-搜尋和清除
 

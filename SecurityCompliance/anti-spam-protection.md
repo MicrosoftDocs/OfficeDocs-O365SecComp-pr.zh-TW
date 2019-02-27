@@ -1,5 +1,5 @@
 ---
-title: Office 365 電子郵件的反垃圾郵件保護
+title: Office 365 電子郵件反垃圾郵件保護
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 了解反垃圾郵件設定和篩選可協助您避免在 Exchange Online 與 Office 365 中的垃圾郵件。取得 Office 365 太多垃圾郵件吗？您可以自訂您的垃圾郵件篩選和反垃圾郵件原則設定。
-ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f4d32bb0efae0a38fdc6789feef73bd5014eb75b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223422"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296316"
 ---
-# <a name="office-365-email-anti-spam-protection"></a>Office 365 電子郵件的反垃圾郵件保護
+# <a name="office-365-email-anti-spam-protection"></a>Office 365 電子郵件反垃圾郵件保護
 
 您擔心太多 Office 365 中的垃圾郵件吗？我們已內建多個垃圾郵件篩選您的 Office 365 或 Exchange Online Protection (EOP) 服務，因此從您會收到您第一封郵件可用來保護電子郵件。以協助防止 Office 365 中的垃圾郵件，您可能會想要變更保護設定來處理您的組織中的特定問題 — 說出您要接收來自特定寄件者許多的垃圾郵件例如 — 或至只可調整您的設定，讓它們自訂最佳開會組織的需求。為達成此目的，您可以變更 Office 365 安全性的反垃圾郵件設定&amp;規範中心。
   
@@ -75,7 +75,7 @@ ms.locfileid: "30223422"
   
 [使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](prevent-email-from-being-marked-as-spam-0.md)
   
-[如何設定 Office 365 垃圾郵件篩選可協助封鎖垃圾郵件](block-email-spam-to-prevent-false-negatives.md)
+[如何設定 Office 365 垃圾郵件篩選可協助封鎖垃圾郵件](reduce-spam-email.md)
   
 [什麼是垃圾郵件與大量電子郵件的差異？](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   

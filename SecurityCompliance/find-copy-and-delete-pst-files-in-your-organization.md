@@ -7,16 +7,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 集合工具來搜尋您組織的網路取得散佈整個組織中的 PST 檔案的存貨。尋找 PST 檔案之後，您可以使用 PST 集合工具讓您可以將其匯入 Office 365 中的集中位置複製它們。
-ms.openlocfilehash: 42f192b1a69ee9893df7cc8353b48cd9baabeda7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 87e13ec8a4c58f848ac2ff7a430a7532942ece74
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216643"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296956"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具來尋找、 複製及刪除組織中的 PST 檔案
 

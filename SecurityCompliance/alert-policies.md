@@ -4,21 +4,23 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 安全性中建立警示原則&amp;規範中心来監視的潛在威脅、 資料遺失及權限問題。然後您可以檢視及管理使用者在執行活動的警示原則條件符合時所產生的警示。
-ms.openlocfilehash: 5c2d9dc7cf74198198036f062e8300f82fd69631
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6418315914a0a80421db382ae8e55ccf3fc310a2
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220663"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296556"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>警示 Office 365 安全性原則&amp;規範中心
 

@@ -8,16 +8,17 @@ ms.audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: '將信箱置於訴訟暫止狀態以保留所有信箱內容，包括已刪除的項目和已修改項目的原始版本。 '
-ms.openlocfilehash: 00f83d69d90f10659427986ffcb16f9e5358c054
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: b2d2a60fddb51aa310d01a765c1ebbbf127ecd19
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038036"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296976"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>將信箱設為訴訟暫止
  

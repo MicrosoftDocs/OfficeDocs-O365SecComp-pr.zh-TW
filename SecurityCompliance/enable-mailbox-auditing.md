@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 在 Office 365 中，您可以開啟信箱稽核記錄來依信箱擁有者、 委派及系統管理員記錄信箱存取。根據預設，Office 365 中的信箱稽核無法開啟。啟用信箱稽核記錄功能信箱之後，您可以搜尋活動在信箱上執行的 Office 365 稽核記錄。
-ms.openlocfilehash: bb110e95d27feb8ae82b62803d218a2b38528692
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9bc84bad8532dd546d5ce3e2f149151967050d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214603"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295916"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>啟用 Office 365中的信箱稽核
   

@@ -1,7 +1,7 @@
 ---
 title: 隔離常見問題集
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
+ms.collection:
+- M365-security-compliance
 description: 本主題提供有關託管隔離區的常見問題與解答。
-ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792494"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276023"
 ---
 # <a name="quarantine-faq"></a>隔離常見問題集
 

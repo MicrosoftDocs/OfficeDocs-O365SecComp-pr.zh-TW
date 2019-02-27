@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 掃描內送電子郵件訊息時加以插入**X Forefront-反垃圾郵件報告**標題每則訊息。
-ms.openlocfilehash: 4851c05f4db8d120eb54b9c22025fe2972e1e515
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223582"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276193"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
@@ -55,7 +55,7 @@ Exchange Online Protection 掃描內送電子郵件訊息時加以插入**X Fore
 |SFV:NSPM|郵件標記為非垃圾郵件，並傳送給預定的收件者。|
 |H:[helostring]|連線郵件伺服器的 HELO 或 EHLO 字串。|
 |PTR:[ReverseDNS]|PTR 記錄或指標記錄，傳送的 IP 位址，也稱為反向 DNS 位址。|
-|SFTY|郵件已識別為網路釣魚和也會標示為具有下列值之一： <br/>• 9.1： 預設值。包含網路釣魚 URL、 可能包含其他網路釣魚內容，或可能已標示為網路釣魚由如 Exchange Server 的內部部署版本的另一個郵件篩選器之前轉送至 Office 365 郵件的郵件。 <br/>• 9.11： 郵件無法反詐騙檢查其中的傳送端網域中寄： 標頭相同，或是配合，或屬於相同組織為接收網域。這表示內 org 詐騙 safety 提示將會新增到郵件。 <br/>• 9.19： 郵件無法傳送端網域嘗試模擬接收器所擁有的網域] 或 [受保護的反網路釣魚原則影響的自訂網域的網域模擬檢查。這表示模擬 safety 提示將會新增到郵件，如果啟用透過反 Phishig 原則。 <br/>• 9.20： 郵件無法使用者模擬檢查出傳送的使用者嘗試模擬接收器組織內的使用者或自訂使用者受到反網路釣魚原則。這表示模擬 safety 提示將會新增到郵件，如果啟用透過反 Phishig 原則。 <br/>• 9.21： 郵件無法反詐騙檢查和在 [從的傳送端網域： 標頭不驗證和來自外部網域。一起 CompAuth （請參閱驗證結果）。 <br/>• 9.22： 相同 9.21，不同之處在於使用者具有安全的寄件者已覆寫的。 <br/>• 9.23： 相同 9.22，不同之處在於組織有允許寄件者或已覆寫的網域。 <br/>• 9.24： 相同 9.23，不同之處在於使用者具有已覆寫 Exchange 郵件流程規則。|
+|SFTY|郵件已識別為網路釣魚和也會標示為具有下列值之一： <br/>• 9.1： 預設值。包含網路釣魚 URL、 可能包含其他網路釣魚內容，或可能已標示為網路釣魚由如 Exchange Server 的內部部署版本的另一個郵件篩選器之前轉送至 Office 365 郵件的郵件。 <br/>• 9.11： 郵件無法反詐騙檢查其中的傳送端網域中寄： 標頭相同，或是配合，或屬於相同組織為接收網域。這表示內 org 詐騙 safety 提示將會新增到郵件。 <br/>• 9.19： 郵件無法傳送端網域嘗試模擬接收器所擁有的網域] 或 [受保護的反網路釣魚原則影響的自訂網域的網域模擬檢查。這表示模擬 safety 提示將會新增到郵件，如果啟用透過反網路釣魚原則。 <br/>• 9.20： 郵件無法使用者模擬檢查出傳送的使用者嘗試模擬接收器組織內的使用者或自訂使用者受到反網路釣魚原則。這表示模擬 safety 提示將會新增到郵件，如果啟用透過反網路釣魚原則。 <br/>• 9.21： 郵件無法反詐騙檢查和在 [從的傳送端網域： 標頭不驗證和來自外部網域。一起 CompAuth （請參閱驗證結果）。 <br/>• 9.22： 相同 9.21，不同之處在於使用者具有安全的寄件者已覆寫的。 <br/>• 9.23： 相同 9.22，不同之處在於組織有允許寄件者或已覆寫的網域。 <br/>• 9.24： 相同 9.23，不同之處在於使用者具有已覆寫 Exchange 郵件流程規則。|
 |X-CustomSpam：[ASFOption]|郵件符合進階垃圾郵件篩選選項。例如， **X-customspam： 遠端站台連結的圖像**表示已符合**遠端站台的影像連結**ASF] 選項。若要找出哪些 x-header 文字新增每個特定 ASF 選項，請參閱[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md)。|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft 反垃圾郵件郵件標頭欄位

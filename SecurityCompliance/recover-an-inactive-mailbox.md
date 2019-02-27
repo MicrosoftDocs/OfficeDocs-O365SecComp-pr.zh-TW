@@ -7,18 +7,19 @@ ms.date: 6/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果先前的員工會傳回您組織中，或將新的員工雇用採取 departed 員工的工作職責，您可以復原 Office 365 中的非使用中信箱的內容。當您復原不在作用中的信箱時，它會轉換成新的信箱包含非作用中信箱的內容。 '
-ms.openlocfilehash: bebcf5cbb569c9e2e591294a084defea15af4c0f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f5c844b5841518f1aa74a122d4c43663ebcccd14
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216133"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295836"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>復原 Office 365 中不在作用中信箱
 

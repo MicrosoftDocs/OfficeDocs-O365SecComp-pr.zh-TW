@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何設定 Windows 登錄，以增加資料輸送量下載搜尋結果時及搜尋資料從 Office 365 安全性&amp;規範中心與 Office 365 進階 eDiscovery。
-ms.openlocfilehash: bafe9eda98b411472098770e4178748eb84f8afd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a23525ada1ef5f36bc7df4fc738c712e22243bc0
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216243"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295426"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>匯出 eDiscovery 搜尋結果從 Office 365 時所增加的下載速度
 

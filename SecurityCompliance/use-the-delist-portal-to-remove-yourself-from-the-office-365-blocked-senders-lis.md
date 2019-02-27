@@ -1,7 +1,7 @@
 ---
 title: 使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 4/18/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
+ms.collection:
+- M365-security-compliance
 description: 當您嘗試將電子郵件傳送給其電子郵件地址是在 Office 365 中的收件者時，是否收到錯誤？如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除。
-ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003252"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276178"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
 
@@ -40,7 +42,7 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
     
 2. 遵循頁面中的指示。請確定您使用被傳送錯誤訊息的電子郵件地址，以及在錯誤訊息中指定的 IP 位址。您每次造訪只能輸入一個電子郵件地址及一個 IP 位址。
     
-3. 按一下 **[送出]**。
+3. 按一下 **[提交]**。
     
     入口網站會將電子郵件傳送至您所提供的電子郵件地址。電子郵件將看起來類似下列：![送出要求透過 delist 入口網站時所接收的電子郵件的螢幕擷取畫面](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
   

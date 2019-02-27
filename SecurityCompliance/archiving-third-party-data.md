@@ -5,19 +5,21 @@ author: markjjo
 manager: laurawi
 ms.date: 9/5/2017
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台及文件共同作業平台至 Office 365 組織中的信箱。這可讓您封存 Office 365 中的 Facebook、 Twitter 與資料來源的資料。然後您可以與協力廠商資料 appply Office 365 的符合性功能 （例如法務保存措施、 內容搜尋和保留原則）。
-ms.openlocfilehash: 37811fdbee52cf956c6371deea53a242c2a3c550
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0f9f8b5a4ce5b4359430a3b15acc7bf16b2f0290
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218493"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296676"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中封存協力廠商資料
 

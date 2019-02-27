@@ -8,22 +8,29 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f8f1a92f001bf8f9e23f54bbb05fbbcf443bf4b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1521aadca42c8119ae341065865b227fb16ffcf3
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218663"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295026"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>進階的監管人資料索引
 
-當 okay 加入至進階的 eDiscovery （預覽） 案例時，已被視為的 Office 365 中的任何內容部分編製索引是以提供完整搜尋重新處理。 此程序會呼叫*進階編製索引*。內容可以是部分編製索引的原因包括存在圖像、 不受支援的檔案類型或索引檔案大小限制時所發生的數量。 若要深入了解部分已編製索引的項目，請參閱[部分編製索引中的 Office 365 中的內容搜尋的項目](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search)。
+當 okay 加入至進階的 eDiscovery （預覽） 案例時，已被視為的 Office 365 中的任何內容部分編製索引是以提供完整搜尋重新處理。 此程序會呼叫*進階編製索引*。內容可以是部分編製索引的原因包括存在圖像、 不受支援的檔案類型或索引檔案大小限制時所發生的數量。
+
+若要深入了解處理 Office 365 及部分已編製索引的項目中的支援，請參閱：
+
+- [進階在 eDiscovery 中支援的檔案類型](supported-filetypes-ediscovery20.md)
+- [位於 Office 365 中內容搜尋的已局部編製索引項目](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search)
+- [Exchange 搜尋編製索引的檔案格式](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## <a name="viewing-advanced-indexing-results"></a>檢視進階索引的結果
 

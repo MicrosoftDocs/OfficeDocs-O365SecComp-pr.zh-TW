@@ -7,18 +7,19 @@ ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '啟用封存信箱並開啟自動展開封存增加的 Office 365 中的信箱 [可復原的項目] 資料夾的大小。 '
-ms.openlocfilehash: ebb052ba17ba8a84076e1e75a82713cc5cf437a1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 701821074294441525315c3db77daeccd5700935
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218473"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296536"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱的「可復原的項目」配額
 

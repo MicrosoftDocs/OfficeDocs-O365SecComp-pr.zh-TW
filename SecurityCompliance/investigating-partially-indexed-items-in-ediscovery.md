@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分編製索引的項目 （也是呼叫未建立索引項目） 的 Exchange 信箱項目和 SharePoint 的文件和 OneDrive 網站的因任何原因未完全編製索引內容的搜尋。針對本文中了解為何無法編製索引的搜尋項目，以及部分已編製索引的項目所傳回、 識別搜尋錯誤的部分已編製索引的項目，並使用 PowerShell 指令碼來判斷您的組織衝擊部分已編製索引的電子郵件項目。
-ms.openlocfilehash: d9137ba4095d6e16d4525a24141d82bc6143d8b5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d8fec240964ad84b811221754060af3e342af01f
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220973"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295626"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>調查 Office 365 電子文件探索中已局部編製索引的項目
 

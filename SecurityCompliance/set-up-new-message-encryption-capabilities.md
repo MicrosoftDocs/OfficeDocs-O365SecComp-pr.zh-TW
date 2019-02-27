@@ -11,60 +11,60 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: 內建置於 Azure 資訊保護、 貴組織的功能可以使用新的 Office 365 郵件加密受保護的電子郵件通訊與組織內外的人。與其他 Office 365 組織、 Outlook.com、 Gmail、 及其他電子郵件服務搭配使用的新 OME 功能。
-ms.openlocfilehash: eddafca15fa4efdd3f929145e7933a3b7dfb5f27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 90247a7e3cd7e5978eb144a2b6f66a9de21a8f96
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220643"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296186"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>設定全新的 Office 365 郵件加密功能
 
-新的 Office 365 郵件加密 (OME) 功能運用在 Azure 資訊保護的保護功能，您的組織可以輕鬆地共用受保護的電子郵件與任何裝置上的任何人。使用者可以傳送及接收與其他 Office 365 組織以及非 Office 365 客戶使用 Outlook.com、 Gmail，以及其他電子郵件服務受保護的郵件。
+新的 Office 365 郵件加密 (OME) 功能允許與任何裝置上的任何人共用受保護的電子郵件組織。使用者可以交換受保護的訊息與其他 Office 365 組織以及非 Office 365 客戶使用 Outlook.com、 Gmail，以及其他電子郵件服務。
 
-||
-|:-----|
-|本文屬於較大的一系列有關 Office 365 郵件加密的文章。本文適用於系統管理員和 ITPros 的。如果您只尋找的資訊在傳送或接收加密的郵件，請參閱[Office 365 郵件加密 (OME)](ome.md)中的文章的清單並找出最適合您需求的文章。 |
-||
 
-## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>快速入門 OME 啟用 Azure Rights Management，Azure 資訊保護的一部分
+>[!NOTE]
+>本文適用於系統管理員及 IT 專業人員的。如果您是使用者，請參閱[Office 365 郵件加密 (OME)](ome.md)中的適當解決方案的文章的清單。
 
-現在要並容易開始使用新的 OME 功能。年 2 月 2018 Office 365 會自動啟用合格組織內我們資料中心的新 OME 功能。如果它是新的 Office 365 租用戶和您的組織有適當訂閱，則合格貴組織。**如果您已啟用 Azure 版權管理 (Azure RMS) 一部分 Azure 資訊保護，則我們會自動為您啟用 Office 365 郵件加密。** 您不需要執行任何動作啟用 OME。若要啟動 Azure Rights Management，請參閱 ＜[啟動 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。如需訂閱，請參閱"何種訂閱的我需要使用新的 OME capabilities?" [Office 365 郵件加密常見問題集](ome-faq.md)。如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。
+請遵循下列步驟來確保您的 Office 365 租用戶中可用的新 OME 功能。 
+
+## <a name="verify-azure-rights-management-arm-is-active"></a>確認已啟用 Azure 版權管理 (ARM)
+
+>[!NOTE]
+>新的 OME 功能利用[Azure 資訊保護](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)、 [Azure 版權管理 (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)所用的技術中的保護功能。
+
+使用新的 OME 功能僅必要條件是[Azure 版權管理 (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)必須要啟動 Office 365 租用戶中。如果它是 Office 365 會自動啟動新的 OME 功能和您不需要執行任何動作。 
+
+ARM 也啟動自動最合格的計劃，因此您可能不需要執行任何動作在這方面也。如需詳細資訊，請參閱[啟動 Azure 版權管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service)。
+
+>[!IMPORTANT]
+>如果您使用 Active Directory Rights Management service (AD RMS) 與 Exchange Online 時，您需要移轉[至 Azure 資訊保護](https://docs.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-to-azure-rms)才能使用新的 OME 功能。AD RMS 不相容於 ARM。  
+
+如需詳細資訊，請參閱：
+
+- [我需要使用新的 OME 功能何種訂閱？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)若要檢查您的訂閱計劃是否包含 Azure 資訊保護 （其中包括 ARM）。   
+-  如需購買合格的訂閱資訊[Azure 資訊保護](https://azure.microsoft.com/en-us/services/information-protection/)。  
+
+### <a name="manually-activating-arm"></a>手動啟動 ARM
+
+如果您停用 ARM，或如果它尚未自動啟動任何原因，您可以啟動其以手動方式：
+
+- **Office 365 系統管理中心**： 了解[如何啟用 Azure 版權管理 Office 365 系統管理中心中](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365)的指示
+- **Azure 入口網站**： 了解[如何啟動 Azure Rights Management 從 Azure 入口網站](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)的指示。 
+
+
+## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>設定管理 Azure 資訊保護承租人索引鍵
+
+這是選用的步驟。允許 Microsoft Azure 資訊保護管理根機碼是預設設定與大部分的 Office 365 租用戶的建議最佳作法。如果是這樣，您不需要執行任何動作。 
+
+有許多原因，例如規範需求，也許您產生及管理自己根 （也稱為將您自己的金鑰 (BYOK)） 的索引鍵。如果是這樣，建議您設定的新 OME 功能之前完成的必要的步驟。如需詳細資訊，請參閱[規劃及實作您 Azure 資訊保護租用戶金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。 
+
+
+## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>確認 Exchange Online PowerShell 中的新 OME 組態
+
+您可以驗證您的 Office 365 租用戶正確設定為在[Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)中使用的新 OME 功能。
   
-如果您使用 Exchange Online 與 Active Directory Rights Management service (AD RMS)，就無法立即啟用這些新功能。而您需要先移轉從 AD RMS Azure 資訊保護。當您已經完成移轉時，您可以成功地完成這些步驟。
-  
-如果您選擇繼續使用內部部署 AD RMS 與 Exchange Online 而不是移轉至 Azure 資訊保護，您將無法使用這些新功能。
-  
-## <a name="how-the-new-capabilities-for-ome-work"></a>OME 新功能的運作方式
-
-新的 Office 365 郵件加密功能使用的保護功能，又稱為 Azure 版權管理 (Azure RMS) 從 Azure 資訊保護。這包括加密、 identity 及授權原則，以協助保護您的電子郵件。您可以使用權限管理範本、[不要轉寄] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)，並[僅加密的選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)來加密的郵件。使用者接著可以加密電子郵件訊息與 Office 365 附件各種使用這些選項。支援的附件類型的完整清單，請參閱["的檔案類型涵蓋它們是貼附至郵件的 IRM 原則 」 中的電子郵件的 IRM 的簡介](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)。身為管理員，您也可以定義要套用此保護的郵件流程規則。例如，您可以定義的規則其中的預設傳送給特定收件者或包含特定字詞的主旨行中的所有未受保護的郵件保護免於未經授權存取，而收件者無法複製或列印郵件的內容。
-  
-不同於 OME 先前的版本，這些新功能提供統一的寄件者經驗無論您在貴組織內或 Office 365 外部的收件者傳送郵件。此外，收件者收到受保護的電子郵件訊息傳送至 Outlook 2016 或在網頁上的 Outlook 中的 Office 365 帳戶不需要採取任何其他檢視郵件。順暢地運作。收件者使用其他電子郵件用戶端和電子郵件服務提供者也有體驗。資訊，請參閱[了解 Office 365 中受保護的郵件](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67)及[如何開啟受保護的郵件](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)。
-
-舊版 OME 與新的 OME 功能差異的詳細清單，請參閱[比較 OME 的版本](ome-version-comparison.md)。
-  
-## <a name="steps-to-manually-set-up-the-new-capabilities-for-ome"></a>若要手動設定的新功能的 OME 步驟
-
-大部分的 Office 365 組織已自動啟用新的 OME 功能。如果您的組織自動沒有 OME 啟用，或開啟關閉的新 OME 功能，請遵循下列步驟以手動方式設定 OME 的新功能。
-  
-### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>若要手動設定 OME 的新功能
-
-1. 請確定您的組織有右訂閱。訂閱的詳細資訊，請參閱"何種訂閱我需要使用新的 OME capabilities?"中[Office 365 郵件加密常見問題集。](ome-faq.md)。如需購買訂閱 Azure 資訊保護資訊，請參閱[Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)。
-
-2. 決定您是否希望 Microsoft Azure 資訊保護 （預設值），管理根金鑰或產生和 （稱為將您自己的索引鍵或 BYOK） 自行管理此機碼。如果您想要產生及自行管理此機碼，您需要完成某些步驟，才可設定的新功能的 OME。如需詳細資訊，請參閱[規劃及實作您 Azure 資訊保護租用戶金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。Microsoft 建議您設定 OME 之前完成這些步驟。
-
-3. 啟用來啟用 Azure Rights Management OME 的新功能。指示，請參閱[啟動 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)。當您這麼做時，Office 365 自動為您啟用新 OME 功能。
-
-    > [!TIP]
-    > 在 Web 上的 outlook 快取其使用者介面，讓它是不錯的選項等待您嘗試將新功能的 OME 套用至使用此用戶端的電子郵件的前一天。使用者介面更新以反映新的設定之前，將不可以使用 OME 新功能。使用者介面更新之後，使用者可以使用 OME 的新功能來保護電子郵件訊息。
-  
-4. （選用）設定新的郵件流程規則或更新現有的郵件流程規則，以定義如何及何時您希望 Office 365 加密郵件傳送從您的組織。
-
-## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>確認 OME 新功能均已正確設定使用 Windows PowerShell
-
-遵循下列步驟以確認您的租用戶已正確設定要用於 OME 透過 Exchange Online PowerShell 中的新功能。
-  
-1. 使用 Office 365 組織中具有全域系統管理員權限的工作或學校帳戶，請啟動 Windows PowerShell 工作階段並連線至 Exchange Online。指示，請參閱[Connect to Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)使用的帳戶具有您的 Office 365 租用戶中的全域系統管理員權限。
 
 2. 執行 Test-irmconfiguration 指令程式使用下列語法：
 
@@ -72,13 +72,15 @@ ms.locfileid: "30220643"
      Test-IRMConfiguration [-Sender <email address >]
      ```  
 
-   例如：
-
+   **範例**： 
+   
      ```powershell
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
-
-    其中電子郵件地址是 Office 365 組織中使用者的電子郵件地址。雖然選用、 提供寄件者電子郵件地址會強制執行其他檢查系統。結果應該類似下列：
+     
+     - 提供的寄件者電子郵件是選擇性的但會強制執行其他檢查系統。在您的 Office 365 租用戶中使用之任何使用者的電子郵件地址。 
+     
+    您的結果應該會類似：
 
      ```text
     Results : Acquiring RMS Templates ...
@@ -94,11 +96,9 @@ ms.locfileid: "30220643"
             OVERALL RESULT: PASS
     ```
 
-    其中*Contoso*被由 Office 365 組織的名稱取代。
+   - Office 365 組織的名稱將會取代*Contoso*。
 
-    在結果中傳回的預設範本的名稱可能會不同顯示在上面的結果。
-
-    範本和預設範本的相關資訊的簡介，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。[不要轉寄的相關資訊的選項，僅加密] 選項，及如何建立其他範本，了解權限包括或現有的範本，請參閱 ＜[設定 Azure 版權管理使用權限](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights)。
+   - 預設範本名稱可能會不同顯示上方。如需詳細資訊，請參閱[Azure 資訊保護的設定及管理範本](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy-templates)。
 
 3. 執行 Remove-pssession cmdlet 來中斷與版權管理服務的連線。
     
@@ -106,20 +106,24 @@ ms.locfileid: "30220643"
      Remove-PSSession $session
      ```
 
-## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>後續步驟： 定義新的郵件流程規則使用的新 OME 功能
+## <a name="update-mail-flow-rules-to-use-new-ome-capabilities"></a>若要使用 OME 的新功能的郵件流程規則更新
 
-這是選用的新 OME 部署步驟，不過，則已有郵件流程設定規則最多加密外寄郵件的現有 OME 部署需要此步驟。如果您想要利用新 OME 功能，您必須更新現有的郵件流程規則。否則，您的使用者會繼續接收加密的郵件而不是新的且相當順暢 OME 經驗會使用先前的 HTML 附件格式。
-  
-郵件流程規則決定下何種條件電子郵件訊息應加密，以及移除該加密的條件。當您設定規則動作時，他們正在傳送時將會加密任何符合的規則條件的郵件。
-  
-如需郵件流程規則的詳細資訊，請參閱 ＜ [Define 郵件流程規則來加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
-  
-## <a name="related-topics"></a>相關主題
+如果您的 Office 365 租用戶中有先前已設定的[來加密電子郵件的郵件流程規則](define-mail-flow-rules-to-encrypt-email.md)，您需要更新下列現有的規則來使用新的 OME 功能。新部署的這個步驟是不需要此階段。   
 
-[傳送、 檢視和回覆加密郵件在 Outlook 中](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
+>[!Note]
+>郵件流程規則定義的電子郵件訊息會經過加密，以及何時應該移除加密的條件。如需詳細資訊，請參閱[定義郵件流程規則來加密 Office 365 中的電子郵件訊息](define-mail-flow-rules-to-encrypt-email.md)。
+
+若要更新現有規則，以使用新的 OME 功能：
+
+1. 在 Office 365 系統管理中心，移至**系統中心 > Exchange**。
+
+2. 在 Exchange 系統管理中心，移至 [**郵件流程 > 規則**。 
+3. 針對每個規則中**執行下列動作**：
+    - 選取 [**修改郵件安全性**]。
+    - 選取**適用於 Office 365 郵件加密和權限保護**。
+    - 從清單中選取的 RMS 範本
+    - 選取 **[儲存]**。
+    - 選取 [確定]****。
   
-[啟用 Aadrm](https://docs.microsoft.com/powershell/module/aadrm/enable-aadrm?view=azureipps)
-  
-[使用遠端 PowerShell 連線到 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
-  
-[定義郵件流規則以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)
+>[!IMPORTANT]
+>如果您未更新現有的郵件流程規則，您的使用者會繼續接收加密的郵件而不是新的 OME 功能使用先前的 HTML 附件格式。

@@ -1,7 +1,7 @@
 ---
 title: Office 365 郵件加密的舊版資訊
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 1/4/2018
 ms.audience: ITPro
@@ -11,13 +11,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
+ms.collection:
+- M365-security-compliance
 description: 如果您尚未尚未移動 Office 365 組織到新的 OME 功能，但您已部署 OME，本文資訊適用於您組織。Microsoft 建議您將移至新的 OME 功能一旦是組織的合理的計劃。指示，請參閱 ＜ Set up 新建置上方的 Azure 資訊保護的 Office 365 郵件加密功能。如果您想要了解更多有關的新功能如何運作前，請參閱 Office 365 郵件加密。本文的其餘部分是指 OME 行為的新 OME 功能發行前。
-ms.openlocfilehash: 1f809ca996f072269f40bcb6c7ce6f7a420cccb1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219253"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276063"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 郵件加密的舊版資訊
 

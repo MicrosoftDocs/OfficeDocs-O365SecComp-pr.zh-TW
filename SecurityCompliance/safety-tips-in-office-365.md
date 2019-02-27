@@ -1,7 +1,7 @@
 ---
 title: 在 Office 365 中的電子郵件訊息中的安全秘訣
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: scotv
 ms.date: 10/6/2016
 ms.audience: Admin
@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
+ms.collection:
+- M365-security-compliance
 description: 介紹 EOP 與 Office 365 的垃圾郵件篩選器所篩選的電子郵件訊息的安全秘訣。
-ms.openlocfilehash: 54f41d1ae0b7d0ca883bf6be7e2dbe006536d1aa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214303"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276283"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>在 Office 365 中的電子郵件訊息中的安全秘訣
 

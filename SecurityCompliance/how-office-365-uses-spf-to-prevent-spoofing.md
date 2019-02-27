@@ -1,7 +1,7 @@
 ---
 title: Office 365 可防止詐騙所使用的寄件者原則架構 (SPF)
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/15/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
+ms.collection:
+- M365-security-compliance
 description: 摘要： 本文說明如何 Office 365 使用 DNS 中以確定目的地的電子郵件系統信任從自訂網域傳送的郵件寄件者原則架構 (SPF) TXT 記錄。這適用於從 Office 365 傳送的輸出郵件。從 Office 365 傳送至 Office 365 中的收件者的郵件將會一律傳遞 SPF。
-ms.openlocfilehash: b4898bf8b607e7ad600455c915f99baaab21f6f6
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 76267f89744b696185022a2bb036dcde09dfcde5
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223562"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276103"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 可防止詐騙所使用的寄件者原則架構 (SPF)
 

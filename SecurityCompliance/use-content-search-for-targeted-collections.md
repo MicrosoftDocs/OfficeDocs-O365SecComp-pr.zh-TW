@@ -7,16 +7,17 @@ ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用 Office 365 安全性內容搜尋&amp;規範中心來執行目標的集合。目標的集合表示您是有信心回應案例的項目或權限項目都位於特定信箱或站台資料夾。使用本文中的指令碼來取得資料夾 ID 或想要搜尋的特定信箱或站台資料夾的路徑。
-ms.openlocfilehash: 81628c670f80053479b3b7987e8c4ece884793c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215013"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296926"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>使用 Office 365 中的內容搜尋目標集合
 

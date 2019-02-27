@@ -7,18 +7,19 @@ ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 系統管理員可以使用 Search-Mailbox Cmdlet 來搜尋使用者信箱，然後刪除信箱中的郵件。
-ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 718a23f649843420ccfd924be72752a99278da4c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002822"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297126"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>搜尋並刪除郵件 - 管理中心說明
   

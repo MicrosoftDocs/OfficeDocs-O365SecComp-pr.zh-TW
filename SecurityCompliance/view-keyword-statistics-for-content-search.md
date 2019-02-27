@@ -7,18 +7,19 @@ ms.date: 1/30/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用搜尋統計資料功能來顯示和比較統計資料的 Office 365 安全性的多個內容搜尋&amp;規範中心。您也可以在建立或編輯搜尋查詢來取得增強顯示多少個項目比對每個關鍵字或關鍵字文句的統計資料時設定 [關鍵字] 清單。
-ms.openlocfilehash: c62f04e690661a5a7022fa00f727d1be39e74f12
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 614f832ec737850986af334a390ffc0c4e88122d
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214820"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295726"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>檢視內容搜尋結果的關鍵字統計資料
 

@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/06/2019
+ms.date: 02/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 設定安全的連結原則來保護您的組織不在 Word、 Excel、 PowerPoint 及 Visio 檔案，以及在電子郵件訊息中的惡意連結。
-ms.openlocfilehash: 0cf6c22be42f11fe52a1f43d0ebef48bd639675d
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: e9ab086454703113bca6e8b260ba898a5e36ef9b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245599"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296826"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -112,8 +112,8 @@ ms.locfileid: "30245599"
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>步驟 4︰ 了解 ATP 安全連結原則選項
 
 當您設定或編輯 ATP 安全連結原則時，會看到數個可用選項。您會知道這些選項為何下, 表說明每一個和其效果。有兩種主要定義或編輯 ATP 安全連結原則，請記得：
-- 套用至所有人的[預設原則](#default-policy-options) 
-- 其他[原則所定義的特定收件者](#policies-that-apply-to-specific-email-recipients) 
+- 套用至所有人;[預設原則](#default-policy-options)與  
+- 其他[特定收件者的原則](#policies-that-apply-to-specific-email-recipients) 
 
 ### <a name="default-policy-options"></a>預設原則選項
 
@@ -121,8 +121,8 @@ ms.locfileid: "30245599"
 
 |此選項  |執行動作  |
 |---------|---------|
-| **封鎖下列 Url** <br/>    | 可讓您的組織具有自訂清單的自動封鎖的 Url。當使用者按一下此清單中的 URL 時，他們會前往說明 URL 封鎖的原因[警告] 頁面](atp-safe-links-warning-pages.md)。<br/> 若要深入了解，請參閱 [Set up 自訂封鎖 Url 清單使用 ATP 安全連結      |
-| **Office 365 ProPlus iOS 適用於 Office 及 android （英文）** <br/>    | 選取此選項時，ATP 保護套用至 Url 的文件內的安全連結中開啟 Office 365 ProPlus （Word、 Excel 及 PowerPoint Windows 或 Mac OS） iOS 或 Android 裝置上 Windows 及 Office Online (Word Visio 2016 上的 Office 文件線上、 PowerPoint Online、 Excel Online 和 OneNote Online），提供使用者已登入 Office 365。 <br/><br/>如果您看到只**在 Windows 的 Office 2016**，然後功能更新已無法連至 Office 365 環境尚未 （和它們即將推出）。加上 then，直到 ATP 安全連結保護適用於 Word 2016、 Excel 2016、 PowerPoint 2016 或 Visio 2016 Windows 上執行。            |
+| **封鎖下列 Url** <br/>    | 可讓您的組織具有自訂清單的自動封鎖的 Url。當使用者按一下此清單中的 URL 時，他們會前往說明 URL 封鎖的原因[警告] 頁面](atp-safe-links-warning-pages.md)。如需了解，請參閱[Set up 使用 Office 365 ATP 安全連結的自訂封鎖 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)。 |
+| **Office 365 ProPlus iOS 適用於 Office 及 android （英文）** <br/>    | ATP 安全連結保護選取此選項時，會套用至 Windows 或 Mac OS、 iOS 或 Android 裝置上的 Office 文件上 Windows 及 Office Online （線上 Word、 PowerPoint Online、 Excel Online Visio 2016 上的 Word、 Excel 及 PowerPoint 檔案中的 Url與 OneNote Online），提供使用者已登入 Office 365。 |
 | **當使用者按一下 ATP 安全連結時不要追蹤** <br/>  | 選取此選項時，按一下資料中的不會儲存在 Word、 Excel、 PowerPoint 及 Visio 文件中的 Url。  <br/> |
 |**不讓使用者按一下 [透過 ATP 原始 URL 的安全連結** <br/> |選取此選項時，使用者無法繼續過去的[警告] 頁面上](atp-safe-links-warning-pages.md)決定為惡意的 URL。  <br/> |
 

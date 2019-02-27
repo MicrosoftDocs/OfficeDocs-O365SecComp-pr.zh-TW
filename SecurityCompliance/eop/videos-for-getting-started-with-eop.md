@@ -1,7 +1,7 @@
 ---
 title: EOP 快速入門影片
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 3/13/2015
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
+ms.collection:
+- M365-security-compliance
 description: 下列系列的簡介影片可協助您設定和使用 Exchange Online Protection (EOP) 主控的電子郵件篩選服務。
-ms.openlocfilehash: 950d12ef9b4f8fdd8964a93b2c6d04e1799e51c4
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027640"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276003"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>EOP 快速入門影片
 

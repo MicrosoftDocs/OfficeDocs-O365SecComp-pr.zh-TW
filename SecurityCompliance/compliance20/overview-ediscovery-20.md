@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: 本文說明 Microsoft 365 中的進階 eDiscovery （預覽） 的新版本。
-ms.openlocfilehash: a7b134cb527ae98b9df659a9377903f8fcdb3e9f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e2d89c2b8499c8818bececc4414182a6db689fb6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219573"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297016"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Microsoft 365 中的進階 eDiscovery （預覽） 的概觀
 

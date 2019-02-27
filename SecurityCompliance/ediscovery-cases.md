@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用 Office 365 安全性&amp;規範中心來建立及管理組織中的 eDiscovery 案例。您可以將成員指派給大小寫、 放置內容保留執行內容 Searchs 位置相關聯情況下，並匯出搜尋結果。您也可以準備進一步分析進階 ediscovery 案例的資料。
-ms.openlocfilehash: 92ef00bbdd8de5b1ba6bdae40bce96720ac46089
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1265aa5f4d08f5bbbff4c52a50dd2fd8eacffd21
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214013"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296846"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性的 eDiscovery 案例&amp;規範中心
 

@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性 & 規範中心來搜尋整合的稽核記錄，以檢視您的 Office 365 組織中的使用者與管理員的活動。 '
-ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223762"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296606"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性 & 規範中心中搜尋稽核記錄
 
@@ -54,6 +56,8 @@ ms.locfileid: "30223762"
 - Microsoft Stream 中的使用者和系統活動
 
 - 在 Microsoft 工作場所分析分析師和管理員活動
+
+- PowerApps 中的使用者和系統活動
     
    
 ## <a name="before-you-begin"></a>開始之前
@@ -295,8 +299,8 @@ ms.locfileid: "30223762"
 |[應用程式管理活動](#application-administration-activities) <br/> |[角色管理活動](#role-administration-activities) <br/> |[目錄管理活動](#directory-administration-activities) <br/> |
 |[eDiscovery 活動](#ediscovery-activities) <br/> |[Power BI 活動](#power-bi-activities) <br/> |[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)<br/>|
 [Microsoft 小組活動](#microsoft-teams-activities) <br/> |[Yammer 活動](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange admin 活動](#exchange-admin-audit-log)<br/>
-||||
+|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange admin 活動](#exchange-admin-audit-log)<br/>|
+|||
    
   
 ### <a name="file-and-page-activities"></a>檔案及] 頁面上的活動
@@ -663,6 +667,9 @@ Power BI 的稽核記錄不預設啟用的附註。若要搜尋的 Office 365 �
 
 您可以在 Microsoft 流程中搜尋活動的稽核記錄。這些活動包括建立、 編輯和刪除流程、 及變更流程權限。如需流程活動的稽核，請參閱部落格[Microsoft 流程稽核事件現在可在 Office 365 安全性 & 規範中心](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
+### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+
+您可以在 PowerApps 搜尋應用程式相關活動的稽核記錄。這些活動包括建立、 啟動，並發佈至應用程式的 app 指派權限也會進行稽核。所有 PowerApps 活動的說明，請參閱[活動記錄 PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited)。
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
   

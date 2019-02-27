@@ -1,7 +1,7 @@
 ---
 title: 將疑難排解郵件傳送艮 Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
+ms.collection:
+- M365-security-compliance
 description: 本文提供寄件者嘗試傳送電子郵件給收件匣中 Office 365 與大量郵件給 Office 365 客戶的最佳作法時所發生問題的疑難排解的資訊。
-ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.openlocfilehash: cfb3901b930b63ef8a33391c673a32a73eaa1b07
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240556"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276293"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>將疑難排解郵件傳送艮 Office 365
 

@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '系統管理員： 了解如何將大量匯入您的組織至 Office 365 信箱的 PST 檔案複製到硬碟的 PST 檔案，然後將其傳送給 Microsoft。 '
-ms.openlocfilehash: 44ca6e58d9273c73a807ba0b186c47721949c6f6
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 0e902df03628711d8ccdaaf1fd42153eba1e1623
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223682"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296816"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>使用的磁碟機傳送至您的組織 PST 檔案匯入 Office 365
 

@@ -1,7 +1,7 @@
 ---
 title: 避免在垃圾郵件篩選器規則和垃圾郵件篩選器原則中的字元無效
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 9/24/2018
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+ms.collection:
+- M365-security-compliance
 description: 提供系統管理員其反垃圾郵件組態中有無效的字元，並嘗試使用安全性執行發生問題的說明&amp;規範中心。
-ms.openlocfilehash: ca409b4daa7bec01417adb7cbfdfa2a128929e81
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: 90cf89d019a34658b676f02baa84c70f27200262
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25018732"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276073"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免在垃圾郵件篩選器規則中的無效字元和垃圾郵件篩選器原則 
 

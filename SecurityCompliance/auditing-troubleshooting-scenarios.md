@@ -7,17 +7,19 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 稽核記錄搜尋工具來協助您疑難排解常見問題，例如調查洩漏的帳戶或找出誰設定信箱的電子郵件轉寄。
-ms.openlocfilehash: 301c8a19c5e268b1c4e3ff0e9633c85a31fd3f4d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bf07df7ef0767e525ca3e6ff7f5ce4c637880b80
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220873"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296766"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>搜尋 Office 365 稽核記錄來疑難排解常見的案例
 

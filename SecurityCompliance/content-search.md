@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 安全性內容搜尋&amp;規範中心搜尋的內容信箱、 SharePoint Online 網站、 OneDrive 帳戶、 的 Microsoft 小組、 Office 365 群組和 Skype 商務交談。您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。然後您可預覽及匯出搜尋結果。內容搜尋也是有效的工具來搜尋 GDPR 資料主體要求可能相關的內容。
-ms.openlocfilehash: 37f5bf96c8176770f44d0681fa7046a904283f72
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215324"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296356"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
