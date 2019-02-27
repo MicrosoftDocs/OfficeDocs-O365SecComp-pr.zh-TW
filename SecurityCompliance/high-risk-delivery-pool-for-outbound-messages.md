@@ -1,7 +1,7 @@
 ---
 title: 外寄郵件的高風險傳遞集區
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
+ms.collection:
+- M365-security-compliance
 description: 如果客戶的電子郵件系統已遭洩露惡意程式碼或惡意的垃圾郵件攻擊，它會傳送到裝載的篩選服務的輸出垃圾郵件，這可能會導致所列在協力廠商封鎖的 Office 365 資料中心伺服器的 IP 位址列出。
-ms.openlocfilehash: 69548488f70944a319a449bfc4ac1cb1bffd7b1c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 604fdf2df11b6dff493444fe9dbcc6f95ced6a7d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003132"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275543"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>外寄郵件的高風險傳遞集區
 

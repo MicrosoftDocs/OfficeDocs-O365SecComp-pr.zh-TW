@@ -1,7 +1,7 @@
 ---
 title: 從封鎖清單移除使用者、 網域或 IP 位址傳送垃圾電子郵件之後
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/01/2018
 ms.audience: ITPro
@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
+ms.collection:
+- M365-security-compliance
 description: 如果使用者持續傳送電子郵件訊息從歸類為垃圾郵件的 Office 365，他們會封鎖傳送任何詳細訊息。
-ms.openlocfilehash: 3ffd8b65d6994699093237e9f9a0a3aaa802f5e2
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 870e5eabca9e799dfca1e99846a5bfe845f65df4
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223082"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275933"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>從封鎖清單移除使用者、 網域或 IP 位址傳送垃圾電子郵件之後
 

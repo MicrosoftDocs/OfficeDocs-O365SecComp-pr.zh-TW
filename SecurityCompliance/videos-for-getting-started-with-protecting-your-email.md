@@ -1,7 +1,7 @@
 ---
 title: 保護您電子郵件快速入門影片
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+ms.collection:
+- M365-security-compliance
 description: 以下一系列的簡介視訊可協助您使用 Exchange Online Protection (EOP) 來保護您的信箱。這些影片是適用於 EOP 獨立版客戶會保護內部部署信箱等 Exchange Server 2013 與 Exchange Online 客戶 EOP 來保護預設雲端託管信箱。
-ms.openlocfilehash: 42d92b36cbfcf3261e391c8b3d74f44050f2881a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b590ac9bdd12c49a644977573048edac22de21f1
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002912"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275873"
 ---
 # <a name="videos-for-getting-started-with-protecting-your-email"></a>保護您電子郵件快速入門影片
 

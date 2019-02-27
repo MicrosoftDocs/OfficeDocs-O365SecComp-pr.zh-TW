@@ -1,7 +1,7 @@
 ---
 title: 進階垃圾郵件篩選選項
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/26/2015
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 進階垃圾郵件篩選選項可讓系統管理員將檢查的一則訊息的各種內容屬性。在郵件中的這些屬性的目前狀態會增加 （進而增加可能會為其識別為垃圾郵件） 郵件的垃圾郵件計分或標示為垃圾郵件訊息。ASF 選項目標特定郵件的內容，例如 HTML 標籤和 URL 重新導向位於垃圾郵件。
-ms.openlocfilehash: d9333fd4f5c8937e440efb15e1a04db787b39b78
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: dd782c4e1e95865651df7e9e14b72a920c8efd6f
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218673"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275963"
 ---
 # <a name="advanced-spam-filtering-options"></a>進階垃圾郵件篩選選項
 

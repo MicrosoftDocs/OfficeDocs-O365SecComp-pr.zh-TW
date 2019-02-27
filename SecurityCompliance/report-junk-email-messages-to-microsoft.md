@@ -1,7 +1,7 @@
 ---
 title: 向 Microsoft 回報垃圾郵件
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
+ms.collection:
+- M365-security-compliance
 description: 「Microsoft Office Outlook 的 Microsoft 垃圾郵件回報增益集」提供多種方式回報垃圾郵件：
-ms.openlocfilehash: c32f66aee48eea6f7536680ba4e165776685f7ae
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 90687c90c7594163d48dfb9bd329e7c94c25935f
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002294"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275593"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 回報垃圾郵件
 

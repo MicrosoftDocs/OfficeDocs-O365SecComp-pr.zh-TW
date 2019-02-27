@@ -1,7 +1,7 @@
 ---
 title: 使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
+ms.collection:
+- M365-security-compliance
 description: 您可以建立的傳輸規則會將電子郵件的垃圾郵件信賴等級 (SCL)。SCL 為量值的方式有可能郵件為垃圾郵件。垃圾郵件是來路不明的 （且通常不想要的） 的電子郵件訊息。服務會根據其 scl 郵件上採取不同的動作。例如，您可能會想略過垃圾郵件內容之郵件的傳送來自組織內的人員因為您信任從同事內部傳送的訊息不是垃圾郵件篩選。您使用傳輸規則將郵件的 SCL 值提供增加處理垃圾郵件中的控制項。
-ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972275"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275623"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)
 
@@ -30,7 +32,7 @@ ms.locfileid: "24972275"
     
 - 您必須獲得權限才能執行此程序或程序。若您需要哪些權限，請參閱[Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)或[功能 EOP 中的權限](eop/feature-permissions-in-eop.md)中的 「 傳輸規則 」 項目。 
     
-- 如需適用於此主題中程序的快速鍵相關資訊，請參閱**Exchange 系統管理中心的鍵盤快速鍵**。
+- 如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Exchange 系統管理中心的鍵盤快速鍵**。
     
 ### <a name="to-create-a-transport-rule-that-sets-the-scl-of-a-message"></a>若要建立的傳輸規則會將郵件的 SCL
 

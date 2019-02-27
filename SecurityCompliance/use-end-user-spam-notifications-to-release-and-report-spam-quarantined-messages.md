@@ -1,7 +1,7 @@
 ---
 title: 利用使用者垃圾郵件通知來釋放並回報被當成垃圾郵件隔離的郵件
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
-description: ''
-ms.openlocfilehash: 314c8ae028a24370c9c47fb3f005f18f9881e9e9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection:
+- M365-security-compliance
+description: '請參閱從隔離的電子郵件的相關其管理員的使用者垃圾郵件通知訊息的使用者可以在郵件上執行以下動作。 '
+ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215903"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275213"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>利用使用者垃圾郵件通知來釋放並回報被當成垃圾郵件隔離的郵件
 
