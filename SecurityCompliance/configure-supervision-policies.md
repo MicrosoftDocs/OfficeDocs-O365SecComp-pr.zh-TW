@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 設定監督檢閱原則以擷取員工通訊供檢閱。
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216733"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313169"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 
@@ -53,9 +53,9 @@ ms.locfileid: "30216733"
 
     測試以確保能運作視您監督原則是確保合規策略會議您標準重要的一部分。
 
-- **步驟 6-（選用）**[Outlook 增益集不想要使用 Office 365 監督儀表板或 （前身為 Outlook Web App） 在 web 上的 Outlook 檢閱監督的通訊的檢閱者的設定](configure-supervision-policies.md#UseOutlook)
+- **步驟 6-（選用）**[設定 Outlook 的檢閱者不想要使用 Office 365 監督儀表板或 （前身為 Outlook Web App） 在 web 上的 Outlook 檢閱監督的通訊](configure-supervision-policies.md#UseOutlook)
 
-    監督的增益集 Outlook 可以讓檢閱者存取 Outlook 用戶端內的監督的功能權限，讓他們可以評估並將每個項目。
+    Outlook 可以設定來授與檢閱者存取權的 Outlook 用戶端內的監督功能，讓他們可以評估並將每個項目。
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ ms.locfileid: "30216733"
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>步驟 6-設定 Outlook 增益集的檢閱者 （選用）
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>步驟 6-設定 Outlook for 檢閱者 （選用）
 
-想要使用 Outlook，而非使用 Office 365 或網路上的 Outlook 中的監督儀表板檢閱通訊的檢閱者必須安裝的監督增益集其 Outlook 用戶端。
+想要使用 Outlook，而非 Office 365 中使用的監督儀表板來檢閱通訊的檢閱者必須設定其 Outlook 用戶端。
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>步驟 1： 將複製的監督信箱的地址
 
-若要安裝的 Outlook 桌面增益集，您將需要位址監督信箱建立為監督原則安裝程式的一部分。
+若要設定的 Outlook 桌面檢閱或 Outlook web，您將需要位址監督信箱建立為監督原則安裝程式的一部分。
   
 > [!NOTE]
 > 如果別人建立原則，您需要從其安裝增益集取得此位址。
@@ -210,7 +210,7 @@ ms.locfileid: "30216733"
 
 4. 原則的詳細資訊彈出式、 下**監督信箱**中複製的位址。<br/>!['監督信箱'] 區段中的監督原則的詳細資訊彈出式顯示醒目提示的監督信箱地址](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>步驟 2： 設定 Outlook 桌面 access 監督信箱
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>步驟 2： 設定 Outlook access 監督信箱
 
 接下來，檢閱者需要讓他們可以將 Outlook 連接到監督信箱執行幾個的 Exchange Online PowerShell 命令。
   
