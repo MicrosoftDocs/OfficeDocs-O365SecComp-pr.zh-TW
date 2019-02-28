@@ -1,39 +1,40 @@
 ---
 title: 如何減少 Office 365 中的垃圾郵件
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: 了解最常用來協助減少 Office 365 中垃圾郵件的方式。
-ms.openlocfilehash: fc7181333b9914673c9919d7132af99fec294773
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219923"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295506"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何減少 Office 365 中的垃圾郵件
 
  **您在 Office 365 收到太多垃圾郵件嗎？請執行此動作。**
   
-您可以[檢視電子郵件訊息標頭](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)並判定發生何種問題，來解決 Office 365 中的許多垃圾郵件問題。您需要尋找名為 X-Forefront-Antispam-Report 的標頭。
+我們強烈建議您[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)來回報郵件誤判的狀況，以協助我們改善篩選器。此外，您可以將郵件*以附件方式*轉寄到 junk@office365.microsoft.com 或 phish@office365.microsoft.com (如果網路釣魚郵件)。
 
-  如果標頭包含 SFV:NSPM 字串，表示 Exchange Online Protection (EOP) 已掃描訊息，且不將它視為垃圾郵件。如果您不同意，這則是漏報，強烈建議您[使用回報郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，協助我們改進篩選功能。
+>[警告] 如果您認為郵件是垃圾郵件，而且郵件也位於垃圾郵件資料夾，那就沒有問題。如果您完全不想在信箱中看到垃圾郵件，則應該變更反垃圾郵件原則來隔離郵件。如需隔離郵件的詳細資訊，請參閱[隔離Office 365 中的電子郵件](quarantine-email-messages.md) (機器翻譯)。
 
-  如果您沒有在標頭中看到這個值，可能表示郵件未通過垃圾郵件掃描，或有導致忽略郵件的設定問題。在此情況下，請參閱下列資訊。 
-  
-您可以深入了解[反垃圾郵件標頭](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx) (機器翻譯)。
+## <a name="fixing-allowed-spam"></a>修正允許的垃圾郵件
 
-## <a name="solutions-to-common-causes-of-getting-too-much-spam"></a>收到太多垃圾郵件的常見原因的解決方案
+我們經常看到客戶因為設定錯誤而將垃圾郵件收到收件匣中。其中最常見的是在傳輸規則中將網域設定為繞過篩選器，或將您的網域設定在允許/安全寄件者清單中。這樣不好，因為原本會被攔截的這些郵件會跳過垃圾郵件篩選。  
+
+## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>收到太多垃圾郵件的其他常見原因解決方案
 
 為了保護您免於收到太多垃圾郵件，Exchange Online Protection (EOP) 需要系統管理員完成一些工作。如果您不是 Office 365 租用戶的系統管理員，而且收到太多垃圾郵件，則您可能會想要與您的系統管理員合作處理這些工作。否則，您可以跳至使用者區段。
   
@@ -45,13 +46,11 @@ ms.locfileid: "30219923"
     
     檢視輸出時，Enable 屬性應該設為 True。若設為 false，您可以執行 Set-MailboxJunkEmailConfiguration，將它變更為 True。
     
-- **檢查您的郵件流程規則與安全清單** 查看應該已標示為垃圾郵件之郵件的郵件標頭。在 X-Forefront-Antispam-Report 標頭中找出 SCL 屬性。如果 SCL 值為 -1，這表示郵件列為安全郵件，並略過 EOP 垃圾郵件篩選。請調查郵件流程規則、允許清單和收件者的允許寄件者清單。[以商務用 Office 365 系統管理員身分找出並修正電子郵件傳遞問題](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6) (機器翻譯) 也會有助於提供郵件收到的 SCL 為何是 -1 的詳細資訊。 
-    
-- **在內部部署 Exchange Server 中建立郵件流程規則** 如果您使用的是 Exchange Online Protection，但您的信箱位於內部部署 Exchange Server，則您需要在內部部署 Exchange Server 中建立幾個郵件流程規則。請參閱 [EOP 專屬的指示](https://technet.microsoft.com/library/ms.exch.eac.EditAntispamPolicy_SpamAction%28EXCHG.150%29.aspx?v=15.20.548.14&amp;l=1&amp;s=BPOS_S_E15_0) (英文)。
+- **在內部部署 Exchange Server 中建立郵件流程規則** 如果您使用的是 Exchange Online Protection，但您的信箱位於內部部署 Exchange Server，則您需要在內部部署 Exchange Server 中建立幾個郵件流程規則。請參閱 [EOP 專屬的指示](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)) (英文)。
     
 - **將大量電子郵件標示為垃圾郵件** 大量電子郵件是使用者可能已註冊，但仍有可能不想要的電子郵件。在郵件標頭中，於 X-Microsoft-Antispam 標頭中尋找 BCL (大量信賴等級) 屬性。如果 BCL 值小於垃圾郵件篩選器中設定的閾值，您可能想要調整閾值，而不是將這些類型的大宗郵件標示為垃圾郵件。不同的使用者對於[大量電子郵件的處理方式](https://docs.microsoft.com/zh-TW/office365/SecurityCompliance/bulk-complaint-level-values) (英文) 各有不同的容錯和喜好設定。您可以針對不同的使用者喜好設定建立不同的原則或規則。 
     
-- **立即封鎖寄件者** 在您需要立即封鎖寄件者的情況下，您可以依電子郵件地址、網域或 IP 位址進行封鎖。請參閱[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](block-email-spam-to-prevent-false-negatives.md)。使用者允許清單中的項目可以覆寫系統管理員所設定的封鎖。
+- **立即封鎖寄件者** 在您需要立即封鎖寄件者的情況下，您可以依電子郵件地址、網域或 IP 位址進行封鎖。請參閱[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user)。使用者允許清單中的項目可以覆寫系統管理員所設定的封鎖。
     
 - **為使用者開啟回報郵件增益集** 我們建議建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。身為系統管理員，您也可以檢視使用者傳送的意見反應，並使用任何模式，來調整任何可能造成問題的設定。
     

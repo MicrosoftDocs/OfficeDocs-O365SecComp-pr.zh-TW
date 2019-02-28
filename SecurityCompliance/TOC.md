@@ -95,7 +95,7 @@
 ### [如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)
 ### [防止 EOP 和 Office 365 中的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam-0.md)
 ### [控制 Office 365 的輸出垃圾郵件](outbound-spam-controls.md)
-### [利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](block-email-spam-to-prevent-false-negatives.md)
+### [利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](reduce-spam-email.md)
 ### [零時差自動清除 - 防範垃圾郵件和惡意程式碼](zero-hour-auto-purge.md)
 ### [確定垃圾郵件路由傳送至每一位使用者的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
 ### [向 Microsoft 回報垃圾郵件](report-junk-email-messages-to-microsoft.md)
@@ -297,7 +297,7 @@
 #### [管理載入集](compliance20/manage-load-sets.md)
 #### [將非 Office 365 的資料載入工作集](compliance20/load-non-office365-data.md)
 #### [查詢工作集中的資料](compliance20/working-set-search.md)
-#### [檢視工作集中的文件](compliance20/annotating-and-redacting-documents.md)
+#### [檢視工作集中的文件](compliance20/view-documents-in-working-set.md)
 #### [標記工作集中的文件](compliance20/tagging-documents.md)
 
 ### [分析案例資料](compliance20/analyzing-data-in-working-set.md)
@@ -318,10 +318,7 @@
 #### [設定搜尋和分析設定](compliance20/configure-search-analytics-settings.md)
 
 ### 進階電子文件探索 (預覽) 參考資料
-#### [搜尋限制](compliance20/search-limits-ediscovery20.md)
-#### [索引限制](compliance20/indexing-limits-ediscovery20.md)
-#### [匯出限制](compliance20/export-limits-ediscovery20.md)
-#### [下載限制](compliance20/download-limits-ediscovery20.md)
+#### [進階電子文件探索 (預覽) 的限制](compliance20/limits-ediscovery20.md)
 #### [支援的檔案類型](compliance20/supported-filetypes-ediscovery20.md)
 #### [下載中繼資料欄位](compliance20/document-metadata-fields.md)
 
