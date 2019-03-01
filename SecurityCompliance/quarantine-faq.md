@@ -15,12 +15,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: 本主題提供有關託管隔離區的常見問題與解答。
-ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 9f9b16a92b8ef8105a9439972ebed54111b227c6
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276023"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341174"
 ---
 # <a name="quarantine-faq"></a>隔離常見問題集
 
@@ -28,11 +28,11 @@ ms.locfileid: "30276023"
   
  **問： 如何管理隔離區中的惡意程式碼隔離的郵件？**
   
-您需要使用安全性&amp;規範中心以檢視及使用傳送至隔離因為它們包含惡意程式碼的郵件。如需詳細資訊，請參閱[Office 365 中的隔離電子郵件訊息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+您必須使用安全性<b0></b0>以檢視並處理郵件已傳送至隔離區，因為它們包含惡意程式碼的合規性中心。如需詳細資訊，請參閱 < <b1>Office 365 中的隔離電子郵件</b1>。
   
  **問：如何設定服務以將因垃圾郵件而遭到隔離的郵件傳送至隔離區？**
   
-A.預設會經過內容篩選的郵件會傳送給收件者的 [垃圾郵件] 資料夾。不過，系統管理員可以設定為將垃圾郵件隔離的郵件傳送至隔離區的內容篩選原則。如需可在經過內容篩選的郵件執行的不同動作的詳細資訊，請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)。
+答： 根據預設，內容篩選的郵件會傳送至 [收件者的垃圾郵件] 資料夾。不過，系統管理員可以設定內容篩選原則，以將垃圾郵件隔離的郵件傳送至隔離區。如需可以在內容篩選的郵件執行的不同動作的詳細資訊，請參閱 <<c0>設定垃圾郵件篩選原則。
   
  **問：此服務是否可讓系統管理員和使用者管理被當成垃圾郵件隔離的郵件？**
   
@@ -44,19 +44,19 @@ A.預設會經過內容篩選的郵件會傳送給收件者的 [垃圾郵件] �
         
  **問：如何授權使用者存取垃圾郵件隔離區？**
   
-A.若要存取使用者垃圾郵件隔離區，使用者必須具備有效的 Office 365 使用者識別碼和密碼。保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者透過目錄同步處理或 EAC 建立。如需管理使用者的詳細資訊，EOP 系統管理員可以參照[在 EOP 中的管理郵件使用者](eop/manage-mail-users-in-eop.md)。對於 EOP 獨立版客戶，我們建議使用目錄同步處理以及如何啟用目錄架構邊緣封鎖;如需詳細資訊，請參閱[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
+答： 以存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者透過目錄同步處理或 EAC 建立。如需管理使用者的詳細資訊，EOP 系統管理員可以參閱[管理 EOP 中的郵件使用者](eop/manage-mail-users-in-eop.md)。為 EOP 獨立版客戶，我們建議使用目錄同步處理，並啟用目錄架構邊緣封鎖;如需詳細資訊，請參閱[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
   
  **問：不是垃圾郵件的項目是否會傳送到隔離區？**
   
-答：符合傳輸規則的郵件也會傳送到系統管理員隔離區 (如果這是設定要執行的動作)。使用者隔離區僅供隔離垃圾郵件。
+答： 郵件符合郵件流程規則 （也稱為傳輸規則） 也傳送至管理員隔離區，如果這是設定的動作。垃圾郵件只是使用者隔離區。
   
  **問：郵件會保留在隔離區中多久？**
   
-A.預設垃圾郵件隔離的郵件會保留在隔離區 30 天的時被隔離的郵件符合傳輸規則為 7 天存留在隔離區中。在這段時間內的郵件會刪除並不是可擷取。無法可設定隔離的郵件符合傳輸規則的保留期間。不過，透過 **（天） 的保留天數垃圾郵件**設定內容篩選器原則中可以降低垃圾郵件隔離的郵件的保留期間。如需詳細資訊，請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)。
+答： 依預設，垃圾郵件隔離的郵件會保留在隔離區 30 天，而被隔離的郵件符合郵件流程規則會保留在隔離區 7 天。在這段時間後的郵件會刪除，而且而無法加以擷取。符合郵件流程規則的隔離郵件的保留期間不是可設定的。不過，可以降低垃圾郵件隔離的郵件的保留期間，透過內容篩選原則中的 [**保留垃圾郵件 （天） 的**設定。如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。
   
  **問：我可以一次釋出或報告多個隔離的郵件嗎？**
   
-A 無法在 EAC 中或使用者垃圾郵件隔離區中目前無法釋出或一次回報多個郵件的能力。不過，系統管理員可以建立遠端 Windows PowerShell 指令碼來完成此工作。使用[Get-quarantinemessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx)指令程式來搜尋的郵件，以及[版本 QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx)指令程式來釋放它們。 
+答： 釋出或一次報表多封郵件很不目前無法使用 EAC 或使用者垃圾郵件隔離區中。不過，系統管理員可以建立遠端 Windows PowerShell 指令碼，以完成這項工作。使用[Get-quarantinemessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx)指令程式來搜尋郵件，並釋放這些[Release-quarantinemessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx)指令程式。 
   
  **問：搜尋隔離的郵件時是否支援萬用字元？我可以搜尋特定網域的隔離郵件嗎？**
   

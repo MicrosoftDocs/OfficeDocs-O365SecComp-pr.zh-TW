@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服務，它能協助組織抵禦垃圾郵件和惡意軟體，同時也包括預防組織發生訊息原則違規的功能。
-ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 3f00cc07058bd2399732299b3221ebd4258dc5ff
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087342"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341624"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -24,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服�
   
 下列是您可以使用 EOP 來保護郵件的主要方法：
   
-- **在獨立案例**EOP 提供雲端式電子郵件保護您的內部部署 Microsoft Exchange Server 2013 環境、 舊式 Exchange Server 版本，或任何其他內部部署 SMTP 電子郵件解決方案。 
+- **在獨立案例中**EOP 提供雲端式電子郵件保護，為您的內部部署 Microsoft Exchange Server 2013 環境、 舊式 Exchange Server 版本，或任何其他內部部署 SMTP 電子郵件解決方案。 
     
 - **作為 Microsoft Exchange Online 的一部分** 根據預設，EOP 會保護 Microsoft Exchange Online 雲端託管信箱。 
     
@@ -36,7 +36,7 @@ Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服�
   
 ![EOP 電子郵件處理](../media/EOP-email-processing.png)
   
-內送郵件一開始會通過連線篩選，以檢查寄件者信譽，並會檢查惡意程式碼的郵件。大部分的垃圾郵件此時停止然後由刪除 EOP。郵件延續到原則篩選根據您建立或範本中強制執行自訂的傳輸規則進行計算的郵件。例如，您可以從特定的寄件者的郵件送達時而傳送通知給管理員的規則。（資料遺失防護檢查也會發生此時，如果您有功能 ； 功能可用性的相關資訊，請參閱[Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619)。）接下來，郵件通過內容篩選出內容中檢查有專門用語或一般內容垃圾郵件。是內容篩選的垃圾郵件可傳送至使用者的垃圾郵件] 資料夾或隔離區之間其他選項，根據您的設定決定一則訊息。郵件通過這些保護層級的所有成功後，它會傳送到收件者。
+傳入郵件最初會通過連線篩選，可檢查寄件者信譽，並會檢查有惡意程式碼的郵件。大部分的垃圾郵件是在此時，並由 EOP 刪除。郵件會繼續透過原則篩選，針對您建立或強制執行從範本的自訂郵件流程規則 （也稱為傳輸規則） 來評估郵件。例如，您可以從特定寄件者的郵件送達時，傳送通知給管理員的規則。（資料遺失防護檢查也會發生這個時候，如果您有可用的功能; 如需功能可用性的相關資訊，請參閱[Exchange Online Protection 服務說明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。）接下來，郵件通過內容篩選，其中的內容會檢查專門用語或內容常見垃圾郵件。郵件判定為垃圾郵件內容篩選可傳送至使用者的垃圾郵件資料夾或隔離區，在 [其他選項，請根據您的設定之間。郵件順利通過這些保護層級的所有之後，它會傳遞至收件者。
   
 ### <a name="eop-datacenters"></a>EOP 資料中心
 
@@ -47,13 +47,13 @@ EOP 會在資料中心之間執行負載平衡，但只在一個區域內。如�
     
 - 在歐洲、中東和非洲 (EMEA)，所有 Exchange Online 信箱都位於 EMEA 資料中心，且所有郵件都透過 EMEA 資料中心傳送供 EOP 篩選。
     
-- 在亞太地區 (APAC)，所有的 Exchange Online 信箱都位於 APAC 資料中心，但郵件目前都透過 EOP 篩選 APAC 資料中心。
+- 在亞太地區 (APAC)，所有的 Exchange Online 信箱都位於 APAC 資料中心，但郵件會透過 APAC 資料中心，供 EOP 篩選目前路由傳送。
 
-- 美洲中所有的 Exchange Online 信箱位於 US 資料中心，除了南美洲可用巴西和智利中的資料中心及加拿大可用資料中心來 Canada 中。所有的電子郵件訊息的客戶南美洲和加拿大包括訊息都被透過 EOP 篩選; 本機資料中心quaratined 電子郵件會儲存在用戶所在的資料中心。
+- 美洲，所有 Exchange Online 信箱都位於美國資料中心，除了可用的巴西和智利資料中心的南美洲和加拿大可用的加拿大資料中心中。透過 EOP 篩選; 本機資料中心會路由傳送所有電子郵件，包括南美洲和加拿大客戶的郵件quaratined 電子郵件會儲存在租用戶所在的資料中心。
     
 - 在歐洲、中東和非洲 (EMEA)，所有 Exchange Online 信箱都位於 EMEA 資料中心，且所有郵件都透過 EMEA 資料中心傳送供 EOP 篩選。
     
-- 在亞太地區 (APAC)，所有的 Exchange Online 信箱都位於 APAC 資料中心和訊息目前都透過 EOP 篩選 APAC 資料中心。
+- 在亞太地區 (APAC)，所有的 Exchange Online 信箱都位於 APAC 資料中心，以及目前會透過 APAC 資料中心，供 EOP 篩選會路由傳送郵件。
     
 - 至於政府社群雲端 (GCC)，所有 Exchange Online 信箱都位於美國資料中心，且所有郵件都透過美國資料中心傳送供 EOP 篩選。
     

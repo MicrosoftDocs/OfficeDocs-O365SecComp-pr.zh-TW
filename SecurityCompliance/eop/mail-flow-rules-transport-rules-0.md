@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: 您可以使用郵件流程規則 (也稱為傳輸規則)，找出經過 Office 365 組織的郵件並採取相應動作。
-ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+description: 您可以使用郵件流程規則 （傳輸規則） 來識別和對郵件採取動作的流程透過 Office 365 組織。
+ms.openlocfilehash: a60035dc2ac17bcb944a5311827609381a7ed31e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723240"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341204"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的郵件流程規則 (傳輸規則)
 
@@ -24,7 +24,7 @@ ms.locfileid: "28723240"
   
 本文說明郵件流程規則的元件和它們的運作方式。
   
-如需的步驟來建立、 複製及管理郵件流程規則，請參閱**管理郵件流程規則**。針對每個規則，您必須強制執行其、 測試，或測試和通知寄件者的選項。若要深入了解測試的選項，請參閱**Test mail flow 規則**和**原則提示**。
+步驟來建立、 複製和管理郵件流程規則，請參閱<b0>管理郵件流程規則</b0>。針對每個規則，您可以選擇強制執行測試，或測試，通知寄件者。若要深入了解測試選項，請參閱 <<c1>測試郵件流程規則」 和 「<b2>原則提示</b2>。
   
 如需符合郵件流程規則之訊息的摘要和詳細報告，請參閱 **使用 Office 365 的郵件保護報告以檢視有關惡意程式碼、垃圾郵件和規則偵測的資訊**。
   
@@ -44,7 +44,7 @@ ms.locfileid: "28723240"
     
 - [定義加密或解密電子郵件訊息的規則](https://go.microsoft.com/fwlink/p/?Linkid=402846)
     
-下列視訊提供示範設定郵件流程 Exchange Online Protection 中的規則。
+下列視訊提供示範設定郵件流程規則，在 Exchange Online Protection。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
@@ -54,13 +54,13 @@ ms.locfileid: "28723240"
   
 - **條件** 識別您要套用動作的郵件。有些條件會檢查郵件標頭欄位 (例如 [收件者]、[寄件者] 或 [副本] 欄位)。有些條件則會檢查郵件屬性 (例如郵件主旨、內文、附件、郵件大小或郵件分類)。在使用大部分的條件時，您都必須指定比較運算子 (例如等於、不等於或包含) 以及要比對的值。如果沒有條件或例外狀況，則規則會套用至所有郵件。 
     
-    如需 Exchange Online Protection 中的郵件流程規則條件的詳細資訊，請參閱[Exchange Online 中的郵件流程規則條件和例外狀況 （述詞）。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+    如需有關 Exchange Online Protection 中郵件流程規則條件的詳細資訊，請參閱[中 Exchange Online 的郵件流程規則條件和例外狀況 （述詞）。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
     
 - **例外狀況** 選擇性地識別不應該套用動作的郵件。可在條件中使用的訊息識別碼也可用於例外狀況。例外狀況可覆寫條件並防止規則動作套用到郵件，即使郵件符合所有設定的條件也是如此。 
     
 - **動作** 指定對於符合規則中的條件，但不符合任何例外狀況的郵件，所應採取的動作。有許多動作可用，例如，拒絕、刪除或重新導向郵件、新增其他收件者、在郵件主旨中新增前置詞，或是將免責聲明插入郵件內文。 
     
-    如需詳細資訊的郵件流程規則的可用動作在 Exchange Online Protection，請參閱[郵件流程規則動作在 Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。
+    如需郵件流程規則動作可在 Exchange Online Protection，請參閱[郵件流程規則動作在 Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。
     
 - **屬性** 指定其他不是條件、例外狀況或動作的規則設定。例如，何時應套用規則、是否強制執行或測試規則，以及規則作用中的時間週期。 
     
@@ -73,9 +73,9 @@ ms.locfileid: "28723240"
 |**元件**|**邏輯**|**註解**|
 |:-----|:-----|:-----|
 |多個條件  <br/> |AND  <br/> |郵件必須符合規則中的所有條件。如果您需要符合一個條件或另一個條件，請對每一個條件使用不同的規則。例如，若要將相同的免責聲明新增至附件和內容包含特定文字的郵件，請為每一個條件建立一個規則。在 EAC 中，您可以輕易地複製規則。  <br/> |
-|具有多個值的一個條件  <br/> |OR  <br/> |有些條件允許您指定多個值。郵件必須符合任何一個 (而非全部) 指定的值。例如，如果電子郵件的主旨為股票價格資訊，而 **[主旨包含任何這些字詞]** 條件設定為符合 Contoso 或 股票這些字，則此電子郵件滿足該條件，因為主旨至少包含其中一個指定的值。  <br/> |
+|具有多個值的一個條件  <br/> |或  <br/> |有些條件允許您指定多個值。郵件必須符合任何一個 (而非全部) 指定的值。例如，如果電子郵件的主旨為股票價格資訊，而 **[主旨包含任何這些字詞]** 條件設定為符合 Contoso 或 股票這些字，則此電子郵件滿足該條件，因為主旨至少包含其中一個指定的值。  <br/> |
 |多個例外狀況  <br/> |OR  <br/> |如果郵件符合任何例外狀況，則動作不會套用到郵件。郵件不必符合所有例外狀況。  <br/> |
-|多個動作  <br/> |AND  <br/> |符合的規則條件的郵件會取得所有規則中指定的動作。例如，如果**前面加上的郵件的主旨**和 **[密件副本] 方塊中新增收件者**的動作會選取這兩個動作將會套用至郵件。<br/> 請記住，某些動作 (例如， **[刪除郵件而不通知任何人]** 動作) 會阻止後續規則套用至郵件。其他動作 (例如 **[轉寄郵件]**) 則不允許額外的動作。  <br/> 您也可以在規則上設定動作，以便在套用該規則時，不要將後續的規則套件到郵件。  <br/> |
+|多個動作  <br/> |AND  <br/> |符合規則條件的郵件會取得所有規則中指定的動作。例如，如果選取**的郵件主旨前面加上**和**新增收件者到 [密件副本] 方塊中**的動作，這兩個動作會套用至郵件。<br/> 請記住，某些動作 (例如， **[刪除郵件而不通知任何人]** 動作) 會阻止後續規則套用至郵件。其他動作 (例如 **[轉寄郵件]**) 則不允許額外的動作。  <br/> 您也可以在規則上設定動作，以便在套用該規則時，不要將後續的規則套件到郵件。  <br/> |
    
 ### <a name="mail-flow-rule-properties"></a>郵件流程規則屬性
 <a name="Properties"> </a>
@@ -95,7 +95,7 @@ ms.locfileid: "28723240"
    
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>郵件流程規則套用至訊息的方式
 
-透過您的組織流程的所有訊息會都評估對您組織中已啟用的郵件流程規則。**郵件流程**上所列順序處理規則\>**規則**] 頁面上的 EAC 中，或根據 PowerShell 的對應_Priority_參數值。 
+經過您組織的所有郵件進行都評估貴組織中已啟用的郵件流程規則。在 [**郵件流程**所列順序處理規則\>**規則**] 頁面上，在 EAC 中，或在 PowerShell 中的對應_優先順序_參數值為基礎。 
   
 每個規則也提供選項可於符合規則時停止處理其他規則。對於符合多個郵件流程規則中條件的郵件而言，此設定很重要 (您想要將哪個規則套用到郵件？全部？僅只一個？）。
   
@@ -118,24 +118,14 @@ ms.locfileid: "28723240"
    
 ## <a name="what-else-should-i-know"></a>其他注意事項
 
-- 規則的**版本**或**RuleVersion**屬性值不是 Exchange Online Protection 中的重要的。 
+- 規則的**版本**或**RuleVersion**屬性值不在 Exchange Online Protection 中重要的。 
     
 - 在建立或修改郵件流程規則之後，可能需要 30 分鐘，以將新規則或更新的規則套用至訊息。
     
 ## <a name="for-more-information"></a>相關資訊
-
-[管理傳輸規則](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)
   
-[Transport Rule Predicates](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
-  
-[傳輸規則動作](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
-  
-[Using transport rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+[使用郵件流程規則來 inspect message attachments 於 Exchange Online](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
 [Office 365 中的電子郵件加密](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
-[傳輸規則程序](http://technet.microsoft.com/library/bc682071-eb68-4cd9-a306-e5de0e1e79cc.aspx)
-  
-[傳輸和收件匣規則限制](https://go.microsoft.com/fwlink/p/?LinkId=324584)
-  
-
+[日誌、 傳輸和收件匣規則限制](https://go.microsoft.com/fwlink/p/?LinkId=324584)

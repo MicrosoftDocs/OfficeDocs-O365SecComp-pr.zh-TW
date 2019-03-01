@@ -15,32 +15,32 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主題提供有關反垃圾郵件保護的常見問題與解答。這些解答適用於 Microsoft Exchange Online 及 Exchange Online Protection (EOP) 客戶。
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223052"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341674"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
 本主題提供有關反垃圾郵件保護的常見問題與解答。這些解答適用於 Microsoft Exchange Online 及 Exchange Online Protection (EOP) 客戶。 
   
 > [!TIP]
-> 問題與回答關於安全的寄件者和封鎖的寄件者清單，請參閱[安全寄件者和封鎖寄件者清單在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)。問題與回答有關隔離區，請參閱[隔離常見問題集](quarantine-faq.md)。 
+> 問題和解答安全寄件者和封鎖寄件者清單，請參閱[安全寄件者和封鎖的寄件者會列出在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)。問題和解答有關隔離區，請參閱[隔離常見問題集](quarantine-faq.md)。 
   
  **問：偵測到的垃圾郵件預設會受到怎麼樣的處理？**
   
 答： **若為輸入郵件：** 大部分的垃圾郵件是由連線篩選根據寄件者 IP 位址予以刪除。然後服務就會檢查郵件的內容。依預設，依內容篩選出的垃圾郵件會傳送至收件者的 [垃圾郵件] 資料夾。您可以變更此動作。例如，您可以設定內容篩選原則，選擇將垃圾郵件訊息傳送至隔離區。 
   
 > [!IMPORTANT]
-> 若為 EOP 獨立版客戶：若要確保 **[將郵件移至垃圾郵件資料夾]** 動作能夠在內部部署信箱中運作，您必須在內部部署伺服器上設定兩項 Exchange 傳輸規則，以偵測由 EOP 新增的垃圾郵件標頭。如需詳細資訊，請參閱 [確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
+> 為 EOP 獨立版客戶： 以確保 [**移至垃圾郵件] 資料夾的郵件**] 動作將會使用內部部署信箱，您必須在您的內部部署伺服器，以偵測上設定兩個 Exchange 郵件流程規則 （也稱為傳輸規則）垃圾郵件 EOP 所新增的標題。如需詳細資訊，請參閱[確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
   
  **若為輸出郵件：** 郵件已透過較高風險傳遞集區路由傳送或已退回並未傳遞，在此情況下，寄件者應該會收到傳遞狀態通知 (DSN) 郵件，從中得知此郵件無法傳遞。 
   
- **問什麼是零時差垃圾郵件及如何為該服務所處理？**
+ **問： 什麼是零時差垃圾郵件變數，以及如何它處理服務？**
   
-A.零時差垃圾郵件 variant 是第一代、 先前未知的垃圾郵件永不已經擷取或分析，variant 因此我們垃圾郵件的內容篩選器尚未沒有可用於偵測它的任何資訊。零時差垃圾郵件之後範例會擷取利用及分析我們垃圾郵件分析師如果它符合垃圾郵件分類的準則，我們垃圾郵件內容篩選器會更新偵測，以及它不再具有視為"零時差。 」(**附註：** 如果您收到一則訊息，可能是零時差垃圾郵件變數，以協助我們改善服務，請提交給 Microsoft 使用其中一個方法所述[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 的郵件分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。)
+答： 零時差垃圾郵件 variant 是第一層代、 先前未知的 variant 垃圾郵件永遠不會經過擷取或分析，因此我們垃圾郵件內容篩選器還沒有適用於偵測此類的任何資訊。零時差垃圾郵件之後範例會擷取及分析由我們垃圾郵件分析師，如果它符合垃圾郵件分類準則，我們垃圾郵件內容篩選器更新來偵測，以及它已不再被視為 「 零時差。 」(**附註：** 如果您收到的郵件，可能會是零時差垃圾郵件 variant，才能協助我們改善服務，請將郵件提交給 Microsoft 使用下列其中一個[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 的中所述的方法分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。)
   
  **問：我是否需要將此服務設定為提供反垃圾郵件保護？**
   
@@ -60,7 +60,7 @@ A.零時差垃圾郵件 variant 是第一代、 先前未知的垃圾郵件永�
   
  **問：大量電子郵件篩選功能是否會自動啟用？**
   
-A.根據預設，會啟用進階垃圾郵件篩選選項**大宗郵件**對於新客戶。已移轉的客戶，此設定將符合您的 FOPE 設定。如需大量電子郵件的詳細資訊，請參閱[垃圾郵件與大量電子郵件之間的差異為何吗？](what-s-the-difference-between-junk-email-and-bulk-email.md)
+答： 依預設，新客戶被啟用進階垃圾郵件篩選選項**大宗郵件**。對於已移轉的客戶，此設定會使其符合 FOPE 組態。如需有關大量電子郵件的詳細資訊，請參閱[垃圾郵件和大量電子郵件之間的差異為何？](what-s-the-difference-between-junk-email-and-bulk-email.md)
   
  **問：此服務是否提供 URL 篩選？**
   
@@ -68,15 +68,15 @@ A.根據預設，會啟用進階垃圾郵件篩選選項**大宗郵件**對於�
   
  **問：客戶可以如何使用此服務將誤判正常 (是垃圾郵件) 和誤判 (非垃圾郵件) 的郵件傳送給 Microsoft？**
   
-A.垃圾郵件和非垃圾郵件可以送出給 Microsoft 進行分析的數種方式。如需詳細資訊，請參閱[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
+答： 垃圾郵件和非垃圾郵件可以送出給 Microsoft 進行分析以數種方式。如需詳細資訊，請參閱[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
   
  **問：我是否可以取得垃圾郵件報告？**
   
-A 是，例如您可以取得垃圾郵件偵測] 報告在 Office 365 系統管理中心。這份報告顯示垃圾郵件大量為唯一的郵件計數。如需報告的詳細資訊，請參閱下列連結：
+答： 是，例如您可以取得垃圾郵件偵測報告中的 Office 365 系統管理中心。這份報告顯示垃圾郵件的磁碟區為唯一的郵件計數。如需報告的詳細資訊，請參閱下列連結：
   
-Exchange Online 客戶： [Monitoring，Reporting，and 郵件追蹤在 Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online 客戶： [Monitoring，Reporting，and 追蹤在 Exchange Online 的郵件](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-Exchange Online Protection 客戶：[在 Exchange Online Protection 報告與訊息追蹤](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Exchange Online Protection 客戶：[報告和郵件追蹤在 Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **問：有人寄郵件給我，但我找不到。我懷疑該郵件可能被當成垃圾郵件。是否有工具可讓我查明？**
   
@@ -84,9 +84,9 @@ Exchange Online Protection 客戶：[在 Exchange Online Protection 報告與訊
   
  **問：如果我的使用者對外傳送垃圾郵件，此服務是否會對我的郵件進行節流 (速率限制)？**
   
-A.如果一半以上之郵件的傳送來自使用者透過在特定時間內 （例如每小時） 服務由 Office 365 決定設為垃圾郵件，使用者將會禁止傳送郵件。在大多數情況下，如果外寄郵件決定設為垃圾郵件，它會路由傳送到高風險傳遞集區，以減少要新增至封鎖清單的一般輸出 IP 集區的機率。
+答： 如果一半以上從透過服務 （例如，每個小時）、 特定時間範圍內的使用者傳送的郵件判定為垃圾郵件由 Office 365，使用者會被封鎖無法傳送郵件。在大多數情況下，如果外寄郵件判定為垃圾郵件，它會透過路由傳送高風險傳遞集區，進而減少新增至封鎖清單的一般的輸出 IP 集區的機率。
   
-您可以傳送通知給指定的電子郵件地址時封鎖的寄件者傳送輸出垃圾郵件。如需此設定的詳細資訊，請參閱 ＜ [Configure 輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)。
+當寄件者被封鎖無法傳送輸出垃圾郵件時，您可以通知傳送給指定的電子郵件地址。如需有關此設定的詳細資訊，請參閱 <<c0>設定輸出垃圾郵件原則。
   
  **問：我是否可以將 Exchange Online 搭配第三方反垃圾郵件和反惡意程式碼提供者來使用？**
   
@@ -110,7 +110,7 @@ A.如果一半以上之郵件的傳送來自使用者透過在特定時間內 �
   
 1. **電子郵件的傳送端網域應在 DNS 中獲得解析。**
     
-    例如，如果寄件者是 user@example.com，網域 example.com 解析為 IP 位址 192.0.43.10 傳送。如果傳送端網域的記錄並沒有 MX 記錄在 DNS 中，服務會透過其較高風險傳遞集區不論郵件的內容為 [垃圾郵件路由傳送郵件。如需較高風險傳遞集區的詳細資訊，請參閱 ＜[高風險傳遞集區的外寄郵件](high-risk-delivery-pool-for-outbound-messages.md)。 
+    例如，如果寄件者是 user@example.com，網域 example.com 會解析為 IP 位址 192.0.43.10。如果傳送網域沒有 A 記錄並沒有 MX 記錄在 DNS 中，服務會透過其較高風險傳遞集區不論郵件的內容為 [垃圾郵件路由傳送郵件。如需較高風險傳遞集區的詳細資訊，請參閱 <<c0>高風險傳遞集區的外寄郵件。 
     
 2. **輸出郵件伺服器的傳送端 IP 位址應具有反向 DNS (PTR) 項目。**
     
@@ -192,7 +192,7 @@ A.如果一半以上之郵件的傳送來自使用者透過在特定時間內 �
 
 [Office 365 電子郵件的反垃圾郵件保護](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
   
-[安全寄件者和封鎖寄件者清單在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
+[安全寄件者和封鎖的寄件者會列出在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
   
 [反垃圾郵件訊息標頭](anti-spam-message-headers.md)
   

@@ -14,89 +14,89 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: '您和使用者可以送出 false 負值和 false 正數垃圾郵件訊息給 Microsoft 進行分析。 '
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: '您和您的使用者可以提交 false 負數，則為 false 正數垃圾郵件給 Microsoft 進行分析。 '
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276093"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341524"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 
-它可以是什麼時您組織中的使用者在其收件匣] 中接收垃圾郵件 （垃圾郵件） 或網路釣魚詐騙郵件訊息, 或他們未收到的合法電子郵件因為標示為垃圾郵件。我們正在正比微調我們要更精確的垃圾郵件篩選器。您和使用者可協助此程序所送出 false 負值和 false 正數垃圾郵件訊息給 Microsoft 進行分析。"False 負"是應該都已但未被識別為垃圾郵件的垃圾郵件訊息。"誤判 」 是不正確地識別為垃圾郵件的合法電子郵件訊息。 
+它可以是令人沮喪，當您組織中的使用者收到垃圾郵件 （垃圾郵件） 或網路釣魚詐騙郵件收件匣，或如果他們未收到的合法電子郵件，因為它標示為垃圾郵件。我們不斷在微調我們的垃圾郵件篩選器，以便提升準確性。您和您的使用者可協助此程序所送出，則為 false 負數，則為 false 正數垃圾郵件給 Microsoft 進行分析。「 誤判 」 是已應該但不被視為垃圾郵件的垃圾郵件訊息。「 誤判 」 是被誤判為垃圾郵件的合法電子郵件訊息。 
   
 > [!NOTE]
-> 因為我們所收到的送出高數量，我們可能無法回答的所有要求進行分析。 
+> 我們收到的提交高磁碟區，因為我們可能會無法接聽所有要求進行分析。 
   
-## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>提交垃圾郵件或網路釣魚郵件傳遞到垃圾郵件篩選
+## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>提交垃圾郵件或網路釣魚郵件傳遞到垃圾郵件篩選器
 <a name="sectionSection0"> </a>
 
-如果您收到郵件傳遞到垃圾郵件篩選的和應歸類為垃圾郵件或網路釣魚詐騙郵件、 可以送出至 Microsoft 垃圾郵件分析和 Microsoft 網路釣魚分析的小組，視需要"false 負"訊息。分析師會檢閱郵件並將其新增到整個服務的篩選如果它符合分類準則。 
+如果您收到通過垃圾郵件篩選，並應歸類為垃圾郵件或網路釣魚詐騙郵件，您可以將 「 誤判 」 訊息提交給 Microsoft 垃圾郵件分析及 Microsoft 網路釣魚分析小組，視。分析師會檢閱此郵件，並將其新增至全服務篩選，如果它符合分類準則。 
   
-適用於整個組織的其他垃圾郵件設定，請參閱[封鎖電子郵件的垃圾郵件與 Office 365 垃圾郵件篩選避免 false 負數的問題](https://go.microsoft.com/fwlink/p/?LinkId=534225)。本文包含可協助防止 false 負片的秘訣。
+適用於整個組織的其他垃圾郵件設定，請參閱[利用 Office 365 垃圾郵件篩選，以避免誤判正常的封鎖電子郵件垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534225)。本文包含可協助防止誤判的秘訣。
   
 您可以透過下列方式提交垃圾郵件：
   
-- Outlook 和 Outlook web 使用者、 郵件報告增益集使用 Microsoft outlook。如需如何安裝及使用這項工具的資訊，請參閱[啟用報表訊息增益集](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)。 
+- Outlook 和 Outlook web 使用者，使用 [適用於 Microsoft Outlook 報告訊息增益集。如需如何安裝及使用此工具的詳細資訊，請參閱 <<c0>啟用報告訊息增益集。 
         
-- 您也可以使用電子郵件來提交給應歸類為垃圾郵件或網路釣魚詐騙，如下列程序所述的 Microsoft 的郵件。
+- 您也可以使用電子郵件將郵件提交給 Microsoft，應歸類為垃圾郵件或網路釣魚詐騙，如下列程序所述。
     
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>使用電子郵件來提交垃圾郵件或網路釣魚詐騙郵件訊息給 Microsoft
+### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>使用電子郵件來提交垃圾郵件或網路釣魚詐騙郵件提交給 Microsoft
 <a name="Useemailtosubmitjunkspamorphishingscammessages"> </a>
 
-提交垃圾郵件或網路釣魚詐騙郵件訊息給 Microsoft：
+若要將垃圾郵件或網路釣魚詐騙郵件提交至 Microsoft:
   
 1. 建立空白的電子郵件訊息。
     
-2. 若要檢閱訊息，如下所示的 Microsoft 小組郵件的地址： 
+2. 地址，如下所示檢閱郵件，Microsoft 小組的訊息： 
     
-  - 垃圾郵件： junk@office365.microsoft.com
+  - 垃圾電子郵件： junk@office365.microsoft.com
     
   - 網路釣魚詐騙郵件： phish@office365.microsoft.com
     
-3. 複製並貼到新郵件以附件形式的垃圾郵件或網路釣魚詐騙郵件訊息。 
+3. 複製並貼到新郵件以附件形式的垃圾郵件或網路釣魚詐騙郵件。 
     
     > [!NOTE]
-    > 您可以附加多個郵件至新的郵件。請確定所有訊息都是相同的類型 — 網路釣魚詐騙郵件或垃圾郵件訊息。> 是空白新郵件內的文。 
+    > 您可以將多個郵件附加到新郵件。請確定所有訊息都都是相同的型別 — 網路釣魚詐騙郵件或垃圾郵件。> 是空白新郵件內的文。 
   
 4. 按一下 [**傳送**]。
     
-## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>提交郵件已標記為垃圾郵件但應該允許通過
+## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>將已標記為垃圾郵件，但應允許通過的郵件提交
 <a name="sectionSection1"> </a>
 
-如果郵件而不正確地識別為垃圾郵件，可以送出到 Microsoft 垃圾郵件分析小組"誤判 」 訊息。分析師會評估及分析郵件。根據此分析結果，整個服務的垃圾郵件內容篩選規則可能會調整以允許透過訊息。
+如果郵件被誤判為垃圾郵件，您可以將 「 誤判 」 訊息提交給 Microsoft 垃圾郵件分析小組。分析師會評估和分析此郵件。根據分析結果，您可能會調整全服務垃圾郵件內容篩選規則，以允許郵件通過。
   
-系統管理員可以檢閱適用於整個組織的多個垃圾郵件設定資訊。了解[如何協助確保郵件未標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)。如果您有管理員層級控制與您想要避免誤判，可幫助此資訊。
+系統管理員可以檢視多個會套用至整個組織的垃圾郵件設定資訊。請參閱[如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)。如果您有系統管理員層級的控制權，且您想要避免誤判，這項資訊會很有幫助。
   
 您可以透過下列方式提交非垃圾郵件：
   
-- 如果當您設定內容篩選器 （這是預設動作） 時使用 [**移至 [垃圾郵件] 資料夾的郵件**] 動作，使用者可以釋出其 Outlook 或 Outlook web （前身為 Outlook Web App） 的 [垃圾郵件] 資料夾上誤判的郵件. 
+- 如果您使用 [**移至垃圾郵件] 資料夾的郵件**] 動作，當您設定內容篩選器 （這是預設動作） 時，使用者可以釋放誤判郵件在其 Outlook 或網頁 （原先稱為 Outlook Web App） 的 [垃圾郵件] 資料夾. 
     
-  - Outlook 使用者可以使用**不是垃圾郵件**上按一下滑鼠右鍵功能表選項來釋放誤判的郵件。但必須提交給 Microsoft 透過電子郵件訊息本文中的程序所示。 
+  - Outlook 使用者可以釋放誤判郵件，藉由使用**不是垃圾郵件**] 上按一下滑鼠右鍵功能表選項。不過，他們必須將郵件提交給 Microsoft 透過電子郵件，如本文中的程序中所示。 
     
-  - Outlook web 使用者在釋出誤判的郵件，並進行分析**標示為不是垃圾郵件**巨集指令將將其提交給 Microsoft。如需如何執行這項作業的詳細資訊，請參閱[報表垃圾郵件和網路釣魚詐騙在網路上的 Outlook ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
+  - Outlook web 使用者可以釋放誤判郵件，並將它們提交給 Microsoft 進行分析使用**標示為不是垃圾郵件**] 動作。如需如何執行這項操作的詳細資訊，請參閱[回報垃圾郵件和網路釣魚詐騙網頁型 Outlook 中](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
     
-- 如果您設定內容篩選器的**隔離郵件**動作使用，而不是 [**移至 [垃圾郵件] 資料夾的郵件**] 動作： 
+- 如果當您設定內容篩選器時，您可以使用而不是 [**移至垃圾郵件] 資料夾的郵件**] 動作的**隔離郵件**] 動作： 
     
-  - 系統管理員可以釋出被當成垃圾郵件隔離的郵件和其報告為誤判從 Exchange 系統管理中心。如需詳細資訊，請參閱[找到並釋放被隔離的郵件系統管理員身分](find-and-release-quarantined-messages-as-an-administrator.md)。
+  - 系統管理員可以釋放被當成垃圾郵件隔離的郵件，並從 Exchange 系統管理中心將這些郵件回報為誤判。如需詳細資訊，請參閱 [以系統管理員身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)。
     
-  - 使用者可以釋出自己被當成垃圾郵件隔離的郵件和其回報為誤判透過下列通道： 
+  - 使用者可以釋出自己被當成垃圾郵件隔離的郵件和其報告為誤判透過下列通道發佈： 
     
   - Exchange 系統管理中心 (EAC) 使用者介面。如需詳細資訊，請參閱 [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx)。
     
   - 使用者垃圾郵件通知訊息 (如果您的系統管理員已加以啟用)。 
     
-- 您也可以使用電子郵件來提交給 Microsoft 的不應歸類為垃圾郵件的郵件。當您這麼做時，請確定您使用下列程序中使用的步驟。
+- 您也可以使用電子郵件將郵件提交給 Microsoft，不應歸類為垃圾郵件。當您這麼做時，請確定您使用下列程序中使用的步驟。
     
 ### <a name="use-email-to-submit-false-positive-messages"></a>使用電子郵件來提交誤判的郵件
 
-使用 「[使用提交垃圾郵件或網路釣魚詐騙郵件訊息給 Microsoft 的電子郵件](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md#Useemailtosubmitjunkspamorphishingscammessages)、 」 所述的相同的程序，但將郵件傳送至 not_junk@office365.microsoft.com。
+「[使用電子郵件來提交垃圾郵件或網路釣魚詐騙郵件提交給 Microsoft ](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md#Useemailtosubmitjunkspamorphishingscammessages)，」 所述，使用相同的程序，但將郵件傳送到 not_junk@office365.microsoft.com。
   
 ## <a name="spam-evaluation-and-rules-deployment"></a>垃圾郵件評估與規則部署
 <a name="sectionSection2"> </a>
 
-垃圾郵件分析小組會檢查郵件您提交，並且會調整以避免未來的垃圾郵件的垃圾郵件篩選器。因此，Office 365 垃圾郵件篩選 areconstantly 精簡。在整個網路層級會評估任何已送出的項目。False 的正數提交會檢查及評估可能規則調整透過垃圾郵件篩選允許未來的郵件。因此，通知之服務的誤判，也為 false 負片 （篩選的垃圾郵件） 很有用的寄件者及所有客戶使用通用網路。垃圾郵件小組會檢查指標內每個已提交的郵件，如下所示：
+垃圾郵件分析小組會檢查您提交，並調整垃圾郵件篩選器，以防止未來的垃圾郵件的郵件。因此，Office 365 垃圾郵件篩選 areconstantly 精簡。任何提交的項目會評估在整個網路層級。False 正數提交會檢查及評估可能需要調整規則來允許將來的郵件透過垃圾郵件篩選器。因此，通知此服務的誤判和漏報 （未篩選的垃圾郵件） 是有用的您，並使用全球網路的所有客戶。垃圾郵件小組會檢查指示器內每個提交的郵件，如下所示：
   
 - 寄件者地址
     
@@ -110,11 +110,11 @@ ms.locfileid: "30276093"
     
 - 其他趨勢和模式
     
-他們檢閱此資訊之後，垃圾郵件小組可能會對服務的垃圾郵件篩選層級的變更。如需垃圾郵件小組的詳細資訊，您可以觀看下列僅提供英文版的影片：
+檢閱此資訊之後，垃圾郵件小組可能會對服務的垃圾郵件篩選層的變更。如需垃圾郵件小組的詳細資訊，您可以觀看下列僅限英文版的影片：
   
-[Microsoft Exchange 垃圾郵件小組視訊](https://youtu.be/-TpX_-GMC7o?hd=1)
+[Microsoft Exchange 垃圾郵件小組影片](https://youtu.be/-TpX_-GMC7o?hd=1)
   
-垃圾郵件評估為無論原始語言或字元組適用於持續程序。因為垃圾郵件可以含糊或甚至是不具主旨或郵件內文中的文字、 垃圾郵件小組會依賴執行篩選其他郵件特性。這表示的垃圾郵件小組指定為垃圾郵件訊息的旗標，並讓其規則基底必要的變更之後，該郵件會被封鎖未來之前已修改足夠避免我們篩選它的特性。持續部署新的垃圾郵件規則。在個別的送出的規則的時間範圍而異數量和送出的品質。針對所有客戶全域設定新的垃圾郵件規則，因為不是所有的個別的垃圾郵件提交會產生新的垃圾郵件規則。
+垃圾郵件評估是不論原始語言或字元組適用於持續程序。因為垃圾郵件可以模糊或甚至是缺少 [主旨或郵件內文中的文字，垃圾郵件小組會依賴其他郵件特性，若要執行的篩選。這表示，垃圾郵件小組旗標為垃圾郵件的特定的郵件，且會進行必要變更其規則基底之後，該郵件會被封鎖在未來直到已修改不足以避免我們篩選它的特性。會持續地部署新的垃圾郵件規則。提交的個別規則的時間範圍而異的數量和品質送出資料。因為所有客戶全域都設定新的垃圾郵件規則，並非所有個別垃圾郵件都會促成新垃圾郵件規則。
    
 ## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection4"> </a>

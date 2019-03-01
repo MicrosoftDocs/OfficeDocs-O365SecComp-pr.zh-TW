@@ -11,18 +11,18 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b0093c64a0fcb5997b474e7bd491c0915164b77e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003042"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341024"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。在 EOP 中，您可以透過數種方式來管理使用者：
   
-- 使用目錄同步處理來管理郵件使用者： 如果您的公司內部部署 Active Directory 環境中現有的使用者帳戶，您可以同步處理至 Azure Active Directory (AD)，其中之帳戶的複本儲存在雲端那些帳戶。當您同步處理至 Azure Active Directory 現有的使用者帳戶時，您可以檢視這些使用者的 Exchange 系統管理中心 (EAC) 的 [**收件者**] 窗格中。建議使用目錄同步處理。 
+- 使用目錄同步處理來管理郵件使用者： 如果貴公司有現有的使用者帳戶在內部部署 Active Directory 環境中，您可以同步處理至 Azure Active Directory (AD)，在雲端中儲存一份帳戶的帳戶。當您同步處理至 Azure Active Directory 現有的使用者帳戶時，您可以在 Exchange 系統管理中心 (EAC) 的 [**收件者**] 窗格中檢視這些使用者。建議您不要使用目錄同步處理。 
     
 - 使用 EAC 管理郵件使用者：在 EAC 中直接新增及管理郵件使用者。這是新增郵件使用者最簡單的方法，也很適合一次新增一位使用者。
     
@@ -48,7 +48,7 @@ ms.locfileid: "23003042"
 > 如果您使用目錄同步作業來管理收件者，您仍可在 Office 365 系統管理中心 中新增和管理使用者，但這些使用者不會和您的內部部署 Active Directory 同步處理。這是因為目錄同步作業只會從內部部署 Active Directory 同步收件者至雲端。 
   
 > [!TIP]
->  建議搭配下列功能一起使用目錄同步處理： > **Outlook 安全的寄件者和封鎖的寄件者清單** - 同步處理至服務時，這些清單優先於服務的垃圾郵件篩選。這可讓使用者針對個別使用者或個別網域，管理他們自己的安全寄件者和封鎖的寄件者清單。 > **目錄架構邊緣封鎖 (DBEB)** - 如需 DBEB 的詳細資訊，請參閱＜ [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)＞。 > **使用者垃圾郵件隔離** - 若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。 > **傳輸規則** -當您使用目錄同步作業時，您的現有 Active Directory 使用者和群組會自動上傳到雲端，然後您可以建立以特定使用者及/或群組為目標的傳輸規則，而不必透過 EAC 或遠端 Windows PowerShell 手動新增它們。請注意， [動態通訊群組](https://go.microsoft.com/fwlink/?LinkId=507569)無法透過目錄同步作業進行同步處理。 
+>  使用目錄同步處理建議使用下列功能： > **Outlook 安全寄件者和封鎖寄件者清單**-當同步處理至服務，這些清單會優先於垃圾郵件篩選服務中。這可讓使用者管理自己的安全寄件者和封鎖的寄件者清單，每個使用者或每個網域的基礎。>**目錄架構邊緣封鎖 (DBEB)** -如需 DBEB，詳細資訊，請參閱[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。>**使用者垃圾郵件隔離**-若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。>**郵件流程規則**-當您使用目錄同步處理，您現有的 Active Directory 使用者和群組會自動上傳至雲端，您可以再建立郵件流程規則 （也稱為傳輸規則），針對特定的使用者與 /或群組，而不必手動新增他們透過 EAC 或 Exchange Online Protection PowerShell。請注意，[動態通訊群組](https://go.microsoft.com/fwlink/?LinkId=507569)無法透過目錄同步作業進行同步處理。 
   
  **開始之前**
   
@@ -69,7 +69,7 @@ ms.locfileid: "23003042"
     
 5. 管理目錄同步處理，如[管理目錄同步作業](http://go.microsoft.com/fwlink/p/?LinkId=308915)所說明。
     
-6. 確認 EOP 的正確同步處理。在 EAC 中，移至 [**收件者** \> **連絡人**並檢視使用者清單從內部部署環境正確同步處理。 
+6. 驗證，則 EOP 會正確同步處理。在 EAC 中，前往 [**收件者** \> **連絡人**和使用者清單已正確同步處理內部部署環境中的檢視。 
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>使用 EAC 管理郵件使用者
 
@@ -101,7 +101,7 @@ ms.locfileid: "23003042"
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>在 EAC 中編輯或移除郵件使用者
 
-- 在 EAC 中，移至 [**收件者** \> **連絡人**。在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)以視需要更新使用者設定。您可以變更使用者的名稱、 別名或連絡人資訊，以及您可以在組織中記錄於使用者角色的詳細的資訊。您可以也選取使用者，然後選擇 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.gif)將它刪除。 
+- 在 EAC 中，前往 [**收件者** \> **連絡人**。在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)以視需要更新使用者設定。您可以變更使用者的名稱、 別名或連絡資訊，以及您可以記錄組織中的使用者角色的詳細的資訊。您可以也選取使用者，然後選擇 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.gif)將它刪除。 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>使用遠端 Windows PowerShell 管理郵件使用者
 

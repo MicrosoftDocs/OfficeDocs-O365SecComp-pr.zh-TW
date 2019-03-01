@@ -1,5 +1,5 @@
 ---
-title: 避免在垃圾郵件篩選器規則和垃圾郵件篩選器原則中的字元無效
+title: 避免在您的垃圾郵件篩選規則和垃圾郵件篩選原則中的無效字元
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -12,40 +12,40 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 提供系統管理員其反垃圾郵件組態中有無效的字元，並嘗試使用安全性執行發生問題的說明&amp;規範中心。
-ms.openlocfilehash: 90cf89d019a34658b676f02baa84c70f27200262
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 提供其反垃圾郵件組態中有無效的字元，並嘗試使用安全性時遇到問題的系統管理員的說明&amp;合規性中心。
+ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276073"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341464"
 ---
-# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免在垃圾郵件篩選器規則中的無效字元和垃圾郵件篩選器原則 
+# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免在您的垃圾郵件篩選規則中的無效字元和垃圾郵件篩選原則 
 
-先前、 Office 365 系統管理員設定及使用 Exchange 系統管理中心 (EAC) 來設定垃圾郵件篩選器規則和垃圾郵件篩選器原則。現在，您可以使用安全性&amp;規範中心來管理您的反垃圾郵件設定。下列字元所支援的 EAC 中但不是支援使用安全性&amp;規範中心。  
+先前，Office 365 系統管理員設定和使用 Exchange 系統管理中心 (EAC) 來設定垃圾郵件篩選規則和垃圾郵件篩選原則。現在，您使用安全性&amp;合規性中心，以管理您的反垃圾郵件設定。下列字元所支援在 EAC 中，但不是支援使用安全性&amp;合規性中心。  
 
 **無效字元：**
   
 ```\ % & * + / = ? { } | < > ( ) ; : , [ ] "```
 
-如果您垃圾郵件篩選器規則] 或 [您的垃圾郵件篩選器原則中包含任何的無效字元，您可能會發生任何或所有的這些問題：
-- 您可能無法在 [安全性] 中尋找原則或規則&amp;規範中心。
-- 您可能會在嘗試使用 Windows PowerShell 取得的規則或原則時收到錯誤。
-- 您可能會發現的原則或設定請勿執行或執行如預期般運作。
+如果您的垃圾郵件篩選器規則或您的垃圾郵件篩選原則中包含任何無效的字元，您可能會發生任何或所有的這些問題：
+- 您可能會找不到的原則或規則安全性&amp;合規性中心。
+- 嘗試使用 Windows PowerShell 取得的規則或原則時，您可能會收到錯誤。
+- 您可能會發現，原則或設定請勿執行，或如預期般執行。
 
-## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>從垃圾郵件篩選器原則和規則中移除無效的字元
+## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>移除無效的字元的垃圾郵件篩選原則和規則
 
-一旦您識別的原則和規則包含無效字元，您可以使用 Windows PowerShell cmdlet 來變更名稱。 
+一旦您已識別的原則和規則包含無效的字元，您可以使用 Windows PowerShell cmdlet 變更名稱。 
 
 1. [連線至 Exchange Online 使用遠端 PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
     
-2. 若要變更垃圾郵件篩選器原則的名稱，以下列方式執行 Set-hostedcontentfilterpolicy 指令程式：
+2. 若要變更垃圾郵件篩選器原則的名稱，執行 Set-hostedcontentfilterpolicy 指令程式，如下所示：
     
     ```
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
-3. 若要變更垃圾郵件篩選器規則的名稱，以下列方式執行 Set-hostedcontentfilterrule cmdlet：
+3. 若要變更垃圾郵件篩選規則的名稱，執行 Set-hostedcontentfilterrule cmdlet，如下所示：
     
     ```
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
@@ -54,7 +54,7 @@ ms.locfileid: "30276073"
   
  ## <a name="for-more-information"></a>如需詳細資訊
 
-[威脅的安全性管理&amp;規範中心](threat-management.md)
+[威脅管理安全性&amp;合規性中心](threat-management.md)
   
 [Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
 

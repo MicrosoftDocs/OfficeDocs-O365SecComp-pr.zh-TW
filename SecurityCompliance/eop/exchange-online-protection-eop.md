@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: 以下是一些您應該要知道您開始使用 EOP 之前。
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+description: 以下是您應該要知道您開始使用 EOP 之前的一些事項。
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206556"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341744"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -44,13 +44,13 @@ ms.locfileid: "30206556"
     
 - [從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) 說明從其他電子郵件保護產品切換到 EOP 的程序。 
     
-- [管理收件者和 EOP 中的系統管理員角色群組](manage-recipients-and-admin-role-groups-in-eop.md)說明如何管理收件者及如何將使用者指派給系統管理員角色群組。 
+- [管理收件者和 EOP 中的系統管理員角色群組](manage-recipients-and-admin-role-groups-in-eop.md)說明如何管理收件者，以及如何將使用者指派給系統管理員角色群組。 
     
 - [EOP 中的郵件流程](mail-flow-in-eop.md) 說明如何使用連接器來設定自訂郵件流程案例、如何管理與服務相關的網域，以及如何啟用目錄架構邊緣封鎖 (DBEB) 功能。 
     
 - [設定 EOP 的最佳作法](best-practices-for-configuring-eop.md) 說明在您設定和佈建服務之後的建議組態設定和考量。 
     
-- [郵件原則及 EOP 中的符合性](messaging-policy-and-compliance-in-eop.md)說明如何使用 Exchange 傳輸規則 （自訂篩選規則） 來強制執行特定公司規定與原則，以及如何使用稽核報告來追蹤服務的組態變更。 
+- [郵件原則及 EOP 中的符合性](messaging-policy-and-compliance-in-eop.md)說明如何使用 Exchange 郵件流程規則 （也稱為傳輸規則） 來強制執行特定公司規定與政策，以及如何使用稽核報告來追蹤服務的組態變更。 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) 說明垃圾郵件篩選和惡意程式碼篩選，以及顯示如何進行自訂以滿足貴組織的需求。此外，還說明系統管理員和使用者可以對隔離郵件執行的工作。 
     
@@ -69,11 +69,11 @@ ms.locfileid: "30206556"
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) 說明使用者如何在垃圾郵件隔離使用者介面中尋找和釋出其自己的垃圾隔離郵件，並選擇性地向 Microsoft 報告這些郵件不是垃圾郵件。 
         
-- [提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件訊息給 Microsoft 進行分析。](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)說明使用者可以提交垃圾郵件 （垃圾） 和非垃圾郵件 （不是垃圾郵件） 郵件給 Microsoft 的不同方式。本主題包含 Microsoft Outlook 與 （前身為 Outlook Web App） 在 web 上的 Outlook 中可用的報告工具的連結。 
+- [提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)描述使用者可以提交垃圾郵件 （垃圾） 和非垃圾郵件 （非垃圾郵件） 郵件提交給 Microsoft 的不同方式。本主題包含 Microsoft Outlook 和網頁 （原先稱為 Outlook Web App） 上的 Outlook 中可用的報告工具的連結。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) 描述使用者可以如何提交惡意程式碼使其通過篩選器，或者提交錯誤識別為惡意程式碼的檔案。 
     
-- 使用者可以新增特定使用者或網域的安全寄件者清單] 或 [封鎖的寄件者清單進行其垃圾郵件設定在 Outlook 或 Outlook web 上。請注意從封鎖的寄件者傳送的訊息將標記為垃圾郵件，不會拒絕，這表示他們可以擷取來自垃圾郵件] 資料夾或隔離 （根據其中您系統已設定傳送垃圾郵件服務）。如需詳細資訊，請參閱[使用報告郵件增益集](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+- 使用者可以新增特定使用者或網域至安全的寄件者或封鎖的寄件者清單在 Outlook 或網頁型 Outlook 中設定其垃圾郵件設定。請注意，來自封鎖的寄件者傳送的郵件已標示為垃圾郵件，不會被拒絕，這表示他們可以擷取從垃圾郵件] 資料夾或隔離 （視而定，您的系統管理員已設定的服務來傳送垃圾郵件。）如需詳細資訊，請參閱 <<c0>使用報告訊息增益集。
     
 - [EOP 的說明和支援](help-and-support-for-eop.md) 提供有關取得說明和技術支援的資訊。 
     

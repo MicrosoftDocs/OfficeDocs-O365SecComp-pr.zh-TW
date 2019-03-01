@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。
-ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
-ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
+ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "23002205"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341554"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>將網域及設定從某個 EOP 組織移到另一個 EOP 組織
 
 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。 
   
 > [!NOTE]
->  設定可可靠的方式移動只能從 EOP 獨立版 （標準） 組織至另一個 EOP 標準或 Exchange Enterprise CAL 與服務 （EOP 進階版） 的組織，或從 EOP Premium 組織到另一個 EOP Premium 組織。因為 EOP 標準組織中不支援部分進階版功能，從 EOP Premium 組織移至 EOP 標準組織可能不會成功。> EOP 篩選僅限組織的這些指示說明。有中從一部 Exchange Online 組織移至另一個 Exchange Online 組織的其他考量。Exchange Online 組織已超出範圍這些指示。 
+>  設定可以可靠地移動只接收來自 EOP 獨立 （標準） 組織到另一個 EOP 標準或 Exchange Enterprise CAL 與服務 （EOP 進階版） 的組織，或從 EOP 進階組織到另一個 EOP 進階組織。因為 EOP 標準組織中不支援部分進階功能，所以從 EOP 進階組織移至 EOP 標準組織可能不會成功。這些指示適用於 EOP 僅篩選組織 >。有在從一個 Exchange Online 組織移至另一個 Exchange Online 組織的其他考量。這些指示的範圍外，是 Exchange Online 組織。 
   
 在下列範例中，Contoso, Ltd. 已經和 Contoso 套件合併。下圖顯示將網域、郵件使用者和群組以及設定從來源 EOP 組織 (contoso.onmicrosoft.com) 移至目標 EOP 組織 (contososuites.onmicrosoft.com) 的程序：
   
@@ -47,10 +47,10 @@ ms.locfileid: "23002205"
     
 - 連接器
     
-- 傳輸規則
+- 郵件流程規則 （也稱為傳輸規則）
     
     > [!NOTE]
-    > 目前只有 EOP 進階訂閱計劃支援匯出和匯入傳輸規則集合的指令程式。 
+    > 匯出和匯入郵件流程規則集合的指令程式支援是目前只有 EOP 進階訂閱計劃支援。 
   
 收集所有設定最簡單的方法是使用遠端 Windows PowerShell。若要使用遠端 Windows PowerShell 連線到 EOP，請參閱 [使用遠端 PowerShell 連線到 Exchange Online Protection](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
   
@@ -66,10 +66,10 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-下列指令碼可以用來收集來源組織中的所有郵件使用者、群組、反垃圾郵件設定、反惡意程式碼設定、連接器和傳輸規則。複製下列文字並貼入記事本之類的文字編輯器，將檔案在您剛建立的匯出目錄中儲存為 Source_EOP_Settings.ps1，並執行下列命令：
+下列指令碼可用來收集所有郵件使用者、 群組、 反垃圾郵件設定，反惡意程式碼設定、 連接器，以及來源組織中的郵件流程規則。複製下列文字貼入記事本之類的文字編輯器，將檔案儲存為 Source_EOP_Settings.ps1，您剛建立的匯出目錄中並執行下列命令：
   
 ```
-&amp; "C:\EOP\Export\Source_EOP_Settings.ps1"
+& "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
@@ -133,11 +133,10 @@ Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
 Get-InboundConnector | Export-Clixml InboundConnector.xml
 Get-OutboundConnector | Export-Clixml OutboundConnector.xml
 #****************************************************************************
-# Exchange transport rules
+# Exchange mail flow rules
 #****************************************************************************
 $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
-
 ```
 
 從匯出目錄執行下列命令，以利用目標組織更新 .xml 檔案。以來源和目錄組織名稱取代 Contoso.onmicrosoft.com 和 contososuites.onmicrosoft.com。
