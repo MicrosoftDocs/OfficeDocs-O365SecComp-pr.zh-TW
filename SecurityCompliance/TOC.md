@@ -89,7 +89,7 @@
 
 # [防範威脅](protect-against-threats.md)
 ## [反垃圾郵件和反惡意程式碼防護](anti-spam-and-anti-malware-protection.md)
-### [保護電子郵件的快速入門影片](videos-for-getting-started-with-protecting-your-email.md)
+### [EOP 概觀](videos-for-getting-started-with-protecting-your-email.md)
 ### [Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
 ### [如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
 ### [如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)
