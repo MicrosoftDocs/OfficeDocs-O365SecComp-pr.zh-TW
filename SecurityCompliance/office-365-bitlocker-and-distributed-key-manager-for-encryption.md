@@ -10,34 +10,39 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
-description: 摘要： BitLocker 加密雲端中的資訊。
-ms.openlocfilehash: 573f43b850f15e56fa529963d2db53402f717a34
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+- Strat_O365_Enterprise
+description: 摘要： BitLocker 加密定域機組中的資訊。
+ms.openlocfilehash: 293c7a3cef3ae2c55a0b12df139baf5302dd3b04
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275863"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357424"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker 與 Distributed Key Manager (DKM) 的加密
-Office 365 伺服器使用 BitLocker 加密包含在磁碟區層級的其餘部分的客戶資料磁碟機。BitLocker 加密是 Windows 內建的資料保護功能。BitLocker 是硬體的其中一個用來防範威脅以防有漏洞其他處理程序或可能導致某人取得實體磁碟包含客戶資料存取的控制項 （例如，存取控制或回收） 中的技術。在此例中 BitLocker 不資料竊取或洩露可能因遺失、 竊、 或不當解除委任電腦與磁碟。
 
-BitLocker 一起部署與進階加密標準 (AES) 256 位元加密磁碟包含客戶資料在 Exchange Online、 SharePoint Online 和 Skype for Business。與完整大量加密金鑰 (FVEK)，這要加密以大量主索引鍵 (VMK)，接下來繫結至信任的平台模組 (TPM) 的伺服器中的加密磁碟的磁區。VMK 直接保護 FVEK 與因此保護 VMK 變成重要。下圖說明指定伺服器 （在此例中，使用 Exchange Online 伺服器） 的 BitLocker 金鑰保護鏈結的範例。
+Office 365 伺服器使用 BitLocker 加密包含客戶資料磁碟區層級的靜態的磁碟機。BitLocker 加密是內建於 Windows 的資料保護功能。BitLocker 是硬體的下列其中一個以預防威脅，萬一有漏洞其他處理程序或可能會導致其他人存取實體磁碟包含客戶資料的控制項 （例如，存取控制或重複使用） 中所使用的技術。在此情況下，BitLocker 會由於遺失、 遭竊或不當解除委任電腦和磁碟消除竊取或曝光的可能性。
 
-下表說明指定伺服器 （在此情況下，Exchange Online 伺服器） 的 BitLocker 金鑰保護鏈結。
+使用進階加密標準 (AES) 256 位元加密磁碟包含客戶資料在 Exchange Online、 SharePoint Online 和商務用 Skype 部署 BitLocker。磁碟的磁區會進行加密與完整磁碟區加密金鑰 (FVEK)，其中已加密與磁碟區的主要金鑰 (VMK)，其中依次有繫結至受信任的平台模組 (TPM) 的伺服器中。因此，保護 VMK 得極為重要，VMK 直接保護 FVEK。下圖說明 BitLocker 金鑰保護鏈結針對指定的伺服器 （在此案例中，使用 Exchange Online 的伺服器） 的範例。
 
-| 金鑰保護裝置 | 精確度 | 如何產生？ | 其儲存？ | 保護 |
+下表說明 BitLocker 金鑰保護鏈結，針對指定的伺服器 （在此情況下，Exchange Online 伺服器）。
+
+| 金鑰保護裝置 | 精確度 | 如何產生嗎？ | 是它儲存在哪裡？ | 保護 |
 |--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|
-| AES 256 位元的外部索引鍵 | 每個伺服器 | BitLocker api （英文) | TPM 或秘密安全 | Lockbox / 存取控制 |
+| 使用 AES 256 位元外部索引鍵 | 每個伺服器 | BitLocker Api | TPM 或秘密安全 | 加密箱 / 存取控制 |
 |  |  |  | 信箱伺服器登錄 | TPM 加密 |
-| 48 位數數字的密碼 | 每部磁碟 | BitLocker api （英文) | Active Directory | Lockbox / 存取控制 |
-| X.509 憑證做為資料復原代理程式 (DRA) 又稱為公用金鑰保護裝置 | 環境 (例如 Exchange Online multitenant) | Microsoft CA | 建立系統 | 沒有一位使用者具有完整密碼的私密金鑰。Password 是實體保護之下。 |
+| 48 位數數字密碼 | 每個磁碟 | BitLocker Api | Active Directory | 加密箱 / 存取控制 |
+| 做為資料修復代理 (DRA) 的 X.509 憑證也稱為 「 公開金鑰保護裝置 | 環境 (例如，Exchange Online multitenant) | Microsoft CA | 建置系統 | 沒有一位使用者具有私密金鑰完整的密碼。Password 是實體保護之下。 |
 
 
-BitLocker 金鑰管理包括復原按鍵的可用來解除鎖定/復原加密的磁碟在 Office 365 資料中心內的管理。Office 365 儲存在安全共用，只能由個人篩選並核准之主要金鑰。機碼的認證會儲存在 （什麼我們呼叫"secret 存放區"），存取控制資料的安全存放庫需要提高權限與管理核准存取使用剛剛-時間存取權限提高工具高層級。
+BitLocker 金鑰管理牽涉到可用來解除鎖定/復原在 Office 365 資料中心中的加密的磁碟的修復金鑰的管理。Office 365 中的安全共用，只能由遮蔽並核准的個人儲存主索引鍵。索引鍵的認證會儲存在安全存放庫的存取控制資料 （我們所謂"secret store"），這需要提高權限與管理核准存取使用剛時間存取權限提高工具較高層級。
 
-BitLocker 支援可分為兩種管理類別的機碼：
-- BitLocker managed 鍵，這通常是短期和採用在伺服器上安裝作業系統執行個體的存留期或指定的磁碟。這些機碼的刪除和重設在伺服器重新安裝或磁碟格式設定。
-- BitLocker 復原鍵，受管理的外部 BitLocker 但用於磁碟解密。BitLocker 會重新安裝作業系統，及加密的資料磁碟已經存在的案例使用復原機碼。復原機碼也可用來監視探查 Exchange 線上回應程式可能需要所在的受管理的可用性來解除鎖定磁碟。
+BitLocker 支援可分為兩個管理類別的機碼：
 
-BitLocker 受保護的磁碟區加密使用接著會使用大量主要金鑰加密的完整的磁碟區加密金鑰。BitLocker 會使用 FIPS 相容演算法來確保加密金鑰會永遠不儲存或傳送透過電線中清除。Office 365 實作的客戶資料-在-rest-保護不會從預設 BitLocker 實作以外。
+- BitLocker managed 鍵，這通常是短暫和採用在伺服器上安裝作業系統執行個體的存留時間，或指定磁碟。這些機碼的刪除和伺服器重新安裝或磁碟格式設定重設。
+
+- BitLocker 復原鍵，受管理的外部 BitLocker 但用於磁碟解密。BitLocker 會使用案例中重新安裝作業系統，和加密的資料磁碟存在復原機碼。受管理的可用性，監視探查在 Exchange Online 需要回應程式也會使用復原金鑰來解除鎖定磁碟。
+
+BitLocker 受保護的磁碟區加密使用依次加密與磁碟區的主要金鑰的完整磁碟區加密金鑰。BitLocker 會使用 FIPS 相容演算法，以確保加密金鑰會永遠不會儲存或傳送透過線路傳輸中清除。客戶資料在-rest-保護的 Office 365 實作不會從預設 BitLocker 實作以外。

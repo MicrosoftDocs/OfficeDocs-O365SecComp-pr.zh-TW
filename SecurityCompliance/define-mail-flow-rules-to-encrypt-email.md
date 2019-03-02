@@ -5,7 +5,7 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以了解如何建立郵件流程規則 （傳輸規則） 來加密及解密郵件使用 Office 365 郵件加密 (OME) 中。
-ms.openlocfilehash: 29199856600b05cf45e3e9b23c943c87867d169d
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: 系統管理員可以了解如何建立郵件流程規則 （傳輸規則） 來加密及解密使用 Office 365 郵件加密的郵件中。
+ms.openlocfilehash: 1f5b0ff9be5994f036d2367d0b15744c24f2bbe0
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341534"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357554"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 

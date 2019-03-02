@@ -3,27 +3,25 @@ title: 檢視工作集中的文件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: ''
-ms.openlocfilehash: 155d5663ff54e48bee0c0561e58319b5f213c016
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306512"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357454"
 ---
 # <a name="view-documents-in-a-working-set"></a>檢視工作集中的文件
 
-進階 eDiscovery （預覽） 會顯示透過數個檢視者每個具有不同目的內容。按一下任何工作組內的文件上的 [可用不同的檢視器。目前提供檢視者為：
+進階電子文件探索 （預覽） 會顯示透過數個檢視每個具有不同用途的內容。按一下任何工作集內的文件上的 [可用各種不同的檢視。目前提供檢視程式：
 
 - 檔案中繼檔案  
 
@@ -35,27 +33,27 @@ ms.locfileid: "30306512"
 ## <a name="file-metadata"></a>檔案中繼檔案  
 
 
-此面板可以開/關切換顯示各種與該文件關聯的中繼資料。雖然可以自訂顯示特定中繼資料的搜尋結果方格，仍有其中水平捲動可能很難時檢閱資料的執行個體。[檔案的中繼資料] 面板中可讓使用者在檢視器內的檢視切換。
+此面板可以切換為開啟/關閉顯示各種文件相關聯的中繼資料。雖然可以自訂搜尋結果方格，以顯示特定的中繼資料，但有其中水平捲動可能很難同時檢閱資料的執行個體。檔案中繼資料] 面板可讓使用者在檢視器中檢視切換。
 
-![檔案的中繼資料面板
+![檔案中繼資料] 面板
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>原生檢視
 
-原生檢視者會顯示文件的豐富的檢視。它支援的檔案類型的百並顯示 truest 原生體驗可能原本用意。Microsoft Office 檔案，例如檢視器如何運用 Office Online 以顯示文件的註解、 Excel 公式、 隱藏的列/欄、 PowerPoint notes 等的內容。如需有關 Office Online 檢視器，請造訪以下\[需要連結\]
+原生檢視器會顯示最豐富的文件檢視。它支援數百個檔案類型，用來顯示 truest 可能的原生經驗。對於 Microsoft Office 檔案，例如檢視器運用 Office Online 才能顯示內容，例如文件的註解的 Excel 公式、 隱藏的列/欄、 PowerPoint 備忘稿、 等等。如需更多關於 Office 線上檢視程式的詳細資訊，請造訪以下\[需要連結\]
 
 ![原生檢視
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文字檢視
 
-文字檢視者提供解壓縮檔案的文字的模式。它會略過任何內嵌的圖像和格式設定但將會是非常效能低落檢視如果使用者嘗試快速了解內容。文字檢視也包含其他功能：
+文字檢視器提供解壓縮檔案的文字的檢視。它會忽略任何內嵌的影像，並但格式會是非常效能低落檢視，如果使用者正在嘗試快速了解內容。文字檢視也包含其他功能：
 
   - 線條計數器容易參照特定的某些部分的文件
 
-  - 搜尋結果醒目提示強調內文件為 scrollbar 的字詞
+  - 搜尋結果醒目提示，將會反白顯示文件，以及 scrollbar 中的字詞
 
-  - Diff 檢視提供會醒目提示文字的差異時檢視接近重複的文件的比較檢視
+  - Diff 檢視提供比較檢視，檢視接近重複的文件時，會醒目提示文字的差異
 
 ![文字檢視
 ](../media/Reviewimage4.png)
@@ -65,27 +63,27 @@ ms.locfileid: "30306512"
 
 ## <a name="annotate-view"></a>加上註解檢視
 
-[附註] 檢視提供功能可讓使用者套用標記的文件包括：
+[附註] 檢視提供的功能，可讓使用者標記會套用到文件，包括：
 
   - 區域 redactions – 使用者可以在方塊上繪製文件以隱藏敏感內容
 
-  - 鉛筆 – 使用者可以免費手掌繪製文件上的以便將移至特定的文件中某些部分的廣告
+  - 鉛筆 – 使用者可以在文件上的手繪圖若要將移至文件的某些部分的注意事項
 
-  - 選取 [註解-使用者可以選取文件上的註解以刪除
+  - 選取 [註解-使用者可以選取文件上的註解才能刪除
 
-  - 若要檢視背後的註解內容切換的附註透明度 – 讓註釋半透明
+  - 切換的附註透明度 – 讓註釋半透明才能檢視註解後面的內容
 
   - 上一頁 – 瀏覽至先前的頁面
 
-  - 下一頁 – 瀏覽至 [下一步] 頁面上
+  - 下一步] 頁面上 – 瀏覽至 [下一步] 頁面上
 
-  - 移至頁面 – 使用者可以輸入來瀏覽至特定頁面數
+  - 移至頁面 – 使用者可以輸入來瀏覽至特定的頁面數字
 
-  - 縮放 （英文） – 設附註] 檢視的縮放比例
+  - 縮放 – 設定附註] 檢視的縮放層級
 
-  - 旋轉 – 使用者可以旋轉順時針方向的文件
+  - 旋轉 – 使用者可以將文件順時針方向旋轉
 
-  - 搜尋 – 使用者可以搜尋文件中並瀏覽至 [文件內各種拜訪人次
+  - 搜尋 – 使用者可以在文件中搜尋和瀏覽至文件內各種拜訪人次
     
     ![加上註解檢視
     ](../media/Reviewimage1.png)

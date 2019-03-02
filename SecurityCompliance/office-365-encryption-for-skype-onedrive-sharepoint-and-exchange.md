@@ -1,5 +1,5 @@
 ---
-title: Office 365 加密 Skype、 OneDrive、 SharePoint 及 Exchange
+title: Skype、 OneDrive、 SharePoint 和 Exchange 的 office 365 加密
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -10,65 +10,76 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
-description: 摘要： 加密 Skype、 OneDrive、 SharePoint 及 Exchange Online 的描述。
-ms.openlocfilehash: 730bd15e6d6853b08c388895c9eaa3c7b68b4930
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+- Strat_O365_Enterprise
+description: 摘要： 說明的 Skype、 OneDrive、 SharePoint 和 Exchange Online 的加密。
+ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276243"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357564"
 ---
-# <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for Business、 OneDrive for Business、 SharePoint Online、 and Exchange Online 的 office 365 加密
+# <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>商務用 Skype、 OneDrive for Business、 SharePoint Online 和 Exchange Online 的 office 365 加密
 
-Office 365 是提供廣泛的多層保護在高度安全環境： 實體的資料中心安全性、 網路安全性、 存取安全性、 應用程式安全性及資料安全性。
+Office 365 是高度安全的環境，提供廣泛的保護功能在多層： 實體資料中心安全性、 網路安全性、 存取安全性、 應用程式的安全性和資料安全性。
 
 ## <a name="skype-for-business"></a>商務用 Skype
-Skype 商務客戶資料可能會儲存在檔案或上傳的會議參與者的簡報的表單中的其餘部分。Web 會議伺服器加密 AES 使用 256 位元金鑰的客戶資料。加密的客戶資料會儲存在檔案共用。每個客戶資料的一部分使用不同的隨機產生的 256 位元金鑰加密。客戶資料的一部分在會議中共用、 Web 會議伺服器會指示以下載加密的客戶資料透過 HTTPS 的會議用戶端。以便進行解密的客戶資料，它傳送至用戶端的對應機碼。Web 會議伺服器也會驗證會議用戶端之前允許用戶端存取會議的客戶資料。加入 Web 會議、 時每個會議用戶端會與會議焦點元件執行前端伺服器內透過 TLS 先建立 SIP] 對話方塊。會議剛好的焦點傳給會議用戶端 Web 會議伺服器所產生驗證 cookie。會議用戶端然後連接到 Web Conferencing server 呈現驗證之伺服器的驗證 cookie。
+
+Skype 商務客戶資料可能會儲存在檔案或已上傳的會議參與者的簡報的表單中的其餘部分。Web 會議伺服器加密使用 AES 256 位元金鑰與客戶資料。加密的客戶資料會儲存在檔案共用上。使用不同的隨機產生的 256 位元金鑰加密每一筆客戶資料。在會議中共用的客戶資料時，Web 會議伺服器會指示下載透過 HTTPS 的加密的客戶資料的會議用戶端。用戶端中，如此才能將其解密的客戶資料，它會傳送對應的索引鍵。Web 會議伺服器也會驗證會議用戶端之前它可讓用戶端會議客戶資料的存取權。加入 Web 會議時, 每個會議用戶端會與會議焦點元件執行前端伺服器內透過 TLS 先建立 SIP] 對話方塊。會議將焦點傳給會議用戶端 Web 會議伺服器所產生驗證 cookie。會議用戶端然後連接至呈現驗證 cookie，以由伺服器進行驗證的 Web 會議伺服器。
 
 ## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive
-在 SharePoint Online 中的所有客戶檔案會都受到一定是侷限在單一租用戶的唯一的每個檔案機碼。機碼包括建立和管理 SharePoint Online 服務，或使用客戶索引鍵時，建立與受管理的客戶。檔案上傳、 時加密是由執行 SharePoint Online 中的上傳要求內容之前傳送至 Azure 的儲存裝置。下載檔案時，SharePoint Online 擷取加密的客戶 Azure 儲存的資料為基礎的獨特的文件識別碼和解密的客戶資料之前傳送給使用者。Azure 存放具有無法解密，或甚至是識別或了解客戶資料。所有加密與解密的相同系統的強制執行租用戶隔離，亦即 Azure Active Directory 與 SharePoint Online 中都發生。
 
-Office 365 中的數種工作負載會將資料儲存在 SharePoint Online，包括將所有檔案都儲存在 SharePoint Online 和 OneDrive for Business，它會使用其儲存的 SharePoint Online 的 Microsoft 小組。儲存在 SharePoint Online 中的所有客戶資料加密 （具有一或多個 AES 256 位元索引鍵），且分散於資料中心，如下所示。（此加密程序的每一個步驟是的 FIPS 140-2 層級 2 驗證。如需有關 FIPS 140-2 性的詳細資訊，請參閱[FIPS 140-2 規範](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))）。
-- 每個檔案分割為一或多個區塊，視檔案大小而定。每個區塊會使用其唯一 AES 256 位元金鑰進行加密。
-- 更新檔案，則當更新的處理方式的相同方式： 變更分割為一或多個區塊和每個區塊加密具有不同的唯一索引鍵。
-- 這些區塊 – 檔案、 檔案及更新的差異部分 – 儲存為 blob 在 Azure 的存放區中的隨機分散於多個 Azure 儲存帳戶。 
-- 這些區塊的客戶資料的加密金鑰組為本身加密。
-   - 用來加密 blob 的機碼儲存在 SharePoint Online 內容資料庫。
-   - 內容資料庫會受到資料庫的存取控制及靜態加密。加密被執行[Azure SQL 資料庫](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)中使用[透明資料加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde)(TDE)。（azure SQL 資料庫是支援例如關聯式資料、 JSON 空間，以及 XML 結構的 Microsoft Azure 中的一般用途的關聯式資料庫服務）。在 SharePoint Online、 不在租用戶層級的服務層級都是這些機密資料。（有時稱為主索引鍵） 這些機密資料儲存在稱為 「 機碼儲存在個別安全儲存機制。TDE 提供在作用中的資料庫和資料庫備份和交易記錄檔的其餘部分的安全性。 
-   - 當客戶提供選擇性的機碼時，客戶機碼儲存在 Azure 機碼存放庫，並服務使用按鍵來加密租用戶金鑰，這用來加密網站金鑰，然後用來加密檔案層級索引鍵。基本上時客戶提供金鑰, 已導入新的金鑰階層。
-- 用來重新組合之檔案的對應會儲存加密金鑰，分開解密它們所需之主要金鑰及內容資料庫中。
-- Azure 存放區中的每個帳戶有自己的唯一認證每種存取類型 （讀取、 寫入、 列舉和刪除）。每一組認證保存在安全的金鑰存放區並定期重新整理。如前文所述，有三種不同存放區各有不同的函數：
-- 客戶資料會儲存為 Azure 存放在加密 blob。每個區塊的客戶資料的按鍵是加密和分開儲存在內容資料庫中。本身的客戶資料會保留任何線索來方式進行解密。
-- 內容資料庫是 SQL Server 資料庫。它會保留找出與重新組合客戶資料 blob 保存在 Azure 儲存為加密那些 blob 所需的按鍵所需的地圖。不過，機碼設為加密 （如上所述） 並保存在不同的索引鍵存放區本身擷取。
-- 金鑰存放區已從內容資料庫與 Azure 儲存實體分開。它會保留內容資料庫中的加密金鑰組保留每個 Azure 儲存容器和主要金鑰的認證。
+在 SharePoint Online 中的所有客戶檔案都受到永遠都會侷限在單一租用戶的唯一的每個檔案機碼。機碼會建立及管理 SharePoint Online 服務，或是使用客戶金鑰時，所建立和管理客戶。當檔案上傳時，加密 SharePoint online 內容中的上傳要求之前，先執行傳送至 Azure 儲存體。當下載檔案後時，SharePoint Online 擷取加密的客戶根據獨特的文件識別碼及解密的客戶資料傳送給使用者前，從 Azure 儲存體資料。Azure 儲存體有沒有解密，或甚至是識別或了解客戶資料的能力。所有加密和解密，即會都發生的相同系統強制執行的租用戶隔離，也就是 Azure Active Directory 和 SharePoint Online 中。
 
-每個 – Azure blob 存放區、 內容資料庫及索引鍵存放區 – 這三個儲存元件是實體分開。保存在任何一種元件的資訊為其本身上無法使用。無法存取所有三個，很難擷取至區塊的機碼、 解密使其可、 索引鍵關聯及其對應的區塊、 解密每個區塊，或重建其構成區塊中的文件的按鍵。
+在 Office 365 中的數個工作負載將資料儲存在 SharePoint Online，包括 Microsoft Teams，儲存在 SharePoint Online 和 OneDrive for Business，其儲存為使用 SharePoint Online 中的所有檔案。儲存在 SharePoint Online 中的所有客戶資料會加密 （具有一或多個 AES 256 位元索引鍵），並分散於資料中心，如下所示。（此加密程序的每一個步驟是的 FIPS 140-2 層級 2 進行驗證。如需 FIPS 140-2 相容性的詳細資訊，請參閱[FIPS 140-2 相容性](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))）。
 
-保護資料中心的機器上的實體磁碟磁碟區、 的 BitLocker 憑證儲存在安全存放庫 （SharePoint Online 秘密存放區） 受保護伺服器陣列的索引鍵。
+- 每個檔案分割成一或多個區塊，視檔案大小而定。每個區塊會使用其專屬唯一的 AES 256 位元金鑰來加密。
+- 當更新檔案時，更新會處理相同的方式： 變更分割成一或多個區塊，且每個區塊加密與不同的唯一索引鍵。
+- 這些區塊 – 檔案、 檔案及更新的差異部分 – 儲存為 Azure 儲存體中會隨機分散到多個 Azure 儲存體帳戶的 blob。
+- 這些區塊的客戶資料的加密金鑰組是本身加密。
 
-保護個別 blob 機碼下 TDE 鍵會儲存在兩個位置：
-- 安全存放庫以裝載 BitLocker 憑證以及保護伺服器陣列鍵 ； 所與
-- 在 [受管理的 Azure SQL 資料庫的安全存放庫。
+    - 用來加密 blob 的機碼會儲存在 SharePoint Online 內容資料庫。
+    - 內容資料庫受到資料庫的存取控制及靜態加密。加密被執行[Azure SQL 資料庫](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)中使用[透明資料加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde)（tde） >。（azure SQL 資料庫是在支援如關聯式資料、 JSON，空間和 XML 結構的 Microsoft Azure 中的一般用途的關聯式資料庫服務）。這些密碼會在服務層級的 SharePoint Online 中，不在租用戶層級。（有時稱為主索引鍵） 這些密碼會儲存在不同的安全存放庫，以稱為索引鍵存放區。TDE 提供安全性，請參閱作用中的資料庫和資料庫的備份和交易記錄檔的其餘部分。
+    - 當客戶提供的選用的索引鍵時，客戶金鑰會儲存在 Azure Key Vault 和服務使用金鑰來加密租用戶金鑰，是用來加密網站金鑰，然後用來加密檔案層級索引鍵。基本上，客戶提供按鍵時，被引進新的金鑰階層。
+- 用來重新組合檔案的地圖儲存在內容資料庫以及加密金鑰，分開解密他們所需的主要金鑰。
+- 每個 Azure 儲存體帳戶有其專屬唯一的認證，每個存取類型 （讀取、 寫入、 列舉和刪除）。每個一組認證存放在安全的金鑰存放區，而是定期重新整理。如前所述，有三種不同的存放區各有不同的功能：
+    - 客戶資料會儲存為 Azure 儲存體中的加密 blob。客戶資料的每個區塊的金鑰會加密並分開儲存在內容資料庫中。本身的客戶資料會保留任何線索如何進行解密。
+    - 內容資料庫是 SQL Server 資料庫。它會保留找出與重組這些資料保留在 Azure 儲存體，以及加密這些 blob 所需的金鑰客戶資料 blob 所需的對應。不過的索引鍵集本身是加密 （如前所述），並保留在個別的機碼存放區。
+    - 索引鍵儲存區是從內容資料庫和 Azure 儲存體實體分開。它會保留每個 Azure 儲存體容器和主要金鑰的認證以保留內容資料庫中的加密金鑰組。
 
-SharePoint Online 中的機密儲存和委派給每個 SharePoint Online 的伺服器陣列所需，也可以保留可用來存取 Azure 儲存容器的認證。這些認證是 Azure 儲存 SAS 簽章，個別的認證來讀取或寫入資料，以及套用使其自動-到期每 60 天的原則。不同的認證用來讀取或寫入資料 （不可同時具備） 與 SharePoint Online 的伺服器陣列不會授與權限來列舉。
+每個 – Azure blob 存放區、 內容資料庫及金鑰存放區 – 這三個儲存體元件是實體分開。保留在其中一個元件的資訊是在其本身不穩定。沒有存取所有三個時，就無法擷取區塊按鍵，解密按鍵，以將他們設為可用、 索引鍵關聯及其對應的區塊、 解密每個區塊或重建來自其所屬的區塊文件。
 
-> 附註的 Office 365 美國政府客戶、 資料 blob 儲存在 Azure 美國政府存放區中。此外，存取 Office 365 美國政府中的 SharePoint Online 機碼僅限於已特別篩選的 Office 365 人員。Azure 美國政府作業人員用來加密資料 blob 的 SharePoint Online 主要儲存區不需要存取。
+BitLocker 憑證，保護資料中心裡的機器上的實體磁碟區，會儲存在安全存放庫 （SharePoint Online 秘密存放區） 所保護的伺服器陣列索引鍵。
 
-如需 SharePoint Online 和 OneDrive for Business 的資料加密的詳細資訊，請參閱[OneDrive for Business 和 SharePoint Online 中的資料加密](https://technet.microsoft.com/en-us/library/dn905447.aspx)。
+保護每個 blob 金鑰 TDE 機碼會儲存在兩個位置：
+
+- 安全存放庫中，以存放 BitLocker 憑證，以及受保護的伺服器陣列使用機碼。和
+- 在 [安全的存放庫，由 Azure SQL Database 管理。
+
+在 SharePoint Online 中的機密儲存及委派給每個 SharePoint Online 的伺服器陣列視需要也會保留用來存取 Azure 儲存體容器的認證。這些認證是 Azure 儲存體 SAS 簽章，用來讀取或寫入資料，個別認證與對原則套用，讓他們自動過期每 60 天。不同的認證用來讀取或寫入資料 （不能兩者同時） 和 SharePoint Online 的伺服器陣列不會授與列舉權限。
+
+> [!NOTE]
+> Office 365 US Government 的客戶，資料 blob 儲存在 Azure 美國政府存放區中。此外，存取 SharePoint Online 中 Office 365 US Government 的機碼僅限於已特別遮蔽的 Office 365 人員。Azure US Government 操作人員不需要用來加密資料 blob 的 SharePoint Online 重要存放區的存取。
+
+如需有關 SharePoint Online 和商務用 OneDrive 中的資料加密的詳細資訊，請參閱[商務用 OneDrive 和 SharePoint Online 中的資料加密](https://technet.microsoft.com/en-us/library/dn905447.aspx)。
 
 ### <a name="list-items-in-sharepoint-online"></a>SharePoint Online 中的清單項目
-會較小的區塊客戶臨或所建立的資料可以更動態 live 網站內，例如使用者建立的清單中的列、 SharePoint Online 的部落格、 或 SharePoint Online 的 wiki 頁面內的項目中的個別文章的清單項目。清單項目是儲存在內容資料庫 （Azure SQL 資料庫） 與以 TDE 保護。
+
+清單項目是較小的區塊，建立臨機操作或的資料可以更動態 live 網站，例如建立使用者的清單中的列、 SharePoint Online 的部落格或 SharePoint Online 的 wiki 頁面內的項目中的個別文章中的客戶。清單項目儲存在內容資料庫 (Azure SQL Database)，並且使用 TDE 保護。
 
 ## <a name="encryption-of-data-in-transit"></a>傳輸中資料的加密
-在OneDrive for Business 和 SharePoint Online 中，資料進出資料中心的方式有兩種。
-- **用戶端與伺服器之間的通訊**通訊 OneDrive for Business 跨網際網路使用 SSL/TLS 連線。所有的 SSL 連線會建立使用 2048年位元金鑰。
-- **資料中心之間移動資料**的資料中心之間移動資料的主要原因是啟用嚴重損壞修復的地理位置複寫。例如，SQL Server 交易記錄檔與 blob 存放區差異旅行社沿著此管道。雖然此資料已經會使用私人網路傳輸，其進一步受到適合的類別加密。
 
+在OneDrive for Business 和 SharePoint Online 中，資料進出資料中心的方式有兩種。
+
+- **用戶端與伺服器進行通訊**，在網際網路上的商務用 OneDrive 的通訊會使用 SSL/TLS 連線。使用 2048年位元金鑰來建立所有 SSL 連線。
+- **資料中心之間的資料移動**到資料中心之間移動資料的主要原因是地理複寫啟用嚴重損壞修復。例如，SQL Server 交易記錄檔與 blob 儲存體差異旅行沿著此管道。雖然此資料已傳送的私人網路使用，其進一步受到適合在類別加密。
 
 ## <a name="exchange-online"></a>Exchange Online
-Exchange Online 使用 BitLocker 所有信箱資料，並[BitLocker 加密](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)中所述的 BitLocker 組態。服務層級加密加密層級的信箱的所有信箱資料。 
 
-服務層加密，以及 Office 365 支援客戶金鑰、 內建置於服務加密。客戶機碼是 Microsoft managed 金鑰] 選項也是在 Microsoft 的藍圖的 Exchange Online 服務加密。此方法的加密提供由於它所提供之伺服器管理員及解密的資料所需的密碼編譯按鍵區隔而且加密直接套用至資料 （在未提供 BitLocker 增加的保護使用 BitLocker，由它套用在邏輯磁碟磁碟區加密對比） 從 Exchange 伺服器中複製任何客戶資料仍會保留加密。
+Exchange Online 使用 BitLocker 的所有信箱資料，而 BitLocker 組態會說明[BitLocker 加密](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)。服務層級加密來加密在信箱層級的所有信箱資料。 
 
-Exchange Online 服務加密的範圍會儲存在 Exchange Online 中的其餘部分的客戶資料。（Skype for Business 幾乎所有使用者產生將內容都儲存在使用者的 Exchange Online 信箱與因此繼承的 Exchange Online 服務加密功能）。
+除了服務加密，Office 365 支援客戶金鑰服務加密掌握內建。客戶金鑰是 Exchange Online 服務加密，同時也是在 Microsoft 的藍圖，Microsoft 受管理的主要選項。此方法的加密提供加強的保護，因為它提供的伺服器管理員及解密的資料，所需的密碼編譯金鑰的區隔，也因為加密直接套用至 （中的資料不提供 BitLocker使用 BitLocker，適用於加密的邏輯磁碟區對比） 從 Exchange 伺服器複製任何客戶資料保持加密狀態。
+
+Exchange Online 服務加密的範圍是儲存在 Exchange Online 內的靜態的客戶資料。（商務用 Skype 幾乎所有使用者產生的內容，都儲存在使用者的 Exchange Online 信箱內與因此繼承的 Exchange Online 服務加密功能）。
