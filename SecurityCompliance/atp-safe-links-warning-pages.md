@@ -11,102 +11,104 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
-description: 取得您可能會看到 Office 365 進階威脅保護位於工時警告頁面的概觀。
-ms.openlocfilehash: e11592c5db0909171627cd163593d7e49cc6a5de
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.collection:
+- M365-security-compliance
+description: 概略警告頁面，您可能會看到 Office 365 進階威脅防護位於工時。
+ms.openlocfilehash: 5bf6d436e319127fdd5aecd5c58e168a59333d25
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245589"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357444"
 ---
-# <a name="office-365-atp-safe-links-warning-pages"></a><span data-ttu-id="c5a6f-103">Office 365 ATP 安全連結警告頁面</span><span class="sxs-lookup"><span data-stu-id="c5a6f-103">Office 365 ATP Safe Links warning pages</span></span>
+# <a name="office-365-atp-safe-links-warning-pages"></a><span data-ttu-id="b432e-103">Office 365 ATP 安全連結警告頁面</span><span class="sxs-lookup"><span data-stu-id="b432e-103">Office 365 ATP Safe Links warning pages</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c5a6f-p101">本文適用於 Office 365 企業版客戶的。如果您使用 Outlook.com、 Office 365 首頁] 或 [Office 365 個人，而且您要尋找在 Outlook 中的安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-p101">This article is intended for Office 365 Enterprise customers. If you are using Outlook.com, Office 365 Home, or Office 365 Personal, and you're looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
+> <span data-ttu-id="b432e-p101">本文適用於 Office 365 企業版客戶。如果您使用 Outlook.com、 Office 365 家用版、 Office 365 個人或，而且您正在尋找在 Outlook 中的安全連結的相關資訊，請參閱 <<c0>進階 Outlook.com 安全性。</span><span class="sxs-lookup"><span data-stu-id="b432e-p101">This article is intended for Office 365 Enterprise customers. If you are using Outlook.com, Office 365 Home, or Office 365 Personal, and you're looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
 
-<span data-ttu-id="c5a6f-p102">[Office 365 的進階的威脅保護](office-365-atp.md)(ATP) 可協助保護您的組織網路釣魚嘗試及透過功能，例如[ATP 安全連結](atp-safe-links.md)、 [ATP 安全附件](atp-safe-attachments.md)及[反網路釣魚保護](anti-phishing-protection.md)惡意程式碼。備妥保護時，就會檢查電子郵件訊息與 Office 文件中的連結 (Url)。如果 URL 會被識別為可疑或惡意，可能會遭到封鎖在按一下時開啟 URL。而非直接進入網站，您可能會看到警告] 頁面。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-p102">[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) helps protect your organization from phishing attempts and malware through features, such as [ATP Safe Links](atp-safe-links.md), [ATP Safe Attachments](atp-safe-attachments.md), and [anti-phishing protection](anti-phishing-protection.md). When protection is in place, links (URLs) in email messages and Office documents are checked. If a URL is identified as suspicious or malicious, you might be blocked from opening the URL when you click it. Instead of going directly to the site, you might see a warning page instead.</span></span> 
+<span data-ttu-id="b432e-p102">[Office 365 進階的威脅防護](office-365-atp.md)(ATP) 可協助保護組織免於網路釣魚企圖和惡意程式碼透過功能，例如[ATP 安全連結](atp-safe-links.md)、 [ATP 安全附件](atp-safe-attachments.md)，以及[防網路釣魚保護](anti-phishing-protection.md)。就地保護時，就會檢查電子郵件和 Office 文件中的連結 (Url)。如果 URL 便會被視為可疑或惡意，您可能會封鎖從開啟 URL，當您按一下。而不是直接前往網站，您可能會看到警告] 頁面。</span><span class="sxs-lookup"><span data-stu-id="b432e-p102">[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) helps protect your organization from phishing attempts and malware through features, such as [ATP Safe Links](atp-safe-links.md), [ATP Safe Attachments](atp-safe-attachments.md), and [anti-phishing protection](anti-phishing-protection.md). When protection is in place, links (URLs) in email messages and Office documents are checked. If a URL is identified as suspicious or malicious, you might be blocked from opening the URL when you click it. Instead of going directly to the site, you might see a warning page instead.</span></span> 
   
-<span data-ttu-id="c5a6f-110">請閱讀本篇文章以查看[警告頁面的範例](atp-safe-links-warning-pages.md#examples)，以及[最近使用更新為警告頁面](atp-safe-links-warning-pages.md#updates)可能會出現。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-110">Read this article to see [Examples of warning pages](atp-safe-links-warning-pages.md#examples) that might appear, along with [Recent updates to warning pages](atp-safe-links-warning-pages.md#updates).</span></span>
+<span data-ttu-id="b432e-110">閱讀本篇文章以查看[的警告頁面範例](atp-safe-links-warning-pages.md#examples)可能出現，以及[最近更新至警告頁面](atp-safe-links-warning-pages.md#updates)。</span><span class="sxs-lookup"><span data-stu-id="b432e-110">Read this article to see [Examples of warning pages](atp-safe-links-warning-pages.md#examples) that might appear, along with [Recent updates to warning pages](atp-safe-links-warning-pages.md#updates).</span></span>
   
-## <a name="examples-of-warning-pages"></a><span data-ttu-id="c5a6f-111">警告頁面的範例</span><span class="sxs-lookup"><span data-stu-id="c5a6f-111">Examples of warning pages</span></span>
+## <a name="examples-of-warning-pages"></a><span data-ttu-id="b432e-111">警告頁面範例</span><span class="sxs-lookup"><span data-stu-id="b432e-111">Examples of warning pages</span></span>
 
-### <a name="atp-is-scanning-the-link"></a><span data-ttu-id="c5a6f-112">ATP 會掃描連結</span><span class="sxs-lookup"><span data-stu-id="c5a6f-112">ATP is scanning the link</span></span>
+### <a name="atp-is-scanning-the-link"></a><span data-ttu-id="b432e-112">ATP 會掃描的連結</span><span class="sxs-lookup"><span data-stu-id="b432e-112">ATP is scanning the link</span></span>
 
-<span data-ttu-id="c5a6f-p103">URL 是要掃描的 ATP 安全的連結。您可能必須等候幾分鐘再試一次] 連結。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-p103">A URL is being scanned by ATP Safe Links. You might have to wait a few moments to try the link again.</span></span>
+<span data-ttu-id="b432e-p103">URL 是由 ATP 安全連結掃描。您可能必須等待幾分鐘再試一次連結的時間。</span><span class="sxs-lookup"><span data-stu-id="b432e-p103">A URL is being scanned by ATP Safe Links. You might have to wait a few moments to try the link again.</span></span>
 
-![ATP 會掃描連結](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![ATP 會掃描的連結](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
-### <a name="a-url-is-in-a-suspicious-email-message"></a><span data-ttu-id="c5a6f-116">URL 是可疑的電子郵件訊息</span><span class="sxs-lookup"><span data-stu-id="c5a6f-116">A URL is in a suspicious email message</span></span>
+### <a name="a-url-is-in-a-suspicious-email-message"></a><span data-ttu-id="b432e-116">URL 是中的可疑的電子郵件</span><span class="sxs-lookup"><span data-stu-id="b432e-116">A URL is in a suspicious email message</span></span>
 
-<span data-ttu-id="c5a6f-p104">URL 是似乎類似於其他視為可疑的電子郵件訊息的電子郵件訊息中。我們建議您再次檢查電子郵件再繼續進行至網站。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-p104">The URL is in an email message that seems similar to other email messages that are considered suspicious. We recommend that you double-check the email message before proceeding to the site.</span></span>
+<span data-ttu-id="b432e-p104">URL 是看起來類似會被視為可疑的其他電子郵件的電子郵件中。我們建議您仔細檢查繼續進行站台的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="b432e-p104">The URL is in an email message that seems similar to other email messages that are considered suspicious. We recommend that you double-check the email message before proceeding to the site.</span></span>
 
-![此 URL 會在可疑的電子郵件訊息](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+![此 URL 是中的可疑的電子郵件](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
-### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a><span data-ttu-id="c5a6f-120">URL 會被識別為網路釣魚嘗試在郵件中</span><span class="sxs-lookup"><span data-stu-id="c5a6f-120">A URL is in a message identified as a phishing attempt</span></span>
+### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a><span data-ttu-id="b432e-120">URL 是在郵件被識別為網路釣魚嘗試</span><span class="sxs-lookup"><span data-stu-id="b432e-120">A URL is in a message identified as a phishing attempt</span></span>
 
-<span data-ttu-id="c5a6f-p105">URL 會被識別為網路釣魚攻擊電子郵件訊息中。因此，封鎖電子郵件中的所有 Url。我們建議您不要不繼續至網站。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-p105">The URL is in an email message that has been identified as a phishing attack. As a result, all URLs in the email message are blocked. We recommend that you do not proceed to the site.</span></span>
+<span data-ttu-id="b432e-p105">URL 是已被識別為網路釣魚攻擊的電子郵件中。因此，會封鎖電子郵件訊息中的所有 Url。我們建議您不要不繼續進行站台。</span><span class="sxs-lookup"><span data-stu-id="b432e-p105">The URL is in an email message that has been identified as a phishing attack. As a result, all URLs in the email message are blocked. We recommend that you do not proceed to the site.</span></span>
 
 ![此 URL 會被識別為網路釣魚嘗試在郵件中](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
-### <a name="a-site-has-been-identified-as-malicious"></a><span data-ttu-id="c5a6f-125">站台已識別為惡意</span><span class="sxs-lookup"><span data-stu-id="c5a6f-125">A site has been identified as malicious</span></span>
+### <a name="a-site-has-been-identified-as-malicious"></a><span data-ttu-id="b432e-125">已識別為惡意的網站</span><span class="sxs-lookup"><span data-stu-id="b432e-125">A site has been identified as malicious</span></span>
 
-<span data-ttu-id="c5a6f-126">URL 指向已識別為惡意的網站。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-126">The URL points to a site that has been identified as malicious.</span></span>  <br/> <span data-ttu-id="c5a6f-127">我們建議您不要不繼續至網站。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-127">We recommend that you do not proceed to the site.</span></span>
+<span data-ttu-id="b432e-126">URL 會指向已識別為惡意的網站。</span><span class="sxs-lookup"><span data-stu-id="b432e-126">The URL points to a site that has been identified as malicious.</span></span>  <br/> <span data-ttu-id="b432e-127">我們建議您不要不繼續進行站台。</span><span class="sxs-lookup"><span data-stu-id="b432e-127">We recommend that you do not proceed to the site.</span></span>
 
 ![此網站已識別為惡意](media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
-### <a name="a-site-is-blocked"></a><span data-ttu-id="c5a6f-129">封鎖網站</span><span class="sxs-lookup"><span data-stu-id="c5a6f-129">A site is blocked</span></span>
+### <a name="a-site-is-blocked"></a><span data-ttu-id="b432e-129">封鎖網站</span><span class="sxs-lookup"><span data-stu-id="b432e-129">A site is blocked</span></span>
 
-<span data-ttu-id="c5a6f-p106">您的組織會封鎖 URL。有數個原因可能會封鎖 URL 的原因。我們建議您連絡組織的 Office 365 系統管理員。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-p106">The URL is blocked for your organization. There are several reasons why a URL might be blocked. We recommend that you contact your organization's Office 365 administrator.</span></span>
+<span data-ttu-id="b432e-p106">URL 會封鎖您的組織。有幾個理由為什麼 URL 可能被封鎖。我們建議您連絡貴組織的 Office 365 系統管理員。</span><span class="sxs-lookup"><span data-stu-id="b432e-p106">The URL is blocked for your organization. There are several reasons why a URL might be blocked. We recommend that you contact your organization's Office 365 administrator.</span></span>
 
-![封鎖此站台](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![此網站會遭到封鎖](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
-### <a name="an-error-has-occurred"></a><span data-ttu-id="c5a6f-134">發生錯誤</span><span class="sxs-lookup"><span data-stu-id="c5a6f-134">An error has occurred</span></span>
+### <a name="an-error-has-occurred"></a><span data-ttu-id="b432e-134">發生錯誤</span><span class="sxs-lookup"><span data-stu-id="b432e-134">An error has occurred</span></span>
 
-<span data-ttu-id="c5a6f-135">發生錯誤的某種類型，並無法開啟 URL。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-135">Some kind of error has occurred, and the URL cannot be opened.</span></span>
+<span data-ttu-id="b432e-135">發生某種錯誤，且無法開啟 URL。</span><span class="sxs-lookup"><span data-stu-id="b432e-135">Some kind of error has occurred, and the URL cannot be opened.</span></span>
 
 ![發生錯誤](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
 
-## <a name="recent-updates-to-warning-pages"></a><span data-ttu-id="c5a6f-137">警告頁面新版更新</span><span class="sxs-lookup"><span data-stu-id="c5a6f-137">Recent updates to warning pages</span></span>
+## <a name="recent-updates-to-warning-pages"></a><span data-ttu-id="b432e-137">新版更新至警告頁面</span><span class="sxs-lookup"><span data-stu-id="b432e-137">Recent updates to warning pages</span></span>
 
-<span data-ttu-id="c5a6f-p107">Office 365 ATP 最近已更新數個警告頁面。如果尚未準備看到 [更新] 頁面，您將推出。更新加入新的色彩配置、 詳細資訊，並繼續進行至而不管的特定警告和建議的網站的能力。</span><span class="sxs-lookup"><span data-stu-id="c5a6f-p107">Several warning pages were recently updated for Office 365 ATP. If you're not already seeing the updated pages, you will soon. The updates include a new color scheme, more details, and the ability to proceed to a site despite the given warning and recommendations.</span></span>
+<span data-ttu-id="b432e-p107">數個警告頁面最近已更新的 Office 365 ATP。如果您還沒看到 [更新] 頁面，您將會推出。更新加入新的色彩配置、 詳細資訊，並繼續進行至網站，而不管給定的警告和建議的能力。</span><span class="sxs-lookup"><span data-stu-id="b432e-p107">Several warning pages were recently updated for Office 365 ATP. If you're not already seeing the updated pages, you will soon. The updates include a new color scheme, more details, and the ability to proceed to a site despite the given warning and recommendations.</span></span>
 
-### <a name="url-scan-in-progress"></a><span data-ttu-id="c5a6f-141">進行中的 URL 掃描</span><span class="sxs-lookup"><span data-stu-id="c5a6f-141">URL scan in progress</span></span>
+### <a name="url-scan-in-progress"></a><span data-ttu-id="b432e-141">進行中的 URL 掃描</span><span class="sxs-lookup"><span data-stu-id="b432e-141">URL scan in progress</span></span>
 
-<span data-ttu-id="c5a6f-142">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-142">Original warning page:</span></span>
+<span data-ttu-id="b432e-142">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-142">Original warning page:</span></span>
 
-![原始的警告] 頁面上進行中的 URL 掃描的相關](media/04368763-763f-43d6-94a4-a48291d36893.png)
+![原始的警告] 頁面上有關進行中的 URL 掃描](media/04368763-763f-43d6-94a4-a48291d36893.png)
 
-<span data-ttu-id="c5a6f-144">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-144">Updated warning page:</span></span>
+<span data-ttu-id="b432e-144">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-144">Updated warning page:</span></span>
 
-![ATP 會掃描連結](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![ATP 會掃描的連結](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
-### <a name="malicious-site-warning"></a><span data-ttu-id="c5a6f-146">惡意網站警告</span><span class="sxs-lookup"><span data-stu-id="c5a6f-146">Malicious site warning</span></span>
+### <a name="malicious-site-warning"></a><span data-ttu-id="b432e-146">惡意網站警告</span><span class="sxs-lookup"><span data-stu-id="b432e-146">Malicious site warning</span></span>
 
-<span data-ttu-id="c5a6f-147">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-147">Original warning page:</span></span>
+<span data-ttu-id="b432e-147">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-147">Original warning page:</span></span>
 
-![原始的警告] 頁面上的惡意網站的相關](media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+![原始的警告] 頁面上關於惡意的網站](media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
 
-<span data-ttu-id="c5a6f-149">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-149">Updated warning page:</span></span>
+<span data-ttu-id="b432e-149">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-149">Updated warning page:</span></span>
 
 ![此網站已識別為惡意](media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
-### <a name="blocked-url-warning"></a><span data-ttu-id="c5a6f-151">封鎖 URL 警告</span><span class="sxs-lookup"><span data-stu-id="c5a6f-151">Blocked URL warning</span></span>
+### <a name="blocked-url-warning"></a><span data-ttu-id="b432e-151">封鎖 URL 警告</span><span class="sxs-lookup"><span data-stu-id="b432e-151">Blocked URL warning</span></span>
 
-<span data-ttu-id="c5a6f-152">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-152">Original warning page:</span></span>
+<span data-ttu-id="b432e-152">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-152">Original warning page:</span></span>
 
-![原始的警告] 頁面上的封鎖 URL 的相關](media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![封鎖 URL 相關的原始警告頁面](media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
-<span data-ttu-id="c5a6f-154">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-154">Updated warning page:</span></span>
+<span data-ttu-id="b432e-154">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-154">Updated warning page:</span></span>
 
-![封鎖此站台](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![此網站會遭到封鎖](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
-### <a name="error-occurred-warning-page"></a><span data-ttu-id="c5a6f-156">「 發生錯誤 」 警告] 頁面</span><span class="sxs-lookup"><span data-stu-id="c5a6f-156">"Error occurred" warning page</span></span>
+### <a name="error-occurred-warning-page"></a><span data-ttu-id="b432e-156">「 發生錯誤 」 警告頁面</span><span class="sxs-lookup"><span data-stu-id="b432e-156">"Error occurred" warning page</span></span>
 
-<span data-ttu-id="c5a6f-157">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-157">Original warning page:</span></span>
+<span data-ttu-id="b432e-157">原始的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-157">Original warning page:</span></span>
 
-![原始"發生錯誤 」 警告] 頁面](media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+![原始 「 發生錯誤 」 警告頁面](media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
 
-<span data-ttu-id="c5a6f-159">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="c5a6f-159">Updated warning page:</span></span>
+<span data-ttu-id="b432e-159">更新的警告] 頁面上：</span><span class="sxs-lookup"><span data-stu-id="b432e-159">Updated warning page:</span></span>
 
 ![發生錯誤](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    
