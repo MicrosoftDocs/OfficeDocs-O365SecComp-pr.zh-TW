@@ -30,7 +30,7 @@
 ### [檢視 DLP 報告](view-the-dlp-reports.md)
 ### [形成查詢以尋找儲存在網站上的敏感性資料](form-a-query-to-find-sensitive-data-stored-on-sites.md)
 ### [DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作](how-dlp-works-between-admin-centers.md)
-## 選取敏感性資訊類型
+## 使用敏感性資訊類型
 ### [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 ### [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)
 ### [觀看自訂的 DLP 延伸概觀](https://go.microsoft.com/fwlink/?linkid=852306)
@@ -501,7 +501,7 @@
 ## [EOP 中的郵件流程](eop/mail-flow-in-eop.md)
 ### [如何確保郵件不會被標示為垃圾郵件](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 ### [郵件流程規則 (傳輸規則)](eop/mail-flow-rules-transport-rules-0.md)
-### [使用傳輸規則來設定大量電子郵件篩選](use-transport-rules-to-configure-bulk-email-filtering.md)
+### [使用郵件流程規則來設定大量電子郵件篩選](use-transport-rules-to-configure-bulk-email-filtering.md)
 ### [使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
 ### [透過檔案附件封鎖來降低惡意程式碼威脅](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 ### [報告與郵件追蹤](eop/reporting-and-message-trace-in-exchange-online-protection.md)
