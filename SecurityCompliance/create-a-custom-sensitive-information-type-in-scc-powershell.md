@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 了解如何在 Office 365 安全性與合規性中心建立及匯入 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b6289b962211bbe1764e2b6e3b4f08900cb6abd8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223302"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341514"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型
 
@@ -321,7 +321,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Office 365 �
 
 以前，您可能已使用 Exchange Online PowerShell，針對 DLP 匯入您的自訂機密資訊類型。現在您的自訂機密資訊類型可以在 Exchange 系統管理中心及安全性與合規性中心中使用。作為此改進的一部分，您應該使用安全性與合規性中心 PowerShell 來匯入您的自訂機密資訊類型 - 您無法再從 Exchange PowerShell 匯入。您的自訂機密資訊類型會繼續如同以往一般運作；但是，在安全性與合規性中心中對於自訂機密資訊類型所做的變更，可能需要最多一個小時才會在 Exchange 系統管理中心中顯示。
   
-請注意，在安全性與合規性中心中，您使用 `DlpSensitiveInformationTypeRulePackage` Cmdlet 來上傳規則套件。以前，在 Exchange 系統管理中心中，您使用 `ClassificationRuleCollection` Cmdlet。 
+請注意，在安全性與合規性中心中，您使用的是 `DlpSensitiveInformationTypeRulePackage` Cmdlet 來上傳規則套件。以前，在 Exchange 系統管理中心中，您使用的是 `ClassificationRuleCollection` Cmdlet。 
   
 ## <a name="upload-your-rule-package"></a>上傳您的規則套件
 

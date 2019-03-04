@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: EOP 獨立版系統管理員適用的文件，以協助防止垃圾郵件誤判
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306542"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341814"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>利用這些設定來自訂 Office 365 反垃圾郵件篩選器
 
@@ -37,9 +37,9 @@ ms.locfileid: "30306542"
     
 3. 遵循[設定連線篩選原則](https://technet.microsoft.com/zh-TW/library/jj200718%28v=exchg.150%29.aspx) (機器翻譯) 中「使用 EAC 來編輯預設連線篩選原則」中的步驟，將 IP 位址新增至 IP 封鎖清單。
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>利用傳輸規則或垃圾郵件篩選器封鎖大宗郵件
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>利用郵件流程規則 (傳輸規則) 或垃圾郵件篩選器封鎖大宗郵件
 
-垃圾郵件主要是大宗郵件，例如新聞稿或促銷活動嗎？如果您[使用傳輸規則來積極地篩選大量電子郵件](https://technet.microsoft.com/zh-TW/library/dn720438%28v=exchg.150%29.aspx) (機器翻譯)，或在垃圾郵件篩選器的[進階垃圾郵件篩選選項](https://technet.microsoft.com/zh-TW/library/jj200750%28v=exchg.150%29.aspx) (機器翻譯) 中開啟 [大宗郵件]**** 設定，則可以自訂 Office 365 中的垃圾郵件篩選器。在 Exchange 系統管理中心，開始按一下 [保護]**** \> [內容篩選器]****，然後按兩下您要調整的篩選原則。按一下 [垃圾郵件和大宗郵件動作]****，來調整設定，如下所示。 
+垃圾郵件主要是大宗郵件，例如新聞稿或促銷活動嗎？如果您[使用郵件流程規則來設定大量電子郵件的篩選](use-transport-rules-to-configure-bulk-email-filtering.md) (機器翻譯)，或在垃圾郵件篩選器的[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md) (機器翻譯) 中開啟 [大宗郵件]**** 設定，則可以自訂 Office 365 中的垃圾郵件篩選器。在 Exchange 系統管理中心，開始按一下 [保護]**** \> [內容篩選器]****，然後按兩下您要調整的篩選原則。按一下 [垃圾郵件和大宗郵件動作]****，來調整設定，如下所示。 
   
 ![在 Exchange Online 設定大宗郵件篩選器](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   

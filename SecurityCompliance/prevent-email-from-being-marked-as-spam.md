@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: 了解如何避免 Office 365 誤判，並篩選出真正的電子郵件與垃圾郵件。
-ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 10d71519da1639073122b0a89652753f466f6dbe
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296886"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341474"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件
 
@@ -41,7 +41,7 @@ ms.locfileid: "30296886"
 
 - **SFV:BLK** 表示郵件已標示為垃圾郵件，因為寄件地址是在收件者封鎖的寄件者清單上。 
     
-- **SFV:SKS** 表示在篩選內容之前已將郵件標示為垃圾郵件。這可能包括將郵件標示為垃圾郵件的傳輸規則。執行郵件追蹤，來查看是否已觸發可能設定高垃圾郵件信賴等級 (SCL) 的傳輸規則。 
+- **SFV:SKS** 表示在篩選內容之前已將郵件標示為垃圾郵件。這可能包括將郵件標示為垃圾郵件的郵件流程規則 (也稱為傳輸規則)。執行郵件追蹤，來查看是否已觸發可能設定高垃圾郵件信賴等級 (SCL) 的郵件流程規則。 
     
 - **SFV:SKB** 表示郵件已標示為垃圾郵件，因為它符合垃圾郵件篩選原則中的封鎖清單。 
     
@@ -59,7 +59,7 @@ ms.locfileid: "30296886"
   
 ### <a name="for-admins"></a>若為系統管理員
 
-- **將您的 DNS 記錄指向 Office 365** 為了讓 EOP 提供防護，所有網域的郵件交換程式 (MX) DNS 記錄都必須指向 Office 365，而且只能指向 Office 365。如果您的 MX 未指向 Office 365，則 EOP 不會為您的使用者提供垃圾郵件篩選功能。在您想要使用其他服務或應用裝置，為您的網域提供垃圾郵件篩選功能的情況下，您應該考慮在 EOP 中停用垃圾郵件保護。做法為建立一個傳輸規則，將 SCL 值設為 -1。如果您稍後決定要使用 EOP，請務必移除此傳輸規則。 
+- **將您的 DNS 記錄指向 Office 365** 為了讓 EOP 提供防護，所有網域的郵件交換程式 (MX) DNS 記錄都必須指向 Office 365，而且只能指向 Office 365。如果您的 MX 未指向 Office 365，則 EOP 不會為您的使用者提供垃圾郵件篩選功能。在您想要使用其他服務或應用裝置，為您的網域提供垃圾郵件篩選功能的情況下，您應該考慮在 EOP 中停用垃圾郵件保護。做法為建立一個郵件流程規則，將 SCL 值設為 -1。如果您稍後決定要使用 EOP，請務必移除此郵件流程規則。 
     
 - **為使用者開啟回報郵件增益集** 我們建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。身為系統管理員，您也可以檢視使用者傳送的意見反應，並使用任何模式，來調整任何可能造成問題的設定。
     

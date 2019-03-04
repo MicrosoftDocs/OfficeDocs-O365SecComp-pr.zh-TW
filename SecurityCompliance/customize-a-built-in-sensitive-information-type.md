@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
 description: 在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。
-ms.openlocfilehash: 9014a2270947fb97edc1ce834985fbd084bc19e6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6ac047bc6d8ce601dd8f582a429c1dd7353aa48e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215443"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341454"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -212,16 +212,16 @@ ms.locfileid: "30215443"
   
 |**詞彙**|**定義**|
 |:-----|:-----|
-|實體  <br/> |實體是我們所謂的機密資訊類型，例如信用卡號碼。每個實體都有唯一的 GUID 作為其識別碼。如果您複製 GUID 並且在 XML 中搜尋，您會找到 XML 規則定義及該 XML 規則的所有當地語系化轉譯。您也可以藉由尋找轉譯的 GUID 並且搜尋該 GUID，來尋找此定義。  <br/> |
-|函式  <br/> |XML 檔案參考 `Func_credit_card`，這是已編譯程式碼中的函式。函式是用來執行複雜 regexes 並確認總和檢查碼符合我們的內建規則。因為這是在程式碼中發生，所以部分變數不會在 XML 檔案中顯示。<br/> |
-|IdMatch  <br/> |這是模式嘗試比對的識別碼，例如信用卡號碼。您可以在[實體規則](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity)中深入了解這個項目和 `Match` 標記。<br/> |
-|關鍵字清單  <br/> |XML 檔案也會參考 `keyword_cc_verification` 和 `keyword_cc_name`，這是關鍵字清單，我們會從中尋找與實體 `patternsProximity` 的相符項目。目前不會在 XML 中顯示。<br/> |
-|模式  <br/> |模式包含機密類型尋找的清單。包含關鍵字、regexes 及內部函式 (執行像是驗證總和檢查碼的工作)。機密資訊類型可以有多個具有唯一信賴度的模式。建立機密資訊類型時，在找到確切辨識項時傳回高信賴度、找到一些確切辨識項或完全找不到時傳回較低信賴度，這非常有用。  <br/> |
-|模式 confidenceLevel  <br/> |這是 DLP 引擎找到相符項目的信賴等級。此信賴等級與符合模式需求時，模式的相符項目相關聯。這是當使用 Exchange 傳輸規則 (ETR) 時，您應該考慮的信賴度量值。  <br/> |
-|patternsProximity  <br/> |當我們尋找看起來像是信用卡號碼模式的項目時，`patternsProximity` 是與我們尋找確切辨識項的位置接近的數字。  <br/> |
-|recommendedConfidence  <br/> |這是我們針對此規則建議的信賴等級。建議的信賴度會套用至實體和親和性。對於實體，永遠不會針對模式的 `confidenceLevel` 評估此數字。這只是一個建議，協助您在想要套用時選擇一個信賴等級。對於親和性，模式的 `confidenceLevel` 必須高於要叫用之 ETR 動作的 `recommendedConfidence` 數字。`recommendedConfidence` 是在會叫用動作之 ETR 中使用的預設信賴等級。如果您想要的話，可以改為根據模式的信賴等級，手動變更要叫用的 ETR。<br/> |
+|實體|實體是我們所謂的機密資訊類型，例如信用卡號碼。每個實體都有唯一的 GUID 作為其識別碼。如果您複製 GUID 並且在 XML 中搜尋，您會找到 XML 規則定義及該 XML 規則的所有當地語系化轉譯。您也可以藉由尋找轉譯的 GUID 並且搜尋該 GUID，來尋找此定義。|
+|函式|XML 檔案參考 `Func_credit_card`，這是已編譯程式碼中的函式。函式是用來執行複雜 regexes 並確認總和檢查碼符合我們的內建規則。因為這是在程式碼中發生，所以部分變數不會在 XML 檔案中顯示。|
+|IdMatch|這是模式嘗試比對的識別碼，例如信用卡號碼。您可以在[實體規則](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity)中深入了解這個項目和 `Match` 標記。|
+|關鍵字清單|XML 檔案也會參考 `keyword_cc_verification` 和 `keyword_cc_name`，這是關鍵字清單，我們會從中尋找與實體 `patternsProximity` 的相符項目。目前不會在 XML 中顯示。|
+|模式|模式包含機密類型尋找的清單。包含關鍵字、regexes 及內部函式 (執行像是驗證總和檢查碼的工作)。機密資訊類型可以有多個具有唯一信賴度的模式。建立機密資訊類型時，在找到確切辨識項時傳回高信賴度、找到一些確切辨識項或完全找不到時傳回較低信賴度，這非常有用。|
+|模式 confidenceLevel|這是 DLP 引擎找到相符項目的信賴等級。此信賴等級與符合模式需求時，模式的相符項目相關聯。這是當使用 Exchange 郵件流程規則 (也稱為傳輸規則) 時，您應該考慮的信賴度量值。|
+|patternsProximity|當我們尋找看起來像是信用卡號碼模式的項目時，`patternsProximity` 是與我們尋找確切辨識項的位置接近的數字。|
+|recommendedConfidence|這是我們針對此規則建議的信賴等級。建議的信賴度會套用至實體和親和性。對於實體，永遠不會針對模式的 `confidenceLevel` 評估此數字。這只是一個建議，協助您在想要套用時選擇一個信賴等級。對於親和性，模式的 `confidenceLevel` 必須高於要叫用之郵件流程規則動作的 `recommendedConfidence` 數字。`recommendedConfidence` 是在會叫用動作之郵件流程規則中使用的預設信賴等級。如果您想要的話，可以改為根據模式的信賴等級，手動變更要叫用的郵件流程規則。|
    
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 - [機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
     
