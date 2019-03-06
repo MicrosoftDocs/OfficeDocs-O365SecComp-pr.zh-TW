@@ -5,31 +5,27 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 9/25/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤和原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: 792729d55f7096114694a59d7202b36fc130e48c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 328b8f1aeed3e25fb0ab5eb651fb3846b123747c
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221183"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410518"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 
 檔案計劃管理員提供對於保留標籤和原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
 
 ![檔案計劃頁面](media/file-plan-page.png)
-
-## <a name="important-this-feature-is-currently-available-only-as-part-of-the-office-365-preview-program"></a>重要：此功能目前僅作為 Office 365 Preview 程式的一部分
-
-如果貴組織已註冊 Office 365 Preview 程式，則您會在您的租用戶中看到這項功能。
 
 ## <a name="accessing-file-plan-manager"></a>存取檔案計劃管理員
 

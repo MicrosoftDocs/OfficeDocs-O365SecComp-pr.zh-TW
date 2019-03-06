@@ -5,20 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 5/9/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: 使用 Office 365 安全性與合規性中心的標籤活動總管，您可以跨 SharePoint 和商務用 OneDrive 快速搜尋和檢視過去 30 天所有內容的標籤活動。這是即時資料，可讓您清楚檢視租用戶發生什麼情況。
-ms.openlocfilehash: 7ef74e46465192e3d145d526ea9660d32409cedf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213323"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410468"
 ---
 # <a name="view-label-activity-for-documents"></a>檢視文件的標籤活動
 
