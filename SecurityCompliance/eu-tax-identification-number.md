@@ -1,5 +1,5 @@
 ---
-title: 歐盟稅識別碼
+title: 歐盟稅務識別碼
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -7,37 +7,37 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: 本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟稅識別碼敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
-ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟稅務識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
+ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213823"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410908"
 ---
-# <a name="eu-tax-identification-number"></a>歐盟稅識別碼
+# <a name="eu-tax-identification-number"></a>歐盟稅務識別碼
 
-本主題說明什麼資料外洩防護 (DLP) 原則會尋找時被歐盟稅識別號碼 （錫） 敏感資訊類型。此敏感資訊類型定義不同的模式、 關鍵字及每個國家/地區的其他證據。
+本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟稅務識別號碼 （錫） 敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
   
 ## <a name="austria"></a>奧地利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-選擇性連字號和正斜線的九個位數
+選擇性連字號和正斜線的九位數
   
 ### <a name="pattern"></a>模式
 
-選擇性連字號和正斜線的九個位數：
+選擇性連字號和正斜線的九位數：
   
 -  兩位數 
     
-- 一個連字號 (選用)
+- 連字號 （選用）
     
 - 三位數
     
-- 一個正斜線 (選用)
+- 正斜線 （選用）
     
 - 四位數
     
@@ -47,15 +47,15 @@ ms.locfileid: "30213823"
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_austria_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_austria_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_austria_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_austria_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_austria_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -74,14 +74,13 @@ ms.locfileid: "30213823"
 
 #### <a name="keywordsaustriaeutaxfilenumber"></a>Keywords_austria_eu_tax_file_number
 
-稅編號
+稅務編號
   
-數字
+number
   
-稅註冊編號
+稅務登記號碼
   
-tax id
-
+稅務識別碼
   
 st.nr。
   
@@ -89,7 +88,7 @@ steuernummer
   
 ## <a name="belgium"></a>比利時
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 位數不含空格和分隔符號
   
@@ -99,9 +98,9 @@ steuernummer
   
 - 兩位數
     
-- "0"或者"1"
+- 「 0 」 或者 「 1 」
     
-- 一個數字
+- 一位數
     
 - "0"或"1"或"2"或者"3" 
     
@@ -113,9 +112,9 @@ steuernummer
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 規則運算式`Regex_belgium_eu_tax_file_number`會找出符合模式的內容。 
+- 規則運算式`Regex_belgium_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_belgium_eu_tax_file_number`找到。 
     
@@ -133,28 +132,27 @@ steuernummer
 
 #### <a name="keywordsbelgiumeutaxfilenumber"></a>Keywords_belgium_eu_tax_file_number
 
-稅編號
+稅務編號
   
-國際號碼
+國民登記號碼
   
-稅註冊編號
+稅務登記號碼
   
-tax id
-
+稅務識別碼
   
 n 如果
   
 n 如果 #
   
-numéro de registre national
+numéro de registre 國際電話
   
 numéro d'identification fiscale
   
 ## <a name="bulgaria"></a>保加利亞
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-十位數不含空格和分隔符號
+如果沒有空格和分隔符號十位數
   
 ### <a name="pattern"></a>模式
 
@@ -166,15 +164,15 @@ numéro d'identification fiscale
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_bulgaria_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_bulgaria_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_bulgaria_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_bulgaria_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_bulgaria_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -207,7 +205,7 @@ uniformcivilnumber #
   
 egn
   
-保加利亞統一民事數目
+保加利亞文統一民事數目
   
 uniformcivilno #
   
@@ -223,9 +221,9 @@ egn #
   
 ## <a name="croatia"></a>克羅埃西亞
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔符號 11 位數
+11 位數不含空格或分隔符號
   
 ### <a name="pattern"></a>模式
 
@@ -233,7 +231,7 @@ egn #
   
 - 十位數，隨機選擇
     
-- 一次檢查數字
+- 一個檢查碼
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -241,15 +239,15 @@ egn #
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_croatia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_croatia_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_croatia_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_croatia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_croatia_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -268,14 +266,13 @@ egn #
 
 #### <a name="keywordscroatiaeutaxfilenumber"></a>Keywords_croatia_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅
+稅務
   
-tax id
-
+稅務識別碼
   
-oid
+OID
   
 oid #
   
@@ -283,15 +280,15 @@ porezni broj
   
 ## <a name="cyprus"></a>賽普勒斯
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-八個位數和指定的型態的其中一個字母
+八位數與所指定的型態的其中一個字母
   
 ### <a name="pattern"></a>模式
 
-八個位數和一個字母：
+八位數和一個字母：
   
--  "0" 
+-  「 0 」 
     
 - 七位數
     
@@ -303,15 +300,15 @@ porezni broj
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_cyprus_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_cyprus_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_cyprus_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_cyprus_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_cyprus_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -330,14 +327,13 @@ Pattern confidenceLevel="75">
 
 #### <a name="keywordscypruseutaxfilenumber"></a>Keywords_cyprus_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅
+稅務
   
-tax id
-
+稅務識別碼
   
-稅識別程式碼
+稅務識別程式碼
   
 tic
   
@@ -351,19 +347,19 @@ tic #
   
 ## <a name="czech-republic"></a>捷克共和國
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-使用選用的反斜線的九個或十位數
+具有選用反斜線的九個或十位數
   
 ### <a name="pattern"></a>模式
 
-具有選用 backslashl 9 或 10 位數：
+具有選用 backslashl 九個或十位數：
   
 - 六位數 
     
 - 反斜線 （選用）
     
-- 三個或四位數字
+- 三或四位數
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -371,9 +367,9 @@ tic #
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 規則運算式`Regex_czech_republic_eu_tax_file_number`會找出符合模式的內容。 
+- 規則運算式`Regex_czech_republic_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_czech_republic_eu_tax_file_number`找到。 
     
@@ -391,14 +387,13 @@ tic #
 
 #### <a name="keywordsczechrepubliceutaxfilenumber"></a>Keywords_czech_republic_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅
+稅務
   
-tax id
-
+稅務識別碼
   
-個人的數字
+個人識別碼
   
 daňové číslo
   
@@ -406,19 +401,19 @@ osobní číslo
   
 ## <a name="denmark"></a>丹麥
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-十個包含連字號的數字
+10 位數包含連字號
   
 ### <a name="pattern"></a>模式
 
-包含 hyphenl 十位數：
+10 位數包含 hyphenl:
   
--  會對應至出生日期 (DDMMYY) 的六個數字 
+-  會對應至 (DDMMYY) 的出生日期的六位數 
     
-- 一個連字號
+- 連字號
     
-- 會對應至其中的第一個數字會對應至出生的 century 序號的四個字和最後一個數字會對應至個人的性別 （2 男和即使女性奇數）
+- 會對應至其中的第一個數字會對應至的出生世紀序號的四位數，最後一個數字會對應至個別的性別 （如 1 女 2 男以及即使女性奇數）
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -426,15 +421,15 @@ osobní číslo
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_denmark_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_denmark_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_denmark_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_denmark_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_denmark_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -453,12 +448,11 @@ osobní číslo
 
 #### <a name="keywordsdenmarkeutaxfilenumber"></a>Keywords_denmark_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅
+稅務
   
-tax id
-
+稅務識別碼
   
 cpr 數目
   
@@ -470,21 +464,21 @@ skat 識別碼
   
 ## <a name="estonia"></a>愛沙尼亞
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔符號 11 位數
+11 位數不含空格或分隔符號
   
 ### <a name="pattern"></a>模式
 
 11 位數：
   
--  會對應至性別和出生其中奇數指出 2 男和偶數指出女性，如下所示的 century 的一個數字： 1，2 19 的 century;3、 4 20 的 century;與 5、 6 第 21 世紀 
+-  會對應至性別和世紀的出生其中奇數的數字表示 1 女 2 男並偶數指出女性，如下所示的一個數字： 1，2 代表 19 世紀;3、 4 20 的 century;5，6 第 21 世紀 
     
-- 會對應至出生日期 (YYMMDD) 的六個數字
+- 會對應至 (YYMMDD) 的出生日期的六位數
     
-- 會對應至分隔出生日期相同的人員序號的三個位數
+- 會對應至分隔出生日期相同的人員序號的三位數
     
-- 一次檢查數字
+- 一個檢查碼
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -492,15 +486,15 @@ skat 識別碼
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_estonia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_estonia_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_estonia_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_estonia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_estonia_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -519,12 +513,11 @@ skat 識別碼
 
 #### <a name="keywordsestoniaeutaxfilenumber"></a>Keywords_estonia_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅
+稅務
   
-tax id
-
+稅務識別碼
   
 個人的程式碼
   
@@ -536,17 +529,17 @@ isikukood
   
 ## <a name="finland"></a>芬蘭
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-信件的數字，11 個字元組合，並加號與減號
+字母的數字，11 個字元組合，以及加號與減號
   
 ### <a name="pattern"></a>模式
 
-信件的數字，11 個字元組合，並加號與減號：
+字母的數字，11 個字元組合，以及加號與減號：
   
 - 六位數
     
-- 下列其中之一： 加號、 減號、 或字母"A"（不區分大小寫） 其中加號表示出生 1800年 1899年之間減號登入表示出生之間 1900年-1999年和"A"表示出生 2000年及之後
+- 下列其中之一： 加上加號、 減號或其中加號表示字母"A"（不區分大小寫） 之間 1800年 1899 年出生減號登入表示出生之間 1999 1900 年和"A"表示出生 2000年和之後
     
 - 三位數
     
@@ -558,15 +551,15 @@ isikukood
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_finland_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_finland_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_finland_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_finland_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_finland_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -585,14 +578,13 @@ isikukood
 
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
-identification number
-
+識別碼
   
 個人識別碼
   
 身分識別號碼
   
-芬蘭國家識別碼
+芬蘭國民身分證號碼
   
 personalidnumber #
   
@@ -600,11 +592,11 @@ personalidnumber #
   
 識別碼號碼
   
-國家識別碼沒有。
+國民身分證沒有。
   
-國家識別碼號碼
+國民身分證號碼
   
-識別碼沒有
+識別碼不
   
 tunnistenumero
   
@@ -628,19 +620,19 @@ kansallinen tunnus numero
   
 ## <a name="france"></a>法國
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-13 個人和實體的九個位數的數字
+13 位數個人與實體的九位數
   
 ### <a name="pattern"></a>模式
 
-針對個人的數字 13:
+針對個人的 13 位數：
   
 - 必須是 0、 1、 2 或 3 的一個數字
     
 - 12 位數
     
-實體的九個位數
+實體的九位數
   
 ### <a name="checksum"></a>總和檢查碼
 
@@ -648,15 +640,15 @@ kansallinen tunnus numero
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_france_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_france_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_france_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_france_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_france_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -675,18 +667,17 @@ kansallinen tunnus numero
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
-稅識別碼
+稅務識別碼
   
-稅編號
+稅務編號
   
-tax id
-
+稅務識別碼
   
 numéro d'identification fiscale
   
 ## <a name="germany"></a>德國
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
 11 位數不含空格和分隔符號
   
@@ -696,7 +687,7 @@ numéro d'identification fiscale
   
 -  十位數 
     
-- 一次檢查數字
+- 一個檢查碼
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -704,15 +695,15 @@ numéro d'identification fiscale
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_germany_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_germany_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_germany_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_germany_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_germany_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -731,9 +722,9 @@ numéro d'identification fiscale
 
 #### <a name="keywordsgermanyeutaxfilenumber"></a>Keywords_germany_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
 taxno #
   
@@ -741,14 +732,13 @@ taxnumber #
   
 taxnumber
   
-tax id
-
+稅務識別碼
   
 taxid #
   
-稅識別碼
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
 steuernummer
   
@@ -758,9 +748,9 @@ steueridentifikationsnummer
   
 ## <a name="greece"></a>希臘
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-不含空格和分隔符號的九個位數
+如果沒有空格和分隔符號的九位數
   
 ### <a name="pattern"></a>模式
 
@@ -772,9 +762,9 @@ steueridentifikationsnummer
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 規則運算式`Regex_greece_eu_tax_file_number`會找出符合模式的內容。 
+- 規則運算式`Regex_greece_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_greece_eu_tax_file_number`找到。 
     
@@ -794,18 +784,17 @@ steueridentifikationsnummer
 
 afm
   
-tin
-
+錫
   
-無法稅識別碼。
+不稅務識別碼。
   
-無法稅識別碼
+不稅務識別碼
   
-稅識別碼
+稅務識別碼
   
-稅登錄編號
+稅務登錄編號
   
-無法稅登錄。
+不稅務登錄。
   
 afm #
   
@@ -827,9 +816,9 @@ aφμ αριθμός
   
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔符號十位數
+不含空格或分隔符號十位數
   
 ### <a name="pattern"></a>模式
 
@@ -837,11 +826,11 @@ aφμ αριθμός
   
 -  必須是"8"的一個數字 
     
-- 會對應至日期之間的天數的五個位數 01/01/1867年和個別的出生的日期
+- 會對應至日期之間的天數的五位數 01/01/1867年和個別的出生日期
     
-- 三個對應來區分個人在同一天出生依照機率產生的號碼的數字
+- 會對應至數來區分個人在同一天出生巧產生的三位數
     
-- 一次檢查數字
+- 一個檢查碼
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -849,15 +838,15 @@ aφμ αριθμός
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_hungary_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_hungary_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_hungary_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_hungary_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_hungary_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -876,17 +865,17 @@ aφμ αριθμός
 
 #### <a name="keywordshungaryeutaxfilenumber"></a>Keywords_hungary_eu_tax_file_number
 
-匈牙利文稅識別碼
+匈牙利文的稅務識別碼
   
 匈牙利文錫
   
-稅 id 號碼
+稅務 id 號碼
   
 vat 編號
   
-無法稅授權單位
+不稅務授權單位
   
-稅識別碼稅身分識別號碼
+稅務識別碼稅務身分識別號碼
   
 taxidnumber #
   
@@ -894,7 +883,7 @@ taxidnumber #
   
 hungatiantin #
   
-無法稅識別碼
+不稅務識別碼
   
 taxidno #
   
@@ -906,13 +895,13 @@ adóhatóság szám
   
 ## <a name="ireland"></a>愛爾蘭
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-後面接著任何空格或分隔符號信件的七位數字
+七位數後尾隨不含空格或分隔符號的字母
   
 ### <a name="pattern"></a>模式
 
-後面接著一個字母的七位數字：
+七位數後尾隨字母：
   
 -  七位數 
     
@@ -924,15 +913,15 @@ adóhatóság szám
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_ireland_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_ireland_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_ireland_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_ireland_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_ireland_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -951,11 +940,11 @@ adóhatóság szám
 
 #### <a name="keywordsirelandeutaxfilenumber"></a>Keywords_ireland_eu_tax_file_number
 
-公共服務沒有
+公用服務沒有
   
 個人公用服務沒有
   
-pps 無
+pps 沒有
   
 個人服務否
   
@@ -963,11 +952,11 @@ pps service 否
   
 ppsno #
   
-愛爾蘭 pps 無
+愛爾蘭 pps 沒有
   
 publicserviceno #
   
-個人公用健保號碼
+個人公用服務號碼
   
 uimhir phearsanta seirbhíse poiblí
   
@@ -977,27 +966,27 @@ uimhir aitheantais phearsanta
   
 ## <a name="italy"></a>義大利
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-16 信件與指定的型態的數字
+16 個字母和數字中指定的型態
   
 ### <a name="pattern"></a>模式
 
-16 字母和數字：
+16 個字母和數字：
   
--  會對應至系列名稱中前三個母音的三個字母 
+-  會對應到前三個母音系列名稱中的三個字母 
     
-- 會對應至第一個、 第三和第四的三個字母母音中第一個名稱
+- 會對應至第一、 第三個和第四個的三個字母母音在名字
     
-- 會對應至最後一出生年的數字的兩位數
+- 會對應至最後一位數的出生年份的兩位數
     
-- 一個數字對應至出生月 — 字母依字母順序使用，但僅限字母 A 到 E、 H、 L、 M、 P、 R 以 T 可用 （即得出年 1 月是 A 及年 10 月為 R）
+- 會對應至出生的月份的一個數字 — 字母可用依字母順序，但只字母 A 到 E、 H、 L、 M、 P、 R 以 T 可用 （因此，一月是的而且年 10 月 R）
     
-- 會對應至出生 40 其中加入來區分與男生女生成績的出生的一天的每月一天的兩位數
+- 會對應至出生其中 40 加入的來區分從男生女生出生日期的月份日期的兩位數
     
-- 會對應至特定出生人員 municipality 區碼的四個字 — 外部的國家/地區使用全國家/地區碼
+- 會對應至特定出生人員 municipality 區域代碼的四位數 — 全國家/地區的代碼可用外部國家/地區
     
-- 一次檢查數字
+- 一個檢查碼
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -1005,15 +994,15 @@ uimhir aitheantais phearsanta
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_italy_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_italy_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_italy_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_italy_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_italy_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1032,9 +1021,9 @@ uimhir aitheantais phearsanta
 
 #### <a name="keywordsitalyeutaxfilenumber"></a>Keywords_italy_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
 taxno #
   
@@ -1042,28 +1031,27 @@ taxnumber #
   
 taxnumber
   
-tax id
-
+稅務識別碼
   
 taxid #
   
-會計程式碼
+會計年度的程式碼
   
 codice fiscale
   
 ## <a name="latvia"></a>拉脫維亞
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔符號 11 位數
+11 位數不含空格或分隔符號
   
 ### <a name="pattern"></a>模式
 
-在指定的型態 11 位數
+11 位數，代表所指定模式
   
--  會對應至出生 (DDMMYY) 的日期的六個數字 
+-  會對應至 (DDMMYY) 出生日期的六位數 
     
-- 會對應至其中"0"會對應至 19 century、"1"會對應至 20 century 及"2"會對應至第 21 世紀出生的 century 的一個數字
+- 會對應至的出生其中"0"會對應至 19 世紀"1"會對應至 20 世紀，，"2"會對應至第 21 世紀世紀的一個數字
     
 - 四位數
     
@@ -1073,15 +1061,15 @@ codice fiscale
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_latvia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_latvia_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_latvia_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_latvia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_latvia_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1100,9 +1088,9 @@ codice fiscale
 
 #### <a name="keywordslatviaeutaxfilenumber"></a>Keywords_latvia_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
 taxno #
   
@@ -1110,14 +1098,13 @@ taxnumber #
   
 taxnumber
   
-tax id
-
+稅務識別碼
   
 taxid #
   
-稅識別碼
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
 nodokļa numurs
   
@@ -1127,9 +1114,9 @@ nodokļu identifikācija numurs
   
 ## <a name="lithuania"></a>立陶宛
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-不含空格或分隔符號 11 位數
+11 位數不含空格或分隔符號
   
 ### <a name="pattern"></a>模式
 
@@ -1141,15 +1128,15 @@ nodokļu identifikācija numurs
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_lithuania_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_lithuania_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_lithuania_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_lithuania_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_lithuania_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1168,24 +1155,23 @@ nodokļu identifikācija numurs
 
 #### <a name="keywordslithuaniaeutaxfilenumber"></a>Keywords_lithuania_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
-稅否 #
+稅務否 #
   
 taxnumber #
   
 taxnumber
   
-tax id
-
+稅務識別碼
   
 taxid #
   
-稅識別碼
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
 mokesčių 識別碼
   
@@ -1195,9 +1181,9 @@ mokesčių identifikavimas numeris
   
 ## <a name="luxemburg"></a>盧森堡
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔字元 13 數字
+不含空格或分隔符號的 13 位數
   
 ### <a name="pattern"></a>模式
 
@@ -1213,15 +1199,15 @@ mokesčių identifikavimas numeris
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_luxemburg_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_luxemburg_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_luxemburg_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_luxemburg_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_luxemburg_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1240,9 +1226,9 @@ mokesčių identifikavimas numeris
 
 #### <a name="keywordsluxemburgeutaxfilenumber"></a>Keywords_luxemburg_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
 taxno #
   
@@ -1250,14 +1236,13 @@ taxnumber #
   
 taxnumber
   
-tax id
-
+稅務識別碼
   
 taxid #
   
-稅識別碼
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
 steuernummer
   
@@ -1267,11 +1252,11 @@ steueridentifikationsnummer
   
 ## <a name="malta"></a>馬爾他
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-馬爾他 nationals 的： 7 位數和指定的型態的其中一個字母
+針對馬爾他 nationals: 7 位數與所指定的型態的其中一個字母
   
-非馬爾他文 nationals 和馬爾他實體： 9 的數字
+非馬爾他文 nationals 和馬爾他實體： 9 位數
   
 ### <a name="pattern"></a>模式
 
@@ -1281,7 +1266,7 @@ steueridentifikationsnummer
     
 - 一個字母 （不區分大小寫）
     
-非馬爾他文 nationals 和馬爾他實體： 9 的數字
+非馬爾他文 nationals 和馬爾他實體： 9 位數
   
 -  九位數 
     
@@ -1291,15 +1276,15 @@ steueridentifikationsnummer
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_malta_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_malta_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_malta_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 65%：
+DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_malta_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_malta_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1318,9 +1303,9 @@ steueridentifikationsnummer
 
 #### <a name="keywordsmaltaeutaxfilenumber"></a>Keywords_malta_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
 taxno #
   
@@ -1328,14 +1313,13 @@ taxnumber #
   
 taxnumber
   
-tax id
-
+稅務識別碼
   
 taxid #
   
-稅識別碼
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
 numru 且 taxxa
   
@@ -1345,9 +1329,9 @@ numru 東西 ' identifikazzjoni 且 taxxa
   
 ## <a name="netherlands"></a>荷蘭
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-不含空格或分隔符號的九個位數
+不含空格或分隔符號的九位數
   
 ### <a name="pattern"></a>模式
 
@@ -1359,15 +1343,15 @@ numru 東西 ' identifikazzjoni 且 taxxa
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_netherlands_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_netherlands_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_netherlands_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_netherlands_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_netherlands_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1386,33 +1370,31 @@ numru 東西 ' identifikazzjoni 且 taxxa
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
-荷蘭稅識別碼
+荷蘭稅務識別碼
   
-荷蘭稅識別碼
+荷蘭稅務識別碼
   
-荷屬安的稅識別碼
+荷屬安的稅務識別碼
   
-荷屬安的稅識別碼
+荷屬安的稅務識別碼
   
-稅識別碼
+稅務識別碼
   
-荷蘭文稅識別碼
+荷蘭文的稅務識別碼
   
-荷蘭文稅識別碼
+荷蘭文的稅務識別碼
   
-tax id
-
+稅務識別碼
   
-稅識別碼 #
+稅務識別碼 #
   
-稅編號
+稅務編號
   
-稅否 #
+稅務否 #
   
-稅 #
+稅務 #
   
-tin
-
+錫
   
 錫 #
   
@@ -1438,13 +1420,13 @@ btw nummer
   
 ## <a name="poland"></a>波蘭
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔符號十一份數字
+不含空格或分隔符號十一份數字
   
 ### <a name="pattern"></a>模式
 
-另外的數字
+十一份數字
   
 ### <a name="checksum"></a>總和檢查碼
 
@@ -1452,15 +1434,15 @@ btw nummer
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_poland_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_poland_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_poland_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_poland_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_poland_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1479,9 +1461,9 @@ btw nummer
 
 #### <a name="keywordspolandeutaxfilenumber"></a>Keywords_poland_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
 taxno #
   
@@ -1493,28 +1475,27 @@ nip
   
 nip #
   
-tax id
-
+稅務識別碼
   
-稅識別碼 #
+稅務識別碼 #
   
 nip 識別碼
   
 nip 識別碼 #
   
-稅識別碼
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
 vat 編號
   
-vat 否]。
+vat 否。
   
 vatno #
   
-增值稅識別碼
+vat 識別碼
   
-增值稅識別碼 #
+vat id #
   
 數目 identyfikacji podatkowej
   
@@ -1524,9 +1505,9 @@ numeridentyfikacjipodatkowej #
   
 ## <a name="portugal"></a>葡萄牙
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔符號的九個位數
+不含空格或分隔符號的九位數
   
 ### <a name="pattern"></a>模式
 
@@ -1538,15 +1519,15 @@ numeridentyfikacjipodatkowej #
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_portugal_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_portugal_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_portugal_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_portugal_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_portugal_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1565,9 +1546,9 @@ numeridentyfikacjipodatkowej #
 
 #### <a name="keywordsportugaleutaxfilenumber"></a>Keywords_portugal_eu_tax_file_number
 
-稅編號
+稅務編號
   
-稅否]。
+稅務否。
   
 taxno #
   
@@ -1585,9 +1566,9 @@ número de identificação 會計
   
 ## <a name="romania"></a>羅馬尼亞
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔字元 13 數字
+不含空格或分隔符號的 13 位數
   
 ### <a name="pattern"></a>模式
 
@@ -1599,9 +1580,9 @@ número de identificação 會計
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 規則運算式`Regex_romania_eu_tax_file_number`會找出符合模式的內容。 
+- 規則運算式`Regex_romania_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_romania_eu_tax_file_number`找到。 
     
@@ -1619,34 +1600,31 @@ número de identificação 會計
 
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
-tax id
-
+稅務識別碼
   
-稅 id 號碼
+稅務 id 號碼
   
-無法稅檔案
+不稅務檔案
   
-
-
-tax file number
+稅務檔案編號
   
-稅否
+稅務否
   
-稅編號
+稅務編號
   
 taxid #
   
 taxno #
   
-識別碼 ul taxei
+id-ul taxei
   
 numărul de identificare fiscală
   
 ## <a name="slovakia"></a>斯洛伐克
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔符號的 10 位數
+不含空格或分隔符號的 10 位數
   
 ### <a name="pattern"></a>模式
 
@@ -1658,9 +1636,9 @@ numărul de identificare fiscală
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 規則運算式`Regex_slovakia_eu_tax_file_number`會找出符合模式的內容。 
+- 規則運算式`Regex_slovakia_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_slovakia_eu_tax_file_number`找到。 
     
@@ -1678,10 +1656,9 @@ numărul de identificare fiscală
 
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
-tax id
-
+稅務識別碼
   
-稅 id 號碼
+稅務 id 號碼
   
 鐵皮識別碼
   
@@ -1689,18 +1666,15 @@ tax id
   
 斯洛伐克鐵皮識別碼
   
-tin
-
+錫
   
-無法稅檔案
+不稅務檔案
   
-
-
-tax file number
+稅務檔案編號
   
-稅否
+稅務否
   
-稅編號
+稅務編號
   
 taxid #
   
@@ -1714,9 +1688,9 @@ daňové číslo súboru
   
 ## <a name="slovenia"></a>斯洛維尼亞
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-任何空格或分隔字元的八個位數
+不含空格或分隔字元的八位數
   
 ### <a name="pattern"></a>模式
 
@@ -1728,15 +1702,15 @@ daňové číslo súboru
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_slovenia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_slovenia_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_slovenia_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_slovenia_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_slovenia_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1755,10 +1729,9 @@ daňové číslo súboru
 
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
-tax id
-
+稅務識別碼
   
-稅 id 號碼
+稅務 id 號碼
   
 鐵皮識別碼
   
@@ -1766,18 +1739,15 @@ tax id
   
 斯洛維尼亞文鐵皮識別碼
   
-tin
-
+錫
   
-無法稅檔案
+不稅務檔案
   
-
-
-tax file number
+稅務檔案編號
   
-稅否
+稅務否
   
-稅編號
+稅務編號
   
 taxid #
   
@@ -1791,19 +1761,19 @@ davčna številka
   
 ## <a name="spain"></a>西班牙
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-七個或八個位數和中指定的型態的一或兩個字母
+7 或 8 位數與所指定的型態的一或兩個字母
   
 ### <a name="pattern"></a>模式
 
-西班牙文自然資料提供者與西班牙國民身分識別卡：
+西班牙文自然人西班牙國民身分證與：
   
 -  八位數 
     
 - 一個大寫字母 （區分大小寫） 
     
-西班牙國民身分識別卡而非駐留西班牙人
+非駐留西班牙人沒有西班牙國民身分證
   
 - 一個大寫字母"L"（區分大小寫）
     
@@ -1811,7 +1781,7 @@ davčna številka
     
 - 一個大寫字母 （區分大小寫） 
     
-底下的年齡 14 年不含西班牙國民身分識別卡駐留西班牙人：
+[] 下的保留天數 14 年沒有西班牙國民身分證駐留西班牙人：
   
 - 一個大寫字母"K"（區分大小寫）
     
@@ -1819,9 +1789,9 @@ davčna številka
     
 - 一個大寫字母 （區分大小寫）
     
-外國人與因此識別號碼
+外國人與因此識別碼
   
-- 一個大寫也就是字母"X"、"Y"或"Z"（區分大小寫） 
+- 一個大寫也就是字母 「 X 」、 「 Y"或"Z"（區分大小寫） 
     
 - 七位數
     
@@ -1829,7 +1799,7 @@ davčna številka
     
 外國人沒有因此識別碼
   
-- 一個大寫字母的"M"（區分大小寫） 
+- 一個大寫字母，為 「 M 」 （區分大小寫） 
     
 - 七位數
     
@@ -1841,15 +1811,15 @@ davčna številka
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_spain_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_spain_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_spain_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_spain_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_spain_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1868,32 +1838,29 @@ davčna številka
 
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
-tax id
-
+稅務識別碼
   
-稅 id 號碼
+稅務 id 號碼
   
 cif 識別碼
   
 cif 沒有
   
-西班牙文 cif 識別碼
+西班牙文的 cif 識別碼
   
 cif
   
-無法稅檔案
+不稅務檔案
   
-西班牙文 cif 數目
+西班牙文的 cif 數目
   
-
-
-tax file number
+稅務檔案編號
   
-西班牙文 cif 沒有
+西班牙文的 cif 沒有
   
-稅否
+稅務否
   
-稅編號
+稅務編號
   
 taxid #
   
@@ -1917,25 +1884,25 @@ cifnúmero #
   
 ## <a name="sweden"></a>瑞典
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-十位數和中指定的型態的符號
+十個數字和中指定的型態的符號
   
 ### <a name="pattern"></a>模式
 
-十位數和符號：
+十個數字和符號：
   
--  會對應至出生日期 (YYMMDD) 的六個數字 
+-  會對應至 (YYMMDD) 的出生日期的六位數 
     
-- 加號、 減號、 或反斜線
+- 加號、 減號或反斜線
     
-- 進行識別的三個位數字唯一的位置： 
+- 請識別的三位數數字唯一的位置： 
     
-  - 對於 1990年之前發行的數字、 第七個和第八個位數識別出生或 foreign-born 人員郡
+  - 發行之前 1990年數字，如第七個和第八個數字識別出生或 foreign-born 人員郡
     
-  - 第九個位置中的數字表示任一奇數女性 2 男或甚至是依性別
+  - 在第九個位置的數字，表示女性 1 女 2 男或甚至是任一奇數性別
     
-- 一次檢查數字
+- 一個檢查碼
     
 ### <a name="checksum"></a>總和檢查碼
 
@@ -1943,15 +1910,15 @@ cifnúmero #
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 85%：
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_sweden_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_sweden_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_sweden_eu_tax_file_number`找到。 
     
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_sweden_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_sweden_eu_tax_file_number`找到符合模式的內容。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1970,29 +1937,27 @@ cifnúmero #
 
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
-tax id
-
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
-稅 id 號碼
+稅務 id 號碼
   
-tax identification
-
+稅務識別碼
   
-稅識別 #
+稅務識別 #
   
-稅否]。
+稅務否。
   
-稅 #
+稅務 #
   
 taxid #
   
-稅檔案
+稅務檔案
   
-無法稅檔案。
+不稅務檔案。
   
-個人識別碼號碼
+個人識別碼
   
 skatt 識別碼 nummer
   
@@ -2002,17 +1967,17 @@ personnummer
   
 ## <a name="uk"></a>英國
 
-### <a name="format"></a>格式
+### <a name="format"></a>Format
 
-唯一 Taxpayer 參照 (UTR)： 10 位數不含空格和分隔符號
+如果沒有空格和分隔符號的唯一 Taxpayer 參照 (UTR): 10 位數
   
-國家保險號碼 (NINO)： 如需詳細資訊，請參閱區段"英國 National 保險數 (NINO)"中[尋找敏感資訊類型](what-the-sensitive-information-types-look-for.md)。
+國家保險號碼 (NINO): 如需詳細資訊，請參閱區段 」 英國 國家保險號碼 (NINO) 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
   
 ### <a name="pattern"></a>模式
 
-唯一 Taxpayer 參照 (UTR)： 10 位數
+唯一 Taxpayer 參照 (UTR): 10 位數
   
-國家保險號碼 (NINO)： 如需詳細資訊，請參閱區段"英國 National 保險數 (NINO)"中[尋找敏感資訊類型](what-the-sensitive-information-types-look-for.md)。
+國家保險號碼 (NINO): 如需詳細資訊，請參閱區段 」 英國 國家保險號碼 (NINO) 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
   
 ### <a name="checksum"></a>總和檢查碼
 
@@ -2020,9 +1985,9 @@ personnummer
   
 ### <a name="definition"></a>定義
 
-如果鄰近性是 300 個字元以內，則 DLP 原則偵測到此敏感資訊類型的信賴度是 75%：
+DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
   
-- 此函數`Func_uk_eu_tax_file_number`會找出符合模式的內容。 
+- 函式`Func_uk_eu_tax_file_number`找到符合模式的內容。 
     
 - 從關鍵字`Keywords_uk_eu_tax_file_number`找到。 
     
@@ -2040,29 +2005,27 @@ personnummer
 
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
-tax id
-
+稅務識別碼
   
-無法稅識別碼。
+不稅務識別碼。
   
-稅 id 號碼
+稅務 id 號碼
   
-tax identification
-
+稅務識別碼
   
-稅識別 #
+稅務識別 #
   
-稅否]。
+稅務否。
   
-稅 #
+稅務 #
   
 taxid #
   
-稅檔案
+稅務檔案
   
-無法稅檔案。
+不稅務檔案。
   
 ## <a name="see-also"></a>另請參閱
 
-[敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+[機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

@@ -7,85 +7,85 @@ ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 41eb4324-c513-4fa5-91c8-8fbd8aaba83b
-description: 與 Office 365 的 DLP 報告，您可以快速檢視 DLP 原則比對、 覆寫或誤判; 的數目請參閱是否他們正在趨勢向上或向下一段時間 ；以不同方式 ； 篩選報表與其他詳細資料檢視中選取圖形上線條上的一點。
-ms.openlocfilehash: 4e9e5405b5c35719c1b14efca91cdf87f416e7bd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則相符項目、 覆寫或誤判; 的數請參閱是否它們在一段時間; 趨勢向上或向下以不同方式; 篩選報表然後選取圖形上線條上的一點檢視其他詳細資料。
+ms.openlocfilehash: 480ab99b2d84adfbb87288e1e0986441ef56ef99
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217573"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410698"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 
-建立資料遺失防護 (DLP) 原則之後，您將想要確認他們正在運作時適用對象和協助您保持相容。使用 DLP 報告中的 Office 365 安全性&amp;規範中心，您可以快速檢視：
+您可以建立您的資料遺失防護 (DLP) 原則之後，您會想確認他們正在為您預期，並協助您符合規範。 使用 DLP 報告中 Office 365 安全性&amp;合規性中心，您可以快速檢視：
   
-- **DLP 原則比對**這份報告顯示一段時間的 DLP 原則相符項目計數。您可以依日期、 位置、 原則或巨集指令來篩選報告。您可以使用這份報告： 
+- **DLP 原則比對**這份報告顯示一段時間的 DLP 原則相符項目計數。 您可以依日期、 位置、 原則或動作篩選報告。 您可以使用此報告來： 
     
-  - 調整或調整為您在測試模式中執行的 DLP 原則。您可以檢視特定的規則相符的內容。
+  - 調整或調整您的 DLP 原則，當您在測試模式中執行。 您可以檢視符合內容的特定規則。
     
   - 將重點放在特定時段，以了解尖峰和趨勢的原因。
     
-  - 探索違反組織的 DLP 原則的商務程序。
+  - 探索違反貴組織的 DLP 原則的商務程序。
     
-  - 了解 DLP 原則的任何業務影響所看到的動作要套用至內容。
+  - 藉由查看哪些動作會套用到內容，了解 DLP 原則的任何業務影響。
     
   - 顯示該原則的任何符合項目來驗證是否符合特定 DLP 原則的規範。
     
-  - 檢視的主要使用者清單，然後重複至組織中的事件所提供的使用者。
+  - 檢視的主要使用者清單，然後重複使用者參與您組織中的事件。
     
-  - 在組織中檢視上方的敏感資訊類型的清單。
+  - 在您的組織中檢視上方的敏感資訊類型清單。
     
-- **DLP 事件**這份報告也會顯示原則符合項目的一段時間，像是原則會比對報表。但是，該原則會比對報表顯示相符項目層級規則 ；例如，如果電子郵件符合三個不同的規則，原則比對報表顯示三個不同列項目。相反地，事件 」 報告顯示相符項目層級項目 ；例如，如果電子郵件符合三個不同的規則，事件報表會顯示單一列項目內容的項目所。 
+- **DLP 事件**這份報告也會顯示原則相符項目經過一段時間，如原則相符項目報告。 不過，此原則會比對報表顯示相符項目層級規則;例如，若一封電子郵件符合三個不同的規則，原則會比對報表顯示三個不同列項目。 相反地，事件報告 」 可顯示相符項目層級項目;例如，若一封電子郵件符合三個不同的規則，事件報告顯示該份內容單一列項目。 
     
-  因為報告計數會以不同方式彙總，原則相符項目報告是識別與特定規則的相符項目及可正常調整 DLP 原則。事件報表是內容的較佳的識別會有問題的 DLP 原則的特定部分。
+  因為報告計數彙總不同，原則相符項目報告是用來識別與特定規則的相符項目及正常調整 DLP 原則。 事件報告是內容的較適合用來識別會有問題的 DLP 原則的特定部分。
     
-- **DLP 誤判和覆寫**如果 DLP 原則可讓使用者可覆寫它或報告為誤判，則這份報告顯示一段時間這類的執行個體計數。您可以依日期、 位置或原則篩選報告。您可以使用這份報告： 
+- **DLP 誤判和覆寫**如果您的 DLP 原則允許使用者覆寫它，或回報] 誤判，這份報告顯示這類的執行個體計數一段時間。 您可以依日期、 位置或原則篩選報告。 您可以使用此報告來： 
     
-  - 調整或減少 DLP 原則來查看哪些原則可能會形成誤判高數目。
+  - 調整或調整您的 DLP 原則所看見的原則可能會形成誤判較大數目。
     
-  - 檢視只要有當他們解決的覆寫原則的原則提示使用者送出。
+  - 檢視他們所覆寫原則以解析原則秘訣時，使用者所提交的理由。
     
-  - 探索其中具有有效的商務程序所產生使用者過多的 DLP 原則衝突會覆寫。
+  - 探索其中 DLP 原則衝突有效商務程序所產生大量的使用者會覆寫。
     
-所有的 DLP 報告可以顯示資料的最新的四個月的時間週期。最新資料可能需要 24 小時的時間會出現在報表中。
+所有的 DLP 報告可以顯示最近的四個月的時間期間內的資料。 最新的資料可能需要最多 24 小時才會出現在報告。
   
-您可以在 [安全性] 中找到這些報告&amp;規範中心\>**報告** \> **儀表板**。
+您可以在安全性中找到這些報告&amp;合規性中心\>**報表** \> **儀表板**。
   
-![DLP 原則比對報告](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP 原則相符項目報告](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
-## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>檢視遭到覆寫使用者送出的對齊
+## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>檢視覆寫使用者所提交的理由
 
-如果您的 DLP 原則允許使用者覆寫它，您可以使用誤判並覆寫報告檢視中的原則提示使用者所送出的文字。
+如果您的 DLP 原則允許使用者覆寫它，您可以使用誤判和覆寫報告] 來檢視提交的原則提示的文字。
   
-![對齊] 欄位中的 「 DLP 誤判和覆寫報告詳細資料](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![理由欄位中的 DLP 誤判和覆寫報告詳細資料](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
-## <a name="take-action-on-insights-and-recommendations"></a>採取動作的見解與建議
+## <a name="take-action-on-insights-and-recommendations"></a>採取動作的見解和建議
 
-報告可以顯示的見解與建議您將可以按一下 [查看潛在的問題的詳細資料並採取可能補救措施紅色的 [警告] 圖示。
+報告可以顯示見解和建議您將可以按一下 [請參閱潛在問題的詳細資料，並採取可能的補救措施的紅色警告圖示。
   
-![按一下 [詳細資料，並採取動作的見解圖示](media/51782036-7299-4960-8175-75c2b1637159.png)
+![按一下以查看詳細資料，要採取的動作觀點圖示](media/51782036-7299-4960-8175-75c2b1637159.png)
   
-## <a name="find-the-cmdlets-for-the-dlp-reports"></a>尋找 DLP 報告 cmdlet
+## <a name="find-the-cmdlets-for-the-dlp-reports"></a>尋找 DLP 報告的 cmdlet
 
-若要使用大部分的指令程式以安全性&amp;規範中心，您必須：
+若要使用之 cmdlet 的大部分 security&amp;合規性中心，您需要：
   
 1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 使用下列任何一這些[Office 365 安全性&amp;規範中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. 使用下列任何一這些[Office 365 安全性&amp;合規性中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
-不過，DLP 報告需要跨 Office 365，包括 Exchange Online 提取資料。有此原因的 DLP 報告指令程式可用在 Exchange Online Powershell — 不在安全性&amp;規範中心 Powershell。因此，若要使用 DLP 報告指令程式，您需要：
+不過，DLP 報告需要提取資料從 Office 365，包括 Exchange Online。 基於這個理由，DLP 報告指令程式可供 Exchange Online Powershell 中，而不是以安全性&amp;合規性中心 Powershell。 因此，若要使用 cmdlet 的 DLP 報告，您必須：
   
 1. [使用遠端 PowerShell 連線到 Exchange Online](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. 使用這些 cmdlet 的任何 DLP 報告：
     
-      - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [Get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

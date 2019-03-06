@@ -3,7 +3,7 @@ title: 啟用報告訊息增益集
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,34 +15,36 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何啟用報告訊息增益集以進行 Outlook 和 Outlook 個別使用者的 web 應用程式或整個組織。
-ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341424"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410898"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
+> [!NOTE]
+> 報告訊息增益集以進行 Outlook 和 outlook 網頁版並不完全相同的動作為[Outlook 垃圾郵件篩選器](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)中，雖然兩者都可以用來將電子郵件標示為垃圾郵件、 非垃圾郵件或網路釣魚嘗試。 差異在於，報告訊息增益集以進行 Outlook 和 outlook 網頁版通知 Microsoft 有關誤分類電子郵件，而 Outlook 垃圾郵件篩選器用來將組織中使用者信箱的電子郵件。 
+
 ## <a name="overview"></a>概觀
 
-報告訊息增益集以進行 Outlook 和網頁型 Outlook 讓人員能輕鬆地報告誤分類電子郵件是否安全或惡意，Microsoft 並分析其關係企業。Microsoft 使用這些提交來改善電子郵件保護技術的有效性。此外，如果您的組織使用[Office 365 進階威脅防護](office-365-atp.md)或[Office 365 威脅情報](office-365-ti.md)，報告訊息增益集提供有用的資訊可用於檢視並更新與貴組織的安全性小組安全性原則。 
+報告訊息增益集以進行 Outlook 和網頁型 Outlook 讓人員能輕鬆地報告誤分類電子郵件是否安全或惡意，Microsoft 並分析其關係企業。 Microsoft 使用這些提交來改善電子郵件保護技術的有效性。 此外，如果您的組織使用[Office 365 進階威脅防護](office-365-atp.md)或[Office 365 威脅情報](office-365-ti.md)，報告訊息增益集提供有用的資訊可用於檢視並更新與貴組織的安全性小組安全性原則。 
 
-例如，假設人員會回報為網路釣魚郵件許多。[安全性儀表板](security-dashboard.md)和其他報表中此資訊表面。貴組織的安全性小組可以使用這項資訊作為反網路釣魚原則可能需要更新指示。或者，如果人員所報告的郵件已標示為垃圾郵件為不是垃圾郵件報告訊息增益集使用很多，貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-the-anti-spam-policies.md)。 
+例如，假設人員會回報為網路釣魚郵件許多。 [安全性儀表板](security-dashboard.md)和其他報表中此資訊表面。 貴組織的安全性小組可以使用這項資訊作為反網路釣魚原則可能需要更新指示。 或者，如果人員所報告的郵件已標示為垃圾郵件為不是垃圾郵件報告訊息增益集使用很多，貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-the-anti-spam-policies.md)。 
 
 報告訊息增益集的運作方式與您的 Office 365 訂閱和下列產品：
- - Outlook 網頁版
+ - 網頁型 Outlook
  - Outlook 2013 SP1
  - Outlook 2016
  - Mac 版 Outlook 2016
  - 隨附於 Office 365 專業增強版的 outlook
 
-> [!NOTE]
-> 報告訊息增益集以進行 Outlook 和 outlook 網頁版並不完全相同的動作為[Outlook 垃圾郵件篩選器](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)中，雖然兩者都可以用來將電子郵件標示為垃圾郵件、 非垃圾郵件或網路釣魚嘗試。報告訊息增益集以進行 Outlook 和 outlook 網頁版通知 Microsoft 有關誤分類電子郵件，而 Outlook 垃圾郵件篩選器用來將組織中使用者信箱的電子郵件。 
+您現有的網頁瀏覽器應該足以讓報告訊息增益集運作;不過，如果您注意到增益集無法使用或無法如預期般運作，請嘗試在不同的瀏覽器。
   
 如果您是個別使用者，您可以[啟用報告訊息增益集以進行自己](#get-the-report-message-add-in-for-yourself)。 
   
-如果您是 Office 365 全域管理員或 Exchange Online 的系統管理員，而且 Exchange 設定為使用 OAuth 驗證，您可以[啟用報告訊息增益集以進行組織](#get-and-enable-the-report-message-add-in-for-your-organization)。報告訊息增益集目前已提供透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。
+如果您是 Office 365 全域管理員或 Exchange Online 的系統管理員，而且 Exchange 設定為使用 OAuth 驗證，您可以[啟用報告訊息增益集以進行組織](#get-and-enable-the-report-message-add-in-for-your-organization)。 報告訊息增益集目前已提供透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>取得報告訊息增益集自行
 
@@ -50,7 +52,7 @@ ms.locfileid: "30341424"
     
 2. 選擇 [**取得現在 IT**。<br/>![報告訊息-立即取得](media/ReportMessageGETITNOW.png)<br/> 
     
-3. 檢閱使用和隱私權原則中的條款。然後選擇 [**繼續]**。 
+3. 檢閱使用和隱私權原則中的條款。 然後選擇 [**繼續]**。 
     
 4. 登入 Office 365 中，使用您的工作或學校帳戶 （適用於商業用途） 或 Microsoft 帳戶 （供個人使用）。
     
@@ -65,7 +67,7 @@ ms.locfileid: "30341424"
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>取得並啟用報告訊息增益集為您的組織
 
 > [!IMPORTANT]
-> 您必須是 Office 365 全域系統管理員或 Exchange Online 系統管理員，才能完成此工作。此外，Exchange 必須設定為使用 OAuth 驗證來了解更多，請參閱[Exchange 需求 （的增益集的集中式部署）](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
+> 您必須是 Office 365 全域系統管理員或 Exchange Online 系統管理員，才能完成此工作。 此外，Exchange 必須設定為使用 OAuth 驗證來了解更多，請參閱[Exchange 需求 （的增益集的集中式部署）](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
 
 1. 移至 Microsoft 365 系統管理中心中的[服務 & 增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![服務與增益集] 頁面中新的 Microsoft 365 系統管理中心](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
@@ -86,7 +88,7 @@ ms.locfileid: "30341424"
 > [!TIP]
 > 我們建議您[設定 「 可取得一份報告，讓使用者的電子郵件訊息的規則](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)。
 
-根據您選取的項目當您設定 「 增益集 (步驟 7-8 上方)，您組織中的人員會有[報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)可用。在您的組織中的人會看到下列圖示： 
+根據您選取的項目當您設定 「 增益集 (步驟 7-8 上方)，您組織中的人員會有[報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)可用。 在您的組織中的人會看到下列圖示： 
 
 - 在 Outlook 中，圖示看起來像這樣： <br/> ![報告訊息增益集的 Outlook 圖示](media/OutlookReportMessageIcon.png)<br/>
 - 在 web 上 Outlook 中，圖示看起來像這樣：<br/>![Outlook Web 報告訊息增益集] 圖示](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
@@ -99,7 +101,7 @@ ms.locfileid: "30341424"
 > [!IMPORTANT]
 > 您必須是 Exchange Online 系統管理員可執行此工作。
   
-您可以設定規則，以取得一份報告的組織中使用者的電子郵件訊息。下載及組織啟用報告訊息增益集之後，您可以這麼做。
+您可以設定規則，以取得一份報告的組織中使用者的電子郵件訊息。 下載及組織啟用報告訊息增益集之後，您可以這麼做。
   
 1. 在 Exchange 系統管理中心中，選擇 [**郵件流程** \> **規則**。 
     
@@ -121,7 +123,7 @@ ms.locfileid: "30341424"
   
 10. 選擇 [**儲存**]。 
     
-使用就地此規則，每當您的組織中的人員報告電子郵件訊息的報告訊息增益集，使用您全域系統管理員、 安全性系統管理員和/或安全性讀取者會收到該郵件的副本。這項資訊可以讓您設定或調整原則，例如[Office 365 ATP 安全連結](atp-safe-links.md)原則或您的[反垃圾郵件](anti-spam-protection.md)設定。 
+使用就地此規則，每當您的組織中的人員報告電子郵件訊息的報告訊息增益集，使用您全域系統管理員、 安全性系統管理員和/或安全性讀取者會收到該郵件的副本。 這項資訊可以讓您設定或調整原則，例如[Office 365 ATP 安全連結](atp-safe-links.md)原則或您的[反垃圾郵件](anti-spam-protection.md)設定。 
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用報告訊息增益集
 
@@ -139,7 +141,7 @@ ms.locfileid: "30341424"
 2. 尋找和選取的報告訊息增益集。<br/>![尋找和選取的報告訊息增益集](media/FindReportMessageAddIn.png)<br/> 
     
 3. 報告郵件在畫面上，檢閱並編輯最適合貴組織的設定。<br/>![設定的報告訊息增益集](media/EditReportMessageAddIn.png)<br/> 
-  
+
 ## <a name="related-topics"></a>相關主題
 
 [使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
