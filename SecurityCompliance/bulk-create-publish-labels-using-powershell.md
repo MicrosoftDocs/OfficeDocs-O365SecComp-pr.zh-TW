@@ -6,18 +6,19 @@ ms.date: 1/17/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: 在 Office 365 中，您可以使用標籤來為您的組織實作保留排程。做為記錄管理員或合規性主管，您可能有數百個要建立及發佈的標籤。您可以透過安全性與合規性中心的 UI 來執行此動作，但一次建立一個標籤費時且無效率。使用下面提供的指令碼和 .csv 檔案，您可以大量建立及發佈標籤與標籤原則。首先在 Excel 中建立標籤清單以及標籤原則清單，然後使用 PowerShell ，在這些清單中大量建立標籤及標籤原則。這可讓您更輕鬆地一次建立您的保留排程所需的所有標籤。
-ms.openlocfilehash: 273dbcd705792769b13a997ae6ca0bd5faaee31c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 982ce21a0cbd1c465f6e04db52e10022a4980c5b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410768"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454895"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 大量建立及發佈保留標籤
 

@@ -10,17 +10,18 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: '原則提示是通知或其他人正在使用的內容與 DLP 原則衝突時，會出現的警告。 您可以使用電子郵件通知和原則提示來增加知悉的變更，並協助教育人員需貴組織的原則。 您也可以的讓人員選擇覆寫原則，以便他們不會封鎖如果他們有有效的商務需要或原則會偵測誤判。 '
-ms.openlocfilehash: fbaabd674de97ffce32b8caae8e2b41471e52569
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410918"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455185"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>傳送電子郵件通知，並顯示原則提示的 DLP 原則
 

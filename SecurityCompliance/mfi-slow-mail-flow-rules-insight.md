@@ -1,36 +1,36 @@
 ---
-title: 慢速郵件流程規則洞察力
+title: 緩慢的郵件流程規則深入解析
 ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 5/3/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: 系統管理員可了解 Office 365 安全性 & 規範中心中的郵件流程儀表板的速度過慢的郵件流程規則洞察力。
-ms.openlocfilehash: 930ea7c57d896c75c6af1333f2bf202b56270199
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+description: 系統管理員可以了解在 Office 365 安全性 & 合規性中心中的郵件流程儀表板中緩慢的郵件流程規則深入解析。
+ms.openlocfilehash: 8188ee0da15ac337499866783ca4f2d893062d5b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685381"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454875"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>慢速郵件流程規則洞察力
+# <a name="slow-mail-flow-rules-insight"></a>緩慢的郵件流程規則深入解析
 
-無效率的郵件流程規則 （也稱為傳輸規則） 可能會導致為您組織的郵件流程延遲。此洞察力報告郵件流程規則所影響您的組織郵件流程。這些類型的規則範例是：
+無效率的郵件流程規則 （也稱為傳輸規則） 可能會導致為您的組織的郵件流程延遲。 此深入了解報告貴組織的郵件流程造成影響的郵件流程規則。 以下是這些類型的規則的範例：
 
-- 使用大型的群組**成員**的條件。
+- 使用大型群組**成員**的條件。
 
 - 使用複雜的規則運算式 (regex) 模式比對的條件。
 
-- 使用中的附件內容檢查的條件。
+- 使用內容檢查附件中的條件。
 
-洞察力可協助您識別及微調郵件流程規則來協助減少郵件流程延遲。
+深入了解可協助您識別並微調郵件流程規則來協助減少郵件流程延遲。
 
-![慢速郵件流程規則在 Office 365 安全性 & 規範中心中的郵件流程儀表板中的洞察力](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![緩慢的郵件流程規則深入了解在 Office 365 安全性 & 合規性中心中的郵件流程儀表板](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
-當您按一下 [**檢視詳細資料**時] 彈出式] 窗格會顯示您可以在其中檢閱規則。在彈出式] 窗格中，也可以按一下 [**檢視範例郵件**以查看郵件何種影響規則。
+當您按一下 [**檢視詳細資料**時，彈出式視窗窗格會顯示您可以在此檢閱規則。 在彈出式視窗窗格中，也可以按一下 [**檢視範例郵件**若要查看何種郵件受影響的規則。
 
-![按一下 [檢視詳細資料中的速度過慢的郵件流程之後彈出式窗格規則郵件流程儀表板中的洞察力](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![彈出式視窗窗格中按一下 [檢視詳細資料]，在 [郵件流程儀表板中緩慢的郵件流程規則深入解析後](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)

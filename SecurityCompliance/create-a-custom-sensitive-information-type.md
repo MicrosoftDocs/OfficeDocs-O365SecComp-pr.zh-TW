@@ -7,17 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Office 365 安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: 16bc49f23de20479ed18ce56720fd70a05b986e3
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 5e20fac290a7d06c843a0043d95669d9c7f7cd05
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410808"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455135"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>建立自訂機密資訊類型
 

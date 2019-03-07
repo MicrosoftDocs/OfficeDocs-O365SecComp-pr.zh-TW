@@ -10,16 +10,17 @@ f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 description: 使用 Office 365 安全性中的資料外洩防護 (DLP) 原則&amp;合規性中心，您可以識別、 監視和自動保護 Office 365 中的敏感資訊。
-ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410868"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455045"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -495,7 +496,7 @@ Office 2016 中的 DLP 原則評估依設計並不會影響程式的效能或內
     
   - [Get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
     

@@ -7,18 +7,19 @@ ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: 與資料外洩防護 (DLP) 在 SharePoint Online 中，您可以探索包含整個您的租用戶的敏感資料的文件。 探索文件之後，您可以與文件擁有者協力保護資料。 本主題可以協助您進行查詢，以搜尋敏感資料。
-ms.openlocfilehash: 74914ec934ece773e7a9748dfc821cea7c84963c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410708"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455065"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 
