@@ -5,31 +5,31 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: 系統管理員可了解 Office 365 安全性 & 規範中心中的郵件流程儀表板中自動轉寄郵件報告。
-ms.openlocfilehash: 5097a2842eeae56e1eb51b9fae4c0caf5263ad80
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 系統管理員可以了解在 Office 365 安全性 & 合規性中心中的郵件流程儀表板中自動轉寄訊息的報告。
+ms.openlocfilehash: acfc1996a630cb6ff9a12a1e2953c93ba9862ffd
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219303"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454925"
 ---
-# <a name="auto-forwarded-messages-report"></a><span data-ttu-id="5f98e-103">自動轉寄訊息的報告</span><span class="sxs-lookup"><span data-stu-id="5f98e-103">Auto-forwarded messages report</span></span>
+# <a name="auto-forwarded-messages-report"></a><span data-ttu-id="5db24-103">自動轉寄訊息的報告</span><span class="sxs-lookup"><span data-stu-id="5db24-103">Auto-forwarded messages report</span></span>
 
-<span data-ttu-id="5f98e-104">郵件流程儀表板中的**自動轉寄郵件**報表會自動轉寄給收件者的外部網域從 Office 365 組織的郵件上顯示資訊。</span><span class="sxs-lookup"><span data-stu-id="5f98e-104">The **Auto-forwarded messages** report in the mail flow dashboard displays information on messages that are automatically forwarded from your Office 365 organization to recipients in external domains.</span></span>
+<span data-ttu-id="5db24-104">**自動轉寄訊息**的報告郵件流程儀表板中顯示資訊會自動從您的 Office 365 組織轉送至外部網域中的收件者的郵件。</span><span class="sxs-lookup"><span data-stu-id="5db24-104">The **Auto-forwarded messages** report in the mail flow dashboard displays information on messages that are automatically forwarded from your Office 365 organization to recipients in external domains.</span></span>
 
 ![x](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
-![在 Office 365 安全性 & 規範中心中的郵件流程儀表板中自動轉寄郵件報告](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![在 Office 365 安全性 & 合規性中心中的郵件流程儀表板中自動轉寄訊息的報告](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
-## <a name="auto-forwarded-messages-details"></a><span data-ttu-id="5f98e-107">自動轉寄郵件的詳細資訊</span><span class="sxs-lookup"><span data-stu-id="5f98e-107">Auto-forwarded messages details</span></span>
+## <a name="auto-forwarded-messages-details"></a><span data-ttu-id="5db24-107">自動轉寄訊息詳細資料</span><span class="sxs-lookup"><span data-stu-id="5db24-107">Auto-forwarded messages details</span></span>
 
-<span data-ttu-id="5f98e-p101">當您按一下 widget 中的郵件數時，彈出式窗格隨即會顯示會顯示自動轉寄郵件狀態。您可以按一下 [**轉接報告**連結查看詳細資料。</span><span class="sxs-lookup"><span data-stu-id="5f98e-p101">When you click the number of messages in the widget, a flyout pane appears that shows the auto-forwarded message status. You can see the details by clicking the **Forwarding Report** link.</span></span>
+<span data-ttu-id="5db24-108">當您按一下 [] 小工具中的郵件數目時，彈出式視窗窗格會出現顯示自動轉寄郵件的狀態。</span><span class="sxs-lookup"><span data-stu-id="5db24-108">When you click the number of messages in the widget, a flyout pane appears that shows the auto-forwarded message status.</span></span> <span data-ttu-id="5db24-109">您可以看到詳細資料]，即可**轉寄報告**] 連結。</span><span class="sxs-lookup"><span data-stu-id="5db24-109">You can see the details by clicking the **Forwarding Report** link.</span></span>
 
-![在 Office 365 安全性 & 規範中心中的自動轉寄郵件報告的詳細資訊彈出式](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+![在 Office 365 安全性 & 合規性中心中自動轉寄訊息的報告詳細資料彈出式](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
-## <a name="insights"></a><span data-ttu-id="5f98e-111">深入資訊</span><span class="sxs-lookup"><span data-stu-id="5f98e-111">Insights</span></span>
+## <a name="insights"></a><span data-ttu-id="5db24-111">深入資訊</span><span class="sxs-lookup"><span data-stu-id="5db24-111">Insights</span></span>
 
-<span data-ttu-id="5f98e-p102">兩個的觀點所產生的報告資料為基礎：**轉寄的新使用者**] 和 [**新增轉送網域**。每個洞察力提供新轉寄站或連結的網域數目摘要**新轉接的報表**更詳細地提供兩種類型的資料。**新轉接報告**也會顯示新的活動及詳細資料表格識別啟動轉接以及哪些網域中 [時間表] 檢視。</span><span class="sxs-lookup"><span data-stu-id="5f98e-p102">Two insights are generated based on the report data: **New forwarding users** and **New forwarding domains**. Each insight provides a summary of the number of new forwarders or domains with a link to the **New Forwarding Report** that provides more detail for the two types of data. The **New Forwarding Report** also shows a timeline view of new activity and the details table identifies who started forwarding and to which domains.</span></span>
+<span data-ttu-id="5db24-112">兩個觀點產生報表資料為基礎：**轉寄的新使用者**] 和 [**新增轉送網域**。</span><span class="sxs-lookup"><span data-stu-id="5db24-112">Two insights are generated based on the report data: **New forwarding users** and **New forwarding domains**.</span></span> <span data-ttu-id="5db24-113">每個深入了解**新轉寄報表**更詳細地提供兩種類型的資料提供新轉寄或與連結的網域數目的摘要。</span><span class="sxs-lookup"><span data-stu-id="5db24-113">Each insight provides a summary of the number of new forwarders or domains with a link to the **New Forwarding Report** that provides more detail for the two types of data.</span></span> <span data-ttu-id="5db24-114">**新的轉寄報告**也會顯示時間表檢視的新活動] 和 [詳細資料表格識別啟動轉寄至哪一個網域。</span><span class="sxs-lookup"><span data-stu-id="5db24-114">The **New Forwarding Report** also shows a timeline view of new activity and the details table identifies who started forwarding and to which domains.</span></span>

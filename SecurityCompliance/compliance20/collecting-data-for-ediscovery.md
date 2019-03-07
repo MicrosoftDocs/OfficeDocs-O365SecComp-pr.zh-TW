@@ -1,5 +1,5 @@
 ---
-title: 收集資料的進階 eDiscovery (Preview) 中的案例
+title: 收集資料的進階電子文件 （預覽） 中的案例
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,39 +14,38 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcc307cc08954dd3cc69e8905747393d79f97b04
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297096"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455415"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a><span data-ttu-id="61cc2-102">收集資料的進階 eDiscovery (Preview) 中的案例</span><span class="sxs-lookup"><span data-stu-id="61cc2-102">Collect data for a case in Advanced eDiscovery (Preview)</span></span>
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a><span data-ttu-id="e7dd7-102">收集資料的進階電子文件 （預覽） 中的案例</span><span class="sxs-lookup"><span data-stu-id="e7dd7-102">Collect data for a case in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="61cc2-p101">一旦您識別 custodians 與您的案例感興趣的資料來源，該是時候來識別的探究的文件]。您可以使用進階的 eDiscovery (Preview) 中的搜尋工具來識別這些從 custodial 和非 custodial Office 365 中的位置。</span><span class="sxs-lookup"><span data-stu-id="61cc2-p101">Once you have identified custodians and data sources that are of interest for your case, it's time to identify the set of documents to delve into. You can use the Search tool in Advanced eDiscovery (Preview) to identify these from custodial and non-custodial locations in Office 365.</span></span>
+<span data-ttu-id="e7dd7-103">一旦您已識別 custodians，針對您的案例感興趣的資料來源，該是時候來識別文件，以探究一組。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-103">Once you have identified custodians and data sources that are of interest for your case, it's time to identify the set of documents to delve into.</span></span> <span data-ttu-id="e7dd7-104">您可以使用進階電子文件 （預覽） 中的 「 搜尋 」 工具，來識別這些從 custodial 及非 custodial Office 365 中的位置。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-104">You can use the Search tool in Advanced eDiscovery (Preview) to identify these from custodial and non-custodial locations in Office 365.</span></span>
 
-<span data-ttu-id="61cc2-p102">執行搜尋之後，您將能夠檢視等有符合搜尋查詢的大部分項目位置擷取的項目上的統計資料。您也可以預覽結果的子集。當您已識別想要進一步檢查的文件集時，您可以新增收集及處理工作設在搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="61cc2-p102">After you run a search, you will be able to view statistics on the retrieved items such as the locations that had the most items that matched the search query. You can also preview a subset of the results. When you've identified the set of documents that want to further examine, you can add the search results to a working set to collect and process.</span></span>
+<span data-ttu-id="e7dd7-105">執行搜尋之後，您可以檢視統計資料，例如有符合搜尋查詢的大部分項目位置擷取的項目。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-105">After you run a search, you will be able to view statistics on the retrieved items such as the locations that had the most items that matched the search query.</span></span> <span data-ttu-id="e7dd7-106">您也可以預覽結果的子集。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-106">You can also preview a subset of the results.</span></span> <span data-ttu-id="e7dd7-107">當您已識別想要更進一步檢查的文件組時，您可以收集和處理工作設新增搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-107">When you've identified the set of documents that want to further examine, you can add the search results to a working set to collect and process.</span></span>
 
-## <a name="create-a-search"></a><span data-ttu-id="61cc2-108">建立搜尋</span><span class="sxs-lookup"><span data-stu-id="61cc2-108">Create a search</span></span>
+## <a name="create-a-search"></a><span data-ttu-id="e7dd7-108">Create a search</span><span class="sxs-lookup"><span data-stu-id="e7dd7-108">Create a search</span></span>
 
-<span data-ttu-id="61cc2-p103">按一下 [**搜尋**] 索引標籤上的 [**新的搜尋**會啟動將引導您建立搜尋的精靈。如需如何建立搜尋的詳細資訊，請參閱 ＜ [Create 搜尋以收集資料](create-search-to-collect-data.md)。</span><span class="sxs-lookup"><span data-stu-id="61cc2-p103">Clicking **New search** on the **Searches** tab will start a wizard that guides you through creating a search. For detailed information on how to create a search, see [Create a search to collect data](create-search-to-collect-data.md).</span></span>
+<span data-ttu-id="e7dd7-109">按一下 [**搜尋**] 索引標籤上的 [**新的搜尋**會啟動精靈，引導您完成建立搜尋。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-109">Clicking **New search** on the **Searches** tab will start a wizard that guides you through creating a search.</span></span> <span data-ttu-id="e7dd7-110">如需如何建立搜尋的詳細資訊，請參閱 <<c0>建立 「 搜尋 」 來收集資料。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-110">For detailed information on how to create a search, see [Create a search to collect data](create-search-to-collect-data.md).</span></span>
 
-<span data-ttu-id="61cc2-p104">建立搜尋之後，會顯示彈出式頁面的詳細資料。請注意 [**統計資料**和**預覽**] 按鈕會最初灰因為尚未完成搜尋。您可以追蹤的 [**搜尋**] 索引標籤上的搜尋的進度。</span><span class="sxs-lookup"><span data-stu-id="61cc2-p104">After a search is created, a flyout page with details is displayed. Note that the **Statistics** and **Preview** buttons are initially grayed out because the search has not completed yet. You can keep track of the progress of the search on the **Searches** tab.</span></span>
+<span data-ttu-id="e7dd7-111">建立搜尋之後，會顯示詳細資料的彈出式頁面。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-111">After a search is created, a flyout page with details is displayed.</span></span> <span data-ttu-id="e7dd7-112">請注意，[**統計資料**和**預覽**] 按鈕一開始變為灰色，因為搜尋尚未完成。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-112">Note that the **Statistics** and **Preview** buttons are initially grayed out because the search has not completed yet.</span></span> <span data-ttu-id="e7dd7-113">您可以追蹤的 [**搜尋**] 索引標籤上的搜尋的進度。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-113">You can keep track of the progress of the search on the **Searches** tab.</span></span>
 
-## <a name="view-search-results-and-statistics"></a><span data-ttu-id="61cc2-114">檢視搜尋結果和統計資料</span><span class="sxs-lookup"><span data-stu-id="61cc2-114">View search results and statistics</span></span>
-<span data-ttu-id="61cc2-p105">有兩個搜尋元件的內容： （評估） 的統計資料和預覽。為每個完成這些元件，您會看到從**已提交**變更為 [**進行中**為 [**已完成**狀態顯示在 [**搜尋**] 索引標籤上的對應欄中。</span><span class="sxs-lookup"><span data-stu-id="61cc2-p105">There are two components of a content search: Statistics (Estimates) and Preview. As each of these components complete, you will see the status displayed in the corresponding columns on the **Searches** tab change from from **Submitted** to **In progress** to **Completed**.</span></span>
+## <a name="view-search-results-and-statistics"></a><span data-ttu-id="e7dd7-114">檢視搜尋結果，並統計資料</span><span class="sxs-lookup"><span data-stu-id="e7dd7-114">View search results and statistics</span></span>
+<span data-ttu-id="e7dd7-115">有兩個內容搜尋元件： 統計資料 （評估） 和預覽。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-115">There are two components of a content search: Statistics (Estimates) and Preview.</span></span> <span data-ttu-id="e7dd7-116">為每個完成這些元件，您會看到從**已提交**變更為 [**進行中**為 [**已完成**狀態顯示在 [**搜尋**] 索引標籤上的對應資料行。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-116">As each of these components complete, you will see the status displayed in the corresponding columns on the **Searches** tab change from from **Submitted** to **In progress** to **Completed**.</span></span>
 
-<span data-ttu-id="61cc2-p106">搜尋 estimate 完成之後，按一下 [顯示彈出式] 頁面上，將會顯示一些高層級的統計資料的搜尋結果的相關搜尋]。此時，**統計資料**] 按鈕會為使用中。您可以按一下它以查看搜尋統計資料，例如：</span><span class="sxs-lookup"><span data-stu-id="61cc2-p106">Once the search estimate is completed, click the search to display the flyout page, which will display some high-level statistics about the results of the search. At this point, the **Statistics** button will be active. You can click it to see search statistics, such as:</span></span>
+<span data-ttu-id="e7dd7-117">搜尋 estimate 完成之後，按一下 [搜尋] 以顯示 [彈出式視窗] 頁面上，將會顯示一些相關的搜尋結果的高階統計資料。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-117">Once the search estimate is completed, click the search to display the flyout page, which will display some high-level statistics about the results of the search.</span></span> <span data-ttu-id="e7dd7-118">此時，[**統計資料**] 按鈕會在作用中。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-118">At this point, the **Statistics** button will be active.</span></span> <span data-ttu-id="e7dd7-119">您可以按一下它，請參閱 < 搜尋統計資料，例如：</span><span class="sxs-lookup"><span data-stu-id="e7dd7-119">You can click it to see search statistics, such as:</span></span>
 
-- <span data-ttu-id="61cc2-120">摘要</span><span class="sxs-lookup"><span data-stu-id="61cc2-120">Summary</span></span>
-- <span data-ttu-id="61cc2-121">上方的位置</span><span class="sxs-lookup"><span data-stu-id="61cc2-121">Top locations</span></span>
-- <span data-ttu-id="61cc2-122">查詢</span><span class="sxs-lookup"><span data-stu-id="61cc2-122">Queries</span></span>
-- <span data-ttu-id="61cc2-123">精簡器</span><span class="sxs-lookup"><span data-stu-id="61cc2-123">Refiners</span></span>
+- <span data-ttu-id="e7dd7-120">摘要</span><span class="sxs-lookup"><span data-stu-id="e7dd7-120">Summary</span></span>
+- <span data-ttu-id="e7dd7-121">上方的位置</span><span class="sxs-lookup"><span data-stu-id="e7dd7-121">Top locations</span></span>
+- <span data-ttu-id="e7dd7-122">Queries</span><span class="sxs-lookup"><span data-stu-id="e7dd7-122">Queries</span></span>
 
-<span data-ttu-id="61cc2-124">如需搜尋統計資料的詳細資訊，請參閱 ＜[搜尋統計資料](search-statistics.md)。</span><span class="sxs-lookup"><span data-stu-id="61cc2-124">For more information about search statistics, see [Search statistics](search-statistics.md).</span></span>
+<span data-ttu-id="e7dd7-123">如需搜尋統計資料的詳細資訊，請參閱 <<c0>搜尋統計資料。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-123">For more information about search statistics, see [Search statistics](search-statistics.md).</span></span>
 
-<span data-ttu-id="61cc2-p107">預覽完成之後，將會為使用中 [**預覽**] 按鈕。按一下該預覽取樣結果的子集。</span><span class="sxs-lookup"><span data-stu-id="61cc2-p107">Once preview is completed, the **Preview** button will be active. Click it to preview a sampled subset of the results.</span></span>
+<span data-ttu-id="e7dd7-124">預覽完成之後，[**預覽**] 按鈕會在作用中。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-124">Once preview is completed, the **Preview** button will be active.</span></span> <span data-ttu-id="e7dd7-125">按一下以預覽取樣結果的子集。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-125">Click it to preview a sampled subset of the results.</span></span>
 
-## <a name="adding-search-results-to-a-working-set"></a><span data-ttu-id="61cc2-127">新增搜尋結果的工作集</span><span class="sxs-lookup"><span data-stu-id="61cc2-127">Adding search results to a working set</span></span>
+## <a name="adding-search-results-to-a-working-set"></a><span data-ttu-id="e7dd7-126">新增搜尋結果，以工作集</span><span class="sxs-lookup"><span data-stu-id="e7dd7-126">Adding search results to a working set</span></span>
 
-<span data-ttu-id="61cc2-p108">當您準備好收集及處理整個搜尋結果時，您可以將它新增至工作集來執行此動作。如需詳細資訊，請參閱[新增資料至工作集](add-data-to-working-set.md)。</span><span class="sxs-lookup"><span data-stu-id="61cc2-p108">When you are ready to collect and process the entire results of a search, you can do so by adding it to a working set. For details, see [Add data to a working set](add-data-to-working-set.md).</span></span> 
+<span data-ttu-id="e7dd7-127">當您準備好要收集和處理整個搜尋的結果時，您可以藉由將它新增至工作來執行此動作。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-127">When you are ready to collect and process the entire results of a search, you can do so by adding it to a working set.</span></span> <span data-ttu-id="e7dd7-128">如需詳細資訊，請參閱 <<c0>新增資料至工作集。</span><span class="sxs-lookup"><span data-stu-id="e7dd7-128">For details, see [Add data to a working set](add-data-to-working-set.md).</span></span> 
