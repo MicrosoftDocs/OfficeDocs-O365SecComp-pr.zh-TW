@@ -5,21 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 使用 Office 365 的敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 449b2567366bb262d469d78d3de447cccf04389b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f624308e7cbfb7aae738e0c08505412314200e7
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220943"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412951"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -97,9 +96,11 @@ ms.locfileid: "30220943"
 
 ### <a name="sublabels-grouping-labels"></a>子標籤 (分組標籤)
 
-使用子標籤，您可以將使用者在 Office 應用程式中看到的標題下一或多個標籤分組。比方說，在「機密」下方，您的組織可能針對該分類的特定類型使用數種不同標籤。在此範例中，標籤「機密」只是文字標籤而沒有保護設定，且因為其具有子標籤，所以不能套用至內容。使用者必須改為選擇「機密」才能檢視子標籤，接著可選擇子標籤套用至內容。
+您可以使用子標籤將一或多個標籤分組在 Office 應用程式中的使用者可看到的上層標籤之下。 例如，在 [機密文件] 下，您的組織可能會使用不同的標籤來標示該分類的特定類型。 在此範例中，上層標籤 [機密文件] 只是沒有任何保護設定的文字標籤，且因為它有子標籤，所以無法套用至內容。 相反地，使用者必須選擇 [機密文件] 來查看子標籤，然後再選擇要套用到內容的子標籤。
 
-子標籤只是在邏輯群組中向使用者顯示標籤的方式。子標籤並不會繼承其上方標籤的任何設定。
+子標籤是以邏輯群組方式向使用者呈現標籤的一個簡單方式。 子標籤不繼承其上層標籤的任何設定。 子標籤可套用至內容；但上層標籤不行。
+
+(此外，您不應選擇上層標籤作為預設標籤 (請參閱下一節)，或將上層標籤設定為自動套用或建議選項，因為上層標籤無法套用到使用 Azure 資訊保護統一標籤用戶端的 Office 應用程式中的內容。)
 
 ![功能區上分組的子標籤](media/Sensitivity_label_grouped_labels.png)
 
@@ -117,7 +118,7 @@ ms.locfileid: "30220943"
 
 - **選擇哪些使用者和群組可以看見標籤。** 標籤可以發佈到任何電子郵件啟用的安全性群組、通訊群組、Office 365 群組或動態通訊群組。
 
-- **套用預設標籤**至所有新文件和電子郵件，這些是由標籤原則中包含的使用者和群組所建立。此預設標籤可以設定您想要套用到所有內容的基礎層級保護設定。
+- **套用預設標籤**到標籤原則中包含的使用者和群組所建立所有新文件和的電子郵件。 此預設標籤可設定您想套用到所有內容中的基本保護設定等級。 (請注意)
 
 - **變更標籤需要理由。** 如果內容標示為「機密」，而使用者想要移除該標籤，或取代為較低的分類，如「公用」標籤，則您可以要求使用者在執行此動作時提供理由。這些理由可供系統管理員檢閱。我們目前正在處理系統管理員可在其中檢視使用者理由的報告。
 
