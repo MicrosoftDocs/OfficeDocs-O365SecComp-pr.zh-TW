@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465470"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492852"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
@@ -57,7 +57,8 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 在您開始使用監督之前，必須決定誰會有檢閱其通訊。 在原則中，您將使用使用者電子郵件地址來識別的個人或群組的人員来監管。 這些群組的一些範例包括 Office 365 群組、 Exchange 型的通訊群組清單和 Microsoft Teams 通道。 您也可以排除特定使用者或群組包含監督的群組或群組的清單中的監督。
 
 > [!IMPORTANT]
-> 受到監督原則的所有使用者必須是 Office 365 企業版 E3 授權來搭配進階合規性附加元件，或是包含 Office 365 企業版 E5 訂閱。 如果您未擁有現有的企業版 E5 方案，以及要嘗試監督，您可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+> 受到監督原則的使用者必須擁有可以是 Microsoft 365 E5 合規性授權 Office 365 企業版 E3 授權來搭配進階合規性的附加元件，或包含在 Office 365 企業版 E5 訂閱。
+如果您未擁有現有的企業版 E5 方案，以及要嘗試監督，您可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -153,9 +154,9 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 - 請參閱 < 的檢閱者的清單並檢閱小組針對選取的原則
 - 查看哪些通訊平台具有下監督原則的內容。
 
-#### <a name="supervise-tab"></a>監管] 索引標籤
+#### <a name="review-tab"></a>檢閱] 索引標籤
 
-[ **Supervise** ] 索引標籤是其中的檢閱者可以採取動作，並解決項目識別所選取的原則。 以下是您可以：
+[**檢閱**] 索引標籤是其中的檢閱者可以採取動作，並解決項目識別所選取的原則。 以下是您可以：
 
 - 篩選擱置相容、 不相容，並有疑問的項目
 - 標記為相容、 不相容，或有疑問的單一項目。 您也可以記錄與項目，有助於釐清標記採取的動作的註解。

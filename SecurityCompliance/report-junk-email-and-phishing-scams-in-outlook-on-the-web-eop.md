@@ -1,7 +1,7 @@
 ---
-title: '回報垃圾郵件和網路釣魚詐騙在網路上的 Outlook '
-ms.author: krowley
-author: kccross
+title: '報告的網頁型 Outlook 中的垃圾郵件和網路釣魚詐騙 '
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,49 +12,54 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
-description: Web 使用者在 Microsoft Outlook 可以回報垃圾郵件和網路釣魚詐騙使用內建報表選項的郵件。您也可以讓 Microsoft 知道電子郵件而不正確地識別為垃圾郵件。
-ms.openlocfilehash: d495f5648d4e4ac7ee7335d58a4268bdfecb6109
-ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
+ms.collection:
+- M365-security-compliance
+description: Microsoft Outlook web 使用者可以使用內建的郵件報告選項回報垃圾郵件和網路釣魚詐騙。 您也可以讓 Microsoft 知道是否電子郵件誤報為垃圾郵件 （垃圾郵件）。
+ms.openlocfilehash: e40770d8ff7e2c24058674f25b9ee8eb72e2bf7c
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "25450068"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492812"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>回報垃圾郵件和網路釣魚詐騙在網路上的 Outlook 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>報告的網頁型 Outlook 中的垃圾郵件和網路釣魚詐騙 
 
-它可以是什麼您組織中的使用者會收到垃圾郵件或因為其已為垃圾郵件 misidentified 錯過重要電子郵件時。我們正在正比微調要更精確的 Exchange Online Protection (EOP) 垃圾郵件篩選器與您及您的使用者可以使用此程序協助Web 使用者在 Microsoft Outlook 可以回報垃圾郵件和網路釣魚詐騙使用內建報表選項的郵件。您也可以讓 Microsoft 知道電子郵件而不正確地識別為垃圾郵件。
+當您組織中的使用者收到垃圾郵件或遺漏重要的電子郵件，因為它已 misidentified 為垃圾郵件時，它可以是令人沮喪。 我們不斷在微調 Exchange Online Protection (EOP) 垃圾郵件篩選以便提升準確性，而且您和您的使用者可協助此程序;Microsoft Outlook web 使用者可以使用內建的郵件報告選項回報垃圾郵件和網路釣魚詐騙。 您也可以讓 Microsoft 知道是否電子郵件誤報為垃圾郵件 （垃圾郵件）。
   
-## <a name="submit-junk-messages-in-outlook-on-the-web"></a>送出在網路上的 Outlook 的垃圾郵件
+## <a name="submit-junk-messages-in-outlook-on-the-web"></a>將網頁型 Outlook 中的垃圾郵件提交
 
-提交垃圾郵件訊息給 Microsoft：
+若要將垃圾郵件郵件提交給 Microsoft:
   
-1. 按一下 [垃圾郵件並按一下工具列上的 [**垃圾**。這會將郵件移至垃圾郵件] 資料夾並將寄件者新增至封鎖的寄件者清單。 ![指出電子郵件是從網路上的 Outlook 垃圾](media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+1. 按一下 [垃圾郵件]，然後按一下工具列上的 [**垃圾郵件**。 這會將郵件移至垃圾郵件] 資料夾，並將寄件者新增至封鎖的寄件者清單。 
+    ![指出電子郵件是來自 Web 上 Outlook 的垃圾郵件](media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
   
     > [!NOTE]
-    > 或者，以滑鼠右鍵按一下 [顯示] 功能表中的訊息，按一下 [**標記為垃圾郵件**。 
+    > 或者，若要顯示的功能表中，郵件上按一下滑鼠右鍵，然後按一下 [**標示為垃圾郵件**。 
   
-您可以從 [**收件匣**、**雜亂**或**刪除的郵件**] 資料夾回報垃圾郵件的郵件。 
+您可以從您的**收件匣**]、 [**待過濾郵件**或 [**刪除的項目**資料夾回報垃圾郵件。 
   
-2. 會開啟一個對話方塊詢問如果您想要將垃圾郵件的複本傳送給 Microsoft 進行分析。按一下 [**報表**，以將郵件傳送給 Microsoft 的垃圾郵件分析小組。如果您想要自動提交給 Microsoft 的未來垃圾郵件而不需要提示提供 （選用) 選取 [**不要顯示此訊息一次**] 核取方塊。 ![向 Microsoft 回報垃圾郵件從網路上的 Outlook](media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+2. 隨即開啟對話方塊，詢問您是否要將垃圾郵件的複本傳送給 Microsoft 以進行分析。 按一下 [將郵件傳送給 Microsoft 垃圾郵件分析小組**報告**。 選擇性地，如果您想要自動將之後的垃圾郵件提交給 Microsoft，而不出現提示，則請選取 **[不要再顯示此訊息]** 核取方塊。 
+    ![向 Microsoft 報告來自 Web 上 Outlook 的垃圾電子郵件](media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
   
     > [!TIP]
-    > 即使您選取 [**不要顯示此訊息一次**] 核取方塊，您可以稍後變更您的喜好設定的垃圾郵件報告來存取在網路上的 Outlook 中的顯示設定。（您可以存取這些設定透過齒輪功能表您的登入名稱] 旁）。 
+    > 即使您選取 [**不要顯示一次此訊息**] 核取方塊，您可以稍後變更您的喜好設定垃圾郵件報告來存取在 outlook 網頁版中的顯示設定。 (您可以透過登入名稱旁邊的齒輪功能表來存取這些設定。 
   
-## <a name="submit-phishing-scam-messages-in-outlook-on-the-web"></a>提交網路釣魚詐騙郵件在網路上的 Outlook
+## <a name="submit-phishing-scam-messages-in-outlook-on-the-web"></a>送出網頁型 Outlook 中的網路釣魚詐騙郵件
 
-若要送出網路釣魚詐騙郵件訊息給 Microsoft：
+若要將網路釣魚詐騙郵件提交給 Microsoft:
   
-1. 按一下 [網路釣魚詐騙郵件上、 按一下 [**垃圾郵件**、 旁的向下箭號，然後按一下工具列上的 [**網路釣魚**。Office 365 因為寄件者的網路釣魚詐騙郵件通常模擬合法的寄件者都不會封鎖寄件者。如果您想新增寄件者至封鎖的寄件者清單主題中的指示[封鎖或允許 （垃圾郵件設定）](https://go.microsoft.com/fwlink/?LinkId=627572)。![表示電子郵件是在 web 上的 Outlook 網路釣魚詐騙郵件](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>或者，以滑鼠右鍵按一下 [顯示] 功能表中的訊息，按一下 [**標示為網路釣魚**。<br/>您可以從 [**收件匣**、**雜亂**或**刪除的郵件**] 資料夾報告網路釣魚詐騙郵件訊息。 
+1. 按一下 [網路釣魚詐騙郵件上，按一下 [**垃圾郵件**旁的向下箭號，然後按一下工具列上的 [**網路釣魚**。 Office 365 不會封鎖寄件者，因為寄件者的網路釣魚詐騙郵件通常會模擬合法的寄件者。 如果您想新增寄件者至封鎖的寄件者清單主題中的指示[封鎖或允許 （垃圾郵件設定）](https://go.microsoft.com/fwlink/?LinkId=627572)。 
+    ![指出電子郵件是 Web 上 Outlook 中的網路釣魚詐騙](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>或者，若要顯示的功能表中，郵件上按一下滑鼠右鍵，然後按一下 [**標記為網路釣魚**。<br/>您可以從您的**收件匣**]、 [**待過濾郵件**或 [**刪除的項目**資料夾回報網路釣魚詐騙郵件。 
   
-2. 對於某些組織而言，會開啟一個對話方塊詢問您是否要將網路釣魚詐騙郵件電子郵件的複本傳送給 Microsoft 進行分析。按一下 [**報表**，以將郵件傳送給 Microsoft 的垃圾郵件分析小組。此報表的選項是有限的組織 ； 目前可供使用您可能不會要求您向 Microsoft 回報網路釣魚詐騙郵件。 
+2. 有些組織隨即開啟對話方塊，詢問您是否要傳送一份網路釣魚詐騙電子郵件給 Microsoft 進行分析。 按一下 [將郵件傳送給 Microsoft 垃圾郵件分析小組**報告**。 此報表的選項的目前可有限數量的組織;您可能不會要求您向 Microsoft 回報網路釣魚詐騙郵件。 
     
-## <a name="submit-not-junk-messages-in-outlook-on-the-web"></a>送出在網路上的 Outlook 中的"不是垃圾郵件 」 訊息
+## <a name="submit-not-junk-messages-in-outlook-on-the-web"></a>將網頁型 Outlook 中的 「 非垃圾郵件 」 郵件提交
 
-當郵件未正確識別為垃圾由 Office 365 時、 送出郵件為 「 非垃圾郵件 」 給 Microsoft：
+當郵件錯誤識別為垃圾郵件由 Office 365 時，提交郵件為 「 非垃圾郵件 」 給 Microsoft:
   
-1. 在您垃圾郵件] 資料夾中的郵件上按一下 [與然後按一下工具列上的 [**不是垃圾郵件**。這會將郵件移到您的**收件匣**並將寄件者新增至安全的寄件者清單。<br/>您可以也以滑鼠右鍵按一下訊息中顯示的功能表然後按一下 [**標示為不是垃圾郵件**的 [垃圾郵件] 資料夾。 
+1. 在您垃圾郵件] 資料夾中，按一下 [郵件上，然後按一下工具列上的 [**不是垃圾郵件**。 這會將郵件移到您的**收件匣**，並將寄件者新增至您的安全寄件者清單。 <br/>您可以也以滑鼠右鍵按一下郵件上顯示的功能表，並按一下 [**標示為不是垃圾郵件**的 [垃圾郵件] 資料夾。 
   
-2. 會開啟一個對話方塊詢問如果您想要將不是垃圾郵件的電子郵件訊息的複本傳送給 Microsoft 進行分析。按一下 [**報表**，以將郵件傳送給 Microsoft 的垃圾郵件分析小組. 
+2. 隨即開啟對話方塊，詢問您是否要將垃圾郵件的複本傳送給 Microsoft 以進行分析。 按一下 [**報告**]，將郵件傳送給 Microsoft 垃圾郵件分析小組.. 
     
 ## <a name="for-more-information"></a>如需詳細資訊
 
