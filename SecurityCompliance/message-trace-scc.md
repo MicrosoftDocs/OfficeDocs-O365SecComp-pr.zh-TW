@@ -9,14 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 系統管理員可以使用郵件追蹤安全性 & 合規性中心中找出的郵件發生了什麼事。
-ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455345"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524087"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>在安全性 & 合規性中心中的郵件追蹤
+
+## <a name="overview"></a>概觀
 
 遊歷 Exchange Online 組織，安全性 & 合規性中心中的郵件追蹤會遵循電子郵件訊息。 您可以判斷郵件是否已接收、 拒絕、 延遲或傳遞服務。 它也會顯示是對郵件所採取的行動之前它達到其最終狀態。
 
@@ -54,7 +56,8 @@ ms.locfileid: "30455345"
 
 - **這些人**： 按一下 [在組織中選取一或多個收件者此欄位中。
 
-您也可以輸入外部寄件者和收件者的電子郵件地址。 支援萬用字元 (`*@contoso.com`或`scot?@contoso.com`)，但您無法在相同的欄位中使用多個的萬用字元項目，在同一時間。
+> [!NOTE]您也可以輸入外部寄件者和收件者的電子郵件地址。 支援萬用字元 (`*@contoso.com`或`scot?@contoso.com`)，但您無法在相同的欄位中使用多個的萬用字元項目，在同一時間。
+> [!NOTE]您可以貼上以分號分隔的多個寄件者或收件者清單 (`;`)。 空格 (`\s`)、 歸位換行 (`\r`) 或下一行 (`\n`) 允許的符號。
 
 ### <a name="time-range"></a>時間範圍
 

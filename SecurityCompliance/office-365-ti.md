@@ -1,9 +1,9 @@
 ---
-title: Office 365 威脅情報
+title: Office 365 威脅調查及回應
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/08/2019
+ms.date: 03/09/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,56 +14,58 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: 深入了解威脅智慧功能的進階威脅保護如何協助您研究威脅對貴組織、 回應惡意程式碼、 網路釣魚、 及其他 Office 365 已偵測代替您撥打電話的攻擊及搜尋威脅指標。
-ms.openlocfilehash: 81a986c4b47d740313356b22fd1c23bd5e472a24
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+description: 了解如何在進階威脅防護的威脅智慧功能可協助您研究針對貴組織的潛在威脅、 回應惡意程式碼、 網路釣魚和其他 Office 365 已經偵測出代表您的攻擊，搜尋威脅指標。
+ms.openlocfilehash: 1d076ed6ca48b8423ad92d5ea71bd87167b8519a
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241926"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30523997"
 ---
-# <a name="office-365-threat-intelligence"></a>Office 365 威脅情報
+# <a name="office-365-threat-investigation-and-response"></a>Office 365 威脅調查及回應
 
-威脅智慧功能的 Office 365 進階威脅保護協助安全性分析師和管理員保護組織的 Office 365 使用者使用：
+威脅調查和 Office 365 進階威脅防護中的回應功能有助於安全性分析師和系統管理員保護其組織的 Office 365 使用者使用：
   
-1. 變得容易識別、 監視和了解攻擊
+1. 以方便識別、 監視及了解攻擊
     
-2. 協助快速地址威脅在 Exchange Online 和 SharePoint Online
+2. 協助快速地址威脅在 Exchange Online、 SharePoint Online、 One Drive for Business 和 Microsoft Teams
     
-3. 提供的見解與建議以協助防止對其組織的攻擊的知識
+3. 提供見解和協助防止對其組織的攻擊的知識
+
+4. 自動化的調查及回應架構的關鍵電子郵件威脅
     
 > [!IMPORTANT]
-> **威脅智慧屬於立即在 Office 365 進階威脅保護計劃 2**，這包含在特定的訂閱，如[Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、 Office 365 企業版 E5，在 Office 365教育 A5 等。如果組織有不包含 Office 365 ATP 訂閱，則您可能可以購買 ATP 做為附加元件。如需詳細資訊，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。 
+> **Office 365 威脅調查及回應 （先前稱為 Office 365 威脅情報） 屬於立即在 Office 365 進階威脅防護計劃 2 中**，在某些訂閱中， [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)，例如中包含[Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)、 Office 365 企業版 E5、 Office 365 教育版 A5 等。如果貴組織擁有不包含 Office 365 ATP 的訂閱，您可能可以當作附加元件購買 ATP。 如需詳細資訊，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。 
   
-## <a name="whats-changing"></a>什麼變更？
+## <a name="whats-changing"></a>什麼有什麼變更？
 
-Office 365 威脅智慧以前，隨附於訂閱，例如 Office 365 企業版 E5。這是仍情況下，雖然威脅智慧功能現在是 Office 365 進階威脅保護計劃 2 的一部分 （和這包含在 Office 365 企業版 E5）。 
+以前，例如 Office 365 企業版 E5 訂用帳戶所含 Office 365 威脅調查及回應功能。 仍然是這樣，現在這些功能現在是 Office 365 進階威脅防護計劃 2 的一部分 （和這隨附於 Office 365 企業版 E5）。 
 
-此外，Office 365 威脅智慧當成 Office 365 的企業客戶的附加元件的舊名為可供購買。現在，威脅智慧隨附於 Office 365 進階威脅保護計劃 2。若要深入了解，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)。
+此外，Office 365 威脅調查及回應 capbailities 做為 Office 365 商務版客戶的附加元件所以前可供購買。 現在，這些功能會包含在 Office 365 進階威脅防護計劃 2 （這也包括 Office 365 進階威脅防護方案 1）。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)。
 
-以下是所有這意味著：
+以下是所有這表示：
 
-- **如果您的組織已有 Office 365 企業版 E5**，則您已經具備進階威脅保護計劃 2，及這包括威脅智慧功能。
+- **如果貴組織已有 Office 365 企業版 E5**，然後您已經有進階威脅防護計劃 2，而這包括威脅調查及回應功能。
 
-- **如果您的組織原本 Office 365 威脅智慧 （但不是 Office 365 進階威脅保護） 做為附加元件**至另一個 Office 365 訂閱，則會有 Office 365 進階威脅保護計劃 2。這包括進階威脅保護和威脅智慧功能。 
+- **如果您的組織已有 Office 365 威脅情報 （但不是 Office 365 進階威脅防護） 當作附加元件**以另一個的 Office 365 訂閱，然後會有 Office 365 進階威脅防護計劃 2。 這包括進階威脅防護計劃 1 和威脅調查及回應功能。 
 
-- **如果您的組織原本 Office 365 進階威脅保護 （但不是 Office 365 威脅智慧） 做為附加元件**至另一個 Office 365 訂閱，則會有 Office 365 進階威脅保護計劃 1。這包括進階威脅保護 （但不是威脅智慧功能）。
+- **如果您的組織已有 Office 365 進階威脅防護 （但不是 Office 365 威脅情報） 當作附加元件**以另一個的 Office 365 訂閱，然後會有 Office 365 進階威脅防護計劃 1。 這包括進階威脅防護 （但不是威脅分析 investigaiton 和回應功能）。
 
-如需詳細資訊，請參閱[Office 365 進階威脅保護計劃和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅 Protection 服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
+如需詳細資訊，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
-## <a name="get-started-with-threat-intelligence-capabilities"></a>開始使用威脅智慧功能
+## <a name="get-started-with-threat-investigaiton-and-response-capabilities"></a>威脅 investigaiton 和回應功能快速入門
 
-若要深入了解威脅智慧及如何使用它可保留在組織中的人員更安全地使用下列資源。
+若要深入了解威脅調查及回應功能，在 Office 365，以及如何使用它來保留組織中的人員更安全，請使用下列資源。
   
-- [威脅智慧快速入門](get-started-with-ti.md)（這包括資訊所需的角色） 
+- [開始使用威脅調查及回應](get-started-with-ti.md)（這包括必要的角色的相關資訊） 
     
-- [了解威脅追蹤者最新及值得](threat-trackers.md)
+- [了解威脅追蹤器-新增和值得注意](threat-trackers.md)
     
-- [尋找與調查惡意已傳送的電子郵件](investigate-malicious-email-that-was-delivered.md)
+- [尋找並調查已傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
     
 - [使用攻擊模擬器](attack-simulator.md)
     
-- [整合威脅情報與 Windows Defender 進階威脅防護](integrate-office-365-ti-with-wdatp.md)
+- [整合 Windows Defender 進階威脅防護的威脅調查及回應](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>相關主題
 
@@ -71,6 +73,5 @@ Office 365 威脅智慧以前，隨附於訂閱，例如 Office 365 企業版 E5
   
 [Office 365 進階威脅防護](office-365-atp.md)
   
-[Office 365 安全性權限&amp;規範中心](permissions-in-the-security-and-compliance-center.md)
-  
-
+[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+ 
