@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應以及如何開始。
-ms.openlocfilehash: 826c4c1a8c06efbc287b21723758dc5d5087e1ef
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 3e77e79a38da10ed80a611d93dbd55ab9cfc0fda
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524067"
+ms.locfileid: "30537620"
 ---
 # <a name="get-started-with-threat-investigation-and-response"></a>開始使用威脅調查及回應 
 
@@ -73,40 +73,30 @@ Office 365 進階威脅防護計劃 2 方案的一部分，安全性分析師可
   
 ## <a name="how-do-we-get-these-threat-investigation-and-response-capabilities"></a>我們要如何取得這些威脅調查及回應功能？
 
-<<<<<<< HEAD Office 365 威脅 Invesigation 和回應功能會包含在 Office 365 進階威脅防護計劃 2 和企業版 E5。 
+Office 365 威脅 Invesigation 和回應功能會包含在 Office 365 進階威脅防護計劃 2 和企業版 E5。 
 
 > [!TIP]
 > 如果您的組織有 Office 365 訂閱不包含這些威脅調查及回應功能，您可以將這些以以及 Office 365 進階威脅防護的附加元件形式購買。 如需計劃選項的詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;合規性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)並[購買或編輯商務用 Office 365 的附加元件](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)。
-=======
-**進階威脅防護和威脅情報屬於立即在 Office 365 進階威脅防護計劃 2 中**，也就含特定訂用帳戶，例如[Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)， [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)，Office 365企業版 E5、 Office 365 教育版 A5 等。如果貴組織擁有不包含 Office 365 ATP 的訂閱，您可能可以當作附加元件購買 ATP。 如需詳細資訊，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)。
->>>>>>> 上游/compliance20
   
 1. 身為 Office 365 全域管理員，請移至[https://portal.office.com](https://portal.office.com)和 Office 365 使用公司或學校帳戶登入。 
     
 2. 選擇 [**管理**\>若要查看您目前的訂閱所包含的**帳單**。 
-
-<<<<<<< 標頭
     - 如果您看到**Office 365 企業版 E5**，您的組織有 Office 365 威脅情報。 
     - 如果您看到不同的訂閱，例如**Office 365 企業版 E3**或**Office 365 企業版 E1**，請考慮新增威脅情報。 (若要這麼做，請選擇 [ **+ 新增訂閱**)。
     
 3. 在 Office 365 系統管理中心中，選擇 [**使用者** \> **作用中的使用者**。
     
-5. 將 Office 365 威脅情報授權指派給所有作用中使用者。 （僅限擁有威脅情報的授權的使用者會顯示報告，例如瀏覽器中。）=======
-    - 如果您看到**Office 365 企業版 E5**，您的組織有 Office 365 進階威脅防護計劃 2，其中包含威脅情報。 
-    - 如果您看到不同的訂閱，例如**Office 365 企業版 E3**或**Office 365 企業版 E1**，請考慮新增進階威脅防護計劃 2。 (若要這麼做，請選擇 [ **+ 新增訂閱**)。
+5. 將 Office 365 威脅情報授權指派給所有作用中使用者。 （僅限擁有威脅情報的授權的使用者會顯示報告，例如瀏覽器中。）
     
-3. 在 Office 365 系統管理中心中，選擇 [**使用者** \> **作用中的使用者**。
-    
-5. 將 Office 365 進階威脅防護授權指派給所有作用中使用者。 （已獲授權威脅情報功能的使用者會顯示在報告中，例如檔案總管。）
->>>>>>> 上游/compliance20
-    
-6. 將角色指派給您組織中，將會使用 Office 365 進階威脅防護的人員。 請參閱[讓使用者能夠存取 Office 365 安全性&amp;合規性中心](grant-access-to-the-security-and-compliance-center.md)，與下表，請參閱：
-    
-|||
-|:-----|:-----|
-|**若要執行這項活動...]** <br/> |**您必須具有下列其中一個這些角色** <br/> |
-<<<<<<< HEAD |使用威脅儀表板 （或新的[安全性儀表板](security-dashboard.md)）  <br/> 檢視最新或目前威脅的相關資訊  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |======= |使用威脅儀表板 （或新的[安全性儀表板](security-dashboard.md)）  <br/> 檢視最新或目前威脅的相關資訊  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 （Azure Active Directory 系統管理中心中指派）  <br/> 安全性讀取者 （Azure Active Directory 系統管理中心中指派）  <br/> |
->>>>>>> 上游/compliance20 |使用威脅總管 （也稱為總管）  <br/> 分析的威脅  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> | |檢視事件 （也稱為調查） <br/> 將電子郵件訊息新增至事件  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> | |在事件中觸發電子郵件動作  <br/> 找出並刪除可疑的電子郵件  <br/> |Office 365 全域管理員或安全性系統管理員  <br/> 下列其中一個以上的角色和搜尋及清除 (指派安全性&amp;合規性中心)  <br/> | |整合 Office 365 威脅情報與 Windows Defender 進階威脅防護  <br/> 整合 Office 365 威脅情報的 SIEM 伺服器  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 適當的角色指派中額外的應用程式 （例如 Windows Defender 進階威脅防護入口網站或 SIEM 伺服器）  <br/> |
+6. 將角色指派給您組織中，將會使用 Office 365 進階威脅防護的人員。 請參閱[讓使用者能夠存取 Office 365 安全性&amp;合規性中心](grant-access-to-the-security-and-compliance-center.md)，與下表，請參閱：<br/>
+
+  |**若要執行這項活動...]** <br/> |**您必須具有下列其中一個這些角色** <br/> |  
+  |:-----|:-----|
+  |使用威脅儀表板 （或新的[安全性儀表板](security-dashboard.md)）<br/> 檢視最新或目前威脅的相關資訊  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |
+  |使用威脅總管 （也稱為總管）  <br/> 分析的威脅  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |
+  |檢視事件 （也稱為調查） <br/> 將電子郵件訊息新增至事件  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |
+  |在事件中觸發電子郵件動作  <br/> 找出並刪除可疑的電子郵件  <br/> |Office 365 全域管理員或安全性系統管理員  <br/> 下列其中一個以上的角色和搜尋及清除 (指派安全性&amp;合規性中心)  <br/> |
+  |整合 Office 365 威脅情報與 Windows Defender 進階威脅防護  <br/> 整合 Office 365 威脅情報的 SIEM 伺服器  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 適當的角色指派中額外的應用程式 （例如 Windows Defender 進階威脅防護入口網站或 SIEM 伺服器）  <br/> |
    
 角色、 角色群組和權限的相關資訊，請參閱[中 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。
     

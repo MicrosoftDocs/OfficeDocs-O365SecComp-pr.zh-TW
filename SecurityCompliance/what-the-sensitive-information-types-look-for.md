@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含可供您在 DLP 原則中使用的 80 種敏感資訊類型。 本主題列出所有的這些敏感資訊類型，並顯示 DLP 原則看起來當它偵測到每個類型。
-ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455265"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30537640"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
 
@@ -566,7 +566,476 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 - 7777777777
 - 8888888888
 - 9999999999
-   
+
+## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 驗證金鑰
+
+### <a name="format"></a>Format
+
+將字串 「 DocumentDb 」 後面接著字元和下列模式中所述的字串。
+
+### <a name="pattern"></a>模式
+
+- 將字串 「 DocumentDb 」
+- 3-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 大於符號 (>)、 等號 （=）、 引號 （"） 或單引號 （'）
+- 或的任何組合 86 較低的大寫字母、 數字，轉寄斜線 （/） 或加上加號 （+）
+- 兩個等號 （=）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureDocumentDBAuthKey 找到符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+```
+<!-- Azure Document DB Auth Key -->
+<Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureDocumentDBAuthKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+          </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 資料庫連接字串和 Azure SQL 連線字串
+
+### <a name="format"></a>Format
+
+字串 「 伺服器 」、 「 伺服器 」 或 「 資料來源 」 後面加上字元和下列，模式中所述的字串包含字串 「 cloudapp.azure。<!--no-hyperlink-->com 」 或 「 cloudapp.azure。<!--no-hyperlink-->net 」 或 「 database.windows。<!--no-hyperlink-->net 」，以及 「 密碼 」 或 「 密碼 」 或 「 pwd 」 的字串。
+
+### <a name="pattern"></a>模式
+
+- 字串 「 伺服器 」、 「 伺服器 」 或者 「 資料來源 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 將字串 「 cloudapp.azure。<!--no-hyperlink-->com 」、 「 cloudapp.azure。<!--no-hyperlink-->net 」，或 「 database.windows。<!--no-hyperlink-->net 」
+- 1-300 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 字串 「 密碼 」、 「 密碼 」 或者 「 pwd 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 不是以分號 （;） 的一或多個字元的引號 （"） 或單引號 （'）
+- 分號 （;）、 引號 （"） 或單引號 （'）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureConnectionString 找到符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+```
+<!--Azure IAAS Database Connection String and Azure SQL Connection String-->
+<Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
+## <a name="azure-iot-connection-string"></a>Azure IoT 連接字串
+
+### <a name="format"></a>Format
+
+將字串 「 主機名稱 」 後面加上字元和下方，模式中所述的字串包含字串 「 azure 裝置。<!--no-hyperlink-->net 」 和 「 SharedAccessKey 」。
+
+### <a name="pattern"></a>模式
+
+- 將字串 「 主機名稱 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 將字串 「 azure 裝置。<!--no-hyperlink-->net 」
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 將字串 「 SharedAccessKey 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 或的任何組合 43 較低的大寫字母、 數字，轉寄斜線 （/） 或加上加號 （+）
+- 等號 （=）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureIoTConnectionString 找到符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+```
+<!--Azure IoT Connection String-->
+<Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureIoTConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
+## <a name="azure-publish-setting-password"></a>Azure 發佈設定密碼
+
+### <a name="format"></a>Format
+
+將字串 「 userpwd = 」 後面接著英數字元的字串。
+
+### <a name="pattern"></a>模式
+
+- 將字串 「 userpwd = 」
+- 60 小寫字母或數字的任何組合
+- 引號 （"）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzurePublishSettingPasswords 找到符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+
+```
+<!--Azure Publish Setting Password-->
+<Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="CEP_Regex_AzurePublishSettingPasswords" />
+       <Any minMatches="0" maxMatches="0">
+           <Match idRef="CEP_CommonExampleKeywords" />
+       </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
+## <a name="azure-redis-cache-connection-string"></a>Azure 意指快取的連接字串
+
+### <a name="format"></a>Format
+
+將字串 「 redis.cache.windows。<!--no-hyperlink-->net"後面加上字元和字串中的模式，如下所述包含字串 「 密碼 」 或 「 pwd 」。
+
+### <a name="pattern"></a>模式
+
+- 將字串 「 redis.cache.windows。<!--no-hyperlink-->net 」
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 字串 「 密碼 」 或者 「 pwd 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 43 較低或大寫字母、 數字的字元的任何組合反斜線 （/），或加上加號 （+）
+- 等號 （=）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureRedisCacheConnectionString 找到符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+```
+<!--Azure Redis Cache Connection String-->
+<Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureRedisCacheConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
+## <a name="azure-sas"></a>Azure SAS
+
+### <a name="format"></a>Format
+
+將字串 「 簽章 」 後面加上字元和下列模式中所述的字串。
+
+### <a name="pattern"></a>模式
+
+- 將字串 「 簽章 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 較低或小寫字母、 數字或百分比符號 （%） 的 43-53 字元之間的任何組合
+- 將字串 「 %3d 」
+- 不是較低的大寫字母、 數字或百分比符號 （%） 的任何字元
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureSAS 找到符合模式的內容。
+
+```
+<!--Azure SAS-->
+<Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureSAS" />
+  </Pattern>
+</Entity>
+```
+
+## <a name="azure-service-bus-connection-string"></a>Azure 服務匯流排連接字串
+
+### <a name="format"></a>Format
+
+將字串 「 端點 」 後面加上字元和下方，模式中所述的字串包含字串 「 servicebus.windows。<!--no-hyperlink-->net 」 和 「 SharedAccesKey 」。
+
+### <a name="pattern"></a>模式
+
+- 將字串 「 端點 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 將字串 「 servicebus.windows。<!--no-hyperlink-->net 」
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 將字串 「 SharedAccessKey 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 43 較低或大寫字母、 數字的字元的任何組合反斜線 （/），或加上加號 （+）
+- 等號 （=）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureServiceBusConnectionString 找到符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+```
+<!--Azure Service Bus Connection String-->
+<Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureServiceBusConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key"></a>Azure 儲存體帳戶金鑰
+
+### <a name="format"></a>Format
+
+將字串 「 DefaultEndpointsProtocol"後面加上字元和下方，模式中所述的字串包含字串 「 AccountKey 」 中。
+
+### <a name="pattern"></a>模式
+
+- 將字串 「 DefaultEndpointsProtocol 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 將字串 「 AccountKey 」
+- 0-2 空白字元
+- 等號 （=）
+- 0-2 空白字元
+- 較低或大寫字母、 數字，86 個字元的任何組合反斜線 （/），或加上加號 （+）
+- 兩個等號 （=）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureStorageAccountKey 找到符合模式的內容。
+- 規則運算式 CEP_AzureEmulatorStorageAccountFilter**不**尋找符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+```
+<!--Azure Storage Account Key-->
+<Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_AzureEmulatorStorageAccountFilter" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key-generic"></a>Azure 儲存體帳戶金鑰 （一般）
+
+### <a name="format"></a>Format
+
+或的任何組合 86 較低的大寫字母、 數字，正斜線 （/），加上加號 （+），前面或後面跟著字元下列模式中所述。
+
+### <a name="pattern"></a>模式
+
+- 0-1 的大於符號 (>)、 單引號 （'）、 等號 （=）、 引號 （"） 或數字符號 （#）
+- 較低層或大寫 86 個字元的任何組合字母、 數字，正斜線 （/），或加上加號 （+）
+- 兩個等號 （=）
+
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_AzureStorageAccountKeyGeneric 找到符合模式的內容。
+
+```
+<!--Azure Storage Account Key (Generic)-->
+<Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKeyGeneric" />
+  </Pattern>
+</Entity>
+```
+
 ## <a name="belgium-national-number"></a>比利時國民編碼
 
 ### <a name="format"></a>Format
@@ -4498,7 +4967,83 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 ### <a name="keywords"></a>關鍵字
 
 無
-   
+
+## <a name="sql-server-connection-string"></a>SQL Server 連線字串
+
+### <a name="format"></a>Format
+
+字串 「 使用者 Id 」、 「 使用者 ID 」、 「 uid 」 或 「 使用者識別碼 」 後面跟著字元和下列模式中所述的字串。
+
+### <a name="pattern"></a>模式
+
+- 字串 「 使用者 Id 」、 「 使用者 ID 」、 「 uid 」 或者 「 UserId 」
+- 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
+- 將字串 「 密碼 」 或 「 pwd 」 不的小寫字母前面 「 pwd 」
+- 等號 （=）
+- 任何不錢幣符號 （$）、 百分比符號 （%），大於符號 (>) 符號字元 (@)、 引號 （"）、 分號 （;）、 左大括弧 ([]) 或左大括弧 （{}）
+- 不是以分號 （;） 的 7-128 個字元的任何組合反斜線 （/） 或雙引號 （"）
+- 分號 （;）或引號 （"）
+
+### <a name="checksum"></a>總和檢查碼
+
+否
+
+### <a name="definition"></a>定義
+
+DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+- 規則運算式 CEP_Regex_SQLServerConnectionString 找到符合模式的內容。
+- 從 CEP_GlobalFilter 關鍵字**不**找到。
+- 規則運算式 CEP_PasswordPlaceHolder**不**尋找符合模式的內容。
+- 規則運算式 CEP_CommonExampleKeywords**不**尋找符合模式的內容。
+
+```
+<!---SQL Server Connection String>
+<Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_SQLServerConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_GlobalFilter" />
+            <Match idRef="CEP_PasswordPlaceHolder" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+
+- 某些密碼
+- somepassword
+- secretPassword
+- 範例
+
+#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- Password 或 pwd 後面接著 0-2 空格，等號 （=）、 0-2 空格，並星號 （*）-或-
+- Password 或 pwd 後面加上：
+    - 等號 （=）
+    - 小於符號 (<)
+    - 1-200 的字元上方-或小寫字母、 數字、 星號 （*）、 連字號 （-）、 底線 (_) 或空白字元的任意組合
+    - 大於符號 (>)
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+（請注意技術上而言，此敏感資訊類型會指出這些關鍵字使用規則運算式，而不是關鍵字的清單）。
+
+- contoso
+- fabrikam
+- northwind
+- 沙箱化
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s int。<!--no-hyperlink-->net
+
 ## <a name="sweden-national-id"></a>瑞典國民身分證號
 
 ### <a name="format"></a>Format
