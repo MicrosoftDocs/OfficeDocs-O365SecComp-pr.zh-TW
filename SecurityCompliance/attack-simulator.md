@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 全域管理員，您可以使用的攻擊模擬器在組織中執行真實的攻擊案例。 這可協助您找出並之前真實的攻擊拜訪人次貴公司，找出受到使用者。
-ms.openlocfilehash: 8cbe3c5c34bbc68fc89c8550d9711d953dced9b5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 1956dd2dda187b9d1d0147911dd278e8ae3650b3
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524057"
+ms.locfileid: "30536153"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
 **摘要**如果您是 Office 365 全域系統管理員，而且您的組織有[Office 365 威脅調查及回應功能](office-365-ti.md)，您可以在組織中執行真實的攻擊案例使用攻擊模擬器。 這可協助您找出並尋找容易遭受使用者之前真實的攻擊影響底部線條。 閱讀本篇文章以了解更多。
 
 > [!IMPORTANT]
-> Office 365 威脅情報現的 Office 365 進階威脅防護計劃 2，與其他威脅防護功能的一部分。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 進階威脅防護和威脅調查及回應 （以前稱為威脅情報） 是現在的一部分 Office 365 進階威脅防護計劃 2，與其他威脅防護功能。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
   
 ## <a name="the-attacks"></a>攻擊
 

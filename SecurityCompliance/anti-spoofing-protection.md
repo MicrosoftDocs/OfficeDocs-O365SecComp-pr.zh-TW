@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 本文說明 Office 365 如何減少抵禦網路釣魚攻擊使用偽造地址寄件者的網域，亦即詐騙的網域。 它這樣的優勢分析郵件，並封鎖該組可驗證不使用標準的電子郵件的驗證方法或其他寄件者信譽技術。 這項變更所實作，以減少要公開在 Office 365 組織的網路釣魚攻擊的數目。
-ms.openlocfilehash: 422bac2ad5fd0c58928d79467721204b20583fd7
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465480"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492872"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 

@@ -1,7 +1,7 @@
 ---
-title: 參考 （英文） 原則、 做法，以及指導方針
-ms.author: krowley
-author: kccross
+title: 參照原則、 實務和指導方針
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,92 +12,94 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
-description: Microsoft 開發各種原則、 程序，而且採用數個業界最佳作法，協助保護我們使用者從粗俗、 不想要或惡意的電子郵件。
-ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Microsoft 開發各種原則、 程序，而且採用的許多業界最佳作法來協助保護我們的使用者沒有不當、 不想要或惡意電子郵件。
+ms.openlocfilehash: a7f29ed77b373ee2b66831e074fda16fcda30508
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003082"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276363"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
   
-Microsoft 致力於協助網路上提供的最受信任的使用者經驗。因此，Microsoft 開發各種原則、 程序，而且採用數個業界最佳作法，協助保護我們使用者從粗俗、 不想要或惡意的電子郵件。嘗試傳送至 Office 365 使用者的電子郵件的寄件者應確保它們完全了解，而且會遵循本文以協助在此工作，並協助避免潛在的傳遞問題的指導。
+Microsoft 致力於協助在 web 上提供的最受信任的使用者經驗。 因此，Microsoft 已開發各種原則、 程序，並採用的許多業界最佳作法來協助保護我們的使用者沒有不當、 不想要或惡意電子郵件。 寄件者嘗試傳送電子郵件給 Office 365 使用者應確保在完全了解並追蹤中用於協助進行這項工作，並可協助避免潛在傳遞問題這篇文章的指引。
   
-如果您不符合這些原則和指導方針，它不可能的可協助您 「 支援小組。如果您您依照準則、 做法，以及本文所述的原則，仍然發生傳送的 IP 位址為基礎的傳遞問題，請遵循的步驟來送出 delisting 要求。指示，請參閱[使用 delist 入口網站來將自己從 Office 365 封鎖的寄件者清單中移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+如果您不符合這些原則和指導方針，它可能無法讓我們支援小組，以協助您。 如果您遵守指導方針、 實務，及本文所述的原則，仍遇到您傳送的 IP 位址為基礎的傳遞問題，請遵循的步驟來提交取消列出的要求。 如需相關指示，請參閱[使用取消列出入口網站將您自己從 Office 365 封鎖寄件者清單移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
   
 ## <a name="general-microsoft-policies"></a>一般 Microsoft 原則
 <a name="GenMsftPolicies"> </a>
 
-電子郵件傳送至 Office 365 使用者必須符合管理電子郵件傳輸和 Office 365 使用的所有 Microsoft 原則。
+電子郵件傳送到 Office 365 使用者必須遵守所有 Microsoft 管理電子郵件傳輸，並使用 Office 365。
   
-- 適用於 Office 365; 服務中的條款特別是針對使用垃圾郵件或散佈惡意程式碼服務禁止
+- 適用於 Office 365; 服務中的條款特別是針對垃圾郵件或散發惡意程式碼使用服務禁止
     
 - [Microsoft 服務合約](https://www.microsoft.com/servicesagreement/)
     
 ## <a name="governmental-regulations"></a>政府法規
 <a name="GovtRegulations"> </a>
 
-電子郵件傳送至 Office 365 使用者必須遵守所有適用的法律與管理適用於管轄中的電子郵件通訊的規定。
+電子郵件傳送到 Office 365 使用者必須遵守所有適用的法律或法規控管自己適用管轄中的電子郵件通訊。
   
-- [可以垃圾郵件 Act: 規範 Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
+- [可以垃圾郵件法案： 合規性指南 for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
     
-- [「 移除我 」 回應及職責： 電子郵件上月必須受限於"取消訂閱"的宣告](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.mdl)
+- [ 移除我 」 回應及責任： 電子郵件上月必須受限於 「 取消訂閱 」 宣告](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.mdl)
     
 ## <a name="technical-guidelines"></a>技術指導方針
 <a name="TechGuidelines"> </a>
 
-適用的建議下列文件中所列 （部分連結是只適用於英文版） 均應遵循電子郵件傳送給 Office 365。
+電子郵件傳送到 Office 365 應遵守下列文件中所列 （某些連結會僅提供英文版） 的適用建議。
   
 - [SMTP Mta RFC 2505： 反垃圾郵件建議](https://www.ietf.org/rfc/rfc2505.txt)
     
-- [為命令管線 RFC 2920： SMTP 服務延伸模組](https://www.ietf.org/rfc/rfc2920.txt)
+- [RFC 2920: SMTP 服務延伸模組的管線命令](https://www.ietf.org/rfc/rfc2920.txt)
     
 此外，連線至 Office 365 的電子郵件伺服器必須遵守下列需求：
   
-- 寄件者預期會符合所有技術的網際網路電子郵件傳輸標準發佈的網際網路協會的網際網路工程工作強制 (IETF)，包括 RFC 5321、 RFC 5322 及其他。 
+- 寄件者預期會遵守所有技術的標準的網際網路電子郵件傳輸為發佈的網際網路協會的網際網路工程任務推動小組 (IETF)，包括 RFC 5321、 RFC 5322 和其他人。 
     
-- 授與 500 與 599 （也稱為永久性的未傳遞回應或 NDR） 之間數值 SMTP 錯誤回應程式碼後，請寄件者必須不嘗試重新傳輸到該收件者的郵件。
+- 指定 500 和 599 （也就是永久性的未傳遞回應或 NDR） 之間數值 SMTP 錯誤回應程式碼之後，寄件者必須不嘗試重新傳送郵件給該收件者。
     
-- 多個非傳遞回應後，寄件者必須停止進一步嘗試傳送電子郵件給該收件者。
+- 多個未傳遞回應後，寄件者必須停止嘗試再次傳送電子郵件給該收件者。
     
-- 郵件未必須傳送到不安全的電子郵件轉送或 proxy 伺服器。
+- 郵件必須不是透過安全電子郵件轉送或 proxy 伺服器會傳輸。
     
-- 取消訂閱，從個別清單或寄件者所主控的所有清單的機制必須清楚記載並更容易尋找及使用的收件者。
+- 清楚記載又簡單的收件者尋找和使用，必須取消訂閱，可以從個別清單] 或 [寄件者，所主控的所有清單的機制。
     
-- 不會接受來自動態 IP 空間的連線。
+- 可能不會接受來自動態 IP 空間的連線。
     
-- 電子郵件伺服器必須具備有效的反向 DNS 記錄。
+- 電子郵件伺服器必須具有有效的反向 DNS 記錄。
     
 ## <a name="reputation-management"></a>信譽管理
 <a name="RepManagement"> </a>
 
-寄件者、 ISP，與其他服務提供者應主動管理信譽的輸出的 IP 位址。
+寄件者、 ISP，以及其他服務提供者應積極管理您的輸出 IP 位址的信譽。
   
-## <a name="office-365-limits"></a>Office 365 的限制
+## <a name="office-365-limits"></a>Office 365 限制
 <a name="sectionSection4"> </a>
 
-[Exchange Online Protection Limits](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)中所列的 Office 365 限制必須依照寄件者。
+寄件者必須遵守至[Exchange Online Protection 限制](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)中所列的 Office 365 限制。
   
 ## <a name="email-delivery-resources-and-organizations"></a>電子郵件傳遞資源和組織
 <a name="sectionSection5"> </a>
 
-Microsoft 主動搭配產業本文和服務提供者以改善網際網路和電子郵件生態系統。這些組織已發佈之我們支援和建議的寄件者遵守最佳作法是文件。這可改善能夠全球各地傳遞數個電子郵件服務提供者之間的電子郵件。
+Microsoft 主動產業主體與服務提供者運作，以改善網際網路和電子郵件生態系統。 這些組織已發佈的我們支援與建議寄件者都要遵循最佳作法是文件。 這樣可以改善您將多個電子郵件服務提供者之間的電子郵件傳送世界各地的能力。
   
-- [郵件的惡意程式碼 Mobile 反不當使用的工作群組](https://www.m3aawg.org/)
+- [郵件的惡意程式碼行動裝置反不當使用工作群組](https://www.m3aawg.org/)
     
 - [線上信任的同盟關係](https://www.otalliance.org/resources)
     
 - [寄件者的電子郵件&amp;提供者聯盟](http://www.espcoalition.org/)
     
-## <a name="abuse-and-spam-reporting"></a>不當使用和垃圾郵件報告
+## <a name="abuse-and-spam-reporting"></a>濫用和垃圾郵件報告
 <a name="AbuseSpamReports"> </a>
 
-報告非法、 粗俗、 不想要或惡意的電子郵件，請[垃圾郵件和網路釣魚詐騙在網路上的 Outlook 中的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。傳送這些類型的通訊是 Microsoft 原則的違規與適當的動作會採取確認報表上。
+報告非法、 粗俗、 不想要或惡意電子郵件，請[垃圾郵件和網路釣魚詐騙網頁型 Outlook 中的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。 傳送這些類型的通訊是的 Microsoft 原則違規情形，並確認報表上會採取適當動作。
   
 ## <a name="law-enforcement"></a>執法機構
 <a name="sectionSection7"> </a>
 
-如果您是執法機構的成員，且想要提供有關 Office 365 的法律文件與 Microsoft Corporation 或如果您有法律文件的相關問題已提交給 Microsoft，請呼叫 (1) (425) 722-1299。
+如果您是執法機構的成員，而且想要提供有關 Office 365 的法律文件與 Microsoft Corporation 或您如有疑問有關法律文件已提交給 Microsoft，請呼叫 (1) (425) 722-1299。
   
 

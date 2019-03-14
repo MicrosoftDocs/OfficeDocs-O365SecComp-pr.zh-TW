@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則相符項目、 覆寫或誤判; 的數請參閱是否它們在一段時間; 趨勢向上或向下以不同方式; 篩選報表然後選取圖形上線條上的一點檢視其他詳細資料。
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454845"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510220"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 
@@ -71,6 +71,16 @@ ms.locfileid: "30454845"
   
 ![按一下以查看詳細資料，要採取的動作觀點圖示](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>DLP 報告的權限
+
+若要檢視 DLP 報告中的安全性 & 合規性中心，您必須已獲指派:
+
+- 在 Exchange 系統管理中心中的**安全性讀取者**角色。 根據預設，此角色被指派給組織管理和安全性助讀程式在 Exchange 系統管理中心中的角色群組。
+
+- 安全性 & 合規性中心中的**僅限檢視 DLP 符合性管理**角色。 根據預設，此角色被指派給安全性 & 合規性中心的符合性系統管理員、 組織管理、 安全性系統管理員和安全性讀取者角色群組。
+
+- 在 Exchange 系統管理中心**僅檢視收件者**角色。 根據預設，此角色被指派給在 Exchange 系統管理中心相符性管理、 組織管理和 View-Only Organization Management 角色群組。
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>尋找 DLP 報告的 cmdlet
 
 若要使用之 cmdlet 的大部分 security&amp;合規性中心，您需要：
