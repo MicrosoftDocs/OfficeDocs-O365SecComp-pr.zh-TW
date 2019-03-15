@@ -1,9 +1,26 @@
 ---
-標題: 「 啟用或停用 Office 365 中的安全提示"ms.author: krowley 作者： kccross manager: laurawi ms.date: 2018/12/05 ms.audience: Admin ms.topic： 文章 ms.service: o365 管理 localization_priority: Normal search.appverid: 
-- MET150 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7 ms.collection:
-    - M365 安全性合規性描述: 「 告訴 Office 365 和 EOP 系統管理員如何啟用及停用電子郵件訊息中的安全提示。 」
+title: 啟用或停用 Office 365 中的安全提示
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/05/2018
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
+ms.collection:
+- M365-security-compliance
+description: 告訴 Office 365 和 EOP 系統管理員如何啟用及停用電子郵件訊息中的安全提示。
+ms.openlocfilehash: 020ee15676cc2d4dd6156db9e4d50558ff7793f0
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573527"
 ---
-
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>啟用或停用 Office 365 中的安全提示
 
 Exchange Online Protection (EOP) 新增，或傳送的電子郵件的戳記，safety 提示。 如果郵件已標示為垃圾郵件由 Office 365 中，如果郵件包含可疑的網路釣魚詐騙，例如某個項目或外部影像有這些安全提示提供快速、 視覺化的方式，來判斷郵件是否安全，從收件者驗證寄件者已封鎖。 Office 365 與獨立式 EOP 系統管理員可以編輯若要啟用或停用安全提示顯示於 Outlook 和其他桌面電子郵件用戶端中的電子郵件的垃圾郵件原則設定。 

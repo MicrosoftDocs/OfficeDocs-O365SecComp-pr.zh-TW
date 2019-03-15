@@ -13,12 +13,12 @@ ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
 description: Office 365 郵件加密可讓電子郵件使用者傳送加密的郵件給其組織內部或外部的人員。 身為系統管理員，您可以啟用 Office 365 郵件加密藉由建立郵件流程規則 （也稱為傳輸規則），設定加密條件。
-ms.openlocfilehash: 8ac06928f715ff52404afab024efa6834eaf4347
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: b59acbf84f5f737712639dde04d03f41bbafac89
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492732"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573497"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>啟用加密和解密 [EOP]
 

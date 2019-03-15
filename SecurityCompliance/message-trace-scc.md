@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 系統管理員可以使用郵件追蹤安全性 & 合規性中心中找出的郵件發生了什麼事。
-ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524087"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573547"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>在安全性 & 合規性中心中的郵件追蹤
 
@@ -56,8 +56,8 @@ ms.locfileid: "30524087"
 
 - **這些人**： 按一下 [在組織中選取一或多個收件者此欄位中。
 
-> [!NOTE]您也可以輸入外部寄件者和收件者的電子郵件地址。 支援萬用字元 (`*@contoso.com`或`scot?@contoso.com`)，但您無法在相同的欄位中使用多個的萬用字元項目，在同一時間。
-> [!NOTE]您可以貼上以分號分隔的多個寄件者或收件者清單 (`;`)。 空格 (`\s`)、 歸位換行 (`\r`) 或下一行 (`\n`) 允許的符號。
+> [!NOTE]
+> 您也可以輸入外部寄件者和收件者的電子郵件地址。 支援萬用字元 (`*@contoso.com`或`scot?@contoso.com`)，但您無法在相同的欄位中使用多個的萬用字元項目，在同一時間。<br/>您可以貼上以分號分隔的多個寄件者或收件者清單 (`;`)。 空格 (`\s`)、 歸位換行 (`\r`) 或下一行 (`\n`) 允許的符號。
 
 ### <a name="time-range"></a>時間範圍
 
@@ -339,7 +339,7 @@ ms.locfileid: "30524087"
 |`DI=SJ`|郵件已傳送至收件者的垃圾郵件] 資料夾。|
 |`DI=SN`|已透過較高風險傳遞集區路由傳送郵件。 如需詳細資訊，請參閱 <<c0>高風險傳遞集區的外寄郵件。|
 |`DI=SO`|已透過標準輸出傳遞集區路由傳送郵件。|
-|' SFS = []|SFS = [b]'|這表示已符合垃圾郵件規則。|
+|`SFS=[a]|SFS=[b]`|這表示已符合垃圾郵件規則。|
 |`IPV=CAL`|因為 IP 位址指定於連線篩選的 [IP 允許] 清單中，所以已透過垃圾郵件篩選允許郵件。|
 |`H=<EHLOstring>`|連線的電子郵件伺服器的 HELO 或 EHLO 字串。|
 |`PTR=<ReverseDNS>`|傳送 IP 位址 (也稱為反向 DNS 位址) 的 PTR 記錄。|
@@ -354,7 +354,7 @@ ms.locfileid: "30524087"
 
 |**值**|**描述**|
 |:-----|:-----|
-|' AMA = SUM|v = 1|` or `AMA = EV|v = 1'|郵件已判定為包含惡意程式碼。 `SUM`會指出惡意程式碼可能已偵測到的任何數字的引擎。 `EV`會指出特定引擎所偵測到惡意程式碼。 引擎偵測到惡意程式碼時，這會觸發後續動作。|
+|`AMA=SUM|v=1|` 或 `AMA=EV|v=1`|郵件已判定為包含惡意程式碼。 `SUM`會指出惡意程式碼可能已偵測到的任何數字的引擎。 `EV`會指出特定引擎所偵測到惡意程式碼。 引擎偵測到惡意程式碼時，這會觸發後續動作。|
 |`Action=r`|已取代郵件。|
 |`Action=p`|已略過郵件。|
 |`Action=d`|已延遲郵件。|
@@ -377,7 +377,7 @@ ms.locfileid: "30524087"
 
 |**值**|**描述**|
 |:-----|:-----|
-|' ETR|ruleId =<guid>`|已符合的規則 ID。|
+|`ETR|ruleId=<guid>`|已符合的規則 ID。|
 |`St=<datetime>`|日期和時間 UTC 規則相符項目發生時。|
 |`Action=<ActionDefinition>`|已套用的動作。 如需可用動作的清單，請參閱[郵件流程規則動作在 Exchange Online](https://technet.microsoft.com/library/jj919237.aspx)。|
 |`Mode=<Mode>`|規則的模式。 UserMailbox <br/>• **Enforce**： 將強制執行規則上的所有動作。 <br/>•**搭配原則提示來測試：**： 將會傳送任何 「 原則提示 」 動作，但不是會在處理其他強制執行動作。 <br/>•**不搭配原則提示就測試**： 動作將會列在記錄檔中，但不是會以任何方法通知寄件者和上不會處理強制執行動作。|
