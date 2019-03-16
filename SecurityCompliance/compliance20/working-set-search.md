@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2523072181307cce510f0f318834329b2c70b376
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454985"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639010"
 ---
 # <a name="query-the-data-in-a-working-set"></a>查詢工作集中的資料
 
@@ -31,7 +31,7 @@ ms.locfileid: "30454985"
 
 ## <a name="building-your-query"></a>建立您的查詢
 
-您可以建置查詢關鍵字條件卡片中使用條件卡和查詢語言的組合。
+您可以建置查詢關鍵字條件卡片中使用條件卡和查詢語言的組合。 您可以在一起作為區塊，以製作較複雜的查詢群組條件卡。
 
 ### <a name="condition-card"></a>條件卡
 
@@ -46,3 +46,9 @@ ms.locfileid: "30454985"
 ### <a name="query-language"></a>查詢語言
 
 除了條件卡] 底下，您可以使用類似的 KQL 查詢語言關鍵字卡片，製作您的查詢。 語言支援標準 KQL 語法，例如 AND、 OR、 NOT、 查詢和 NEAR(n)。 它也支援單一字元萬用字元 （？） 以及多重字元萬用字元 （*）。
+
+## <a name="filter"></a>篩選
+
+除了您可以儲存的查詢，您可以使用篩選器您查詢結果重疊飛出視窗上的其他條件。 篩選與一些重大的方式不同查詢：
+- 篩選器是暫時性 （亦即它們不會保存透過不同的工作階段），而查詢會儲存至工作集。
+- 篩選器永遠都會 additive;篩選會套用掌握您此時，有作用中的查詢，而套用查詢將會取代查詢作用中。

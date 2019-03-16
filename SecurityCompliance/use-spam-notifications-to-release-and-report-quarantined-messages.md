@@ -3,7 +3,7 @@ title: 利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被�
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 5/12/2018
+ms.date: 03/14/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果您的系統管理員可讓使用者的通知，您會收到通知訊息，其中列出傳送至您的信箱已識別為垃圾郵件、 大量或網路釣魚郵件提交之郵件。 您可以釋出或回報郵件之後收到通知。
-ms.openlocfilehash: 7f68b70298fca7d8ed5f5e5b8dc9c727c3a6a6c1
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: de67987b0028102bdf61889ce54ca4215182e279
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492722"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638970"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件
 
@@ -40,12 +40,20 @@ ms.locfileid: "30492722"
     
 - **大小**(Kb) 郵件的大小。 
     
-目前，有兩種您可以對隔離的郵件採取的動作：
-  
-- **釋出到收件匣**選擇此選項，即可將郵件傳送至收件匣，讓您可以檢視。 
-    
-- **報告為不是垃圾郵件**選擇此選項以傳送郵件的副本給 Microsoft 進行分析。 垃圾郵件小組會評估及分析郵件，並且根據分析結果來調整反垃圾郵件篩選規則以允許此郵件通過。 
-    
+以下是您可以對隔離的郵件採取的動作：
+
+- **預覽**郵件如果您想要預覽的內容或之前採取動作的標頭。
+
+- **下載**郵件如果您想要檢閱的訊息和附件 （如果有的話） 之前採取行動裝置上。
+
+- **版本**如果郵件不是垃圾郵件，而且您希望 Office 365 將郵件傳送至您的信箱。
+
+- **釋出 & 允許寄件者**如果郵件不是垃圾郵件和您想要新增至安全的寄件者和收件者清單的未來的電子郵件的寄件者的 Office 365。 請記住您的系統管理員可能會有您的安全寄件者清單會覆寫其他組織整體允許/封鎖組態。
+
+- **版本 & 報表**，如果郵件不是垃圾郵件和您想要將郵件傳送至您的信箱及該問題報告給 Microsoft 進行分析。
+
+- **封鎖**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
+
 請注意下列事項：
   
 - 因為它們符合郵件流程規則遭到隔離的郵件不會包含在使用者隔離的郵件。 該訊息只會列出因垃圾郵件而遭到隔離的郵件。

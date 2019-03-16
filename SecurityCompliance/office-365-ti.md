@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Office 365 進階威脅防護的威脅智慧功能可協助您研究針對貴組織的潛在威脅、 回應惡意程式碼、 網路釣魚和其他 Office 365 已經偵測出代表您的攻擊，搜尋的威脅指標。
-ms.openlocfilehash: e3696306b5188858e6ca72e265c4f1aa24574f79
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 54dbe4cc39456189bca2af71294d181adce6f50b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536183"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639030"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威脅調查及回應
 
@@ -41,7 +41,7 @@ ms.locfileid: "30536183"
 
 以前，例如 Office 365 企業版 E5 訂用帳戶所含 Office 365 威脅調查及回應功能。 仍然是這樣，現在這些功能現在是 Office 365 進階威脅防護計劃 2 的一部分 （和這隨附於 Office 365 企業版 E5）。 
 
-此外，Office 365 威脅調查及回應 capbailities 做為 Office 365 商務版客戶的附加元件所以前可供購買。 現在，這些功能會包含在 Office 365 進階威脅防護計劃 2 （這也包括 Office 365 進階威脅防護方案 1）。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)。
+此外，Office 365 威脅調查及回應能力做為 Office 365 商務版客戶的附加元件所以前可供購買。 現在，這些功能會包含在 Office 365 進階威脅防護計劃 2 （這也包括 Office 365 進階威脅防護方案 1）。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)。
 
 以下是所有這表示：
 
@@ -53,7 +53,7 @@ ms.locfileid: "30536183"
 
 如需詳細資訊，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
-## <a name="get-started-with-threat-investigaiton-and-response-capabilities"></a>威脅 investigaiton 和回應功能快速入門
+## <a name="get-started-with-threat-investigation-and-response-capabilities"></a>威脅調查及回應功能快速入門
 
 若要深入了解威脅調查及回應功能，在 Office 365，以及如何使用它來保留組織中的人員更安全，請使用下列資源。
   

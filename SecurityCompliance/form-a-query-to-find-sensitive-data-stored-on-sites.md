@@ -1,7 +1,7 @@
 ---
 title: 形成查詢以搜尋儲存在網站上的敏感資料
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 與資料外洩防護 (DLP) 在 SharePoint Online 中，您可以探索包含整個您的租用戶的敏感資料的文件。 探索文件之後，您可以與文件擁有者協力保護資料。 本主題可以協助您進行查詢，以搜尋敏感資料。
-ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455065"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639130"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 
@@ -64,9 +64,9 @@ ms.locfileid: "30455065"
 |**Query**|**說明**|
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |名稱可能看起來有些怪異因為它是這麼久，但它是該敏感類型的正確名稱。 請務必使用 509999[敏感資訊類型詳細目錄](https://go.microsoft.com/fwlink/?LinkID=509999)。 您也可以使用您為組織建立[自訂機密資訊類型](create-a-custom-sensitive-information-type.md)的名稱。  <br/> |
-| ' SensitiveType:"Credit Card Number|1..4294967295|1..100"' <br/> |這會傳回文件至少一個相符項目敏感類型"Credit Card Number"。 每個範圍的值分別是最小值與最大值。 簡單的方式來撰寫此查詢是`SensitiveType:"Credit Card Number"`，但其中是何樂趣？  <br/> |
-| ' SensitiveType:"Credit Card Number| 5..25"AND LastSensitiveContentScan:"8/11/2018..8/13/2018 」 ' <br/> |這會從 2018 年 8 月 11 日到 2018 年 8 月 13 日傳回 5 25 個信用卡號碼已掃描的文件。  <br/> |
-| ' SensitiveType:"Credit Card Number| 5..25"AND LastSensitiveContentScan:"8/11/2018..8/13/2018 」 不 FileExtension:XLSX' <br/> |這會從 2018 年 8 月 11 日到 2018 年 8 月 13 日傳回 5 25 個信用卡號碼已掃描的文件。 XLSX 副檔名的檔案不包含在查詢結果中。  `FileExtension`是您可以在查詢中包含的許多屬性之一。 如需詳細資訊，請參閱 <<c0>使用搜尋屬性和運算子與 eDiscovery。  <br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |這會傳回文件至少一個相符項目敏感類型"Credit Card Number"。 每個範圍的值分別是最小值與最大值。 簡單的方式來撰寫此查詢是`SensitiveType:"Credit Card Number"`，但其中是何樂趣？  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |這會從 2018 年 8 月 11 日到 2018 年 8 月 13 日傳回 5 25 個信用卡號碼已掃描的文件。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |這會從 2018 年 8 月 11 日到 2018 年 8 月 13 日傳回 5 25 個信用卡號碼已掃描的文件。 XLSX 副檔名的檔案不包含在查詢結果中。  `FileExtension`是您可以在查詢中包含的許多屬性之一。 如需詳細資訊，請參閱 <<c0>使用搜尋屬性和運算子與 eDiscovery。  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |這會傳回包含信用卡號碼或身分證字號的文件。  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>範例
@@ -75,15 +75,15 @@ ms.locfileid: "30455065"
   
 |**不受支援的查詢**|**原因**|
 |:-----|:-----|
-| ' SensitiveType:"Credit Card Number|.."` <br/> |您必須至少新增一個數值。  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |您必須至少新增一個數值。  <br/> |
 | `SensitiveType:"NotARule"` <br/> |「 NotARule 」 不是有效的敏感類型名稱。 在 DLP queries 運作僅[敏感資訊類型詳細目錄](https://go.microsoft.com/fwlink/?LinkID=509999)中的名稱。  <br/> |
-| ' SensitiveType:"Credit Card Number|0 」 ' <br/> |零不是有效的最小值或指定範圍中的最大值。  <br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |零不是有效的最小值或指定範圍中的最大值。  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |很可能很難看見，但沒有空白字元額外之間 」 信用卡 」 和 「 卡片 」，可以加快查詢無效。 使用[敏感資訊類型詳細目錄](https://go.microsoft.com/fwlink/?LinkID=509999)中的確切敏感類型名稱。  <br/> |
-| ' SensitiveType:"Credit Card Number|1.。 3 」 ' <br/> |雙句號部分不應該以空格分隔。  <br/> |
-| ' SensitiveType:"Credit Card Number| |1.|80.."' <br/> |有太多管道分隔符號 （|). 請改為按照此格式: ' SensitiveType:"Credit Card Number|1.|80.."' <br/> |
-| ' SensitiveType:"Credit Card Number|1.|80..101"' <br/> |因為信賴值表示百分比，他們不能超過 100。 請改為選擇 1 到 100 的數字。  <br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |雙句號部分不應該以空格分隔。  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |有太多管道分隔符號 （|). 請改為按照此格式：`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |因為信賴值表示百分比，他們不能超過 100。 請改為選擇 1 到 100 的數字。  <br/> |
    
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
   

@@ -1,7 +1,7 @@
 ---
 title: 建立 DLP 原則來保護具有 FCI 或其他屬性的文件
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 許多組織都已識別及分類藉由分類屬性在 Windows Server 檔案分類基礎結構 (FCI)、 在 SharePoint 中，此文件內容或文件屬性中的敏感資訊的程序套用的協力廠商系統。 如果這描述您的組織，您可以建立 DLP 原則會辨識已經由 Windows Server FCI 或其他系統，套用至文件的屬性，以便 DLP 原則可以在具有特定的 FCI 或其他的 Office 文件上強制執行的 Office 365屬性的值。
-ms.openlocfilehash: fc1d38f1bf648e02f0e86f7cc11e6dca9f88b540
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b1a5b438714a0c0b91d33a9544c0f26cbd12b4c9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455175"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639080"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>建立 DLP 原則來保護具有 FCI 或其他屬性的文件
 

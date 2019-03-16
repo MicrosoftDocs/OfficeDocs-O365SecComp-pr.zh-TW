@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解電子郵件和文件屬性，您可以搜尋 Exchange Online 信箱中，並在 SharePoint 或 OneDrive for Business 網站使用內容搜尋工具在 Office 365 安全性&amp;合規性中心。  '
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354755"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639160"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢與搜尋條件
 
@@ -123,11 +123,14 @@ ms.locfileid: "30354755"
 
 ## <a name="searchable-sensitive-data-types"></a>可搜尋的敏感資料類型
 
-您可以使用 「 內容搜尋 」 功能安全性&amp;若要搜尋的敏感資料，例如信用卡號碼或社會安全號碼，儲存在 SharePoint 和 OneDrive for Business 網站的文件中的合規性中心。 您可以使用`SensitiveType`關鍵字查詢中輸入的屬性和敏感資訊的名稱。 例如，查詢`SensitiveType:"Credit Card Number"`會傳回包含信用卡卡號的文件。 查詢`SensitiveType:"U.S. Social Security Number (SSN)"`會傳回包含美國社會安全號碼的文件。 若要查看您可以搜尋的敏感資料類型的清單，請移至 **[分類]** \>安全性中的**敏感資訊類型**&amp;合規性中心。 您可以使用**Get-dlpsensitiveinformationtype 來**指令程式中安全性或者&amp;合規性中心 PowerShell 中顯示的敏感資訊類型清單。 
+若要搜尋的敏感資料，例如信用卡號碼或身分證號碼，會儲存在 SharePoint 和 OneDrive for Business 網站的文件中，您可以使用安全性 & 合規性中心中的內容搜尋功能。 您可以使用`SensitiveType`關鍵字查詢中輸入的屬性和敏感資訊的名稱。 例如，查詢`SensitiveType:"Credit Card Number"`會傳回包含信用卡卡號的文件。 查詢`SensitiveType:"U.S. Social Security Number (SSN)"`會傳回包含美國社會安全號碼的文件。 若要查看您可以搜尋的敏感資料類型的清單，請移至 **[分類]** \>安全性中的**敏感資訊類型**&amp;合規性中心。 您可以使用**Get-dlpsensitiveinformationtype 來**指令程式中安全性或者&amp;合規性中心 PowerShell 中顯示的敏感資訊類型清單。 
   
 您也可以使用`SensitiveType`屬性來搜尋您 （或另一個系統管理員） 為組織建立自訂機密資訊類型的名稱。 附註您可以在安全性中的**敏感資訊類型**] 頁面上使用 [ **Publisher** ] 欄&amp;區別內建及自訂的敏感性合規性中心 （或在 PowerShell 中的 [ **Publisher** ] 屬性）資訊類型。 如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)。
   
 如需有關使用建立查詢`SensitiveType`屬性，請參閱[形成查詢以搜尋儲存在網站上的敏感資料](form-a-query-to-find-sensitive-data-stored-on-sites.md)。
+
+> [!NOTE]
+> 您不能使用的敏感資料類型和`SensitiveType`搜尋來搜尋的敏感資料待用 Exchange Online 信箱中的屬性。 不過，您可以使用資料外洩防護 (DLP) 原則來保護傳輸中的機密 emaill 資料。 如需詳細資訊，請參閱[資料外洩防護原則概觀](data-loss-prevention-policies.md)及[搜尋及尋找個人資料](search-for-and-find-personal-data.md)。
   
 ## <a name="search-operators"></a>搜尋運算子
 

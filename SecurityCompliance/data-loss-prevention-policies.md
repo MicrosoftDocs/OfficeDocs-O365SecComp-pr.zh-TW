@@ -1,7 +1,7 @@
 ---
 title: 資料外洩防護原則概觀
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Office 365 安全性中的資料外洩防護 (DLP) 原則&amp;合規性中心，您可以識別、 監視和自動保護 Office 365 中的敏感資訊。
-ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455045"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639140"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -506,10 +506,10 @@ Office 2016 中的 DLP 原則評估依設計並不會影響程式的效能或內
     
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
-- [機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+- [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
     
 - [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)
     
-- [建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)
+- [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
     
 

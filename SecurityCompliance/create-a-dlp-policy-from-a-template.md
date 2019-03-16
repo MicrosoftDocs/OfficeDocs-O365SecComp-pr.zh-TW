@@ -1,7 +1,7 @@
 ---
 title: 從範本建立 DLP 原則
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: '要開始使用 DLP 原則，最簡單且最常見方式是使用 Office 365 所包含的其中一個範本。 '
-ms.openlocfilehash: 7e07c79df8ff9b65e2b213b180c607008007550e
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455255"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639100"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>從範本建立 DLP 原則
 

@@ -1,7 +1,7 @@
 ---
 title: DLP 原則建議快速入門
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 此深入了解導向建議可協助保護敏感內容安全性，當已儲存，並在 Office 365 中共用的通知您何時中的有可能間隔貴組織 DLP 原則涵蓋範圍。 您會看到這項建議在首頁上的安全性&amp;合規性中心，如果您的文件包含任何的前五個最常見的敏感資訊類型，但不會受到 DLP 原則。
-ms.openlocfilehash: aabd1e6b3ce8ea4754192bd7b6f80262d9e83cf7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455115"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638880"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>DLP 原則建議快速入門
 

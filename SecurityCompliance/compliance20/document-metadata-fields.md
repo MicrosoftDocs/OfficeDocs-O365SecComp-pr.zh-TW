@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7559653c5c92b26535fb3a16ae7dbb442dc0ba97
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455405"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639110"
 ---
 # <a name="document-metadata-fields"></a>下載中繼資料欄位
 
 
 |**欄位名稱** </br>|**可以搜尋及檢視中工作集** |**檔案中繼資料] 面板** |**匯出** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
-|Case 標記                  | 是                                             |                         | 是         |
+|Case 標記                  | 是 （標記）                                      |                         | 是         |
 |合規性標籤          |                                                 |                         | 是         |
 |複合路徑              |                                                 |                         | 是         |
 |容器識別碼               |                                                 |                         | 是         |
@@ -37,11 +37,11 @@ ms.locfileid: "30455405"
 |Deduped 複合路徑      |                                                 |                         | 是         |
 |Deduped 的 custodians         |                                                 |                         | 是         |
 |Deduped 的檔案識別碼           |                                                 |                         | 是         |
-|文件作者                |                                                 |                         | 是         |
+|文件作者                | 是 （作者） *                                   |                         | 是         |
 |文件註解               |                                                 |                         | 是         |
 |Doc 公司                |                                                 |                         | 是         |
-|建立 doc 日期           |                                                 |                         | 是         |
-|修改 doc 日期          |                                                 |                         | 是         |
+|建立 doc 日期           | 是 (createdTime) *                              |                         | 是         |
+|修改 doc 日期          | 是 (lastModifiedDate) *                         |                         | 是         |
 |Doc 關鍵字               |                                                 |                         | 是         |
 |上次儲存的文件          |                                                 |                         | 是         |
 |修改過的文件            |                                                 |                         | 是         |
@@ -103,10 +103,10 @@ ms.locfileid: "30455405"
 |ND ET 排序 excl 附加     |                                                 |                         | 是         |
 |ND ET 排序 incl 附加     |                                                 |                         | 是         |
 |ND 組                     |                                                 |                         | 是         |
-|O365 作者               |                                                 |                         | 是         |
+|O365 作者               | 是 （作者） *                                   |                         | 是         |
 |所建立的 O365            |                                                 |                         | 是         |
-|建立的 O365 日期          |                                                 |                         | 是         |
-|修改的 O365 日期         |                                                 |                         | 是         |
+|建立的 O365 日期          | 是 (createdTime) *                              |                         | 是         |
+|修改的 O365 日期         | 是 (lastModifiedDate) *                         |                         | 是         |
 |修改的 O365           |                                                 |                         | 是         |
 |父節點                |                                                 |                         | 是         |
 |樞紐分析表識別碼                   | 是 (pivotId)                                   |                         | 是         |
@@ -117,3 +117,8 @@ ms.locfileid: "30455405"
 |相似性 %         |                                                 |                         | 是         |
 |佈景主題清單                | 是 (themesList)                                |                         | 是         |
 |字數統計                 | 是 (wordCount)                                 |                         | 是         |
+|相關性分數 （問題）    | 是 (relevanceScore_issueNum)                   |                         |             |
+|讀取百分位數 （問題）    | 是 (readPercentile_issueNum)                   |                         |             |
+|相關性標記 （問題）      | 是 (relevanceTag_issueNum)                     |                         |             |
+
+  \*適用於這些欄位中，如果沒有內嵌的值內的文件，搜尋會排列優先順序那些值;否則，它會嘗試呈現值來自 office 365。

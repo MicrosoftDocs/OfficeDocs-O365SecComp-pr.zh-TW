@@ -1,7 +1,7 @@
 ---
 title: 文件指紋
-ms.author: stephow
-author: stephow-msft
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織中的資訊工作者在其日常工作中會處理許多不同的敏感資訊。 「文件指紋」可識別您的組織中所使用的標準表單，以協助您保護此類資訊。 本主題說明的概念文件指紋 」 和 「 如何使用 PowerShell 來建立。
-ms.openlocfilehash: ef3f8450c9a0c65669c736c667e52568ab5996bd
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: a90cb0c7fdfe5e350c9d97adb9a8f357f526742a
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410638"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638990"
 ---
 # <a name="document-fingerprinting"></a>文件指紋
 
