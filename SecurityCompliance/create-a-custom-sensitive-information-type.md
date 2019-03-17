@@ -1,7 +1,7 @@
 ---
 title: 建立自訂機密資訊類型
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Office 365 安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: 5e20fac290a7d06c843a0043d95669d9c7f7cd05
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455135"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639060"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>建立自訂機密資訊類型
 
