@@ -106,7 +106,7 @@
 ### [設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)
 ### [設定連線篩選原則](configure-the-connection-filter-policy.md)
 ### [設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)
-### [從封鎖清單中移除使用者、網域或 IP 位址](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
+### [傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者](removing-user-from-restricted-users-portal-after-spam.md)
 ### [垃圾郵件信賴等級](spam-confidence-levels.md)
 #### [使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
