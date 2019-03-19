@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 針對想要執行委派的 Office 365 管理工作的 Microsoft 合作夥伴和轉銷售，包括能夠管理其他承租人 (公司) 的 Exchange Online Protection (EOP)，本主題提供常見問題與解答。
-ms.openlocfilehash: b6096e835f90a0d5f22a39a5df76e52f1a25a79d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 61f939932ab221343b67f87dd5c63f6697e70026
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027490"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670438"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常見問題集
 
@@ -24,7 +24,7 @@ ms.locfileid: "22027490"
   
  **問：我是轉銷商，需要管理客戶的承租人；該怎麼做？**
   
-答：如果您是 Microsoft 合作夥伴或轉售商，且已註冊成為 Microsoft Advisor，則您可以要求權限在 Office 365 系統管理中心內管理他們的承租人。這稱為委派管理，可讓您以其組織的系統管理員身分來管理 Office 365 承租人 (包括 EOP 設定)。執行委派管理的步驟如下：
+答：是。 如果您的 Microsoft 合作夥伴或轉銷商，而且您已簽署最多可為 Microsoft 顧問，您可以要求權限管理在系統管理中心內其租用戶。 這稱為委派管理，以及它可讓您管理其 Office 365 租用戶中 （包括 EOP 設定） 如果當您已在組織內系統管理員。 執行委派的管理的步驟如下所示：
   
 1. 註冊成為 [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits)。
     
@@ -44,6 +44,6 @@ ms.locfileid: "22027490"
   
  **問：我可以取得所有子承租人的彙總報告嗎？**
   
-答：Office 365 系統管理中心目前未提供您所管理的公司的彙總報告。不過，這可透過遠端 Windows PowerShell 或[報告 Web 服務](https://go.microsoft.com/fwlink/?LinkId=279926)來取得。 
+答：是。 跨您管理公司的合併報告不適用於 Micrsoft 365 系統管理中心報告這一次。 不過，這可以透過遠端 Windows PowerShell 或[報告 web 服務](https://go.microsoft.com/fwlink/?LinkId=279926)。 
   
 

@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: af99b029fec25368cafcacef7558eda0dc94af25
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027550"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670528"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
@@ -38,7 +38,7 @@ ms.locfileid: "22027550"
   
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 的協助支援
 
-您可以在 Office 365 系統管理中心內提出新的服務要求，或撥打電話，以取得 Microsoft 的協助。Premier support 訂閱者有額外的支援選項。
+您可以從 Microsoft 取得說明，開始新的服務要求，Microsoft 365 系統管理中心內，或撥打電話。 Premier support 訂閱者有額外的支援選項。
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft Premier Support 訂閱者支援
 
@@ -48,7 +48,7 @@ ms.locfileid: "22027550"
   
 ### <a name="ask-for-help-on-the-web"></a>在網路上尋求協助
 
-1. 登入 Office 365 系統管理中心。
+1. 登入 Microsoft 365 系統管理中心。
     
 2. 移至 **[支援]** \> **[要求客戶支援]** \> **[新增服務要求]**
     
@@ -56,7 +56,7 @@ ms.locfileid: "22027550"
     
 ### <a name="ask-for-help-on-the-telephone"></a>透過電話尋求協助
 
-1. 登入 Office 365 系統管理中心。
+1. 登入 Microsoft 365 系統管理中心。
     
 2. 若為一般產品問題，請移至 **[支援]** \> **[要求客戶支援]** \> **[連絡技術支援]**。
     
@@ -81,8 +81,8 @@ Microsoft 提供全球產品支援的當地或免付費電話號碼。許多支�
    
 ## <a name="for-more-information-about-eop-documentation"></a>如需 EOP 文件的詳細資訊
 
-[第三方著作權](third-party-copyright-notices.md)
+[第三方版權注意事項](third-party-copyright-notices.md)
   
-[殘障人士的協助工具](accessibility-for-people-with-disabilities.md)
+[行動不便人士的協助工具](accessibility-for-people-with-disabilities.md)
   
 

@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: 本主題說明如何設定 Microsoft Exchange Online Protection (EOP)。如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。如果您正在尋找如何設定連接器的詳細資訊，請參閱Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
-ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
+description: 本主題說明如何設定 Microsoft Exchange Online Protection (EOP)。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱Configure mail flow using connectors in Office 365。
+ms.openlocfilehash: 96751f1f68e0b73c1d92b6868e99f4eb1c2739bf
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25715899"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670608"
 ---
 # <a name="set-up-your-eop-service"></a>設定 EOP 服務
 
@@ -40,11 +40,11 @@ ms.locfileid: "25715899"
   
 ## <a name="how-do-you-do-this"></a>該怎麼做？
 
-### <a name="step-1-use-the-office-365-admin-center-to-add-and-verify-your-domain"></a>步驟 1：使用 Office 365 系統管理中心 新增及確認您的網域
+### <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步驟 1： 使用 Microsoft 365 系統管理中心新增及確認您的網域
 
-1. 在 Office 365 系統管理中心中，瀏覽至您的網域新增至服務的**安裝程式**。 
+1. 在 Microsoft 365 系統管理中心中，瀏覽至**安裝**程式將您的網域新增至服務。 
     
-    不確定要前往何處尋找 Office 365 系統管理中心？請參閱[關於 Office 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=521888)以深入了解。
+    不確定要前往何處尋找 Microsoft 365 系統管理中心？ 了解更多[關於 Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=521888)在。
     
 2. 請遵循這些步驟，將適用的 DNS 記錄新增到 DNS 主機提供者，以便驗證網域擁有權。
     
@@ -72,11 +72,11 @@ ms.locfileid: "25715899"
   
 ### <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>步驟 5：使用命令介面確定垃圾郵件路由傳送至每個使用者的垃圾電子郵件資料夾
 
-若要確保垃圾郵件 （垃圾郵件） 郵件正確地傳送至每位使用者的垃圾郵件資料夾，您必須執行一些設定步驟。[確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)中提供的步驟。
+為了確保垃圾電子郵件正確地路由傳送至每個使用者的 [垃圾郵件] 資料夾，您必須執行幾個設定步驟。 [確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)中提供步驟。
   
-如果您不想將郵件移至每位使用者的垃圾郵件] 資料夾，您可以選擇另一個巨集指令來編輯您在 Exchange 系統管理中心中的內容篩選原則。如需詳細資訊，請參閱[設定垃圾郵件篩選器原則](../configure-your-spam-filter-policies.md)。
+如果不要將郵件移至每個使用者的 [垃圾郵件] 資料夾，您可以在 Exchange 系統管理中心編輯內容篩選原則，以選擇其他動作。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](../configure-your-spam-filter-policies.md)。
   
-### <a name="step-6-use-the-office-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Office 365 系統管理中心 將您的 MX 記錄指向 EOP
+### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6： 使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 
 遵循 Office 365 網域組態步驟來更新網域的 MX 記錄，讓您的輸入電子郵件流過 EOP。請務必直接將 MX 記錄指向 EOP 而非讓協力廠商篩選服務將郵件轉送至 EOP。如需詳細資訊，請再次參照[建立 Office 365 的 DNS 記錄](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
   

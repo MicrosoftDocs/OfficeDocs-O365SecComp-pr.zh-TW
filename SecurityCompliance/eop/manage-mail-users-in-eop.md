@@ -11,25 +11,25 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: b0093c64a0fcb5997b474e7bd491c0915164b77e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9ab4420dd9fcf6c056bc661b5f3646672a89a683
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341024"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670638"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。在 EOP 中，您可以透過數種方式來管理使用者：
   
-- 使用目錄同步處理來管理郵件使用者： 如果貴公司有現有的使用者帳戶在內部部署 Active Directory 環境中，您可以同步處理至 Azure Active Directory (AD)，在雲端中儲存一份帳戶的帳戶。當您同步處理至 Azure Active Directory 現有的使用者帳戶時，您可以在 Exchange 系統管理中心 (EAC) 的 [**收件者**] 窗格中檢視這些使用者。建議您不要使用目錄同步處理。 
+- 使用目錄同步處理來管理郵件使用者：如果您的公司在內部部署 Active Directory 環境中有現有的使用者帳戶，您可將這些帳戶同步處理至 Azure Active Directory (AD)，此工具會將這些帳戶的複本儲存至雲端。 將現有的使用者帳戶同步處理至 Azure Active Directory 時，您可以在 Exchange 系統管理中心 (EAC) 的 [**收件者**] 窗格中檢視這些使用者。 建議使用目錄同步作業。 
     
-- 使用 EAC 管理郵件使用者：在 EAC 中直接新增及管理郵件使用者。這是新增郵件使用者最簡單的方法，也很適合一次新增一位使用者。
+- 使用 EAC 管理郵件使用者：在 EAC 中直接新增及管理郵件使用者。 這是新增郵件使用者最簡單的方法，也很適合一次新增一位使用者。
     
-- 使用遠端 Windows PowerShell 管理郵件使用者：執行遠端 Windows PowerShell 來新增和管理郵件使用者。這個方法適合用來新增多筆記錄和建立指令碼。
+- 使用遠端 Windows PowerShell 管理郵件使用者：執行遠端 Windows PowerShell 來新增和管理郵件使用者。 這個方法適合用來新增多筆記錄和建立指令碼。
     
 > [!NOTE]
-> 您可以在 Office 365 系統管理中心新增使用者，不過，這些使用者不能做為郵件收件者。 
+> 您可以在 Microsoft 365 系統管理中心中，新增使用者，不過，這些使用者不能當成郵件收件者。 
   
 ## <a name="before-you-begin"></a>開始之前
 
@@ -45,10 +45,10 @@ ms.locfileid: "30341024"
 本節提供使用目錄同步處理來管理電子郵件使用者的相關資訊。
   
 > [!IMPORTANT]
-> 如果您使用目錄同步作業來管理收件者，您仍可在 Office 365 系統管理中心 中新增和管理使用者，但這些使用者不會和您的內部部署 Active Directory 同步處理。這是因為目錄同步作業只會從內部部署 Active Directory 同步收件者至雲端。 
+> 如果您使用目錄同步作業管理收件者時，您仍然可以新增及管理使用者在 Microsoft 365 系統管理中心中，但它們不會與您在內部部署 Active Directory 同步。 這是因為目錄同步作業只會從內部部署 Active Directory 同步收件者至雲端。 
   
 > [!TIP]
->  使用目錄同步處理建議使用下列功能： > **Outlook 安全寄件者和封鎖寄件者清單**-當同步處理至服務，這些清單會優先於垃圾郵件篩選服務中。這可讓使用者管理自己的安全寄件者和封鎖的寄件者清單，每個使用者或每個網域的基礎。>**目錄架構邊緣封鎖 (DBEB)** -如需 DBEB，詳細資訊，請參閱[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。>**使用者垃圾郵件隔離**-若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。>**郵件流程規則**-當您使用目錄同步處理，您現有的 Active Directory 使用者和群組會自動上傳至雲端，您可以再建立郵件流程規則 （也稱為傳輸規則），針對特定的使用者與 /或群組，而不必手動新增他們透過 EAC 或 Exchange Online Protection PowerShell。請注意，[動態通訊群組](https://go.microsoft.com/fwlink/?LinkId=507569)無法透過目錄同步作業進行同步處理。 
+>  建議搭配下列功能一起使用目錄同步處理： > **Outlook 安全的寄件者和封鎖的寄件者清單** - 同步處理至服務時，這些清單優先於服務的垃圾郵件篩選。 這可讓使用者針對個別使用者或個別網域，管理他們自己的安全寄件者和封鎖的寄件者清單。 > **目錄架構邊緣封鎖 (DBEB)** - 如需 DBEB 的詳細資訊，請參閱＜ [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)＞。 > **使用者垃圾郵件隔離** - 若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。 保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。 > **郵件流程規則**-當您使用目錄同步處理，您現有的 Active Directory 使用者和群組會自動上傳至雲端，您可以再建立郵件流程規則 （也稱為傳輸規則），針對特定的使用者及 （或)群組，而不必手動新增他們透過 EAC 或 Exchange Online Protection PowerShell。 請注意， [動態通訊群組](https://go.microsoft.com/fwlink/?LinkId=507569)無法透過目錄同步作業進行同步處理。 
   
  **開始之前**
   
@@ -69,7 +69,7 @@ ms.locfileid: "30341024"
     
 5. 管理目錄同步處理，如[管理目錄同步作業](http://go.microsoft.com/fwlink/p/?LinkId=308915)所說明。
     
-6. 驗證，則 EOP 會正確同步處理。在 EAC 中，前往 [**收件者** \> **連絡人**和使用者清單已正確同步處理內部部署環境中的檢視。 
+6. Verify that EOP is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment. 
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>使用 EAC 管理郵件使用者
 
@@ -97,11 +97,11 @@ ms.locfileid: "30341024"
 |**新密碼** <br/> |輸入郵件使用者將用來登入服務的密碼。請確定您提供的密碼符合您正在其中建立使用者帳戶之網域的密碼長度、複雜性和歷程記錄需求。  <br/> |
 |**確認密碼** <br/> |重新輸入密碼加以確認。  <br/> |
    
-3. 按一下 [ **儲存**]，以建立新的郵件使用者。新的使用者應會出現在使用者清單中。 
+3. 按一下 [**儲存**]，以建立新的郵件使用者。新的使用者應會出現在使用者清單中。 
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>在 EAC 中編輯或移除郵件使用者
 
-- 在 EAC 中，前往 [**收件者** \> **連絡人**。在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)以視需要更新使用者設定。您可以變更使用者的名稱、 別名或連絡資訊，以及您可以記錄組織中的使用者角色的詳細的資訊。您可以也選取使用者，然後選擇 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.gif)將它刪除。 
+- In the EAC, go to **Recipients** \> **Contacts**. 在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)以視需要更新使用者設定。 You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. You can also select a user and then choose **Remove**![Remove icon](../media/ITPro-EAC-RemoveIcon.gif) to delete it. 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>使用遠端 Windows PowerShell 管理郵件使用者
 
@@ -133,7 +133,7 @@ ms.locfileid: "30341024"
     
 - 密碼為 Pa$$word1。
     
-```
+```Powershell
 New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
@@ -141,7 +141,7 @@ New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -N
   
 依下列方式執行 [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx) 指令程式，以顯示新郵件使用者 Jeffrey Zeng 的相關資訊： 
   
-```
+```Powershell
 Get-User "Jeffrey Zeng"
 
 ```
@@ -152,13 +152,13 @@ Get-User "Jeffrey Zeng"
   
 此範例會設定 Pilar Pinilla 的外部電子郵件地址。
   
-```
+```Powershell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
 此範例會將所有郵件使用者的 [公司] 內容設定為 [Contoso]。
   
-```
+```Powershell
 $Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 
@@ -168,14 +168,14 @@ $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
   
 上述範例中我們變更郵件使用者 Pilar Pinella 的屬性，請使用 [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) 指令程式來驗證變更(請注意，您可以檢視多個郵件連絡人的多個屬性)。 
   
-```
+```Powershell
 Get-Recipient -Identity "Pilar Pinilla" | Format-List 
 
 ```
 
 在上述範例中，所有郵件使用者的 [公司] 屬性設為 [Contoso]，請執行下列命令來驗證變更：
   
-```
+```Powershell
 Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
 ```
 
@@ -186,7 +186,7 @@ Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser
   
 此範例使用 [Remove-EOPMailUser](http://technet.microsoft.com/library/cb91dc26-ed22-4d3c-9f64-df9df1754edb.aspx) 指令程式來刪除使用者 Jeffrey Zeng： 
   
-```
+```Powershell
 Remove-EOPMailUser -Identity Jeffrey
 ```
 
@@ -194,7 +194,7 @@ Remove-EOPMailUser -Identity Jeffrey
   
 依下列方式執行 [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) 指令程式。應該會出現錯誤訊息，因為使用者已不存在。 
   
-```
+```Powershell
 Get-Recipient Jeffrey | fl
 ```
 

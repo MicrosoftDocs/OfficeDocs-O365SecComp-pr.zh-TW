@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是偵測到郵件與垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。 如何 ZAP 執行此動作，則偵測到的惡意內容類型而定。
-ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: b49f7e3b5effec7b67daf6ab8acbf049705a4841
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524017"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670578"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -72,7 +72,7 @@ ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息�
     
 在下列範例中，ZAP 已停用名為"Test"的內容篩選原則。
     
-```
+```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
@@ -80,7 +80,7 @@ ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息�
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>如果合法郵件移至 [垃圾郵件] 資料夾，會發生什麼事？
   
-您應該遵循誤判正常的報告程的序。 郵件會從收件匣移至 [垃圾郵件] 資料夾的唯一原因可能因為服務已決定郵件是垃圾郵件或惡意。
+您應該遵循[誤判](prevent-email-from-being-marked-as-spam.md)正常的報告程的序。 郵件會從收件匣移至 [垃圾郵件] 資料夾的唯一原因可能因為服務已決定郵件是垃圾郵件或惡意。
   
 ### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>如果使用 Office 365 隔離而不是垃圾郵件資料夾？
   
@@ -88,7 +88,7 @@ ZAP 不會將郵件移至隔離區從收件匣這一次。
   
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>如果我有自訂郵件流程規則 （封鎖 / 允許規則）？
   
-建立由系統管理員 （郵件流程規則）] 或 [封鎖] 和 [允許規則的規則的優先順序。 這類郵件會排除功能準則。
+建立由系統管理員 （郵件流程規則）] 或 [封鎖] 和 [允許規則的規則的優先順序。 這類郵件會排除功能準則，讓郵件流程需要遵循的規則動作 （封鎖/允許規則）。
   
 ## <a name="related-topics"></a>相關主題
 

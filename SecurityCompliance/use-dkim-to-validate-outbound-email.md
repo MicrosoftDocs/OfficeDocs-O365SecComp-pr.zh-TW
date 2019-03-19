@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文將告訴您如何使用 DomainKeys Identified Mail (DKIM) 與 Office 365 來確保目的地電子郵件系統信任自您自訂網域傳送的郵件。
-ms.openlocfilehash: 28e529038cefc955da4c76309d169a9f3b5e4a23
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 8792f41ade704c7742445646b3cb965561994d02
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524077"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670678"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -137,9 +137,9 @@ TTL:                3600
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>啟用 DKIM 簽章的 Office 365 中的自訂網域
 <a name="EnableDKIMinO365"> </a>
 
-一旦您已經在 DNS 中發佈的 CNAME 記錄，您準備好要啟用 DKIM 簽署透過 Office 365。 您可以透過 Office 365 系統管理中心或使用 PowerShell 來執行這項操作。
+一旦您已經在 DNS 中發佈的 CNAME 記錄，您準備好要啟用 DKIM 簽署透過 Office 365。 您可以透過 Microsoft 365 系統管理中心或使用 PowerShell 來執行這項操作。
   
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-office-365-admin-center"></a>若要啟用 DKIM 簽章的自訂網域透過 Office 365 系統管理中心
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>若要啟用 DKIM 簽章的自訂網域透過系統管理中心
 
 1. 使用您的 公司或學校帳戶[登入 Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。 
     

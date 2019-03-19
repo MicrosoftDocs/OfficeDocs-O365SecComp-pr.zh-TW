@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 在這裡，我們將回答有關於 Microsoft Exchange Online Protection (EOP) 雲端電子郵件篩選服務的最常見一般問題。如需其他常見問題集 (FAQ) 主題，請前往下列連結：
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027380"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670448"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常見問題集
 
@@ -28,7 +28,7 @@ ms.locfileid: "22027380"
     
 - [反垃圾郵件保護常見問題集](../anti-spam-protection-faq.md)
     
-- [安全寄件者和封鎖寄件者清單在 Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
+- [安全寄件者和封鎖的寄件者會列出在 Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
     
 - [隔離常見問題集](../quarantine-faq.md)
     
@@ -64,7 +64,7 @@ ms.locfileid: "22027380"
   
  **問：EOP 是否有通訊入口網站可讓我了解已知問題和預期的解決方案？有哪些新功能？**
   
-答：Office 365 系統管理中心會有一些相關資訊。如果您受到服務層級事件影響，則在登入 Office 365 系統管理中心之後，應該會看見通訊警示 (通常伴隨著鈴鐺圖示)。建議您詳讀內容並採取適當的行動。
+答：是。 在 Microsoft 365 系統管理中心會有一些這項資訊。 如果您受影響的服務層級事件接著您應該會看到通訊警示 （通常伴隨著鈴鐺圖示） 之後登入 Microsoft 365 系統管理中心。 建議您詳讀內容並採取適當的行動。
   
 關於新的 EOP 功能，[商務用 Office 365 導覽圖](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx)是很好的資源，可以在其中尋找新功能的相關資訊。我們也會在 [Office 部落格](https://go.microsoft.com/fwlink/p/?LinkId=392724)網站上發表關於新功能的部落格文章。 
   

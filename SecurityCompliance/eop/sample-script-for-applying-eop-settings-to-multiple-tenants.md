@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: 下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
-ms.openlocfilehash: 899cc51f80230e92b573803301f0e462205af61a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 787847721f46fc4b3caeec037e89306ef450141a
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028090"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670408"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>套用 EOP 設定至多個承租人的範例指令碼
 
@@ -33,21 +33,22 @@ ms.locfileid: "22028090"
 2. 將 [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) 指令碼複製到記事本之類的編輯器，然後將檔案儲存到很容易找到 .ps1 檔案的位置 (例如 c:\scripts)。 
     
 3. 使用下列語法執行指令碼：
-    
-     `&amp; "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"`
+    ```Powershell
+     & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
+    ```
     
     以下為範例。 
     
-  ```
-  &amp; "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
-  ```
+    ```Powershell
+    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+    ```
 
 4. 將登入每個承租人並執行指令程式。
     
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 <a name="RunCmdletOnMultipleTenants.ps1"> </a>
 
-```
+```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #  

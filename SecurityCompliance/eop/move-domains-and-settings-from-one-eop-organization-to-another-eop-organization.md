@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。
-ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 4cc3c7273a06374050f705f51d6b3d85fa8e037c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341554"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670588"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>將網域及設定從某個 EOP 組織移到另一個 EOP 組織
 
 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。 
   
 > [!NOTE]
->  設定可以可靠地移動只接收來自 EOP 獨立 （標準） 組織到另一個 EOP 標準或 Exchange Enterprise CAL 與服務 （EOP 進階版） 的組織，或從 EOP 進階組織到另一個 EOP 進階組織。因為 EOP 標準組織中不支援部分進階功能，所以從 EOP 進階組織移至 EOP 標準組織可能不會成功。這些指示適用於 EOP 僅篩選組織 >。有在從一個 Exchange Online 組織移至另一個 Exchange Online 組織的其他考量。這些指示的範圍外，是 Exchange Online 組織。 
+>  設定可以只從一個 EOP 獨立 (標準) 組織可靠地移至另一個 EOP 標準組織或至具有服務 (EOP 進階) 的 Exchange 企業 CAL 組織，或是從 EOP 進階組織移至另一個 EOP 進階組織。 因為 EOP 標準組織中不支援部分進階功能，所以從 EOP 進階組織移至 EOP 標準組織可能不會成功。 >  這些指示適用於僅進行 EOP 篩選的組織。 從一個 Exchange Online 組織移至另一個 Exchange Online 組織有其他的考量。 Exchange Online 組織並不在這些指引的範圍內。 
   
 在下列範例中，Contoso, Ltd. 已經和 Contoso 套件合併。下圖顯示將網域、郵件使用者和群組以及設定從來源 EOP 組織 (contoso.onmicrosoft.com) 移至目標 EOP 組織 (contososuites.onmicrosoft.com) 的程序：
   
@@ -58,22 +58,22 @@ ms.locfileid: "30341554"
   
 您連線到遠端 Windows PowerShell 之後，請在很容易找到的位置建立稱為匯出的目錄，並且變更為該目錄。例如：
   
-```
+```Powershell
 mkdir C:\EOP\Export
 ```
 
-```
+```Powershell
 cd C:\EOP\Export
 ```
 
-下列指令碼可用來收集所有郵件使用者、 群組、 反垃圾郵件設定，反惡意程式碼設定、 連接器，以及來源組織中的郵件流程規則。複製下列文字貼入記事本之類的文字編輯器，將檔案儲存為 Source_EOP_Settings.ps1，您剛建立的匯出目錄中並執行下列命令：
+下列指令碼可用來收集所有郵件使用者、 群組、 反垃圾郵件設定，反惡意程式碼設定、 連接器，以及來源組織中的郵件流程規則。 複製下列文字並貼入記事本之類的文字編輯器，將檔案在您剛建立的匯出目錄中儲存為 Source_EOP_Settings.ps1，並執行下列命令：
   
-```
+```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
-```
+```Powershell
 #****************************************************************************
 # Export Domains
 #*****************************************************************************
@@ -141,7 +141,7 @@ Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 
 從匯出目錄執行下列命令，以利用目標組織更新 .xml 檔案。以來源和目錄組織名稱取代 Contoso.onmicrosoft.com 和 contososuites.onmicrosoft.com。
   
-```
+```Powershell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
@@ -150,13 +150,13 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 
 使用下列指令碼將網域新增至目標組織。複製文字並貼入記事本之類的文字編輯器，將指令碼儲存為 C:\EOP\Export\Add_Domains.ps1，並執行下列命令：
   
-```
+```Powershell
 &amp; "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 這些網域不會經過驗證，而且不能用來路由傳送郵件，但是在新增網域後，您可以收集必要的資訊以驗證網域並在最後更新您的新組用戶 MX 記錄。
   
-```
+```Powershell
 #***********************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -172,9 +172,9 @@ Foreach ($domain in $Domains) {
 
 ```
 
-現在，您可以從目標組織的 Office 365 系統管理中心檢閱並收集資訊，讓您可以在適當時間快速驗證網域：
+現在，您可以檢閱並收集資訊從目標組織的 Microsoft 365 系統管理中心，以便適當時間，您可以快速驗證網域：
   
-1. 登入 Office 365 系統管理中心，網址如下 [https://portal.office.com](https://portal.office.com)。
+1. 登入 Microsoft 365 系統管理中心， [https://portal.office.com](https://portal.office.com)。
     
 2. 按一下 **[網域]**。
     
@@ -203,11 +203,11 @@ Foreach ($domain in $Domains) {
 
 下列指令碼會使用 Azure Active Directory 遠端 Windows PowerShell 從來源租用戶移除使用者、群組及網域。複製下列文字並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Remove_Users_and_Groups.ps1，並執行下列命令：
   
-```
-&amp; "C:\EOP\Export\Remove_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Remove_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #*****************************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -243,7 +243,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>步驟 5：驗證目標組織的網域
 
-1. 登入 Office 365 系統管理中心，網址如下 [https://portal.office.com](https://portal.office.com)。
+1. 登入系統管理中心， [https://portal.office.com](https://portal.office.com)。
     
 2. 按一下 **[網域]**。
     
@@ -255,11 +255,11 @@ EOP 的最佳作法是使用 Azure Active Directory 將內部部署 Active Direc
   
 若要使用此指令碼，請複製下列文字並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Add_Users_and_Groups.ps1，並執行下列命令：
   
-```
-&amp; "C:\EOP\Export\Add_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Add_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -608,13 +608,13 @@ if($MailContactsCount -gt 0){
   
 複製指令碼並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Import_Settings.ps1，並執行下列命令：
   
-```
-&amp; "C:\EOP\Export\Import_Settings.ps1"
+```Powershell
+& "C:\EOP\Export\Import_Settings.ps1"
 ```
 
 此指令碼會匯入.xml 檔案，並建立一個稱為 Settings.ps1 的 Windows PowerShell 指令碼檔案，您可以檢閱、編輯，然後再執行此檔案以重新建立您的保護與郵件流程設定。
   
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -926,6 +926,6 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>步驟 8：還原您的 DNS 設定以停止郵件佇列
 
-如果您選擇將 MX 記錄設為無效的位址，造成寄件者在您的轉換期間將郵件加入佇列，您必須將它們設回 [Office 365 系統管理中心](https://portal.office.com) 中所指定的正確值。如需設定 DNS 的詳細資訊，請參閱 [建立 Office 365 的 DNS 記錄](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
+如果您選擇要將您的 MX 記錄設定為無效的地址，若要在轉換期間造成將郵件加入佇列的寄件者，您需要將它們設回[系統管理中心](https://admin.microsoft.com)中所指定正確的值。 如需設定 DNS 的詳細資訊，請參閱 [建立 Office 365 的 DNS 記錄](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
   
 
