@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解最常用來協助減少 Office 365 中垃圾郵件的方式。
-ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357544"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670558"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何減少 Office 365 中的垃圾郵件
 
@@ -56,6 +56,9 @@ ms.locfileid: "30357544"
 - **立即封鎖寄件者**：在需要立即封鎖寄件者的情況下，您可以透過電子郵件地址、網域或 IP 位址來進行封鎖。請參閱[使用 EAC 來建立郵件流程規則，以封鎖來自網域或使用者的郵件](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user)。請注意，使用者允許清單上的項目能夠覆寫系統管理員的封鎖設定。
     
 - **為使用者開啟回報郵件增益集** 我們建議建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。身為系統管理員，您也可以檢視使用者傳送的意見反應，並使用任何模式，來調整任何可能造成問題的設定。
+- **啟用 [DKIM](use-dkim-to-validate-outbound-email.md)** 以簽署所有外寄郵件，藉此提高您的網域和租用戶中的安全性。
+ > [!TIP]
+> 啟用 DKIM 之後，您必須啟用 [DMARC](use-dkim-to-validate-outbound-email.md)，因為此記錄會驗證 DKIM 和 SPF 是否正確運作，而一般來說，因為 O365 會管理您的私人和公用對稱金鑰，偽造的電子郵件不會有簽章。
     
 ### <a name="for-users"></a>若為使用者
 
