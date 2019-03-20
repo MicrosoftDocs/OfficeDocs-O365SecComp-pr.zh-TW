@@ -7,84 +7,84 @@ ms.date: 3/6/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: 本文說明 Office 365 如何減少抵禦網路釣魚攻擊使用偽造地址寄件者的網域，亦即詐騙的網域。 它這樣的優勢分析郵件，並封鎖該組可驗證不使用標準的電子郵件的驗證方法或其他寄件者信譽技術。 這項變更所實作，以減少要公開在 Office 365 組織的網路釣魚攻擊的數目。
-ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
-ms.translationtype: MT
+localization_priority: Priority
+description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
+ms.openlocfilehash: 704f335a8938f46aba4e2506ff43d07251270379
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492872"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30664456"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
-本文說明 Office 365 如何減少抵禦網路釣魚攻擊使用偽造地址寄件者的網域，亦即詐騙的網域。 完成其這分析郵件，並封鎖不能使用標準的電子郵件的驗證方法或其他寄件者信譽技術驗證項目。 這項變更所實作，以減少要公開在 Office 365 組織的網路釣魚攻擊的數目。
+本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
   
-本文也說明為何要進行此變更，客戶可以如何準備，這項變更、 如何檢視將會受到影響的郵件、 如何報告的郵件、 如何減輕誤判，，以及給 Microsoft 的寄件者應如何準備進行這變更。
+本文也會說明進行此項變更的原因、客戶如何準備進行此變更、如何查看將受影響的郵件、如何回報郵件、如何緩解誤報情況，以及 Microsoft 的寄件人應如何預備此項變更。
   
-Microsoft 的反詐騙技術最初部署給其組織有 Office 365 企業版 E5 訂閱，或有購買其訂閱的 Office 365 進階威脅防護 (ATP) 附加元件。 2018 年 10 月日起我們延伸也有 Exchange Online Protection (EOP) 的組織的保護。 此外，因為我們的篩選器的所有要深入了解從彼此的方式，Outlook.com 使用者可能會影響。
+Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱，或已為其訂閱購買 Office 365 進階威脅防護 (ATP) 附加元件的組織中。 自 2018 年 10 月起，我們會將防護擴充至擁有 Exchange Online Protection (EOP) 的組織中。 此外，由於我們所有的篩選器皆會相互學習，所以 Outlook.com使用者也可能會受到影響。
   
-## <a name="how-spoofing-is-used-in-phishing-attacks"></a>在 [網路釣魚攻擊的詐騙使用方式
+## <a name="how-spoofing-is-used-in-phishing-attacks"></a>網路釣魚攻擊中的詐騙方式
 
-保護其使用者時，Microsoft 會嚴重採用網路釣魚的威脅。 濫發垃圾郵件者和網路釣客常使用的技術的其中一個在詐騙，這當寄件者為偽造地址，且郵件似乎來自是由其他人或地方以外的實際的來源。 這個方法通常用於網路釣魚活動設計用來取得使用者認證。 Microsoft 的反詐騙技術特別會檢查冒名的 '從： 標頭' 也就是在類似 Outlook 電子郵件用戶端中會顯示一個。 當 Microsoft 具有高信賴度的 From： 標頭為冒名，它會識別為詐騙郵件。
+為保護使用者，Microsoft 嚴正看待網路釣魚攻擊。 垃圾郵件製造者和網路釣魚者常用的技術之一就是詐騙，也就是偽造寄件者，讓郵件看起來源自非實際來源的其他人或其他地方。 這是設計來取得使用者認證的網路釣魚攻擊的慣用伎倆。 Microsoft 的反詐騙技術會特別檢查 [寄件者:標頭]，其會顯示在像 Outlook 這類的電子郵件用戶端中。 當 Microsoft 高度確信 [寄件者:標頭] 遭到偽造時，它會將該郵件標識為詐騙郵件。
   
-詐騙郵件影響兩個負的實際使用者：
+詐騙郵件對實際使用者有兩個負面影響：
   
-### <a name="1-spoofed-messages-deceive-users"></a>1.冒名郵件惡作劇使用者
+### <a name="1-spoofed-messages-deceive-users"></a>1. 詐騙郵件欺騙使用者
   
-首先，冒名的郵件可能誘騙使用者按一下連結及放棄其認證、 下載惡意程式碼，或回覆郵件具有敏感內容 （後者的一種稱為 「 商務電子郵件危害）。 例如，以下是 msoutlook94@service.outlook.com 冒名寄件者的網路釣魚郵件：
+首先，詐騙郵件會誘騙使用者按下連結並給予其憑證，下載惡意程式碼或回覆具有敏感內容的郵件 (後者稱為商務電子郵件入侵)。 例如，以下是假冒寄件者為 msoutlook94@service.outlook.com 的網路釣魚郵件：
   
-![模擬 service.outlook.com 網路釣魚郵件](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![冒充 service.outlook.com 的網路釣魚郵件](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
   
-上述並非真的來自 service.outlook.com，但改為已讓它看起來像它並未 phisher 詐騙。 它會嘗試誘騙使用者按一下郵件中的連結。
+上述郵件並不是真正從 service.outlook.com 寄出的郵件，而是網路釣魚者所偽造的郵件。 這封郵件試圖誘騙使用者按下郵件內的連結。
   
-下一個範例詐騙 contoso.com:
+下個範例是假冒的 contoso.com：
   
-![網路釣魚郵件-商業電子郵件遭到入侵](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![網路釣魚郵件 - 商務電子郵件入侵](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
   
-郵件看起來合法的但事實上詐騙。 此網路釣魚郵件是一種商業電子郵件危害也就是網路釣魚的子類別。
+郵件看起來合法，但實際上卻是偽造的。 這封網路釣魚郵件是一種商務電子郵件入侵，也就是網路釣魚的子類別。
 
-### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2.使用者混淆假的實際的郵件
+### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. 使用者無法分辨真假郵件
   
-第二個、 詐騙郵件建立不確定使用者了解網路釣魚郵件，但無法判斷實際的郵件和詐騙的一之間的差異。 例如，以下是從 Microsoft 安全性帳戶的電子郵件地址重設實際密碼的範例：
+第二，詐騙郵件會讓使用者產生不確定感，他們知道什麼是網路釣魚郵件，但卻無法分辨真實郵件和詐騙郵件之間的差異。 例如，下列是來自 Microsoft 安全性帳戶電子郵件地址的實際密碼重設郵件範例：
   
-![Microsoft 合法的密碼重設](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Microsoft 合法密碼重設](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
   
-上述的訊息沒有來自 Microsoft，但在此同時，使用者會用來取得網路釣魚郵件可能誘騙使用者按一下連結及放棄其認證、 下載惡意程式碼，或回覆郵件具有敏感內容。 因為很難分辨實際的密碼重設與假的一個之間的差異，許多使用者略過這些郵件、 它們回報為垃圾郵件，或不必要地回向 Microsoft 回報郵件為未接的網路釣魚詐騙。
+上述郵件確實是來自 Microsoft，但使用者仍然還是會收到誘騙使用者按下連結並給予其憑證，下載惡意程式碼或回覆具有敏感內容的網路釣魚郵件。 因為分辨真實密碼重設郵件與假冒郵件有其難度，許多使用者會略過這些郵件、將它們回報為垃圾郵件或在不應該的情況下，將這些郵件回報給 Microsoft 為遺漏的網路釣魚詐騙。
 
-若要停止詐騙，電子郵件篩選產業已開發的電子郵件的驗證通訊協定，例如[SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)， [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、 [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)。 DMARC 可防止詐騙檢查郵件的寄件者的使用者會看到其電子郵件用戶端中的一個 （在上述範例中，這是 service.outlook.com、 outlook.com 和 accountprotection.microsoft.com）-通過 SPF 或 DKIM 的網域。 也就是說，使用者會看到的網域已經過驗證，因此不詐騙郵件。 如需更完整的討論，請參閱一節 「*了解為什麼電子郵件驗證不一定足以停止詐騙 」* 本文稍後。
+為了阻止詐騙郵件，電子郵件篩選產業已開發出諸如 [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、[DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) 和 [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) 等電子郵件驗證通訊協定。 DMARC 使用通過 SPF 或 DKIM 的網域，透過檢查郵件寄件者來防止假冒 - 使用者可在其電子郵件用戶端看到郵件寄件者 (在上述範例為 service.outlook.com、outlook.com 和 accountprotection.microsoft.com)。 也就是說，使用者看到的網域已經過驗證，因此郵件非為詐騙郵件。 如需完整討論內容，請參閱本文稍後的*了解為什麼電子郵件驗證不一定能夠阻止詐騙*一節。
   
-不過，這個問題是記錄是選擇性的不需要該電子郵件驗證。 因此，當網域嚴密的驗證原則與 like microsoft.com 和 skype.com 保護來自詐騙網域的所有發佈弱的驗證原則或任何原則、 為詐騙的目標。截至年 3 月 2018年僅 9%的網域的公司中 Fortune 500 發佈強式電子郵件驗證原則。 剩餘 91%可能遭到假冒的 phisher 和除非電子郵件篩選器偵測到使用其他原則，它可能會傳遞至使用者欺騙它們：
+不過，問題在於電子郵件驗證記錄並非強制必要的。 因此，雖然採用強式驗證原則的網域 (如 microsoft.com 和 skype.com) 可防止詐騙，但是發佈較弱的驗證原則、或甚至完全未採用任何原則的網域就成了詐騙目標。截至 2018 年 3 月，在財富雜誌前 500 大公司的網域中，只有 9% 發佈強式的電子郵件驗證原則。 剩下 91% 則可能受網路釣魚者的詐騙，且可能傳送郵件到使用者端來欺騙使用者，除非電子郵件篩選器使用另外的原則進行偵測：
   
-![Fortune 500 公司的 DMARC 原則](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![財富雜誌前 500 大公司採用的 DMARC 原則](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
   
-小型至中型大小公司的比例不在發佈強式電子郵件驗證原則 Fortune 500 為較小，和小仍為 「 北美地區 」 及西歐外的網域。
+不在財富雜誌前 500 大中的中小型企業，有發佈強式電子郵件驗證原則的比例更少，且北美和西歐地區以外的網域具有強式電子郵件驗證原則的比例同樣很少。
   
-因為網路釣客雖然企業可能不知道電子郵件驗證的運作方式，執行了解，並利用缺乏，這會是大的問題。
+這是個嚴重的問題，因為企業可能沒意識到電子郵件驗證的功用，但網路釣魚者卻瞭若指掌並利用這項缺口。
   
-設定 SPF，DKIM、 DMARC 的詳細資訊，請參閱 [] 區段中 「 更新版本文件中的*客戶的 Office 365 」* 。 
+如需設定 SPF、DKIM 和 DMARC 的相關資訊，請參閱本文稍後的 *Office 365 的客戶*這一節。 
   
-## <a name="stopping-spoofing-with-implicit-email-authentication"></a>停止使用隱含的電子郵件驗證詐騙
+## <a name="stopping-spoofing-with-implicit-email-authentication"></a>使用隱含的電子郵件驗證防止詐騙
 
-因為網路釣魚和矛網路釣魚這類問題，且強式電子郵件驗證原則限制的採用，因為 Microsoft 會繼續投入來保護其客戶的功能。 因此，Microsoft 向前移動使用*隱含的電子郵件驗證*-如果網域不會驗證，Microsoft 會將它視為它有發佈電子郵件驗證記錄並且將它視為據此如果它不會傳遞。 
+因為網路釣魚和魚叉式網路釣魚這類問題的發生，以及強式電子郵件驗證原則的採用率有限，Microsoft 持續開發各項功能來保護客戶。 因此，Microsoft 已開始採用*隱含的電子郵件驗證*，如果網域未進行驗證，Microsoft 會將它視為它已發佈電子郵件驗證記錄，並在未通過時對其進行相應處理。 
   
-若要這麼做，Microsoft 已內建許多一般的電子郵件的驗證，包括寄件者信譽、 寄件者/收件者歷程記錄、 行為分析和其他進階的技術擴充功能。 寄件者不會發佈電子郵件驗證網域的郵件會被標示為詐騙除非它包含其他信號表示它是合法。
+為此，Microsoft 為一般電子郵件驗證建置了大量擴充功能，包括寄件者信譽、寄件者/收件者歷史記錄、行為分析和其他先進技術。 傳送郵件的網域若未發佈電子郵件驗證，該郵件將被標示為詐騙郵件，除非郵件包含其他能指出其合法性的訊號。
   
-如此一來，使用者可的結束電子郵件傳送給它們不被冒名的信賴度，寄件者可以放心人模擬其網域和 Office 365 客戶可以提供更好的防護，如模擬保護。
+如此一來，使用者就能確信他們所收到的電子郵件未遭到假冒，寄件者也能放心，沒有人會冒充他們的網域，而 Office 365 的客戶也能提供更完善的防護，如冒充防護。
   
-若要查看 Microsoft 的一般宣告，請參閱 < <b0>Sea 的 Phish 第 2 部分-Office 365 中增強反詐騙</b0>。
+若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Office 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209) (英文)。
   
-## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>識別郵件分類為詐騙
+## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>識別分類為詐騙郵件的郵件
 
 ### <a name="composite-authentication"></a>複合驗證
 
-雖然 SPF，DKIM、 DMARC 自行都很有用，它們不在事件訊息有無明確驗證記錄通訊不足，無法驗證狀態。 因此，Microsoft 已開發的演算法，將多個訊號結合成複合式驗證或 compauth 呼叫簡稱為單一值。 在 Office 365 的客戶有 compauth 值戳印在郵件標頭中的*Authentication-results*標頭。 
+雖然 SPF、DKIM 和 DMARC 本身是很有幫助，但是如果郵件沒有明確驗證記錄，它們不會傳達足夠的驗證狀態。 因此，Microsoft 開發了一種演算法，將多個訊號組合成一個稱為「複合驗證」的單一值，或簡稱為 compauth。 系統會在 Office 365 客戶的郵件標頭的 *Authentication-Results* 標頭中，註記 compauth 值。 
   
 ```
 Authentication-Results:
@@ -94,80 +94,80 @@ Authentication-Results:
 
 |**CompAuth 結果**|**描述**|
 |:-----|:-----|
-|失敗|郵件無法明確驗證 （傳送網域發佈記錄明確地在 DNS 中） 或隱含驗證 （傳送網域沒有不發佈記錄在 DNS 中，讓 Office 365 內插結果好像它已發佈的記錄）。|
-|傳遞|郵件傳遞明確驗證 （郵件通過 DMARC 或[最佳猜測通過 DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)） 或具有高信賴度隱含驗證 （傳送網域不會發佈電子郵件驗證記錄，但 Office 365 具有強式的後端訊號，以指出郵件為可能合法)。|
-|softpass|郵件傳遞隱含的驗證與低-中型信賴 （傳送網域不會發佈電子郵件驗證，但 Office 365 後端訊號，以指出郵件為合法但弱的訊號的強度）。|
-|無|未先驗證訊息 （或未驗證，但未對齊），但由於寄件者信譽或其他因素而不會套用複合驗證。|
+|失敗|郵件未通過明確驗證 (傳送網域明確地在 DNS 中發佈記錄) 或隱含驗證 (傳送網域未在 DNS 中發佈記錄，因此 Office 365 將結果內插為已發佈記錄)。|
+|通過|郵寄通過明確驗證 (郵件通過 DMARC 或 [Best Guess Passed DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) 或信賴度高的隱含驗證 (傳送網域未發佈電子郵件驗證記錄，但 Office 365 具有強式後端訊號，指出郵件可能合法)。|
+|softpass|郵件通過信賴度低到中的隱含驗證 (傳送網域未發佈電子郵件驗證，但 Office 365 具有後端訊號，指出郵件為合法，但訊號的強度較弱)。|
+|無|郵件未進行驗證 (或有進行驗證，但不符合)，但因為寄件者信譽或其他因素而未套用複合驗證。|
    
 |||
 |:-----|:-----|
 |**原因**|**描述**|
-|0xx|複合驗證失敗訊息。<br/>**000**表示郵件無法以拒絕或隔離] 動作的 DMARC。  <br/>**001**表示郵件無法隱含的電子郵件驗證。 這表示在傳送網域沒有不會發佈，電子郵件驗證記錄或者一樣，如果他們有弱的失敗原則 (SPF fail 或 neutral，DMARC 原則的 p = 無)。  <br/>**002**表示該組織有明確禁止傳送冒名的電子郵件的寄件者/網域組的原則，系統管理員手動設定此設定。  <br/>**010**表示郵件無法使用拒絕或隔離，巨集指令的 DMARC，並在傳送網域是下列其中一個貴組織的公認的網域 (這是 self-self 或組織內部的一部分詐騙)。  <br/>**011**表示郵件無法通過隱含的電子郵件的驗證，並在傳送網域是下列其中一個貴組織的公認的網域 (這是 self-self 或組織內部的一部分詐騙)。|
-|所有其他代碼 （1xx、 2xx、 3xx、 4xx、 5xx）|對應至各種內部代碼的郵件傳遞隱含驗證，或不有任何驗證，但沒有巨集指令所套用的原因。|
+|0xx|郵件未通過複合驗證。<br/>**000** 表示郵件未通過 DMARC，並產生拒絕或隔離動作。  <br/>**001** 表示郵件未通過隱含電子郵件驗證。 這表示，傳送網域未發佈電子郵件驗證記錄，或是有發佈，但是擁有較弱的失敗原則 (SPF 非封鎖性失敗或中性，DMARC 原則為 p=none)。  <br/>**002** 代表組織擁有的寄件者/網域配對原則明確禁止傳送詐騙電子郵件，這項設定是由系統管理員手動設定。  <br/>**010** 表示郵件未通過 DMARC，並產生拒絕或隔離動作，而傳送網域是組織接受的其中一個網域 (為 self-to-self 或 intra-org, spoofing 的一部分)。  <br/>**011** 表示郵件未通過隱含的電子郵件驗證，而傳送網域是組織接受的其中一個網域 (為自我詐騙，或稱為組織內部詐騙的一部分)。|
+|其他所有代碼 (1xx、2xx、3xx、4xx、5xx)|對應於不同內部代碼，說明為何郵件通過隱含驗證，或未進行驗證但卻未採取動作的原因。|
    
-查看郵件的標頭，以系統管理員或甚至是使用者可以決定 Office 365 到達結束時可能遭到假冒寄件者的方式。
+透過查看郵件標頭，系統管理員甚至使用者可以判斷 Office 365如何做出寄件者可能被假冒的結論。
   
-### <a name="differentiating-between-different-types-of-spoofing"></a>區別不同類型的詐騙
+### <a name="differentiating-between-different-types-of-spoofing"></a>區分不同類型的詐騙
 
-Microsoft 區分兩種不同類型的詐騙郵件：
+Microsoft 將詐騙郵件區分為兩種類型：
   
  **組織內部詐騙**
   
-也稱為自助-自助詐騙，發生這種情況時的網域，在 [從： 地址相同，或是配合收件者網域 （當收件者網域是下列其中一個貴組織的[公認的網域](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)）;或者，當在 [從網域： 地址是相同的組織的一部分。
+也稱為自我詐騙，當寄件者地址中的網域與收件者網域相同或相符時 (當收件者網域是組織[接受的網域](https://technet.microsoft.com/zh-TW/library/jj945194%28v=exchg.150%29.aspx)之一時)，就會發生這種情況；或者，當寄件者地址中的網域是同一組織的一部分時。
   
-例如，下列寄件者和收件者從具有相同的網域 (contoso.com)。 空格插入可防止特色收集在此頁面上的電子郵件地址）：
+例如，下列寄件者和收件者來自相同網域 (contoso.com)。 在電子郵件地址間插入空格以防止垃圾郵件機器人從此網頁進行收集)：
   
-從： 寄件者 @ contoso.com
+寄件者: sender @ contoso.com
   
-收件者： 收件者 @ contoso.com
+收件者: recipient @ contoso.com
   
-下列具有對齊與組織的網域 (fabrikam.com) 的寄件者和收件者網域：
+下列寄件者和收件者網域與組織網域相符 (fabrikam.com)：
   
-從： 寄件者 @ foo.fabrikam.com
+寄件者: sender @ foo.fabrikam.com
   
-收件者： 收件者 @ bar.fabrikam.com
+收件者: recipient @ bar.fabrikam.com
   
-下列的寄件者和收件者網域是不同 （microsoft.com 和 bing.com），但他們都屬於相同的組織 （亦即，同時屬於組織的公認的網域）：
+下列寄件者和收件者網域不同 (microsoft.com 和 bing.com)，但他們屬於同個組織 (也就是，他們同屬於組織接受的網域)：
   
-從： 寄件者 @ microsoft.com
+寄件者: sender @ microsoft.com
   
-收件者： 收件者 @ bing.com
+收件者: recipient @ bing.com
   
-無法通過組織內部詐騙郵件包含標頭中的下列值：
+未通過組織內部詐騙的郵件，其標頭包含下列值：
   
-X Forefront-反垃圾郵件報告:...]CAT:SPM/HSPM/PHSH;...]SFTY:9.11
+X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11
   
-CAT is 的郵件類別和它通常加上戳記，做為 SPM （垃圾郵件），但有時會是 HSPM （高信賴度垃圾郵件） 或釣魚程式 （網路釣魚） 取決於哪些其他類型的模式中可能發生郵件。
+CAT 是郵件類別，一般會註記為 SPM (垃圾郵件)，但偶而會註記為 HSPM (信賴度高的垃圾郵件) 或 PHISH (網路釣魚)，係根據郵件內發現的其他模式類型而定。
   
-SFTY 是郵件的安全層級、 第一個數字 (9) 表示郵件是網路釣魚，而第二組數字後點 (11) 表示它是組織內部詐騙。
+SFTY 是郵件安全層級，第一個數字 (9) 表示郵件是網路釣魚，而點之後的第二組數字 (11) 表示其為組織內部詐騙。
   
-沒有特殊原因程式碼的組織內部詐騙，將會加上戳記稍後 2018 （時間表尚未定義） 的複合驗證。
+尚未提供「複合驗證」特定的原因碼來表示組織內部詐騙，將於 2018 下半年加以註記 (時間表未定)。
   
  **跨網域詐騙**
   
-發生這種情況時傳送的網域，在 [從： 地址是在接收組織外部網域。 由於跨網域詐騙失敗複合驗證的訊息包含標頭中的下列值：
+當收件者地址中的傳送網域是接收組織的外部網域時，就會發生這種情況。 因為跨網域詐騙在標頭會包含下列值，因此郵件未通過複合驗證：
   
-驗證結果:...] compauth = 失敗原因 = 000/001
+Authentication-Results: … compauth=fail reason=000/001
   
-X Forefront-反垃圾郵件報告:...]CAT:SPOOF;...]SFTY:9.22
+X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22
   
-在這兩種情況下，下列的紅色的安全提示中加上訊息或自訂收件者的信箱語言為對等項目：
+在這兩種情況下，郵件中會註記下列紅色安全提示，或依照收件者信箱語言自訂的相同提示：
   
-![紅色的安全提示-詐騙偵測](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![紅色安全提示 - 詐騙偵測](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
   
-它是只透過查看 [從： 地址和知道您收件者的電子郵件的，或藉由檢查的電子郵件標頭，就能區分組織內部及跨網域詐騙。
+透過查看收件者地址並了解收件者電子郵件的內容，或者透過檢查電子郵件標頭，您才能分辨內部組織詐騙和跨網域詐騙。
   
-## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>如何的 Office 365 客戶可以自行為準備新的反詐騙保護
+## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>Office 365 客戶如何預備自己，以採用全新的反詐騙防護
 
-### <a name="information-for-administrators"></a>系統管理員的資訊
+### <a name="information-for-administrators"></a>適用於系統管理員的資訊
 
-以在 Office 365 組織的系統管理員身分，有數個關鍵您應該要知道的資訊。
+身為 Office 365 組織的系統管理員，您應該留意一些重要資訊。
   
-### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>了解為什麼電子郵件驗證不一定足以停止詐騙
+### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>了解為什麼電子郵件驗證不一定能夠阻止詐騙
 
-新的反詐騙保護依賴電子郵件驗證 （SPF、 DKIM 和 DMARC） 未將郵件標記為詐騙。 常見的範例時，傳送網域永遠不會發佈 SPF 記錄。 如果沒有任何 SPF 記錄或者他們不正確地設定，已傳送的郵件會被標示為冒名除非 Microsoft 具有指出郵件為合法的後端智慧。
+新的反詐騙防護依賴電子郵件驗證 (SPF、DKIM 和 DMARC) 不要將郵件標示為詐騙郵件。 常見的範例是，傳送網域永不發佈 SPF 記錄。 如果沒有 SPF 記錄，或未正確設定 SPF 記錄，已傳送的郵件會被標示為詐騙郵件，除非 Microsoft 的後端情報指出該郵件為合法。
   
-例如之前反詐騙要部署，, 郵件可能會看起來與沒有 SPF 記錄，沒有 DKIM 的記錄，並無的 DMARC 記錄下列： 
+例如，在部署反詐騙功能之前，郵件可能看起來會像下面一樣，沒有 SPF 記錄、沒有 DKIM 記錄，也沒有 DMARC記錄： 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -177,7 +177,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-之後反詐騙，如果您有 Office 365 企業版 E5、 EOP 或 ATP，compauth 值會加上戳記：
+部署反詐騙功能之後，如果您有 Office 365 企業版 E5、EOP 或 ATP，則會加註 compauth 值：
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -189,7 +189,7 @@ To: receiver @ contoso.com
 
 ```
 
-如果 example.com 會修正這藉由設定 SPF 記錄，但不是 DKIM 記錄，這就會通過複合驗證，因為傳遞 SPF 網域對齊的網域，在 [從： 地址： 
+如果 example.com 設定了 SPF 記錄，但未設定 DKIM 記錄，郵件可能會通過複合驗證，因為通過 SPF 的網域與寄件者地址中的網域相符： 
   
 ```
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
@@ -200,7 +200,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-或者，如果他們設定 DKIM 記錄，但不是 SPF 記錄，這會同時傳遞複合驗證因為傳遞 DKIM 簽章中的網域對齊的網域，在 [從： 地址： 
+或者，如果設定了 DKIM 記錄，但未設定 SPF 記錄，郵件還是會通過複合驗證，因為通過 DKIM-Signature 的網域與寄件者地址中的網域相符： 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -212,7 +212,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-不過，phisher 可能也設定 SPF 和 DKIM 和登入自己的網域的郵件，但指定不同的網域，在 [從： 地址。 SPF 和 DKIM 都不需要以符合在 [從網域的網域： 地址，所以除非 example.com 發佈 DMARC 的記錄，這會將標示為使用 DMARC 詐騙： 
+不過，網路釣魚者也可能會設定 SPF 和 DKIM，並使用自己的網域來簽署郵件，但在寄件者地址中指定不同的網域。 SPF 或 DKIM 都未要求網域與寄件者地址中的網域相符，因此除非 example.com 發佈了 DMARC 記錄，否則使用 DMARC 不會將郵件標示為詐騙： 
   
 ```
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
@@ -223,11 +223,11 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-在 [電子郵件用戶端 (Outlook web 應用程式或任何其他電子郵件用戶端上的 Outlook)，只能從： 網域，則不在 SPF 或 DKIM，且網域可以到思考郵件是來自 example.com，但實際上是來自 maliciousDomain.com 誤導使用者.
+在電子郵件用戶端 (Outlook、網頁版 Outlook 或任何其他電子郵件用戶端) 中，只會顯示寄件者網域，不會顯示 SPF 或 DKIM 中的網域，這可能會誤導使用者認為郵件是來自 example.com，但實際上郵件來自 maliciousDomain.com。
   
-![已驗證的訊息但從： 網域未對齊項目通過 SPF 或 DKIM](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![郵件已通過驗證，但寄件者網域未與通過 SPF 或 DKIM 的網域相符](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
   
-基於這個理由，Office 365 的所需的網域，在 [從： 地址配合 SPF 或 DKIM 簽章中的網域，且如果它不支援，包含一些其他內部訊號，指出郵件合法。 否則，郵件就是 compauth 失敗。 
+為此，Office 365 要求寄件者地址中的網域與 SPF 或 DKIM 簽章中的網域相符，若未相符，則會包含某些其他內部訊號，來指出該郵件為合法郵件。 否則，郵件的 compauth 會失敗。 
   
 ```
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
@@ -239,43 +239,43 @@ From: sender@contoso.com
 To: someone@example.com
 ```
 
-因此，Office 365 反詐騙保護未驗證的網域，但檢查設定驗證，但不符合針對在 [從網域的網域： 地址，也就是一，使用者會看到並相信是郵件的寄件者。 這是這兩個組織外部的網域，以及組織內的網域，則為 true。
+因此，Office 365 反詐騙會阻止沒有驗證的網域、阻止設定驗證，但寄件者地址中的網域不相符的網域，因為這是使用者看到的網域並會相信這就是郵件的寄件者。 這在組織外部的網域，以及組織內的網域都是如此。
   
-因此，如果您曾經收到複合驗證失敗，並標示為冒名，即使郵件通過 SPF 和 DKIM 的訊息，它會是因為通過 SPF 和 DKIM 網域不一致的網域，在 [從： 地址。
+因此，如果您曾經收到未通過複合驗證的郵件被標示為詐騙郵件，即使郵件已通過 SPF 和 DKIM，這是因為通過 SPF 和 DKIM 的網域與寄件者地址中的網域不相符。
   
-### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>了解如何冒名的電子郵件中的變更會被視為
+### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>了解詐騙電子郵件處理方式的變化
 
-目前，針對所有的組織中 Office 365-ATP 和非-ATP-郵件使用拒絕或隔離原則 DMARC 就會標示為垃圾郵件和通常需要 [高信賴度垃圾郵件] 動作，或有時一般的垃圾郵件動作的失敗 (根據其他垃圾郵件規則先加以識別為垃圾郵件）。 組織內部詐騙偵測採取垃圾郵件規則。 此行為不需要啟用，也可以停用它。
+目前，對於 Office 365 中的所有組織 - ATP 和非 ATP - 未通過 DMARC 的郵件若套用拒絕或隔離原則，將被標示為垃圾郵件，並且通常會採取信賴度高的垃圾郵件動作，有時候則採取一般垃圾郵件動作 (取決於是否有其他垃圾郵件規則首將它識別為垃圾郵件)。 組織內部詐騙偵測會採取一般垃圾郵件動作。 不需要啟用此行為，也不能停用此行為。
   
-不過，跨網域詐騙郵件，這項變更之前他們會經過一般的垃圾郵件、 釣魚程式和惡意程式碼檢查與如果篩選器的其他組件 」 將其識別為可疑，將他們分別標示為垃圾郵件、 釣魚程式或惡意程式碼。 使用新的跨網域詐騙保護，無法進行驗證的任何郵件將根據預設，採取的動作中反網路釣魚定義\>反詐騙的原則。 如果其中一個未定義，它將會移至使用者的垃圾郵件] 資料夾。 在某些情況下，更可疑的郵件也會有紅色的安全提示新增到郵件。
+但是，對於跨網域詐騙郵件，在此變更之前，它們會經過一般垃圾郵件、網路釣魚和惡意程式碼檢查，如果篩選器的其他部分將其標示為可疑，則會將它們分別標記為垃圾郵件、網路釣魚或惡意程式碼。 透過新的跨網域詐騙防護，在預設情況下，任何無法通過驗證的郵件都將採取 [防網路釣魚] \> [反詐騙] 原則中定義的動作。 如果其中一項未定義，就會將郵件移到使用者的 [垃圾郵件] 資料夾。 在某些情況下，還會在較可疑的郵件上新增紅色安全提示。
   
-這可能會導致先前已標示為垃圾郵件仍被標示為垃圾郵件，但現在也有紅色的安全提示; 某些郵件在其他情況下，新增先前已標示為非垃圾郵件會開始被標示為垃圾郵件 (CAT:SPOOF) 具有紅色安全提示的郵件。 在仍其他情況下，已移動所有垃圾郵件及釣魚程式至隔離區的客戶會立即看到它們移至 [垃圾郵件] 資料夾 （此行為，可以變更，請參閱[變更您的反詐騙設定](#changing-your-anti-spoofing-settings)）。
+這可能會導致之前標示為垃圾郵件的某些郵件仍被標示為垃圾郵件，但現在還會顯示紅色安全提示；在其他情況下，之前標示為非垃圾郵件的郵件將開始被標示垃圾郵件 (CAT:SPOOF)，並新增紅色安全提示。 在其他情況下，將所有垃圾郵件和網路釣魚郵件移到隔離區的客戶現在會看到這些郵件轉到 [垃圾郵件] 資料夾 (此行為可變更，請參閱[變更您的反詐騙設定](#changing-your-anti-spoofing-settings))。
   
-有多個不同的方式可以假冒 （請參閱本文稍早的[不同類型的詐騙之間 Differentiating](#differentiating-between-different-types-of-spoofing) ） 一則訊息，但截至 2018 年 3 月，Office 365 會將這些郵件的方法不尚未整合。 下表是快速摘要] 中，使用跨網域詐騙保護被新的行為： 
+假冒郵件有多種不同的方式 (請參閱本文稍早所述的的[區分不同類型的詐騙](#differentiating-between-different-types-of-spoofing))，但是截至 2018 年 3 月，Office 365 處理這些郵件的方式尚未統一。 下表快速摘要跨網域詐騙防護這個新行為： 
   
-|**詐騙的類型**|**類別**|**新增安全提示？**|**適用於**|
+|**詐騙類型**|**類別**|**是否新增安全提示？**|**適用對象**|
 |:-----|:-----|:-----|:-----|
-|DMARC 失敗 （隔離或拒絕）  <br/> |HSPM （預設值），也可能 SPM 或 PHSH  <br/> |否 （尚未）  <br/> |所有 Office 365 客戶 Outlook.com  <br/> |
-|自助-自助  <br/> |SPM  <br/> |是  <br/> |所有 Office 365 組織 Outlook.com  <br/> |
-|跨網域  <br/> |詐騙  <br/> |是  <br/> |Office 365 進階威脅防護和 E5 客戶  <br/> |
+|DMARC 失敗 (隔離或拒絕)  <br/> |HSPM (預設)，也可以是 SPM 或 PHSH  <br/> |否 (還沒有)  <br/> |所有 Office 365 客戶，Outlook.com  <br/> |
+|自我  <br/> |SPM  <br/> |是  <br/> |所有 Office 365 組織，Outlook.com  <br/> |
+|跨網域  <br/> |詐騙  <br/> |是  <br/> |Office 365 進階威脅防護 (ATP) 與 E5 客戶  <br/> |
 
 ### <a name="changing-your-anti-spoofing-settings"></a>變更您的反詐騙設定
 
-若要建立或更新 （跨網域） 反詐騙設定，瀏覽至 [防網路釣魚\>威脅管理] 下的反詐騙設定\>安全性原則] 索引標籤&amp;合規性中心。 如果您從未建立任何反網路釣魚的設定，您必須建立一個：
+若要建立或更新 (跨網域) 反詐騙設定，請瀏覽至 [安全性與合規性中心] 中的 [威脅管理] \> [原則] 索引標籤下的 [防網路釣魚] \>[反詐騙] 設定。 如果您之前從未建立過任何防網路釣魚設定，您必須建立一個新：
   
-![反網路釣魚-建立新的原則](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![防網路釣魚 - 建立新原則](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
   
-如果您已經建立一個，您可以選取要對其進行修改：
+如果您已建立，則可以加以選取來修改：
   
-![反網路釣魚-修改現有的原則](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![防網路釣魚 - 修改現有原則](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
   
-選取您剛剛建立，並繼續執行步驟，[了解詐騙情報多個](learn-about-spoof-intelligence.md)所述的原則。
+選取您剛剛建立的原則，然後繼續進行[深入了解詐騙情報](learn-about-spoof-intelligence.md)中所述的步驟。
   
-![啟用或停用反詐騙](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![啟用或停用反詐騙功能](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
   
 ![啟用或停用反詐騙安全提示](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
   
-若要使用 PowerShell 建立新的原則： 
+若要使用 PowerShell 建立新原則： 
   
 ```powershell
 $org = Get-OrganizationConfig
@@ -291,28 +291,28 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy $name -RecipientDomainIs $domains
 ```
 
-然後，您可能會修改使用 PowerShell，下列[設定 AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps)文件的防網路釣魚原則參數。 您可能會當做參數指定 $name:
+您可以使用 PowerShell 並遵照 [Set-AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps) 文件中的指示來修改防網路釣魚原則參數。 您可以指定 $name 做為參數：
   
 ```powershell
 Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 ```
 
-稍後 2018，而不是您不必建立一個預設原則，其中會加以建立，因此您不需要以手動方式指定範圍限定為您組織中的所有收件者 （以下螢幕擷取畫面受限於最終實作之前變更）。
+2018 年下半年，就不需要由您來建立預設原則，系統會為您建立一個涵蓋組織內所有收件者的原則，因此您就不需手動指定 (在最終實作前，以下螢幕擷取畫面有可能變更。)
   
-![預設的反網路釣魚原則](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![防網路釣魚的預設原則](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
   
-不同於您所建立的原則，您無法刪除預設原則，修改它的優先順序，或選擇將範圍至哪一個使用者、 網域或群組。
+不同於您所建立的原則，您無法刪除預設原則、修改它的優先順序，或選擇要納入範圍的使用者、網域或群組。
   
-![反網路釣魚預設原則的詳細資訊](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![防網路釣魚預設原則的詳細資訊](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-若要使用 PowerShell 來設定預設保護：
+若要使用 PowerShell 設定預設的防護功能：
   
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
-您應該僅停用反詐騙保護如果您有另一部信箱伺服器或在 Office 365 前方的伺服器 （請參閱合法的案例，以停用反詐騙如需詳細資訊）。
+只有當 Office 365 前面有另一台郵件伺服器或多台伺服器，您才應該停用反詐騙防護功能 (詳細資料，請參閱「停用反詐騙功能的合法案例」)。
   
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
@@ -320,29 +320,29 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 
 ```
 > [!IMPORTANT]
-> 如果您的電子郵件路徑中的第一個躍點是 Office 365，並收到太多合法電子郵件標示為詐騙，您應該先設定您允許將冒名的電子郵件傳送到您網域的寄件者 （請參閱節 *」 管理合法寄件者所傳送 unauthenticated 電子郵件 」* )。 如果您仍收到太多誤判 （也就是合法郵件標示為詐騙），我們不建議停用反詐騙保護夾雜在一起。 相反地，我們建議您選擇基本而不最高保護。 最好是透過誤判比至公開最後意來得高成本的長期詐騙電子郵件組織運作。
+> 如果電子郵件路徑中的第一躍點是 Office 365，且有太多合法電子郵件被標示為詐騙郵件，您應該先設定允許傳送詐騙電子郵件到您網域的寄件者 (請參閱*管理傳送未經驗證電子郵件的合法寄件者*)。 如果還是發生太多誤判 (也就是合法郵件被標示為詐騙郵件)，我們則不建議停用反詐騙防護功能。 但是，我們建議您選擇基本防護，不要選擇高度防護。 處理誤判總比將組織暴露在詐騙電子郵件下好，因為後者長期下來可能會耗費相當可觀的成本。
 
-### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>管理合法的寄件者所傳送未驗證的電子郵件
+### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>管理傳送未經驗證電子郵件的合法寄件者
 
-記錄傳送者誰未經驗證的電子郵件至您的組織的 office 365。 如果服務認為不合法寄件者，它會將它標記為*compauth*失敗。 這會歸類為詐騙，雖然這取決於您已套用至郵件的反詐騙原則。
+Office 365 會追蹤誰傳送未經驗證電子郵件到您的組織。 如果該服務認為寄件者不合法，則會標示為 *compauth* 失敗。 雖然需要根據郵件所套用的反詐騙原則，此郵件還是會分類為詐騙郵件。
   
-不過，身為管理員，您可以指定哪些寄件者允許傳送冒名的電子郵件，覆寫 Office 365 的決策。
+不過，身為系統管理員，您可以指定可傳送詐騙電子郵件的寄件者，來覆寫 Office 365 決策。
   
-**方法 1-如果您的組織擁有的網域、 設定電子郵件的驗證**
+**方法 1 - 如果您的組織擁有該網域，請設定電子郵件驗證**
   
-此方法可以用來解決組織內部詐騙和跨網域詐騙在您擁有或互動的情況下使用多重租用戶。 它也可以協助解決跨網域詐騙您傳送給其他 Office 365 內的客戶，也裝載於其他提供者的第三方。
+在您擁有多個租用戶，或與多個租用戶互動的情況下，這個方法可用來解決組織內部詐騙和跨網域詐騙。 其也有助於解決跨網域詐騙，您在其中傳送郵件給 Office 365 內的客戶，以及主控於其他提供者的第三方。
   
-如需詳細資訊，請參閱 < <b0>Office 365 的客戶</b0>。
+如需詳細資訊，請參閱 [Office 365 的客戶](#customers-of-office-365)。
 
-**方法 2-設定未驗證的電子郵件的允許寄件者使用詐騙智慧**
+**方法 2 - 使用詐騙情報來設定允許傳送未經驗證電子郵件的寄件者**
   
-您也可以使用[詐騙智慧](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)允許未經驗證的郵件傳輸至貴組織的寄件者。 
+您也可以使用[詐騙情報](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)來允許寄件者將未經驗證的郵件傳送至您的組織。 
   
-外部網域，如詐騙的使用者是中的 From 地址的網域傳送基礎結構時傳送端 IP 位址 (分成/24 CIDR 範圍)，或組織的網域的 PTR 記錄 （在以下的螢幕擷取畫面，傳送 IP 可能是的 PTR 記錄是 outbound.mail.protection.outlook.com，131.107.18.4，而且這會顯示為 [傳送基礎結構的 outlook.com）。
+對外部網域來說，詐騙使用者是寄件者地址中的網域，而傳送基礎架構則是傳送 IP 位置 (分為 /24 CIDR 範圍) 或 PTR 記錄的組織網域 (在以下螢幕擷取畫面中，傳送 IP 可能是131.107.18.4，其 PTR 記錄是 outbound.mail.protection.outlook.com，這將顯示為傳送基礎架構的 outlook.com)。
   
-若要允許此寄件者傳送未驗證的電子郵件，變更為 [ **]** 的**否]** 。
+若要允許此寄件者傳送未經驗證的電子郵件，請將 [否] **** 變更為 [是]****。
   
-![設定反詐騙的允許寄件者](media/d4334921-d820-4334-8217-788279701e94.jpg)
+![設定反詐騙允許的寄件者](media/d4334921-d820-4334-8217-788279701e94.jpg)
   
 您也可以使用 PowerShell 以允許特定寄件者偽造您的網域：
   
@@ -354,13 +354,13 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![從 Powershell 取得詐騙的寄件者](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![從 Powershell 設定冒名寄件者](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
   
-在上圖中額外的分行符號已新增若要讓這個螢幕擷取畫面配合。 一般而言，所有的值會出現在單一行上。
+在上一個影像中，新增了額外的分行符號，讓這個螢幕擷取畫面顯示為最適大小。 一般來說，所有值會顯示在同一行。
   
-編輯檔案並尋找對應至 outlook.com 和 bing.com，那一行，AllowedToSpoof 項目變更為 [是] 否從：
+編輯檔案並尋找對應至 outlook.com 和 bing.com 的行，並將 AllowedToSpoof 項目從 No 變更為 Yes：
   
-![在 Powershell 中的 [是] 允許設定詐騙](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![在 Powershell 中將 spoof allow 設定為 Yes](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
   
 儲存檔案，然後再執行：
   
@@ -369,105 +369,105 @@ $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
 Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
 ```
 
-現在，這樣可讓傳送未驗證的電子郵件從 bing.com \*。 outlook.com。
+現在，這能讓 bing.com 從 \*.outlook.com 傳送未經驗證的電子郵件。
 
-**方法 3-建立寄件者/收件者對允許項目**
+**方法 3 - 為寄件者/收件者配對建立允許項目**
   
-您也可以選擇略過所有的垃圾郵件篩選特定寄件者。 如需詳細資訊，請參閱 < <b0>How to： 安全地新增到 Office 365 中的 [允許] 清單寄件者</b0>。
+您也可以選擇略過篩選特定寄件者的所有垃圾郵件。 如需詳細資訊，請參閱[如何在 Office 365 中安全地將寄件者新增至允許清單](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/) (英文)。
   
-如果您使用此方法時，它會略過垃圾郵件與部分的釣魚程式篩選，但卻不惡意程式碼篩選。
+如果您使用這個方法，將略過垃圾郵件和部分網路釣魚篩選，但不會略過惡意程式碼篩選。
   
-**方法 4-連絡寄件者，並請他們設定電子郵件的驗證**
+**方法 4 - 連絡寄件者，並要求他們設定電子郵件驗證**
   
-因為垃圾郵件和網路釣魚的問題，Microsoft 建議您設定電子郵件驗證所有寄件者。 如果您知道傳送網域的系統管理員，請連絡它們並要求將它們設定成電子郵件驗證記錄使您不需要加任何覆寫。 如需詳細資訊，請參閱 <<c0>的網域都不是 Office 365 客戶的系統管理員」 本文稍後的。 
+有鑑於垃圾郵件和網路釣魚問題，Microsoft 建議所有寄件者設定電子郵件驗證。 如果您知道傳送網域的系統管理員，請連絡他們來設定電子郵件驗證記錄，這樣您就不需要新增任何覆寫設定。 如需詳細資訊，請參閱本文稍後的[非 Office 365 客戶的網域系統管理員](#administrators-of-domains-that-are-not-office-365-customers)。 
   
-時可能很難在第一次取得傳送網域來進行驗證，經過一段時間，為越來越多電子郵件篩選器啟動 junking 或甚至拒絕他們的電子郵件時，就會造成這些設定的適當的記錄，以確保較佳的傳遞。
+雖然一開始驗證傳送網域可能會有困難，但隨著時間過去，有越來越多的電子郵件篩選器開始篩選垃圾郵件或甚至拒絕他們的電子郵件，促使他們設定正確記錄以確保更佳的傳遞。
   
-### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>檢視多少郵件已標示為冒名的報告
+### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>檢視報告，了解有多少郵件被標示為詐騙郵件
 
-一旦啟用您的反詐騙政策，您可以使用威脅情報來讓周圍多少訊息標示為釣魚程式的數字。 若要這麼做，請移至安全性&amp;合規性中心 (SCC) 威脅管理下\>總管] 中，將檢視設定釣魚程式，以及群組所寄件者網域] 或 [保護狀態：
+啟用反詐騙原則後，您就可以使用威脅情報，來得知有多少郵件被標示為網路釣魚郵件。 若要這麼做，請移至安全性與合規性中心 (SCC)，在 [威脅管理] \> [總管] 下，將 [檢視] 設為 [網路釣魚]，並依 [寄件者網域] 或 [防護狀態] 來群組：
   
-![檢視多少訊息標示為釣魚程式](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![檢視有多少郵件被標示為網路釣魚郵件](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
   
-您可以與各種不同的報告，以查看多少被標示為網路釣魚，包括郵件標示為詐騙互動。 若要深入了解，請參閱[Office 365 威脅情報快速入門](get-started-with-ti.md)。
+您可以與各式各樣的報告互動，以查看有多少郵件被標示為網路釣魚郵件，包括被標示為 SPOOF 的郵件。 若要深入了解，請參閱[Office 365 威脅情報快速入門](get-started-with-ti.md)。
   
-您還不能分割哪一個郵件已標示為因為詐騙而非其他類型的網路釣魚 （一般網路釣魚、 網域或使用者模擬，等等）。 不過，更新版本中，您將能夠執行這項操作透過安全性&amp;合規性中心。 一旦您這麼做，您可以使用的起始位置為這份報告來識別可能合法的會被標示為因為失敗的驗證詐騙的寄送網域。
+由於詐騙而不是其他類型的網路 (一般網路釣魚，網域使用者冒充等)，您還無法拆分哪些郵件被標記。 不過，日後您將能透過安全性與合規性中心來完成。 之後，您就可以使用這份報告來辨別因為驗證失敗，導致可能合法但被卻標示為詐騙的傳送網域。
   
-下列螢幕擷取畫面會提案，此資料的看起來，但發行時可能會變更：
+下列螢幕擷取畫面是此資料外觀的提議，但發行時可能有所變更：
   
-![檢視網路釣魚報告偵測類型](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![依據偵測類型檢視網路釣魚報告](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
   
-非 ATP 和 E5 客戶，這些報告可稍後下威脅保護狀態 (TPS) 報告，請使用，但將至少 24 小時的延遲。 將更新此頁面上，因為它們已整合至安全性&amp;合規性中心。
+針對非 ATP 和 E5 的客戶，之後可在威脅防護狀態 (TPS) 報告下使用這些報告，但將延遲至少 24 個小時。 當這些客戶整合至安全性與合規性中心之後，這個頁面將會更新。
   
-### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>預測解決方案能夠提供多少郵件會被標示為詐騙
+### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>預測有多少郵件被標示為詐騙郵件
 
-一旦 Office 365 更新其設定，以讓您在關閉反詐騙強制執行，或在與基本或高強制執行，您將能夠查看如何在各種設定變更郵件處理的能力。 也就是說，如果反詐騙已關閉，您將能夠看到多少訊息將會被偵測為詐騙，如果您開啟為 Basic;或者，如果是 Basic，您將能夠看到多少更多的郵件會被偵測為詐騙，如果您開啟為 [高]。
+當 Office 365 更新其設定，讓您您關閉反詐騙強制措施後，或者啟用基本或高度強制措施，您將能夠查看在不同設定下郵件處置方式的變更。 也就是說，如果反詐騙功能原本是關閉的，當您改為基本，您能看到有多少郵件將被偵測為詐騙郵件；或者，如果原本是基本，當您改為高度時，您會看到是否有更多郵件會被偵測為詐騙郵件。
   
-此功能目前是在開發。 已定義的詳細資訊，與螢幕擷取畫面的安全性與合規性中心，並以 PowerShell 範例，將會更新此頁面。
+這項功能目前還在開發階段。 隨著更多詳細資料定義之後，此頁面將更新安全性與合規性中心的螢幕擷取畫面以及 PowerShell範例。
   
-![「 如果 」 報告啟用反詐騙](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![啟用反詐騙的「模擬」報告](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
   
-![允許詐騙的寄件者可能 UX](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![用於允許詐騙寄件者可能的 UX](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>了解如何垃圾郵件、 網路釣魚，以及偵測會結合的進階網路釣魚
+### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>了解如何將垃圾郵件、網路釣魚和進階網路釣魚偵測結合
 
-使用 Exchange Online 中，或者沒有 ATP，組織可以指定服務判別為惡意程式碼、 垃圾郵件、 高信賴度垃圾郵件、 網路釣魚及大量郵件時要採取的動作。 ATP 客戶的 ATP 防網路釣魚原則和 EOP 客戶的防網路釣魚原則與訊息可能會叫用多個偵測類型 （例如，惡意程式碼、 網路釣魚，與使用者模擬） 的事實，可能會有哪些某些混淆會套用原則。
+使用 Exchange Online (有或沒有ATP) 的組織可以指定當服務將郵件識別為惡意程式碼、垃圾郵件，信賴度高的垃圾郵件、網路釣魚郵件和大量郵件時要採取的動作。 有針對 ATP 客戶的 ATP 防網路釣魚原則、針對 EOP 客戶的防網路釣魚原則策略，再加上郵件可能涉及多種偵測類型 (例如，惡意程式碼、網路釣魚和使用者冒充)，對於該套用哪個原則可能會產生混淆。
   
-一般而言，在 CAT （類別） 屬性中的 X Forefront-反垃圾郵件報告標頭中識別套用至郵件的原則。
+一般來說，可從 CAT (Category) 屬性的 X-Forefront-Antispam-Report 標頭中辨識套用於郵件的原則。
   
-|**優先順序**|**原則**|**類別**|**其中管理？**|**適用於**|
+|**優先順序**|**原則**|**類別**|**在何處進行管理？**|**適用對象**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](configure-anti-malware-policies.md) <br/> |所有的組織  <br/> |
-|2  <br/> |網路釣魚  <br/> |PHSH  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有的組織  <br/> |
-|3  <br/> |高信賴度垃圾郵件  <br/> |HSPM  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有的組織  <br/> |
-|4  <br/> |詐騙  <br/> |詐騙  <br/> |[反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)，[詐騙智慧](learn-about-spoof-intelligence.md) <br/> |所有的組織  <br/> |
-|5  <br/> |垃圾郵件  <br/> |SPM  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有的組織  <br/> |
-|6  <br/> |大量  <br/> |大量  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有的組織  <br/> |
-|7  <br/> |網域模擬  <br/> |DIMP  <br/> |[設定 Office 365 ATP 防網路釣魚和防網路釣魚原則](set-up-anti-phishing-policies.md) <br/> |僅限組織的 ATP  <br/> |
-|8  <br/> |使用者模擬  <br/> |UIMP  <br/> |[設定 Office 365 ATP 防網路釣魚和防網路釣魚原則](set-up-anti-phishing-policies.md) <br/> |僅限組織的 ATP <br/> |
+|1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](configure-anti-malware-policies.md) <br/> |所有組織  <br/> |
+|2  <br/> |網路釣魚  <br/> |PHSH  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
+|3  <br/> |高信賴度的垃圾郵件  <br/> |HSPM  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
+|4  <br/> |詐騙  <br/> |SPOOF  <br/> |[防網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)，[詐騙情報](learn-about-spoof-intelligence.md) <br/> |所有組織  <br/> |
+|5  <br/> |垃圾郵件  <br/> |SPM  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
+|6  <br/> |大量  <br/> |BULK  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
+|7  <br/> |網域冒充  <br/> |DIMP  <br/> |[設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則](set-up-anti-phishing-policies.md) <br/> |僅限使用 ATP 的組織  <br/> |
+|8  <br/> |使用者冒充  <br/> |UIMP  <br/> |[設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則](set-up-anti-phishing-policies.md) <br/> |僅限使用 ATP 的組織 <br/> |
 
-如果您有多個不同的防網路釣魚原則時，會套用在最高優先順序的一個。 例如，假設您有兩個原則：
+如果您有多個不同的防網路釣魚原則時，會套用優先順序最高的原則。 例如，假設您有兩個原則：
 
-|**原則**|**優先順序**|**使用者/網域模擬**|**反詐騙**|
+|**原則**|**優先順序**|**使用者/網域冒充**|**反詐騙**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |開啟  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |開啟  <br/> |
+|A  <br/> |1  <br/> |開啟  <br/> |關閉  <br/> |
+|B  <br/> |2  <br/> |關閉  <br/> |開啟  <br/> |
 
-如果郵件有而識別為詐騙與使用者模擬，並組相同的使用者範圍的原則和原則 B，然後郵件會被視為詐騙，但沒有動作會套用自反詐騙已關閉並詐騙執行於優先順序較高 (4) 與使用者模擬 (8)。
+如果郵件傳入並被識別為詐騙和使用者冒充郵件，而同一組使用者被納入原則 A 和原則 B 的範圍內，則該郵件會被視為詐騙郵件，但由於反詐騙功能已關閉，所以不會採取任何動作，SPOOF 會以比使用者冒充 (8) 更高的優先次序 (4) 執行。
   
-若要讓其他類型的網路釣魚原則套用，您將需要調整的各種不同的原則套用到使用者的設定。
+若要套用其他類型的網路釣魚原則，您必須調整適用不同原則對象的設定。
   
-### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>若要停用反詐騙合法案例
+### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>停用反詐騙功能的合法案例
 
-從網路釣魚攻擊更妥善地反詐騙保護客戶，因此停用的反詐騙保護強烈建議不要。 藉由停用它，您可能會解決某些短期誤判，但您將會公開給更大的風險的長詞彙。 設定驗證等寄件者，或在網路釣魚原則 」，進行調整的成本通常是一次性事件或需要僅最少，定期維護。 不過，若要從網路釣魚攻擊，其中具有已公開的資料，復原成本或資產已遭到盜用是更高。
+反詐騙功能可提供客戶更堅強的防護，以免受網路釣魚攻擊，因此強烈建議您不要停用反詐騙防護功能。 停用後，您可能解決了短期的誤判狀況，但長期下來，您將暴露在更多風險之中。 在寄件人端設定驗證，或在網路釣魚原則中進行調整的成本通常是一次性事件或僅需要最少的定期維護。 但是，從資料洩露或資產受損的網路釣魚攻擊中恢復的成本，卻高得多。
   
-基於這個理由，最好是透過反詐騙誤判比若要停用反詐騙保護運作。
+基於這個原因，比起停用反詐騙防護功能，解決反詐騙誤判情況的益處更大。
   
-不過，沒有合法的案例，其中應該停用反詐騙，而且是時有額外的郵件篩選中的郵件路由，和 Office 365 產品不是在電子郵件路徑中的第一個躍點：
+但是，有一個合法案例反倒應該停用反詐騙功能，也就是在郵件路由中有其他郵件篩選產品，而且 Office 365 不是電子郵件路徑中的第一個躍點：
   
-![客戶 MX 記錄未指向 Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![客戶 MX 記錄並非指向 Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-Exchange 內部部署郵件伺服器，篩選裝置 Ironport，例如郵件或其他雲端託管的服務，可能是另一部伺服器。
+另一個伺服器可以是 Exchange 內部部署郵件伺服器、類似 Ironport 的郵件篩選裝置，或其他雲端託管服務。
   
-如果收件者網域的 MX 記錄未指向 Office 365，然後便不需要停用反詐騙因為 Office 365 會接收網域的 MX 記錄，並隱藏反詐騙如果它指向另一個服務。 如果您不知道如果您的網域可在前面有另一部伺服器，您可以使用像是 MX 工具箱網站來查閱 MX 記錄。 它可能會說如下所示：
+如果收件人網域的 MX 記錄未指向 Office 365，則無需停用反詐騙功能，因為 Office 365 會查詢您的接收網域的 MX 記錄，並在其指向其他服務時禁止反詐騙功能。 如果您不知道網域中是否還有其他伺服器，則可以使用類似 MX Toolbox 的網站來查詢 MX 記錄。 它可能會顯示如下所示的結果：
   
-![MX 記錄指示網域不是指向 Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![MX 記錄會指出網域未指向 Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
   
-此網域有未指向 Office 365，讓 Office 365 不會套用反詐騙強制執行的 MX 記錄。
+這個網域擁有的 MX 記錄未指向 Office 365，因此 Office 365 不會套用反詐騙強制措施。
   
-不過，如果*沒有*的收件者網域的 MX 記錄指向 Office 365，即使沒有在 Office 365 前方的另一個服務，然後您應該停用反詐騙。 最常見的範例是透過收件者修正： 
+不過，如果您的收件者網域的 MX 記錄「未」** 指向 Office 365，即使 Office 365 前有其他服務，您也應該停用反詐騙功能。 最常見的範例是使用收件者重寫： 
   
-![收件者修正路由圖表](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![收件者重寫的路由圖表](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-網域 contoso.com 的 MX 記錄指向內部部署伺服器，雖然網域 @office365.contoso.net 的 MX 記錄指向 Office 365 因為它包含\*。 protection.outlook.com，或\*。 eo.outlook.com MX 記錄中：
+網域 contoso.com 的 MX 記錄指向內部部署伺服器，而網域 @office365.contoso.net 的 MX 記錄指向 Office 365，因為其 MX 記錄中包含 \*.protection.outlook.com 或 \*.eo.outlook.com：
   
-![MX 記錄指向 Office 365，因此可能收件者修正](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![MX 記錄指向 Office 365，因此可能是收件者重寫](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   
-請務必區別當收件者網域的 MX 記錄未指向 Office 365，以及當它已經過收件者修正。 請務必告知這兩種情況之間的差異。
+請務必區分收件人網域 MX 記錄何時未指向 Office 365，以及何時進行了收件人重寫。 請務必分辨出這兩種情況之間的差異。
   
-如果您不確定您接收網域已經過收件者修正，有時候您可以告訴可以查看郵件標頭。
+如果您不確定您的接收網域是否已經過收件人重寫，有時您可以透過查看郵件標頭來判斷。
   
-） 第一次，查看的 Authentication-results 標頭中的收件者網域的郵件標頭：
+a) 首先，在 Authentication-Results 標頭中查看收件者網域的郵件標頭：
   
 ```
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
@@ -477,33 +477,33 @@ Authentication-Results: spf=fail (sender IP is 1.2.3.4)
   header.from=example.com; compauth=fail reason=001
 ```
 
-粗體紅色的文字上方，在此案例的 office365.contoso.net 中找到的收件者的網域。 這可能會不同，在 [至收件者： 標頭：
+收件者網域為上面的粗體紅色字中，在本案例為 office365.contoso.net。 這可能會跟 To: 標頭中的收件者不同：
   
-收件者： 範例收件者\<@ contoso.com 收件者\>
+To: Example Recipient \<recipient @ contoso.com\>
   
-執行實際的收件者網域的 MX 記錄查閱。 如果它包含\*。 protection.outlook.com、 mail.messaging.microsoft.com， \*。 eo.outlook.com 或 mail.global.frontbridge.com，表示 MX 指向 Office 365。
+針對實際的收件者網域執行 MX 記錄查詢。 如果其包含 \*.protection.outlook.com、mail.messaging.microsoft.com、\*.eo.outlook.com 或 mail.global.frontbridge.com，則表示 MX 指向 Office 365。
   
-如果它不包含這些值，就表示 MX 未指向 Office 365。 您可以使用來驗證這項工具是 MX 工具箱。
+如果它不包含這些值，則表示 MX 未指向 Office 365。 您可以使用 MX Toolbox 這項工具來進行驗證。
   
-針對此特定的範例，下列指出該 contoso.com，看起來像收件者，因為它至網域： 標頭中，有 MX 記錄指向內部部署伺服器：
+對於此特定範例，以下內容表示contoso.com (從 To：標頭看起來像收件人網域) 具有指向內部部署伺服器的 MX 記錄點：
   
 ![MX 記錄指向內部部署伺服器](media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
   
-不過，實際的收件者是的 office365.contoso.net 其 MX 記錄並未指向 Office 365:
+不過，實際的收件者是 office365.contoso.net，其 MX 記錄確實指向 Office 365：
   
-![MX 指向 Office 365，必須是收件者修正](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![MX 指向 Office 365，必須是收件者重寫](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
   
-因此，此郵件可能已經過收件者修正。
+因此，這封郵件可能經過收件者重寫。
   
-b） 第二，請務必區分的收件者重的一般使用案例。 如果您要重新寫入收件者的網域，以\*。.onmicrosoft.com，改為寫入至\*。 mail.onmicrosoft.com。
+b) 第二，請務必能分辨收件者重寫的常見使用案例。 如果您要收件者網域重寫為 \*.onmicrosoft.com，而非重寫為 \*.mail.onmicrosoft.com。
   
-一旦您已識別背後另一部伺服器路由傳送的最後一個收件者網域和收件者網域的 MX 記錄實際上會指向 Office 365 （如發佈在其 DNS 記錄），您可能會繼續進行若要停用反詐騙。
+當您確定了在另一台伺服器後面路由的最終收件者網域，以及收件者網域的 MX 記錄確實指向 Office 365 (在其 DNS 記錄中發佈) 後，您就可以繼續停用反詐騙功能。
   
-請記住，您不想停用反詐騙如果網域的路由路徑中的第一個躍點時，Office 365 中，只是一或多個服務背後。
+請記住，如果路由路徑中的網域的第一個躍點是 Office 365，請不要停用反詐騙功能，請只在 Office 365 位於一或多個服務後才停用。
   
-### <a name="how-to-disable-anti-spoofing"></a>如何停用反詐騙
+### <a name="how-to-disable-anti-spoofing"></a>如何停用反詐騙功能
 
-如果您已經建立反網路釣魚原則，請將 EnableAntispoofEnforcement 參數設定為 $false:
+如果您已建立防網路釣魚原則，請將 EnableAntispoofEnforcement 參數設為 $false：
   
 ```
 $name = "<name of policy>"
@@ -511,13 +511,13 @@ Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
 
 ```
 
-如果您不知道要停用的原則 （或原則） 的名稱，則可以將它們顯示：
+若您不知道要停用的原則 (或多個原則) 的名稱，可以予以顯示：
   
 ```
 Get-AntiphishPolicy | fl Name
 ```
 
-如果您沒有任何現有的防網路釣魚原則，您可以建立一個並再將其關閉 （即使您不需要原則反詐騙是仍套用; 稍後在 2018年、 將為您建立的預設原則，可以再停用，而不是建立一個）. 您必須在多個步驟中執行這項操作：
+如果您沒有任何現有的防網路釣魚原則，您可以建立一個然後再停用它 (即使您沒有原則，仍然會套用反詐騙功能；2018 下半年，系統將會為您建立一個預設原則讓您停用，而不需自行建立)。 完成此動作需進行多個步驟：
   
 ```
 $org = Get-OrganizationConfig
@@ -538,180 +538,180 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 ```
 
-停用反詐騙只有透過指令程式 (稍後將會出現在 [安全性&amp;合規性中心)。 如果您不具備 PowerShell 存取權，建立支援票證。
+僅可透過 Cmdlet 停用反詐騙功能 (之後可在安全性與合規性中心中進行)。 如果您沒有 PowerShell 存取權，開立支援票證。
   
-請記住，這只應該套用到經歷間接路由傳送至 Office 365 時的網域。 抵禦若要停用反詐騙 」，因為某些誤判誘惑，它會是比較好的作法，長期透過其運作。
+請記住，這應僅適用於傳送到 Office 365 時經過間接路由的網域。 請不要因為某些誤判的發生而停用反詐騙功能，從長遠看來，解決誤判所帶來的效益更好。
   
-### <a name="information-for-individual-users"></a>針對個別使用者的資訊
+### <a name="information-for-individual-users"></a>適用個別使用者的資訊
 
-個別使用者僅限於它們如何互動的反詐騙安全提示使用。 不過，有幾件事，您可以解決常見的案例。
+個別使用者在與反詐騙安全提示的互動方式上會受到限制。 不過，為解決常見案例有幾件事是您可以做的。
   
-### <a name="common-scenario-1---mailbox-forwarding"></a>常見的案例 #1-信箱轉寄功能
+### <a name="common-scenario-1---mailbox-forwarding"></a>常見案例 1 - 信箱轉寄功能
 
-如果您使用另一個電子郵件服務，並將您的電子郵件轉寄給 Office 365 或 Outlook.com，您的電子郵件可能會標示為詐騙和接收的紅色的安全提示。 Office 365 和 Outlook.com 計劃自動解決這個問題時轉寄站是下列其中一個 Outlook.com、 Office 365、 Gmail 或任何其他服務，會使用[弧度通訊協定](https://arc-spec.org)。 不過，直到部署修正的目標，則使用者應該使用連接的帳戶功能直接匯入他們的郵件，而不是使用 [轉寄] 選項。
+如果您使用其他電子郵件服務，然後將電子郵件轉寄給 Office 365 或 Outlook.com，您的電子郵件可能會被標示為詐騙郵件，並收到紅色安全提示。 當轉寄站是 Outlook.com、Office 365，Gmail 或使用[ ARC 通訊協定](https://arc-spec.org)的任何其他服務之一時，Office 365 和 Outlook.com 方案會自動解決此問題。 但是，在部署該修復程式之前，使用者應使用「連結帳戶」功能直接匯入郵件，而不要使用轉寄選項。
   
-若要設定已連線的帳戶，在 Office 365 中，選取 [齒輪圖示中右上角的 Office 365 web 介面\>郵件\>郵件\>帳戶\>連線的帳戶。
+若要在 Office 365 中設定連結帳戶，請選取 Office 365 Web 介面右上角的齒輪圖示 \> [郵件] \> [郵件] \> [帳戶] \> [連結帳戶]。
   
-![Office 365-連接帳戶] 選項](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
+![Office 365 - 連結帳戶選項](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
   
-在 Outlook.com 中的程序是齒輪圖示\>選項\>郵件\>帳戶\>連線的帳戶。
+在 Outlook.com 中，程序為齒輪圖示 \> [選項] \> [郵件] \> [帳戶] \> [連結帳戶]。
   
-### <a name="common-scenario-2---discussion-lists"></a>常見的案例 #2-討論區清單
+### <a name="common-scenario-2---discussion-lists"></a>常見案例 2 - 討論清單
 
-討論區清單已知會有問題的反詐騙方式因為它們轉寄訊息和修改其內容仍保留從原始： 地址。
+已知討論清單存在反詐騙問題，是因為它們轉寄郵件並修改郵件內容，但卻保留原始寄件者地址的方式。
   
-例如，假設您的電子郵件地址使用者 @ contoso.com，且您感興趣小鳥監控並加入 @ example.com 討論區清單 birdwatchers。 當您將郵件傳送至討論區清單時，您可能會傳送其這種方式：
+例如，假設您的電子郵件地址是 user @ contoso.com，您的興趣是賞鳥，然後加入了 birdwatchers @ example.com 這個討論清單。 當您傳送郵件到討論清單時，您可能會以這種方式傳送：
   
-**從：** John Doe \<@ contoso.com 的使用者\> 
+**寄件者：** John Doe \<user @ contoso.com\> 
   
-**至：** Birdwatcher 的討論區清單\<birdwatchers @ example.com\> 
+**收件者：** Birdwatcher's Discussion List \<birdwatchers @ example.com\> 
   
-**Subject:** 絕佳檢視的藍色 jays 周頂端 火山本週 
+**主旨：** 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 
   
-任何人都要取出檢視從周本週 火山嗎？
+有人這週想要上雷尼爾山 賞景嗎？
   
-當電子郵件清單接收郵件時，它們格式化郵件、 修改它的內容，並重播其餘部分所組成的參與者許多不同的電子郵件接收器討論區清單上的成員。
+當電子郵件清單收到郵件時，他們會設定郵件格式、修改郵件內容，並將其重送給討論清單上的其餘成員，成員由來自許多不同電子郵件接收者的參與者組成。
   
-**從：** John Doe \<@ contoso.com 的使用者\> 
+**寄件者：** John Doe \<user @ contoso.com\> 
   
-**至：** Birdwatcher 的討論區清單\<birdwatchers @ example.com\> 
+**收件者：** Birdwatcher's Discussion List \<birdwatchers @ example.com\> 
   
-**Subject:**[BIRDWATCHERS]絕佳檢視的藍色 jays 周頂端 火山本週 
+**主旨：**[賞鳥人士] 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 
   
-任何人都要取出檢視從周本週 火山嗎？
+有人這週想要上雷尼爾山 賞景嗎？
   
 ---
   
-此訊息已傳送至 Birdwatchers 討論區清單。 您可以隨時取消訂閱。
+此郵件已傳送給「賞鳥人士」討論清單。 您隨時可以取消訂閱。
   
-在上述，重新執行的郵件已經從相同： 地址 （@ contoso.com 的使用者） 但原始郵件，已由將標記新增至 [主旨] 行中和郵件底端頁尾中進行修改。 這種類型的訊息修改在郵件清單中很常見，而可能導致誤判。
+以上重送的郵件具有相同的寄件者地址 (user @ contoso.com)，但原始郵件在主旨列新增了標籤，以及在郵件底部新增頁腳而經過修改。 這種類郵件修改常見於郵寄清單中，且可能會導致誤判。
   
-如果您或貴組織中的人員郵寄清單的管理員，您可以將它設定成通過反詐騙檢查。
+如果您或組織內部人員是郵寄清單的系統管理員，可以設定它略過反詐騙檢查。
   
-- 檢查 dmarc.org 常見問題集：[我操作郵寄清單我想要與 DMARC 交互操作，我該怎麼辦？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
+- 請查看 DMARC.org 上的常見問題集：[我操作郵寄清單，並想要與 DMARC 互相操作，該怎麼做？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F) (英文)
 
-- 閱讀此部落格文章的指示：[使用 DMARC 來避免失敗交互操作的郵寄清單運算子提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
+- 閱讀此部落格文章的指示：[郵寄清單操作人員與 DMARC 互相操作以避免失敗的提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/) (英文)
 
-- 請考慮支援弧線中點，請參閱郵寄清單伺服器上安裝更新[https://arc-spec.org](https://arc-spec.org/)
+- 若考慮在郵寄清單伺服器上安裝更新以支援 ARC，請參閱 [https://arc-spec.org](https://arc-spec.org/)
 
-如果您不需要的郵件清單的擁有權：
+如果您不需要郵寄清單的擁有權：
   
-- 您可以要求郵寄清單維護的程式，來實作其中一個選項上述 （他們應該也會有電子郵件驗證為郵寄清單轉送從網域設定）
+- 您可以要求郵件清單的維護者採用上述其中一個選項 (他們也應該為郵件清單重送的來源網域設定電子郵件驗證)
 
-- 您可以在您的電子郵件用戶端，將郵件移至收件匣中建立信箱規則。 您也可以要求您的組織系統管理員設定允許規則，或一節中討論覆寫為管理合法寄件者所傳送未驗證的電子郵件
+- 您可以在電子郵件用戶端中建立信箱規則，將郵件移動至收件匣。 您也可以要求組織的系統管理員如「管理傳送未經驗證電子郵件的合法寄件者」一節所討論，設定允許規則或覆寫規則。
 
-- 您可以使用 Office 365，以建立要把它當成合法郵寄清單覆寫建立支援票證
+- 您可以向 Office 365 開立支援票證，以建立郵寄清單的覆寫，將它視為合法
 
 ### <a name="other-scenarios"></a>其他案例
 
-1. 如果這兩個以上的常見案例適用於您的情況，郵件，則為 false 正數後向 Microsoft 報告郵件。 如需詳細資訊，請參閱一節[方式可以我回報垃圾郵件或非垃圾郵件給 Microsoft？](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft)本文稍後。 
+1. 如果以上這兩個常見案例皆不適用於您的情況，請向 Microsoft 回報該郵件為誤判。 如需詳細資訊，請參閱本文章稍後的[如何向 Microsoft 回報垃圾郵件或非垃圾郵件？](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft)這一節。 
 
-2. 您也可以連絡可以引發為與 Microsoft 支援票證您電子郵件系統管理員。 Microsoft 工程團隊將調查為何郵件被標示為詐騙。
+2. 您也可以連絡您的電子郵件系統管理員，請他們向 Microsoft 開立支援票證。 Microsoft 工程小組會研究該郵件為何會被標示為詐騙郵件。
 
-3. 此外，如果您知道誰寄件者且有自信它們不被惡意會遭到詐騙，您可能會回覆回到寄件者指出他們會從不會驗證郵件伺服器傳送郵件。 這有時會導致連絡其 IT 系統管理員，就會設定必要的電子郵件驗證記錄原始寄件者。
+3. 此外，如果您知道誰是寄件者，並確定他們並非惡意詐騙，您可回覆寄件者，並指出他們從未經過驗證的伺服器傳送郵件。 當您這樣做時，有時原始寄件者會與設定必要電子郵件驗證記錄的 IT 系統管理員連絡。
   
-當足夠的寄件者回覆回到網域擁有者，他們應該設定電子郵件驗證記錄時，它 spurs 它們採取的動作。 雖然 Microsoft 也可用於發佈所需的記錄的網域擁有者，它可以協助更為個別使用者要求時才。
+當有夠多寄件者回覆網域擁有者，他們應該設定電子郵件驗證記錄時，就可促使他們採取動作。 雖然 Microsoft 也會與網域擁有者合作發佈所需的記錄，但是當個別使用者提出要求時，助益更大。
 
-4. （選用），將寄件者新增至您的安全寄件者清單。 然而，請注意，如果 phisher 假裝該帳戶，它將會傳遞至您的信箱。 因此，應該謹慎使用此選項。
+4. 此外，還可以將寄件者加入安全寄件者清單。 但是請注意，如果網路釣魚者偽造帳戶，郵件就會傳送至您的信箱。 因此，請謹慎使用這個選項。
 
-## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Microsoft 的寄件者應如何準備反詐騙保護
+## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Microsoft 的寄件者應如何準備反詐騙防護功能
 
-如果您是系統管理員及目前將郵件傳送給 Microsoft 的 Office 365 或 Outlook.com 中，您應該確定已正確地驗證您的電子郵件可能將它標示為垃圾郵件或釣魚程式的否則。
+如果您是系統管理員，目前會將郵件傳送給 Microsoft，不論是傳送到 Office 365 或 Outlook.com，您應該確保您的電子郵件已正確經過驗證，否則它可能會被標示為垃圾郵件或網路釣魚郵件。
   
 ### <a name="customers-of-office-365"></a>Office 365 的客戶
 
-如果您是 Office 365 客戶，而且您使用 Office 365 來傳送外寄電子郵件：
+如果您是 Office 365 客戶，而您使用 Office 365 來傳送外寄電子郵件：
   
-- 為您的網域，[以協助防止詐騙的 Office 365 中設定 spf](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- 針對您的網域，[在 Office 365 中設定 SPF 以防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- 為您主要的網域，[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的外寄電子郵件](use-dkim-to-validate-outbound-email.md)
+- 針對主要網域，[在 Office 365 中使用 DKIM 以驗證從您的自訂網域傳送的外寄電子郵件](use-dkim-to-validate-outbound-email.md)
 
-- [考慮 DMARC 的記錄設定](use-dmarc-to-validate-email.md)為您的網域至判斷誰是您合法的寄件者
+- [請考慮設定 DMARC 記錄](use-dmarc-to-validate-email.md)，讓網域能判斷誰是合法的寄件者
 
-Microsoft 並不提供詳細的實作指導方針的每個 SPF、 DKIM 和 DMARC。 不過，有很多線上發佈的資訊。 也有 3rd 廠商公司致力於協助您設定電子郵件驗證記錄的組織。
+Microsoft 不會針對 SPF、DKIM 和 DMARC 提供詳細實作指南。 但是，網路上已發佈許多相關資訊。 也有協力廠商可專門協助您的組織設定電子郵件驗證記錄。
   
-### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>不是 Office 365 客戶的網域的系統管理員
+### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>非 Office 365 客戶的網域系統管理員
 
 如果您是網域系統管理員，但不是 Office 365 客戶：
   
-- 您應該設定 spf 以發佈您的網域傳送的 IP 位址和也設定 dkim （如果有的話） 來數位簽署的郵件。 您也可能會考慮設定 DMARC 的記錄。
+- 您應該設定 SPF 來發佈網域的傳送 IP 位址，並一併設定 DKIM (若可用) 來數位簽署郵件。 您也可以考慮設定 DMARC 記錄。
 
-- 如果您有大量的寄件者傳輸代表您的電子郵件，您應該使用它們來傳送電子郵件的方式，在 [從的傳送端網域： 地址 （如果它屬於您） 配合通過 SPF 或 DMARC 的網域。
+- 如果有大量寄件者代表您發送電子郵件，您應該與他們想出一個傳送電子郵件的方式，讓寄件者地址 (如果它屬於您) 中的傳送網域與通過 SPF 或 DMARC 的網域相符。
 
-- 如果您有內部部署郵件伺服器，或傳送從軟體為-服務提供者，或從雲端主控服務，例如 Microsoft Azure、 GoDaddy、 Rackspace Amazon Web 服務，或類似，您應該確定他們已新增至您的 SPF 記錄。
+- 如果您擁有內部部署郵件伺服器，或從軟體即服務提供者傳送郵件，或從 Microsoft Azure、GoDaddy、Rackspace、Amazon Web Services 這類的雲端託管服務傳送郵件，您應該確保將它們新增至您的 SP F記錄中。
 
-- 如果您的 ISP 所裝載的小型網域，您應該設定您的 SPF 記錄根據指示您的 ISP 所提供給您。 大部分的 Isp 提供這些類型的指示，以及可以找到該公司支援頁面上。
+- 如果您使用由 ISP 主控的小型網域，您應該根據 ISP 提供給您的指示設定 SPF 記錄。 多數 ISP 都會提供這類指示，也可以在該公司的支援頁面上找到。
 
-- 即使尚未發佈電子郵件之前，先驗證記錄和它的正常運作，您仍然必須發佈電子郵件驗證記錄傳送給 Microsoft。 如此一來，您會在網路釣魚，對抗幫助，並降低您傳送給，組織會收到 phished。
+- 即使您之前從未發佈過電子郵件驗證，郵件系統也運作的十分良好，您仍應發佈電子郵件驗證記錄，以傳送至 Microsoft。 這麼做可以幫助防止網路釣魚，並降低您或您的收件方組織收到網路釣魚郵件的機會。
 
-### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>如果您不知道誰做為您網域傳送電子郵件？
+### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>如果您不知道誰以您的網域傳送電子郵件，該怎麼辦？
 
-許多網域不要發行 SPF 記錄，因為它們不知道其所有寄件者屬於。 沒關係，您不需要知道誰全都是。 相反地，您應該開始發佈您知道，尤其是您公司的流量的所在位置，和發佈中性 SPF 原則] 中，為的 SPF 記錄？ 所有：
+許多網域不發佈 SPF 記錄的原因是他們不認識所有寄件者。 沒關係，您並不需要認識所有寄件者。 您反倒應該先發佈您知道的寄件者的 SPF 記錄，特別是公司流量所在位置，並發佈中性 SPF 原則，?all：
   
-example.com IN TXT 」 v = spf1 include:spf.example.com？ 所有 」
+example.com IN TXT "v=spf1 include:spf.example.com ?all"
   
-中性 SPF 原則表示任何有超出您公司的基礎結構的電子郵件會傳送電子郵件驗證所有其他電子郵件接收器。 來自您不了解寄件者的電子郵件將會回復為 neutral、 幾乎相同，所有發佈沒有 SPF 記錄。
+中性 SPF 原則表示從公司基礎架構傳送的任何電子郵件都將通過所有其他電子郵件接收者的電子郵件驗證。 來自您不認識的寄件者人的電子郵件將回歸中性，這幾乎與根本不發佈 SPF 記錄相同。
   
-傳送到 Office 365 時，將會是來自您公司的流量的電子郵件標示為通過驗證，但來自您不了解的來源電子郵件仍可能會標示為詐騙 （取決於 Office 365 可以以隱含方式來驗證它）。 不過，這仍然是從所有電子郵件被標示為詐騙由 Office 365 改進。
+傳送到 Office 365 時，來自公司流量的電子郵件將被標示為已經過驗證，但來自您不知道的來源的電子郵件仍可能被標示為詐騙郵件 (取決於 Office 365 是否可以針對它進行隱含驗證)。 但是，比起所有電子郵件都被 Office 365 標示為詐騙郵件，這不失為一項改進。
   
-一旦您已取得入門的後援原則與 SPF 記錄？ 所有，您可以逐步包含更傳送基礎結構，並再將發佈更嚴格的原則。 
+當您開始使用具有 ?all 後援原則的 SPF 記錄後，您可以逐漸納入越來越多的傳送基礎結構，然後發佈更嚴格的原則。 
   
-### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>如果要擁有者的郵件清單？
+### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>如果您是郵寄清單擁有者，該怎麼辦？
 
-請參閱[常見的案例 #2-討論區清單](#common-scenario-2---discussion-lists)一節。
+請參閱[常見案例 2 - 討論清單](#common-scenario-2---discussion-lists)這一節。
   
-### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>如果您是基礎結構提供者，例如網際網路服務提供者 (ISP)、 電子郵件服務提供者 (ESP) 或雲端託管服務？
+### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>如果您是網際網路服務提供者 (ISP)、電子郵件服務提供者 (ESP) 或雲端主控服務等基礎結構提供者，該怎麼辦？
 
-如果裝載網域的電子郵件，且其傳送電子郵件，或提供主控的基礎結構，可以傳送電子郵件，您應該執行下列動作：
+如果您主控網域的電子郵件，且該網域用來傳送電子郵件，或提供可傳送電子郵件的主控基礎結構，您應該執行下列動作：
   
-- 確保客戶擁有細部要在其 SPF 記錄中發佈的文件
+- 確定您的客戶擁有詳細說明如何發佈 SPF 記錄的文件
 
-- 請考慮登入外寄電子郵件的 DKIM 簽章，即使客戶不會明確設定它 （符號與預設網域）。 您可以偶數雙登 （一次與客戶的網域，如果他們有設定它，第二次與貴公司的 DKIM 簽章） 的 DKIM 簽章的電子郵件
+- 即使客戶未明確設定 (使用預設網域登入)，仍考慮在外寄電子郵件中簽署 DKIM 簽章。 您甚至可以使用 DKIM 簽章對電子郵件進行雙重簽署 (如果已經設定了客戶的網域，則為第一次，第二次使用您公司的 DKIM簽章)
 
-即使您驗證電子郵件來自您的平台，但至少它可確保 Microsoft 不會不垃圾電子郵件因為它不會驗證，請務必遵循傳送給 Microsoft 並不保證。 周圍 Outlook.com 如何篩選電子郵件的詳細資訊，請參閱[Outlook.com 郵件管理員] 頁面](https://postmaster.live.com/pm/postmaster.aspx)。
+即使您對來自您的平台的電子郵件進行驗證，也無法保證Microsoft 的可傳遞性，但至少可保證 Microsoft 不會因為郵件未經過驗證，而將它列為垃圾郵件。 如需 Outlook.com 如何篩選電子郵件的詳細資料，請參閱[Outlook.com Postmaster 頁面](https://postmaster.live.com/pm/postmaster.aspx)。
   
-如需詳細的服務提供者最佳作法的詳細資訊，請參閱 < <b0>M3AAWG 行動通訊的最佳作法服務提供者</b0>。
+如需服務提供者最佳作法的詳細資訊，請參閱[適用服務提供者的 M3AAWG 行動傳訊最佳做法](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf) (英文)。
   
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-### <a name="why-is-microsoft-making-this-change"></a>為什麼 Microsoft 正在進行這項變更？
+### <a name="why-is-microsoft-making-this-change"></a>Microsoft 為何要進行這項變更？
 
-由於影響的網路釣魚攻擊，和電子郵件驗證已繞 15 年，因為 Microsoft 會認為，繼續允許未經驗證的電子郵件的風險是高於遺失合法電子郵件的風險。
+由於網路釣魚攻擊的影響，以及電子郵件驗證已存在超過 15 年，因此 Microsoft 認為若繼續允許未經驗證的電子郵件，其中的風險高於遺失合法電子郵件的風險。
   
-### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>這項變更會導致合法的電子郵件被標示為垃圾郵件？
+### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>這項變更會造成合法的電子郵件被標示為垃圾郵件嗎？
 
-首先，會有一些標示為垃圾郵件的郵件。 不過，經過一段時間，會自動調整寄件者，然後誤標為冒名郵件數量將會極小大部分的電子郵件路徑。
+一開始會有一些郵件被標示為垃圾郵件。 但是，一段時間後，寄件者將進行調整，然後對於大多數電子郵件路徑，錯誤標示詐騙的郵件數量可以忽略不計。
   
-Microsoft 本身先採用這項功能數週，再將其部署至其客戶的其餘部分。 第一次中斷時，它會逐漸拒絕。
+在將這項功能部署到其他客戶之前的幾週，Microsoft 本身先行採用了此功能。 一開始會出現一些干擾，但慢慢的會減少。
   
-### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>將 Microsoft 將帶到 Outlook.com 和非-進階威脅防護的客戶，Office 365 的這項功能嗎？
+### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft 是否會將此功能提供給 Office 365 的 Outlook.com 和非進階威脅防護客戶？
 
-Microsoft 的反詐騙技術最初部署給其組織有 Office 365 企業版 E5 訂閱，或有購買其訂閱的 Office 365 進階威脅防護 (ATP) 附加元件。 截至 2018 年 10 月，我們已擴充，也有 Exchange Online Protection (EOP) 的組織保護。 在未來，我們可能會對 Outlook.com 釋出它。 不過，如果我們這麼做，可能會有一些功能，例如報告不會套用及自訂會覆寫。
+Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱，或已為其訂閱購買 Office 365 進階威脅防護 (ATP) 附加元件的組織中。 自 2018 年 10 月起，我們已將防護擴充至擁有 Exchange Online Protection (EOP) 的組織中。 未來，我們可能會發佈給 Outlook.com 使用。 但是，如果我們這樣做，可能會有一些功能不適用，例如報告和自訂覆寫。
   
-### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>我如何可以回報垃圾郵件或非垃圾郵件給 Microsoft？
+### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 回報垃圾郵件或非垃圾郵件？
 
-您可以使用此[報告訊息增益集以進行 Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，或如果它不是安裝，[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx)。
+您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://technet.microsoft.com/zh-TW/library/jj200769%28v=exchg.150%29.aspx) (機器翻譯)。
   
-### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我不知道我所有的寄件者屬於網域管理員 ！
+### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我是網域系統管理員，但我不認識所有寄件者！
 
-請[系統管理員的網域都不是 Office 365 客戶](#administrators-of-domains-that-are-not-office-365-customers)，參閱。
+請參閱[非 Office 365 客戶的網域系統管理員](#administrators-of-domains-that-are-not-office-365-customers)。
   
-### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>發生什麼事我停用反詐騙保護我的組織，即使 Office 365 是我主要的篩選條件？
+### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>如果我為組織停用反詐騙防護會發生什麼情況，即使 Office 365 是我的主要篩選器？
 
-我們不建議這因為您將會公開給更多未接的網路釣魚和垃圾郵件。 並非所有網路釣魚詐騙，並將未接並非所有詐騙。 不過，您的風險會高於可讓反詐騙的客戶。
+我們不建議這樣做，因為您將會暴露在更多未篩選出的網路釣魚及垃圾郵件中。 並非所有的網路釣魚都是詐騙，也不是所有詐騙郵件都會遺漏。 不過，比起啟用反詐騙功能的客戶，您的風險較高。
   
-### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>啟用反詐騙保護意思我將會從所有網路釣魚保護？
+### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>啟用反詐騙防護表示我都不會收到任何網路釣魚郵件嗎？
 
-不幸的是，否，因為網路釣客會調整以使用其他技術，例如： 遭到盜用的帳戶或設定的可用服務的帳戶。 不過，反網路釣魚保護因為 Office 365 的保護層級會一起設計工作將這些偵測其他類型的網路釣魚方法，並建置彼此運作更好。
+很抱歉，不是這樣，因為網路釣魚者會因應使用其他技術，例如入侵帳戶或設定免費服務的帳戶。 但是，防網路釣魚防護在偵測這些其他類型的網路釣魚方法上效果更好，因為 Office 365 的保護層是設計成能相互配合運作，並環環相扣。
   
-### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>其他大型的電子郵件接收器封鎖未驗證的電子郵件？
+### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>其他大型的電子郵件接收者會封鎖未經驗證的電子郵件嗎？
 
-幾乎所有大型的電子郵件接收器實作傳統 SPF、 DKIM 和 DMARC。 某些接收器有其他檢查比只是這些標準，但較少移為 Office 365，以封鎖未驗證的更嚴格的電子郵件並將它們視為詐騙。 不過，大部分的產業變得更嚴格有關此特定類型的電子郵件，尤其是因網路釣魚的問題。
+幾乎所有的大型的電子郵件接收者都採用傳統的 SPF、DKIM 和 DMARC。 有些接收者會進行比這些標準更嚴格的其他檢查，但很少會像Office 365 一樣能阻止未經驗證的電子郵件並將其視為詐騙郵件。 不過，因為網路釣魚的問題，大部分產業對於這類特殊電子郵件的控制越來越嚴格。
   
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>仍是否需要啟用 「 SPF 硬失敗 」 如果啟用反詐騙的進階垃圾郵件篩選選項？
+### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>如果已啟用反詐騙功能，是否仍需要為「SPF 驗證失敗」啟用進階垃圾郵件篩選選項？
 
-否，此選項已不再需要因為 SPF 硬失敗，但更多組準則的不只會考慮的反詐騙的功能。 如果您有反詐騙啟用，且已啟用 [SPF 硬失敗] 選項，可能就會更多的誤判。 我們建議您停用此功能，因為它會提供幾乎沒有其他 catch 垃圾郵件或釣魚程式，並改為產生大部分誤判。
+不用，因為反詐騙功能不僅會考慮SPF 驗證失敗，還會考慮更廣泛的標準，所以不需再使用此選項。 如果同時啟用反詐騙功能和 SPF 驗證失敗選項，則可能會發生更多誤判。 我們建議您停用這項功能，因為它幾乎不會增加垃圾郵件或網路釣魚郵件的捕獲率，反而會產生更多誤判。
   
-### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>沒有寄件者修正配置 (SRS)，協助修正轉寄電子郵件？
+### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>寄件者重寫機制 (SRS) 是否有助於修復轉寄的電子郵件？
 
-SRS 只有部分修正問題的轉寄電子郵件。 修正 SMTP 郵件從，SRS 能確保，在下一個目的地轉寄的郵件通過 SPF。 不過，因為反詐騙根據 From： 地址搭配 [MAIL FROM 或 DKIM 簽章的網域 （或其他信號），它不是足夠，防止轉寄電子郵件被標示為詐騙。
+SRS 僅能修正轉寄電子郵件的部分問題。 透過重寫 SMTP MAIL FROM，SRS可以確保轉寄郵件能在下一個目的地通過 SPF。 但是，由於反詐騙功能會根據寄件者地址以及 MAIL FROM 或 DKIM 簽署網域 (或其他訊號)，因此不足以防止轉寄的電子郵件被標示為詐騙郵件。
