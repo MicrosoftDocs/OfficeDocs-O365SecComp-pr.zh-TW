@@ -7,46 +7,45 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: 下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
-ms.openlocfilehash: 787847721f46fc4b3caeec037e89306ef450141a
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 61b2b203493581185abeee69cf2bd6e8f0f7567a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670408"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693492"
 ---
-# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="de3f0-103">套用 EOP 設定至多個承租人的範例指令碼</span><span class="sxs-lookup"><span data-stu-id="de3f0-103">Sample script for applying EOP settings to multiple tenants</span></span>
+# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="9783d-103">套用 EOP 設定至多個承租人的範例指令碼</span><span class="sxs-lookup"><span data-stu-id="9783d-103">Sample script for applying EOP settings to multiple tenants</span></span>
 
-<span data-ttu-id="de3f0-104">下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。</span><span class="sxs-lookup"><span data-stu-id="de3f0-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.</span></span>
+<span data-ttu-id="9783d-104">下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。</span><span class="sxs-lookup"><span data-stu-id="9783d-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.</span></span>
   
-### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="de3f0-105">對多個承租人執行指令碼或指令程式</span><span class="sxs-lookup"><span data-stu-id="de3f0-105">To run a script or cmdlet on multiple tenants</span></span>
+### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="9783d-105">對多個承租人執行指令碼或指令程式</span><span class="sxs-lookup"><span data-stu-id="9783d-105">To run a script or cmdlet on multiple tenants</span></span>
 
-1. <span data-ttu-id="de3f0-106">使用應用程式 (例如 Excel) 來建立 .csv 檔案 (例如，c:\scripts\inputfile.csv)：</span><span class="sxs-lookup"><span data-stu-id="de3f0-106">Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):</span></span>
+1. <span data-ttu-id="9783d-106">使用應用程式 (例如 Excel) 來建立 .csv 檔案 (例如，c:\scripts\inputfile.csv)：</span><span class="sxs-lookup"><span data-stu-id="9783d-106">Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):</span></span>
     
-1. <span data-ttu-id="de3f0-107">在 .csv 檔案中，指定兩個欄名：UserName 和 Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="de3f0-107">In the .csv file, specify two column names: UserName and Cmdlet.</span></span>
+1. <span data-ttu-id="9783d-107">在 .csv 檔案中，指定兩個欄名：UserName 和 Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="9783d-107">In the .csv file, specify two column names: UserName and Cmdlet.</span></span>
     
-2. <span data-ttu-id="de3f0-p101">對於 .csv 檔案的每一列，在 UserName 欄中加入承租人的管理員名稱，在 Cmdlet 欄中加入要對該承租人執行的指令程式。例如，使用 admin@contoso.com 和 Get-AcceptedDomain。</span><span class="sxs-lookup"><span data-stu-id="de3f0-p101">For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.</span></span>
+2. <span data-ttu-id="9783d-p101">對於 .csv 檔案的每一列，在 UserName 欄中加入承租人的管理員名稱，在 Cmdlet 欄中加入要對該承租人執行的指令程式。例如，使用 admin@contoso.com 和 Get-AcceptedDomain。</span><span class="sxs-lookup"><span data-stu-id="9783d-p101">For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.</span></span>
     
-2. <span data-ttu-id="de3f0-110">將 [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) 指令碼複製到記事本之類的編輯器，然後將檔案儲存到很容易找到 .ps1 檔案的位置 (例如 c:\scripts)。</span><span class="sxs-lookup"><span data-stu-id="de3f0-110">Copy the [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) script to an editor like Notepad, and then save the file to a location (like c:\scripts) that makes .ps1 files easy to find.</span></span> 
+2. <span data-ttu-id="9783d-110">將 [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) 指令碼複製到記事本之類的編輯器，然後將檔案儲存到很容易找到 .ps1 檔案的位置 (例如 c:\scripts)。</span><span class="sxs-lookup"><span data-stu-id="9783d-110">Copy the [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) script to an editor like Notepad, and then save the file to a location (like c:\scripts) that makes .ps1 files easy to find.</span></span> 
     
-3. <span data-ttu-id="de3f0-111">使用下列語法執行指令碼：</span><span class="sxs-lookup"><span data-stu-id="de3f0-111">Run the script by using the following syntax:</span></span>
+3. <span data-ttu-id="9783d-111">使用下列語法執行指令碼：</span><span class="sxs-lookup"><span data-stu-id="9783d-111">Run the script by using the following syntax:</span></span>
     ```Powershell
      & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
     ```
     
-    <span data-ttu-id="de3f0-112">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="de3f0-112">Here's an example.</span></span> 
+    <span data-ttu-id="9783d-112">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="9783d-112">Here's an example.</span></span> 
     
     ```Powershell
     & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
     ```
 
-4. <span data-ttu-id="de3f0-113">將登入每個承租人並執行指令程式。</span><span class="sxs-lookup"><span data-stu-id="de3f0-113">Each tenant will be logged on to, and the cmdlet will be run.</span></span>
+4. <span data-ttu-id="9783d-113">將登入每個承租人並執行指令程式。</span><span class="sxs-lookup"><span data-stu-id="9783d-113">Each tenant will be logged on to, and the cmdlet will be run.</span></span>
     
-## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="de3f0-114">RunCmdletOnMultipleTenants.ps1</span><span class="sxs-lookup"><span data-stu-id="de3f0-114">RunCmdletOnMultipleTenants.ps1</span></span>
-<span data-ttu-id="de3f0-115"><a name="RunCmdletOnMultipleTenants.ps1"> </a></span><span class="sxs-lookup"><span data-stu-id="de3f0-115"></span></span>
+## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="9783d-114">RunCmdletOnMultipleTenants.ps1</span><span class="sxs-lookup"><span data-stu-id="9783d-114">RunCmdletOnMultipleTenants.ps1</span></span>
+<span data-ttu-id="9783d-115"><a name="RunCmdletOnMultipleTenants.ps1"> </a></span><span class="sxs-lookup"><span data-stu-id="9783d-115"></span></span>
 
 ```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
