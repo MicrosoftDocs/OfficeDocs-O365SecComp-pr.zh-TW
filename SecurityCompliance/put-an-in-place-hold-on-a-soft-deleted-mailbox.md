@@ -1,74 +1,73 @@
 ---
-title: 置於就地保留虛刪除信箱在 Exchange Online
+title: 置於就地保留虛刪除的信箱在 Exchange Online
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
-description: 了解如何建立就地保留虛刪除信箱以進行非使用中並保留其內容。然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中的信箱。
-ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+description: 了解如何建立就地保留虛刪除信箱進行非使用中並保留其內容。 然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中信箱。
+ms.openlocfilehash: 5113bd0dffe98a7af1c65af234caaefffff95184
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223522"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692592"
 ---
-# <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>置於就地保留虛刪除信箱在 Exchange Online
+# <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>置於就地保留虛刪除的信箱在 Exchange Online
 
-了解如何建立就地保留虛刪除信箱以進行非使用中並保留其內容。然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中的信箱。
+了解如何建立就地保留虛刪除信箱進行非使用中並保留其內容。 然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中信箱。
   
 > [!NOTE]
-> 我們已延遲到達期限時建立的新就地保留 Exchange Online 中 （在 Office 365 和 Exchange Online 獨立計劃）。但是稍後今年或早期明年您將無法建立新就地保留在 Exchange Online。若要使用就地保留或者，您可以使用[eDiscovery 案例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留原則](https://go.microsoft.com/fwlink/?linkid=827811)Office 365 安全性&amp;規範中心。我們解除委任新就地保留之後，您將仍然可以修改現有的就地保留，並建立新的就地保留在 Exchange Server 2013 和 Exchange 混合部署將仍然支援。然後您仍必須能夠將信箱設為在訴訟暫止狀態。 
+> 我們已建立新的就地保留在 Exchange Online （在 Office 365 和 Exchange Online 獨立計劃） 的期限延後。 但到今年年底或明年年初，您將無法在 Exchange Online 中建立新的「就地保留」。 改成使用就地保留，您可以使用[eDiscovery 案例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留原則](https://go.microsoft.com/fwlink/?linkid=827811)中 Office 365 安全性&amp;合規性中心。 我們解除委任新就地保留之後，您仍然可以修改現有的就地保留，並建立新的就地保留在 Exchange Server 2013 和 Exchange 混合式部署仍會支援。 然後您仍然可以將信箱設為訴訟暫止。 
   
-您可能必須在其中人員會靠左您的組織和其對應的使用者帳戶和信箱已刪除的情況。之後，您了解有需要保留信箱中的資訊。您可以執行什麼動作？如果尚未過期的已刪除的信箱保留期間，您可以置於就地保留已刪除的信箱 （稱為 「 虛刪除信箱） 並使其不在作用中的信箱。*非使用中信箱*用來保留先前員工的電子郵件之後他離開貴組織。不在作用中信箱的內容會保留的持續時間內所就地保留處於虛刪除信箱時上次進行非使用中。進行不在作用中信箱之後，您可以在 Exchange Online 中，Office 365 安全性內容搜尋使用就地 eDiscovery 搜尋信箱&amp;規範中心或 SharePoint Online 中的 eDiscovery 中心。 
+您可能需要其中人員已離開您的組織和其對應的使用者帳戶和信箱已刪除的情況。 之後，您要瞭解沒有需要保留信箱中的資訊。 您可以做什麼？ 如果尚未過期刪除的信箱保留期間，您可以置於就地保留已刪除的信箱 （稱為 「 虛刪除的信箱），並使其不在作用中的信箱。 *非使用中信箱*用於他或她離開組織之後保留離職員工的電子郵件。 如已為 「 就地保留的持續時間處於虛刪除的信箱已進行非使用中時，會保留不在作用中信箱的內容。 信箱進行非使用中之後，您可以在 Exchange Online 中，Office 365 安全性中的內容搜尋使用就地 eDiscovery 來搜尋信箱&amp;合規性中心或 SharePoint Online 中的 eDiscovery 中心。 
   
 > [!NOTE]
-> 在 Exchange Online 虛刪除信箱是已遭刪除，但在特定的保留期間內可復原的信箱。Exchange Online 中的虛刪除信箱保留期間是 30 天。這表示可以信箱復原 （或進行非使用中的信箱） 的要刪除的 30 天內。30 天後虛刪除信箱標記為永久刪除和無法復原或進行非使用中。 
+> 在 Exchange Online 中，將虛刪除的信箱會是已刪除，但可以在特定的保留期間內可復原的信箱。 Exchange Online 中的虛刪除信箱保留期間是 30 天。 這表示信箱可以復原 （或進行非使用中信箱） 的被刪除的 30 天內。 30 天後，虛刪除的信箱標示為永久刪除和無法復原或進行非使用中。 
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須在 Windows PowerShell 中使用**New-mailboxsearch**指令程式將放在虛刪除信箱上的 [就地保留。您無法使用 Exchange 系統管理中心 (EAC) 或 SharePoint Online 中的 eDiscovery 中心。 
+- 您必須使用 Windows PowerShell 中的**New-mailboxsearch** cmdlet，將放在虛刪除的信箱上的 [就地保留。 您無法使用 Exchange 系統管理中心 (EAC) 或 SharePoint Online 中的 eDiscovery 中心。 
     
 - 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
-- 執行下列命令以取得組織中的虛刪除信箱的身分識別資訊。 
+- 執行下列命令，以取得貴組織中的虛刪除信箱的身分識別資訊。 
     
   ```
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- 如需非使用中信箱的詳細資訊，請參閱 ＜ [Overview of Office 365 中的非使用中信箱](inactive-mailboxes-in-office-365.md)。
+- 如需非使用中信箱的詳細資訊，請參閱 < <b0>Overview of Office 365 中的非使用中信箱</b0>。
     
-## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>放虛刪除信箱使其成為非使用中的信箱上的 [就地保留
+## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>放在虛刪除的信箱，使其成為非使用中信箱上的 [就地保留
 
-使用**New-mailboxsearch** cmdlet 可讓虛刪除信箱成為非使用中的信箱。如需詳細資訊，請參閱[New-mailboxsearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)。
+使用**New-mailboxsearch** cmdlet 將虛刪除的信箱不在作用中的信箱。 如需詳細資訊，請參閱[New-mailboxsearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)。
   
-1. 建立包含虛刪除信箱之屬性的變數。 
+1. 建立包含變數，虛刪除信箱的內容。 
     
    ```
    $SoftDeletedMailbox = Get-Mailbox -SoftDeletedMailbox -Identity <identity of soft-deleted mailbox>
    ```
 
     > [!IMPORTANT]
-    > 在上述命令中，使用**DistinguishedName**或**ExchangeGuid**屬性的值來識別虛刪除信箱。這些屬性是唯一的組織中每個信箱，而很可能使用中的信箱及虛刪除信箱可能會有相同的主要 SMTP 位址。 
+    > 在上述命令中，使用 [ **DistinguishedName** ] 或 [ **ExchangeGuid**屬性的值來識別虛刪除的信箱。 這些屬性是唯一的組織中每個信箱，而是可能作用中信箱和虛刪除的信箱可能會有相同的主要 SMTP 位址。 
   
-2. 建立就地保留和放在虛刪除信箱。在這個範例中，會指定不保留持續時間。這表示項目將會保留無限期或直到撤除從非使用中的信箱。
+2. 建立就地保留，並將它放在虛刪除的信箱。 在這個範例中，會指定不保留持續時間。 這表示項目將會無限期保留或直到從非使用中信箱移除保留為止。
     
    ```
    New-MailboxSearch -Name "InactiveMailboxHold" -SourceMailboxes $SoftDeletedMailbox.DistinguishedName -InPlaceHoldEnabled $true
     ```
-   您也可以指定當您建立就地保留保留持續時間。本範例會包含一個項目不在作用中的信箱中大約 7 年。
+   您也可以指定當您建立就地保留將保留持續時間。 本範例會保留在作用中信箱項目大約 7 年。
     
    ```
    New-MailboxSearch -Name "InactiveMailboxHold" -SourceMailboxes $SoftDeletedMailbox.DistinguishedName -InPlaceHoldEnabled $true -ItemHoldPeriod 2777
    ```
 
-3. 在一段時間後執行下列命令來確認虛刪除信箱不在作用中信箱的其中一個。
+3. 在一段時間之後執行下列其中一個下列命令，以確認虛刪除的信箱不在作用中的信箱。
     
    ```
    Get-Mailbox -InactiveMailboxOnly
@@ -82,7 +81,7 @@ ms.locfileid: "30223522"
 
 ## <a name="more-information"></a>詳細資訊
 
-進行虛刪除信箱不在作用中的信箱後，有數種方式可以管理信箱。如需詳細資訊，請參閱：
+之後，請將虛刪除的信箱不在作用中信箱有多種方式可以管理信箱。 如需詳細資訊，請參閱：
   
 - [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
     
@@ -90,4 +89,4 @@ ms.locfileid: "30223522"
     
 - [還原非使用中的信箱](restore-an-inactive-mailbox.md)
     
-- [刪除非作用中的信箱](delete-an-inactive-mailbox.md)（由移除保留）
+- [刪除非使用中信箱](delete-an-inactive-mailbox.md)（藉由移除保留）

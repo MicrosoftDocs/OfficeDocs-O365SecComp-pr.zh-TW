@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: '請參閱 < 關於隔離電子郵件系統管理員從使用者垃圾郵件通知訊息的使用者可以執行以下動作的郵件。 '
-ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341234"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691972"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>利用使用者垃圾郵件通知來釋放並回報被當成垃圾郵件隔離的郵件
 
@@ -41,6 +40,6 @@ ms.locfileid: "30341234"
 - **報告為不是垃圾郵件** 按一下此連結可將郵件的副本傳送到 Microsoft 以供分析。垃圾郵件小組會評估及分析郵件，並且根據分析結果來調整反垃圾郵件篩選規則以允許此郵件通過。 
     
 > [!NOTE]
->  因為郵件流程規則而遭到隔離的郵件 (也稱為) 比對不包括在使用者垃圾郵件隔離訊息。只有垃圾郵件隔離的郵件會列出。> 您只能釋出郵件並將其報告為誤判 （非垃圾郵件） 一次。 
+>  因為郵件流程規則而遭到隔離的郵件 (也稱為) 比對不包括在使用者垃圾郵件隔離訊息。 該訊息只會列出因垃圾郵件而遭到隔離的郵件。 >  您只能釋出郵件並將其報告為誤判 (非垃圾郵件) 一次。 
   
 

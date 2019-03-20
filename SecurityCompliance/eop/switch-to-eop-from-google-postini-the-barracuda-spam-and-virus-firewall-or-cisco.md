@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: 本主題的目的在於協助您了解從內部部署電子郵件檢疫裝置或雲端保護服務切換到 Exchange Online Protection (EOP) 的程序，然後提供給您開始使用的說明資源。
-ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340754"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693412"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
 
@@ -51,14 +50,14 @@ ms.locfileid: "30340754"
   
 如果考慮採用混合式部署，[Exchange Server 2013 Hybrid Deployments](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx)是最佳起點。此外，您一定要了解在混合案例中路由傳送郵件的各種方法。[Transport Routing in Exchange 2013 Hybrid Deployments](http://technet.microsoft.com/library/36c2cea3-2e2f-40ac-88bd-7e1b6bd27828.aspx)說明每種類型，以便您根據業務需求來選擇最佳路由案例。 
   
-## <a name="migration-planning"></a>遷移規劃
+## <a name="migration-planning"></a>移轉規劃
 <a name="sectionSection3"> </a>
 
 當您決定切換至 EOP 時，請務必提供下列方面的特殊考量：
   
-- **自訂篩選規則**如果您有自訂篩選] 或 [商務原則規則來捕捉特定的垃圾郵件，我們建議使用預設設定嘗試 EOP，一段，移轉您的規則之前。EOP 提供具有預設設定的企業級垃圾郵件保護，它可能會發現，您不需要將部分規則遷移至 EOP。當然，如果您有就地強制執行特定自訂業務原則的規則，您可以建立這些。[郵件流程規則 （傳輸規則） 在 Exchange Online Protection](mail-flow-rules-transport-rules-0.md)提供在 EOP 中建立郵件流程規則的詳細的指示。 
+- **自訂篩選規則** 如果您有自訂篩選規則或企業政策規則可捕捉特定垃圾郵件，建議您先以預設設定試用 EOP 一段時間，然後才遷移規則。 EOP 提供具有預設設定的企業級垃圾郵件保護，結果可能是您不需要將部分規則遷移至 EOP。 當然，如果現有的規則會強制執行特定自訂業務原則，即可建立這些原則。 [郵件流程規則 （傳輸規則） 在 Exchange Online Protection](mail-flow-rules-transport-rules-0.md)提供在 EOP 中建立郵件流程規則的詳細的指示。 
     
-- **IP 允許清單與 IP 封鎖清單**如果您有每位使用者允許清單與封鎖清單，讓一些時間才能將清單複製到 EOP，您的安裝程式程序的一部分。如需 IP 允許清單與 IP 封鎖清單，請參閱[Configure the connection filter policy ](../configure-the-connection-filter-policy.md)。
+- **IP 允許清單和 IP 封鎖清單** 如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。 如需 IP 允許清單與 IP 封鎖清單，請參閱[Configure the connection filter policy ](../configure-the-connection-filter-policy.md)。
     
 - **安全通訊** 如果合作夥伴要求郵件必須加密，建議您在 Exchange 系統管理中心設定此案例。若要設定此案例，請參閱 [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx)。
     

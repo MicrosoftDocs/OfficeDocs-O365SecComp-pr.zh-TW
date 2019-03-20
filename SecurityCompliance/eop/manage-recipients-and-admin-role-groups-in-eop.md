@@ -7,16 +7,15 @@ ms.date: 3/9/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵件收件者。下列主題及相關子主題提供管理收件者和指派管理員角色群組權限的相關資訊及設定程序。
-ms.openlocfilehash: d89544bd4e7b774a883fcb3068623eca59a68f6a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 431a3af4a573c32ef099e72786f26f32dc3288e8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026600"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691692"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>管理 EOP 中的收件者和系統管理員角色群組
 
@@ -25,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵�
 |**主題**|**描述**|
 |:-----|:-----|
 |[管理 EOP 中的收件者](manage-recipients-in-eop.md) <br/> |說明 EOP 中的收件者類型 (郵件使用者和群組)、如何新增、移除及編輯收件者、在 EAC 中可於何處搜尋收件者，以及其他管理收件者的相關層面。  <br/> |
-|[管理 EOP 中的系統管理角色群組權限](manage-admin-role-group-permissions-in-eop.md) <br/> |說明在 EAC 中何處尋找管理員角色清單、如何在現有管理員角色群組中新增或移除使用者，以及您需要什麼權限才能管理特定的 EOP 功能。  <br/> |
+|[管理 EOP 中的系統管理員角色群組權限](manage-admin-role-group-permissions-in-eop.md) <br/> |說明在 EAC 中何處尋找管理員角色清單、如何在現有管理員角色群組中新增或移除使用者，以及您需要什麼權限才能管理特定的 EOP 功能。  <br/> |
    
 ## <a name="for-more-information"></a>相關資訊
 

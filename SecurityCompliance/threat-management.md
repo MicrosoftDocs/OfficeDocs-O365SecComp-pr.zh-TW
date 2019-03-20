@@ -14,12 +14,12 @@ ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 ms.collection:
 - M365-security-compliance
 description: 用於協助控制及管理行動裝置存取您的組織資料，協助保護組織免於資料遺失的威脅管理，並協助防止惡意軟體和垃圾郵件的輸入及輸出郵件。 您也會使用威脅保護您的網域信譽，並判斷已遭到惡意詐騙的寄件者的管理帳戶從您的網域。
-ms.openlocfilehash: d3a9b688e12ec2c1a8c6ddabbdcd881f4c3e0bda
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9c6c39b7edc008c4a44146fac8076897e705b5f5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492842"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693172"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
@@ -57,7 +57,7 @@ ms.locfileid: "30492842"
   
 |**工具**|**描述**|
 |:-----|:-----|
-|**儀表板、 威脅總管] 中和事件** <br/> |啟用之後，這些窗格可讓您管理 Office 365 分析和威脅智慧。 如需詳細資訊，請參閱[Office 365 威脅情報概觀](office-365-ti.md)。  <br/> |
+|**儀表板、 威脅總管] 中和事件** <br/> |啟用之後，這些窗格可讓您管理 Office 365 分析和威脅調查及回應。 如需詳細資訊，請參閱[Office 365 進階威脅防護計劃 2](office-365-ti.md)。  <br/> |
 |**郵件篩選** <br/> |微調並監視設定，以協助防止 Office 365 中的垃圾郵件。 建立允許和封鎖清單，請決定誰詐騙您的網域和原因，並設定檢視垃圾郵件篩選原則。 如需詳細資訊，請參閱[Office 365 電子郵件反垃圾郵件保護](anti-spam-protection.md)。  <br/> 您也可以設定原則，以檢查您的使用者不會傳送垃圾郵件。 發生此情形，例如，如果使用者的電腦會取得感染設計用來傳送電子郵件訊息的惡意程式碼。 若要深入了解您可以防止輸出垃圾郵件的方式，請參閱[設定輸出垃圾郵件原則](https://technet.microsoft.com/library/jj200737%28v=exchg.150%29.aspx)。  <br/> 如果您急需目前垃圾郵件的問題，您可以使用[垃圾郵件和惡意程式碼的疑難排解員](https://configure.office.com/Scenario.aspx?sid=73)。           |
 |**反惡意程式碼** <br/> |提供保護，避免病毒和間諜軟體進出您組織中 Office 365。 病毒會惡意軟體程式，在執行時、 自我複製及修改其他程式和電腦上的資料。 病毒整個擴散到感染電腦，也會從一部電腦共用給另一個，通常是透過電子郵件。 間諜軟體會收集您個人資訊，例如登入資訊，並將它傳送回傳給作者。 若要開始設定反惡意程式碼原則，請參閱 <<c0>設定反惡意程式碼原則。  <br/> 如果您急需目前惡意程式碼發生問題，您可以使用[垃圾郵件和惡意程式碼的疑難排解員](https://configure.office.com/Scenario.aspx?sid=73)。           |
 |**DKIM** <br/> |適用於更進階的 Office 365 系統管理員，但可供所有 Office 365 客戶，DomainKeys Identified Mail (DKIM) 可協助確保其他電子郵件系統信任您從 Office 365 傳送的郵件。 DKIM 會透過將唯一的數位簽章新增至您從組織傳送的電子郵件訊息。 從您接收電子郵件的電子郵件系統可以使用此數位簽章，以協助您判斷是否合法電子郵件。  <br/> 如果不要擔心如何進行此作業的詳細資料似乎很複雜，因為您設定 Office 365 中的預設應該適用於大多數的組織。 如果您沒有設定 dkim 自行，Office 365 會使用其預設原則，才能啟用您的網域的 DKIM，它會建立的機碼。 此外，如果您停用 DKIM 簽章，在一段時間，Office 365 會自動啟用您的網域的 Office 365 預設原則。  <br/> 如果您想，您可以檢視本頁安全性&amp;合規性中心，請參閱是否 DKIM 簽章目前已啟用您的網域，您可以檢視 Office 365 所使用的加密金鑰已旋轉最後一次。 您也以手動方式可以自行旋轉機碼。  <br/> **重要 ！** DKIM 是由 Office 365 只能有一個電子郵件驗證技術。 若要最有效，以及其他支援的技術，例如寄件者原則架構 (SPF) 和網域型郵件驗證、 報告和符合性聲明 (DMARC) 會使用 DKIM。 在一起，這些網域為基礎的驗證技術協助防範垃圾郵件和不想要詐騙。<br/>  使用安全性的 DKIM 來進行變更前&amp;合規性中心，熟悉技術及其運作方式。 若要開始，請參閱[獨門密技： 若要防止 Office 365 中的垃圾郵件的更多方法](anti-spam-protection.md#beyond-the-basics-more-ways-to-prevent-spam-in-office-365)。           |

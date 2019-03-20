@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何啟用報告訊息增益集以進行 Outlook 和 Outlook 個別使用者的 web 應用程式或整個組織。
-ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410898"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693382"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -29,12 +29,12 @@ ms.locfileid: "30410898"
 
 ## <a name="overview"></a>概觀
 
-報告訊息增益集以進行 Outlook 和網頁型 Outlook 讓人員能輕鬆地報告誤分類電子郵件是否安全或惡意，Microsoft 並分析其關係企業。 Microsoft 使用這些提交來改善電子郵件保護技術的有效性。 此外，如果您的組織使用[Office 365 進階威脅防護](office-365-atp.md)或[Office 365 威脅情報](office-365-ti.md)，報告訊息增益集提供有用的資訊可用於檢視並更新與貴組織的安全性小組安全性原則。 
+報告訊息增益集以進行 Outlook 和網頁型 Outlook 讓人員能輕鬆地報告誤分類電子郵件是否安全或惡意，Microsoft 並分析其關係企業。 Microsoft 使用這些提交來改善電子郵件保護技術的有效性。 此外，如果您的組織使用[Office 365 進階威脅防護方案 1](office-365-atp.md)或[計劃 2](office-365-ti.md)，報告訊息增益集提供有用的資訊可用於檢視並更新安全性原則與貴組織的安全性小組。 
 
 例如，假設人員會回報為網路釣魚郵件許多。 [安全性儀表板](security-dashboard.md)和其他報表中此資訊表面。 貴組織的安全性小組可以使用這項資訊作為反網路釣魚原則可能需要更新指示。 或者，如果人員所報告的郵件已標示為垃圾郵件為不是垃圾郵件報告訊息增益集使用很多，貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-the-anti-spam-policies.md)。 
 
 報告訊息增益集的運作方式與您的 Office 365 訂閱和下列產品：
- - 網頁型 Outlook
+ - Outlook 網頁版
  - Outlook 2013 SP1
  - Outlook 2016
  - Mac 版 Outlook 2016

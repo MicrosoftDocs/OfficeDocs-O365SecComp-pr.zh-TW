@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: 在此 articleSupported LanguagesInstall 垃圾電子郵件報告增益集 inUninstall 垃圾郵件回報增益集這些的詳細資訊
-ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276303"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693012"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安裝 Microsoft Outlook 的垃圾郵件回報增益集
   
@@ -26,7 +25,7 @@ ms.locfileid: "30276303"
   
 此增益集 (適用於所有支援的語言) 可讓您直接從 Outlook 功能區回報垃圾郵件。英文版的增益集包括直接從功能區回報電子郵件問題給 Microsoft 的其他選項：
   
--   回報您收到的網路釣魚詐騙電子郵件 
+-  回報您收到的網路釣魚詐騙電子郵件 
     
 - 回報誤認為垃圾郵件的電子郵件。
     

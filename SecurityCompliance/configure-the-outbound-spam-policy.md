@@ -7,7 +7,6 @@ ms.date: 11/10/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用該服務來傳送輸出電子郵件，便會一律啟用輸出垃圾郵件篩選功能，從而保護使用該服務的組織及其預期的收件者。
-ms.openlocfilehash: 095098c058a5ca5165e0ad24ef48296c980eadcf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214523"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692802"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>設定輸出垃圾郵件原則
 
@@ -35,11 +34,11 @@ ms.locfileid: "30214523"
 
 預估完成時間：5 分鐘
   
-您必須獲得權限才能執行此程序或程序。若您需要哪些權限，請參閱 「 反垃圾郵件項目[Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主題中。 
+您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要哪些權限，請參閱 「 反垃圾郵件中的項目[Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主題。 
   
-如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Exchange 系統管理中心的鍵盤快速鍵**。
+如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Keyboard shortcuts in Exchange 2013**。
   
-您也可以透過遠端 PowerShell 執行下列程序。使用[Get HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx)指令程式來檢閱您的設定，並[設定 HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx)編輯您的輸出垃圾郵件原則設定。若要了解如何使用 Windows PowerShell 連線至 Exchange Online Protection，請參閱[Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。若要了解如何使用 Windows PowerShell 連線至 Exchange Online，請參閱[Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+您也可以透過遠端 PowerShell 執行下列程序。 使用[Get-hostedoutboundspamfilterpolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) cmdlet 來檢閱您的設定，以及[Set-hostedoutboundspamfilterpolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx)編輯您的輸出垃圾郵件原則設定。 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱[Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
   
 ## <a name="use-the-eac-to-edit-the-default-outbound-spam-policy"></a>使用 EAC 編輯預設輸出垃圾郵件原則
 <a name="sectionSection1"> </a>
@@ -58,14 +57,14 @@ ms.locfileid: "30214523"
     
 2. **當寄件者被封鎖無法傳送輸出垃圾郵件，傳送通知至下列電子郵件地址**。請以分號分隔多個地址。
     
-    大量的垃圾郵件源自特定使用者，當使用者已停用從傳送電子郵件訊息。網域系統管理員指定使用此設定，就會輸出郵件會封鎖該使用者的通知。若要查看此通知的外觀，請參閱[範例通知寄件者封鎖傳送輸出垃圾郵件時](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)。快速重新啟用的相關資訊，請參閱[移除使用者、 網域或 IP 位址從封鎖清單之後傳送垃圾電子郵件](http://technet.microsoft.com/library/712cfcc1-31e8-4e51-8561-b64258a8f1e5.aspx)。
+    當特定使用者發出大量垃圾郵件時，該使用者會被停用且無法再傳送電子郵件。 網域的系統管理員 (使用此設定指定) 會收到通知，告知已封鎖該使用者的輸出郵件。 若要查看此通知的外觀，請參閱[當封鎖寄件者時傳送輸出垃圾郵件的範例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)。 如需加以重新啟用的詳細資訊，請參閱 <<c0>移除使用者、 網域或 IP 位址從封鎖清單傳送過垃圾。
     
-4. 按一下 **[儲存]**。預設原則設定的摘要隨即出現在右側窗格中。
+4. 按一下 **[儲存]**。 預設原則設定的摘要隨即出現在右側窗格中。
     
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 <a name="sectionSection2"> </a>
 
-[外寄郵件的高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)
+[高風險傳遞集區的外寄郵件](high-risk-delivery-pool-for-outbound-messages.md)
   
 [反垃圾郵件保護常見問題集](anti-spam-protection-faq.md)
   

@@ -7,19 +7,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.custom: TN2DMC
 search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文將告訴您如何使用 DomainKeys Identified Mail (DKIM) 與 Office 365 來確保目的地電子郵件系統信任自您自訂網域傳送的郵件。
-ms.openlocfilehash: 8792f41ade704c7742445646b3cb965561994d02
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670678"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693462"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 

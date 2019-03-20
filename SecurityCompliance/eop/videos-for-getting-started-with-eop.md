@@ -7,18 +7,17 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: 下列系列的簡介影片可協助您設定和使用 Exchange Online Protection (EOP) 主控的電子郵件篩選服務。
-ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341184"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693562"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>EOP 快速入門影片
 
@@ -27,7 +26,7 @@ ms.locfileid: "30341184"
 > [!NOTE]
 > 在開始在影片中所說明的作業之前，我們建議您設定郵件流程。如需相關資訊，請參閱[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)主題。 
   
-這些影片是關於量身訂做您的反垃圾郵件設定，以符合組織的需求。透過服務前往您的組織的輸入郵件，這包括建立安全的寄件者和 IP 位址，並設定內容篩選器設定為基礎的封鎖寄件者清單。也會顯示系統管理員可以如何尋找和發行的內容篩選的垃圾郵件或郵件符合郵件流程規則 （也稱為傳輸規則） 傳送至隔離區，以及如何報告來協助我們改善服務的垃圾郵件的影片。
+這些影片是關於量身訂做您的反垃圾郵件設定，以符合組織的需求。 對於透過服務前往您的組織的輸入郵件，這包括根據 IP 位址來建立安全寄件者和封鎖寄件者清單，以及設定內容篩選器設定。 也會顯示系統管理員可以如何尋找和發行的內容篩選的垃圾郵件或郵件符合郵件流程規則 （也稱為傳輸規則） 傳送至隔離區，以及如何報告來協助我們改善服務的垃圾郵件的影片。
   
 - 在 EOP 中設定 IP 允許和 IP 封鎖清單
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]

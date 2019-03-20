@@ -6,20 +6,19 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
-description: 了解 DKIM 驗證簽署 Exchange Online Protection 和 Exchange Online 中的郵件
-ms.openlocfilehash: 126586235d17fc123ed266d6c4ce5004df5df25a
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 了解的驗證的 DKIM 簽署郵件在 Exchange Online Protection 和 Exchange Online
+ms.openlocfilehash: b1e2af0511c3aa9eb819206aa859ad96e834e3ec
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275903"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691663"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支援 DKIM 簽署郵件的驗證
 
@@ -29,6 +28,6 @@ DKIM 會驗證郵件標頭的 DKIM 簽章標頭中顯示的數位簽署郵件。
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-系統管理員可以建立 Exchange[郵件流程規則](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)（也稱為傳輸規則） 來篩選在 DKIM 驗證結果上或路由傳送訊息做為所需。 
+系統管理員可以建立 Exchange[郵件流程規則](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)（也稱為傳輸規則） 來篩選在 DKIM 驗證結果上，或將郵件路由傳送做為所需。 
   
 

@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 以下是您應該要知道您開始使用 EOP 之前的一些事項。
-ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341744"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692322"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -69,11 +68,11 @@ ms.locfileid: "30341744"
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) 說明使用者如何在垃圾郵件隔離使用者介面中尋找和釋出其自己的垃圾隔離郵件，並選擇性地向 Microsoft 報告這些郵件不是垃圾郵件。 
         
-- [提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)描述使用者可以提交垃圾郵件 （垃圾） 和非垃圾郵件 （非垃圾郵件） 郵件提交給 Microsoft 的不同方式。本主題包含 Microsoft Outlook 和網頁 （原先稱為 Outlook Web App） 上的 Outlook 中可用的報告工具的連結。 
+- [提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)描述使用者可以提交垃圾郵件 （垃圾） 和非垃圾郵件 （非垃圾郵件） 郵件提交給 Microsoft 的不同方式。 本主題包含 Microsoft Outlook 和網頁 （原先稱為 Outlook Web App） 上的 Outlook 中可用的報告工具的連結。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) 描述使用者可以如何提交惡意程式碼使其通過篩選器，或者提交錯誤識別為惡意程式碼的檔案。 
     
-- 使用者可以新增特定使用者或網域至安全的寄件者或封鎖的寄件者清單在 Outlook 或網頁型 Outlook 中設定其垃圾郵件設定。請注意，來自封鎖的寄件者傳送的郵件已標示為垃圾郵件，不會被拒絕，這表示他們可以擷取從垃圾郵件] 資料夾或隔離 （視而定，您的系統管理員已設定的服務來傳送垃圾郵件。）如需詳細資訊，請參閱 <<c0>使用報告訊息增益集。
+- 使用者可以新增特定使用者或網域至安全的寄件者或封鎖的寄件者清單在 Outlook 或網頁型 Outlook 中設定其垃圾郵件設定。 請注意，來自封鎖的寄件者傳送的郵件已標示為垃圾郵件，不會被拒絕，這表示他們可以擷取從垃圾郵件] 資料夾或隔離 （視而定，您的系統管理員已設定的服務來傳送垃圾郵件。）如需詳細資訊，請參閱 <<c0>使用報告訊息增益集。
     
 - [EOP 的說明和支援](help-and-support-for-eop.md) 提供有關取得說明和技術支援的資訊。 
     

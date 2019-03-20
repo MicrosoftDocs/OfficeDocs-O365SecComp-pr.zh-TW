@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 在 Microsoft Exchange Online Protection (EOP) 中，您可以使用 Exchange 系統管理中心 (EAC)，讓使用者成為角色群組的成員，以為他們指派可用以執行特定管理工作的權限。您也可以使用 EAC 從角色群組中移除使用者。
-ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002972"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693422"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>管理 EOP 中的系統管理員角色群組權限
   
@@ -30,7 +29,7 @@ ms.locfileid: "23002972"
     
 - Office 365 中的某些權限會對映至 EOP 系統管理員角色群組權限。如需詳細資訊，請參閱[指派管理員角色](https://go.microsoft.com/fwlink/p/?LinkId=286708)中＜我的 Office 365 權限會延伸至哪些服務＞一節中的「Exchange Online 中的角色」欄。
     
-- 如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Exchange 系統管理中心的鍵盤快速鍵**。
+- 如需適用於此主題中程序的快速鍵相關資訊，請參閱 **Keyboard shortcuts in Exchange 2013**。
     
 > [!TIP]
 > 有問題嗎？在 Exchange 論壇中尋求協助。 論壇的網址為：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 
@@ -39,7 +38,7 @@ ms.locfileid: "23002972"
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>使用 EAC 將成員指派給系統管理員角色群組
 
-1. 在 EAC 中，瀏覽至 [**權限** \> **系統管理員角色**]，按一下您想要新增的使用者或使用者、 角色群組] 和 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
+1. 在 EAC 中，瀏覽至 [**權限** \> **系統管理員角色**]，按一下您想要新增的使用者或使用者，角色群組，然後按一下 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
     
 2. 在 [成員] 下，按一下 **[新增]**![加入圖示](../media/ITPro-EAC-AddIcon.gif)。[選取成員] 視窗將會出現。
     
@@ -54,7 +53,7 @@ ms.locfileid: "23002972"
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>使用 EAC 從系統管理員角色群組中移除成員
 
-1. 在 EAC 中，瀏覽至 [**權限** \> **系統管理員角色**]，按一下您要移除的使用者或使用者、 角色群組] 和 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
+1. 在 EAC 中，瀏覽至 [**權限** \> **系統管理員角色**]，按一下您想要移除使用者或使用者的角色群組，然後按一下 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
     
 2. 在 [成員] 下，選取您要移除的使用者，然後按一下 **[移除]**![[移除] 圖示](../media/ITPro-EAC-RemoveIcon.gif)。
     

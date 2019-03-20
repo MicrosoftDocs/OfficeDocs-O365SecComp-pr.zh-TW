@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection 中的郵件流程規則 (傳輸規則)
+title: Exchange Online Protection 中郵件流程規則 （傳輸規則）
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -7,38 +7,37 @@ ms.date: 4/29/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 您可以使用郵件流程規則 （傳輸規則） 來識別和對郵件採取動作的流程透過 Office 365 組織。
-ms.openlocfilehash: a60035dc2ac17bcb944a5311827609381a7ed31e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341204"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693252"
 ---
-# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的郵件流程規則 (傳輸規則)
+# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中郵件流程規則 （傳輸規則）
 
 您可以使用郵件流程規則 (也稱為傳輸規則)，找出經過 Office 365 組織的郵件並採取相應動作。郵件流程規則類似於 Outlook 和 網頁型 Outlook 中可用的收件匣規則。主要差異是郵件流程規則會在郵件傳輸期間採取動作，而不是在郵件傳遞至信箱之後。郵件流程規則包含一組更豐富的條件、例外狀況和行動，可讓您靈活地實作許多種郵件原則。
   
 本文說明郵件流程規則的元件和它們的運作方式。
   
-步驟來建立、 複製和管理郵件流程規則，請參閱<b0>管理郵件流程規則</b0>。針對每個規則，您可以選擇強制執行測試，或測試，通知寄件者。若要深入了解測試選項，請參閱 <<c1>測試郵件流程規則」 和 「<b2>原則提示</b2>。
+步驟來建立、 複製和管理郵件流程規則，請參閱**管理郵件流程規則**。 針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。 若要深入了解測試選項，請參閱 <<c0>測試郵件流程規則」 和 「<b1>原則提示</b1>。
   
 如需符合郵件流程規則之訊息的摘要和詳細報告，請參閱 **使用 Office 365 的郵件保護報告以檢視有關惡意程式碼、垃圾郵件和規則偵測的資訊**。
   
 若要使用郵件流程規則實作特定的訊息原則，請參閱下列主題︰
   
-- [Use mail flow rules to inspect message attachments in Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+- [若要檢查郵件附件，Office 365 中的使用郵件流程規則](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
 - [設定 Office 365 企業版中的加密](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
-- [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
+- [整個組織的郵件免責聲明、 簽章、 頁尾或 Office 365 中的標頭](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
-- [Use mail flow rules to set the spam confidence level (SCL) in messages](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+- [使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [Create organization-wide safe sender or blocked sender lists in Office 365](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [在 Office 365 中建立整個組織的安全寄件者或封鎖的寄件者清單](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
     
 - [透過 Exchange Online Protection 中的檔案附件封鎖功能來降低惡意軟體威脅](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     
@@ -70,12 +69,12 @@ ms.locfileid: "30341204"
 
 下表顯示規則中如何處理多個條件、條件值、例外狀況和動作。
   
-|**元件**|**邏輯**|**註解**|
+|**元件**|**邏輯**|**Comments**|
 |:-----|:-----|:-----|
-|多個條件  <br/> |AND  <br/> |郵件必須符合規則中的所有條件。如果您需要符合一個條件或另一個條件，請對每一個條件使用不同的規則。例如，若要將相同的免責聲明新增至附件和內容包含特定文字的郵件，請為每一個條件建立一個規則。在 EAC 中，您可以輕易地複製規則。  <br/> |
-|具有多個值的一個條件  <br/> |或  <br/> |有些條件允許您指定多個值。郵件必須符合任何一個 (而非全部) 指定的值。例如，如果電子郵件的主旨為股票價格資訊，而 **[主旨包含任何這些字詞]** 條件設定為符合 Contoso 或 股票這些字，則此電子郵件滿足該條件，因為主旨至少包含其中一個指定的值。  <br/> |
-|多個例外狀況  <br/> |OR  <br/> |如果郵件符合任何例外狀況，則動作不會套用到郵件。郵件不必符合所有例外狀況。  <br/> |
-|多個動作  <br/> |AND  <br/> |符合規則條件的郵件會取得所有規則中指定的動作。例如，如果選取**的郵件主旨前面加上**和**新增收件者到 [密件副本] 方塊中**的動作，這兩個動作會套用至郵件。<br/> 請記住，某些動作 (例如， **[刪除郵件而不通知任何人]** 動作) 會阻止後續規則套用至郵件。其他動作 (例如 **[轉寄郵件]**) 則不允許額外的動作。  <br/> 您也可以在規則上設定動作，以便在套用該規則時，不要將後續的規則套件到郵件。  <br/> |
+|註解  <br/> |AND  <br/> |郵件必須符合規則中的所有條件。如果您需要符合一個條件或另一個條件，請對每一個條件使用不同的規則。例如，若要將相同的免責聲明新增至附件和內容包含特定文字的郵件，請為每一個條件建立一個規則。在 EAC 中，您可以輕易地複製規則。  <br/> |
+|郵件必須符合規則中的所有條件。如果您需要符合一個條件或另一個條件，請對每一個條件使用不同的規則。例如，如果要對附件和內容符合特定模式的郵件加入相同的免責聲明，請為每一個條件建立一個規則。您可以輕易地複製規則。  <br/> |或  <br/> |有些條件允許您指定多個值。郵件必須符合任何一個 (而非全部) 指定的值。例如，如果電子郵件的主旨為股票價格資訊，而 **[主旨包含任何這些字詞]** 條件設定為符合 Contoso 或 股票這些字，則此電子郵件滿足該條件，因為主旨至少包含其中一個指定的值。  <br/> |
+|有些條件可讓您指定多個值。如果一個條件允許您輸入多個值，則郵件必須符合為該條件所指定的任何值。例如，如果電子郵件的主旨為股票價格資訊，而 [主旨包含任何這些字詞] 條件設定為符合 Contoso 或 股票這些字，則此電子郵件滿足該條件，因為主旨至少包含其中一個條件值。  <br/> |OR  <br/> |如果郵件符合任何例外狀況，則動作不會套用到郵件。郵件不必符合所有例外狀況。  <br/> |
+|如果郵件符合任何例外狀況，則不會處理動作。郵件不必符合所有例外狀況。  <br/> |AND  <br/> |Messages that match a rule's conditions get all the actions that are specified in the rule. For example, if the actions **Prepend the subject of the message with** and **Add recipients to the Bcc box** are selected, both actions are applied to the message.  <br/> 符合規則條件的郵件會進行規則中指定的所有動作。例如，如果選取 [在郵件主旨前面加上] 和 [新增收件者到 [密件副本] 方塊] 動作，則兩個動作都會套用至郵件。此郵件會在郵件主旨前面附加指定的字串，並將指定的收件者新增為密件副本收件者。<br/> 您也可以在規則上設定動作，以便在套用該規則時，不要將後續的規則套件到郵件。  <br/> |
    
 ### <a name="mail-flow-rule-properties"></a>郵件流程規則屬性
 <a name="Properties"> </a>
@@ -85,9 +84,9 @@ ms.locfileid: "30341204"
 |**EAC 中的屬性名稱**|**PowerShell 中的參數名稱**|**描述**|
 |:-----|:-----|:-----|
 |**優先順序** <br/> | _Priority_ <br/> |表示規則套用到郵件的順序。預設優先順序是以規則的建立時間為基礎 (較舊規則的優先順序高於較新的規則，而較高優先順序的規則會在較低優先順序的規則之前處理)。    <br/> 您可以在規則清單中向上或向下移動規則，以變更 EAC 中的規則優先順序。在 PowerShell 中，您可設定優先順序號碼 (0 為最高優先順序)。    <br/> 例如，如果有一個規則是拒絕含有信用卡號碼的郵件，而另一個規則是需要核准，則您一定希望先執行拒絕規則，並停止套用其他規則。  |
-|**模式** <br/> | _Mode_ <br/> |您可以指定是否要讓規則立即開始處理郵件，或您是否想要測試規則，而不影響郵件傳遞 (不論是否有資料遺失防護或 DLP 原則提示)。  <br/> 原則提示可在 Outlook 或 網頁型 Outlook 中呈現簡短附註，以提供可能原則違規的相關資訊給正在建立郵件的人員。如需詳細資訊，請參閱 **Policy Tips** 。  <br/> 如需模式的詳細資訊，請參閱＜**Test a mail flow rule**＞。  <br/> |
+|**模式** <br/> | _Mode_ <br/> |您可以指定是否要讓規則立即開始處理郵件，或您是否想要測試規則，而不影響郵件傳遞 (不論是否有資料遺失防護或 DLP 原則提示)。  <br/> 原則提示可在 Outlook 或 網頁型 Outlook 中呈現簡短附註，以提供可能原則違規的相關資訊給正在建立郵件的人員。如需詳細資訊，請參閱 **Policy Tips** 。  <br/> 如需模式的詳細資訊，請參閱 <<c0>測試郵件流程規則。  <br/> |
 |**於下列日期啟用此規則** <br/> **於下列日期停用此規則** <br/> | _ActivationDate_ <br/>  _ExpiryDate_ <br/> |指定規則的有效日期範圍。  <br/> |
-|**在 [上**] 核取方塊選取或未選取  <br/> |新規則： _New-TransportRule_ Cmdlet 上的  **Enabled** 參數。  <br/> 現有規則：使用 **Enable-TransportRule** 或 **Disable-TransportRule** Cmdlet。  <br/> 此值會顯示在規則的 **State** 屬性中。  <br/> |您可以建立已停用的規則，而在您準備進行測試時加以啟用。或者，您可以在不刪除規則的情況下進行停用，以保留設定。  <br/> |
+|**On** check box selected or not selected  <br/> |新規則： _New-TransportRule_ Cmdlet 上的  **Enabled** 參數。  <br/> 現有規則：使用 **Enable-TransportRule** 或 **Disable-TransportRule** Cmdlet。  <br/> 此值會顯示在規則的 **State** 屬性中。  <br/> |您可以建立已停用的規則，而在您準備進行測試時加以啟用。或者，您可以在不刪除規則的情況下進行停用，以保留設定。  <br/> |
 |**如果無法完成規則處理時便順延郵件** <br/> | _RuleErrorAction_ <br/> |您可以指定如果無法完成規則處理時，應該如何處理郵件。預設會忽略此規則，但您可以選擇重新提交郵件進行處理。  <br/> |
 |**符合郵件中的寄件者地址** <br/> | _SenderAddressLocation_ <br/> |如果此規則使用可檢查寄件者電子郵件地址的條件或例外狀況，您可以查看郵件標頭、郵件信封或這兩者的值。  <br/> |
 |**停止處理其他規則** <br/> | _SenderAddressLocation_ <br/> |這是適用於規則的動作，但它看起來像是 EAC 中的屬性。您可以選擇在規則處理郵件之後，停止將其他規則套用至郵件。  <br/> |
@@ -95,7 +94,7 @@ ms.locfileid: "30341204"
    
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>郵件流程規則套用至訊息的方式
 
-經過您組織的所有郵件進行都評估貴組織中已啟用的郵件流程規則。在 [**郵件流程**所列順序處理規則\>**規則**] 頁面上，在 EAC 中，或在 PowerShell 中的對應_優先順序_參數值為基礎。 
+All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. Rules are processed in the order listed on the **Mail flow** \> **Rules** page in EAC, or based on the corresponding  _Priority_ parameter value in the PowerShell. 
   
 每個規則也提供選項可於符合規則時停止處理其他規則。對於符合多個郵件流程規則中條件的郵件而言，此設定很重要 (您想要將哪個規則套用到郵件？全部？僅只一個？）。
   
@@ -128,4 +127,4 @@ ms.locfileid: "30341204"
   
 [Office 365 中的電子郵件加密](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
-[日誌、 傳輸和收件匣規則限制](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[日誌、傳輸和收件匣規則限制](https://go.microsoft.com/fwlink/p/?LinkId=324584)

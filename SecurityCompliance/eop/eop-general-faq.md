@@ -7,16 +7,15 @@ ms.date: 1/2/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 在這裡，我們將回答有關於 Microsoft Exchange Online Protection (EOP) 雲端電子郵件篩選服務的最常見一般問題。如需其他常見問題集 (FAQ) 主題，請前往下列連結：
-ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 00618618d251e1478cb0dc0a0fbb116db2565fad
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670448"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693192"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常見問題集
 

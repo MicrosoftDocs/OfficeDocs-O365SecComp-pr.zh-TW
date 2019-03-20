@@ -1,5 +1,5 @@
 ---
-title: 進階 ediscovery （預覽） 版本資訊
+title: 進階電子文件 （預覽） 的版本資訊
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,52 +13,64 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文包含 release notes for 進階 eDiscovery （預覽）。
-ms.openlocfilehash: d3ea9a8e6b7c0adac32d342d3504eba0e54bd66f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 本文包含 release notes for 進階電子文件 （預覽）。
+ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295006"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684352"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>進階 ediscovery （預覽） 版本資訊
+# <a name="release-notes-for-advanced-ediscovery-preview"></a>進階電子文件 （預覽） 的版本資訊
 
-公用預覽程式進階 ediscovery （英文） 是以取得最早存取即將推出的功能及更新的方式。若要取得早期的存取權的最新的功能，剛建立並使用進階的 eDiscovery （預覽） 案例中 Office 365 安全性 & 規範中心。請參閱[建立新的案例](create-new-ediscovery-case.md)。
+進階電子文件的公開預覽程式是搶先即將推出的功能和更新的方式。 若要搶先使用最新功能，剛建立，並在 Office 365 安全性 & 合規性中心中使用進階電子文件 （預覽） 案例。 請參閱[建立新的案例](create-new-ediscovery-case.md)。
 
-## <a name="issues-fixed-in-this-release"></a>在此版本中修正的問題
+## <a name="known-issues"></a>已知問題
 
-- DCR： 例外狀況為 Unindexed 和孤立項目處理
+**Microsoft Forms**
+
+- 在進階電子文件 （預覽） 中使用 「 搜尋 」 工具來搜尋 custodian 信箱時，將無法搜尋資料對應在 2019 年 1 月 31 日之前建立的表單。 建立要用於搜尋此日期之後的表單。
+
+- 即使刪除建立表單的使用者表單，建立由使用者仍然可以收到回應。 不過，這些回應 （發生之後 custodian 信箱已刪除） 的相對應的資料不會搜尋在進階電子文件 （預覽） 中使用 「 搜尋 」 工具來搜尋 custodian 信箱時。
+ 
+**Microsoft Sway**
+
+- 在進階電子文件 （預覽） 中使用 「 搜尋 」 工具來搜尋 custodian 信箱時，如果使用者編輯 sway 剛之前的擁有者的使用者帳戶的刪除 sway，則這些變更可能不是可供搜尋。 Sway 區塊變更 sway，只要該函數會收到已刪除帳戶的訊號。 不過，沒有小型機率之前收到此訊號，是否可以編輯 sway。
+
+## <a name="issues-fixed-in-this-release"></a>在此版本修正的問題
+
+- DCR： 例外處理未編製索引的項目和孤立的項目
 - DCR： 保留通知
-- 在 eDiscovery 中 DCR: Custodians
+- 在 eDiscovery DCR: Custodians
 
 ## <a name="whats-new"></a>新功能
 
-- **在 「 安全性 & 規範中心 Redesigned 導覽**– 進階 eDiscovery （預覽） 有新的外觀與風格。使用進階的 eDiscovery （預覽） 來管理多個您案例的工作流程。
+- **安全性 & 合規性中心中的 Redesigned 導覽**– 進階電子文件 （預覽） 有新的外觀與風格。 使用進階電子文件 （預覽） 來管理多個案例的工作流程。
 
-- **管理 （英文）** – 有其他支援的新案例的類型。您也可以選取 [並儲存您最近與最愛的案例。追蹤及監視活動內以及使用新的儀表板的情況下個。
+- **專案管理**– 沒有其他支援新案例的類型。 您也可以選取並儲存您最近和最愛的情況。 追蹤及監視活動內及其的情況下，使用新的儀表板。
 
-- **Okay 管理**– 新增及資料 custodians 案例中為移除使用者。
+- **Custodian 管理**-新增和移除案例內的資料 custodians 使用者。
 
-- **Exchange、 OneDrive 及小組整合**– 自動將使用者的目前信箱、 OneDrive for Business 帳戶及 Microsoft 小組網站新增至案例。 
+- **Exchange、 OneDrive 及 microsoft Teams 整合**– 自動將使用者的目前信箱、 OneDrive for Business 帳戶及 Microsoft Teams 網站新增至案例。 
 
-- **Okay 通訊**– 傳送及管理代表您組織的合法持有通知。
+- **Custodian 通訊**– 傳送和管理您的組織代表的合法持有通知。
 
-- **Okay portal** – 新的入口網站的存取其 active custodians 保留通知。
+- **Custodian 入口網站**-新的入口網站的存取其 active custodians 保留通知。
 
-- **深編製索引**– 重新編目部分編製索引項目依需求。
+- **深編製索引**– 重新編目已局部編製索引項目依需求。
 
-- **錯誤修復**– Remediate 或處理錯誤、 下載這包括補救支援大型檔案類型、 密碼保護之檔案等等。 
+- **錯誤修復**– 修復或下載處理錯誤;這包含大型檔案類型、 密碼保護檔案，以及更多的補救支援。 
 
-- **搜尋功能改良**– 建立搜尋所用來識別 custodians 和/或位置。
+- **若要搜尋的增強功能**– 建立由識別 custodians 及/或位置的搜尋。
 
-- **使用組**– 管理、 追蹤、 及靜態的稽核設定的文件。
+- **工作集**– 管理、 追蹤，並將靜態的稽核設定的文件。
 
-- **檢閱**– 使用的原生、 文字和附近原生檢視可供檢閱文件新增至您的工作集。
+- **檢閱**– 使用原生、 文字和附近原生檢視檢閱文件新增至您的工作集。
 
-- **Redact 標記，並加上註解**– Redact 文字套用標記，且當您檢閱文件註釋。
+- **Redact，加上標籤，並加上註解**– Redact 文字、 套用標記，以及當您檢閱文件註釋。
   
-- **分析開機檢閱**– 善用 eDiscovery 分析來尋找、 搜尋和 cull 工作組內的結果。
+- **分析供電檢閱**– 利用電子文件探索分析得以尋找、 搜尋及 cull 工作集內的結果。
 
-- **工作**– 追蹤狀態長時間執行程序。
+- **工作**– 長時間執行程序的追蹤狀態。
 
-- **新增稽核活動**– 追蹤和檢視新的稽核活動進階 ediscovery （英文）。
+- **新增稽核的活動**– 追蹤和檢視新的稽核進階電子文件的活動。

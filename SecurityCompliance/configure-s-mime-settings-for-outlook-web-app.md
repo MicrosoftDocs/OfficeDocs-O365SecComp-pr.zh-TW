@@ -6,7 +6,6 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Exchange Online 系統管理員應該如何檢視及設定 Exchange Online 中網頁型 Outlook 中的 S/MIME 設定簡短描述。
-ms.openlocfilehash: 005c3075ec8fe6255231ba7358e5b4cc22b92f1d
-ms.sourcegitcommit: 8b36bf7949f1769f1418d740293637d60e403f87
+ms.openlocfilehash: d890b7f39d16d8c0f3866d5ff0024fe31160af6b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339441"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693332"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Exchange Online 中的 outlook 網頁版設定 S/MIME 設定
 
@@ -33,6 +32,6 @@ Exchange online 的系統管理員，您可以設定以允許傳送及接收 S/M
 
 此步驟是使用 Chrome; 的先決條件它不會取代由使用者安裝 S/MIME 控制項。 如需關於<b0>ExtensionInstallForcelist</b0>原則的詳細資訊，請參閱 < <b1>ExtensionInstallForcelist</b1>。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [可用於訊息簽署和加密的 S/MIME](s-mime-for-message-signing-and-encryption.md)

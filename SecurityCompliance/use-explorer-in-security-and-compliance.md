@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解 （也稱為威脅總管） 的瀏覽器安全性&amp;合規性中心。
-ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524007"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693612"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>使用中的安全性威脅總管&amp;合規性中心
 
@@ -31,7 +31,7 @@ ms.locfileid: "30524007"
 若要使用檔案總管中，安全性&amp;合規性中心，移至**威脅管理** \> **總管**。
 
 > [!IMPORTANT]
-> Office 365 威脅情報現的 Office 365 進階威脅防護計劃 2，與其他威脅防護功能的一部分。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 威脅情報現在是 Office 365 進階威脅防護計劃 2，以及其他威脅保護功能。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
       
 ## <a name="explorer-overview"></a>Explorer 概觀
 

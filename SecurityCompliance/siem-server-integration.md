@@ -14,26 +14,26 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 摘要： 閱讀本篇文章以取得 Microsoft 365 的 SIEM 伺服器整合的概觀。
-ms.openlocfilehash: 3f906fb082ec2c1a026940d2b5701a3d1fbec393
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357494"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693642"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Microsoft 365 服務和應用程式的 SIEM 伺服器整合
 
 ## <a name="overview"></a>概觀
 
-如果您的組織使用的安全性資訊和事件管理 (SIEM) 伺服器，或如果您計劃要推出取得 SIEM 伺服器，您可能想知道如何，將您的 Microsoft 365，包括 Office 365 企業版與整合。您是否需要 SIEM 伺服器取決於許多因素，例如貴組織的安全性需求。Microsoft 365 提供各種不同的安全性功能;不過，如果您的組織有內容和應用程式內部部署和雲端 （如混合式雲端部署的大小寫） 中，您可能會考慮新增額外的保護 SIEM 伺服器。或者，如果您的組織有必須符合的特別嚴格的安全性需求，您可以考慮將 SIEM 伺服器新增至您的環境。
+如果您的組織使用的安全性資訊和事件管理 (SIEM) 伺服器，或如果您計劃要推出取得 SIEM 伺服器，您可能想知道如何，將您的 Microsoft 365，包括 Office 365 企業版與整合。 您是否需要 SIEM 伺服器取決於許多因素，例如貴組織的安全性需求。 Microsoft 365 提供各種不同的安全性功能;不過，如果您的組織有內容和應用程式內部部署和雲端 （如混合式雲端部署的大小寫） 中，您可能會考慮新增額外的保護 SIEM 伺服器。 或者，如果您的組織有必須符合的特別嚴格的安全性需求，您可以考慮將 SIEM 伺服器新增至您的環境。
 
 ## <a name="siem-server-integration-microsoft-365"></a>SIEM 伺服器整合 Microsoft 365
 
-SIEM 伺服器可以接收來自各種不同的 Microsoft 365 服務和應用程式的資料。下表列出數個 Microsoft 365 服務和應用程式以及 SIEM 伺服器的輸入和移至深入了解 SIEM 伺服器整合的位置。 
+SIEM 伺服器可以接收來自各種不同的 Microsoft 365 服務和應用程式的資料。 下表列出數個 Microsoft 365 服務和應用程式以及 SIEM 伺服器的輸入和移至深入了解 SIEM 伺服器整合的位置。 
 
 | Microsoft 365 服務或應用程式 | SIEM 伺服器輸入 | 若要了解更多的資源 |
 | --- | --- | --- |
-| [Office 365 進階威脅防護](office-365-atp.md) <br/>   或   <br/>[Office 365 威脅情報](office-365-ti.md) | 稽核記錄 | [Office 365 威脅情報和進階威脅防護的 SIEM 整合](siem-integration-with-office-365-ti.md) |
+| [Office 365 進階威脅防護](office-365-atp.md) <br/>   或   <br/>[Office 365 威脅情報](office-365-ti.md) | 稽核記錄 | [Office 365 進階威脅防護的 SIEM 整合](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 記錄整合 | [Microsoft Cloud App Security 的 SIEM 整合](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 雲端 App 安全性](office-365-cas-overview.md) | 記錄整合 | [將 SIEM 伺服器與 Office 365 雲端 App 安全性整合](integrate-your-siem-server-with-office-365-cas.md) |
 | [Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/) | 記錄整合 | [提取提醒您 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |

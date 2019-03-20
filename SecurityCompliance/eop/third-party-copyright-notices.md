@@ -7,17 +7,16 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
-description: 第三方著作權各種 Microsoft 方案
-ms.openlocfilehash: a52129b474e78d290acb6b7c5c94d05d3cd3a93d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: 各種 Microsoft 供應項目的第三方版權注意事項
+ms.openlocfilehash: b270f50e72e63f19ed8780ae50a7647d5d3bdc19
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027580"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691862"
 ---
 # <a name="third-party-copyright-notices"></a>第三方著作權
 

@@ -7,16 +7,15 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: 若為 Exchange Online Protection (EOP) 客戶，傳送到貴組織的所有郵件會先通過 EOP，您的背景工作才會看見這些郵件。不論透過 Exchange Online 在雲端託管所有的信箱，或將信箱託管於內部部署環境 (稱為獨立案例)，或者繼續利用現有的基礎結構，您都可以在即將通過 EOP 進行處理的郵件路由傳送到您的背景工作收件匣之前，先選擇如何路由傳送這些郵件。
-ms.openlocfilehash: ff5284eafe01a3887fa69fde2b5bcd023ee391db
-ms.sourcegitcommit: 285c58a371e6ab82c40fac3f24530cf3b09d0175
+ms.openlocfilehash: b223efc62ff875ed345ce27a17263b3876829999
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "23002134"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691712"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的郵件流程
 
@@ -30,13 +29,13 @@ EOP 對您的郵件路由傳送方式提供了很大的彈性。下列主題說�
   
 [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx) 描述「目錄架構邊緣封鎖」功能，可讓您拒絕服務周邊網路處之無效收件者的郵件。 
   
-[View or Edit Managed Domains in EOP](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)說明如何管理與您的 EOP 服務相關聯的網域。 
+[檢視] 或 [Edit Managed Domains in EOP](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)說明如何管理與您的 EOP 服務相關聯的網域。 
   
 如果您新增子網域至組織，則 EOP 服務也可以協助您管理這些子網域。若要深入了解子網域，請參閱 [Enable Mail Flow for Subdomains in Exchange Online](http://technet.microsoft.com/library/4033a30a-f506-481c-8ef0-fd9a0508ae38.aspx)。
   
 [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)簡介連接器並說明如何使用 EOP 連結器自訂郵件路由。案例包括確保與合作夥伴組織進行安全通訊及設定智慧主機。 
   
-若要確保垃圾郵件正確地傳送至每位使用者的垃圾郵件資料夾，您必須執行的一些設定步驟。詳細說明這些[確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。如果您不想將郵件移至每位使用者的垃圾郵件] 資料夾，您可以選擇另一個巨集指令來編輯您在 Exchange 系統管理中心中的內容篩選原則。如需詳細資訊，請參閱[設定垃圾郵件篩選器原則](../configure-your-spam-filter-policies.md)。
+若要確保垃圾電子郵件才能正確路由至每位使用者的垃圾郵件] 資料夾，您必須執行幾個設定步驟。 詳細說明這些[確定垃圾郵件會路由傳送至每位使用者的垃圾郵件] 資料夾](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 如果您不想要將郵件移至每位使用者的垃圾郵件] 資料夾，您可以藉由編輯您的內容篩選原則，在 Exchange 系統管理中心選擇另一個巨集指令。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](../configure-your-spam-filter-policies.md)。
   
 ## <a name="verify-mail-flow"></a>驗證郵件流程
 

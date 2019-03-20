@@ -7,7 +7,6 @@ ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 若要協助維護使用者的電子郵件使用中的信任，Microsoft 已放置就地各種不同的原則和技術，以協助保護我們的使用者。
-ms.openlocfilehash: 868f5491ae9433e115090567b40abcd39ef2ebf8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 540610fc3d1b53692688c729b714c839bf436e24
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492792"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692392"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>服務的非客戶傳送郵件到 Office 365
   

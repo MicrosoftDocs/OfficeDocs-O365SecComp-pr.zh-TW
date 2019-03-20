@@ -1,5 +1,5 @@
 ---
-title: 從受限制的使用者入口網站中移除使用者之後傳送的垃圾郵件
+title: 傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -9,7 +9,6 @@ ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,14 +16,14 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續傳送電子郵件從 Office 365 歸類為垃圾郵件，他們將會傳送任何更多的郵件限制。
-ms.openlocfilehash: 61d52ad1f25dc3767ad51da5b3a217ace59303ce
-ms.sourcegitcommit: 9918411c01e962d5c67d53dd30a8a9c28c547397
+ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30654550"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692012"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>從受限制的使用者入口網站中移除使用者之後傳送的垃圾郵件
+# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 
 如果使用者持續傳送電子郵件從 Office 365 歸類為垃圾郵件，他們會被限制傳送輸出任何更多的郵件。 使用者會列在 [為不正確的輸出寄件者的服務，並將會收到未傳遞回報 (NDR) 表示：
 
