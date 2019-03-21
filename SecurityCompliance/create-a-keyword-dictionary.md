@@ -3,23 +3,22 @@ title: 建立關鍵字字典
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 識別敏感資訊有時會需要尋找關鍵字，尤其在識別泛用內容 (例如醫療保健相關的通訊) 或不適當或明確的語言時更是需要。儘管您可以建立敏感資訊類型的關鍵字清單，但關鍵字清單的大小會受到限制，而且需要修改 XML 才能建立或編輯它們。關鍵字字典可提供更簡單的關鍵字管理以及更為龐大的關鍵字規模，每部字典最多可支援 100,000 個字詞。
-ms.openlocfilehash: 8e115c0feddbd55a498db3481e6ad4bc7ebb07e7
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 5561f8b11cf7bab8c726da332caca1484d455b35
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638910"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701308"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -27,17 +26,32 @@ Office 365 中的資料外洩防護 (DLP) 可以識別、監視和保護您的�
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>建立關鍵字字典的基本步驟
 
-字典的關鍵字可以來自各種來源，最常來自檔案 (例如 .csv 或 .txt 清單)、來自您直接在 Cmdlet 中輸入的清單，或來自現有的字典。當建立關鍵字字典時，您會依照相同的核心步驟：
+字典的關鍵字可以來自各種來源，最常來自在服務中或是透過 PowerShell Cmdlet 匯入的檔案 (例如 .csv 或 .txt 清單)、來自您直接在 PowerShell Cmdlet 中輸入的清單，或來自現有的字典。當建立關鍵字字典時，您會依照相同的核心步驟：
   
-1. **連接到安全性與合規性中心 PowerShell** - 請參閱[本主題](https://docs.microsoft.com/zh-TW/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) (機器翻譯)。
+1. 使用**安全性與合規性中心**或連線到**安全性與合規性中心 PowerShell**。
     
-2. **定義關鍵字或從您想要的來源載入關鍵字** - 建立關鍵字字典的 Cmdlet 接受逗點分隔的關鍵字清單，因此這個步驟會根據您的關鍵字來自何處而略有不同。 
+2. **定義關鍵字或從您想要的來源載入關鍵字** - 精靈和 Cmdlet 都會接受以逗點分隔的關鍵字清單，用來建立自訂關鍵字字典，因此這個步驟會根據您的關鍵字來自何處而略有不同。 一旦載入，就會將它們編碼並轉換為位元組陣列，然後再匯入它們。
     
-3. **編碼關鍵字** - 一旦載入，就會將它們轉換為位元組陣列，然後再匯入它們。 
+3. **建立字典** - 選擇名稱和描述，然後建立字典。
+
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>使用安全性與合規性中心建立關鍵字字典
+
+請使用下列步驟來建立和匯入自訂字典的關鍵字：
+
+1. 連線到[安全性與合規性中心](https://protection.office.com)。
+2. 瀏覽至 [分類] > [敏感性資訊類型]****。
+3. 選取 [建立]****，然後輸入您的敏感性資訊類型的 [名稱]**** 和 [描述]****，然後選取 [下一步]****
+4. 選取 [新增項目]****，然後在 [偵測內容包含]**** 下拉式清單中選取 [字典 (大型關鍵字)]****。
+5. 選取 [新增字典]****
+6. 在 [搜尋] 控制項中，選取 [您可以在這裡建立新的關鍵字字典]****。
+7. 輸入自訂字典的 [名稱]****。
+8. 選取 [匯入]****，然後根據您的關鍵字檔案類型選取 [從文字]**** 或 [從 csv]****。
+9. 在 [檔案] 對話方塊中，選取來自您的本機電腦或網路檔案共用的關鍵字檔案，然後選取 [開啟]****。
+10. 選取 [儲存]****，然後從 [關鍵字字典]**** 清單選取您的自訂字典。
+11. 選取 [新增]****，然後選取 [下一步]****。
+12. 檢閱並完成敏感性資訊類型選取項目，然後選取 [完成]****。
     
-4. **建立字典** - 選擇名稱和描述，然後建立字典。 
-    
-## <a name="create-a-keyword-dictionary-from-a-file"></a>從檔案建立關鍵字字典
+## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 從檔案建立關鍵字字典
 
 通常當您需要建立大型字典時，可以使用來自檔案或從其他來源匯出之清單的關鍵字。在此情況下，您將建立一部關鍵字字典，其中包含一個清單，列出要在外部電子郵件中篩檢的不適當語言。首先您需要[連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/zh-TW/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) (機器翻譯)。
   
@@ -59,7 +73,9 @@ Office 365 中的資料外洩防護 (DLP) 可以識別、監視和保護您的�
 
 ## <a name="modifying-an-existing-keyword-dictionary"></a>修改現有的關鍵字字典
 
-您可能需要修改其中一部關鍵字字典中的關鍵字，或修改其中一部內建字典。在此範例中，我們將在 PowerShell 中修改一些字詞、將這些字詞儲存在本機 (在這裡您可以使用編輯器來修改它們)，然後適當地更新先前的字詞。首先，擷取字典物件：
+您可能需要修改您其中一個關鍵字字典中的關鍵字，或修改其中一個內建字典。 目前，您只可以使用 PowerShell 來更新自訂關鍵字字典。 
+
+在此範例中，我們會在 PowerShell 中修改一些詞彙，將詞彙儲存在本機，使得您可以在編輯器中加以修改，然後就地更新之前的詞彙。 首先，擷取字典物件：
   
 ```
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
