@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 若要擷取員工通訊，檢閱設定主管檢閱原則。
-ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
-ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
+ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474154"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701288"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 
@@ -62,26 +62,20 @@ ms.locfileid: "30474154"
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>步驟 1-設定群組的監督 （選用）
 
- 當您建立的監督原則時，您將決定誰會有檢閱其通訊，以及誰可以執行這些檢閱。 在原則中，您將使用電子郵件地址來識別的個人或群組的人員。 為了簡化您的設定，建立的人必須檢閱其通訊群組和群組的人會檢閱這些通訊。 如果您使用的群組，您可能需要數個 — 例如，如果您想要監視的人員，兩個不同的群組之間的通訊，或如果您想要指定不打算要指導的群組。 如需如何進行此作業的詳細資訊，請參閱[範例通訊群組](configure-supervision-policies.md#GroupExample)。
-  
-若要監管之間或在組織中的群組中的通訊，設定通訊群組在 Exchange 系統管理中心 (前往 [**收件者** \> **群組**)。 如需設定通訊群組的詳細資訊，請參閱[管理通訊群組](http://go.microsoft.com/fwlink/?LinkId=613635)
-  
-> [!NOTE]
-> 您也可以使用動態通訊群組或安全性群組的監督如果您偏好。 若要協助您決定這些是否更妥善地符合貴組織需要，請參閱[管理擁有郵件功能的安全性群組](http://go.microsoft.com/fwlink/?LinkId=627033)及[管理動態通訊群組](http://go.microsoft.com/fwlink/?LinkId=627058)。
-  
-<a name="GroupExample"> </a>
+ 當您建立的監督原則時，您將決定誰會有檢閱其通訊，以及誰可以執行這些檢閱。 在原則中，您將使用電子郵件地址來識別的個人或群組的人員。 為了簡化您的設定，您可以建立的人必須檢閱其通訊群組和的人會檢閱這些通訊群組。 如果您使用的群組，您可能需要數個 — 例如，如果您想要監視的人員，或如果您想要指定群組不是要為指導的兩個不同的群組之間的通訊。
 
-### <a name="example-distribution-groups"></a>通訊群組範例
+使用下表來協助您在您的組織監督原則中設定群組：
 
-此範例會包含已針對名為 Contoso Financial International 財務組織設定的通訊群組。
-  
-在 Contoso Financial International，必須指導取樣的美國代理人之間的通訊。 不過，該群組內的法務人員不需要監督。 此範例中，我們可以建立下列群組：
-  
-|**設定此通訊群組**|**群組地址 （別名）**|**描述**|
+| **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
-|所有美國代理人 | US_Brokers@Contoso.com | 此群組包含所有美國-任職 Contoso 的電子郵件地址。 |
-| 所有美國法務人員 | US_Compliance@Contoso.com  | 此群組包含所有美國法務人員 Contoso 的電子郵件地址。 由於這個群組是所有美國代理人的子集，因此您可以使用這個別名來免除法務人員從監督原則。 |
+|監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
+| Reviewers | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
   
+如需設定群組的詳細資訊，請參閱：
+- [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [管理啟用郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Office 365 群組概觀](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
 <a name="MakeAvailable"> </a>
 
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>步驟 2-進行監督 （必要） 組織中可用
@@ -118,43 +112,26 @@ ms.locfileid: "30474154"
 
 <a name="sensitiveinfo"> </a>
   
-## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a>步驟 3： 建立自訂機密資訊類型或自訂的關鍵字字典 （選用）
+## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>步驟 3： 建立自訂機密資訊類型，以及自訂的關鍵字字典 （選用）
 
 若要從現有的自訂機密資訊類型或自訂的關鍵字字典中監督原則] 精靈中挑選，必須先建立這些項目，如有需要。
 
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>建立自訂的關鍵字字典/lexicon （選用）
+
+使用文字編輯器 （例如記事本），建立新的檔案，其中包含您想要監視的監督原則的關鍵字字詞。 請確定每個字詞是位於個別一行，並以**Unicode/utf-16 (一點 Endian)** 格式儲存檔案。
+
 ### <a name="create-custom-sensitive-information-types"></a>建立自訂機密資訊類型
 
-1. 在 Office 365 安全性 & 合規性中心中建立新的敏感資訊類型。 瀏覽至 **[分類]** \> **敏感資訊類型]，** 然後依照中**新的敏感資訊類型精靈**的步驟。 在這裡您將會：
+1. 建立新的敏感資訊類型，並在 Office 365 安全性 & 合規性中心中新增您的自訂字典。 瀏覽至 **[分類]** \> **敏感資訊類型]，** 然後依照中**新的敏感資訊類型精靈**的步驟。 在這裡您將會：
 
     - 定義的名稱和描述的敏感資訊類型
     - 定義接近度信賴等級，主要模式元素
+    - 匯入您的自訂字典比對元素的需求
     - 檢閱您的選項，並建立敏感資訊類型
 
-    如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)。
-
-### <a name="create-custom-keyword-dictionarylexicon"></a>建立自訂的關鍵字字典/lexicon
-
-1. 使用文字編輯器 （例如記事本），建立新的檔案，其中包含您想要監視的監督原則的關鍵字字詞。 請確定每個字詞是位於個別一行，並以**Unicode/utf-16 (一點 Endian)** 格式儲存檔案。
-2. 關鍵字檔案匯入您的 Office 365 租用戶使用 PowerShell。 若要連接到 Office 365 powershell，請參閱[Connect to Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
-
-    您已連線至 Office 365 with PowerShell 之後，請執行下列命令，以匯入您的關鍵字字典：
-
-    ```
-    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
-
-    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
-    ```
-    如需詳細資訊，請參閱 <<c0>建立關鍵字字典。
-
-3. 在 Office 365 安全性 & 合規性中心中建立新的敏感資訊類型。 瀏覽至 **[分類]** \> **敏感資訊類型]，** 然後依照中**新的敏感資訊類型精靈**的步驟。 在這裡您將會：
-
-    - 定義的名稱和描述的敏感資訊類型
-    - 新增您的自訂字典比對元素的需求
-    - 檢閱您的選項，並建立敏感資訊類型
+    如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)和[建立關鍵字字典](create-a-keyword-dictionary.md)
 
     建立自訂字典/lexicon 之後，您可以檢視使用[Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)指令程式的設定的關鍵字或新增和移除使用[組 DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)指令程式的字詞。
-
-    如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)。
 
 <a name="setupsuper"> </a>
 

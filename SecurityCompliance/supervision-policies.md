@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
-ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492852"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720273"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
@@ -99,7 +99,7 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 
 #### <a name="custom-keyword-dictionaries"></a>自訂的關鍵字字典
 
-設定自訂的關鍵字字典 （或 lexicons） 可以提供簡單管理的組織或產業特定的關鍵字，並可支援最多 100000 的字詞，每個字典。 如有需要您可以將多個自訂的關鍵字字典套用到單一原則，或有單一關鍵字字典每個原則。 這些字典會指派監督原則中，而且可以源自檔案 （例如.csv 或.txt 清單），或從清單中您可以[直接在 PowerShell cmdlet 中輸入](create-a-keyword-dictionary.md)。
+設定自訂的關鍵字字典 （或 lexicons） 可以提供簡單管理的組織或產業特定的關鍵字，並可支援最多 100000 的字詞，每個字典。 如有需要您可以將多個自訂的關鍵字字典套用到單一原則，或有單一關鍵字字典每個原則。 這些字典會指派監督原則中，而且可以源自檔案 （例如.csv 或.txt 清單），或從清單中您可以[在 「 規範中心中匯入](create-a-keyword-dictionary.md)。
 
 #### <a name="conditional-settings"></a>條件式設定
 
@@ -249,16 +249,17 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 
 |**活動**|**相關聯的命令**|
 |:-----|:-----|
-| 建立原則 | 新 SupervisoryReviewPolicy <br> 新 SupervisoryReviewRule |
-| 編輯原則 | 設定 SupervisoryReviewPolicy <br> Set-supervisoryreviewrule |
-| 刪除原則| 移除 SupervisoryReviewPolicy |
+| 建立原則 | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| 編輯原則 | [Set-supervisoryreviewpolicyv2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-supervisoryreviewrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| 刪除原則| [Remove-supervisoryreviewpolicyv2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| 檢視原則 | [取得 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 使用整合的稽核記錄搜尋功能就可以擷取稽核或使用[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet。
 
 例如，下列範例會傳回所有主管檢閱活動 （原則和規則） 的活動，並列出每個的詳細的資訊：
 
 ```
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
 除了監督報告和記錄檔中所提供的資訊，您也可以使用[Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet 可傳回完整詳細的清單，所有監督原則的活動。

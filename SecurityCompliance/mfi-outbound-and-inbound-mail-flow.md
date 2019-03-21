@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 系統管理員可以了解輸出和輸入的郵件流程] 小工具在 Office 365 安全性 & 合規性中心中的郵件流程儀表板中。
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454885"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720283"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>外寄和內送的郵件流程
 
@@ -48,3 +48,7 @@ ms.locfileid: "30454885"
 您可以從下分解為 TLS 保護透過連接器的郵件，請參閱下拉式清單選取**TLS 使用狀況**] 檢視。 為**TLS 概觀報告**」 報告，這個檢視顯示不同的 TLS 版本的百分比。 為 TLS 1.0 連線，您真的需要取得您的電子郵件伺服器或您的合作夥伴伺服器升級，或若要避免發生問題時 TLS 1.0 支援會最後已被取代的 Office 365 中修正。 如需詳細資訊，請參閱[關於 Office 365 中加密的技術參考細節](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221)。
 
 深入了解指向連接器，以協助您注意到連接器的潛在 TLS 加密問題。 深入了解是：**否 TLS 是超過 25%** 或**TLS 1.0 大於 50%**。 如果您看到這些見解，您需要調查之相關聯的連接器，或連絡您的夥伴組織的電子郵件伺服器。
+
+## <a name="see-also"></a>另請參閱
+
+如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。
