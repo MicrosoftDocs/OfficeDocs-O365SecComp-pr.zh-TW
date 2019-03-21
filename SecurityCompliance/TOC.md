@@ -88,12 +88,12 @@
 ### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [防範威脅](protect-against-threats.md)
+## [快速入門指南：設定 Office 365 進階威脅防護](checklist-atp-setup.md)
 ## [反垃圾郵件和反惡意程式碼防護](anti-spam-and-anti-malware-protection.md)
 ### [EOP 概觀](videos-for-getting-started-with-protecting-your-email.md)
 ### [Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
 ### [如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
 ### [如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)
-### [防止 EOP 和 Office 365 中的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam-0.md)
 ### [控制 Office 365 的輸出垃圾郵件](outbound-spam-controls.md)
 ### [利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](reduce-spam-email.md)
 ### [零時差自動清除 - 防範垃圾郵件和惡意程式碼](zero-hour-auto-purge.md)
@@ -369,7 +369,7 @@
 
 # [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
-## [啟用信箱稽核](enable-mailbox-auditing.md)
+## [管理信箱稽核](enable-mailbox-auditing.md)
 ## [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)
 ## [使用稽核記錄檔對常見案例進行疑難排解](auditing-troubleshooting-scenarios.md)
 ## [使用稽核記錄中的共用稽核](use-sharing-auditing.md)
