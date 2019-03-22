@@ -1,5 +1,5 @@
 ---
-title: 進階 eDiscovery (Preview) 中支援的檔案類型
+title: 在進階電子文件 （預覽） 中支援的檔案類型
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,56 +14,58 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8b5651e7e1f1e15aae34a3100b25564f0b84abb7
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296156"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737703"
 ---
-# <a name="supported-file-types-in-advanced-ediscovery-preview"></a>進階 eDiscovery (Preview) 中支援的檔案類型
+# <a name="supported-file-types-in-advanced-ediscovery-preview"></a>在進階電子文件 （預覽） 中支援的檔案類型
 
+事先 eDiscovery （預覽） 支援許多不同的層級，如下表所述的許多檔案類型。 這份清單未完成，並為我們繼續我們驗證測試，我們會將新增新的檔案類型。 表也表示是否可以進階電子文件探索 （預覽） 中可用的檢視器中檢視的檔案類型。
 
-| Mime 類型 | 檔案類別 （例如圖像、 封存、 電子郵件、 Office Doc、 等） | 原生檢視器 | 文字 | 加上註解檢視器 | 容器擷取 | 可能的延伸模組 |
+| Mime 類型 | 檔案類別 | 原生檢視器 | 文字檢視器 | 加上註解檢視器 | 容器擷取 | 延伸模組 |
 | :- | :- | :- | :- | :- | :- | :- |
-| 應用程式/msword | 文件 | 是 | 是  | 有 | 否 | .doc、.dat |
-| application/pdf | 文件 | 是 | 是  | 有 | 否 | .pdf |
-| 應用程式/rtf | 文件 | 是 | 是  | 有 | 否 | .rtf;。文件 |
-| 為 application/vnd.ms-excel | 文件 | 是 | 是  | 有 | 否 | .xls ；.dat |
-| application/vnd.ms-excel.sheet.binary.macroenabled.12 | 產能 / 開啟文件格式 | 是 | 有 | 否 | 否 | .xlsb |
-| application/vnd.ms-excel.sheet.macroenabled.12 | 文件 | 是 | 是  | 有 | 否 | .xlsm |
-| application/vnd.ms-excel.template.macroenabled.12 | 產能 / 開啟文件格式 | 否 | 是 | 否 | 否 | .xltm |
+| 應用程式/msword | Document | 是 | 是 | 是 | 否 | .doc;.dat |
+| 應用程式/pdf | Document | 是 | 是 | 是 | 否 | .pdf |
+| 應用程式/rtf | Document | 是 | 是 | 是 | 否 | .rtf;。doc |
+| 應用程式/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | .xls;.dat |
+| application/vnd.ms-excel.sheet.binary.macroenabled.12 | 生產力 / Open Document 格式 | 是 | 是 | 否 | 否 | .xlsb |
+| application/vnd.ms-excel.sheet.macroenabled.12 | Document | 是 | 是 | 是 | 否 | .xlsm |
+| application/vnd.ms-excel.template.macroenabled.12 | 生產力 / Open Document 格式 | 否 | 是 | 否 | 否 | .xltm |
 | 應用程式/vnd.ms-outlook | 生產力 | 否 | 否 | 否 | 否 | .msg |
-| 應用程式/vnd.ms-outlook-pst | 產能 / 共同作業 | 否 | 否 | 否 | 是 | .pst |
-| 為 application/vnd.ms-powerpoint | 文件 | 是 | 是  | 有 | 否 | .ppt、.pps ；。pot |
-| application/vnd.ms-word.document.macroenabled.12 | 文件 | 是 | 是  | 有 | 否 | .docm |
-| application/vnd.ms-word.template.macroenabled.12 | 文件 | 是 | 是  | 有 | 否 | .dotm |
-| application/vnd.oasis.opendocument.text | 文件 | 是 | 是  | 有 | 否 | .odt;  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | 文件 | 是 | 是  | 有 | 否 | .pptx |
-| application/vnd.openxmlformats-officedocument.presentationml.slideshow | 產能 / 開啟文件格式 | 是 | 是  | 有 | 否 | .ppsx |
-| application/vnd.openxmlformats-officedocument.presentationml.template | 文件 | 是 | 是  | 有 | 否 | .potx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 文件 | 是 | 是  | 有 | 否 | .xlsx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.template | 文件 | 是 | 是  | 有 | 否 | .xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | 文件 | 是 | 是  | 有 | 否 | .docx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.template | 文件 | 是 | 是  | 有 | 否 | .dotx |
-| application/vnd.visio | 文件 | 是 | 是  | 有 | 否 | .vsd |
+| 應用程式/vnd.ms-outlook 的 pst | 生產力 / 共同作業 | 否 | 否 | 否 | 是 | .pst |
+| 應用程式/vnd.ms-powerpoint | Document | 是 | 是 | 是 | 否 | .ppt，.pps;。pot |
+| application/vnd.ms-word.document.macroenabled.12 | Document | 是 | 是 | 是 | 否 | .docm |
+| application/vnd.ms-word.template.macroenabled.12 | Document | 是 | 是 | 是 | 否 | .dotm |
+| application/vnd.oasis.opendocument.text | Document | 是 | 是 | 是 | 否 | .odt;  |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | Document | 是 | 是 | 是 | 否 | .pptx |
+| application/vnd.openxmlformats-officedocument.presentationml.slideshow | 生產力 / Open Document 格式 | 是 | 是 | 是 | 否 | .ppsx |
+| application/vnd.openxmlformats-officedocument.presentationml.template | Document | 是 | 是 | 是 | 否 | .potx |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Document | 是 | 是 | 是 | 否 | .xlsx |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.template | Document | 是 | 是 | 是 | 否 | .xltx |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Document | 是 | 是 | 是 | 否 | .docx |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.template | Document | 是 | 是 | 是 | 否 | .dotx |
+| application/vnd.visio | Document | 是 | 是 | 是 | 否 | .vsd |
 | 應用程式/x-7z-壓縮 | 封存 / 容器 | 否 | 否 | 否 | 是 | .7z |
-| 應用程式/xhtml + xml | 文件 | 是 | 是  | 有 | 否 | .xhtml |
-| 應用程式/xml | 文件 | 是 | 是  | 有 | 否 | .xml |
-| 應用程式/x-msaccess | 文件 | 是 | 是  | 有 | 否 | .mdb |
-| 應用程式/x-mspublisher | 文件 | 是 | 是  | 有 | 否 | .pub |
+| 應用程式/xhtml + xml | Document | 是 | 是 | 是 | 否 | .xhtml |
+| 應用程式/xml | Document | 是 | 是 | 是 | 否 | .xml |
+| 應用程式/x-msaccess | Document | 是 | 是 | 是 | 否 | .mdb |
+| 應用程式/x-mspublisher | Document | 是 | 是 | 是 | 否 | .pub |
 | 應用程式/x-rar-壓縮 | 封存 / 容器 | 否 | 否 | 否 | 是 | .rar |
 | 應用程式/zip | 封存 / 容器 | 否 | 否 | 否 | 是 | .zip |
-| bmp 圖像 / | 影像 | 是 | 是  | 有 | 否 | .bmp |
-| 圖像/emf | 影像 | 是 | 是  | 有 | 否 | .emf |
-| gif 圖像 / | 文件 | 是 | 是  | 有 | 否 | .gif |
-| image/jpeg | 影像 | 是 | 是  | 有 | 否 | .jpg、.jpeg、.dat;。jpgt |
-| png 影像 / | 影像 | 是 | 是  | 有 | 否 | .png |
-| 圖像/tiff | 影像 | 是 | 是  | 有 | 否 | .tif |
-| image/vnd.dwg | 文件 | 是 | 是  | 有 | 否 | .dwg;。dxf; |
-| 圖像/wmf | 文件 | 是 | 是  | 有 | 否 | .wmf |
-| 郵件 /rfc822 | 產能 / 共同作業 | 否 | 否 | 否 | 否 | .eml |
-| 文字/csv | 文件 | 是 | 是  | 有 | 否 | .csv |
-| text/html | 文件 | 是 | 是  | 有 | 否 | .html;。shtml ；.htm |
-| text/plain | 文件 | 是 | 是  | 有 | 否 | .txt、.css;。詐騙、.pl、.csv、.dat |
-| 文字/vcard 位連絡人 | 文件 | 是 | 是  | 有 | 否 | .vcf |
+| image/bmp | 影像 | 是 | 是 | 是 | 否 | .bmp |
+| image/emf | 影像 | 是 | 是 | 是 | 否 | .emf |
+| image/gif | Document | 是 | 是 | 是 | 否 | .gif |
+| image/jpeg | 影像 | 是 | 是 | 是 | 否 | .jpg、.jpeg、.dat;。jpgt |
+| image/png | 影像 | 是 | 是 | 是 | 否 | .png |
+| image/tiff | 影像 | 是 | 是 | 是 | 否 | .tif |
+| image/vnd.dwg | Document | 是 | 是 | 是 | 否 | .dwg;。dxf; |
+| image/wmf | Document | 是 | 是 | 是 | 否 | .wmf |
+| message/rfc822 | 生產力 / 共同作業 | 否 | 否 | 否 | 否 | .eml |
+| 文字/csv | Document | 是 | 是 | 是 | 否 | .csv |
+| 文字/html | Document | 是 | 是 | 是 | 否 | .html;。shtml;.htm |
+| 文字/一般 | Document | 是 | 是 | 是 | 否 | .txt;.css;。詐騙、.pl、.csv、.dat |
+| 文字/vcard-連絡人 | Document | 是 | 是 | 是 | 否 | .vcf |
+||||||||
