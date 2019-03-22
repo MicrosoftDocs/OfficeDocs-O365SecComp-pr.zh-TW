@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: 704f335a8938f46aba4e2506ff43d07251270379
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: bcd5dd27ac0061277a47dcc5875990cc473cb768
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30664456"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693372"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -385,13 +385,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 ### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>檢視報告，了解有多少郵件被標示為詐騙郵件
 
-啟用反詐騙原則後，您就可以使用威脅情報，來得知有多少郵件被標示為網路釣魚郵件。 若要這麼做，請移至安全性與合規性中心 (SCC)，在 [威脅管理] \> [總管] 下，將 [檢視] 設為 [網路釣魚]，並依 [寄件者網域] 或 [防護狀態] 來群組：
+啟用反詐騙原則後，您就可以使用調查和應變功能來得知有多少郵件被標示為網路釣魚郵件。 若要這麼做，請移至安全性與合規性中心 (SCC)，在 [威脅管理] \> [總管] 下，將 [檢視] 設為 [網路釣魚]，並依 [寄件者網域] 或 [防護狀態] 來群組：
   
 ![檢視有多少郵件被標示為網路釣魚郵件](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
   
-您可以與各式各樣的報告互動，以查看有多少郵件被標示為網路釣魚郵件，包括被標示為 SPOOF 的郵件。 若要深入了解，請參閱[Office 365 威脅情報快速入門](get-started-with-ti.md)。
+您可以與各式各樣的報告互動，以查看有多少郵件被標示為網路釣魚郵件，包括被標示為 SPOOF 的郵件。 若要深入了解，請參閱[Office 365 威脅調查與應變快速入門](get-started-with-ti.md)。
   
-由於詐騙而不是其他類型的網路 (一般網路釣魚，網域使用者冒充等)，您還無法拆分哪些郵件被標記。 不過，日後您將能透過安全性與合規性中心來完成。 之後，您就可以使用這份報告來辨別因為驗證失敗，導致可能合法但被卻標示為詐騙的傳送網域。
+由於詐騙與其他類型的網路釣魚不同 (一般網路釣魚，網域使用者冒充等)，您還無法拆分哪些郵件被標記。 不過，日後您將能透過安全性與合規性中心來完成。 之後，您就可以使用這份報告來辨別因為驗證失敗，導致可能合法但被卻標示為詐騙的傳送網域。
   
 下列螢幕擷取畫面是此資料外觀的提議，但發行時可能有所變更：
   
