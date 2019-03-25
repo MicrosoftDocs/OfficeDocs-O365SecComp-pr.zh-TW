@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 的敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455025"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737683"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -35,6 +35,8 @@ ms.locfileid: "30455025"
 - **在不同平台和裝置上保護 Office 應用程式中的內容。** 敏感度標籤可在 Windows、Mac、iOS 和 Android 的 Office 應用程式中使用。即將推出 Office Web 應用程式的支援。
     
 - **防止敏感內容離開組織執行 Windows 的裝置**，方式是使用 Microsoft Intune 的端點保護。敏感度標籤套用至位於 Windows 裝置上的內容後，端點保護可以防止該內容複製到協力廠商應用程式，例如 Twitter 或 Gmail，或複製到卸除式儲存空間，如 USB 磁碟機。
+
+- **使用 Microsoft Cloud App Security 保護協力廠商應用程式和服務中的內容。** 使用 Cloud App Security，您可以偵測、分類、標記並保護協力廠商應用程式和服務中的內容，例如 SalesForce、Box 或 DropBox，即使協力廠商應用程式或服務無法讀取或支援敏感度標籤亦然。
 
 - **將敏感度標籤擴充至協力廠商應用程式和服務。** 使用 Microsoft 資訊保護 SDK，Windows、Mac 和 Linux 上的協力廠商應用程式可以讀取敏感度標籤，並且套用保護設定。iOS 和 Android 應用程式的支援即將推出。
 
@@ -222,6 +224,19 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 - 建立可套用至端點裝置的 Windows 資訊保護 (WIP) 原則。您可以在下列任何位置執行此作業：
     - [為 Microsoft Intune 使用 Azure 入口網站透過 MDM 建立 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [使用 System Center Configuration Manager 建立及部署 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+
+## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>使用 Microsoft Cloud App Security 保護協力廠商應用程式和服務中的內容
+
+使用 Cloud App Security (CAS) 保護協力廠商應用程式和服務中的內容。 您可以使用 CAS 來偵測、分類、加標籤，以及保護內容的第三方服務和應用程式 (例如 SalesForce、Box 或 Dropbox) 中的內容。 例如，Dropbox 可能無法了解敏感度標籤，但 CAS 可以取得並保護該位置中加標籤的內容。
+
+如需詳細資訊，請參閱[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-information-protection)。
+
+### <a name="important-prerequisites"></a>重要的先決條件
+
+在敏感度標籤可使用 CAS 之前，您必須先執行下文所述的先決條件：[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-information-protection)。 本主題說明下列先決條件：
+
+- 為您的租用戶[啟用 Cloud App Security 和 Azure 資訊保護](https://docs.microsoft.com/zh-TW/cloud-app-security/azip-integration)。
+- [將應用程式連線](https://docs.microsoft.com/zh-TW/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)至 Cloud App Security。
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>使用 Microsoft 資訊保護 SDK 將敏感度標籤擴充至協力廠商應用程式和服務
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: c76fb44fa00edc141e5037b99258a9501e722d86
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455335"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737693"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度標籤中的加密來限制內容的存取
 
@@ -47,7 +47,7 @@ ms.locfileid: "30455335"
 若要開始，只需將 [加密] **** 切換為 [開啟]****，然後使用下列選項來控制誰可以存取套用此標籤的電子郵件或文件。您可以：
 
 1. **將加密同時套用至電子郵件和文件，或只套用至電子郵件。** 如果您選擇只套用至電子郵件，則將在 Outlook 中加密具有此標籤的郵件，但不會在其他應用程式 (例如 Word 或 PowerPoint) 中加密具有此標籤的文件。 
-2. 在套用標籤之後**允許標籤內容的存取在特定日期或在特定天數之後到期**。在此之後，使用者將無法開啟標籤項目。如果您指定日期，則有效時間直到您的目前時區中該日期的午夜。 
+2. **允許加標籤的內容到期**，可在特定日期，或是在套用標籤之後的特定天數之後。在此時間後，使用者將無法開啟加標籤的項目。如果您指定日期，則有效時間直到您的目前時區中該日期的午夜。(請注意，某些電子郵件用戶端可能因為其快取機制而無法強制執行到期，並顯示超過期限的電子郵件。)
 3. 在套用標籤之後**允許離線存取**可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該閾值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
 
 ![敏感度標籤的加密設定](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
