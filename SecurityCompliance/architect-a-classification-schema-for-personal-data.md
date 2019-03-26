@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 判斷您的組織是否將實作標籤做為 GDPR 計劃的一部分。
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789438"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800295"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>設計個人資料的分類結構描述
 
@@ -41,9 +41,9 @@ ms.locfileid: "30789438"
 
 -   如果您的組織尚未有敏感資訊類型，或打算使用標籤，實作更廣泛的資料控管計劃，則這些敏感資訊類型更易於使用。
 
--   這些敏感資訊類型會使用 DLP 規則 (Office 標籤也一樣)。
+-   這些敏感資訊類型會使用 DLP 規則 (保留標籤也一樣)。
 
--   未來，這些敏感資訊類型將使用雲端 App 安全性，以便您可以偵測其他 SaaS 應用程式中的敏感資訊。
+-   敏感資訊類型可以搭配雲端 App 安全性一起使用，以便您可以偵測其他 SaaS 應用程式中的敏感資訊。
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>選項 2：使用敏感性資訊類型 + 保留標籤
 

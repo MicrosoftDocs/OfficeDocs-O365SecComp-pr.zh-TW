@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為 GDPR 保護計劃的一部分。
-ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789428"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800285"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>將標籤套用至 Office 365 中的個人資料
 
@@ -29,15 +29,16 @@ ms.locfileid: "30789428"
 
 如果您使用標籤來保護 Office 365 中的個人資料，Microsoft 建議從使用[保留標籤](labels.md)開始。 使用保留標籤，您可以：
 - 使用「進階資料控管」，根據敏感性資訊類型或其他準則自動套用標籤。
--  使用保留標籤搭配資料外洩防護來套用保護。 
+- 使用保留標籤搭配資料外洩防護來套用保護。 
 - 使用標籤搭配電子文件探索和內容搜尋。 
-- 同時使用標籤和敏感性資訊類型搭配 Cloud App Security 來監視其他 SaaS 應用程式中的個人資料。
+
+雲端 App 安全性目前不支援保留標籤，但是您可以使用 Office 365 敏感資訊類型搭配雲端 App 安全性，監視位於其他 SaaS 應用程式中的個人資料。
 
 目前建議使用[敏感度標籤](sensitivity-labels.md)，將標籤套用至內部部署與其他雲端服務和提供者中的檔案。 也有對於 Office 365 中需要使用 Azure 資訊保護 (AIP) 加密進行資料保護的檔案 (例如商業秘密檔案) 所建議的事項。
 
 目前，對於 Office 365 中具有、受限於 GDPR 資料的檔案，不建議使用 Azure 資訊保護來套用加密。 Office 365 服務目前無法讀取使用 AIP 加密的檔案。 因此，服務找不到這些檔案中的敏感性資料。
 
-您可對 Exchange Online 中的郵件套用敏感度標籤，而這些標籤可搭配 Office 365 資料外洩防護使用。 
+您可對 Exchange Online 中的郵件套用保留標籤，而這些標籤可搭配 Office 365 資料外洩防護使用。 
 
 ![Office 365 標籤和 Azure 資訊保護標籤](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
@@ -45,7 +46,7 @@ ms.locfileid: "30789428"
 在此圖例中：
 
 -   將保留標籤用於個人資料，以及 SharePoint Online 和商務用 OneDrive 中高度管制的商業機密檔案。
-
+-   Office 365 敏感性資訊類型可以用於 Office 365 之中，也可以搭配雲端 App 安全性，監視位於其他 SaaS 應用程式中的個人資料。
 -   將敏感度標籤用於高度管制的商業機密檔案、Exchange Online 電子郵件、其他 SaaS 服務中的檔案、內部部署資料中心中的檔案，以及其他雲端提供者中的檔案。
 
 
@@ -78,8 +79,8 @@ ms.locfileid: "30789428"
 <p>. . . 至具有此標籤的文件 . . .</p>
 <p>客戶資料</p></td>
 <td align="left"><p>在任何獲批准的 SaaS App 中具有這些屬性的檔案 . . .</p>
-<p>&lt;預先定義的 PII 屬性或自訂運算式&gt;</p>
-<p>. . . 在組織外共用時發出警示</p></td>
+<p>選擇一或多個屬性：預先定義的 PII 屬性、Office 365 機密資訊類型、敏感度標籤 (AIP)、自訂運算式</p>
+<p>。 。 。 在組織外共用時發出警示</p><p>附註：雲端 App 安全性目前不支援保留標籤。</td>
 </tr>
 <tr class="even">
 <td align="left">敏感資訊類型範例：比利時國民編碼、信用卡號碼、克羅埃西亞身分證號碼、芬蘭國民身分證</td>
@@ -90,7 +91,7 @@ ms.locfileid: "30789428"
 <td align="left"><p>套用此保護 . . .</p>
 <p>&lt;定義保護&gt;</p>
 <p>. . . 至符合這些敏感資訊類型的文件&gt;</p></td>
-<td align="left">注意：雲端 App 安全性即將推出的屬性包含 Office 365 敏感資訊類型，以及 Office 365 與 Azure 資訊保護中的統一標籤。</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
