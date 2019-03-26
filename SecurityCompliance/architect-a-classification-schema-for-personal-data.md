@@ -3,7 +3,7 @@ title: 設計個人資料的分類結構描述
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 判斷您的組織是否將實作標籤做為 GDPR 計劃的一部分。
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373864"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789438"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>設計個人資料的分類結構描述
 
@@ -45,13 +45,13 @@ ms.locfileid: "30373864"
 
 -   未來，這些敏感資訊類型將使用雲端 App 安全性，以便您可以偵測其他 SaaS 應用程式中的敏感資訊。
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>選項 2：使用敏感資訊類型 + Office 標籤
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>選項 2：使用敏感性資訊類型 + 保留標籤
 
--   您將需要敏感資訊類型，以自動將標籤套用至受到 GDPR 約束的個人資料，因此這些敏感資訊類型是必要的。
+-   您將需要敏感性資訊類型，才能對受限於 GDPR 的個人資料自動套用標籤，因此這些是必要的。
 
--   使用 Office 標籤可讓您將受到 GDPR 約束的個人資料併入更廣泛的資料控管計劃中。
+-   使用保留標籤可讓您將受到 GDPR 約束的個人資料併入更廣泛的資料控管計劃中。
 
--   稍後，Office 標籤將與 Azure 資訊保護標籤匯聚成統一的分類和標示引擎。
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>開發包含個人資料的標籤結構描述
 
