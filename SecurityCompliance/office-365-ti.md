@@ -3,7 +3,7 @@ title: Office 365 威脅調查及回應
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/09/2019
+ms.date: 03/18/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Office 365 進階威脅防護的威脅智慧功能可協助您研究針對貴組織的潛在威脅、 回應惡意程式碼、 網路釣魚和其他 Office 365 已經偵測出代表您的攻擊，搜尋的威脅指標。
-ms.openlocfilehash: 3d7bc40c4d5bec0c218adf093655cbbccde07ff9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693502"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732266"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威脅調查及回應
 
@@ -49,7 +49,7 @@ ms.locfileid: "30693502"
 
 - **如果您的組織已有 Office 365 威脅情報 （但不是 Office 365 進階威脅防護） 當作附加元件**以另一個的 Office 365 訂閱，然後將現在有 Office 365 進階威脅防護計劃 2，及這包括威脅調查及回應功能。 
 
-- **如果您的組織已有 Office 365 進階威脅防護 （但不是 Office 365 威脅情報） 當作附加元件**以另一個的 Office 365 訂閱，然後會有 Office 365 進階威脅防護計劃 1。 這包括 Office 365 進階威脅防護方案 1，（但不是威脅分析調查及回應功能）。
+- **如果您的組織已有 Office 365 進階威脅防護 （但不是 Office 365 威脅情報） 當作附加元件**以另一個的 Office 365 訂閱，然後現在有 Office 365 進階威脅防護計劃 1。 這包括 Office 365 進階威脅防護方案 1，（但不是威脅分析調查及回應功能）。
 
 如需詳細資訊，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)與[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
@@ -60,14 +60,20 @@ ms.locfileid: "30693502"
 - [開始使用威脅調查及回應](get-started-with-ti.md)（這包括必要的角色的相關資訊） 
     
 - [了解威脅追蹤器-新增和值得注意](threat-trackers.md)
+
+- [自動化的調查及回應 （空調） 與 Office 365 威脅情報](automated-investigation-response-office.md)
+
+- [使用中的安全性威脅總管&amp;合規性中心](use-explorer-in-security-and-compliance.md)
     
-- [尋找並調查已傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
+- [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
     
 - [使用攻擊模擬器](attack-simulator.md)
     
 - [整合 Windows Defender 進階威脅防護的威脅調查及回應](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>相關主題
+
+[威脅總管檢視](threat-explorer-views.md)
 
 [防範 Office 365 中的威脅](protect-against-threats.md)
   

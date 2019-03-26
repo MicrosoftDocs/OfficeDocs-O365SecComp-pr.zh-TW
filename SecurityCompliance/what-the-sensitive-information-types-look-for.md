@@ -1,7 +1,7 @@
 ---
 title: 敏感資訊類型在找什麼
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含可供您在 DLP 原則中使用的 80 種敏感資訊類型。 本主題列出所有的這些敏感資訊類型，並顯示 DLP 原則看起來當它偵測到每個類型。
-ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537640"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30639190"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
 
@@ -623,7 +623,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="format"></a>Format
 
-字串 「 伺服器 」、 「 伺服器 」 或 「 資料來源 」 後面加上字元和下列，模式中所述的字串包含字串 「 cloudapp.azure。<!--no-hyperlink-->com 」 或 「 cloudapp.azure。<!--no-hyperlink-->net 」 或 「 database.windows。<!--no-hyperlink-->net 」，以及 「 密碼 」 或 「 密碼 」 或 「 pwd 」 的字串。
+字串 「 伺服器 」、 「 伺服器 」 或 「 資料來源 」 後面加上字元和下列，模式中所述的字串包含字串 「 cloudapp.azure。<!--no-hyperlink-->com 」 或者 「 cloudapp.azure。<!--no-hyperlink-->net 」 或者 「 database.windows。<!--no-hyperlink-->net 」 及 「 密碼 」 或 「 密碼 」 或 「 pwd 」 的字串。
 
 ### <a name="pattern"></a>模式
 
@@ -632,7 +632,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 - 等號 （=）
 - 0-2 空白字元
 - 1-200 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
-- 將字串 「 cloudapp.azure。<!--no-hyperlink-->com 」、 「 cloudapp.azure。<!--no-hyperlink-->net 」，或 「 database.windows。<!--no-hyperlink-->net 」
+- 將字串 「 cloudapp.azure。<!--no-hyperlink-->com 」、 「 cloudapp.azure。<!--no-hyperlink-->net 」，或者 「 database.windows。<!--no-hyperlink-->net 」
 - 1-300 較低的大寫字母、 數字、 符號、 特殊字元或空格之間的任何組合
 - 字串 「 密碼 」、 「 密碼 」 或者 「 pwd 」
 - 0-2 空白字元
@@ -794,7 +794,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="format"></a>Format
 
-將字串 「 redis.cache.windows。<!--no-hyperlink-->net"後面加上字元和字串中的模式，如下所述包含字串 「 密碼 」 或 「 pwd 」。
+將字串 「 redis.cache.windows。<!--no-hyperlink-->net"後面加上字元和下方，模式中所述的字串包含字串 「 密碼 」 或 「 pwd 」。
 
 ### <a name="pattern"></a>模式
 
