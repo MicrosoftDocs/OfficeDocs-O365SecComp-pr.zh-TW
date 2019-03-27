@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 與資料外洩防護 (DLP) 在 SharePoint Online 中，您可以探索包含整個您的租用戶的敏感資料的文件。 探索文件之後，您可以與文件擁有者協力保護資料。 本主題可以協助您進行查詢，以搜尋敏感資料。
-ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639130"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900052"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 
@@ -53,7 +53,7 @@ ms.locfileid: "30639130"
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>可以在 eDiscovery 中心取得的其他查詢屬性和搜尋運算子
 
-在 SharePoint 中的 DLP 也引進 LastSensitiveContentScan 屬性，可協助您搜尋掃描在特定時間範圍內的檔案。 如需與查詢範例`LastSensitiveContentScan`屬性，請參閱下一節中的[複雜查詢的範例](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries)。 
+在 SharePoint 中的 DLP 也引進 LastSensitiveContentScan 屬性，可協助您搜尋掃描在特定時間範圍內的檔案。 如需與查詢範例`LastSensitiveContentScan`屬性，請參閱下一節中的[複雜查詢的範例](#examples-of-complex-queries)。 
   
 您可以使用 DLP 特有的屬性，來建立查詢時，不僅標準 SharePoint eDiscovery 搜尋內容例如：`Author`或`FileExtension`。 您可以使用運算子來建立複雜查詢。 可用的屬性和運算子的清單，請參閱 <<c0>使用搜尋屬性和運算子與 eDiscovery部落格文章。 
   

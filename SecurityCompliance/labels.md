@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: c7a1ea3221de193db30a821e0449194ea761ebcf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455305"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900132"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -90,7 +90,7 @@ ms.locfileid: "30455305"
     
 - 如果有多項規則會指派自動套用標籤，且內容符合多項規則的條件，則會指派最舊規則的保留標籤。
     
-手動指派標籤為明確指派，自動套用標籤為隱含指派。明確保留標籤的優先順序高於隱含標籤。如需詳細資訊，請參閱之後的[保留原則，哪一個優先？](labels.md#principles)小節。
+手動指派標籤為明確指派，自動套用標籤為隱含指派。明確保留標籤的優先順序高於隱含標籤。如需詳細資訊，請參閱之後的[保留原則，哪一個優先？](#the-principles-of-retention-or-what-takes-precedence)小節。
 
 本節中所有的資訊僅適用於保留標籤。請注意，除了一個保留標籤之外，也可以將一個區分大小寫的標籤套用至內容的項目。
   

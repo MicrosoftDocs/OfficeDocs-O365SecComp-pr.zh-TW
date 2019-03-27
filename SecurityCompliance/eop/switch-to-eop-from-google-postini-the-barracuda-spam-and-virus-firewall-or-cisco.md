@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: 本主題的目的在於協助您了解從內部部署電子郵件檢疫裝置或雲端保護服務切換到 Exchange Online Protection (EOP) 的程序，然後提供給您開始使用的說明資源。
-ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693412"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899952"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
 
@@ -25,14 +25,13 @@ ms.locfileid: "30693412"
   
 在您切換到 EOP 之前，請思考要在雲端 (使用 Exchange Online)、內部部署或在混合案例中託管 EOP 保護的信箱 (「混合」的意思是，有些信箱裝載於內部部署，有些信箱裝載於 Exchange Online)。每個託管案例：雲端、內部部署和混合式部署都可行，但設定步驟有所不同。下列考量可協助您選擇適當的部署：
   
-- **內部部署信箱的 EOP 保護** 如果有想要使用的現有郵件託管基礎結構，或有將信箱保留在內部部署的業務需求，而且想要 EOP 的雲端電子郵件保護，則適合使用此案例。 [切換至獨立式 EOP](#BKMK_SwitchStandalone.md)詳細說明此案例。 
+- **內部部署信箱的 EOP 保護** 如果有想要使用的現有郵件託管基礎結構，或有將信箱保留在內部部署的業務需求，而且想要 EOP 的雲端電子郵件保護，則適合使用此案例。 [切換至獨立式 EOP](#switch-to-eop-standalone)詳細說明此案例。 
     
 - **Exchange Online 信箱的 EOP 保護** 如果您想要 EOP 保護而所有信箱都裝載在雲端，則適合使用此案例。這可協助您降低複雜度，因為您不需維護內部部署的郵件伺服器。 [切換至 Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO) 說明此案例。 
     
-- **混合信箱的 EOP 保護** 也許您想要雲端信箱，但您必須將某些使用者的信箱保留在內部部署。如果您希望有些信箱裝載於內部部署，而有些信箱裝載於 Exchange Online，則選擇此案例。 [切換至混合解決方案](#BKMK_SwitchHybrid.md)說明此案例。 
+- **混合信箱的 EOP 保護** 也許您想要雲端信箱，但您必須將某些使用者的信箱保留在內部部署。如果您希望有些信箱裝載於內部部署，而有些信箱裝載於 Exchange Online，則選擇此案例。 [切換至混合解決方案](#switch-to-a-hybrid-solution)說明此案例。 
     
 ## <a name="switch-to-eop-standalone"></a>切換至獨立式 EOP
-<a name="BKMK_SwitchStandalone"> </a>
 
 如果您目前將信箱託管於內部部署，而且使用內部部署保護裝置或雲端郵件保護服務，即可切換至 EOP，充分利用其保護功能和可用性。若要在獨立環境中設定 EOP (這表示您將信箱託管於內部部署並使用 EOP 提供郵件保護)，可以遵循[設定 EOP 服務](set-up-your-eop-service.md)中簡述的步驟。本主題檢視設定 EOP 保護的步驟，包含註冊、新增網域以及設定郵件流程與連接器。
   

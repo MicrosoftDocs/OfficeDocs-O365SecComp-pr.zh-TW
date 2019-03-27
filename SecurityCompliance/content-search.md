@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 在 Office 365 安全性中使用內容搜尋&amp;若要搜尋的內容信箱、 SharePoint Online 網站、 OneDrive 帳戶、 Microsoft Teams、 Office 365 群組與 Skype for Business 交談的合規性中心。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽並匯出搜尋結果。 內容搜尋也是有效的工具，以搜尋可能會與 GDPR 資料主體要求相關的內容。
-ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 93bac47c4d83aa75e0581dbba0b40386a451fe3d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670718"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900102"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -76,7 +76,8 @@ ms.locfileid: "30670718"
     
     為什麼要使用關鍵字清單？ 您可以取得顯示多少個項目比對每個關鍵字的統計資料。 這可協助您快速找出哪些關鍵字是最 （和至少） 有效。 您也可以使用 （以括號括住） 的關鍵字文句] 列中。 如需搜尋統計資料的詳細資訊，請參閱 <<c0>檢視的內容搜尋結果的關鍵字統計資料。
 
-    [!NOTE] 若要協助減少大型關鍵字清單所導致的問題，您現在有限的最大值為 20 列在 [關鍵字] 清單中。
+    > [!NOTE]
+    > 若要協助減少大型關鍵字清單所導致的問題，您現在有限的最大值為 20 列在 [關鍵字] 清單中。
     
 - **條件**-您可以新增搜尋條件縮小搜尋範圍，並傳回更精細的結果集。 每個條件將子句新增至搜尋查詢，建立及執行當您啟動搜尋。 條件以邏輯方式是透過類似功能**AND**運算子邏輯運算子 ( **c:c**) 連接至 （在 [關鍵字] 方塊中指定） 的關鍵字查詢。 這表示項目必須符合的關鍵字查詢和結果中包含的一或多個條件。 這就是條件如何協助您縮小搜尋結果。 清單和說明您可以在搜尋查詢中使用的條件，請參閱 「 搜尋條件 」 一節中[關鍵字查詢和搜尋條件的內容搜尋](keyword-queries-and-search-conditions.md#search-conditions)。
     

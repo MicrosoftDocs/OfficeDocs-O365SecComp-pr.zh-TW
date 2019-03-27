@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
-ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720273"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900092"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
@@ -73,7 +73,11 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 監督原則，您可以選擇要監視中一或多個下列通訊平台的郵件：
 
 - **Exchange 電子郵件：** Exchange Online 主控的 Office 365 訂閱一部分的信箱是所有合格的訊息監督。 電子郵件和附件符合監督原則條件會立即可用來監視及監督報告中。 支援的附件類型的監督和是相同[的 Exchange 郵件流程規則內容檢查支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。
-- **Microsoft Teams:** 可以指導聊天室的通訊和公用和私人 Microsoft Teams 通道和個別的聊天室中相關聯的附件。 比對監督原則條件的小組聊天處理一次，每隔 24 小時，則可用來監視及監督報告中。
+- **Microsoft Teams:** 可以指導聊天室的通訊和公用和私人 Microsoft Teams 通道和個別的聊天室中相關聯的附件。 比對監督原則條件的小組聊天處理一次，每隔 24 小時，則可用來監視及監督報告中。 若要有效地監管個別使用者聊天和通道通訊 teams 使用下列群組管理設定：
+
+    - **的小組聊天監督：** 需要指派個別使用者或[通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)指派的監督原則。 這是對於這兩個 1-1 或 1 對多使用者/聊天室的關係。
+    - **的小組通道通訊：** 您將需要指派每個 Microsoft 小組通道，或您想要監視的 Office 365 群組包含特定使用者的監督原則。 如果您將相同的使用者新增至其他 Microsoft Teams 通道或 Office 365 群組時，請務必也將這些新通道和群組新增至監督原則。
+
 - **協力廠商來源：** 如果您已在組織中此資料匯入到 Office 365 信箱，您可以監管從協力廠商來源 （類似從 Facebook 或投寄箱） 的通訊。 [了解如何將 Office 365 的第 3 廠商資料匯入](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)。
 
 ### <a name="policy-settings"></a>原則設定

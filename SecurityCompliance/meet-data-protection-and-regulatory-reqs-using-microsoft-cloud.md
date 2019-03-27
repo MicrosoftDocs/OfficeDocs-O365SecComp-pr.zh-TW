@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服務信任入口網站中的合規性管理員會提供工具，可追蹤、實作及管理控制項，在針對 Microsoft 雲端服務 (例如 Office 365 和 Microsoft Azure) 進行測量時，可協助貴組織達到安全性和資料保護法規遵循產業標準 (例如 GDPR、ISO 27001 與 27018，與 HIPAA)。合規性管理員可協助監督資料保護和隱私策略的人員，讓貴組織可管理法規遵循和風險評估程序。
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296836"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900172"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求
 
@@ -385,7 +385,7 @@ ms.locfileid: "30296836"
   
 - [使用者搜尋](#search-for-a-user)
 
-- [匯出帳戶資料歷程記錄的報告](#export-report-of-account-data-history)
+- [匯出帳戶資料歷程記錄的報告](#export-a-report-of-account-data-history)
 
 - [重新指派動作項目](#reassign-action-items)
 
@@ -511,9 +511,9 @@ ms.locfileid: "30296836"
   
 1. 在合規性管理員儀表板中，按一下 [新增圖示]![](media/ITPro-EAC-AddIcon.gif)[新增評估]****。 
     
-2. 在 [新增評估]**** 視窗中，您可以建立要新增「評估」的新群組，或將其新增至現有的群組 (內建的群組稱為「初始群組」)。根據您所選擇的選項，請輸入新群組的名稱，或從下拉式清單中選取現有的群組。如需詳細資訊，請參閱[群組評估](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping)。
+2. 在 [新增評估]**** 視窗中，您可以建立要新增「評估」的新群組，或將其新增至現有的群組 (內建的群組稱為「初始群組」)。根據您所選擇的選項，請輸入新群組的名稱，或從下拉式清單中選取現有的群組。如需詳細資訊，請參閱[群組評估](#grouping-assessments)。
     
-    如果您建立新的群組，也可以選擇從現有的群組將資訊複製到新的「評估」。這表示新增至您複製來源的群組中「評估」的客戶管理控制項「實作詳細資料與測試計劃」和「管理回應」欄位的任何資訊，會複製到新的「評估」中同一個 (或相關) 客戶管理控制項。如果您要將新的「評估」新增至現有群組，該群組中「評估」的一般資訊將會複製到新的「評估」。如需詳細資訊，請參閱[從現有的評估複製資訊](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying)。
+    如果您建立新的群組，也可以選擇從現有的群組將資訊複製到新的「評估」。這表示新增至您複製來源的群組中「評估」的客戶管理控制項「實作詳細資料與測試計劃」和「管理回應」欄位的任何資訊，會複製到新的「評估」中同一個 (或相關) 客戶管理控制項。如果您要將新的「評估」新增至現有群組，該群組中「評估」的一般資訊將會複製到新的「評估」。如需詳細資訊，請參閱[從現有的評估複製資訊](#copying-information-from-existing-assessments)。
     
 3. 按 [下一步]**** 並執行下列動作：
     
@@ -553,7 +553,7 @@ ms.locfileid: "30296836"
   
 1. 此區段會顯示「評估」摘要資訊，包括「評估群組」的名稱、「產品」、「評估名稱」、評估控制項的數目
     
-2. 本節會顯示「評估篩選器」控制項。如需如何使用「評估篩選器」控制項的更詳細說明，請參閱[管理評估程序](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1)一節。 
+2. 本節會顯示「評估篩選器」控制項。如需如何使用「評估篩選器」控制項的更詳細說明，請參閱[管理評估程序](#managing-the-assessment-process)一節。 
     
 3. 本節會顯示評估範圍內的個別雲端服務。
     
@@ -561,7 +561,7 @@ ms.locfileid: "30296836"
     
 5. 本節中包含客戶管理控制項，其也會依控制項系列組織。按一下控制項系列加以展開，並顯示個別的控制項。
     
-6. 顯示控制項系列中的控制項總數，以及這些控制項中已評估的數量。合規性管理員的主要功能是追蹤貴組織評估客戶管理控制項的進度。如需詳細資訊，請參閱[了解合規性分數](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore)一節。 
+6. 顯示控制項系列中的控制項總數，以及這些控制項中已評估的數量。合規性管理員的主要功能是追蹤貴組織評估客戶管理控制項的進度。如需詳細資訊，請參閱[了解合規性分數](#understanding-the-compliance-score)一節。 
 
 ## <a name="managing-the-assessment-process"></a>管理評估程序
 
