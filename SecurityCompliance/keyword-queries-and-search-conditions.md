@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解電子郵件和文件屬性，您可以搜尋 Exchange Online 信箱中，並在 SharePoint 或 OneDrive for Business 網站使用內容搜尋工具在 Office 365 安全性&amp;合規性中心。  '
-ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ec8f5c049fbaaa6cc17049154774faa128d2f18d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639160"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900202"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢與搜尋條件
 
@@ -63,7 +63,7 @@ ms.locfileid: "30639160"
 |寄件日期|寄件者傳送電子郵件的日期。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|已在指定日期傳送或指定的日期範圍內所傳送的郵件。|
 |大小|項目，以位元組為單位的大小。|`size>26214400`  <br/> `size:1..1048567`|大於 25 的郵件？MB。 第二個範例會傳回介於 1 到 1,048,567 位元組 (1 MB) 的大小的郵件。|
 |主旨|電子郵件訊息的主旨行中的文字。  <br/> **附註：** 當您在查詢中使用 Subject 屬性時，???the 搜尋會傳回所有郵件的主旨行中包含您要搜尋的文字。 換句話說，查詢不會傳回已完全符合這些郵件。 例如，如果您搜尋`subject:"Quarterly Financials"`，您的結果會包含郵件主旨為 「 Quarterly Financials 2018 」。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|包含字詞"Quarterly Financials"的主旨行文字中的任何位置的郵件。 第二個範例會傳回包含 word northwind 主旨行中的所有郵件。|
-|收件者|電子郵件訊息的 [到] 欄位。<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|所有範例會都傳回郵件中指定 Ann Beebe 的地方： 線條。|
+|To|電子郵件訊息的 [到] 欄位。<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|所有範例會都傳回郵件中指定 Ann Beebe 的地方： 線條。|
    
 > [!NOTE]
 > <sup>1</sup>的收件者屬性的值，您可以使用電子郵件地址 （也稱為的*使用者主體名稱*或 UPN）、 顯示名稱或若要指定使用者的別名。 例如，您可以使用 annb@contoso.com、 annb 或 「 Ann Beebe 」 若要指定 Ann Beebe 的使用者。<br/><br/>搜尋任何時 （From、 To、 [副本]、 [密件副本、 參與者及收件者） 的收件者屬性，Office 365 會嘗試展開每位使用者的身分識別所要尋找 Azure Active Directory 中設定它們。  如果使用者在 Azure Active Directory 中找到，查詢就會展開成包含使用者的電子郵件地址 （或 UPN）、 別名、 顯示名稱，以及 LegacyExchangeDN。<br/><br/>例如，例如查詢`participants:ronnie@contoso.com`就會展開成`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`。
@@ -76,7 +76,7 @@ ms.locfileid: "30639160"
   
 |**屬性**|**屬性描述**|**範例**|**在範例中所傳回的搜尋結果**|
 |:-----|:-----|:-----|:-----|
-|Author|[作者] 欄位從 Office 文件，可保存如果複製文件。 例如，如果使用者建立文件和電子郵件至其他人然後將它上傳至 SharePoint 文件仍會保留原始作者。 請務必使用這個屬性的使用者的顯示名稱。|`author:"Garth Fort"`|Garth Fort 所編寫的所有文件。|
+|作者|[作者] 欄位從 Office 文件，可保存如果複製文件。 例如，如果使用者建立文件和電子郵件至其他人然後將它上傳至 SharePoint 文件仍會保留原始作者。 請務必使用這個屬性的使用者的顯示名稱。|`author:"Garth Fort"`|Garth Fort 所編寫的所有文件。|
 |ContentType|項目，例如項目、 文件或視訊 SharePoint 內容類型。|`contenttype:document`|會傳回所有文件。|
 |建立時間|建立項目的日期。|`created\>=06/01/2016`|建立或 2016 年 6 月 1 日之後的所有項目。|
 |CreatedBy|建立或上傳項目的人員。 請務必使用這個屬性的使用者的顯示名稱。|`createdby:"Garth Fort"`|建立或 Garth Fort 所上傳的所有項目。|
@@ -87,10 +87,10 @@ ms.locfileid: "30639160"
 |LastModifiedTime|上次變更項目的日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一個範例會傳回已變更或 2016 5 月 1 日之後的項目。 第二個範例傳回 2016 5 月 1 日和 2016 年 6 月 1 日之間變更的項目。|
 |ModifiedBy|上次變更項目的人員。 請務必使用這個屬性的使用者的顯示名稱。|`modifiedby:"Garth Fort"`|上次由 Garth Fort 變更的所有項目。|
 |路徑|在 SharePoint 或 OneDrive for Business 網站特定的網站路徑 (URL)。  <br/> 若要傳回位於指定路徑屬性站台中的資料夾中的項目，您必須新增 /\*以指定的網站; 的 URL例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **附註：** 使用`Path`來搜尋 OneDrive 位置的屬性不會傳回媒體檔案，例如.png、.tiff 或.wav 檔案，在搜尋結果中。 不同的站台屬性用於搜尋查詢中搜尋的 OneDrive 資料夾中的媒體檔案。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一個範例會傳回所有項目中指定的 OneDrive for Business 網站。 第二個範例會傳回指定的網站 （和網站中的資料夾） 中含有單字"confidential"的檔案名稱中的文件。|
-|SharedWithUsersOWSUser|以指定的使用者共用並顯示在使用者的 OneDrive for Business 網站的 **「 與我共用 」** 頁面上的文件。 這些是已明確與共用所指定的使用者由其他人在組織中的文件。 當您匯出符合搜尋查詢使用 SharedWithUsersOWSUser 屬性的文件時，會匯出文件內容的原始位置，以指定的使用者共用文件的人員。 如需詳細資訊，請參閱[組織內共用的網站內容的搜尋](keyword-queries-and-search-conditions.md#internal)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|這兩個範例會傳回所有內部文件，必須與 Garth Fort 明確地共用且 Garth Fort [**與我共用**] 頁面上顯示商務用 OneDrive 帳戶。|
+|SharedWithUsersOWSUser|以指定的使用者共用並顯示在使用者的 OneDrive for Business 網站的 **「 與我共用 」** 頁面上的文件。 這些是已明確與共用所指定的使用者由其他人在組織中的文件。 當您匯出符合搜尋查詢使用 SharedWithUsersOWSUser 屬性的文件時，會匯出文件內容的原始位置，以指定的使用者共用文件的人員。 如需詳細資訊，請參閱[組織內共用的網站內容的搜尋](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|這兩個範例會傳回所有內部文件，必須與 Garth Fort 明確地共用且 Garth Fort [**與我共用**] 頁面上顯示商務用 OneDrive 帳戶。|
 |網站|站台或群組的組織中的網站的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一個範例會從 OneDrive for Business 網站的所有使用者在組織中傳回項目。 第二個範例會從所有小組網站中傳回項目。|
 |大小|項目，以位元組為單位的大小。|`size>=1`  <br/> `size:1..10000`|第一個範例會傳回大於 1 個位元組的項目。 第二個範例會傳回介於 1 到 10000 位元組大小的項目。|
-|職稱|文件的標題。 Title 屬性是 Microsoft Office 文件中所指定的中繼資料。 它是不同的文件的檔案名稱。|`title:"communication plan"`|在 Office 文件的標題的中繼資料屬性中含有片語 「 communication plan 」 任何文件。|
+|標題|文件的標題。 Title 屬性是 Microsoft Office 文件中所指定的中繼資料。 它是不同的文件的檔案名稱。|`title:"communication plan"`|在 Office 文件的標題的中繼資料屬性中含有片語 「 communication plan 」 任何文件。|
    
 ## <a name="searchable-contact-properties"></a>可搜尋的連絡人內容
 
@@ -118,7 +118,7 @@ ms.locfileid: "30639160"
 |OfficeLocation|在 [ **Office** ] 或 [**辦公室地點**] 屬性值。|
 |OtherAddress|**其他**地址屬性的值。|
 |姓氏|**Last** name 屬性中的名稱。|
-|職稱|[**職稱**] 屬性中的標題。|
+|標題|[**職稱**] 屬性中的標題。|
    
 
 ## <a name="searchable-sensitive-data-types"></a>可搜尋的敏感資料類型
@@ -181,7 +181,7 @@ ms.locfileid: "30639160"
   
 |**條件**|**描述**|
 |:-----|:-----|
-|日期|電子郵件的日期已接收到收件者或寄件者所傳送。 對於文件，上次修改文件的日期。|
+|Date|電子郵件的日期已接收到收件者或寄件者所傳送。 對於文件，上次修改文件的日期。|
 |寄件者/作者|寄送郵件人員的電子郵件。 對於文件，在 Office 文件中的 [作者] 欄位中所引用的人員。 您可以輸入多個名稱，以逗號隔開。 **OR**運算子會以邏輯方式連線兩個或多個值。|
 |大小 （以位元組為單位）|電子郵件與文件的大小 （以位元組為單位） 的項目。|
 |主旨/標題|電子郵件訊息的主旨行中的文字。 對於文件，文件的標題。 如先前所述，Title 屬性是 Microsoft Office 文件中指定的中繼資料。 您可以輸入多個主體/標題，以逗號隔開的名稱。 **OR**運算子會以邏輯方式連線兩個或多個值。|
@@ -195,13 +195,13 @@ ms.locfileid: "30639160"
 |:-----|:-----|
 |訊息類型| 要搜尋的郵件類型。 這是做為類型的電子郵件屬性相同的屬性。 可能的值：  <br/><br/>  連絡人  <br/>  文件  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  im  <br/>  日誌  <br/>  會議  <br/>  microsoftteams  <br/>  備忘稿  <br/>  文章  <br/>  rssfeeds  <br/>  工作  <br/>  語音信箱|
 |參與者|電子郵件; 中的所有人員欄位這些欄位為、 To、 [副本] 及 [密件副本]。|
-|Type (類型)|電子郵件項目的郵件類別屬性。 這是一樣的 ItemClass 電子郵件屬性的屬性。 它也是多重值條件。 因此，若要選取多個郵件類別，按住**CTRL**鍵，然後按一下 [您想要新增到條件的下拉式清單中的兩個或多個郵件類別。 在清單中選取每個郵件類別將會以邏輯方式連接所對應的搜尋查詢中的**OR**運算子。  <br/> 如需郵件類別 （和其對應的郵件類別識別碼） 的清單所使用的 Exchange，您可以選取**郵件類別**] 清單中，請參閱[項目類型和郵件類別](https://go.microsoft.com/fwlink/?linkid=848143)。|
+|類型	|電子郵件項目的郵件類別屬性。 這是一樣的 ItemClass 電子郵件屬性的屬性。 它也是多重值條件。 因此，若要選取多個郵件類別，按住**CTRL**鍵，然後按一下 [您想要新增到條件的下拉式清單中的兩個或多個郵件類別。 在清單中選取每個郵件類別將會以邏輯方式連接所對應的搜尋查詢中的**OR**運算子。  <br/> 如需郵件類別 （和其對應的郵件類別識別碼） 的清單所使用的 Exchange，您可以選取**郵件類別**] 清單中，請參閱[項目類型和郵件類別](https://go.microsoft.com/fwlink/?linkid=848143)。|
 |已收到|收件者收到電子郵件的日期。 這是做為接收電子郵件屬性相同的屬性。|
 |收件者|該人員的電子郵件已傳送至。 這是做為目的地電子郵件屬性相同的屬性。|
 |Sender|電子郵件的寄件者。|
 |寄件日期|寄件者傳送電子郵件的日期。 這是做為已傳送電子郵件屬性相同的屬性。|
 |主旨|電子郵件訊息的主旨行中的文字。|
-|收件者|電子郵件的收件者。|
+|To|電子郵件的收件者。|
   
 ### <a name="conditions-for-document-properties"></a>文件屬性的條件
 
@@ -209,8 +209,8 @@ ms.locfileid: "30639160"
   
 |**條件**|**描述**|
 |:-----|:-----|
-|Author|[作者] 欄位從 Office 文件，可保存如果複製文件。 例如，如果使用者建立文件和電子郵件至其他人然後將它上傳至 SharePoint 文件仍會保留原始作者。|
-|職稱|文件的標題。 Title 屬性是在 Office 文件中指定的中繼資料。 它是不同於文件的檔案名稱。|
+|作者|[作者] 欄位從 Office 文件，可保存如果複製文件。 例如，如果使用者建立文件和電子郵件至其他人然後將它上傳至 SharePoint 文件仍會保留原始作者。|
+|標題|文件的標題。 Title 屬性是在 Office 文件中指定的中繼資料。 它是不同於文件的檔案名稱。|
 |建立時間|建立文件的日期。|
 |上次修改日期|上次變更文件的日期。|
 |檔案類型|檔案; 的副檔名例如，docx、 一個、 pptx 或 xlsx。 這是做為 FileExtension 站台屬性相同的屬性。|
