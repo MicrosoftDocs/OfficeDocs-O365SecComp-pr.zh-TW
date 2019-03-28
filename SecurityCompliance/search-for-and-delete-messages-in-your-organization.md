@@ -1,5 +1,5 @@
 ---
-title: 搜尋並刪除您的 Office 365 組織-Admin 說明中的電子郵件
+title: 搜尋並刪除 Office 365 組織的系統管理說明中的電子郵件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: 使用搜尋並清除 Office 365 安全性功能&amp;規範中心來搜尋並刪除您組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: 15d67e42e4bdc63838f7ec1701d643391fa5c552
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 使用搜尋及清除中 Office 365 安全性功能&amp;合規性中心來搜尋並刪除電子郵件從貴組織中的所有信箱。
+ms.openlocfilehash: 4c98e73f74867b933560f163e80e74fd7bbd2bc5
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296856"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935158"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>搜尋並刪除您的 Office 365 組織-Admin 說明中的電子郵件
+# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>搜尋並刪除 Office 365 組織的系統管理說明中的電子郵件
 
-**本文適用於系統管理員。您試圖尋找您想要刪除的信箱中的項目請參閱[尋找訊息或具有立即搜尋的項目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
+**本文適用於系統管理員。您試圖尋找您想要刪除的信箱中的項目？請參閱[尋找郵件或在使用立即搜尋的項目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
-您可以使用 Office 365 中的 「 內容搜尋功能來搜尋並在組織中刪除所有信箱的電子郵件訊息。這可協助您尋找及移除潛在有害或高風險的電子郵件，例如：
+您可以使用 Office 365 中的 「 內容搜尋 」 功能來搜尋並刪除所有的信箱中的電子郵件訊息，您組織中。 這可協助您尋找並移除可能有害或高風險的電子郵件，例如：
   
 - 包含危險附件或病毒的郵件
     
@@ -35,23 +35,23 @@ ms.locfileid: "30296856"
 - 包含敏感資料的郵件
     
 > [!CAUTION]
-> 搜尋和清除是強大功能，可讓任何人指派刪除您組織中信箱的電子郵件訊息的必要權限。 
+> 搜尋及清除是一個強大的功能，可讓任何人都被指派來自您組織中的信箱刪除電子郵件訊息的必要權限。 
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 若要建立並執行內容的搜尋，您必須是**eDiscovery 管理員**角色群組的成員或**規範搜尋**管理角色指派。若要刪除的郵件，您必須是 「**組織管理**角色群組的成員或**搜尋和清除**管理角色指派。如需將使用者新增至角色群組的資訊，請參閱[授與使用者存取 Office 365 安全性 & 規範中心](grant-access-to-the-security-and-compliance-center.md)。
+- 若要建立並執行內容搜尋，您必須是 「 **eDiscovery 管理員**」 角色群組的成員，或被指派 「**符合性搜尋**管理 」 角色。 若要刪除的郵件，您必須是 「**組織管理**」 角色群組的成員，或是獲指派 「**搜尋及清除**的管理角色。 如需將使用者新增至角色群組的詳細資訊，請參閱[授與使用者存取 Office 365 安全性 & 合規性中心](grant-access-to-the-security-and-compliance-center.md)。
     
-- 您必須使用安全性 & 規範中心 PowerShell 刪除的郵件。請參閱[Step 2](#step-2-connect-to-security-amp-compliance-center-powershell)的連線方式的相關指示。
+- 您必須使用安全性 & 合規性中心 PowerShell 來刪除郵件。 如需如何連線指示，請參閱[步驟 2](#step-2-connect-to-security--compliance-center-powershell) 。
     
-- 每個信箱的 10 個項目最多可以一次移除。搜尋並移除郵件的功能為了要事件回應工具，因為此限制可協助確保從信箱快速地移除訊息。此功能並未清除 [使用者信箱適用對象。若要刪除超過 10 個項目，您可以使用**Search-mailbox DeleteContent**命令在 Exchange Online PowerShell。請參閱[搜尋和刪除郵件-Admin 說明](search-for-and-delete-messagesadmin-help.md)。
+- 每個信箱的 10 個項目最多可以一次移除。 因為搜尋和移除郵件的功能應該是事件回應工具，此限制可以協助確保從信箱快速移除郵件。 這項功能不是用來清除使用者信箱。 若要刪除超過 10 個項目，您可以在 Exchange Online PowerShell 中使用**Search-mailbox DeleteContent**命令。 請參閱[搜尋並刪除郵件-系統管理說明](search-for-and-delete-messagesadmin-help.md)。
     
-- 內容搜尋您可以刪除項目中的搜尋並清除巨集指令中的信箱數目上限為 50000。如果內容搜尋 （您在[步驟 1](#step-1-create-a-content-search-to-find-the-message-to-delete)中建立） 有超過 50000 個來源信箱，將會失敗的清除動作 （您在步驟 3 中建立）。請參閱[的詳細資訊](#more-information)] 區段中的提示上執行搜尋並清除超過 50000 個信箱上的作業。 
+- 您可以用來執行搜尋刪除的項目，並清除巨集指令在內容搜尋的信箱數目上限為 50000。 如果內容搜尋 （您在[步驟 1](#step-1-create-a-content-search-to-find-the-message-to-delete)中建立） 有超過 50000 個來源信箱，將會失敗的清除動作 （您在步驟 3 中建立）。 請參閱上執行搜尋祕訣[的詳細資訊](#more-information)一節，並清除超過 50000 個信箱上的作業。 
     
-- 本文中的程序只可以用來刪除 Exchange Online 信箱和公用資料夾中的項目。您無法使用它來刪除內容 SharePoint 或 OneDrive for Business 的網站。
+- 本文中的程序只可以用來刪除 Exchange Online 信箱和公用資料夾中的項目。 您無法使用它來刪除內容從 SharePoint 或 OneDrive for Business 網站。
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步驟 1：建立內容搜尋來尋找要刪除的郵件
 
-第一個步驟是建立及執行內容的搜尋來尋找您想要移除您組織中信箱的郵件。您可以使用 [安全性] 來建立搜尋&amp;規範中心或執行**新增 ComplianceSearch**和**開始 ComplianceSearch**指令程式。符合查詢的此搜尋將執行刪除的郵件**新增 ComplianceSearchAction-清除**命令在[步驟 3](#step-3-delete-the-message)。如需建立內容的搜尋及設定搜尋查詢，請參閱下列主題： 
+第一個步驟是建立和執行內容搜尋，以尋找您想要從組織中的信箱移除的郵件。 您可以使用安全性來建立搜尋&amp;合規性中心或執行**New-compliancesearch**和**Start-compliancesearch** cmdlet。 針對此搜尋將會執行刪除符合查詢的郵件**New-compliancesearchaction-清除**命令在[步驟 3](#step-3-delete-the-message)。 如需建立內容搜尋和設定搜尋查詢的詳細資訊，請參閱下列主題： 
   
 - [Office 365 中的內容搜尋](content-search.md)
     
@@ -62,7 +62,7 @@ ms.locfileid: "30296856"
 - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
     
 > [!NOTE]
-> 您在此步驟中建立的內容搜尋中搜尋的內容位置不能包含 SharePoint 或 OneDrive for Business 的網站。您可以將用於電子郵件訊息內容搜尋中包含只信箱與公用資料夾。如果內容搜尋包含網站，將會收到錯誤步驟 3 中執行**新增 ComplianceSearchAction**指令程式時。 
+> 您在此步驟中建立內容搜尋中搜尋的內容位置不能包含 SharePoint 或 OneDrive for Business 網站。 您可以將用於電子郵件的內容搜尋中包含僅信箱與公用資料夾。 如果內容搜尋中包含的網站，您會收到錯誤，在步驟 3 中執行**New-compliancesearchaction** cmdlet 時即可。 
   
 ### <a name="tips-for-finding-messages-to-remove"></a>尋找要移除的郵件的提示
 
@@ -76,7 +76,7 @@ ms.locfileid: "30296856"
     
 - 預覽搜尋結果，以確認內容搜尋僅傳回您想要刪除的郵件。
     
-- 使用搜尋評估統計資料 (搜尋安全性的詳細資料窗格中顯示&amp;規範中心或使用[Get ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934)指令程式來) 若要取得的結果總數計數。 
+- 使用搜尋預估統計資料 (在 [安全性] 中搜尋的詳細資料窗格中顯示&amp;合規性中心或使用[Get-compliancesearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) cmdlet) 來取得結果的總計數。 
     
 以下是尋找可疑電子郵件訊息的兩個查詢範例。
   
@@ -92,56 +92,56 @@ ms.locfileid: "30296856"
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2： 連線至安全性 & 規範中心 PowerShell
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2： 連線到安全性 & 合規性中心 PowerShell
 
-下一步是連線至您的組織的安全性 & 規範中心 PowerShell。如需逐步說明，請參閱[連線至 Office 365 安全性&amp;規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+下一步是連線至您的組織的安全性 & 合規性中心 PowerShell。 如需逐步指示，請參閱[連線到 Office 365 安全性&amp;合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-如果您的 Office 365 帳戶使用多重要素驗證 (MFA) 或同盟驗證，您無法使用先前在連線至安全性 & 規範中心 PowerShell 主題中的指示。但是，請參閱[連線至 Office 365 安全性 & 規範中心 PowerShell 使用多重要素驗證](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)主題中的指示。
+如果您的 Office 365 帳戶使用多重要素驗證 (MFA)，或同盟驗證，您無法使用上一個主題上連接到安全性 & 合規性中心 PowerShell 中的指示。 相反地，請參閱[連線到 Office 365 安全性 & 合規性中心 PowerShell 中使用多重要素驗證](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)主題中的指示。
   
 ## <a name="step-3-delete-the-message"></a>步驟 3： 刪除郵件
 
-您已建立並精簡內容搜尋以傳回您想要移除並連接到安全性訊息之後&amp;規範中心 PowerShell 中的最後一個步驟是執行**新增 ComplianceSearchAction** cmdlet 來刪除郵件。您可以虛或硬-刪除郵件。虛刪除的郵件會移至使用者的 [可復原的項目] 資料夾及保留，直到刪除項目保留期間到期為止。硬碟已刪除的郵件標記為永久移除從信箱並將會永久移除受管理的資料夾助理員處理此信箱的下一次。如果信箱啟用單一項目復原，則硬碟已刪除的項目將永久移除後刪除項目保留期間到期。如果信箱處於保留狀態，刪除的郵件會保留項目的保留期間到期直到或從信箱移除保留為止。
+您已建立並精簡內容搜尋以返回您想要移除，且會連線到安全的郵件之後&amp;合規性中心 PowerShell 中，最後一個步驟是執行**New-compliancesearchaction** cmdlet 來刪除郵件。 您可以虛-或實刪除郵件。 虛刪除的郵件會移至使用者的 [可復原的項目] 資料夾，並保留已刪除的項目保留期間到期之前。 實刪除的郵件標示為永久移除信箱，並將會永久移除受管理的資料夾助理員處理信箱時的下一個時間。 如果信箱已啟用單一項目復原，已刪除的項目保留期間到期後，將會永久移除實刪除的項目。 如果信箱處於保留狀態，已刪除的郵件會保留直到項目的保留期間到期或從信箱移除保留為止。
   
-在下列範例中，此命令將會虛刪除名為"移除網路釣魚 Message"的內容搜尋所傳回的搜尋結果。 
+在下列範例中，命令將虛刪除名為 「 移除網路釣魚郵件 」 的內容搜尋所傳回的搜尋結果。 
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-硬碟-刪除"移除網路釣魚訊息 「 內容搜尋傳回的項目，則會執行此命令：
+若要實刪除 「 移除網路釣魚郵件 」 的內容搜尋所傳回的項目，您會執行此命令：
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-請注意當您執行上述命令虛或硬-刪除郵件時，搜尋*SearchName*參數所指定之內容的搜尋您在步驟 1 中建立的。 
+請注意，當您執行上述命令虛-或實刪除的郵件， *SearchName*參數所指定的搜尋您在步驟 1 中建立內容搜尋。 
   
-如需詳細資訊，請參閱[新增 ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
+如需詳細資訊，請參閱 < <b0>New-compliancesearchaction</b0>。
 
 ## <a name="more-information"></a>詳細資訊
 
-- **如何取得的搜尋狀態及移除作業嗎？**
+- **您該如何取得搜尋狀態和移除作業？**
 
-    執行**Get ComplianceSearchAction**以取得刪除作業狀態。請注意當您執行**新增 ComplianceSearchAction**指令程式時所建立的物件名為使用此格式： `<name of Content Search>_Purge`。 
+    執行 **Get-ComplianceSearchAction** 以取得刪除作業的狀態。 請注意，當您執行**New-compliancesearchaction** cmdlet 時建立的物件名為使用此格式： `<name of Content Search>_Purge`。 
     
 - **刪除郵件之後會發生什麼事？**
 
-   使用已刪除的訊息`New-ComplianceSearchAction -Purge -PurgeType HardDelete`命令移至 [清除] 資料夾，且無法供使用者存取。將郵件移至 [清除] 資料夾之後，郵件會保留已刪除的項目保留期間的持續期間如果單一項目復原已啟用信箱。（Office 365 的單一項目復原預設會啟用時建立新的信箱。）刪除項目保留期間到期後，標記為永久刪除郵件，並將來自 Office 365 清除信箱由受管理的資料夾助理員處理下一次。 
+   與已刪除的郵件`New-ComplianceSearchAction -Purge -PurgeType HardDelete`命令移至 [清除] 資料夾，並無法供使用者存取。 將郵件移至 [清除] 資料夾之後，郵件會保留已刪除的項目保留期間的持續期間，如果信箱已啟用單一項目復原。 （在 Office 365 中，單一項目復原是預設啟用時建立新的信箱。）已刪除的項目保留期間到期之後，郵件會標示為永久刪除，並會從 Office 365 清除受管理的資料夾助理員處理信箱時的下一個時間。 
 
-   如果您使用`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令郵件會移到使用者的 [可復原的項目] 資料夾中的 [刪除] 資料夾。它不是立即清除來自 Office 365。使用者可以設定信箱已刪除的項目保留期間為基礎的持續期間復原刪除的郵件] 資料夾中的郵件。此保留期間到期 （或如果使用者清除前的郵件會到期後），郵件移至 [清除] 資料夾，並不會再使用者存取。一次 [清除] 資料夾中郵件會保留已刪除的項目保留期間如果單一項目復原已啟用信箱的信箱設定為基礎的工期。（Office 365 的單一項目復原預設會啟用時建立新的信箱。）刪除項目保留期間到期後，標記為永久刪除郵件，並將來自 Office 365 清除信箱由受管理的資料夾助理員處理下一次。 
+   如果您使用`New-ComplianceSearchAction -Purge -PurgeType SoftDelete`命令，郵件會移至使用者的 [可復原的項目] 資料夾中的 [刪除] 資料夾。 它不是立即清除從 Office 365。 使用者可以根據為信箱設定的刪除項目保留期間，在持續時間之內復原 [刪除的郵件] 資料夾中的郵件。 此保留期間到期 (或者如果使用者在到期之前清除郵件) 之後，郵件會移至 [清除] 資料夾且使用者無法再存取。 一次中 [清除] 資料夾中，郵件會保留期間根據對信箱設定，如果信箱已啟用單一項目復原已刪除的項目保留期間。 （在 Office 365 中，單一項目復原是預設啟用時建立新的信箱。）已刪除的項目保留期間到期之後，郵件會標示為永久刪除，並會從 Office 365 清除受管理的資料夾助理員處理信箱時的下一個時間。 
     
-- **如果您必須刪除超過 50000 個信箱的郵件吗？**
+- **如果您有超過 50000 個信箱刪除郵件？**
 
-    先前所述，您可以執行搜尋，並清除最大值為 50000 信箱上的作業。如果您有執行搜尋並清除超過 50000 個信箱上的作業，請考慮建立暫存搜尋權限篩選就會降低會小於 50000 信箱搜尋的信箱數目。例如，如果您的組織會包含不同部門、 states 或國家的信箱，您可以建立根據其中這些信箱来搜尋的內容信箱的子集您組織中的信箱搜尋的權限篩選器。建立搜尋權限篩選之後，您會建立 （在步驟 1 中所述） 搜尋，然後刪除郵件 （步驟 3 中所述）。然後您可以編輯的篩選來搜尋並清除一組不同的信箱中的郵件。如需建立搜尋權限篩選器的詳細資訊，請參閱 ＜ [Configure 權限的內容搜尋篩選](permissions-filtering-for-content-search.md)。
+    如先前所述，您可以執行搜尋，並清除作業最多 50000 個信箱。 如果您必須執行搜尋及清除超過 50000 個信箱上的作業，請考慮建立暫存的搜尋權限篩選器，會降低會搜尋以少於 50000 個信箱的信箱數目。 例如，如果您的組織中包含不同部門、 狀態或國家/地區中的信箱，您可以建立下列其中一個組織中搜尋信箱子集這些信箱內容為基礎的信箱搜尋權限篩選器。 建立搜尋權限篩選器之後，您應建立搜尋 （在步驟 1 中所述），然後再刪除的郵件，（在步驟 3 中所述）。 然後您可以編輯搜尋及清除一組不同的信箱中的郵件篩選器。 如需建立搜尋權限篩選器的詳細資訊，請參閱 <<c0>設定的權限篩選內容搜尋。
     
-- **將會刪除包含在搜尋結果中編製索引的項目吗？**
+- **會刪除包含在搜尋結果中的未編製索引項目？**
 
-    否，' 新增 ComplianceSearchAction-Purge 命令不會刪除編製索引的項目。 
+    否，' New-compliancesearchaction-清除命令不會刪除未編製索引的項目。 
     
-- **如果從已處於就地保留或訴訟暫止狀態或指派給 Office 365 保留原則的信箱刪除郵件發生什麼情況？**
+- **如果從已處於就地保留或訴訟暫止狀態或指派給 Office 365 保留原則的信箱刪除郵件，會發生什麼事？**
 
-    郵件已清除，並移至 [清除資料夾之後，郵件會保留直到保留期間到期。若無限制保留持續時間，則會保留項目，直到移除保留或變更的保留期間。
+    會清除郵件，並將其移至 [清除] 資料夾之後，郵件會保留直到保留期間到期為止。 如果保留期間是無限，則會保留項目直到移除保留或變更保留持續時間為止。
     
-- **為什麼要選擇搜尋及移除這些分散不同安全性 & 規範中心角色群組的工作流程？**
+- **原因是搜尋並移除除以不同的安全性 & 合規性中心角色群組之間的工作流程？**
 
-    如先前所述人員有 eDiscovery 管理員角色群組的成員或來搜尋信箱的規範搜尋管理角色指派。若要刪除的郵件，人員必須是 「 組織管理角色群組的成員或搜尋和清除管理角色指派。這可讓控制項誰可在組織中搜尋信箱和誰可以刪除郵件。 
+    如先前所述，使用者必須是「eDiscovery 管理員」角色群組的成員，或者獲指派「符合性搜尋」管理角色才能搜尋信箱。 若要刪除郵件，該人員必須是「組織管理」角色群組的成員，或者獲指派「搜尋及清除」管理角色。 這樣就可以控制誰能夠在組織中搜尋信箱以及誰能夠刪除郵件。 

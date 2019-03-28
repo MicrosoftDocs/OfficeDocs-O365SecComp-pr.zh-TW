@@ -1,5 +1,5 @@
 ---
-title: 使用指令碼將使用者新增至 Office 365 安全性 eDiscovery 案例中保留&amp;規範中心
+title: 使用指令碼將使用者新增至 Office 365 安全性中的 eDiscovery 案例中的保留&amp;合規性中心
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,79 +13,79 @@ search.appverid:
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: 執行指令碼以快速新增信箱並 OneDrive for Business 至新的保留與 Office 365 安全性 eDiscovery 案例相關聯的網站&amp;規範中心。
-ms.openlocfilehash: b9d34f4576299dccf0f751c7f204639b5a770b32
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 執行指令碼來快速將新增信箱和商務用 OneDrive 網站至與 Office 365 安全性中的 eDiscovery 案例相關聯的新保留&amp;合規性中心。
+ms.openlocfilehash: f71c82a830f029f8137a60d8329e30be0e7eeb46
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214283"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935238"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>使用指令碼將使用者新增至 Office 365 安全性 eDiscovery 案例中保留&amp;規範中心
+# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>使用指令碼將使用者新增至 Office 365 安全性中的 eDiscovery 案例中的保留&amp;合規性中心
 
-Office 365 安全性&amp;規範中心提供可讓您的 Windows PowerShell cmdlet 的許多自動化耗時建立及管理 eDiscovery 案例相關的工作。目前在安全性使用 eDiscovery 案件工具&amp;大量 okay 內容位置置於保留規範中心採用時間及準備。例如，建立保留之前，您必須收集的每個 OneDrive for Business 您想要保留的網站的 URL。然後針對想要保留每位使用者，您必須將他們的信箱和其 OneDrive for Business 網站新增至保留。在未來版本的安全性&amp;規範中心這越精確，取得更輕鬆地執行。加上 then，直到您可以使用本文中的指令碼來自動化此程序。
+Office 365 安全性&amp;合規性中心 」 提供 Windows PowerShell cmdlet，可讓您大量自動化耗時建立及管理 eDiscovery 案例相關的工作。 目前，使用安全性中的 [電子文件探索案例工具&amp;要就地保留大量 custodian 內容位置的合規性中心，需要時間和準備。 例如，建立保留，您必須先收集 URL 的每個商務用 OneDrive 網站，您想要就地保留。 然後您想要就地保留每位使用者，您必須將他們的信箱和其 OneDrive for Business 網站新增至保留。 在未來版本的安全性&amp;合規性中心，這將會更方便使用執行動作。 在那之前，您可以使用指令碼本文中，自動執行此程序。
   
-指令碼會提示您的組織的我的網站網域名稱 (例如， **contoso** URL 中https://contoso-my.sharepoint.com)、 現有的 eDiscovery 案例的名稱、 新的保留名稱的關聯大小寫、 您想要之使用者的電子郵件地址清單若要放入保留和搜尋查詢使用如果您想要建立查詢式保留。指令碼再 onedrive for Business 網站清單中每個使用者取得的 URL、 會建立新的保留，然後 mailbox 和 OneDrive 新增商務網站的清單中的每位使用者的至保留。指令碼也會產生記錄檔包含的新保留的相關資訊。 
+指令碼會提示您輸入您的組織我的網站網域的名稱 (例如， **contoso**在 URL 中https://contoso-my.sharepoint.com)，現有的 eDiscovery 案例的名稱、 新的保留名稱，與相關聯的情況下，您想要的電子郵件地址的使用者清單若要置於保留，以及使用如果您想要建立查詢式保留在搜尋查詢。 指令碼再取得的 OneDrive for Business 網站的清單中的每個使用者的 [URL、 會建立新的保留，並將信箱和 OneDrive for Business 網站的清單中的每個使用者至保留。 指令碼也會產生包含新的保留狀態的相關資訊的記錄檔。 
   
 若要完成這項工作的步驟如下：
   
-[步驟 1：安裝 SharePoint Online 管理命令介面](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step1)
+[步驟 1：安裝 SharePoint Online 管理命令介面](#step-1-install-the-sharepoint-online-management-shell)
   
 [步驟 2： 產生使用者的清單](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
   
-[步驟 3： 執行指令碼來建立保留和新增使用者](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[步驟 3： 執行指令碼，以建立保留並新增使用者](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須是安全性 eDiscovery 管理員角色群組的成員&amp;規範中心和步驟 3 中執行指令碼的 SharePoint Online 全域管理員。如需詳細資訊，請參閱[指派 Office 365 安全性 eDiscovery 權限&amp;規範中心](assign-ediscovery-permissions.md)。
+- 您必須是安全性中的 eDiscovery 管理員角色群組的成員&amp;規範中心和 SharePoint Online 的全域系統管理員在步驟 3 中執行指令碼。 如需詳細資訊，請參閱[指派 Office 365 安全性中的 eDiscovery 權限&amp;合規性中心](assign-ediscovery-permissions.md)。
     
-- 最大值為 1000 信箱和 100 網站可以新增至 eDiscovery 案例中的安全性與相關聯保留&amp;規範中心。假設您想要保留每個使用者具有 OneDrive for Business 網站，您可以新增使用本文中的指令碼保留最大值為 100 位使用者。 
+- 最大值為 1000 個信箱和 100 個網站可以新增至保留與 eDiscovery 案例中的安全性相關聯&amp;合規性中心。 假設您想要就地保留每個使用者擁有商務用 OneDrive 網站，您可以新增至本文中使用指令碼保留的最大值為 100 個使用者。 
     
-- 請務必儲存您在步驟 2 和步驟 3 中指令碼以相同的資料夾中建立的使用者清單。會將容易執行指令碼。
+- 請務必儲存您在步驟 2 和步驟 3 中指令碼的相同資料夾中建立的使用者清單。 會將執行指令碼比較方便。
     
-- 指令碼會將使用者清單新增至新的保留相關聯的現有案例。請確定您要建立關聯的保留與案例建立之前執行指令碼。
+- 指令碼會將使用者清單新增至現有的案例相關聯的新保留。 請務必執行指令碼之前，會建立您想要關聯與保留的案例。
     
-- 指令碼包括最少的錯誤處理。其主要用途是快速又輕鬆地放置信箱按住 OneDrive for Business 網站上的每位使用者。
+- 指令碼包含最少的錯誤處理。 其主要用途是可快速且輕鬆地讓信箱和商務用 OneDrive 網站上每個使用者的保留。
     
 - 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步驟 1：安裝 SharePoint Online 管理命令介面
 
-第一個步驟是如果尚未安裝在本機電腦上安裝 SharePoint Online 管理命令介面。您沒有在此程序，使用命令介面，但因為包含您在步驟 3 中執行的指令碼所需的必要條件安裝方式。這些先決條件允許指令碼與 SharePoint Online 取得 Url onedrive for Business 網站進行通訊。
+第一個步驟是安裝在 SharePoint Online 管理命令介面，如果尚未安裝在本機電腦上。 您不需要使用命令介面，在此程序，但是您必須安裝，因為它包含您在步驟 3 中執行的指令碼所需的必要條件。 這些必要條件允許指令碼，以與 SharePoint Online 取得 onedrive for Business 網站的 Url 進行通訊。
   
-移至 [[設定 SharePoint Online 管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318)及執行步驟 1 與步驟 2 到本機電腦上安裝 SharePoint Online 管理命令介面。 
+移至[設定 SharePoint Online 管理命令介面的 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318)並執行步驟 1 和步驟 2 到您本機電腦上安裝 SharePoint Online 管理命令介面。 
 
 ## <a name="step-2-generate-a-list-of-users"></a>步驟 2： 產生使用者的清單
 <a name="step2"> </a>
 
-步驟 3 中的指令碼會建立具有相關聯的 eDiscovery 案例、 及新增信箱和 OneDrive 至保留的使用者清單中的商務網站的保留。您只可以輸入電子郵件地址的文字檔案，或您可以取得的電子郵件地址清單並將其儲存至檔案 （位於相同的資料夾，您將步驟 3 中儲存指令碼） 的 Windows PowerShell 中執行的命令。
+步驟 3 中的指令碼會建立有相關聯的 eDiscovery 案例，與新增信箱和 OneDrive for Business 網站至保留的使用者清單中的保留。 您只可以在文字檔案中，輸入電子郵件地址，或您可以取得電子郵件地址的清單，並將其儲存至檔案 （位於相同的資料夾，您將在步驟 3 中儲存指令碼，以） 的 Windows PowerShell 中執行命令。
   
-以下是 PowerShell 命令 （即您執行使用遠端 PowerShell 連線至 Exchange Online 組織） 取得組織中的所有使用者的電子郵件地址清單並將它儲存到文字檔名為 HoldUsers.txt。
+以下是 PowerShell 命令 （，您使用遠端 PowerShell 連線至 Exchange Online 組織執行） 來取得您組織中的所有使用者之電子郵件地址清單，並將它儲存到文字檔名為 HoldUsers.txt。
   
 ```
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-在執行此命令、 開啟文字檔案並移除包含屬性名稱的標頭之後`PrimarySmtpAddress`。然後移除您要新增至保留您將在步驟 3 中建立的使用者除外的所有電子郵件地址。請確定有無空白資料列之前或之後的電子郵件地址清單。
+您執行此命令，開啟文字檔案，然後移除包含屬性名稱，標頭之後`PrimarySmtpAddress`。 然後移除您想要新增至保留您在步驟 3 中建立的使用者除外的所有電子郵件地址。 請確定有任何空白資料列之前或之後的電子郵件地址清單。
   
 
   
-## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>步驟 3： 執行指令碼來建立保留和新增使用者
+## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>步驟 3： 執行指令碼，以建立保留並新增使用者
 <a name="step3"> </a>
 
-當您在此步驟中執行指令碼時，它會提示您下列資訊。請務必在執行指令碼之前已準備好此資訊。
+當您在此步驟中執行指令碼時，它會提示您輸入下列資訊。 請務必執行指令碼之前已準備好此資訊。
   
-- **您的使用者認證**-指令碼會使用您的認證連線至安全性&amp;遠端 PowerShell 與規範中心。它也會使用這些認證以存取 SharePoint Online 取得 OneDrive for Business Url 的使用者清單。
+- **您的使用者認證**-指令碼會使用您的認證來連線到安全性&amp;使用遠端 PowerShell 的合規性中心。 它也會使用這些認證來存取 SharePoint Online 取得 OneDrive for Business Url 的使用者清單。
     
-- **我的網站網域的名稱**-我的網站的網域是包含所有 OneDrive for Business 您組織中的網站的網域。例如，如果我的網站網域 URL **https://contoso-my.sharepoint.com**，則要輸入`contoso`當指令碼會提示您輸入 MySite 網域的名稱。 
+- **我的網站網域的名稱**-我的網站網域是包含所有商務用 OneDrive 網站組織中的網域。 例如，如果我的網站網域 URL **https://contoso-my.sharepoint.com**，然後輸入`contoso`當指令碼會提示您輸入我的網站網域的名稱。 
     
-- **大小寫的名稱**-現有案例的名稱。指令碼會建立新的保留相關聯此案例。
+- **這種情況的名稱**-現有案例的名稱。 指令碼會建立新的保留與此案例相關聯。
     
-- 會建立**的保留名稱**的指令碼的保留名稱並將其關聯的指定大小寫。
+- **的保留名稱**-保留會建立指令碼，並將其關聯的指定的大小寫名稱。
     
-- **搜尋查詢的查詢式保留**-您可以建立查詢式保留，以符合指定的搜尋準則的內容處於保留狀態。若要置於保留的所有內容，只是按下**Enter**當系統提示您在搜尋查詢。 
+- **搜尋查詢的查詢式保留**-您可以建立查詢式保留，以便符合指定的搜尋條件的內容會置於保留。 要就地保留所有內容，只要按**Enter**鍵時提示您進行搜尋查詢。 
     
-- **是否要開啟 [保留**-您可以在建立或您可以建立保留不啟用它的指令碼之後開啟保留的指令碼。如果您沒有開啟保留的指令碼，您可以在加以開啟稍後安全性&amp;規範中心或執行下列 PowerShell 命令： 
+- **是否要開啟保留**-您可以開啟保留之後建立，或您可以建立保留，而不加以啟用指令碼指令碼。 如果您不需要開啟保留的指令碼，您可以將其開啟稍後安全性&amp;合規性中心或執行下列 PowerShell 命令： 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -95,11 +95,11 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **使用者的清單的文字檔案名稱**-包含清單的使用者新增至保留的步驟 2 中的文字檔案的名稱。如果此檔案位於指令碼相同的資料夾，只輸入檔案 (例如 HoldUsers.txt) 的名稱。在另一個資料夾中的文字檔案時，輸入檔案的完整路徑名稱。
+- **使用之使用者的清單的文字檔案名稱**-步驟 2，其中包含要新增至保留的使用者清單的文字檔案的名稱。 如果此檔案位於指令碼的相同資料夾中，只要輸入檔案 (例如，HoldUsers.txt) 的名稱。 如果文字檔案是另一個資料夾中，輸入檔案的完整路徑名稱。
     
-您已收集指令碼會提示您輸入的資訊之後，最後一個步驟是執行指令碼建立新的保留並將使用者新增至其。
+您收集了指令碼會提示您輸入的資訊之後，最後一個步驟是執行指令碼，以建立新的保留，並將使用者新增至它。
   
-1. 使用.ps1; filename 尾碼將下列文字儲存到 Windows PowerShell 指令碼檔案例如， `AddUsersToHold.ps1`。
+1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `AddUsersToHold.ps1`。
     
   ```
   #script begin
@@ -276,7 +276,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 2. 在您的本機電腦上開啟 Windows PowerShell，並移至您儲存指令碼的資料夾。
     
-3. 執行指令碼 ；例如：
+3. 執行指令碼。例如：
     
       ```
     .\AddUsersToHold.ps1
@@ -284,14 +284,14 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 輸入指令碼會提示您輸入的資訊。
     
-    指令碼連線到安全性 & 規範中心 PowerShell]，然後 eDiscovery 案例中建立新的保留並新增信箱和 OneDrive for Business 的清單中的使用者。您可以在 [ **eDiscovery** ] 頁面上的 [安全性] 移至大小寫&amp;規範中心檢視新的保留。 
+    指令碼連線到安全性 & 合規性中心 PowerShell 中，然後在 eDiscovery 案例中建立新的保留並新增清單中的使用者信箱和商務用 OneDrive。 您可以在安全性 [ **eDiscovery** ] 頁面上移至案例&amp;合規性中心，以檢視新的保留。 
     
-指令碼完成之後執行，它會建立下列記錄檔，並將它們儲存到指令碼所在的資料夾。
+指令碼完成之後執行，它會建立下列記錄檔，並將它們儲存到指令碼的所在位置的資料夾。
   
-- **LocationsOnHold.txt** -包含之商務網站的指令碼成功放入保留信箱和 OneDrive 的清單。
+- **LocationsOnHold.txt** -包含信箱和 OneDrive for Business 網站指令碼成功置於保留的的清單。
     
-- **LocationsNotOnHold.txt** -包含之商務網站的指令碼並未不會保留上放置信箱和 OneDrive 的清單。如果使用者擁有信箱，但不是 OneDrive for Business 網站，使用者就會包含清單中的 OneDrive for 未處於保留狀態的商務網站。
+- **LocationsNotOnHold.txt** -包含信箱和 OneDrive for Business 網站的指令碼不就地保留] 的清單。 如果使用者擁有信箱，但不是 OneDrive for Business 網站，使用者會包含清單中的 OneDrive for Business 網站，也未處於保留狀態。
     
-- **GetCaseHoldPolicy.txt** -包含新的保留在建立新的保留之後執行指令碼**取得 CaseHoldPolicy** cmdlet 的輸出。此指令程式所傳回的資訊包括保留及是否啟用或停用保留放置其信箱和 OneDrive for Business 網站的使用者清單。 
+- **GetCaseHoldPolicy.txt** -包含新的保留，請建立新的保留之後執行指令碼**Get-caseholdpolicy** cmdlet 的輸出。 此 cmdlet 所傳回的資訊包括的使用者其信箱和商務用 OneDrive 網站已暫留保留和是否啟用或停用保留的清單。 
     
-- **GetCaseHoldRule.txt** -包含新的保留在建立新的保留之後執行指令碼**取得 CaseHoldRule** cmdlet 的輸出。如果您用來建立查詢式保留的指令碼，此指令程式所傳回的資訊包括搜尋查詢。 
+- **GetCaseHoldRule.txt** -包含新的保留，請建立新的保留之後執行指令碼**Get-caseholdrule** cmdlet 的輸出。 此 cmdlet 所傳回的資訊包括搜尋查詢，如果您使用指令碼來建立查詢式保留。 

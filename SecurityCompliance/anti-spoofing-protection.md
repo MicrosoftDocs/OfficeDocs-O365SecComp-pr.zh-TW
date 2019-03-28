@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: 8b308e4b5ce651632834884c12a4500989b43bf5
-ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
+ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "30747579"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936793"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 

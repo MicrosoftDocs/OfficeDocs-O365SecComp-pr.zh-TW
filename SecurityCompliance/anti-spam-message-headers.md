@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefront-反垃圾郵件報告**標頭每封郵件。
-ms.openlocfilehash: de5e1b16ac6c9e7515e23f083f2e938125c7e9cd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693572"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936743"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
@@ -28,7 +28,6 @@ Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefro
 > 如需如何在各種電子郵件用戶端中檢視電子郵件訊息標頭資訊，請參閱 <<c0>郵件標頭分析器。 您可以複製並貼入[郵件標頭分析器](https://testconnectivity.microsoft.com/?tabid=mha)工具中的郵件標頭的內容。 當您在 Exchange 系統管理中心隔離區中選取郵件時，**[檢視郵件標頭]** 連結也可讓您輕鬆地複製郵件標頭文字並貼到工具中。 在郵件標頭分析器工具中，按一下 [分析標頭]**** 以便擷取標頭相關資訊。
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>X Forefront-反垃圾郵件報告郵件標頭欄位
-<a name="sectionSection0"> </a>
 
 存取郵件標頭資訊之後，搜尋**X Forefront-反垃圾郵件報告**，然後尋找這些欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
 
@@ -38,7 +37,7 @@ Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefro
 |CTRY|郵件連線到服務的來源國家。這是由連線的 IP 位址來判斷，這可能與原始傳送的 IP 位址不同。|
 |蘭|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
 |SCL|郵件的垃圾郵件信賴等級 (SCL) 值。 如需有關如何解譯這些值的詳細資訊，請參閱 <<c0>垃圾郵件信賴等級。|
-|PCL|郵件的網路釣魚信賴等級 (PCL) 值。 |
+|PCL|郵件的網路釣魚信賴等級 (PCL) 值。|
 |SRV:BULK|郵件被識別為大量電子郵件。 如果已啟用**封鎖所有大量電子郵件訊息的進階垃圾郵件篩選選項**都，它會被標示為垃圾郵件。 如果未啟用，則會在其餘的篩選規則判斷該郵件為垃圾郵件時，才將它標記為垃圾郵件。|
 |SFV:SFE|已略過篩選，因為它已傳送從個人的安全寄件者清單上的地址，將已讓通過的郵件。|
 |SFV:|已略過篩選，因為它已傳送從個人的封鎖寄件者清單上的地址，已封鎖郵件。  <br/> **秘訣**： 如需使用者如何建立安全及封鎖的寄件者清單的詳細資訊，請參閱[封鎖或允許 （垃圾郵件設定）](https://go.microsoft.com/fwlink/p/?LinkId=294862) （outlook 網頁版） 和[垃圾郵件篩選器概觀](https://go.microsoft.com/fwlink/p/?LinkId=270065)(Outlook)。|
@@ -58,7 +57,6 @@ Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefro
 |X-CustomSpam：[ASFOption]|郵件符合進階垃圾郵件篩選選項。 例如 **[X-CustomSpam：遠端站台的影像連結]** 表示已符合 **[遠端站台的影像連結]** ASF 選項。 若要了解哪些 X 標頭文字加入每個特定 ASF 選項，請參閱 <<c0>進階垃圾郵件篩選選項。|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft 反垃圾郵件郵件標頭欄位
-<a name="sectionSection1"> </a>
 
 下表說明有用**X-Microsoft 反垃圾郵件**郵件標頭中的欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
   
@@ -68,16 +66,14 @@ Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefro
 |PCL|網路釣魚信賴等級 (PCL) 的訊息，指出是否是網路釣魚郵件。 此狀態可以傳回為下列其中一個下列數值： <br/>• **0-3**： 郵件的內容不可能是網路釣魚。 <br/>• **4-8**： 郵件的內容很可能是網路釣魚。 <br/>• **-9990**: (Exchange Online Protection 僅) 郵件的內容很可能是網路釣魚。  <br/>  值用來判斷您的電子郵件用戶端對郵件採取什麼動作。 例如，Outlook 會使用 PCL 戳記來封鎖可疑郵件的內容。 如需有關網路釣魚及 Outlook 處理網路釣魚郵件的方式的詳細資訊，請參閱[開啟或關閉電子郵件訊息中的連結](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8)。|
    
 ## <a name="authentication-results-message-header"></a>驗證結果的郵件標頭
-<a name="sectionSection2"> </a>
 
 針對 SPF，DKIM、 DMARC 檢查的結果會記錄，或加上戳記，當我們郵件伺服器收到的電子郵件的**驗證結果**郵件標頭中的 Office 365。
   
 ### <a name="check-stamp-syntax-and-examples"></a>檢查戳記語法和範例
-<a name="referenceSPFstamp"> </a>
 
 下列的語法範例顯示的文字部分 」 戳記 」 的 Office 365 適用於每個正文電子郵件的驗證檢查，當我們郵件伺服器所接收的電子郵件的郵件標頭。 戳記會新增至的**Authentication-results**標頭。
   
- **語法： SPF 檢查戳記**
+**語法： SPF 檢查戳記**
   
 Spf，適用於下列語法。
   
@@ -85,14 +81,14 @@ Spf，適用於下列語法。
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
- **範例： SPF 檢查戳記**
+**範例： SPF 檢查戳記**
   
 ```
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
- **語法： DKIM 檢查戳記**
+**語法： DKIM 檢查戳記**
   
 對於 DKIM，會套用下列語法。
   
@@ -100,14 +96,14 @@ spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
- **範例： DKIM 檢查戳記**
+**範例： DKIM 檢查戳記**
   
 ```
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
- **語法： DMARC 檢查戳記**
+**語法： DMARC 檢查戳記**
   
 針對 DMARC，適用於下列語法。
   
@@ -115,7 +111,7 @@ dkim=fail (body hash did not verify) header.d=contoso.com
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
- **範例： DMARC 檢查戳記**
+**範例： DMARC 檢查戳記**
   
 ```
 dmarc=pass action=none header.from=contoso.com
@@ -125,7 +121,6 @@ dmarc=fail action=oreject header.from=contoso.com
 ```
 
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>驗證結果的郵件 Office 365 電子郵件驗證所使用的標頭欄位
-<a name="referenceSPFstamp"> </a>
 
 此表說明的欄位及可能的值為每個電子郵件的驗證檢查。
   
