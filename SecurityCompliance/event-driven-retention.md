@@ -3,7 +3,7 @@ title: 事件導向保留的概觀
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: 129f957585e9df5a959e34187a0edc384c68c448
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455105"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866359"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 

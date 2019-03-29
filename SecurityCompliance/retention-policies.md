@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455445"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935298"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -244,7 +244,7 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
     
 - **Teams 不包含在全組織原則中** 如果建立全組織原則，則不會包含 Teams，因為它們需要個別的保留原則。 
     
-- **Teams 不支援進階保留** 當建立保留原則時，如果您選擇[只將原則套用到符合某些條件之內容進階設定](retention-policies.md#advanced)，則無法使用 Teams 位置。此時，Teams 中的保留適用於所有聊天和通道訊息內容。
+- **Teams 不支援進階保留** 當建立保留原則時，如果您選擇[只將原則套用到符合某些條件之內容進階設定](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions)，則無法使用 Teams 位置。此時，Teams 中的保留適用於所有聊天和通道訊息內容。
     
 - **只能刪除至少保留 30 天的 Teams 內容** 目前不支援建立一個原則來刪除保留不到 30 天的 Teams 內容。如果想要將此原則套用至 Teams 內容，請指定等於或大於 30 天的保留期間。 
     
@@ -252,7 +252,7 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
     
 在 Team 中，聊天中共用的檔案儲存在共用檔案之使用者的 OneDrive 帳戶中。上傳至通道的檔案儲存在 Team 的 SharePoint 網站中。因此，若要保留或刪除 Team 中的檔案，您需要建立保留原則，套用至 SharePoint 和 OneDrive 位置。如果您想要將原則僅套用至特定團隊的檔案，則您可以選擇 Team 的 SharePoint 網站，以及 Team 中使用者的 OneDrive 帳戶。
   
-套用到 Teams 的保留原則可以使用[保留鎖定](retention-policies.md#locking)。
+套用到 Teams 的保留原則可以使用[保留鎖定](#locking-a-retention-policy)。
   
 ![聊天和通道訊息的 Teams 位置](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   

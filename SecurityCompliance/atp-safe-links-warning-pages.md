@@ -14,39 +14,39 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 概略警告頁面，您可能會看到 Office 365 進階威脅防護位於工時。
-ms.openlocfilehash: 5bf6d436e319127fdd5aecd5c58e168a59333d25
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357444"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862575"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全連結警告頁面
 
 > [!IMPORTANT]
-> 本文適用於 Office 365 企業版客戶。如果您使用 Outlook.com、 Office 365 家用版、 Office 365 個人或，而且您正在尋找在 Outlook 中的安全連結的相關資訊，請參閱 <<c0>進階 Outlook.com 安全性。
+> 本文適用於 Office 365 企業版客戶。 如果您使用 Outlook.com、 Office 365 家用版、 Office 365 個人或，而且您正在尋找在 Outlook 中的安全連結的相關資訊，請參閱 <<c0>進階 Outlook.com 安全性。
 
-[Office 365 進階的威脅防護](office-365-atp.md)(ATP) 可協助保護組織免於網路釣魚企圖和惡意程式碼透過功能，例如[ATP 安全連結](atp-safe-links.md)、 [ATP 安全附件](atp-safe-attachments.md)，以及[防網路釣魚保護](anti-phishing-protection.md)。就地保護時，就會檢查電子郵件和 Office 文件中的連結 (Url)。如果 URL 便會被視為可疑或惡意，您可能會封鎖從開啟 URL，當您按一下。而不是直接前往網站，您可能會看到警告] 頁面。 
+[Office 365 進階的威脅防護](office-365-atp.md)(ATP) 可協助保護組織免於網路釣魚企圖和惡意程式碼透過功能，例如[ATP 安全連結](atp-safe-links.md)、 [ATP 安全附件](atp-safe-attachments.md)，以及[防網路釣魚保護](anti-phishing-protection.md)。 就地保護時，就會檢查電子郵件和 Office 文件中的連結 (Url)。 如果 URL 便會被視為可疑或惡意，您可能會封鎖從開啟 URL，當您按一下。 而不是直接前往網站，您可能會看到警告] 頁面。 
   
-閱讀本篇文章以查看[的警告頁面範例](atp-safe-links-warning-pages.md#examples)可能出現，以及[最近更新至警告頁面](atp-safe-links-warning-pages.md#updates)。
+閱讀本篇文章以查看，以及最新的更新至警告頁面可能出現的警告頁面的範例。
   
 ## <a name="examples-of-warning-pages"></a>警告頁面範例
 
 ### <a name="atp-is-scanning-the-link"></a>ATP 會掃描的連結
 
-URL 是由 ATP 安全連結掃描。您可能必須等待幾分鐘再試一次連結的時間。
+URL 是由 ATP 安全連結掃描。 您可能必須等待幾分鐘再試一次連結的時間。
 
 ![ATP 會掃描的連結](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### <a name="a-url-is-in-a-suspicious-email-message"></a>URL 是中的可疑的電子郵件
 
-URL 是看起來類似會被視為可疑的其他電子郵件的電子郵件中。我們建議您仔細檢查繼續進行站台的電子郵件。
+URL 是看起來類似會被視為可疑的其他電子郵件的電子郵件中。 我們建議您仔細檢查繼續進行站台的電子郵件。
 
 ![此 URL 是中的可疑的電子郵件](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>URL 是在郵件被識別為網路釣魚嘗試
 
-URL 是已被識別為網路釣魚攻擊的電子郵件中。因此，會封鎖電子郵件訊息中的所有 Url。我們建議您不要不繼續進行站台。
+URL 是已被識別為網路釣魚攻擊的電子郵件中。 因此，會封鎖電子郵件訊息中的所有 Url。 我們建議您不要不繼續進行站台。
 
 ![此 URL 會被識別為網路釣魚嘗試在郵件中](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
@@ -58,19 +58,19 @@ URL 會指向已識別為惡意的網站。  <br/> 我們建議您不要不繼�
 
 ### <a name="a-site-is-blocked"></a>封鎖網站
 
-URL 會封鎖您的組織。有幾個理由為什麼 URL 可能被封鎖。我們建議您連絡貴組織的 Office 365 系統管理員。
+URL 會封鎖您的組織。 有幾個理由為什麼 URL 可能被封鎖。 我們建議您連絡貴組織的 Office 365 系統管理員。
 
 ![此網站會遭到封鎖](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
-### <a name="an-error-has-occurred"></a>發生錯誤
+### <a name="an-error-has-occurred"></a>發生的錯誤
 
 發生某種錯誤，且無法開啟 URL。
 
-![發生錯誤](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+![發生的錯誤](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
 
 ## <a name="recent-updates-to-warning-pages"></a>新版更新至警告頁面
 
-數個警告頁面最近已更新的 Office 365 ATP。如果您還沒看到 [更新] 頁面，您將會推出。更新加入新的色彩配置、 詳細資訊，並繼續進行至網站，而不管給定的警告和建議的能力。
+數個警告頁面最近已更新的 Office 365 ATP。 如果您還沒看到 [更新] 頁面，您將會推出。 更新加入新的色彩配置、 詳細資訊，並繼續進行至網站，而不管給定的警告和建議的能力。
 
 ### <a name="url-scan-in-progress"></a>進行中的 URL 掃描
 
@@ -110,5 +110,5 @@ URL 會封鎖您的組織。有幾個理由為什麼 URL 可能被封鎖。我�
 
 更新的警告] 頁面上：
 
-![發生錯誤](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+![發生的錯誤](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    
