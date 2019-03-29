@@ -3,7 +3,7 @@ title: 文件指紋
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/17/2014
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 search.appverid: MET150
@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織中的資訊工作者在其日常工作中會處理許多不同的敏感資訊。 「文件指紋」可識別您的組織中所使用的標準表單，以協助您保護此類資訊。 本主題說明的概念文件指紋 」 和 「 如何使用 PowerShell 來建立。
-ms.openlocfilehash: a90cb0c7fdfe5e350c9d97adb9a8f357f526742a
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: bf28d1d901598337a5c9c18d80590b136c539d26
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638990"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866349"
 ---
 # <a name="document-fingerprinting"></a>文件指紋
 
@@ -78,7 +78,7 @@ $Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Descrip
 現在，我們要新建名為 "Contoso Employee Confidential" 的資料分類規則，並使其使用 C:\My Documents\Contoso Customer Information Form.docx 檔案的文件指紋。
   
 ```
-$Employee_Template = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte -ReadCount 0
+$Customer_Form = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte -ReadCount 0
 $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
 New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
 ```

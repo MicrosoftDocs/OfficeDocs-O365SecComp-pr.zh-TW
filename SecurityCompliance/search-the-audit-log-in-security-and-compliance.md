@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用 Office 365 安全性 & 合規性中心來搜尋整合的稽核記錄] 來檢視您的 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411018"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935348"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性 & 規範中心搜尋稽核記錄
+
+## <a name="introduction"></a>簡介
 
 要尋找是否使用者檢視特定的文件，或清除其信箱中的項目？ 如果這樣，您可以使用 Office 365 安全性&amp;若要檢視 Office 365 組織中的使用者和系統管理員活動整合的稽核記錄中搜尋的合規性中心。 為什麼使用整合的稽核記錄？ 因為您可以搜尋下列類型的 Office 365 中的使用者和系統管理員活動：
   
@@ -57,7 +59,7 @@ ms.locfileid: "30411018"
 
 - 在 Microsoft 工作場所分析中的分析師和系統管理員活動
 
-- PowerApps 中的使用者和系統管理員活動
+- Microsoft PowerApps 中的使用者和系統管理員活動
     
    
 ## <a name="before-you-begin"></a>開始之前
@@ -296,12 +298,11 @@ ms.locfileid: "30411018"
 |:-----|:-----|:-----|
 |[檔案和] 頁面上的活動](#file-and-page-activities)<br/> |[資料夾活動](#folder-activities)<br/> |[共用和存取要求活動](#sharing-and-access-request-activities)<br/> |
 |[同步處理活動](#synchronization-activities)<br/> |[網站管理活動](#site-administration-activities)<br/> |[Exchange 信箱活動](#exchange-mailbox-activities)<br/> |
-|[保留原則和標籤活動](#retention-policy-and-label-activities) <br/>|[Sway 活動](#sway-activities) <br/> |[使用者管理活動](#user-administration-activities) <br/> 
-|[Azure AD 群組管理活動](#azure-ad-group-administration-activities) <br/> |[應用程式管理活動](#application-administration-activities) <br/> |[角色管理活動](#role-administration-activities) <br/> |
-|[目錄管理活動](#directory-administration-activities) <br/> |[電子文件探索活動](#ediscovery-activities) <br/> |[Power BI 活動](#power-bi-activities) <br/> |
-|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)<br/>|[Microsoft Teams 活動](#microsoft-teams-activities) <br/> |[Yammer 活動](#yammer-activities) <br/> |
-[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange 系統管理員活動](#exchange-admin-audit-log)<br/>
+|[Sway 活動](#sway-activities) <br/> |[使用者管理活動](#user-administration-activities) <br/> |[Azure AD 群組管理活動](#azure-ad-group-administration-activities) <br/> 
+|[應用程式管理活動](#application-administration-activities) <br/> |[角色管理活動](#role-administration-activities) <br/> |[目錄管理活動](#directory-administration-activities) <br/>| 
+|[電子文件探索活動](#ediscovery-activities) <br/> |[Power BI 活動](#power-bi-activities) <br/> |[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)<br/>|
+|[Microsoft Teams 活動](#microsoft-teams-activities) <br/> |[Yammer 活動](#yammer-activities) <br/> |[Microsoft Flow 活動](#microsoft-flow-activities) <br/>|
+|[Microsoft PowerApps 活動](#microsoft-powerapps)<br/>|[Microsoft 資料流活動](#microsoft-stream-activities) <br/>|[Exchange 系統管理員活動](#exchange-admin-audit-log)<br/>|
 ||||
    
   
@@ -420,7 +421,7 @@ ms.locfileid: "30411018"
 |允許使用者建立群組  <br/> |AllowGroupCreationSet  <br/> |網站管理員或擁有者會新增至網站，可讓使用者權限等級指派該權限建立該網站的群組。  <br/> |
 |已取消的網站異地移動  <br/> |SiteGeoMoveCancelled  <br/> |在 SharePoint 或全域系統管理員已成功取消 SharePoint 或 OneDrive 網站異地移動。 多地理位置功能可讓橫跨多個 Office 365 資料中心地區，稱為 geos Office 365 組織。 如需詳細資訊，請參閱 < <b0>OneDrive 中和 Office 365 中 SharePoint Online 的多地理位置功能</b0>。  <br/> |
 |變更共用原則  <br/> |SharingPolicyChanged  <br/> |在 SharePoint 或全域系統管理員變更 SharePoint 共用原則使用 Office 365 系統管理入口網站，SharePoint 系統管理入口網站或 SharePoint Online 管理命令介面。 在您組織中的共用原則中設定的任何變更會被記錄。 **ModifiedProperties**欄位中的事件記錄的詳細屬性被識別已變更的原則。  <br/> |
-|變更裝置存取原則  <br/> |DeviceAccessPolicyChanged  <br/> |在 SharePoint 或全域系統管理員變更貴組織的受管理的裝置原則。 此原則可控制存取未加入您的組織的裝置從 SharePoint、 OneDrive 和 Office 365。 若要設定此原則需要企業行動力 + 安全性訂閱。 如需詳細資訊，請參閱 <<c0>控制從未受管理裝置的存取。  <br/> |
+|變更裝置存取原則  <br/> |DeviceAccessPolicyChanged  <br/> |在 SharePoint 或全域系統管理員變更貴組織的受管理的裝置原則。 此原則可控制存取未加入您的組織的裝置從 SharePoint、 OneDrive 和 Office 365。 若要設定此原則需要企業行動力 + 安全性訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。  <br/> |
 |變更免除使用者代理程式  <br/> |CustomizeExemptUsers  <br/> |在 SharePoint 或全域系統管理員自訂 SharePoint 系統管理中心的免除使用者代理程式的清單。 您可以指定要免除哪些使用者代理程式接收要編製索引的整個網頁。 這表示當您已指定為不受遇到 InfoPath 表單的使用者代理程式時，表單將會傳回為 XML 檔案，而不是整個網頁。 這樣可以讓編製索引 InfoPath 表單更快速。  <br/> |
 |變更網路存取原則  <br/> |NetworkAccessPolicyChanged  <br/> |在 SharePoint 或全域系統管理員變更 （也稱為信任的網路界限） [SharePoint 系統管理中心或使用 SharePoint Online PowerShell 的位置式存取原則。 此類型的原則控制可以存取 SharePoint 和 OneDrive 根據授權的 IP 位址範圍，您指定貴組織中的資源。 如需詳細資訊，請參閱 < <b0>SharePoint Online 和 OneDrive 資料是根據網路位置控制存取</b0>。  <br/> |
 |已完成的站台異地移動  <br/> |SiteGeoMoveCompleted  <br/> |使用您的組織中的全域系統管理員已排定網站異地移動已順利完成。 多地理位置功能可讓橫跨多個 Office 365 資料中心地區，稱為 geos Office 365 組織。 如需詳細資訊，請參閱 < <b0>OneDrive 中和 Office 365 中 SharePoint Online 的多地理位置功能</b0>。  <br/> |
@@ -468,28 +469,6 @@ ms.locfileid: "30411018"
 |更新的訊息  <br/> |Update  <br/> |郵件或其屬性已變更。  <br/> |
 |登入信箱的使用者  <br/> |MailboxLogin  <br/> |使用者登入其信箱。  <br/> |
 |(無)  <br/> |UpdateInboxRules  <br/> |已新增、 移除或變更收件匣規則。 收件匣規則用來處理郵件使用者的收件匣根據指定的條件，並符合規則的條件，例如將郵件移至指定資料夾或刪除郵件時採取的動作。  <br/> 若要傳回的收件匣規則活動的項目，您必須在**活動**清單中選取 [**顯示所有活動的結果**。 使用日期範圍] 方塊和 [**使用者**] 清單來縮小搜尋結果。  <br/> |
-||||
-  
-### <a name="retention-policy-and-label-activities"></a>保留原則和標籤活動
-
-下表說明與保留原則和安全性 & 合規性中心中的保留標籤相關的活動。 如需詳細資訊，請參閱：
-
-- [保留原則概觀](retention-policies.md)
-- [保留標籤概觀](labels.md)
-<br/>
-
-|**活動**|**Operation**|**描述**|
-|:-----|:-----|:-----|
-| 建立的保留設定的保留原則<br/> |NewRetentionComplianceRule<br/> |系統管理員設定新的保留原則的保留設定。 保留設定包含項目會保留多久，以及時會發生什麼情況的項目保留期間到期 （例如刪除項目保留項目，或保留，然後刪除它們）。 這項活動也會對應至執行[New-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) cmdlet。<br/>|
-| 建立的保留標籤 <br/> |NewComplianceTag<br/>  |系統管理員會建立新的保留標籤。<br/> |
-| 建立的保留原則<br/> |NewRetentionCompliancePolicy<br/> |系統管理員會建立新的保留原則。<br/>  |
-| 刪除的保留設定的保留原則<br/> | RemoveRetentionComplianceRule<br/>| 系統管理員會刪除保留原則的組態設定。 大部分情況下，系統管理員會刪除保留原則或執行**Remove-retentioncompliancerule** cmdlet 時，會記錄此活動。<br/> |
-| 刪除的保留標籤 <br/> |RemoveComplianceTag<br/>  | 系統管理員會刪除保留標籤。<br/>|
-| 刪除的保留原則<br/> |RemoveRetentionCompliancePolicy<br/> |系統管理員會刪除保留原則。 <br/>  |
-| 啟用法規合規性功能<br/> |SetRestrictiveRetentionUI<br/> |系統管理員啟用法規合規性功能執行**組 RegulatoryComplianceUI**指令程式。 執行此 cmdlet 之後，系統管理員可以鎖定保留原則，並指定為法規記錄的保留標籤使用安全性 & 合規性中心 UI。 直到組織使用**組 RegulatoryComplianceUI**指令程式來啟用這些功能，鎖定保留原則，並建立法規保留標籤可以只可藉由使用 PowerShell。 <br/>|
-| 更新的保留設定的保留原則<br/> | SetRetentionComplianceRule<br/>| 系統管理員變更現有的保留原則的保留設定。 保留設定包含項目會保留多久，以及時會發生什麼情況的項目保留期間到期 （例如刪除項目保留項目，或保留，然後刪除它們）。 這項活動也會對應至執行[Set-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) cmdlet。 <br/>|
-| 更新的保留標籤 <br/> |SetComplianceTag<br/>  | 系統管理員更新現有的保留標籤。<br/>|
-| 更新的保留原則<br/> |SetRetentionCompliancePolicy <br/>|系統管理員更新現有的保留原則。 觸發此事件的更新包括加入或排除內容的保留原則套用至的位置。<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Sway 活動
@@ -725,7 +704,7 @@ Exchange 系統管理員稽核記錄 — 這會啟用 Office 365 中的預設 �
 
 **什麼是目前稽核的不同 Office 365 服務？**
 
-最常使用的 Office 365 服務 like Exchange Online、 SharePoint、 OneDrive、 Azure Active Directory、 Microsoft Teams、 CRM、 進階威脅防護，以及資料外洩防護受到稽核。 請參閱本文的完整清單中的 [[簡介](#search-the-audit-log-in-the-office-365-security-amp-compliance-center)] 區段。
+最常使用的 Office 365 服務 like Exchange Online、 SharePoint Online、 OneDrive for Business、 Azure Active Directory、 Microsoft Teams、 Dynamics 365、 進階威脅防護，和 Power BI 受到稽核。 請參閱[本文開頭](search-the-audit-log-in-security-and-compliance.md)的稽核的服務清單。
 
 **查看活動稽核稽核 Office 365 中的服務？**
 
@@ -771,15 +750,3 @@ Exchange 系統管理員稽核記錄 — 這會啟用 Office 365 中的預設 �
 **稽核加密的資料嗎？**
 
 稽核資料會儲存在其中部署稽核管線的相同區域中的 Exchange 信箱 （靜態資料）。 此資料不會加密。 不過，永遠加密傳輸中的資料。 
-
-
-
-
-
-
-
-
-
-
-
-

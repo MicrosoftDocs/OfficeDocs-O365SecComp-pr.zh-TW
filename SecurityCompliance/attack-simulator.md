@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 全域管理員，您可以使用的攻擊模擬器在組織中執行真實的攻擊案例。 這可協助您找出並之前真實的攻擊拜訪人次貴公司，找出受到使用者。
-ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693662"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862455"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
@@ -33,11 +33,9 @@ ms.locfileid: "30693662"
 
 目前可用的三種類型的攻擊模擬如下：
   
-- [顯示名稱矛網路釣魚攻擊](attack-simulator.md#spearphish)
-    
-- [密碼噴灑攻擊](attack-simulator.md#passwordspray)
-    
-- [暴力密碼攻擊](attack-simulator.md#bruteforce)
+- [顯示名稱矛網路釣魚攻擊](#display-name-spear-phishing-attack)
+- [密碼噴灑攻擊](#password-spray-attack)
+- [暴力密碼攻擊](#brute-force-password-attack)
     
 已成功啟動攻擊，您可以使用多重要素驗證您用來執行模擬的攻擊的帳戶。 此外，您必須是 Office 365 全域系統管理員。
   

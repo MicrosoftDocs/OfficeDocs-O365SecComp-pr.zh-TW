@@ -9,14 +9,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 description: 深入了解安全性原則、 已建立的最佳作法，以及新興現代化貴組織的最佳作法。
-ms.openlocfilehash: cdf194e6d04a8085ada6d9d7571a95b77a79a1ee
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: c98944b746fb564f946440408f0be87425237232
+ms.sourcegitcommit: e89c21d569b96f34e5d4d4074ae25d8eec9aeacf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935188"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948514"
 ---
-# <a name="chief-information-security-officer-ciso-workshop"></a>首席資訊安全性長 （首席資訊安全長） 研討會
+# <a name="chief-information-security-officer-ciso-workshop-training"></a>首席資訊安全性長 （首席資訊安全長） 研討會訓練
 
 此主要資訊安全性 Office （首席資訊安全長） 研討會包含安全性檢討、 原則、 已建立的最佳作法，以及新興現代化雲端天數。 您組織中的安全性的最佳作法的集合。 此研討會做為基礎的 Microsoft 安全性小組的經驗與檢討從我們的客戶的組合。
 
@@ -25,13 +25,14 @@ ms.locfileid: "30935188"
 - 越來越多複雜的攻擊
 - 保護上現在包含雲端平台在混合式企業資產
 
-首席資訊安全長研討會視訊和 PowerPoint 內容旨在為模組化，因此您可以跳至感興趣的任何區段或只是起始處開始和一路通過。 投影片可使用以下的創意共 （與用以） 授權，讓它們可能重新用來幫助您組織建立有效的安全性策略。
+PDF/PowerPoint 與首席資訊安全長研討會影片下載內容設計成在模組化，因此您可以跳至感興趣的任何區段或只是起始處開始和一路通過。 投影片可使用以下的創意共 （與用以） 授權，讓它們可能重新用來幫助您組織建立有效的安全性策略。
 
 ## <a name="module-1--microsoft-cybersecurity-briefing"></a>模組 1 – Microsoft Cybersecurity 簡報
 
 此模組涵蓋了重大安全性檢疫、 Microsoft cybersecurity 參考架構、 cybersecurity 恢復能力、 網際網路的項目 (IoT)，及操作的技術概觀。
 
-下載 PDF 模組：[模組 1 – Microsoft Cybersecurity 簡報](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- 下載 PDF 摘要：[模組 1 – Microsoft Cybersecurity 簡報](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- 下載 PowerPoint 摘要：[模組 1 – Microsoft Cybersecurity 簡報](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ### <a name="part-1--course-introduction-and-overview"></a>第 1 部分 – 課程簡介及概觀
 
@@ -89,7 +90,8 @@ ms.locfileid: "30935188"
 
 了解如何增加可見度及控制與整合的指引，自動化的原則強制執行 >，此七個部分構成的系列中的監視您混合企業資產。
 
-下載 PDF 模組：[模組 2 – 安全性管理](media/ciso-workshop-2-security-management.pdf)
+- 下載 PDF 摘要：[模組 2 – 安全性管理](media/ciso-workshop-2-security-management.pdf)
+- 下載 PowerPoint 摘要：[模組 2 – 安全性管理](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx)
 
 ### <a name="introduction---security-management"></a>簡介-安全性管理
 
@@ -127,7 +129,8 @@ ms.locfileid: "30935188"
 
 因為大部分現代攻擊牽涉到危害使用者身分識別，了解如何建立新的身分識別安全性周邊來保護公司網路之外的資產。
 
-下載 PDF 模組：[模組 3 – 身分識別與存取管理](media/ciso-workshop-3-identity-protection.pdf)
+- 下載 PDF 摘要：[模組 3 – 身分識別與存取管理](media/ciso-workshop-3-identity-protection.pdf)
+- 下載 PowerPoint 摘要：[模組 3 – 身分識別與存取管理](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
 
 ### <a name="introduction--identity-and-access-management"></a>簡介 – 身分識別與存取管理
 
@@ -157,7 +160,8 @@ ms.locfileid: "30935188"
 
 瀏覽我們金鑰檢討有關威脅防護、 安全性演變、 策略和安全性隨身攜帶地圖。
 
-下載 PDF 模組：[模組 4a – 威脅保護策略](media/ciso-workshop-4a-threat-protection.pdf)
+- 下載 PDF 摘要：[模組 4a – 威脅保護策略](media/ciso-workshop-4a-threat-protection.pdf)
+- 下載 PowerPoint 摘要：[模組 4a – 威脅保護策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
 
 ### <a name="introduction--threat-protection-strategy-identify-protect"></a>簡介 – 威脅保護策略 （識別保護）
 
@@ -215,7 +219,8 @@ ms.locfileid: "30935188"
 
 此模組檢閱 trajectory 的我們安全性作業中心 (SOC)，由我們智慧安全性圖中的訊號的 trillions 提供與發展。
 
-下載 PDF 模組：[模組 4b – 威脅保護策略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- 下載 PDF 摘要：[模組 4b – 威脅保護策略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- 下載 PowerPoint 摘要：[模組 4b – 威脅保護策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ### <a name="introduction--threat-protection-strategy-detect-respond-recover"></a>簡介 – 威脅保護策略 （偵測-回應-復原）
 
@@ -265,7 +270,8 @@ ms.locfileid: "30935188"
 
 了解如何保護機密資訊，無論其亦會隨之自動分類、 不同的裝置和不同行動裝置、 雲端服務時，與其他公司資產的資料持續監視常設加密。
 
-下載 PDF 模組：[模組 5 – 資訊保護](media/ciso-workshop-5-information-protection-strategy.pdf)
+- 下載 PDF 摘要：[模組 5 – 資訊保護](media/ciso-workshop-5-information-protection-strategy.pdf)
+- 下載 PowerPoint 摘要：[模組 5 – 資訊保護](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx)
 
 ### <a name="introduction--information-protection"></a>簡介 – 資訊保護
 

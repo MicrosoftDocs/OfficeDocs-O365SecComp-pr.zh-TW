@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Office 365 安全性中的資料外洩防護 (DLP) 原則&amp;合規性中心，您可以識別、 監視和自動保護 Office 365 中的敏感資訊。
-ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639140"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862535"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -100,7 +100,7 @@ DLP 原則可以尋找和 Office 365 敏感資訊保護，是否該資訊位於 
   
 - 內容包含敏感資訊類型。
     
-- 內容包含標籤。 如需詳細資訊，請參閱以下區段 [[使用標籤作為 DLP 原則的條件](data-loss-prevention-policies.md#label)。
+- 內容包含標籤。 如需詳細資訊，請參閱以下區段 [[使用標籤作為 DLP 原則的條件](#using-a-label-as-a-condition-in-a-dlp-policy)。
     
 - 內容是否與組織外部或內部人員共用。
     

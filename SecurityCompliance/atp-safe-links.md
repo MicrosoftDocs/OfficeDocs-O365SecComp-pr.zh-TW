@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全連結功能提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。 若要從網路釣魚和其他攻擊保護您的組織使用安全連結。
-ms.openlocfilehash: 340faca2c869f051325babcb51b6cb6c976c98c8
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 7dacb4184ff0b99887b2aa5f3fe2e65cd58c5b6b
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410718"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862545"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 
@@ -36,7 +36,7 @@ ms.locfileid: "30410718"
 > [!IMPORTANT]
 > 本文適用於 Office 365 企業版客戶。 如果您使用 Outlook.com、 Office 365 家用版、 Office 365 個人或，而且您正在尋找在 Outlook 中的安全連結的相關資訊，請參閱 <<c0>進階 Outlook.com 安全性。
 
-Office 365 ATP 安全連結 （[進階威脅防護](office-365-atp.md)的一部分） 可協助保護您的組織藉由提供的[電子郵件](#how-atp-safe-links-works-with-email)和[Office 文件](#how-atp-safe-links-works-with-office-documents)中的網址 (Url) 的時間按一下 [驗證。 保護是透過[ATP 安全連結原則](set-up-atp-safe-links-policies.md)設定 Office 365 安全性小組的定義。 
+Office 365 ATP 安全連結 （[進階威脅防護](office-365-atp.md)的一部分） 可協助保護您的組織藉由提供的[電子郵件](#how-atp-safe-links-works-with-urls-in-email)和[Office 文件](#how-atp-safe-links-works-with-urls-in-office-documents)中的網址 (Url) 的時間按一下 [驗證。 保護是透過[ATP 安全連結原則](set-up-atp-safe-links-policies.md)設定 Office 365 安全性小組的定義。 
   
 一旦您 ATP 安全連結原則已備妥，Office 365 全域系統管理員、 安全性管理員和安全性讀取者可以[檢視報告，進階威脅防護](view-reports-for-atp.md)。 這些報告中的資訊可協助您採取進一步的步驟，以保護您的組織或研究安全性事件的安全性小組。
 
@@ -94,7 +94,7 @@ Office 365 ATP 安全連結 （[進階威脅防護](office-365-atp.md)的一部�
 
 - [Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)
 
-- [Office 365 進階的威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 
+- [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 
   
 **接下來，確定已定義的 ATP 安全連結原則**。 （請參閱[設定 Office 365 ATP 安全連結原則](set-up-atp-safe-links-policies.md)）。ATP 安全連結功能已啟用：
   
@@ -112,7 +112,7 @@ Office 365 ATP 安全連結 （[進階威脅防護](office-365-atp.md)的一部�
 |---------|---------|
 |Office 365 全域系統管理員 |若要購買 Office 365 註冊的人員是預設的全域系統管理員。 （請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)，以了解更多）。         |
 |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或  <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>如何讓確定 ATP 安全連結保護已經準備就緒
 

@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解威脅追蹤器，包括新值得注意的追蹤器，以協助您掌握安全性考量的組織。
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693072"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862525"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
@@ -38,7 +38,7 @@ ms.locfileid: "30693072"
   
 ![在檔案總管中的活動資訊的範例](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-追蹤器都只是一些您取得[Office 365 進階威脅防護計劃 2](office-365-ti.md)許多好用的功能。 威脅追蹤器包括[值得注意的追蹤器](threat-trackers.md#notey)、[趨勢追蹤器](threat-trackers.md#trending)、[追蹤查詢](threat-trackers.md#trackedq)，以及[已儲存的查詢](threat-trackers.md#savedq)。
+追蹤器都只是一些您取得[Office 365 進階威脅防護計劃 2](office-365-ti.md)許多好用的功能。 威脅追蹤器包括[Noteworth 追蹤器](#noteworthy-trackers)、[趨勢追蹤器](#trending-trackers)、[追蹤查詢](#tracked-queries)，以及[已儲存的查詢](#saved-queries)。
   
 若要檢視，並為您的組織使用威脅追蹤器，移至 [安全性&amp;合規性中心 ([https://protection.office.com](https://protection.office.com))，然後選擇 [**威脅管理** \> **威脅追蹤器**。
   

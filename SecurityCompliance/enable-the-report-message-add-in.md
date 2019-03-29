@@ -3,7 +3,7 @@ title: 啟用報告訊息增益集
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 03/26/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何啟用報告訊息增益集以進行 Outlook 和 Outlook 個別使用者的 web 應用程式或整個組織。
-ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693382"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866339"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -67,7 +67,7 @@ ms.locfileid: "30693382"
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>取得並啟用報告訊息增益集為您的組織
 
 > [!IMPORTANT]
-> 您必須是 Office 365 全域系統管理員或 Exchange Online 系統管理員，才能完成此工作。 此外，Exchange 必須設定為使用 OAuth 驗證來了解更多，請參閱[Exchange 需求 （的增益集的集中式部署）](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)。 
+> 您必須是 Office 365 全域系統管理員或 Exchange Online 系統管理員，才能完成此工作。 此外，Exchange 必須設定為使用 OAuth 驗證來了解更多，請參閱[Exchange 需求 （的增益集的集中式部署）](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。 
 
 1. 移至 Microsoft 365 系統管理中心中的[服務 & 增益集] 頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。<br/>![服務與增益集] 頁面中新的 Microsoft 365 系統管理中心](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 若要擷取員工通訊，檢閱設定主管檢閱原則。
-ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
+ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701288"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866389"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 
@@ -71,6 +71,34 @@ ms.locfileid: "30701288"
 |監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
 | Reviewers | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
   
+若要管理大型企業組織中監督的使用者，您可能需要非常大型的群組之間監視所有使用者。 您可以使用 PowerShell 來設定全域監督原則中的 [指派] 群組的通訊群組。 這可協助您使用單一原則，以監視千分位的使用者，並保留更新為新員工加入您的組織在監督原則。
+
+1. 具有下列內容建立適用於您的全域監督原則的專用的[通訊群組](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)。 請確定此通訊群組未用於其他目的或其他 Office 365 服務。
+
+    - **MemberDepartRestriction = 關閉**。 這可確保使用者不能移除自行從通訊群組。
+    - **MemberJoinRestriction = 關閉**。 這可確保使用者無法將自己新增至通訊群組。
+    - **ModerationEnabled = True**。 這可確保所有郵件傳送給此群組都需要核准及不會群組用來傳達外監督原則設定。
+
+    ```
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+2. 選取 [未使用[Exchange 的自訂屬性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww)用於追蹤哪些使用者已新增至您組織中監督原則]。
+
+3. 若要將使用者新增至監督原則的週期性排程上執行下列 PowerShell 指令碼：
+
+    ```
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 如需設定群組的詳細資訊，請參閱：
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [管理啟用郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)

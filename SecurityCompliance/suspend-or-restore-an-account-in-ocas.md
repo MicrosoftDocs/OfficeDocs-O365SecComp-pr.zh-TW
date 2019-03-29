@@ -12,43 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
-description: '與 Office 365 雲端應用程式安全性]，可採取的控管動作會暫停或 unsuspend 的使用者帳戶。 '
-ms.openlocfilehash: 3650a5304af0440dc537610994c4bd827f599989
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Office 365 雲端 App 安全性，您可以採取的控管動作有擱置或 unsuspend 的使用者帳戶。 '
+ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215093"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862445"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶
 
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |[開始部署](turn-on-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](#next-steps)<br/> |
    
-假設您收到警示 for Office 365 組織的使用者帳戶的其中一個已遭洩露。或者，假設您已收到警示，指出有問題的使用者帳戶。與 Office 365 雲端應用程式安全性]，可以暫停的使用者帳戶，而稍後將其還原後已經調查您會收到通知。
+假設您收到警示的 Office 365 組織的使用者帳戶的其中一個已遭洩露。 或者，假設您收到警示，指出有問題的使用者帳戶。 與 Office 365 雲端 App 安全性，您可以暫停的使用者帳戶，並稍後再將它還原後已經調查您收到的警示。
   
 > [!NOTE]
-> 在 Office 365 企業版 E5 中使用 office 365 雲端應用程式安全性。如果貴組織要使用另一個 Office 365 企業版訂閱，可做為附加元件購買 Office 365 雲端應用程式安全性。(全域管理員在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;規範中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)和[購買或編輯企業版的 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> Office 365 雲端 App 安全性是在 Office 365 企業版 E5。 如果您的組織要使用另一個 Office 365 企業版訂閱，能以附加元件形式購買 Office 365 雲端 App 安全性。 (以全域管理員，在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;合規性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)並[購買或編輯商務用 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
   
-## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>若要在 Office 365 雲端應用程式安全性擱置的使用者帳戶
+## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>若要擱置 Office 365 雲端 App 安全性中的使用者帳戶
 
-當您暫止的使用者帳戶時，您防止使用者再次登入。它是編輯直接在 Office 365 登入將狀態設定為**封鎖的登入**的使用者帳戶相同。
+當您暫停的使用者帳戶時，您會防止使用者再次登入。 它是與編輯直接在若要將登入狀態設為**登入已封鎖**的 Office 365 中的使用者帳戶相同。
   
 > [!NOTE]
-> 如果您封鎖的使用者登入 Office 365 中，透過這些擱置或編輯其登入狀態，請注意它可能需要一小時或賣才會生效的所有使用者的裝置和用戶端 （[編輯或變更 Office 365 中的使用者](https://support.office.com/article/42BB3F17-8F9D-4182-B434-5F1C8024E614#SingleUserPreview)） 上。如果使用者登入 Office 365 時，封鎖每當 Office 365 要求他們登入一次將會生效。 
+> 如果您封鎖使用者登入 Office 365，以暫停它們或編輯其登入狀態，請注意，可能需要一小時或動作才能生效的所有使用者的裝置和用戶端 （[編輯或變更 Office 365 中的使用者](https://support.office.com/article/42BB3F17-8F9D-4182-B434-5F1C8024E614#SingleUserPreview)） 上。 如果使用者登入 Office 365 時，封鎖就會生效，每當 Office 365 需要再次登入。 
   
-1. 以[全域管理員或安全性管理員](permissions-in-the-security-and-compliance-center.md)，請移至[https://protection.office.com](https://protection.office.com)並使用您工作或學校的帳戶登入。(這會引導您安全性&amp;規範中心。) 
+1. 以[全域管理員或安全性系統管理員](permissions-in-the-security-and-compliance-center.md)，請移至[https://protection.office.com](https://protection.office.com)並使用您的公司或學校帳戶登入。 (這會帶您前往安全性&amp;合規性中心。) 
     
-2. 安全性&amp;規範中心選擇**提醒** \> **管理進階提醒**。
+2. 安全性&amp;合規性中心，選擇 [**提醒** \> **管理進階提醒**。
     
-3. 選擇 [**移至 Office 365 的雲端應用程式安全性**]。<br>![安全性&amp;規範中心選擇管理進階警告移至 Office 365 雲端應用程式安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
+3. 選擇 [**移至 Office 365 雲端 App 安全性**。<br>![安全性&amp;合規性中心，選擇 [管理進階提醒移至 Office 365 雲端 App 安全性](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
-4. 在不同螢幕頂端導覽列中，選擇 [**提醒**]。
+4. 在跨螢幕頂端導覽列中，選擇 [**提醒**]。
     
-5. 在 [**提醒**] 欄中，連按兩下 [通知，特定的使用者帳戶的。 
+5. 在 [**提醒**] 欄中，連按兩下 [適用於特定的使用者帳戶的警示。 
     
-6. [**帳戶**] 下的 [**狀態**] 欄中，選擇 [設定![設定] 圖示](media/e01b75cc-b28f-4b83-8f86-b1b13dc27ab2.png) \> **暫停使用者**。
+6. **帳戶**] 下的 [在 [**狀態**] 欄中，選擇 [設定![設定] 圖示](media/e01b75cc-b28f-4b83-8f86-b1b13dc27ab2.png) \> **暫停使用者**。
     
 ## <a name="to-restore-a-user-account"></a>若要還原的使用者帳戶
 
@@ -60,6 +60,6 @@ ms.locfileid: "30215093"
     
 - [使用 Office 365 雲端 App 安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)
     
-- 檢閱您[的 Office 365 雲端應用程式安全性使用率活動](utilization-activities-for-ocas.md)
+- 檢閱您[的 Office 365 雲端 App 安全性的使用率活動](utilization-activities-for-ocas.md)
     
 

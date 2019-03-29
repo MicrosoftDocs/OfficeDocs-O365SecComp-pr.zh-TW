@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '系統管理員： 了解如何大量匯入組織的 PST 檔案複製到 Office 365 信箱將 PST 檔案複製到硬碟，然後將它傳送給 Microsoft。 '
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354745"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950470"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>使用磁碟機運送來匯入組織 PST 檔案至 Office 365
 
@@ -86,16 +86,16 @@ ms.locfileid: "30354745"
     
 - 運送給 Microsoft 的硬碟，可能必須跨越國境。在這種情況下，您必須負責確保硬碟機和它所包含的資料，會根據相關的法律匯入和/或匯出。運送硬碟之前，請向您的顧問確認磁碟機及資料可以合法的運送到指定的 Microsoft 資料中心。這是為了確保它及時送達 Microsoft。
     
-- 此程序包含複製並儲存安全存放裝置金鑰和 BitLocker 加密金鑰。 請務必採取預防措施來保護這些金鑰，就如同您保護密碼或其他安全性相關的資訊一樣。 舉例來說，您可能會將這些資訊儲存於受密碼保護的 Microsoft Word 文件內，或是將它們儲存於已加密的 USB 磁碟機中。 請參閱這些機碼的範例[的詳細資訊](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo)一節。 
+- 此程序包含複製並儲存安全存放裝置金鑰和 BitLocker 加密金鑰。 請務必採取預防措施來保護這些金鑰，就如同您保護密碼或其他安全性相關的資訊一樣。 舉例來說，您可能會將這些資訊儲存於受密碼保護的 Microsoft Word 文件內，或是將它們儲存於已加密的 USB 磁碟機中。 請參閱這些機碼的範例[的詳細資訊](#more-information)一節。 
     
-- PST 檔案匯入到 Office 365 信箱之後，為信箱設定保留功能已為期的持續時間。 這表示指派給信箱的保留原則不會處理，直到您關閉保留功能或設定要關閉保留的日期。 為什麼這麼做這樣？ 如果匯入至信箱的郵件都會舊，他們可能會永久刪除 （清除） 因為其保留期間已經過期根據為信箱設定保留設定。 將信箱置於保留功能，可讓信箱擁有者時間來管理這些新匯入郵件或讓您有時間變更信箱的保留設定。 請參閱管理保留功能的相關建議[的詳細資訊](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo)一節。 
+- PST 檔案匯入到 Office 365 信箱之後，為信箱設定保留功能已為期的持續時間。 這表示指派給信箱的保留原則不會處理，直到您關閉保留功能或設定要關閉保留的日期。 為什麼這麼做這樣？ 如果匯入至信箱的郵件都會舊，他們可能會永久刪除 （清除） 因為其保留期間已經過期根據為信箱設定保留設定。 將信箱置於保留功能，可讓信箱擁有者時間來管理這些新匯入郵件或讓您有時間變更信箱的保留設定。 請參閱管理保留功能的相關建議[的詳細資訊](#more-information)一節。 
     
 - 根據預設，可由 Office 365 信箱接收的最大郵件大小為 35 MB。 這是因為信箱的*MaxReceiveSize*屬性的預設值設為 35 MB。 不過，此限制的 Office 365 中的最大郵件收到的大小為 150 MB。 因此，如果您匯入 PST 檔案中若包含大於 35 MB，我們會自動將目標信箱上的*MaxReceiveSize*屬性的值變更為 150 MB 的 Office 365 匯入服務的項目。 這可讓郵件最多 150 MB，以匯入至使用者信箱。 
     
     > [!TIP]
     > 若要找出郵件的接收大小針對信箱，您可以在 Exchange Online PowerShell 中執行此命令： `Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
   
-- 您可以將 PST 檔案匯入 Office 365 中的非使用中信箱。 您執行這項操作藉由指定中的非使用中信箱的 GUID `Mailbox` PST 匯入對應檔案中的參數。 請參閱[步驟 3： 建立 PST 匯入對應檔案](use-drive-shipping-to-import-pst-files-to-office-365.md#step3)如需詳細資訊。 
+- 您可以將 PST 檔案匯入 Office 365 中的非使用中信箱。 您執行這項操作藉由指定中的非使用中信箱的 GUID `Mailbox` PST 匯入對應檔案中的參數。 請參閱[步驟 3： 建立 PST 匯入對應檔案](#step-3-create-the-pst-import-mapping-file)如需詳細資訊。 
     
 - 在 Exchange 混合式部署中，您可以將 PST 檔案匯入主要信箱位於內部部署使用者的雲端式封存信箱。 您這麼做，執行在 PST 匯入對應檔案中的下列動作：
     
@@ -103,7 +103,7 @@ ms.locfileid: "30354745"
     
   - 指定的值 **，則為 TRUE**以`IsArchive`參數。 
     
-    請參閱[步驟 3： 建立 PST 匯入對應檔案](use-drive-shipping-to-import-pst-files-to-office-365.md#step3)如需詳細資訊。 
+    請參閱[步驟 3： 建立 PST 匯入對應檔案](#step-3-create-the-pst-import-mapping-file)如需詳細資訊。 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>步驟 1： 下載 PST 匯入工具與安全存放裝置金鑰
 
@@ -308,7 +308,7 @@ ms.locfileid: "30354745"
 下一步是運送硬碟給 Microsoft]，然後提供運送的追蹤號碼和傳回運送磁碟機運送工作的資訊。 Microsoft 所接收的磁碟機之後，它會之間所採取 7 和 10 個工作天內的資料中心人員，以將您的 PST 檔案上傳至您的組織的 Azure 儲存體區域。
   
 > [!NOTE]
-> 如果您沒有提供追蹤號碼，以及傳回運送資訊建立匯入工作的 14 天內，將會過期匯入工作。 如果發生這種情況，您必須建立新的磁碟機運送匯入工作 (請參閱[步驟 4： 在 Office 365 內建立 PST 匯入工作](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)) 並重新提交磁碟機和 PST 匯入對應檔案。 
+> 如果您沒有提供追蹤號碼，以及傳回運送資訊建立匯入工作的 14 天內，將會過期匯入工作。 如果發生這種情況，您必須建立新的磁碟機運送匯入工作 (請參閱[步驟 4： 在 Office 365 內建立 PST 匯入工作](#step-4-create-a-pst-import-job-in-office-365)) 並重新提交磁碟機和 PST 匯入對應檔案。 
   
 ### <a name="ship-the-hard-drive"></a>運送硬碟
 
@@ -502,7 +502,7 @@ Microsoft Azure 存放裝置總管處於預覽狀態。
     
   - 在一段時間之後, 您可以關閉保留功能來執行`Set-Mailbox -RetentionHoldEnabled $false`命令。 如需相關指示，請參閱[就地保留信箱保留 」 狀態](https://go.microsoft.com/fwlink/p/?LinkId=544749)。
     
-  - 您可以設定保留功能，讓未來某些日期上關閉。 您執行這項操作藉由執行`Set-Mailbox -EndDateForRetentionHold <date>`命令。 例如，假設今天的日期是 2016 年 7 月 1 日，而您想在 30 天中關閉保留功能，您可以執行下列命令： `Set-Mailbox -EndDateForRetentionHold 8/1/2016`。 在此案例中，您會使*RentionHoldEnabled*屬性設為*True* 。 如需詳細資訊，請參閱[Set-mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
+  - 您可以設定保留功能，讓未來某些日期上關閉。 您執行這項操作藉由執行`Set-Mailbox -EndDateForRetentionHold <date>`命令。 例如，假設今天的日期是 2016 年 6 月 1 日，而您想在 30 天中關閉保留功能，您可以執行下列命令： `Set-Mailbox -EndDateForRetentionHold 7/1/2016`。 在此案例中，您會使*RentionHoldEnabled*屬性設為*True*。 如需詳細資訊，請參閱[Set-mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
     
   - 您可以變更的保留原則，以便更舊版本都已匯入的項目不會立即刪除或移至使用者的封存信箱指派給信箱的設定。 例如，您無法延長刪除或封存原則指派給信箱的保留天數。 在此案例中，您會關閉保留在信箱上變更保留原則的設定之後。 如需詳細資訊，請參閱 < <b0>Set up Office 365 組織中信箱的封存和刪除原則</b0>。
     
