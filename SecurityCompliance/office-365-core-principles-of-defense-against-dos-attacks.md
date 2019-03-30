@@ -1,43 +1,44 @@
 ---
-title: 防禦措施來拒絕服務攻擊的 office 365 核心原則
+title: Office 365 防禦拒絕服務攻擊的核心原則
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 如何 Microsoft 使用吸收、 偵測和減輕在其防禦拒絕服務 (DoS) 攻擊的核心原則。
-ms.openlocfilehash: dfe179924f7414b0120697023f3daf7e6b6661b6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 如何使用 Microsoft 利用吸收、 偵測和補救中其防禦拒絕服務 (DoS) 攻擊的核心原則。
+ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216003"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004100"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a><span data-ttu-id="1f41c-103">防禦阻斷服務攻擊的核心原則</span><span class="sxs-lookup"><span data-stu-id="1f41c-103">Core Principles of Defense Against Denial-of-Service Attacks</span></span>
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a><span data-ttu-id="2c1b4-103">防禦阻斷服務攻擊的核心原則</span><span class="sxs-lookup"><span data-stu-id="2c1b4-103">Core Principles of Defense Against Denial-of-Service Attacks</span></span>
 
-<span data-ttu-id="1f41c-p101">三個核心原則時防禦網路型 DoS 攻擊吸收、 偵測和減輕。吸收發生前偵測，並偵測減輕之前發生。吸收是 DoS 攻擊最佳的防禦。如果無法偵測到攻擊，它不能降低。但如果不能相同甚至是最小的 DoS 攻擊的命運，然後服務未將倖免於長的來偵測出攻擊。</span><span class="sxs-lookup"><span data-stu-id="1f41c-p101">The three core principles when defending against network-based DoS attacks are Absorption, Detection, and Mitigation. Absorption happens before detection, and detection happens before mitigation. Absorption is the best defense against a DoS attacks. If the attack can't be detected, it can't be mitigated. But if even the smallest DoS attack can't be absorbed, then services aren't going to survive long enough for the attack to be detected.</span></span>
+<span data-ttu-id="2c1b4-104">三個核心原則時防禦網路型 DoS 攻擊吸收、 偵測和補救。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-104">The three core principles when defending against network-based DoS attacks are Absorption, Detection, and Mitigation.</span></span>
+<span data-ttu-id="2c1b4-105">吸收會發生情況之前偵測，以及偵測緩和措施之前發生。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-105">Absorption happens before detection, and detection happens before mitigation.</span></span> <span data-ttu-id="2c1b4-106">吸收是 DoS 攻擊的最佳防範。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-106">Absorption is the best defense against a DoS attacks.</span></span> <span data-ttu-id="2c1b4-107">如果無法偵測到的攻擊，它不能降低。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-107">If the attack can't be detected, it can't be mitigated.</span></span> <span data-ttu-id="2c1b4-108">但是，如果無法相同甚至是最小的 DoS 攻擊的命運，然後服務不會學到承受長，才能偵測到攻擊。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-108">But if even the smallest DoS attack can't be absorbed, then services aren't going to survive long enough for the attack to be detected.</span></span>
 
-<span data-ttu-id="1f41c-p102">當然，其通常不是經濟合適用於大多數的組織如這需要在技術和專門技術也不少投資購買必要吸收 DoS 攻擊的額外容量。這會醒目提示其中一個使用 Microsoft 雲端服務 ； 安全性優點我們服務十足規模可讓我們為我們雲端客戶強式網路防護提供符合成本效益的方式。但是我們規模即使儘管如此，還是必須有吸收、 偵測和減輕之間的平衡。若要尋找該達到負載平衡，我們研究來評估我們需要多少吸收攻擊成長率。</span><span class="sxs-lookup"><span data-stu-id="1f41c-p102">Of course, it is generally not economically feasible for most organizations to purchase the excess capacity necessary to absorb DoS attacks, as this requires a considerable investment in technology and technical skills. This highlights one of the security benefits of using Microsoft cloud services; the sheer scale of our services enables us to provide strong network protection to our cloud customers in a cost-effective manner. But even at our scale, though, there must still be a balance between absorption, detection, and mitigation. To find that balance, we study an attack's growth rate to estimate how much we need to absorb.</span></span>
+<span data-ttu-id="2c1b4-109">當然，其通常不是經濟可行的情況下用於大多數的組織購買必要吸收 DoS 攻擊的寬幅容量，因為這需要相當長的投資的技術和專門技術。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-109">Of course, it is generally not economically feasible for most organizations to purchase the excess capacity necessary to absorb DoS attacks, as this requires a considerable investment in technology and technical skills.</span></span> <span data-ttu-id="2c1b4-110">這會將下列其中一個安全性優點使用 Microsoft 雲端服務; 醒目提示真正的縮放比例，我們的服務可讓我們於我們雲端的客戶提供強式網路保護，以符合成本效益的方式。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-110">This highlights one of the security benefits of using Microsoft cloud services; the sheer scale of our services enables us to provide strong network protection to our cloud customers in a cost-effective manner.</span></span> <span data-ttu-id="2c1b4-111">但是，即使在我們的刻度，不過，仍必須有吸收、 偵測和補救之間取得平衡。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-111">But even at our scale, though, there must still be a balance between absorption, detection, and mitigation.</span></span> <span data-ttu-id="2c1b4-112">若要尋找的平衡，我們研究來估計我們需要多少吸收攻擊的成長率。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-112">To find that balance, we study an attack's growth rate to estimate how much we need to absorb.</span></span>
 
-<span data-ttu-id="1f41c-p103">偵測是 cat-and-mouse 的遊戲。您必須正比尋找新的方式人員所攻擊您或嘗試擊敗系統。偵測-> 減輕-> 偵測-> 降低、 等會無限期會繼續永久、 持續性狀態。</span><span class="sxs-lookup"><span data-stu-id="1f41c-p103">Detection is a cat-and-mouse game. You must constantly look for the new ways people are attacking you or trying to defeat your systems. Detect -> Mitigate -> Detect -> Mitigate, etc., is a perpetual, persistent state that will continue indefinitely.</span></span>
+<span data-ttu-id="2c1b4-113">偵測是 cat-and-mouse 遊戲。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-113">Detection is a cat-and-mouse game.</span></span> <span data-ttu-id="2c1b4-114">您必須經常尋找新的方式人員會攻擊您或嘗試擊敗您的系統。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-114">You must constantly look for the new ways people are attacking you or trying to defeat your systems.</span></span> <span data-ttu-id="2c1b4-115">偵測-> 減輕-> 偵測-> 降低等是永久、 持續的狀態，將會無限期繼續。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-115">Detect -> Mitigate -> Detect -> Mitigate, etc., is a perpetual, persistent state that will continue indefinitely.</span></span>
 
-## <a name="defending-against-dos-attacks"></a><span data-ttu-id="1f41c-116">防禦 DoS 攻擊</span><span class="sxs-lookup"><span data-stu-id="1f41c-116">Defending Against DoS Attacks</span></span>
+## <a name="defending-against-dos-attacks"></a><span data-ttu-id="2c1b4-116">防禦拒絕服務攻擊</span><span class="sxs-lookup"><span data-stu-id="2c1b4-116">Defending Against DoS Attacks</span></span>
 
-<span data-ttu-id="1f41c-p104">若要成功防禦 DoS 攻擊，早期偵測是基本。由之前系統超過負荷偵測攻擊、 防禦者可執行回應計畫。</span><span class="sxs-lookup"><span data-stu-id="1f41c-p104">To successfully defend against a DoS attack, early detection is essential. By detecting an attack before the system is overwhelmed, defenders can execute a response plan.</span></span>
+<span data-ttu-id="2c1b4-117">成功，以防範 DoS 攻擊，早期偵測是不可或缺的。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-117">To successfully defend against a DoS attack, early detection is essential.</span></span> <span data-ttu-id="2c1b4-118">藉由之前淹沒了系統偵測攻擊，防禦者可以執行回應計畫。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-118">By detecting an attack before the system is overwhelmed, defenders can execute a response plan.</span></span>
 
-<span data-ttu-id="1f41c-119">下列公式可協助大約時間 DoS 攻擊的影響：</span><span class="sxs-lookup"><span data-stu-id="1f41c-119">The following formula will help approximate the time to impact of a DoS attack:</span></span>
+<span data-ttu-id="2c1b4-119">下列公式可協助大約時間 DoS 攻擊的影響：</span><span class="sxs-lookup"><span data-stu-id="2c1b4-119">The following formula will help approximate the time to impact of a DoS attack:</span></span>
 
-   <span data-ttu-id="1f41c-120">**最大容量 （以位元組/秒） / 成長速率 （以位元組/秒） = 影響的時間 （以位元組/秒）**</span><span class="sxs-lookup"><span data-stu-id="1f41c-120">**Maximum Capacity (in bytes/sec) / Growth Rate (in bytes/sec) = Time to Impact (in bytes/sec)**</span></span>
+   <span data-ttu-id="2c1b4-120">**最大容量 （以位元組/秒） / 成長率 （以位元組/秒） = 影響時間 （以位元組/秒）**</span><span class="sxs-lookup"><span data-stu-id="2c1b4-120">**Maximum Capacity (in bytes/sec) / Growth Rate (in bytes/sec) = Time to Impact (in bytes/sec)**</span></span>
 
-<span data-ttu-id="1f41c-p105">如果時間-影響之後再很有可能發生的來偵測時間 DoS 攻擊將會成功。如果要偵測時間發生前次-影響，然後遭受攻擊的服務應該要保留線上和可以存取，如果減輕策略都使用。即得出有可執行以抵禦 DoS 攻擊的只有兩件事：</span><span class="sxs-lookup"><span data-stu-id="1f41c-p105">If the time-to-detection occurs after time-to-impact, then it is likely the DoS attack will be successful. If the time-to-detection occurs before time-to-impact, then the services being attacked should remain online and accessible, if mitigation strategies are used. Thus, there are only two things that can be done to defend against DoS attacks:</span></span>
-- <span data-ttu-id="1f41c-124">若要引發的最大容量 （以提供更多時間來偵測攻擊）; ceiling 增加容量或</span><span class="sxs-lookup"><span data-stu-id="1f41c-124">Increase capacity to raise the ceiling of maximum capacity (which in turn provides more time to detect an attack); or</span></span>
-- <span data-ttu-id="1f41c-125">減少偵測的時間。</span><span class="sxs-lookup"><span data-stu-id="1f41c-125">Decrease the time to detect.</span></span>
+<span data-ttu-id="2c1b4-121">若要偵測的時間就會發生時間的影響之後，則很可能 DoS 攻擊將會成功。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-121">If the time-to-detection occurs after time-to-impact, then it is likely the DoS attack will be successful.</span></span> <span data-ttu-id="2c1b4-122">如果要偵測時間發生之前的時間的影響，然後應保持遭受攻擊的服務，線上和可以存取，如果使用緩和措施策略。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-122">If the time-to-detection occurs before time-to-impact, then the services being attacked should remain online and accessible, if mitigation strategies are used.</span></span> <span data-ttu-id="2c1b4-123">因此，有可執行以抵禦拒絕服務攻擊的只有兩件事：</span><span class="sxs-lookup"><span data-stu-id="2c1b4-123">Thus, there are only two things that can be done to defend against DoS attacks:</span></span>
+- <span data-ttu-id="2c1b4-124">若要引發的最大容量 （可輪流提供更多時間來偵測攻擊）; ceiling 增加容量或</span><span class="sxs-lookup"><span data-stu-id="2c1b4-124">Increase capacity to raise the ceiling of maximum capacity (which in turn provides more time to detect an attack); or</span></span>
+- <span data-ttu-id="2c1b4-125">減少偵測的時間。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-125">Decrease the time to detect.</span></span>
 
-<span data-ttu-id="1f41c-p106">增加容量有直接的會計影響。Microsoft 建議客戶開發至少基本吸收容量，以確保它們可倖免於 DoS 攻擊的一些層級。由於每個客戶具備的曝光度、 風險及財務 outlay 自己臨界值而異客戶客戶、 實際吸收容量。最終，基於經濟原因投資研究 （英文） 與以減少時間來偵測方式的時間通常是最符合成本效益的防禦。</span><span class="sxs-lookup"><span data-stu-id="1f41c-p106">Increasing capacity has a direct fiscal impact. Microsoft recommends that customers develop at least basic absorption capacity, to ensure that they can survive some level of DoS attack. The actual absorption capacity will vary from customer to customer, as each customer has their own thresholds for exposure, risk, and financial outlay. Ultimately, for economic reasons, investments of research and time in ways to decrease time-to-detection are usually the most cost-effective defense.</span></span>
+<span data-ttu-id="2c1b4-126">增加容量有直接的會計影響。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-126">Increasing capacity has a direct fiscal impact.</span></span> <span data-ttu-id="2c1b4-127">Microsoft 建議的客戶開發至少基本吸收容量，以確保它們可以承受某種程度的 DoS 攻擊。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-127">Microsoft recommends that customers develop at least basic absorption capacity, to ensure that they can survive some level of DoS attack.</span></span> <span data-ttu-id="2c1b4-128">為每個客戶有自己的曝光度、 風險和財務 outlay 閾值而異客戶，實際吸收容量。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-128">The actual absorption capacity will vary from customer to customer, as each customer has their own thresholds for exposure, risk, and financial outlay.</span></span> <span data-ttu-id="2c1b4-129">最後，基於經濟原因，投資之上的研究和時間的方式來減少時間-偵測通常是最符合成本效益的措施。</span><span class="sxs-lookup"><span data-stu-id="2c1b4-129">Ultimately, for economic reasons, investments of research and time in ways to decrease time-to-detection are usually the most cost-effective defense.</span></span>
