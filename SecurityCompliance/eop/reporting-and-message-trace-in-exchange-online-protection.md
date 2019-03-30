@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) 提供許多不同的報告，可協助您判斷貴組織的整體狀態與健全狀況。還有可協助您疑難排解特定事件 (例如郵件未抵達其預定收件者) 的工具，以及有助於符合規範需求的稽核報告。下表將說明 EOP 系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693162"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000946"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 的報告與訊息追蹤
 
@@ -38,7 +38,7 @@ Microsoft Exchange Online Protection (EOP) 提供許多不同的報告，可協�
 - [在管理中心中的電子郵件 app 使用情況的 office 365 報告](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [在系統管理中心的 [信箱使用量的 office 365 報告](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>安全性&amp;在 Office 365 系統管理中心中的符合性報告
+## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>安全性&amp;Microsoft 365 系統管理中心中的規範符合性報告
 
 這些增強型的報告可提供享有互動報告體驗若是 EOP 管理員，其中包含摘要資訊，並向下切入如需詳細資訊的能力。  
 
@@ -50,7 +50,7 @@ Microsoft Exchange Online Protection (EOP) 提供許多不同的報告，可協�
 
 ##<a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自訂報告
 
-以程式設計方式建立子主題的<b0>使用中 Microsoft Graph 的 Office 365 使用情況報告</b0>中可用的 Office 365 系統管理中心使用 Microsoft Graph 請參閱 < 的報告 
+以程式設計方式建立子主題的<b0>使用中 Microsoft Graph 的 Office 365 使用情況報告</b0>中可用的 Microsoft 365 系統管理中心使用 Microsoft Graph 請參閱 < 的報告 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>使用報告的自訂報告 web 服務
 
@@ -83,6 +83,6 @@ Microsoft Exchange Online Protection (EOP) 提供許多不同的報告，可協�
 |郵件追蹤資料  <br/> |90 天  <br/> |針對 7 天內的郵件執行郵件追蹤時，郵件應於 5 到 30 分鐘內出現。  <br/> 針對超過 7 天的郵件執行郵件追蹤時，結果可能需要幾個小時。  <br/> |
    
 > [!NOTE]
-> 資料可用性和延遲是相同的是否要求透過 Office 365 系統管理中心或遠端 PowerShell。 
+> 資料可用性和延遲是相同的是否要求透過 Microsoft 365 系統管理中心或遠端 PowerShell。 
   
 

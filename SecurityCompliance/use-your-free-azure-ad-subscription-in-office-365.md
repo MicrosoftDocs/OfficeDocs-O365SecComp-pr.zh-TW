@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何存取 Azure Active Directory，其隨附於貴組織的 Office 365 的付費訂閱。
-ms.openlocfilehash: 0a8ed74a0e135ae216f33401016a7321ad1a1adf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
-ms.translationtype: HT
+ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295596"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001076"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>使用 Office 365 中免費的 Azure Active Directory 訂閱
 
@@ -41,6 +41,6 @@ ms.locfileid: "30295596"
     
 ## <a name="more-information"></a>詳細資訊
 
-- 您也可以從 Office 365 系統管理中心存取 **Azure Active Directory** 系統管理中心。在 Office 365 系統管理中心的左導覽窗格中，按一下 [系統管理中心]**** \> [Azure Active Directory]****。
+- 您也可以從 Microsoft 365 系統管理中心存取**Azure Active Directory**系統管理中心。 在 Microsoft 365 系統管理中心的左側的導覽窗格中，按一下 [**系統管理中心** \> **Azure Active Directory**。
     
 - 如需管理使用者和群組以及執行其他目錄管理工作的詳細資訊，請參閱[管理 Azure AD 目錄](https://docs.microsoft.com/azure/active-directory/active-directory-administer)。

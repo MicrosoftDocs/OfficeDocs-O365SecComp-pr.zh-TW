@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 許多組織都已識別及分類藉由分類屬性在 Windows Server 檔案分類基礎結構 (FCI)、 在 SharePoint 中，此文件內容或文件屬性中的敏感資訊的程序套用的協力廠商系統。 如果這描述您的組織，您可以建立 DLP 原則會辨識已經由 Windows Server FCI 或其他系統，套用至文件的屬性，以便 DLP 原則可以在具有特定的 FCI 或其他的 Office 文件上強制執行的 Office 365屬性的值。
-ms.openlocfilehash: b1a5b438714a0c0b91d33a9544c0f26cbd12b4c9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ad643c77d477f6b9aaecb122010584510ea9bf7e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639080"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000576"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>建立 DLP 原則來保護具有 FCI 或其他屬性的文件
 
@@ -50,7 +50,7 @@ DLP 原則只會尋找特定的屬性名稱/值組。 可以用任何文件屬�
   
 ### <a name="step-2-create-a-managed-property"></a>步驟 2： 建立 managed 的屬性
 
-1. 登入 Office 365 系統管理中心。
+1. 登入 Microsoft 365 系統管理中心。
     
 2. 在左側導覽中，選擇 [**系統管理中心** \> **SharePoint**。 You're now in the SharePoint admin center.
     

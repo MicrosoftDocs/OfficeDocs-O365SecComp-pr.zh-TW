@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何識別不同類型的可以放在 Office 365 信箱的保留。 這些類型的保留包含訴訟暫止、 eDiscovery 保留和 Office 365 保留原則。 您也可以判定是否使用者已被排除全組織保留原則
-ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900152"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001216"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -28,7 +28,7 @@ Office 365 提供許多組織可以防止永久刪除信箱內容的方法。 �
 
 - **訴訟暫止**-已套用至 Exchange Online 中的使用者信箱的保留。
 
-- **eDiscovery 保留**-與安全性 & 合規性中心中的 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，並在對應的信箱上 Office 365 群組和 Microsoft Teams。
+- **eDiscovery 保留**-在安全性與合規性中心 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，並在對應的信箱上 Office 365 群組和 Microsoft Teams。
 
 - **就地保留**位在 Exchange 系統管理員使用就地 eDiscovery & 保留工具已套用至使用者信箱的保留中心在 Exchange Online。
 
@@ -53,7 +53,7 @@ Office 365 提供許多組織可以防止永久刪除信箱內容的方法。 �
 
 - **Get-organizationconfig** -使用此指令程式來取得全組織保留原則的 Guid。
 
-若要連接至 Exchange Online PowerShell，請參閱 < <b0>Connect to Exchange Online PowerShell</b0>。
+若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -72,9 +72,9 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 |保留類型  |範例值  |如何找出保留  |
 |---------|---------|---------|
 |訴訟資料暫留     |    `True`     |     如果*LitigationHoldEnabled*屬性設為，將會啟用信箱的訴訟資料暫留`True`。    |
-|eDiscovery 保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 屬性*包含安全性 & 合規性中心中的 eDiscovery 案例相關聯的任何保留的 GUID。 您可以分清這是 eDiscovery 保留，因為 GUID 開頭`UniH`（這表示整合保留） 的前置詞。      |
-|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*屬性包含信箱處於就地保留的 GUID。 您可以分清這是在原有範圍暫止因為 GUID 也不會啟動與前置詞或它的開頭`cld`前置詞。     |
-|Office 365 保留原則特別套用到信箱     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 屬性會包含任何特定位置保留原則套用到信箱的 Guid。 您可以識別保留原則，因為 GUID 開頭`mbx`或`skp`前置詞。 `skp`前置詞會指示的保留原則套用至 Skype，商務交談在使用者的信箱中的。    |
+|eDiscovery 保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 屬性*會包含任何保留在安全性與合規性中心 eDiscovery 案例相關聯的 GUID。 您可以分清這是 eDiscovery 保留，因為 GUID 開頭`UniH`（這表示整合保留） 的前置詞。      |
+|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或  <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*屬性包含信箱處於就地保留的 GUID。 您可以分清這是在原有範圍暫止因為 GUID 也不會啟動與前置詞或它的開頭`cld`前置詞。     |
+|Office 365 保留原則特別套用到信箱     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或  <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 屬性會包含任何特定位置保留原則套用到信箱的 Guid。 您可以識別保留原則，因為 GUID 開頭`mbx`或`skp`前置詞。 `skp`前置詞會指示的保留原則套用至 Skype，商務交談在使用者的信箱中的。    |
 |排除在整個組織的 Office 365 保留原則     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     如果信箱排除全組織的 Office 365 保留原則，排除信箱的保留原則的 GUID 會顯示在 InPlaceHolds 屬性，而且由`-mbx`前置詞。    |
 
 ### <a name="get-organizationconfig"></a>Get-organizationconfig
@@ -137,7 +137,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-若要連接到安全性 & 合規性中心 PowerShell，請參閱[Connect to Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+若要連接到安全性 & 合規性中心 PowerShell，請參閱[連線到安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
 ### <a name="in-place-holds"></a>就地保留
 

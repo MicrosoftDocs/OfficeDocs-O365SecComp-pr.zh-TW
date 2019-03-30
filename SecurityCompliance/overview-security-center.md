@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 863cd36d383000b81d1a543d866f24b0380e5fdd
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a0acaf9560b814fe8e87751d3a8f4b6d13b3864a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791618"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000596"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概觀
-
-[!include[Prerelease�information](prerelease.md)]
 
 管理您的業務以防止不斷演變威脅橫向安全性帶許多挑戰。 您可能會有太多的安全性解決方案，以進行大量控制項的不同位置，並不知道哪些控制項最有效且可將為您的工作人員介紹新挑戰。 它可能很難的安全性小組合作，找出安全性與生產力的平衡點。
 

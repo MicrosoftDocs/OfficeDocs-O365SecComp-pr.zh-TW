@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果將離職員工返回您的組織，或是新進員工雇用採取將承接已離開員工工作職責，您可以復原非使用中信箱 Office 365 中的內容。 當您復原非使用中的信箱時，它會轉換為新的信箱，其中包含非作用中信箱的內容。 '
-ms.openlocfilehash: d5cdb07c7a7209f11021a8f4235280a6b27f216d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900042"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999816"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>復原非使用中信箱 Office 365 中
 
@@ -69,7 +69,7 @@ ms.locfileid: "30900042"
 
     復原非使用中信箱的主要 SMTP 位址必須*MicrosoftOnlineServicesID*參數所指定的一個相同的值。 
     
-復原非使用中信箱之後，也會建立新的 Office 365 使用者帳戶。 您必須指派授權來啟用此使用者帳戶。 若要在 Office 365 系統管理中心 中指派授權，請參閱[指派或解除指派商務用 Office 365 的授權](https://go.microsoft.com/fwlink/p/?LinkId=276798)。
+復原非使用中信箱之後，也會建立新的 Office 365 使用者帳戶。 您必須指派授權來啟用此使用者帳戶。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱[指派或解除指派商務用 Office 365 的授權](https://go.microsoft.com/fwlink/p/?LinkId=276798)。
   
 ## <a name="more-information"></a>詳細資訊
 

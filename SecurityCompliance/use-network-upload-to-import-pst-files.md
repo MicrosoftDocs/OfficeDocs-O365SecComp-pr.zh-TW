@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 系統管理員： 了解如何使用網路上傳將大量匯入多個 PST 檔案複製到 Office 365 中的使用者信箱。
-ms.openlocfilehash: d7ef9d5f9f1d9fcf9ebdf31ffe42979482abc5e7
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: d51fb39d994702099b53afa3058cdf8fafffd5a6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950450"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000156"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用網路上傳至您組織 PST 檔案匯入 Office 365
 
@@ -48,7 +48,7 @@ ms.locfileid: "30950450"
   
 - 您必須獲指派 「 信箱匯入匯出角色在 Exchange Online 將 PST 檔案匯入 Office 365 信箱。 根據預設，此角色不指派給任何角色群組在 Exchange Online。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 如需詳細資訊，請參閱 「 將角色新增至角色群組 」 或 「 建立角色群組 > 小節中[管理角色群組](https://go.microsoft.com/fwlink/p/?LinkId=730688)。
     
-    此外，若要建立匯入工作在 Office 365 安全性&amp;合規性中心，其中一項條件必須成立：
+    此外，若要建立匯入工作安全性 & 合規性中心中，下列其中一項必須為真：
     
   - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -89,12 +89,12 @@ ms.locfileid: "30950450"
 > [!IMPORTANT]
 > 若要匯入 PST 檔案使用網路上傳方法，我們建議您使用的版本，可以在下列程序之步驟 6b 中下載 Azure AzCopy。
   
-1. 移至 [[https://protection.office.com](https://protection.office.com)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
+1. 移至 [[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
     
-2. 在左窗格中的安全性&amp;合規性中心，按一下 [**資料控管** \> **匯入**。
+2. 在 [安全性 & 合規性中心的左窗格中，按一下 [**資料控管** \> **匯入**。
     
     > [!NOTE]
-    > 您必須被指派適當的權限，若要存取 [**匯入**] 頁面上，安全性&amp;合規性中心。 請參閱 <<c0>開始之前> 一節的詳細資訊。 
+    > 您必須被指派存取安全性 & 合規性中心中的 [**匯入**] 頁面上的適當權限。 請參閱 <<c0>開始之前> 一節的詳細資訊。 
     
 3. 在 [**匯入**] 頁面上，按一下 [![加入圖示](media/ITPro-EAC-AddIcon.gif)**新增匯入工作**。
     
@@ -235,13 +235,13 @@ Microsoft Azure 存放裝置總管處於預覽狀態。
 
 下一步是在 Office 365 中的匯入服務中建立 PST 匯入工作。 如先前所述，您會將提交您在步驟 4 中建立 PST 匯入對應檔案。 在您建立新的工作之後，Office 365 分析的 PST 檔案中的資料，並再讓您有機會來篩選資料的實際取得匯入 PST 匯入對應檔案中指定的信箱 （請參閱 「[步驟 6](#step-6-filter-data-and-start-the-pst-import-job)）。
   
-1. 移至 [[https://protection.office.com](https://protection.office.com)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
+1. 移至 [[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
     
-2. 在左窗格中的安全性&amp;合規性中心，按一下 [**資料控管**，然後按一下 [**匯入**。
+2. 在 [安全性 & 合規性中心的左窗格中，按一下 [**資料控管**，然後按一下 [**匯入**。
     
 3. 在 [**匯入**] 頁面上，按一下 [![加入圖示](media/ITPro-EAC-AddIcon.gif)**新增匯入工作**。
     
-    **附註：** 您必須被指派適當的權限，若要存取 [**匯入**] 頁面中的安全性&amp;合規性中心，以建立新的匯入工作。 請參閱 <<c0>開始之前> 一節的詳細資訊。 
+    **附註：** 您必須被指派適當的權限，若要存取 [**匯入**] 頁面中的安全性 & 合規性中心，以建立新的匯入工作。 請參閱 <<c0>開始之前> 一節的詳細資訊。 
     
 4. 為 PST 匯入工作中，輸入名稱，然後按一下 [**下一步**。 使用小寫字母、 數字、 連字號和底線。 您不能使用大寫字母，或在名稱中包含空格。
     
@@ -277,7 +277,7 @@ Microsoft Azure 存放裝置總管處於預覽狀態。
 
 您在步驟 5 中建立匯入工作之後，Office 365 會分析 （以安全無虞的方式） 的 PST 檔案中的資料所識別的項目並包含在 PST 檔案中的不同郵件類型的保留期限。 當分析已完成，且可匯入資料時，您可以選擇要匯入 PST 檔案中所包含的所有資料，或您可以修剪匯入藉由設定篩選器來控制哪些資料取得匯入的資料。
   
-1. 在 [**匯入**] 頁面中的安全性&amp;合規性中心，按一下 [**準備好匯入至 Office 365**匯入工作，您在步驟 5 中建立。 
+1. 在**匯入**頁面的安全性 & 合規性中心，按一下 [**準備好匯入至 Office 365**匯入工作在步驟 5 中所建立。 
     
     ![按一下 [準備好剛才匯入工作旁匯入 Office 365](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
@@ -311,7 +311,7 @@ Microsoft Azure 存放裝置總管處於預覽狀態。
   
 ![工作流程的網路上傳將 PST 檔案匯入 Office 365 的程序](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **下載 PST 匯入工具及金鑰為私人的 Azure 儲存體位置**-第一個步驟是下載 Azure AzCopy 命令列工具，用來將 PST 檔案上傳至 Microsoft 雲端中的 Azure 儲存體位置便捷鍵。 取得這些 Office 365 安全性中的 [**匯入**] 頁面上從&amp;合規性中心。 機碼 （稱為 「 安全的存取簽章 (SAS) 索引鍵，為您提供必要的權限，來上傳 PST 檔案複製至私人並保護 Azure 儲存體位置。 此便捷鍵是唯一的您的組織，並協助防止未經授權的存取您的 PST 檔案之後他們正在上傳至 Microsoft 雲端。 請注意，將 PST 檔案匯入至 Office 365 不會要求您的組織有不同的 Azure 訂用帳戶。 
+1. **下載 PST 匯入工具及金鑰為私人的 Azure 儲存體位置**-第一個步驟是下載 Azure AzCopy 命令列工具，用來將 PST 檔案上傳至 Microsoft 雲端中的 Azure 儲存體位置便捷鍵。 您取得這些從安全性 & 合規性中心中的 [**匯入**] 頁面。 機碼 （稱為 「 安全的存取簽章 (SAS) 索引鍵，為您提供必要的權限，來上傳 PST 檔案複製至私人並保護 Azure 儲存體位置。 此便捷鍵是唯一的您的組織，並協助防止未經授權的存取您的 PST 檔案之後他們正在上傳至 Microsoft 雲端。 請注意，將 PST 檔案匯入至 Office 365 不會要求您的組織有不同的 Azure 訂用帳戶。 
     
 2. **上傳 PST 檔案複製到 Azure 的儲存位置**的下一個步驟是使用 AzCopy.exe 工具 （在步驟 1 中下載） 上傳並將您的 PST 檔案儲存在位於相同的區域 Microsoft 資料中心的 Azure 儲存體位置其中您的 Office 365組織位於。 若要將其上傳，您想要匯入 Office 365 的 PST 檔案必須位於您組織中檔案共用或檔案。
     
@@ -319,11 +319,11 @@ Microsoft Azure 存放裝置總管處於預覽狀態。
     
 3. **建立 PST 匯入對應檔案**-已上載的 PST 檔案至 Azure 儲存體位置之後，下一步是建立指定的使用者信箱的 PST 檔案會匯入至，請注意 PST 檔案，可以是以逗號分隔的值 (CSV) 檔案 匯入至使用者的主要信箱或封存信箱。 Office 365 匯入服務將 PST 檔案匯入，以使用 CSV 檔案中的資訊。
     
-4. 若要建立 PST 匯入工作安全性 [**匯入**] 頁面上**建立 PST 匯入工作**-下一步是&amp;合規性中心並提交在上一個步驟中建立 PST 匯入對應檔案。 建立匯入工作之後，Office 365 分析的 PST 檔案中的資料，然後讓您有機會將篩選器來控制哪些資料實際取得匯入至 PST 匯入對應檔案中指定的信箱。 
+4. **建立 PST 匯入工作**-下一個步驟是在安全性 & 合規性中心的 [**匯入**] 頁面上建立 PST 匯入工作並提交在上一個步驟中建立 PST 匯入對應檔案。 建立匯入工作之後，Office 365 分析的 PST 檔案中的資料，然後讓您有機會將篩選器來控制哪些資料實際取得匯入至 PST 匯入對應檔案中指定的信箱。 
     
 5. **篩選器，將會匯入至信箱的 PST 資料**-建立並啟動匯入工作後，Office 365 分析的 PST 檔案中的資料 （安全且安全地） 所識別的項目並包含在 PST 檔案中的不同郵件類型的保留期限. 當分析已完成，且可匯入資料時，您可以選擇要匯入 PST 檔案中所包含的所有資料，或您可以修剪匯入藉由設定篩選器來控制哪些資料取得匯入的資料。
     
-6. **啟動 PST 匯入工作**-啟動匯入工作後，Office 365 使用中的資訊 PST 匯入對應檔案從他的 Azure 儲存體位置的 Pst 檔案匯入至使用者信箱。 （包括資訊匯入每個 PST 檔案） 匯入工作的狀態資訊會顯示在 [**匯入**] 頁面中的安全性&amp;合規性中心。 匯入工作完成時，工作的狀態設為**完成**。
+6. **啟動 PST 匯入工作**-啟動匯入工作後，Office 365 使用中的資訊 PST 匯入對應檔案從他的 Azure 儲存體位置的 Pst 檔案匯入至使用者信箱。 在安全性 & 合規性中心的 [**匯入**] 頁面上會顯示 （包括資訊匯入每個 PST 檔案） 匯入工作的狀態資訊。 匯入工作完成時，工作的狀態設為**完成**。
   
 ## <a name="more-information"></a>詳細資訊
 

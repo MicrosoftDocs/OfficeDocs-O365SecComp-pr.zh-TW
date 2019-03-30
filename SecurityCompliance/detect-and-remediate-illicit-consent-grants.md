@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修復 Office 365 中的非法同意授權攻擊。
-ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656069"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999936"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -86,7 +86,7 @@ ms.locfileid: "30656069"
 4.  ClientDisplayName 欄 （C 欄） 中看起來好像可疑的應用程式。 應該仔細檢閱應用程式的拼字錯誤的名稱、 super 乏味名稱或駭客發音名稱。
 
 ## <a name="determine-the-scope-of-the-attack"></a>判斷攻擊的範圍
-當您完成清查應用程式存取之後，請先檢閱 Office 365**稽核記錄**來判斷資料外洩的完整範圍。  搜尋受影響的使用者，在時間圖文框的非法應用程式具有存取您的組織，以及應用程式具有的權限。 您可以搜尋**稽核記錄**中的[Office 365 安全性與合規性中心](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)。 
+當您完成清查應用程式存取之後，請先檢閱 Office 365**稽核記錄**來判斷資料外洩的完整範圍。  搜尋受影響的使用者，在時間圖文框的非法應用程式具有存取您的組織，以及應用程式具有的權限。 您可以搜尋**稽核記錄**中的[Microsoft 365 安全性與合規性中心](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)。 
 
 > [!IMPORTANT]
 > [信箱稽核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)和[活動的稽核系統管理員和使用者](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)必須已啟用之前，以取得這項資訊攻擊。

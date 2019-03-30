@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主題提供有關反垃圾郵件保護的常見問題與解答。這些解答適用於 Microsoft Exchange Online 及 Exchange Online Protection (EOP) 客戶。
-ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692232"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000986"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
@@ -71,7 +71,7 @@ ms.locfileid: "30692232"
   
  **問：我是否可以取得垃圾郵件報告？**
   
-答：是。 是的例如您可以取得垃圾郵件偵測報告中的 Office 365 系統管理中心。 這份報告顯示垃圾郵件的磁碟區為唯一的郵件計數。 如需報告的詳細資訊，請參閱下列連結：
+答：是。 是的例如您可以取得垃圾郵件偵測報告中的 Microsoft 365 系統管理中心。 這份報告顯示垃圾郵件的磁碟區為唯一的郵件計數。 如需報告的詳細資訊，請參閱下列連結：
   
 Exchange Online 客戶： [Monitoring，Reporting，and 追蹤在 Exchange Online 的郵件](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   

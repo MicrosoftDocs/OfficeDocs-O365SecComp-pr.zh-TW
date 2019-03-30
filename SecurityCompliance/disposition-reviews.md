@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 當您建立的保留標籤，會保留在 Office 365 中的內容時，您可以選擇觸發處置檢閱的保留期間的結尾。
-ms.openlocfilehash: 5c55b842045eefd42745486c603e34f6498b3bac
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+description: 當您建立的保留標籤，會保留在 Microsoft 365 中的內容時，您可以選擇觸發處置檢閱的保留期間的結尾。
+ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512658"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997259"
 ---
 # <a name="overview-of-disposition-reviews"></a>處置檢閱概觀
 
@@ -33,7 +33,7 @@ ms.locfileid: "30512658"
     
 - 用戶端中傳回的內容，或將它轉接至另一個組織。
     
-當您在 Office 365 中建立的保留標籤時，您可以選擇觸發處置檢閱的保留期間的結尾。 在 [處置檢閱：
+當您建立 Microsoft 365 合規性中心、 Microsoft 365 安全中心或 Office 365 安全性 & 合規性中心中的保留標籤時，您可以選擇觸發處置檢閱的保留期間的結尾。 在 [處置檢閱：
   
 - 您選擇的人員會收到電子郵件通知他們有若要檢閱的內容。 這些檢閱者可以是個別使用者、 通訊群組或安全性群組或 Office 365 群組。 請注意，每週傳送通知。
     

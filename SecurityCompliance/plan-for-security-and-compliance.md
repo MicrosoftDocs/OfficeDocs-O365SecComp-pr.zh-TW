@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 規劃安全性與合規性的登陸頁面
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512648"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998486"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>規劃安全性&amp;Office 365 的合規性
 
@@ -53,7 +53,7 @@ ms.locfileid: "30512648"
   
 [PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-office-365-security-amp-compliance-center"></a>步驟 5： 利用 Office 365 安全性&amp;合規性中心
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步驟 5： 利用 Microsoft 365 安全性&amp;合規性中心
 
 安全性&amp;合規性中心提供您單一檢視到的控制項，您會用來管理 Office 365 安全性，包括威脅管理、 資料控管的功能，並搜尋和調查。 
   
@@ -71,13 +71,13 @@ ms.locfileid: "30512648"
     
 - [Microsoft Cloud 中的 Contoso](http://aka.ms/cloudarchcontoso)
     
-## <a name="office-365-admin-centers-and-dashboards"></a>Office 365 系統管理中心和儀表板
+## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 系統管理中心和儀表板
 
 在這些系統管理中心和儀表板來保護您的 Office 365 環境中設定您的安全性和規範設定
   
 |**訂閱**|**管理 URL**|**儀表板和系統管理中心**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://portal.office.com`  <br/> | Office 365 系統管理中心  <br/>  安全性&amp;合規性中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint 系統管理中心和 OneDrive 商務版系統管理中心  <br/> |
+|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 系統管理中心  <br/>  安全性&amp;合規性中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint 系統管理中心和 OneDrive 商務版系統管理中心  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 行動應用程式管理  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | 雲端 App 安全性  <br/> |
    

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合規性界限來建立 Office 365 組織內控制電子文件探索管理員可搜尋的使用者內容位置的邏輯界限。 合規性界限使用搜尋權限篩選 （也稱為的法規安全性篩選器） 來控制哪些信箱、 SharePoint 網站，並可搜尋特定使用者的 OneDrive 帳戶。
-ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862435"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001086"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>設定 Office 365 中電子文件探索調查的合規性界限
 
@@ -34,7 +34,7 @@ ms.locfileid: "30862435"
   
 - 篩選內容搜尋控制項中的功能可以搜尋 eDiscovery 主管和現場的內容位置搜尋權限。 這表示 eDiscovery 主管和現場 Fourth Coffee 機構中的只能搜尋內容位置中的 Fourth Coffee 子公司。 Coho Winery 子公司套用相同的限制。
     
-    角色群組控制可以看到 Office 365 安全性中的 eDiscovery 案例&amp;合規性中心。 這表示，eDiscovery 主管和現場只能看到其機構中的 eDiscovery 案例。
+    角色群組的控制可以看到安全性 & 合規性中心中的 eDiscovery 案例。 這表示，eDiscovery 主管和現場只能看到其機構中的 eDiscovery 案例。
     
 - 角色群組也會控制誰可以指派至 eDiscovery 案例的成員。 這表示 eDiscovery 主管和現場可以只將成員指派給他們彼此之間是成員的情況下。
     
@@ -84,9 +84,9 @@ ms.locfileid: "30862435"
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>步驟 3： 建立每個代理程式的角色群組
 
-下一步是建立 Office 365 安全性中的角色群組&amp;會符合貴機構的合規性中心。 我們建議您複製內建的 eDiscovery Managers 群組、 新增適當的成員，以及移除角色，可能無法適用於您的需求來建立新的角色群組。 如需 eDiscovery 相關角色的詳細資訊，請參閱[指派 Office 365 安全性中的 eDiscovery 權限&amp;合規性中心](assign-ediscovery-permissions.md)。
+下一步是建立安全性 & 會符合貴機構的合規性中心中的角色群組。 我們建議您複製內建的 eDiscovery Managers 群組、 新增適當的成員，以及移除角色，可能無法適用於您的需求來建立新的角色群組。 如需 eDiscovery 相關角色的詳細資訊，請參閱[指派 Office 365 安全性 & 合規性中心中的 eDiscovery 權限](assign-ediscovery-permissions.md)。
   
-若要建立的角色群組，移至 [**權限**] 頁面上，安全性&amp;合規性中心，並建立每個小組的角色群組中每個代理程式會使用合規性界限及 eDiscovery 案例來管理調查。 
+若要建立的角色群組，移至安全性 & 合規性中心中的 [**權限**] 頁面上，將會使用合規性界限和 eDiscovery 案例來管理調查每個代理程式中建立的每個小組的角色群組。 
   
 使用 Contoso 合規性界限案例中，需要建立四個角色群組，並適當成員新增至每個。
   
@@ -144,16 +144,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>步驟 5： 建立內機構調查的 eDiscovery 案例
 
-最後一個步驟是建立新的 eDiscovery 案例安全性&amp;合規性中心，然後新增角色群組 — 您在步驟 3 中建立 — 為案例的成員。 這會導致使用合規性界限的兩個重要特性：
+最後一個步驟是在安全性 & 合規性中心中建立新的 eDiscovery 案例，然後將新增角色群組，您在步驟 3 中建立 — 為案例的成員。 這會導致使用合規性界限的兩個重要特性：
   
-- 僅新增至案例的角色群組的成員能夠查看及存取安全性案例&amp;合規性中心。 例如，如果 Fourth Coffee 現場角色群組是案例的唯一成員，然後 Fourth Coffee eDiscovery 管理員角色群組 （或任何其他角色群組的成員） 的成員無法看到或存取這種情況。
+- 只有新增至案例的角色群組的成員能夠查看及存取安全性 & 合規性中心中的情況。 例如，如果 Fourth Coffee 現場角色群組是案例的唯一成員，然後 Fourth Coffee eDiscovery 管理員角色群組 （或任何其他角色群組的成員） 的成員無法看到或存取這種情況。
     
 - 當案例指派給角色群組的成員執行與案例相關聯的搜尋時，他們將只能搜尋其機構 （這由所定義您在步驟 4 中建立搜尋權限篩選器。） 內的內容位置
 
 
 若要建立新的案例，並指派成員：
     
-1. 移至安全性中的 [ **eDiscovery** ] 頁面上 [&amp;合規性中心，並建立新的案例。 
+1. 移至安全性 & 合規性中心中的 [ **eDiscovery** ] 頁面上，並建立新的案例。 
     
 2. 在清單中的 eDiscovery 案例，按一下您剛才建立的大小寫名稱。
     
@@ -242,7 +242,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
  **誰可以建立及管理搜尋的權限篩選器 （使用 New-compliancesecurityfilter 和 Set-compliancesecurityfilter cmdlet）？**
   
-若要建立、 檢視及修改搜尋權限篩選器，您必須是安全性中 「 組織管理角色群組的成員&amp;合規性中心。
+若要建立、 檢視及修改搜尋權限篩選器，您必須是安全性 & 合規性中心中 「 組織管理角色群組的成員。
   
  **如果 eDiscovery 管理員指派給多個角色群組跨越多個行政機關，如何在搜尋一個機構中的內容或其他？**
   
@@ -254,7 +254,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **電子文件探索管理員可以看到兩個不同的合規性界限的內容？**
   
-可以。 這可以經由將使用者新增至角色群組，有兩個行政機關看得到。
+是。 這可以經由將使用者新增至角色群組，有兩個行政機關看得到。
   
  **搜尋 eDiscovery 案件保留、 Office 365 保留原則，或 DLP 權限篩選器的運作？**
   

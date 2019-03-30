@@ -11,16 +11,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f11abff72ef144b44ce99ca83aadbf5d65bdb273
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a1a6970e81f3c6ce3f768958333f3a692b05346c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791637"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999996"
 ---
 # <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>搜尋的惡意程式碼和其他 Microsoft 365 中的威脅
 
-[!include[Prerelease�information](prerelease.md)]
 
 狩獵提供安全性小組到您組織中可能威脅的檢視之間的電子郵件和資料、 裝置及身分識別。 在 Windows Defender ATP、 Office 365 ATP，以及您可以查看遭入侵帳戶的 Azure ATP 入口網站，檔案較少的惡意程式碼、 可疑的電子郵件，以及其他資訊。
 

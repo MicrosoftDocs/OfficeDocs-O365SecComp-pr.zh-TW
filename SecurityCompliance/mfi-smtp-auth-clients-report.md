@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 系統管理員可以了解在 Office 365 安全性 & 合規性中心中的郵件流程儀表板中 SMTP 驗證的用戶端報告。
+description: 系統管理員可以了解 SMTP 驗證用戶端報表中的郵件流程儀表板中安全性 & 合規性中心。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0444ef85df8e7e26619f1af59cc90b6ab2a06460
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722815"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998706"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 驗證的用戶端報告
 
@@ -26,7 +26,7 @@ ms.locfileid: "30722815"
 
 郵件流程儀表板中顯示小工具指示的使用者或服務帳戶所擁有的 SMTP 驗證通訊協定過去 7 天的數目。
 
-![SMTP 驗證的用戶端報表中 Office 365 安全性 & 合規性中心中的郵件流程儀表板](media/smtp-auth-clients-report-selected.png)
+![SMTP 驗證的用戶端報表中安全性 & 合規性中心中的郵件流程儀表板](media/smtp-auth-clients-report-selected.png)
 
 按一下 [] 小工具會開啟提供 TLS 流量及磁碟區的彙總的檢視的最後一週彈出式視窗。
 
@@ -52,6 +52,6 @@ ms.locfileid: "30722815"
 
 ![SMTP 驗證的用戶端報告中的 TLS 使用狀況詳細資料表格](media/smtp-auth-clients-report-details-tls-usage.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

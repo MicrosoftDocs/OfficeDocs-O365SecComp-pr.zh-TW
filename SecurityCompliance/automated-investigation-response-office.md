@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的自動化調查及回應功能。
-ms.openlocfilehash: 9c01121ed6389f4a9014fe1ee1298b0e840f06ab
-ms.sourcegitcommit: 1706b618c9ec63ed05aebb5f84a77b5bfb50734a
+ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30792507"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000436"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>自動化的調查及回應 （空調） 與 Office 365
 
@@ -39,9 +39,9 @@ ms.locfileid: "30792507"
 
 ***附註**： 這些警示已指派中安全性 & 合規性中心內的個別警示原則 」 提示資訊 」 嚴重性關閉的電子郵件通知。 這些可以開啟透過警示原則設定。
 
-若要檢視提醒，在 Office 365 安全性 & 合規性中心中，選擇 [**提醒** > **檢視警示**。 選取警示若要檢視其詳細資料，並從該處，使用的**檢視調查**連結移至對應的[調查](#investigation-graph)。 請注意預設將資訊警示隱藏 [警示] 檢視中。 若要查看它們，您需要變更篩選功能，包括資訊警示的警示。
+若要檢視提醒，安全性 & 合規性中心中，選擇 [**提醒** > **檢視警示**。 選取警示若要檢視其詳細資料，並從該處，使用的**檢視調查**連結移至對應的[調查](#investigation-graph)。 請注意預設將資訊警示隱藏 [警示] 檢視中。 若要查看它們，您需要變更篩選功能，包括資訊警示的警示。
 
-如果您的組織管理您的安全性提醒透過警示管理系統、 服務管理系統或安全性資訊和事件管理 (SIEM) 的系統，您可以透過 [電子郵件通知，或是透過[該系統傳送 Office 365 警示Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 透過電子郵件或 API 調查警示通知會包含連結來存取 Office 365 安全性 & 合規性中心，啟用快速瀏覽到調查指派的安全性系統管理員中的警示。
+如果您的組織管理您的安全性提醒透過警示管理系統、 服務管理系統或安全性資訊和事件管理 (SIEM) 的系統，您可以透過 [電子郵件通知，或是透過[該系統傳送 Office 365 警示Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 透過電子郵件或 API 調查警示通知會包含連結來存取安全性 & 合規性中心，啟用快速瀏覽到調查指派的安全性系統管理員中的警示。
 
 ![連結至調查的提醒](media/air-alerts-page-details.png) 
 
@@ -121,15 +121,15 @@ ms.locfileid: "30792507"
 
 ## <a name="get-started"></a>開始使用
 
-若要為 Office 365 全域系統管理員、 安全性系統管理員或安全性讀取者存取您調查，移至 Office 365 安全性 & 合規性中心 ([https://protection.office.com](https://protection.office.com))，並登入。 接著執行下列其中一項作業：
+若要為 Office 365 全域系統管理員、 安全性系統管理員或安全性讀取者存取您調查，移至安全性 & 合規性中心 ([https://protection.office.com](https://protection.office.com))，並登入。 接著執行下列其中一項作業：
 
 - 在左側導覽中，前往 [**提醒** > **檢視提醒**，開啟其中一個調查與相關的提醒，然後按一下 [警示彈出式視窗底部的 [**檢視調查**] 連結。 
 
-    或
+    或 
 
 - 在左導覽中，移至 [**威脅管理** > **調查**。
 
-    或
+    或 
 
 - 威脅管理儀表板，請造訪 (在 [安全性 & 合規性中心，移至 [**威脅管理** > **儀表板**)。
 

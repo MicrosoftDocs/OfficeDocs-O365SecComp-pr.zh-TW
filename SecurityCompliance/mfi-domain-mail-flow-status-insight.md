@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 系統管理員可以了解上方網域郵件流程狀態深入解析，在 Office 365 安全性 & 合規性中心中的郵件流程儀表板中。
+description: 系統管理員可以了解上方網域郵件流程狀態深入解析，在郵件流程儀表板中的安全性 & 合規性中心。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 04aa986982465a4c66fbf99f517fb34622d65e19
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722811"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000666"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>上層網域郵件流程狀態深入解析
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722811"
 
 **上層網域郵件流程狀態**深入了解提供您的目前狀態的郵件流程方面的貴組織的網域。 此深入了解可協助您找出並疑難排解網域的***郵件流程影響***遇到問題 （例如，無法接收外部電子郵件），尤其是網域到期日或網域不正確的 MX 記錄。
 
-![上層網域流程狀態深入了解在 Office 365 安全性 & 合規性中心中的郵件流程儀表板](media/domain-mail-flow-status-selected.png)
+![上層網域流程狀態深入了解在郵件流程儀表板中的安全性 & 合規性中心](media/domain-mail-flow-status-selected.png)
 
 當您按一下 [**檢視詳細資料**中深入了解時，彈出式視窗會顯示，以顯示更多詳細資料，每個網域的狀態。
 
@@ -34,6 +34,6 @@ ms.locfileid: "30722811"
 
 ![在上方網域流程狀態深入了解詳細資訊彈出式視窗](media/domain-mail-flow-status-flyout.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

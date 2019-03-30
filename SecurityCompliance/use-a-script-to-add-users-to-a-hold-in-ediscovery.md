@@ -1,5 +1,5 @@
 ---
-title: 使用指令碼將使用者新增至 Office 365 安全性中的 eDiscovery 案例中的保留&amp;合規性中心
+title: 使用指令碼將使用者新增至 eDiscovery 案例中安全性 & 合規性中心中的保留
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: 執行指令碼來快速將新增信箱和商務用 OneDrive 網站至與 Office 365 安全性中的 eDiscovery 案例相關聯的新保留&amp;合規性中心。
-ms.openlocfilehash: f71c82a830f029f8137a60d8329e30be0e7eeb46
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 執行指令碼，以快速新增信箱和 OneDrive for Business 網站至新的保留與安全性 & 合規性中心中的 eDiscovery 案例相關聯。
+ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935238"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001186"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>使用指令碼將使用者新增至 Office 365 安全性中的 eDiscovery 案例中的保留&amp;合規性中心
+# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用指令碼將使用者新增至 eDiscovery 案例中安全性 & 合規性中心中的保留
 
-Office 365 安全性&amp;合規性中心 」 提供 Windows PowerShell cmdlet，可讓您大量自動化耗時建立及管理 eDiscovery 案例相關的工作。 目前，使用安全性中的 [電子文件探索案例工具&amp;要就地保留大量 custodian 內容位置的合規性中心，需要時間和準備。 例如，建立保留，您必須先收集 URL 的每個商務用 OneDrive 網站，您想要就地保留。 然後您想要就地保留每位使用者，您必須將他們的信箱和其 OneDrive for Business 網站新增至保留。 在未來版本的安全性&amp;合規性中心，這將會更方便使用執行動作。 在那之前，您可以使用指令碼本文中，自動執行此程序。
+安全性 & 合規性中心提供的 Windows PowerShell cmdlet，可讓您大量自動化耗時建立及管理 eDiscovery 案例相關的工作。 目前，使用 eDiscovery 案例安全性 & 放置大量上的位置保存 custodian 內容的規範中心工具需要花費時間和準備。 例如，建立保留，您必須先收集 URL 的每個商務用 OneDrive 網站，您想要就地保留。 然後您想要就地保留每位使用者，您必須將他們的信箱和其 OneDrive for Business 網站新增至保留。 在未來版本的安全性 & 合規性中心，這會取得執行的工作變得更容易。 在那之前，您可以使用指令碼本文中，自動執行此程序。
   
 指令碼會提示您輸入您的組織我的網站網域的名稱 (例如， **contoso**在 URL 中https://contoso-my.sharepoint.com)，現有的 eDiscovery 案例的名稱、 新的保留名稱，與相關聯的情況下，您想要的電子郵件地址的使用者清單若要置於保留，以及使用如果您想要建立查詢式保留在搜尋查詢。 指令碼再取得的 OneDrive for Business 網站的清單中的每個使用者的 [URL、 會建立新的保留，並將信箱和 OneDrive for Business 網站的清單中的每個使用者至保留。 指令碼也會產生包含新的保留狀態的相關資訊的記錄檔。 
   
@@ -37,9 +37,9 @@ Office 365 安全性&amp;合規性中心 」 提供 Windows PowerShell cmdlet，
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須是安全性中的 eDiscovery 管理員角色群組的成員&amp;規範中心和 SharePoint Online 的全域系統管理員在步驟 3 中執行指令碼。 如需詳細資訊，請參閱[指派 Office 365 安全性中的 eDiscovery 權限&amp;合規性中心](assign-ediscovery-permissions.md)。
+- 您必須是安全性 & 規範中心和 SharePoint Online 的全域系統管理員在步驟 3 中執行指令碼中的 eDiscovery 管理員角色群組的成員。 如需詳細資訊，請參閱[指派 Office 365 安全性 & 合規性中心中的 eDiscovery 權限](assign-ediscovery-permissions.md)。
     
-- 最大值為 1000 個信箱和 100 個網站可以新增至保留與 eDiscovery 案例中的安全性相關聯&amp;合規性中心。 假設您想要就地保留每個使用者擁有商務用 OneDrive 網站，您可以新增至本文中使用指令碼保留的最大值為 100 個使用者。 
+- 最大值為 1000 個信箱和 100 個網站可以新增至保留與安全性 & 合規性中心中的 eDiscovery 案例相關聯。 假設您想要就地保留每個使用者擁有商務用 OneDrive 網站，您可以新增至本文中使用指令碼保留的最大值為 100 個使用者。 
     
 - 請務必儲存您在步驟 2 和步驟 3 中指令碼的相同資料夾中建立的使用者清單。 會將執行指令碼比較方便。
     
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 當您在此步驟中執行指令碼時，它會提示您輸入下列資訊。 請務必執行指令碼之前已準備好此資訊。
   
-- **您的使用者認證**-指令碼會使用您的認證來連線到安全性&amp;使用遠端 PowerShell 的合規性中心。 它也會使用這些認證來存取 SharePoint Online 取得 OneDrive for Business Url 的使用者清單。
+- **您的使用者認證**-指令碼會使用您的認證來連線到安全性 & 使用遠端 PowerShell 的合規性中心。 它也會使用這些認證來存取 SharePoint Online 取得 OneDrive for Business Url 的使用者清單。
     
 - **我的網站網域的名稱**-我的網站網域是包含所有商務用 OneDrive 網站組織中的網域。 例如，如果我的網站網域 URL **https://contoso-my.sharepoint.com**，然後輸入`contoso`當指令碼會提示您輸入我的網站網域的名稱。 
     
@@ -85,7 +85,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 - **搜尋查詢的查詢式保留**-您可以建立查詢式保留，以便符合指定的搜尋條件的內容會置於保留。 要就地保留所有內容，只要按**Enter**鍵時提示您進行搜尋查詢。 
     
-- **是否要開啟保留**-您可以開啟保留之後建立，或您可以建立保留，而不加以啟用指令碼指令碼。 如果您不需要開啟保留的指令碼，您可以將其開啟稍後安全性&amp;合規性中心或執行下列 PowerShell 命令： 
+- **是否要開啟保留**-您可以開啟保留之後建立，或您可以建立保留，而不加以啟用指令碼指令碼。 如果您不需要開啟保留的指令碼，您可以開啟它，稍後安全性 & 合規性中心，或藉由執行下列 PowerShell 命令： 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -105,12 +105,12 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   #script begin
   " " 
   write-host "***********************************************"
-  write-host "   Office 365 Security &amp; Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
   write-host "***********************************************"
   " " 
   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-  $credentials = Get-Credential -Message "Specify your credentials to connect to the Office 365 Security &amp; Compliance Center and SharePoint Online"
+  $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
   $a = Import-PSSession $s -AllowClobber
       if (!$s)
@@ -284,7 +284,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 輸入指令碼會提示您輸入的資訊。
     
-    指令碼連線到安全性 & 合規性中心 PowerShell 中，然後在 eDiscovery 案例中建立新的保留並新增清單中的使用者信箱和商務用 OneDrive。 您可以在安全性 [ **eDiscovery** ] 頁面上移至案例&amp;合規性中心，以檢視新的保留。 
+    指令碼連線到安全性 & 合規性中心 PowerShell 中，然後在 eDiscovery 案例中建立新的保留並新增清單中的使用者信箱和商務用 OneDrive。 安全性 & 合規性中心，以檢視新的保留 [ **eDiscovery** ] 頁面上，您可以移至的案例。 
     
 指令碼完成之後執行，它會建立下列記錄檔，並將它們儲存到指令碼的所在位置的資料夾。
   

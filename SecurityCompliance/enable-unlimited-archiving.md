@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 系統管理員： 了解如何啟用自動展開封存在 Office 365 中，可提供您的使用者與不受限制的儲存區，讓其 Exchange Online 信箱。 您可以啟用自動展開封存的整個組織或只是針對特定使用者。
-ms.openlocfilehash: 634807a687a8ccbb764a54300f338263f876b604
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670618"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000846"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>啟用 Office 365-系統管理說明中的無限制封存
 
@@ -31,20 +31,20 @@ ms.locfileid: "30670618"
 
 - 您必須是全域系統管理員在 Office 365 組織或 Exchange Online 組織中啟用自動展開封存的整個組織或針對特定使用者的組織管理角色群組的成員。 或者，您必須是已指派 「 郵件收件者角色，才能啟用自動展開封存針對特定使用者的角色群組的成員。
     
-- 使用者的封存信箱具有您可以啟用自動展開封存之前，先啟用。 使用者必須被指派 Exchange Online Plan 2 授權，才能啟用封存信箱。 如果 Exchange Online Plan 1 授權指派給使用者，您必須將它們指派不同 Exchange Online Archiving 授權，才能啟用封存信箱。 請參閱[中 Office 365 安全性的啟用封存信箱&amp;合規性中心](enable-archive-mailboxes.md)。
+- 使用者的封存信箱具有您可以啟用自動展開封存之前，先啟用。 使用者必須被指派 Exchange Online Plan 2 授權，才能啟用封存信箱。 如果 Exchange Online Plan 1 授權指派給使用者，您必須將它們指派不同 Exchange Online Archiving 授權，才能啟用封存信箱。 請參閱[啟用封存信箱中的安全性 & 合規性中心](enable-archive-mailboxes.md)。
     
 - 您也可以使用 PowerShell 來啟用封存信箱。 請參閱 <<c0>的詳細資訊] 區段中，您可以使用啟用您的組織中的所有使用者的封存信箱的 PowerShell 命令的範例。 
     
 - 自動展開封存也支援共用信箱。 若要啟用信箱的共用信箱的封存，Exchange Online Plan 2 授權或具有 Exchange Online Archiving 授權的 Exchange Online Plan 1 授權就需要。
     
-- 您無法使用 Exchange 系統管理中心或安全性&amp;若要啟用自動展開封存的合規性中心。 您必須使用 Exchange Online PowerShell。 若要連接至您 Exchange Online 組織中使用遠端 PowerShell，請參閱 < <b0>Connect to Exchange Online PowerShell</b0>。
+- 若要啟用自動展開封存，您無法使用 Exchange 系統管理中心或安全性 & 合規性中心。 您必須使用 Exchange Online PowerShell。 若要連接至您 Exchange Online 組織中使用遠端 PowerShell，請參閱 < <b0>Connect to Exchange Online PowerShell</b0>。
     
   
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>啟用整個組織的自動展開封存
 
 您可以啟用自動展開封存的整個組織。 您開啟之後，自動展開封存會啟用現有使用者信箱，以及所建立的新使用者信箱。 當您建立新的使用者信箱時，請務必啟用使用者的主要的封存信箱，以便自動展開封存功能適用於新的使用者信箱。
   
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. 若要啟用自動展開封存整個組織的 Exchange Online PowerShell 中執行下列命令。
 
@@ -64,7 +64,7 @@ ms.locfileid: "30670618"
     
 此額外的空間會新增至避免可能發生之前已佈建自動展開封存的任何儲存問題。 請注意該額外儲存空間*不是*當您啟用整個組織，在上一節中所述的自動展開封存時，加入。 
   
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. 若要啟用自動展開封存的特定使用者的 Exchange Online PowerShell 中執行下列命令。 如先前所述，必須先您可以開啟自動展開封存的使用者啟用使用者的封存信箱 （主要封存）。
     

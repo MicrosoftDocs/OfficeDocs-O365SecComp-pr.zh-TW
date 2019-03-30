@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用此主題以深入了解 Office 365 中設定特殊權限的存取管理
-ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9d0f5955eb2fd67d245bad3e7a9b1b89769bd947
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492822"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001146"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定特殊權限的存取管理
 
@@ -58,13 +58,13 @@ ms.locfileid: "30492822"
 
 ## <a name="step-1---create-an-approvers-group"></a>步驟 1： 建立核准者群組
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中系統管理員帳戶認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您組織中系統管理員帳戶認證。
 
 2. 在系統管理中心，移至 [**群組** > **加入群組**。
 
 3. 選取 [**啟用郵件功能的安全性群組**群組類型，然後完成 [新群組的**名稱**、**群組電子郵件地址**，以及**描述**欄位。
 
-4. 儲存群組。 可能需要幾分鐘的完整設定，並出現在 Office 365 系統管理中心中的群組。
+4. 儲存群組。 可能需要幾分鐘的完整設定，並出現在 Microsoft 365 系統管理中心中的群組。
 
 5. 選取新的核准者群組，然後選取 [**編輯**] 以將使用者新增至群組。
 
@@ -76,7 +76,7 @@ ms.locfileid: "30492822"
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中系統管理員帳戶認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您組織中系統管理員帳戶認證。
 
 2. 在系統管理中心中，前往 [**設定 > 安全性 & 隱私權** > **特殊權限的存取**。
 
@@ -108,7 +108,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中系統管理員帳戶認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您組織中系統管理員帳戶認證。
 
 2. 在系統管理中心，移至 [**設定** > **安全性 & 隱私權** > **特殊權限的存取**。
 
@@ -152,7 +152,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您的認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您的認證。
 
 2. 在系統管理中心，移至 [**設定** > **安全性 & 隱私權** > **特殊權限的存取**。
 
@@ -187,7 +187,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您的認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您的認證。
 
 2. 在系統管理中心，移至 [**設定** > **安全性 & 隱私權** > **特殊權限的存取**。
 
@@ -211,7 +211,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 #### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您的認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您的認證。
 
 2. 在系統管理中心，移至 [**設定** > **安全性 & 隱私權** > **特殊權限的存取**。
 
@@ -248,7 +248,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中系統管理員帳戶認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您組織中系統管理員帳戶認證。
 
 2. 在系統管理中心，移至 [**設定** > **安全性 & 隱私權** > **特殊權限的存取**。
 
@@ -274,7 +274,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ### <a name="using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心
 
-1. 登入[Microsoft 365 系統管理中心](https://portal.office.com)使用您組織中系統管理員帳戶認證。
+1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您組織中系統管理員帳戶認證。
 
 2. 在系統管理中心，移至 [**設定** > **安全性 & 隱私權** > **特殊權限的存取**。
 

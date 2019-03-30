@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全性執行內容搜尋&amp;合規性中心
+title: 在安全規範中心執行內容搜尋
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: '在 Office 365 安全性中使用內容搜尋&amp;合規性中心來搜尋信箱、 SharePoint Online 網站和 OneDrive for Business 位置。 '
-ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: '用於安全性 & 合規性中心的內容搜尋來搜尋信箱、 SharePoint Online 網站和 OneDrive for Business 位置。 '
+ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935318"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000276"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全性執行內容搜尋&amp;合規性中心
+# <a name="run-a-content-search-in-the-security--compliance-center"></a>在安全規範中心執行內容搜尋
 
-您可以使用內容搜尋電子文件探索工具在 Office 365 安全性&amp;若要搜尋的項目，例如電子郵件、 文件，並立即訊息交談中 Office 365 組織的合規性中心。 使用此工具來搜尋這些 Office 365 服務中的項目：
+您可以使用安全性 & 合規性中心中的 「 內容搜尋電子文件探索工具在 Office 365 組織中搜尋的電子郵件、 文件等立即訊息交談的項目。 使用此工具來搜尋這些 Office 365 服務中的項目：
   
 - Exchange Online 信箱與公用資料夾
     
@@ -55,9 +55,9 @@ ms.locfileid: "30935318"
 
 - 建置相關資訊與指導搜尋查詢和使用布林搜尋運算子，請參閱 <<c0>關鍵字查詢和搜尋條件的內容搜尋。 本文也包含搜尋與您組織內部和外部的人員共用的內容，並搜尋敏感資訊類型的相關資訊。
     
-- 若要擁有存取權來執行搜尋和預覽和匯出搜尋結果的 [**內容搜尋**] 頁面上，系統管理員、 法務人員或 eDiscovery 管理員必須是安全性中的 eDiscovery 管理員角色群組的成員&amp;合規性置中。 您不需要額外的搜尋將權限指派在 Exchange Online、 SharePoint Online 或 onedrive for Business 網站。 如需詳細資訊，請參閱[指派 Office 365 安全性中的 eDiscovery 權限&amp;合規性中心](assign-ediscovery-permissions.md)。
+- 若要擁有存取權來執行搜尋和預覽和匯出搜尋結果的 [**內容搜尋**] 頁面上，系統管理員、 法務人員或 eDiscovery 管理員都必須安全性 & 合規性中心中的 eDiscovery 管理員角色群組的成員。 您不需要額外的搜尋將權限指派在 Exchange Online、 SharePoint Online 或 onedrive for Business 網站。 如需詳細資訊，請參閱[指派 Office 365 安全性 & 合規性中心中的 eDiscovery 權限](assign-ediscovery-permissions.md)。
     
-- 有限制套用到內容搜尋來維護的健康狀況和 Office 365 組織所提供的服務品質。 在大部分情況下，您無法修改這些限制，但您應注意這些限制以在進行規劃、執行和疑難排解搜尋時將這些限制納入考量。 如需詳細資訊，請參閱[適用於 Office 365 安全性中的搜尋限制&amp;合規性中心](limits-for-content-search.md)。
+- 有限制套用到內容搜尋來維護的健康狀況和 Office 365 組織所提供的服務品質。 在大部分情況下，您無法修改這些限制，但您應注意這些限制以在進行規劃、執行和疑難排解搜尋時將這些限制納入考量。 如需詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的搜尋限制。
     
 - 以預估的搜尋時間為基礎的單一內容搜尋中搜尋的信箱數目，請參閱一節。 
     
@@ -74,11 +74,11 @@ ms.locfileid: "30935318"
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
-3. 在安全性與合規性中心的左窗格中，按一下 [搜尋與調查]**** \> [內容搜尋]****。
+3. 在 [安全性 & 合規性中心的左窗格中，按一下 [**搜尋** \> **內容搜尋**。
     
 4. 按一下 [**新增**![加入圖示](media/O365-MDM-CreatePolicy-AddIcon.gif)。
     
@@ -102,7 +102,7 @@ ms.locfileid: "30935318"
     
   - 您可以將非使用中信箱和通訊群組新增至要搜尋的信箱清單。 通訊群組、 會搜尋群組成員的信箱。 請注意，不支援動態通訊群組。
     
-  - 若要取得您組織中的非使用中信箱的清單，請執行命令`Get-Mailbox -InactiveMailboxOnly`在 Exchange Online PowerShell。 或者，您可以移至 [**資料控管** \> **保留**安全性&amp;合規性中心，然後按一下 [**更多**![導覽列中省略符號](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **非使用中信箱**。
+  - 若要取得您組織中的非使用中信箱的清單，請執行命令`Get-Mailbox -InactiveMailboxOnly`在 Exchange Online PowerShell。 或者，您可以移至 [**資料控管**\>安全性 & 合規性中心內的**保留**，然後按一下 [**更多**![導覽列中省略符號](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **非使用中信箱**。
     
   - 您也可以新增與 Office 365 群組或 Microsoft 小組相關聯的信箱。 在此情況下，只有群組或小組信箱被搜尋;不搜尋群組或小組成員的信箱。 若要進行搜尋，您必須特別是將其新增至搜尋]。
     
@@ -167,12 +167,12 @@ ms.locfileid: "30935318"
 ## <a name="export-search-results"></a>匯出搜尋結果
 <a name="export"> </a>
 
-成功執行搜尋之後，您可以匯出到本機電腦上的搜尋結果。 當您匯出電子郵件結果時，其會以 PST 檔案下載到您的電腦。 當您匯出內容從 SharePoint 和 OneDrive for Business 網站時，匯出的原生 Office 文件複本。 匯出的搜尋結果中另外還有其他文件和報告。 如需詳細資訊，請參閱[匯出搜尋結果從 Office 365 安全性&amp;合規性中心](export-search-results.md)。
+成功執行搜尋之後，您可以匯出到本機電腦上的搜尋結果。 當您匯出電子郵件結果時，其會以 PST 檔案下載到您的電腦。 當您匯出內容從 SharePoint 和 OneDrive for Business 網站時，匯出的原生 Office 文件複本。 匯出的搜尋結果中另外還有其他文件和報告。 如需詳細資訊，請參閱 <<c0>匯出搜尋結果從安全性 &amp; 合規性中心。
   
 ## <a name="preview-search-results"></a>預覽搜尋結果
 <a name="preview"> </a>
 
-成功完成搜尋之後，您可以預覽搜尋結果。 關於預覽內容搜尋結果有一些限制。 如需詳細資訊，請參閱[適用於 Office 365 安全性中的搜尋限制&amp;合規性中心](limits-for-content-search.md)。 請注意未編製索引的項目不適用於預覽。
+成功完成搜尋之後，您可以預覽搜尋結果。 關於預覽內容搜尋結果有一些限制。 如需詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的搜尋限制。 請注意未編製索引的項目不適用於預覽。
   
 1. 在 [**內容搜尋**] 頁面上，選取搜尋。 
     
@@ -277,7 +277,7 @@ ms.locfileid: "30935318"
   
 ### <a name="limits-and-performance"></a>限制和效能
   
-- 會套用至內容的搜尋功能限制的說明，請參閱[適用於 Office 365 安全性中的搜尋限制&amp;合規性中心](limits-for-content-search.md)。
+- 會套用至內容的搜尋功能限制的說明，請參閱[Limits for Search in 安全性 & 合規性中心](limits-for-content-search.md)。
     
 - Microsoft 會收集所有 Office 365 組織所執行的內容搜尋的效能資訊。 雖然複雜的搜尋查詢可能會影響搜尋的時間，搜尋會影響搜尋採取多久為的信箱數目的最大因素。 雖然 Microsoft 不會提供搜尋次數的服務層級協議下, 表會列出根據包含在搜尋中的信箱數目內容搜尋的平均搜尋時間。
     
@@ -319,7 +319,7 @@ ms.locfileid: "30935318"
   
   - 當使用者的信箱被搜尋時，將不會搜尋任何 Microsoft Team 或 Office 365 群組的使用者所屬的成員。 同樣地，當您搜尋 Microsoft Team 或 Office 365 群組，只有群組信箱和群組網站，您指定為搜尋;除非您明確地將它們加入搜尋，不會搜尋信箱和商務用 OneDrive 帳戶的群組成員。
     
-  - 若要取得的 Microsoft Team 或 Office 365 群組成員的清單，您可以檢視上的內容**首頁\>群組**Office 365 系統管理中心] 頁面。 或者，您可以在 Exchange Online PowerShell 中執行下列命令： 
+  - 若要取得的 Microsoft Team 或 Office 365 群組成員的清單，您可以檢視上的內容**首頁\>群組**Microsoft 365 系統管理中心] 頁面。 或者，您可以在 Exchange Online PowerShell 中執行下列命令： 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -367,11 +367,11 @@ ms.locfileid: "30935318"
     
     ![使用關鍵字清單和條件時，會建立查詢的範例](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-  - 如果您有包含非英文字元 （例如中文字元為單位） 的關鍵字搜尋查詢，您可能必須使用**Set-compliancesearch** cmdlet 來設定內容搜尋的語言屬性。 當您建立 「 內容搜尋 」 安全性使用 GUI&amp;合規性中心的預設語言便是中性。 
+  - 如果您有包含非英文字元 （例如中文字元為單位） 的關鍵字搜尋查詢，您可能必須使用**Set-compliancesearch** cmdlet 來設定內容搜尋的語言屬性。 當您建立使用 GUI 安全性 & 合規性中心中的內容搜尋時，就是中性的預設語言。 
     
     您可以告訴您是否要變更內容搜尋的語言設定？ 如果您是特定內容的位置包含您要搜尋的非英文字元，但搜尋作業沒有傳回任何結果的語言設定可能的原因。
     
-    若要變更現有的內容搜尋的語言設定，請執行下列命令中安全性&amp;合規性中心 PowerShell:
+    若要變更現有的內容搜尋的語言設定，請在安全性 & 合規性中心 PowerShell 中執行下列命令：
     
   ```
   Set-ComplianceSearch <name of content search> -Language <culture code value>
@@ -398,9 +398,9 @@ ms.locfileid: "30935318"
     
 ### <a name="miscellaneous"></a>雜項
   
-- 內容搜尋安全性中的 [**內容搜尋**] 頁面上建立&amp;合規性中心不會顯示在**就地 eDiscovery&amp;保留**Exchange 系統管理中心] 頁面。 這是因為內容的搜尋架構和搜尋物件建立安全性&amp;合規性中心是完全不同於 Exchange Online 中就地 eDiscovery 」 功能。 
+- 在 [安全性 & 合規性中心中的 [**內容搜尋**] 頁面上所建立的內容搜尋不會顯示在**就地 eDiscovery&amp;保留**Exchange 系統管理中心] 頁面。 這是因為內容的搜尋架構和安全性 & 合規性中心中建立的搜尋物件是完全不同於 Exchange Online 中就地 eDiscovery 」 功能。 
     
-    基於同樣的理由，建立**內容搜尋**] 頁面上的搜尋不會顯示在 [**搜尋**] 頁面上的 eDiscovery 案例中安全性&amp;合規性中心。 
+    基於同樣的理由，建立**內容搜尋**] 頁面上的搜尋不會顯示在 [**搜尋**] 頁面上的 eDiscovery 案例中安全性 & 合規性中心。 
     
 - 重新啟動與重試搜尋之間有何差異？ 當您重新啟動搜尋時，搜尋中指定的所有內容位置會在新的預覽搜尋一次搜尋。 不過，當您重試搜尋，只失敗上次執行搜尋的內容的位置會一次搜尋。
    

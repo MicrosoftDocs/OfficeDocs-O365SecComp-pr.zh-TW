@@ -3,8 +3,8 @@ title: 資料外洩防護原則概觀
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Office 365 安全性中的資料外洩防護 (DLP) 原則&amp;合規性中心，您可以識別、 監視和自動保護 Office 365 中的敏感資訊。
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862535"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000016"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -28,7 +28,7 @@ ms.locfileid: "30862535"
   
 採用 DLP 原則，您可以：
   
-- **識別許多不同的位置，例如 Exchange Online、 SharePoint Online 和商務用 OneDrive 的敏感資訊。**
+- **許多不同的位置，例如 Exchange Online、 SharePoint Online、 商務用 OneDrive 和 Microsoft Teams 識別敏感資訊。**
     
     例如，您可以識別任何含有任何 OneDrive for Business 網站中儲存的信用卡卡號的文件，或您可以監視 OneDrive 網站的特定對象。
     
@@ -36,13 +36,13 @@ ms.locfileid: "30862535"
     
     例如，您可以識別任何文件或電子郵件包含與組織外部人員共用的健康記錄並再自動封鎖存取該文件或封鎖傳送的電子郵件。
     
-- **監視和保護 Excel 2016、PowerPoint 2016 和 Word 2016 桌面版中的敏感資訊。**
+- **監視和保護 Excel、 PowerPoint 和 Word 的桌面版本中的敏感資訊。**
     
-    就像在 Exchange Online、 SharePoint Online 和商務用 OneDrive，這些 Office 2016 桌面程式包含的相同功能，以識別機密資訊，並套用 DLP 原則。 DLP 可在多人共用這些 Office 2016 程式中的內容時提供持續監視的功能。
+    就像在 Exchange Online、 SharePoint Online 和商務用 OneDrive，這些 Office 桌面程式包含的相同功能，以識別機密資訊，並套用 DLP 原則。 DLP 提供持續監視人員共用這些 Office 應用程式中的內容時。
     
 - **協助使用者了解如何符合規範，而不中斷其工作流程。**
     
-    您可以讓使用者了解 DLP 原則，協助他們符合規範，而不會封鎖其工作。 例如，如果某個使用者嘗試共用含有敏感資訊的文件，DLP 原則可以傳送電子郵件通知給他們，同時在文件庫的內容中顯示原則提示，允許他們因為正當商務理由而覆寫原則。 相同的原則提示也會出現在 Outlook web、 Outlook 2013 和更新版本，Excel 2016、 PowerPoint 2016 和 Word 2016。
+    您可以讓使用者了解 DLP 原則，協助他們符合規範，而不會封鎖其工作。 例如，如果某個使用者嘗試共用含有敏感資訊的文件，DLP 原則可以傳送電子郵件通知給他們，同時在文件庫的內容中顯示原則提示，允許他們因為正當商務理由而覆寫原則。 相同的原則提示也會出現在網頁型 Outlook、 Outlook、 Excel、 PowerPoint 和 Word。
     
 - **檢視 DLP 報告以瞭解有哪些內容符合貴組織的 DLP 原則。**
     
@@ -56,7 +56,7 @@ ms.locfileid: "30862535"
 
 DLP 原則包含一些基本事項：
   
-- 若要保護的內容-**位置**例如 Exchange Online、 SharePoint Online 和 OneDrive for Business 網站的位置。 
+- 在何處保護內容的**位置**例如 Exchange Online、 SharePoint Online 和 OneDrive for Business 網站，以及 Microsoft Teams 聊天和通道。 
     
 - 何時及如何藉由執行強制包含下列要素的**規則**來保護內容： 
     
@@ -72,7 +72,7 @@ DLP 原則包含一些基本事項：
   
 ### <a name="locations"></a>位置
 
-DLP 原則可以尋找和 Office 365 敏感資訊保護，是否該資訊位於 Exchange Online、 SharePoint Online 或商務用 OneDrive。 您可以輕鬆選擇保護所有 SharePoint 網站或 OneDrive 帳戶，只是特定網站或帳戶或所有的信箱。 請注意，它還不能以選取特定使用者的信箱。
+DLP 原則可以尋找和 Office 365 敏感資訊保護，是否該資訊位於 Exchange Online、 SharePoint Online、 OneDrive for Business 或 Microsoft Teams。 您可以選擇要保護 Exchange 電子郵件、 Microsoft Teams 聊天和通道，以及所有的 SharePoint 或 OneDrive 文件庫中的內容，或選擇特定位置原則。
   
 ![DLP 原則可以套用的位置選項](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -148,11 +148,11 @@ DLP 原則可協助保護敏感資訊，指**敏感資訊類型**。 Office 365 
   
 除了傳送電子郵件通知，使用者所顯示的通知原則提示：
   
-- 在 Outlook 2013 和更新版本及 outlook 網頁版。
+- 在 Outlook 和 outlook 網頁版。
     
 - 文件上的 SharePoint Online 或 OneDrive for Business 網站。
     
-- 在 Excel 2016、 PowerPoint 2016 和 Word 2016 中，當文件儲存在網站上包含在 DLP 原則。
+- 在 Excel、 PowerPoint 和 Word 中，當文件儲存在 DLP 原則中包含網站上。
     
 電子郵件通知和原則提示說明內容與 DLP 原則的衝突的原因。 經選擇後，電子郵件通知和原則提示將可讓使用者藉由回報為誤判或提供正當業務理由來覆寫規則。 這可協助您將 DLP 原則正確的相關資訊傳達給使用者，並強制執行這些原則而不會妨礙到其正常工作。 覆寫及誤判的相關資訊也會記錄並回報 (請參閱以下關於 DLP 報告的資訊)，並納入事件報告中 (下一節)，以便法務人員可以定期檢閱此資訊。
   
@@ -428,13 +428,15 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
 
 安全性建立 DLP 原則之後&amp;合規性中心，已儲存在中央原則存放區，並再同步處理至各種內容來源，包括：
   
-- Exchange Online，並從有網頁型 Outlook 和 Outlook 2013 和更新版本
+- Exchange Online，並從那裏傳送至網頁型 Outlook 和 Outlook
     
 - 商務用 OneDrive 網站
     
 - SharePoint Online 網站
     
-- Office 2016 桌面程式 (Excel 2016、PowerPoint 2016 和 Word 2016)
+- Office 桌面程式 （Excel、 PowerPoint 和 Word）
+
+- Microsoft Teams 通道和聊天室
     
 原則同步處理至正確的位置之後，它會開始評估內容並強制執行動作。
   
@@ -444,26 +446,36 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
   
 因此，DLP 原則會頻繁地在背景中檢查文件是否有原則相符項目。 您可以將此視為非同步原則評估。
   
-以下是其運作方式。 為人員新增或變更其網站中的文件，搜尋引擎會掃描內容，以便您稍後再搜尋的方式。 當發生此問題時，內容也掃描的敏感資訊，並檢查是否它共用。 找不到任何敏感資訊儲存安全地在搜尋索引，以便只有 「 規範小組可以存取它，但不是一般使用者。 您已開啟的每個 DLP 原則在背景中執行 （非同步），檢查經常符合原則之內容的搜尋及套用動作，以防止不慎外洩。
+#### <a name="how-it-works"></a>運作方式
+ 
+為人員新增或變更其網站中的文件，搜尋引擎會掃描內容，以便您稍後再搜尋的方式。 當發生此問題時，內容也掃描的敏感資訊，並檢查是否它共用。 找不到任何敏感資訊儲存安全地在搜尋索引，以便只有 「 規範小組可以存取它，但不是一般使用者。 您已開啟的每個 DLP 原則在背景中執行 （非同步），檢查經常符合原則之內容的搜尋及套用動作，以防止不慎外洩。
   
 ![圖表顯示如何 DLP 原則評估內容以非同步方式](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 最後，文件可能會違反 DLP 原則，但也可能會符合 DLP 原則。例如，如果人員在文件中加入信用卡號碼，有可能會導致 DLP 原則自動封鎖文件的存取。但如果人員稍後移除敏感資訊，則會在下次依據原則進行評估時自動復原動作 (在此案例中為封鎖)。
   
-DLP 會評估任何可編製索引的內容。 如需有關預設會編目哪些檔案類型的詳細資訊，請參閱[預設編目檔案副檔名及剖析的 SharePoint Server 2013 中的檔案類型](https://go.microsoft.com/fwlink/p/?LinkID=627430)。
+DLP 會評估任何可編製索引的內容。 如需有關預設會編目哪些檔案類型的詳細資訊，請參閱[預設編目檔案副檔名及剖析的 SharePoint Server 中的檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Exchange Online、 Outlook 2013 和更新版本和 outlook 網頁版中的原則評估
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、 Outlook 和 outlook 網頁版中的原則評估
 
-當您建立包含 Exchange Online 做為位置的 DLP 原則時，此原則的同步處理從 Office 365 安全性&amp;合規性中心至 Exchange Online 中，然後再從 Exchange Online，以在網頁型 Outlook 和 Outlook 2013 和更新版本。
+當您建立包含 Exchange Online 做為位置的 DLP 原則時，此原則的同步處理從 Office 365 安全性&amp;合規性中心至 Exchange Online 中，然後再從 Exchange Online，以在網頁型 Outlook 和 Outlook。
   
-在 Outlook 中正在撰寫郵件，使用者即可看到原則提示時所建立的內容會根據 DLP 原則評估。 與郵件傳送後，它會根據 DLP 原則評估作為一般郵件流程，以及 Exchange 郵件流程規則 （也稱為傳輸規則） 和在 Exchange 系統管理中心中建立的 DLP 原則的一部分 （請參閱下一節以取得更多資訊）。 DLP 原則會掃描郵件和任何附件。
+在 Outlook 中正在撰寫郵件，使用者即可看到原則提示時所建立的內容會根據 DLP 原則評估。 即會傳送訊息之後，它會根據 DLP 原則評估作為一般郵件流程，以及 Exchange 郵件流程規則 （也稱為傳輸規則） 和在 Exchange 系統管理中心中建立的 DLP 原則的一部分。 DLP 原則會掃描郵件和任何附件。
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Office 2016 桌面程式中的原則評估
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>在 Office 桌面程式中的原則評估
 
-Excel 2016、PowerPoint 2016 和 Word 2016 都具有與 SharePoint Online 和商務用 OneDrive 相同的功能，可識別敏感資訊並套用 DLP 原則。 這些 Office 2016 程式同步處理其直接從中央原則存放區的 DLP 原則，然後再根據 DLP 原則的內容持續評估，當人員搭配開啟從網站中的 DLP 原則所包含的文件。
+Excel、 PowerPoint 和 Word 包含相同的功能，以識別機密資訊，並套用 DLP 原則做為 SharePoint Online 和商務用 OneDrive。 這些 Office 程式同步處理其直接從中央原則存放區的 DLP 原則，然後再根據 DLP 原則的內容持續評估，當人員搭配開啟從網站中的 DLP 原則所包含的文件。
   
-Office 2016 中的 DLP 原則評估依設計並不會影響程式的效能或內容使用者的產能。 如果他們正在處理大型文件，或使用者的電腦為忙碌，可能需要幾秒顯示原則提示。
-  
+在 Office 中的 DLP 原則評估的設計目的不會影響效能的程式或內容上工作人員的生產力。 如果他們正在處理大型文件，或使用者的電腦為忙碌，可能需要幾秒顯示原則提示。
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams 中的原則評估
+ 
+當您建立包含做為位置的 Microsoft Teams 的 DLP 原則時，此原則的同步處理從 Office 365 安全性&amp;來處理使用者帳戶和 Microsoft Teams 通道和聊天室的合規性中心。 根據 DLP 原則的設定方式，當有人嘗試共用 Microsoft Teams 聊天室或通道，郵件中的敏感資訊可以封鎖或撤銷。 和，這些使用者的電腦上無法開啟文件中包含敏感資訊的共用與來賓 （外部使用者）。
+
+例如，假設有人嘗試與外部使用者共用小組聊天或通道中的敏感資訊。 假設沒有定義要避免這種情況的 DLP 原則。 使用就地保護，會刪除包含機密資訊傳送給外部使用者的郵件。 發生在秒內，這種情況，它都會自動發生，根據 DLP 原則的設定方式。
+
+原則提示通知寄件者有關他們的郵件已封鎖或撤銷為何。 例如，其郵件包含不允許與任何人共用的個人識別資訊 (PII)，或包含 PII 的文件不能與組織外部人員共用，可能會告知寄件者。 寄件者可以接著可以編輯其訊息符合 DLP 原則。
+ 
 ## <a name="permissions"></a>權限
 
 會建立 DLP 原則的規範小組成員需要權限給安全性群組&amp;合規性中心。 根據預設，您的租用戶系統管理員將能夠存取此位置並可授與法務人員及其他人員存取安全性&amp;合規性中心，而不提供他們取得所有租用戶管理員的權限若要這麼做，我們建議您：
@@ -482,19 +494,19 @@ Office 2016 中的 DLP 原則評估依設計並不會影響程式的效能或內
 
 若要使用之 cmdlet 的大部分 security&amp;合規性中心，您需要：
   
-1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. 使用下列任何一這些[Office 365 安全性&amp;合規性中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. 使用下列任何一這些[原則-和-合規性-dlp 指令程式](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-不過，DLP 報告需要提取資料從 Office 365，包括 Exchange Online。 基於這個理由，DLP 報告指令程式可供在 Exchange Online Powershell-而不是以安全性&amp;合規性中心 Powershell。 因此，若要使用 cmdlet 的 DLP 報告，您必須：
+不過，DLP 報告需要提取資料從 Office 365，包括 Exchange Online。 基於這個理由，**的 DLP 指令程式會報告可在 Exchange Online Powershell-而不是以安全性&amp;合規性中心 Powershell**。 因此，若要使用 cmdlet 的 DLP 報告，您必須：
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. 使用這些 cmdlet 的任何 DLP 報告：
     
-  - [Get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [Get-dlpdetectionsreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [Get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [Get-dlpdetailreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>詳細資訊
 

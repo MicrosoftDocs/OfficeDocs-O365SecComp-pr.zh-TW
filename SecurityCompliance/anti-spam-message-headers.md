@@ -13,19 +13,21 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefront-反垃圾郵件報告**標頭每封郵件。
-ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936743"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004240"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
 Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefront-反垃圾郵件報告**標頭每封郵件。 此標頭的欄位有助於提供系統管理員郵件及其處理方式的相關資訊。 **X-Microsoft 反垃圾郵件**標頭中的欄位提供大宗郵件和網路釣魚的其他資訊。 除了這些兩個標頭，Exchange Online Protection 也**authentication-results**標頭中插入處理每一封郵件的電子郵件驗證結果。
+
+如需如何在各種電子郵件用戶端中檢視電子郵件訊息標頭資訊，請參閱 <<c0>郵件標頭分析器。 
   
 > [!TIP]
-> 如需如何在各種電子郵件用戶端中檢視電子郵件訊息標頭資訊，請參閱 <<c0>郵件標頭分析器。 您可以複製並貼入[郵件標頭分析器](https://testconnectivity.microsoft.com/?tabid=mha)工具中的郵件標頭的內容。 當您在 Exchange 系統管理中心隔離區中選取郵件時，**[檢視郵件標頭]** 連結也可讓您輕鬆地複製郵件標頭文字並貼到工具中。 在郵件標頭分析器工具中，按一下 [分析標頭]**** 以便擷取標頭相關資訊。
+>  您可以複製並貼入[郵件分析器](https://testconnectivity.microsoft.com/?tabid=mha)工具中的郵件標頭的內容。 此工具可協助剖析標頭，並將它轉換為更 readible 的格式。
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>X Forefront-反垃圾郵件報告郵件標頭欄位
 

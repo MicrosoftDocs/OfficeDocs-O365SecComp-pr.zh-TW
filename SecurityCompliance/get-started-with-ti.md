@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應以及如何開始。
-ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862517"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998876"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>開始使用威脅調查及回應 (Office 365 進階威脅防護計劃 2)
 
@@ -78,13 +78,13 @@ Office 365 威脅 Invesigation 和回應功能會包含在 Office 365 進階威�
 > [!TIP]
 > 如果您的組織有 Office 365 訂閱不包含這些威脅調查及回應功能，您可以將這些以以及 Office 365 進階威脅防護的附加元件形式購買。 如需計劃選項的詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;合規性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)並[購買或編輯商務用 Office 365 的附加元件](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)。
   
-1. 身為 Office 365 全域管理員，請移至[https://portal.office.com](https://portal.office.com)和 Office 365 使用公司或學校帳戶登入。 
+1. 身為 Office 365 全域管理員，請移至[https://admin.microsoft.com](https://admin.microsoft.com)和 Office 365 使用公司或學校帳戶登入。 
     
 2. 選擇 [**管理**\>若要查看您目前的訂閱所包含的**帳單**。 
     - 如果您看到**Office 365 企業版 E5**，您的組織有 Office 365 進階威脅防護計劃 2 （其中包含威脅調查及回應功能）。 
     - 如果您看到不同的訂閱，例如**Office 365 企業版 E3**或**Office 365 企業版 E1**，請考慮新增 Office 365 進階威脅防護計劃 2。 (若要這麼做，請選擇 [ **+ 新增訂閱**)。
     
-3. 在 Office 365 系統管理中心中，選擇 [**使用者** \> **作用中的使用者**。
+3. 在 Microsoft 365 系統管理中心中，選擇 [**使用者** \> **作用中的使用者**。
     
 5. 將 Office 365 進階威脅防護計劃 2 授權指派給所有作用中使用者。 （只有已獲授權，此功能的使用者會顯示在報告中，例如檔案總管。）
     

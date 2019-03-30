@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合規性中心，包括它的內容、 如何取得，以及接下來的步驟。
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950440"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001036"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>歡迎使用所有新的 Microsoft 365 合規性中心
 
@@ -83,7 +83,7 @@ ms.locfileid: "30950440"
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>為何我我採取至 Office 365 安全性 & 合規性中心來執行一些工作，例如定義特定原則？
 
-我們仍在開發 Microsoft 365 規範中心] 內，我們將持續加入更多的功能和解決方案接下來個月。 同時，有一些必須在 Office 365 安全性 & 合規性中心中執行的工作。 在這些情況下，您就會進入自動其中您可以執行工作的例如建立或編輯監督原則的位置。
+我們仍在開發 Microsoft 365 規範中心] 內，我們將持續加入更多的功能和解決方案接下來個月。 同時，有一些必須執行安全性 & 合規性中心中的工作。 在這些情況下，您就會進入自動其中您可以執行工作的例如建立或編輯監督原則的位置。
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>為什麼我看新的 Microsoft 365 合規性中心尚未？
 

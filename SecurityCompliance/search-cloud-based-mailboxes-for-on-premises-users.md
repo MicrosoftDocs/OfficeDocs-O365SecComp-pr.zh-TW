@@ -14,17 +14,17 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: 使用內容搜尋工具在 Office 365 安全性&amp;合規性中心來搜尋並匯出在 Exchange 混合式部署中的內部部署使用者 MicrosoftTeams 聊天室資料 （稱為 1xN 聊天室）。
-ms.openlocfilehash: b277557285df6944217b493bf0c5a11759f9d76b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 用於安全性 & 合規性中心的內容搜尋工具來搜尋並匯出在 Exchange 混合式部署中的內部部署使用者 MicrosoftTeams 聊天室資料 （稱為 1xN 聊天室）。
+ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935228"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000006"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜尋內部部署使用者的雲端式的信箱
 
-如果您的組織具有 Exchange 混合式部署，且已啟用 Microsoft Teams，使用者可以使用小組聊天應用程式的立即訊息。 雲端型使用者，（也稱為 1xN 聊天） 小組聊天資料會儲存至其主要的雲端式信箱。 當內部部署使用者使用的小組聊天應用程式時，其主要信箱是位於的內部。 若要解決這項限制，Microsoft 已發行位置 （稱為 「 內部部署使用者的基於雲端的信箱） 的雲端式存放裝置區域建立用來儲存內部部署使用者的小組聊天資料的新功能。 這可讓您可以使用內容搜尋工具在 Office 365 安全性&amp;合規性中心來搜尋並匯出小組聊天資料的內部部署使用者。 
+如果您的組織具有 Exchange 混合式部署，且已啟用 Microsoft Teams，使用者可以使用小組聊天應用程式的立即訊息。 雲端型使用者，（也稱為 1xN 聊天） 小組聊天資料會儲存至其主要的雲端式信箱。 當內部部署使用者使用的小組聊天應用程式時，其主要信箱是位於的內部。 若要解決這項限制，Microsoft 已發行位置 （稱為 「 內部部署使用者的基於雲端的信箱） 的雲端式存放裝置區域建立用來儲存內部部署使用者的小組聊天資料的新功能。 這可讓您使用安全性 & 合規性中心中的 「 內容搜尋 」 工具來搜尋並匯出內部部署使用者的小組聊天資料。 
   
 以下是設定，以及用於設定及搜尋的內部部署使用者的雲端式信箱的限制與需求：
   
@@ -38,7 +38,7 @@ ms.locfileid: "30935228"
   
 ## <a name="how-it-works"></a>運作方式
 
-如果 Microsoft Teams 功能的使用者具有內部部署信箱，而且具有 /int/ 其使用者帳戶/身分識別同步處理至雲端，Microsoft 會建立雲端式信箱來存儲 1xN 小組聊天資料。 小組聊天資料會儲存在雲端架構信箱之後，它會編入搜尋索引。 這可讓您使用內容搜尋 （和 eDiscovery 案例相關聯的搜尋） 若要搜尋，預覽，並匯出內部部署使用者的小組聊天資料。 您也可以使用**\*ComplianceSearch**指令程式在 Office 365 安全性&amp;合規性中心 PowerShell 中的 Teams 搜尋內部部署使用者的聊天室資料。 
+如果 Microsoft Teams 功能的使用者具有內部部署信箱，而且具有 /int/ 其使用者帳戶/身分識別同步處理至雲端，Microsoft 會建立雲端式信箱來存儲 1xN 小組聊天資料。 小組聊天資料會儲存在雲端架構信箱之後，它會編入搜尋索引。 這可讓您使用內容搜尋 （和 eDiscovery 案例相關聯的搜尋） 若要搜尋，預覽，並匯出內部部署使用者的小組聊天資料。 您也可以使用**\*ComplianceSearch**安全性 & 搜尋團隊的合規性中心 PowerShell 中的指令程式聊天室內部部署使用者的資料。 
   
 下圖顯示如何小組聊天內部部署使用者的資料的工作流程的可搜尋、 預覽，並匯出。
   
@@ -48,7 +48,7 @@ ms.locfileid: "30935228"
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>若要啟用此功能與 Microsoft 支援服務要求歸檔
 
-您必須將歸檔與 Microsoft 支援服務，讓您的組織使用圖形化使用者介面中的安全性&amp;搜尋小組聊天資料在內部部署使用者的雲端式信箱中的合規性中心。 請注意這項功能可用於 Office 365 安全性&amp;合規性中心 PowerShell。 您不需要將支援要求提交給使用 PowerShell 來搜尋內部部署使用者的小組聊天資料。 
+您必須將歸檔與 Microsoft 支援服務，讓您的組織使用圖形化使用者介面中安全性 & 規範中心搜尋小組聊天資料在內部部署使用者的雲端式信箱中。 請注意，這項功能是在安全性 & 合規性中心 PowerShell 中使用。 您不需要將支援要求提交給使用 PowerShell 來搜尋內部部署使用者的小組聊天資料。 
   
 當您將要求提交給 Microsoft 支援服務時，請包含下列資訊：
   
@@ -62,7 +62,7 @@ ms.locfileid: "30935228"
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>啟用此功能後，會發生什麼事？
 
-這項功能在 Office 365 組織中部署之後，下列變更內容搜尋中而且在 eDiscovery 相關聯的搜尋案例中的安全性&amp;合規性中心：
+這項功能在 Office 365 組織中部署之後，在內容搜尋和安全性 & 合規性中心中的 eDiscovery 案例相關聯的搜尋中，會進行下列變更：
   
 - 在內容搜尋的**位置**會新增至**內部部署使用者的加入 Office 應用程式內容**] 核取方塊。 
     
@@ -74,9 +74,9 @@ ms.locfileid: "30935228"
   
 ## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>搜尋內容的內部部署使用者的雲端式信箱中的小組聊天
 
-啟用此功能之後，您可以使用內容搜尋中安全性&amp;搜尋小組聊天資料在內部部署使用者的雲端式信箱中的合規性中心。 
+啟用此功能之後，您可以使用安全性 & 合規性中心中內容搜尋來搜尋內部部署使用者的雲端式信箱中的小組聊天資料。 
   
-1. 安全性&amp;合規性中心，移至**搜尋&amp;調查** \> **內容搜尋**
+1. 在 [安全性 & 合規性中心，移至**搜尋** \> **內容搜尋**
     
 2. 在 [**搜尋**] 頁面上，按一下 [![加入圖示](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)**新的搜尋**。
     
@@ -100,13 +100,13 @@ ms.locfileid: "30935228"
     
     - [預覽搜尋結果](content-search.md#preview-search-results)
     
-    - [匯出內容搜尋結果從 Office 365 安全性&amp;合規性中心](export-search-results.md)
+    - [匯出內容搜尋結果](export-search-results.md)
     
 ## <a name="using-powershell-to-search-for-teams-chat-data-in-cloud-based-mailboxes-for-on-premises-users"></a>使用 PowerShell 來搜尋小組聊天資料中的內部部署使用者的雲端式信箱
 
-您可以使用**New-compliancesearch**和**Set-compliancesearch** cmdlet 在 Office 365 安全性&amp;合規性中心 PowerShell 來搜尋內部部署使用者的雲端式信箱。 如先前所述，您不需要將支援要求提交給使用 PowerShell 來搜尋內部部署使用者的小組聊天資料。 
+您可以使用**New-compliancesearch**和**Set-compliancesearch** cmdlet 安全性 & 合規性中心 PowerShell 中，搜尋內部部署使用者的雲端式信箱。 如先前所述，您不需要將支援要求提交給使用 PowerShell 來搜尋內部部署使用者的小組聊天資料。 
   
-1. [連線至 Office 365 安全性&amp;合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [連接到安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
 2. 執行下列 PowerShell 命令，以建立新的內容搜尋內部部署使用者的雲端式信箱。
     

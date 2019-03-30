@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 準備好的所有新的 Microsoft 365 安全中心和合規性中心
-ms.openlocfilehash: e67c3f61898187d87aa638cf2dab871a7b694c18
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935198"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000686"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心個
 
@@ -70,7 +70,7 @@ ms.locfileid: "30935198"
 - 移至 Microsoft 365 系統管理中心]，然後瀏覽至新的 Microsoft 365 安全性中心和 Microsoft 365 合規性中心 （連結受到系統管理中心的左的功能窗格中）。
 
 > [!TIP]
-> 如果您使用 Office 365 安全性 & 合規性中心 ([https://protection.office.com](http://protection.office.com))，您將還能夠設定和管理您的 Office 365 設定您現有的 Office 365 安全性 & 合規性中心內。 設定將會維護現有 Office 365 安全性 & 與合規性中心以及所示的新 Microsoft 365 安全中心和 Microsoft 365 合規性中心。  
+> 如果您使用 Office 365 安全性 & 合規性中心 ([https://protection.office.com](http://protection.office.com))，您將還能夠設定和管理您的 Office 365 設定您現有的安全性 & 合規性中心內。 設定將會維護現有安全性 & 合規性中心以及所示的新 Microsoft 365 安全中心和 Microsoft 365 合規性中心。  
 
 ## <a name="required-licenses-and-permissions"></a>所需的授權和權限
 
@@ -92,7 +92,7 @@ ms.locfileid: "30935198"
 
 |入口網站 |全域管理員 |安全性系統管理員、 安全性運算子或安全性讀取者|合規性管理員 」 或 「 合規性資料管理員 |
 |---------|---------|---------|---------|
-|[Office 365 安全性與合規性中心](https://protection.office.com) |是 |是  |是 |
+|[安全性 & 合規性中心](https://protection.office.com) |是 |是  |是 |
 |[Microsoft 365 安全性中心](https://security.microsoft.com) |是  | 是  | 否        |
 |[Microsoft 365 合規性中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
 |[合規性管理員](https://aka.ms/compliancemanager) |是 | 是 |是  |

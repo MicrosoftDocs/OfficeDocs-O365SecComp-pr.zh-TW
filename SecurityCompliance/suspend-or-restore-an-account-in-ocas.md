@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Office 365 雲端 App 安全性，您可以採取的控管動作有擱置或 unsuspend 的使用者帳戶。 '
-ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: d162be9d4e5382c6c03c63ae1b30043edbf0295b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862445"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998866"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶
 
@@ -29,7 +29,7 @@ ms.locfileid: "30862445"
 假設您收到警示的 Office 365 組織的使用者帳戶的其中一個已遭洩露。 或者，假設您收到警示，指出有問題的使用者帳戶。 與 Office 365 雲端 App 安全性，您可以暫停的使用者帳戶，並稍後再將它還原後已經調查您收到的警示。
   
 > [!NOTE]
-> Office 365 雲端 App 安全性是在 Office 365 企業版 E5。 如果您的組織要使用另一個 Office 365 企業版訂閱，能以附加元件形式購買 Office 365 雲端 App 安全性。 (以全域管理員，在 Office 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;合規性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)並[購買或編輯商務用 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
+> Office 365 雲端 App 安全性是在 Office 365 企業版 E5。 如果您的組織要使用另一個 Office 365 企業版訂閱，能以附加元件形式購買 Office 365 雲端 App 安全性。 (以全域管理員，在 Microsoft 365 系統管理中心中，選擇 [**計費** \> **新增訂閱**。)如需詳細資訊，請參閱[Office 365 平台服務說明： Office 365 安全性&amp;合規性中心](https://technet.microsoft.com/en-us/library/dn933793.aspx)並[購買或編輯商務用 Office 365 的附加元件](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)。 
   
 ## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>若要擱置 Office 365 雲端 App 安全性中的使用者帳戶
 

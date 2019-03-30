@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以選擇取消重複，以便只有一個電子郵件訊息的複本匯出即使多個執行個體的相同的訊息可能會有不同的信箱中找到匯出 eDiscovery 搜尋結果。
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936723"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999296"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子文件探索搜尋結果中的重複資料刪除
 
@@ -66,7 +66,7 @@ EDiscovery 匯出程序，這三個屬性會比較每個符合搜尋準則的郵
 
 - 匯出使用下列的 eDiscovery 工具之一的搜尋結果時，適用這篇文章中的資訊：
     
-  - Office 365 安全性中的內容搜尋&amp;合規性中心
+  - 在 Office 365 規範中心] 中的內容搜尋
     
   - Exchange Online 中的就地 eDiscovery
     
@@ -74,9 +74,9 @@ EDiscovery 匯出程序，這三個屬性會比較每個符合搜尋準則的郵
     
 - 如需有關匯出搜尋結果的詳細資訊，請參閱：
     
-  - [從 Office 365 安全性匯出搜尋結果&amp;合規性中心](export-search-results.md)
+  - [匯出內容搜尋](export-search-results.md)
     
-  - [從 Office 365 安全性匯出內容搜尋報告&amp;合規性中心](export-a-content-search-report.md)
+  - [匯出內容搜尋報告](export-a-content-search-report.md)
     
   - [匯出就地 eDiscovery 搜尋結果至 PST 檔案](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

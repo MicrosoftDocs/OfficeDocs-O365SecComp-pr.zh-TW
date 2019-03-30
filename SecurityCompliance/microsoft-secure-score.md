@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 369d3edf02b26be466a6dc8eea3d872030bbbcd2
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 981cb2e6820cb349ff1e2d101bf21d592c2191c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789408"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001156"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
-
-[!include[Prerelease�information](prerelease.md)]
 
 與 Microsoft 安全分數 Microsoft 365 安全中心內，您可以增加可見性，並控制貴組織的安全性狀態。 從集中式的儀表板中，您可以監視並改善 Microsoft 365 的身分識別、 資料、 應用程式、 裝置及基礎結構的安全性。
 

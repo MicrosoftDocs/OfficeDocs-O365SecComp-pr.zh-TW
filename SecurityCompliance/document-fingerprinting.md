@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織中的資訊工作者在其日常工作中會處理許多不同的敏感資訊。 「文件指紋」可識別您的組織中所使用的標準表單，以協助您保護此類資訊。 本主題說明的概念文件指紋 」 和 「 如何使用 PowerShell 來建立。
-ms.openlocfilehash: bf28d1d901598337a5c9c18d80590b136c539d26
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866349"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999136"
 ---
 # <a name="document-fingerprinting"></a>文件指紋
 
@@ -66,7 +66,7 @@ ms.locfileid: "30866349"
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 來建立根據文件指紋的分類規則套件
 
-請注意，您可以目前文件指紋只能使用 PowerShell 建立安全性&amp;合規性中心。 若要連線，請參閱[Connect to Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+請注意，您可以目前文件指紋只能使用 PowerShell 建立安全性&amp;合規性中心。 若要連線，請參閱[連線到安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 DLP 會使用分類規則套件來偵測敏感內容。 若要建立分類規則套件根據文件指紋，請使用**新增 DlpFingerprint**和**新增-dlpsensitiveinformationtype 來**指令程式。 **新增 DlpFingerprint**的結果不會被儲存的資料分類規則外部，因為您一律**新增 DlpFingerprint**和**新增-dlpsensitiveinformationtype 來**或執行**組-dlpsensitiveinformationtype 來**在同一個PowerShell 工作階段。 下列範例會根據 C:\My Documents\Contoso Employee Template.docx 檔案建立新的文件指紋。 讓您可以先將它**新增-dlpsensitiveinformationtype 來**指令程式搭配使用，相同 PowerShell 工作階段中，您可以儲存為變數的新的指紋。 
   

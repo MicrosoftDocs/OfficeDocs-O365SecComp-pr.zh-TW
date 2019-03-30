@@ -3,7 +3,7 @@ title: Permissions in the Office 365 Security &amp; Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 安全性&amp;合規性中心可讓您授與權限執行等裝置管理、 資料外洩防護、 eDiscovery、 保留和等等的合規性工作人員。 這些人員可以執行您明確授與他們存取權的工作。 若要存取安全性&amp;合規性中心，使用者必須是 Office 365 全域系統管理員或成員的一或多個安全性&amp;合規性中心角色群組。
-ms.openlocfilehash: 9b2692d2afd70be911581caff237e61d405cf10f
-ms.sourcegitcommit: 6a7cec7d1f0d3b8d71f313bfa22f44c827de2336
+ms.openlocfilehash: eba77fd6edcf41bac5eeebae3637707c2c5a7246
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30798129"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997079"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Permissions in the Office 365 Security &amp; Compliance Center
 

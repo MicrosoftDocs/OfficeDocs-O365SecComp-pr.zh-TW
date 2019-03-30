@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續傳送電子郵件從 Office 365 歸類為垃圾郵件，他們將會傳送任何更多的郵件限制。
-ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692012"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998496"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 
@@ -40,7 +40,7 @@ ms.locfileid: "30692012"
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>移除封鎖的 Office 365 電子郵件帳戶的限制
 
-在您完成在 Office 365 安全性 & 合規性中心 (SCC) 此工作。 如需詳細資訊 SCC [[移至 Office 365 安全性 & 合規性中心](go-to-the-securitycompliance-center.md)]。 您必須是在**組織管理**」 或 「**安全性系統管理員**角色群組中，才能執行這些功能。 如需詳細資訊 SCC 角色群組的 [[移至 Office 365 安全性 & 合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)]。
+您完成此工作中的安全性 & 合規性中心 (SCC)。 如需詳細資訊 SCC [[移至安全性 & 合規性中心](go-to-the-securitycompliance-center.md)]。 您必須是在**組織管理**」 或 「**安全性系統管理員**角色群組中，才能執行這些功能。 如需詳細資訊 SCC 角色群組的 [[移至安全性 & 合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)]。
 
 1. 使用公司或學校帳戶具有 Office 365 全域系統管理員權限，登入 Office 365 安全與規範中心和在左側清單中，展開 [**威脅管理**，選擇 [**檢閱**，，然後選擇 [**限制使用者**。
     
@@ -60,7 +60,7 @@ ms.locfileid: "30692012"
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>確定發生這種情況時，會收到通知系統管理員
 
-租用戶系統管理員也會收到警告指出受限已傳送任何其他輸出的郵件使用者。 它是預設警示，會提供給所有承租人，而列在 SCC 警示原則] 頁面上，標題為 「 限制使用者無法傳送電子郵件 」。 請移至[Office 365 安全性 & 合規性中心中的警示原則](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)如需詳細資訊的警示。
+租用戶系統管理員也會收到警告指出受限已傳送任何其他輸出的郵件使用者。 它是預設警示，會提供給所有承租人，而列在 SCC 警示原則] 頁面上，標題為 「 限制使用者無法傳送電子郵件 」。 請移至[安全性 & 合規性中心中的警示原則](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)如需詳細資訊的警示。
 
 ## <a name="for-more-information"></a>相關資訊
 
@@ -70,4 +70,4 @@ ms.locfileid: "30692012"
 
 [高風險傳遞集區的外寄郵件](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Office 365 安全性 & 合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
+[安全規範中心的權限](permissions-in-the-security-and-compliance-center.md)

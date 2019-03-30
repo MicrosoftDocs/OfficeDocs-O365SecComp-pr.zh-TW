@@ -10,22 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 原有範圍暫止、 訴訟暫止狀態，以及 Office 365 保留原則可讓您保留信箱內容，以符合法規遵循和 eDiscovery 需求。
-ms.openlocfilehash: 21f6d4520f41710e89e0a7ce1fc491aa03ea44b0
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693232"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999516"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>保留電子文件探索密件副本與展開的通訊群組收件者
   
-原有範圍暫止、 訴訟暫止狀態，以及[Office 365 保留原則](http://go.microsoft.com/fwlink/?LinkID=827811)(建立 Office 365 安全性&amp;合規性中心) 可讓您保留信箱內容，以符合法規規範和 eDiscovery 需求。 收件者資訊直接寄送中的 To 和 Cc 欄位的預設，包含一則訊息中的所有郵件，但您的組織可能需要搜尋及重現相關郵件的所有收件者的詳細資訊的能力。 其中包括： 
+原有範圍暫止、 訴訟暫止狀態，以及[Office 365 保留原則](http://go.microsoft.com/fwlink/?LinkID=827811)（在安全性 & 合規性中心中建立） 可讓您保留信箱內容，以符合法規遵循和 eDiscovery 需求。 收件者資訊直接寄送中的 To 和 Cc 欄位的預設，包含一則訊息中的所有郵件，但您的組織可能需要搜尋及重現相關郵件的所有收件者的詳細資訊的能力。 其中包括： 
   
 - **收件者使用的郵件 [密件副本] 欄位**密件副本收件者所儲存的郵件寄件者的信箱中，但不是包含在傳遞至收件者之郵件的標頭。 
     
 - **展開通訊群組收件者**收件者收到郵件，因為它們是通訊群組成員的郵件已解決中，[在 to、 Cc 或 Bcc 欄位。 
     
-Exchange Online 和 Exchange Server 2013 （累計更新 7 和更新版本） 保留密件副本與展開的通訊群組收件者的相關資訊。 您可以使用 Exchange 系統管理中心 (EAC) 中的就地 eDiscovery 搜尋或 「 內容搜尋 」 安全性搜尋這項資訊&amp;合規性中心。 
+Exchange Online 和 Exchange Server 2013 （累計更新 7 和更新版本） 保留密件副本與展開的通訊群組收件者的相關資訊。 您可以使用 Exchange 系統管理中心 (EAC) 中的就地 eDiscovery 搜尋或安全性 & 合規性中心中的內容搜尋來搜尋此資訊。 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>保留密件副本收件者和展開的通訊群組收件者的方式
 <a name="sectionSection0"> </a>

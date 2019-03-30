@@ -1,5 +1,5 @@
 ---
-title: 停用的報表，當您匯出內容搜尋結果中 Office 365 安全性&amp;合規性中心
+title: 當您匯出內容搜尋結果時停用報告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: 編輯 Windows 登錄在本機電腦上，停用的報表，當您從 Office 365 安全性匯出內容搜尋的結果&amp;Comliance 中心。 停用這些報告可加速下載時間，並將儲存的磁碟空間。
-ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+description: 編輯 Windows 登錄在本機電腦上，停用的報表，當您從安全性 & 在 Office 365 的合規性中心匯出內容搜尋的結果。 停用這些報告可加速下載時間，並將儲存的磁碟空間。
+ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936713"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998763"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>停用的報表，當您匯出內容搜尋結果中 Office 365 安全性&amp;合規性中心
+# <a name="disable-reports-when-you-export-content-search-results"></a>當您匯出內容搜尋結果時停用報告
 
-當您使用 Office 365 電子文件探索匯出工具若要匯出其結果的安全性內容搜尋&amp;合規性中心，此工具會自動建立並匯出包含匯出內容相關的其他資訊的兩個報表。 這些報告是 Results.csv 和 Manifest.xml 檔案 （請參閱本主題的詳細說明這些報告的[常見問題集關於停用匯出報告](#frequently-asked-questions-about-disabling-export-reports)一節）。 因為這些檔案可能會很大，您可以加速下載時間，並藉由防止這些檔案所匯出儲存的磁碟空間。 您可以藉由變更您用來匯出搜尋結果的電腦上的 Windows 登錄來這麼做。 如果您想要包含在稍後的報告，您可以編輯的登錄設定。 
+當您要匯出其結果的安全性 & 合規性中心中的內容搜尋使用 Office 365 電子文件探索匯出工具時，工具會自動建立，並匯出包含匯出內容相關的其他資訊的兩個報表。 這些報告是 Results.csv 和 Manifest.xml 檔案 （請參閱本主題的詳細說明這些報告的[常見問題集關於停用匯出報告](#frequently-asked-questions-about-disabling-export-reports)一節）。 因為這些檔案可能會很大，您可以加速下載時間，並藉由防止這些檔案所匯出儲存的磁碟空間。 您可以藉由變更您用來匯出搜尋結果的電腦上的 Windows 登錄來這麼做。 如果您想要包含在稍後的報告，您可以編輯的登錄設定。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>建立登錄設定來停用匯出報告
 

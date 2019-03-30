@@ -16,50 +16,50 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: 您可以在 Office 365 安全性稽核記錄搜尋功能中開啟&amp;規範中心。如果您變更您注意，您可以開啟時關閉任何時候。關閉稽核記錄搜尋時，系統管理員無法在組織中搜尋使用者與系統管理活動的 Office 365 稽核記錄。
-ms.openlocfilehash: 17b98cce26054d073006fa78c55fe418b5f327d8
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 您可以開啟安全性 & 合規性中心中的稽核記錄搜尋功能。 如果您變更您記住，您可以啟動隨時如果 off。 關閉稽核記錄搜尋時，系統管理員無法在組織中搜尋使用者和系統管理員活動的 Office 365 稽核記錄檔。
+ms.openlocfilehash: a77114ac9b5de18d4718a543983f7a1f94ebc41f
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295456"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000926"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>開啟或關閉 Office 365 稽核記錄搜尋
 
-您 （或另一個系統管理員） 必須開啟稽核記錄才能開始搜尋的 Office 365 稽核記錄。當稽核記錄搜尋 Office 365 安全性&amp;規範中心已開啟、 從您的組織的使用者和系統活動會記錄在稽核記錄檔和保留期為 90 天。不過，您的組織可能不要記錄保留稽核記錄資料。或可能會使用第三方安全性資訊和事件管理 (SIEM) 應用程式存取稽核資料。在這些案例中的全域系統管理員可以關閉在 Office 365 中的稽核記錄搜尋。
+您 （或另一個系統管理員） 必須開啟稽核記錄，才能開始搜尋 Office 365 稽核記錄檔。 安全性 & 合規性中心中的稽核記錄搜尋開啟時，從您的組織的使用者和系統管理員活動是記錄在稽核記錄檔，並保留 90 天。 不過，您的組織可能不希望筆記錄，並保留稽核記錄資料。 或者，您可能要存取您的稽核資料使用的協力廠商安全性資訊和事件管理 (SIEM) 應用程式。 在這些情況下，全域系統管理員可以關閉在 Office 365 中的稽核記錄搜尋。
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須指派稽核記錄 」 角色在 Exchange Online 在 Office 365 組織中開啟或關閉開啟稽核記錄搜尋。根據預設，此角色指派給 Exchange 系統管理中心的 [**權限**] 頁面上相符性管理] 和 [組織管理角色群組。Office 365 中的全域系統管理員為組織管理角色群組的成員在 Exchange Online。 
+- 您必須被指派 「 稽核記錄 」 角色在 Exchange Online 在 Office 365 組織中開啟或關閉開啟稽核記錄搜尋。 根據預設，此角色被指派給在 Exchange 系統管理中心中的**權限**] 頁面上相符性管理] 和 [組織管理角色群組。 在 Office 365 中的全域系統管理員是 「 組織管理 」 角色群組的成員在 Exchange Online。 
     
     > [!IMPORTANT]
-    > 使用者必須獲得權限在 Exchange Online 以開啟或關閉的稽核記錄搜尋。如果您在 [安全性]**權限**] 頁面上的稽核記錄 」 角色指派使用者&amp;規範中心他們將無法開啟或關閉的稽核記錄搜尋。這是因為基礎指令程式是 Exchange Online 指令程式。 
+    > 使用者必須被指派權限在 Exchange Online 若要開啟或關閉稽核記錄搜尋。 如果您將使用者指派 「 稽核記錄 」 角色中安全性 & 合規性中心的**權限**] 頁面上，他們將無法開啟或關閉稽核記錄搜尋。 這是因為基礎指令程式是 Exchange Online cmdlet。 
   
-- 如果您關閉 Office 365 中的稽核記錄搜尋時，您仍可用 Office 365 管理活動 API 來存取稽核資料的組織。關閉 [透過遵循本文中的 [稽核記錄搜尋表示當您使用安全性稽核記錄檔中搜尋將會傳回任何結果&amp;規範中心或 Exchange Online 中執行**搜尋 UnifiedAuditLog**指令程式時間PowerShell。不過，如果您已獲得授權存取您的組織稽核資料透過 Office 365 管理活動 API 任何應用程式，這些應用程式會繼續運作。 
+- 如果您關閉 Office 365 中的稽核記錄搜尋時，您仍然可以使用 Office 365 管理活動 API 來存取組織的稽核資料。 遵循本文中的稽核記錄搜尋關閉表示當您搜尋使用安全性 & 合規性中心的稽核記錄檔或 Exchange Online 中執行**Search-unifiedauditlog**指令程式，將會傳回任何結果PowerShell。 不過，如果您已獲授權存取貴組織的稽核資料透過 Office 365 管理活動 API 的任何應用程式，這些應用程式將繼續運作。 
     
-- 如需搜尋 Office 365 的逐步指示稽核記錄，請參閱[Office 365 安全性搜尋稽核記錄&amp;規範中心](search-the-audit-log-in-security-and-compliance.md)。
+- 如需搜尋 Office 365 稽核記錄的逐步指示，請參閱 <<c0>的搜尋稽核記錄中的安全性 &amp; 合規性中心。
     
 ## <a name="turn-on-audit-log-search"></a>開啟稽核記錄搜尋
 
-您可以使用安全性&amp;規範中心或 PowerShell 開啟 Office 365 中的稽核記錄搜尋。可能需要數小時後才可以傳回結果搜尋稽核記錄時開啟稽核記錄搜尋。您必須指派稽核記錄 」 角色在 Exchange Online 開啟稽核記錄搜尋。
+您可以使用安全性 & 合規性管理中心或 PowerShell 將開啟 Office 365 中的稽核記錄搜尋。 它可能需要數小時之後您開啟稽核記錄搜尋之前搜尋稽核記錄時，可以傳回的結果。 您必須被指派 「 稽核記錄 」 角色在 Exchange Online 開啟稽核記錄搜尋。
   
-### <a name="use-the-security-amp-compliance-center-to-turn-on-audit-log-search"></a>使用安全性&amp;規範中心開啟稽核記錄搜尋
+### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>使用安全性 & 合規性中心來開啟稽核記錄搜尋
 
-1. 安全性&amp;規範管理中心，移至**搜尋&amp;調查** \> **稽核記錄搜尋**。
+1. 在 [安全性 & 合規性中心，移至**搜尋** \> **稽核記錄搜尋**。
     
-2. 按一下 [**開始錄製使用者與系統活動**。
+2. 按一下 [**開始錄製使用者和系統管理員活動**]。
     
-    ![按一下 [開始錄製使用者和系統管理員活動]，來開啟稽核](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![按一下 [開始錄製使用者和系統管理員活動來開啟稽核](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    說明使用者及組織中的系統活動會錄製到 Office 365 稽核記錄，適用於報表中檢視被顯示的對話方塊。 
+    指出使用者和組織中的系統管理員活動，將會錄製到 Office 365 稽核記錄，並可供檢視報表中會顯示對話方塊。 
     
 3. 按一下 [開啟]****。
     
-    顯示訊息指出做準備的稽核記錄及您可在幾小時準備完成後執行搜尋。
+    會顯示訊息，指出準備稽核記錄檔以及您可以在幾個小時後準備已完成執行搜尋。
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 來開啟稽核記錄搜尋
 
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. 執行下列 PowerShell 命令，以開啟 [Office 365 中的稽核記錄搜尋。
     
@@ -67,13 +67,13 @@ ms.locfileid: "30295456"
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
-    會顯示訊息指出它可能需要最多 60 分鐘，變更才會生效。
+    會顯示一則訊息，指出它可能需要 60 分鐘的時間，變更才會生效。
   
-## <a name="turn-off-audit-log-search"></a>關閉 [稽核記錄搜尋
+## <a name="turn-off-audit-log-search"></a>關閉稽核記錄搜尋
 
-您必須使用遠端 PowerShell 連線至 Exchange Online 組織來關閉 [稽核記錄搜尋。類似於開啟稽核記錄搜尋，您必須指派稽核記錄 」 角色在 Exchange Online，即可關閉稽核記錄搜尋。
+您必須使用遠端 PowerShell 連線至 Exchange Online 組織來關閉稽核記錄搜尋。 類似於開啟稽核記錄搜尋，您必須被指派 「 稽核記錄 」 角色在 Exchange Online 關閉稽核記錄搜尋。
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. 執行下列 PowerShell 命令，以關閉 [Office 365 中的稽核記錄搜尋。
     
@@ -81,18 +81,18 @@ ms.locfileid: "30295456"
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. 之後 while 確認稽核記錄搜尋已關機 （停用）。有兩種方式可以執行這項作業：
+3. 在一段時間之後, 確認稽核記錄搜尋已關閉 (disabled)。 方法有兩種：
     
-    - 在 PowerShell 中執行下列命令：
+    - 在 PowerShell 中，執行下列命令：
 
         ```
         Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
         ```
 
-        值`False`的_UnifiedAuditLogIngestionEnabled_屬性會指出稽核記錄搜尋已關閉。 
+        值`False` _UnifiedAuditLogIngestionEnabled_屬性表示該稽核記錄搜尋已關閉。 
     
-    - 安全性&amp;規範管理中心，移至**搜尋&amp;調查** \> **稽核記錄搜尋**，然後按一下 [**搜尋**。
+    - 在 [安全性 & 合規性中心，移至**搜尋** \> **稽核記錄搜尋**]，然後按一下 [**搜尋**。
     
-      預警開啟稽核記錄搜尋不會顯示訊息。 
+      會顯示一則訊息，指出尚未開啟稽核記錄搜尋。 
     
-      ![一則訊息，則 dispayed 稽核已關閉](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)
+      ![如果稽核已關閉，會顯示一則訊息](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)

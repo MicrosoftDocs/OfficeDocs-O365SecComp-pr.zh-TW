@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 匯入服務中的新的智慧型匯入功能，來篩選實際取得匯入至目標信箱的項目。 智慧型匯入可讓您主動決定何種資料匯入及要留下的項目。 智慧型匯入也可提供見解上您要匯入至 Office 365 的資料。 '
-ms.openlocfilehash: 60177908f48c6de28578f8d8ba6329fb1bf8cb47
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 33a29c74e3d57a90ae552f6dee72047943698cab
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900032"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999476"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>匯入至 Office 365 的 PST 檔案時篩選資料
 
@@ -51,7 +51,7 @@ ms.locfileid: "30900032"
     
   - [使用磁碟機運送將 PST 檔案匯入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- 建立使用網路上傳來匯入工作之後，在匯入的匯入工作的狀態] 頁面上 Office 365 安全性中&amp;合規性中心設為**在進行中的分析**，這表示 Office 365 正在分析的 PST 檔案中的資料，您上傳。 按一下 [**重新整理**![重新整理](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)更新匯入工作的狀態。 
+- 之後您可以使用網路上傳，合規性中心設為**在進行中的分析**，這表示 Office 365 會分析您上傳的 PST 檔案中的資料安全性 & [匯入] 頁面上匯入工作的狀態，以建立匯入工作。 按一下 [**重新整理**![重新整理](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)更新匯入工作的狀態。 
     
 - 磁碟機運送匯入工作，如資料會分析 Office 365 Microsoft 資料中心人員會收到您的硬碟機，並將 PST 檔案上傳至您的組織的 Azure 儲存體區域之後。
   
@@ -59,9 +59,9 @@ ms.locfileid: "30900032"
 
 您已建立之後 PST 匯入工作，請遵循下列步驟之前進行篩選資料匯入 Office 365。
   
-1. 移至 [[https://protection.office.com/](https://protection.office.com/)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
+1. 移至 [[https://compliance.microsoft.com/](https://compliance.microsoft.com/)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
     
-2. Office 365 安全性的左窗格中&amp;合規性中心，按一下 [**資料控管** \> **匯入**。
+2. 按一下 [**資料控管** \> **匯入**。
     
     貴組織的匯入工作會列在 [**匯入**] 頁面上。 請注意，在 [**狀態**] 欄中的**分析完成**值表示有已由 Office 365 進行分析，並準備好讓您匯入的匯入工作。 
     

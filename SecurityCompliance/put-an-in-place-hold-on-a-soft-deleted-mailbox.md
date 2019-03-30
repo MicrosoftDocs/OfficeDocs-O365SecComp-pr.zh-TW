@@ -10,21 +10,21 @@ localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: 了解如何建立就地保留虛刪除信箱進行非使用中並保留其內容。 然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中信箱。
-ms.openlocfilehash: 5113bd0dffe98a7af1c65af234caaefffff95184
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: f5ac31b4bfd993bf384aa17ba5f71de937cec720
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692592"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999506"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>置於就地保留虛刪除的信箱在 Exchange Online
 
 了解如何建立就地保留虛刪除信箱進行非使用中並保留其內容。 然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中信箱。
   
 > [!NOTE]
-> 我們已建立新的就地保留在 Exchange Online （在 Office 365 和 Exchange Online 獨立計劃） 的期限延後。 但到今年年底或明年年初，您將無法在 Exchange Online 中建立新的「就地保留」。 改成使用就地保留，您可以使用[eDiscovery 案例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留原則](https://go.microsoft.com/fwlink/?linkid=827811)中 Office 365 安全性&amp;合規性中心。 我們解除委任新就地保留之後，您仍然可以修改現有的就地保留，並建立新的就地保留在 Exchange Server 2013 和 Exchange 混合式部署仍會支援。 然後您仍然可以將信箱設為訴訟暫止。 
+> 我們已建立新的就地保留在 Exchange Online （在 Office 365 和 Exchange Online 獨立計劃） 的期限延後。 但到今年年底或明年年初，您將無法在 Exchange Online 中建立新的「就地保留」。 改成使用就地保留，您可以使用安全性 & 合規性中心中的[eDiscovery 案例](https://go.microsoft.com/fwlink/?linkid=780738)或[保留原則](https://go.microsoft.com/fwlink/?linkid=827811)。 我們解除委任新就地保留之後，您仍然可以修改現有的就地保留，並建立新的就地保留在 Exchange Server 2013 和 Exchange 混合式部署仍會支援。 然後您仍然可以將信箱設為訴訟暫止。 
   
-您可能需要其中人員已離開您的組織和其對應的使用者帳戶和信箱已刪除的情況。 之後，您要瞭解沒有需要保留信箱中的資訊。 您可以做什麼？ 如果尚未過期刪除的信箱保留期間，您可以置於就地保留已刪除的信箱 （稱為 「 虛刪除的信箱），並使其不在作用中的信箱。 *非使用中信箱*用於他或她離開組織之後保留離職員工的電子郵件。 如已為 「 就地保留的持續時間處於虛刪除的信箱已進行非使用中時，會保留不在作用中信箱的內容。 信箱進行非使用中之後，您可以在 Exchange Online 中，Office 365 安全性中的內容搜尋使用就地 eDiscovery 來搜尋信箱&amp;合規性中心或 SharePoint Online 中的 eDiscovery 中心。 
+您可能需要其中人員已離開您的組織和其對應的使用者帳戶和信箱已刪除的情況。 之後，您要瞭解沒有需要保留信箱中的資訊。 您可以做什麼？ 如果尚未過期刪除的信箱保留期間，您可以置於就地保留已刪除的信箱 （稱為 「 虛刪除的信箱），並使其不在作用中的信箱。 *非使用中信箱*用於他或她離開組織之後保留離職員工的電子郵件。 如已為 「 就地保留的持續時間處於虛刪除的信箱已進行非使用中時，會保留不在作用中信箱的內容。 信箱進行非使用中之後，您可以使用 Exchange Online、 安全 & 與規範中心中，內容搜尋] 或 [SharePoint Online 中的 eDiscovery 中心中的 「 就地 eDiscovery 來搜尋信箱。 
   
 > [!NOTE]
 > 在 Exchange Online 中，將虛刪除的信箱會是已刪除，但可以在特定的保留期間內可復原的信箱。 Exchange Online 中的虛刪除信箱保留期間是 30 天。 這表示信箱可以復原 （或進行非使用中信箱） 的被刪除的 30 天內。 30 天後，虛刪除的信箱標示為永久刪除和無法復原或進行非使用中。 

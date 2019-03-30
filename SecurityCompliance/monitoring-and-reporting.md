@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2dcc82dd6eb64567ed944ff8fc876a029d82f74a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 40afc6fb999b5bf55262d4020ffc68c815dff3ae
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791606"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998906"
 ---
 # <a name="monitor-and-report-security-status-in-microsoft-365-security-center"></a>監視及報告安全性狀態，Microsoft 365 安全中心
-
-[!include[Prerelease�information](prerelease.md)]
 
 在 Microsoft 365 安全性中心提供保護和安全性狀態的快速摘要在整個 Microsoft 365 環境。
 

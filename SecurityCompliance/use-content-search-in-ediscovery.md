@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: '使用 PowerShell 指令碼來為 「 就地 eDiscovery 搜尋 Exchange Online 中建立根據 Office 365 安全性中建立搜尋&amp;合規性中心。 '
-ms.openlocfilehash: 03df28094f29ced5a299aeb4f2140c3c3b0eba8c
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: '使用 PowerShell 指令碼在 Exchange Online 中根據安全性 & 合規性中心中建立搜尋建立就地 eDiscovery 搜尋。 '
+ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935248"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000026"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>在您的 eDiscovery 工作流程中使用內容搜尋
 
-Office 365 安全性中的內容搜尋功能&amp;合規性中心可讓您組織中搜尋所有信箱。 不同 Exchange Online （其中您可以搜尋最多 10000 個信箱） 中的 「 就地 eDiscovery，有單一搜尋中的目標信箱數目沒有限制。 對於要求您執行整個組織搜尋的案例，您可以使用「內容搜尋」來搜尋所有信箱。 然後您可以使用就地 eDiscovery 的工作流程功能來執行其他 eDiscovery 相關工作，例如將信箱設定為保留與匯出搜尋結果。 例如，假設您必須搜尋所有信箱以識別回應法律案件的特定監管人。 您可以使用內容搜尋中安全性&amp;來搜尋所有信箱來識別回應的情況下，您組織中的合規性中心。 然後您可以使用 custodian 信箱該清單為來源信箱的 Exchange Online 中就地 eDiscovery 搜尋。 使用就地 eDiscovery 也可讓您在這些來源信箱上設定保留、 將搜尋結果複製到探索信箱，並匯出搜尋結果。
+安全性 & 合規性中心中的內容搜尋功能可讓您在組織中搜尋所有信箱。 不同 Exchange Online （其中您可以搜尋最多 10000 個信箱） 中的 「 就地 eDiscovery，有單一搜尋中的目標信箱數目沒有限制。 對於要求您執行整個組織搜尋的案例，您可以使用「內容搜尋」來搜尋所有信箱。 然後您可以使用就地 eDiscovery 的工作流程功能來執行其他 eDiscovery 相關工作，例如將信箱設定為保留與匯出搜尋結果。 例如，假設您必須搜尋所有信箱以識別回應法律案件的特定監管人。 您可以使用安全性 & 合規性中心中的內容搜尋來搜尋所有信箱來識別回應的情況下，您組織中。 然後您可以使用 custodian 信箱該清單為來源信箱的 Exchange Online 中就地 eDiscovery 搜尋。 使用就地 eDiscovery 也可讓您在這些來源信箱上設定保留、 將搜尋結果複製到探索信箱，並匯出搜尋結果。
   
-本主題包含 Exchange Online 中建立的就地 eDiscovery 搜尋所使用的來源信箱和搜尋查詢從建立安全性搜尋清單，您可以執行的指令碼&amp;合規性中心。 以下是程序的概觀：
+本主題包含的指令碼，您可以執行 Exchange Online 中建立的就地 eDiscovery 搜尋所使用的來源信箱和搜尋查詢從中安全性 & 合規性中心建立搜尋清單。 以下是程序的概觀：
   
 [步驟 1：建立「內容搜尋」來搜尋組織中的所有信箱](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,16 +33,16 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心可讓您組織�
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>步驟 1：建立「內容搜尋」來搜尋組織中的所有信箱
 
-第一個步驟是使用安全性&amp;以建立您組織中搜尋所有信箱內容搜尋合規性中心 （或安全性 & 合規性中心 PowerShell）。 單一內容搜尋的信箱數目沒有限制。 指定適當的關鍵字查詢 (或敏感資訊類型的查詢)，讓搜尋僅傳回與調查有關的來源信箱。 如有必要，縮小搜尋查詢以縮小搜尋結果的範圍和傳回的來源信箱。
+第一個步驟是在組織中使用安全性 & 合規性中心 （或安全性 & 合規性中心 PowerShell），若要建立內容的搜尋會搜尋所有信箱。 單一內容搜尋的信箱數目沒有限制。 指定適當的關鍵字查詢 (或敏感資訊類型的查詢)，讓搜尋僅傳回與調查有關的來源信箱。 如有必要，縮小搜尋查詢以縮小搜尋結果的範圍和傳回的來源信箱。
   
 > [!NOTE]
 > 如果來源內容搜尋沒有傳回任何結果，當您在步驟 3 中執行指令碼時不會建立就地 eDiscovery。您可能必須修改搜尋查詢然後重新執行內容搜尋以傳回搜尋結果。 
   
-### <a name="use-the-security-amp-compliance-center-to-search-all-mailboxes"></a>使用安全性&amp;來搜尋所有信箱的合規性中心
+### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>使用安全規範中心來搜尋所有信箱
 
-1. [移至 [Office 365 安全性&amp;合規性中心](go-to-the-securitycompliance-center.md)。 
+1. [移至安全性 & 規範中心](go-to-the-securitycompliance-center.md)。 
     
-2. 按一下 [**搜尋&amp;調查**，按一下 [**內容搜尋**]，然後按一下 [**新增**![加入圖示](media/O365-MDM-CreatePolicy-AddIcon.gif)。
+2. 按一下 [**搜尋** > **內容搜尋**]，然後按一下 [**新搜尋**![加入圖示](media/O365-MDM-CreatePolicy-AddIcon.gif)。
     
 3. 在 **[新增搜尋]** 頁面上，輸入內容搜尋的名稱。 
     
@@ -58,7 +58,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心可讓您組織�
     
 ### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>使用安全性 & 來搜尋所有信箱的合規性中心 PowerShell
 
-您也可以使用 **New-ComplianceSearch** Cmdlet 來搜尋組織中的所有信箱。 第一個步驟是[連線到 Office 365 安全性&amp;合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084)。
+您也可以使用 **New-ComplianceSearch** Cmdlet 來搜尋組織中的所有信箱。 第一個步驟是[連接到安全性 & 合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084)。
   
 以下是使用 PowerShell 來搜尋組織中的所有信箱的範例。 搜尋查詢會傳回 2015 年 1 月 1 日和 2015 年 6 月 30 日之間傳送的所有郵件，以及主旨行中包含片語 "financial report" 的郵件。 第一個命令會建立搜尋，第二個命令會執行搜尋。 
   
@@ -124,7 +124,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>步驟 2： 連線到安全性\&合規性中心和 Exchange Online 中的單一遠端 PowerShell 工作階段
 
-下一步是將 Windows PowerShell 連線到這兩種安全性&amp;規範中心和 Exchange Online 組織。 這是必要的因為您在步驟 3 中執行的指令碼需要安全性中的內容搜尋指令程式的存取&amp;規範中心和 Exchange Online 中的就地 eDiscovery 指令程式。
+下一步是將 Windows PowerShell 連線到這兩種安全性 & 合規性中心以及 Exchange Online 組織。 這是必要因為您在步驟 3 中執行的指令碼需要存取安全 & 合規性中心內的內容搜尋 cmdlet 和就地 eDiscovery 指令程式在 Exchange Online。
   
 1. 使用.ps1 檔名尾碼，顯示下列文字儲存到 Windows PowerShell 指令碼檔案。 例如，您無法將其儲存至名為 csv 檔案`ConnectEXO-CC.ps1`。
     
@@ -143,7 +143,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
     .\ConnectEXO-CC.ps1
     ```
 
-如何知道這是否正常運作？ 執行指令碼，從安全性 cmdlet 後的當下&amp;規範中心和 Exchange Online 會匯入至本機 PowerShell 工作階段。 如果您未收到任何錯誤，便已順利連線。 快速測試是執行安全性&amp;合規性中心 cmdlet — 例如，**安裝 UnifiedCompliancePrerequisite** — 和 Exchange Online 指令程式，例如**Get-mailbox**。 
+如何知道這是否正常運作？ 執行指令碼之後，從安全性 & 規範中心和 Exchange Online 指令程式會匯入至本機 PowerShell 工作階段。 如果您未收到任何錯誤，便已順利連線。 快速測試是執行安全性 & 合規性中心 cmdlet — 例如，**安裝 UnifiedCompliancePrerequisite** — 和 Exchange Online 指令程式，例如**Get-mailbox**。 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>步驟 3：執行指令碼以從內容搜尋建立就地 eDiscovery 搜尋
 

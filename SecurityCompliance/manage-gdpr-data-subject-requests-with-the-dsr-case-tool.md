@@ -1,5 +1,5 @@
 ---
-title: 管理 GDPR 資料主體要求使用 DSR 案例工具在 Office 365 安全性&amp;合規性中心
+title: 管理與安全性 & 合規性中心的 DSR 案例工具的 GDPR 資料主體要求
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: GDPR 提供歐盟公民 （稱為 「 資料主體） 的特定權限至他們的個人資料;這些權限包括取得它的副本、 要求給它的變更，限制其處理、 刪除它，或接收電子格式。 受到採取資料的正式要求其個人的資料巨集指令會呼叫的資料主體要求或 DSR。 您可以使用 DSR 案例中 Office 365 安全性&amp;來管理您的組織 DSR 調查的合規性中心。
-ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: GDPR 提供歐盟公民 （稱為 「 資料主體） 的特定權限至他們的個人資料;這些權限包括取得它的副本、 要求給它的變更，限制其處理、 刪除它，或接收電子格式。 受到採取資料的正式要求其個人的資料巨集指令會呼叫的資料主體要求或 DSR。 您可以在 Office 365 和 Microsoft 365 合規性中心] 中使用 DSR 案例，來管理您的組織 DSR 調查。
+ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900142"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000106"
 ---
-# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>管理 GDPR 資料主體要求使用 DSR 案例工具在 Office 365 安全性&amp;合規性中心
+# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>管理與安全性 & 合規性中心的 DSR 案例工具的 GDPR 資料主體要求
 
 歐盟一般資料保護規定 (GDPR) 是用於保護與啟用個人工作隱私權權限歐盟 (EU) 內。 GDPR 提供個人，在歐盟 （又稱為資料主體） 存取、 擷取、 更正、 清除，並限制處理其個人資料的權限。 GDPR 規定的個人資料表示與已識別或可識別之自然人員相關的任何資訊。 資料主體要求或 DSR，會呼叫其組織的人員在其個人資料採取動作的正式要求。 如需 Office 365 中的資料回應 Dsr 的詳細資訊，請參閱 < <b0>Office 365 資料主體要求的指南</b0>。
   
-若要管理以回應貴組織中的人員所提交 DSR 調查，您可以使用 DSR 案例工具在 Office 365 安全性&amp;合規性中心以尋找儲存在內容：
+若要管理以回應貴組織中的人員所提交 DSR 調查，您可以使用 DSR 案例工具安全性 & 合規性中心中，尋找儲存在內容：
   
 - 貴組織中任何使用者信箱。 這包括 Skype 商務交談和一對一聊天中 Microsoft Teams
     
@@ -42,7 +42,7 @@ ms.locfileid: "30900142"
   
 - 針對每一個 DSR 調查建立個別案例。
     
-- 控制可以存取的 DSR 案例藉由將人員加入為成員的大小寫;只有成員可以存取這種情況，只能在安全性的**DSR 案例**] 頁面上看到其清單中的情況下的情況下&amp;合規性中心。 此外，您可以將不同的權限指派給不同屬於相同的案例。 例如，您可以允許某些成員僅限檢視的案例和搜尋結果，並允許其他成員，以建立搜尋和匯出搜尋結果。 
+- 控制可以存取的 DSR 案例藉由將人員加入為成員的大小寫;只有成員可以存取這種情況，且只能在安全性 & 合規性中心的**DSR 案例**頁面上看到其清單中的情況下的情況。 此外，您可以將不同的權限指派給不同屬於相同的案例。 例如，您可以允許某些成員僅限檢視的案例和搜尋結果，並允許其他成員，以建立搜尋和匯出搜尋結果。 
     
 - 使用內建搜尋建立或上傳的特定資料主體的所有內容。
     
@@ -73,20 +73,20 @@ ms.locfileid: "30900142"
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步驟 1： 將 eDiscovery 權限指派給潛在的案例成員
 
-根據預設，Office 365 全域系統管理員可以存取安全性 DSR 案例工具&amp;合規性中心。 根據設計，例如資料隱私權長，人力資源管理員] 中，其他使用者或其他人參與 DSR 調查的不具 DSR 案例工具來存取，而必須被指派適當的權限來存取工具。 若要這麼做最簡單的方法是移至 [**權限**] 頁面上，安全性&amp;合規性中心，並將使用者新增至 eDiscovery 管理員角色群組。 請注意，您還必須將這些權限指派，讓您可以將其新增為您在步驟 2 中建立的 DSR 案例的成員。 
+根據預設，Office 365 全域系統管理員可以存取安全性 & 合規性中心的 DSR 案例工具。 根據設計，例如資料隱私權長，人力資源管理員] 中，其他使用者或其他人參與 DSR 調查的不具 DSR 案例工具來存取，而必須被指派適當的權限來存取工具。 若要這麼做最簡單的方法是移至安全性 & 合規性中心中的 [**權限**] 頁面上，並將使用者新增至 「 eDiscovery 管理員 」 角色群組。 請注意，您還必須將這些權限指派，讓您可以將其新增為您在步驟 2 中建立的 DSR 案例的成員。 
   
-如需逐步指示，請參閱[指派 Office 365 安全性中的 eDiscovery 權限&amp;合規性中心](assign-ediscovery-permissions.md)。
+如需逐步指示，請參閱[指派 Office 365 安全性 & 合規性中心中的 eDiscovery 權限](assign-ediscovery-permissions.md)。
   
 > [!NOTE]
-> 根據預設，Office 365 全域系統管理員 (或其他組織管理角色群組成員的安全性&amp;合規性中心沒有匯出內容搜尋結果 （請參閱本文中的步驟 4） 的必要權限。 若要解決這個問題，系統管理員可以在自行新增為 eDiscovery 管理員角色群組的成員。 
+> 根據預設，Office 365 全域系統管理員 （或其他安全性 & 合規性中心中 「 組織管理角色群組的成員不需要匯出內容搜尋結果 （請參閱本文中的步驟 4） 的必要權限。 若要解決這個問題，系統管理員可以在自行新增為 eDiscovery 管理員角色群組的成員。 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>步驟 2： 建立 DSR 案例，並新增成員
 
 下一步是建立 DSR 案例。 當您建立的情況下時，您可選擇啟動內建的搜尋，或者您可以建立這種情況而不需啟動搜尋。 下列程序會指示您建立這種情況，而不必從開始搜尋，然後告訴您如何將成員新增至案例。
   
-1. 移至 [[https://protection.office.com](https://protection.office.com)並登入 Office 365 中，使用公司或學校帳戶。 
+1. 移至 [[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入 Office 365 中，使用公司或學校帳戶。 
     
-2. 安全性&amp;合規性中心，按一下 [**資料隱私權** \> **資料主體要求**]，然後按一下 [![加入圖示](media/ITPro-EAC-AddIcon.gif)**新的 DSR 案例**。
+2. 在 [安全性 & 合規性中心中，按一下 [**資料隱私權** \> **資料主體要求**]，然後按一下 [![加入圖示](media/ITPro-EAC-AddIcon.gif)**新的 DSR 案例**。
     
 3. 在**新的 DSR 情況下**彈出式頁面上，為這種情況命名鍵入選擇性描述，，然後按 [**下一步**。 請注意，必須在您的組織中是唯一的大小寫名稱。
     
@@ -145,7 +145,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **若要執行的 DSR 案例的內建搜尋：**
   
-1. 安全性&amp;合規性中心，按一下 [**資料隱私權** \> **資料主體要求**，然後按一下您在步驟 2 中建立的 DSR 案例旁邊的 [**開啟**。 
+1. 在 [安全性 & 合規性中心中，按一下 [**資料隱私權** \> **資料主體要求**，然後按一下您在步驟 2 中建立的 DSR 案例旁邊的 [**開啟**。 
     
     按一下頂端的 [] 頁面的 [**搜尋**] 索引標籤，然後按一下 [建立新的 DSR 案例時所建立的內建搜尋] 旁的核取方塊。 請注意搜尋具有相同名稱的 DSR 案例。 
     
@@ -164,10 +164,10 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
 執行內建的搜尋之後，您可以匯出搜尋結果。 或者，匯出資料之前，您可能想要修訂查詢，以降低搜尋結果數目。 如需縮小搜尋結果的詳細資訊，請參閱步驟 5。
   
-當您匯出搜尋結果時，信箱項目可以下載為個別郵件或 PST 檔案中。 當您匯出內容從 SharePoint 和 OneDrive 帳戶時，會匯出的原生 Office 文件和其他文件複本。 也包含在搜尋結果的結果包含的檔案，會匯出每個項目的相關資訊。 如需詳細資訊匯出，請參閱[匯出搜尋結果從 Office 365 安全性&amp;合規性中心](export-search-results.md)。
+當您匯出搜尋結果時，信箱項目可以下載為個別郵件或 PST 檔案中。 當您匯出內容從 SharePoint 和 OneDrive 帳戶時，會匯出的原生 Office 文件和其他文件複本。 也包含在搜尋結果的結果包含的檔案，會匯出每個項目的相關資訊。 如需將匯出的詳細資訊，請參閱[匯出內容搜尋結果](export-search-results.md)。
   
 > [!NOTE]
-> 根據預設，Office 365 全域系統管理員 (或其他組織管理角色群組成員的安全性&amp;合規性中心) 不需要匯出內容搜尋結果的必要權限。 若要解決這個問題，系統管理員可以在自行新增為 eDiscovery 管理員角色群組的成員。 
+> 根據預設，Office 365 全域系統管理員 （或其他安全性 & 合規性中心中 「 組織管理角色群組的成員） 不需要匯出內容搜尋結果的必要權限。 若要解決這個問題，系統管理員可以在自行新增為 eDiscovery 管理員角色群組的成員。 
   
 您用來將資料匯出的電腦必須符合下列系統需求：
   
@@ -188,7 +188,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
  **若要匯出資料的 DSR 案例中內建的搜尋：**
   
-1. 安全性&amp;合規性中心，按一下 [**資料隱私權** \> **資料主體要求**，然後按一下您想要匯出資料的 DSR 案例旁邊的 [**開啟**。 
+1. 在 [安全性 & 合規性中心中，按一下 [**資料隱私權** \> **資料主體要求**，然後按一下您想要匯出資料的 DSR 案例旁邊的 [**開啟**。 
     
 2. 按一下頂端的 [] 頁面的 [**搜尋**] 索引標籤，然後按一下 [建立的 DSR 案例時所建立的內建搜尋] 旁的核取方塊。 或按一下 [其他搜尋] 以從搜尋中匯出資料。 
     
@@ -229,7 +229,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 13. 按一下 [開始]**** 將搜尋結果下載至您的電腦。 
     
-    **EDiscovery 匯出工具**會顯示在匯出程序，包括的估計項目數量 （及大小） 的其餘項目若要下載的狀態資訊。 匯出程序完成時，您可以存取已下載的所在位置的檔案。 如需當您下載內容搜尋結果時包含報告的詳細資訊，請參閱中的[詳細資訊](export-search-results.md#more-information)一節 「 匯出內容搜尋結果從 Office 365 安全性&amp;合規性中心 」。 
+    **EDiscovery 匯出工具**會顯示在匯出程序，包括的估計項目數量 （及大小） 的其餘項目若要下載的狀態資訊。 匯出程序完成時，您可以存取已下載的所在位置的檔案。 如需當您下載內容搜尋結果時包含報告的詳細資訊，請參閱 「 匯出內容搜尋結果 」 的[詳細資訊](export-search-results.md#more-information)一節。 
     
 會匯出資料之後，搜尋結果，並匯出報告位於資料夾中具有相同名稱的 DSR 案例。 包含信箱項目 PST 檔案位於名為**Exchange**的子資料夾中。 文件和網站中的其他項目位於名為**SharePoint**的子資料夾中。 
   
@@ -297,14 +297,14 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 當您從 MyAnalytics 及 Office 漫遊服務匯出資料時，資料會儲存至不同的資料夾位於**ApplicationDataRoot**資料夾，也就是資料主體的電子郵件地址的名稱在資料夾下是每個應用程式。 此資料匯出成 JSON 檔案，也就是可讀取的文字檔案類似 XML 或 TXT 檔案，會附加至電子郵件訊息。 目前，這些資料夾是一個名為指派給 MyAnalytics 和 Office 漫遊服務中，如下表所列的全域唯一識別碼 (GUID)。 在未來版本的 DSR 案例工具，GUID 會取代實際的應用程式的名稱。 
   
-|**Application**|**GUID/資料夾名稱**|
+|**應用程式**|**GUID/資料夾名稱**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450f-91f6-3d1ef0848f6e  <br/> |
 |Office 漫遊服務  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |
    
  **若要搜尋並匯出 MyAnalytics 和 Office 漫遊服務資料：**
   
-1. 安全性&amp;合規性中心，按一下 [**資料隱私權** \> **資料主體要求**，然後按一下 [**開啟**] 旁的 DSR 案例為您想要匯出的流量資料的資料主體。 
+1. 在 [安全性 & 合規性中心中，按一下 [**資料隱私權** \> **資料主體要求**，然後按一下 [**開啟**] 旁的 DSR 案例為您想要匯出的流量資料的資料主體。 
     
 2. 按一下頂端的 [] 頁面的 [**搜尋**] 索引標籤，然後按一下 [![加入圖示](media/ITPro-EAC-AddIcon.gif) **「 引導式搜尋**。
     

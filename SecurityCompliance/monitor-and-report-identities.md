@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 安全性監視和報告的身分識別
+title: 在 Microsoft 365 安全性中監視和報告身分識別
 description: 描述如何監視組織中的身分識別，並追蹤的可疑或風險的行為。
 keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 資訊安全中心、 監視、 報表、 身分識別
 ms.prod: w10
@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4b2dfec483f4365c7eff132e2a2401734358ad7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 285bc5af108de8a59a65a088ec4e33ae27bff3c1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791613"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998886"
 ---
-# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>在 Microsoft 365 安全性監視和報告的身分識別
-
-[!include[Prerelease�information](prerelease.md)]
+# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>在 Microsoft 365 安全性中監視和報告身分識別
 
 您可以監視組織中的身分識別與追蹤可疑或風險的行為。 在 [**監視 & 報表**的 [**身分識別**] 類別中，您可以追蹤：
 

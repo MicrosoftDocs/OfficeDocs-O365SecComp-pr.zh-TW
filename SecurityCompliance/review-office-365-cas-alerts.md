@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: 使用 Office 365 雲端 App 安全性中的 [提醒] 頁面上，檢視潛在的問題，並採取動作。 您可以關閉或解決的警示，並如有必要，擱置的使用者帳戶。
-ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862465"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000036"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>檢閱並對 Office 365 雲端 App 安全性中的警示採取動作
   
@@ -37,7 +37,7 @@ ms.locfileid: "30862465"
 2. 在跨螢幕頂端導覽列中，選擇 [**提醒**]。<br/>![在 [提醒] 頁面中，您可以看到所觸發的警示和採取任何動作。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
  
 > [!NOTE]
-> 雲端 App 安全性提醒也會顯示在 Office 365 安全性 & 合規性中心 (前往**提醒** > **檢視警示**。 目前，不過，您必須先解決這些 Cloud App Security 入口網站和 Office 365 安全性 & 合規性中心中的警示。 若要深入了解，請參閱[檢視 Cloud App Security 警示](alert-policies.md#viewing-cloud-app-security-alerts)）。 
+> 雲端 App 安全性提醒也會顯示在安全性 & 合規性中心 (前往**提醒** > **檢視警示**。 目前，不過，您必須先解決這些 Cloud App Security 入口網站和安全性 & 合規性中心中的警示。 若要深入了解，請參閱[檢視 Cloud App Security 警示](alert-policies.md#viewing-cloud-app-security-alerts)）。 
  
 ## <a name="review-and-handle-alerts"></a>檢閱及控點通知
 

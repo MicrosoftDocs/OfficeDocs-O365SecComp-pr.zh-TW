@@ -3,7 +3,7 @@ title: 檔案計劃管理員的概觀
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 9/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤和原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: d972a7ea6507e51c4efaaef30c98d55a87912417
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454825"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997269"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 

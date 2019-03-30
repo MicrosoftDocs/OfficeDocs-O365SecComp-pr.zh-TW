@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 以下是您可以使用以確保 Office 365 進階威脅防護 (ATP) 會安裝並設定您組織快速入門指南。
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693293"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999396"
 ---
-# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>快速入門指南： 設定 Office 365 進階威脅防護
+# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>快速入門指南：設定 Office 365 進階威脅防護
 
 以下是您可以使用一份清單，請確定 Office 365 進階威脅防護 (ATP)，會為您的組織設定好快速入門指南。 如果您是初次使用 Office 365 中的威脅防護，或您不只是確定要開始，請使用下列指引做為起點。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "30693293"
 
 ## <a name="part-1---anti-malware"></a>1-反惡意程式碼組件
 
-1. 在[Office 365 安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **反惡意程式碼**。
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **反惡意程式碼**。
 2. 連按兩下**預設**原則]，然後再選擇 [**設定**。
 3. 指定下列設定：
     - 在 [**惡意程式碼偵測回應**] 區段中，保留預設設定 [**否]**。
@@ -59,7 +59,7 @@ ms.locfileid: "30693293"
 
 ### <a name="atp-safe-attachments-policies"></a>ATP 安全附件原則
 
-1. 在[Office 365 安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 安全附件**。
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 安全附件**。
 2. 選取 [**開啟 ATP SharePoint、 OneDrive 及 Microsoft Teams**] 選項。
 3. 在 [**保護電子郵件附件**] 區段中，按一下加號 (**+**)。
 4. 指定下列設定：
@@ -76,7 +76,7 @@ ms.locfileid: "30693293"
 
 若要設定 ATP 安全連結，檢閱您的預設原則，並新增原則。
 
-1. 在[Office 365 安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 安全連結**。
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 安全連結**。
 2. 連按兩下**預設**原則。
 3. 在**使用中的安全連結**] 區段中，選取 [ **Office 365 專業增強版、 Office for iOS 和 Android**，] 選項，然後按一下 [**儲存**。
 4. 在**原則套用至特定收件者**] 區段中，按一下加號 (**+**)。
@@ -94,7 +94,7 @@ ms.locfileid: "30693293"
 
 ## <a name="part-3---anti-phishing"></a>第 3-反網路釣魚部分 
 
-1. 在[Office 365 安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 防網路釣魚**。
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 防網路釣魚**。
 2. 按一下 [**預設原則**。
 3. 在 [**模擬**] 區段中，按一下 [**編輯**]，然後指定下列設定：
     -  在 [**新增使用者至保護**索引標籤中，開啟保護。 然後新增使用者，例如您的組織棋盤成員、 CEO、 CFO，以及其他資深領導人。 （您可以輸入個別電子郵件地址，或按一下 [顯示清單。）
@@ -112,7 +112,7 @@ ms.locfileid: "30693293"
 
 ## <a name="part-4---anti-spam"></a>組件 4-反垃圾郵件
 
-1. 在[Office 365 安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **反垃圾郵件**。
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **反垃圾郵件**。
 2. 在 [**自訂**] 索引標籤中，開啟**自訂設定**。
 3. 依序展開 [**預設垃圾郵件篩選原則**，按一下 [**編輯原則**]，然後指定下列設定：
     - 在 [**垃圾郵件和大量動作**] 區段中，臨界值設為 5 或 6 的值。

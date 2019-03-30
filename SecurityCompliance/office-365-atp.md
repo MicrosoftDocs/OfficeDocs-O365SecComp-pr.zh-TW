@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、 安全連結、 進階的反網路釣魚工具、 報告工具和威脅智慧功能。
-ms.openlocfilehash: 442c827f9844184fc6f03f6e253a0f492d12dd62
-ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
+ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989618"
+ms.locfileid: "31001176"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -89,9 +89,9 @@ Office 365 ATP 計劃 2 包含適合的類別[威脅調查及回應工具](offic
 
 如需詳細資訊，請參閱：
 
-- [Office 365 安全性 & 合規性中心的權限](permissions-in-the-security-and-compliance-center.md) 
+- [安全規範中心的權限](permissions-in-the-security-and-compliance-center.md) 
 
-- [讓使用者能夠存取 Office 365 安全性 & 合規性中心](grant-access-to-the-security-and-compliance-center.md)
+- [讓使用者能夠存取安全性與合規性中心](grant-access-to-the-security-and-compliance-center.md)
 
 ## <a name="get-office-365-atp"></a>取得 Office 365 ATP
 

@@ -3,7 +3,7 @@ title: 關於 Office 365 中加密的技術參考細節
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/15/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,32 +13,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: 檢視關於 Office 365 中的加密技術詳細資料。
-ms.openlocfilehash: 77e12d0d4872d29e9cc33571b2cd5040d8d45677
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 在 Office 365 中檢視加密的相關的技術詳細資料。
+ms.openlocfilehash: afe077fdedb3e01e5658d27a13e17ae3a3ab5929
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213623"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004250"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>關於 Office 365 中加密的技術參考細節
 
-請參閱本文以了解憑證、 技術及 TLS 用於[Office 365 中的加密](encryption.md)cipher 套件。本文章也提供詳細資訊計劃被取代。
+請參閱本篇文章以了解憑證、 技術及 TLS 加密套件用於[Office 365 中的加密](encryption.md)。 本文也提供詳細資料計劃取代。
   
-- 如果您要尋找的概觀資訊，請參閱[Office 365 中的加密](encryption.md)。
-- 如果您正在尋找安裝程式的資訊，請參閱[Office 365 企業版中的加密設定](set-up-encryption.md)。
-- 支援的特定版本的 Windows 編碼器套件的相關資訊，請參閱[編碼器套件 TLS/SSL (Schannel SSP) 中](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
+- 如果您正在尋找概觀資訊，請參閱[Office 365 中的加密](encryption.md)。
+- 如果您正在尋找安裝程式的資訊，請參閱 <<c0>設定 Office 365 企業版中的加密。
+- 如需特定版本的 Windows 支援的加密套件的資訊，請參閱 < <b0>TLS/SSL (Schannel SSP) 中的加密套件</b0>。
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 憑證擁有權和管理
 
 您不需要購買或維護 Office 365 的憑證，因為 Microsoft 會使用自己的憑證。
   
-## <a name="current-encryption-standards-and-planned-deprecations"></a>目前的加密標準 （英文） 及計劃被取代
+## <a name="current-encryption-standards-and-planned-deprecations"></a>目前的加密標準與計劃的取代
 
-若要繼續提供最佳的類別加密的 Office 365、 Microsoft 定期檢閱支援的加密標準 （英文）。有時，我們需要取代舊的標準過期與因此較不安全文章清單。本主題會說明有關計劃被取代的目前支援的編碼器套件和其他標準以及詳細資訊。 
+才能繼續提供最佳的類別加密的 Office 365，Microsoft 會定期檢閱支援的加密標準。 有時候，我們需要取代舊的標準時，他們就過期並因此較不安全。 本主題會說明有關規劃取代目前支援的加密套件和其他標準，以及詳細資料。 
 
-## <a name="fips-compliance-for-office-365"></a>Office 365 的 FIPS 規範
-支援的 Office 365 的所有編碼器套件會都使用下 FIPS 140-2 可接受的演算法。Office 365 繼承 （透過 Schannel) 的 Windows FIPS 驗證。Schannel 的相關資訊，請參閱[編碼器套件 TLS/SSL (Schannel SSP) 中](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
+## <a name="fips-compliance-for-office-365"></a>Office 365 的 FIPS 相容性
+所有 Office 365 所支援的加密套件會都使用下 FIPS 140-2 可接受的演算法。 Office 365 會繼承 FIPS 驗證從 Windows （透過 Schannel)。 如需 Schannel 資訊，請參閱 < <b0>TLS/SSL (Schannel SSP) 中的加密套件</b0>。
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 支援的 TLS 版本
 
@@ -50,61 +50,47 @@ ms.locfileid: "30213623"
     
 - TLS 1.0 版 (TLS 1.0)
     
- TLS 1.0 與 TLS 1.1 支援將會過時 2018 年 10 月 31、。請參閱[Deprecating 支援 TLS 1.0 和 1.1 及這表示您](technical-reference-details-about-encryption.md#TLS11and12deprecation)如需詳細資訊。 
+ TLS 1.0 和 TLS 1.1 支援將會過時 2018 年 10 月 31 日。 如需詳細資訊，請參閱[Deprecating 支援 TLS 1.0 和 1.1 版及這對您](technical-reference-details-about-encryption.md#TLS11and12deprecation)。 
   
-## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>廢棄的 TLS 1.0 和 1.1 及這表示您的支援
+## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>不再支援 TLS 1.0 及 1.1 版及這對您的
 <a name="TLS11and12deprecation"> </a>
 
-2018 年 10 月 31 到 Office 365 不再支援 TLS 1.0 和 1.1 版。這表示 Microsoft 不會修正新用戶端、 裝置或使用 TLS 1.0 和 1.1 版連線至 Office 365 服務中找到的問題。
+自 2018 年 10 月 31 日，Office 365 不再支援 TLS 1.0 和 1.1 版。 這表示 Microsoft 不會修正新用戶端、 裝置或使用 TLS 1.0 和 1.1，連線至 Office 365 服務中找到的問題。
 
-請注意這並不代表 Office 365 將會封鎖 TLS 1.0 和 1.1 連線。沒有官方停用或移除 TLS 1.0 和 1.1 版客戶連線 TLS 服務中的日期。最終取代日期會由客戶遙測及還不知道。進行決策之後，會有宣告事先六個月除非我們成為知道的已知危害、 在此情況下我們可能必須擔任小於六個月保護客戶使用的服務。
+請注意這並不表示 Office 365 會封鎖 TLS 1.0 和 1.1 版的連線。 沒有正式日期停用或移除客戶連線的 TLS 服務中的 TLS 1.0 和 1.1 版。 最終 deprecation > 日期必須由客戶遙測和還不知道。 會決定之後，會有宣告事先六個月除非我們在發現已知危害，在這種情況下，我們可能會有擔任小於六個月來保護使用服務的客戶。
 
-您應該確定所有的用戶端對伺服器和瀏覽器伺服器組合到 Office 365 服務使用 TLS 1.2 （或更新版本） 來維護連線。您可能必須更新特定用戶端對伺服器與伺服器瀏覽器組合。這對您所做的影響的相關資訊，請參閱[強制 TLS 1.2 版 Office 365 中使用的準備](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)。
+您應該要確定所有用戶端伺服器和瀏覽器伺服器組合到 Office 365 服務，使用 TLS 1.2 （或更新版本） 維護的連線。 您可能要更新特定用戶端伺服器和瀏覽器伺服器的組合。 如需如何影響您的資訊，請參閱 <<c0>準備強制使用 Office 365 中的 TLS 1.2。
   
-## <a name="deprecating-support-for-3des"></a>廢棄 3DES 的支援
+## <a name="deprecating-support-for-3des"></a>3DES 支援
 <a name="TLS11and12deprecation"> </a>
 
-從 2018 年 10 月 31 Office 365 不再支援 3DES 加密套件使用 Office 365 的通訊。更明確 Office 365 不再支援 TLS_RSA_WITH_3DES_EDE_CBC_SHA 編碼器套件。用戶端和伺服器通訊 O365 之後此日期必須支援至少一個更安全 cipher 列在本主題 （請參閱[TLS 密碼支援的 Office 365 套裝軟體](technical-reference-details-about-encryption.md#TLSCipherSuites)）。
+自 2018 年 10 月 31 日，Office 365 不再支援 3DES 加密套件使用 Office 365 的通訊。 更具體而言，Office 365 不再支援 TLS_RSA_WITH_3DES_EDE_CBC_SHA 加密套件。 2019 年 2 月 28 日，因為此加密套件已停用 Office 365 中。 本主題中列出的用戶端和伺服器與 O365 通訊，此日期必須支援至少一個更安全的 cipher 之後 （請參閱[TLS 密碼支援的 Office 365 套件](technical-reference-details-about-encryption.md#TLSCipherSuites)）。
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Office 365 不再支援 SHA-1 憑證
 <a name="TLS11and12deprecation"> </a>
 
-年 6 月 2016 Office 365 不再接受輸出或輸入連線的 sha-1 憑證。如果您目前的憑證鏈結中具有 sha-1 使用憑證，您必須更新使用 SHA-1-2 (安全雜湊演算法 2) 或更有力的雜湊演算法鏈結。
+截至年 6 月 2016、 Office 365 不再接受傳出或傳入連線的 sha-1 憑證。 如果您目前的憑證鏈結中與 sha-1 使用憑證，您必須更新使用 sha-2 (安全雜湊演算法 2) 或更有力的雜湊演算法的鏈結。
   
-## <a name="deprecating-rc4-support-in-office-365"></a>Office 365 不再支援 RC4
-<a name="TLS11and12deprecation"> </a>
-
-2015 年 7 月，已中止對下列 RC4 加密套件的支援：
-  
-- TLS_RSA_WITH_RC4_128_SHA
-    
-- TLS_RSA_WITH_RC4_128_MD5
-    
-## <a name="deprecating-secure-sockets-layer-ssl-30-support-in-office-365"></a>廢棄 Office 365 的 Secure Sockets Layer (SSL) 3.0 的支援
-<a name="TLS11and12deprecation"> </a>
-
-啟動 2014 年 12 月 1 日開始支援的 Secure Sockets Layer (SSL) 3.0、 前置 TLS 來停用 Office 365。如需詳細資訊，請參閱 ＜ [Security advisory 3009008](https://technet.microsoft.com/library/security/3009008.aspx)。如需如何確保指示用戶端使用 TLS 1.0 或更高，若要停用 SSL 3.0，請參閱[保護 SSL 3.0 弱點](http://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/)。
-  
-## <a name="tls-cipher-suites-supported-by-office-365"></a>Office 365 支援 TLS 加密套件
+## <a name="tls-cipher-suites-supported-by-office-365"></a>Office 365 所支援的 TLS 加密套件
 <a name="TLSCipherSuites"> </a>
 
-加密套件是 TLS 用來建立安全連線的加密演算法集合。下表依強度列出 Office 365 支援的加密套件，強度最大的加密套件列在最上面。Office 365 在收到連線要求時，會先嘗試使用最上面的加密套件進行連線，如果不成功，則嘗試清單中的第二個加密套件，依此類推。當 Office 365 傳送連線要求給另一部伺服器或用戶端時，則全由接收端的伺服器或用戶端選擇加密套件，或是否使用 TLS。
+加密套件是 TLS 用來建立安全連線的加密演算法集合。 Office 365 所支援的加密套件詳列於下表中的強度順序與要先列出最強的加密套件。 當 Office 365 收到連線要求時，Office 365 會先嘗試使用最上面的加密套件進行連線，如果不成功，則嘗試清單中的第二個加密套件，依此類推。 當 Office 365 傳送連線要求給另一部伺服器或用戶端時，則全由接收端的伺服器或用戶端選擇加密套件，或是否使用 TLS。
 
 > [!IMPORTANT]
-> 請注意 TLS 版本取代，且的已被取代的版本*不應使用*較新版本可用的位置。換句話說，它將已列於該 TLS 1.0 版無所不在支援 1.1 和 1.2，並選擇 [*最新*版本 (TLS 1.2)。
+> 請注意，TLS 版本取代，並，已被取代的版本*不應該使用*較新版本可用位置。 換句話說，任何地方它已經在此列出該 TLS 1.0、 1.1 和 1.2 版所支援中，選擇*最新*版本 (TLS 1.2)。
   
 |**通訊協定**|**加密套件名稱**|**金鑰交換演算法/強度**|**完整轉寄密碼支援**|**驗證演算法/強度**|**加密/強度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |使用 AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128 個  <br/> |是  <br/> |RSA/112  <br/> |使用 AES/128 個  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |使用 AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128 個  <br/> |是  <br/> |RSA/112  <br/> |使用 AES/128 個  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |使用 AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128 個  <br/> |是  <br/> |RSA/112  <br/> |使用 AES/128 個  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |使用 AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |使用 AES/128 個  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |使用 AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |使用 AES/128 個  <br/> |
    
 ## <a name="related-topics"></a>相關主題
 [在 Windows 10 v1607 TLS 加密套件](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
@@ -113,8 +99,8 @@ ms.locfileid: "30213623"
   
 [設定 Office 365 企業版中的加密](set-up-encryption.md)
   
-[在 [Windows 安全性狀態更新 TLS 1.0 Schannel 實作： 2015 年 11 月 24、](https://support.microsoft.com/kb/3117336)
+[在 [Windows 安全性狀態更新的 TLS 1.0 的 Schannel 實作： 2015 年 11 月 24 日](https://support.microsoft.com/kb/3117336)
   
-[TLS/SSL 的密碼編譯加強 (Windows IT 中心)](https://technet.microsoft.com/en-us/library/cc766285%28v=ws.10%29.aspx)
+[TLS/SSL 加密增強功能 (Windows IT 中心)](https://technet.microsoft.com/en-us/library/cc766285%28v=ws.10%29.aspx)
   
 
