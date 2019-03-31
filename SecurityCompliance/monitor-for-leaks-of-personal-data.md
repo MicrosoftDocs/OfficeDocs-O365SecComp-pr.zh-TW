@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解三種您可以用來監視個人資料外洩的工具。
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373884"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955206"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
@@ -57,7 +57,7 @@ ms.locfileid: "30373884"
 
 此外，在測試模式下執行 DLP 原則時，您可以使用 DLP 報告來微調這些原則。
 
-DLP 報告位於安全與規範中心。請導覽至 [報告] \> [檢視] 報告。在 [資料外洩防護 (DLP)] 底下，移至 [DLP 原則和規則相符項目] 或 [DLP 誤判和覆寫]。
+DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢視報告]。 在 [資料外洩防護 (DLP)] 下，移至 [DLP 原則和規則相符項目] 或 [DLP 誤判和覆寫]。
 
 如需詳細資訊，請參閱[檢視資料外洩防護的報告](https://support.office.com/zh-TW/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)。
 
@@ -67,9 +67,9 @@ DLP 報告位於安全與規範中心。請導覽至 [報告] \> [檢視] 報告
 
 Office 365 稽核記錄包含的事件來自 Exchange Online、SharePoint Online、商務用 OneDrive、Azure Active Directory、Microsoft Teams’Power BI、Sway，以及其他 Office 365 服務。
 
-Office 365 安全與規範中心提供兩種方法，監視及報告 Office 365 稽核記錄：
+安全性中心和合規性中心提供兩種方法來監視及報告 Office 365 稽核記錄：
 
--   設定警示原則、檢視警示和監視趨勢 — 使用 Office 365 安全與規範中心內新的警示原則和警示儀表板工具。
+-   設定警示原則、檢視警示和監視趨勢 — 使用安全性中心或合規性中心中的警示原則和警示儀表板工具。
 
 -   直接搜尋稽核記錄 — 搜尋指定日期範圍的所有事件。或者，根據特定準則 (例如執行動作的使用者、動作或目標物件) 篩選結果。
 
@@ -81,14 +81,14 @@ Office 365 安全與規範中心提供兩種方法，監視及報告 Office 365 
 
 警示原則和搜尋稽核記錄的相關資訊：
 
--   [Office 365 安全規範中心內的警示原則](https://support.office.com/zh-TW/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Microsoft 365 安全性與合規性中心的警示原則](https://support.office.com/zh-TW/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動](https://support.office.com/zh-TW/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (簡介)
 
 -   [開啟或關閉 Office 365 稽核記錄搜尋](https://support.office.com/zh-TW/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [在 Office 365 安全與規範中心搜尋稽核記錄](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [搜尋稽核記錄](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 

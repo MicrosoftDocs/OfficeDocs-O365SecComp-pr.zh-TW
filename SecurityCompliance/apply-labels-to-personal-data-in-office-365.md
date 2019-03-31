@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為 GDPR 保護計劃的一部分。
-ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800285"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955196"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>將標籤套用至 Office 365 中的個人資料
 
@@ -167,7 +167,7 @@ ms.locfileid: "30800285"
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>建立標籤和自動套用標籤原則
 
-在安全性與合規性中心建立標籤和原則。
+在安全性中心或合規性中心中建立標籤和原則。
 
 <table>
 <thead>
@@ -179,16 +179,16 @@ ms.locfileid: "30800285"
 <tbody>
 <tr class="odd">
 <td align="left"><p>將權限授與規範小組的成員。</p></td>
-<td align="left"><p>要建立標籤的合規性小組成員需有有使用安全性與合規性中心的權限。請移至安全性與合規性中心的 [權限]，然後修改合規性系統管理員群組的成員。</p>
-<p>請參閱<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">讓使用者能夠存取 Office 365 安全性與合規性中心</a></p></td>
+<td align="left"><p>要建立標籤的合規性小組成員需有使用安全性中心和/或合規性中心的權限。請移至安全性中心或合規性中心的 [權限]，然後修改合規性系統管理員群組的成員。</p>
+<p>請參閱<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">讓使用者能夠存取安全性中心和/或合規性中心</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>建立保留標籤。</p></td>
-<td align="left">移至安全性與合規性中心中的 [分類]、選擇 [保留] 標籤，然後建立適用於您環境的標籤。</td>
+<td align="left">移至安全性中心或合規性中心中的 [分類]，選擇 [保留] 標籤，然後建立適用於您環境的標籤。</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>建立標籤的自動套用原則。</p></td>
-<td align="left">移至安全性與合規性中心的 [分類]、選擇標籤原則，然後建立自動套用標籤的原則。請務必依優先順序建立這些原則。</td>
+<td align="left">移至安全性中心或合規性中心中的 [分類]，選擇 [標籤原則]，然後建立自動套用標籤的原則。請務必依優先順序建立這些原則。</td>
 </tr>
 </tbody>
 </table>

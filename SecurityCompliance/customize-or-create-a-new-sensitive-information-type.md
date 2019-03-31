@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何為 GDPR 修改或建立新的 Office 365 敏感資訊類型。
-ms.openlocfilehash: c55828572760485eb1d197178d918aee7acaa0b6
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 6810a6b6d9b0ea34ab11cc778c32a76d556d7a17
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373934"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955216"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自訂或建立新的敏感資訊類型
 
@@ -37,9 +37,9 @@ ms.locfileid: "30373934"
 
 另請參閱：
 
-- [在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [使用 PowerShell 建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-- [自訂內建的機密資訊類型](customize-a-built-in-sensitive-information-type.md)
+- [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>修改敏感資訊類型以提高精確度
 
@@ -143,7 +143,7 @@ ms.locfileid: "30373934"
 
 -   [關鍵字查詢語言 (KQL) 語法參考 (DMC)](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [在 Office 365 安全性與合規性中心執行內容搜尋](https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [執行內容搜尋](https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 內容搜尋提供另一種資源，協助您開發 KQL 查詢及敏感資訊類型 — 關鍵字。為什麼使用關鍵字清單？您可以取得統計資料，顯示多少個項目比對每一個關鍵字的。這可協助您快速識別哪些關鍵字的效率最好 (最差)。如需搜尋統計資料的詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](https://support.office.com/zh-TW/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
 

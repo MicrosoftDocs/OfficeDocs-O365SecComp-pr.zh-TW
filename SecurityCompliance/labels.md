@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900132"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955236"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -384,11 +384,13 @@ ms.locfileid: "30900132"
   
 如需詳細資訊，請參閱[使用標籤做為條件的 DLP 原則](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy) (機器翻譯)。
   
-## <a name="using-the-label-activity-explorer-and-the-data-governance-reports"></a>使用標籤活動總管和資料控管報告
+## <a name="monitor-retention-labels"></a>監控保留標籤
 
 發佈或自動套用保留標籤後，您會想要確認它們如您的預期套用到內容。若要監控您的保留標籤，可以使用：
   
 - **標籤活動總管**。使用標籤活動總管 (如下所示)，可以快速搜尋和檢視過去 30 天在 SharePoint 和商務用 OneDrive 上所有內容的保留標籤活動。如需詳細資訊，請參閱[檢視文件的標籤活動](view-label-activity-for-documents.md) (英文)。
+
+- [標籤分析]**** 頁面。 在 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中，您可以快速檢視最常使用的標籤和套用標籤的位置。 您也可以檢視具有特定標籤的所有內容。 如需詳細資訊，請參閱[利用標籤分析檢視標籤使用量](label-analytics.md)。
     
 - **資料控管報告**。使用資料控管報告，可以快速檢視過去 90 天在 Exchange、SharePoint、商務用 OneDrive 上所有內容的保留標籤趨勢和活動。如需詳細資訊，請參閱[資料控管報告](view-the-data-governance-reports.md) (英文)。
     
