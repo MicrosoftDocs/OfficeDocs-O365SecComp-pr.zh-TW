@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 展示 Office 365 中的 GDPR 功能。
-ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: aea1fec29da352285a59ac9286fc053ca10ec746
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955276"
+ms.locfileid: "31001256"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 開發/測試環境中的 GDPR 探索、保護和報告
 
@@ -98,7 +98,7 @@ ms.locfileid: "30955276"
 
 Contoso 一律會以內部通信、外部通信、文件和其他形式使用 CCN 來參照客戶。Contoso 需要自訂的敏感項目類型來偵測 Office 365 內容中的 CCN 使用情形，以便他們可在使用此形式的個人識別資訊時提供保護。
 
-1. 使用[使用多重要素驗證連線到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) 中的指示，並使用您全域系統管理員帳戶的 UPN 連線至安全性與合規性中心。
+1. 使用[使用多重要素驗證連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) 中的指示，並使用您全域系統管理員帳戶的 UPN 連線至安全性與合規性中心。
 2. 執行下列 PowerShell 命令。
 
      ```

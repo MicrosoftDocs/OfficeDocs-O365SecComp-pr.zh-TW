@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
-ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955226"
+ms.locfileid: "30999376"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保護 SharePoint Online 網站與檔案
 
@@ -125,7 +125,7 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
 |DLP 原則  <br/> |||當使用者將標記為「敏感性」的檔案傳送到組織外部時，會對其發出警告。  <br/> 若要封鎖敏感性資料類型的外部共用，例如信用卡號碼或其他個人資料，您可以為這些資料類型 (包括您設定的自訂資料類型) 設定額外的 DLP 原則。  <br/> |封鎖使用者，使其無法將標示為高度機密的檔案傳送到組織外部。 允許使用者提供理由來覆寫這項預設，包括共用檔案的對象。  <br/> |
 |敏感度標籤  <br/> ||||使用敏感度標籤可自動加密並授與檔案權限。 敏感度標籤會使用 Azure 資訊保護來加密檔案。 這項保護會與檔案一起移動，以免檔案外洩。  <br/> Office 365 無法讀取以 Azure 資訊保護加密的檔案。此外，DLP 原則僅會使用中繼資料 (包括標籤)，而不會使用這些檔案的內容 (例如檔案中的信用卡號碼)。  <br/> |
    
-如需在此解決方案中部署四種不同類型 SharePoint Online 小組網站的步驟，請參閱＜[針對三層式保護部署 SharePoint Online 網站](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)＞。如需建立開發/測試環境的步驟，請參閱＜[在開發/測試環境中保護 SharePoint Online 網站](secure-sharepoint-online-sites-in-a-dev-test-environment.md)＞。 
+如需此解決方案中這四種不同類型 SharePoint Online 小組網站的部署步驟，請參閱[部署三層保護的 SharePoint Online 網站](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)。 
   
 ## <a name="office-365-retention-labels"></a>Office 365 保留標籤
 
@@ -186,7 +186,3 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
   
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[在開發/測試環境中保護 SharePoint Online 網站](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-
-
-

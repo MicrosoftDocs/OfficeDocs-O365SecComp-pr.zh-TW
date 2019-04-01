@@ -3,7 +3,7 @@ title: 保留標籤概觀
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955236"
+ms.locfileid: "31000816"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -60,10 +60,9 @@ ms.locfileid: "30955236"
     
 - **在 Office 365 中實作記錄管理**，包括電子郵件和文件。您可以使用保留標籤將內容分類成記錄。在這種情況下，無法變更或移除標籤，且不能編輯或刪除內容。 
     
-您可以在 Office 365 安全性與合規性中心內 [標籤]**** 頁面上建立及管理 [保留]**** 索引標籤上的保留標籤。 
+您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性 &amp; 合規性中心的 [標籤]**** 頁面 > [保留]**** 索引標籤上，建立及管理保留標籤。 
   
-![[標籤] 頁面上的保留索引標籤](media/Retention_tab_on_Labels_page.png)
- 
+
 ## <a name="how-retention-labels-work-with-label-policies"></a>運用標籤原則使用保留標籤
 
 為組織中的人員提供保留標籤，讓他們可以透過兩個步驟的程序將內容分類：首先，您要建立標籤，然後將它們發佈到您選擇的位置。發佈保留標籤時，標籤原則也會隨之建立。
@@ -98,7 +97,7 @@ ms.locfileid: "30955236"
 
 當您發佈或自動套用保留標籤時，標籤不會立即生效：
   
-1. 首先，標籤原則必須先將安全性合規性中心與原則中的位置同步。
+1. 首先，標籤原則必須先將系統管理中心與原則中的位置同步。
     
 2. 然後，位置可能會需要一些時間將手動標籤提供給使用者，或自動套用標籤至內容。這需要多少時間取決於位置和標籤類型。
     
@@ -110,7 +109,7 @@ ms.locfileid: "30955236"
   
 ### <a name="auto-apply-retention-labels"></a>自動套用保留標籤
 
-如果您將保留標籤自動套用至符合特定條件的內容，保留標籤套用至符合條件的所有內容可能需要 7 天。
+如果您將保留標籤自動套用至符合特定條件的內容，保留標籤套用至符合條件的所有現有內容可能需要 7 天。 但請注意，部署保留標籤之後套用至新的內容很快，通常在 15 分鐘之內。
   
 ![自動標籤生效的圖](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -398,9 +397,7 @@ ms.locfileid: "30955236"
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>使用內容搜尋來尋找套用特定保留標籤的所有內容
 
-將保留標籤指派至內容後 (無論是由使用者指派或自動套用)，您可以使用安全性與合規性中心的「內容搜尋」，尋找以特定保留標籤分類的所有內容。
-  
-![內容搜尋頁面](media/564d5dfe-285a-4a7e-800e-907b12a1b273.png)
+將保留標籤指派至內容後 (無論是由使用者指派或自動套用)，您可以使用「內容搜尋」，尋找以特定保留標籤分類的所有內容。
   
 當您建立內容搜尋時，請選擇 [合規性標籤]**** 條件，然後輸入完整的標籤名稱或是部分標籤名稱加上萬用字元。如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md) (機器翻譯)。
   
@@ -434,7 +431,7 @@ ms.locfileid: "30955236"
 
 您可以輕鬆將保留標籤運用在整個組織及其 Office 365 內容，包括 Exchange、SharePoint、OneDrive、Office 365 群組。若您需要在 Office 365 任何地方分類內容或管理記錄，建議您使用保留標籤。
   
-有一些之前用來在 Office 365 中分類內容或管理記錄的其他功能，如下述。這些功能會繼續運作，與在安全性與合規性中心建立的標籤並存。請注意，雖然有些保留標籤的實作與之前的功能不同，但保留標籤的發展將引領 Office 365 記錄管理的未來。因此，進一步來說，基於資料控管，我們建議您使用保留標籤而非這些功能。
+Office 365 先前提供數種用於將內容分類以及管理記錄的功能， 如下所示。 這些功能會繼續支援保留標籤。 請注意，雖然有保留標籤實作與先前功能不同的實例，但是保留標籤的演進會促進 Office 365 記錄管理的未來發展。 因此，我們建議您向前邁進，使用保留標籤而非這些功能來進行資料控管。
   
 ### <a name="exchange-online"></a>Exchange Online
 

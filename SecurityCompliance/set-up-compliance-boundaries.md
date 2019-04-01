@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合規性界限來建立 Office 365 組織內控制電子文件探索管理員可搜尋的使用者內容位置的邏輯界限。 合規性界限使用搜尋權限篩選 （也稱為的法規安全性篩選器） 來控制哪些信箱、 SharePoint 網站，並可搜尋特定使用者的 OneDrive 帳戶。
-ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
+ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001086"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "31014022"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>設定 Office 365 中電子文件探索調查的合規性界限
 
@@ -63,6 +63,8 @@ ms.locfileid: "31001086"
 - 部門
     
 - 辦公室
+
+- C （兩個字母國碼/地區碼）
     
 雖然多個使用者屬性可用，尤其是針對 Exchange 信箱，上面所列的屬性是目前支援 OneDrive 是唯一的。
   
