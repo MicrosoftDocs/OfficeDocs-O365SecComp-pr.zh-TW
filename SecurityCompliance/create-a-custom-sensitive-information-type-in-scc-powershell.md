@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型
+title: 在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,15 +12,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何在 Office 365 安全性與合規性中心建立及匯入 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: bf917ac40f98ec19332aac90f2d954d44b9a834d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: 了解如何在安全性與合規性中心建立及匯入 DLP 的自訂敏感性資訊類型。
+ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639120"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999836"
 ---
-# <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型
+# <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型
 
 Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內件類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
   
@@ -329,7 +329,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Office 365 �
   
 1. 使用 Unicode 編碼方式將它儲存為 .xml 檔。
     
-2. [連接到 Office 365 安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+2. [連線到安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
     
 3. 使用下列語法：
 
@@ -419,7 +419,7 @@ DLP 會使用搜尋編目程式來識別及分類網站內容中的機密資訊�
 
 - **移除自訂規則套件及其包含的所有自訂機密資訊類型**：本節會描述此方法。
 
-1. [連接到 Office 365 安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+1. [連線到安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
 2. 若要移除自訂規則套件，請使用下列語法：
 
@@ -469,7 +469,7 @@ DLP 會使用搜尋編目程式來識別及分類網站內容中的機密資訊�
 
 3. 將更新的 XML 檔匯入至現有的規則套件。
 
-若要連接到安全性與合規性中心 PowerShell，請參閱[連接到 Office 365 安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
+若要連線到安全性與合規性中心 PowerShell，請參閱[連線到安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>步驟 1：將現有規則套件匯出至 XML 檔
 

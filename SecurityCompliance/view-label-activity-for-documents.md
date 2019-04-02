@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全性與合規性中心的標籤活動總管，您可以跨 SharePoint 和商務用 OneDrive 快速搜尋和檢視過去 30 天所有內容的標籤活動。這是即時資料，可讓您清楚檢視租用戶發生什麼情況。
-ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410468"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997109"
 ---
 # <a name="view-label-activity-for-documents"></a>檢視文件的標籤活動
 
@@ -36,7 +36,7 @@ ms.locfileid: "30410468"
     
 - 檢視資料夾以及個別文件的標籤活動。即將推出的能力是顯示由於標示資料夾，該資料夾內有多少檔案可以取得此標籤。
     
-您可以在安全性與合規性 \> [資料控管]**** \> [標籤活動總管]**** 中找到標籤活動總管。
+您可以在 [安全性與合規性中心] > [資料控管]**** > [標籤活動總管]**** 中找到標籤活動總管。
   
 請注意，標籤活動總管需要 Office 365 企業版 E5 訂閱。
   

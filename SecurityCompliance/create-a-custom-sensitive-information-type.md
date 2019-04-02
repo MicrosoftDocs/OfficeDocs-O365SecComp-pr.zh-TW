@@ -12,13 +12,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何在 Office 365 安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂機密資訊類型。
-ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
+ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639060"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999086"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>建立自訂機密資訊類型
 
@@ -42,11 +42,11 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
 
     ![執行個體計數和比對正確性選項](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-若要在 Office 365 安全性與合規性中心建立自訂機密資訊類型，您有下列選項：
+若要在安全性與合規性中心建立自訂敏感性資訊類型，您有下列選項：
 
 - **使用 UI**：這種方法更輕鬆且更快，但您具有的設定選項比 PowerShell 少。本主題的其餘內容將說明這些程序。
 
-- **使用 PowerShell**：這種方法需要您先建立 XML 檔案 (稱為_規則套件_)，其中包含一或多個機密資訊類型，然後使用 PowerShell 來匯入規則套件 (與建立規則套件相較，匯入規則套件更容易解決。這種方法遠比 UI 複雜得多，但您有更多的設定選項。如需相關指示，請參閱[在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
+- **使用 PowerShell**：這種方法需要您先建立 XML 檔案 (稱為_規則套件_)，其中包含一或多個敏感性資訊類型，然後使用 PowerShell 來匯入規則套件 (與建立規則套件相較，匯入規則套件更容易解決)。這種方法遠比 UI 複雜得多，但您有更多的設定選項。如需相關指示，請參閱[在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
 
 下表說明重要差異：
 
@@ -60,7 +60,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟安全性與合規性中心，請參閱[移至 Office 365 安全性與合規性中心](go-to-the-securitycompliance-center.md)。
+- 若要開啟安全性與合規性中心，請參閱[移至安全性與合規性中心](go-to-the-securitycompliance-center.md)。
 
 - 自訂機密資訊類型需要熟悉規則運算式 (RegEx)。如需用於處理文字之 Boost.RegEx (先前稱為 RegEx++) 引擎的詳細資訊，請參閱 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 

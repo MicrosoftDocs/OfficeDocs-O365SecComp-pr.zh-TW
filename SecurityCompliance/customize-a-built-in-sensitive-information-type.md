@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。
-ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639070"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999606"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -74,7 +74,7 @@ ms.locfileid: "30639070"
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>修改 XML 及建立新的機密資訊類型
 
-首先，您必須建立新的機密資訊類型，因為您無法直接修改預設規則。您可以對自訂機密資訊類型執行各種不同動作，而[在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)會概述這些動作。針對此範例，我們保持簡單，只移除確切辨識項並且將關鍵字新增至「信用卡號碼」規則。
+首先，您必須建立新的敏感性資訊類型，因為您無法直接修改預設規則。您可以對自訂敏感性資訊類型執行各種不同動作，而[在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)會概述這些動作。針對此範例，我們保持簡單，只移除補強證據並且將關鍵字新增至「信用卡號碼」規則。
   
 所有 XML 規則定義都是根據下列一般範本所建置。您需要複製及貼上範本中的「信用卡號碼」定義 XML、修改某些值 (請注意下列範例中的 ". . ." 預留位置)，然後將修改後的 XML 上傳為可在原則中使用的新規則。
   

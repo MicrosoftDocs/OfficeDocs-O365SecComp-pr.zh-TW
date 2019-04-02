@@ -3,7 +3,7 @@ title: Office 365 的反詐騙保護
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
-ms.date: 3/6/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936793"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004260"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -410,34 +410,6 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
   
 ![用於允許詐騙寄件者可能的 UX](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>了解如何將垃圾郵件、網路釣魚和進階網路釣魚偵測結合
-
-使用 Exchange Online (有或沒有ATP) 的組織可以指定當服務將郵件識別為惡意程式碼、垃圾郵件，信賴度高的垃圾郵件、網路釣魚郵件和大量郵件時要採取的動作。 有針對 ATP 客戶的 ATP 防網路釣魚原則、針對 EOP 客戶的防網路釣魚原則策略，再加上郵件可能涉及多種偵測類型 (例如，惡意程式碼、網路釣魚和使用者冒充)，對於該套用哪個原則可能會產生混淆。
-  
-一般來說，可從 CAT (Category) 屬性的 X-Forefront-Antispam-Report 標頭中辨識套用於郵件的原則。
-  
-|**優先順序**|**原則**|**類別**|**在何處進行管理？**|**適用對象**|
-|:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |惡意程式碼  <br/> |MALW  <br/> |[惡意程式碼原則](configure-anti-malware-policies.md) <br/> |所有組織  <br/> |
-|2  <br/> |網路釣魚  <br/> |PHSH  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
-|3  <br/> |高信賴度的垃圾郵件  <br/> |HSPM  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
-|4  <br/> |詐騙  <br/> |SPOOF  <br/> |[防網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=864553)，[詐騙情報](learn-about-spoof-intelligence.md) <br/> |所有組織  <br/> |
-|5  <br/> |垃圾郵件  <br/> |SPM  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
-|6  <br/> |大量  <br/> |BULK  <br/> |[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md) <br/> |所有組織  <br/> |
-|7  <br/> |網域冒充  <br/> |DIMP  <br/> |[設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則](set-up-anti-phishing-policies.md) <br/> |僅限使用 ATP 的組織  <br/> |
-|8  <br/> |使用者冒充  <br/> |UIMP  <br/> |[設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則](set-up-anti-phishing-policies.md) <br/> |僅限使用 ATP 的組織 <br/> |
-
-如果您有多個不同的防網路釣魚原則時，會套用優先順序最高的原則。 例如，假設您有兩個原則：
-
-|**原則**|**優先順序**|**使用者/網域冒充**|**反詐騙**|
-|:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |開啟  <br/> |關閉  <br/> |
-|B  <br/> |2  <br/> |關閉  <br/> |開啟  <br/> |
-
-如果郵件傳入並被識別為詐騙和使用者冒充郵件，而同一組使用者被納入原則 A 和原則 B 的範圍內，則該郵件會被視為詐騙郵件，但由於反詐騙功能已關閉，所以不會採取任何動作，SPOOF 會以比使用者冒充 (8) 更高的優先次序 (4) 執行。
-  
-若要套用其他類型的網路釣魚原則，您必須調整適用不同原則對象的設定。
-  
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>停用反詐騙功能的合法案例
 
 反詐騙功能可提供客戶更堅強的防護，以免受網路釣魚攻擊，因此強烈建議您不要停用反詐騙防護功能。 停用後，您可能解決了短期的誤判狀況，但長期下來，您將暴露在更多風險之中。 在寄件人端設定驗證，或在網路釣魚原則中進行調整的成本通常是一次性事件或僅需要最少的定期維護。 但是，從資料洩露或資產受損的網路釣魚攻擊中恢復的成本，卻高得多。
@@ -546,18 +518,8 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ### <a name="information-for-individual-users"></a>適用個別使用者的資訊
 
 個別使用者在與反詐騙安全提示的互動方式上會受到限制。 不過，為解決常見案例有幾件事是您可以做的。
-  
-### <a name="common-scenario-1---mailbox-forwarding"></a>常見案例 1 - 信箱轉寄功能
-
-如果您使用其他電子郵件服務，然後將電子郵件轉寄給 Office 365 或 Outlook.com，您的電子郵件可能會被標示為詐騙郵件，並收到紅色安全提示。 當轉寄站是 Outlook.com、Office 365，Gmail 或使用[ ARC 通訊協定](https://arc-spec.org)的任何其他服務之一時，Office 365 和 Outlook.com 方案會自動解決此問題。 但是，在部署該修復程式之前，使用者應使用「連結帳戶」功能直接匯入郵件，而不要使用轉寄選項。
-  
-若要在 Office 365 中設定連結帳戶，請選取 Office 365 Web 介面右上角的齒輪圖示 \> [郵件] \> [郵件] \> [帳戶] \> [連結帳戶]。
-  
-![Office 365 - 連結帳戶選項](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
-  
-在 Outlook.com 中，程序為齒輪圖示 \> [選項] \> [郵件] \> [帳戶] \> [連結帳戶]。
-  
-### <a name="common-scenario-2---discussion-lists"></a>常見案例 2 - 討論清單
+ 
+### <a name="common-scenario-1---discussion-lists"></a>常見案例 1 - 討論清單
 
 已知討論清單存在反詐騙問題，是因為它們轉寄郵件並修改郵件內容，但卻保留原始寄件者地址的方式。
   
@@ -659,7 +621,7 @@ example.com IN TXT "v=spf1 include:spf.example.com ?all"
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>如果您是郵寄清單擁有者，該怎麼辦？
 
-請參閱[常見案例 2 - 討論清單](#common-scenario-2---discussion-lists)這一節。
+請參閱[常見案例 1 - 討論清單](#common-scenario-1---discussion-lists)小節。
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>如果您是網際網路服務提供者 (ISP)、電子郵件服務提供者 (ESP) 或雲端主控服務等基礎結構提供者，該怎麼辦？
 

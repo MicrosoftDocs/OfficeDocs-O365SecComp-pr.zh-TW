@@ -3,7 +3,7 @@ title: 保留原則概觀
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容
-ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容。
+ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935298"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997139"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -31,7 +31,7 @@ ms.locfileid: "30935298"
     
 - **協助貴組織有效分享知識並提高靈活度**，方法為確保使用者只使用目前和相關的內容。 
     
-Office 365 中的保留原則可協助您實現所有這些目標。管理內容通常需要下列兩個動作：
+保留原則可協助您實現所有這些目標。管理內容通常需要下列兩個動作：
   
 - **保留**內容，以便無法在保留期間結束之前將其永久刪除。 
     
@@ -49,10 +49,10 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
   
 最後，有些組織可能需要遵守法規，例如證券交易委員會 (SEC) 法規 17a-4，要求在保留原則開啟之後，不能關閉或執行較不嚴格的限制。若要滿足這個需求，您可以使用「保留鎖定」。原則鎖定之後，任何人 (包括系統管理員) 均無法關閉原則或執行較不嚴格的限制。
   
-您可以在 Office 365 安全性與合規性中心的 [保留]**** 頁面上建立及管理保留原則。 
-  
-![安全性與合規性中心內的保留頁面](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
-  
+您可以在以下位置建立和管理保留原則：
+
+- Microsoft 365 合規性中心的 [原則]**** 頁面。
+- Office 365 安全性與合規性中心的 [資料控管]**** 下的 [保留]**** 頁面。
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留原則如何就地使用內容
 
@@ -322,7 +322,7 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
 
 單一保留原則可以輕鬆地套用到 Office 365 中的整個組織和位置，包括 Exchange Online、SharePoint Online、商務用 OneDrive 和 Office 365 群組。如果您需要保留或刪除 Office 365 中任何位置的內容，則我們建議您使用保留原則。(您也可以使用標籤與保留設定搭配 - 如需詳細資訊，請參閱[標籤概觀](labels.md) (英文)。)
   
-有數個其他功能，先前用來保留或刪除 Office 365 中的內容。列示於下。這些功能將繼續並排使用在安全性與合規性中心建立的保留原則和標籤。但繼續進行時，如需控管資料，我們建議您使用保留原則或標籤，而不是所有這些功能。保留原則是可以同時在 Office 365 保留和刪除資料的唯一功能。
+有一些之前用來保留或刪除 Office 365 中的內容的其他功能。 如下所示。 這些功能會隨著保留原則和保留標籤繼續運作。 但建議您使用保留原則或標籤 (而非所有這些功能) 來進行資料控管。 保留原則是唯一可以同時保留及刪除 Office 365 中的內容之功能。
   
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -346,15 +346,15 @@ Office 365 中的保留原則可協助您實現所有這些目標。管理內容
     
 - [資料管理原則](intro-to-info-mgmt-policies.md) (機器翻譯) (僅限刪除) 
     
-請注意，如果您先前為了控管資料而使用任何 eDiscovery 保留，則應該對主動合規性改用保留原則。您應該只對 eDiscovery 使用在安全性與合規性中心建立的保留。
+請注意，如果您之前曾為了資料控管而使用任何 eDiscovery 保留，您應為主動合規性改用保留原則。 您應僅對電子文件探索使用保留。
   
 ### <a name="retention-policies-override-information-management-policies"></a>保留原則會覆寫資訊管理原則
 
-在 SharePoint 網站中，您可以使用[資訊管理原則](intro-to-info-mgmt-policies.md)来保留內容。如果您將在安全性與合規性中心建立的保留原則套用至已對清單或文件庫使用內容類型原則或資訊管理原則的網站，則在保留原則生效時，會忽略這些原則。 
+在 SharePoint 網站中，您可能會使用[資訊管理原則](intro-to-info-mgmt-policies.md)來保留內容。 如果您將保留原則套用至已對清單或文件庫使用內容類型原則或資訊管理原則的站台，這些原則將會被忽略，而保留原則會有效用。 
   
 ## <a name="what-happened-to-preservation-policies"></a>保留原則發生了什麼情況？
 
-如果您是使用保留原則，則該原則會自動轉換為只使用保留動作的保留原則 - 此原則並不會刪除內容。保留原則會繼續運作，並保留您的內容，而不需要您進行任何變更。您可以在安全性與合規性中心的 [保留]**** 頁面中找到這些原則。您可以編輯保留原則來變更保留期間，但無法進行其他變更，例如新增或移除位置。 
+如果您過去使用的是保留原則 (preservation policy)，該原則現已自動轉換為只使用保留動作的保留原則 (retention policy)，即該原則不會刪除內容。 保留原則將繼續運作，並保留您的內容，而不會要求您進行任何變更。 您可以在 Microsoft 365 合規性中心的 [原則]**** 頁面，或在安全性合規性中心的 [資料控管]**** 下的 [保留]**** 頁面上尋找這些原則。 您可以編輯保留原則以變更保留期間，但您不能進行其他變更，例如新增或移除位置。 
   
 ## <a name="permissions"></a>權限
 

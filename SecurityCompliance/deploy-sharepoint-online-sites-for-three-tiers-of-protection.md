@@ -3,7 +3,7 @@ title: 部署三種保護層級的 SharePoint Online 網站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/14/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：建立及設定各種資訊保護等級的 SharePoint Online 小組網站。
-ms.openlocfilehash: c39b1d85241c2d21c196e0c2c7f0d5c70149de5c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 69da99c29d3527285547ed824e45fb7aa31e1910
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220303"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999256"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署三種保護層級的 SharePoint Online 網站
 
@@ -38,7 +38,7 @@ ms.locfileid: "30220303"
 
 若要建立具有公用存取和權限的基準 SharePoint Online 小組網站，請執行下列作業：
   
-1. 使用也可用來管理 SharePoint Online 小組網站的帳戶 (SharePoint Online 系統管理員) 登入 Office 365 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用也可用來管理 SharePoint Online 小組網站的帳戶 (SharePoint Online 系統管理員) 登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -62,7 +62,7 @@ ms.locfileid: "30220303"
 
 若要建立具有私人存取和權限的基準 SharePoint Online 小組網站，請執行下列作業：
   
-1. 使用也可用來管理 SharePoint Online 小組網站的帳戶 (SharePoint Online 系統管理員) 登入 Office 365 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用也可用來管理 SharePoint Online 小組網站的帳戶 (SharePoint Online 系統管理員) 登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -126,7 +126,7 @@ ms.locfileid: "30220303"
   
 接下來，使用下列步驟建立 SharePoint Online 小組網站。
   
-1. 使用也可用來管理 SharePoint Online 小組網站的帳戶 (SharePoint Online 系統管理員) 登入 Office 365 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用也可用來管理 SharePoint Online 小組網站的帳戶 (SharePoint Online 系統管理員) 登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -144,7 +144,7 @@ ms.locfileid: "30220303"
     
 接下來，從新的 SharePoint Online 小組網站，使用下列步驟設定權限。
   
-1. 決定 IT 系統管理員或將負責回應網站及向網站提出存取要求之其他人員的使用者主體名稱 (UPN) (belindan@contoso.com 為 UPN 範例)。在此寫下該 UPN：![](./media/Common-Images/TableLine.png)。
+1. 決定 IT 系統管理員或其他將負責回應網站及向網站提出存取要求之人員的使用者主體名稱 (UPN) (belindan@contoso.com 為 UPN 範例)。 
     
 2. 在工具列中，按一下設定圖示，然後按一下 [網站權限]****。
     
@@ -264,8 +264,7 @@ ms.locfileid: "30220303"
   
 ## <a name="next-step"></a>下一步
 
-[使用 Azure 資訊保護來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-azure-information-protection.md)
-
+[使用 Office 365 標籤與 DLP 來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>另請參閱
 
@@ -274,7 +273,3 @@ ms.locfileid: "30220303"
 [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

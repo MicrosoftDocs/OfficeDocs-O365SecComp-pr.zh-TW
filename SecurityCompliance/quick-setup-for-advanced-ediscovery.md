@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: '了解如何從 Office 365 安全性與合規性中心存取 Office 365 進階電子文件探索，以及檢閱使用進階電子文件探索的一般工作流程。  '
-ms.openlocfilehash: 69c3b7d281576462ed49bb5bf6306002eab63ba5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218743"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999766"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>快速設定 Office 365 進階電子文件探索
 
-此設定一節會顯示 Office 365 安全性與合規性中心的電子文件探索管理員如何開始使用進階電子文件探索。假設已有足夠運用這兩者的知識。
+此設定小節將為 Microsoft 365 安全性與合規性中心的電子文件探索管理員說明如何開始使用「進階電子文件探索」。 本文假設使用者具備這兩者的工作知識。
   
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
