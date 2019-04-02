@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合規性中心，包括它的內容、 如何取得，以及接下來的步驟。
-ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
+ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001036"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026314"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>歡迎使用所有新的 Microsoft 365 合規性中心
 
@@ -68,7 +68,7 @@ ms.locfileid: "31001036"
 
 |  |  |
 |---------|---------|
-|![在 Microsoft 365 合規性中心中的導覽](media/m365-compliance-center-leftnav.png)  |<br/><br/> 移至**提醒**，以檢視及解析[提醒](alerts.md)<br/><br/>請造訪**監視 & 報告**以檢視有關[標籤使用量和保留](sensitivity-labels.md)、 [DLP 原則比對，並覆寫](view-the-dlp-reports.md)、[共用的檔案](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的協力廠商應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)，等等。<br/><br/>依序展開 [**分類**] 區段中，以存取您的[標籤](labels.md)、[標籤原則](sensitivity-labels.md#what-label-policies-can-do)、[敏感資訊類型](what-the-sensitive-information-types-look-for.md)和[標籤分析](view-label-activity-for-documents.md)。<br/><br/>移至**原則**來檢視[提醒](alerts.md)，以及存取您的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)原則。<br/><br/> 使用 [**解決方案**] 區段中的連結，即可存取貴組織的合規性解決方案。 這些包括： <br/>[資料控管 > 配置](disposition-reviews.md)<br/>[eDiscovery （預覽）](compliance20/overview-ediscovery-20.md)<br/>[監督](supervision-policies.md)<br/>[資料調查](compliance20/manage-data-spillage-incidents.md)<br/>[資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![在 Microsoft 365 合規性中心中的導覽](media/m365-compliance-center-leftnav.png)  |<br/><br/> 移至**提醒**，以檢視及解析[提醒](alerts.md)<br/><br/>請造訪**監視 & 報告**以檢視有關[標籤使用量和保留](sensitivity-labels.md)、 [DLP 原則比對，並覆寫](view-the-dlp-reports.md)、[共用的檔案](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的協力廠商應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)，等等。<br/><br/>依序展開 [**分類**] 區段中，以存取您的[標籤](labels.md)、[標籤原則](sensitivity-labels.md#what-label-policies-can-do)、[敏感資訊類型](what-the-sensitive-information-types-look-for.md)和[標籤分析](view-label-activity-for-documents.md)。<br/><br/>移至**原則**來檢視[提醒](alerts.md)，以及存取您的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)原則。<br/><br/> 使用 [**解決方案**] 區段中的連結，即可存取貴組織的合規性解決方案。 這些包括： <br/>[資料控管 > 配置](disposition-reviews.md)<br/>[eDiscovery （預覽）](compliance20/overview-ediscovery-20.md)<br/>[監督](supervision-policies.md)<br/>[資料調查](datainvestigations/overview-data-investigations.md)<br/>[資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>如何取得這？
