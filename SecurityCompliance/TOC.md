@@ -387,6 +387,47 @@
 #### [使用進階電子文件探索公用程式](use-advanced-ediscovery-utilities.md)
 #### [執行報告](run-reports-in-advanced-ediscovery.md)
 
+# [管理資料調查](datainvestigations/overview-data-investigations.md)
+## [版本資訊](datainvestigations/data-investigations-release-notes.md)
+## [管理資料外洩事件](datainvestigations/manage-data-spillage-incidents.md)
+## [建立新的調查](datainvestigations/create-new-investigation.md)
+ 
+## [搜尋調查中的資料](datainvestigations/search-for-data.md)
+### [建立搜尋查詢](datainvestigations/build-search-queries.md)
+### [搜尋統計資料](datainvestigations/search-statistics.md)
+
+## [檢閱辨識項中的資料](datainvestigations/review-data-in-evidence.md)
+### [查詢資料](datainvestigations/evidence-query.md)
+### [標記文件](datainvestigations/tag-documents.md)
+### [標註及校訂文件](datainvestigations/annotate-and-redact-documents.md)
+### [載入非 Office 365 資料](datainvestigations/load-non-office365-data.md)
+### [處理資料時的錯誤補救](datainvestigations/error-remediation.md)
+
+## [執行分析以更快速地調查](datainvestigations/run-analytics-to-investigate-faster.md)
+### [電子郵件執行緒](datainvestigations/email-threading.md)
+### [近似重複項偵測](datainvestigations/near-duplicates.md)
+### [主題](datainvestigations/themes.md)
+### [使用相關性模組](datainvestigations/use-relevance-module.md)
+
+## [管理調查中可疑的人員](datainvestigations/manage-people-of-interest.md)
+### [對調查中人員的資料編製索引](datainvestigations/index-data-people-of-interest.md)
+### [檢視調查中人員的稽核活動](datainvestigations/view-people-of-interest-activity.md)
+
+## [從調查匯出資料](datainvestigations/export-data.md)
+### [從辨識項匯出文件](datainvestigations/export-documents-from-incident.md)
+### [下載匯出工作](datainvestigations/download-export-jobs.md)
+
+## [設定資料調查的設定](datainvestigations/configure-settings-datainvestigations.md)
+### [從調查新增或移除成員](datainvestigations/add-remove-members.md)
+### [設定搜尋和分析設定](datainvestigations/configure-search-analytics-settings.md)
+### [關閉或刪除調查](datainvestigations/close-or-delete-investigation.md)
+
+## 資料調查參考
+### [資料調查中的限制](datainvestigations/limits-datainvestigations.md)
+### [支援的檔案類型](datainvestigations/supported-filetypes-datainvestigations.md)
+### [下載中繼資料欄位](datainvestigations/document-metadata-fields.md)
+### [管理工作](datainvestigations/manage-jobs.md)
+
 # [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
 ## [管理信箱稽核](enable-mailbox-auditing.md)
