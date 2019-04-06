@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是偵測到郵件與垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。 如何 ZAP 執行此動作，則偵測到的惡意內容類型而定。
-ms.openlocfilehash: b49f7e3b5effec7b67daf6ab8acbf049705a4841
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670578"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479629"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -34,19 +34,19 @@ ZAP 是隨附於預設隨附於任何 Office 365 訂用帳戶，包含 Exchange 
 
 ZAP 已開啟根據預設，但必須符合下列條件：
   
-- **垃圾郵件動作**設為**移至垃圾郵件] 資料夾的郵件**。 <br/>您也可以建立僅適用於一群使用者如果您不想所有信箱移轉至雲端過濾的 ZAP 新垃圾郵件篩選原則。
+- **垃圾郵件動作**設為**移至垃圾郵件] 資料夾的郵件**。 您也可以建立僅適用於一群使用者如果您不想所有信箱移轉至雲端過濾的 ZAP 新垃圾郵件篩選原則。
 
 - 使用者有保留其預設垃圾郵件設定]，且已不會關閉垃圾郵件保護。 （如需在 Outlook 中的使用者選項的詳細資訊，請參閱[變更的垃圾郵件篩選器中的保護層級](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b)）。 
   
-## <a name="how-does-zap-work"></a>ZAP 的運作方式？
+## <a name="how-zap-works"></a>如何時能量光束的運作方式
 
-Office 365 更新反垃圾郵件引擎和惡意程式碼中的簽章即時每日。 不過，您的使用者仍可能會收到惡意的郵件傳遞到不同的原因，包括內容 weaponized 之後會傳遞至使用者的收件匣。 ZAP 解決此問題持續監視更新的 Office 365 垃圾郵件和惡意程式碼簽章。 ZAP 可以找出並移除先前已傳遞的郵件已在使用者的收件匣中。 
+Office 365 更新反垃圾郵件引擎和惡意程式碼中的簽章即時每日。 不過，您的使用者仍可能會收到惡意的郵件傳遞到不同的原因，包括內容 weaponized 之後會傳遞至使用者的收件匣。 ZAP 解決此問題持續監視更新的 Office 365 垃圾郵件和惡意程式碼簽章。 ZAP 可以找出並移除先前已傳遞的郵件已在使用者的收件匣中。
 
-- 識別為垃圾郵件的郵件，ZAP 會將未閱讀的郵件移至使用者的垃圾郵件資料夾。 
+- 識別為垃圾郵件的郵件，ZAP 會將未閱讀的郵件移至使用者的垃圾郵件資料夾。
 
 - 識別為釣魚程式的郵件，ZAP 會將郵件移至使用者的垃圾郵件] 資料夾，不論是否已讀取電子郵件。
 
-- 新偵測到惡意程式碼，ZAP 會移除電子郵件，不論是否已讀取電子郵件附件。 
+- 新偵測到惡意程式碼，ZAP 會移除電子郵件，不論是否已讀取電子郵件附件。
   
 ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息時，它們不會通知。
   
@@ -58,20 +58,20 @@ ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息�
 
 2. **威脅管理**] 下選擇 [**反垃圾郵件**]。
 
-3. 檢閱標準設定。 
+3. 檢閱標準設定。
 
-4. 如果您想要自訂您的設定，選取 [**自訂**] 索引標籤，並開啟 [**自訂設定**。 編輯您的設定，如果您想，選擇 [ **+ 建立原則**來新增新的原則。 
-    
+4. 如果您想要自訂您的設定，選取 [**自訂**] 索引標籤，並開啟 [**自訂設定**。 編輯您的設定，如果您想，選擇 [ **+ 建立原則**來新增新的原則。
+
 ## <a name="to-see-if-zap-moved-your-message"></a>若要查看 ZAP 是否移動郵件
 
 如果您想要看到 ZAP 如果移動您的郵件，您可以使用[威脅保護狀態報表](view-email-security-reports.md#threat-protection-status-report)（或[威脅總管](use-explorer-in-security-and-compliance.md)）。
-    
+
 ## <a name="to-disable-zap"></a>若要停用 ZAP
   
 如果您想要停用您 Office 365 租用戶時能量光束或一組使用者，使用[Set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)，EOP 指令程式的**ZapEnabled**參數。
-    
+
 在下列範例中，ZAP 已停用名為"Test"的內容篩選原則。
-    
+
 ```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
@@ -92,8 +92,6 @@ ZAP 不會將郵件移至隔離區從收件匣這一次。
   
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
+[Office 365 電子郵件反垃圾郵件保護](anti-spam-protection.md)
   
-[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常](reduce-spam-email.md)
-  
-
+[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](reduce-spam-email.md)

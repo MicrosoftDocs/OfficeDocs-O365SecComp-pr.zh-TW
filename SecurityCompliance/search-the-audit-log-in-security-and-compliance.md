@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 安全與規範中心搜尋稽核記錄
+title: 在安全性 & 規範中心搜尋稽核記錄
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用 Office 365 安全性 & 合規性中心來搜尋整合的稽核記錄] 來檢視您的 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: '使用安全性 & 合規性中心來搜尋整合的稽核記錄] 來檢視您的 Office 365 組織中的使用者和系統管理員活動。 '
+ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935348"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479679"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>在 Office 365 安全性 & 規範中心搜尋稽核記錄
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性 & 規範中心搜尋稽核記錄
 
 ## <a name="introduction"></a>簡介
 
@@ -43,7 +43,7 @@ ms.locfileid: "30935348"
     
 - 在 Sway 中的使用者和系統管理員活動
     
-- 在 Office 365 安全性 & 合規性中心中的 eDiscovery 活動
+- 在安全性與合規性中心的 eDiscovery 活動
     
 - Power BI 中的使用者和系統管理員活動
     
@@ -66,15 +66,15 @@ ms.locfileid: "30935348"
 
 請務必先閱讀下列項目之前開始搜尋 Office 365 稽核記錄。
   
-- 您 （或另一個系統管理員） 必須先開啟稽核記錄，才能開始搜尋 Office 365 稽核記錄檔。 若要將它開啟，只是按一下 [**開始錄製使用者和系統管理員活動**安全性**稽核記錄搜尋**] 頁面上&amp;合規性中心。 （如果您沒有看到此連結，稽核已開啟為您的組織。）您開啟之後，會顯示訊息，指出準備稽核記錄檔以及您可以在幾個小時後準備已完成執行搜尋。 您只需要執行這項操作一次。 
+- 您 （或另一個系統管理員） 必須先開啟稽核記錄，才能開始搜尋 Office 365 稽核記錄檔。 若要將它開啟，只要按一下 [**開始錄製使用者和系統管理員活動**安全性 & 合規性中心中的**稽核記錄搜尋**] 頁面上。 （如果您沒有看到此連結，稽核已開啟為您的組織。）您開啟之後，會顯示訊息，指出準備稽核記錄檔以及您可以在幾個小時後準備已完成執行搜尋。 您只需要執行這項操作一次。 
     
     > [!NOTE]
     > 我們正在開啟依預設稽核。 在那之前，您可以將其開啟為先前所述。 
   
-- 您必須獲指派 「 僅檢視稽核記錄檔] 或 [稽核記錄檔角色在 Exchange Online 來搜尋 Office 365 稽核記錄。 根據預設，這些角色被指派給在 Exchange 系統管理中心中的**權限**] 頁面上相符性管理] 和 [組織管理角色群組。 若要讓使用者能夠搜尋 Office 365 稽核記錄的最低權限，您可以自訂角色群組 Exchange Online 中建立、 新增 「 僅檢視稽核記錄檔] 或 [稽核記錄 」 角色，並再將使用者新增為新的角色群組的成員。 如需詳細資訊，請參閱[管理角色群組在 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+- 您必須獲指派 「 僅檢視稽核記錄檔] 或 [稽核記錄檔角色在 Exchange Online 來搜尋 Office 365 稽核記錄。 根據預設，這些角色被指派給在 Exchange 系統管理中心中的**權限**] 頁面上相符性管理] 和 [組織管理角色群組。 請注意，在 Office 365 和 Microsoft 365 的全域系統管理員會自動新增為 Organization Management 角色群組的成員在 Exchange Online。 若要讓使用者能夠搜尋 Office 365 稽核記錄的最低權限，您可以自訂角色群組 Exchange Online 中建立、 新增 「 僅檢視稽核記錄檔] 或 [稽核記錄 」 角色，並再將使用者新增為新的角色群組的成員。 如需詳細資訊，請參閱[管理角色群組在 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
     
     > [!IMPORTANT]
-    > 如果將使用者指派安全性**權限**] 頁面上的 「 僅檢視稽核記錄 」 或 「 稽核記錄檔角色&amp;合規性中心，他們將無法搜尋的 Office 365 稽核記錄檔。 您必須指派 Exchange Online 中的權限。 這是因為基礎指令程式用來搜尋稽核記錄是 Exchange Online cmdlet。 
+    > 如果您在安全性 & 合規性中心中的 [**權限**] 頁面上的僅檢視稽核記錄檔] 或 [稽核記錄檔角色指派使用者，他們將無法搜尋 Office 365 稽核記錄。 您必須指派 Exchange Online 中的權限。 這是因為基礎指令程式用來搜尋稽核記錄是 Exchange Online cmdlet。 
   
 - 由使用者或系統管理員執行稽核的活動時，會產生稽核記錄，並且儲存在貴組織的 Office 365 稽核記錄檔中。 稽核記錄會保留 （而且可搜尋稽核記錄中） 的時間長度，取決於您的 Office 365 訂閱，並特別指定給特定使用者的授權類型。
 
@@ -99,7 +99,7 @@ ms.locfileid: "30935348"
 
     如需詳細資訊，請參閱[關閉 Office 365 中的稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
     
-- 如先前所述，基礎指令程式用來搜尋稽核記錄會是 Exchange Online 指令程式，也就是**Search-unifiedauditlog**。 這表示您可以使用此指令程式來搜尋 Office 365 稽核記錄，而不是使用 [**稽核記錄搜尋**] 頁面上，安全性&amp;合規性中心。 您必須在遠端 PowerShell 連線至 Exchange Online 組織中執行此 cmdlet。 如需詳細資訊，請參閱 < <b0>Search-unifiedauditlog</b0>。
+- 如先前所述，基礎指令程式用來搜尋稽核記錄會是 Exchange Online 指令程式，也就是**Search-unifiedauditlog**。 這表示您可以使用此指令程式來搜尋而不是使用安全性 & 合規性中心中的 [**稽核記錄搜尋**] 頁面上的 Office 365 稽核記錄檔。 您必須在遠端 PowerShell 連線至 Exchange Online 組織中執行此 cmdlet。 如需詳細資訊，請參閱 < <b0>Search-unifiedauditlog</b0>。
     
 - 如果您想要以程式設計方式從 Office 365 稽核記錄檔下載資料，我們建議您使用 Office 365 管理活動 API，而不是使用 PowerShell 指令碼。 Office 365 管理活動 API 為 REST web 服務可供您開發作業、 安全性和規範監視解決方案的組織。 如需詳細資訊，請參閱[Office 365 管理活動 API 參考資料](https://go.microsoft.com/fwlink/?linkid=852309)。
     
@@ -120,13 +120,13 @@ ms.locfileid: "30935348"
     |Microsoft Stream  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |安全性&amp;合規性中心  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |安全規範中心  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online 和商務用 OneDrive  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |工作場所分析<br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> || 
     |Yammer  <br/> ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-- Azure Active Directory (Azure AD) 是 Office 365 的目錄服務。 整合的稽核記錄檔包含使用者、 群組、 應用程式、 網域及 Office 365 系統管理中心中，或在 Azure 中執行的目錄活動管理入口網站。 Azure AD 事件的完整清單，請參閱[Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
+- Azure Active Directory (Azure AD) 是 Office 365 的目錄服務。 整合的稽核記錄檔包含使用者、 群組、 應用程式、 網域及執行在 Microsoft 365 系統管理中心，或在 Azure 中的目錄活動管理入口網站。 Azure AD 事件的完整清單，請參閱[Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
     
 - Exchange Online 的稽核記錄檔包含兩種類型的事件： 在 Exchange 系統管理事件 （系統管理員所採取的動作） 與信箱事件 （在信箱上的使用者所採取的動作）。 請注意預設未啟用信箱稽核。 它必須啟用每個使用者信箱，才能信箱事件可以在 Office 365 稽核記錄搜尋。 如需信箱稽核和信箱稽核記錄的動作的詳細資訊，請參閱 <<c0>啟用 Office 365 中的稽核的信箱。
     
@@ -147,14 +147,14 @@ ms.locfileid: "30935348"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步驟 1： 執行稽核記錄搜尋
 
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
     
     > [!TIP]
-    > 使用私人的瀏覽工作階段 （不在一般工作階段） 來存取 Office 365 安全性&amp;合規性中心，因為這會防止您目前登入與所用的認證。 若要開啟 [InPrivate 瀏覽工作階段在 Internet Explorer 或 Microsoft Edge 中，只需按 CTRL + SHIFT + P。 若要在 Google Chrome （稱為 incognito 視窗） 中開啟私人瀏覽工作階段，請按 CTRL + SHIFT + N。 
+    > 使用私人瀏覽工作階段 （不在一般工作階段） 來存取安全性 & 合規性中心，因為這會防止您目前登入與所用的認證。 若要開啟 [InPrivate 瀏覽工作階段在 Internet Explorer 或 Microsoft Edge 中，只需按 CTRL + SHIFT + P。 若要在 Google Chrome （稱為 incognito 視窗） 中開啟私人瀏覽工作階段，請按 CTRL + SHIFT + N。 
   
 2. 使用公司或學校帳戶登入 Office 365。
     
-3. 安全性的左窗格中&amp;合規性中心，按一下 [**搜尋&amp;調查**，然後按一下 [**稽核記錄搜尋**。
+3. 在安全性 & 合規性中心的左窗格中，按一下 [**搜尋**]，然後按一下 [**稽核記錄搜尋**。
     
     會顯示 [**稽核記錄搜尋**] 頁面。 
     
@@ -288,7 +288,7 @@ ms.locfileid: "30935348"
 
 ## <a name="audited-activities"></a>稽核的活動
 
-本節中的表格說明稽核 Office 365 中的活動。 您可以藉由中安全性 & 規範中心搜尋稽核記錄搜尋這些事件。
+本節中的表格說明稽核 Office 365 中的活動。 您可以藉由在安全性與合規性中心搜尋稽核記錄搜尋這些事件。
   
 這些表格群組相關的活動或從特定的 Office 365 服務的活動。 表格包含 [**活動**] 下拉式清單中顯示的易記名稱及對應的作業，當您匯出搜尋結果出現在稽核記錄的詳細資訊和 CSV 檔案的名稱。 如需詳細資訊的說明，請參閱[在 Office 365 的詳細的內容稽核記錄](detailed-properties-in-the-office-365-audit-log.md)。
   
@@ -310,7 +310,7 @@ ms.locfileid: "30935348"
   
 下表說明 SharePoint Online 和商務用 OneDrive 中的檔案和頁面活動。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |存取的檔案  <br/> |FileAccessed  <br/> |使用者或系統帳戶存取檔案。  <br/> |
 |(無)  <br/> |FileAccessedExtended  <br/> |這與 「 存取檔案 」 (FileAccessed) 活動。 相同的人持續存取檔案的一段時間 （最多 3 小時） 時，會記錄 FileAccessedExtended 事件。 記錄 FileAccessedExtended 事件的目的是要減少 FileAccessed 事件持續存取檔案時所記錄的數目。 這可協助降低的多個 FileAccessed 記錄功能基本上是相同的雜訊使用者活動，並可讓您專注於初始 （和更重要） FileAccessed 事件。  <br/> |
@@ -340,7 +340,7 @@ ms.locfileid: "30935348"
   
 下表說明 SharePoint Online 和商務用 OneDrive 中的資料夾活動。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |複製的資料夾  <br/> |FolderCopied  <br/> |使用者會從網站中資料夾複製到 SharePoint 或商務用 OneDrive 中的另一個位置。  <br/> |
 |建立的資料夾  <br/> |FolderCreated  <br/> |使用者在網站上建立資料夾。  <br/> |
@@ -360,13 +360,13 @@ ms.locfileid: "30935348"
 > [!NOTE]
 > 使用者可以成為 [*成員*] 或 [*訪客*的使用者物件的 UserType 屬性為基礎。 成員通常員工，而來賓通常是組織外的一目了然。 當使用者可接受的共用邀請 （且已不是您組織的一部分） 時，就會為他們來賓帳戶建立貴組織的目錄中。 一旦來賓使用者帳戶目錄中，可能會直接與他們共用資源，（而不需要邀請）。 
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |接受存取要求  <br/> |AccessRequestAccepted  <br/> |存取網站、 資料夾或文件已接受邀請，並要求使用者授與存取權。  <br/> |
 |公認的共用邀請  <br/> |SharingInvitationAccepted  <br/> |使用者 （成員或來賓） 接受的共用邀請，並已授與給資源的存取權。 此事件資訊包含獲邀使用者與用來接受邀請的電子郵件地址 （它們可能會不同）。 這項活動通常伴隨告訴您，如何已授與使用者存取的資源，例如，將使用者新增至具有存取的資源群組的第二個事件。  <br/> |
 |網站集合已新增權限等級  <br/> |PermissionLevelAdded  <br/> |權限等級已新增至網站集合。  <br/> |
 |使用者新增至安全連結  <br/> |AddedToSecureLink  <br/> |使用者已新增至實體可以使用這個安全的共用連結的清單。  <br/> |
-|封鎖的共用邀請  <br/> |SharingInvitationBlocked  <br/> | 因為 [允許] 或 [拒絕外部共用的目標使用者的網域為基礎的外部共用原則封鎖您組織中的使用者所傳送的共用邀請。 在此情況下，共用邀請，所以封鎖郵件：  <br/>  允許的網域清單不包含目標使用者的網域。  <br/>  或  <br/>  目標使用者的網域包含在封鎖網域清單中。  <br/>  如需允許或封鎖的網域為基礎的外部共用的詳細資訊，請參閱 < <b0>SharePoint Online 和商務用 OneDrive 中共用的受限的網域</b0>。  <br/> |
+|封鎖的共用邀請  <br/> |SharingInvitationBlocked  <br/> | 因為 [允許] 或 [拒絕外部共用的目標使用者的網域為基礎的外部共用原則封鎖您組織中的使用者所傳送的共用邀請。 在此情況下，共用邀請，所以封鎖郵件：  <br/>  允許的網域清單不包含目標使用者的網域。  <br/>  Or  <br/>  目標使用者的網域包含在封鎖網域清單中。  <br/>  如需允許或封鎖的網域為基礎的外部共用的詳細資訊，請參閱 < <b0>SharePoint Online 和商務用 OneDrive 中共用的受限的網域</b0>。  <br/> |
 |中斷權限層級繼承  <br/> |PermissionLevelsInheritanceBroken  <br/> |項目已變更，使它不再繼承其父系的權限等級。  <br/> |
 |中斷共用繼承  <br/> |SharingInheritanceBroken  <br/> |項目已變更，使它不再繼承其父共用權限。  <br/> |
 |建立公司可共用連結  <br/> |CompanyLinkCreated  <br/> |使用者建立資源的全公司的連結。 全公司的連結只可供您組織中的成員。 他們無法使用來賓。  <br/> |
@@ -398,7 +398,7 @@ ms.locfileid: "30935348"
   
 下表列出 SharePoint Online 和商務用 OneDrive 中的檔案同步處理活動。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |允許電腦同步處理檔案  <br/> |ManagedSyncClientAllowed  <br/> |使用者成功建立與網站的同步處理關係。 同步處理關係是成功，因為使用者的電腦所新增的網域 （稱為 「*安全的收件者清單*） 可以存取您組織中的文件庫清單到網域的成員。  <br/> 如需此功能的詳細資訊，請參閱 <<c0>使用 Windows PowerShell cmdlet 來啟用的網域已在安全收件者清單中的 OneDrive 同步處理。  <br/> |
 |封鎖電腦進行同步處理檔案  <br/> |UnmanagedSyncClientBlocked  <br/> |使用者嘗試建立的網站不是貴組織的網域的成員電腦同步處理關係或是尚未新增至清單中網域的網域的成員 (稱為 「*安全收件者清單)* ，可以存取文件在您的組織中的文件庫。 不允許同步處理關係，以及使用者的電腦會封鎖同步處理、 下載，或上傳的文件庫的檔案。  <br/> 如需此功能的資訊，請參閱 <<c0>使用 Windows PowerShell cmdlet 來啟用的網域已在安全收件者清單中的 OneDrive 同步處理。  <br/> |
@@ -412,10 +412,10 @@ ms.locfileid: "30935348"
   
 下表列出所得網站管理工作，在 SharePoint Online 中的事件。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |新增免除使用者代理程式  <br/> |ExemptUserAgentSet  <br/> |在 SharePoint 或全域系統管理員將使用者代理程式新增至 SharePoint 系統管理中心的免除使用者代理程式的清單。  <br/> |
-|新增的網站集合管理員  <br/> |SiteCollectionAdminAdded  <br/> |網站集合管理員或擁有者將人員新增為網站的網站集合管理員。 網站集合管理員擁有網站集合及其所有子網站的完整控制權限。 當系統管理員可讓自己存取使用者的 OneDrive 帳戶中 （藉由編輯 SharePoint 系統管理中心或[使用 Office 365 系統管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)中的使用者設定檔），也會記錄此活動。 <br/> |
+|新增的網站集合管理員  <br/> |SiteCollectionAdminAdded  <br/> |網站集合管理員或擁有者將人員新增為網站的網站集合管理員。 網站集合管理員擁有網站集合及其所有子網站的完整控制權限。 當系統管理員可讓自己存取使用者的 OneDrive 帳戶中 （藉由編輯 SharePoint 系統管理中心或[使用 Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)中的使用者設定檔），也會記錄此活動。 <br/> |
 |(無)  <br/> |SiteCollectionAdminRemoved <br/> |網站集合管理員或擁有者會移除為網站的網站集合管理員的人員。 當系統管理員自行從清單中移除的網站集合管理員使用者的 OneDrive 帳戶 （藉由編輯 SharePoint 系統管理中心中的使用者設定檔），也會記錄此活動。  請注意，若要傳回此活動的稽核記錄搜尋結果中，您要搜尋的所有活動。 <br/> |
 |新增的使用者或群組至 SharePoint 群組  <br/> |AddedToGroup  <br/> |使用者新增至 SharePoint 群組的成員或來賓。 這可能已經故意巨集指令或另一個活動，例如共用事件的結果。  <br/> |
 |允許使用者建立群組  <br/> |AllowGroupCreationSet  <br/> |網站管理員或擁有者會新增至網站，可讓使用者權限等級指派該權限建立該網站的群組。  <br/> |
@@ -450,15 +450,15 @@ ms.locfileid: "30935348"
   
 下表列出的活動，可記錄信箱稽核記錄。 會記錄信箱擁有者、 委派的使用者或系統管理員所執行的信箱活動。 根據預設，Office 365 中的信箱稽核無法開啟。 信箱稽核記錄必須開啟每一個信箱將會記錄信箱活動之前。 如需詳細資訊，請參閱 <<c0>啟用 Office 365 中的稽核的信箱。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |新增的委派信箱權限  <br/> |Add-mailboxpermission  <br/> |系統管理員指派給使用者 （稱為 「 代理人 」） 的 FullAccess 信箱權限給其他人的信箱。 FullAccess 權限可讓代理人開啟另一個使用者的信箱，並讀取和管理信箱的內容。  <br/> |
 |分類為記錄的郵件  <br/> |ApplyRecordLabel<br/> |郵件被分類為記錄。 分類為記錄的內容保留標籤手動或自動套用至郵件會發生此錯誤。<br/> |
-|複製到另一個資料夾的郵件  <br/> |複製  <br/> |郵件已複製到另一個資料夾。  <br/> |
+|複製到另一個資料夾的郵件  <br/> |Copy  <br/> |郵件已複製到另一個資料夾。  <br/> |
 |建立的信箱項目  <br/> |Create  <br/> |在信箱; 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。 請注意不稽核建立、 傳送或接收郵件。 此外，不稽核建立一個信箱資料夾。  <br/> |
 |在 Outlook web app 中建立新的收件匣規則  <br/> |NewInboxRule<br/> |<br/> |
 |從 [刪除的項目] 資料夾的已刪除郵件  <br/> |SoftDelete  <br/> |郵件已永久刪除，或從 [刪除的項目] 資料夾中刪除。 這些項目會移至 [可復原的項目] 資料夾。 當使用者選取它，並按下**Shift + Delete**，郵件也會移至 [可復原的項目] 資料夾。  <br/> |
-|移至另一個資料夾的郵件  <br/> |移動  <br/> |郵件已移到另一個資料夾。  <br/> |
+|移至另一個資料夾的郵件  <br/> |Move  <br/> |郵件已移到另一個資料夾。  <br/> |
 |移至刪除的項目] 資料夾的郵件  <br/> |MoveToDeletedItems  <br/> |已刪除的郵件，並將它移至 [刪除的項目] 資料夾。  <br/> |
 |修改的資料夾權限  <br/> |UpdateFolderPermissions  <br/> |已變更資料夾的權限。 資料夾的權限控制您組織中的哪些使用者可以存取信箱資料夾和資料夾中的郵件。  <br/> |
 |從信箱清除的郵件  <br/> |HardDelete  <br/> |郵件已清除從 [可復原的項目] 資料夾 （從信箱中永久刪除）。  <br/> |
@@ -475,7 +475,7 @@ ms.locfileid: "30935348"
   
 下表列出在 Sway 中的使用者和系統管理員活動。 Sway 是 Office 365 應用程式，可協助使用者收集、 格式化及分享想法、 故事，並在互動式、 web 式畫布上的簡報。 如需詳細資訊，請參閱[常見問題集關於 Sway-系統管理說明](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |已變更的 Sway 共用層級  <br/> |SwayChangeShareLevel  <br/> |會在使用者變更 Sway 的共用層級。 此事件會擷取使用者變更共用 Sway; 相關聯的範圍例如，與組織內公用。  <br/> |
 |建立的 Sway  <br/> |SwayCreate  <br/> |使用者建立 Sway。  <br/> |
@@ -486,19 +486,19 @@ ms.locfileid: "30935348"
 |啟用的 Sway 重複  <br/> |EnableDuplication  <br/> |使用者啟用重複的 Sway;預設會啟用使用者啟用重複的 Sway 的能力。  <br/> |
 |撤銷 Sway 共用  <br/> |SwayRevokeShare  <br/> |使用者會停止共用 Sway 利用撤銷存取權限。 撤銷存取變更 Sway 相關聯的連結。  <br/> |
 |共用的 Sway  <br/> |SwayShare  <br/> |使用者要共用的 Sway。 此事件會擷取按一下特定共用的目的地 Sway 的 [共用] 功能表內的使用者動作。 此事件不會指出使用者是否已完成的共用巨集指令。  <br/> |
-|關閉外部共用的 Sway  <br/> |SwayExternalSharingOff  <br/> |系統管理員會停用整個組織使用 Office 365 系統管理中心外部 Sway 的共用。  <br/> |
-|開啟外部共用的 Sway  <br/> |SwayExternalSharingOn  <br/> |管理員啟用整個組織使用 Office 365 系統管理中心外部 Sway 的共用。  <br/> |
-|關閉 Sway 服務  <br/> |SwayServiceOff  <br/> |系統管理員停用 Sway 為整個組織使用 Office 365 系統管理中心。  <br/> |
-|開啟 Sway 服務  <br/> |SwayServiceOn  <br/> |管理員為整個組織啟用 Sway，藉由使用 Office 365 系統管理中心 (預設為啟用服務的 Sway)。  <br/> |
+|關閉外部共用的 Sway  <br/> |SwayExternalSharingOff  <br/> |系統管理員會停用整個組織使用 Microsoft 365 系統管理中心外部 Sway 的共用。  <br/> |
+|開啟外部共用的 Sway  <br/> |SwayExternalSharingOn  <br/> |管理員啟用整個組織使用 Microsoft 365 系統管理中心外部 Sway 的共用。  <br/> |
+|關閉 Sway 服務  <br/> |SwayServiceOff  <br/> |系統管理員停用 Sway 為整個組織使用 Microsoft 365 系統管理中心。  <br/> |
+|開啟 Sway 服務  <br/> |SwayServiceOn  <br/> |管理員為整個組織啟用 Sway，藉由使用 Microsoft 365 系統管理中心 (預設為啟用服務的 Sway)。  <br/> |
 |檢視的 Sway  <br/> |SwayView  <br/> |使用者檢視 Sway。  <br/> |
 ||||
 
   
 ### <a name="user-administration-activities"></a>使用者管理活動
   
-下表列出會記錄系統管理員新增或變更的使用者帳戶使用 Office 365 系統管理中心或 Azure 管理入口網站時的使用者管理活動。
+下表列出會記錄系統管理員新增或變更的使用者帳戶使用 Microsoft 365 系統管理中心或 Azure 管理入口網站時的使用者管理活動。
   
-|**活動**|**Operation**|**描述**|
+|**Activity**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |新增的使用者  <br/> |新增使用者  <br/> |建立 Office 365 使用者帳戶。  <br/> |
 |已變更的使用者授權  <br/> |變更使用者授權  <br/> |指派授權給使用者變更的項目。 若要查看哪些授權已變更，請參閱 < 的相對應的<b0>更新使用者</b0>活動。  <br/> |
@@ -512,9 +512,9 @@ ms.locfileid: "30935348"
   
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 群組管理活動
   
-下表列出會記錄系統管理員或使用者建立或變更 Office 365 群組時，或當系統管理員會使用在 Office 365 系統管理中心或 Azure 管理入口網站建立安全性群組的群組管理活動。 如需 Office 365 中群組的詳細資訊，請參閱[檢視、 建立及刪除 Office 365 系統管理中心中的群組](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
+下表列出會記錄系統管理員或使用者建立或變更 Office 365 群組或時系統會使用 Microsoft 365 系統管理中心或 Azure 管理入口網站建立安全性群組的群組管理活動。 如需 Office 365 中群組的詳細資訊，請參閱[檢視、 建立及刪除在 Microsoft 365 系統管理中心中的群組](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |新增的群組  <br/> |新增群組  <br/> |已建立的群組。  <br/> |
 |新增的成員至群組  <br/> |將成員新增至群組  <br/> |成員已新增至群組。  <br/> |
@@ -527,7 +527,7 @@ ms.locfileid: "30935348"
   
 下表列出會記錄系統管理員新增或變更在 Azure AD 中註冊應用程式時的應用程式系統管理員活動。 任何依賴進行驗證的 Azure AD 的應用程式必須在目錄中註冊。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |新增的委派項目  <br/> |新增委派項目  <br/> |驗證權限已建立/授與 Azure AD 中的應用程式。  <br/> |
 |已新增的服務主要名稱  <br/> |新增服務主要名稱  <br/> |在 Azure AD 中已註冊應用程式。 在目錄中的服務主體代表應用程式。  <br/> |
@@ -540,9 +540,9 @@ ms.locfileid: "30935348"
 
 ### <a name="role-administration-activities"></a>角色管理活動
   
-下表列出當系統管理員管理 Office 365 系統管理中心或 Azure 管理入口網站中的系統管理員角色時，會記錄的 Azure AD 角色管理活動。
+下表列出當系統管理員管理在 Microsoft 365 系統管理中心或 Azure 管理入口網站中的系統管理員角色時，會記錄的 Azure AD 角色管理活動。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |將成員新增至角色  <br/> |將角色成員新增至角色  <br/> |新增使用者至 Office 365 中系統管理員角色。  <br/> |
 |從目錄角色移除使用者  <br/> |從角色移除角色成員  <br/> |在 Office 365 中移除使用者從系統管理員角色。  <br/> |
@@ -551,9 +551,9 @@ ms.locfileid: "30935348"
    
 ### <a name="directory-administration-activities"></a>目錄管理活動
   
-下表列出 Azure AD 目錄及網域相關的系統管理員管理 Office 365 組織中的 Office 365 系統管理中心，或在 Azure 管理入口網站會記錄的活動。
+下表列出 Azure AD 目錄及網域相關的系統管理員管理 Office 365 組織中的 Microsoft 365 系統管理中心，或在 Azure 管理入口網站會記錄的活動。
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |新增的網域至公司  <br/> |將網域新增至公司  <br/> |新增網域至 Office 365 組織。  <br/> |
 |新增合作夥伴到目錄  <br/> |將合作夥伴新增至公司  <br/> |新增合作夥伴 （委派的系統管理員） 至 Office 365 組織。  <br/> |
@@ -571,7 +571,7 @@ ms.locfileid: "30935348"
    
 ### <a name="ediscovery-activities"></a>電子文件探索活動
   
-在 Office 365 稽核記錄檔中記錄內容搜尋和 eDiscovery 相關的活動在 Office 365 安全性 & 合規性中心中，或藉由執行對應的 Windows PowerShell cmdlet 所執行。 這包括下列活動：
+內容搜尋和 eDiscovery 相關的活動而執行的安全性與合規性中心，或藉由執行 PowerShell 的對應的稽核記錄中記錄指令程式。 這包括下列活動：
   
 - 建立及管理 eDiscovery 案例
     
@@ -598,7 +598,7 @@ ms.locfileid: "30935348"
 
 工作場所分析提供深入群組跨 Office 365 組織的共同作業。 下表列出 「 管理員 」 角色或 「 工作場所分析中的分析師角色指派的使用者所執行的活動。 指派分析師角色的使用者擁有完整存取權的所有服務功能，以及使用產品進行分析。 指派系統管理員角色的使用者可以設定隱私權設定與系統的預設值，可以準備、 上傳，並確認工作場所分析中的組織資料。 如需詳細資訊，請參閱 <<c0>工作場所分析。
 
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |存取的 OData 連結 <br/> |AccessedOdataLink <br/> |分析師存取查詢的 OData 連結。|
 |已取消的查詢 <br/> |CanceledQuery <br/> |分析師取消執行查詢。|
@@ -620,7 +620,7 @@ ms.locfileid: "30935348"
     
 - [Microsoft Teams 說明](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |已新增到小組 bot  <br/> |BotAddedToTeam  <br/> |使用者新增到小組 bot。  <br/> |
 |新增的通道  <br/> |ChannelAdded  <br/> |使用者會新增至小組的通道。  <br/> |
@@ -628,7 +628,7 @@ ms.locfileid: "30935348"
 |已新增到小組成員  <br/> |MemberAdded  <br/> |小組擁有者會將成員新增到小組。  <br/> |
 |新增索引標籤  <br/> |TabAdded  <br/> |使用者將 tab 新增至通道。  <br/> |
 |變更通道設定  <br/> |ChannelSettingChanged  <br/> | 小組成員中執行下列活動時，會記錄 ChannelSettingChanged 作業。 針對每個這些活動，設定已變更 （如括弧以下所示） 的描述會顯示在稽核記錄搜尋結果中的**項目**] 欄中。  <br/> <br/>-變更的小組通道 （**通道名稱**） 的名稱。  <br/>  <br/>-變更的小組通道 （**通道描述**） 的描述。  <br/> |
-|變更組織設定  <br/> |TeamsTenantSettingChanged  <br/> | TeamsTenantSettingChanged 作業會記錄時 （使用在 Office 365 系統管理中心）; 全域系統管理員會執行下列活動請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱[Microsoft Teams 的系統管理員設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。  <br/>  針對每個這些活動，設定已變更 （如括弧以下所示） 的描述會顯示在稽核記錄搜尋結果中的**項目**] 欄中。  <br/><br/>-啟用或停用組織 ( **Microsoft Teams**) 的 Microsoft Teams。  <br/><br/>-啟用或停用 Microsoft Teams 和商務用 Skype 之間的交互操作性，為組織 ( **Skype for Business 的互通性**)。<br/><br/>-啟用或停用 Microsoft Teams 用戶端 （ **Org 圖表] 檢視**） 中的 [組織圖] 檢視。  <br/><br/>-啟用或停用的排程 （**私人會議排程功能**） 的私用會議的小組成員的能力。  <br/><br/>-啟用或停用的排程 （**通道會議排程功能**） 的通道會議的小組成員的能力。  <br/><br/>-啟用或停用視訊通話中 Teams 會議 （ **Skype 會議視訊**）。  <br/><br/>-啟用或停用螢幕共用 Microsoft Teams meetups 組織 （**畫面共享 Skype 會議**]） 中。  <br/><br/>-啟用或停該能夠將動畫效果的影像 （稱為 Giphys） 加入至 Teams 交談 （**動畫效果的影像**）。  <br/><br/>-變更分級組織 （**內容分級**） 設定的內容。 內容分級限制可以顯示在對話中的動畫影像的類型。  <br/><br/>-啟用或會停用功能適用於小組成員新增自訂的圖像 （稱為 「 自訂 memes） 從網際網路到小組交談 （**從網際網路的可自訂映像**）。  <br/><br/>-啟用或停小組交談 （**可編輯的影像**） 適用於小組成員新增 （稱為貼紙） 的可編輯影像的能力。<br/><br/>-啟用或停用該功能適用於使用 Microsoft Teams 聊天和通道 (**全組織 bot**) 中的 bot 的小組成員。<br/><br/>-啟用 Microsoft Teams; 特定 bot這不包含 T-Bot，也就是當組織 (**個別 bot**) 啟用 bot 是可用的 Teams 說明 bot。  <br/><br/>-啟用或停用若要新增分機或索引標籤 （**分機或索引標籤**） 的小組成員的功能。  <br/><br/>-啟用或停用的 Microsoft Teams ( **Bot 端載入**) 的專屬 Bot 端載入。  <br/><br/>-啟用或停用使用者的 Microsoft Teams 通道 (**通道電子郵件**) 傳送電子郵件訊息的能力。  <br/> |
+|變更組織設定  <br/> |TeamsTenantSettingChanged  <br/> | TeamsTenantSettingChanged 作業會記錄時 （使用在 Microsoft 365 系統管理中心）; 全域系統管理員會執行下列活動請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱[Microsoft Teams 的系統管理員設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。  <br/>  針對每個這些活動，設定已變更 （如括弧以下所示） 的描述會顯示在稽核記錄搜尋結果中的**項目**] 欄中。  <br/><br/>-啟用或停用組織 ( **Microsoft Teams**) 的 Microsoft Teams。  <br/><br/>-啟用或停用 Microsoft Teams 和商務用 Skype 之間的交互操作性，為組織 ( **Skype for Business 的互通性**)。<br/><br/>-啟用或停用 Microsoft Teams 用戶端 （ **Org 圖表] 檢視**） 中的 [組織圖] 檢視。  <br/><br/>-啟用或停用的排程 （**私人會議排程功能**） 的私用會議的小組成員的能力。  <br/><br/>-啟用或停用的排程 （**通道會議排程功能**） 的通道會議的小組成員的能力。  <br/><br/>-啟用或停用視訊通話中 Teams 會議 （ **Skype 會議視訊**）。  <br/><br/>-啟用或停用螢幕共用 Microsoft Teams meetups 組織 （**畫面共享 Skype 會議**]） 中。  <br/><br/>-啟用或停該能夠將動畫效果的影像 （稱為 Giphys） 加入至 Teams 交談 （**動畫效果的影像**）。  <br/><br/>-變更分級組織 （**內容分級**） 設定的內容。 內容分級限制可以顯示在對話中的動畫影像的類型。  <br/><br/>-啟用或會停用功能適用於小組成員新增自訂的圖像 （稱為 「 自訂 memes） 從網際網路到小組交談 （**從網際網路的可自訂映像**）。  <br/><br/>-啟用或停小組交談 （**可編輯的影像**） 適用於小組成員新增 （稱為貼紙） 的可編輯影像的能力。<br/><br/>-啟用或停用該功能適用於使用 Microsoft Teams 聊天和通道 (**全組織 bot**) 中的 bot 的小組成員。<br/><br/>-啟用 Microsoft Teams; 特定 bot這不包含 T-Bot，也就是當組織 (**個別 bot**) 啟用 bot 是可用的 Teams 說明 bot。  <br/><br/>-啟用或停用若要新增分機或索引標籤 （**分機或索引標籤**） 的小組成員的功能。  <br/><br/>-啟用或停用的 Microsoft Teams ( **Bot 端載入**) 的專屬 Bot 端載入。  <br/><br/>-啟用或停用使用者的 Microsoft Teams 通道 (**通道電子郵件**) 傳送電子郵件訊息的能力。  <br/> |
 |變更的角色中小組的成員  <br/> |MemberRoleChanged  <br/> |在 [小組成員的角色變更小組擁有者。 下列的值表示指派給使用者的角色類型。  <br/><br/><br/> **1** -表示擁有者 」 角色。<br/>**2** -會指出 「 成員 」 角色。 <br/>**3** -會指出 「 來賓 」 角色。 <br/>Members 屬性也會包含您的組織和成員的電子郵件地址的名稱。  <br/> |
 |變更小組設定  <br/> |TeamSettingChanged  <br/> | 下列活動小組擁有者執行時，會記錄 TeamSettingChanged 作業。 針對每個這些活動，設定已變更 （如括弧以下所示） 的描述會顯示在稽核記錄搜尋結果中的**項目**] 欄中。  <br/><br/>-變更小組的存取類型。 小組可以設為私人或公開 （**小組存取類型**）。 當小組為私用 （預設設定），使用者可以存取小組僅邀請。 公用小組時，就可被探索到的任何人。  <br/><br/>-變更之小組 （**小組分類**） 的資訊分類。  <br/>  例如，小組資料可分類為高業務影響、 中等的商業影響或低業務影響。<br/><br/>-變更之小組 （**小組名稱**） 的名稱。  <br/><br/>-變更小組描述 （**小組描述**）。 <br/><br/>-任何小組設定所做的變更。 小組擁有者可以存取這些設定 microsoft Teams 用戶端中的小組滑鼠右鍵按一下，按一下 [**管理小組**，然後按一下 [**設定**] 索引標籤。對這些活動，設定已變更的名稱會顯示在稽核記錄搜尋結果中的**項目**資料行。  <br/> |
 |建立的小組  <br/> |TeamCreated  <br/> |在使用者建立新的小組。  <br/> |
@@ -647,7 +647,7 @@ ms.locfileid: "30935348"
   
 下表列出使用者並登入 Office 365 的系統管理員活動 Yammer 中的稽核記錄。 若要傳回 Yammer 相關的活動，從 Office 365 稽核記錄，您必須在**活動**清單中選取 [**顯示所有活動的結果**。 使用日期範圍] 方塊和 [**使用者**] 清單來縮小搜尋結果。 
   
-|**易記名稱**|**Operation**|**描述**|
+|**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
 |變更的資料保留原則  <br/> |SoftDeleteSettingsUpdated  <br/> |已驗證的系統管理員更新實刪除] 或 [虛刪除的網路資料保留原則的設定。 只有已驗證的系統管理員才能執行這項作業。  <br/> |
 |變更的網路組態  <br/> |NetworkConfigurationUpdated  <br/> |網路或已驗證的系統管理員變更在 Yammer 網路的組態。 這包括設定匯出資料並啟用聊天室的間隔。  <br/> |
@@ -670,7 +670,7 @@ ms.locfileid: "30935348"
    
 ### <a name="microsoft-flow-activities"></a>Microsoft Flow 活動
 
-您可以在 Microsoft Flow 中搜尋活動的稽核記錄檔。 這些活動包括建立、 編輯和刪除流程，以及變更流程權限。 如需流程活動的稽核資訊，請參閱 < 部落格<b0>稽核事件目前可用的 Office 365 安全性 &amp; 合規性中心的 Microsoft Flow</b0>。
+您可以在 Microsoft Flow 中搜尋活動的稽核記錄檔。 這些活動包括建立、 編輯和刪除流程，以及變更流程權限。 如需流程活動的稽核資訊，請參閱 < 部落格<b0>Microsoft Flow 稽核安全性 &amp; 合規性中心中目前可用的事件</b0>。
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
@@ -729,9 +729,9 @@ Exchange 系統管理員稽核記錄 — 這會啟用 Office 365 中的預設 �
 
 **我可以透過程式設計方式存取稽核資料？**
 
-可以。 Office 365 管理活動 API 用來以程式設計方式擷取稽核記錄。  若要開始，請參閱 <<c0>開始使用 Office 365 管理 Api。
+是。 Office 365 管理活動 API 用來以程式設計方式擷取稽核記錄。  若要開始，請參閱 <<c0>開始使用 Office 365 管理 Api。
 
-**是否有其他方法來取得稽核記錄檔不是使用 Office 365 安全性 & 合規性中心] 或 [Office 365 管理活動 API？**
+**是否有其他方法來取得稽核記錄檔之外使用安全性與合規性中心或 Office 365 管理活動 API？**
 
 否。 以下是從 Office 365 稽核服務取得資料的只有兩種方式。 
 
