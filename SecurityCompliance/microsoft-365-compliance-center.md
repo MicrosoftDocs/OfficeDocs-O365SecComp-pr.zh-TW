@@ -1,22 +1,22 @@
 ---
-title: 歡迎使用所有新的新的 Microsoft 365 合規性中心
+title: 新的 Microsoft 365 合規性中心概觀
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合規性中心，包括它的內容、 如何取得，以及接下來的步驟。
-ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026314"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518383"
 ---
-# <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>歡迎使用所有新的 Microsoft 365 合規性中心
+# <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>所有新的 Microsoft 365 合規性中心概觀
 
 ## <a name="overview"></a>概觀
 
@@ -24,7 +24,7 @@ ms.locfileid: "31026314"
 
 閱讀本篇文章以了解 Microsoft 365 合規性中心、[如何取得它](#how-do-i-get-this)、[常見問題集](#frequently-asked-questions)，請與您的[下一個步驟](#next-steps)。
 
-[![Microsoft 365 合規性中心](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![Microsoft 365 規範中心](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>歡迎使用 Microsoft 365 合規性
 
@@ -83,11 +83,15 @@ ms.locfileid: "31026314"
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>為何我我採取至 Office 365 安全性 & 合規性中心來執行一些工作，例如定義特定原則？
 
-我們仍在開發 Microsoft 365 規範中心] 內，我們將持續加入更多的功能和解決方案接下來個月。 同時，有一些必須執行安全性 & 合規性中心中的工作。 在這些情況下，您就會進入自動其中您可以執行工作的例如建立或編輯監督原則的位置。
+我們仍在開發 Microsoft 365 規範中心] 內，我們將持續加入更多的功能和解決方案接下來個月。 同時，有一些必須在 Office 365 安全性 & 合規性中心中執行的工作 ([https://protection.office.com](https://protection.office.com))。 在這些情況下，您就會進入自動其中您可以執行工作的例如建立或編輯監督原則的位置。
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>為什麼我看新的 Microsoft 365 合規性中心尚未？
 
-首先，請確定您具備適當[授權和權限](microsoft-security-and-compliance.md#required-licenses-and-permissions)。 然後，在登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。 如果您沒有看到新的合規性中心，您會有非常推出。
+首先，請確定您具備適當[授權和權限](microsoft-security-and-compliance.md#required-licenses-and-permissions)。 然後，在登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。 如果您看新合規性中心，您將會推出沒有。
+
+### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>卻找不到我規範設定部分。 What do I do?
+
+我們仍會將功能新增至 Microsoft 365 合規性中心。 如果您找不到某個項目，例如稽核記錄搜尋，請嘗試瀏覽至 Office 365 安全性 & 合規性中心 ([https://protection.office.com](https://protection.office.com))。 設定將會儲存在這兩個現有 Office 365 安全性 & 合規性中心，在新的 Microsoft 365 合規性中心中自動。
 
 ## <a name="next-steps"></a>後續步驟
 
