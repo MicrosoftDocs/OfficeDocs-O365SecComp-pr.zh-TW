@@ -1,8 +1,8 @@
 ---
-title: 管理信箱的稽核
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+title: 管理信箱稽核
+ms.author: chrisda
+author: chrisda
+manager: serdars
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 信箱稽核記錄 （也稱為預設信箱稽核或信箱的稽核預設情況下） 的 Microsoft 365 中預設已開啟。 這表示信箱擁有者、 代理人和系統管理員所執行的特定動作都會自動記錄在信箱稽核記錄，您可以搜尋的信箱上執行的活動。
-ms.openlocfilehash: 604b7fc26c2e97a5efce28fe844fbd066196c4ce
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670628"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745315"
 ---
-# <a name="manage-mailbox-auditing"></a>管理信箱的稽核
+# <a name="manage-mailbox-auditing"></a>管理信箱稽核
   
 2019 年 1 月開始，Microsoft 開啟信箱稽核記錄依預設，所有的 Microsoft 365 組織。 這表示自動記錄信箱擁有者、 代理人和系統管理員所執行某些動作，以及對應的信箱稽核記錄時，會提供您的信箱稽核記錄中搜尋它們。 信箱稽核依預設已開啟之前，您必須以手動啟用每個使用者信箱在您的組織中使用。 
 
@@ -90,13 +90,13 @@ Get-OrganizationConfig | FL AuditDisabled
 
 |系統管理動作|代理人動作|擁有者動作|
 |:---------|:---------|:---------|
-|Create    |Create       | HardDelete        |
+|建立    |建立       | HardDelete        |
 |HardDelete    |HardDelete        |MoveToDeletedItems       |
 |MoveToDeletedItems    |MoveToDeletedItems         |SoftDelete         |
-|SendAs    |SendAs      |    Update     |
+|SendAs    |SendAs      |    更新     |
 |SendOnBehalf    |SendOnBehalf       |UpdateCalendarDelegation        |
 |SoftDelete     |SoftDelete      | UpdateFolderPermissions        |
-|Update    |Update       |UpdateInboxRules         |
+|更新    |更新       |UpdateInboxRules         |
 |UpdateCalendarDelegation    | UpdateFolderPermissions        |         |
 |UpdateFolderPermissions     | UpdateInboxRules        |         |
 |UpdateInboxRules     |         |         |
@@ -106,13 +106,13 @@ Get-OrganizationConfig | FL AuditDisabled
 
 |信箱動作|描述|
 |:---------|:---------|
-|**Create** <br/> |在信箱; 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。 請注意不稽核建立、 傳送或接收郵件。 此外，不稽核建立一個信箱資料夾。  <br/> |
+|**建立** <br/> |在信箱; 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。 請注意不稽核建立、 傳送或接收郵件。 此外，不稽核建立一個信箱資料夾。  <br/> |
 |**HardDelete** <br/> |郵件已從 [可復原的項目] 資料夾中清除。  <br/> |
 |**MoveToDeletedItems** <br/> |已刪除的郵件，並將它移至 [刪除的項目] 資料夾。  <br/> |
 |**SendAs** <br/> |郵件已傳送使用 SendAs 權限。 這表示另一位使用者傳送的郵件，就好像它來自信箱擁有者。  <br/> |
 |**SendOnBehalf** <br/> |郵件已傳送使用 SendOnBehalf 權限。 這表示另一位使用者傳送代表信箱擁有者的郵件。 郵件已傳送代理者誰以及實際寄件者郵件的訊息會指出收件者。  <br/> |
 |**SoftDelete** <br/> |郵件已永久刪除，或從 [刪除的項目] 資料夾中刪除。 虛刪除的項目會移至 [可復原的項目] 資料夾。  <br/> |
-|**Update** <br/> |郵件或其屬性已變更。  <br/> |
+|**更新** <br/> |郵件或其屬性已變更。  <br/> |
 |**UpdateCalendarDelegation** <br/> |行事曆委派已指派給信箱。 行事曆委派可讓其他人在相同的組織權限來管理信箱擁有者的行事曆。  <br/> |
 |**UpdateFolderPermissions** <br/> |已變更資料夾的權限。 資料夾的權限控制您組織中的哪些使用者可以存取信箱，而且這些資料夾中的郵件中的資料夾。  <br/> |
 |**UpdateInboxRules** <br/> |收件匣規則已新增、 移除或變更。 收件匣規則用來處理郵件使用者的收件匣根據指定的條件，並符合規則的條件，例如將郵件移至指定資料夾或刪除郵件時採取的動作。  <br/> |
@@ -268,10 +268,10 @@ Get-MailboxAuditBypassAssociation -Identity <username> | FL AuditByPassEnabled
   
 下表摘要說明每個使用者登入類型稽核的動作。 在表格中，為星號 ( **\*** ) 表示預設會記錄的動作。 **不**會指出巨集指令不會記錄該登入類型。 請注意，獲指派 「 完整存取 」 權限的使用者信箱的系統管理員會被視為委派使用者。 
   
-|**Action**|**描述**|**Admin**|**委派**|**Owner**|
+|**動作**|**描述**|**管理**|**委派**|**擁有者**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Copy** <br/> |郵件已複製到另一個資料夾。  <br/> |是  <br/> |否  <br/> |否  <br/> |
-|**Create** <br/> |在信箱; 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。 請注意不稽核建立、 傳送或接收郵件。 此外，不稽核建立一個信箱資料夾。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
+|**建立** <br/> |在信箱; 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。 請注意不稽核建立、 傳送或接收郵件。 此外，不稽核建立一個信箱資料夾。  <br/> |是\*  <br/> |是\*  <br/> |是  <br/> |
 |**FolderBind**\** <br/> |存取信箱資料夾。 系統管理員或代理人開啟信箱時，也會記錄此巨集指令。  <br/> |是  <br/> |是  <br/> |否  <br/> |
 |**HardDelete** <br/> |郵件已從 [可復原的項目] 資料夾中清除。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
 |**MailboxLogin** <br/> |使用者登入其信箱。  <br/> |否  <br/> |否  <br/> |是  <br/> |
@@ -281,7 +281,7 @@ Get-MailboxAuditBypassAssociation -Identity <username> | FL AuditByPassEnabled
 |**SendAs** <br/> |郵件已傳送使用 SendAs 權限。 這表示另一位使用者傳送的郵件，就好像它來自信箱擁有者。  <br/> |是\*  <br/> |是\*  <br/> |否  <br/> |
 |**SendOnBehalf** <br/> |郵件已傳送使用 SendOnBehalf 權限。 這表示另一位使用者傳送代表信箱擁有者的郵件。 郵件已傳送代理者誰以及實際寄件者郵件的訊息會指出收件者。  <br/> |是\*  <br/> |是\*  <br/> |否  <br/> |
 |**SoftDelete** <br/> |郵件已永久刪除，或從 [刪除的項目] 資料夾中刪除。 虛刪除的項目會移至 [可復原的項目] 資料夾。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
-|**Update** <br/> |郵件或其屬性已變更。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
+|**更新** <br/> |郵件或其屬性已變更。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
 |**UpdateCalendarDelegation** <br/> |行事曆委派已指派給信箱。 行事曆委派可讓其他人在組織權限來管理信箱擁有者的行事曆。  <br/> |是\*  <br/> |否  <br/> |是\*  <br/> |
 |**UpdateFolderPermissions** <br/> |已變更資料夾的權限。 資料夾的權限控制您組織中的哪些使用者可以存取信箱，而且這些資料夾中的郵件中的資料夾。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
 |**UpdateInboxRules** <br/> |已新增、 移除或變更收件匣規則。 收件匣規則用來處理郵件使用者的收件匣根據指定的條件，並符合規則的條件，例如將郵件移至指定資料夾或刪除郵件時採取的動作。  <br/> |是\*  <br/> |是\*  <br/> |是\*  <br/> |
