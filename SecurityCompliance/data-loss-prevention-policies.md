@@ -3,7 +3,7 @@ title: 資料外洩防護原則概觀
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Office 365 安全性中的資料外洩防護 (DLP) 原則&amp;合規性中心，您可以識別、 監視和自動保護 Office 365 中的敏感資訊。
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000016"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784104"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -56,13 +56,13 @@ ms.locfileid: "31000016"
 
 DLP 原則包含一些基本事項：
   
-- 在何處保護內容的**位置**例如 Exchange Online、 SharePoint Online 和 OneDrive for Business 網站，以及 Microsoft Teams 聊天和通道。 
+- 在何處保護內容：**位置**例如 Exchange Online、 SharePoint Online 和 OneDrive for Business 網站，以及 Microsoft Teams 聊天和通道。 
     
 - 何時及如何藉由執行強制包含下列要素的**規則**來保護內容： 
     
-  - **條件**會強制執行規則-之前，必須符合的內容，例如尋找僅適用於包含身分證號碼指與組織外部人員共用的內容。 
+  - 強制執行規則前，必須符合**條件**的內容。 例如，規則可能會設定為僅尋找包含身分證號碼指與組織外部人員共用的內容。 
     
-  - 您要規則在找到符合條件的內容時自動採取的**動作** -- 例如封鎖文件的存取，以及傳送電子郵件通知給使用者和法務人員。 
+  - **動作**您想要內容找到符合條件時自動採取的規則。 例如，可能會設定規則，來封鎖對文件的存取，並將使用者和法務人員傳送電子郵件通知。 
     
 您可以使用規則來達到特定的保護需求，然後使用 DLP 原則將常見保護需求分組在一起，例如所有需要遵守特定法規的規則。
   
@@ -212,10 +212,14 @@ DLP 原則可協助保護敏感資訊，指**敏感資訊類型**。 Office 365 
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>依據處理規則優先順序
 
-當您在原則建立規則時，每個規則被指派優先順序，它會建立的順序-也就是說，建立的規則首先有第一優先，第二個建立的規則有第二個優先順序，依此類推。 建立規則之後，就無法變更其優先順序，除非藉由刪除並重新建立它。
+當您在原則建立規則時，每個規則被指派優先順序，它會建立的順序-也就是說，建立的規則首先有第一優先，第二個建立的規則有第二個優先順序，依此類推。 
   
 ![依優先順序的規則](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+您已設定一個以上的 DLP 原則之後，您可以變更一或多個原則的優先順序。 若要這麼做，請選取原則、 選擇 [**編輯原則**，並使用 [**優先順序**] 清單來指定其優先順序。
+
+![設定原則的優先順序](media/dlp-set-policy-priority.png)
+
 根據規則評估內容時，這些規則會處理依優先順序。 如果內容符合多個規則，這些規則會處理依優先順序，並強制執行的最嚴格的巨集指令。 例如，如果內容符合所有下列規則，規則 3 已強制執行因為它是最高優先順序、 最嚴格規則：
   
 - 規則 1： 僅通知使用者
@@ -244,7 +248,7 @@ DLP 原則可協助保護敏感資訊，指**敏感資訊類型**。 Office 365 
   
 - **不是**敏感資訊比對規則-換句話說，太多誤判太多內容。 
     
-- **敏感資訊**比對規則-換句話說，而不被強制執行動作的敏感資訊為基礎的太少內容。 
+- **敏感資訊**比對規則太少的內容。 換句話說，而不被強制執行動作的敏感資訊為基礎。 
     
 若要解決這些問題，您可以藉由調整的執行個體計數調整您的規則，並比對正確性，使其更困難或更容易以符合規則的內容。 規則中使用每個敏感資訊類型都有兩個執行個體計數和比對正確性。
   
@@ -403,6 +407,10 @@ DLP 原則可協助保護敏感資訊，指**敏感資訊類型**。 Office 365 
 您可以隨時關 DLP 原則，這會影響原則中的所有規則。 不過，每個規則可以也會關閉個別切換在規則編輯器中的其狀態。
   
 ![在原則中關閉規則的選項](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+您也可以變更原則中的多個規則的優先順序。 若要這麼做，請開啟 [編輯原則]。 列中的規則，選擇省略符號 （**...**），然後選擇一個選項，例如**向下移動**或**移到最後一個**。
+
+![設定規則優先順序](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP 報告
 
@@ -518,10 +526,10 @@ Excel、 PowerPoint 和 Word 包含相同的功能，以識別機密資訊，並
     
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
-- [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+- [敏感性資訊類型所尋找的項目](what-the-sensitive-information-types-look-for.md)
     
 - [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)
     
-- [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
+- [建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type.md)
     
 
