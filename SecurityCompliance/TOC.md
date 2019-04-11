@@ -310,11 +310,12 @@
 #### [將搜尋結果新增至工作集](compliance20/add-data-to-working-set.md)
 
 ### [檢閱案例資料](compliance20/reviewing-data-in-working-set.md)
+#### [檢視工作集中的文件](compliance20/view-documents-in-working-set.md)
+#### [查詢工作集中的資料](compliance20/working-set-search.md)
 #### [管理工作集](compliance20/managing-working-sets.md)
+#### [新增資料至另一個工作集](compliance20/add-data-to-working-set-from-another-working-set.md)
 #### [管理載入集](compliance20/manage-load-sets.md)
 #### [將非 Office 365 的資料載入工作集](compliance20/load-non-office365-data.md)
-#### [查詢工作集中的資料](compliance20/working-set-search.md)
-#### [檢視工作集中的文件](compliance20/view-documents-in-working-set.md)
 #### [標記工作集中的文件](compliance20/tagging-documents.md)
 
 ### [分析案例資料](compliance20/analyzing-data-in-working-set.md)
