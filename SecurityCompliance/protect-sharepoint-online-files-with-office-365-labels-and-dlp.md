@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：使用各種資訊保護層級，對 SharePoint Online 小組網站套用保留標籤和資料外洩防護 (DLP) 原則。
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999156"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745255"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 
@@ -56,9 +56,9 @@ ms.locfileid: "30999156"
 
 在此階段中，您會為不同資訊保護層級建立所決定的標籤，然後將它發佈。
   
-1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入 [Microsoft 365 安全性入口網站](https://security.microsoft.com)。
+1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入 [Microsoft 365 合規性入口網站](https://compliance.microsoft.com)。
     
-2. 從瀏覽器的 [首頁 - Microsoft 365 安全性]**** 索引標籤，按一下 [分類] > [標籤]****。
+2. 從瀏覽器的 [首頁 - Microsoft 365 合規性]**** 索引標籤，按一下 [分類] > [標籤]****。
     
 3. 按一下 [保留標籤] > [建立標籤]****。
     
@@ -70,7 +70,7 @@ ms.locfileid: "30999156"
     
 7. 在 [檢閱您的設定]**** 窗格中，按一下 [建立標籤]****。
     
-8. 對於其他標籤，按一下 [建立標籤]****，然後重複步驟 4-7。
+8. 對於其他標籤，按一下 [建立標籤]****，然後視需要重複步驟 3-7。
     
 
 ### <a name="publish-your-new-labels"></a>發佈新標籤
@@ -223,7 +223,7 @@ ms.locfileid: "30999156"
 
 [保護 SharePoint Online 網站與檔案](secure-sharepoint-online-sites-and-files.md)
   
-[適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[適用於政治活動、非營利組織和其他敏捷組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
