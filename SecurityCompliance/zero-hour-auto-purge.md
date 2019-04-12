@@ -3,7 +3,7 @@ title: 零時差自動清除 - 防範垃圾郵件和惡意程式碼
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是偵測到郵件與垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。 如何 ZAP 執行此動作，則偵測到的惡意內容類型而定。
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479629"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818600"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -48,7 +48,7 @@ Office 365 更新反垃圾郵件引擎和惡意程式碼中的簽章即時每日
 
 - 新偵測到惡意程式碼，ZAP 會移除電子郵件，不論是否已讀取電子郵件附件。
   
-ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息時，它們不會通知。
+ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息時，它們不會通知。 訊息不能超過 2 天。
   
 允許清單、[郵件流程規則](https://go.microsoft.com/fwlink/p/?LinkId=722755)及使用者規則或其他篩選器會優先於 ZAP。
   
@@ -89,7 +89,10 @@ ZAP 不會將郵件移至隔離區從收件匣這一次。
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>如果我有自訂郵件流程規則 （封鎖 / 允許規則）？
   
 建立由系統管理員 （郵件流程規則）] 或 [封鎖] 和 [允許規則的規則的優先順序。 這類郵件會排除功能準則，讓郵件流程需要遵循的規則動作 （封鎖/允許規則）。
-  
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>如果將郵件移到另一個資料夾 （例如收件匣規則）？
+ZAP 仍能是在此例中運作，除非已被刪除，或處於 [垃圾郵件。
+
 ## <a name="related-topics"></a>相關主題
 
 [Office 365 電子郵件反垃圾郵件保護](anti-spam-protection.md)

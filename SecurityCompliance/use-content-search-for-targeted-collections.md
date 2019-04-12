@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用安全性 & 合規性中心中的內容搜尋來執行目標的集合。 目標的集合表示您確信回應大小寫的項目或特殊權限項目都位於信箱或網站的特定資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。
-ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001236"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813994"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>在 Office 365 中使用內容搜尋，對目標集合
 
@@ -50,7 +50,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 - **電子郵件地址或網站的 URL**輸入到 Exchange 信箱資料夾和資料夾識別碼的清單傳回 custodian 電子郵件地址。 或輸入 SharePoint 網站的 URL 或商務用 OneDrive 網站，可傳回指定網站的路徑清單。 以下為一些範例： 
     
-  - **Exchange** -stacig@contoso.onmicrosoft.com 
+  - **Exchange**層stacig@contoso.onmicrosoft.com 
     
   - **SharePoint** - https://contoso.sharepoint.com/sites/marketing 
     
@@ -213,7 +213,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
 
 之後您已執行指令碼，以收集資料夾識別碼的清單或特定使用者，移至安全性 & 合規性中心，並建立新的內容搜尋來搜尋特定資料夾中的下一步步驟 documentlinks。 您要使用`folderid:<folderid>`或`documentlink:<path>`屬性： 值配對的搜尋查詢中，您設定內容搜尋關鍵字] 方塊中 （或如果您使用**New-compliancesearch** cmdlet *ContentMatchQuery*參數的值為）。 您可以合併`folderid`或`documentlink`屬性與其他搜尋參數，或搜尋條件。 如果您只會包括`folderid`或`documentlink`屬性在查詢中的，搜尋會傳回位於指定的資料夾內的所有項目。 
   
-1. 請移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 登入 Office 365 中，使用的帳戶與您用來執行指令碼在步驟 1 中的認證。
     
@@ -225,7 +225,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
     
     - 按一下 [**選擇来搜尋的特定信箱**，然後新增您指定當您在步驟 1 中執行指令碼的同一個信箱。 
     
-      或
+      Or
     
     - 按一下 [**選擇要搜尋的特定網站**新增至搜尋，然後新增您指定當您在步驟 1 中執行指令碼的相同網站 URL。 
     

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: 使用安全性 & 合規性中心建立 eDiscovery 保留，以及存取及管理組織中的 eDiscovery 案例。
-ms.openlocfilehash: 84cb7eeab55e157f42146f6a0586d32542584680
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000446"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814134"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>管理安全性 & 合規性中心中的 eDiscovery 案例
 
@@ -73,7 +73,7 @@ EDiscovery 案例可讓您將成員新增至案例，控制哪些類型的特定
   
  **若要指派 eDiscovery 權限：**
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
@@ -94,7 +94,7 @@ EDiscovery 案例可讓您將成員新增至案例，控制哪些類型的特定
 
 下一步是建立新的 eDiscovery 案例。 您必須是要建立 eDiscovery 案例 eDiscovery 管理員角色群組的成員。 如先前所述，您建立新的案例中安全性 & 合規性中心之後, 您 （和其他案例的成員） 能夠存取，進階電子文件中的相同案例如果您的組織有 Office 365 E5 訂閱。
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     

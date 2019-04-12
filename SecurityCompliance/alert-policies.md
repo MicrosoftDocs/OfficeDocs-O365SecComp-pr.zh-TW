@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365，以監視潛在威脅、 資料遺失和權限問題的安全性與合規性中心中建立警訊原則。 然後您可以檢視及管理使用者執行活動符合警示原則的條件時，要產生的警示。
-ms.openlocfilehash: 137f90668f4f8c78d30a01af8f50278d973bf1cb
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000716"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814124"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>在安全性與合規性中心中的警示原則
 
@@ -47,7 +47,7 @@ ms.locfileid: "31000716"
 
 警示原則包含一組規則與使用者或系統管理員活動，就會產生提醒時，會觸發警示，如果他們執行活動的使用者的清單定義的條件，且之前定義多少次活動的臨界值就會觸發 n 警示。 您也分類原則，並將其指派的嚴重性層級。 這兩項設定可協助您管理警示原則 （和時符合原則條件會觸發警示） 因為管理原則，以及檢視警示中的安全性與合規性中心時，您可以篩選這些設定。 例如，您可以檢視警示符合從同一個類別的條件或在相同的嚴重性層級的檢視警示。
   
-若要檢視並建立警示原則，請移至[https://compliance.microsoft.com](https://compliance.microsoft.com)，然後按一下 [**警示** \> **警示原則**。 
+若要檢視並建立警示原則，請移至[https://protection.office.com](https://protection.office.com)，然後按一下 [**警示** \> **警示原則**。 
   
 ![在安全性與合規性中心，按一下 [提醒，然後按一下 [警示原則，以檢視及建立警示原則](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
@@ -100,7 +100,7 @@ Office 365 提供內建的警示原則以協助識別 Exchange 系統管理員�
 
 表也會指出所需的每個 Office 365 企業版和 Office 365 US Government 計劃。 請注意，某些預設警示原則如果您的組織有適當的附加元件訂閱，除了 E1/G1 或 E3/G3 訂閱。 
   
-|**預設的警示原則**|**說明**|**Category**|**Office 365 企業版訂閱**|
+|**預設的警示原則**|**描述**|**類別**|**Office 365 企業版訂閱**|
 |:-----|:-----|:-----|:-----|
 |**偵測到有潛在的惡意 URL 點擊** <br/> |由[Office 365 ATP 安全連結](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)保護您組織中使用者按下惡意連結上時，會產生警示。 URL verdict 變更識別由 Office 365 ATP 或使用者覆寫 （根據貴組織的 Office 365 ATP 安全連結原則） 的 Office 365 ATP Safe Links 頁面時，會觸發這個事件。 此警示原則具有較**高**的嚴重性設定。 Office 365 ATP P2，E5 G5 客戶，此警示自動觸發[Office 365 自動化調查及回應](https://go.microsoft.com/fwlink/?linkid=2084737)。  如需有關觸發此警示的事件的詳細資訊，請參閱 <<c0>設定 Office 365 ATP 安全連結原則。  <br/> |威脅管理 <br/> |E5/G5 或 Office 365 ATP P2 附加元件訂閱  <br/> |
 |**轉寄/重新導向規則的建立** <br/> |您的組織中的人員建立信箱，轉寄或將郵件重新導向至另一個電子郵件帳戶的收件匣規則時，會產生警示。 此原則僅會追蹤使用 （先前稱為 Outlook Web App） 網頁型 Outlook 或 Exchange Online PowerShell 建立的收件匣規則。 此原則具有**低**嚴重性] 設定。 使用收件匣規則轉寄及重新導向網頁型 Outlook 中的電子郵件的詳細資訊，請參閱[使用規則來自動將郵件轉寄給另一個帳戶網頁型 Outlook 中](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。  <br/> |威脅管理 <br/> |E1/G1、 E3/G3 或 E5/版 G5  <br/> |
@@ -126,7 +126,7 @@ Office 365 提供內建的警示原則以協助識別 Exchange 系統管理員�
 
 提醒時由您組織中的使用者執行活動符合警示原則的設定，會產生，並且根據設定的警示原則，一封電子郵件安全性與合規性中心**檢視警示**] 頁面上顯示時就會觸發警示通知也會傳送給指定的使用者清單。 在每個警示儀表板上**檢視提醒**] 頁面上會顯示對應的警示原則、 嚴重性和類別的名稱 （警示原則中定義） 警示和的造成警示所發生的活動次數產生;這個值根據臨界值設定的警示原則。 儀表板也會顯示每個提醒的狀態。 請參閱[Managing 提醒](#managing-alerts)] 區段中的，如需有關使用 status 屬性來管理警示。 
   
-若要檢視提醒，請移至[https://compliance.microsoft.com](https://compliance.microsoft.com)，然後按一下 [**警示** \> **檢視警示**。 
+若要檢視提醒，請移至[https://protection.office.com](https://protection.office.com)，然後按一下 [**警示** \> **檢視警示**。 
   
 ![在安全性與合規性，按一下 [提醒，然後按一下 [檢視警示，以檢視提醒](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   

@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 自動將項目移至使用者的封存信箱的 Office 365 中建立封存與刪除原則。
-ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935268"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814014"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>設定 Office 365 組織中信箱的封存和刪除原則
 
@@ -64,7 +64,7 @@ ms.locfileid: "30935268"
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. 安全性&amp;合規性中心，移至 [**資料控管** \> **封存**。
+3. 在 [安全性 & 合規性中心，移至 [**資料控管** \> **封存**。
     
     會顯示組織中信箱的清單及對應的封存信箱是否已啟用或停用。 
     
@@ -85,7 +85,7 @@ ms.locfileid: "30935268"
     
     ![啟用封存信箱的信箱清單](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. 保留安全性&amp;合規性中心開啟。 您將使用它在下一個步驟。
+8. 留下規範中心開啟安全性 &。 您將使用它在下一個步驟。
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>步驟 2： 建立新的封存和刪除原則的保留標記
 
@@ -99,11 +99,11 @@ ms.locfileid: "30935268"
     
 若要建立新的保留標記，您將 Exchange Online 組織中使用 Exchange 系統管理中心 (EAC)。
   
-1. 安全性&amp;合規性中心，按一下 [應用程式啟動器中左上角，，然後按一下 [**管理**] 磚。 
+1. 在安全性 & 合規性中心中，按一下 [應用程式啟動器中左上角，，然後按一下 [**管理**] 磚。 
     
-2. 在 Office 365 系統管理中心的左的功能窗格，按一下 [**系統管理中心**中，，然後按一下 [ **Exchange]**。
+2. 在 Microsoft 365 系統管理中心的左的功能窗格，按一下 [**系統管理中心**，，然後按一下 [ **Exchange]**。
     
-    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![螢幕擷取畫面顯示與系統管理員在 Microsoft 365 系統管理中心置中展開的選項，並選取 Exchange。](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. 在 EAC 中，移至 [**規範管理** \> **保留標記**
     
@@ -307,7 +307,7 @@ ms.locfileid: "30935268"
     
 - 下表提供每個新增至遵循本主題中的已建立的自訂保留原則的保留標記的詳細資訊。
     
-    |**保留標記**|**此標記的用途**|**內建或自訂嗎？**|**類型**|
+    |**保留標記**|**此標記的用途**|**內建或自訂嗎？**|**Type**|
     |:-----|:-----|:-----|:-----|
     |高山屋 3 年移至封存  <br/> |會移動 1095 天 （3 年） 至封存信箱的項目。  <br/> |自訂 (請參閱[步驟 2： 建立新的封存和刪除原則的保留標記](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |預設原則標記 （封存）;此標籤自動套用至整個信箱。  <br/> |
     |高山屋 7 年永久刪除  <br/> |在舊的 7 年時，永久刪除的主要信箱還是封存信箱中的項目。  <br/> |自訂 (請參閱[步驟 2： 建立新的封存和刪除原則的保留標記](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |預設原則標記 （刪除）;此標籤自動套用至整個信箱。  <br/> |

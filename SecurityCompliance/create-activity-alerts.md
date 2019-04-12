@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: 新增及管理安全性與合規性中心中的活動警訊，使 Office 365 會傳送電子郵件通知當使用者在 Office 365 中執行特定活動。
-ms.openlocfilehash: 2bbd5b02ec9497b798c948ac58e5e6ac1501bbc4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999656"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813984"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>在 Office 365 中建立活動警示
 
@@ -43,7 +43,7 @@ ms.locfileid: "30999656"
     
 ## <a name="create-an-activity-alert"></a>建立活動警示
 
-1. 移至 [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts)。
+1. 移至 [https://protection.office.com/managealerts](https://protection.office.com/managealerts)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
@@ -82,7 +82,7 @@ ms.locfileid: "30999656"
 
 您可以關閉活動警訊，因此不會傳送電子郵件通知。 關閉的活動警訊之後，仍會顯示組織的活動警訊的清單中，您仍然可以檢視其屬性。
   
-1. 移至 [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts)。
+1. 移至移至[https://protection.office.com/managealerts](https://protection.office.com/managealerts)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用內容搜尋 」 工具在 Office 365 或 Microsoft 365 合規性中心] 中，若要搜尋的內容信箱、 SharePoint Online 網站、 OneDrive 帳戶、 Microsoft Teams、 Office 365 群組與 Skype for Business 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽並匯出搜尋結果。 內容搜尋也是有效的工具，以搜尋可能會與 GDPR 資料主體要求相關的內容。
-ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001016"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814064"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -44,7 +44,7 @@ ms.locfileid: "31001016"
 
 若要擁有存取權來執行搜尋及預覽，並將搜尋結果匯出**內容搜尋**] 頁面上，系統管理員、 法務人員或 eDiscovery 管理員都必須安全性 & 合規性中心中的 eDiscovery 管理員角色群組的成員。 如需詳細資訊，請參閱[指派 eDiscovery 權限](assign-ediscovery-permissions.md)。
   
-1. 移至 [[https://compliance.microsoft.com](https://compliance.microsoft.com)和登入您的 Office 365 電子郵件地址和密碼。
+1. 移至 [[https://protection.office.com](https://protection.office.com)和登入您的 Office 365 電子郵件地址和密碼。
     
 2. 按一下 [**搜尋** \> **內容搜尋**。
     

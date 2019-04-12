@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何搜尋 Office 365 稽核記錄會記錄合規性管理員中的安全性 & 合規性中心執行內容搜尋和 eDiscovery 案例的工作時的事件。
-ms.openlocfilehash: 4d16fd162cb8d00d940df90dcab3c5856e9e59ee
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000706"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814094"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>搜尋 Office 365 稽核記錄中的 eDiscovery 活動
 
@@ -42,7 +42,7 @@ ms.locfileid: "31000706"
 
 目前，您需要進行特定事項若要檢視 Office 365 稽核記錄中的 eDiscovery 活動。 方法如下。
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
@@ -73,7 +73,7 @@ ms.locfileid: "31000706"
 > [!NOTE]
 > 本節所述的 eDiscovery 活動提供類似的資訊來下一節所述的 eDiscovery 指令程式活動。 我們建議您使用本節中所述，因為它們會在 30 分鐘內出現在稽核記錄搜尋結果中的 eDiscovery 活動。 花費最多 24 小時的 ediscovery （英文） 指令程式的活動，以顯示在稽核記錄搜尋結果。 
   
-|**易記名稱**|**Operation**|**對應的 cmdlet**|**描述**|
+|**易記名稱**|**作業**|**對應的 cmdlet**|**描述**|
 |:-----|:-----|:-----|:-----|
 |新增的成員至 eDiscovery 案例  <br/> |CaseMemberAdded  <br/> |新增 ComplianceCaseMember  <br/> |使用者已新增為 eDiscovery 案例的成員。 身為成員的情況下，使用者可以執行各種案例相關的工作，根據是否他們已獲指派必要權限。  <br/> |
 |變更內容搜尋  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |已變更現有的內容搜尋。 新增或移除內容位置或編輯搜尋查詢，可以包含的變更。  <br/> |
@@ -154,7 +154,7 @@ ms.locfileid: "31000706"
 > [!TIP]
 > 當您匯出搜尋結果時，CSV 檔案包含名為的**詳細資訊**，其中包含下表中的多重值屬性中所述的詳細的屬性的資料行。 您可以使用 Excel 中的 Power Query 功能，此資料行分割成多個資料行，使每個屬性將有它自己的資料行。 這可讓您排序及篩選一或多個這些屬性。 如需詳細資訊，請參閱 <<c0>搜尋稽核記錄檔的 「 匯出至檔案的搜尋結果 」 一節。 
   
-|**屬性**|**描述**|
+|**屬性	**|**描述**|
 |:-----|:-----|
 |案例  <br/> |身分識別 (GUID) 的已建立、 變更或刪除的 eDiscovery 案例。  <br/> |
 |ClientApplication  <br/> |eDiscovery 指令程式活動有此屬性值的**EMC** 。 這表示使用安全性 & 合規性中心 GUI 或 PowerShell 中執行此 cmdlet 所執行的活動。  <br/> |
@@ -166,7 +166,7 @@ ms.locfileid: "31000706"
 |ExchangeLocations  <br/> |Exchange Online 信箱的內容搜尋中包含或暫留保留 eDiscovery 案例。  <br/> |
 |排除項目  <br/> |排除內容搜尋] 或 [eDiscovery 案例中的保留的信箱或網站的位置。  <br/> |
 |ExtendedProperties  <br/> |額外的內容，從內容搜尋，內容搜尋動作，或保留 eDiscovery 案例，例如物件 GUID 和對應的 cmdlet 和執行活動時，所使用的 cmdlet 參數。  <br/> |
-|識別碼  <br/> |報告項目的識別碼。 識別碼可唯一識別的稽核記錄項目。  <br/> |
+|Id  <br/> |報告項目的識別碼。 識別碼可唯一識別的稽核記錄項目。  <br/> |
 |NonPIIParameters  <br/> |（不含任何值） 所使用的 [作業] 屬性中所識別的指令程式的參數清單。 此屬性中所列的參數是所列在 [參數] 屬性的相同。  <br/> |
 |ObjectId  <br/> |GUID 或物件名稱 （例如，「 內容搜尋 」 或 eDiscovery 案例） 已建立、 變更或刪除作業屬性中所列的活動。 這個物件也被識別稽核記錄搜尋結果中的 [項目] 欄中。  <br/> |
 |ObjectType  <br/> |EDiscovery 物件的使用者建立、 刪除或修改; 的類型例如 （預覽、 匯出或清除） 的內容搜尋動作、 eDiscovery 案例或內容搜尋。  <br/> |

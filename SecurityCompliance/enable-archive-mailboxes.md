@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用安全性 & 在 Office 365 規範中心啟用封存信箱以支援您的組織郵件保留、 eDiscovery 和保留需求。
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000256"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813964"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全性 & 規範中心啟用封存信箱
   
@@ -37,7 +37,7 @@ ms.locfileid: "31000256"
   
 ## <a name="enable-an-archive-mailbox"></a>啟用封存信箱
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
@@ -68,7 +68,7 @@ ms.locfileid: "31000256"
   
 若要停用封存信箱：
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
@@ -141,6 +141,6 @@ ms.locfileid: "31000256"
     
   - [保留標記和保留原則](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [預設保留原則在 Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [預設保留原則在 Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [設定 Office 365 組織中信箱的封存和刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

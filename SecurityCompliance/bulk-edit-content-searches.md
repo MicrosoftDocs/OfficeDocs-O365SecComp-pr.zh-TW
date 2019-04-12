@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用大量搜尋編輯器在 Office 365 或 Microsoft 365 安全性與合規性中心] 中，可快速變更一或多個內容搜尋的查詢及內容位置。
-ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001096"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813934"
 ---
 # <a name="bulk-edit-content-searches"></a>大量編輯內容搜尋
 
@@ -26,7 +26,7 @@ ms.locfileid: "31001096"
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>使用大量搜尋編輯器]，以變更查詢
 
-1. 移至 [ [https://compliance.microsoft.com](https://compliance.microsoft.com)，然後按一下 [**搜尋** \> **內容搜尋**。
+1. 移至 [ [https://protection.office.com](https://protection.office.com)，然後按一下 [**搜尋** \> **內容搜尋**。
     
 2. 在 [搜尋] 清單中選取一或多個搜尋，然後按一下 [**大量搜尋編輯器**![大量搜尋編輯器按鈕](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)。
     
@@ -44,7 +44,7 @@ ms.locfileid: "31001096"
     
    - 在儲存格中輸入新的查詢。 請注意，您無法編輯查詢的一部分。 您必須輸入整個查詢。
     
-      或
+      Or
     
     - 在儲存格中，貼上新的查詢。 本範例假設您已複製查詢文字從一個檔案，例如文字檔案或 Excel 檔案。
     

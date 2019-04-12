@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性 & 合規性中心來搜尋整合的稽核記錄] 來檢視您的 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479679"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814174"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性 & 規範中心搜尋稽核記錄
 
@@ -115,7 +115,7 @@ ms.locfileid: "31479679"
     |eDiscovery  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft 表單  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -147,7 +147,7 @@ ms.locfileid: "31479679"
   
 ### <a name="step-1-run-an-audit-log-search"></a>步驟 1： 執行稽核記錄搜尋
 
-1. 請移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
     > [!TIP]
     > 使用私人瀏覽工作階段 （不在一般工作階段） 來存取安全性 & 合規性中心，因為這會防止您目前登入與所用的認證。 若要開啟 [InPrivate 瀏覽工作階段在 Internet Explorer 或 Microsoft Edge 中，只需按 CTRL + SHIFT + P。 若要在 Google Chrome （稱為 incognito 視窗） 中開啟私人瀏覽工作階段，請按 CTRL + SHIFT + N。 
@@ -455,7 +455,7 @@ ms.locfileid: "31479679"
 |新增的委派信箱權限  <br/> |Add-mailboxpermission  <br/> |系統管理員指派給使用者 （稱為 「 代理人 」） 的 FullAccess 信箱權限給其他人的信箱。 FullAccess 權限可讓代理人開啟另一個使用者的信箱，並讀取和管理信箱的內容。  <br/> |
 |分類為記錄的郵件  <br/> |ApplyRecordLabel<br/> |郵件被分類為記錄。 分類為記錄的內容保留標籤手動或自動套用至郵件會發生此錯誤。<br/> |
 |複製到另一個資料夾的郵件  <br/> |Copy  <br/> |郵件已複製到另一個資料夾。  <br/> |
-|建立的信箱項目  <br/> |Create  <br/> |在信箱; 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。 請注意不稽核建立、 傳送或接收郵件。 此外，不稽核建立一個信箱資料夾。  <br/> |
+|建立的信箱項目  <br/> |建立  <br/> |在信箱; 中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目例如，會建立新的會議邀請。 請注意不稽核建立、 傳送或接收郵件。 此外，不稽核建立一個信箱資料夾。  <br/> |
 |在 Outlook web app 中建立新的收件匣規則  <br/> |NewInboxRule<br/> |<br/> |
 |從 [刪除的項目] 資料夾的已刪除郵件  <br/> |SoftDelete  <br/> |郵件已永久刪除，或從 [刪除的項目] 資料夾中刪除。 這些項目會移至 [可復原的項目] 資料夾。 當使用者選取它，並按下**Shift + Delete**，郵件也會移至 [可復原的項目] 資料夾。  <br/> |
 |移至另一個資料夾的郵件  <br/> |Move  <br/> |郵件已移到另一個資料夾。  <br/> |
@@ -466,7 +466,7 @@ ms.locfileid: "31479679"
 |傳送訊息使用傳送為 」 權限  <br/> |SendAs  <br/> |郵件已傳送使用 SendAs 權限。 這表示另一位使用者傳送的郵件，就好像它來自信箱擁有者。  <br/> |
 |傳送訊息使用傳送代理者權限  <br/> |SendOnBehalf  <br/> |郵件已傳送使用 SendOnBehalf 權限。 這表示另一位使用者傳送代表信箱擁有者的郵件。 郵件已傳送代理者誰以及實際寄件者郵件的訊息會指出收件者。  <br/> |
 |更新的委派存取權的行事曆資料夾  <br/> |UpdateCalendarDelegation  <br/> |行事曆委派已指派給信箱。 行事曆委派可讓其他人在相同的組織權限來管理信箱擁有者的行事曆。  <br/> |
-|更新的訊息  <br/> |Update  <br/> |郵件或其屬性已變更。  <br/> |
+|更新的訊息  <br/> |更新  <br/> |郵件或其屬性已變更。  <br/> |
 |登入信箱的使用者  <br/> |MailboxLogin  <br/> |使用者登入其信箱。  <br/> |
 |(無)  <br/> |UpdateInboxRules  <br/> |已新增、 移除或變更收件匣規則。 收件匣規則用來處理郵件使用者的收件匣根據指定的條件，並符合規則的條件，例如將郵件移至指定資料夾或刪除郵件時採取的動作。  <br/> 若要傳回的收件匣規則活動的項目，您必須在**活動**清單中選取 [**顯示所有活動的結果**。 使用日期範圍] 方塊和 [**使用者**] 清單來縮小搜尋結果。  <br/> |
 ||||

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '安全性 & 合規性中心中的內容搜尋的搜尋結果匯出到本機電腦上。 電子郵件的結果會匯出為 PST 檔案。 內容從 SharePoint 和 OneDrive for Business 網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000466"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814054"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -80,7 +80,7 @@ ms.locfileid: "31000466"
 
 第一個步驟是準備用於匯出的搜尋結果。 當您準備結果時，它們上傳至 Microsoft 雲端中的 Azure 儲存體位置。 請注意，內容從信箱和站台上傳於每小時 2 GB 的最大速率。
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
@@ -186,7 +186,7 @@ ms.locfileid: "31000466"
 
 [檔名的匯出項目](#filenames-of-exported-items)  
   
-[其他工作](#miscellaneous)
+[雜項](#miscellaneous)
   
  ### <a name="export-limits"></a>匯出限制
   

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全性 & 合規性中心來取得各種報告您的 SharePoint Online 和 Exchange Online 組織，以及 Azure Active Directory 的報告。  '
-ms.openlocfilehash: e336ddb500ced25fc17ebf4edfb680e410bae172
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999056"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813914"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全規範中心內的報告
 
@@ -37,7 +37,7 @@ ms.locfileid: "30999056"
   
  **若要開啟 [檢視報告] 頁面的安全性 & 合規性中心中：**
   
-1. 請移至 [https://compliance.microsoft.com/#/viewreports](https://compliance.microsoft.com/#/viewreports)。
+1. 請移至 [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports)。
     
 2. 登入 Office 365 使用 Office 365 組織中的使用者帳戶的認證。
     
@@ -51,7 +51,7 @@ ms.locfileid: "30999056"
 
 下表說明 [**稽核**] 區段中安全性 & 合規性中心中的 [**檢視報告**] 頁面上的報告。 
   
-|**Report**|**描述**|
+|**報告**|**描述**|
 |:-----|:-----|
 |**Office 365 稽核記錄報告** <br/> |您可以在 Office 365 組織中搜尋使用者和系統管理員活動的 Office 365 稽核記錄檔。 報告中包含的項目使用者和系統管理員活動，在 Exchange Online、 SharePoint Online、 OneDrive for Business 和 Azure Active Directory，也就是 Office 365 的目錄服務。 如需詳細資訊，請參閱 <<c0>的搜尋稽核記錄在 Office 365。  <br/> |
 |**Azure AD 報告** <br/> |若要尋找不尋常或可疑登入活動在 Office 365 組織中，您可以使用登入和活動在 Microsoft Azure 中的報告。 您也可以在 Azure AD 稽核記錄檔檢視事件。 若要在 Azure 中檢視報表，只要按一下**檢視 Azure AD 報告**。 如需詳細資訊，請參閱： <br/><br/>[使用 Office 365 中免費的 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)。 <br/> [檢視您存取及使用狀況的報告](http://go.microsoft.com/fwlink/p/?LinkId=506902)。  <br/> |

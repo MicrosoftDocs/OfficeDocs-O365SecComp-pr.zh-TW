@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 提供歐盟公民 （稱為 「 資料主體） 的特定權限至他們的個人資料;這些權限包括取得它的副本、 要求給它的變更，限制其處理、 刪除它，或接收電子格式。 受到採取資料的正式要求其個人的資料巨集指令會呼叫的資料主體要求或 DSR。 您可以在 Office 365 和 Microsoft 365 合規性中心] 中使用 DSR 案例，來管理您的組織 DSR 調查。
-ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000106"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814024"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>管理與安全性 & 合規性中心的 DSR 案例工具的 GDPR 資料主體要求
 
@@ -84,7 +84,7 @@ ms.locfileid: "31000106"
 
 下一步是建立 DSR 案例。 當您建立的情況下時，您可選擇啟動內建的搜尋，或者您可以建立這種情況而不需啟動搜尋。 下列程序會指示您建立這種情況，而不必從開始搜尋，然後告訴您如何將成員新增至案例。
   
-1. 移至 [[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入 Office 365 中，使用公司或學校帳戶。 
+1. 移至 [[https://protection.office.com](https://protection.office.com)並登入 Office 365 中，使用公司或學校帳戶。 
     
 2. 在 [安全性 & 合規性中心中，按一下 [**資料隱私權** \> **資料主體要求**]，然後按一下 [![加入圖示](media/ITPro-EAC-AddIcon.gif)**新的 DSR 案例**。
     
@@ -179,7 +179,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
   - Microsoft Edge
     
-    或
+    Or
     
   - Microsoft Internet Explorer 10 或更新版本
     
