@@ -1,7 +1,7 @@
 ---
 title: 防範 Office 365 中的威脅
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: laurawi
 ms.audience: Admin
 ms.topic: hub-page
@@ -13,101 +13,148 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: 了解 Office 365 企業版如何協助保護您的組織防範各種威脅，包括詐騙、 惡意程式碼、 垃圾郵件、 網路釣魚企圖和未經授權的存取資料。
-ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+description: 使用本文做為指南，立即設定您的威脅防護功能。
+ms.openlocfilehash: c651c13d5aacf1a7f95a93cacf5030e8ade4b8fd
+ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693242"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31836827"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防範 Office 365 中的威脅
 
-使用 Office 365 企業版，您可以協助保護您的組織防範各種威脅，包括詐騙、 惡意程式碼、 垃圾郵件、 網路釣魚企圖和未經授權的存取資料。 使用此頁面上的資源，若要深入了解威脅防護選項，以及您可以採取的動作。
+Office 365 包含各種威脅防護功能。 以下為您的組織設定您可以使用為檢查清單，以確定您威脅保護功能快速入門指南。 如果您是初次使用 Office 365 中的威脅保護功能，或您不只是確定要開始，請使用下列指引做為起點。 
 
-## <a name="malware"></a>惡意程式碼
+> [!IMPORTANT]
+> **初始建議的設定包含每種原則; 不過，有許多選項可用，且您可以調整您的設定以符合您特定的組織需求**。 允許大約 30 分鐘，為您的原則或變更其透過您的資料中心的方式運作。
 
-- [反垃圾郵件&amp;反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)
-    
-- [隔離 Office 365 中的電子郵件](quarantine-email-messages.md)
-    
-- [將惡意程式碼與非惡意程式碼提交給 Microsoft 進行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
+## <a name="prerequisites"></a>必要條件
 
-## <a name="zero-day-protection"></a>零時差保護
+您必須獲指派適當的角色，才能設定[安全性 & 合規性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)中的原則。 下表包含一些範例： 
 
-- [零時差自動清除 - 防範垃圾郵件和惡意程式碼](zero-hour-auto-purge.md)
+|角色或角色群組  |若要了解更多的位置  |
+|---------|---------|
+|Office 365 全域系統管理員 |[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|安全性系統管理員 |[在 Azure Active Directory 系統管理員角色權限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online 組織管理 |[權限在 Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>與<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
-- [Office 365 ATP 安全附件](atp-safe-attachments.md)
+若要深入了解，請參閱[中 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。
 
-- [Office 365 ATP 安全連結](atp-safe-links.md)
+## <a name="part-1---anti-malware"></a>1-反惡意程式碼組件
 
-## <a name="anti-phishing"></a>反網路釣魚
+在包含[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP) 的訂閱中使用反惡意程式碼保護。 
 
-反網路釣魚保護包含使用者模擬、 網域模擬和外部的詐騙保護。 
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **反惡意程式碼**。
+2. 連按兩下**預設**原則]，然後再選擇 [**設定**。
+3. 指定下列設定：
+    - 在 [**惡意程式碼偵測回應**] 區段中，保留預設設定 [**否]**。
+    - **常見附件類型篩選**] 區段中，選擇 [**上**]。
+4. 按一下 [儲存]****。
 
-- [Office 365 的反詐騙保護](anti-spoofing-protection.md)
+若要深入了解反惡意程式碼原則選項，請參閱 <<c0>設定反惡意程式碼原則。
 
-- [深入了解詐騙情報](learn-about-spoof-intelligence.md)
+## <a name="part-2---zero-day-protection"></a>組件 2-零時差保護
 
-如果您使用 Office 365 中的自訂網域，幫助停止從您的組織的寄件者詐騙、 改善電子郵件安全性和保護您的網域信譽。
-  
-- [在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-    
-- [使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)
-    
-- [使用 DMARC 來驗證 Office 365 中的電子郵件](use-dmarc-to-validate-email.md)
+零時差保護用於包含[Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)(ATP) 的訂閱，並透過[ATP 安全連結](atp-safe-links.md)和[ATP 安全附件](atp-safe-attachments.md)原則設定。
 
-## <a name="anti-spam"></a>反垃圾郵件
+### <a name="atp-safe-attachments-policies"></a>ATP 安全附件原則
 
-- [Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 安全附件**。
+2. 選取 [**開啟 ATP SharePoint、 OneDrive 及 Microsoft Teams**] 選項。
+3. 在 [**保護電子郵件附件**] 區段中，按一下加號 (**+**)。
+4. 指定下列設定：
+    - 在 [**名稱**] 方塊中，輸入`Block malware`。
+    - 在 [回應] 區段中，選擇 [**封鎖**]。
+    - 在**重新導向附件**] 區段中，選取 [**啟用重新導向**，] 選項，然後指定貴組織的安全性系統管理員或運算子會檢閱者的電子郵件地址偵測到的檔案。
+    - 在 [**套用至**] 區段中，選擇 [**收件者網域是**]。 接著，選取您的網域選擇 [**新增**]，然後按一下 [**確定]**。
+5. 按一下 [儲存]****。
+6. （建議使用額外的步驟）以全域系統管理員或 SharePoint Online 管理員執行**[Set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** 指令程式搭配**DisallowInfectedFileDownload**參數設為*true*適用於 Office 365 環境。 （這可防止人員開啟、 移動、 複製或共用檔案，就會被視為惡意。）  
 
-- [在 Office 365 中建立整個組織的安全寄件者或封鎖的寄件者清單](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+若要了解更多，請參閱[設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)及[開啟 Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)。
 
-- [確定垃圾郵件路由傳送至每一位使用者的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
-  
-    
-## <a name="advanced-threat-protection"></a>進階威脅防護
+### <a name="atp-safe-links-policies"></a>ATP 安全連結原則
 
-設定原則以管理詐騙、 防範網路釣魚攻擊，並捕捉惡意 Url 或電子郵件訊息與進階威脅防護 (ATP) 中的檔案。
-  
-- [了解 Office 365 ATP](office-365-atp.md)
+若要設定 ATP 安全連結，檢閱您的預設原則，並新增原則。
 
-- [取得 Office 365 ATP 計劃 2 的概觀](office-365-ti.md)
-    
-- [設定反網路釣魚原則](set-up-anti-phishing-policies.md)
-    
-- [設定 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
-    
-- [設定 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)
-    
-## <a name="encryption"></a>加密
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 安全連結**。
+2. 連按兩下**預設**原則。
+3. 在**使用中的安全連結**] 區段中，選取 [ **Office 365 專業增強版、 Office for iOS 和 Android**，] 選項，然後按一下 [**儲存**。
+4. 在**原則套用至特定收件者**] 區段中，按一下加號 (**+**)。
+5. 指定下列設定：
+    - 在 [**名稱**] 方塊中，輸入名稱，例如： `Safe Links`。
+    - 在 [**選取動作**] 區段中，選擇 [**上**]。
+    - 選取這些選項：
+        - **使用安全附件以掃描可下載內容** 
+        - **套用至組織內傳送的電子郵件的安全連結**
+        - **不要讓使用者按一下原始 url 的安全連結**
+    - 在 [**套用至**] 區段中，選擇 [**收件者網域是**]。 接著，選取您的網域選擇 [**新增**]，然後按一下 [**確定]**。
+6. 按一下 [儲存]****。
 
-取得入門加密、 設定權限管理原則和電子郵件加密，並設定額外的加密設定。 取得關於我們郵件伺服器所用的 Office 365 的根憑證的詳細資訊。
-  
-- [了解 Office 365 中的加密](encryption.md)
-    
-- [設定 Office 365 企業版中的加密](set-up-encryption.md)
-    
-- [Office 365 郵件加密 (OME)](ome.md)
-    
-- [實作攜帶您自己的金鑰 (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
-        
-## <a name="privileged-access-management"></a>特許存取管理
+若要深入了解，請參閱 <<c0>設定 Office 365 ATP 安全連結原則。 
 
-協助保護您的組織可能使用現有的特殊權限的系統管理員帳戶具有常設存取權的敏感資料或存取重要的組態設定的外洩。 啟用特殊權限的存取管理之後, 使用者必須要求完成提升權限和特殊權限的工作，透過核准工作流程的高度範圍中的時間繫結的剛-時間存取權。
-  
-- [概略了解權限存取管理](privileged-access-management-overview.md)
-    
-- [開始使用特殊權限存取管理](privileged-access-management-configuration.md)
+## <a name="part-3---anti-phishing"></a>第 3-反網路釣魚部分 
 
-## <a name="additional-options"></a>其他選項
+在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中使用反網路釣魚保護。 使用[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)中進階的反網路釣魚保護。 下列程序說明如何設定 ATP 防網路釣魚原則。 步驟很類似 （不含 ATP) 反網路釣魚原則 」 的設定。
 
-取得相關的 Microsoft 技術與程序，協助防範威脅保護 Office 365 的詳細資訊。
-  
-- [了解 Azure 版權管理](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
-    
-- [了解 Azure 金鑰保存庫](https://docs.microsoft.com/azure/key-vault/)
-    
-- [了解租用戶隔離](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
-    
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **ATP 防網路釣魚**。
+2. 按一下 [**預設原則**。
+3. 在 [**模擬**] 區段中，按一下 [**編輯**]，然後指定下列設定：
+    -  在 [**新增使用者至保護**索引標籤中，開啟保護。 然後新增使用者，例如您的組織棋盤成員、 CEO、 CFO，以及其他資深領導人。 （您可以輸入個別電子郵件地址，或按一下 [顯示清單。）
+    - [**新增網域，以保護**] 索引標籤中，開啟**自動包含我所擁有的網域**。 如果您有自訂網域，以及將它們新增。
+    - 在 [**動作**] 索引標籤上選取 [**將郵件移至 [收件者的垃圾郵件資料夾**都要模擬使用者模擬的網域，並開啟安全提示。
+    - 在**信箱智慧**] 索引標籤，請確定信箱智慧已開啟。
+    - 在 [**檢閱您的設定**] 索引標籤中，檢閱您的設定之後，按一下 [**儲存**。
+4. 在 [**詐騙**] 區段中，按一下 [**編輯**]，然後指定下列設定：
+    - **詐騙篩選設定**索引標籤上，確定已開啟反詐騙保護。
+    - 在 [**動作**] 索引標籤中，選擇 [將郵件移至 [收件者的垃圾郵件資料夾。
+    - 在 [**檢閱您的設定**] 索引標籤中，檢閱您的設定之後，按一下 [**儲存**。 (如果您未進行任何變更，按一下 [**取消**。)
+5. 關閉 [預設原則設定] 頁面。
 
+若要深入了解反網路釣魚原則的選項，請參閱[Office 365 ATP 防網路釣魚和防網路釣魚原則設定](set-up-anti-phishing-policies.md)。
+
+## <a name="part-4---anti-spam"></a>組件 4-反垃圾郵件
+
+在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中使用反垃圾郵件保護。
+
+1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **反垃圾郵件**。
+2. 在 [**自訂**] 索引標籤中，開啟**自訂設定**。
+3. 依序展開 [**預設垃圾郵件篩選原則**，按一下 [**編輯原則**]，然後指定下列設定：
+    - 在 [**垃圾郵件和大量動作**] 區段中，臨界值設為 5 或 6 的值。
+    - 在 [**允許清單**] 區段中，檢閱 （和必要時，編輯） 允許寄件者和網域。
+4. 按一下 [儲存]****。
+
+若要深入了解反垃圾郵件原則的選項，請參閱[設定反垃圾郵件原則](configure-the-anti-spam-policies.md)。
+
+## <a name="part-5---service-wide-settings"></a>組件 5-全服務設定
+
+### <a name="zero-hour-auto-purge"></a>零時差自動清除
+
+在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中使用零時差自動清除 (ZAP)。 預設值; 會開啟此保護不過，必須符合下列條件，才會生效的保護：
+- 垃圾郵件動作會將**移至垃圾郵件] 資料夾的郵件**設定反垃圾郵件原則。
+- 使用者有保留其預設的垃圾郵件設定，且已不會關閉垃圾郵件保護。
+
+若要深入了解，請參閱[零時差自動清除-防範垃圾郵件和惡意程式碼](zero-hour-auto-purge.md)。
+
+### <a name="audit-logging"></a>稽核記錄
+
+在包含[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)的訂閱中使用稽核記錄。 若要檢視的資料在威脅保護報告，例如[安全性儀表板](security-dashboard.md)、[電子郵件安全性報告](view-email-security-reports.md)和 [[檔案總管](use-explorer-in-security-and-compliance.md)] 中，稽核記錄必須開啟為您的組織。 若要深入了解，請參閱[開啟 Office 365 稽核記錄搜尋的開啟或關閉](turn-audit-log-search-on-or-off.md)。
+
+## <a name="post-setup-tasks"></a>安裝後期工作
+
+### <a name="watch-for-new-features-and-service-updates"></a>監看的新功能和服務更新
+
+- [請造訪 Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)
+
+- [請參閱 Office 365 進階的威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
+
+### <a name="see-how-atp-is-working-for-your-organization"></a>請參閱 ATP 為您的組織的運作方式
+
+- [檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md)
+
+- [使用檔案總管中的安全性&amp;合規性中心](use-explorer-in-security-and-compliance.md)
+
+### <a name="periodically-review-and-revise-your-atp-policies"></a>定期檢閱並修改您的 ATP 原則
+
+- [保護您的 Office 365 使用者安全與 Office 365 威脅調查及回應](keep-users-safe-with-office-365-ti.md) 
+
+- [使用 Office 365 安全性中的智慧型報表和深入解析&amp;合規性中心](reports-and-insights-in-security-and-compliance.md) 
