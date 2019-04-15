@@ -25,7 +25,7 @@ ms.locfileid: "31000996"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>將保護套用至 Office 365 中的個人資料
 
-Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 透過合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
+Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 透過合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監視及自動保護整個 Office 365 的敏感性資訊。
 
 本主題描述如何使用 DLP 保護個人資料。本主題也會列出可用來實現 GDPR 規範的其他保護功能，包括在 SharePoint 文件庫中設定權限，以及使用裝置存取原則。
 
@@ -39,7 +39,7 @@ Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 �
 
 -   協助使用者了解如何符合規範，而不中斷其工作流程。
 
--   檢視 DLP 報告以瞭解有哪些內容符合您的組織的 DLP 原則。
+-   檢視 DLP 報告以了解有哪些內容符合您的組織的 DLP 原則。
 
 如需詳細資訊，請參閱[資料外洩防護原則概觀](https://support.office.com/zh-TW/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
