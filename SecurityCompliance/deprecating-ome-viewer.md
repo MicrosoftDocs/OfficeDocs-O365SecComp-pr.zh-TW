@@ -14,23 +14,23 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: 2018 年 8 月 15 日，我們將會被移除的 Office 365 郵件加密 (OME) 檢視器行動應用程式 Android 和 Apple 存放區。 Office 365 郵件加密 Viewer 行動應用程式已讀取電子郵件和附件已加密與 OME Apple 和 Android 手機上的先前版本所需。 不同於移除 OME 檢視器應用程式，我們不會進行任何變更為 OME 的舊版本。
-ms.openlocfilehash: 0aa8ef0f2610284c1e897290c3f337804d78185b
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 82f28249e6b9911faea866f5a3574b635e45156c
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936673"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901931"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>不再 Office 365 郵件加密檢視器應用程式
 
-2018 年 8 月 15 日，我們將會被移除的 Office 365 郵件加密 (OME) 檢視器行動應用程式 Android 和 Apple 存放區。 Office 365 郵件加密 Viewer 行動應用程式已讀取電子郵件和附件已加密與 OME Apple 和 Android 手機上的先前版本所需。 不同於移除 OME 檢視器應用程式，我們不會進行任何變更為 OME 的舊版本。
+2018 年 8 月 15 日，我們從 Android 和 Apple 存放區中移除的 Office 365 郵件加密 (OME) 檢視器行動應用程式。 Office 365 郵件加密 Viewer 行動應用程式已讀取電子郵件和附件已加密與 OME Apple 和 Android 手機上的先前版本所需。 不同於移除 OME 檢視器應用程式，我們不會進行任何變更為 OME 的舊版本。
   
-## <a name="changes-beginning-august-2018"></a>開始 2018 年 8 月的變更
+## <a name="changes-from-august-2018"></a>從 2018 年 8 月的變更
 
-為宣佈最後一年 9 月，我們已發行新版本的[Office 365 郵件加密](https://aka.ms/ome2017)，讓使用者可以傳送加密和保護給任何人的行動應用程式的需求而組織內部或外部的郵件。 此後，我們已新增額外的功能： 
+為宣佈年 9 月 2017，我們有發行新版的[Office 365 郵件加密](https://aka.ms/ome2017)，讓使用者可以傳送加密，並且保護給任何人的行動應用程式的需求而組織內部或外部的郵件。 此後，我們已新增額外的功能：
   
 - [僅加密的範本](https://aka.ms/encryptonly)
-    
+
 - [解密附件控制項](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
     
 使用這項變更，使用者將無法再能夠下載 Office 365 郵件加密 Viewer 行動應用程式開始年 8 月 1。 如此一來，郵件收件者可能無法讀取舊版 OME 某些 Android 和 Apple 行動裝置上使用加密的郵件。 不過，他們仍然能夠讀取這些郵件 （透過桌面瀏覽器） 的個人電腦上。 已經下載應用程式的使用者仍無法使用它。
