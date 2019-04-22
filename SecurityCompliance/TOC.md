@@ -13,6 +13,12 @@
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
 ## [資訊安全長 (CISO) 研討會訓練](ciso-workshop.md)
+### [單元 1 - Microsoft 網路安全簡報](ciso-workshop-module-1.md)
+### [單元 2 - 安全性管理](ciso-workshop-module-2.md)
+### [單元 3 - 身分識別和存取管理](ciso-workshop-module-3.md)
+### [單元 4a - 威脅防護策略，第一部分](ciso-workshop-module-4a.md)
+### [單元 4b - 威脅防護策略，第二部分](ciso-workshop-module-4b.md)
+### [單元 5 - 資訊保護](ciso-workshop-module-5.md)
 
 # 保護資料與服務存取權
 ## [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
