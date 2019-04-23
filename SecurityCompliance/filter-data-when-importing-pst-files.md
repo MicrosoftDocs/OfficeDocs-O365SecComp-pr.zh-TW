@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 匯入服務中的新的智慧型匯入功能，來篩選實際取得匯入至目標信箱的項目。 智慧型匯入可讓您主動決定何種資料匯入及要留下的項目。 智慧型匯入也可提供見解上您要匯入至 Office 365 的資料。 '
-ms.openlocfilehash: 33a29c74e3d57a90ae552f6dee72047943698cab
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958584"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>匯入至 Office 365 的 PST 檔案時篩選資料
 
@@ -59,7 +59,7 @@ ms.locfileid: "30999476"
 
 您已建立之後 PST 匯入工作，請遵循下列步驟之前進行篩選資料匯入 Office 365。
   
-1. 移至 [[https://compliance.microsoft.com/](https://compliance.microsoft.com/)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
+1. 移至 [[https://protection.office.com/](https://protection.office.com/)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
     
 2. 按一下 [**資料控管** \> **匯入**。
     
@@ -114,7 +114,7 @@ ms.locfileid: "30999476"
     
     e. 按一下 [開始匯入的 [**匯入資料**]。 請注意，顯示總將匯入的資料量。 
     
-    或
+    Or
     
     a. 按一下 [**否，我想要匯入每個項目**匯入 Office 365 的 PST 檔案中的所有資料，然後按一下 [**下一步**。
     

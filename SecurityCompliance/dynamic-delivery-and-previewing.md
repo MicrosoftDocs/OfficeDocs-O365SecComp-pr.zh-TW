@@ -3,7 +3,7 @@ title: 動態傳遞和預覽與 Office 365 ATP 安全附件
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: 當您設定 ATP 安全附件原則時，您可以選擇以避免郵件延遲，並讓使用者在預覽所掃描的附件動態傳遞。
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958564"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和預覽與 Office 365 ATP 安全附件
 
@@ -81,4 +81,4 @@ ATP 安全附件掃描採取放在您的 Office 365 資料所在的相同區域�
 
 - 使用[安全/多用途網際網路郵件延伸 (S/MIME)](s-mime-for-message-signing-and-encryption.md)加密的郵件）
 
-在動態傳遞不受支援所在的情況下，ATP 安全附件會掃描電子郵件訊息。 不過，根據您的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)設定的方式，會檢查電子郵件 （與 Office 檔案） 中的 Url。
+- 在動態傳遞不受支援所在的情況下，ATP 安全附件會掃描電子郵件訊息。 不過，傳遞電子郵件訊息附件包含 Url 就會檢查，根據您的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)設定的方式。 在這些情況下，就會檢查電子郵件和 Office 檔案中的 Url。

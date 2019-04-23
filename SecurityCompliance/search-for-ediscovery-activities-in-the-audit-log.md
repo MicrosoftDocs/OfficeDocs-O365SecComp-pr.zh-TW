@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何搜尋 Office 365 稽核記錄會記錄合規性管理員中的安全性 & 合規性中心執行內容搜尋和 eDiscovery 案例的工作時的事件。
 ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958714"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>搜尋 Office 365 稽核記錄中的 eDiscovery 活動
 
@@ -73,7 +73,7 @@ ms.locfileid: "31814094"
 > [!NOTE]
 > 本節所述的 eDiscovery 活動提供類似的資訊來下一節所述的 eDiscovery 指令程式活動。 我們建議您使用本節中所述，因為它們會在 30 分鐘內出現在稽核記錄搜尋結果中的 eDiscovery 活動。 花費最多 24 小時的 ediscovery （英文） 指令程式的活動，以顯示在稽核記錄搜尋結果。 
   
-|**易記名稱**|**作業**|**對應的 cmdlet**|**描述**|
+|**易記名稱**|**Operation**|**對應的 cmdlet**|**描述**|
 |:-----|:-----|:-----|:-----|
 |新增的成員至 eDiscovery 案例  <br/> |CaseMemberAdded  <br/> |新增 ComplianceCaseMember  <br/> |使用者已新增為 eDiscovery 案例的成員。 身為成員的情況下，使用者可以執行各種案例相關的工作，根據是否他們已獲指派必要權限。  <br/> |
 |變更內容搜尋  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |已變更現有的內容搜尋。 新增或移除內容位置或編輯搜尋查詢，可以包含的變更。  <br/> |
@@ -154,7 +154,7 @@ ms.locfileid: "31814094"
 > [!TIP]
 > 當您匯出搜尋結果時，CSV 檔案包含名為的**詳細資訊**，其中包含下表中的多重值屬性中所述的詳細的屬性的資料行。 您可以使用 Excel 中的 Power Query 功能，此資料行分割成多個資料行，使每個屬性將有它自己的資料行。 這可讓您排序及篩選一或多個這些屬性。 如需詳細資訊，請參閱 <<c0>搜尋稽核記錄檔的 「 匯出至檔案的搜尋結果 」 一節。 
   
-|**屬性	**|**描述**|
+|**屬性**|**描述**|
 |:-----|:-----|
 |案例  <br/> |身分識別 (GUID) 的已建立、 變更或刪除的 eDiscovery 案例。  <br/> |
 |ClientApplication  <br/> |eDiscovery 指令程式活動有此屬性值的**EMC** 。 這表示使用安全性 & 合規性中心 GUI 或 PowerShell 中執行此 cmdlet 所執行的活動。  <br/> |

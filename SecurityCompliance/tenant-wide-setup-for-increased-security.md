@@ -1,5 +1,5 @@
 ---
-title: 設定您的 Office 365 租用戶以提高安全性
+title: 設定 Office 365 租用戶以提高安全性
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -15,14 +15,14 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 逐步解說租用戶整體設定會影響您的 Office 365 環境的安全性建議的組態。 您的安全性需求可能需要更多或更少的安全性。 使用這些建議作為起點。
-ms.openlocfilehash: 26f7bebd1eab1f43da356786bdef5f3fff860053
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: 91471f5e4b16f6950b1f74d747ebce3f802e4890
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958534"
 ---
-# <a name="configure-your-office-365-tenant-for-increased-security"></a>設定您的 Office 365 租用戶以提高安全性
+# <a name="configure-your-office-365-tenant-for-increased-security"></a>設定 Office 365 租用戶以提高安全性
 
 本主題引導您逐步完成會影響您的 Office 365 環境的安全性的全租用戶設定的建議組態。 您的安全性需求可能需要更多或更少的安全性。 使用這些建議作為起點。
   
@@ -65,7 +65,7 @@ Office 365 安全分數分析根據您的日常活動和安全性設定的 Offic
   
 |區域 * * *|包含預設原則 * * *|建議 * * *|
 |:-----|:-----|:-----|
-|**郵件流程**（郵件流程規則，也稱為傳輸規則）|否|新增郵件流程規則，以協助防範勒索軟體。 請參閱此部落格文章中的 < 如何使用 Exchange 傳輸規則來追蹤或封鎖電子郵件與勒索軟體所使用的檔案副檔名 >:<b0>如何處理勒索軟體</b0>。  <br><br/> 建立郵件流程規則，以防止自動轉寄電子郵件至外部網域。 如需詳細資訊，請參閱[減輕用戶端外部轉寄規則與安全分數](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。 <br/><br/> 更多資訊：[郵件流程規則 （傳輸規則） 在 [Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**郵件流程**（郵件流程規則，也稱為傳輸規則）|否|新增郵件流程規則，以協助防範勒索軟體。 請參閱此部落格文章中的 < 如何使用 Exchange 傳輸規則來追蹤或封鎖電子郵件與勒索軟體所使用的檔案副檔名 >:<b0>如何處理勒索軟體</b0>。 <br><br/> 請參閱下列主題： <br/>•[針對勒索軟體保護](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[惡意程式碼和勒索軟體防護，Office 365 中](office-365-malware-and-ransomware-protection.md)<br/><br/>  建立郵件流程規則，以防止自動轉寄電子郵件至外部網域。 如需詳細資訊，請參閱[減輕用戶端外部轉寄規則與安全分數](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。 <br/><br/> 更多資訊：[郵件流程規則 （傳輸規則） 在 [Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
 |**啟用新式驗證**|否|Office 365 中的新式驗證是使用多重要素驗證 (MFA) 的必要條件。 MFA 被建議用於保護雲端資源，包括電子郵件的存取權。 <br/><br/> 請參閱下列主題：  <br/>•[啟用或停用新式驗證在 Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype for Business Online： 啟用新式驗證在租用戶](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> 預設會啟用新式驗證的 Office 2016 用戶端、 SharePoint Online 和商務用 OneDrive。 <br/><br/> 更多資訊：[使用 Office 365 新式驗證搭配 Office 用戶端](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>在 SharePoint 系統管理中心中設定全租用戶共用原則

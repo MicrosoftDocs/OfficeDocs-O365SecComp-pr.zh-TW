@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共用是 SharePoint Online 和商務用 OneDrive 中的主要活動。 系統管理員現在可以使用 Office 365 稽核記錄檔中的共用稽核來判斷如何共用正在使用其組織中。 '
 ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958244"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>稽核共用來找出與外部使用者共用的資源
 
@@ -125,7 +125,7 @@ ms.locfileid: "31813944"
     
       - 在 [**分割**] 下選取 [**在分隔符號的每個項目**。
     
-7. 按一下 [確定]****。
+7. 按一下 [確定]。
     
     [**詳細資料**] 欄分割成多個資料行。 每個新的欄名為**Detail.1**、 **Detail.2**、 **Detail.3**，等等。 您會注意到**Detail.n**欄中的每個儲存格中的值以在屬性名稱例如，**作業： SharingSet**、**作業： SharingInvitationAccepted**和**作業： SharingInvitationCreated**。
     

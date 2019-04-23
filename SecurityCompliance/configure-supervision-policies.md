@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 若要擷取員工通訊，檢閱設定主管檢閱原則。
-ms.openlocfilehash: 1e381f5f435c7edb9f59afb07c22905f12d35513
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 92630b1405af6e297390751d9b00e24a82e03087
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958615"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 
@@ -36,51 +36,51 @@ ms.locfileid: "31001026"
   
 - **步驟 1 （選用）** - [設定群組的監督 （選用）](#step-1---set-up-groups-for-supervision-optional)
 
-    開始使用監督之前，請決定誰將其通訊檢閱，以及誰可以執行這些檢閱。 如果您想要開始使用少數使用者查看監督的運作方式，您可以略過現在群組設定。
+    開始使用監督之前，請決定誰需要檢閱的通訊，以及誰可以執行檢閱。 如果您想要開始使用少數使用者查看監督的運作方式，您可以略過現在群組設定。
 
 - **步驟 2 （必要）** - [進行 （必要） 組織中可用的監督](#step-2---make-supervision-available-in-your-organization-required)
 
-    將自己新增至主管檢閱角色群組，以便讓您可以設定原則。 擁有此角色指派給任何人可以存取合規性中心中的 [**監督**] 頁面。 若要檢閱的電子郵件裝載於 Exchange Online，每一位檢閱還必須[至 Exchange Online 的遠端 PowerShell 存取](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    將自己新增至主管檢閱角色群組，以便讓您可以設定原則。 擁有此角色指派給任何人可以存取合規性中心中的 [**監督**] 頁面。 如果 reviewable 電子郵件裝載於 Exchange Online，每位檢閱者必須具有[Exchange online 的遠端 PowerShell 存取](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
 - **步驟 3 （選用）** - [建立自訂機密資訊類型和自訂的關鍵字字典](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
-    如果您需要使用的自訂機密資訊類型或自訂的關鍵字字典監督原則，您需要建立啟動監督精靈之前。
+    如果您需要的自訂機密資訊類型或自訂的關鍵字字典監督原則，您需要建立啟動監督精靈之前。
 
 - **步驟 4 （必要）** - [設定的監督原則](#step-4---set-up-a-supervision-policy-required)
 
-    您將建立監督原則與合規性中心。 這些原則定義哪些通訊會受到檢閱您組織中，並指定誰應該執行的檢閱。 通訊包括電子郵件和 Microsoft Teams 的通訊，以及第 3 廠商平台 （例如 Facebook、 Twitter 等等） 的通訊
+    您可以建立監督原則與合規性中心。 這些原則定義哪些通訊會受到檢閱您組織中，並指定誰可以執行檢閱。 通訊包括電子郵件和 Microsoft Teams 的通訊，以及第 3 廠商平台 （例如 Facebook、 Twitter 等等） 的通訊
 
 - **步驟 5-（選用）**[測試您的監督原則](#step-5---test-your-supervision-policy-optional)
 
-    測試您的監督原則，以確保其運作視是確保您的合規性策略會議標準的重要部分。
+    測試您的監督原則，以確定它所需的功能。 請務必確定您符合性策略會議標準。
 
 - **步驟 6-（選用）**[設定 Outlook 的檢閱者不想要使用 Office 365 監督儀表板或 （先前稱為 Outlook Web App） 網頁型 Outlook 來檢閱監督的通訊](#step-6---configure-outlook-for-reviewers-optional)
 
-    Outlook 可以設定讓檢閱者存取 Outlook 用戶端內的監督功能讓他們可以評估並加以分類每個項目。
+    設定 Outlook，才能讓檢閱者存取 Outlook 用戶端內的監督功能讓他們可以評估並加以分類每個項目。
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>步驟 1-設定群組的監督 （選用）
 
- 當您建立的監督原則時，您將決定誰會有檢閱其通訊，以及誰可以執行這些檢閱。 在原則中，您將使用電子郵件地址來識別的個人或群組的人員。 為了簡化您的設定，您可以建立的人必須檢閱其通訊群組和的人會檢閱這些通訊群組。 如果您使用的群組，您可能需要數個 — 例如，如果您想要監視的人員，或如果您想要指定群組不是要為指導的兩個不同的群組之間的通訊。
+ 當您建立的監督原則時，您可以定義誰可以檢閱其通訊和使用者執行評論。 在原則中，您將使用電子郵件地址來識別的個人或群組的人員。 為了簡化您的設定，您可以建立的人員檢閱其通訊群組和群組的檢閱這些通訊的人。 如果您使用的群組，您可能需要數個選項。 例如，您要監視的人員，或如果您想要指定群組不是要為指導的兩個不同的群組之間的通訊。
 
 使用下表來協助您在您的組織監督原則中設定群組：
 
 | **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
 |監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
-| Reviewers | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
+| 檢閱者 | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
   
-若要管理大型企業組織中監督的使用者，您可能需要非常大型的群組之間監視所有使用者。 您可以使用 PowerShell 來設定全域監督原則中的 [指派] 群組的通訊群組。 這可協助您使用單一原則，以監視千分位的使用者，並保留更新為新員工加入您的組織在監督原則。
+若要管理大型企業組織中監督的使用者，您可能需要跨大型群組監視所有使用者。 您可以使用 PowerShell 來設定全域監督原則中的 [指派] 群組的通訊群組。 這可讓您監視數千名使用者與單一原則，並保留已更新為新員工加入您的組織在監督原則。
 
-1. 具有下列內容建立適用於您的全域監督原則的專用的[通訊群組](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)。 請確定此通訊群組未用於其他目的或其他 Office 365 服務。
+1. 建立專用的[通訊群組](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)全域監督原則具有下列內容： 請確定此通訊群組未用於其他目的或其他 Office 365 服務。
 
-    - **MemberDepartRestriction = 關閉**。 這可確保使用者不能移除自行從通訊群組。
-    - **MemberJoinRestriction = 關閉**。 這可確保使用者無法將自己新增至通訊群組。
-    - **ModerationEnabled = True**。 這可確保所有郵件傳送給此群組都需要核准及不會群組用來傳達外監督原則設定。
+    - **MemberDepartRestriction = 關閉**。 可確保使用者不能移除自行從通訊群組。
+    - **MemberJoinRestriction = 關閉**。 可確保使用者無法將自己新增至通訊群組。
+    - **ModerationEnabled = True**。 確保傳送至此群組的所有郵件都都會受到核准，而且不會群組用來傳達外監督原則設定。
 
     ```
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
-2. 選取 [未使用[Exchange 的自訂屬性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww)用於追蹤哪些使用者已新增至您組織中監督原則]。
+2. 選取要追蹤新增至您組織中監督原則的使用者未使用的[Exchange 的自訂屬性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww)。
 
 3. 若要將使用者新增至監督原則的週期性排程上執行下列 PowerShell 指令碼：
 
@@ -106,7 +106,7 @@ ms.locfileid: "31001026"
 
 若要讓**監督**在規範中心中可用的功能表選項，您必須獲指派的主管檢閱管理員角色。
   
-若要這麼做，您可以也將自己新增為主管檢閱角色群組的成員，或您可以建立新的角色群組。
+若要這麼做，您可以也將自己新增為主管檢閱角色群組的成員，或您可以建立角色群組。
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>將成員新增至 [主管檢閱] 角色群組
 
@@ -140,7 +140,7 @@ ms.locfileid: "31001026"
 
 ### <a name="create-custom-keyword-dictionarylexicon-optional"></a>建立自訂的關鍵字字典/lexicon （選用）
 
-使用文字編輯器 （例如記事本），建立新的檔案，其中包含您想要監視的監督原則的關鍵字字詞。 請確定每個字詞是位於個別一行，並以**Unicode/utf-16 (一點 Endian)** 格式儲存檔案。
+使用文字編輯器 （例如記事本），來建立新的檔案，其中包含您想要監視的監督原則的關鍵字字詞。 請確定每個字詞是位於個別一行，並以**Unicode/utf-16 (一點 Endian)** 格式儲存檔案。
 
 ### <a name="create-custom-sensitive-information-types"></a>建立自訂機密資訊類型
 
@@ -153,7 +153,7 @@ ms.locfileid: "31001026"
 
     如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)和[建立關鍵字字典](create-a-keyword-dictionary.md)
 
-    建立自訂字典/lexicon 之後，您可以檢視使用[Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)指令程式的設定的關鍵字或新增和移除使用[組 DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)指令程式的字詞。
+    建立自訂字典/lexicon 之後，您可以檢視透過[取得 DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)指令程式設定的關鍵字或新增和移除使用[組 DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)指令程式的字詞。
 
 ## <a name="step-4---set-up-a-supervision-policy-required"></a>步驟 4-設定 （必要） 的監督原則
   
@@ -168,7 +168,7 @@ ms.locfileid: "31001026"
     - 定義監督原則條件。
     - 選擇您想要包含敏感資訊類型。 這是您可以在其中選取預設及自訂機密資訊類型。
     - 定義要檢閱的通訊的百分比。
-    - 選擇 [原則的檢閱者]。 檢閱者可以是個別使用者或[擁有郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。
+    - 選擇 [原則的檢閱者]。 檢閱者可以是個別使用者或[擁有郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有檢閱者必須擁有 Exchange Online 上主控的信箱。
     - 檢閱您的原則選項，並建立原則。
 
 ## <a name="step-5---test-your-supervision-policy-optional"></a>步驟 5-測試 （選擇性） 您監督原則
@@ -176,7 +176,7 @@ ms.locfileid: "31001026"
 建立監督原則之後，它是不錯的選項進行測試以確定您定義的條件都要正確地強制執行該原則所。 如果您的監督原則包含敏感資訊類型，您也可能會想要[測試您的資料遺失防護 (DLP) 原則](create-test-tune-dlp-policy.md)。 請遵循下列步驟來測試您的監督原則：
 
 1. 開啟電子郵件用戶端或 Microsoft Teams 以登入您想要測試該的原則所定義的監督使用者。
-2. 傳送電子郵件或符合您已定義的監督原則中之準則的 Microsoft Teams 聊天室。 這可以是關鍵字附件大小、 網域、 等等。請確定您判斷您在原則中的現有條件化設定為太嚴格或太廣義。
+2. 傳送電子郵件或符合您已定義的監督原則中之準則的 Microsoft Teams 聊天室。 這可以是關鍵字附件大小、 網域、 等等。請確定您判斷您在原則中的現有條件化設定是否限制太多或太廣義。
 
     > [!Note]
     > 受到定義原則的電子郵件中處理幾近即時和可以用來測試後的原則設定。 Microsoft Teams 中的聊天室 」 可能需要最多 24 小時才完全處理程序中的原則。 
@@ -185,11 +185,11 @@ ms.locfileid: "31001026"
 
 ## <a name="step-6---configure-outlook-for-reviewers-optional"></a>步驟 6-設定 Outlook 的檢閱者 （選用）
 
-想要使用 Outlook，而不是使用 Office 365 中的監督儀表板，以檢閱通訊的檢閱者必須設定他們的 Outlook 用戶端。
+想要檢閱的通訊，而不是在 Office 365 中的監督儀表板使用 Outlook 的檢閱者必須設定他們的 Outlook 用戶端。
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>步驟 1： 複製監督信箱的地址
 
-若要設定的 Outlook 桌面檢閱或 outlook 網頁版，您需要的地址監督信箱監督原則安裝過程所建立。
+若要設定的 Outlook 桌面檢閱或 outlook 網頁版，您需要建立一部分監督原則設定的監督信箱地址。
   
 > [!NOTE]
 > 如果別人建立原則，您需要取得這個地址，才能安裝增益集。
@@ -200,32 +200,32 @@ ms.locfileid: "31001026"
 
 2. 移至**監督**。
 
-3. 按一下會收集您想要檢閱的通訊的監督原則。
+3. 選取您想要檢閱的通訊監督原則。
 
 4. 在 [原則的詳細資訊彈出式視窗中，[**監督信箱**，複製地址。<br/>![['監督信箱'] 區段中的監督原則的詳細資料彈出式視窗顯示反白顯示的監督信箱地址](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
 ### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>步驟 2： 設定 Outlook 存取的監督信箱
 
-下一步]，檢閱者將必須重新執行幾位 Exchange Online PowerShell 命令，讓他們可以將 Outlook 連線至監督的信箱。
+接下來，檢閱者需要執行的一些 Exchange Online PowerShell 命令，讓他們可以將 Outlook 連線至監督的信箱。
   
 1. 連線至 Exchange Online PowerShell。 [該怎麼做？](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
-2. 執行下列命令，其中*SupervisoryReview{GUID}@domain.onmicrosoft.com*是您在上述步驟 1 中複製的地址，且*使用者*的檢閱者會連線至步驟 3 中的監督信箱的名稱。
+2. 執行下列命令，其中*SupervisoryReview{GUID}@domain.onmicrosoft.com*是您在上述步驟 1 中複製的地址，且*使用者*的檢閱者會連線到步驟 3 中的監督信箱的名稱。
 
     ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
 
     ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
 
-3. 等候至少一個小時再移至步驟 3 下方。
+3. 等候至少一個小時再移至步驟 3。
 
 ### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>步驟 3： 建立的 Outlook 設定檔，以連線至監督信箱
 
-最後一個步驟中，檢閱者將會需要建立的 Outlook 設定檔，以連線至監督信箱。
+最後一個步驟中，檢閱者需要建立的 Outlook 設定檔，以連線至監督信箱。
 
 > [!NOTE]
 > 若要建立新的 Outlook 設定檔，您將使用在 Windows [控制台] 中的 「 信箱 」 設定。 若要取得這些設定您所採取的路徑可能需取決於您使用的 Windows 作業系統 （Windows 7、 Windows 8 或 Windows 10），以及安裝的 Outlook 版本。
   
-1. 開啟 [控制台] 中，並在視窗頂端的 [**搜尋**] 方塊中，輸入**郵件**。<br/>(不確定如何取得 Control Panel 嗎？ 請參閱[所在控制台？](https://support.microsoft.com/help/13764/windows-where-is-control-panel))
+1. 開啟 [控制台]。 在視窗頂端的 [**搜尋**] 方塊中，輸入**郵件**。<br/>(不確定如何取得 Control Panel 嗎？ 請參閱[所在控制台？](https://support.microsoft.com/help/13764/windows-where-is-control-panel))
   
 2. 開啟 [**郵件**應用程式]。
 
@@ -245,7 +245,7 @@ ms.locfileid: "31001026"
 
 ## <a name="powershell-reference"></a>PowerShell 參考
 
-如有需要您可以建立及管理監督原則使用下列 PowerShell cmdlet:
+如有需要您可以建立及管理監督原則搭配下列 PowerShell cmdlet:
 
 - [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
 - [取得 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)

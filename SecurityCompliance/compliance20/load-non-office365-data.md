@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958694"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>將非 Office 365 的資料載入工作集
 
@@ -47,19 +47,21 @@ ms.locfileid: "30737663"
 
    其中 abraham.mcmahon@contoso.com、 jewell.gordon@contoso.com 及 staci.gonzalez@contoso.com 均的情況下 custodians SMTP 地址。
 
+![非 Office 365 的資料上傳資料夾結構](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+
 - EDiscovery 管理員或 eDiscovery 管理員 Microsoft Azure 儲存體工具具有存取權的非 Office 365 內容的資料夾結構的電腦上安裝帳戶。
 
 - 安裝 AzCopy，您可以從這裡：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>非 Office 365 內容上傳至進階電子文件
 
-1. EDiscovery 管理員或 eDiscovery 系統管理員，以開啟 [進階電子文件，然後將上傳到非 Office 365 資料的案例]。  按一下 [**工作集**] 索引標籤，然後選取您想要將非 Office 365 資料載入工作集。  如果您無法建立工作集，您可以立即執行。  最後，按一下 [**管理起步設定**然後非 Office 365 資料] 區段中的**檢視上傳**
+1. EDiscovery 管理員或 eDiscovery 系統管理員，以開啟 [進階電子文件，然後將上傳到非 Office 365 資料的案例]。  按一下 [**工作集**] 索引標籤，然後選取您想要將非 Office 365 資料載入工作集。  如果您無法建立工作集，您可以立即執行。  最後，按一下 [**管理起步設定**然後非 Office 365 資料] 區段中的**檢視上傳**]。
 
 2. 按一下 [**上傳檔案**] 按鈕來啟動非 Office 365 資料匯入精靈]。
 
 ![上傳檔案](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. 在精靈中的第一個步驟只會準備要上傳檔案的安全 Azure blob。  一旦準備 compelted 之後，按一下 [**下一步： 將檔案上傳**] 按鈕。
+3. 在精靈中的第一個步驟只會準備要上傳檔案的安全 Azure blob。  準備完成之後，按一下 [**下一步： 將檔案上傳**] 按鈕。
 
 ![非 Office 365 匯入-準備](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  

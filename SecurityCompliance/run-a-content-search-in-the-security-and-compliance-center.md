@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: '用於安全性 & 合規性中心的內容搜尋來搜尋信箱、 SharePoint Online 網站和 OneDrive for Business 位置。 '
 ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958274"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>在安全規範中心執行內容搜尋
 
@@ -35,7 +35,7 @@ ms.locfileid: "31814074"
     
 內容搜尋是新的 eDiscovery 搜尋工具新增和改善縮放和效能功能。 使用「內容搜尋」執行極大型的 eDiscovery 搜尋。 您可以搜尋所有信箱、 所有的 Exchange 公用資料夾，以及所有 SharePoint Online 網站與 OneDrive for 商務用帳戶，在單一的內容都搜尋中。 有，您可以搜尋的內容位置的數目沒有限制。 同時可以執行的搜尋數目也沒有限制。 之後您執行內容搜尋的內容位置數和預估的搜尋結果數目會顯示在 [**內容搜尋**] 頁面上的詳細資料窗格中。 執行搜尋之後，您可以預覽結果、 取得關鍵字統計資料的一個或多個搜尋大量編輯內容搜尋，並將結果匯出到本機電腦上。 
   
- **內容**
+ **Contents**
   
 [Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
@@ -45,9 +45,9 @@ ms.locfileid: "31814074"
   
 [Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[編輯搜尋](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[重試搜尋](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -265,13 +265,14 @@ ms.locfileid: "31814074"
  
 [Microsoft Teams 和 Office 365 群組](#microsoft-teams-and-office-365-groups)
   
-[商務用 OneDrive](#onedrive-for-business)
+
+  [商務用 OneDrive](#onedrive-for-business)
   
 [搜尋查詢](#search-queries)
   
 [搜尋非使用中信箱](#searching-inactive-mailboxes)
   
-[雜項](#miscellaneous)
+[其他工作](#miscellaneous)
   
 [回到頁首](#before-you-begin)
   

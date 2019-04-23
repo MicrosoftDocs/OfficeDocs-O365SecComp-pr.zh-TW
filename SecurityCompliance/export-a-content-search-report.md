@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 而不是匯出實際的安全性 & 在 Office 365 規範中心中的內容搜尋結果，您可以只匯出搜尋結果報告。 報告中包含搜尋結果和詳細資訊，會匯出每個項目的相關文件的摘要。
 ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958724"
 ---
 # <a name="export-a-content-search-report"></a>匯出內容搜尋報告
 

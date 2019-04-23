@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全性 & 合規性中心來取得各種報告您的 SharePoint Online 和 Exchange Online 組織，以及 Azure Active Directory 的報告。  '
 ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958264"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全規範中心內的報告
 
@@ -51,7 +51,7 @@ ms.locfileid: "31813914"
 
 下表說明 [**稽核**] 區段中安全性 & 合規性中心中的 [**檢視報告**] 頁面上的報告。 
   
-|**報告**|**描述**|
+|**Report**|**描述**|
 |:-----|:-----|
 |**Office 365 稽核記錄報告** <br/> |您可以在 Office 365 組織中搜尋使用者和系統管理員活動的 Office 365 稽核記錄檔。 報告中包含的項目使用者和系統管理員活動，在 Exchange Online、 SharePoint Online、 OneDrive for Business 和 Azure Active Directory，也就是 Office 365 的目錄服務。 如需詳細資訊，請參閱 <<c0>的搜尋稽核記錄在 Office 365。  <br/> |
 |**Azure AD 報告** <br/> |若要尋找不尋常或可疑登入活動在 Office 365 組織中，您可以使用登入和活動在 Microsoft Azure 中的報告。 您也可以在 Azure AD 稽核記錄檔檢視事件。 若要在 Azure 中檢視報表，只要按一下**檢視 Azure AD 報告**。 如需詳細資訊，請參閱： <br/><br/>[使用 Office 365 中免費的 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)。 <br/> [檢視您存取及使用狀況的報告](http://go.microsoft.com/fwlink/p/?LinkId=506902)。  <br/> |

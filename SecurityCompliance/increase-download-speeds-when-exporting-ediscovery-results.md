@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何設定 Windows 登錄，以增加資料輸送量，下載搜尋結果時，搜尋 Office 365 中的安全性 & 合規性中心] 及 [進階電子文件探索中的資料。
-ms.openlocfilehash: 36a4f1766f3ac0108d1829c93cfca63bc5cf09f5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958620"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>匯出 eDiscovery 搜尋結果從 Office 365 時，增加的下載速度
 
 當您使用 Office 365 電子文件探索匯出工具來下載安全性 & 合規性中心中的內容搜尋的結果，或從 Office 365 進階電子文件探索下載資料時，此工具會啟動若要下載的並行匯出作業數目要在本機電腦的資料。 根據預設，同時進行的作業數目設為 8 的次數中您要用來下載資料之電腦的核心。 例如，如果您有雙核心電腦 （亦即一晶片上的兩個管理中心處理單位），同時進行匯出作業的預設數為 16。 若要增加資料傳輸輸送量並提升並下載程序，您可以藉由使用若要下載搜尋結果的電腦上設定 Windows 登錄設定增加同時進行的作業數目。 為了提升並下載程序，我們建議您以設定為 24 同時進行的作業開始。
   
-如果您透過低頻寬網路下載搜尋結果，請增加此設定可能會造成負面影響。 或者，您可以增加到超過 24 同時進行的作業 （同時進行的作業的最大數目為 512） 高頻寬網路中的設定。 設定此登錄設定之後，您可能必須變更，以找出最佳的同時進行的作業，為您的環境。
+如果您透過低頻寬網路下載搜尋結果，請增加此設定可能會造成負面影響。 或者，您可以增加到超過 24 同時進行的作業 （同時進行的作業的最大數目為 48） 的高頻寬網路中的設定。 設定此登錄設定之後，您可能必須變更，以找出最佳的同時進行的作業，為您的環境。
   
 ## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>建立登錄設定來匯出資料時變更的同時進行的作業數目
 

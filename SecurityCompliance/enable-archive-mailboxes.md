@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用安全性 & 在 Office 365 規範中心啟用封存信箱以支援您的組織郵件保留、 eDiscovery 和保留需求。
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958304"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全性 & 規範中心啟用封存信箱
   
@@ -37,7 +37,7 @@ ms.locfileid: "31901941"
   
 ## <a name="enable-an-archive-mailbox"></a>啟用封存信箱
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
@@ -68,7 +68,7 @@ ms.locfileid: "31901941"
   
 若要停用封存信箱：
   
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     

@@ -3,7 +3,7 @@ title: 將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Mic
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 6/11/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '您和您的使用者可以提交 false 負數，則為 false 正數垃圾郵件給 Microsoft 進行分析。 '
-ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958674"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 
@@ -33,7 +33,7 @@ ms.locfileid: "30693622"
 
 如果您收到通過垃圾郵件篩選，並應歸類為垃圾郵件或網路釣魚詐騙郵件，您可以將 「 誤判 」 訊息提交給 Microsoft 垃圾郵件分析及 Microsoft 網路釣魚分析小組，視。 分析師會檢閱此郵件，並將其新增至全服務篩選，如果它符合分類準則。 
   
-適用於整個組織的其他垃圾郵件設定，請參閱[利用 Office 365 垃圾郵件篩選，以避免誤判正常的封鎖電子郵件垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534225)。 本文包含可協助防止誤判的秘訣。
+適用於整個組織的其他垃圾郵件設定，請參閱[利用 Office 365 垃圾郵件篩選，以避免誤判正常的封鎖電子郵件垃圾郵件](reduce-spam-email.md)。 本文包含可協助防止誤判的秘訣。
   
 您可以透過下列方式提交垃圾郵件：
   
@@ -59,14 +59,14 @@ ms.locfileid: "30693622"
     > [!NOTE]
     > 您可以將多個郵件附加到新郵件。 請確定所有訊息都都是相同的型別 — 網路釣魚詐騙郵件或垃圾郵件。 > 是空白新郵件內的文。 
   
-4. 按一下 **[傳送]**。
+4. 按一下 [傳送]****。
     
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>將已標記為垃圾郵件，但應允許通過的郵件提交
 <a name="sectionSection1"> </a>
 
 如果郵件被誤判為垃圾郵件，您可以將 「 誤判 」 訊息提交給 Microsoft 垃圾郵件分析小組。 分析師會評估和分析此郵件。 我們可以根據分析的結果調整全服務的垃圾郵件內容篩選規則，以便允許郵件通行。
   
-系統管理員可以檢視多個會套用至整個組織的垃圾郵件設定資訊。 請參閱[如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)。 如果您有系統管理員層級的控制權，且您想要避免誤判，這項資訊會很有幫助。
+系統管理員可以檢視多個會套用至整個組織的垃圾郵件設定資訊。 請參閱[如何協助確保郵件不會標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判，這項資訊會很有幫助。
   
 您可以透過下列方式提交非垃圾郵件：
   
@@ -82,7 +82,7 @@ ms.locfileid: "30693622"
     
   - 使用者可以釋出自己被當成垃圾郵件隔離的郵件和其報告為誤判透過下列通道發佈： 
     
-  - Exchange 系統管理中心 (EAC) 使用者介面。 如需詳細資訊，請參閱 [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx)。
+  - Exchange 系統管理中心 (EAC) 使用者介面。 如需詳細資訊，請參閱 [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md)。
     
   - 使用者垃圾郵件通知訊息 (如果您的系統管理員已加以啟用)。 
     
@@ -118,10 +118,10 @@ ms.locfileid: "30693622"
 ## <a name="for-more-information"></a>相關資訊
 <a name="sectionSection4"> </a>
 
-[反垃圾郵件和反惡意程式碼防護](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[反垃圾郵件和反惡意程式碼防護](anti-spam-and-anti-malware-protection.md)
   
-[如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[如何協助確保郵件不會標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
   
-[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常](reduce-spam-email.md)
   
 
