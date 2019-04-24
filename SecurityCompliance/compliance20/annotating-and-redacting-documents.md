@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: dd708554e9b89c8f1057cffb1bcbaddb302cb253
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242531"
 ---
-# <a name="view-documents-in-a-working-set"></a><span data-ttu-id="8253a-102">檢視工作集中的文件</span><span class="sxs-lookup"><span data-stu-id="8253a-102">View documents in a working set</span></span>
+# <a name="view-documents-in-a-working-set"></a><span data-ttu-id="4edbb-102">檢視工作集中的文件</span><span class="sxs-lookup"><span data-stu-id="4edbb-102">View documents in a working set</span></span>
 
-<span data-ttu-id="8253a-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="8253a-103">Content coming soon.</span></span>
+<span data-ttu-id="4edbb-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="4edbb-103">Content coming soon.</span></span>

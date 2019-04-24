@@ -254,7 +254,7 @@
 ### [使用內容搜尋來搜尋協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [在您的電子文件探索工作流程中使用內容搜尋](use-content-search-in-ediscovery.md)
 ### [檢查您的內容搜尋查詢是否有錯誤](check-your-content-search-query-for-errors.md)
-### [為內容搜尋保留密件副本收件者](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
+### [為內容搜尋保留密件副本收件者](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ## 了解內容搜尋
 ### [內容搜尋的限制](limits-for-content-search.md)
 ### [內容搜尋中已局部編製索引的項目](partially-indexed-items-in-content-search.md)
@@ -286,6 +286,7 @@
 ### [刪除雲端式信箱中可復原的項目資料夾中的保留項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [增加保留信箱可復原的項目配額](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [保留密件副本與展開的通訊群組收件者](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 ## [Microsoft 365 中的進階電子文件探索 (預覽)](compliance20/overview-ediscovery-20.md)
 ### [版本資訊](compliance20/release-notes-ediscovery20.md)
@@ -314,13 +315,14 @@
 #### [搜尋統計資料](compliance20/search-statistics.md)
 #### [將搜尋結果新增至工作集](compliance20/add-data-to-working-set.md)
 
+### [管理工作集](compliance20/managing-working-sets.md)
+#### [將非 Office 365 的資料載入工作集](compliance20/load-non-office365-data.md)
+#### [新增資料至另一個工作集](compliance20/add-data-to-working-set-from-another-working-set.md)
+#### [管理載入集](compliance20/manage-load-sets.md)
+
 ### [檢閱案例資料](compliance20/reviewing-data-in-working-set.md)
 #### [檢視工作集中的文件](compliance20/view-documents-in-working-set.md)
 #### [查詢工作集中的資料](compliance20/working-set-search.md)
-#### [管理工作集](compliance20/managing-working-sets.md)
-#### [新增資料至另一個工作集](compliance20/add-data-to-working-set-from-another-working-set.md)
-#### [管理載入集](compliance20/manage-load-sets.md)
-#### [將非 Office 365 的資料載入工作集](compliance20/load-non-office365-data.md)
 #### [標記工作集中的文件](compliance20/tagging-documents.md)
 
 ### [分析案例資料](compliance20/analyzing-data-in-working-set.md)
@@ -579,7 +581,6 @@
 ### [Office 365 中的郵件流程情報](mail-flow-intelligence-in-office-365.md)
 ## 信箱保留
 ### [建立訴訟資料暫留](create-a-litigation-hold.md)
-### [保留電子文件探索密件副本與展開的通訊群組收件者](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ### [將虛刪除的信箱就地保留](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [隔離區](quarantine.md)
 ### [以系統管理員身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)

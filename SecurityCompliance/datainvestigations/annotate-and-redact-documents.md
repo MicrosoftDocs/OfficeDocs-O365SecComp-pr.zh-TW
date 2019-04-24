@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 923a94b5d1fc2852869cb7dfc8f54af29a1e5b6b
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259851"
 ---
-# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="a38f9-102">加上註解和 redact 文件中的辨識項</span><span class="sxs-lookup"><span data-stu-id="a38f9-102">Annotate and redact documents in evidence</span></span>
+# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="d1477-102">加上註解和 redact 文件中的辨識項</span><span class="sxs-lookup"><span data-stu-id="d1477-102">Annotate and redact documents in evidence</span></span>
 
-<span data-ttu-id="a38f9-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="a38f9-103">Content coming soon.</span></span>
+<span data-ttu-id="d1477-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="d1477-103">Content coming soon.</span></span>

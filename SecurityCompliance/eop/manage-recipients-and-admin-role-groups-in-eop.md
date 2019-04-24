@@ -11,23 +11,23 @@ localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵件收件者。下列主題及相關子主題提供管理收件者和指派管理員角色群組權限的相關資訊及設定程序。
 ms.openlocfilehash: 431a3af4a573c32ef099e72786f26f32dc3288e8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256581"
 ---
-# <a name="manage-recipients-and-admin-role-groups-in-eop"></a><span data-ttu-id="805ea-104">管理 EOP 中的收件者和系統管理員角色群組</span><span class="sxs-lookup"><span data-stu-id="805ea-104">Manage recipients and admin role groups in EOP</span></span>
+# <a name="manage-recipients-and-admin-role-groups-in-eop"></a><span data-ttu-id="a6cae-104">管理 EOP 中的收件者和系統管理員角色群組</span><span class="sxs-lookup"><span data-stu-id="a6cae-104">Manage recipients and admin role groups in EOP</span></span>
 
-<span data-ttu-id="805ea-p102">Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵件收件者。下列主題及相關子主題提供管理收件者和指派管理員角色群組權限的相關資訊及設定程序。</span><span class="sxs-lookup"><span data-stu-id="805ea-p102">Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions.</span></span>
+<span data-ttu-id="a6cae-p102">Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵件收件者。下列主題及相關子主題提供管理收件者和指派管理員角色群組權限的相關資訊及設定程序。</span><span class="sxs-lookup"><span data-stu-id="a6cae-p102">Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions.</span></span>
   
-|<span data-ttu-id="805ea-107">**主題**</span><span class="sxs-lookup"><span data-stu-id="805ea-107">**Topic**</span></span>|<span data-ttu-id="805ea-108">**描述**</span><span class="sxs-lookup"><span data-stu-id="805ea-108">**Description**</span></span>|
+|<span data-ttu-id="a6cae-107">**主題**</span><span class="sxs-lookup"><span data-stu-id="a6cae-107">**Topic**</span></span>|<span data-ttu-id="a6cae-108">**描述**</span><span class="sxs-lookup"><span data-stu-id="a6cae-108">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="805ea-109">管理 EOP 中的收件者</span><span class="sxs-lookup"><span data-stu-id="805ea-109">Manage recipients in EOP</span></span>](manage-recipients-in-eop.md) <br/> |<span data-ttu-id="805ea-110">說明 EOP 中的收件者類型 (郵件使用者和群組)、如何新增、移除及編輯收件者、在 EAC 中可於何處搜尋收件者，以及其他管理收件者的相關層面。</span><span class="sxs-lookup"><span data-stu-id="805ea-110">Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.</span></span>  <br/> |
-|[<span data-ttu-id="805ea-111">管理 EOP 中的系統管理員角色群組權限</span><span class="sxs-lookup"><span data-stu-id="805ea-111">Manage admin role group permissions in EOP</span></span>](manage-admin-role-group-permissions-in-eop.md) <br/> |<span data-ttu-id="805ea-112">說明在 EAC 中何處尋找管理員角色清單、如何在現有管理員角色群組中新增或移除使用者，以及您需要什麼權限才能管理特定的 EOP 功能。</span><span class="sxs-lookup"><span data-stu-id="805ea-112">Describes where to locate a list of admin roles in the EAC, how to add or remove users from an existing admin role group, and what permissions you need in order to manage specific EOP features.</span></span>  <br/> |
+|[<span data-ttu-id="a6cae-109">管理 EOP 中的收件者</span><span class="sxs-lookup"><span data-stu-id="a6cae-109">Manage recipients in EOP</span></span>](manage-recipients-in-eop.md) <br/> |<span data-ttu-id="a6cae-110">說明 EOP 中的收件者類型 (郵件使用者和群組)、如何新增、移除及編輯收件者、在 EAC 中可於何處搜尋收件者，以及其他管理收件者的相關層面。</span><span class="sxs-lookup"><span data-stu-id="a6cae-110">Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.</span></span>  <br/> |
+|[<span data-ttu-id="a6cae-111">管理 EOP 中的系統管理員角色群組權限</span><span class="sxs-lookup"><span data-stu-id="a6cae-111">Manage admin role group permissions in EOP</span></span>](manage-admin-role-group-permissions-in-eop.md) <br/> |<span data-ttu-id="a6cae-112">說明在 EAC 中何處尋找管理員角色清單、如何在現有管理員角色群組中新增或移除使用者，以及您需要什麼權限才能管理特定的 EOP 功能。</span><span class="sxs-lookup"><span data-stu-id="a6cae-112">Describes where to locate a list of admin roles in the EAC, how to add or remove users from an existing admin role group, and what permissions you need in order to manage specific EOP features.</span></span>  <br/> |
    
-## <a name="for-more-information"></a><span data-ttu-id="805ea-113">相關資訊</span><span class="sxs-lookup"><span data-stu-id="805ea-113">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="a6cae-113">相關資訊</span><span class="sxs-lookup"><span data-stu-id="a6cae-113">For more information</span></span>
 
-[<span data-ttu-id="805ea-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span><span class="sxs-lookup"><span data-stu-id="805ea-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span></span>](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)
+[<span data-ttu-id="a6cae-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span><span class="sxs-lookup"><span data-stu-id="a6cae-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span></span>](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)
   
 

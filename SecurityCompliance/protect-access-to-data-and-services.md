@@ -1,7 +1,7 @@
 ---
-title: 保護 Office 365 中的資料與服務存取權
-ms.author: chrfox
-author: chrfox
+title: 保護使用者和裝置存取
+ms.author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
 ms.audience: Admin
@@ -12,83 +12,57 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: 保護存取 O365 資料及服務的登陸頁面
-ms.openlocfilehash: 95933c5a7bc95f9fd70e8f3470055b57193971d4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 保護 O365 資料與服務存取權的登陸頁面
+ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265225"
 ---
-# <a name="protect-access-to-data-and-services-in-office-365"></a><span data-ttu-id="d2e06-103">保護 Office 365 中的資料與服務存取權</span><span class="sxs-lookup"><span data-stu-id="d2e06-103">Protect access to data and services in Office 365</span></span>
+# <a name="protect-user-and-device-access"></a><span data-ttu-id="32b65-103">保護使用者和裝置存取</span><span class="sxs-lookup"><span data-stu-id="32b65-103">Protect user and device access</span></span>
 
-<span data-ttu-id="d2e06-p101">保護您的 Office 365 資料及服務的存取很重要防禦適當攻擊及防範資料遺失。相同的保護設定可套用至您的環境中的其他 saas 和應用程式及偶數內部應用程式發佈與 Azure Active Directory 應用程式 Proxy。</span><span class="sxs-lookup"><span data-stu-id="d2e06-p101">Protecting access to your Office 365 data and services is crucial to defending against cyber-attacks and guarding against data loss. The same protections can be applied to other SaaS applications in your environment and even to on-premises applications published with Azure Active Directory Application Proxy.</span></span>
+<span data-ttu-id="32b65-104">保護您的 Office 365 資料與服務存取權是防禦網路攻擊與防止資料遺失而言很重要的。</span><span class="sxs-lookup"><span data-stu-id="32b65-104">Protecting access to your Office 365 data and services is crucial to defending against cyber-attacks and guarding against data loss.</span></span> <span data-ttu-id="32b65-105">同一種保護方式可套用至環境中的其他 SaaS 應用程式，甚至可在內部應用程式發佈與 Azure Active Directory 應用程式 Proxy。</span><span class="sxs-lookup"><span data-stu-id="32b65-105">The same protections can be applied to other SaaS applications in your environment and even to on-premises applications published with Azure Active Directory Application Proxy.</span></span>
   
-## <a name="step-1-review-recommendations"></a><span data-ttu-id="d2e06-106">步驟 1： 檢閱建議</span><span class="sxs-lookup"><span data-stu-id="d2e06-106">Step 1: Review recommendations</span></span>
+## <a name="step-1-review-recommendations"></a><span data-ttu-id="32b65-106">步驟 1： 檢閱建議</span><span class="sxs-lookup"><span data-stu-id="32b65-106">Step 1: Review recommendations</span></span>
 
-<span data-ttu-id="d2e06-107">推薦可用於保護身分識別和裝置的功能，其可存取 Office 365、其他 SaaS 服務，以及與 Azure AD 應用程式 Proxy 一起發佈的內部部署應用程式。</span><span class="sxs-lookup"><span data-stu-id="d2e06-107">Recommended capabilities for protecting identities and devices that access Office 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.</span></span>
+<span data-ttu-id="32b65-107">推薦可用於保護身分識別和裝置的功能，其可存取 Office 365、其他 SaaS 服務，以及與 Azure AD 應用程式 Proxy 一起發佈的內部部署應用程式。</span><span class="sxs-lookup"><span data-stu-id="32b65-107">Recommended capabilities for protecting identities and devices that access Office 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.</span></span>
   
-<span data-ttu-id="d2e06-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)</span><span class="sxs-lookup"><span data-stu-id="d2e06-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)</span></span>
+<span data-ttu-id="32b65-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)</span><span class="sxs-lookup"><span data-stu-id="32b65-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)</span></span>
   
-## <a name="step-2-configure-mfa"></a><span data-ttu-id="d2e06-109">步驟 2： 設定 MFA</span><span class="sxs-lookup"><span data-stu-id="d2e06-109">Step 2: Configure MFA</span></span>
+## <a name="step-2-protect-administrator-accounts-and-access"></a><span data-ttu-id="32b65-109">步驟 2： 保護系統管理員帳戶和存取</span><span class="sxs-lookup"><span data-stu-id="32b65-109">Step 2: Protect administrator accounts and access</span></span>
+<span data-ttu-id="32b65-110">您用於管理 Office 365 環境的管理帳戶包括提升的權限。</span><span class="sxs-lookup"><span data-stu-id="32b65-110">The administrative accounts you use to administer your Office 365 environment include elevated privileges.</span></span> <span data-ttu-id="32b65-111">這些是有價值的目標的駭客和網路罪犯。</span><span class="sxs-lookup"><span data-stu-id="32b65-111">These are valuable targets for hackers and cyber criminals.</span></span> 
 
-<span data-ttu-id="d2e06-110">使用您自己的方式放置到 MFA、 決定哪個版本最適合您，這些資源，然後規劃及部署 MFA 為您的環境。</span><span class="sxs-lookup"><span data-stu-id="d2e06-110">Use these resources to orient yourself to MFA, decide which version is right for you, and then plan and deploy MFA for your environment.</span></span>
-  
-- [<span data-ttu-id="d2e06-111">什麼是 Azure 的多重要素驗證？</span><span class="sxs-lookup"><span data-stu-id="d2e06-111">What is Azure multi-factor authentication?</span></span>](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
-    
-- [<span data-ttu-id="d2e06-112">您選擇的 Azure 的多重要素驗證解決方案</span><span class="sxs-lookup"><span data-stu-id="d2e06-112">Choose the Azure multi-factor authentication solution for you</span></span>](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started)
-    
-- [<span data-ttu-id="d2e06-113">如何取得 Azure 的多重要素驗證</span><span class="sxs-lookup"><span data-stu-id="d2e06-113">How to get Azure multi-factor authentication</span></span>](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-versions-plans)
-    
-- [<span data-ttu-id="d2e06-114">規劃 Office 365 部署的多重要素驗證</span><span class="sxs-lookup"><span data-stu-id="d2e06-114">Plan for multi-factor authentication for Office 365 deployments</span></span>](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
-    
-- [<span data-ttu-id="d2e06-115">設定 Office 365 使用者的多重要素驗證</span><span class="sxs-lookup"><span data-stu-id="d2e06-115">Set up multi-factor authentication for Office 365 users</span></span>](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
-    
-- [<span data-ttu-id="d2e06-116">規劃部署 MFA、 雲端或內部部署位置</span><span class="sxs-lookup"><span data-stu-id="d2e06-116">Plan where to deploy MFA, Cloud or on-premises</span></span>](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started)
-    
-- [<span data-ttu-id="d2e06-117">設定 Azure 的多重要素驗證設定</span><span class="sxs-lookup"><span data-stu-id="d2e06-117">Configure Azure multi-factor authentication settings</span></span>](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next)
-    
-## <a name="step-3-enforce-mfa-with-azure-ad-conditional-access-rules"></a><span data-ttu-id="d2e06-118">步驟 3： 強制 MFA 搭配 Azure AD 條件式存取規則</span><span class="sxs-lookup"><span data-stu-id="d2e06-118">Step 3: Enforce MFA with Azure AD conditional access rules</span></span>
+<span data-ttu-id="32b65-112">開始使用系統管理員帳戶僅適用於管理。</span><span class="sxs-lookup"><span data-stu-id="32b65-112">Begin by using administrator accounts only for administration.</span></span> <span data-ttu-id="32b65-113">系統管理員應該有個別的使用者帳戶一般，非系統管理員使用與僅使用其管理的帳戶時所需完成其工作職責相關聯的工作。</span><span class="sxs-lookup"><span data-stu-id="32b65-113">Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.</span></span>
 
-<span data-ttu-id="d2e06-119">如果您使用 Azure AD MFA，建立 MFA 需要存取 Office 365 和您環境中的其他 saas 和應用程式的設定格式化的條件存取規則。</span><span class="sxs-lookup"><span data-stu-id="d2e06-119">If you are using Azure AD MFA, create a conditional access rule to require MFA for access to Office 365 and other SaaS apps in your environment.</span></span>
-  
-- [<span data-ttu-id="d2e06-120">Azure Active Directory 中的設定格式化的條件存取</span><span class="sxs-lookup"><span data-stu-id="d2e06-120">Conditional access in Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-    
-## <a name="step-4-configure-privileged-access-management"></a><span data-ttu-id="d2e06-121">步驟 4： 設定權限的存取管理</span><span class="sxs-lookup"><span data-stu-id="d2e06-121">Step 4: Configure privileged access management</span></span>
+<span data-ttu-id="32b65-114">保護您的系統管理員帳戶具有多重要素驗證和條件式存取。</span><span class="sxs-lookup"><span data-stu-id="32b65-114">Protect your administrator accounts with multi-factor authentication and conditional access.</span></span> <span data-ttu-id="32b65-115">如需詳細資訊，請參閱[ Protecting 系統管理員帳戶](https://docs.microsoft.com/en-us/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts)。</span><span class="sxs-lookup"><span data-stu-id="32b65-115">For more information, see [Protecting administrator accounts](https://docs.microsoft.com/en-us/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts).</span></span> 
 
-<span data-ttu-id="d2e06-p102">特殊存取權限管理 Office 365 中讓更精細的存取權限的管理工作的控制權。 它可協助保護您的組織中可以使用現有的權限的管理員帳戶具有出位置的存取權機密資料或重要的組態設定的存取權的缺口。</span><span class="sxs-lookup"><span data-stu-id="d2e06-p102">Privileged access management allows granular access control over privileged admin tasks in Office 365.  It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.</span></span>
+<span data-ttu-id="32b65-116">接下來，在 Office 365 中設定特殊權限的存取管理。</span><span class="sxs-lookup"><span data-stu-id="32b65-116">Next, configure privileged access management in Office 365.</span></span> <span data-ttu-id="32b65-117">特殊權限存取管理可讓 Office 365 中的特殊權限的系統管理工作更精細的存取控制。</span><span class="sxs-lookup"><span data-stu-id="32b65-117">Privileged access management allows granular access control over privileged admin tasks in Office 365.</span></span> <span data-ttu-id="32b65-118">它可以協助保護您的組織可能使用現有的特殊權限的系統管理員帳戶具有常設存取權的敏感資料或存取重要的組態設定的外洩。</span><span class="sxs-lookup"><span data-stu-id="32b65-118">It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.</span></span>
 
-- [<span data-ttu-id="d2e06-124">權限的概觀存取管理</span><span class="sxs-lookup"><span data-stu-id="d2e06-124">Overview of privileged access management</span></span>](privileged-access-management-overview.md)
-- [<span data-ttu-id="d2e06-125">設定特殊權限存取管理</span><span class="sxs-lookup"><span data-stu-id="d2e06-125">Configure privileged access management</span></span>](privileged-access-management-configuration.md)
+- [<span data-ttu-id="32b65-119">概觀權限存取管理</span><span class="sxs-lookup"><span data-stu-id="32b65-119">Overview of privileged access management</span></span>](privileged-access-management-overview.md)
+- [<span data-ttu-id="32b65-120">設定特殊權限存取管理</span><span class="sxs-lookup"><span data-stu-id="32b65-120">Configure privileged access management</span></span>](privileged-access-management-configuration.md)
 
-## <a name="step-5-configure-sharepoint-device-access-policies"></a><span data-ttu-id="d2e06-126">步驟 5： 設定 SharePoint 裝置存取原則</span><span class="sxs-lookup"><span data-stu-id="d2e06-126">Step 5: Configure SharePoint device access policies</span></span>
+<span data-ttu-id="32b65-121">其他上方的建議是使用工作站特別針對系統管理工作。</span><span class="sxs-lookup"><span data-stu-id="32b65-121">Another top recommendation is to use workstations specifically configured for administrative work.</span></span> <span data-ttu-id="32b65-122">這些是僅適用於系統管理工作的專用的裝置。</span><span class="sxs-lookup"><span data-stu-id="32b65-122">These are dedicated devices that are only used for administrative tasks.</span></span> <span data-ttu-id="32b65-123">請參閱[保護特殊存取權限](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)。</span><span class="sxs-lookup"><span data-stu-id="32b65-123">See [Securing privileged access](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access).</span></span>
 
-<span data-ttu-id="d2e06-p103">SharePoint Online 和 OneDrive for Business 的裝置存取原則建議進行保護機密、 機密、 和規範資料。即將推出則裝置存取原則套用至個別小組網站的能力。</span><span class="sxs-lookup"><span data-stu-id="d2e06-p103">Device access policies for SharePoint Online and OneDrive for Business are recommended for protecting sensitive, classified, and regulated data. Coming soon is the ability to apply device access policies to individual team sites.</span></span>
-  
-- [<span data-ttu-id="d2e06-129">從未受控裝置中控制存取權</span><span class="sxs-lookup"><span data-stu-id="d2e06-129">Control access from unmanaged devices</span></span>](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
-    
-## <a name="step-6-configure-app-and-data-protection-for-devices"></a><span data-ttu-id="d2e06-130">步驟 6： 設定應用程式及資料保護裝置</span><span class="sxs-lookup"><span data-stu-id="d2e06-130">Step 6: Configure app and data protection for devices</span></span>
+<span data-ttu-id="32b65-124">最後，您可以在您的租用戶中建立兩個或多個緊急存取帳戶來降低不慎缺乏系統管理存取權的影響。</span><span class="sxs-lookup"><span data-stu-id="32b65-124">Finally, you can mitigate the impact of inadvertent lack of administrative access by creating two or more emergency access accounts in your tenant.</span></span> <span data-ttu-id="32b65-125">請參閱[在 Azure AD 中的管理緊急存取帳戶](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access)。</span><span class="sxs-lookup"><span data-stu-id="32b65-125">See [Manage emergency access accounts in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access).</span></span> 
 
-<span data-ttu-id="d2e06-p104">您可以管理不論是否將裝置註冊的行動裝置管理的行動裝置上的應用程式。這會對意外 Office 365，包括郵件和檔案中的資料外洩保護。</span><span class="sxs-lookup"><span data-stu-id="d2e06-p104">You can manage applications on mobile devices regardless of whether the devices are enrolled for mobile device management. This protects against accidental leakage of data in Office 365, including mail and files.</span></span>
-  
-- <span data-ttu-id="d2e06-133">IOS 及 android （英文）：[保護應用程式資料 Microsoft intune 的應用程式保護原則 （英文）](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)</span><span class="sxs-lookup"><span data-stu-id="d2e06-133">For iOS and Android: [Protect app data using app protection policies with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)</span></span>
-    
-<span data-ttu-id="d2e06-134">對於 Windows 10 設定 Windows 資訊保護 (WIP) 以避免意外的資料外洩。</span><span class="sxs-lookup"><span data-stu-id="d2e06-134">For Windows 10, configure Windows Information Protection (WIP) to prevent accidental data leaks.</span></span>
-  
-- <span data-ttu-id="d2e06-135">受管理的裝置：[建立與註冊原則使用 Azure 入口網站的 Microsoft Intune Windows 資訊保護 (WIP)](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)</span><span class="sxs-lookup"><span data-stu-id="d2e06-135">For managed devices: [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)</span></span>
-    
-- <span data-ttu-id="d2e06-136">未受管理的裝置：[建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則 intune](https://docs.microsoft.com/intune/windows-information-protection-policy-create)</span><span class="sxs-lookup"><span data-stu-id="d2e06-136">For un-managed devices: [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/intune/windows-information-protection-policy-create)</span></span>
-    
-## <a name="step-7-manage-devices-with-intune"></a><span data-ttu-id="d2e06-137">步驟 7： 管理 intune 的裝置</span><span class="sxs-lookup"><span data-stu-id="d2e06-137">Step 7: Manage devices with Intune</span></span>
+## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a><span data-ttu-id="32b65-126">步驟 3： 設定建議身分識別與裝置存取原則</span><span class="sxs-lookup"><span data-stu-id="32b65-126">Step 3: Configure recommended identity and device access policies</span></span>
+<span data-ttu-id="32b65-127">多重要素驗證 (MFA) 和條件式存取原則是功能強大的工具針對遭入侵帳戶減輕和未經授權的存取。</span><span class="sxs-lookup"><span data-stu-id="32b65-127">Multi-factor authentication (MFA) and conditional access policies are powerful tools for mitigating against compromised accounts and unauthorized access.</span></span> <span data-ttu-id="32b65-128">我們建議您實作一群一起經過測試的原則。</span><span class="sxs-lookup"><span data-stu-id="32b65-128">We recommend implementing a set of policies that have been tested together.</span></span> <span data-ttu-id="32b65-129">如需詳細資訊，包括部署步驟，請參閱[身分識別與裝置存取設定](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations)。</span><span class="sxs-lookup"><span data-stu-id="32b65-129">For more information, including deployment steps, see [Identity and device access configurations](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations).</span></span>
 
-<span data-ttu-id="d2e06-p105">管理裝置可讓您以確保其皆為正常且符合標準前環境中允許資源的存取權。裝置以設定格式化條件規則可協助您確保攻擊者無法存取您的資源來自未受管理的裝置的存取。</span><span class="sxs-lookup"><span data-stu-id="d2e06-p105">Managing devices allows you to ensure that they are healthy and compliant before allowing them access to resources in your environment. Device based conditional access rules help ensure attackers can't gain access to your resources from unmanaged devices.</span></span>
-  
-- [<span data-ttu-id="d2e06-140">註冊裝置管理的 Intune</span><span class="sxs-lookup"><span data-stu-id="d2e06-140">Enroll devices for management in Intune</span></span>](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
-    
-## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a><span data-ttu-id="d2e06-141">步驟 8： 設定其他 Intune 原則和您環境的條件式存取規則</span><span class="sxs-lookup"><span data-stu-id="d2e06-141">Step 8: Configure additional Intune policies and conditional access rules for your environment</span></span>
+ <span data-ttu-id="32b65-130">這些原則實作下列功能：</span><span class="sxs-lookup"><span data-stu-id="32b65-130">These policies implement the following capabilities:</span></span>
+- <span data-ttu-id="32b65-131">單行雙因素驗證</span><span class="sxs-lookup"><span data-stu-id="32b65-131">Mult-factor authentication</span></span>
+- <span data-ttu-id="32b65-132">條件式存取</span><span class="sxs-lookup"><span data-stu-id="32b65-132">Conditional access</span></span>
+- <span data-ttu-id="32b65-133">Intune 應用程式防護 （應用程式和資料保護，裝置）</span><span class="sxs-lookup"><span data-stu-id="32b65-133">Intune app protection (app and data protection for devices)</span></span>
+- <span data-ttu-id="32b65-134">Intune 裝置合規性</span><span class="sxs-lookup"><span data-stu-id="32b65-134">Intune device compliance</span></span>
+- <span data-ttu-id="32b65-135">Azure AD Identity Protection</span><span class="sxs-lookup"><span data-stu-id="32b65-135">Azure AD Identity Protection</span></span>
 
-<span data-ttu-id="d2e06-142">使用下列建議設定為起點的企業規模或複雜的存取安全使用情況。</span><span class="sxs-lookup"><span data-stu-id="d2e06-142">Use these recommended configurations as a starting point for enterprise scale or sophisticated access security scenarios.</span></span>
-  
-- [<span data-ttu-id="d2e06-143">安全的電子郵件原則及組態</span><span class="sxs-lookup"><span data-stu-id="d2e06-143">Secure email policies and configurations</span></span>](https://docs.microsoft.com/azure/active-directory/secure-email-introduction)
+<span data-ttu-id="32b65-136">Implemetning Intune 裝置合規性需要裝置註冊。</span><span class="sxs-lookup"><span data-stu-id="32b65-136">Implemetning Intune device compliance requires device enrollment.</span></span> <span data-ttu-id="32b65-137">管理裝置，可讓您以確保它們的狀況良好且符合標準前環境中允許存取資源。</span><span class="sxs-lookup"><span data-stu-id="32b65-137">Managing devices allows you to ensure that they are healthy and compliant before allowing them access to resources in your environment.</span></span> <span data-ttu-id="32b65-138">請參閱 <<c0>管理在 Intune 中註冊裝置</span><span class="sxs-lookup"><span data-stu-id="32b65-138">See [Enroll devices for management in Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)</span></span>
+
+## <a name="step-4-configure-sharepoint-device-access-policies"></a><span data-ttu-id="32b65-139">步驟 4： 設定 SharePoint 的裝置存取原則</span><span class="sxs-lookup"><span data-stu-id="32b65-139">Step 4: Configure SharePoint device access policies</span></span>
+
+<span data-ttu-id="32b65-140">Microsoft 建議您保護機密和高管制與裝置存取控制內容的 SharePoint 網站內容。</span><span class="sxs-lookup"><span data-stu-id="32b65-140">Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls.</span></span> <span data-ttu-id="32b65-141">如需詳細資訊，請參閱 <<c0>保護 SharePoint 網站與檔案的原則建議。</span><span class="sxs-lookup"><span data-stu-id="32b65-141">For more information, see [Policy recommendations for securing SharePoint sites and files](https://docs.microsoft.com/en-us/microsoft-365/enterprise/sharepoint-file-access-policies).</span></span>
+
+
+
     
 
