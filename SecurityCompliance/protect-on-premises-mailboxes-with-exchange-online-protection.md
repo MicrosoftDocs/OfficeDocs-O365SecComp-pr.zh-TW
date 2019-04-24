@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: 即使您計劃主控部分或全部信箱內部，您仍然可以保護信箱與 Exchange Online Protection (EOP)。 若要設定連接器，您的帳戶必須是 Office 365 全域管理員或 Exchange 公司管理員 (組織管理角色群組)。 如需 Office 365 權限方式與 Exchange 權限相關資訊，請參閱在 21vianet 運作的 Office 365 中指派系統管理員角色。 如果您的 Exchange 信箱的所有內部部署，請遵循下列步驟來設定您的 EOP 服務。
 ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261551"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>保護內部部署信箱與 Exchange Online Protection
 

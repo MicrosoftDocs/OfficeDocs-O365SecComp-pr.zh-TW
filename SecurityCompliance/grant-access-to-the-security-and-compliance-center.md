@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須獲指派 Office 365 安全性中的權限&amp;合規性中心之前他們可以管理其安全性或規範功能。
 ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253964"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>讓使用者能夠存取 Office 365 安全性&amp;合規性中心
 

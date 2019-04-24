@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 系統管理員可以了解如何識別通過，理由和方式了網路釣魚郵件的原因，以及如何在未來防止多個網路釣魚郵件提交的項目。
-ms.openlocfilehash: efda9e16c23e4533b6951e43ac085b7640e84576
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30937818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264315"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>調整 Office 365 中的反網路釣魚保護
 

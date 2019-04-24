@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '安全性 & 合規性中心中的內容搜尋的搜尋結果匯出到本機電腦上。 電子郵件的結果會匯出為 PST 檔案。 內容從 SharePoint 和 OneDrive for Business 網站會匯出為原生 Office 文件。 '
 ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255497"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 

@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板中的非公認的網域報表。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252130"
 ---
 # <a name="non-accepted-domain-report"></a>非公認的網域報表
 
@@ -36,6 +36,6 @@ Office 365 可能節流這些郵件，如果我們有證明這些郵件的目的
 
 ![非公認的網域報表中的 [明細] 資料表中選取一列](media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 用於協助控制及管理行動裝置存取您的組織資料，協助保護組織免於資料遺失的威脅管理，並協助防止惡意軟體和垃圾郵件的輸入及輸出郵件。 您也會使用威脅保護您的網域信譽，並判斷已遭到惡意詐騙的寄件者的管理帳戶從您的網域。
 ms.openlocfilehash: 9c6c39b7edc008c4a44146fac8076897e705b5f5
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259937"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 

@@ -13,11 +13,11 @@ ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 若為 Office 365、 Azure 和 Dynamics 365 Online 法規合規性報告，若要查看第三方稽核，了解 Microsoft 如何確保客戶資料安全，以及如何您就可以與 ISO、 HIPAA、 NIST、 FINRA、 GDPR 和 FedRAMP 相容時使用這些線上服務。
 ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254289"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>開始使用 Microsoft 服務信任入口網站
 
@@ -33,7 +33,7 @@ Microsoft 服務信任入口網站提供各種不同的內容、 工具和 Micro
 
 - Dynamics 365
 
-- 天藍白
+- Azure
     
  > [!NOTE]
  > 與組織相關聯的 azure Active Directory 帳戶具有存取權的文件和功能像合規性管理員中的完整範圍。 建立供個人使用的 Microsoft 帳戶與服務信任入口網站內容的存取有限。 

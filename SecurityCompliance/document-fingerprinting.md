@@ -12,11 +12,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織中的資訊工作者在其日常工作中會處理許多不同的敏感資訊。 「文件指紋」可識別您的組織中所使用的標準表單，以協助您保護此類資訊。 本主題說明的概念文件指紋 」 和 「 如何使用 PowerShell 來建立。
 ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256894"
 ---
 # <a name="document-fingerprinting"></a>文件指紋
 

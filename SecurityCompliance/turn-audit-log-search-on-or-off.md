@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以開啟安全性 & 合規性中心中的稽核記錄搜尋功能。 如果您變更您記住，您可以啟動隨時如果 off。 關閉稽核記錄搜尋時，系統管理員無法在組織中搜尋使用者和系統管理員活動的 Office 365 稽核記錄檔。
 ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
-ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31389707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265371"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>開啟或關閉 Office 365 稽核記錄搜尋
 
@@ -59,7 +59,7 @@ ms.locfileid: "31389707"
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 來開啟稽核記錄搜尋
 
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. 執行下列 PowerShell 命令，以開啟 [Office 365 中的稽核記錄搜尋。
     
@@ -73,7 +73,7 @@ ms.locfileid: "31389707"
 
 您必須使用遠端 PowerShell 連線至 Exchange Online 組織來關閉稽核記錄搜尋。 類似於開啟稽核記錄搜尋，您必須被指派 「 稽核記錄 」 角色在 Exchange Online 關閉稽核記錄搜尋。
   
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. 執行下列 PowerShell 命令，以關閉 [Office 365 中的稽核記錄搜尋。
     

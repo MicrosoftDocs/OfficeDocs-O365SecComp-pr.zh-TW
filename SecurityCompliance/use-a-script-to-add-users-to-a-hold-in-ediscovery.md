@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 執行指令碼，以快速新增信箱和 OneDrive for Business 網站至新的保留與安全性 & 合規性中心中的 eDiscovery 案例相關聯。
 ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263975"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用指令碼將使用者新增至 eDiscovery 案例中安全性 & 合規性中心中的保留
 

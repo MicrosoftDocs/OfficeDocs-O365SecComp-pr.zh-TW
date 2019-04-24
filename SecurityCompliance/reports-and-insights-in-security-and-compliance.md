@@ -1,5 +1,5 @@
 ---
-title: 智慧型報表和深入解析中安全性 & 合規性中心
+title: 安全性與合規性中心內的智慧型報告和深入解析
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 概略報表和深入解析 avialable 安全性&amp;合規性中心。
 ms.openlocfilehash: fff1fac7d35a4e12e66f27ac0069d34eb86f3fe0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261511"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智慧型報表和深入了解 Office 365 安全性&amp;合規性中心
 

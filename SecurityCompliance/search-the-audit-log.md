@@ -1,5 +1,5 @@
 ---
-title: 搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動
+title: 在 Office 365 中搜尋使用者和系統管理員活動的稽核記錄檔
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: Office 365 稽核記錄是整合的稽核記錄檔。整合的稽核記錄的為何？因為事件你的組織最多的 Office 365 服務訂閱會記錄在可搜尋的單一稽核記錄。這表示您可搜尋的使用者及這些服務的管理活動：
+description: Office 365 稽核記錄是整合的稽核記錄。 為什麼使用整合的稽核記錄？ 因為訂閱來自您組織的大多數 Office 365 服務的事件都會記錄在您可以搜尋的單一稽核記錄。 這表示您可以搜尋的使用者與這些服務的系統管理員活動：
 ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265855"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>在 Office 365 中搜尋使用者和系統管理員活動的稽核記錄檔
 
-Office 365 稽核記錄是整合的稽核記錄檔。整合的稽核記錄的為何？因為事件你的組織最多的 Office 365 服務訂閱會記錄在可搜尋的單一稽核記錄。這表示您可搜尋的使用者及這些服務的管理活動： 
+Office 365 稽核記錄是整合的稽核記錄。 為什麼使用整合的稽核記錄？ 因為訂閱來自您組織的大多數 Office 365 服務的事件都會記錄在您可以搜尋的單一稽核記錄。 這表示您可以搜尋的使用者與這些服務的系統管理員活動： 
   
 - SharePoint
 - OneDrive
@@ -36,18 +36,18 @@ Office 365 稽核記錄是整合的稽核記錄檔。整合的稽核記錄的為
    
  ## <a name="set-up-auditing"></a>設定稽核
   
-有的一些必須進行之前可搜尋的 Office 365 稽核記錄。
+沒有幾件事，您必須執行才能搜尋 Office 365 稽核記錄檔。
   
-- 若要啟動的可搜尋的錄製事件[開啟稽核記錄搜尋](turn-audit-log-search-on-or-off.md) 
+- 若要開始錄製事件，您可以搜尋[開啟稽核記錄搜尋](turn-audit-log-search-on-or-off.md) 
     
-- [啟用信箱稽核](enable-mailbox-auditing.md)讓您可以搜尋信箱相關的事件;例如當使用者登入其信箱或清除項目從其可復原的項目] 資料夾 
+- [啟用信箱稽核](enable-mailbox-auditing.md)，您可以搜尋的信箱相關的事件;例如當使用者登入其信箱或清除項目從其可復原的項目] 資料夾 
     
  ## <a name="search-the-audit-log"></a>搜尋稽核記錄
   
-您開啟稽核功能之後，您搜尋數百個個別從多個 Office 365 服務的事件類型。
+您開啟稽核功能之後，您搜尋數百個個別的事件類型從多個 Office 365 服務。
   
-- [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)的使用者和系統活動 
+- [搜尋稽核記錄檔](search-the-audit-log-in-security-and-compliance.md)的使用者和系統管理員活動 
     
-- [了解詳細的內容](detailed-properties-in-the-office-365-audit-log.md)中每個搜尋結果中包含的稽核記錄 
+- [了解詳細的內容](detailed-properties-in-the-office-365-audit-log.md)在搜尋結果中包含每個稽核記錄 
     
-- 系統管理員和規範管理員所執行的[搜尋 eDiscovery 相關的活動](search-for-ediscovery-activities-in-the-audit-log.md) 
+- 系統管理員和合規性管理員所執行的[搜尋 eDiscovery 相關的活動](search-for-ediscovery-activities-in-the-audit-log.md) 

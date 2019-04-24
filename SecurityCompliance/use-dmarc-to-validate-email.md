@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何設定網域型郵件驗證，Reporting，and Conformance (DMARC)，以驗證從您的 Office 365 組織傳送的訊息。
 ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263725"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 來驗證 Office 365 電子郵件
 

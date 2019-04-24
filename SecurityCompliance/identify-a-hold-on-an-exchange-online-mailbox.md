@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何識別不同類型的可以放在 Office 365 信箱的保留。 這些類型的保留包含訴訟暫止、 eDiscovery 保留和 Office 365 保留原則。 您也可以判定是否使用者已被排除全組織保留原則
 ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253881"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -73,8 +73,8 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 |---------|---------|---------|
 |訴訟資料暫留     |    `True`     |     如果*LitigationHoldEnabled*屬性設為，將會啟用信箱的訴訟資料暫留`True`。    |
 |eDiscovery 保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 屬性*會包含任何保留在安全性與合規性中心 eDiscovery 案例相關聯的 GUID。 您可以分清這是 eDiscovery 保留，因為 GUID 開頭`UniH`（這表示整合保留） 的前置詞。      |
-|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或  <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*屬性包含信箱處於就地保留的 GUID。 您可以分清這是在原有範圍暫止因為 GUID 也不會啟動與前置詞或它的開頭`cld`前置詞。     |
-|Office 365 保留原則特別套用到信箱     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或  <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 屬性會包含任何特定位置保留原則套用到信箱的 Guid。 您可以識別保留原則，因為 GUID 開頭`mbx`或`skp`前置詞。 `skp`前置詞會指示的保留原則套用至 Skype，商務交談在使用者的信箱中的。    |
+|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*屬性包含信箱處於就地保留的 GUID。 您可以分清這是在原有範圍暫止因為 GUID 也不會啟動與前置詞或它的開頭`cld`前置詞。     |
+|Office 365 保留原則特別套用到信箱     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 屬性會包含任何特定位置保留原則套用到信箱的 Guid。 您可以識別保留原則，因為 GUID 開頭`mbx`或`skp`前置詞。 `skp`前置詞會指示的保留原則套用至 Skype，商務交談在使用者的信箱中的。    |
 |排除在整個組織的 Office 365 保留原則     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     如果信箱排除全組織的 Office 365 保留原則，排除信箱的保留原則的 GUID 會顯示在 InPlaceHolds 屬性，而且由`-mbx`前置詞。    |
 
 ### <a name="get-organizationconfig"></a>Get-organizationconfig
@@ -90,7 +90,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 下表說明不同類型的全組織保留，以及如何識別每個包含*InPlaceHolds*屬性中，當您執行**Get-organizationconfig**指令程式的 Guid 為基礎的類型。
 
 
-|保留類型  |範例值  |描述  |
+|保留類型  |範例值  |說明  |
 |---------|---------|---------|
 |Office 365 保留原則套用至 Exchange 信箱、 Exchange 公用資料夾及小組聊天    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   整個組織的保留原則套用至 Exchange 信箱、 Exchange 公用資料夾和 Microsoft teams 1xN 聊天室以開頭的 Guid 來識別`mbx`前置詞。 請注意 1xN 聊天會儲存在個別的交談參與者的信箱。      |
 |Office 365 保留原則套用至 Office 365 群組及小組通道訊息     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    整個組織的保留原則套用至 Office 365 群組和 Microsoft Teams 中的通道郵件以開頭的 Guid 來識別`grp`前置詞。 請注意通道訊息會存放在 Microsoft 小組與相關聯的群組信箱。     |

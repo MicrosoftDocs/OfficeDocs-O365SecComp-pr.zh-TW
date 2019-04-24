@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新進員工或另一位使用者需要存取 Office 365 中的非使用中信箱的內容，您可以還原 （或合併） 到現有的信箱不在作用中信箱的內容。
 ms.openlocfilehash: 1b80cf5bf9361959f1622b7b42f5c7598609539c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264911"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>還原 Office 365 中的非使用中信箱
 
@@ -45,7 +45,7 @@ ms.locfileid: "30999306"
     
 - 如需非使用中信箱的詳細資訊，請參閱 <<c0>在 Office 365 中的非使用中信箱。
     
-## <a name="restore-an-inactive-mailbox"></a>還原非使用中的信箱
+## <a name="restore-an-inactive-mailbox"></a>還原非作用中的信箱
 
 使用**New-mailboxrestorerequest**指令程式搭配_SourceMailbox_和_TargetMailbox_參數，非使用中信箱的內容還原到現有的信箱。 如需使用此 cmdlet 的詳細資訊，請參閱[New-mailboxrestorerequest](https://go.microsoft.com/fwlink/?linkid=856298)。
   

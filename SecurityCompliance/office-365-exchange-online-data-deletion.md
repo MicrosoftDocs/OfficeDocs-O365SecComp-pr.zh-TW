@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 如何虛硬式資料刪除處理及 Exchange Online 內。
 ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262685"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 中的 Exchange Online 資料刪除
 在 Exchange Online 中，有兩種類型的刪除： 虛刪除和實刪除。 這適用於信箱和信箱內的項目。
@@ -50,7 +50,7 @@ ms.locfileid: "31004190"
 
 | ESE 執行階段作業   | 填滿圖樣 |
 |--------------------------|--------------|
-| Replace                  | R            |
+| 取代                  | R            |
 | 記錄/長數值刪除 | D            |
 | 釋放的頁面空間         | H            |
 

@@ -13,41 +13,39 @@ search.appverid:
 - MET150
 description: ''
 ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241561"
 ---
 # <a name="view-documents-in-a-working-set"></a>檢視工作集中的文件
 
-進階電子文件探索 （預覽） 會顯示透過數個檢視每個具有不同用途的內容。按一下任何工作集內的文件上的 [可用各種不同的檢視。目前提供檢視程式：
+進階電子文件探索 （預覽） 會顯示透過數個檢視每個具有不同用途的內容。 按一下任何工作集內的文件上的 [可用各種不同的檢視。 目前提供檢視程式：
 
-- 檔案中繼檔案  
-
+- 檔案中繼資料
 - 原生檢視
 - 文字檢視
 - 加上註解檢視
 - 轉換後的檢視
 
-## <a name="file-metadata"></a>檔案中繼檔案  
+## <a name="file-metadata"></a>檔案中繼資料
 
-
-此面板可以切換為開啟/關閉顯示各種文件相關聯的中繼資料。雖然可以自訂搜尋結果方格，以顯示特定的中繼資料，但有其中水平捲動可能很難同時檢閱資料的執行個體。檔案中繼資料] 面板可讓使用者在檢視器中檢視切換。
+此面板可以切換為開啟/關閉顯示各種文件相關聯的中繼資料。 雖然可以自訂搜尋結果方格，以顯示特定的中繼資料，但有其中水平捲動可能很難同時檢閱資料的執行個體。 檔案中繼資料] 面板可讓使用者在檢視器中檢視切換。
 
 ![檔案中繼資料] 面板
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>原生檢視
 
-原生檢視器會顯示最豐富的文件檢視。它支援數百個檔案類型，用來顯示 truest 可能的原生經驗。對於 Microsoft Office 檔案，例如檢視器運用 Office Online 才能顯示內容，例如文件的註解的 Excel 公式、 隱藏的列/欄、 PowerPoint 備忘稿、 等等。如需更多關於 Office 線上檢視程式的詳細資訊，請造訪以下\[需要連結\]
+原生檢視器會顯示最豐富的文件檢視。 它支援數百個檔案類型，用來顯示 truest 可能的原生經驗。 對於 Microsoft Office 檔案，例如檢視器運用 Office Online 才能顯示內容，例如文件的註解的 Excel 公式、 隱藏的列/欄、 PowerPoint 備忘稿、 等等。如需更多關於 Office 線上檢視程式的詳細資訊，請造訪以下\[需要連結\]
 
 ![原生檢視
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文字檢視
 
-文字檢視器提供解壓縮檔案的文字的檢視。它會忽略任何內嵌的影像，並但格式會是非常效能低落檢視，如果使用者正在嘗試快速了解內容。文字檢視也包含其他功能：
+文字檢視器提供解壓縮檔案的文字的檢視。 它會忽略任何內嵌的影像，並但格式會是非常效能低落檢視，如果使用者正在嘗試快速了解內容。 文字檢視也包含其他功能：
 
   - 線條計數器容易參照特定的某些部分的文件
 

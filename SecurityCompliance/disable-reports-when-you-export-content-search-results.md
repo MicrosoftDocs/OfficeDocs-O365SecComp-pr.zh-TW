@@ -12,11 +12,11 @@ search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 編輯 Windows 登錄在本機電腦上，停用的報表，當您從安全性 & 在 Office 365 的合規性中心匯出內容搜尋的結果。 停用這些報告可加速下載時間，並將儲存的磁碟空間。
 ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256851"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>當您匯出內容搜尋結果時停用報告
 

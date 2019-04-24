@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft 開發各種原則、 程序，而且採用的許多業界最佳作法來協助保護我們的使用者沒有不當、 不想要或惡意電子郵件。
 ms.openlocfilehash: a074bb1fbe6fedb9054b98d3723511607fed7304
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261531"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
   

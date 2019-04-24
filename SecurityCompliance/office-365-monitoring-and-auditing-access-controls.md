@@ -1,35 +1,34 @@
 ---
-title: Office 365 監視和稽核功能的存取控制
+title: Office 365 監視和稽核的存取控制
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 摘要： 各種監視和稽核存取控制項可在 Office 365 中的摘要。
-ms.openlocfilehash: 91d78ba3de41554755a7c19799eb1f7b25933b05
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 摘要： 各種監視和稽核存取控制 Office 365 內提供摘要。
+ms.openlocfilehash: 753acd1a0bd0d3b4a834263071d431b63836f399
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262535"
 ---
-# <a name="monitoring-and-auditing-access-controls-in-office-365"></a>監控和稽核存取 Office 365 中的控制項
+# <a name="monitoring-and-auditing-access-controls-in-office-365"></a>監視和稽核的 Office 365 中的存取控制
 
-Microsoft 執行廣泛的監控和稽核的所有委派、 所有用途權限，以及出現在 Office 365 內的所有作業。Office 365 的存取控制是建置在這當中的最低權限和併入資料存取控制項和稽核自動化程序：
-- 所有允許的存取是唯一的使用者，讓系統管理員的努力其處理的客戶內容可進行追蹤。
-- 存取控制邀請、 核准、 及管理作業記錄檔會擷取所進行的安全性見解與建議惡意事件的分析。
-- 附近即時根據的安全性群組成員資格以確保僅限已獲得授權商務只要有以及符合資格需求使用者可以存取系統的存取層級是已檢閱。
-- Office 365、 存取控制項和支援服務，包括 Azure Active Directory 與我們實體資料中心來定期獨立遵守[ISO/IEC 27001](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27001)、 [ISO/IEC 27018](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27018)、 [SOC](https://www.microsoft.com/en-us/TrustCenter/Compliance/SOC)、 第三方的稽核[FedRAMP](https://www.microsoft.com/en-us/TrustCenter/Compliance/FedRAMP)、 及其他[標準 （英文）](https://www.microsoft.com/en-us/TrustCenter/Compliance?service=Office#Icons)。
-- 為每年的安全性訓練檢閱提高權限的存取最佳作法和風險和確認 Microsoft 的安全性及隱私權原則繼續執行維護其權利服務所需 office 365 工程師。
+Microsoft 會執行廣泛的監視與稽核所有委派、 所有使用的權限，以及所有 Office 365 內發生的作業。 Office 365 的存取控制為基礎的最低權限，並納入資料的存取控制與稽核原則自動化程序：
+- 追蹤至唯一的使用者，讓系統管理員負責的客戶內容處理所有允許的存取。
+- 存取控制項要求、 核准，管理作業記錄檔會擷取與分析安全性觀點及惡意的事件。
+- 存取層級中檢閱接近即時根據的安全性群組成員資格，以確保只有使用者已獲授權業務理由，且符合資格需求有系統的存取。
+- Office 365、 其存取控制和支援服務，包括 Azure Active Directory 和我們的實體資料中心，定期[ISO/IEC 27001](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27001)、 [ISO/IEC 27018](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27018)、 [SOC](https://www.microsoft.com/en-us/TrustCenter/Compliance/SOC)、 規範的獨立第三方稽核[FedRAMP](https://www.microsoft.com/en-us/TrustCenter/Compliance/FedRAMP)和其他的[標準](https://www.microsoft.com/en-us/TrustCenter/Compliance?service=Office#Icons)。
+- Office 365 工程師所需採取每年的安全性訓練檢閱提高權限的存取最佳作法與風險，且同意 Microsoft 的安全性與隱私權原則，以繼續維護其權利至服務。
 
-偵測到可疑活動時，例如在短時間內的多個失敗登入觸發自動的提醒。Office 365 安全性回應小組使用機器學習與 big 資料分析來檢閱和分析活動不正常空格的存取模式和主動回應異常和非法活動。Microsoft 也會採用滲透測試人員專用的小組與會定期紅色小組和藍色小組中請練習來尋找安全性和存取控制服務中的問題。客戶也可能會確認效益的存取控制系統使用稽核報告和管理活動 Office 365 所提供的 API。 
+偵測到可疑的活動時，例如在短時間內多個失敗的登入，便會觸發自動的提醒。 在 Office 365 安全性回應小組會使用機器學習和大的資料分析，檢閱和分析不規則存取模式的活動，以及主動回應異常和非法活動。 Microsoft 也採用滲透測試人員專用的小組，並在定期紅色小組及藍色小組凝聚練習，來尋找安全性和存取控制服務中的問題。 客戶也可能會使用稽核報告和管理活動 API 由 Office 365 提供確認訪問控制系統的有效性。 
 
-如需詳細資訊，請參閱[Office 365 管理活動 API 參考資料](https://msdn.microsoft.com/en-us/library/office/mt227394.aspx)與[稽核與 Office 365 中的報告](office-365-auditing-and-reporting-overview.md)。
+如需詳細資訊，請參閱[Office 365 管理活動 API 參考資料](https://msdn.microsoft.com/en-us/library/office/mt227394.aspx)及[稽核與 Office 365 中的報告](office-365-auditing-and-reporting-overview.md)。

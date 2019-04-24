@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 電子文件探索與搜尋工具來管理與貴組織中的資料外洩事件回應。
 ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258926"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery solution 解決方案系列： 資料外洩案例-搜尋及清除
 
@@ -170,7 +170,7 @@ Afer 您驗證過的搜尋結果，您可能想要與他人共用您的發現次
 
 使用您收集並準備步驟 6 和已建立並精簡在步驟 3 以找出電子郵件訊息包含 spilled 的資料的搜尋查詢中的信箱位置，您現在可以永久刪除 spilled 的資料。 如先前所述，您必須獲指派 「 信箱匯入匯出角色在 Exchange Online 來刪除郵件使用下列程序。
   
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554) (機器翻譯)。
+1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     
 2. 執行下列命令：
     

@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵件收件者。下列主題及相關子主題提供管理收件者和指派管理員角色群組權限的相關資訊及設定程序。
 ms.openlocfilehash: 431a3af4a573c32ef099e72786f26f32dc3288e8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256581"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>管理 EOP 中的收件者和系統管理員角色群組
 

@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: '原則提示是通知或其他人正在使用的內容與 DLP 原則衝突時，會出現的警告。 您可以使用電子郵件通知和原則提示來增加知悉的變更，並協助教育人員需貴組織的原則。 您也可以的讓人員選擇覆寫原則，以便他們不會封鎖如果他們有有效的商務需要或原則會偵測誤判。 '
 ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263860"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>傳送電子郵件通知，並顯示原則提示的 DLP 原則
 

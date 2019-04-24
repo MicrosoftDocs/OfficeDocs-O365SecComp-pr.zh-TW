@@ -15,11 +15,11 @@ search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以選擇取消重複，以便只有一個電子郵件訊息的複本匯出即使多個執行個體的相同的訊息可能會有不同的信箱中找到匯出 eDiscovery 搜尋結果。
 ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258067"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子文件探索搜尋結果中的重複資料刪除
 

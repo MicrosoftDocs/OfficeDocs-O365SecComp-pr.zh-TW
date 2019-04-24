@@ -1,9 +1,8 @@
 ---
-title: Office 365 隔離控制措施
+title: Office 365 隔離控制
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,14 +13,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 摘要： 在 Office 365 隔離控制措施的說明。
-ms.openlocfilehash: 46514a33ad9eff6e2acc71a51b073a79b051c521
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.openlocfilehash: ceb64bc3f0a50b8e1d21f03f8621e4cc715c8f75
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262635"
 ---
-# <a name="office-365-isolation-controls"></a>Office 365 隔離控制措施 
+# <a name="office-365-isolation-controls"></a>Office 365 隔離控制 
 
 Microsoft 持續運作來確保 Office 365 的多重租用戶架構可支援企業層級安全性、 機密性、 隱私權、 完整性和可用性[標準](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)，以及本機和國際標準。 指定比例] 和 [Microsoft 所提供的服務的範圍，將會很難和非經濟如果重大的人力互動需要管理 Office 365。 透過多個全域分散式資料中心，高度自動化的方式，其中極少的資料中心作業需要人工少許，且即使較少的作業需要客戶內容存取權提供 office 365 服務。 我們工作人員支援這些服務和資料中心使用自動化的工具和高度安全的遠端存取。 針對某些詳細瞭解大規模的服務會在 Office 365 中，請參閱[場景查看適用於 IT 專業人員的 Office 365 後](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC202)運作。
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240975"
 ---
 # <a name="themes"></a>佈景主題
 人員如何撰寫文件？ 它們通常他們想要傳達，文件中的一或多個想法的開頭，而撰寫使用想法與對齊的文字。 更普遍的作法是，更加頻繁地執行這個主意相關的字往往。 這會告知人員如何使用文件以及;若要從閱讀文件取得重要的是文件嘗試傳達，以及哪些想法出現的位置，想法和想法之間的關聯性為何。

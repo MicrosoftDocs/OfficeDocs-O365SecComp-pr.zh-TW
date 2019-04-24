@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 雲端 App 安全性存取原則啟用即時監視，並根據使用者、 位置、 裝置的雲端應用程式及應用程式的存取控制。 您可以建立任何裝置，包括未網域加入，並且不會管理 Windows Intune 推行至受管理的裝置的用戶端憑證或使用現有的憑證，例如協力廠商 MDM 憑證的裝置存取的原則。 例如，您可以部署至受管理的裝置、 用戶端憑證，而然後封鎖來自不使用憑證的裝置的存取。
 ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263000"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的存取原則
 

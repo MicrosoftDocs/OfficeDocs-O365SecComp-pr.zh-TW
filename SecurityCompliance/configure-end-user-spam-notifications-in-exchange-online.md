@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 您可以設定使用者垃圾郵件通知的預設的全公司的垃圾郵件篩選原則或是網域所套用的自訂垃圾郵件篩選原則。
 ms.openlocfilehash: 33eb3eca1556507af22a6888a4455944ac51f0cf
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259584"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online 中設定使用者垃圾郵件通知
 

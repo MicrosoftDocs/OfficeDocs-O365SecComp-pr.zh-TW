@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 摘要： Office 365 系統管理存取控制及資料分類的概觀。
 ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262975"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 中的系統管理存取控制 
 

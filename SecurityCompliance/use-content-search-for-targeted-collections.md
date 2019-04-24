@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用安全性 & 合規性中心中的內容搜尋來執行目標的集合。 目標的集合表示您確信回應大小寫的項目或特殊權限項目都位於信箱或網站的特定資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。
 ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264004"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>在 Office 365 中使用內容搜尋，對目標集合
 
@@ -50,7 +50,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 - **電子郵件地址或網站的 URL**輸入到 Exchange 信箱資料夾和資料夾識別碼的清單傳回 custodian 電子郵件地址。 或輸入 SharePoint 網站的 URL 或商務用 OneDrive 網站，可傳回指定網站的路徑清單。 以下為一些範例： 
     
-  - **Exchange**層stacig@contoso.onmicrosoft.com 
+  - **Exchange** -stacig@contoso.onmicrosoft.com 
     
   - **SharePoint** - https://contoso.sharepoint.com/sites/marketing 
     

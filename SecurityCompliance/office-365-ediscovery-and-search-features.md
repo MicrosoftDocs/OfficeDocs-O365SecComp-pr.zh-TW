@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: EDiscovery 功能，以及其他搜尋功能在 Office 365 稽核使用和透明度的概觀。
 ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262805"
 ---
 # <a name="ediscovery-and-search-features"></a>電子文件探索與搜尋功能 
 
@@ -43,7 +43,7 @@ ms.locfileid: "31004160"
 | ClientIP | 裝置已登入活動時所用的 IPv4 或 IPv6 位址。 |
 | CreationTime | 日期和時間以 Coordinated Universal Time (UTC) 使用者執行活動時。 |
 | EventSource | 識別事件發生。 可能值是 SharePoint 及 ObjectModel。 |
-| ID | 報告項目的識別碼。 識別碼可唯一識別的報告項目。 |
+| 識別碼 | 報告項目的識別碼。 識別碼可唯一識別的報告項目。 |
 | 作業 | 使用者或活動，對應到此使用者活動的顯示結果中選取值的名稱。 |
 | OrganizationId | 組織的 Office 365 服務發生事件的 GUID。 |
 | UserAgent | 使用者的瀏覽器瀏覽器所提供的資訊。 |

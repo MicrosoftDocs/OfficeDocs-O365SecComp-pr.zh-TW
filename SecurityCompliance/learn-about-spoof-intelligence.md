@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 使用詐騙智慧安全性&amp;反垃圾郵件設定] 頁面上的合規性中心，以檢閱所有寄件者是詐騙任一屬於您組織的網域或詐騙的外部網域。 詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅防護與 Exchange Online Protection 的一部分。
 ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252246"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 
@@ -59,7 +59,7 @@ ms.locfileid: "30936733"
   
 |**參數**|**描述**|
 |:-----|:-----|
-|Sender  <br/> |也稱為 「 真正寄件者。 這通常是詐騙電子郵件的來源網域。 Office 365 會決定的指標 (PTR) DNS 記錄詐騙您組織的傳送端 IP 位址的網域。 如果不找到任何網域，則報表會改為顯示寄件者的 IP 位址。  <br/> |
+|寄件者  <br/> |也稱為 「 真正寄件者。 這通常是詐騙電子郵件的來源網域。 Office 365 會決定的指標 (PTR) DNS 記錄詐騙您組織的傳送端 IP 位址的網域。 如果不找到任何網域，則報表會改為顯示寄件者的 IP 位址。  <br/> |
 |詐騙的使用者  <br/> |詐騙寄件者的使用者帳戶。  <br/> 僅限**內部**標籤。 此欄位包含單一電子郵件地址，或如果寄件者詐騙多個使用者帳戶，包含**一個以上**。  <br/> 僅**外部**索引標籤。 外部定義域只包含傳送的網域，且不包含完整的電子郵件地址。  <br/> **提示 ！進階的系統管理員。** 詐騙的使用者是從這也是由郵件用戶端顯示自地址的地址 (5322.From) 地址。 這有時稱為 header.from 地址。 SPF 不會檢查此位址的有效性。           |
 |郵件數目  <br/> |由寄件者傳送給組織代表的已識別詐騙的寄件者或寄件者在過去 30 天內的郵件數目。  <br/> |
 |使用者抱怨的數目  <br/> |抱怨歸檔針對此寄件者的使用者，讓使用者在過去 30 天內。 抱怨通常是垃圾郵件提交給 Microsoft 的形式。  <br/> |

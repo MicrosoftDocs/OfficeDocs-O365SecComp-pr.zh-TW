@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何存取 Azure Active Directory，其隨附於貴組織的 Office 365 的付費訂閱。
 ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242594"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>使用 Office 365 中免費的 Azure Active Directory 訂閱
 

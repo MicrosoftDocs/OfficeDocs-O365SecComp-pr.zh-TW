@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定義從 Office 365 進階電子文件探索，包括指定參數匯出批次的程序中匯出結果的選項。 '
 ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255815"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出結果
 
@@ -65,7 +65,7 @@ EDiscovery 匯出工具用來從進階電子文件的搜尋結果匯出到本機
     
     - 若要匯出結果的新檔案新增至現有的情況下，繼續執行您目前的批次。 批次中建立工作階段、 選取相同的批次數目，並按一下 [**建立匯出工作階段**中，您可以使用此選項為前一個批次，匯出相同的參數，以累加方式。 
     
-    - 若要匯出至新的批次時，按一下 [**新增**![新增圖示](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)和**批次名稱**輸入新名稱 （或接受預設值） 和 [描述] 中**批次描述**。 按一下 [確定]****。
+    - 若要匯出至新的批次時，按一下 [**新增**![新增圖示](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)和**批次名稱**輸入新名稱 （或接受預設值） 和 [描述] 中**批次描述**。 按一下 [確定]。
     
     - 若要編輯的批次名稱或描述，請選取中**匯出批次**的名稱，請按一下 [**編輯**![編輯圖示](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，然後再修改欄位。
     

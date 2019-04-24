@@ -1,5 +1,5 @@
 ---
-title: 敏感資訊類型在找什麼
+title: 敏感性資訊類型所尋找的項目
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,19 +15,19 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含可供您在 DLP 原則中使用的 80 種敏感資訊類型。 本主題列出所有的這些敏感資訊類型，並顯示 DLP 原則看起來當它偵測到每個類型。
 ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30639190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266869"
 ---
-# <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
+# <a name="what-the-sensitive-information-types-look-for"></a>敏感性資訊類型所尋找的項目
 
 Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含許多可供您可以使用 DLP 原則中的敏感資訊類型。 本主題列出所有的這些敏感資訊類型，並顯示 DLP 原則看起來當它偵測到每個類型。 敏感資訊類型是由能夠識別規則運算式或函數的模式所定義。 此外，例如關鍵字和總和檢查碼佐證性證據可以用來識別敏感資訊類型。 信賴等級和接近性也會用於評估程序。
   
 ## <a name="aba-routing-number"></a>阿拉巴馬州路由號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 這可能是採用格式化或未格式化模式的 9 位數
 
@@ -87,7 +87,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="argentina-national-identity-dni-number"></a>阿根廷國民識別 （dni） 碼數目
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 以句點分隔的八位數
 
@@ -136,7 +136,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="australia-bank-account-number"></a>澳洲銀行帳戶號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 包含或不含銀行代號的 6-10 位數
 
@@ -199,7 +199,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="australia-drivers-license-number"></a>澳洲駕照編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九個字母和數字
 
@@ -350,7 +350,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="australia-medical-account-number"></a>澳洲醫療帳戶號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10-11 位數
 
@@ -412,7 +412,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="australia-passport-number"></a>澳洲護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字母後尾隨七位數
 
@@ -483,7 +483,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="australia-tax-file-number"></a>澳洲稅務檔案編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 8-9 位數
 
@@ -569,7 +569,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 驗證金鑰
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 將字串 「 DocumentDb 」 後面接著字元和下列模式中所述的字串。
 
@@ -621,7 +621,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 資料庫連接字串和 Azure SQL 連線字串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字串 「 伺服器 」、 「 伺服器 」 或 「 資料來源 」 後面加上字元和下列，模式中所述的字串包含字串 「 cloudapp.azure。<!--no-hyperlink-->com 」 或者 「 cloudapp.azure。<!--no-hyperlink-->net 」 或者 「 database.windows。<!--no-hyperlink-->net 」 及 「 密碼 」 或 「 密碼 」 或 「 pwd 」 的字串。
 
@@ -681,7 +681,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT 連接字串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 將字串 「 主機名稱 」 後面加上字元和下方，模式中所述的字串包含字串 「 azure 裝置。<!--no-hyperlink-->net 」 和 「 SharedAccessKey 」。
 
@@ -741,7 +741,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-publish-setting-password"></a>Azure 發佈設定密碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 將字串 「 userpwd = 」 後面接著英數字元的字串。
 
@@ -792,7 +792,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure 意指快取的連接字串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 將字串 「 redis.cache.windows。<!--no-hyperlink-->net"後面加上字元和下方，模式中所述的字串包含字串 「 密碼 」 或 「 pwd 」。
 
@@ -847,7 +847,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-sas"></a>Azure SAS
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 將字串 「 簽章 」 後面加上字元和下列模式中所述的字串。
 
@@ -881,7 +881,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-service-bus-connection-string"></a>Azure 服務匯流排連接字串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 將字串 「 端點 」 後面加上字元和下方，模式中所述的字串包含字串 「 servicebus.windows。<!--no-hyperlink-->net 」 和 「 SharedAccesKey 」。
 
@@ -941,7 +941,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-storage-account-key"></a>Azure 儲存體帳戶金鑰
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 將字串 「 DefaultEndpointsProtocol"後面加上字元和下方，模式中所述的字串包含字串 「 AccountKey 」 中。
 
@@ -1007,7 +1007,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="azure-storage-account-key-generic"></a>Azure 儲存體帳戶金鑰 （一般）
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 或的任何組合 86 較低的大寫字母、 數字，正斜線 （/），加上加號 （+），前面或後面跟著字元下列模式中所述。
 
@@ -1038,7 +1038,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="belgium-national-number"></a>比利時國民編碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數加上分隔符號
 
@@ -1079,7 +1079,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 - 身分識別
 - 註冊
 - 識別 
-- ID 
+- 識別碼 
 - Identiteitskaart
 - Registratie nummer 
 - Identificatie nummer 
@@ -1101,7 +1101,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="brazil-cpf-number"></a>巴西 Cpf 碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數包含檢查碼且可格式化或未格式化
 
@@ -1163,7 +1163,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>巴西法律實體號碼 (CNPJ)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 14 位數包含登記碼、 分支碼和檢查碼加上分隔符號
 
@@ -1233,7 +1233,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="brazil-national-id-card-rg"></a>巴西國民身分證 (RG)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 Registro Geral （舊格式）： 九位數
 
@@ -1291,7 +1291,7 @@ Cédula de identidade 身分證證 número de rregistro registro de Iidentidade 
    
 ## <a name="canada-bank-account-number"></a>加拿大銀行帳戶號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7 或 12 位數
 
@@ -1364,7 +1364,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="canada-drivers-license-number"></a>加拿大駕照編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 省分而異
 
@@ -1581,7 +1581,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="canada-health-service-number"></a>加拿大健保號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 位數
 
@@ -1627,7 +1627,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
       
 ## <a name="canada-passport-number"></a>加拿大護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個大寫字母後尾隨六位數
 
@@ -1694,7 +1694,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="canada-personal-health-identification-number-phin"></a>加拿大個人健康身分識別號碼 (PHIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九位數
 
@@ -1763,7 +1763,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="canada-social-insurance-number"></a>加拿大社會保險號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 使用選擇性連字號或空格的九位數
 
@@ -1846,7 +1846,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="chile-identity-card-number"></a>智利身分證號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7-8 位數加上分隔符號檢查碼或字母
 
@@ -1895,7 +1895,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 - 國家識別碼 
 - 身分證 
-- ID 
+- 識別碼 
 - 識別 
 - Rol Único Nacional 
 - 執行 
@@ -1908,7 +1908,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="china-resident-identity-card-prc-number"></a>中國居民身分證 (PRC) 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 18 位數
 
@@ -1965,7 +1965,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="credit-card-number"></a>信用卡號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 16 位數，可格式化或未格式化 (dddddddddddddddd)，且必須通過 Luhn 測試。
 
@@ -2209,7 +2209,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="croatia-identity-card-number"></a>克羅埃西亞身分證號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九位數
 
@@ -2247,7 +2247,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="croatia-personal-identification-oib-number"></a>克羅埃西亞個人識別 (OIB) 碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數
 
@@ -2296,7 +2296,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="czech-personal-identity-number"></a>捷克個人身分識別號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 具有選用的九位數正斜線 （舊格式） 搭配選用的 10 位數正斜線 （新格式）
 
@@ -2346,7 +2346,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="denmark-personal-identification-number"></a>丹麥個人識別碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 位數包含連字號
 
@@ -2388,7 +2388,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="drug-enforcement-agency-dea-number"></a>藥物管理局 (DEA) 編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母後尾隨七位數
 
@@ -2425,7 +2425,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="eu-debit-card-number"></a>歐盟轉帳卡號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 16 位數
 
@@ -2794,7 +2794,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 ## <a name="finland-national-id"></a>芬蘭國民身分證
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 六位數加上字元，指出世紀加上三位數加上檢查碼
 
@@ -2846,7 +2846,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="france-drivers-license-number"></a>法國駕照編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 位數
 
@@ -2895,7 +2895,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="france-national-id-card-cni"></a>法國國民身分證 (CNI)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 位數
 
@@ -2927,7 +2927,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="france-passport-number"></a>法國護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九個數字和字母
 
@@ -2984,7 +2984,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
       
 ## <a name="france-social-security-number-insee"></a>法國社會安全號碼 (INSEE)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 15 位數
 
@@ -3059,7 +3059,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="german-drivers-license-number"></a>德國駕照編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 個數字和字母的組合
 
@@ -3201,7 +3201,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="german-passport-number"></a>德國護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 個數字或字母
 
@@ -3285,7 +3285,7 @@ bnationalit.t
    
 ## <a name="germany-identity-card-number"></a>德國身分證號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 自從 2010 年 1 年 11 月： 九個字母和數字
 
@@ -3325,7 +3325,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
 #### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
 
 - 身分證
-- ID
+- 識別碼
 - 識別
 - Personalausweis
 - Identifizierungsnummer
@@ -3334,7 +3334,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="greece-national-id-card"></a>希臘國民身分證
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7-8 個字母和數字加上破折號的組合
 
@@ -3381,7 +3381,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="hong-kong-identity-card-hkid-number"></a>香港身分證 (HKID) 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 8-9 個字母和數字加上選擇性括住的最後一個字元的組合
 
@@ -3463,7 +3463,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="india-permanent-account-number-pan"></a>印度永久帳戶號碼 (PAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 個字母或四位數
 
@@ -3504,7 +3504,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="india-unique-identification-aadhaar-number"></a>印度唯一識別 （aadhaar） 碼數字
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 位數包含選擇性空格或破折號
 
@@ -3542,7 +3542,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="indonesia-identity-card-ktp-number"></a>印尼身分識 (Ktp) 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 16 位數包含選擇性句點
 
@@ -3594,7 +3594,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="international-banking-account-number-iban"></a>國際銀行帳號 (IBAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 國碼/地區碼 （兩個字母） 加上檢查碼 （兩位數） 再加上 bban （最多 30 個字元）
 
@@ -3636,7 +3636,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="ip-address"></a>IP 位址
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 #### <a name="ipv4"></a>IPv4:
 帳戶版格式化 （句點） 和未格式化 （無句點） 之 IPv4 位址的複雜模式
@@ -3700,7 +3700,7 @@ DLP 原則是 95%以內，已偵測到此敏感資訊類型的對於 IPv4，如�
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>國際分類的治療法 （ICD-10-公分）
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 Dictionary
 
@@ -3733,7 +3733,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>國際分類的治療法 （ICD-9-公分）
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 Dictionary
 
@@ -3764,7 +3764,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="ireland-personal-public-service-pps-number"></a>愛爾蘭個人公用服務 (PPS) 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 舊格式 （直到 2012 年 31):
 - 七位數後尾隨 1-2 個字母 
@@ -3834,7 +3834,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="israel-bank-account-number"></a>以色列銀行帳戶號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位數
 
@@ -3883,7 +3883,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="israel-national-id"></a>以色列國民身分證
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九位數
 
@@ -3923,7 +3923,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="italy-drivers-license-number"></a>義大利駕照編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 個字母和數字的組合
 
@@ -3966,7 +3966,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="japan-bank-account-number"></a>日本銀行帳戶號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7 或 8 位數
 
@@ -4081,7 +4081,7 @@ Otemachi
 
 ## <a name="japan-drivers-license-number"></a>日本駕照編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 位數
 
@@ -4141,7 +4141,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="japan-passport-number"></a>日本護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母後尾隨七位數
 
@@ -4180,7 +4180,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="japan-resident-registration-number"></a>日本常駐居民登記號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數
 
@@ -4227,7 +4227,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="japan-social-insurance-number-sin"></a>日本社會保險號碼 (SIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7-12 位數
 
@@ -4279,7 +4279,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="japanese-residence-card-number"></a>日文居住地證號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 個字母和數字
 
@@ -4321,7 +4321,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="malaysia-id-card-number"></a>馬來西亞身分證號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 位數包含選擇性連字號
 
@@ -4387,7 +4387,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>荷蘭公民服務 (BSN) 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 8-9 位數包含選擇性空格
 
@@ -4437,7 +4437,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="new-zealand-ministry-of-health-number"></a>紐西蘭衛生部編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 三個字母、 一個空格 （選用） 和四位數
 
@@ -4479,7 +4479,7 @@ Keyword_nz_terms
    
 ## <a name="norway-identification-number"></a>挪威識別碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數
 
@@ -4531,7 +4531,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="philippines-unified-multi-purpose-id-number"></a>菲律賓統一多用途 ID 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 以連字號分隔的 12 位數
 
@@ -4575,7 +4575,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="poland-identity-card"></a>波蘭身分證明卡
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 三個字母和六位數
 
@@ -4618,7 +4618,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="poland-national-id-pesel"></a>波蘭國民身分證 (PESEL)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數
 
@@ -4657,7 +4657,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="poland-passport"></a>波蘭護照
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母和七位數
 
@@ -4698,7 +4698,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="portugal-citizen-card-number"></a>葡萄牙公民證號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八位數
 
@@ -4738,7 +4738,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="saudi-arabia-national-id"></a>沙烏地阿拉伯國民身分證
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 位數
 
@@ -4780,7 +4780,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>新加坡國民登記身分證 (NRIC) 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九個字母和數字
 
@@ -4834,7 +4834,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="south-africa-identification-number"></a>南非識別碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 可以包含空格的 13 位數
 
@@ -4873,12 +4873,12 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 #### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
 
 - 身分證
-- ID
+- 識別碼
 - 識別 
    
 ## <a name="south-korea-resident-registration-number"></a>南韓居民登記號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位數包含連字號
 
@@ -4932,7 +4932,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="spain-social-security-number-ssn"></a>西班牙社會安全號碼 (SSN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11-12 位數
 
@@ -4970,7 +4970,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="sql-server-connection-string"></a>SQL Server 連線字串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字串 「 使用者 Id 」、 「 使用者 ID 」、 「 uid 」 或 「 使用者識別碼 」 後面跟著字元和下列模式中所述的字串。
 
@@ -5046,7 +5046,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="sweden-national-id"></a>瑞典國民身分證號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 或 12 位數和一個選用分隔符號
 
@@ -5083,7 +5083,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="sweden-passport-number"></a>瑞典護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八位數
 
@@ -5153,7 +5153,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="swift-code"></a>SWIFT 代碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 四個字母後尾隨 5-31 個字母或數字
 
@@ -5223,7 +5223,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="taiwan-national-id"></a>台灣國家識別碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一個字母 （英文） 尾隨九位數
 
@@ -5276,7 +5276,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="taiwan-passport-number"></a>台灣護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 - 生物識別護照號碼： 九位數
 - 非生物識別護照號碼： 九位數
@@ -5324,7 +5324,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>台灣居民憑證 (ARC/TARC) 號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 個字母和數字
 
@@ -5372,7 +5372,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="thai-population-identification-code"></a>泰文母體識別程式碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位數
 
@@ -5421,7 +5421,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 ## <a name="turkish-national-identification-number"></a>土耳其文的國家識別碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數
 
@@ -5466,7 +5466,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ## <a name="uk-drivers-license-number"></a>英國 駕照編號
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 18 個字母和數字中指定之格式的組合
 
@@ -5522,7 +5522,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="uk-electoral-roll-number"></a>英國 Electoral Roll 數目
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母後尾隨 1-4 位數
 
@@ -5564,7 +5564,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="uk-national-health-service-number"></a>英國 國民健保服務號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 以空格分隔的 10-17 位數
 
@@ -5631,7 +5631,7 @@ DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="uk-national-insurance-number-nino"></a>英國 國家保險號碼 (NINO)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7 個字元或空格或連字號分隔的 9 個字元
 
@@ -5706,7 +5706,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="us--uk-passport-number"></a>美國 / 英國 護照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九位數
 
@@ -5758,7 +5758,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="us-bank-account-number"></a>美國銀行帳戶號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 8-17 位數
 
@@ -5820,7 +5820,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="us-drivers-license-number"></a>美國駕駛執照號碼
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 隨州別
 
@@ -5871,7 +5871,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
 - 通訊群組清單 
 - CDL 
 - CDLS 
-- ID 
+- 識別碼 
 - 識別碼 
 - DL # 
 - DL # 
@@ -5970,7 +5970,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>美國個別 Taxpayer 識別號碼 (ITIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九位數，以"9"開頭且包含"7"8"的第四個位數，可選擇加上空格或破折號
 
@@ -6063,7 +6063,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="us-social-security-number-ssn"></a>美國社會安全號碼 (SSN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 9 位數，可採用格式化或未格式化模式
 

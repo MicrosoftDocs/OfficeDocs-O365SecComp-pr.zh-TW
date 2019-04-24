@@ -1,26 +1,26 @@
 ---
-title: Office 365 回報功能
+title: Office 365 報告功能
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: 報告功能，在 Office 365 的說明。
-ms.openlocfilehash: 5e765045982d6788ee93550fa8041a52efb306c0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 150928ccfb99da8b762cf5d5b99bf152a91949fa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262395"
 ---
-# <a name="office-365-reporting-features"></a>Office 365 回報功能 
+# <a name="office-365-reporting-features"></a>Office 365 報告功能 
 
 ## <a name="introduction"></a>簡介
 Office 365 中的報告功能提供各種不同的 Azure Active Directory (AD)，Exchange Online 中，裝置管理、 主管檢閱和資料外洩防護 (DLP) 的稽核報告。 這些是不同與不同 Office 365 活動報告。
@@ -78,7 +78,7 @@ Yammer 企業提供系統管理員能夠從他們的 Yammer 網路透過[Yammer 
 
 可以匯出下列資料：
 
-| 檔名 | 描述 |
+| Filename | 描述 |
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | 在網路中的所有擱置中新功能及擱置使用者 |
 | Messages.csv | 在網路中的所有郵件 |

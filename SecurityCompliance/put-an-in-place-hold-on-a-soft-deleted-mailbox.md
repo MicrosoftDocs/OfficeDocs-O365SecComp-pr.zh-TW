@@ -11,11 +11,11 @@ search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: 了解如何建立就地保留虛刪除信箱進行非使用中並保留其內容。 然後您可以使用 Microsoft eDiscovery 工具來搜尋非使用中信箱。
 ms.openlocfilehash: f5ac31b4bfd993bf384aa17ba5f71de937cec720
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261601"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>置於就地保留虛刪除的信箱在 Exchange Online
 
@@ -73,7 +73,7 @@ ms.locfileid: "30999506"
    Get-Mailbox -InactiveMailboxOnly
    ```
 
-    或
+    Or
     
    ```
    Get-Mailbox -InactiveMailboxOnly -Identity $SoftDeletedMailbox.DistinguishedName  | FL IsInactiveMailbox

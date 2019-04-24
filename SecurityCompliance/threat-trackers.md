@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解威脅追蹤器，包括新值得注意的追蹤器，以協助您掌握安全性考量的組織。
 ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260012"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 

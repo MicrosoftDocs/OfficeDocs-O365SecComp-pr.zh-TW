@@ -1,5 +1,5 @@
 ---
-title: 佇列的警示和佇列
+title: 佇列警示和佇列
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 系統管理員可以了解佇列的警示和佇列中郵件流程儀表板中的安全性 & 合規性中心。
 ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267654"
 ---
-# <a name="queue-alerts-and-queues"></a>佇列的警示和佇列
+# <a name="queue-alerts-and-queues"></a>佇列警示和佇列
 
 ## <a name="queue-alerts"></a>佇列的警示
 

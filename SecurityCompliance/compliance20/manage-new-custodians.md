@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241838"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>管理 custodians 進階電子文件 （預覽） 案例中
 
@@ -122,5 +122,5 @@ Custodian 發行的情況下其中關閉案例、 custodian 不再下義務以�
 
 ## <a name="related-information"></a>相關資訊
 
- - [處理資料時發生補救錯誤](error-remediation.md) 
+ - [處理資料時的錯誤補救](error-remediation.md) 
 - [使用通訊](managing-custodian-communications.md)

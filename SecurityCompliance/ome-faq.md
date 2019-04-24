@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關於 Office 365 中新的郵件保護功能的運作方式的問題嗎？ 檢查的答案。
 ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261291"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 
@@ -120,7 +120,7 @@ Not yet. OneDrive 商務的附件不受支援，使用者無法加密包含雲�
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>可以藉由設定原則會自動加密郵件？
 
-可以。 使用郵件流程規則 Exchange Online 中自動加密根據特定條件的郵件。 例如，您可以建立原則，根據收件者識別碼，收件者的網域，或內文或主旨郵件的內容。 請參閱[定義郵件流規則以加密 Office 365 中的電子郵件。](define-mail-flow-rules-to-encrypt-email.md)
+是。 使用郵件流程規則 Exchange Online 中自動加密根據特定條件的郵件。 例如，您可以建立原則，根據收件者識別碼，收件者的網域，或內文或主旨郵件的內容。 請參閱[定義郵件流規則以加密 Office 365 中的電子郵件。](define-mail-flow-rules-to-encrypt-email.md)
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>可以我會自動加密郵件所設定的原則中的資料外洩防護 (DLP) 透過安全性&amp;合規性中心？
 
@@ -140,6 +140,6 @@ Yes ！ 如需自訂電子郵件訊息和 OME 入口網站，請參閱 < 將貴�
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>可以使用郵件加密與符合性功能，例如 eDiscovery？
 
-可以。 所有加密的電子郵件是由 Office 365 合規性功能，可供搜尋。
+是。 所有加密的電子郵件是由 Office 365 合規性功能，可供搜尋。
   
 

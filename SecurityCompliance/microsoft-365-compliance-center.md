@@ -10,11 +10,11 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解新的 Microsoft 365 合規性中心，包括它的內容、 如何取得，以及接下來的步驟。
 ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265543"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>所有新的 Microsoft 365 合規性中心概觀
 
@@ -24,7 +24,7 @@ ms.locfileid: "31518383"
 
 閱讀本篇文章以了解 Microsoft 365 合規性中心、[如何取得它](#how-do-i-get-this)、[常見問題集](#frequently-asked-questions)，請與您的[下一個步驟](#next-steps)。
 
-[![Microsoft 365 規範中心](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![Microsoft 365 合規性中心](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>歡迎使用 Microsoft 365 合規性
 

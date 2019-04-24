@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 原有範圍暫止、 訴訟暫止狀態，以及 Office 365 保留原則可讓您保留信箱內容，以符合法規遵循和 eDiscovery 需求。
 ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261681"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>保留電子文件探索密件副本與展開的通訊群組收件者
   

@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟國民身分識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
 ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255641"
 ---
 # <a name="eu-national-identification-number"></a>歐盟國家識別碼
 
@@ -23,7 +23,7 @@ ms.locfileid: "30410968"
   
 ## <a name="austria"></a>奧地利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 24 個字元組合的字母、 數字和特殊字元
   
@@ -77,7 +77,7 @@ personalausweis republik österreich
   
 ## <a name="bulgaria"></a>保加利亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號十位數
   
@@ -165,7 +165,7 @@ edinen grazhdanski nomer
   
 ## <a name="cyprus"></a>賽普勒斯
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號十位數
   
@@ -219,7 +219,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 ## <a name="estonia"></a>愛沙尼亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數不含空格和分隔符號
   
@@ -304,7 +304,7 @@ isikukood
   
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數
   
@@ -362,7 +362,7 @@ személyazonosító igazolvány
   
 ## <a name="ireland"></a>愛爾蘭
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九個字元字母、 數字，與組合中所指定的型態的空間
   
@@ -439,7 +439,7 @@ uimh。 psp
   
 ## <a name="italy"></a>義大利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字母和數字中指定的型態的 16 個字元組合
   
@@ -521,7 +521,7 @@ codice fiscale
   
 ## <a name="italy"></a>義大利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 個數字和以指定的格式為連字號
   
@@ -585,7 +585,7 @@ personalcodeno #
   
 ## <a name="lithuania"></a>立陶宛
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數不含空格和分隔符號
   
@@ -658,7 +658,7 @@ asmens kodas。
   
 ## <a name="luxemburg"></a>盧森堡
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數不含空格和分隔符號
   
@@ -735,7 +735,7 @@ eindeutigeid #
   
 ## <a name="malta"></a>馬爾他
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一個字母後尾隨七位數
   
@@ -800,7 +800,7 @@ numru 東西 ' identità uniku
   
 ## <a name="netherlands"></a>荷蘭
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不含空格或分隔符號的九位數
   
@@ -873,7 +873,7 @@ uniek identiteitsnummer
   
 ## <a name="romania"></a>羅馬尼亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號的 13 位數
   
@@ -954,7 +954,7 @@ numărpersonalunic #
   
 ## <a name="slovakia"></a>斯洛伐克
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 位數包含一個反斜線
   
@@ -1023,7 +1023,7 @@ rodne cislo
   
 ## <a name="slovenia"></a>斯洛維尼亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不含空格或分隔符號的 13 位數
   
@@ -1094,7 +1094,7 @@ emšo
   
 ## <a name="spain"></a>西班牙
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 七位數後尾隨一個字元
   
@@ -1180,7 +1180,7 @@ identidadúnico #
 
 如需詳細資訊，請參閱 「 瑞典國民身分證 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+[敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

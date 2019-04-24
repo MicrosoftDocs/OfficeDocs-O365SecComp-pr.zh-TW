@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載第三方稽核，了解 Microsoft 如何確保客戶資料安全，以及知道如何您可以遵循 ISO、 HIPAA、 FINRA，以及 FedRAMP 當您使用 Office 365。
 ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261142"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全性 & 合規性中心中的服務保證
 

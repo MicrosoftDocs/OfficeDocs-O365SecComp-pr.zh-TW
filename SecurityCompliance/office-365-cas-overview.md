@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 雲端 App 安全性可讓您深入了解可疑的活動在 Office 365 中，您可以調查可能有問題且，如有需要採取動作來解決安全性問題的情況。 '
 ms.openlocfilehash: 960e4c75a4da13e1a0365f75d290cd18587abd58
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263057"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Overview of Office 365 Cloud App Security
   

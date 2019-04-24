@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 系統管理員可以了解 SMTP 驗證用戶端報表中的郵件流程儀表板中安全性 & 合規性中心。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252539"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 驗證的用戶端報告
 
@@ -52,6 +52,6 @@ ms.locfileid: "30998706"
 
 ![SMTP 驗證的用戶端報告中的 TLS 使用狀況詳細資料表格](media/smtp-auth-clients-report-details-tls-usage.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

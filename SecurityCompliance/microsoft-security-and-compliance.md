@@ -3,7 +3,7 @@ title: 現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 �
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 04/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 準備好的所有新的 Microsoft 365 安全中心和合規性中心
-ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265481"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心個
 
@@ -26,7 +26,7 @@ ms.locfileid: "31518373"
 
 您新的[Microsoft 365 安全性中心](overview-security-center.md)包含可協助您管理和監控您的身分識別、 資料、 裝置、 應用程式]，和基礎結構的安全性儀表板。 您也必須讓您輕鬆存取您所有新的[Microsoft 安全分數](microsoft-secure-score.md)、 新的裝置威脅報告、 新身分識別威脅報表和您的雲端 App 安全性報告。 
 
-[![N新增 Microsoft 365 安全性中心](media/m365-security-center.png)](overview-security-center.md)
+[![新的 Microsoft 365 安全中心](media/m365-security-center.png)](overview-security-center.md)
 
 當您第一次使用 Microsoft 365 安全性中心時，您會看到的資訊可協助您快速入門螢幕頂端之間。 您也會看到如何瀏覽輕鬆的安全性功能來您最感興趣探索。 若要深入了解，請參閱 <<c0>在 Microsoft 365 安全性中心概觀。
 
@@ -41,7 +41,7 @@ ms.locfileid: "31518373"
 
 您必須讓您輕鬆存取敏感度和保留標籤和原則、 資料外洩防護 (DLP)、 資料控管、 電子文件探索、 資料主體要求 (Dsr)、 案例管理和 Cloud App Security。 此外，您可以取得洞察力，並利用智慧型自動化來降低您的合規性風險，並保護您的數位資產。 
 
-[![Microsoft 365 規範中心](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
+[![Microsoft 365 合規性中心](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
 當您第一次使用 Microsoft 365 合規性中心時，您會看到的資訊可協助您快速入門螢幕頂端之間。 您會看到如何瀏覽輕鬆合規性功能您最感興趣探索。 若要深入了解，請參閱[歡迎您所有新的 Microsoft 365 合規性中心](microsoft-365-compliance-center.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "31518373"
 
 您可以預期順利轉移到新的中心。 最後，前者 Microsoft 365 安全性 & 合規性中心 ([https://protection.microsoft.com](https://protection.microsoft.com)) 即將停用。 雖然管理員經驗會改變，但這不會影響您目前的安全性與合規性組態。 如果您的組織有 Microsoft 365 企業版 E3 或 E5，您的安全性與合規性系統管理員可以：
 
-- 瀏覽直接到[https://security.microsoft.com](https://security.microsoft.com)和[https://compliance.microsoft.com](https://compliance.microsoft.com); <br>或   
+- 瀏覽直接到[https://security.microsoft.com](https://security.microsoft.com)和[https://compliance.microsoft.com](https://compliance.microsoft.com); <br>或  
 - 移至 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))，然後從該處瀏覽 （在 [瀏覽] 窗格中，按一下 [**全部顯示**]，然後選擇**安全性**或**規範**）。
 
 此外，仍然設定及管理現有的 Office 365 安全性 & 合規性中心中的設定 ([https://protection.office.com](http://protection.office.com))。 在這兩個現有 Office 365 安全性 & 合規性中心和中新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心會維護您的組態。  
@@ -87,11 +87,13 @@ ms.locfileid: "31518373"
 
 - 安全性管理員、 安全性運算子和安全性讀取者可以存取資訊安全中心
 
+ 若要深入了解這些角色，請參閱[Office 365 安全性 & 合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+ 
 下表摘要說明誰可以存取各種入口網站在 Azure、 Office 365 和 Windows:
 
 |入口網站 |全域管理員 |安全性系統管理員、 安全性運算子或安全性讀取者|合規性管理員 」 或 「 合規性資料管理員 |
 |---------|---------|---------|---------|
-|[安全規範中心](https://protection.office.com) |是 |是  |是 |
+|[安全性 & 合規性中心](https://protection.office.com) |是 |是  |是 |
 |[Microsoft 365 安全性中心](https://security.microsoft.com) |是  | 是  | 否        |
 |[Microsoft 365 合規性中心](https://compliance.microsoft.com) | 是 | 否 | 是 |
 |[合規性管理員](https://aka.ms/compliancemanager) |是 | 是 |是  |
@@ -115,3 +117,5 @@ ms.locfileid: "31518373"
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 安全性 & 合規性中心服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+
+若要提供意見反應 Microsoft 365 安全中心和 Microsoft 365 合規性中心，例如想法的新功能，請造訪[Microsoft Office 365 客戶的意見反應](https://office365.uservoice.com)

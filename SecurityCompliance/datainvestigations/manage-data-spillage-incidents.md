@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: 本文說明使用安全性 & 合規性中心的新資料調查 （預覽） 工具，來管理資料外洩事件。
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258821"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的資料外洩事件
 
@@ -111,7 +111,7 @@ ms.locfileid: "31030007"
 
 群組文件，並取得更多協助您檢閱，按一下 [**管理辨識項**]。 在 [**分析**] 磚中，按一下 [**分析**]。 這將會執行進階的分析，例如重複資料偵測、 電子郵件執行緒，以及佈景主題分析。 如需詳細資訊，請參閱：
 
-- [執行更快速地調查的分析](run-analytics-to-investigate-faster.md)
+- [執行分析以更快速地調查](run-analytics-to-investigate-faster.md)
 - [近似重複項偵測](near-duplicates.md)
 - [電子郵件威脅](email-threading.md)
 - [佈景主題](themes.md)

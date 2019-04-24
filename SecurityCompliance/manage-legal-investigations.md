@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 使用安全性 & 在 Office 365 規範中心中的 eDiscovery 案例，來管理貴組織的法律調查。 如果您有 E5 訂閱，您可以進一步分析案例資料，藉由使用文字分析、 機器學習和進階電子文件的預測式編碼功能。
 ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252091"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>管理 Office 365 中的法律調查
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 提供許多不同的 eDiscovery 工具可以用來搜尋並保留在不同的位置，例如 Exchange 信箱、 SharePoint 和 OneDrive for Business 網站、 Office 365 群組與 Skype for Business 交談中找到的內容。
 ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256801"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 中的 eDiscovery
 
@@ -76,7 +76,7 @@ Office 365 提供下列的 eDiscovery 工具：
    
 [回到頁首](ediscovery.md#top)
   
-## <a name="office-365-advanced-ediscovery"></a>Office 365 進階 eDiscovery
+## <a name="office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索
 <a name="advancedediscovery"> </a>
 
 下表包含可協助您了解及使用 Office 365 進階電子文件探索工具的主題連結。

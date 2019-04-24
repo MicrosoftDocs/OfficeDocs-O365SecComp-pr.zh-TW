@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 當服務，因為傳送輸出垃圾郵件，會封鎖寄件者時，網域系統管理員會指定當您設定輸出垃圾郵件原則將會收到類似下列的通知電子郵件：
 ms.openlocfilehash: 04d8bde8e9cadd3525191a5bee7d368229e85056
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260971"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>當寄件者被封鎖無法傳送輸出垃圾郵件的範例通知
 

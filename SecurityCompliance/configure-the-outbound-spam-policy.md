@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 如果您使用該服務來傳送輸出電子郵件，便會一律啟用輸出垃圾郵件篩選功能，從而保護使用該服務的組織及其預期的收件者。
 ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258402"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>設定輸出垃圾郵件原則
 

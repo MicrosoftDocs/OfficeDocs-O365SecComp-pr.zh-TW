@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 若要擷取員工通訊，檢閱設定主管檢閱原則。
 ms.openlocfilehash: 92630b1405af6e297390751d9b00e24a82e03087
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259516"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 

@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: '使用 PowerShell 指令碼在 Exchange Online 中根據安全性 & 合規性中心中建立搜尋建立就地 eDiscovery 搜尋。 '
 ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263795"
 ---
-# <a name="use-content-search-in-your-ediscovery-workflow"></a>在您的 eDiscovery 工作流程中使用內容搜尋
+# <a name="use-content-search-in-your-ediscovery-workflow"></a>在您的電子文件探索工作流程中使用內容搜尋
 
 安全性 & 合規性中心中的內容搜尋功能可讓您在組織中搜尋所有信箱。 不同 Exchange Online （其中您可以搜尋最多 10000 個信箱） 中的 「 就地 eDiscovery，有單一搜尋中的目標信箱數目沒有限制。 對於要求您執行整個組織搜尋的案例，您可以使用「內容搜尋」來搜尋所有信箱。 然後您可以使用就地 eDiscovery 的工作流程功能來執行其他 eDiscovery 相關工作，例如將信箱設定為保留與匯出搜尋結果。 例如，假設您必須搜尋所有信箱以識別回應法律案件的特定監管人。 您可以使用安全性 & 合規性中心中的內容搜尋來搜尋所有信箱來識別回應的情況下，您組織中。 然後您可以使用 custodian 信箱該清單為來源信箱的 Exchange Online 中就地 eDiscovery 搜尋。 使用就地 eDiscovery 也可讓您在這些來源信箱上設定保留、 將搜尋結果複製到探索信箱，並匯出搜尋結果。
   

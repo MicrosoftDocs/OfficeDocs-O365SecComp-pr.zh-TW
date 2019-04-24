@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全性 & 合規性中心建立及管理組織中的 eDiscovery 案例。 您可以將成員指派給這種情況，將內容保留，執行內容搜尋的位置與相關聯的情況下和匯出搜尋結果。 您也可以準備進一步進階電子文件中的分析案例資料。
 ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257891"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>安全性 & 合規性中心中的 eDiscovery 案例
 

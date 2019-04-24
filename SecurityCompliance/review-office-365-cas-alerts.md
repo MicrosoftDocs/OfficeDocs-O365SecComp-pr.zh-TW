@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: 使用 Office 365 雲端 App 安全性中的 [提醒] 頁面上，檢視潛在的問題，並採取動作。 您可以關閉或解決的警示，並如有必要，擱置的使用者帳戶。
 ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261474"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>檢閱並對 Office 365 雲端 App 安全性中的警示採取動作
   

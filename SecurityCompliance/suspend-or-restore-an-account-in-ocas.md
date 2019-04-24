@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Office 365 雲端 App 安全性，您可以採取的控管動作有擱置或 unsuspend 的使用者帳戶。 '
 ms.openlocfilehash: d162be9d4e5382c6c03c63ae1b30043edbf0295b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260304"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶
 

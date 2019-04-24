@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 此解決方案會告訴您何種最常見網路安全性攻擊看起來會像在 Office 365 和給他們的回應方式
 ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262355"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全性事件回應
 
@@ -47,11 +47,11 @@ ms.locfileid: "30656019"
 
 - [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>保護 Office 365 專業 cybersecurity 像
-Office 365 訂閱隨附一組功能強大的安全性功能，可用來保護您的資料和您的使用者。  使用[Office 365 安全性藍圖： 前的 30 天、 前 90 天及過後](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)實作 Microsoft 建議的最佳作法為保護您的 Office 365 租用戶。
-- 若要在第一個 30 天內完成的工作。  這些有直接影響，而低影響您的使用者。
-- 若要在 90 天內完成的工作。 這些需要較多時間規劃及實作，但是大幅改善您的安全性狀態
-- 超過 90 天。 這些增強功能建立您第一張 90 天的工作。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
+您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖：前 30 天、前 90 天前和之後的最高優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+- 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
+- 要在 90 天內完成的工作。 這些需要較多時間規劃及實作，但是大幅改善您的安全性狀態
+- 90 天之後。 這些增強功能會在您的前 90 天工作內建置。
 
 
 

@@ -14,16 +14,16 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定包含選取的郵件，會被識別為垃圾郵件所採取的動作，然後選擇是否要篩選以特定語言撰寫或從特定國家或地區傳送的郵件。
-ms.openlocfilehash: 9cfccc3602758de2426940cea1c6abd91871d7c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258811"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
   
-基本的垃圾郵件篩選設定包含選取的郵件，會被識別為垃圾郵件所採取的動作。 垃圾郵件篩選原則設定會套用至內送的郵件。 您可以編輯預設垃圾郵件篩選原則來設定您的全公司的垃圾郵件篩選設定和建立自訂垃圾郵件篩選原則，並再將它們套用至特定使用者、 群組或組織中的網域。 自訂原則的優先順序永遠高於預設原則。 您可以變更自訂原則執行藉由變更的每個自訂原則; 優先順序的順序不過，如果多個原則符合的準則集，將套用的最高優先順序原則。 
+基本的垃圾郵件篩選設定包含選取的郵件，會被識別為垃圾郵件所採取的動作。 垃圾郵件篩選原則設定會套用至內送的郵件。 您可以編輯預設垃圾郵件篩選原則來設定您的全公司的垃圾郵件篩選設定和建立自訂垃圾郵件篩選原則，並再將它們套用至特定使用者、 群組或組織中的網域。 自訂原則的優先順序永遠高於預設原則。 您可以變更自訂原則執行藉由變更的每個自訂原則; 優先順序的順序不過，如果多個原則符合的準則集，將套用的最高優先順序原則。
   
 > [!IMPORTANT]
 > Exchange Online Protection (EOP) 獨立客戶： 根據預設，EOP 垃圾郵件篩選垃圾郵件偵測到郵件傳送至每個收件者的垃圾郵件] 資料夾。 不過，為了確保**移至垃圾郵件] 資料夾的郵件**巨集指令適用於內部部署信箱，您必須設定 Exchange 郵件流程規則 （也稱為傳輸規則） 來新增您的內部伺服器來偵測垃圾郵件標頭EOP。 如需詳細資訊，請參閱[確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 

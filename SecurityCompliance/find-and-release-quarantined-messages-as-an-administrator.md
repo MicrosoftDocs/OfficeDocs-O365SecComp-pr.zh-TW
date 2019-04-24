@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: 本主題說明如何 Exchange Online 和 Exchange Online Protection (EOP) 系統管理員可以尋找、 釋出，並回報被隔離的郵件在 Exchange 系統管理中心 (EAC) 上。
 ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255257"
 ---
-# <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以系統管理員身分找到並釋放被隔離的郵件
+# <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以系統管理員身分尋找及釋放被隔離的郵件
 
 本主題說明如何 Exchange Online 和 Exchange Online Protection (EOP) 系統管理員可以尋找、 釋出，並回報被隔離的郵件在 Exchange 系統管理中心 (EAC) 上。 Office 365 會指示 [隔離郵件因為被判定為垃圾郵件或符合郵件流程規則 （也稱為傳輸規則）。 
   

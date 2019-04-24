@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板中的 [郵件流程] 對應報告。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252416"
 ---
 # <a name="mail-flow-map-report"></a>郵件流程地圖報表
 
@@ -52,6 +52,6 @@ ms.locfileid: "31001136"
 
 相關的觀點顯示下方的郵件流程對應是否它們供 （例如，寄件者網域深入見解或郵件迴圈深入解析）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

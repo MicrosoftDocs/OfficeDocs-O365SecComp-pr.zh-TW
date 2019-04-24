@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 已局部編製索引的項目 （也呼叫未建立索引的項目） 是 Exchange 信箱項目和文件在 SharePoint 和 OneDrive 網站，如某個原因而未完全編製索引的內容搜尋。 在本文中了解為何無法編製索引的搜尋項目，並已局部編製索引的項目所傳回、 識別搜尋錯誤的已局部編製索引的項目，並使用 PowerShell 指令碼來判斷您的組織暴露於已局部編製索引的電子郵件項目。
 ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254120"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>調查 Office 365 電子文件探索中已局部編製索引的項目
 
@@ -182,6 +182,6 @@ ms.locfileid: "31000886"
     
 2. 清單錯誤標記與之對應的檔案類型，發生錯誤。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)

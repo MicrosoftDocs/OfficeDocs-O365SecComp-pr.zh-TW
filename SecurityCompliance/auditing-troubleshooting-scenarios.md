@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 description: 您可以使用 Office 365 稽核記錄搜尋工具來協助您疑難排解常見問題，例如調查遭入侵的帳戶，或找出誰設定信箱的電子郵件轉寄。
 ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250243"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>搜尋 Office 365 稽核記錄來疑難排解常見的案例
 
@@ -111,9 +111,9 @@ ms.locfileid: "31479659"
 
 a. **ObjectId** ] 欄位中，在已設定的電子郵件轉寄的信箱別名上會顯示。 此信箱也會顯示在搜尋結果頁面中的**項目**] 欄中。
 
-b. 在 [**參數**] 欄位中， *ForwardingSmtpAddress*的值會指出，已在信箱上設定電子郵件轉寄。 在這個範例中，郵件會轉寄電子郵件地址mike@contoso.com，這是組織外部的 alpinehouse.onmicrosoft.com。
+b. 在 [**參數**] 欄位中， *ForwardingSmtpAddress*的值會指出，已在信箱上設定電子郵件轉寄。 在這個範例中，郵件會轉寄至電子郵件地址 mike@contoso.com，這是組織外部的 alpinehouse.onmicrosoft.com。
 
-c. *DeliverToMailboxAndForward*參數 *，則為 True*值表示郵件的副本會傳遞至sarad@alpinehouse.onmicrosoft.com*和*郵件會轉送到*ForwardingSmtpAddress*參數所指定的電子郵件地址在這個例如， mike@contoso.com。 如果*DeliverToMailboxAndForward*參數的值設為*False*，然後電子郵件僅轉寄給*ForwardingSmtpAddress*參數所指定的地址。 它不會傳遞至**ObjectId**欄位中指定的信箱。
+c. *DeliverToMailboxAndForward*參數 *，則為 True*值表示郵件傳送到 sarad@alpinehouse.onmicrosoft.com*和*複本會轉送到*ForwardingSmtpAddress 所指定的電子郵件地址*，內含在這個範例中是 mike@contoso.com 參數。 如果*DeliverToMailboxAndForward*參數的值設為*False*，然後電子郵件僅轉寄給*ForwardingSmtpAddress*參數所指定的地址。 它不會傳遞至**ObjectId**欄位中指定的信箱。
 
 d. [**使用者識別碼**] 欄位會指出在**ObjectId**欄位] 欄位中指定的信箱設定電子郵件轉寄功能的使用者。 此使用者也會顯示在搜尋結果] 頁面上的 [**使用者**] 欄中。 在此情況下，它看起來的信箱擁有者其信箱上設定電子郵件轉寄功能。
 
@@ -187,8 +187,8 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 a. 在 [ **ObjectId** ] 欄位中，會顯示收件匣規則的完整名稱。 此名稱包含使用者的信箱 (例如，SaraD) 的別名和收件匣規則 （例如，「 移動訊息從系統管理員 」） 的名稱。
 
-b. 在 [**參數**] 欄位中，會顯示收件匣規則的條件。 在這個範例中，條件是*從*參數所指定。 *From*參數會指出收件匣規則會對所傳送的電子郵件中定義的值admin@alpinehouse.onmicrosoft.com。 可以用來定義條件的收件匣規則的參數的完整清單，請參閱[New-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) > 一文。
+b. 在 [**參數**] 欄位中，會顯示收件匣規則的條件。 在這個範例中，條件是*從*參數所指定。 *從*參數所定義的值會指出收件匣規則會對 admin@alpinehouse.onmicrosoft.com 所傳送的電子郵件。 可以用來定義條件的收件匣規則的參數的完整清單，請參閱[New-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) > 一文。
 
-c. *MoveToFolder*參數會指定的收件匣規則動作;在這個範例中，郵件接收來自admin@alpinehouse.onmicrosoft.com移至名為*AdminSearch*的資料夾。 也請參閱[New-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)如需完整清單之可以用來定義的收件匣規則動作的參數。
+c. *MoveToFolder*參數會指定的收件匣規則動作;在這個範例中，從 admin@alpinehouse.onmicrosoft.com 接收的郵件會移至名為*AdminSearch*資料夾。 也請參閱[New-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)如需完整清單之可以用來定義的收件匣規則動作的參數。
 
 d. [**使用者識別碼**] 欄位會指出建立**ObjectId**欄位中指定的收件匣規則的使用者。 此使用者也會顯示在搜尋結果] 頁面上的 [**使用者**] 欄中。

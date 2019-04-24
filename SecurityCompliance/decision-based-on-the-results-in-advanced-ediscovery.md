@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解如何在 Office 365 進階電子文件探索中的決定] 索引標籤提供資料，可協助您決定正確的檢閱一組案例檔案大小。 '
 ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257814"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索中的結果為基礎的決策
 

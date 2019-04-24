@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: 如何使用 Microsoft 利用吸收、 偵測和補救中其防禦拒絕服務 (DoS) 攻擊的核心原則。
 ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262925"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>防禦阻斷服務攻擊的核心原則
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>防禦拒絕服務攻擊的核心原則
 
 三個核心原則時防禦網路型 DoS 攻擊吸收、 偵測和補救。
 吸收會發生情況之前偵測，以及偵測緩和措施之前發生。 吸收是 DoS 攻擊的最佳防範。 如果無法偵測到的攻擊，它不能降低。 但是，如果無法相同甚至是最小的 DoS 攻擊的命運，然後服務不會學到承受長，才能偵測到攻擊。

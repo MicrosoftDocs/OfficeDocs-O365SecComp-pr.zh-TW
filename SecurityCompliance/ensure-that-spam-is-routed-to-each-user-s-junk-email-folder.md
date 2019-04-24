@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何路由傳送垃圾郵件使用者垃圾郵件資料夾在 Exchange Online Protection。
 ms.openlocfilehash: 30b115b5d7f8f02767e3e380b672341765052a9c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256661"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾
 

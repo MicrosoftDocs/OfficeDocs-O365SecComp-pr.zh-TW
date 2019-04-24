@@ -1,5 +1,5 @@
 ---
-title: 進階 eDiscovery (Preview) 中的搜尋限制
+title: 在 [進階電子文件 （預覽） 的搜尋限制
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: b46a8fe7e1b3406e3e039380ec8a3e814ac1ee62
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240928"
 ---
-# <a name="search-limits-in-advanced-ediscovery-preview"></a>進階 eDiscovery (Preview) 中的搜尋限制
+# <a name="search-limits-in-advanced-ediscovery-preview"></a>在 [進階電子文件 （預覽） 的搜尋限制
 
 內容即將推出。

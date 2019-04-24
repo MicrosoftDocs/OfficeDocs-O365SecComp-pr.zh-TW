@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 本文中使用內容搜尋和指令碼來搜尋信箱與 OneDrive for Business 網站的使用者群組。
 ms.openlocfilehash: 2f0954bf7822ca6c82165ad20b2c732ab0594257
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260931"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 

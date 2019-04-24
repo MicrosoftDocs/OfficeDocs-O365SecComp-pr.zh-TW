@@ -20,11 +20,11 @@ ms.collection:
 - Strat_O365_IP
 description: 降低資料外洩或遭入侵的帳戶可能有遵循這些建議的最佳作法。
 ms.openlocfilehash: bd4b911cd5972b7d6dc9b55c17e375d326b1d571
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264635"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 的安全性最佳做法
 

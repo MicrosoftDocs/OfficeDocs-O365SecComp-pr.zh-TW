@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要： 設定組織的其他 Office 365 開發/測試環境中隔離的 SharePoint Online 小組網站。
 ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254357"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 

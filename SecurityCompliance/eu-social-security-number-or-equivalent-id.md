@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟社會安全號碼或對等識別碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
 ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255551"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>歐盟社會安全號碼或對等項目識別碼
 
@@ -23,7 +23,7 @@ ms.locfileid: "30410798"
   
 ## <a name="austria"></a>奧地利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 位數，代表指定之格式
   
@@ -98,7 +98,7 @@ versicherungsnummer
   
 ## <a name="belgium"></a>比利時
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數不含空格或分隔符號
   
@@ -175,7 +175,7 @@ numéronational #
   
 ## <a name="croatia"></a>克羅埃西亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 位數不含空格和分隔符號
   
@@ -250,7 +250,7 @@ osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>捷克共和國
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 十個數字和中指定的型態的反斜線
   
@@ -327,7 +327,7 @@ rodne cislo
   
 ## <a name="denmark"></a>丹麥
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 十個數字和中指定的型態連字號
   
@@ -398,7 +398,7 @@ personnummer
   
 ## <a name="finland"></a>芬蘭
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 個字元組合，以指定的格式
   
@@ -509,7 +509,7 @@ hetu
   
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號的九位數
   
@@ -594,7 +594,7 @@ magyar áfa szám
   
 ## <a name="sweden"></a>瑞典
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號的 12 位數
   
@@ -673,5 +673,5 @@ identifikationsnumret #
   
 ## <a name="see-also"></a>另請參閱
 
-[機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+[敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

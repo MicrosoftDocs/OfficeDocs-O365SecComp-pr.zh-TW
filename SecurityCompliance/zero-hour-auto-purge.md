@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是偵測到郵件與垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。 如何 ZAP 執行此動作，則偵測到的惡意內容類型而定。
 ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266905"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -95,6 +95,6 @@ ZAP 仍能是在此例中運作，除非已被刪除，或處於 [垃圾郵件�
 
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 電子郵件反垃圾郵件保護](anti-spam-protection.md)
+[Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
   
-[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](reduce-spam-email.md)
+[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常](reduce-spam-email.md)

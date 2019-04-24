@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
 ms.openlocfilehash: d802f6ad1af1cd818dffeba32c5b8c101636da61
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244084"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>首席資訊安全長研討會模組 2： 安全性管理 
 

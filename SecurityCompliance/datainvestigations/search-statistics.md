@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 986c3f3cbb19cd0f66b18db274e68a3bf8414952
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258097"
 ---
 # <a name="search-statistics"></a>搜尋統計資料
 
@@ -59,7 +59,7 @@ ms.locfileid: "31029976"
 
 - 符合搜尋準則的所有項目總大小。
 
-## <a name="queries"></a>Queries
+## <a name="queries"></a>查詢
 
 在 [**查詢**] 檢視中，您可以看到每個元件的搜尋查詢的詳細統計資料。 如果您在搜尋查詢中使用關鍵字清單，您可以在**查詢**檢視中顯示多少個項目比對每個關鍵字或關鍵字文句檢視增強的統計資料。 這可協助您快速找出在查詢的哪個部分是最 （和至少） 有效。 
 

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、 安全連結、 進階的反網路釣魚工具、 報告工具和威脅智慧功能。
 ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262945"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 

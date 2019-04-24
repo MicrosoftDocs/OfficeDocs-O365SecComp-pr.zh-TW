@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 系統管理員： 了解如何使用網路上傳將大量匯入多個 PST 檔案複製到 Office 365 中的使用者信箱。
 ms.openlocfilehash: 73123d5f36a01b31cfc38e6404bd400bb722fb36
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264202"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用網路上傳至您組織 PST 檔案匯入 Office 365
 

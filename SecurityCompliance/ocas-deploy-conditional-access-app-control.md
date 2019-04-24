@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 請遵循下列步驟來設定 Azure AD Office 365 應用程式連接至 Office 365 雲端 App 安全性條件式存取應用程式控制加以控制。
 ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263101"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>為 Office 365 應用程式部署條件式存取應用程式控制
 

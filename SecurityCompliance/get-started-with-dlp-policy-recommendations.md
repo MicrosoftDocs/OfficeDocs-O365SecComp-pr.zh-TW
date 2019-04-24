@@ -1,5 +1,5 @@
 ---
-title: DLP 原則建議快速入門
+title: 開始使用 DLP 原則建議
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,13 +12,13 @@ ms.collection:
 localization_priority: Normal
 description: 此深入了解導向建議可協助保護敏感內容安全性，當已儲存，並在 Office 365 中共用的通知您何時中的有可能間隔貴組織 DLP 原則涵蓋範圍。 您會看到這項建議在首頁上的安全性&amp;合規性中心，如果您的文件包含任何的前五個最常見的敏感資訊類型，但不會受到 DLP 原則。
 ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254080"
 ---
-# <a name="get-started-with-dlp-policy-recommendations"></a>DLP 原則建議快速入門
+# <a name="get-started-with-dlp-policy-recommendations"></a>開始使用 DLP 原則建議
 
 此深入了解導向建議可協助保護敏感內容安全性，當已儲存，並在 Office 365 中共用的通知您何時中的有可能間隔貴組織 DLP 原則涵蓋範圍。 您會看到這項建議在**首頁**上的安全性&amp;合規性中心，如果您的文件包含任何的前五個最常見的敏感資訊類型，但不受保護的資料外洩防護 (DLP) 原則。 
   

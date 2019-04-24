@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何開啟 ATP SharePoint、 OneDrive 及 microsoft Teams，包括如何設定警示，偵測到的檔案。
 ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264291"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟 Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams
 
@@ -34,7 +34,7 @@ ms.locfileid: "30242145"
 |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
-## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
+## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
 **開始此程序，請確定稽核記錄已經開啟的 Office 365 環境**。 這通常是由已指派 Exchange Online 的稽核記錄 」 角色的人員。 如需詳細資訊，請參閱[開啟 Office 365 稽核記錄搜尋的開啟或關閉](turn-audit-log-search-on-or-off.md)。
   

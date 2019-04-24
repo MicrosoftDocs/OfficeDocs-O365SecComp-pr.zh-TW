@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online 和 Office 365 內的資料復原的各個方面的說明。
 ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262755"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 中的 Exchange Online 資料恢復
 

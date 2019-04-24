@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 6d639df4f7afaa3a55e31bd75cd3e35104593ddd
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258384"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>在資料調查 （預覽） 中建立新的調查
 

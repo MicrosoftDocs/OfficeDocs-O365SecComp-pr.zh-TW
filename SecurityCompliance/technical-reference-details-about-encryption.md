@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 在 Office 365 中檢視加密的相關的技術詳細資料。
 ms.openlocfilehash: afe077fdedb3e01e5658d27a13e17ae3a3ab5929
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260291"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>關於 Office 365 中加密的技術參考細節
 

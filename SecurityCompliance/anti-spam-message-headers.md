@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefront-反垃圾郵件報告**標頭每封郵件。
 ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242994"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 

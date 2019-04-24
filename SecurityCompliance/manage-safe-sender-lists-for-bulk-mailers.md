@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 如果您想要使用安全的寄件者清單，您應該了解 Exchange Online Protection (EOP) 和 Outlook 處理方式處理。 服務會藉由檢查 RFC 5321.MailFrom 地址和 RFC 5322.From 地址，Outlook 會在使用者的安全寄件者清單中新增 RFC 5322.From 地址時遵守安全寄件者和網域。 (請注意： 此服務會檢查是否有 5321.MailFrom 地址和 5322.From 地址的封鎖寄件者和網域。)
 ms.openlocfilehash: 006c2b9520f1e1f71f5ec745baaf84f906f31eb4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259651"
 ---
 # <a name="manage-safe-sender-lists-for-bulk-mailers"></a>管理大量郵件寄件者的安全寄件者清單
 

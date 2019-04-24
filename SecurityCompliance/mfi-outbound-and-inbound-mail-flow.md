@@ -1,5 +1,5 @@
 ---
-title: 外寄和內送的郵件流程
+title: 輸出和輸入郵件流程
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: 系統管理員可以了解輸出和輸入的郵件流程] 小工具在 Office 365 安全性 & 合規性中心中的郵件流程儀表板中。
-ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: 系統管理員可以了解輸出和輸入的郵件流程 widget 安全性 & 合規性中心中的郵件流程儀表板中。
+ms.openlocfilehash: 89408618e7c5b3c921382b3efa0257f263509b6d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252207"
 ---
-# <a name="outbound-and-inbound-mail-flow"></a>外寄和內送的郵件流程
+# <a name="outbound-and-inbound-mail-flow"></a>輸出和輸入郵件流程
 
 **輸出和輸入的郵件流程**] 小工具結合了來自**連接器報表**及離職**TLS 概觀報告**在同一個位置的資訊。
 
-![輸出和輸入郵件流程中的報表在 Office 365 安全性 & 合規性中心中的郵件流程儀表板](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![輸入與輸出郵件流程報表中的郵件流程儀表板中安全性 & 合規性中心](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 [] 小工具中的資訊有關連接器和 Office 365 中的 TLS 郵件保護。 如需詳細資訊，請參閱下列主題：
 
@@ -33,7 +33,7 @@ ms.locfileid: "30720283"
 
 **輸出和輸入的郵件流程**] 小工具會顯示 TLS 加密的郵件會傳遞到及傳送自 Office 365 組織時所使用的連線。 建立與其他電子郵件服務的連線加密的 TLS 時由兩邊所提供 TLS。 [] 小工具提供郵件流程中的最後一週的快照集。 當您按一下 [**檢視詳細資料**時，**郵件保護 （由 TLS) 的傳輸中**彈出式視窗會顯示您進入及離開貴組織的 TLS 保護。
 
-![保護 Office 365 安全性 & 合規性中心中 （藉由 TLS) 加密彈出式視窗中的郵件](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![保護安全性 & 合規性中心中 （藉由 TLS) 加密彈出式視窗中的郵件](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 目前，TLS 1.2 是最安全的 Office 365 所提供的 TLS 版本。 通常，您需要知道規範稽核正在使用 TLS 加密。 您可能沒有直接的關聯性與大部分的來源和目的地電子郵件伺服器 （不屬於您，以及 Microsoft 都不會），因此您不需要以改善這些伺服器會使用 TLS 加密的許多選項。
 

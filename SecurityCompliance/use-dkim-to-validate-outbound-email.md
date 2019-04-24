@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 摘要： 本文將告訴您如何使用 DomainKeys Identified Mail (DKIM) 與 Office 365 來確保目的地電子郵件系統信任自您自訂網域傳送的郵件。
 ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263738"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -152,7 +152,7 @@ TTL:                3600
     
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>若要啟用 DKIM 簽章的自訂網域，藉由使用 PowerShell
 
-1. [連線至 Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx) (機器翻譯)。
+1. [連線至 Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx)。
     
 2. 執行下列命令：
     
@@ -203,7 +203,7 @@ TTL:                3600
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>若要停用的 DKIM 簽章原則使用 Windows PowerShell
 
-1. [連線至 Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx) (機器翻譯)。
+1. [連線至 Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx)。
     
 2. 執行下列其中一個您想要停用 DKIM 簽章的每個網域的下列命令。
     
@@ -219,7 +219,7 @@ TTL:                3600
     $p[0] | set-DkimSigningConfig -enabled $false
     ```
 
-   或
+   Or
     
     ```
     Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false

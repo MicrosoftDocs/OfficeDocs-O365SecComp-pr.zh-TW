@@ -3,7 +3,7 @@ title: 在 Office 365 中的非使用中信箱的概觀
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: 了解保留離職員工的信箱內容，藉由轉變成非使用中信箱的信箱。 您可以藉由將信箱置於訴訟暫止狀態或將 Office 365 保留原則套用至信箱與對應的 Office 365 帳戶，然後移除來這麼做。
-ms.openlocfilehash: 12688cb1c0f1d165c21736ce5a6130245db36a06
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 19cd2bafc1f4bf0b6aa3b4c0332a3588ace3e5d8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256521"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>在 Office 365 中的非使用中信箱的概觀
 
@@ -33,7 +33,8 @@ ms.locfileid: "31000796"
   
 但如果您的組織需要保留離職員工信箱內容，您可以將信箱變成非使用中信箱將信箱置於訴訟暫止狀態或 Office 365 保留原則套用到安全性 & 合規性中心中的信箱然後移除對應的 Office 365 帳戶。 The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. 不過，30 天後，非使用中的信箱會保留在 Office 365 直到移除保留或保留原則。 
   
-**重要：** 我們已建立新的就地保留 」 來停用信箱的 2017 年 7 月 1 日期限延後。 但到今年年底或明年年初，您將無法在 Exchange Online 中建立新的「就地保留」。 到時，只有「訴訟資料暫留」和 Office 365 保留原則可以用來建立非使用中的信箱。 不過，仍會支援「就地保留」上現有的非作用中信箱，並且您可以繼續管理非作用信箱上的「就地保留」。 這包括變更就地保留期間以及透過移除就地保留以永久刪除非作用中的信箱。 
+> [!NOTE]
+> 我們已將 2017 年 7 月 1 日的期限延後，以建立新的「就地保留」來建立非使用中的信箱。但到今年年底或明年年初，您將無法在 Exchange Online 中建立新的「就地保留」。到時，只有「訴訟資料暫留」和 Office 365 保留原則可以用來建立非使用中的信箱。不過，仍會支援「就地保留」上現有的非使用中信箱，並且您可以繼續管理非使用信箱上的「就地保留」。這包括變更「就地保留」期間，以及透過移除「就地保留」永久刪除非使用中的信箱。 
  
   
 ## <a name="inactive-mailboxes-and-office-365-retention-policies"></a>非使用中信箱和 Office 365 保留原則
@@ -42,23 +43,26 @@ ms.locfileid: "31000796"
   
 - 它具有 （因為 Skype 相關的內容會儲存在使用者的信箱中） 可套用到 Exchange 信箱或商務用 Skype位置。 
     
-- 已設定要保留內容或保持不變，並再刪除的內容。如果保留原則設定為只刪除內容時，將原則套用至信箱將不會成為刪除信箱時不在作用中。
+- 已設定要保留內容或保留，然後刪除內容。 如果保留原則設定為只刪除內容時，將原則套用至信箱將不會成為刪除信箱時不在作用中。
     
 - 它可以是查詢為基礎，讓它會保留在符合搜尋查詢的項目。 
     
 如需設定Office 365保留原則的詳細資訊，請參閱 ＜ [Overview of Office 365 中的保留原則](retention-policies.md)。
   
-如果您使用Office 365保留原則來進行非使用中的信箱、 Office 365會繼續處理非使用中信箱的保留原則。這表示如果保留原則設定來保持不變，然後刪除內容，將移至可復原的項目資料夾保留期間到期時, 和最後清除從非使用中的信箱項目。如果Office 365保留原則不設定成已刪除的項目，尚未被永久刪除之使用者所 （之前進行信箱不在作用中） 的項目不會移至 [可復原的項目] 資料夾與將會保留無限期之後信箱成為非使用中。 
+如果您使用保留原則來進行非使用中信箱時，Office 365 會繼續處理非使用中信箱的保留原則。 這表示如果保留原則設定來保持不變，然後刪除內容，將移至可復原的項目資料夾保留期間到期時, 和最後清除從非使用中的信箱項目。 如果Office 365保留原則不設定成已刪除的項目，尚未被永久刪除之使用者所 （之前進行信箱不在作用中） 的項目不會移至 [可復原的項目] 資料夾與將會保留無限期之後信箱成為非使用中。 
   
 您可能會考慮建立專用於非使用中信箱Office 365保留原則。以下是執行這項工作原因及謹記下列事項。
   
 - 您可以設定保留信箱內容僅只要符合先前員工貴組織的需求所需的保留原則。
     
-- 很簡單的方法來識別非使用中信箱的保留原則只會套用至非使用中信箱因為。
+- 它是一個好方法來識別非使用中信箱的保留原則只會套用至非使用中信箱因為。
     
-- You'll be able to easily identify the retention policy that's assigned to inactive mailboxes in your organization. This will make it easier to change the retention (or deletion) settings if necessary. 它也會讓它永久刪除非使用中的信箱，因為您可以只是它從原則移除使用安全性 & 合規性中心的工作變得更容易。 否則，您必須使用 Exchange Online PowerShell 來從非使用中的信箱中移除 [訴訟暫止狀態或安全性 & 合規性中心 PowerShell 從整個組織的 Office 365 保留原則中排除不在作用中的信箱。
+- 您可以快速找出指派給組織中的非使用中信箱的保留原則。 This will make it easier to change the retention (or deletion) settings if necessary. 它也會讓它永久刪除非使用中的信箱，因為您可以只是它從原則移除使用安全性 & 合規性中心的工作變得更容易。 否則，您必須使用 Exchange Online PowerShell 來從非使用中的信箱中移除 [訴訟暫止狀態或安全性 & 合規性中心 PowerShell 從整個組織的 Office 365 保留原則中排除不在作用中的信箱。
     
 - 如果您建立專用於非使用中信箱Office 365保留原則，您可以新增最多達 1000 個信箱原則。如果您是非常大型的組織，您可能必須建立多個Office 365保留原則，以用於非使用中的信箱。
+
+> [!CAUTION]
+> 如果您使用保留原則來停用信箱時，請勿變更或移除信箱的使用者主體名稱 (UPN) 後，再刪除對應的 Office 365 使用者帳戶。 此外，請勿變更主要 SMTP 位址 （也就衍生自 UPN） 或從之前進行非使用中信箱與信箱關聯的次要 SMTP 地址的清單中移除此電子郵件地址。 如果您變更 UPN 或電子郵件地址 （已指派給信箱的保留原則套用至其次），然後刪除若要停用信箱的使用者帳戶，您無法刪除非使用中信箱，當您不再需要保留 it。 這是因為您無法移除使用 UPN 或電子郵件地址 （若要識別非使用中的信箱），不同於存在時的保留原則一開始會套用到信箱的保留原則中的非使用中信箱。 如需刪除非使用中信箱的詳細資訊，請參閱[刪除非使用中信箱 Office 365 中](delete-an-inactive-mailbox.md)。
   
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>不在作用中信箱和 eDiscovery 案件保留
 
@@ -96,6 +100,9 @@ Office 365標籤有助於分類管理在組織中的電子郵件資料並強制�
 您讓信箱成為非使用中之後，您可以在非使用中的信箱上執行各種管理工作。
   
 - **變更非使用中信箱的保留期間**信箱進行非使用中之後，您可以變更套用至非使用中信箱的訴訟暫止狀態或 Office 365 保留原則的保留期間。 如需逐步程序，請參閱[變更 Office 365 中的非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)。
+
+  > [!NOTE]
+  > 您無法將其他保留原則套用至非使用中的信箱。 您只可以變更現有保留原則套用至非使用中信箱的保留期間。
     
 - **復原非使用中信箱**如果將離職員工 （或在請假員工） 傳回至您的組織或新進員工雇用採取離職員工的工作職責，您可以復原非使用中信箱的內容。 當您復原不在作用中的信箱時，信箱轉換成新的信箱、 保留的內容和非使用中的信箱資料夾結構，及信箱連結至新的使用者帳戶。 它會復原之後，非使用中的信箱不存在。 如需逐步程序及復原非使用中信箱時，會發生什麼情況的資訊，請參閱[復原非使用中信箱 Office 365 中](recover-an-inactive-mailbox.md)。
     

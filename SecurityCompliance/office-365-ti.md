@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何在 Office 365 進階威脅防護的威脅智慧功能可協助您研究針對貴組織的潛在威脅、 回應惡意程式碼、 網路釣魚和其他 Office 365 已經偵測出代表您的攻擊，搜尋的威脅指標。
 ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265395"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威脅調查及回應
 

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何啟用報告訊息增益集以進行 Outlook 和 Outlook 個別使用者的 web 應用程式或整個組織。
 ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257429"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 

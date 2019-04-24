@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 當電子郵件通過垃圾郵件篩選會指派的垃圾郵件計分。 該分數是對應至個別的垃圾郵件信賴等級 (SCL) 分級，並在 X 標頭中加上戳記。 服務採取動作時取決於垃圾郵件信賴解譯的 SCL 分級的郵件。 下表顯示由篩選以及對每個分級的輸入郵件採取的預設動作如何解譯不同 SCL 分級。
 ms.openlocfilehash: 48ca02bf3f6549c5acc1147ea477b9d22f1c76e1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260671"
 ---
 # <a name="spam-confidence-levels"></a>垃圾郵件信賴等級
 
@@ -30,7 +30,7 @@ ms.locfileid: "30692762"
 |-1|非垃圾郵件來自 [安全寄件者，安全的收件者或安全列 （信任的合作夥伴） 的 IP 位址。|將郵件傳遞至收件者的收件匣。|
 |0、1|非垃圾郵件因為已掃描郵件，並判定為初始狀態。|將郵件傳遞至收件者的收件匣。|
 |5、 6|垃圾郵件|將郵件傳遞至收件者的垃圾郵件] 資料夾。|
-|7、 8、 9|高信賴度垃圾郵件|將郵件傳遞至收件者的垃圾郵件] 資料夾。|
+|7、 8、 9|高信賴度的垃圾郵件|將郵件傳遞至收件者的垃圾郵件] 資料夾。|
    
 > [!TIP]
 > SCL 分級的 2、 3、 4、 7 和 8 不是由服務設定。 SCL 分級為 5 或 6 會被視為可疑的垃圾郵件，也就是較不一定要大於 SCL 分級為 9，這會被視為特定垃圾郵件的垃圾郵件。 垃圾郵件和高信賴度垃圾郵件的不同動作可以透過您在 Exchange 系統管理中心中的內容篩選原則設定。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。 您也可以設定為 > 中所述[來設定垃圾郵件信賴等級 (SCL) 郵件中的使用郵件流程規則](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)使用郵件流程規則 （也稱為傳輸規則），符合特定條件的郵件的 SCL 分級。 如果您使用郵件流程規則來設定的 scl 值為 7、 8 或 9 郵件會被視為高信賴度垃圾郵件。 

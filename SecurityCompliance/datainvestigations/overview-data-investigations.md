@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: 本文說明 Microsoft 365 的新資料調查 （預覽） 工具。
 ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257714"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的資料調查 （預覽） 的概觀
 
@@ -43,9 +43,9 @@ ms.locfileid: "31030005"
 
 您也可以在您收集證據上執行進階的分析。 這可以提供一般的佈景主題，及組織辨識項，由電子郵件執行緒，完全重複的項目，以及近重複項目來協助您調查。 您可以檢閱文件中擷取的文字檢視或原生檔案格式，並加上標籤與調查結果。 如需詳細資訊，請參閱：
 
-  - [辨識項的檢閱資料](review-data-in-evidence.md)
+  - [檢閱辨識項中的資料](review-data-in-evidence.md)
 
-  - [執行更快速地調查的分析](run-analytics-to-investigate-faster.md)
+  - [執行分析以更快速地調查](run-analytics-to-investigate-faster.md)
 
 
 ## <a name="managing-people-of-interest"></a>管理感興趣的人員

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
 ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254619"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查惡意電子郵件已傳遞 (Office 365 進階威脅防護計劃 2)
 

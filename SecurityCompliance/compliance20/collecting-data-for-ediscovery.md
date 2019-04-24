@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242551"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>收集資料的進階電子文件 （預覽） 中的案例
 
@@ -40,7 +40,7 @@ ms.locfileid: "30455415"
 
 - 摘要
 - 上方的位置
-- Queries
+- 查詢
 
 如需搜尋統計資料的詳細資訊，請參閱 <<c0>搜尋統計資料。
 

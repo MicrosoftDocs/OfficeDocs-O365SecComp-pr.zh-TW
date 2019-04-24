@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242781"
 ---
 # <a name="create-a-legal-hold-notice"></a>建立的合法持有通知
 
@@ -127,7 +127,7 @@ ms.locfileid: "30455195"
 
 ![提醒/升級] 頁面](../media/ReminderEscalations.PNG)
 
-### <a name="reminders"></a>Reminders
+### <a name="reminders"></a>提醒
 
 您已傳送的保留通知之後，您可以待處理事項與回應 custodians 所定義的提醒工作流程。 
 

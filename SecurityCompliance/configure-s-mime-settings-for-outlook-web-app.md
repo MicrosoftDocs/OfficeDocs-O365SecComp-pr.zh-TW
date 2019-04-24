@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online 系統管理員應該如何檢視及設定 Exchange Online 中網頁型 Outlook 中的 S/MIME 設定簡短描述。
 ms.openlocfilehash: d890b7f39d16d8c0f3866d5ff0024fe31160af6b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258991"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Exchange Online 中的 outlook 網頁版設定 S/MIME 設定
 
-Exchange online 的系統管理員，您可以設定以允許傳送及接收 S/MIME 保護的郵件 （先前稱為 Outlook Web App） 網頁型 Outlook。 使用**Get-smimeconfig**和**Set-smimeconfig**指令程式來檢視及管理此功能在 Exchange Online PowerShell。 若要連接至 Exchange Online PowerShell，請參閱 < <b0>Connect to Exchange Online PowerShell</b0>。
+Exchange online 的系統管理員，您可以設定以允許傳送及接收 S/MIME 保護的郵件 （先前稱為 Outlook Web App） 網頁型 Outlook。 使用**Get-smimeconfig**和**Set-smimeconfig**指令程式來檢視及管理此功能在 Exchange Online PowerShell。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
 如需詳細的語法及參數資訊，請參閱[Get-smimeconfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)和[Set-smimeconfig](http://technet.microsoft.com/library/de357ce0-8143-4c36-8032-026292fc63f0.aspx)。
 

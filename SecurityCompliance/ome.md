@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 Office 365 郵件加密，組織可以傳送和接收您組織內部和外部的人員之間的加密的電子郵件訊息。 電子郵件訊息加密有助於確保只有預定的收件者可以檢視郵件內容。
 ms.openlocfilehash: 06c43bcb3364b83114e2d7b1a2ef0273858cffb0
-ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31836807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261311"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 郵件加密
 

@@ -3,7 +3,6 @@ title: 在 Office 365 進階電子文件探索中匯出案例資料
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,28 +11,28 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: '了解匯出 eDiscovery 案件資料並使用 Office 365 進階 eDiscovery 匯出程序檢閱結果的準則。  '
-ms.openlocfilehash: 01997d3c799eeabc9686e3d747652d54fc963d26
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: '了解匯出 eDiscovery 案例資料及使用 Office 365 進階電子文件探索中匯出程序的檢閱結果的準則。  '
+ms.openlocfilehash: 8c9f4c31d5c48ab0d9884e14321471d45c927ecd
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255471"
 ---
 # <a name="export-case-data-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出案例資料
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
-進階 eDiscovery 匯出程序可讓進階的 eDiscovery 內容和外部檢閱結果匯出。 
+在進階電子文件探索中的匯出程序可讓您匯出進階電子文件內容和結果，進行外部檢閱。 
   
 ## <a name="guidelines-for-exporting-data"></a>匯出資料的指導方針
 
-- 您可以檢閱散佈到文件檢閱小組的改變功能項目] 或 [匯出至外部文件檢閱工具從進階 eDiscovery，產生的資料匯出。
+- 您可以檢閱從進階電子文件，例如，若要發佈至文件檢閱小組的相關項目] 或 [匯出至外部的文件檢閱工具產生的資料匯出。
     
-- 您可以產生及操作期間和之後進階的 eDiscovery 處理隨時匯出輸出。在標準的案例中，成功完成相關性訓練及批次計算後所達成重大的結果。例如，您可以產生 1000 個最相關檔案的範例，您在繼續之前先評估進階的 eDiscovery 效能。
+- 您可以產生，並操作期間和進階電子文件處理完成後隨時匯出輸出。 在標準的案例中，成功完成相關性訓練和批次計算後達成重大的結果。 例如，您可以產生 1000 個最相關檔案的範例，並評估進階電子文件的效能，之後，再繼續。
     
-- 將大量的資料匯出至資料庫可能會有大幅影響必要的資料庫大小和進階的 eDiscovery 資料庫的必要的設定。
+- 將大量資料匯出至資料庫，可能會造成重大影響必要的資料庫的大小和進階電子文件資料庫的必要的組態。
     
 ## <a name="see-also"></a>另請參閱
 

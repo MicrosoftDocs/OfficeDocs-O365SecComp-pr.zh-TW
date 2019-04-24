@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1183264f64a74e50f750ee13618f7532ffe04eb7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241104"
 ---
 # <a name="tag-documents-in-a-working-set"></a>標記工作集中的文件
 
 組織中的工作集的內容很重要完成 eDiscovery 程序中的各種工作流程。 其中包括：
 
--  挑選不必要的內容。
+-  挑選不必要的內容
 
-- 識別相關的內容。
+- 識別相關的內容
  
--  識別必須由專家或律師檢閱的內容。
+-  識別必須由專家或律師檢閱的內容
 
 當專家、 律師或其他使用者檢閱工作集合中的內容時，其相關內容的意見可以擷取使用標記。 例如，如果目的是要 cull 不必要的內容，使用者可以具有標記，例如 「 非回應 「 標記文件。 已檢閱及標記的內容之後，可以建立工作設定搜尋来排除的任何內容標示為 「 非回應 」，以排除此內容中的 eDiscovery 工作流程的下一個步驟。 [標記] 面板可以自訂每個案例，以便將標記可支援預定的檢閱 」 工作流程。
 

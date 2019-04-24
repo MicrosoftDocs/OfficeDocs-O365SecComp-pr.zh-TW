@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解如何系統管理員可以使用 Exchange Online PowerShell 和 CSV 檔案大量匯入外部連絡人至全域通訊清單。
-ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244499"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>大量匯入外部連絡人至 Exchange Online
 
@@ -91,7 +91,7 @@ ms.locfileid: "30862495"
     匯入的連絡人會出現在 Outlook 和 outlook 網頁版中共用的通訊錄中。
     
     > [!NOTE]
-    > 您也可以檢視 Office 365 系統管理中心中的連絡人，移至 [**使用者** \> **連絡人**。 
+    > 您也可以檢視 Microsoft 365 系統管理中心中的連絡人，移至 [**使用者** \> **連絡人**。 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>步驟 3： 將資訊新增至外部連絡人的屬性
 

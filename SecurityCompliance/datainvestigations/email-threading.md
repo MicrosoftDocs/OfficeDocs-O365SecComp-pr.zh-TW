@@ -1,5 +1,5 @@
 ---
-title: 電子郵件威脅
+title: 電子郵件執行緒
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258791"
 ---
-# <a name="email-threading"></a>電子郵件威脅
+# <a name="email-threading"></a>電子郵件執行緒
 
 請考慮有一段時間移電子郵件交談。 在大多數情況下，在執行緒上的最後一個電子郵件會包含所有上述的電子郵件; 的內容檢閱最後一個電子郵件將會提供執行緒上發生的交談的完整內容。 電子郵件執行緒識別這類電子郵件，以便檢閱者可以檢閱收集文件的分數，而不會遺失任何內容。
 

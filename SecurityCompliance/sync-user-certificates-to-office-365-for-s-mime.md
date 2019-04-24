@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 description: 在設定正確的憑證之前，任何人都無法傳送受 S/MIME 保護的郵件。為了透過 Exchange Online 傳送加密郵件，寄件者的電子郵件程式會使用收件者的公用憑證為郵件加密。這個公用的 X.509 憑證必須發行至 Office 365。
 ms.openlocfilehash: 927f6b4c7a166ee35e11a8712cc99054b0e67dee
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265245"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>將使用者憑證同步至 Office 365 進行 S/MIME 處理
 

@@ -1,5 +1,5 @@
 ---
-title: EOP 中的郵件原則與合規性
+title: EOP 中的訊息原則和規範
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: Microsoft Exchange Online Protection 提供有助於您管理電子郵件資料的郵件原則及符合性功能。
 ms.openlocfilehash: 3e966c03c40cbcce53a92d4052151241759bb85f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255781"
 ---
-# <a name="messaging-policy-and-compliance-in-eop"></a>EOP 中的郵件原則與合規性
+# <a name="messaging-policy-and-compliance-in-eop"></a>EOP 中的訊息原則和規範
 
 Microsoft Exchange Online Protection 提供有助於您管理電子郵件資料的郵件原則及符合性功能。
   

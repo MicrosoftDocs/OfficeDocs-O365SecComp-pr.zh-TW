@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果將離職員工返回您的組織，或是新進員工雇用採取將承接已離開員工工作職責，您可以復原非使用中信箱 Office 365 中的內容。 當您復原非使用中的信箱時，它會轉換為新的信箱，其中包含非作用中信箱的內容。 '
 ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261541"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>復原非使用中信箱 Office 365 中
 
@@ -48,7 +48,7 @@ ms.locfileid: "30999816"
     
 - 如需非使用中信箱的詳細資訊，請參閱 <<c0>在 Office 365 中的非使用中信箱。
     
-## <a name="recover-an-inactive-mailbox"></a>復原非使用中的信箱
+## <a name="recover-an-inactive-mailbox"></a>復原非作用中的信箱
 
 若要復原非使用中信箱搭配*InactiveMailbox*參數**New-mailbox**指令程式。 
   

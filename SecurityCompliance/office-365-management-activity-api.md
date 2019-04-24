@@ -3,25 +3,24 @@ title: Office 365 管理活動 API
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: 關於 Office 365 管理活動 API 簡短摘要。
-ms.openlocfilehash: df90eba0d019a862d4699f3e2aa0a04e88b0c371
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3405eaac000111fb5d5f054edcbe6816aa9af9e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262555"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365 管理活動 API
-Microsoft 提供 reporting services 可讓系統管理員以取得其 Office 365 租用戶交易式彙總的資訊。[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)使用業界標準 RESTful 設計與 OAuth v2 進行驗證，方便您開始體驗擷取資料與 ingesting 到的視覺化工具和應用程式。API 提供資料摘要包含 Office 365 中的使用者、 管理員、 作業及安全性活動的相關資訊。資料可以保持在法規基於或結合採購從內部部署基礎結構或其他來源]，以建立作業、 安全性及規範的監視解決方案整個企業的記錄資料。
+Microsoft 提供報告服務可讓系統管理員，取得有關其 Office 365 租用戶的彙總交易資訊。 [Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)會使用業界標準 RESTful 設計和 OAuth v2 進行驗證，讓您輕鬆地進行實驗以開始擷取資料並 ingesting 到視覺效果工具和應用程式。 此 API 會提供資料摘要，包含在 Office 365 中的使用者、 系統管理員、 作業及安全性活動的相關資訊。 資料可以基於法規，保留或結合採購從內部部署基礎結構或其他來源]，以建立整個企業的作業、 安全性和規範監視解決方案的記錄資料。
 
-Office 365 管理活動 API 從 Office 365 和 Azure Active Directory 活動記錄檔提供各種使用者、 管理、 系統及原則動作和事件的相關資訊。API 提供一致的稽核架構具有共通都是所有服務的超過 10 個欄位。這可讓組織進行簡單事件之間的連線並可讓原因的新方式透過資料。數十的獨立軟體廠商 (Isv) 已建立合作關係與 Microsoft 及內建 API 為基礎的解決方案。某些解決方案被著重說明察覺 Office 365 資料時其他人提供多快擷取資料從多個以建立所有作業、 安全性及規範相關活動的整合的檢視的雲端提供者和內部部署系統的能力。如需詳細資訊，請參閱[Office 365 管理活動 API 參考 （英文）](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
+Office 365 管理活動 API 從 Office 365 和 Azure Active Directory 活動記錄提供各種使用者、 系統、 系統及原則動作和事件的相關資訊。 API 提供一致的稽核結構描述具有超過 10 個共通的所有服務的欄位。 這可讓組織進行輕鬆事件，之間的連線，並可透過資料讓原因的新方法。 數十個獨立軟體廠商 (Isv) 已建立與 Microsoft 合作關係，並建置 API 為基礎的解決方案。 部分解決方案被著重於察覺 Office 365 資料，雖然其他人提供內嵌自多個雲端提供者與內部部署系統，來建立所有作業、 安全性及規範相關活動的整合的檢視資料的能力。 如需詳細資訊，請參閱[Office 365 管理活動 API 參考資料](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。

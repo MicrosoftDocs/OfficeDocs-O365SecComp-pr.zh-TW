@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243631"
 ---
 # <a name="acknowledge-a-hold-notification"></a>確認保留通知 
 當回應法規要求或調查，您可能需要通知來保留電子儲存的資訊 (ESI)，以及可能是相關法律專家作用中或即將發生任何材料其義務的 custodians。 一旦傳送，法務小組必須知道每個 custodian 已接收、 讀取、 並瞭解並同意遵守的特定指示。

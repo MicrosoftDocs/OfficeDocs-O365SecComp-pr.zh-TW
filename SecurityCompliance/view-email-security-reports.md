@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何尋找並使用您的組織使用 Office 365 企業版電子郵件安全性報告。 安全性中的電子郵件安全性報告可用&amp;合規性中心。
 ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267851"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>檢視安全性中的電子郵件安全性報告&amp;合規性中心
 

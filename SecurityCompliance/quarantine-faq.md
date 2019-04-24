@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 本主題提供有關託管隔離區的常見問題與解答。
 ms.openlocfilehash: 9a9673b3360a9a8b6bf837e09b49aca7a38e2172
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265035"
 ---
 # <a name="quarantine-faq"></a>隔離常見問題集
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 當客戶的電子郵件系統已經受到惡意程式碼或惡意垃圾郵件攻擊，且它傳送到託管的篩選服務的輸出垃圾郵件時，這可能導致各別列出協力廠商區塊上的 Office 365 資料中心伺服器的 IP 位址列出。
 ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253941"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>高風險傳遞集區的外寄郵件
 

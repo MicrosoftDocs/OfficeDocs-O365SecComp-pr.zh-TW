@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection 設定郵件的 SCL。
 ms.openlocfilehash: e07b90ab1ab004c39ef36b2aa744ca87120c11fe
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263448"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)
 

@@ -1,5 +1,5 @@
 ---
-title: 將疑難排解郵件傳送艮 Office 365
+title: 將疑難排解郵件傳送至 Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: 本文提供寄件者嘗試傳送電子郵件給 Office 365 和 Office 365 客戶的大量郵件的最佳作法中的收件匣時遇到問題的疑難排解資訊。
 ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265905"
 ---
-# <a name="troubleshooting-mail-sent-to-office-365"></a>將疑難排解郵件傳送艮 Office 365
+# <a name="troubleshooting-mail-sent-to-office-365"></a>將疑難排解郵件傳送至 Office 365
 
 本文提供寄件者嘗試傳送電子郵件給 Office 365 和 Office 365 客戶的大量郵件的最佳作法中的收件匣時遇到問題的疑難排解資訊。
   

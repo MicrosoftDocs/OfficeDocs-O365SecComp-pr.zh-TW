@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Office 365 雲端 App 安全性中的 OAuth 應用程式可協助您管理您的使用者下載 Office 365 資料搭配使用的應用程式
 ms.openlocfilehash: 0d9916414d55abb73fd99eaf30c3b6df0648b191
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260119"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>使用 Office 365 雲端 App 安全性管理 OAuth 應用程式
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: '您和您的使用者可以提交 false 負數，則為 false 正數垃圾郵件給 Microsoft 進行分析。 '
 ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260651"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 

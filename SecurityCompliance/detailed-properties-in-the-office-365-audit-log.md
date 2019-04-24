@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: 包含 Office 365 中的其他屬性的說明稽核記錄。
 ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257644"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 稽核記錄中的詳細內容
 
@@ -53,7 +53,7 @@ ms.locfileid: "31000326"
 |EventSource|識別事件發生在 SharePoint 中。 可能值是**SharePoint**及**ObjectModel**。|SharePoint|
 |ExternalAccess|對於 Exchange 系統管理員活動，指定是否在使用者在您的組織，由 Microsoft 資料中心的人員或資料中心服務帳戶，或委派的系統管理員執行指令程式。 **為 False**的值會指出此 cmdlet 所執行的組織中的人員。 **則為 True**的值會指出此 cmdlet 所執行的資料中心人員、 資料中心服務帳戶或將委派的管理員。  <br/> Exchange 信箱活動，會指定是否由組織外部使用者存取信箱。|Exchange|
 |ExtendedProperties|擴充的屬性如 Azure Active Directory 事件。|Azure Active Directory|
-|ID|報告項目的識別碼。 識別碼可唯一識別的報告項目。|全部|
+|識別碼|報告項目的識別碼。 識別碼可唯一識別的報告項目。|全部|
 |InternalLogonType|保留給內部使用。|Exchange （信箱活動）|
 |ItemType|已存取或修改物件的類型。 可能值包括**檔案**、**資料夾**、 **Web**、**網站**、**租用戶**及**DocumentLibrary**。|SharePoint|
 |LoginStatus|識別可能發生的登入失敗。|Azure Active Directory|
@@ -78,12 +78,12 @@ ms.locfileid: "31000326"
 |SourceRelativeUrl|包含使用者所存取的檔案的資料夾的 URL。 **SiteURL**、 **SourceRelativeURL**，和**SourceFileName**屬性值的組合為**ObjectID**屬性，亦即使用者所存取的檔案的完整路徑名稱的值相同。|SharePoint|
 |主旨|存取郵件的主旨行。|Exchange （信箱活動）|
 |TabType| ] 索引標籤的類型新增、 移除或小組中更新。 此屬性的可能值包括：  <br/><br/> **Excelpin** -Excel] 索引標籤。  <br/> **分機**所有的第一方和協力廠商應用程式;例如 Planner、 VSTS、 和表單。  <br/> **附註**的 OneNote] 索引標籤。  <br/> **Pdfpin** -PDF] 索引標籤。  <br/> **Powerbi** -PowerBI] 索引標籤。  <br/> **Powerpointpin** -PowerPoint] 索引標籤。  <br/> **Sharepointfiles** -SharePoint] 索引標籤。  <br/> **網頁**-釘選的網站] 索引標籤。  <br/> **Wiki] 索引標籤**-wiki] 索引標籤。  <br/> **Wordpin** -Word 索引標籤。|Microsoft Teams|
-|Target (目標)|使用者上所執行的巨集指令 （[**作業**] 屬性中所識別）。 例如，如果來賓使用者新增至 SharePoint 或 Microsoft 小組，則該使用者就會被列在此屬性。|Azure Active Directory|
+|Target|使用者上所執行的巨集指令 （[**作業**] 屬性中所識別）。 例如，如果來賓使用者新增至 SharePoint 或 Microsoft 小組，則該使用者就會被列在此屬性。|Azure Active Directory|
 |TeamGuid|在 [Microsoft Teams 小組的識別碼。|Microsoft Teams|
 |TeamName|在 [Microsoft Teams 小組的名稱。|Microsoft Teams|
 |UserAgent|使用者的瀏覽器的相關資訊。 在瀏覽器提供此資訊。|SharePoint|
 |UserDomain|使用者 （動作項目） 的用戶組織的身分識別資訊誰執行巨集指令。|Azure Active Directory|
-|使用者識別碼|執行的巨集指令 （在 [**作業**] 屬性中指定），造成正在記錄之記錄中的使用者。 請注意系統帳戶 （例如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM） 所執行的活動的記錄也會包含在稽核記錄檔。|全部|
+|UserID|執行的巨集指令 （在 [**作業**] 屬性中指定），造成正在記錄之記錄中的使用者。 請注意系統帳戶 （例如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM） 所執行的活動的記錄也會包含在稽核記錄檔。|全部|
 |UserKey|**UserID**屬性中所識別之使用者的替代識別碼。 例如，這個屬性會填入 passport 唯一識別碼 (PUID) 在 SharePoint 中的使用者所執行的事件。 此屬性也可能相同值指定為其他服務] 與 [系統帳戶所執行的事件中發生事件的**UserID**屬性。|全部|
 |UserSharedWith|資源共用的使用者。 如果**作業**屬性的值是**SharingSet**包含此屬性。 此使用者也會列在報告中的**共用與**資料行。|SharePoint|
 |UserType|執行此作業的使用者類型。 下列的值可指出使用者類型。 <br/> <br/> **0** -一般使用者。 <br/>**2** -Office 365 組織中系統管理員。 <br/>**3** -Microsoft 資料中心系統管理員或資料中心系統帳戶。 <br/>**4** -系統帳戶。 <br/>**5** -應用程式。 <br/>**6** -服務主要名稱。<br/>**7** -自訂原則。<br/>**8** -系統原則。|全部|

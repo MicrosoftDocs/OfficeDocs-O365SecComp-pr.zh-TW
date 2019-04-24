@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全連結功能提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。 若要從網路釣魚和其他攻擊保護您的組織使用安全連結。
 ms.openlocfilehash: 7dacb4184ff0b99887b2aa5f3fe2e65cd58c5b6b
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249553"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 
@@ -112,7 +112,7 @@ Office 365 ATP 安全連結 （[進階威脅防護](office-365-atp.md)的一部�
 |---------|---------|
 |Office 365 全域系統管理員 |若要購買 Office 365 註冊的人員是預設的全域系統管理員。 （請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)，以了解更多）。         |
 |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或  <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>如何讓確定 ATP 安全連結保護已經準備就緒
 
@@ -126,7 +126,7 @@ ATP 安全連結原則已備妥之後，可以看到貴組織的安全性小組�
   
 |**範例案例**|**ATP 安全連結保護不會在此情況下套用嗎？**|
 |:-----|:-----|
-|Jean 是群組的有涵蓋 Url 電子郵件和 Office 文件中的 ATP 安全連結原則成員。 Jean 有人傳送時，開啟 PowerPoint 簡報，然後按一下 [在簡報中的 URL。  <br/> |可以。 所定義的 ATP 安全連結原則套用到 Jean 的群組、 Jean 的電子郵件，並 Jean 隨即開啟，只要 Jean 登入的 Word、 Excel、 PowerPoint 或 Visio 文件和 Windows、 iOS 或 Android 裝置上使用 Office 365 專業增強版。  <br/> |
+|Jean 是群組的有涵蓋 Url 電子郵件和 Office 文件中的 ATP 安全連結原則成員。 Jean 有人傳送時，開啟 PowerPoint 簡報，然後按一下 [在簡報中的 URL。  <br/> |是。 所定義的 ATP 安全連結原則套用到 Jean 的群組、 Jean 的電子郵件，並 Jean 隨即開啟，只要 Jean 登入的 Word、 Excel、 PowerPoint 或 Visio 文件和 Windows、 iOS 或 Android 裝置上使用 Office 365 專業增強版。  <br/> |
 |Chris 的組織，不全域或安全性中的系統管理員已尚未定義任何 ATP 安全連結原則。 Chris 會收到一封電子郵件包含惡意網站的 URL。 Chris 是察覺不到 URL 為惡意，並按下的連結。  <br/> |否。 對組織中的每個人都涵蓋 Url 的預設原則必須定義要就地保護的順序。  <br/> |
 |在 Pat 的組織，不全域或安全性系統管理員已定義，或尚未編輯任何 ATP 安全連結原則。 Pat 開啟 Word 文件，並按一下 [在檔案中的 URL。  <br/> |否。 原則，其中包含 Office 文件必須定義要就地保護的順序。 請參閱 <<c0>設定 Office 365 中的 ATP 安全連結原則。  <br/> |
 |Lee 的組織已有的 ATP 安全連結原則`http://tailspintoys.com`列為遭到封鎖的網站。 Lee 收到電子郵件訊息包含的 URL `http://tailspintoys.com/aboutus/trythispage`。 Lee 按一下 URL。  <br/> |這取決於是否整個網站及其所有的清單中包含它的子頁面封鎖 Url。 請參閱 <<c0>設定自訂封鎖 Url 清單使用 ATP 安全連結。  <br/> |

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240888"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery-preview"></a>在進階電子文件 （預覽） 中支援的檔案類型
 
 事先 eDiscovery （預覽） 支援許多不同的層級，如下表所述的許多檔案類型。 這份清單未完成，並為我們繼續我們驗證測試，我們會將新增新的檔案類型。 表也表示是否可以進階電子文件探索 （預覽） 中可用的檢視器中檢視的檔案類型。
 
-| Mime 類型 | 檔案類別 | 原生檢視器 | 文字檢視器 | 加上註解檢視器 | 容器擷取 | 延伸模組 |
+| Mime 類型 | 檔案類別 | 原生檢視器 | 文字檢視器 | 加上註解檢視器 | 容器擷取 | Extensions |
 | :- | :- | :- | :- | :- | :- | :- |
 | 應用程式/msword | Document | 是 | 是 | 是 | 否 | .doc;.dat |
 | 應用程式/pdf | Document | 是 | 是 | 是 | 否 | .pdf |

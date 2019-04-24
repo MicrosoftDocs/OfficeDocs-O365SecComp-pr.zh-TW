@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 description: 了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊
 ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256861"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
 
 **摘要**了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊。
 
@@ -175,13 +175,13 @@ Exchange 伺服器上的信箱的步驟
 
 與內部部署 Exchange 安裝的客戶應該考慮封鎖舊版 Outlook 沒有可用的修補程式。 可以[設定 Outlook 用戶端封鎖](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx)」 文件中找到此程序的詳細資訊。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>保護 Office 365 專業 cybersecurity 像
-Office 365 訂閱隨附一組功能強大的安全性功能，可用來保護您的資料和您的使用者。  使用[Office 365 安全性藍圖： 前的 30 天、 前 90 天及過後](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)實作 Microsoft 建議的最佳作法為保護您的 Office 365 租用戶。
-- 若要在第一個 30 天內完成的工作。  這些有直接影響，而低影響您的使用者。
-- 若要在 90 天內完成的工作。 這些較多要花時間規劃及實作，但是大幅改善您的安全性狀態。
-- 超過 90 天。 這些增強功能建立您第一張 90 天的工作。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
+您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖：前 30 天、前 90 天前和之後的最高優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+- 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
+- 要在 90 天內完成的工作。 這些工作需要多一些時間來計劃及實作，但是可以大幅改善您的安全性狀態。
+- 90 天之後。 這些增強功能會在您的前 90 天工作內建置。
 
-## <a name="see-also"></a>另請參閱：
+## <a name="see-also"></a>請參閱：
 - [惡意 Outlook 規則](https://silentbreaksecurity.com/malicious-outlook-rules/)的相關規則向量 SilentBreak 安全性文章提供如何詳細的檢閱 Outlook 規則。 
 - 關於 Mailrule Pwnage Sensepost 部落格上的[MAPI over HTTP 和 Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/)討論工具，稱為尺規，可讓您利用透過 Outlook 規則的信箱。
 - [Outlook 表單與 shell](https://sensepost.com/blog/2017/outlook-forms-and-shells/)關於表單威脅向量 Sensepost 部落格上。 

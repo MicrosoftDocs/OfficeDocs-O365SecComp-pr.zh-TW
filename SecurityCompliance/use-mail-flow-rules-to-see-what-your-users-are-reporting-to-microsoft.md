@@ -1,5 +1,5 @@
 ---
-title: 使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容
+title: 使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: 您可以建立 Exchange 郵件流程規則，以防止使用者將電子郵件訊息傳送給 Microsoft 進行分析，並在您自己的安全性程序中使用它們
 ms.openlocfilehash: 3552899c2fb471624234625331492edcd8421da6
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264275"
 ---
-# <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容
+# <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
 
 有多種方法可以將誤判和誤判正常郵件傳送給 Microsoft，以進行分析。 身為管理員，您可以使用郵件流程規則來查看您的使用者會回報給 Microsoft 垃圾郵件、 非垃圾郵件和網路釣魚詐騙。 如需詳細資訊，請參閱[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 相反地，您可以建立 Exchange 郵件流程規則 （也稱為傳輸規則） 以防止使用者將電子郵件訊息傳送給 Microsoft 進行分析，並在您自己的安全性程序中使用它們。
   

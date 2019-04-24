@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 雲端 App 安全性工作階段原則啟用即時工作階段層級監視，並細微的可視性 Office 365 應用程式所能採取不同的動作為使用者工作階段的原則。 而不是允許或封鎖存取完全，工作階段控制您可以同時監視使用條件式存取應用程式控制項的反向 proxy 功能的工作階段及/或限制特定的工作階段活動允許存取。
 ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263021"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的工作階段原則
 

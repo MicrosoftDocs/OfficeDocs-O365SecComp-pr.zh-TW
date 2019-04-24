@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: '請參閱 < 關於隔離電子郵件系統管理員從使用者垃圾郵件通知訊息的使用者可以執行以下動作的郵件。 '
 ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264328"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>利用使用者垃圾郵件通知來釋放並回報被當成垃圾郵件隔離的郵件
 

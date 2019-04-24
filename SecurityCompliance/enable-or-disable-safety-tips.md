@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 告訴 Office 365 和 EOP 系統管理員如何啟用及停用電子郵件訊息中的安全提示。
 ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256940"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>啟用或停用 Office 365 中的安全提示
 
@@ -69,7 +69,7 @@ Office 365 組織的預設啟用安全提示，並建議您保留加以啟用，
 
 系統管理員可以使用 Exchange Online PowerShell，啟用或停用安全提示。 使用 Set-hostedcontentfilterpolicy 指令程式來啟用或停用垃圾郵件篩選原則中的安全提示。
   
-1. 連線至 Exchange Online PowerShell (機器翻譯)。 如需資訊，請參閱 < <b0>Connect to Exchange Online PowerShell</b0>。
+1. 連線至 Exchange Online PowerShell。 如需資訊，請參閱 < <b0>Connect to Exchange Online PowerShell</b0>。
     
 2. 執行 Set-hostedcontentfilterpolicy 指令程式來啟用或停用安全提示：
     

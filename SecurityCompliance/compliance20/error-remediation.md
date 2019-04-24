@@ -1,5 +1,5 @@
 ---
-title: 處理資料時發生補救錯誤
+title: 處理資料時的錯誤補救
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252619"
 ---
-# <a name="error-remediation-when-processing-data"></a>處理資料時發生補救錯誤
+# <a name="error-remediation-when-processing-data"></a>處理資料時的錯誤補救
 
 錯誤修復允許 eDiscovery 系統管理員修正正確處理內容時，防止進階電子文件 （預覽） 的資料問題的能力。 例如，因為檔案已鎖定或加密，無法處理受到密碼保護的檔案。 使用錯誤修復，eDiscovery 系統管理員可以下載這類錯誤的檔案、 移除密碼保護和修復的檔案上傳。
 
@@ -96,7 +96,7 @@ ms.locfileid: "30737673"
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
-- 文字
+- Text
 - WordCount
 - WorkingsetId
 

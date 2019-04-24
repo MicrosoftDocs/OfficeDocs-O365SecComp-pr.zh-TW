@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 當您設定 ATP 安全附件原則時，您可以選擇以避免郵件延遲，並讓使用者在預覽所掃描的附件動態傳遞。
 ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257221"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動態傳遞和預覽與 Office 365 ATP 安全附件
 

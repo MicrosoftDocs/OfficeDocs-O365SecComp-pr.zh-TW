@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 指令碼，以快速地複製現有的 Office 365 或 Microsoft 365 的合規性中心中 「 內容搜尋。 當您複製搜尋時、 （以新名稱） 的新搜尋會建立包含原始的搜尋相同的屬性。 然後您可以編輯新的搜尋 （藉由變更的關鍵字查詢或日期範圍），然後再執行它。
 ms.openlocfilehash: b08ccb6fbaf2dc9d92e0814fe9f92ea77c731147
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243344"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 

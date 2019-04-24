@@ -1,5 +1,5 @@
 ---
-title: 增加保留信箱可復原的項目配額
+title: 增加保留信箱的可復原項目配額
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '啟用封存信箱，並開啟自動展開封存增加的 Office 365 中的信箱 [可復原的項目] 資料夾的大小。 '
 ms.openlocfilehash: f419da5b1b42d52433e9fc288aa5b401a2123c1c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254387"
 ---
-# <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱可復原的項目配額
+# <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱的可復原項目配額
 
 預設保留原則 — 名為 「 預設 MRM 原則，也就是 Exchange Online 中的自動套用至新的信箱包含名為 [可復原的項目 14 天移至封存的保留標記。 此保留標記移動項目從使用者的主要信箱中的 [可復原的項目] 資料夾至使用者的封存信箱中可復原的項目資料夾後的 14 天保留期間到期的項目。 針對此動作，必須啟用使用者的封存信箱。 如果未啟用封存信箱，會不採取任何動作，這表示中可復原的項目資料夾上的信箱保留, 的項目不會將移至封存信箱後的 14 天保留期間到期。 因為不會刪除保留狀態的信箱中，有可能，可能會超過 [可復原的項目] 資料夾的儲存配額，尤其是如果未啟用使用者的封存信箱。 
   

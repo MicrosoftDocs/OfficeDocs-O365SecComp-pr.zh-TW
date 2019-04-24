@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 客戶有時 askwhat 的垃圾郵件和大量電子郵件的差異？本主題的用途是說明的差異，並提供兩者在 Exchange Online 和 Exchange Online Protection (EOP) 中可用的不同選項的相關資訊。
 ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266925"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾郵件和大量電子郵件有什麼不同?
 

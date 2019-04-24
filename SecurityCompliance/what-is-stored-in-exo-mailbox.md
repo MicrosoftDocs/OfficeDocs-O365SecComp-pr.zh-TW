@@ -16,11 +16,11 @@ ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Office 365 雲端式應用程式所產生的資料會儲存在 Microsoft cloud 中的使用者的 Exchange Online 信箱。
 ms.openlocfilehash: 6f7a81842df5972a03648a2f93d4bd6fbd738fec
-ms.sourcegitcommit: 7a6c742a81bc8ebd55b5a437e835bcb85485cf99
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31520246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266895"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Exchange Online 信箱中儲存的內容
 

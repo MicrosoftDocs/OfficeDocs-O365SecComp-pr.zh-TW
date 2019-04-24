@@ -1,5 +1,5 @@
 ---
-title: 下載進階 eDiscovery (Preview) 中的限制
+title: 下載限制在進階電子文件 （預覽）
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 874a44557e4c63dc46afcebb383b6c3974291f16
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242629"
 ---
-# <a name="download-limits-in-advanced-ediscovery-preview"></a>下載進階 eDiscovery (Preview) 中的限制
+# <a name="download-limits-in-advanced-ediscovery-preview"></a>下載限制在進階電子文件 （預覽）
 
 內容即將推出。

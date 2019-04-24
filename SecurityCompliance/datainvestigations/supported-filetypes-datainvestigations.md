@@ -1,5 +1,5 @@
 ---
-title: 在 [資料調查支援的檔案類型
+title: 支援的檔案類型中的資料調查 （預覽）
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bec8c01b75d68249a335c4de48909ce50ab3bf97
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ec27b7a8e9dbaf03e9a1d5f987bb9dd9b7513b85
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257631"
 ---
-# <a name="supported-file-types-in-data-investigations"></a>在 [資料調查支援的檔案類型
+# <a name="supported-file-types-in-data-investigations-preview"></a>支援的檔案類型中的資料調查 （預覽）
 
+資料調查 （預覽） 支援許多檔案類型中數種不同的方式下, 表所述。 這份清單未完成，並為我們繼續我們驗證測試，我們會將新增新的檔案類型。 表也表示是否檢視可用的檢視器中的檔案類型時您正在檢閱證據。
 
-| Mime 類型 | 檔案類別 （亦即影像、 封存、 電子郵件、 Office 文件等。） | 原生檢視器 | 文字 | 加上註解檢視器 | 容器擷取 | 可能的擴充功能 |
+| Mime 類型 | 檔案類別 | 原生檢視器 | 文字檢視器 | 加上註解檢視器 | 容器擷取 | Extensions |
 | :- | :- | :- | :- | :- | :- | :- |
 | 應用程式/msword | Document | 是 | 是 | 是 | 否 | .doc;.dat |
 | 應用程式/pdf | Document | 是 | 是 | 是 | 否 | .pdf |
@@ -67,3 +68,4 @@ ms.locfileid: "31029977"
 | 文字/html | Document | 是 | 是 | 是 | 否 | .html;。shtml;.htm |
 | 文字/一般 | Document | 是 | 是 | 是 | 否 | .txt;.css;。詐騙、.pl、.csv、.dat |
 | 文字/vcard-連絡人 | Document | 是 | 是 | 是 | 否 | .vcf |
+||||||||

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 安全附件功能提供時間按一下 [驗證電子郵件附件。 使用安全附件以保護您的組織中的惡意檔案人員傳送或接收電子郵件中。
 ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
-ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "31476821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250963"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -62,7 +62,7 @@ ATP 安全附件原則可以套用到特定人員或組織中的群組或整個�
 |---------|---------|
 |Office 365 全域系統管理員 |若要購買 Office 365 註冊的人員是預設的全域系統管理員。 （請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)，以了解更多）。         |
 |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或  <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>如何知道 ATP 安全附件保護是否就緒
 

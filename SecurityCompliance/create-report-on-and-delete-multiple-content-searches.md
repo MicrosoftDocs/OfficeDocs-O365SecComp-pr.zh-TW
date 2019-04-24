@@ -1,5 +1,5 @@
 ---
-title: 建立、回報及刪除多個內容搜尋
+title: 建立、報告及刪除多個內容搜尋
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: 了解如何建立像搜尋及透過 Office 365 安全性中的 PowerShell 指令碼執行報告的內容搜尋工作自動化&amp;合規性中心。
-ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+description: 了解如何建立像搜尋及透過安全性 & 在 Office 365 規範中心中的 PowerShell 指令碼執行報告的內容搜尋工作自動化。
+ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258430"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、回報及刪除多個內容搜尋
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
- 快速建立和報告探索搜尋是通常重要步驟 eDiscovery 與調查時您想要了解基礎的資料，以及豐富性和搜尋的品質。 若要協助您這麼做，安全性&amp;合規性中心提供一組自動化耗時的內容搜尋工作的 Windows PowerShell cmdlet。 這些指令碼提供快速又簡單的方式，來建立搜尋，數目，然後再執行報告可協助您判斷有問題的資料數量的預估的搜尋結果。 您也可以使用指令碼以建立不同版本的搜尋來比較每個產生的結果。 這些指令碼可協助您快速且更有效地識別及 cull 您的資料。 
+ 快速建立和報告探索搜尋是通常重要步驟 eDiscovery 與調查時您想要了解基礎的資料，以及豐富性和搜尋的品質。 為了協助您執行這項操作，安全性 & 合規性中心 PowerShell 會提供一組 cmdlet 來自動化耗時的內容搜尋工作。 這些指令碼提供快速又簡單的方式，來建立搜尋，數目，然後再執行報告可協助您判斷有問題的資料數量的預估的搜尋結果。 您也可以使用指令碼以建立不同版本的搜尋來比較每個產生的結果。 這些指令碼可協助您快速且更有效地識別及 cull 您的資料。 
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須是安全性中的 eDiscovery 管理員角色群組的成員&amp;若要執行本主題中所述的指令碼的合規性中心。 
+- 您必須是 eDiscovery 管理員角色群組的成員安全性 & 合規性中心中若要執行本主題中所述的指令碼。 
     
 - Onedrive for Business 網站組織可讓您加入至步驟 1 中的 CSV 檔案中收集的 Url 清單，請參閱[建立您組織中的所有 OneDrive 位置清單](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)。 
     
@@ -68,7 +68,7 @@ ms.locfileid: "30670658"
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2： 連線到安全性 & 合規性中心 PowerShell
 
-下一步是將 Windows PowerShell 連線到安全性&amp;貴組織的合規性中心。
+下一步是連線至您的組織安全性 & 合規性中心 PowerShell。
   
 1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `ConnectSCC.ps1`。 將檔案儲存至您儲存 CSV 檔案，以在步驟 1 中的相同資料夾。
     
@@ -77,7 +77,7 @@ ms.locfileid: "30670658"
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
     Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. 在您的本機電腦上開啟 Windows PowerShell 移至您在上一個步驟中建立的指令碼所在的資料夾，然後執行指令碼。例如：

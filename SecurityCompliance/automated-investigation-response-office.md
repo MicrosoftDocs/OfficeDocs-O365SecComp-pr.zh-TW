@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的自動化調查及回應功能。
 ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249834"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>自動化的調查及回應 （空調） 與 Office 365
 
@@ -125,11 +125,11 @@ ms.locfileid: "31000436"
 
 - 在左側導覽中，前往 [**提醒** > **檢視提醒**，開啟其中一個調查與相關的提醒，然後按一下 [警示彈出式視窗底部的 [**檢視調查**] 連結。 
 
-    或 
+    或
 
 - 在左導覽中，移至 [**威脅管理** > **調查**。
 
-    或 
+    或
 
 - 威脅管理儀表板，請造訪 (在 [安全性 & 合規性中心，移至 [**威脅管理** > **儀表板**)。
 

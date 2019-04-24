@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: 您可以使用 Office 365 雲端 App 安全性整合 SIEM 伺服器。 閱讀本篇文章以取得其運作方式，以及如何設定它的概觀。
 ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
-ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30548583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254713"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>將 SIEM 伺服器與 Office 365 雲端 App 安全性整合
   
@@ -156,7 +156,7 @@ Office 365 雲端 App 安全性目前支援下列的 SIEM 伺服器：
 
 |CEF 欄位名稱  | 說明  |
 |---------|---------|
-|啟動     | 警示的時間戳記        |
+|start     | 警示的時間戳記        |
 |結束     | 警示的時間戳記        |
 |rt     | 警示的時間戳記        |
 |msg     | 在 Office 365 雲端 App 安全性入口網站中所示警示描述        |

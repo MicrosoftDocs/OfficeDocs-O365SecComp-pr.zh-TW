@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 若要防止惡意連結在 Word、 Excel、 PowerPoint 及 Visio 檔案，以及電子郵件訊息中的組織設定安全連結原則。
 ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267052"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -51,7 +51,7 @@ ms.locfileid: "30862475"
     |---------|---------|
     |Office 365 全域系統管理員 |若要購買 Office 365 註冊的人員是預設的全域系統管理員。 （請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)，以了解更多）。         |
     |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-    |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或  <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
     若要深入了解角色和權限，請參閱[中 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。
 

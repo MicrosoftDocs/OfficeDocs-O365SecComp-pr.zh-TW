@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 系統管理員可以了解上方網域郵件流程狀態深入解析，在郵件流程儀表板中的安全性 & 合規性中心。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267028"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>上層網域郵件流程狀態深入解析
 

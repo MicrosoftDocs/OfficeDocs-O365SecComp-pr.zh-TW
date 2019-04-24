@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 如果您傳送大量的未註冊的網域的電子郵件，則會執行您取得封鎖的電子郵件的風險。 閱讀本篇文章以了解更多。
 ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263985"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未註冊的網域電子郵件： 您要知道什麼
 

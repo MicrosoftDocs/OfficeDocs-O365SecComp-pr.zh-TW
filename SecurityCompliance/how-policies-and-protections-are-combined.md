@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30994833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256311"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>哪些原則適用於何時多個保護方法與在您的電子郵件上執行的偵測掃描
 
@@ -27,7 +27,7 @@ ms.locfileid: "30994833"
 
 下列的原則套用到_所有組織_。
 
-|Priority (優先順序) |原則  |類別  |受管理的位置 |
+|優先順序 |原則  |類別  |受管理的位置 |
 |---------|---------|---------|---------|
 |1     | 惡意程式碼      | MALW      | 惡意程式碼原則   |
 |2     | 網路釣魚     | PHSH     | 設定您的垃圾郵件篩選原則     |
@@ -38,14 +38,14 @@ ms.locfileid: "30994833"
 
 此外，這些原則套用至_組織的 ATP_。
 
-|Priority (優先順序) |原則  |類別  |受管理的位置 |
+|優先順序 |原則  |類別  |受管理的位置 |
 |---------|---------|---------|---------|
 |7     | 網域冒充         | DIMP         | 設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則        |
 |8     | 使用者冒充        | UIMP         | 設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則         |
 
 例如，如果您有兩個原則有其各自的優先順序：
 
-|原則  |Priority (優先順序)  |使用者/網域冒充  |反詐騙  |
+|原則  |優先順序  |使用者/網域冒充  |反詐騙  |
 |---------|---------|---------|---------|
 |A     | 1        | 開啟        |關閉         |
 |B     | 2        | 關閉        | 開啟        |

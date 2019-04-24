@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 如何步驟以匯入內容，不會儲存在 O365 到 Azure blob，讓它可以與 AeD 分析
 ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256571"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>匯入非 Office 365 進階電子文件探索分析內容
 

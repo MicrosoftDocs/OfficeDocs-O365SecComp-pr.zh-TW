@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: 如果使用者持續傳送電子郵件從 Office 365 歸類為垃圾郵件，他們將會傳送任何更多的郵件限制。
 ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264935"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 

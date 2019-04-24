@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 停止外洩和即時與 Office 365 雲端 App 安全性條件式存取應用程式控制項的外洩。
 ms.openlocfilehash: d8370b1e02866db8f92ab7f6a46b06ddc3ed1055
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262985"
 ---
 # <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>使用 Office 365 雲端 App 安全性條件式存取應用程式控制來保護應用程式
 

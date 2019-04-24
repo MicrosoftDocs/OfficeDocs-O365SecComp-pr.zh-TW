@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 擴充 Office 365 進階威脅防護中 SharePoint Online、 商務用 OneDrive 和 Microsoft Teams 能夠為您的組織更安全的共同作業的檔案。
 ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249632"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams
 

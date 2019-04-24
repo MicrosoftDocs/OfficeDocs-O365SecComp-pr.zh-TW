@@ -3,7 +3,7 @@ title: 在 Office 365 中封存協力廠商資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/5/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台，以及文件共同作業平台到 Office 365 組織中的信箱。 這可讓您封存在 Office 365 中的 Facebook、 Twitter 和資料來源中的資料。 然後您可以將 Office 365 符合性功能 （例如合法持有、 內容搜尋和保留原則） 套用至協力廠商資料。
-ms.openlocfilehash: 06ac436b1583187e89cb7f1beb26411ba02becec
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.openlocfilehash: 6e5f40328c54a6f2c97cb6cfe14a1bc5727ae087
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249599"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>在 Office 365 中封存協力廠商資料
 
@@ -505,7 +505,7 @@ Xxxx'x 協力廠商資料匯入至 Office 365 所需的程序和步驟的概觀�
     
     - 將協力廠商資料信箱處於 [訴訟暫止] 狀態。 您也可以套用在安全性與合規性中心的 Office 365 保留原則。 將此信箱置於保留狀態會保留協力廠商資料項目 （無限期或於指定期間內），並防止從信箱清除郵件。 請參閱下列主題：
     
-      - [將信箱設為訴訟暫止](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [建立訴訟資料暫留](create-a-litigation-hold.md)
     
       - [在 Office 365 中的保留原則概觀](retention-policies.md)
     
@@ -521,7 +521,7 @@ Xxxx'x 協力廠商資料匯入至 Office 365 所需的程序和步驟的概觀�
     
 2. 將使用者信箱置於訴訟暫止狀態或適用於 Office 365 保留原則;請參閱下列主題： 
     
-    - [將信箱設為訴訟暫止](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [建立訴訟資料暫留](create-a-litigation-hold.md)
     
     - [在 Office 365 中的保留原則概觀](retention-policies.md)
     
@@ -573,7 +573,7 @@ Xxxx'x 協力廠商資料匯入至 Office 365 所需的程序和步驟的概觀�
     |**日期** <br/> |是  <br/> |項目最初建立或張貼在客戶資料來源的日期。例如，Twitter 訊息推文的日期。  <br/> | `01 NOV 2015` <br/> |
     |**本文** <br/> |否  <br/> |訊息或文章的內容。 對於某些資料來源，這個屬性的內容可能與 **SUBJECT** 屬性的內容相同。 在匯入程序期間，協力廠商連接器會盡可能嘗試維護內容來源不失真。 如果可能的話，來源項目的內文中的檔案、圖形或其他內容會包含在此屬性中。 否則，來源項目的內容會包含在 **ATTACHMENT** 屬性。 此屬性的內容取決於來源平台功能和協力廠商連接器上。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**附件** <br/> |否  <br/> |如果資料來源 （例如 Twitter 或立即訊息交談中叫） 中的項目已經附加的檔案，或包含圖像，合作夥伴連線將第一次嘗試在**BODY**屬性中包含附件。 如果不可行的則它會新增至 * * 附件 * * 屬性。 其他附件範例包括 Facebook 的「讚」、內容來源的中繼資料和訊息或文章的回應。  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |是  <br/> | 這是多重值屬性，由合作夥伴連接器建立並填入。 此屬性的格式是`IPM.NOTE.Source.Event`。 (此屬性的開頭必須`IPM.NOTE`; 這種格式是類似的`IPM.NOTE.X`郵件類別。)此屬性包含下列資訊：  <br/><br/>`Source` -會指出的協力廠商資料來源;例如，Twitter、 Facebook 或 BlackBerry。  <br/> <br/>  `Event` -會指出已執行所產生的項目; 協力廠商資料來源中的活動類型例如，Twitter 或 Facebook 中的張貼叫。 事件只適用於資料來源。  <br/> <br/>  此屬性的其中一個用途是要根據項目產生來源位置的資料來源或根據事件類型，篩選特定項目。 例如，在 eDiscovery 搜尋中，您可以建立搜尋查詢來尋找特定使用者所張貼的所有推文。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |是  <br/> | 這是多重值屬性，由合作夥伴連接器建立並填入。 此屬性的格式是`IPM.NOTE.Source.Event`。 (此屬性的開頭必須`IPM.NOTE`; 這種格式是類似的`IPM.NOTE.X`郵件類別。)此屬性包含下列資訊：  <br/><br/>`Source`-會指出的協力廠商資料來源;例如，Twitter、 Facebook 或 BlackBerry。  <br/> <br/>  `Event`-會指出已執行所產生的項目; 協力廠商資料來源中的活動類型例如，Twitter 或 Facebook 中的張貼叫。 事件只適用於資料來源。  <br/> <br/>  此屬性的其中一個用途是要根據項目產生來源位置的資料來源或根據事件類型，篩選特定項目。 例如，在 eDiscovery 搜尋中，您可以建立搜尋查詢來尋找特定使用者所張貼的所有推文。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - 當項目已成功匯入至 Office 365 中的信箱時的唯一識別碼會傳回回到一部分的 HTTP 回應來電者。 此識別碼 — 呼叫`x-IngestionCorrelationID`— 可用於由協力廠商的項目數的端對端追蹤後續疑難排解用途。 建議夥伴擷取這項資訊並加以記錄。 以下是顯示此識別碼之 HTTP 回應的範例：
 
@@ -599,5 +599,5 @@ Xxxx'x 協力廠商資料匯入至 Office 365 所需的程序和步驟的概觀�
     
   - [Office 365 中的內容搜尋](content-search.md)
     
-  - [內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)
+  - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
  

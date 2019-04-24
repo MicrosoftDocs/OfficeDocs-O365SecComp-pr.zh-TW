@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 說明如何內部登記錄的 Office 365 工程團隊運作。
 ms.openlocfilehash: e8798d4c6d4ba7393612f9a2b22bc282956a2aa9
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262675"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Office 365 工程內部記錄
 除了事件和供客戶使用的記錄資料，還有就可使用 Office 365 工程內部記錄資料集合系統。 許多不同類型的記錄資料從 Office 365 伺服器上傳至運算稱為宇宙服務內部、 大的資料。 每個服務小組會將稽核記錄檔，從其各自的伺服器上傳至宇宙資料庫以進行彙總及分析。 FIPS 140-2-驗證 TLS 連線特別核准的連接埠和通訊協定使用一個稱為 Office 資料載入器 (ODL) 的專屬的自動化工具，就會發生此資料傳送。 工具在 Office 365 中用來收集和處理程序的稽核記錄不允許永久，或者不能取消變更原始稽核記錄的內容或時間排序。

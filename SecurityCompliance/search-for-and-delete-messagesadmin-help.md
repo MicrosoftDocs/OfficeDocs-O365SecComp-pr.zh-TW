@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 系統管理員可以使用 Search-mailbox 指令程式來搜尋使用者信箱，然後從信箱中刪除的郵件。
 ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260981"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>搜尋並刪除郵件 - 管理中心說明
   

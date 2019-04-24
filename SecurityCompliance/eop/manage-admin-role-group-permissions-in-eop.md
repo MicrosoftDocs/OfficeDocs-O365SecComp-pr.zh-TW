@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 在 Microsoft Exchange Online Protection (EOP) 中，您可以使用 Exchange 系統管理中心 (EAC)，讓使用者成為角色群組的成員，以為他們指派可用以執行特定管理工作的權限。您也可以使用 EAC 從角色群組中移除使用者。
 ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256141"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>管理 EOP 中的系統管理員角色群組權限
   

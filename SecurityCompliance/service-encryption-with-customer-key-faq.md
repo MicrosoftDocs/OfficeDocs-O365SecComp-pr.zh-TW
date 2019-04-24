@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: '[比較基準，透過 BitLocker 與分散式金鑰管理員 (DKM)，而啟用的磁碟區層級加密除了 Office 365 提供多一層的 Office 365，包括資料從 Exchange 中的客戶內容應用程式層級的加密Online、 Skype for Business、 SharePoint Online 和商務用 OneDrive。 這稱為服務加密。'
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266938"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 中使用客戶金鑰的服務加密常見問題集
 
@@ -46,7 +46,7 @@ ms.locfileid: "30936763"
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>沒有 Office 365 郵件加密和攜帶您自己的金鑰與 Azure 資訊保護變更 Microsoft 的方法為協力廠商資料要求，例如 subpoenas 嗎？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-否。 Office 365 郵件加密和選項，以提供並控制您自己的加密金鑰的攜帶您自己金鑰 (BYOK) 的 Azure 資訊保護 (AIP) 已並非特別設計用來回應法律強制執行 subpoenas。 Office 365 郵件加密與 AIP 的 BYOK 專為合規性焦點的客戶，必須符合其內部或外部合規義務。 Microsoft 會非常重視採用客戶資料的第三方的要求。 為雲端服務提供者，我們一直主張針對客戶資料的隱私權。 事件中我們取得傳票，我們一直嘗試將協力廠商重新導向至客戶取得的資訊。 (請參閱將 Smith 部落格: [ Protecting 客戶資料從政府側錄](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 我們會定期發行我們收到的要求的詳細的資訊[以下](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)。
+否。 Office 365 郵件加密和選項，以提供並控制您自己的加密金鑰的攜帶您自己金鑰 (BYOK) 的 Azure 資訊保護已並非特別設計用來回應法律強制執行 subpoenas。 Office 365 郵件加密與 AIP 的 BYOK 專為合規性焦點的客戶，必須符合其內部或外部合規義務。 Microsoft 會非常重視採用客戶資料的第三方的要求。 為雲端服務提供者，我們一直主張針對客戶資料的隱私權。 事件中我們取得傳票，我們一直嘗試將協力廠商重新導向至客戶取得的資訊。 (請參閱將 Smith 部落格: [ Protecting 客戶資料從政府側錄](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 我們會定期發行我們收到的要求的詳細的資訊[以下](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)。
   
 請參閱[Microsoft 信任中心](https://www.microsoft.com/en-us/trustcenter/default.aspx)有關協力廠商資料要求和 「 外洩的客戶資料 」 的[線上服務條款 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)如需詳細資訊。
   

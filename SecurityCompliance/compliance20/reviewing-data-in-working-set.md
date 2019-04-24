@@ -1,5 +1,5 @@
 ---
-title: 檢閱 case 進階 eDiscovery (Preview) 中的資料
+title: 檢閱在 [進階電子文件 （預覽） 的案例資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: ee83594b89a3a1f968e5d9506c09b660f9fa4e3d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240918"
 ---
-# <a name="review-case-data-in-advanced-ediscovery-preview"></a>檢閱 case 進階 eDiscovery (Preview) 中的資料
+# <a name="review-case-data-in-advanced-ediscovery-preview"></a>檢閱在 [進階電子文件 （預覽） 的案例資料
 
 
 即將推出

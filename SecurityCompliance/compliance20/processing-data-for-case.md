@@ -1,5 +1,5 @@
 ---
-title: 使用進階的 eDiscovery (Preview) 中的錯誤處理
+title: 使用進階電子文件 （預覽） 中的錯誤處理
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 918a49859d3e3a10d14b346860027a1b434c73e9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240908"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery-preview"></a>使用進階的 eDiscovery (Preview) 中的錯誤處理
+# <a name="work-with-processing-errors-in-advanced-ediscovery-preview"></a>使用進階電子文件 （預覽） 中的錯誤處理
 
-已處理的檔案識別碼的程序、 文字擷取、 OCR （光學字元辨識） 的圖像檔案及編製索引內容的內嵌文件和附件的擴充。  
+處理是內容的檔案識別的程序、 擴充的內嵌文件和附件，文字擷取，OCR （光學字元辨識） 的影像檔和編製索引。  
 
-當 okay 從**Custodians** ] 索引標籤加入至案例時，Office 365 的所有部分已編製索引項目處理，使其完全可供搜尋。 同樣地，當內容從 Office 365 的資料來源或非 Office 365 的資料來源加入至工作集，也會處理內容。
+當 custodian 加入案例中，從 [ **Custodians** ] 索引標籤時，使其完整搜尋處理 Office 365 的所有已局部編製索引項目。  同樣地，當內容從 Office 365 的資料來源] 或 [非 Office 365 的資料來源新增至工作集，也會處理內容。
 
-[**處理**] 索引標籤中進階 eDiscovery （預覽） 提供到的所有這些案例中的 [*進階編製索引*狀態的透明度。
+[進階電子文件 （預覽） 的 [**處理**] 索引標籤提供的所有這些案例中的 [*進階編製索引*狀態的透明度。
 
-請參閱下列文章如需詳細資訊。
+請參閱下列文章以取得詳細資料。
 
 - [進階的監管人資料索引](indexing-custodian-data.md)
 - [處理資料時發生補救錯誤](error-remediation.md)

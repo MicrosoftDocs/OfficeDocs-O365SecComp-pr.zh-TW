@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 進階垃圾郵件篩選選項可讓系統管理員檢查郵件的各種內容屬性。 郵件中有此類屬性存在時，將會提高該郵件的垃圾郵件計分 (進而提高該郵件被識別為垃圾郵件的可能性)，或將該郵件標記為垃圾郵件。 ASF 選項以特定郵件內容為目標，例如 HTML 標記與 URL 重新導向這類常出現在垃圾郵件中的項目。
 ms.openlocfilehash: 0fad573c29c440d69e27b1e70810bf2fc67be164
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242481"
 ---
 # <a name="advanced-spam-filtering-options"></a>進階垃圾郵件篩選選項
 

@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用內容搜尋電子文件探索工具來搜尋的項目都已從協力廠商資料來源匯入至 Office 365 中的信箱。 您可以建立查詢以搜尋所有匯入的項目，或是建立查詢以搜尋特定的協力廠商資料類型。 本文列出您可以使用關鍵字查詢來搜尋可匯入至 Office 365 的協力廠商資料類型的值。
 ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263775"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用內容搜尋來搜尋協力廠商資料匯入至 Office 365
 

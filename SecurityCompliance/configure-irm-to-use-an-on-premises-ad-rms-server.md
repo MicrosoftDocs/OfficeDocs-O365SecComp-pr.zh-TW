@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 本主題示範如何設定 IRM 以使用 AD RMS 伺服器。
 ms.openlocfilehash: 1da66c5afa37c96c061a4bf25c0858e4e71e2313
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259571"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>將 IRM 設定為使用內部部署 AD RMS 伺服器
   

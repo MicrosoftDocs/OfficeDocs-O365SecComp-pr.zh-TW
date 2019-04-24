@@ -1,5 +1,5 @@
 ---
-title: 調查中的資料搜尋
+title: 搜尋調查中的資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 5f52f26c4443addd0e108794e1d3635a9b8efb98
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258051"
 ---
-# <a name="search-for-data-in-an-investigation"></a>調查中的資料搜尋
+# <a name="search-for-data-in-an-investigation"></a>搜尋調查中的資料
 
 在資料調查的 [**搜尋**] 索引標籤上，您可以搜尋中使用關鍵字和條件的 Office 365 中的內容位置找不到、 機密或機密資料。 
 

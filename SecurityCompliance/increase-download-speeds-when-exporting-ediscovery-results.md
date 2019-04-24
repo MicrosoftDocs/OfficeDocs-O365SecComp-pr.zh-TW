@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何設定 Windows 登錄，以增加資料輸送量，下載搜尋結果時，搜尋 Office 365 中的安全性 & 合規性中心] 及 [進階電子文件探索中的資料。
 ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256511"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>匯出 eDiscovery 搜尋結果從 Office 365 時，增加的下載速度
 

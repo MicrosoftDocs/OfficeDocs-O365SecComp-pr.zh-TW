@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 您可以建立非使用中信箱 Office 365 中，將保留或 Office 365 保留原則套用至信箱，並將刪除對應的 Office 365 使用者帳戶。 非使用中的信箱中的項目會保留已進行非使用中之前已套用至其保留或保留原則的持續時間。 若要永久刪除非使用中的信箱，只是移除保留或保留原則。
 ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258880"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>建立及管理 Office 365 中的非使用中信箱
 
@@ -52,7 +52,7 @@ Office 365 可讓您保留已刪除信箱的內容。 這項功能稱為[非使�
   
 將信箱置於訴訟暫止狀態或將 Office 365 保留原則套用的逐步程序，請參閱：
   
-- [將信箱設為訴訟暫止](https://go.microsoft.com/fwlink/?linkid=856286)
+- [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/?linkid=856286)
     
 - [在 Office 365 中的保留原則概觀](retention-policies.md)
     

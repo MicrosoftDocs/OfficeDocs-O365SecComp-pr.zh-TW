@@ -1,5 +1,5 @@
 ---
-title: Office 365 安全性提醒&amp;規範中心
+title: Alerts in the Office 365 Security &amp; Compliance Center
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,47 +14,47 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-description: 了解您可以設定以協助進行 Office 365 的安全性提醒。
+description: 了解您可以設定以協助 Office 365 安全性的提醒。
 ms.openlocfilehash: e02e78b091c7e5e2347c90c14a99cf838b4482b4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242561"
 ---
-# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全性提醒&amp;規範中心
+# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
 
-使用 Office 365 安全性提醒功能&amp;規範中心來檢視及管理提醒您的 Office 365 組織，包含管理進階的[Office 365 雲端應用程式安全性警訊](office-365-cas-overview.md)一部分的提醒。
+使用 Office 365 安全性中的警示功能&amp;合規性中心，以檢視及管理警示的 Office 365 組織，包括管理進階提醒作為[Office 365 雲端 App 安全性提醒](office-365-cas-overview.md)的一部分。
   
-## <a name="how-to-get-to-the-office-365-alerts-features"></a>如何取得 Office 365 提醒功能
+## <a name="how-to-get-to-the-office-365-alerts-features"></a>如何取得 Office 365 警示功能
 
-Office 365 中的提醒是安全性&amp;規範中心。以下是如何取得] 頁面上。
+在 Office 365 中的警示是安全性&amp;合規性中心。 以下是如何取得頁面。
   
- **若要直接移至 [安全性]&amp;規範中心：**
+ **若要直接移至 [安全性&amp;合規性中心：**
   
 1. 移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。 
     
-3. 在左窗格中，按一下 [查看提醒功能的**提醒**]。 
+3. 在左窗格中，按一下 [**提醒**，請參閱警示功能。 
     
- **若要移至 [安全性]&amp;使用 Office 365 應用程式啟動器規範中心：**
+ **若要移至 [安全性&amp;使用 Office 365 app 啟動器的合規性中心：**
   
 1. 使用公司或學校帳戶登入 Office 365。 
     
-2. 按一下 [應用程式啟動器中左上角，然後再按一下**安全性&amp;規範**。
+2. 按一下 [應用程式啟動器中左上角，，然後按一下 [**安全性&amp;規範**。
     
-    找不到您在這裡尋找應用程式吗？從 app 啟動器，選取 [**所有應用程式**以查看您可以使用 Office 365 應用程式的字母清單。如此，您可以搜尋特定的應用程式。 
+    找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App]**** 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。 
     
-3. 在左窗格中，按一下 [查看提醒功能的**提醒**]。 
+3. 在左窗格中，按一下 [**提醒**，請參閱警示功能。 
     
-## <a name="alerts-features"></a>提醒功能
+## <a name="alerts-features"></a>警示功能
 
-下表說明可用安全性**警告**] 之下的工具&amp;規範中心。 
+下表說明**提醒**中的安全性] 下的可用的工具&amp;合規性中心。 
   
 |**工具**|**描述**|
 |:-----|:-----|
-|[管理提醒](create-activity-alerts.md) <br/> |使用活動提醒時要傳送電子郵件通知給您自己或其他管理員的使用者在 Office 365 中執行特定的活動。活動提醒類似於搜尋 Office 365 稽核記錄的事件，不同之處在於您要傳送電子郵件訊息時您已建立的提醒事件會發生。  <br/> |
-|[管理進階的提醒](office-365-cas-overview.md) <br/> |使用**進階提醒的管理**功能的 Office 365 雲端應用程式安全性提醒您在 Office 365 中可疑和異常活動的原則設定。您正在提醒之後，您可以調查可能有問題且，如果需要採取動作可解決安全性問題的情況。<br/> |
+|[管理提醒](create-activity-alerts.md) <br/> |使用活動提醒來傳送電子郵件通知給自己或其他系統管理員，當使用者在 Office 365 中執行特定活動。 活動警訊類似於搜尋 Office 365 稽核記錄的事件，不同之處在於您將會傳送電子郵件時的事件，您已建立的提醒，就會發生。  <br/> |
+|[管理進階的提醒](office-365-cas-overview.md) <br/> |使用 Office 365 雲端 App 安全性**管理進階提醒**功能來設定原則，可以提醒您在 Office 365 中的可疑和異常活動。 您所收到的警示之後，您可以調查可能有問題且，如有需要採取動作來解決安全性問題的情況。  <br/> |
    
 

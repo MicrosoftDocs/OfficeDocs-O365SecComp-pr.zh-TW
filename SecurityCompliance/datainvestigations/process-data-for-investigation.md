@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 5593d9bbf76cd0004b48f45123c4921dc3fed9e6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257621"
 ---
 # <a name="process-data-for-an-investigation"></a>處理的調查資料
 
@@ -32,4 +32,4 @@ ms.locfileid: "31030014"
 請參閱下列文章以取得詳細資料。
 
 - [進階編製索引的調查資料](index-data-people-of-interest.md)
-- [處理資料時發生補救錯誤](error-remediation.md)
+- [處理資料時的錯誤補救](error-remediation.md)

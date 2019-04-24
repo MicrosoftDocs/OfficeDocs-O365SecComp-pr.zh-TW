@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟護照號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
 ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256821"
 ---
 # <a name="eu-passport-number"></a>歐盟護照號碼
 
@@ -23,7 +23,7 @@ ms.locfileid: "30410928"
   
 ## <a name="austria"></a>奧地利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一個字母後尾隨一個選用空格和七位數
   
@@ -68,7 +68,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="belgium"></a>比利時
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母後尾隨六位數，代表不含空格或分隔符號
   
@@ -107,7 +107,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="bulgaria"></a>保加利亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號的九位數
   
@@ -146,7 +146,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="croatia"></a>克羅埃西亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號的九位數
   
@@ -185,7 +185,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="cyprus"></a>賽普勒斯
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一個字母後尾隨不含空格或分隔符號 6-8 位數
   
@@ -224,7 +224,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="czech-republic"></a>捷克共和國
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不含空格或分隔字元的八位數
   
@@ -263,7 +263,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="denmark"></a>丹麥
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 如果沒有空格和分隔符號的九位數
   
@@ -302,7 +302,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="estonia"></a>愛沙尼亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一個字母後尾隨七位數不含空格或分隔符號
   
@@ -353,7 +353,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 ## <a name="greece"></a>希臘
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母後尾隨七位數後不含空格或分隔符號
   
@@ -392,7 +392,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="hungary"></a>匈牙利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母後尾隨六個或七位數，不含空格或分隔符號
   
@@ -431,7 +431,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="ireland"></a>愛爾蘭
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母或位數後尾隨七位數後不含空格或分隔符號
   
@@ -474,7 +474,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="italy"></a>義大利
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母或位數後尾隨七位數後不含空格或分隔符號
   
@@ -517,7 +517,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="latvia"></a>拉脫維亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母或位數後尾隨七位數後不含空格或分隔符號
   
@@ -560,7 +560,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="lithuania"></a>立陶宛
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八個個數字或字母不含空格或分隔符號
   
@@ -599,7 +599,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="luxemburg"></a>盧森堡
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八個個數字或字母不含空格或分隔符號
   
@@ -638,7 +638,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="malta"></a>馬爾他
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不含空格或分隔符號七位數
   
@@ -677,7 +677,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="netherlands"></a>荷蘭
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九個字母或不含空格或分隔符號的數字
   
@@ -720,7 +720,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 ## <a name="portugal"></a>葡萄牙
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一個字母後尾隨六位數，代表不含空格或分隔符號
   
@@ -763,7 +763,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="romania"></a>羅馬尼亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不含空格，並讓分隔字元的八個或九位數
   
@@ -802,7 +802,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="slovakia"></a>斯洛伐克
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一個數字或字母後尾隨七位數後不含空格或分隔符號
   
@@ -841,7 +841,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="slovenia"></a>斯洛維尼亞
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 兩個字母後尾隨七位數後不含空格或分隔符號
   
@@ -886,7 +886,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
    
 ## <a name="spain"></a>西班牙
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八個或九個字元組合的字母和數字不含空格或分隔符號
   
@@ -939,5 +939,5 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 ## <a name="see-also"></a>另請參閱
 
-[機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+[敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

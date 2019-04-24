@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 系統管理員： 了解如何啟用自動展開封存在 Office 365 中，可提供您的使用者與不受限制的儲存區，讓其 Exchange Online 信箱。 您可以啟用自動展開封存的整個組織或只是針對特定使用者。
 ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256834"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>啟用 Office 365-系統管理說明中的無限制封存
 

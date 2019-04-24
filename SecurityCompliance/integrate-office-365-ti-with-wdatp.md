@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 整合 Windows Defender 進階威脅防護來威脅管理的詳細的資訊請參閱 < Office 365 進階威脅防護。
 ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254420"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>整合 Office 365 進階的威脅防護與 Windows Defender 進階威脅防護
 

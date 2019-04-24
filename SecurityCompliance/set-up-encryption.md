@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: 使用 Office 365，有些加密功能會開啟預設值;其他功能可設定以滿足特定法規或法律需求。
 ms.openlocfilehash: 1bc4ceb7762c96f55c03f89e7c448f9e4073063e
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260791"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>設定 Office 365 企業版中的加密
 

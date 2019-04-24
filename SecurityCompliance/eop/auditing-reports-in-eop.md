@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Microsoft Exchange Online Protection (EOP) 中的稽核報告可以協助您符合貴組織的法規、 規範和訴訟需求。您可以隨時取得稽核報告，來判斷已對 EOP 組態所做的變更。這些報告可協助您疑難排解組態問題，或找出安全性相關或規範相關問題的原因。
 ms.openlocfilehash: b2b62939d4330b62e3cb78d682f6ac62251bb5bb
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256651"
 ---
 # <a name="auditing-reports-in-eop"></a>EOP 中的稽核報告
 

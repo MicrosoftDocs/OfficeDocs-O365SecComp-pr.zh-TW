@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 使用 Office 365 安全性中的資料外洩防護 (DLP) 原則&amp;合規性中心，您可以識別、 監視和自動保護 Office 365 中的敏感資訊。
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262099"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -526,10 +526,10 @@ Excel、 PowerPoint 和 Word 包含相同的功能，以識別機密資訊，並
     
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
-- [敏感性資訊類型所尋找的項目](what-the-sensitive-information-types-look-for.md)
+- [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
     
 - [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)
     
-- [建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type.md)
+- [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
     
 

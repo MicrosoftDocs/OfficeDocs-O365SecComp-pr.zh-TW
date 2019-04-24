@@ -12,11 +12,11 @@ ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 系統管理員，您可以關閉的能力人員報告電子郵件為垃圾郵件。
 ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264165"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>關閉 reporting 網頁型 Outlook 中的垃圾郵件
 
@@ -29,7 +29,7 @@ ms.locfileid: "30692552"
     
 - 您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱[Outlook 在網站權限](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp)主題中的 「 Outlook web 信箱原則 」 項目。 
 
-- 若要連接至 Exchange Online PowerShell，請參閱 < <b0>Connect to Exchange Online PowerShell</b0>。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 ## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>關閉 [垃圾郵件、 網路釣魚和非垃圾郵件回報給 Microsoft
 <a name="sectionSection1"> </a>

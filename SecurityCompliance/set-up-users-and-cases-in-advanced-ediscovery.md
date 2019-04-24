@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '了解如何設定使用者角色、 建立的情況下，並將使用者指派給 Office 365 進階電子文件探索中的案例。  '
 ms.openlocfilehash: 5a22e0683e49ebdaf8391e092aeb101386e0636b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260701"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>設定使用者和 Office 365 進階電子文件探索中的案例
 

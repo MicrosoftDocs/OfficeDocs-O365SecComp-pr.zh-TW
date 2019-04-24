@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 摘要： 本文說明 Office 365 如何使用寄件者原則架構 (SPF) TXT 記錄在 DNS 中以確保目的地電子郵件系統信任自您自訂網域傳送的郵件。 這適用於從 Office 365 傳送的外寄郵件。 從 Office 365 傳送到 Office 365 內的收件者的郵件將會一律通過 SPF。
 ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256540"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用寄件者原則架構 (SPF) 來防範詐騙
 

@@ -1,5 +1,5 @@
 ---
-title: 準備 Office 365 進階電子文件探索的資料
+title: 準備資料以供 Office 365 進階電子文件探索
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,33 +12,33 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: '了解如何使用 Office 365 安全性&amp;規範中心以準備 Office 365 資料以供分析與 Office 365 進階 eDiscovery。 '
-ms.openlocfilehash: 8ede0f0cb97e1b49297b66fb2b929b3cb292ed52
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: '了解如何使用 Microsoft 365 安全性&amp;合規性中心，以準備與 Office 365 進階電子文件探索分析的 Office 365 的資料。 '
+ms.openlocfilehash: d9d81c145a86075affd76761eb6dcff0f84a1eac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265505"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>準備 Office 365 進階電子文件探索的資料
+# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>準備資料以供 Office 365 進階電子文件探索
 
-本主題說明如何在進階 ediscovery 案例內容的搜尋結果的負載。 
+本主題說明如何載入至進階電子文件中的案例中的內容搜尋的結果。 
   
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
-## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步驟 1： 準備 Office 365 資料進階 ediscovery （英文）
+## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步驟 1： 準備 Office 365 資料以供進階電子文件
 
-若要分析與進階 eDiscovery 的資料，您可以使用您執行 Office 365 安全性內容搜尋結果&amp;規範中心 (Office 365 安全性**內容搜尋**] 頁面將列出&amp;規範中心) 或搜尋eDiscovery 案例相關聯 (安全性 [ **eDiscovery** ] 頁面列出&amp;規範中心)。 
+若要分析資料的進階電子文件，您可以使用您執行 Microsoft 365 安全性中的內容搜尋的結果&amp;合規性中心 (Microsoft 365 安全性中的 [**內容搜尋**] 頁面上列出&amp;合規性中心) 或eDiscovery 案例相關聯的搜尋 (安全性 [ **eDiscovery** ] 頁面上列出&amp;合規性中心)。 
   
-如上準備進行分析進階在 eDiscovery 中搜尋結果的詳細步驟，請參閱 ＜ [Prepare for Office 365 進階 eDiscovery 的搜尋結果](prepare-search-results-for-advanced-ediscovery.md)。
+如需準備進階 eDiscovery 中分析的搜尋結果詳細步驟，請參閱[準備 Office 365 進階電子文件探索的搜尋結果](prepare-search-results-for-advanced-ediscovery.md)。
   
 > [!NOTE]
-> 如果您具有 Office 365 外部資料而且想要匯入 Office 365，讓您可以準備及分析進階 ediscovery，請參閱 ＜ [Overview of 匯入至 Office 365 的 PST 檔案](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)與[Office 365 中的封存協力廠商資料](https://go.microsoft.com/fwlink/p/?linkid=716918)。 
+> 如果您有 Office 365 外部資料，並且想要匯入 Office 365，以便您可以準備和分析的進階電子文件，請參閱[ Overview of 匯入 PST 檔案複製到 Office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) and [Office 365 中的封存協力廠商資料](https://go.microsoft.com/fwlink/p/?linkid=716918)。 
   
-## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>步驟 2： 負載搜尋結果中的資料在進階 eDiscovery 案例
+## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>步驟 2： 負載搜尋結果中資料至進階電子文件中的案例
 
-準備中安全性的搜尋結果之後&amp;進行分析的規範中心下, 一步是載入進階 ediscovery 案例中的搜尋結果。如需詳細資訊，請參閱[執行程序模組](run-the-process-module-in-advanced-ediscovery.md)。
+您準備好的搜尋結果中的安全性之後&amp;進行分析的合規性中心下, 一步是載入至進階電子文件中的案例的搜尋結果中。 如需詳細資訊，請參閱[執行處理序模組](run-the-process-module-in-advanced-ediscovery.md)。
   
 1. 移至 [https://protection.office.com](https://protection.office.com)。
     
@@ -46,21 +46,21 @@ ms.locfileid: "30218793"
     
 3. 在安全性與合規性中心，按一下 [搜尋和調查]**** \> [電子文件探索]****，來顯示貴組織中的案例清單。 
     
-4. 按一下您想要將資料載入的進階 ediscovery 案例] 旁的 [**開啟**]。 
+4. 您想要將資料載入在進階電子文件中的案例旁邊，按一下 [**開啟**]。 
     
 5. 在案例的 [首頁]**** 頁面上，按一下 [進階電子文件探索]****。 
     
-    ![若要開啟 [進階在 eDiscovery 中的 [大小寫的進階 ediscovery 按一下切換參數](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![按一下切換以開啟 [進階電子文件中的 [大小寫的進階 ediscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    會顯示 [**連線至進階 eDiscovery**進度列。當您連線至進階的 eDiscovery 時、 容器清單隨即顯示在 [安裝] 頁面的大小寫。 
+    **連線至進階電子文件**會顯示進度列。 當您已連線至進階電子文件時，在這種情況的 [設定] 頁面上會顯示容器的清單。 
     
-    ![大小寫會顯示在進階的 eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![這種情況會顯示在進階電子文件](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     這些容器代表您準備進行分析的步驟 1 中的進階 eDiscovery 搜尋結果。請注意此容器的名稱會在中安全性的情況中具有相同名稱內容搜尋&amp;規範中心。在清單容器是過您準備。如果不同的使用者準備進階 eDiscovery 搜尋結果，相對應的容器不會包含在清單中。 
+     這些容器代表您準備好在步驟 1 中的進階 eDiscovery 中分析的搜尋結果。 附註容器的名稱中安全性的案例有同名的內容搜尋&amp;合規性中心。 在清單容器是您備妥。 如果不同的使用者準備進階電子文件中的搜尋結果，將不會在清單中包含對應的容器。 
     
-6. 從容器中的搜尋結果資料載入進階 ediscovery 案例中，選取容器和 [**程序**。
+6. 若要從容器中的搜尋結果資料載入至進階電子文件中的案例中，選取的容器，然後按一下 [**程序**。
     
-在搜尋結果的安全性之後&amp;規範中心會新增至中進階 eDiscovery 的情況下一步是進階在 eDiscovery 中使用的工具來分析和 cull 案例相關的資料。 
+從安全性搜尋結果之後&amp;合規性中心會新增至進階電子文件探索中的情況下一步是在進階電子文件中使用的工具來分析並 cull 與案件相關的資料。 
   
 ## <a name="see-also"></a>另請參閱
 
@@ -70,7 +70,7 @@ ms.locfileid: "30218793"
   
 [分析案例資料](analyze-case-data-with-advanced-ediscovery.md)
   
-[管理相關性安裝程式](manage-relevance-setup-in-advanced-ediscovery.md)
+[管理相關性設定](manage-relevance-setup-in-advanced-ediscovery.md)
   
 [使用相關性模組](use-relevance-in-advanced-ediscovery.md)
   

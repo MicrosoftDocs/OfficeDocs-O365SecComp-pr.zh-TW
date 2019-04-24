@@ -16,11 +16,11 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 提供歐盟公民 （稱為 「 資料主體） 的特定權限至他們的個人資料;這些權限包括取得它的副本、 要求給它的變更，限制其處理、 刪除它，或接收電子格式。 受到採取資料的正式要求其個人的資料巨集指令會呼叫的資料主體要求或 DSR。 您可以在 Office 365 和 Microsoft 365 合規性中心] 中使用 DSR 案例，來管理您的組織 DSR 調查。
 ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259879"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>管理與安全性 & 合規性中心的 DSR 案例工具的 GDPR 資料主體要求
 

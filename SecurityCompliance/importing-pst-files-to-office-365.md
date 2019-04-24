@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 系統管理員： 了解如何使用匯入服務安全性 & 合規性中心中大量匯入電子郵件資料 （PST 檔案） 到 Exchange Online 中的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 3a7dba3db608eb45347609acef396faf73da483f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254890"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
@@ -95,6 +95,8 @@ ms.locfileid: "31000236"
   - 使用[eDiscovery 案例](ediscovery-cases.md)來管理貴組織的法律調查 
     
   - 使用[保留原則](retention-policies.md)中的安全性 & 合規性中心，以控制多久信箱內容會保留，，，然後刪除內容之後保留期間到期。 
+
+  - 使用[監督原則](supervision-policies.md)來檢查以確定其符合郵件標準，然後新增分類類型的郵件。
     
 - 將資料匯入 Office 365，可協助防止資料遺失。 匯入至 Office 365 的電子郵件資料會繼承 Exchange Online 的高可用性的功能。
     
@@ -131,7 +133,7 @@ ms.locfileid: "31000236"
   
 - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    或
+    Or
     
 - 您必須是 Office 365 組織中的全域系統管理員。
     
@@ -200,7 +202,7 @@ Yes, this capability is now available.
   
 - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    或
+    Or
     
 - 您必須是 Office 365 組織中的全域系統管理員。
     

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要： 部署新隔離的 SharePoint Online 小組網站與這些逐步指示。
-ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257000"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
@@ -83,7 +83,7 @@ ms.locfileid: "31000185"
 6. 針對其他群組重複步驟 3-5。
     
 > [!NOTE]
-> 您需要使用 Azure 入口網站來建立群組，以便他們有啟用 Office 功能。 如果 SharePoint Online 隔離的網站稍後再設定為具有加密檔案並將權限指派給特定群組的 Azure 資訊保護 (AIP) 標籤的高度機密網站時，允許的群組必須已建立的 Office 功能啟用。 已建立之後，您無法變更的 Azure AD 群組的 Office 功能設定。 
+> 您需要使用 Azure 入口網站來建立群組，以便他們有啟用 Office 功能。 如果 SharePoint Online 隔離的網站稍後再設定為具有加密檔案並將權限指派給特定群組的 Azure 資訊保護標籤的高度機密網站時，必須允許的群組已建立啟用 Office 功能。 已建立之後，您無法變更的 Azure AD 群組的 Office 功能設定。 
   
 以下是三個網站存取群組與您產生的組態。
   
@@ -105,7 +105,7 @@ ms.locfileid: "31000185"
   
 針對 Office 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，以新增適當的使用者帳戶和群組，以適當的存取群組。
   
-Powershell 中，第一個[與 Azure Active Directory V2 PowerShell 模組連線](https://go.microsoft.com/fwlink/?linkid=842218)。
+Powershell 中，第一個[與 PowerShell 的 Azure Active Directory 針對 Graph 模組連線](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下來，使用下列命令區塊，將個別使用者帳戶新增至 access 群組：
   
@@ -161,7 +161,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 首先，使用下列步驟建立 SharePoint Online 小組網站。
   
-1. 系統管理中心也可用於管理 SharePoint Online 小組網站 （SharePoint Online 系統管理員） 的帳戶登入。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用也可用來管理 SharePoint Online 小組網站的帳戶 (SharePoint Online 系統管理員) 登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
