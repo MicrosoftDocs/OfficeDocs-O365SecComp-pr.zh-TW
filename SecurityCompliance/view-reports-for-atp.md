@@ -3,7 +3,7 @@ title: 檢視 Office 365 進階威脅防護報告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 了解如何尋找並使用 Office 365 進階威脅防護中的安全性報告&amp;合規性中心。
-ms.openlocfilehash: 53d31bf05401d80e79f0d73c191d69fe378f98cb
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: ff80191ae75a37994d1ad08f587fa07f72b88f24
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267506"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護報告
 
@@ -81,8 +81,9 @@ ATP 報告包含[威脅保護狀態報表](#threat-protection-status-report)、 
 
 除了本文所述的 ATP 報告下, 表所述，都可以使用、 數個其他報告：
 
-|報告類型  |深入了解  |
+|報告  |詳細資料  |
 |---------|---------|
+|**ATP 安全連結 URL 追蹤**（這是您藉由使用 PowerShell 產生報表）。這份報告顯示過去七 （7） 天 ATP 安全連結動作的結果。 |[Get-urltrace cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
 |**電子郵件安全性報告**，例如頂端寄件者和收件者報告、 詐騙郵件] 報告和垃圾郵件偵測] 報告。 | [檢視安全性中的電子郵件安全性報告&amp;合規性中心](view-email-security-reports.md)        |
 |**檔案總管**（也稱為威脅總管] 中，這包含在[Office 365 進階威脅防護計劃 2](office-365-ti.md)）     | [使用檔案總管中的安全性&amp;合規性中心](use-explorer-in-security-and-compliance.md)        |
 |**透過 EOP 和 ATP 的結果**（這是您藉由使用 PowerShell 產生自訂報告）。 此報告中包含的資訊，例如網域、 日期、 事件類型、 方向、 巨集指令，以及訊息計數。  | [取得 MailTrafficATPReport cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |

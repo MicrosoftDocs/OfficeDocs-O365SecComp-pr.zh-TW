@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何設定 Exchange Online Protection 和 Exchange Online 來源 IPv6 的匿名郵件的支援。
 ms.openlocfilehash: 5d87dc929d2d67681b21eb46a4aaa52ca32caff9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260251"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>支援透過 IPv6 的匿名輸入電子郵件
 

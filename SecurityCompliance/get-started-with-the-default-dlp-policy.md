@@ -1,5 +1,5 @@
 ---
-title: 預設的 DLP 原則快速入門
+title: 開始使用預設的 DLP 原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: 您甚至是建立您第一資料外洩防護 (DLP) 原則之前，DLP 協助保護您的機密資訊與預設原則。 此預設的原則和敏感內容安全的電子郵件或文件包含信用卡卡號碼時通知您已與組織外部人員共用其建議 （如下所示） 說明保留。
 ms.openlocfilehash: fa48025a7b979ad69c600b21a10fbb62567234c3
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256710"
 ---
-# <a name="get-started-with-the-default-dlp-policy"></a>預設的 DLP 原則快速入門
+# <a name="get-started-with-the-default-dlp-policy"></a>開始使用預設的 DLP 原則
 
 您甚至是建立您第一資料外洩防護 (DLP) 原則之前，DLP 協助保護您的機密資訊與預設原則。 此預設的原則和敏感內容安全的電子郵件或文件包含信用卡卡號碼時通知您已與組織外部人員共用其建議 （如下所示） 說明保留。 您會看到這項建議在**首頁**上的安全性&amp;合規性中心。 
   

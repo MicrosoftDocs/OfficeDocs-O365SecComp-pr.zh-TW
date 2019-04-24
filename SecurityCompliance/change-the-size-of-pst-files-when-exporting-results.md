@@ -12,11 +12,11 @@ search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 您可以變更預設的 PST 檔案大小，當您匯出 eDiscovery 搜尋結果下載到您的電腦。
 ms.openlocfilehash: 98b543b6e34cb9cb075a765671def91742aee6c1
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243608"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>匯出 eDiscovery 搜尋結果時變更 PST 檔案的大小
 

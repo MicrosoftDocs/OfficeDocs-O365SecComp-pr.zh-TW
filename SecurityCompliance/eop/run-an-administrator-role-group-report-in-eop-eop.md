@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: 當系統管理員在系統管理員角色群組新增或移除成員時，Microsoft Exchange Online Protection (EOP) 會記錄每次發生的事件。
 ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256181"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>執行 EOP 中的系統管理員角色群組報告 
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 與資料外洩防護 (DLP) 在 SharePoint Online 中，您可以探索包含整個您的租用戶的敏感資料的文件。 探索文件之後，您可以與文件擁有者協力保護資料。 本主題可以協助您進行查詢，以搜尋敏感資料。
 ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255534"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 

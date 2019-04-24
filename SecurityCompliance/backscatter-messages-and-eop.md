@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: 非法回應郵件所傳送的郵件伺服器，通常是因為傳入的垃圾郵件自動的退回的郵件。 非法回應 DNSBL 是一份傳送非法回應郵件的 IP 位址清單。 它不是濫發垃圾郵件者清單，我們不會嘗試從非法回應 DNSBL 移除我們的伺服器。
-ms.openlocfilehash: 7581255ce4e68f6eb661df280ecb0cb94b7515ef
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 62dd86d91e89e4f3c966b2969d0d763595bb5dc3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243894"
 ---
 # <a name="backscatter-messages-and-eop"></a>非法回應郵件與 EOP
 
@@ -28,10 +28,8 @@ ms.locfileid: "30693362"
 > [!TIP]
 > 根據 Backscatterer 網站的指示，該服務的設定或用法不建議對所有傳入的郵件使用拒絕模式。而是應該在安全模式中使用。如需實作正確非法回應設定的相關資訊，請造訪 [Backscatterer.org 網站](http://www.backscatterer.org/?target=usage)。 
   
-## <a name="for-more-information"></a>相關資訊
-
-[Backscatterer.org IP 清單](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
+## <a name="related-topics"></a>相關主題
   
-請參閱 <<c0>進階垃圾郵件篩選選項中的 「 NDR 非法回應 」 項目
+[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md)
   
 

@@ -1,5 +1,5 @@
 ---
-title: 執行更快速地調查的分析
+title: 執行分析以更快速地調查
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31029967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257611"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>執行更快速地調查的分析
+# <a name="run-analytics-to-investigate-faster"></a>執行分析以更快速地調查
 
 大型辨識項集合時，它可能很難全部加以檢閱。 一群證據通常包含相同或類似的電子郵件或文件的多個副本。 資料調查 （預覽） 提供了數分析工具，可協助您降低需要檢閱沒有任何遺失的資訊中的文件數量。 若要深入了解這些功能，請參閱：
 

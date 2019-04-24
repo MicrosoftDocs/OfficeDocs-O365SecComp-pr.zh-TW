@@ -13,36 +13,35 @@ search.appverid:
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
-description: Office 365 信任中心提供 Office 365 的安全性、 隱私與規範資訊，以及可能會想要知道 Office 365 如何協助保護您提供其資料中心中的機密資料。我們使用稱為分散式金鑰管理員 (DKM) 的技術。
+description: 除了 Office 365 信任中心提供安全性、 隱私權和規範資訊的 Office 365，您可能想要知道 Office 365 如何協助保護您在其資料中心中提供的機密資料。 我們會使用稱為分散式金鑰管理員 (DKM) 的技術。
 ms.openlocfilehash: ba4c661899273f5e07c2468631298f5500d0e32f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255481"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online 如何保護您的電子郵件機密資料
 
-本文說明 Microsoft 如何在其資料中心保護您的電子郵件機密資料。
+本文說明 Microsoft 如何保護您的電子郵件機密資料，在其資料中心。
   
-## <a name="how-do-we-secure-secret-information-provided-by-you"></a>我們如何保護您所提供的機密資料資訊？
+## <a name="how-do-we-secure-secret-information-provided-by-you"></a>我們要如何保護您所提供的機密資料資訊？
 
-Office 365 信任中心提供[安全性、 隱私與 Office 365 規範資訊](https://go.microsoft.com/fwlink/?linkid=874644)，以及可能會想要知道 Office 365 如何協助保護您提供其資料中心中的機密資料。我們使用稱為分散式金鑰管理員 (DKM) 的技術。
+除了 Office 365 信任中心提供[安全性、 隱私權和規範資訊的 Office 365](https://go.microsoft.com/fwlink/?linkid=874644)，您可能想要知道 Office 365 如何協助保護您在其資料中心中提供的機密資料。 我們會使用稱為分散式金鑰管理員 (DKM) 的技術。
   
-分散式金鑰管理員 (DKM) 是用戶端功能，使用一組秘密金鑰來加密及解密功能。只有在 Active Directory 網域服務中特定安全性群組的成員可以存取這些金鑰以解密 DKM 加密的資料。在 Exchange Online 中，只有 Exchange 處理程序執行的特定服務帳戶屬於該安全性群組。在資料中心的標準作業程序的一部分，是不會將屬於此安全性群組的認證給予任何使用者，因此沒有人具有可以解密這些機密資料之金鑰的存取權。
+分散式金鑰管理員 (DKM) 是使用一組秘密金鑰來加密及解密資訊用戶端功能。 只有在 Active Directory 網域服務中的特定安全性群組的成員可以存取這些機碼，以便解密由 DKM 加密的資料。 在 Exchange Online 中，只有在其下的 Exchange 處理程序執行特定服務帳戶屬於該 [安全性] 群組。 資料中心裡的標準作業程序的一部分，沒有人所指定屬於此安全性群組的認證，因此沒有 human 具有存取權才能解密這些機密的機碼。
   
-對於偵錯、疑難排解或稽核目的，資料中心系統管理員必須要求較高的權限以取得屬於安全性群組的暫時認證。此程序需要多個層級的法律核准。如果授與存取權時，所有活動會記錄和稽核。此外，存取權只會授與一段時間，在那之後自動到期。
+偵錯、 疑難排解或稽核的用途，資料中心系統管理員必須要求提升權限的存取權的入侵屬於 [安全性] 群組的暫存認證。 此程序需要多個法律核准層級。 如果授與存取權，所有活動是記錄和稽核。 除了存取會只授與固定間隔的時間之後，它會自動到期。
   
-對於額外保護，DKM 技術包含自動化金鑰變換和封存。這也確保您可以繼續存取舊的內容，而不需無限期地使用相同的金鑰。
+額外的保護，DKM 技術包含自動化金鑰變換和封存。 這也可確保您可以繼續存取舊內容，而不需無限期依賴相同的金鑰。
+  
+## <a name="where-does-exchange-online-make-use-of-dkm"></a>在其中沒有 Exchange Online 進行地方使用 DKM？
 
+Microsoft 會使用 DKM 加密您在 Exchange Online 資料中心中的機密資料。 例如：
   
-## <a name="where-does-exchange-online-make-use-of-dkm"></a>Exchange Online 在哪些地方使用 DKM？
-
-Microsoft 會使用 DKM 加密您的 Exchange Online 資料中心的機密資料。例如：
-  
-- 連線帳戶的電子郵件帳戶認證。連線的帳戶是協力廠商帳戶，例如 Hotmail、Gmail 和 Yahoo! 郵件帳戶。
+- 已連線的帳戶的電子郵件帳戶認證。 已連線的帳戶是協力廠商的帳戶，例如 Hotmail、 Gmail 和 yahoo ！ 郵件帳號。
     
-- 版權管理服務 (RMS) 根機碼。這些是客戶機碼的其中一個匯入從 Azure RMS 或客戶的內部部署 Active Directory 網域服務 RMS 部署所用的加密與解密電子郵件與 RMS 或 Office 365 郵件加密 (OME)。
+- 版權管理服務 (RMS) 根機碼。 以下是客戶金鑰是 [匯入從 Azure RMS 或客戶的內部部署 Active Directory 網域服務 RMS 部署所用的加密和解密電子郵件與 RMS 或 Office 365 郵件加密 (OME)。
     
 ## <a name="related-topics"></a>相關主題
 
@@ -50,6 +49,6 @@ Microsoft 會使用 DKM 加密您的 Exchange Online 資料中心的機密資料
   
 [關於 Office 365 中加密的技術參考細節](technical-reference-details-about-encryption.md)
   
-[服務 Office 365 安全性保證&amp;規範中心](https://go.microsoft.com/fwlink/?linkid=874645)
+[服務保證在 Office 365 安全性&amp;合規性中心](https://go.microsoft.com/fwlink/?linkid=874645)
   
 

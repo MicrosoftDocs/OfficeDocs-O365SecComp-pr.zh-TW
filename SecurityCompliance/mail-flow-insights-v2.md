@@ -1,5 +1,5 @@
 ---
-title: 在安全性 & 合規性中心中的郵件流程深入解析
+title: 安全性與合規性中心內的郵件流程深入解析
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,13 +11,13 @@ ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252104"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>在安全性 & 合規性中心中的郵件流程深入解析
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
 > [!NOTE]
 > 本主題所述的功能尚未已部署至所有 Office 365 組織，並受限於變更。

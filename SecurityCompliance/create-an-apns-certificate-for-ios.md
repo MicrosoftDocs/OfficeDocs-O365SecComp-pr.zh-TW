@@ -1,5 +1,5 @@
 ---
-title: 建立 APNs 憑證 iOS 裝置
+title: 建立適用於 iOS 裝置 APNs 憑證
 ms.author: brendonb
 author: brendonb
 manager: laurawi
@@ -17,58 +17,58 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
-description: 若要管理 iOS 裝置 iPad 和 Iphone 在行動裝置管理 Office 365，請遵循下列步驟，先建立一個 APNs 憑證。
+description: 若要管理像在 iPad 和 Iphone 在行動裝置管理的 iOS 裝置的 Office 365，請遵循下列步驟，先建立 APNs 憑證。
 ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258613"
 ---
-# <a name="create-an-apns-certificate-for-ios-devices"></a>建立 APNs 憑證 iOS 裝置
+# <a name="create-an-apns-certificate-for-ios-devices"></a>建立適用於 iOS 裝置 APNs 憑證
 
- 若要管理 Office 365 的 iPad 和 Iphone 在行動裝置管理的 iOS 裝置必須建立 APNs 憑證。 
+ 若要管理像在 iPad 和 Iphone 在行動裝置管理的 iOS 裝置的 Office 365 中，您必須建立 APNs 憑證。 
   
-若要這樣做，從 [**設定**] 連結入口網站頁面上遵循的步驟。(請移至**安全性&amp;規範中心** \> **安全性原則** \> **裝置管理** \> **管理設定**。)
+若要這麼做，請依照從 [**設定**] 連結在入口網站] 頁面上。 (移至**安全性&amp;合規性中心** \> **安全性原則** \> **裝置管理** \> **管理設定**。)
   
 ![設定行動裝置管理必要和建議的步驟](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
   
-1. **Configure iOS 裝置 APNs 憑證**] 旁邊選取 [**設定**]。
+1. Next to **Configure a APNs Certificate for iOS devices**, select **Set up**.
     
-2. 選取 [**下載 CSR 檔案**並儲存至兩者的憑證簽署要求將記住您電腦上。 
+2. Select **Download your CSR file** and save the Certificate signing request to a somewhere on your computer that you'll remember. 
     
     ![安裝 APN 憑證] 對話方塊](media/03aa8a24-e95c-4077-9b6b-ef76a86bafd7.png)
   
-3. 選取 [**下一步**]。
+3.  Select **Next**. 
     
-4. 建立 APN 憑證。
+4.  Create an APN certificate.
     
-  - 選取 [ **Apple APNS 入口網站**來開啟 Apple 推入憑證入口網站。 
+  - Select **Apple APNS Portal** to open the Apple Push Certificates Portal.  
     
-    ![使用選取的 Apple APNS 入口網站安裝 APN 通知 cert 對話方塊](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
+    ![使用選取的 Apple APNS 入口網站安裝 APN 通知憑證對話方塊](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
   
-  - 使用 Apple ID 登入
+  - Sign in with an Apple ID.
     
     > [!IMPORTANT]
-    > 使用 Apple 識別碼即使管理帳戶的使用者離開會與您的組織中保留電子郵件帳戶相關聯的公司。因為您需要該是時候來更新憑證時所使用的相同識別碼儲存此識別碼。 
+    > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate. 
   
-  - 選取 [**建立憑證**並接受**使用規定**。
+  - Select **Create a Certificate** and accept the **Terms of Use**.
     
-  - **瀏覽**至您下載到您的電腦從 Office 365 和選取 [**上傳**的憑證簽署要求。
+  - **Browse** to the Certificate signing request you downloaded to your computer from Office 365 and select **Upload**.
     
-  - **下載**建立 Apple 推入憑證入口網站到您的電腦 APN 憑證。 
+  - **Download** the APN certificate created by the Apple Push Certificate Portal to your computer. 
     
     > [!TIP]
-    > 如果您無法下載憑證，重新整理瀏覽器。 
+    > If you're having trouble downloading the certificate, refresh your browser. 
   
-5. 前往 Office 365 並選取 [**下一步**取得**上傳 APNS 憑證**] 頁面。 
+5. Go back to Office 365 and select **Next** to get to the **Upload APNS certificate** page. 
     
-6. 瀏覽至您下載從 Apple 推入憑證入口網站的 APN 憑證。
+6.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
     
-    ![按一下 [瀏覽] 按鈕選取 APNS cert 從 Apple 下載](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
+    ![按一下 [瀏覽] 按鈕，選取您從 Apple 下載 APNS 憑證](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. 選取 [**完成**]。
+7. Select **Finish**.
     
-移回至**安全性&amp;規範中心** \> **安全性原則** \> **裝置管理** \> **管理設定**以完成安裝程式。 
+移至**安全性&amp;合規性中心** \> **安全性原則** \> **裝置管理** \> **管理設定**，以完成安裝。 
   
 

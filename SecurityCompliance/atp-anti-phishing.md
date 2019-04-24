@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: ATP 防網路釣魚是 Office 365 進階威脅防護的一部分。 ATP 防網路釣魚將機器學習模型搭配模擬偵測演算法的一組套用於內送郵件提供保護市售和矛網路釣魚攻擊。 所有郵件都都會受到機器學習模型來偵測網路釣魚郵件，以及一組用來防範各種不同的使用者和網域模擬攻擊的進階演算法訓練廣泛設定。
 ms.openlocfilehash: 25e7845ab7d16b0766636006f2c55debfee2f9f9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249563"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 中的 ATP 防網路釣魚功能
 
@@ -55,7 +55,7 @@ ATP 防網路釣魚機器學習模型為作用中的特定使用者，該使用�
 |:-----|:-----|
 |Pat 的組織有 Office 365 企業版 E5，但沒有其他已定義的 ATP 安全附件，ATP 安全連結或 ATP 尚未進階網路釣魚的任何原則。|否。 雖然功能可供使用，至少一個 ATP 原則必須定義為了讓 ATP 機器學習模型來運作。 模擬的 ATP 防網路釣魚原則也必須就緒。|
 |Lee 是在 contoso 公司銷售部門中的員工。 Lee 的組織具有的 ATP 防網路釣魚原則在適用於僅限財務員工的位置。|否。 在此情況下，ATP 防網路釣魚 （機器模型和模擬保護） 會套用至 finance 員工，但其他員工，包括銷售部門中，不會。|
-|昨天，Office 365 系統管理員在設定 ATP 防網路釣魚原則套用至所有員工的 Jean 的組織。 稍早今天 Jean 接收電子郵件訊息，其中包含該原則所涵蓋模擬。|可以。 在這個範例中，Jean 已授權的進階威脅防護，並且包含 Jean ATP 防網路釣魚原則已定義。 它通常採用大約 30 分鐘，才會生效跨資料中心; 新的原則因為已在此情況下通過一天，該原則應生效。|
+|昨天，Office 365 系統管理員在設定 ATP 防網路釣魚原則套用至所有員工的 Jean 的組織。 稍早今天 Jean 接收電子郵件訊息，其中包含該原則所涵蓋模擬。|是。 在這個範例中，Jean 已授權的進階威脅防護，並且包含 Jean ATP 防網路釣魚原則已定義。 它通常採用大約 30 分鐘，才會生效跨資料中心; 新的原則因為已在此情況下通過一天，該原則應生效。|
 
 ## <a name="related-topics"></a>相關主題
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則相符項目、 覆寫或誤判; 的數請參閱是否它們在一段時間; 趨勢向上或向下以不同方式; 篩選報表然後選取圖形上線條上的一點檢視其他詳細資料。
 ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267285"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 

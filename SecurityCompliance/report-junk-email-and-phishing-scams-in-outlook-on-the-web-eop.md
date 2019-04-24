@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook web 使用者可以使用內建的郵件報告選項回報垃圾郵件和網路釣魚詐騙。 您也可以讓 Microsoft 知道是否電子郵件誤報為垃圾郵件 （垃圾郵件）。
 ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261570"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>報告的網頁型 Outlook 中的垃圾郵件和網路釣魚詐騙 
 
