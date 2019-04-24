@@ -9,11 +9,11 @@ ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 Office 伺服器中解決 GDPR 需求。
 ms.openlocfilehash: 9b1c7eb4313d1c33e273b6ac0d494c2359c40f00
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255754"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>適用於內部部署 Office 伺服器的 GDPR
 

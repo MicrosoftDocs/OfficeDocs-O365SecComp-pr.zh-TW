@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。
 ms.openlocfilehash: a4e9a6e981889bd2be19451127fc96b351b4b00f
-ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31389681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258141"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -191,11 +191,11 @@ ms.locfileid: "31389681"
   
 1. 以 Unicode 編碼方式將它儲存為 .xml 檔案。這非常重要，因為如果檔案是以其他編碼方式儲存，則規則不會運作。
     
-2. [透過遠端 PowerShell 連線到安全性與合規性中心。](https://go.microsoft.com/fwlink/?linkid=799771)
+2. [透過遠端 PowerShell 連線到安全性與合規性中心。](https://go.microsoft.com/fwlink/?linkid=799771)(機器翻譯)
     
 3. 在 PowerShell 中，輸入下列命令。
     
-     `New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)`。
+     `New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)`.
     
     > [!IMPORTANT]
     > 請確定您使用規則套件儲存所在的確切檔案路徑。`C:\custompath\` 是預留位置。 
@@ -210,7 +210,7 @@ ms.locfileid: "31389681"
 
 以下是您在此程序期間遇到之術語的定義。
   
-|**術語**|**定義**|
+|**詞彙**|**定義**|
 |:-----|:-----|
 |實體|實體是我們所謂的機密資訊類型，例如信用卡號碼。每個實體都有唯一的 GUID 作為其識別碼。如果您複製 GUID 並且在 XML 中搜尋，您會找到 XML 規則定義及該 XML 規則的所有當地語系化轉譯。您也可以藉由尋找轉譯的 GUID 並且搜尋該 GUID，來尋找此定義。|
 |函式|XML 檔案參考 `Func_credit_card`，這是已編譯程式碼中的函式。函式是用來執行複雜 regexes 並確認總和檢查碼符合我們的內建規則。因為這是在程式碼中發生，所以部分變數不會在 XML 檔案中顯示。|
@@ -223,9 +223,9 @@ ms.locfileid: "31389681"
    
 ## <a name="for-more-information"></a>相關資訊
 
-- [敏感性資訊類型所尋找的項目](what-the-sensitive-information-types-look-for.md)
+- [機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
     
-- [建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type.md)
+- [建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)
     
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     

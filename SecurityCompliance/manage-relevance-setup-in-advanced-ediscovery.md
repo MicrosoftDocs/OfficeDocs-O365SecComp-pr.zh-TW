@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: 閱讀在 Office 365 進階電子文件探索設定相關性訓練的建議，依其相關性為檔案評分，並產生分析結果。
 ms.openlocfilehash: 7e06be032cc653681c19ee2d17547ca22421e0ae
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259661"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中管理相關性設定
 

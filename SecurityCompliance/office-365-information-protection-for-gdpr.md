@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 這個解決方案示範如何保護 Office 365 服務中儲存的敏感資料。
 ms.openlocfilehash: fb66eb36a08883b63267349b50d2f17b15eeef03
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262698"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>GDPR 的 Office 365 資訊保護
 

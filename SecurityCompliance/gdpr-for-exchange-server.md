@@ -9,11 +9,11 @@ ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 Exchange Server 中解決 GDPR 需求。
 ms.openlocfilehash: 8c66787c7da8eef9a580361848499f9f336b49b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255621"
 ---
 # <a name="gdpr-for-exchange-server"></a>適用於 Exchange Server 的 GDPR
 

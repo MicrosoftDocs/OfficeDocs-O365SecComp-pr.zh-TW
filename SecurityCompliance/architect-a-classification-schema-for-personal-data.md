@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 判斷您的組織是否將實作標籤做為 GDPR 計劃的一部分。
 ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243471"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>設計個人資料的分類結構描述
 

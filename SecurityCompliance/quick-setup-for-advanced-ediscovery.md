@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: '了解如何從 Office 365 安全性與合規性中心存取 Office 365 進階電子文件探索，以及檢閱使用進階電子文件探索的一般工作流程。  '
 ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261614"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>快速設定 Office 365 進階電子文件探索
 

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 展示 Office 365 中的 GDPR 功能。
 ms.openlocfilehash: aea1fec29da352285a59ac9286fc053ca10ec746
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243004"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 開發/測試環境中的 GDPR 探索、保護和報告
 

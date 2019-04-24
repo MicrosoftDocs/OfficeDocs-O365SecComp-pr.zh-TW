@@ -9,11 +9,11 @@ ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 SharePoint Server 中解決 GDPR 需求。
 ms.openlocfilehash: 84692799222be595d69f7a33a31b0ec3fe767c3d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253888"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>SharePoint Server 適用的 GDPR
 

@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 使用 Office 365 安全性與合規性中心的資料控管報告，您可以快速檢視標籤是否如您預期一般套用到內容。
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266978"
 ---
 # <a name="view-the-data-governance-reports"></a>檢視資料控管報告
 

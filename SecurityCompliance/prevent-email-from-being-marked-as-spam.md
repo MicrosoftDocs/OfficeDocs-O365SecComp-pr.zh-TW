@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 了解如何避免 Office 365 誤判，並篩選出真正的電子郵件與垃圾郵件。
 ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261227"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件
 
