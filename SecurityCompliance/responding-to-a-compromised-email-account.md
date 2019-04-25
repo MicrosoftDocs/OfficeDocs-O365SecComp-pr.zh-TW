@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何辨識及回應 Office 365 中遭入侵的電子郵件帳戶
-ms.openlocfilehash: f974719e5609645314bf1e8d7b15ae30cda6282e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: abb9cbae0d1df41f5513e7958aaf1dc04ce66154
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264835"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>回應 Office 365 中遭入侵的電子郵件帳戶
 
@@ -132,3 +132,4 @@ ms.locfileid: "31001266"
 - [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](detect-and-remediate-outlook-rules-forms-attack.md)
 - [網際網路犯罪客訴中心](http://www.ic3.gov/preventiontips.aspx)
 - [美國證券交易委員會 -「網路釣魚」詐騙](http://www.sec.gov/investor/pubs/phishing.htm)
+- 若要直接向 Microsoft 和您的系統管理員檢舉垃圾郵件，[請使用檢舉訊息增益集](https://support.office.com/zh-TW/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: 7e28034955a54fe7c2013dcaaf606c24c4089e75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 29220c83eb207d58586b39d101e7139dc6ddf94a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259181"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 
@@ -37,7 +37,7 @@ ms.locfileid: "30216263"
 
 在這個階段中，您會為 SharePoint Online 小組網站的文件資料夾，建立不同安全性層級的標籤。
   
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入 Office 365 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 從 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
     
@@ -55,7 +55,7 @@ ms.locfileid: "30216263"
     
 9. 重複步驟 5-8，逐一設定下列其他標籤：
     
-  - Private
+  - 私人
     
   - 敏感性
     
@@ -85,7 +85,7 @@ ms.locfileid: "30216263"
 
 若要建立公用的基準 SharePoint Online 小組網站，請執行下列作業：
   
-1. 如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -115,7 +115,7 @@ ms.locfileid: "30216263"
 
 若要為活動內部的專案建立私用的基準 SharePoint Online 小組網站，請執行下列作業：
   
-1. 如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -145,7 +145,7 @@ ms.locfileid: "30216263"
 
 若要為活動行銷資源建立敏感性層級的隔離 SharePoint Online 小組網站，請執行下列作業：
   
-1. 請使用本機電腦上的瀏覽器，並以全域管理員帳戶登入 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com))。
+1. 使用本機電腦上的瀏覽器，並以全域管理員帳戶登入系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -257,7 +257,7 @@ ms.locfileid: "30216263"
 
 若要為活動策略資源建立高度機密層級的隔離 SharePoint Online 小組網站，請執行下列作業：
   
-1. 如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -321,7 +321,7 @@ ms.locfileid: "30216263"
     
 接下來，設定 DLP 原則；當使用者在組織外部共用具「高度機密」標籤之 SharePoint Online 小組網站上的文件時，即會封鎖使用者。此 DLP 原則會套用到活動策略網站中的資源。
   
-1. 如果需要，請使用本機電腦上的瀏覽器，並使用具有安全性系統管理員或公司系統管理員角色的帳戶登入 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com))。
+1. 如果需要，請使用本機電腦上的瀏覽器，並使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 從瀏覽器的 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [安全性 &amp; 合規性]**** 磚。
     
@@ -363,11 +363,11 @@ ms.locfileid: "30216263"
     
 20. 在 [檢閱您的設定]**** 窗格中，按一下 [建立]****，然後按一下 [關閉]****。
     
-依照[使用 Office 365 系統管理中心啟用 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的指示進行。
+遵循[使用 Office 365 系統管理中心啟用 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的指示。
   
 接著，遵循下列步驟，為 Azure 資訊保護設定新的限域原則與子標籤，以提供保護及權限：
   
-1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入 Office 365 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在您瀏覽器的個別索引標籤中，移至 Azure 入口網站 ([https://portal.azure.com](https://portal.azure.com))。
     
@@ -411,7 +411,7 @@ ms.locfileid: "30216263"
   
 您現在準備好開始建立這四個網站中的文件，以及使用不同的使用者帳戶來測試其存取。 
   
-若要使用 Azure 資訊保護和此新標籤來保護文件，您必須在測試電腦上[安裝 Azure 資訊保護用戶端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，並從 Office 365 入口網站來安裝 Office，然後使用試用訂閱的 **「資深和策略人員」** 群組中的帳戶登入 Microsoft Word。
+若要使用 Azure 資訊保護和此新標籤來保護文件，您必須在測試電腦上[安裝 Azure 資訊保護用戶端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，並從系統管理中心安裝 Office，然後使用試用訂用帳戶 **「資深和策略人員」** 群組中的帳戶登入 Microsoft Word。
   
 ## <a name="see-also"></a>另請參閱
 

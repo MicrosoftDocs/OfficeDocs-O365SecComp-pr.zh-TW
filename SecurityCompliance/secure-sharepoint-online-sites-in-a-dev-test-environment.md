@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在開發/測試環境中建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260944"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在開發/測試環境中保護 SharePoint Online 網站
 
@@ -208,31 +208,29 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 7. 在 [檢閱您的設定]**** 窗格中，按一下 [建立標籤]****。
     
-8. 對於其他標籤，按一下 [建立標籤]****，然後重複步驟 3-7。
-
-9. 針對以下名稱的標籤，重複步驟 3-8：
+8. 針對以下名稱的標籤，重複步驟 3-7：
     
-  - Private
+  - 私人
     
   - 敏感性
     
   - 高度機密
   
-10. 從 [首頁] > [標籤]**** 窗格中，按一下 [Publish labels]\(發佈標籤)****。
+9. 從 [首頁] > [標籤]**** 窗格中，按一下 [Publish labels]\(發佈標籤)****。
     
-11. 在 [選擇要發佈的標籤]**** 窗格中，按一下 [選擇要發佈的標籤]****。
+10. 在 [選擇要發佈的標籤]**** 窗格中，按一下 [選擇要發佈的標籤]****。
     
-12. 在 [Choose labels]\(選擇標籤)**** 窗格中，按一下 [新增]**** 並選取所有四個標籤。
+11. 在 [Choose labels]\(選擇標籤)**** 窗格中，按一下 [新增]**** 並選取所有四個標籤。
     
-13. 按一下 [完成]****。
+12. 按一下 [完成]****。
     
-14. 在 [選擇要發佈的標籤]**** 窗格上，按一下 [下一步]****。
+13. 在 [選擇要發佈的標籤]**** 窗格上，按一下 [下一步]****。
     
-15. 在 [選擇位置]**** 窗格中，按一下 [下一步]****。
+14. 在 [選擇位置]**** 窗格中，按一下 [下一步]****。
     
-16. 在 [命名您的原則]**** 窗格上，於 [名稱]**** 中輸入 **範例組織**，然後按一下 [下一步]****。
+15. 在 [命名您的原則]**** 窗格上，於 [名稱]**** 中輸入 **範例組織**，然後按一下 [下一步]****。
     
-17. 在 [檢閱您的設定]**** 窗格中，按一下 [發佈標籤]****，然後按一下 [關閉]****。
+16. 在 [檢閱您的設定]**** 窗格中，按一下 [發佈標籤]****，然後按一下 [關閉]****。
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>階段 4：建立 SharePoint Online 小組網站
 
@@ -264,7 +262,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 2. 按一下設定圖示，然後按一下 [文件庫設定]****。
     
-3. 在 [權限與管理]**** 下，按一下 [將標籤套用至此文件庫中的項目]****。
+3. 在 [權限與管理]**** 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)****。
     
 4. 在 [設定 - 套用標籤]**** 中，選取 [內部公用]****，然後按一下 [儲存]****。
     
@@ -548,7 +546,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 12. 在 [AAD 使用者與群組]**** 窗格中，選取 [高階主管]****，然後按一下 [選取]****。
     
-13. 在 [選擇預設的權限，或設定自訂]**** 下，按一下 [自訂]****，然後選取 [檢視權限]****、[編輯內容]****、[儲存]****、[回覆]****、 [全部回覆]**** 核取方塊。
+13. 在 [選擇預設的權限，或設定自訂]**** 下，按一下 [自訂]****，然後選取 [檢視權限]****、[編輯內容]****、[儲存]****、[回覆]****、[全部回覆]**** 核取方塊。
     
 14. 按兩次 [確定]****。
     
@@ -584,7 +582,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[適用於政治活動、非營利組織和其他敏捷組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 

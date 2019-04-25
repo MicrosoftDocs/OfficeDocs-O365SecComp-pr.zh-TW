@@ -13,17 +13,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用 Office 365 中的標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+description: 使用 Office 365 中的保留標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
+ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256371"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
-當您保留內容時，保留期間通常是依據內容的存留期 - 例如，您在文件建立之後保留 7 年，然後刪除。但是使用 Office 365 中的標籤，您也可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之標籤的所有事件，會強制執行標籤的保留動作。
+當您保留內容時，保留期間通常是依據內容的存留期 - 例如，您在文件建立之後保留 7 年，然後刪除。但是使用 Office 365 中的保留標籤，您也可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。
   
 例如，您可以針對下列項目，使用具有事件導向保留的標籤：
   
@@ -77,7 +77,7 @@ ms.locfileid: "30866359"
   
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>步驟 1：建立其保留期間根據事件的標籤
 
-在安全性與合規性中心的左側導覽中，於 [分類]**** 底下選擇 [標籤]**** \> [建立標籤]****。
+在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性 &amp; 合規性中心的左側導覽列中，選擇 [分類]**** > [標籤]**** > [保留標籤]**** 索引標籤 > [建立標籤]****。
   
 當您建立標籤時，開啟保留，然後如下所示選擇選項，以根據事件保留或刪除內容。這表示當您在 [事件]**** 頁面上建立事件時，保留設定在 9 月 5 日之前不會生效。 
   
@@ -103,7 +103,7 @@ ms.locfileid: "30866359"
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>步驟 3：發佈或自動套用標籤
 
-就像任何標籤一樣，您需要發佈或自動套用事件型標籤，以便手動或自動套用至內容。在 [標籤]**** 頁面上進行這項操作。請注意，將內容分類為記錄的標籤只能發佈和手動套用到內容；無法自動套用到內容。 
+就像任何標籤一樣，您需要發佈或自動套用事件型標籤，以便手動或自動套用至內容。您可以在 [標籤]**** 或 [標籤原則]**** 頁面上進行這項操作。請注意，將內容分類為記錄的標籤只能發佈和手動套用到內容。 
   
 ![發佈或自動套用標籤的選項](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
@@ -149,7 +149,7 @@ ms.locfileid: "30866359"
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>使用內容搜尋來尋找具有特定標籤或資產識別碼的所有內容
 
-將標籤指派給內容之後，您可以使用安全性與合規性中心中的內容搜尋，尋找以特定標籤分類或包含特定資產識別碼的所有內容。
+將標籤指派給內容之後，您可以使用內容搜尋，尋找以特定標籤分類或包含特定資產識別碼的所有內容。
   
 當您建立內容搜尋時：
   
@@ -167,11 +167,9 @@ ms.locfileid: "30866359"
   
 ## <a name="automate-events-by-using-powershell"></a>使用 PowerShell 讓事件自動化
 
-在 Office 365 安全性與合規性中心，您只能手動建立事件；無法在事件發生時自動觸發事件。但是，您可以使用 PowerShell 指令碼讓您的業務應用程式的事件型保留自動化。
-  
-我們目前正在開發 API，讓您可以將商務應用程式 (例如 HR、CRM 或財務應用程式) 連線到事件導向保留。例如，您可以將您的 HR 系統連線到事件導向保留，以便在員工離開組織時，該事件類型的事件會自動觸發。
-  
-在那之前，以下是適用於事件導向保留的 PowerShell Cmdlet：
+在系統管理中心內，您只能手動建立事件；無法在事件發生時自動觸發事件。但是，您可以使用 Rest API 來自動觸發事件；如需詳細資訊，請參閱[自動化事件型保留](automate-event-driven-retention.md)。
+
+您也可以使用 PowerShell 指令碼來自動化商務應用程式中以事件為基礎的保留。 以下是適用於事件導向保留的 PowerShell Cmdlet：
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     

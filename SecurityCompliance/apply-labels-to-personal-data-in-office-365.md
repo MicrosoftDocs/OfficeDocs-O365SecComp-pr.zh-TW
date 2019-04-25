@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為 GDPR 保護計劃的一部分。
-ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: a5ffcca94ea98a3d6426dc60fae0f6cb98d0029d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244153"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>將標籤套用至 Office 365 中的個人資料
 
@@ -34,7 +34,7 @@ ms.locfileid: "30955196"
 
 雲端 App 安全性目前不支援保留標籤，但是您可以使用 Office 365 敏感資訊類型搭配雲端 App 安全性，監視位於其他 SaaS 應用程式中的個人資料。
 
-目前建議使用[敏感度標籤](sensitivity-labels.md)，將標籤套用至內部部署與其他雲端服務和提供者中的檔案。 也有對於 Office 365 中需要使用 Azure 資訊保護 (AIP) 加密進行資料保護的檔案 (例如商業秘密檔案) 所建議的事項。
+目前建議使用[敏感度標籤](sensitivity-labels.md)，將標籤套用至內部部署與其他雲端服務和提供者中的檔案。 也有對於 Office 365 中需要使用 Azure 資訊保護加密進行資料保護的檔案 (例如商業秘密檔案) 所建議的事項。
 
 目前，對於 Office 365 中具有、受限於 GDPR 資料的檔案，不建議使用 Azure 資訊保護來套用加密。 Office 365 服務目前無法讀取使用 AIP 加密的檔案。 因此，服務找不到這些檔案中的敏感性資料。
 
