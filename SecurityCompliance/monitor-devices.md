@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
+ms.sourcegitcommit: 468a7c72df3206333d7d633dd7ce1f210dc1ef3a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263516"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33302737"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>在 Microsoft 365 安全性中監視裝置
 
@@ -25,7 +25,7 @@ ms.locfileid: "32263516"
 
 ## <a name="view-device-alerts"></a>檢視裝置提醒
 
-從 Windows Defender ATP （隨附於 E5 授權），在您的裝置上取得相關資料外洩活動] 和 [其他威脅的最新提醒。 Microsoft 365 安全性中心有幾個卡，可讓您有效地監視這些警示概括來說，根據您偏好的工作流程。
+從 Windows Defender ATP （隨附於 E5 授權），在您的裝置上取得相關資料外洩活動] 和 [其他威脅的最新提醒。 Microsoft 365 安全性中心有效率地監視這些警示高層級的使用自己偏好的工作流程。
 
 ### <a name="monitor-high-impact-alerts"></a>監視影響力高且警示
 
@@ -183,19 +183,44 @@ Microsoft Intune 提供 ASR 規則的管理功能。 如果您想要更新您的
 
 ### <a name="exclude-files-from-asr-rules"></a>從 ASR 規則排除檔案
 
-藉由從偵測排除檔案，您可以防止不必要的則為 false 正數偵測及更多充滿部署攻擊縮減規則以封鎖模式。
+Microsoft 365 安全性中心攻擊縮減規則所偵測從收集[您可能想要排除的檔案](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive)的名稱。 藉由排除檔案，您可以減少誤判，則為 false 會偵測的資訊及更多充滿部署攻擊縮減規則以封鎖模式。
 
-雖然攻擊縮減規則的檔案排除在 Microsoft Intune 管理，Microsoft 365 安全性中心 」 會提供分析工具來協助您了解的檔案，會觸發偵測的資訊。 它也可協助收集您可能想要排除檔案的名稱。
+排除項目管理在 Microsoft Intune，但是 Microsoft 365 安全性中心 」 會提供分析工具可協助您了解檔案。 若要開始收集排除的檔案，請前往**攻擊縮減規則**報告] 頁面上的 [**新增排除項目**] 索引標籤。
 
-若要開始分析偵測並收集排除的檔案，移至 [**攻擊縮減規則**報告] 頁面上的 [**新增排除項目**] 索引標籤。
+>[!NOTE]  
+>此工具會分析偵測所有攻擊縮減規則，但[僅部分規則支援排除項目](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules)。
 
 ![新增排除項目] 索引標籤](./media/security-docs/add-exclusions-tab.png)
 
-資料表會列出您攻擊縮減規則所偵測到的所有檔案名稱。 一旦您選取的檔案或多個檔案，您可以檢閱將這些檔案新增至您的例外狀況的影響：
+資料表會列出您攻擊縮減規則所偵測到的所有檔案名稱。 您可以選取檢視的排除這些影響的檔案：
 
-* 偵測總數減少
-* 偵測所影響的裝置總數減少
+* 多少較少的偵測
+* 多少較少的裝置報告偵測
 
 若要排除選取其完整路徑與檔案的清單，請選取 [**取得排除的路徑**。
 
-如需排除的詳細資訊及如何將它們新增的詳細的指示，請閱讀[疑難排解攻擊縮減規則](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr)。
+ASR 規則**封鎖認證竊取從 Windows 本機安全性授權子系統 (lsass.exe)** 的記錄檔擷取來源應用程式**lsass.exe**，一般系統檔案，以偵測到的檔案。 因此，排除路徑產生的清單會包含此檔案。 若要排除觸發此規則，而不是**lsass.exe**檔案，請使用來源應用程式的路徑而不是偵測到的檔案。
+
+若要找出來源應用程式，請執行下列[進階的狩獵查詢](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)（由規則 ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 識別） 此特定規則： 
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
+| project InitiatingProcessFolderPath, InitiatingProcessFileName
+```
+
+#### <a name="check-files-for-exclusion"></a>檢查排除的檔案
+之前 ASR 從排除檔案，我們建議您檢查來決定它是否確實不惡意檔案。
+
+若要檢閱檔案，用於 Windows defender 資訊安全中心中的[檔案資訊] 頁面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection)。 [] 頁面上提供普遍性資訊作為 VirusTotal 防毒偵測比率。 您也可以使用] 頁面上，以提交深入分析的檔案。
+
+若要在 Windows defender 資訊安全中心尋找偵測到的檔案，搜尋所有 ASR 偵測使用下列的進階的狩獵查詢：
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
+```
+
+使用**SHA1**或**InitiatingProcessSHA1**在結果中，搜尋使用通用的搜尋列在 [Windows defender 資訊安全中心檔案。
