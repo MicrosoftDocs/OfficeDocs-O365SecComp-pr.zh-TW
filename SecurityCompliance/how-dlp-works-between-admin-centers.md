@@ -3,7 +3,7 @@ title: DLP 如何在安全性與合規性中心和 Exchange 系統管理中心�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/4/2017
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解 DLP 安全性 & 合規性中心與 DLP 的運作方式，以及郵件流程規則 （傳輸規則） 中 Exchange 系統管理中心。
-ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efe8fb733417275a259a472db3444b8f6cad1f92
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254924"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362031"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
 
 在 Office 365 中，您可以建立兩個不同的系統管理中心中的資料遺失防護 (DLP) 原則：
   
-- 在**安全性 & 合規性中心**中，您可以建立一個 DLP 原則來協助保護 SharePoint、 OneDrive 及 Exchange 中的內容。 可能的話，我們建議您建立的 DLP 原則。 如需詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的 DLP。
+- 在**安全性 & 合規性中心**中，您可以建立一個 DLP 原則來協助保護 SharePoint、 OneDrive、 Exchange 和現在 Microsoft Teams 中的內容。 可能的話，我們建議您建立的 DLP 原則。 如需詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的 DLP。
     
 - 在**Exchange 系統管理中心**中，您可以建立 DLP 原則來協助保護只能在 Exchange 中的內容。 此原則可以使用 Exchange 郵件流程規則 （也稱為傳輸規則），使其具有更多選項特定處理電子郵件。 如需詳細資訊，請參閱 <<c0>在 Exchange 系統管理中心中的 DLP。
     

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Office 365 安全性中的資料外洩防護 (DLP) 原則&amp;合規性中心，您可以識別、 監視和自動保護 Office 365 中的敏感資訊。
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262099"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362051"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>資料外洩防護原則概觀
 
@@ -478,11 +478,7 @@ Excel、 PowerPoint 和 Word 包含相同的功能，以識別機密資訊，並
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams 中的原則評估
  
-當您建立包含做為位置的 Microsoft Teams 的 DLP 原則時，此原則的同步處理從 Office 365 安全性&amp;來處理使用者帳戶和 Microsoft Teams 通道和聊天室的合規性中心。 根據 DLP 原則的設定方式，當有人嘗試共用 Microsoft Teams 聊天室或通道，郵件中的敏感資訊可以封鎖或撤銷。 和，這些使用者的電腦上無法開啟文件中包含敏感資訊的共用與來賓 （外部使用者）。
-
-例如，假設有人嘗試與外部使用者共用小組聊天或通道中的敏感資訊。 假設沒有定義要避免這種情況的 DLP 原則。 使用就地保護，會刪除包含機密資訊傳送給外部使用者的郵件。 發生在秒內，這種情況，它都會自動發生，根據 DLP 原則的設定方式。
-
-原則提示通知寄件者有關他們的郵件已封鎖或撤銷為何。 例如，其郵件包含不允許與任何人共用的個人識別資訊 (PII)，或包含 PII 的文件不能與組織外部人員共用，可能會告知寄件者。 寄件者可以接著可以編輯其訊息符合 DLP 原則。
+當您建立包含做為位置的 Microsoft Teams 的 DLP 原則時，此原則的同步處理從 Office 365 安全性&amp;來處理使用者帳戶和 Microsoft Teams 通道和聊天室的合規性中心。 根據 DLP 原則的設定方式，當有人嘗試共用 Microsoft Teams 聊天室或通道，郵件中的敏感資訊可以封鎖或撤銷。 和，這些使用者的電腦上無法開啟文件中包含敏感資訊的共用與來賓 （外部使用者）。 若要深入了解，請參閱[資料外洩防護和 Microsoft Teams](dlp-microsoft-teams.md)。
  
 ## <a name="permissions"></a>權限
 
