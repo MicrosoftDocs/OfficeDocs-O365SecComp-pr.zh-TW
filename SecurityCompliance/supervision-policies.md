@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
 ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260321"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403041"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
@@ -111,7 +111,7 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 
 下表說明更多關於每個條件。
   
-|**Condition**|**如何使用這種情況**|
+|**條件**|**如何使用這種情況**|
 |:-----|:-----|
 | 從任何這些網域接收郵件  <br><br> 從任何這些網域不接收郵件 | 若要將原則套用特定的網域是包含或排除在收到的郵件時，輸入每個網域，並以逗號分隔多個網域。 您輸入的每個網域會分別套用 （只有一個這些網域必須套用的原則套用至郵件）。 |
 | 訊息會傳送至這些網域的任何  <br><br> 郵件不會傳送給任何這些網域 | 若要將原則套用特定的網域是包含或排除在傳送郵件時，輸入每個網域，並以逗號分隔多個網域。 您輸入的每個網域會分別套用 （只有一個這些網域必須套用的原則套用至郵件）。 |

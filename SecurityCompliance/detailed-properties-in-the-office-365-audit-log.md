@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: 包含 Office 365 中的其他屬性的說明稽核記錄。
-ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c2d878bb79bdec19aef07ed0de35b53a826e9ca
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257644"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402961"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 稽核記錄中的詳細內容
 
@@ -53,7 +53,7 @@ ms.locfileid: "32257644"
 |EventSource|識別事件發生在 SharePoint 中。 可能值是**SharePoint**及**ObjectModel**。|SharePoint|
 |ExternalAccess|對於 Exchange 系統管理員活動，指定是否在使用者在您的組織，由 Microsoft 資料中心的人員或資料中心服務帳戶，或委派的系統管理員執行指令程式。 **為 False**的值會指出此 cmdlet 所執行的組織中的人員。 **則為 True**的值會指出此 cmdlet 所執行的資料中心人員、 資料中心服務帳戶或將委派的管理員。  <br/> Exchange 信箱活動，會指定是否由組織外部使用者存取信箱。|Exchange|
 |ExtendedProperties|擴充的屬性如 Azure Active Directory 事件。|Azure Active Directory|
-|識別碼|報告項目的識別碼。 識別碼可唯一識別的報告項目。|全部|
+|ID|報告項目的識別碼。 識別碼可唯一識別的報告項目。|全部|
 |InternalLogonType|保留給內部使用。|Exchange （信箱活動）|
 |ItemType|已存取或修改物件的類型。 可能值包括**檔案**、**資料夾**、 **Web**、**網站**、**租用戶**及**DocumentLibrary**。|SharePoint|
 |LoginStatus|識別可能發生的登入失敗。|Azure Active Directory|
@@ -86,13 +86,15 @@ ms.locfileid: "32257644"
 |UserID|執行的巨集指令 （在 [**作業**] 屬性中指定），造成正在記錄之記錄中的使用者。 請注意系統帳戶 （例如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM） 所執行的活動的記錄也會包含在稽核記錄檔。|全部|
 |UserKey|**UserID**屬性中所識別之使用者的替代識別碼。 例如，這個屬性會填入 passport 唯一識別碼 (PUID) 在 SharePoint 中的使用者所執行的事件。 此屬性也可能相同值指定為其他服務] 與 [系統帳戶所執行的事件中發生事件的**UserID**屬性。|全部|
 |UserSharedWith|資源共用的使用者。 如果**作業**屬性的值是**SharingSet**包含此屬性。 此使用者也會列在報告中的**共用與**資料行。|SharePoint|
-|UserType|執行此作業的使用者類型。 下列的值可指出使用者類型。 <br/> <br/> **0** -一般使用者。 <br/>**2** -Office 365 組織中系統管理員。 <br/>**3** -Microsoft 資料中心系統管理員或資料中心系統帳戶。 <br/>**4** -系統帳戶。 <br/>**5** -應用程式。 <br/>**6** -服務主要名稱。<br/>**7** -自訂原則。<br/>**8** -系統原則。|全部|
+|UserType|執行此作業的使用者類型。 下列的值可指出使用者類型。 <br/> <br/> **0** -一般使用者。 <br/>**2** -Office 365 組織中系統管理員。 <sup>1</sup> <br/>**3** -Microsoft 資料中心系統管理員或資料中心系統帳戶。 <br/>**4** -系統帳戶。 <br/>**5** -應用程式。 <br/>**6** -服務主要名稱。<br/>**7** -自訂原則。<br/>**8** -系統原則。|全部|
 |版本|會指出記錄活動 （由**Operation**屬性識別） 的版本號碼。|全部|
 |工作量|Office 365 服務發生的活動。 此屬性的可能值包括：  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>規範<br/>Sway<br/>商務用 Skype<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>專案<br/>PowerApps<br/>工作場所分析**|全部|
 ||||
-   
-當您按一下 [**詳細資訊**，檢視特定事件的詳細資料時，也會顯示內容上述的附註。 
+
+> [!NOTE]
+> <sup>1</sup>稽核記錄中的 Azure Active Directory 與相關的事件，以系統管理員的值不會有使用。 系統管理員所執行的活動的稽核記錄會指出，一般使用者 (例如， **UserType: 0**) 執行的活動。 **UserID**屬性會識別 （一般使用者或系統管理員） 的人員誰執行活動。
+
+當您按一下 [**詳細資訊**，檢視特定事件的詳細資料時，也會顯示上面所述的屬性。 
   
 ![按一下 [檢視稽核記錄的事件記錄的詳細的內容的詳細資訊](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
   
-

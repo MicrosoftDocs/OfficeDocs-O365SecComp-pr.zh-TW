@@ -3,7 +3,7 @@ title: 在 Office 365 中搜尋內容
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/4/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用安全性 & 合規性中心 」，商務快速尋找 Exchange 信箱，文件中的 SharePoint 網站和 OneDrive 的位置，並在 Skype 中的立即訊息對話中的電子郵件的內容搜尋電子文件探索工具。
-ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261351"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403011"
 ---
 # <a name="search-for-content-in-office-365"></a>在 Office 365 中搜尋內容
 
@@ -42,7 +42,10 @@ ms.locfileid: "32261351"
     
 - [大量編輯](bulk-edit-content-searches.md)的查詢，以及多個搜尋內容位置 
     
+- 若要解決錯誤的內容位置的 [[重試內容搜尋](retry-failed-content-search.md)
+
 - [保留密件副本收件者](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)讓他們可以搜尋 
+
 
 ## <a name="perform-actions-on-content-you-find"></a>對您找到的內容執行動作
 

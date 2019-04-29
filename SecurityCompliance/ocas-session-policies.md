@@ -10,18 +10,18 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 雲端 App 安全性工作階段原則啟用即時工作階段層級監視，並細微的可視性 Office 365 應用程式所能採取不同的動作為使用者工作階段的原則。 而不是允許或封鎖存取完全，工作階段控制您可以同時監視使用條件式存取應用程式控制項的反向 proxy 功能的工作階段及/或限制特定的工作階段活動允許存取。
-ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8abc7753543d5147ce8c48c1784a6795143f9105
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263021"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403031"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 雲端 App 安全性中的工作階段原則
 
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](ocas-access-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](ocas-access-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
 
 Office 365 雲端 App 安全性工作階段原則啟用即時工作階段層級監視，並細微的可視性 Office 365 應用程式所能採取不同的動作為使用者工作階段的原則。 而不是允許或封鎖存取完全，工作階段控制您可以同時監視使用條件式存取應用程式控制項的反向 proxy 功能的工作階段及/或限制特定的工作階段活動允許存取。
 
@@ -117,7 +117,7 @@ Azure Active Directory 條件式存取原則與 Cloud App Security 工作階段�
 
 1. 前往 [設定商旅，然後按一下 [ **條件式存取應用程式控制**。
 
-2. 在表格的右側，按一下 [匯出] 按鈕。<br>![匯出] 按鈕](media/image3.png)<br>
+2. 在表格的右側，按一下 [匯出] 按鈕。<br>![匯出] 按鈕](media/OCASimage3.png)<br>
 
 3. 選取報表的範圍，然後按一下 [ **匯出**]。 此程序可能需要一些時間。
 
@@ -125,7 +125,7 @@ Azure Active Directory 條件式存取原則與 Cloud App Security 工作階段�
 
 1. 準備報表之後，請移至 [ **設定** ，然後 **匯出報告**。
 
-2. 在表格中，請從 **條件式存取應用程式控制項的流量記錄檔**的清單中選取相關的報告 並按一下 [下載]。<br>![下載] 按鈕](media/image4.png)<br>
+2. 在表格中，請從 **條件式存取應用程式控制項的流量記錄檔**的清單中選取相關的報告 並按一下 [下載]。<br>![下載] 按鈕](media/OCASimage4.png)<br>
 
 ## <a name="block-all-downloads"></a>封鎖所有的下載項目
 

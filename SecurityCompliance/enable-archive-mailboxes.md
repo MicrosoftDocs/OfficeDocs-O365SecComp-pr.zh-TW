@@ -8,7 +8,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用安全性 & 在 Office 365 規範中心啟用封存信箱以支援您的組織郵件保留、 eDiscovery 和保留需求。
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.openlocfilehash: f4f02e5107526f2f45b0a46579e0676b791f0dd1
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958304"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402921"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全性 & 規範中心啟用封存信箱
   
@@ -127,9 +127,11 @@ ms.locfileid: "31958304"
 
 ## <a name="more-information"></a>詳細資訊
   
+- 啟用封存信箱時，使用者可以將郵件儲存在其封存信箱。 使用者可以使用 Microsoft Outlook 和網頁型 Outlook 來存取他們的封存信箱。 只要使用這些用戶端應用程式，使用者就能檢視其封存信箱中的郵件，並且在其主要信箱與其封存信箱之間移動或複製郵件。 使用者也可以使用「復原刪除的郵件」工具復原其封存信箱的 [可復原的項目] 資料夾中的已刪除郵件。
+
+   如需支援就地封存的 Outlook 授權的清單，請參閱 < <b0>Exchange 功能的 Outlook 授權需求</b0>。
+
 - 封存信箱幫助您和您的使用者以符合您的組織保留、 eDiscovery 和保留需求。 例如，您可以使用您組織的 Exchange 保留原則，將信箱內容移至使用者的封存信箱。 當您使用安全性 & 合規性中心中的 「 內容搜尋 」 工具來搜尋特定內容的使用者的信箱時，也會搜尋使用者的封存信箱。 然後放置訴訟暫止狀態或 Office 365 保留原則套用至使用者的信箱時，也會保留在封存信箱中的項目。
-  
-- 啟用封存信箱時，使用者可以將郵件儲存在其封存信箱。 使用者可以使用 Microsoft Outlook 和網頁型 Outlook 來存取他們的封存信箱。 只要使用這些用戶端應用程式，使用者就能檢視其封存信箱中的郵件，並且在其主要信箱與其封存信箱之間移動或複製郵件。 使用者也可以使用「復原刪除的郵件」工具復原其封存信箱的 [可復原的項目] 資料夾中的已刪除郵件。 
   
 - 在啟用信箱的封存之後, 您的組織可以利用之預設 Exchange 保留原則 （也稱為 「 通訊記錄管理 」 或 「 MRM 原則 」） 會自動指派給每個信箱。 啟用封存信箱時，預設 Exchange 保留原則自動會執行下列動作： 
   

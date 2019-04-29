@@ -1,5 +1,5 @@
 ---
-title: 保護使用者和裝置存取
+title: 保護使用者和裝置存取權
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 保護 O365 資料與服務存取權的登陸頁面
 ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265225"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403001"
 ---
-# <a name="protect-user-and-device-access"></a>保護使用者和裝置存取
+# <a name="protect-user-and-device-access"></a>保護使用者和裝置存取權
 
 保護您的 Office 365 資料與服務存取權是防禦網路攻擊與防止資料遺失而言很重要的。 同一種保護方式可套用至環境中的其他 SaaS 應用程式，甚至可在內部應用程式發佈與 Azure Active Directory 應用程式 Proxy。
   

@@ -10,18 +10,18 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: 請遵循下列步驟來設定 Azure AD Office 365 應用程式連接至 Office 365 雲端 App 安全性條件式存取應用程式控制加以控制。
-ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 74cc415220282491694bf417a6761fd43a6d3521
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263101"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402941"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>為 Office 365 應用程式部署條件式存取應用程式控制
 
 |評估 * *\>**|規劃 * *\>**|部署 * *\>**|使用率 * * *|
 |:-----|:-----|:-----|:-----|
-|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [下一步](ocas-session-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
+|[啟動評估](office-365-cas-overview.md) <br/> |[開始規劃](get-ready-for-office-365-cas.md) <br/> |您在此處 ！  <br/> [後續步驟](ocas-session-policies.md) <br/> |[開始使用](utilization-activities-for-ocas.md) <br/> |
 
 請遵循下列步驟來設定 Azure AD Office 365 應用程式連接至 Office 365 雲端 App 安全性條件式存取應用程式控制加以控制。
 
@@ -50,7 +50,7 @@ ms.locfileid: "32263101"
 
 6. 新增任何適用的 **條件指派** 或 **授與控制項** （選用）。
 
-> ![Azure AD 條件式存取](media/image1.png)
+> ![Azure AD 條件式存取](media/OCASimage1.png)
 
 ## <a name="step-2-sign-in-with-a-user-scoped-to-the-policy-in-the-apps"></a>步驟 2： 使用中應用程式的原則的範圍限定在使用者登入 
 
@@ -72,7 +72,7 @@ Cloud App Security 會同步處理原則的詳細資訊，其伺服器的登入�
 
 3. 憑證上傳之後，您可以建立存取原則和工作階段的原則，根據 **裝置標記**及 **有效的用戶端憑證]**。
 
-![條件式存取應用程式控制項的裝置識別碼](media/image2.png)
+![條件式存取應用程式控制項的裝置識別碼](media/OCASimage2.png)
 
 > [!NOTE]
 > 只有，從使用者來要求憑證，如果工作階段符合使用有效的用戶端憑證篩選器原則。

@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: 準備好的所有新的 Microsoft 365 安全中心和合規性中心
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265481"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402991"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心個
 

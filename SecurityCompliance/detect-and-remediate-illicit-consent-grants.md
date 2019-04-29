@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修復 Office 365 中的非法同意授權攻擊。
-ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999936"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402951"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -36,7 +36,11 @@ ms.locfileid: "30999936"
 3. 建立 「 搜尋 」 （所有活動和所有的使用者） 篩選結果的同意，應用程式，並新增 OAuth2PermissionGrant。
 4. 檢查郵件的延伸內容並檢查看看是否 IsAdminContent 設為 True。
 
-
+> [!NOTE]
+>  
+   - 它可以最多需要 30 分鐘或向上事件之後的 24 小時就會發生的相對應的稽核記錄項目顯示在搜尋結果中。
+   - 稽核記錄會保留並可供搜尋稽核記錄中的時間長度，取決於您的 Office 365 訂閱，並特別指定給特定使用者的授權類型。 如需詳細資訊，請參閱 <<c0>稽核記錄檔。
+      
 如果此值為 true，就表示，以全域系統管理員存取權的人員可能會有廣泛存取權授與資料。 如果這是未預期，請執行下列步驟[確認攻擊](detect-and-remediate-illicit-consent-grants.md#confirmattack)。
 
 <a name="confirmattack"> </a>
@@ -103,13 +107,13 @@ ms.locfileid: "30999936"
 - 您也可以停用受影響的帳戶完全，這會依次停用應用程式資料的存取權的帳戶中的登入。 這不適合使用者產能，當然，但如果您正在快速限制影響，它可以是可行的短期修復。
 - 您可以關閉整合式應用程式為您的租用。 這是極端的步驟，停用使用者授與同意全租用戶為基礎的能力。 這可防止您的使用者不小心授與存取權的惡意的應用程式。 這不建議您為嚴重會妨礙您的使用者即可發揮生產力與協力廠商應用程式。  您可以[開啟整合式應用程式](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34)中開啟或關閉的步驟。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>保護 Office 365 專業 cybersecurity 像
-Office 365 訂閱隨附一組功能強大的安全性功能，可用來保護您的資料和您的使用者。  使用[Office 365 安全性藍圖： 前的 30 天、 前 90 天及過後](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)實作 Microsoft 建議的最佳作法為保護您的 Office 365 租用戶。
-- 若要在第一個 30 天內完成的工作。  這些有直接影響，而低影響您的使用者。
-- 若要在 90 天內完成的工作。 這些較多要花時間規劃及實作，但是大幅改善您的安全性狀態。
-- 超過 90 天。 這些增強功能建立您第一張 90 天的工作。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
+您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖：前 30 天、前 90 天前和之後的最高優先順序](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+- 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
+- 要在 90 天內完成的工作。 這些工作需要多一些時間來計劃及實作，但是可以大幅改善您的安全性狀態。
+- 90 天之後。 這些增強功能會在您的前 90 天工作內建置。
 
-## <a name="see-also"></a>另請參閱：
+## <a name="see-also"></a>請參閱：
 - [未預期的應用程式的應用程式] 清單中](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)會逐步引導管理員透過各種動作，他們可能會想要採取之後實現有非預期的應用程式存取資料。
 - [Azure Active directory 整合應用程式] (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)是同意和權限的高階概觀。  請特別注意[同意架構概觀](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework)區段。
 - [問題開發我的應用程式](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map)提供連結至各種同意相關的文章。

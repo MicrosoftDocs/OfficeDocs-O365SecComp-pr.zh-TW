@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用內容搜尋電子文件探索工具來搜尋的項目都已從協力廠商資料來源匯入至 Office 365 中的信箱。 您可以建立查詢以搜尋所有匯入的項目，或是建立查詢以搜尋特定的協力廠商資料類型。 本文列出您可以使用關鍵字查詢來搜尋可匯入至 Office 365 的協力廠商資料類型的值。
-ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263775"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402901"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>使用內容搜尋來搜尋協力廠商資料匯入至 Office 365
 
 您可以使用安全性 & 合規性中心中的 「[內容搜尋電子文件探索工具](content-search.md)來搜尋協力廠商資料來源匯入至 Office 365 中的信箱項目。 您可以建立查詢以搜尋所有匯入的協力廠商資料的項目，或者您可以建立將查詢傳送至只搜尋特定的協力廠商資料的項目。 此外，您也可以建立查詢式保留原則，或查詢為基礎的 eDiscovery 保留來保留在 Office 365 中的協力廠商資料。 
   
-如需有關匯入協力廠商資料與可匯入至 Office 365 的協力廠商資料類型清單的詳細資訊，請參閱[Office 365 中的封存協力廠商資料](archiving-third-party-data.md)。 
+如需匯入協力廠商資料與可匯入至 Office 365 的協力廠商資料類型清單的詳細資訊，請參閱 < <b0>Work with 封存 Office 365 中的協力廠商資料合作夥伴</b0>。 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>建立查詢以搜尋所有協力廠商資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "32263775"
 kind:externaldata AND subject:contoso
 ```
 
-先前的關鍵字查詢範例包含 subject 屬性。 如需協力廠商資料的其他屬性的清單項目，可以包含關鍵字查詢中，請參閱[Office 365 中的封存協力廠商資料](archiving-third-party-data.md#more-information)」 的詳細資訊 」 一節。
+先前的關鍵字查詢範例包含 subject 屬性。 如需協力廠商資料的其他屬性的清單項目，可以包含關鍵字查詢中，請參閱[Work with 封存 Office 365 中的協力廠商資料合作夥伴](work-with-partner-to-archive-third-party-data.md#more-information)」 的詳細資訊 」 一節。
   
 建立查詢以搜尋並保留協力廠商資料時，您也可以使用條件縮小搜尋結果的範圍。 如需建立內容搜尋查詢的詳細資訊，請參閱[關鍵字查詢和搜尋條件的內容搜尋](keyword-queries-and-search-conditions.md)。
   

@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 系統管理員： 了解如何使用匯入服務安全性 & 合規性中心中大量匯入電子郵件資料 （PST 檔案） 到 Exchange Online 中的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
 ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254890"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403021"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
@@ -133,7 +133,7 @@ ms.locfileid: "32254890"
   
 - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    Or
+    或
     
 - 您必須是 Office 365 組織中的全域系統管理員。
     
@@ -202,7 +202,7 @@ Yes, this capability is now available.
   
 - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    Or
+    或
     
 - 您必須是 Office 365 組織中的全域系統管理員。
     
