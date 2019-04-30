@@ -3,207 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>2019 年 3 月 18 日當週
-
-
-| 發佈時間 |主題標題 | 變更 |
-|------|------------|--------|
-| 3/18/2019 | [Office 365 的反詐騙保護](/Office365/SecurityCompliance/anti-spoofing-protection) | 修改時間 |
-| 3/18/2019 | Exchange Online Protection IP 位址 | 移除 |
-| 3/18/2019 | [反惡意程式碼保護常見問題集](/Office365/SecurityCompliance/anti-malware-protection-faq-eop) | 修改時間 |
-| 3/18/2019 | [Office 365 中的內容搜尋](/Office365/SecurityCompliance/content-search) | 修改時間 |
-| 3/18/2019 | [建立、回報及刪除多個內容搜尋](/Office365/SecurityCompliance/create-report-on-and-delete-multiple-content-searches) | 修改時間 |
-| 3/18/2019 | [管理信箱稽核](/Office365/SecurityCompliance/enable-mailbox-auditing) | 修改時間 |
-| 3/18/2019 | [啟用 Office 365-系統管理說明中的無限制封存](/Office365/SecurityCompliance/enable-unlimited-archiving) | 修改時間 |
-| 3/18/2019 | [確定垃圾郵件路由傳送至每一位使用者的垃圾郵件資料夾](/Office365/SecurityCompliance/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder) | 修改時間 |
-| 3/18/2019 | [設定 EOP 的最佳做法](/Office365/SecurityCompliance/eop/best-practices-for-configuring-eop) | 修改時間 |
-| 3/18/2019 | [委派管理常見問題集](/Office365/SecurityCompliance/eop/delegated-administration-faq) | 修改時間 |
-| 3/18/2019 | [EOP 功能](/Office365/SecurityCompliance/eop/eop-features) | 修改時間 |
-| 3/18/2019 | [EOP 一般常見問題集](/Office365/SecurityCompliance/eop/eop-general-faq) | 修改時間 |
-| 3/18/2019 | [EOP 的說明與支援](/Office365/SecurityCompliance/eop/help-and-support-for-eop) | 修改時間 |
-| 3/18/2019 | [管理 EOP 中的群組](/Office365/SecurityCompliance/eop/manage-groups-in-eop) | 修改時間 |
-| 3/18/2019 | [管理 EOP 中的郵件使用者](/Office365/SecurityCompliance/eop/manage-mail-users-in-eop) | 修改時間 |
-| 3/18/2019 | [管理 EOP 中的收件者](/Office365/SecurityCompliance/eop/manage-recipients-in-eop) | 修改時間 |
-| 3/18/2019 | [將網域與設定從某個 EOP 組織移到另一個 EOP 組織](/Office365/SecurityCompliance/eop/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization) | 修改時間 |
-| 3/18/2019 | [套用 EOP 設定到多個租用戶的範例指令碼](/Office365/SecurityCompliance/eop/sample-script-for-applying-eop-settings-to-multiple-tenants) | 修改時間 |
-| 3/18/2019 | [設定 EOP 服務](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | 修改時間 |
-| 3/18/2019 | [Exchange Online Protection 中的 Exchange 系統管理中心](/Office365/SecurityCompliance/exchange-admin-center-in-exchange-online-protection-eop) | 修改時間 |
-| 3/18/2019 | [管理大量郵件寄件者的安全寄件者清單](/Office365/SecurityCompliance/manage-safe-sender-lists-for-bulk-mailers) | 修改時間 |
-| 3/18/2019 | [Office 365 威脅調查及回應](/Office365/SecurityCompliance/office-365-ti) | 修改時間 |
-| 3/18/2019 | [如何避免 Office 365 發生誤判](/Office365/SecurityCompliance/prevent-email-from-being-marked-as-spam) | 修改時間 |
-| 3/18/2019 | [保護內部部署信箱與 Exchange Online Protection](/Office365/SecurityCompliance/protect-on-premises-mailboxes-with-exchange-online-protection) | 修改時間 |
-| 3/18/2019 | [如何減少 Office 365 中的垃圾郵件](/Office365/SecurityCompliance/reduce-spam-email) | 修改時間 |
-| 3/18/2019 | [支援透過 IPv6 的匿名內送電子郵件訊息](/Office365/SecurityCompliance/support-for-anonymous-inbound-email-messages-over-ipv6) | 修改時間 |
-| 3/18/2019 | [疑難排解與支援資訊](/Office365/SecurityCompliance/troubleshooting-and-support-information) | 修改時間 |
-| 3/18/2019 | [未註冊的網域的電子郵件](/Office365/SecurityCompliance/unregistered-domain-email) | 修改時間 |
-| 3/18/2019 | [使用 DKIM 在 Office 365 中的自訂網域中的電子郵件](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改時間 |
-| 3/18/2019 | [零時差自動清除 - 防範垃圾郵件和惡意程式碼](/Office365/SecurityCompliance/zero-hour-auto-purge) | 修改時間 |
-| 3/19/2019 | [進階電子文件 （預覽） 的版本資訊](/Office365/SecurityCompliance/compliance20/release-notes-ediscovery20) | 修改時間 |
-| 3/19/2019 | [為您的組織設定監督原則](/Office365/SecurityCompliance/configure-supervision-policies) | 修改時間 |
-| 3/19/2019 | [檢視安全性中的電子郵件安全性報告&amp;合規性中心](/Office365/SecurityCompliance/view-email-security-reports) | 修改時間 |
-| 3/19/2019 | [快速入門： 設定 Office 365 進階威脅防護](/Office365/SecurityCompliance/checklist-atp-setup) | 已新增 |
-| 3/19/2019 | [Office 365 的反詐騙保護](/Office365/SecurityCompliance/anti-spoofing-protection) | 修改時間 |
-| 3/19/2019 | [Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 修改時間 |
-| 3/19/2019 | [Office 365 中的攻擊模擬器](/Office365/SecurityCompliance/attack-simulator) | 修改時間 |
-| 3/19/2019 | [快速入門： 設定 Office 365 進階威脅防護](/Office365/SecurityCompliance/checklist-atp-setup) | 修改時間 |
-| 3/19/2019 | [啟用報告訊息增益集](/Office365/SecurityCompliance/enable-the-report-message-add-in) | 修改時間 |
-| 3/19/2019 | [開始使用 Office 365 威脅調查及回應](/Office365/SecurityCompliance/get-started-with-ti) | 修改時間 |
-| 3/19/2019 | [尋找並調查惡意電子郵件已傳遞 （Office 365 威脅情報）](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改時間 |
-| 3/19/2019 | [保護您的 Office 365 使用者安全與 Office 365 威脅調查及回應功能](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 修改時間 |
-| 3/19/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
-| 3/19/2019 | [防範 Office 365 中的威脅](/Office365/SecurityCompliance/protect-against-threats) | 修改時間 |
-| 3/19/2019 | [安全性儀表板概觀](/Office365/SecurityCompliance/security-dashboard) | 修改時間 |
-| 3/19/2019 | [Microsoft 365 的 SIEM 伺服器整合](/Office365/SecurityCompliance/siem-server-integration) | 修改時間 |
-| 3/19/2019 | [設定您的 Office 365 租用戶以提高安全性](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | 修改時間 |
-| 3/19/2019 | [Threat management in the Office 365 Security &amp; Compliance Center](/Office365/SecurityCompliance/threat-management) | 修改時間 |
-| 3/19/2019 | [威脅追蹤器 - 新增和值得注意的功能](/Office365/SecurityCompliance/threat-trackers) | 修改時間 |
-| 3/19/2019 | [使用中的安全性威脅總管&amp;合規性中心](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | 修改時間 |
-| 3/19/2019 | [檢視 Office 365 進階威脅防護報告](/Office365/SecurityCompliance/view-reports-for-atp) | 修改時間 |
-| 3/19/2019 | [進階垃圾郵件篩選選項](/Office365/SecurityCompliance/advanced-spam-filtering-asf-options) | 修改時間 |
-| 3/19/2019 | [反惡意程式碼保護常見問題集](/Office365/SecurityCompliance/anti-malware-protection-faq-eop) | 修改時間 |
-| 3/19/2019 | [反惡意程式碼保護](/Office365/SecurityCompliance/anti-malware-protection) | 修改時間 |
-| 3/19/2019 | [反垃圾郵件訊息標頭](/Office365/SecurityCompliance/anti-spam-message-headers) | 修改時間 |
-| 3/19/2019 | [反垃圾郵件保護常見問題集](/Office365/SecurityCompliance/anti-spam-protection-faq) | 修改時間 |
-| 3/19/2019 | [非法回應郵件與 EOP](/Office365/SecurityCompliance/backscatter-messages-and-eop) | 修改時間 |
-| 3/19/2019 | [大量抱怨層級值](/Office365/SecurityCompliance/bulk-complaint-level-values) | 修改時間 |
-| 3/19/2019 | [設定反惡意程式碼原則](/Office365/SecurityCompliance/configure-anti-malware-policies) | 修改時間 |
-| 3/19/2019 | [在 EOP 中設定使用者垃圾郵件通知](/Office365/SecurityCompliance/configure-end-user-spam-notifications-in-eop) | 修改時間 |
-| 3/19/2019 | [Exchange Online 中設定使用者垃圾郵件通知](/Office365/SecurityCompliance/configure-end-user-spam-notifications-in-exchange-online) | 修改時間 |
-| 3/19/2019 | [將 IRM 設定為使用內部部署 AD RMS 伺服器](/Office365/SecurityCompliance/configure-irm-to-use-an-on-premises-ad-rms-server) | 修改時間 |
-| 3/19/2019 | [設定 IRM 以使用 Azure 版權管理](/Office365/SecurityCompliance/configure-irm-to-use-azure-rights-management) | 修改時間 |
-| 3/19/2019 | [Exchange Online 中的 outlook 網頁版設定 S/MIME 設定](/Office365/SecurityCompliance/configure-s-mime-settings-for-outlook-web-app) | 修改時間 |
-| 3/19/2019 | [設定反垃圾郵件原則](/Office365/SecurityCompliance/configure-the-anti-spam-policies) | 修改時間 |
-| 3/19/2019 | [設定連線篩選原則](/Office365/SecurityCompliance/configure-the-connection-filter-policy) | 修改時間 |
-| 3/19/2019 | [設定輸出垃圾郵件原則](/Office365/SecurityCompliance/configure-the-outbound-spam-policy) | 修改時間 |
-| 3/19/2019 | [設定您的垃圾郵件篩選原則](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | 修改時間 |
-| 3/19/2019 | [在 Office 365 中建立整個組織的安全寄件者或封鎖的寄件者清單](/Office365/SecurityCompliance/create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365) | 修改時間 |
-| 3/19/2019 | [Office 365 中的電子郵件加密](/Office365/SecurityCompliance/email-encryption) | 修改時間 |
-| 3/19/2019 | [啟用加密和解密 [EOP]](/Office365/SecurityCompliance/enable-message-encryption-and-decryption-in-office-365) | 修改時間 |
-| 3/19/2019 | [啟用或停用 Office 365 中的安全提示](/Office365/SecurityCompliance/enable-or-disable-safety-tips) | 修改時間 |
-| 3/19/2019 | [確定垃圾郵件路由傳送至每一位使用者的垃圾郵件資料夾](/Office365/SecurityCompliance/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder) | 修改時間 |
-| 3/19/2019 | [行動不便人士的協助工具](/Office365/SecurityCompliance/eop/accessibility-for-people-with-disabilities) | 修改時間 |
-| 3/19/2019 | [EOP 中的稽核報告](/Office365/SecurityCompliance/eop/auditing-reports-in-eop) | 修改時間 |
-| 3/19/2019 | [設定 EOP 的最佳做法](/Office365/SecurityCompliance/eop/best-practices-for-configuring-eop) | 修改時間 |
-| 3/19/2019 | [委派管理常見問題集](/Office365/SecurityCompliance/eop/delegated-administration-faq) | 修改時間 |
-| 3/19/2019 | [EOP 功能](/Office365/SecurityCompliance/eop/eop-features) | 修改時間 |
-| 3/19/2019 | [EOP 一般常見問題集](/Office365/SecurityCompliance/eop/eop-general-faq) | 修改時間 |
-| 3/19/2019 | [EOP 排入佇列、延後和退回的訊息常見問題集](/Office365/SecurityCompliance/eop/eop-queued-deferred-and-bounced-messages-faq) | 修改時間 |
-| 3/19/2019 | [Exchange Online Protection](/Office365/SecurityCompliance/eop/exchange-online-protection-eop) | 修改時間 |
-| 3/19/2019 | [Exchange Online Protection 概觀](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 修改時間 |
-| 3/19/2019 | [EOP 中的功能權限](/Office365/SecurityCompliance/eop/feature-permissions-in-eop) | 修改時間 |
-| 3/19/2019 | [EOP 的說明與支援](/Office365/SecurityCompliance/eop/help-and-support-for-eop) | 修改時間 |
-| 3/19/2019 | [EOP 中的郵件流程](/Office365/SecurityCompliance/eop/mail-flow-in-eop) | 修改時間 |
-| 3/19/2019 | [Exchange Online Protection 中郵件流程規則 （傳輸規則）](/Office365/SecurityCompliance/eop/mail-flow-rules-transport-rules-0) | 修改時間 |
-| 3/19/2019 | [管理 EOP 中的系統管理員角色群組權限](/Office365/SecurityCompliance/eop/manage-admin-role-group-permissions-in-eop) | 修改時間 |
-| 3/19/2019 | [管理 EOP 中的群組](/Office365/SecurityCompliance/eop/manage-groups-in-eop) | 修改時間 |
-| 3/19/2019 | [管理 EOP 中的郵件使用者](/Office365/SecurityCompliance/eop/manage-mail-users-in-eop) | 修改時間 |
-| 3/19/2019 | [管理 EOP 中的收件者及系統管理員角色群組](/Office365/SecurityCompliance/eop/manage-recipients-and-admin-role-groups-in-eop) | 修改時間 |
-| 3/19/2019 | [管理 EOP 中的收件者](/Office365/SecurityCompliance/eop/manage-recipients-in-eop) | 修改時間 |
-| 3/19/2019 | [EOP 中的郵件原則與合規性](/Office365/SecurityCompliance/eop/messaging-policy-and-compliance-in-eop) | 修改時間 |
-| 3/19/2019 | [將網域與設定從某個 EOP 組織移到另一個 EOP 組織](/Office365/SecurityCompliance/eop/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization) | 修改時間 |
-| 3/19/2019 | [透過 Exchange Online Protection 中的檔案附件封鎖功能來降低惡意軟體威脅](/Office365/SecurityCompliance/eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro) | 修改時間 |
-| 3/19/2019 | [Exchange Online Protection 的報告與訊息追蹤](/Office365/SecurityCompliance/eop/reporting-and-message-trace-in-exchange-online-protection) | 修改時間 |
-| 3/19/2019 | [執行 EOP 中的系統管理員角色群組報表](/Office365/SecurityCompliance/eop/run-an-administrator-role-group-report-in-eop-eop) | 修改時間 |
-| 3/19/2019 | [套用 EOP 設定到多個租用戶的範例指令碼](/Office365/SecurityCompliance/eop/sample-script-for-applying-eop-settings-to-multiple-tenants) | 修改時間 |
-| 3/19/2019 | [設定 EOP 服務](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | 修改時間 |
-| 3/19/2019 | [從 Google Postini、Barracuda Spam 與 Virus Firewall 或 Cisco IronPort 切換到 EOP](/Office365/SecurityCompliance/eop/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco) | 修改時間 |
-| 3/19/2019 | [第三方版權注意事項](/Office365/SecurityCompliance/eop/third-party-copyright-notices) | 修改時間 |
-| 3/19/2019 | [EOP 快速入門影片](/Office365/SecurityCompliance/eop/videos-for-getting-started-with-eop) | 修改時間 |
-| 3/19/2019 | [Exchange Online Protection 中的 Exchange 系統管理中心](/Office365/SecurityCompliance/exchange-admin-center-in-exchange-online-protection-eop) | 修改時間 |
-| 3/19/2019 | [對抗垃圾郵件傳送到 Office 365](/Office365/SecurityCompliance/fighting-junk-email) | 修改時間 |
-| 3/19/2019 | [以系統管理員身分找到並釋放被隔離的郵件](/Office365/SecurityCompliance/find-and-release-quarantined-messages-as-an-administrator) | 修改時間 |
-| 3/19/2019 | [逐步解說 - 從儀表板到深入解析](/Office365/SecurityCompliance/from-a-dashboard-to-an-insight) | 修改時間 |
-| 3/19/2019 | [高風險傳遞集區的外寄郵件](/Office365/SecurityCompliance/high-risk-delivery-pool-for-outbound-messages) | 修改時間 |
-| 3/19/2019 | [Office 365 如何使用寄件者原則架構 (SPF) 來防範詐騙](/Office365/SecurityCompliance/how-office-365-uses-spf-to-prevent-spoofing) | 修改時間 |
-| 3/19/2019 | [如何確保郵件不會被標示為垃圾郵件](/Office365/SecurityCompliance/how-to-help-ensure-that-a-message-isn-t-marked-as-spam) | 修改時間 |
-| 3/19/2019 | [Exchange Online 中的資訊版權管理](/Office365/SecurityCompliance/information-rights-management-in-exchange-online) | 修改時間 |
-| 3/19/2019 | [安裝 Microsoft Outlook 的垃圾郵件回報增益集](/Office365/SecurityCompliance/install-the-junk-email-reporting-add-in-for-microsoft-outlook) | 修改時間 |
-| 3/19/2019 | [垃圾郵件報告的 Microsoft Outlook 增益集](/Office365/SecurityCompliance/junk-email-reporting-add-in-for-microsoft-outlook) | 修改時間 |
-| 3/19/2019 | [Office 365 中的郵件流程情報](/Office365/SecurityCompliance/mail-flow-intelligence-in-office-365) | 修改時間 |
-| 3/19/2019 | [管理大量郵件寄件者的安全寄件者清單](/Office365/SecurityCompliance/manage-safe-sender-lists-for-bulk-mailers) | 修改時間 |
-| 3/19/2019 | [Office 365 威脅調查及回應](/Office365/SecurityCompliance/office-365-ti) | 修改時間 |
-| 3/19/2019 | [將信箱設定為訴訟資料暫留狀態](/Office365/SecurityCompliance/place-a-mailbox-on-litigation-hold) | 修改時間 |
-| 3/19/2019 | [保留電子文件探索密件副本與展開的通訊群組收件者](/Office365/SecurityCompliance/preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery) | 修改時間 |
-| 3/19/2019 | [置於就地保留虛刪除的信箱在 Exchange Online](/Office365/SecurityCompliance/put-an-in-place-hold-on-a-soft-deleted-mailbox) | 修改時間 |
-| 3/19/2019 | [隔離常見問題集](/Office365/SecurityCompliance/quarantine-faq) | 修改時間 |
-| 3/19/2019 | [隔離區](/Office365/SecurityCompliance/quarantine) | 修改時間 |
-| 3/19/2019 | [參照原則、 實務和指導方針](/Office365/SecurityCompliance/reference-policies-practices-and-guidelines) | 修改時間 |
-| 3/19/2019 | [傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者](/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam) | 修改時間 |
-| 3/19/2019 | [報告的網頁型 Outlook 中的垃圾郵件和網路釣魚詐騙](/Office365/SecurityCompliance/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop) | 修改時間 |
-| 3/19/2019 | [向 Microsoft 回報垃圾郵件](/Office365/SecurityCompliance/report-junk-email-messages-to-microsoft) | 修改時間 |
-| 3/19/2019 | [可用於訊息簽署和加密在 Exchange Online 中的 S/MIME](/Office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) | 修改時間 |
-| 3/19/2019 | [安全寄件者和封鎖的寄件者會列出在 Exchange Online](/Office365/SecurityCompliance/safe-sender-and-blocked-sender-lists-faq) | 修改時間 |
-| 3/19/2019 | [當寄件者被封鎖無法傳送輸出垃圾郵件的範例通知](/Office365/SecurityCompliance/sample-notification-when-a-sender-is-blocked-sending-outbound-spam) | 修改時間 |
-| 3/19/2019 | [搜尋並刪除郵件 - 管理中心說明](/Office365/SecurityCompliance/search-for-and-delete-messagesadmin-help) | 修改時間 |
-| 3/19/2019 | [傳送及接收 S/MIME 簽署和加密的 Exchange Online 中的電子郵件](/Office365/SecurityCompliance/send-and-receive-s-mime-signed-and-encrypted-email) | 修改時間 |
-| 3/19/2019 | [傳送郵件至 Office 365](/Office365/SecurityCompliance/sending-mail-to-office-365) | 修改時間 |
-| 3/19/2019 | [服務的非客戶傳送郵件到 Office 365](/Office365/SecurityCompliance/services-for-non-customers) | 修改時間 |
-| 3/19/2019 | [在 Office 365 中設定 SPF 以協助防止詐騙](/Office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) | 修改時間 |
-| 3/19/2019 | [設定虛擬憑證集合在 Exchange Online 以驗證 S/MIME](/Office365/SecurityCompliance/set-up-virtual-certificate-collection-to-validate-s-mime) | 修改時間 |
-| 3/19/2019 | [垃圾郵件信賴等級](/Office365/SecurityCompliance/spam-confidence-levels) | 修改時間 |
-| 3/19/2019 | [將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](/Office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis) | 修改時間 |
-| 3/19/2019 | [將惡意程式碼與非惡意程式碼提交給 Microsoft 進行分析](/Office365/SecurityCompliance/submitting-malware-and-non-malware-to-microsoft-for-analysis) | 修改時間 |
-| 3/19/2019 | [支援透過 IPv6 的匿名內送電子郵件訊息](/Office365/SecurityCompliance/support-for-anonymous-inbound-email-messages-over-ipv6) | 修改時間 |
-| 3/19/2019 | [支援 DKIM 簽署郵件的驗證](/Office365/SecurityCompliance/support-for-validation-of-dkim-signed-messages) | 修改時間 |
-| 3/19/2019 | [將使用者憑證同步至 Office 365 進行 S/MIME 處理](/Office365/SecurityCompliance/sync-user-certificates-to-office-365-for-s-mime) | 修改時間 |
-| 3/19/2019 | [疑難排解與支援資訊](/Office365/SecurityCompliance/troubleshooting-and-support-information) | 修改時間 |
-| 3/19/2019 | [將疑難排解郵件傳送艮 Office 365](/Office365/SecurityCompliance/troubleshooting-mail-sent-to-office-365) | 修改時間 |
-| 3/19/2019 | [關閉 reporting 網頁型 Outlook 中的垃圾郵件](/Office365/SecurityCompliance/turn-off-junk-email-reporting-in-outlook-on-the-web) | 修改時間 |
-| 3/19/2019 | [使用 DKIM 在 Office 365 中的自訂網域中的電子郵件](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改時間 |
-| 3/19/2019 | [使用 DMARC 來驗證 Office 365 中的電子郵件](/Office365/SecurityCompliance/use-dmarc-to-validate-email) | 修改時間 |
-| 3/19/2019 | [利用使用者垃圾郵件通知來釋放並回報被當成垃圾郵件隔離的郵件](/Office365/SecurityCompliance/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages) | 修改時間 |
-| 3/19/2019 | [使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容](/Office365/SecurityCompliance/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft) | 修改時間 |
-| 3/19/2019 | [使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](/Office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages) | 修改時間 |
-| 3/19/2019 | [使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除](/Office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis) | 修改時間 |
-| 3/19/2019 | [使用郵件流程規則來設定 Exchange Online Protection 中篩選大量電子郵件](/Office365/SecurityCompliance/use-transport-rules-to-configure-bulk-email-filtering) | 修改時間 |
-| 3/19/2019 | [保護電子郵件的快速入門影片](/Office365/SecurityCompliance/videos-for-getting-started-with-protecting-your-email) | 修改時間 |
-| 3/19/2019 | [垃圾郵件和大量電子郵件有什麼不同?](/Office365/SecurityCompliance/what-s-the-difference-between-junk-email-and-bulk-email) | 修改時間 |
-| 3/20/2019 | [為您的組織設定監督原則](/Office365/SecurityCompliance/configure-supervision-policies) | 修改時間 |
-| 3/20/2019 | [建立關鍵字字典](/Office365/SecurityCompliance/create-a-keyword-dictionary) | 修改時間 |
-| 3/20/2019 | [Office 365 中的監督原則](/Office365/SecurityCompliance/supervision-policies) | 修改時間 |
-| 3/20/2019 | [安全性與合規性中心內的郵件流程深入解析](/Office365/SecurityCompliance/mail-flow-insights-v2) | 已新增 |
-| 3/20/2019 | [自動轉寄訊息的報告](/Office365/SecurityCompliance/mfi-auto-forwarded-messages-report) | 修改時間 |
-| 3/20/2019 | [上層網域郵件流程狀態深入解析](/Office365/SecurityCompliance/mfi-domain-mail-flow-status-insight) | 已新增 |
-| 3/20/2019 | [郵件流程地圖報表](/Office365/SecurityCompliance/mfi-mail-flow-map-report) | 已新增 |
-| 3/20/2019 | [郵件迴圈深入解析](/Office365/SecurityCompliance/mfi-mail-loop-insight) | 修改時間 |
-| 3/20/2019 | [非公認的網域報表](/Office365/SecurityCompliance/mfi-non-accepted-domain-report) | 已新增 |
-| 3/20/2019 | [未傳遞報告](/Office365/SecurityCompliance/mfi-non-delivery-report) | 已新增 |
-| 3/20/2019 | [外寄和內送的郵件流程](/Office365/SecurityCompliance/mfi-outbound-and-inbound-mail-flow) | 修改時間 |
-| 3/20/2019 | [佇列的警示和佇列](/Office365/SecurityCompliance/mfi-queue-alerts-and-queues) | 修改時間 |
-| 3/20/2019 | [修正寄件者網域深入解析](/Office365/SecurityCompliance/mfi-sender-domain-insight) | 已新增 |
-| 3/20/2019 | [緩慢的郵件流程規則深入解析](/Office365/SecurityCompliance/mfi-slow-mail-flow-rules-insight) | 修改時間 |
-| 3/20/2019 | [SMTP 驗證的用戶端報告](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | 已新增 |
-| 3/21/2019 | [自動化的調查及回應 （空調） 與 Office 365 威脅情報](/Office365/SecurityCompliance/automated-investigation-response-office) | 已新增 |
-| 3/21/2019 | [尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電子郵件](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改時間 |
-| 3/21/2019 | [Office 365 威脅調查及回應](/Office365/SecurityCompliance/office-365-ti) | 修改時間 |
-| 3/21/2019 | [威脅總管檢視](/Office365/SecurityCompliance/threat-explorer-views) | 已新增 |
-| 3/21/2019 | [使用中的安全性威脅總管&amp;合規性中心](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | 修改時間 |
-| 3/21/2019 | [使用敏感度標籤中的加密來限制內容的存取](/Office365/SecurityCompliance/encryption-sensitivity-labels) | 修改時間 |
-| 3/21/2019 | [敏感度標籤概觀](/Office365/SecurityCompliance/sensitivity-labels) | 修改時間 |
-| 3/21/2019 | [處理資料時發生補救錯誤](/Office365/SecurityCompliance/compliance20/error-remediation) | 修改時間 |
-| 3/21/2019 | [將非 Office 365 的資料載入工作集](/Office365/SecurityCompliance/compliance20/load-non-office365-data) | 修改時間 |
-| 3/21/2019 | [管理工作，在 [進階電子文件 （預覽）](/Office365/SecurityCompliance/compliance20/managing-jobs-ediscovery20) | 修改時間 |
-| 3/21/2019 | [在進階電子文件 （預覽） 中支援的檔案類型](/Office365/SecurityCompliance/compliance20/supported-filetypes-ediscovery20) | 修改時間 |
-| 3/21/2019 | [疑難排解 AzCopy 在進階電子文件 （預覽）](/Office365/SecurityCompliance/compliance20/troubleshooting-azcopy) | 已新增 |
-| 3/22/2019 | [Office 365 的反網路釣魚保護](/Office365/SecurityCompliance/anti-phishing-protection) | 修改時間 |
-| 3/22/2019 | [Office 365 的反詐騙保護](/Office365/SecurityCompliance/anti-spoofing-protection) | 修改時間 |
-| 3/22/2019 | [自動化的調查及回應 （空調） 與 Office 365](/Office365/SecurityCompliance/automated-investigation-response-office) | 修改時間 |
-| 3/22/2019 | [對於 Office 365 遭入侵電子郵件帳戶的回覆](/Office365/SecurityCompliance/responding-to-a-compromised-email-account) | 修改時間 |
-| 3/22/2019 | [警示原則在 Office 365 安全性&amp;合規性中心](/Office365/SecurityCompliance/alert-policies) | 修改時間 |
-| 3/22/2019 | [搜尋的惡意程式碼和其他 Microsoft 365 中的威脅](/Office365/SecurityCompliance/hunting) | 已新增 |
-| 3/22/2019 | [了解的最新的攻擊行銷活動和威脅分析與技巧](/Office365/SecurityCompliance/latest-attack-campaigns) | 已新增 |
-| 3/22/2019 | [Microsoft 安全分數](/Office365/SecurityCompliance/microsoft-secure-score) | 修改時間 |
-| 3/22/2019 | [在 Microsoft 365 安全性中監視和報告身分識別](/Office365/SecurityCompliance/monitor-and-report-identities) | 已新增 |
-| 3/22/2019 | [Microsoft 365 安全性中的監視和報告應用程式狀態](/Office365/SecurityCompliance/monitor-apps) | 已新增 |
-| 3/22/2019 | [在 Microsoft 365 安全性監視及報告資料](/Office365/SecurityCompliance/monitor-data) | 已新增 |
-| 3/22/2019 | [在 Microsoft 365 安全性中監視裝置](/Office365/SecurityCompliance/monitor-devices) | 已新增 |
-| 3/22/2019 | [監視及報告安全性狀態，Microsoft 365 安全中心](/Office365/SecurityCompliance/monitoring-and-reporting) | 已新增 |
-| 3/22/2019 | [Microsoft 365 安全性中心概觀](/Office365/SecurityCompliance/overview-security-center) | 已新增 |
-| 3/22/2019 | [保護 SharePoint Online 網站與檔案](/Office365/SecurityCompliance/secure-sharepoint-online-sites-and-files) | 修改時間 |
-| 3/22/2019 | [將標籤套用至 Office 365 中的個人資料](/Office365/SecurityCompliance/apply-labels-to-personal-data-in-office-365) | 修改時間 |
-| 3/22/2019 | [設計個人資料的分類結構描述](/Office365/SecurityCompliance/architect-a-classification-schema-for-personal-data) | 修改時間 |
-
-
 ## <a name="week-of-march-25-2019"></a>2019 年 3 月 25 日當週
 
 
@@ -748,3 +547,31 @@
 | 4/19/2019 | [稽核共用來找出與外部使用者共用的資源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改時間 |
 | 4/19/2019 | [將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](/Office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis) | 修改時間 |
 | 4/19/2019 | [動態傳遞和預覽與 Office 365 ATP 安全附件](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | 修改時間 |
+
+
+## <a name="week-of-april-22-2019"></a>2019 年 4 月 22 日當週
+
+
+| 發佈時間 |主題標題 | 變更 |
+|------|------------|--------|
+| 4/22/2019 | [現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心個](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 修改時間 |
+| 4/22/2019 | [保護使用者和裝置存取權](/Office365/SecurityCompliance/protect-access-to-data-and-services) | 修改時間 |
+| 4/22/2019 | [防範 Office 365 中的威脅](/Office365/SecurityCompliance/protect-against-threats) | 修改時間 |
+| 4/23/2019 | [Overview of importing your organization PST files to Office 365](/Office365/SecurityCompliance/importing-pst-files-to-office-365) | 修改時間 |
+| 4/23/2019 | [Office 365 中的監督原則](/Office365/SecurityCompliance/supervision-policies) | 修改時間 |
+| 4/23/2019 | [偵測並修復 Office 365 中的非法同意授權](/Office365/SecurityCompliance/detect-and-remediate-illicit-consent-grants) | 修改時間 |
+| 4/23/2019 | [在安全性 & 規範中心啟用封存信箱](/Office365/SecurityCompliance/enable-archive-mailboxes) | 修改時間 |
+| 4/23/2019 | [Office 365 安全性 & 合規性中心的權限](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 修改時間 |
+| 4/24/2019 | [Office 365 稽核記錄中的詳細內容](/Office365/SecurityCompliance/detailed-properties-in-the-office-365-audit-log) | 修改時間 |
+| 4/24/2019 | [防範 Office 365 中的威脅](/Office365/SecurityCompliance/protect-against-threats) | 修改時間 |
+| 4/24/2019 | Threat management in the Office 365 Security &amp; Compliance Center | 移除 |
+| 4/24/2019 | [在 Office 365 中搜尋內容](/Office365/SecurityCompliance/search-for-content) | 修改時間 |
+| 4/25/2019 | [在 Microsoft 365 安全性中監視裝置](/Office365/SecurityCompliance/monitor-devices) | 修改時間 |
+| 4/25/2019 | [Office 365 中封存協力廠商資料](/Office365/SecurityCompliance/archiving-third-party-data) | 修改時間 |
+| 4/25/2019 | [使用內容搜尋來搜尋協力廠商資料匯入至 Office 365](/Office365/SecurityCompliance/use-content-search-to-search-third-party-data-that-was-imported) | 修改時間 |
+| 4/25/2019 | [為 Office 365 應用程式部署條件式存取應用程式控制](/Office365/SecurityCompliance/ocas-deploy-conditional-access-app-control) | 修改時間 |
+| 4/25/2019 | [Office 365 雲端 App 安全性中的工作階段原則](/Office365/SecurityCompliance/ocas-session-policies) | 修改時間 |
+| 4/25/2019 | [Exchange Online Protection 概觀](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 修改時間 |
+| 4/26/2019 | [Office 365 隔離和 Office 365 中的存取控制](/Office365/SecurityCompliance/office-365-isolation-in-office-365) | 修改時間 |
+| 4/26/2019 | [資料外洩防護原則概觀](/Office365/SecurityCompliance/data-loss-prevention-policies) | 修改時間 |
+| 4/26/2019 | [DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作](/Office365/SecurityCompliance/how-dlp-works-between-admin-centers) | 修改時間 |

@@ -1,5 +1,5 @@
 ---
-title: Exchange Online 的資訊版權管理
+title: 使用 AD RMS 的 Exchange Online 郵件加密
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
-description: 人員通常會使用電子郵件來交換機密資訊，例如財務資料、法律合約、機密產品資訊、銷售報告和預測、病患健康資訊，或是客戶和員工資訊。因此，信箱可能會成為大量潛在機密資訊的存放庫，而且資訊外洩可能會變成組織的嚴重威脅。
-ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 您可以設定 Exchange Online IRM 設定為使用內部部署 Active Directory 版權管理服務 (AD RMS)，如有需要以滿足您組織的需求。 這並不常見。 如果您沒有使用 AD RMS 的需求，請改為使用 Office 郵件加密。
+ms.openlocfilehash: 423c6008a55539123b76225458a39c4f98e7725d
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253981"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470383"
 ---
-# <a name="information-rights-management-in-exchange-online"></a>Exchange Online 的資訊版權管理
+# <a name="exchange-online-mail-encryption-with-ad-rms"></a>使用 AD RMS 的 Exchange Online 郵件加密
 
-人員通常會使用電子郵件來交換機密資訊，例如財務資料、法律合約、機密產品資訊、銷售報告和預測、病患健康資訊，或是客戶和員工資訊。因此，信箱可能會成為大量潛在機密資訊的存放庫，而且資訊外洩可能會變成組織的嚴重威脅。
-  
-為了防止資訊外洩，Exchange Online 包含資訊版權管理 (IRM) 功能，可針對電子郵件訊息和附件提供線上和離線保護。 可以由使用者在 Microsoft Outlook 或網頁型 Outlook 中套用 IRM 保護，它可以套用由系統管理員使用傳輸保護規則或 Outlook 保護規則。 IRM 可協助您和使用者控制能夠存取、轉寄、列印或複製電子郵件中之機密資料的人員。
+為了防止資訊外洩，Exchange Online 包含資訊版權管理 (IRM) 功能，可針對電子郵件訊息和附件提供線上和離線保護。 您可以設定 Exchange Online IRM 設定為使用內部部署 Active Directory 版權管理服務 (AD RMS)，如有需要以滿足您組織的需求。 這並不常見。 如果您沒有使用 AD RMS 的需求，請改為使用[Office 郵件加密](ome.md)。 
+
+可以由使用者在 Microsoft Outlook 或網頁型 Outlook 中套用 IRM 保護，它可以套用由系統管理員使用傳輸保護規則或 Outlook 保護規則。 IRM 可協助您和使用者控制能夠存取、轉寄、列印或複製電子郵件中之機密資料的人員。
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>對 Office 365 郵件加密 (OME) 與 Azure Active Directory IRM 的運作方式
 

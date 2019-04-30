@@ -15,20 +15,27 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 了解 Office 365 中的監督原則
-ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 4399ea298d467a9ab7f395a51d23b2f9f783231b
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403041"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470423"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
 
-Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查。 您可以定義擷取內部和外部的電子郵件、 Microsoft Teams 或在組織中的第 3 廠商通訊的特定原則。 檢閱者就可以檢查以確定其符合您組織的郵件標準，並加以解決與分類類型的郵件。 這些原則也可以協助您克服許多新式規範挑戰，包括監視增加類型的通訊通道，增加大量郵件資料與法規強制執行 & 罰鍰等的風險。
+Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查。 您可以定義擷取內部和外部的電子郵件、 Microsoft Teams 或在組織中的第 3 廠商通訊的特定原則。 檢閱者就可以檢查以確定其符合您組織的郵件標準，並加以解決與分類類型的郵件。 
 
-在某些組織中，可能會有職責劃分 IT 支援與 [規範管理] 群組之間的區隔。 Office 365 支援與監督原則支援功能和原則的組態設定租用戶和作用於擷取通訊之間的分隔。 例如，組織的 IT 群組可能會負責設定要支援監督原則設定及管理組織的規範小組的角色權限及群組。
+這些原則也可以協助您克服許多新式規範挑戰，包括：
+
+- 監視增加類型的通訊通道
+- 增加磁碟區的郵件資料
+- 法規強制執行 & 罰鍰等的風險。
+
+在某些組織中，可能會有職責劃分 IT 支援與 [規範管理] 群組之間的區隔。 Office 365 支援監督原則功能設定和原則的設定之間的分隔擷取通訊。 例如，組織的 IT 群組可能會負責設定要支援監督原則設定及管理組織的規範小組的角色權限及群組。
+
+若要深入了解即將來臨的監督功能改良和可用性，請參閱[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ## <a name="scenarios-for-supervision-policies"></a>監督原則的案例
 
@@ -86,9 +93,9 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 
 根據預設，**方向是**條件會顯示，且無法加以移除。 在原則中的通訊方向設定都已選取個別或一起：
 
-- **輸入**，您可以選擇**輸入**所傳送的通訊**來**檢閱您選擇要監管**從**人員不包含在原則中的人員。
-- **輸出**-您可以選擇**從**傳送**輸出**如果您想要檢閱通訊您選擇要監管**至**人員不包含在原則中的人員。
-- **Internal** -您可以選擇要檢閱傳送的通訊**之間**的**內部**您指定的人員在原則中。
+- **輸入**： 您可以選擇**輸入**所傳送的通訊**來**檢閱您選擇要監管**從**人員不包含在原則中的人員。
+- **輸出**： 您可以選擇**從**傳送**輸出**如果您想要檢閱通訊您選擇要監管**至**人員不包含在原則中的人員。
+- **Internal**： 您可以選擇要檢閱傳送的通訊**之間**的**內部**您指定的人員在原則中。
 
 #### <a name="sensitive-information-types"></a>敏感資訊類型
 
@@ -103,7 +110,28 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
 
 #### <a name="custom-keyword-dictionaries"></a>自訂的關鍵字字典
 
-設定自訂的關鍵字字典 （或 lexicons） 可以提供簡單管理的組織或產業特定的關鍵字，並可支援最多 100000 的字詞，每個字典。 如有需要您可以將多個自訂的關鍵字字典套用到單一原則，或有單一關鍵字字典每個原則。 這些字典會指派監督原則中，而且可以源自檔案 （例如.csv 或.txt 清單），或從清單中您可以[在 「 規範中心中匯入](create-a-keyword-dictionary.md)。
+設定自訂的關鍵字字典 （lexicons） 來提供簡單管理的組織或產業特定的關鍵字。 關鍵字字典支援最多 100000 的字詞，每個字典。 如有需要您可以將多個自訂的關鍵字字典套用到單一原則，或有單一關鍵字字典每個原則。 這些字典會指派監督原則中，而且可以源自檔案 （例如.csv 或.txt 清單），或從清單中您可以[在 「 規範中心中匯入](create-a-keyword-dictionary.md)。
+
+#### <a name="offensive-language"></a>冒犯的語言
+
+監視器或傳送電子郵件訊息送達您的組織不良的語言。 模型會使用機器學習、 人工地智慧組合和關鍵字]，以識別不當的電子郵件反騷擾與網路凌監控需求的一部分。 若要防止或封鎖冒犯通訊的組織中，建立使用[自訂的關鍵字字典](create-a-keyword-dictionary.md)冒犯性字詞的[資料外洩防護原則](create-test-tune-dlp-policy.md)。
+
+冒犯模型目前支援英文關鍵字，並監視的電子郵件內文。 冒犯模型監視舉動下列幾種語言相關聯的電子郵件：
+
+|**類型**|**描述**|
+|:-----|:-----|
+| **Profanities** | 運算式，並不適用，並讓大部分的人員。 |
+| **Slurs** | 文化特性和 ethnicities 來進行攻擊的運算式。 |
+| **嘲諷** | 嘲諷、 condemn，以及 ridicule 的運算式。 |
+| **障礙的參照** | 目標身體或心理障礙的運算式。 |
+| **Squalid 語言** | 性別興趣和實體 cleanliness 狀態為目標的運算式。 |
+| **Homophobia** | 目標性別喜好設定的運算式。 |
+| **Racism** | 競爭和 ethnicity 為目標的運算式。 |
+| **Extremism** | 宗教和政治 ideologies 為目標的運算式。 |
+| **偽裝** | 意義與發音的另一個更冒犯性字詞相同的運算式。 |
+| **挑逗語言** | 可能會造成憤怒或暴力的運算式。 |
+| **Taboo** | 通常不是適當禮貌 societal 通訊中的運算式。 |
+| **類似的語言** | 運算式，缺少禮貌最節省和，且可能強光 」 粗略。 |
 
 #### <a name="conditional-settings"></a>條件式設定
 
@@ -113,14 +141,14 @@ Office 365 中的監督原則可讓您擷取員工通訊，指定檢閱者檢查
   
 |**條件**|**如何使用這種情況**|
 |:-----|:-----|
-| 從任何這些網域接收郵件  <br><br> 從任何這些網域不接收郵件 | 若要將原則套用特定的網域是包含或排除在收到的郵件時，輸入每個網域，並以逗號分隔多個網域。 您輸入的每個網域會分別套用 （只有一個這些網域必須套用的原則套用至郵件）。 |
-| 訊息會傳送至這些網域的任何  <br><br> 郵件不會傳送給任何這些網域 | 若要將原則套用特定的網域是包含或排除在傳送郵件時，輸入每個網域，並以逗號分隔多個網域。 您輸入的每個網域會分別套用 （只有一個這些網域必須套用的原則套用至郵件）。 |
-| 郵件被分類與任何這些標籤  <br><br> 訊息不使用任何這些標籤的分類 | 若要將原則套用時內含或排除在郵件中特定保留標籤。 保留標籤必須個別設定，並設定的標籤所選為此條件的一部分。 您選擇每個標籤分別套用 （只有一個這些標籤必須套用的原則套用至郵件）。 如需設定保留標籤的詳細資訊，請參閱 < <b0>Overview of 保留標籤</b0>。|
-| 郵件會包含任何這些字詞  <br><br> 郵件會包含任何這些字詞 | 若要包含或排除在郵件中特定單字或片語時，請套用原則，請輸入每個單字或片語的個別行上。 您輸入的文字的每一行會分別套用 （只有一個這些行必須套用的原則套用至郵件）。 如需輸入單字或片語的詳細資訊，請參閱 [下一步] 區段中[比對單字和片語的電子郵件或附件](supervision-policies.md#Matchwords)。|
-| 附件包含任何這些字詞  <br><br> 附件包含任何這些字詞的項目 | 若要包含或排除 （例如 Word 文件） 的郵件附件中特定單字或片語時，請套用原則，請輸入每個單字或片語的個別行上。 您輸入的文字的每一行會分別套用 （只有一列必須套用的原則套用至附件）。 如需輸入單字或片語的詳細資訊，請參閱 [下一步] 區段中[比對單字和片語的電子郵件或附件](supervision-policies.md#Matchwords)。|
-| 附件是任何這些檔案類型  <br><br> 附件為 none 這些檔案類型 | 若要監管通訊，包括或排除特定類型的附件，請輸入副檔名 （例如.exe 或.pdf）。 如果您想要包含或排除多個副檔名，請輸入這些在不同行。 只有一個附件副檔名必須符合要套用的原則。|
-| 郵件大小大於  <br><br> 郵件大小不大於 | 若要檢閱根據特定大小的郵件，使用這些條件來指定它受到檢閱之前，可以將郵件的最大值或最小大小。 例如，如果您指定**的郵件大小大於** \> **1.0 MB**，所有郵件，1.01 MB，而較大為受到檢閱。 您可以選擇位元組、 kb、 （mb） 或 gb 這個狀況。|
-| 附件大於  <br><br> 附件不大於 | 若要檢閱根據其附件的大小的郵件，指定附件的最大值或最小大小可再將郵件和其附件會受到檢閱。 例如，如果您指定**附件大於** \> **2.0 MB**，所有郵件附件 2.01 MB，超過為受到檢閱。 您可以選擇位元組、 kb、 （mb） 或 gb 這個狀況。|
+| **從任何這些網域接收郵件**  <br><br> **從任何這些網域不接收郵件** | 若要將原則套用特定的網域是包含或排除在收到的郵件時，輸入每個網域，並以逗號分隔多個網域。 您輸入的每個網域會分別套用 （只有一個這些網域必須套用的原則套用至郵件）。 |
+| **訊息會傳送至這些網域的任何**  <br><br> **郵件不會傳送給任何這些網域** | 若要將原則套用特定的網域是包含或排除在傳送郵件時，輸入每個網域，並以逗號分隔多個網域。 您輸入的每個網域會分別套用 （只有一個這些網域必須套用的原則套用至郵件）。 |
+| **郵件被分類與任何這些標籤**  <br><br> **訊息不使用任何這些標籤的分類** | 若要將原則套用時內含或排除在郵件中特定保留標籤。 保留標籤必須個別設定，並設定的標籤所選為此條件的一部分。 您選擇每個標籤分別套用 （只有一個這些標籤必須套用的原則套用至郵件）。 如需設定保留標籤的詳細資訊，請參閱 < <b0>Overview of 保留標籤</b0>。|
+| **郵件會包含任何這些字詞**  <br><br> **郵件會包含任何這些字詞** | 若要包含或排除在郵件中特定單字或片語時，請套用原則，請輸入每個單字或片語的個別行上。 您輸入的文字的每一行會分別套用 （只有一個這些行必須套用的原則套用至郵件）。 如需輸入單字或片語的詳細資訊，請參閱 [下一步] 區段中[比對單字和片語的電子郵件或附件](supervision-policies.md#Matchwords)。|
+| **附件包含任何這些字詞**  <br><br> **附件包含任何這些字詞的項目** | 若要包含或排除 （例如 Word 文件） 的郵件附件中特定單字或片語時，請套用原則，請輸入每個單字或片語的個別行上。 您輸入的文字的每一行會分別套用 （只有一列必須套用的原則套用至附件）。 如需輸入單字或片語的詳細資訊，請參閱 [下一步] 區段中[比對單字和片語的電子郵件或附件](supervision-policies.md#Matchwords)。|
+| **附件是任何這些檔案類型**  <br><br> **附件為 none 這些檔案類型** | 若要監管通訊，包括或排除特定類型的附件，請輸入副檔名 （例如.exe 或.pdf）。 如果您想要包含或排除多個副檔名，請輸入這些在不同行。 只有一個附件副檔名必須符合要套用的原則。|
+| **郵件大小大於**  <br><br> **郵件大小不大於** | 若要檢閱根據特定大小的郵件，使用這些條件來指定它受到檢閱之前，可以將郵件的最大值或最小大小。 例如，如果您指定**的郵件大小大於** \> **1.0 MB**，所有郵件，1.01 MB，而較大為受到檢閱。 您可以選擇位元組、 kb、 （mb） 或 gb 這個狀況。|
+| **附件大於**  <br><br> **附件不大於** | 若要檢閱根據其附件的大小的郵件，指定附件的最大值或最小大小可再將郵件和其附件會受到檢閱。 例如，如果您指定**附件大於** \> **2.0 MB**，所有郵件附件 2.01 MB，超過為受到檢閱。 您可以選擇位元組、 kb、 （mb） 或 gb 這個狀況。|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>比對單字和片語，以電子郵件或附件
 <a name="Matchwords"></a>分別套用每一行的您輸入的字數 （只有一列必須套用原則條件套用至電子郵件或附件）。 例如，讓我們使用的條件，**郵件會包含任何這些字詞**，關鍵字 」 也 」 與 「 測試人員貿易 」 在不同行。 原則已套用到任何包含單字"也 」 或片語 「 測試人員貿易 」 的郵件。 僅是其中一個這些單字或片語必須發生以套用此原則條件。 郵件或附件中的文字必須完全符合您的輸入。
@@ -231,14 +259,14 @@ Outlook 中，檢閱者可以進行下列作業：
   
 |**標記類型**|**其意思**|
 |:-----|:-----|
-| 不檢閱 | 不檢閱尚未的電子郵件數目。 這些電子郵件會等候檢視或在 Outlook 或網頁型 Outlook 中的檢閱者監督資料夾中的 Office 365 監督儀表板。
-| Compliant | 檢閱及標記為相容的電子郵件數目。 這些郵件仍需要解決方法。 |
-| 有疑問的 | 檢閱及標示可疑的電子郵件數目。 這可協助其他檢閱者的旗標作為檢查電子郵件是否需要調查的合規性。 這些郵件仍需要解決方法。 |
-| 不相容 （作用中） | 不相容目前正在調查的檢閱者的電子郵件數目。 |
-| 不相容 （解析） | 不相容的檢閱者調查並解決電子郵件數目。 |
-| 瀏覽原則 | 總數 （每日） 來自 Exchange、 小組及協力廠商資料來源符合監督原則中定義的一或多個條件的郵件 |
-| 在 [Purview | 總數 （每日） 來自 Exchange、 小組，並掃描由監督原則的協力廠商資料來源 |
-| Resolved | 從 Exchange、 小組及歸類為**已解決**的協力廠商資料來源的訊息總數|
+| **不檢閱** | 不檢閱尚未的電子郵件數目。 這些電子郵件會等候檢視或在 Outlook 或網頁型 Outlook 中的檢閱者監督資料夾中的 Office 365 監督儀表板。
+| **Compliant** | 檢閱及標記為相容的電子郵件數目。 這些郵件仍需要解決方法。 |
+| **有疑問的** | 檢閱及標示可疑的電子郵件數目。 這可協助其他檢閱者的旗標作為檢查電子郵件是否需要調查的合規性。 這些郵件仍需要解決方法。 |
+| **不相容 （作用中）** | 不相容目前正在調查的檢閱者的電子郵件數目。 |
+| **不相容 （解析）** | 不相容的檢閱者調查並解決電子郵件數目。 |
+| **瀏覽原則** | 總數 （每日） 來自 Exchange、 小組及協力廠商資料來源符合監督原則中定義的一或多個條件的郵件 |
+| **在 [Purview** | 總數 （每日） 來自 Exchange、 小組，並掃描由監督原則的協力廠商資料來源 |
+| **Resolved** | 從 Exchange、 小組及歸類為**已解決**的協力廠商資料來源的訊息總數|
 
 > [!NOTE]
 > 監督原則必須先佈建之前它們會出現在此報告中。 此外，如果刪除原則，仍會顯示歷程資料。 不過，它們指定為 「 非存在原則 」，並**匯出**函數無法使用。
@@ -251,10 +279,10 @@ Outlook 中，檢閱者可以進行下列作業：
 
 |**活動**|**相關聯的命令**|
 |:-----|:-----|
-| 建立原則 | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| 編輯原則 | [Set-supervisoryreviewpolicyv2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-supervisoryreviewrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| 刪除原則| [Remove-supervisoryreviewpolicyv2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| 檢視原則 | [取得 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
+| **建立原則** | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| **編輯原則** | [Set-supervisoryreviewpolicyv2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-supervisoryreviewrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| **刪除原則** | [Remove-supervisoryreviewpolicyv2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **檢視原則** | [取得 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 檢視稽核活動整合的稽核記錄檔中，或使用[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet。
 
