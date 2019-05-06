@@ -260,22 +260,8 @@
 ### [複製內容搜尋](clone-a-content-search.md)
 
 # [管理法律調查](manage-legal-investigations.md)
-## [建立及管理電子文件探索案例](ediscovery-cases.md)
-## [指派電子文件探索權限](assign-ediscovery-permissions.md)
-## [設定 Office 365 中電子文件探索調查的合規性界限](set-up-compliance-boundaries.md)
-## [電子文件探索解決方案系列 - 資料外洩案例 - 搜尋及清除](data-spillage-scenariosearch-and-purge.md)
-## [準備進階電子文件探索的搜尋結果](prepare-search-results-for-advanced-ediscovery.md)
-## [使用指令碼將使用者新增至電子文件探索案例中的保留](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
-## [在電子文件探索案例中的保留建立報表](create-a-report-on-holds-in-ediscovery-cases.md)
-## 管理保留
-### [建立電子文件探索保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
-### [建立訴訟資料暫留](create-a-litigation-hold.md)
-### [刪除雲端式信箱中可復原的項目資料夾中的保留項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
-### [增加保留信箱可復原的項目配額](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
-### [如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)
-### [保留密件副本與展開的通訊群組收件者](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
-## [Microsoft 365 中的進階電子文件探索 (預覽)](compliance20/overview-ediscovery-20.md)
+## [Microsoft 365 中的進階電子文件探索解決方案](compliance20/overview-ediscovery-20.md)
 ### [版本資訊](compliance20/release-notes-ediscovery20.md)
 ### [建立新案例](compliance20/create-new-ediscovery-case.md)
 
@@ -300,26 +286,26 @@
 #### [建立搜尋以收集資料](compliance20/create-search-to-collect-data.md)
 #### [建立搜尋查詢](compliance20/building-search-queries.md)
 #### [搜尋統計資料](compliance20/search-statistics.md)
-#### [將搜尋結果新增至工作集](compliance20/add-data-to-working-set.md)
+#### [將搜尋結果新增至檢閱集](compliance20/add-data-to-review-set.md)
 
-### [管理工作集](compliance20/managing-working-sets.md)
-#### [將非 Office 365 的資料載入工作集](compliance20/load-non-office365-data.md)
-#### [新增資料至另一個工作集](compliance20/add-data-to-working-set-from-another-working-set.md)
+### [管理檢閱集](compliance20/managing-review-sets.md)
+#### [將非 Office 365 的資料載入檢閱集](compliance20/load-non-office365-data.md)
+#### [將資料新增至另一個檢閱集](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [管理載入集](compliance20/manage-load-sets.md)
 
-### [檢閱案例資料](compliance20/reviewing-data-in-working-set.md)
-#### [檢視工作集中的文件](compliance20/view-documents-in-working-set.md)
-#### [查詢工作集中的資料](compliance20/working-set-search.md)
-#### [標記工作集中的文件](compliance20/tagging-documents.md)
+### [檢閱案例資料](compliance20/reviewing-data-in-review-set.md)
+#### [檢視檢閱集中的文件](compliance20/view-documents-in-review-set.md)
+#### [查詢檢視集中的資料](compliance20/review-set-search.md)
+#### [標記檢閱集中的文件](compliance20/tagging-documents.md)
 
-### [分析案例資料](compliance20/analyzing-data-in-working-set.md)
+### [分析案例資料](compliance20/analyzing-data-in-review-set.md)
 #### [近似重複項偵測](compliance20/near-duplicates.md)
 #### [電子郵件執行緒](compliance20/email-threading.md)
 #### [佈景主題](compliance20/themes.md)
 #### [使用相關性模組來分析資料](compliance20/using-relevance.md)
 
 ### [匯出案例資料](compliance20/exporting-data-ediscover20.md)
-#### [從工作集匯出文件](compliance20/export-documents-from-working-set.md)
+#### [從檢閱集匯出文件](compliance20/export-documents-from-review-set.md)
 #### [下載匯出工作](compliance20/download-export-jobs.md)
 
 ### [管理工作](compliance20/managing-jobs-ediscovery20.md)
@@ -329,58 +315,76 @@
 #### [從案例新增或移除成員](compliance20/add-remove-members.md)
 #### [設定搜尋和分析設定](compliance20/configure-search-analytics-settings.md)
 
-### 進階電子文件探索 (預覽) 參考資料
-#### [進階電子文件探索 (預覽) 的限制](compliance20/limits-ediscovery20.md)
+### 進階電子文件探索參考資料
+#### [進階電子文件探索的限制](compliance20/limits-ediscovery20.md)
 #### [支援的檔案類型](compliance20/supported-filetypes-ediscovery20.md)
 #### [下載中繼資料欄位](compliance20/document-metadata-fields.md)
 #### [疑難排解 AzCopy](compliance20/troubleshooting-azcopy.md)
 
-## [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
-### [開始使用進階電子文件探索](quick-setup-for-advanced-ediscovery.md)
 
-### [設定案例](set-up-users-and-cases-in-advanced-ediscovery.md)
-#### [定義案例的問題](define-issues-and-assign-users.md)
+## [管理電子文件探索案例](ediscovery-cases.md)
+### [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+#### [開始使用進階電子文件探索](quick-setup-for-advanced-ediscovery.md)
 
-### 收集案例資料
-#### [準備進階電子文件探索的資料](prepare-data-for-advanced-ediscovery.md)
-#### [將非 Office 365 的內容匯入至案例](import-non-office-365-data-into-advanced-ediscovery.md)
+#### [設定案例](set-up-users-and-cases-in-advanced-ediscovery.md)
+##### [定義案例的問題](define-issues-and-assign-users.md)
 
-### [處理案例資料](run-the-process-module-in-advanced-ediscovery.md)
-#### [執行處理程序模組及載入資料](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
-#### [檢視處理序模組結果](view-process-module-results-in-advanced-ediscovery.md)
+#### 收集案例資料
+##### [準備進階電子文件探索的搜尋結果](prepare-search-results-for-advanced-ediscovery.md)
+##### [將資料載入進階電子文件探索](prepare-data-for-advanced-ediscovery.md)
+##### [將非 Office 365 的內容匯入至案例](import-non-office-365-data-into-advanced-ediscovery.md)
 
-### 檢閱案例資料
-#### [搜尋並標記案例資料](search-and-tagging.md)
-#### [有關檢閱集的決策](decision-based-on-the-results-in-advanced-ediscovery.md)
+#### [處理案例資料](run-the-process-module-in-advanced-ediscovery.md)
+##### [執行處理程序模組及載入資料](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+##### [檢視處理序模組結果](view-process-module-results-in-advanced-ediscovery.md)
 
-### [分析案例資料](analyze-case-data-with-advanced-ediscovery.md)
-#### [執行快速分析](use-express-analysis-in-advanced-ediscovery.md)
-#### [文件相似性 (近似重複項) 概觀](understand-document-similarity-in-advanced-ediscovery.md)
-#### [檢視分析結果](view-analyze-results-in-advanced-ediscovery.md)
+#### 檢閱案例資料
+##### [搜尋並標記案例資料](search-and-tagging.md)
+##### [有關檢閱集的決策](decision-based-on-the-results-in-advanced-ediscovery.md)
 
-### [使用相關性模組](use-relevance-in-advanced-ediscovery.md)
-#### [相關性評量的概觀](assessment-in-relevance-in-advanced-ediscovery.md)
-#### [執行相關性評量和標記](tagging-and-assessment-in-advanced-ediscovery.md)
-#### [設定相關性訓練](manage-relevance-setup-in-advanced-ediscovery.md)
-#### [執行相關性訓練和標記](tagging-and-relevance-training-in-advanced-ediscovery.md)
-#### [追蹤相關性訓練程序](track-relevance-analysis-in-advanced-ediscovery.md)
-#### [測試相關性分析的結果](test-relevance-analysis-in-advanced-ediscovery.md)
-#### [載入相關性訓練的其他資料](set-up-loads-to-add-imported-files.md)
+#### [分析案例資料](analyze-case-data-with-advanced-ediscovery.md)
+##### [執行快速分析](use-express-analysis-in-advanced-ediscovery.md)
+##### [文件相似性 (近似重複項) 概觀](understand-document-similarity-in-advanced-ediscovery.md)
+##### [檢視分析結果](view-analyze-results-in-advanced-ediscovery.md)
 
-### [匯出案例資料](export-case-data-in-advanced-ediscovery.md)
-#### [匯出資料](export-results-in-advanced-ediscovery.md)
-#### [匯出報告欄位](export-report-fields-in-advanced-ediscovery.md)
-#### [檢視批次歷程記錄及匯出過去的結果](view-batch-history-and-export-past-results.md)
+#### [使用相關性模組](use-relevance-in-advanced-ediscovery.md)
+##### [相關性評量的概觀](assessment-in-relevance-in-advanced-ediscovery.md)
+##### [執行相關性評量和標記](tagging-and-assessment-in-advanced-ediscovery.md)
+##### [設定相關性訓練](manage-relevance-setup-in-advanced-ediscovery.md)
+##### [執行相關性訓練和標記](tagging-and-relevance-training-in-advanced-ediscovery.md)
+##### [追蹤相關性訓練程序](track-relevance-analysis-in-advanced-ediscovery.md)
+##### [測試相關性分析的結果](test-relevance-analysis-in-advanced-ediscovery.md)
+##### [載入相關性訓練的其他資料](set-up-loads-to-add-imported-files.md)
 
-### 設定進階電子文件探索
-#### [設定案例和組織設定](define-case-and-tenant-settings-in-advanced-ediscovery.md)
-#### [設定分析設定](set-analyze-options-in-advanced-ediscovery.md)
-#### [設定略過文字設定](set-ignore-text-in-advanced-ediscovery.md)
-#### [設定醒目提示的關鍵字和其他相關性設定](define-highlighted-keywords-and-advanced-options.md)
+#### [匯出案例資料](export-case-data-in-advanced-ediscovery.md)
+##### [匯出資料](export-results-in-advanced-ediscovery.md)
+##### [匯出報告欄位](export-report-fields-in-advanced-ediscovery.md)
+##### [檢視批次歷程記錄及匯出過去的結果](view-batch-history-and-export-past-results.md)
 
-### 進階電子文件探索參考資料
-#### [使用進階電子文件探索公用程式](use-advanced-ediscovery-utilities.md)
-#### [執行報告](run-reports-in-advanced-ediscovery.md)
+#### 設定進階電子文件探索
+##### [設定案例和組織設定](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+##### [設定分析設定](set-analyze-options-in-advanced-ediscovery.md)
+##### [設定略過文字設定](set-ignore-text-in-advanced-ediscovery.md)
+##### [設定醒目提示的關鍵字和其他相關性設定](define-highlighted-keywords-and-advanced-options.md)
+
+#### 進階電子文件探索參考資料
+##### [使用進階電子文件探索公用程式](use-advanced-ediscovery-utilities.md)
+##### [執行報告](run-reports-in-advanced-ediscovery.md)
+
+### [使用指令碼將使用者新增至電子文件探索案例中的保留](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
+### [在電子文件探索案例中的保留建立報表](create-a-report-on-holds-in-ediscovery-cases.md)
+
+## [指派電子文件探索權限](assign-ediscovery-permissions.md)
+## [設定 Office 365 中電子文件探索調查的合規性界限](set-up-compliance-boundaries.md)
+## [電子文件探索解決方案系列 - 資料外洩案例 - 搜尋及清除](data-spillage-scenariosearch-and-purge.md)
+
+## 管理保留
+### [建立電子文件探索保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
+### [建立訴訟資料暫留](create-a-litigation-hold.md)
+### [刪除雲端式信箱中可復原的項目資料夾中的保留項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+### [增加保留信箱可復原的項目配額](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+### [如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [保留密件副本與展開的通訊群組收件者](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [管理資料調查](datainvestigations/overview-data-investigations.md)
 ## [版本資訊](datainvestigations/data-investigations-release-notes.md)
