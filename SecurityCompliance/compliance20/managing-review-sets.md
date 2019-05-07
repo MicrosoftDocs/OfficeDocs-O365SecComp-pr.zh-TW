@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c521ca4485b00963c7d144b3013134fcaa30f298
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: e3d1a33d14231fb0f383436c0bee7cb63c21d8af
+ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527128"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33641578"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>管理進階電子文件的檢閱集
 
@@ -27,11 +27,11 @@ ms.locfileid: "33527128"
 
 - [分析檢閱集中的資料](analyzing-data-in-review-set.md)
 
-- [查詢檢閱集中的資料](review-set-search.md)
+- [查詢檢視集中的資料](review-set-search.md)
 
-- [檢閱集中檢視文件](view-documents-in-review-set.md)
+- [檢視檢閱集中的文件](view-documents-in-review-set.md)
 
-- [檢閱集內標記的文件](tagging-documents.md)
+- [標記檢閱集中的文件](tagging-documents.md)
 
 - [匯出案例資料](exporting-data-ediscover20.md)
 
@@ -41,16 +41,16 @@ ms.locfileid: "33527128"
 
 ![新增檢閱設定](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-彈出式視窗會顯示。  只要名稱檢閱設定可以按一下 [**儲存**。  新的檢閱集合會顯示在 [**檢視設定**] 索引標籤上。
+在 [**新增檢閱組**彈出式頁面上，輸入檢閱集的名稱，然後按一下 [**儲存**。  新的檢閱集合會顯示在 [**檢視設定**] 索引標籤上的清單。
 
-![新增檢閱組彈出式視窗](../media/5e5c99f8-42ca-4c2f-960f-f1a5709569d1.png)
+![檢閱 [設定] 索引標籤上列出的新檢閱設定](../media/AeDnewreviewset.png)
 
-有三種方法可以將內容新增至檢閱設定：
+有三個不同的方式將資料新增至設定進階電子文件探索案例中檢閱。
 
-1. [將搜尋結果新增至檢閱設定](add-data-to-review-set.md)
+![若要新增至檢閱的三種方式設定](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
-2. [非 Office 365 資料載入檢閱設定](load-non-office365-data.md)
+1. [將搜尋結果新增至檢閱集](add-data-to-review-set.md)
 
-3. [新增資料，以設定從另一個檢閱檢閱設定](add-data-to-review-set-from-another-review-set.md)。
+2. [將非 Office 365 的資料載入檢閱集](load-non-office365-data.md)
 
-![檢閱設定](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+3. [將資料新增至從另一個檢閱組設定檢閱](add-data-to-review-set-from-another-review-set.md)
