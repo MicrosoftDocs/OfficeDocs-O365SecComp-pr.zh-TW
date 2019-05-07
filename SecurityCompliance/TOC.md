@@ -5,7 +5,6 @@
 ### [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)
 ### [Microsoft 365 安全性中心](overview-security-center.md)
 ### [Microsoft 安全分數](microsoft-secure-score.md)
-### [Office 365 安全分數](office-365-secure-score.md)
 ## [前往安全性與合規性中心](go-to-the-securitycompliance-center.md)
 ### [安全規範中心的權限](permissions-in-the-security-and-compliance-center.md)
 ### [讓使用者能夠存取安全性與合規性中心](grant-access-to-the-security-and-compliance-center.md)
@@ -71,68 +70,13 @@
 #### [Office 365 郵件加密的舊版資訊](legacy-information-for-message-encryption.md)
 #### [設定舊版 Office 365 郵件加密的 Azure Rights Management](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# 記錄管理
-## [檔案計劃管理員](file-plan-manager.md)
-## [保留標籤](labels.md)
-### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [事件型保留](event-driven-retention.md)
-### [自動化事件型保留](automate-event-driven-retention.md)
-## [處置檢閱](disposition-reviews.md)
-## 監視記錄管理
-### [檢視資料控管報告](view-the-data-governance-reports.md)
-### [檢視文件的標籤活動](view-label-activity-for-documents.md)
-### [利用標籤分析檢視標籤使用量](label-analytics.md)
-## 關於記錄管理的詳細資訊
-### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
-
-# 管理資料控管
-## [匯入資料](importing-pst-files-to-office-365.md)
-### [使用網路上傳來匯入 PST 檔案](use-network-upload-to-import-pst-files.md)
-### [使用磁碟機運送來匯入 PST 檔案](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [使用 PST 收集工具來尋找、複製及刪除 PST 檔案](find-copy-and-delete-pst-files-in-your-organization.md)
-### [匯入 PST 檔案時篩選資料](filter-data-when-importing-pst-files.md)
-### [使用網路上傳來匯入 RMS 加密的 PST 檔案](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [匯入 PST 檔案的常見問題集](faqimporting-pst-files-to-office-365.md)
-### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
-#### [使用範例連接器來封存第三方資料](archive-third-party-data-with-sample-connector.md)
-#### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
-## 儲存資料
-### [啟用封存信箱](enable-archive-mailboxes.md)
-### [無限制封存概觀](unlimited-archiving.md)
-### [啟用無限制封存](enable-unlimited-archiving.md)
-### [設定信箱的封存與刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## 保留資料
-### [保留原則](retention-policies.md)
-### [檔案計劃管理員](file-plan-manager.md)
-### [保留標籤](labels.md)
-### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [事件型保留](event-driven-retention.md)
-### [自動化事件型保留](automate-event-driven-retention.md)
-## [處置資料](disposition-reviews.md)
-## [監督通訊內容](supervision-policies.md)
-### [為您的組織設定監督原則](configure-supervision-policies.md)
-## [管理非使用中的信箱](inactive-mailboxes-in-office-365.md)
-### [建立和管理非使用中信箱](create-and-manage-inactive-mailboxes.md)
-### [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [復原非使用中的信箱](recover-an-inactive-mailbox.md)
-### [還原非使用中的信箱](restore-an-inactive-mailbox.md)
-### [刪除非使用中的信箱](delete-an-inactive-mailbox.md)
-## 監視資料控管
-### [檢視文件的標籤活動](view-label-activity-for-documents.md)
-### [利用標籤分析檢視標籤使用量](label-analytics.md)
-### [檢視資料控管報告](view-the-data-governance-reports.md)
-## 資料控管的其他資訊
-### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [防範威脅](protect-against-threats.md)
 
 ## [在 Microsoft 365 中搜尋](hunting.md)
 
 ## [使用威脅分析了解最新的攻擊活動](latest-attack-campaigns.md)
 
-## [進階威脅防護](office-365-atp.md)
+## [Office 365 進階威脅防護](office-365-atp.md)
 ### [ATP 安全連結](atp-safe-links.md)
 #### [設定 ATP 安全連結原則](set-up-atp-safe-links-policies.md)
 #### [設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -226,6 +170,66 @@
 ### [Office 365 隔離常見問題集](quarantine-faq.md)
 ### [利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
+# 安全性事件管理
+## [Office 365 安全性事件回應](office365-security-incident-response-overview.md)
+## [偵測並修復 Office 365 中的非法同意授權](detect-and-remediate-illicit-consent-grants.md)
+## [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](detect-and-remediate-outlook-rules-forms-attack.md)
+## [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
+
+# 記錄管理
+## [檔案計劃管理員](file-plan-manager.md)
+## [保留標籤](labels.md)
+### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [事件型保留](event-driven-retention.md)
+### [自動化事件型保留](automate-event-driven-retention.md)
+## [處置檢閱](disposition-reviews.md)
+## 監視記錄管理
+### [檢視資料控管報告](view-the-data-governance-reports.md)
+### [檢視文件的標籤活動](view-label-activity-for-documents.md)
+### [利用標籤分析檢視標籤使用量](label-analytics.md)
+## 關於記錄管理的詳細資訊
+### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
+
+# 管理資料控管
+## [匯入資料](importing-pst-files-to-office-365.md)
+### [使用網路上傳來匯入 PST 檔案](use-network-upload-to-import-pst-files.md)
+### [使用磁碟機運送來匯入 PST 檔案](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [使用 PST 收集工具來尋找、複製及刪除 PST 檔案](find-copy-and-delete-pst-files-in-your-organization.md)
+### [匯入 PST 檔案時篩選資料](filter-data-when-importing-pst-files.md)
+### [使用網路上傳來匯入 RMS 加密的 PST 檔案](use-network-upload-to-import-rms-encrypted-pst-files.md)
+### [匯入 PST 檔案的常見問題集](faqimporting-pst-files-to-office-365.md)
+### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
+#### [使用範例連接器來封存第三方資料](archive-third-party-data-with-sample-connector.md)
+#### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
+## 儲存資料
+### [啟用封存信箱](enable-archive-mailboxes.md)
+### [無限制封存概觀](unlimited-archiving.md)
+### [啟用無限制封存](enable-unlimited-archiving.md)
+### [設定信箱的封存與刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+## 保留資料
+### [保留原則](retention-policies.md)
+### [檔案計劃管理員](file-plan-manager.md)
+### [保留標籤](labels.md)
+### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [事件型保留](event-driven-retention.md)
+### [自動化事件型保留](automate-event-driven-retention.md)
+## [處置資料](disposition-reviews.md)
+## [監督通訊內容](supervision-policies.md)
+### [為您的組織設定監督原則](configure-supervision-policies.md)
+## [管理非使用中的信箱](inactive-mailboxes-in-office-365.md)
+### [建立和管理非使用中信箱](create-and-manage-inactive-mailboxes.md)
+### [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
+### [復原非使用中的信箱](recover-an-inactive-mailbox.md)
+### [還原非使用中的信箱](restore-an-inactive-mailbox.md)
+### [刪除非使用中的信箱](delete-an-inactive-mailbox.md)
+## 監視資料控管
+### [檢視文件的標籤活動](view-label-activity-for-documents.md)
+### [利用標籤分析檢視標籤使用量](label-analytics.md)
+### [檢視資料控管報告](view-the-data-governance-reports.md)
+## 資料控管的其他資訊
+### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [搜尋內容](search-for-content.md)
 ## [使用內容搜尋](content-search.md)
@@ -479,7 +483,7 @@
 ### [獨立的 SharePoint Online 小組網站開發/測試環境](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [SIEM 伺服器整合](siem-server-integration.md)
 
-# 合規性解決方案
+# 法規合規性解決方案
 ## [Microsoft 服務信任入口網站](get-started-with-service-trust-portal.md)
 ## [合規性管理員 (傳統)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [合規性管理員 (預覽版)](compliance-manager-overview.md)
@@ -506,12 +510,6 @@
 ### [適用於 Project Server 的 GDPR](gdpr-for-project-server.md)
 ### [適用於 Office Web Apps Server 和 Office Online Server 的 GDPR](gdpr-for-office-online-server.md)
 ### [適用於內部部署 Windows Server 檔案共用的 GDPR](gdpr-for-on-premises-file-shares.md)
-
-# 安全性事件管理
-## [Office 365 安全性事件回應](office365-security-incident-response-overview.md)
-## [偵測並修復 Office 365 中的非法同意授權](detect-and-remediate-illicit-consent-grants.md)
-## [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](detect-and-remediate-outlook-rules-forms-attack.md)
-## [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
 
 # 服務保證
 ## [Office 365 安全性與合規性中心中的服務保證](service-assurance.md)
