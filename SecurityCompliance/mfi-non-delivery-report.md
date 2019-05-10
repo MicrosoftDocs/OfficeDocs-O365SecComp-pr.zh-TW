@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板中未傳遞回報。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4b34b5801f663a1028a23cf3a1f897d56a2239b
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267132"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868601"
 ---
 # <a name="non-delivery-report"></a>未傳遞報告
-
-> [!NOTE]
-> 本主題所述的功能尚未已部署至所有 Office 365 組織，並受限於變更。
 
 **未傳遞報告**顯示您組織中的使用者在未傳遞回報 （也稱為 Ndr 或退回的郵件） 中的大部分遇到錯誤代碼。 這份報告被要顯示的 Ndr，詳細資料，因此您可以疑難排解問題。
 
@@ -34,6 +30,6 @@ ms.locfileid: "32267132"
 
 ![未傳遞報告中的 [明細] 資料表中選取一列](media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

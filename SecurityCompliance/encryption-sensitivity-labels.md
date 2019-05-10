@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257243"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628328"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度標籤中的加密來限制內容的存取
 
@@ -113,6 +113,26 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 - Rights Management 簽發者仍可以開啟撤銷後的文件。
 
 如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>套用標籤時，現有的加密會發生什麼情況
+
+將敏感度標籤套用至內容之前，使用者可能已透過套用其他的保護設定來加密內容。 例如，使用者可能已套用：
+
+- [不可轉寄]**** 選項。
+- 使用 Azure 資訊保護整合標籤用戶端的自訂保護。
+- 會加密內容但未與標籤關聯的 Azure Rights Management Service (RMS) 範本。
+
+下表說明對該內容套用敏感度標籤時，現有的加密會發生的情況。
+<br/>
+<br/>
+
+| |**使用者套用將加密關閉的敏感度標籤**|**使用者套用將加密開啟的敏感度標籤**|**使用者套用具有移除保護的標籤**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**不可轉寄**|會移除 [電子郵件 - 保護]<br/>會保留 [文件 - 保護]|會套用標籤保護|會移除 [不可轉寄]****|
+|**自訂保護**<sup>1</sup>|會保留保護|會套用標籤保護|會移除自訂保護|
+|**Azure RMS 範本**|會保留保護|會套用標籤保護|會移除自訂保護|
+
+<sup>1</sup> 僅 Azure 資訊保護標籤用戶端中支援此功能。
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>將加密內容儲存在 OneDrive 和 SharePoint 中
 

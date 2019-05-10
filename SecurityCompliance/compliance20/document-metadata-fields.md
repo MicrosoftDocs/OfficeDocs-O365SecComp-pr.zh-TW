@@ -1,5 +1,5 @@
 ---
-title: 在 [進階電子文件 （預覽） 的文件中繼資料欄位
+title: 在進階電子文件中的文件的中繼資料欄位
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b9caf390e3ee0c10a35fa12cc68fcb0638987dcb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75550d48a474fc6429a780d0a03d28745e20e1f7
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251851"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33835053"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery-preview"></a>在 [進階電子文件 （預覽） 的文件中繼資料欄位
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>在進階電子文件中的文件的中繼資料欄位
 
-下表列出在進階電子文件 （預覽） 中的案例中的工作集合中的文件的中繼資料欄位。 表格會指出中繼資料欄位的名稱是否搜尋欄位中的工作集執行查詢時、 欄位是否出現在工作集內，檢視選取的文件的檔案中繼資料時，此欄位是否包含何時會匯出文件。 
-
-下表列出在進階電子文件 （預覽） 中的案例中的工作集合中的文件的中繼資料欄位。 表格會指出中繼資料欄位的名稱是否搜尋欄位中的工作集執行查詢時、 欄位是否出現在工作集內，檢視選取的文件的檔案中繼資料時，此欄位是否包含何時會匯出文件。 
+本文中的表格列出在進階電子文件探索中設定案例中檢閱文件的中繼資料欄位。 表格會指出的中繼資料欄位名稱，是否可以搜尋欄位，當在檢閱執行查詢，設定此欄位是否存在檢閱集中檢視選取的文件的檔案中繼資料時，欄位是否包含何時文件時re 匯出。 
 
 > [!NOTE]
-> **Searchable 工作集中**資料行中使用括號中的值是屬性的您可以搜尋的名稱。 在括號內**Viewable 中檔案的中繼資料**欄的值是您要檢視的檔案中繼資料時，會顯示屬性的名稱。
+> 在 [**檢閱集中 Searchable** ] 欄中的括號中的值是屬性，您可以搜尋的名稱。 在括號內**Viewable 中檔案的中繼資料**欄的值是您要檢視的檔案中繼資料時，會顯示屬性的名稱。
 
-|**欄位名稱** </br>|**在 [工作集可搜尋** |**可在 [檔案中繼資料** |**匯出** |
+|**欄位名稱** </br>|**檢閱集中可搜尋** |**可在 [檔案中繼資料** |**匯出** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Case 標記                  | 是 （標記）                                      |                         | 是         |
 |合規性標籤          |                                                 |                         | 是         |
@@ -39,7 +37,7 @@ ms.locfileid: "32251851"
 |交談的索引         |                                                 |                         | 是         |
 |Custodian                  | 是 (custodian)                                 |   是 (Custodian)       | 是         |
 |資料來源                | [是] （來源）                                    |   是 （工作負載）          | 是         |
-|Date                       | [是] (date)                                      |   [是] (Date UTC)        | 是         |
+|日期                       | [是] (date)                                      |   [是] (Date UTC)        | 是         |
 |Deduped 複合路徑      |                                                 |                         | 是         |
 |Deduped 的 custodians         |                                                 |                         | 是         |
 |Deduped 的檔案識別碼           |                                                 |                         | 是         |

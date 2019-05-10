@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以了解 SMTP 驗證用戶端報表中的郵件流程儀表板中安全性 & 合規性中心。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252539"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868551"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 驗證的用戶端報告
-
-> [!NOTE]
-> 本主題所述的功能尚未已部署至所有 Office 365 組織，並受限於變更。
 
 **SMTP 驗證的用戶端**報表會醒目提示 SMTP 驗證用戶端提交通訊協定，由使用者或系統帳戶，在您的組織中的使用。 此舊版通訊協定 （使用端點 smtp.office365.com） 只提供基本驗證]，且容易受到正由遭入侵帳戶傳送電子郵件。  此報告可讓您檢查有不尋常的活動。 它也顯示 TLS 流量資料的用戶端或裝置使用 SMTP 驗證]。
 

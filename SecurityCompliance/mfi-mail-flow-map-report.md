@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板中的 [郵件流程] 對應報告。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f80bb71434f4091d64318a096b1f55238a1409cc
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252416"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868582"
 ---
 # <a name="mail-flow-map-report"></a>郵件流程地圖報表
-
-> [!NOTE]
-> 本主題所述的功能尚未已部署至所有 Office 365 組織，並受限於變更。
 
 這份報告提供深入了解有關郵件會經由您的 Office 365 組織的方式。 您可以使用這項資訊以了解模式、 識別異常行為，並修正它們所發生的問題。
 

@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板中的非公認的網域報表。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 11bddc79f81c30726ba653eb432238765a8cee74
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252130"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868571"
 ---
 # <a name="non-accepted-domain-report"></a>非公認的網域報表
-
-> [!NOTE]
-> 本主題所述的功能尚未已部署至所有 Office 365 組織，並受限於變更。
 
 類似於**寄件者網域**深入見解，**非公認的網域**深入見解識別郵件從內部部署電子郵件組織，但是寄件者網域不設定為 Office 365 組織中公認的網域。
 

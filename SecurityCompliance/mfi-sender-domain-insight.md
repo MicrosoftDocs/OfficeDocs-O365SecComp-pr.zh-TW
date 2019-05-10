@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以了解修正寄件者網域深入了解安全性 & 合規性中心中的郵件流程儀表板中。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a285a1c744ca540cc58b9408b4ee31e768f89479
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252170"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868561"
 ---
 # <a name="fix-sender-domain-insight"></a>修正寄件者網域深入解析
-
-> [!NOTE]
-> 本主題所述的功能尚未已部署至所有 Office 365 組織，並受限於變更。
 
 Office 365 需要從內部電子郵件環境到 Office 365 傳送到符合特定安全性條件的郵件：
 

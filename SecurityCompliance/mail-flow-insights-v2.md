@@ -9,34 +9,30 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252104"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868621"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
-
-> [!NOTE]
-> 本主題所述的功能尚未已部署至所有 Office 365 組織，並受限於變更。
 
 系統管理員可以使用郵件流程儀表板中的安全性 & 合規性中心探索趨勢，深入了解，並採取動作，以修正與 Office 365 組織中的郵件流程相關的問題。
 
 深入了解、 報告和郵件流程儀表板中可用的 widget 如下：
 
-- [郵件流程地圖報表](mfi-mail-flow-map-report.md)（這份報告新功能和目前正在部署 Office 365 中）。
+- [郵件流程地圖報表](mfi-mail-flow-map-report.md)
 
-- [網域郵件流程狀態深入解析](mfi-domain-mail-flow-status-insight.md)（此深入了解新功能和目前正在部署 Office 365 中）。
+- [網域郵件流程狀態深入解析](mfi-domain-mail-flow-status-insight.md)
 
-- [SMTP 驗證的用戶端報告](mfi-smtp-auth-clients-report.md)（這份報告新功能和目前正在部署 Office 365 中）。
+- [SMTP 驗證的用戶端報告](mfi-smtp-auth-clients-report.md)
 
-- [寄件者網域深入解析](mfi-sender-domain-insight.md)（此深入了解新功能和目前正在部署 Office 365 中）。
+- [寄件者網域深入解析](mfi-sender-domain-insight.md)
 
-- [未傳遞報告](mfi-non-delivery-report.md)（這份報告新功能和目前正在部署 Office 365 中）。
+- [未傳遞報告](mfi-non-delivery-report.md)
 
-- [非公認的網域報表](mfi-non-accepted-domain-report.md)（這份報告新功能和目前正在部署 Office 365 中）。
+- [非公認的網域報表](mfi-non-accepted-domain-report.md)
 
 - [外寄和內送的郵件流程](mfi-outbound-and-inbound-mail-flow.md)
 

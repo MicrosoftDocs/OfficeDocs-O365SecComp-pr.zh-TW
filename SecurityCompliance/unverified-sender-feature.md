@@ -1,5 +1,5 @@
 ---
-title: 識別 Outlook.com 和網頁型 Outlook 中的可疑郵件
+title: 未驗證的寄件者
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: edba30bb2ac0f9dc6ebc12db957a518de0c1b543
-ms.sourcegitcommit: 9907bebc5f225032f681c4952de0b0be2df278ac
+ms.openlocfilehash: 5d4315afb33964e7c466384366b7315287cf6298
+ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345888"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867839"
 ---
-# <a name="identify-suspicious-messages-in-outlookcom-and-outlook-on-the-web"></a>識別 Outlook.com 和網頁型 Outlook 中的可疑郵件
+# <a name="unverified-sender"></a>未驗證的寄件者
 
 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
 
@@ -31,9 +31,25 @@ ms.locfileid: "33345888"
 
 Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法識別或其身分識別為不同於從地址中看到的內容。
 
+## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>如何管理哪些郵件接收未驗證的寄件者處理方式 
+
+如果您是 Office 365 客戶可以管理安全性 & 合規性中心透過這項功能。 
+
+- 在 Office 365 安全性 & 合規性中心，租用戶系統管理員可以開啟功能，開啟或關閉，透過反 Phish 原則] 底下的反詐騙保護。 此外，它可以透過 ' 組 AntiPhishPolicy' 指令程式管理。 如需詳細資訊，請參閱 < 在 Office 365 及集合 AntiPhishPolicy 反網路釣魚保護。
+
+    ![編輯的圖形介面中的未驗證寄件者。](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+
+- 如果系統管理員已識別為誤判，而且寄件者應該不會收到未驗證的寄件者處理方式可採取下列動作，以將寄件者新增至詐騙智慧詐騙的其中一個允許清單：
+        
+    - 加入網域組經由詐騙智慧深入解析。 如需詳細資訊，請參閱逐步解說： 詐騙智慧深入解析
+                
+    - 新增透過 PhishFilterPolicy 指令程式的網域組。 如需詳細資訊，請參閱 Office 365 中的 Set-phishfilterpolicy 和反詐騙保護
+
+此外，我們不會套用未驗證寄件者處理方式如果已將其傳遞至收件匣透過系統允許清單，包括電子郵件傳輸規則 (Etr)、 安全網域清單 （反垃圾郵件原則）、 安全的寄件者清單，或使用者已設定為 「 安全寄件者 」 這個使用者在其收件匣。
+
 ### <a name="you-see-a--in-the-sender-image"></a>您會看到 '？ ' 中的寄件者影像
 
-當 Outlook.com 和網頁型 Outlook 無法驗證使用電子郵件驗證技術的寄件者的身分識別時，他們會顯示 '？ ' 中的寄件者相片。
+當 Outlook.com 和網頁型 Outlook 無法驗證使用電子郵件驗證技術的寄件者的身分識別時，他們會顯示 '？ ' 中的寄件者相片。 
 
 ![郵件未通過驗證](media/message-did-not-pass-verification.jpg)
 

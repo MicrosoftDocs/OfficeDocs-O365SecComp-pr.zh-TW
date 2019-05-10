@@ -494,6 +494,7 @@
 ### [使用客戶金鑰控制 Office 365 中的資料](controlling-your-data-using-customer-key.md)
 ### [Office 365 中使用客戶金鑰的服務加密常見問題集](service-encryption-with-customer-key-faq.md)
 ## [GDPR 資料主體要求工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [客戶加密箱](customer-lockbox-requests.md)
 ## [GDPR 的 Office 365 資訊保護](office-365-information-protection-for-gdpr.md)
 ### [概觀：GDPR 的 Office 365 保護](office-365-info-protection-for-gdpr-overview.md)
 ### [搜尋並找出個人資料](search-for-and-find-personal-data.md)
