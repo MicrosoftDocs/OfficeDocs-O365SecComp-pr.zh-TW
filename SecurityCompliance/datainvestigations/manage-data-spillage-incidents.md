@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明使用安全性 & 合規性中心的新資料調查 （預覽） 工具，來管理資料外洩事件。
-ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eef273bd1690845be61b6aec5918dcc0870ed6b2
+ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258821"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33884761"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的資料外洩事件
 
@@ -34,7 +34,10 @@ ms.locfileid: "32258821"
 
 ## <a name="scenario"></a>案例
 
-您正在其中員工不知情的情況下高度機密文件與多個人員共用透過電子郵件資料外洩事件的通知。 您想要快速評估者接收到此文件，同時內部和外部組織。 您已調查事件之後，您想要與其他現場檢閱，並再永久移除 Office 365 spilled 的資料共用您所發現的錯誤。 調查完成後，您想要移除所有的證據。 
+您正在其中員工不知情的情況下高度機密文件與多個人員共用透過電子郵件資料外洩事件的通知。 您想要快速評估者接收到此文件，同時內部和外部組織。 您已調查事件之後，您想要與其他現場檢閱，並再從您的 Office 365 組織永久移除 spilled 的資料共用您所發現的錯誤。 調查完成後，您想要移除所有的證據。 
+
+> [!IMPORTANT]
+> 當您將會永久移除您的組織內部的 spilled 的資料時，溢出組織外的任何資料不能移除與這些功能。
 
 ## <a name="workflow"></a>工作流程
 
@@ -113,7 +116,7 @@ ms.locfileid: "32258821"
 
 - [執行分析以更快速地調查](run-analytics-to-investigate-faster.md)
 - [近似重複項偵測](near-duplicates.md)
-- [電子郵件威脅](email-threading.md)
+- [電子郵件執行緒](email-threading.md)
 - [佈景主題](themes.md)
 
 若要決定哪些使用者參與資料外洩，您可以在辨識項集合中建立新的查詢，然後使用 [寄件者/作者和收件者條件。 這會建立一份所有寄件者、 收件者，以及收集已新增至辨識項的資料中找到的作者。 請務必檢查清單，以判斷是否有任何外部使用者。 如需使用條件縮小搜尋結果的詳細資訊，請參閱 <<c0>搜尋條件。
