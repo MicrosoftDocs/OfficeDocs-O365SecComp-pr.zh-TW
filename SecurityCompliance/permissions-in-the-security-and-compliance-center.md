@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 系統管理員可以深入了解 Office 365 安全性 & 合規性中心中可用的權限。
-ms.openlocfilehash: 4d5fb942ea613b7b732d1150de497b1992dbd717
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 81b9020260f11700038f7cc266179355dd1a7896
+ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402971"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33884771"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全性 & 合規性中心的權限
 
@@ -54,7 +54,7 @@ Office 365 安全性 & 合規性中心可讓您授與權限執行等裝置管理
 |:-----|:-----|:-----|
 |**合規性管理員**<sup>1</sup>|成員可以管理裝置管理、 資料外洩防護、 報告和保留的設定。|專案管理 <br/><br/> 合規性管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 符合性管理 <br/><br/> 裝置管理 <br/><br/> 處理管理 <br/><br/> 保留 <br/><br/> IB 相符性管理 <br/><br/> 管理提醒 <br/><br/> 組織組態 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 僅檢視稽核記錄 <br/><br/> 僅檢視保留管理 <br/><br/> 僅限檢視 DLP 符合性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 相符性管理 <br/><br/> 僅檢視管理提醒 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視的記錄管理|
 |**規範資料管理員**|成員可以管理裝置管理、 資料保護、 資料外洩防護、 報告和保留的設定。|合規性管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 符合性管理 <br/><br/> 裝置管理 <br/><br/> 處理管理 <br/><br/> IB 相符性管理 <br/><br/> 管理提醒 <br/><br/> 組織組態 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 僅檢視稽核記錄 <br/><br/> 僅限檢視 DLP 符合性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 相符性管理 <br/><br/> 僅檢視管理提醒 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視的記錄管理 <br/><br/> 僅檢視保留管理|
-|**資料調查**|成員可以執行搜尋信箱、 SharePoint Online 網站與 OneDrive 商務位置。|通訊 <br/><br/> 合規性搜尋 <br/><br/> Custodian <br/><br/> 資料調查管理 <br/><br/> 匯出<br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱|
+|**資料調查**|成員可以在信箱、 SharePoint 網站與 OneDrive 帳戶上執行搜尋。|通訊 <br/><br/> 合規性搜尋 <br/><br/> Custodian <br/><br/> 資料調查管理 <br/><br/> 匯出<br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱|
 |**eDiscovery 管理員**|成員可以執行搜尋和就地保留信箱、 SharePoint Online 網站與 OneDrive 商務位置。 成員可以也建立及管理 eDiscovery 案例、 新增及移除案例成員、 建立及編輯與案例中，並存取 Office 365 進階電子文件探索中的案例資料相關聯的內容搜尋。 <br/><br/> EDiscovery 系統管理員是 eDiscovery 管理員角色群組的成員獲指派其他權限。 除了電子文件探索管理員可以執行的工作，eDiscovery 系統管理員可以： <br/>• 在組織中檢視所有 eDiscovery 案例。 <br/>• 在自行新增為案例的成員之後管理任何 eDiscovery 案例。 <br/><br/> EDiscovery 管理員與 eDiscovery 系統管理員的主要差異是 eDiscovery 系統管理員可以存取安全性 & 合規性中心**eDiscovery 案例**] 頁面列出的所有案例。 電子文件探索管理員只能存取他們所建立的情況下或它們必須是成員的情況。 如需 eDiscovery 系統管理員進行使用者的詳細資訊，請參閱[指派 Office 365 安全性 & 合規性中心中的 eDiscovery 權限](assign-ediscovery-permissions.md)。|專案管理 <br/><br/> 通訊 <br/><br/> 合規性搜尋 <br/><br/> Custodian <br/><br/> 匯出 <br/><br/> 保留 <br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱|
 |**郵件流程管理員**|成員可以監視和檢視安全性 & 合規性中心中郵件流程深入解析和報告。 全域系統管理員可以新增至此群組中，一般使用者，但如果使用者不是 Exchange 系統管理員群組的成員，使用者將無法存取 Exchange 系統相關工作。|僅限檢視收件者|
 |**組織管理**<sup>1</sup>|成員可以控制存取安全性 & 合規性中心中的功能權限，以及管理裝置管理、 資料外洩防護、 報告和保留的設定。 <br/><br/> 請注意，為了讓不是全域系統管理員才能查看 Office 365 的 MDM 所管理的裝置清單的使用者與這些裝置上執行動作，例如 Office 365，從 MDM 淘汰裝置，使用者必須是 Exchange 系統管理員。 <br/><br/> Office 365 全域系統管理員會自動新增為此角色群組的成員。|稽核記錄檔 <br/><br/> 專案管理 <br/><br/> 合規性管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 符合性管理 <br/><br/> 裝置管理 <br/><br/> 處理管理 <br/><br/> 保留 <br/><br/> IB 相符性管理 <br/><br/> 管理提醒 <br/><br/> 組織組態 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 角色管理 <br/><br/> 搜尋及清除 <br/><br/> 安全性系統管理員 <br/><br/> 安全性讀取者 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 服務保證檢視 <br/><br/> 僅檢視稽核記錄 <br/><br/> 僅限檢視 DLP 符合性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 相符性管理 <br/><br/> 僅檢視管理提醒 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視的記錄管理 <br/><br/> 僅檢視保留管理|
@@ -91,10 +91,11 @@ Office 365 安全性 & 合規性中心可讓您授與權限執行等裝置管理
 
 - 主管檢閱管理員
 
-|**角色**|**描述**|**預設角色群組指派**|
+|**Role**|**描述**|**預設角色群組指派**|
 |:-----|:-----|:-----|
 |**稽核記錄**|開啟 Office 365 組織的稽核，檢視組織的稽核報告]，並設定然後將這些報告匯出到檔案。|組織管理 <br/><br/> 記錄管理 <br/><br/> 安全性系統管理員|
 |**專案管理**|建立、 編輯、 刪除及控制存取權的 eDiscovery 案例。|合規性管理員 <br/><br/> eDiscovery 管理員 <br/><br/> 組織管理|
+|**資料調查**|執行搜尋信箱、 SharePoint Online 網站與 OneDrive 商務位置。|匯出 <br/><br/> RMS 解密 <br/><br/> Custodian <br/><br/> 通訊 <br/><br/> 檢閱 <br/><br/> 預覽 <br/><br/> 合規性搜尋 <br/><br/> 資料調查管理|
 |**通訊**|建立、 編輯、 刪除及控制存取權的通訊。|eDiscovery 管理員|
 |**合規性管理員**|檢視和編輯設定以及報告的符合性功能。|合規性管理員 <br/><br/> 規範資料管理員 <br/><br/> 組織管理|
 |**合規性搜尋**|跨信箱執行搜尋，並取得的估計項目結果。|合規性管理員 <br/><br/> 規範資料管理員 <br/><br/> eDiscovery 管理員 <br/><br/> 組織管理 <br/><br/> 安全性運算子|
