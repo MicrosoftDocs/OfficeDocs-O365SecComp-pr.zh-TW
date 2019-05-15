@@ -3,7 +3,7 @@ title: 檢視安全性中的電子郵件安全性報告&amp;合規性中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
+ms.date: 05/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何尋找並使用您的組織使用 Office 365 企業版電子郵件安全性報告。 安全性中的電子郵件安全性報告可用&amp;合規性中心。
-ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
+ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267851"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970254"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>檢視安全性中的電子郵件安全性報告&amp;合規性中心
 
@@ -31,7 +31,7 @@ ms.locfileid: "32267851"
 您的電子郵件安全性報告包括下列：
 - [加密報表](#encryption-report)（新 ！）
 - [威脅保護狀態報表](#threat-protection-status-report) 
-- [惡意程式碼偵測報告](#malware-detections-report)    
+- [惡意程式碼偵測報告](#malware-detections-report) 
 - [上方的惡意程式碼報告](#top-malware-report)
 - [上方的寄件者和收件者的報告](#top-senders-and-recipients-report)
 - [詐騙偵測報告](#spoof-detections-report)
@@ -41,27 +41,27 @@ ms.locfileid: "32267851"
     
 ## <a name="encryption-report"></a>加密報表
 
-(**新增 ！**)**加密報表**顯示透過原則或使用者控制項已加密的電子郵件的相關資訊。 貴組織的安全性小組可以使用這項資訊來找出模式並主動套用或調整機密電子郵件的原則。
+(**新增 ！**)**加密報表**顯示已加密，透過您的組織原則，或透過使用者控制項的電子郵件的相關資訊。 貴組織的安全性小組可以找出模式並主動或套用調整機密電子郵件的原則，以使用此報告中資訊。
 
 若要檢視此報告中，在 [安全性 & 合規性中心，移至**報表** \> **儀表板** \> **加密報表**。
 
 ![加密報表](media/encryptionreport-defaultview.png) 
 
-報告第一次開啟時，您會看到在過去七 （7） 天適用於電子郵件訊息的加密方法的相關資料。 您可以變更的日期範圍和報告的詳細資訊，藉由按一下畫面右上角中的 [篩選器。
+報告第一次開啟時，您會看到在過去七 （7） 天適用於電子郵件訊息的加密方法的相關資料。 您可以變更的日期範圍，會顯示在報告中的 [**篩選器**的畫面右上角的詳細資料。
 
 ![加密報告篩選器](media/encryptionreport-filters.png)   
 
-您也可以使用方式] 功能表的向下的自動換行，來檢視資料的加密範本 （或方法）。
+您也可以使用 [**依細分**] 功能表來檢視資料的加密範本 （或方法）。
 
 ![加密方法或範本](media/encryptionreport-breakdownby.png)
 
-然後您可以依據] 功能表使用檢視資料，若要變更檢視，以查看已加密郵件的頂端的五個收件者網域的計數。
+然後您可以使用 [**檢視資料**] 功能表變更檢視，以查看已加密郵件的頂端的五個收件者網域的計數。
 
 ![依據] 功能表的加密報表檢視資料](media/encryptionreport-viewdataby.png)
 
 在新的加密報告的彈性，您可以檢視趨勢，並採取適當的動作。 例如，如果您看到大量的使用者所加密的電子郵件，您可能要新增某些使用情況下，自動化加密加密原則。 （若要取得的說明，請參閱[定義郵件流規則以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)）。另一個範例是，如果您有可用的加密範本的數字，但沒有人正在使用這些，您可能會瀏覽是否使用者需要訓練該功能。 
 
-使用此報告可讓您組織的安全性與合規性小組，以監視使用郵件加密的方式，以及是否進一步動作所需。
+使用此報告可讓您組織的安全性與合規性小組，以監視使用郵件加密的方式，以及是否進一步動作所需。 若要深入了解加密，請參閱[Office 365 中的電子郵件加密](email-encryption.md)。
 
 ## <a name="threat-protection-status-report"></a>威脅保護狀態報表
 
@@ -74,7 +74,7 @@ ms.locfileid: "32267851"
   
 ![威脅保護狀態報表](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-當您首次開啟威脅保護狀態報表時，報告顯示資料的過去 7 天的預設值;不過，您可以按一下 [**篩選**]，並 90 天的詳細資料變更日期範圍。 這份報告是適用於檢視的效率和影響貴組織的 Exchange Online Protection 功能，以及更長期的趨勢。 
+當您首次開啟威脅保護狀態報表時，報告顯示資料的過去 7 天的預設值;不過，您可以按一下 [**篩選**]，並 90 天的詳細資料變更日期範圍。 這份報告是適用於檢視的效率和影響貴組織的[Exchange Online Protection 功能](eop/eop-features.md)，以及更長期的趨勢。 
   
 ![威脅保護狀態報告的篩選器](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -90,11 +90,11 @@ ms.locfileid: "32267851"
   
 ![惡意程式碼偵測] 報告範例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-類似於其他報告，例如威脅保護狀態報表，報告預設會顯示資料的過去 7 天。 不過，您可以選擇要變更的日期範圍**篩選器**。 
+類似其他報表，例如[威脅保護狀態報表](#threat-protection-status-report)，報告預設會顯示資料的過去 7 天。 不過，您可以選擇要變更的日期範圍**篩選器**。 
   
 ## <a name="top-malware-report"></a>上方的惡意程式碼報告
 
-**Top 惡意程式碼**報告 」 顯示各種不同的 Exchange Online 所偵測到的惡意程式碼。 
+**Top 惡意程式碼**報告 」 顯示各種不同的[Exchange Online](eop/eop-features.md)所偵測到的惡意程式碼。 
   
 若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **頂端惡意程式碼**。
   
@@ -120,7 +120,7 @@ ms.locfileid: "32267851"
   
 按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。
   
-用於**顯示資料**] 清單中選擇要檢視的主要寄件者，接收器、 垃圾郵件收件者、 惡意程式碼收件者的資料。 您也可以查看誰接收由進階威脅防護偵測到的惡意程式碼。 
+用於**顯示資料**] 清單中選擇要檢視的主要寄件者，接收器、 垃圾郵件收件者、 惡意程式碼收件者的資料。 您也可以查看誰收到偵測到[Exchange Online](eop/exchange-online-protection-overview.md)protection 的惡意程式碼。 
   
 ![使用 [顯示資料的清單以檢視特定的資訊](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
@@ -136,7 +136,7 @@ ms.locfileid: "32267851"
   
 當您將滑鼠停留一天圖表中時，您可以看到多少詐騙郵件是透過。
   
-按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。
+按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。 若要深入了解反詐騙保護，請參閱[在 Office 365 中的反詐騙保護](anti-spoofing-protection.md)。
   
 ## <a name="spam-detections-report"></a>垃圾郵件偵測報告
 
@@ -152,7 +152,7 @@ ms.locfileid: "32267851"
   
 ![[垃圾郵件偵測] 報告會告訴您如何許多垃圾郵件被封鎖或篩選出](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-下方圖表中，您會看到所偵測到的垃圾郵件項目清單。 選取要檢視其他資訊，例如垃圾郵件項目已輸入或輸出、 其郵件識別碼，以及其收件者的項目。
+下方圖表中，您會看到所偵測到的垃圾郵件項目清單。 選取要檢視其他資訊，例如垃圾郵件項目已輸入或輸出、 其郵件識別碼，以及其收件者的項目。 若要深入了解反垃圾郵件保護，請參閱[Office 365 電子郵件反垃圾郵件保護](anti-spam-protection.md)。
   
 ## <a name="sent-and-received-email-report"></a>傳送和接收電子郵件報告
 
@@ -173,6 +173,8 @@ ms.locfileid: "32267851"
 下方圖表中，您會看到一份電子郵件類別，例如**GoodMail**、 **SpamContentFiltered**，等等。 選取要檢視其他資訊，例如惡意程式碼，所採取的動作和是否電子郵件類別是傳入或傳出。
   
 ![此報表會告訴您有關反惡意程式碼、 反垃圾郵件和其他郵件偵測](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
+
+若要深入了解電子郵件智慧，請參閱[在 Office 365 中的郵件流程情報](mail-flow-intelligence-in-office-365.md)。
   
 ## <a name="user-reported-messages-report"></a>使用者回報郵件報告
 
@@ -217,7 +219,7 @@ ms.locfileid: "32267851"
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報表不顯示資料？
 
-如果您不在報表中看到的資料，請仔細檢查您的原則已正確設定。 若要深入了解，請參閱 <<c0>在 Office 365 中的反垃圾郵件和反惡意程式碼保護。
+如果您不在報表中看到的資料，請仔細檢查您的原則已正確設定。 若要深入了解，請參閱 <<c0>針對 Office 365 中的威脅保護。
   
 ## <a name="related-topics"></a>相關主題
 
