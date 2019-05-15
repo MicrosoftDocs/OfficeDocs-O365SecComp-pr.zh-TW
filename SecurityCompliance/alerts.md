@@ -15,12 +15,12 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: 了解您可以設定以協助 Office 365 安全性的提醒。
-ms.openlocfilehash: e02e78b091c7e5e2347c90c14a99cf838b4482b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 51a53961a5a6e575986c6a5192a6980052d015a4
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242561"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979479"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
 
@@ -55,6 +55,6 @@ ms.locfileid: "32242561"
 |**工具**|**描述**|
 |:-----|:-----|
 |[管理提醒](create-activity-alerts.md) <br/> |使用活動提醒來傳送電子郵件通知給自己或其他系統管理員，當使用者在 Office 365 中執行特定活動。 活動警訊類似於搜尋 Office 365 稽核記錄的事件，不同之處在於您將會傳送電子郵件時的事件，您已建立的提醒，就會發生。  <br/> |
-|[管理進階的提醒](office-365-cas-overview.md) <br/> |使用 Office 365 雲端 App 安全性**管理進階提醒**功能來設定原則，可以提醒您在 Office 365 中的可疑和異常活動。 您所收到的警示之後，您可以調查可能有問題且，如有需要採取動作來解決安全性問題的情況。  <br/> |
+|[管理進階的提醒](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |使用 Office 365 雲端 App 安全性**管理進階提醒**功能來設定原則，可以提醒您在 Office 365 中的可疑和異常活動。 您所收到的警示之後，您可以調查可能有問題且，如有需要採取動作來解決安全性問題的情況。  <br/> |
    
 

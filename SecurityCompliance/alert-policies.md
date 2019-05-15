@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365，以監視潛在威脅、 資料遺失和權限問題的安全性與合規性中心中建立警訊原則。 然後您可以檢視及管理使用者執行活動符合警示原則的條件時，要產生的警示。
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516501"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979499"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>在安全性與合規性中心中的警示原則
 
@@ -229,7 +229,7 @@ $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------
     
 ## <a name="viewing-cloud-app-security-alerts"></a>檢視雲端 App 安全性警示
   
-Office 365 雲端 App 安全性原則所觸發的提醒現在會顯示在**檢視警示**] 頁面上，在安全性與合規性中心。 這包括警示所觸發的活動原則與 Office 365 雲端 App 安全性中的異常偵測原則所觸發的提醒。 這表示您可以在安全性與合規性中心中檢視所有警示。 請注意，Office 365 雲端 App 安全性是只適用於 Office 365 企業版 E5 或 Office 365 美國政府版 G5 訂閱的組織。 如需詳細資訊，請參閱[概觀的 Office 365 雲端 App 安全性](office-365-cas-overview.md)。
+Office 365 雲端 App 安全性原則所觸發的提醒現在會顯示在**檢視警示**] 頁面上，在安全性與合規性中心。 這包括警示所觸發的活動原則與 Office 365 雲端 App 安全性中的異常偵測原則所觸發的提醒。 這表示您可以在安全性與合規性中心中檢視所有警示。 請注意，Office 365 雲端 App 安全性是只適用於 Office 365 企業版 E5 或 Office 365 美國政府版 G5 訂閱的組織。 如需詳細資訊，請參閱 <<c0>雲端 App 安全性概觀。
 
 此外，具有 Microsoft Cloud App Security Enterprise Mobility + Security E5 訂閱的一部分或屬於獨立服務的組織，也可以檢視與 Office 365 應用程式中安全性 & 服務相關的雲端 App 安全性警示合規性中心。
 
@@ -237,7 +237,7 @@ Office 365 雲端 App 安全性原則所觸發的提醒現在會顯示在**檢�
 
 ![使用來源篩選，以顯示 [僅雲端 App 安全性警示](media/FilterCASAlerts.png)
 
-類似於由安全性與合規性中心警示原則觸發警示，您可以按一下 [顯示詳細資料警示的彈出式頁面雲端 App 安全性提醒。 警示包含檢視詳細資料和管理警示 Cloud App Security 入口網站及連結至對應的 Cloud App Security 原則觸發警示內的連結。 請參閱[Office 365 雲端 App 安全性中的警示的檢閱和採取動作](review-office-365-cas-alerts.md)。
+類似於由安全性與合規性中心警示原則觸發警示，您可以按一下 [顯示詳細資料警示的彈出式頁面雲端 App 安全性提醒。 警示包含檢視詳細資料和管理警示 Cloud App Security 入口網站及連結至對應的 Cloud App Security 原則觸發警示內的連結。 請參閱[雲端 App 安全性中的監視器警示](https://docs.microsoft.com/cloud-app-security/monitor-alerts)。
 
 ![警示的詳細資料包含在 Cloud App Security 入口網站的連結](media/CASAlertDetail.png)
 

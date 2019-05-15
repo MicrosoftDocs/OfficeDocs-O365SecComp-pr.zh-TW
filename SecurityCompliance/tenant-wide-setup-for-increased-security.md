@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 逐步解說租用戶整體設定會影響您的 Office 365 環境的安全性建議的組態。 您的安全性需求可能需要更多或更少的安全性。 使用這些建議作為起點。
-ms.openlocfilehash: 91471f5e4b16f6950b1f74d747ebce3f802e4890
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f9d0eb9cec597c44781539fa9231c5bf2b3cfe16
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260267"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979469"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定 Office 365 租用戶以提高安全性
 
@@ -28,7 +28,7 @@ ms.locfileid: "32260267"
   
 ## <a name="check-office-365-secure-score"></a>檢查 Office 365 安全分數
 
-Office 365 安全分數分析根據您的日常活動和安全性設定的 Office 365 組織的安全性，並為其打分數。 開始 = 389917 記下您目前的分數。 調整某些租用戶整體設定會增加您的分數。 目標是未以達到最大的分數，但要注意的機會來保護您的環境，而不造成負面影響使用者產能。 請參閱[介紹 Office 365 安全分數](office-365-secure-score.md)。
+Office 365 安全分數分析根據您的日常活動和安全性設定的 Office 365 組織的安全性，並為其打分數。 開始 = 389917 記下您目前的分數。 調整某些租用戶整體設定會增加您的分數。 目標是未以達到最大的分數，但要注意的機會來保護您的環境，而不造成負面影響使用者產能。 請參閱 < <b0>Microsoft 安全分數</b0>。
   
 ## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>調整在 Microsoft 365 安全性中心中的威脅管理原則
 
@@ -116,9 +116,9 @@ SharePoint 系統管理中心和 OneDrive for 商務版系統管理中心包含�
   
 - [部署 Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
     
-- [Microsoft Cloud App Security 的詳細資訊](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
+- [Microsoft Cloud App Security 的詳細資訊](https://www.microsoft.com/cloud-platform/cloud-app-security)
     
-- [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
+- [雲端 App 安全性是什麼？](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
     
 ![Cloud App Security 儀表板](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   

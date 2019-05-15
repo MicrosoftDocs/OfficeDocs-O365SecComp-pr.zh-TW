@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊
-ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2189ff7abd640d9c87b97df35ec2b9cd44c74061
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256861"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979489"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
 
@@ -141,7 +141,7 @@ Exchange 伺服器上的信箱的步驟
 
 若要保護您的使用者帳戶，並特別是您系統管理員帳戶，最好是以[設定 Office 365 使用者的多重要素驗證](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)。  您也應該：
 <ol>
-    <li>監視您的使用者帳戶是<a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">存取和使用</a>的方式。 您可能不會使初始資料外洩，但您將來偵測此類更快速地縮短持續時間和資料外洩的影響。 您可以使用這些： <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">Office 365 雲端 App 安全性原則</a>，以監視您的帳戶及上不尋常的活動警訊。 
+    <li>監視您的使用者帳戶是<a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">存取和使用</a>的方式。 您可能不會使初始資料外洩，但您將來偵測此類更快速地縮短持續時間和資料外洩的影響。 您可以使用這些： <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">Office 365 雲端 App 安全性原則</a>，以監視您的帳戶及上不尋常的活動警訊。 
         <ol type="a">
             <li><b>多個失敗的登入嘗試次數</b>此原則設定檔您的環境和觸發提醒使用者有關學的比較基準，這可能表示嘗試外洩的單一工作階段中執行多個失敗的登入活動時。</li>
             <li><b>Impossible 旅行</b>-此原則設定檔環境和活動從相同的使用者在不同位置中偵測到兩個位置之間的預期的旅行時間較短的期間內時，會觸發警示。 這可能表示不同的使用者使用相同的認證。 偵測這個異常行為區間初始學習一段期間它可學習新使用者的活動模式的七天。</li>

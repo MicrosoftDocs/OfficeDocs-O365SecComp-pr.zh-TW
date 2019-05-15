@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 摘要： 閱讀本篇文章以取得 Microsoft 365 的 SIEM 伺服器整合的概觀。
-ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75fbfa45288d30363d36ad5046cd46127b0af777
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260661"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979439"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Microsoft 365 服務和應用程式的 SIEM 伺服器整合
 
@@ -35,7 +35,7 @@ SIEM 伺服器可以接收來自各種不同的 Microsoft 365 服務和應用程
 | --- | --- | --- |
 | [Office 365 進階威脅防護](office-365-atp.md) <br/>   或   <br/>[Office 365 威脅情報](office-365-ti.md) | 稽核記錄 | [Office 365 進階威脅防護的 SIEM 整合](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 記錄整合 | [Microsoft Cloud App Security 的 SIEM 整合](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 雲端 App 安全性](office-365-cas-overview.md) | 記錄整合 | [將 SIEM 伺服器與 Office 365 雲端 App 安全性整合](integrate-your-siem-server-with-office-365-cas.md) |
+| [Office 365 雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 記錄整合 | [將 SIEM 伺服器整合搭配雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/) | 記錄整合 | [提取提醒您 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
 | [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)（威脅保護和威脅偵測） | 警示 | [Azure 安全性資料匯出至 SIEM-管線組態-預覽](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Azure Active Directory 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | 稽核記錄 | [整合 Azure Active Directory 稽核記錄](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
