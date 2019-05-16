@@ -3,7 +3,7 @@ title: Office 365 ATP 安全附件
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.date: 04/04/2019
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: 安全附件功能提供時間按一下 [驗證電子郵件附件。 使用安全附件以保護您的組織中的惡意檔案人員傳送或接收電子郵件中。
-ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fd3fc7f790870330f0f69fc4cca59e1b8c58ce00
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077529"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -38,7 +38,7 @@ ATP 安全附件功能會檢查您的組織中的人員的電子郵件附件。 
   
 - **範例 1： 電子郵件附件**假設 Lee 收到具有附件的電子郵件訊息。 它不明顯地 Lee 是否是安全附件，或確實包含惡意程式碼為了竊取 Lee 的使用者認證。 Lee 的組織中的安全性管理員會定義 ATP 安全附件原則幾天。 ATP 安全附件功能，與電子郵件附件形式開啟且 Lee 收到它之前，在虛擬環境中測試。 如果附件決定要惡意，它將會自動移除。 安全附件時，它會開啟如預期般 Lee 按一下在其上時。
 
-- **範例 2: SharePoint Online 中的檔案**假設 Jean 接收檔案，而傳至 SharePoint Online 中的文件庫。 Jean 共用檔案的連結與其他小組成員，不知道該檔案實際惡意。 幸好，[適用於 SharePoint、 OneDrive 及 Microsoft Teams ATP](atp-for-spo-odb-and-teams.md)會偵測惡意檔案，並且封鎖。 幾天之後，Chris 移至開啟的文件。 雖然 Chris 可以看到檔案已存在，但 Chris 無法開啟，或讓它，可防止惡意檔案中 Chris 的電腦與其他人共用。
+- **範例 2: SharePoint Online 中的檔案**假設 Jean 接收檔案，而傳至 SharePoint Online 中的文件庫。 Jean 共用檔案的連結與其他小組成員，不知道該檔案實際惡意。 幸好，[適用於 SharePoint、 OneDrive 及 Microsoft Teams ATP](atp-for-spo-odb-and-teams.md)會偵測惡意檔案，並且封鎖。 幾天之後，Chris 移至開啟的文件。 雖然 Chris 可以看到檔案已存在，但 Chris 無法開啟，或讓它，進而從惡意檔案保護 Chris 的電腦與其他人共用。
 
 ATP 安全附件原則可以套用到特定人員或組織中的群組或整個網域。 此外，ATP 安全附件原則可以設定成使用預留位置附件，雖然會掃描實際的附件。 若要深入了解，請參閱 <<c0>設定 Office 365 中的 ATP 安全附件原則。
 

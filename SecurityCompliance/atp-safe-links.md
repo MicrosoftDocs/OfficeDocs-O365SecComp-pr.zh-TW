@@ -3,7 +3,7 @@ title: Office 365 ATP 安全連結
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.date: 03/05/2019
 ms.topic: overview
 f1_keywords:
@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全連結功能提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。 若要從網路釣魚和其他攻擊保護您的組織使用安全連結。
-ms.openlocfilehash: 7dacb4184ff0b99887b2aa5f3fe2e65cd58c5b6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa70440a5192600821ac5d627baf630c3243716a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249553"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077539"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 

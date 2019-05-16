@@ -3,7 +3,7 @@ title: Office 365 進階威脅防護的 SIEM 整合
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: None
@@ -15,12 +15,12 @@ ms.date: 03/11/2019
 ms.collection:
 - M365-security-compliance
 description: 將貴組織的 SIEM 伺服器整合與 Office 365 進階威脅防護和 Office 365 活動管理 API 中的相關的威脅事件。
-ms.openlocfilehash: fa9dcda0556684b748068cbe5ee848ba443d7667
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: da34073669d50cadcc01b5dd885d209a329c645f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077189"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Office 365 進階威脅防護的 SIEM 整合
 
@@ -34,7 +34,7 @@ SIEM 伺服器或其他相似 system 應輪詢 access 偵測事件**audit.genera
 
 #### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
-|值|成員名稱|說明|
+|值|成員名稱|描述|
 |:-----|:-----|:-----|
 |28|ThreatIntelligence|從 Exchange Online Protection 和 Office 365 進階威脅防護的網路釣魚和惡意程式碼事件。|
 |41|ThreatIntelligenceUrl|ATP 安全連結區塊時間] 與 [封鎖覆寫來自 Office 365 進階威脅防護的事件。|

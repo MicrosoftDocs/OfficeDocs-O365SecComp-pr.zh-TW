@@ -1,10 +1,10 @@
 ---
-title: 傳送電子郵件通知，並顯示原則提示的 DLP 原則
+title: 針對 DLP 原則傳送電子郵件通知並顯示原則提示
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: '原則提示是通知或其他人正在使用的內容與 DLP 原則衝突時，會出現的警告。 您可以使用電子郵件通知和原則提示來增加知悉的變更，並協助教育人員需貴組織的原則。 您也可以的讓人員選擇覆寫原則，以便他們不會封鎖如果他們有有效的商務需要或原則會偵測誤判。 '
-ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263860"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077359"
 ---
-# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>傳送電子郵件通知，並顯示原則提示的 DLP 原則
+# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
 您可以使用資料外洩防護 (DLP) 原則來識別、 監視和保護 Office 365 的敏感資訊。 您想要在組織中使用遵守 DLP 原則，此敏感資訊的人員，但不想要封鎖他們不必要地從快速完成其工作。 這是電子郵件通知和原則提示可以協助其中。
   
