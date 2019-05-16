@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: '上方來自 Microsoft 的 cybersecurity 小組實作的安全性功能來保護您的 Office 365 環境的建議。 '
-ms.openlocfilehash: ba74827c34a869ee11553f02d9085b6f015b2d9d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d6ac885d2517a7933df52b34124654784012c677
+ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260921"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34088816"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Office 365 安全性藍圖的 30 天、 前 90 天及過後的頂端優先順序
 
@@ -87,8 +87,8 @@ ms.locfileid: "32260921"
 |範圍  <br/> |工作  <br/> |
 |安全性管理  <br/> |• 繼續下一步動作規劃使用安全分數 ( [https://securescore.office.com](https://securescore.office.com))。  <br/>  • 繼續定期檢閱儀表板和報告在 Microsoft 365 安全性中心、 雲端 App 安全性與 SIEM 工具。  <br/>  • 繼續尋找並實作軟體更新。  <br/>  • 整合到您 legal 的 eDiscovery 和威脅回應程序。  <br/> |
 |威脅防護  <br/> | • 實作[Secure 特殊權限存取](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access)(SPA) 適用於內部部署 （AD、 AD FS） 的身分識別元件。  <br/>  • 使用 Cloud App Security 來監視測試人員威脅。  <br/>  • 藉由使用 Cloud App Security 探索陰影 IT SaaS 流量。  <br/> |
-|身分識別和存取管理  <br/> | • 精簡資訊保護原則：  <br/>  • Azure 資訊保護和 Office 365 資料外洩防護 (DLP)。  <br/>  • 雲端 App 安全性原則和警訊。  <br/> |
-|資訊保護  <br/> | • 精簡原則和作業程序。  <br/>  • 使用 Azure AD Identity Protection 來識別測試人員威脅。  <br/> |
+|身分識別和存取管理  <br/> | • 精簡原則和作業程序。  <br/>  • 使用 Azure AD Identity Protection 來識別測試人員威脅。  |
+|資訊保護  <br/> | 調整資訊保護原則：  <br/>  • Microsoft 365 和 Office 365 的敏感度標籤和資料外洩防護 (DLP) 或 Azure 資訊保護。  <br/>  • 雲端 App 安全性原則和警訊。  <br/> |
    
 另請參閱：[如何減輕 Petya 等 WannaCrypt 快速網路攻擊](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/)。 
   
