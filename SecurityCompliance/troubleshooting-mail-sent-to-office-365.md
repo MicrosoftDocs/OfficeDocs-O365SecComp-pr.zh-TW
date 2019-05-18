@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: 本文提供寄件者嘗試傳送電子郵件給 Office 365 和 Office 365 客戶的大量郵件的最佳作法中的收件匣時遇到問題的疑難排解資訊。
-ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ecb5c407c793fa93bf6f64589531bb3cff3c3494
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265905"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158215"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>將疑難排解郵件傳送至 Office 365
 

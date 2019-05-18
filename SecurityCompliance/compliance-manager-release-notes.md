@@ -3,7 +3,7 @@ title: Microsoft Compliance Manager 版本資訊
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 5e18445e3f9ad2848f18174788ec6dd40bc4a178
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473038"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152065"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>版本資訊的合規性管理員 （預覽）
 
@@ -27,16 +27,16 @@ ms.locfileid: "33473038"
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>What's new 合規性管理員中 （預覽）
 
-- **整合與 Microsoft 安全分數：** 合規性管理員可藉由將客戶管理動作對應到超過 50 個安全分數動作支援與[Microsoft 安全分數](microsoft-secure-score.md)的整合。 當您完成安全分數對應巨集指令時，會自動更新對應的合規性管理員動作。
+- **整合與 Microsoft 安全分數：** 合規性管理員可藉由將客戶管理動作對應到超過 50 個安全分數動作支援與[Microsoft 安全分數](microsoft-secure-score.md)的整合。 當您完成安全分數對應巨集指令時，對應的合規性管理員巨集指令會自動更新。
 
-- **匯入自訂的 「 評估 」:** 除了內建的評估，合規性管理員現在可支援匯入自訂的範本，讓您可以建立自訂的 「 評估 」 的任何產品或服務以及任何標準或法規。
+- **匯入自訂的 「 評估 」:** 除了內建的評估，合規性管理員現在可支援匯入自訂的範本。 您可以建立自訂的 「 評估 」 的任何產品或服務以及任何標準或法規。
 
 - **動作項目：** 動作項目現在的個別項目，而且許多包括來自 Microsoft 安全分數 Graph API 的遙測集合。 請儘可能技術巨集指令建議現在有適用的設定] 頁面上的連結 Office 365 服務中。
 
 - **租用戶管理：** 管理新的資料元素合規性管理員中 （預覽） 的新介面：
     - **維度：** 檢視、 新增並自訂的中繼資料的範本、 評估以及動作項目，可讓您建立自訂的樞紐分析表的篩選器。
     - **擁有者：** 指定每個動作項目擁有者。
-    - **客戶動作：** 管理動作項目包含在合規性管理員 （預覽） 的完整清單，並啟用/停用安全分數監控整合在一起安全分數的動作項目。
+    - **客戶動作：** 管理動作項目包含在合規性管理員 （預覽） 的完整清單，並啟用/停用安全分數監控與安全分數整合在一起的動作項目。
 
 - **更新合規性分數**： 方法具有變更以支援透過 Microsoft 安全分數進行同步處理。 計分系統會移除 Microsoft 管理控制項信用額度，並完全著重完成的客戶管理控制措施。
 
@@ -46,7 +46,12 @@ ms.locfileid: "33473038"
 
 ### <a name="compliance-score"></a>合規性分數
 
-- 時的動作項目都標示為**不在範圍中**，指派動作項目，分數不是排除合規性分數計算。 標示為**不在範圍中**的動作項目應該不會增加您的合規性分數。
+- 標示為**不在範圍中**的動作項目，分數指派動作項目不是從合規性分數計算中排除。 標示為**不在範圍中**的動作項目不會增加您的合規性分數。
+
+### <a name="secure-score"></a>安全分數
+
+- 安全分數結果訣不適用於特定 Microsoft 365 和 Office 365 訂閱中的某些動作項目。 結果是安全分數 '無法偵測' 在這些情況下。
+- 有時安全分數結果會傳回對應的原則並不會完成的動作項目。
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 管理控制措施
 
@@ -60,7 +65,7 @@ ms.locfileid: "33473038"
 
 ### <a name="control-families-not-shown-in-assessments"></a>不會顯示在 「 評估 」 控制項系列
 
-- 當您匯入範本時，所有評估都根據範本會反映是範本的一部份的所有控制項系列。 但是，如果您新增至範本的新控制項系列，任何現有 「 評估 」 不會反映所做的變更。 僅限關閉更新的範本建立新的評估會反映所做的變更。
+- 當您匯入範本時，該範本為基礎的所有評定都反映是範本的一部份的所有控制項系列。 但是，如果您新增至範本的新控制項系列，任何現有 「 評估 」 不會反映所做的變更。 僅限關閉更新的範本建立新的評估會反映所做的變更。
 
 ### <a name="filters"></a>篩選
 
@@ -85,3 +90,7 @@ ms.locfileid: "33473038"
 ### <a name="session-timeout"></a>工作階段逾時
 
 - 當工作階段逾時，可能會出現 「 發生錯誤 」 錯誤。 若要解決，移至[合規性管理員中](https://servicetrust.microsoft.com/ComplianceManager)，並再次登入。
+ 
+### <a name="language-support"></a>語言支援
+
+- 所有語言都不支援所有的網頁。 如果您當地語言不受支援，在美式英文的檢視。

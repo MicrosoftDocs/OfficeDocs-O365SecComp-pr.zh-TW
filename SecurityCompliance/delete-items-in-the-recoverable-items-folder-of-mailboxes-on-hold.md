@@ -3,7 +3,7 @@ title: 刪除 [可復原的項目] 資料夾中項目保留狀態的雲端式信
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 系統管理員： 刪除 Exchange Online 信箱，使用者可復原的項目] 資料夾中的項目，即使該信箱處於合法持有。 這是有效的方法來刪除已不小心溢出至 Office 365 的資料。
-ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256871"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150405"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除 [可復原的項目] 資料夾中項目保留狀態的雲端式信箱的系統管理說明
 

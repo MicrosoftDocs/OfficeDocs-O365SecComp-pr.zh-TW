@@ -3,7 +3,7 @@ title: 為您的組織設定監督原則
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 若要擷取員工通訊，檢閱設定主管檢閱原則。
-ms.openlocfilehash: c99936a9a33446ce13e5d0a719ef7447be619bf4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470393"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151535"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
 
@@ -33,27 +33,27 @@ ms.locfileid: "33470393"
   
 請遵循下列步驟來設定和使用 Office 365 組織中監督：
   
-- **（選用） 步驟 1**：[設定群組的監督 （選用）](#step-1---set-up-groups-for-supervision-optional)
+- **（選用） 步驟 1**：[設定的監督的群組](#step-1-set-up-groups-for-supervision-optional) 
 
     開始使用監督之前，請決定誰需要檢閱的通訊，以及誰執行檢閱。 如果您想要開始使用少數使用者查看監督的運作方式，您可以略過現在群組設定。
 
-- **（必要） 的步驟 2**：[使 （必要） 組織中可用的監督](#step-2---make-supervision-available-in-your-organization-required)
+- **（必要） 的步驟 2**：[讓您組織中可用的監督](#step-2-make-supervision-available-in-your-organization-required)
 
     將自己新增至主管檢閱角色群組，以便讓您可以設定原則。 擁有此角色指派給任何人可以存取合規性中心中的 [**監督**] 頁面。 如果 reviewable 電子郵件裝載於 Exchange Online，每位檢閱者必須具有[Exchange online 的遠端 PowerShell 存取](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
-- **（選用） 步驟 3**：[建立自訂機密資訊類型和自訂的關鍵字字典](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **（選用） 步驟 3**：[建立自訂機密資訊類型和自訂的關鍵字字典](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     如果您需要的自訂機密資訊類型或自訂的關鍵字字典監督原則，您需要建立啟動監督精靈之前。
 
-- **（必要） 的步驟 4**：[設定的監督原則](#step-4---set-up-a-supervision-policy-required)
+- **（必要） 的步驟 4**：[設定的監督原則](#step-4-set-up-a-supervision-policy-required)
 
     您可以建立監督原則與合規性中心。 這些原則定義哪些通訊會受到檢閱您組織中，並指定誰可以執行檢閱。 通訊包括電子郵件和 Microsoft Teams 的通訊，以及第 3 廠商平台 （例如 Facebook、 Twitter 等等） 的通訊
 
-- **（選用） 步驟 5**：[測試您的監督原則](#step-5---test-your-supervision-policy-optional)
+- **（選用） 步驟 5**：[測試您的監督原則](#step-5-test-your-supervision-policy-optional)
 
     測試您的監督原則，以確定它所需的功能。 請務必確定您符合性策略會議標準。
 
-- **（選用） 步驟 6**：[設定適用於 Outlook 檢閱不想要使用 Office 365 監督儀表板或 （先前稱為 Outlook Web App） 網頁型 Outlook 來檢閱監督的通訊](#step-6---configure-outlook-for-reviewers-optional)
+- **（選用） 步驟 6**：[設定適用於 Outlook 檢閱不想要使用 Office 365 監督儀表板或 （先前稱為 Outlook Web App） 網頁型 Outlook 來檢閱監督的通訊](#step-6-configure-outlook-for-reviewers-optional)
 
     設定 Outlook，才能讓檢閱者存取 Outlook 用戶端內的監督功能讓他們可以評估並加以分類每個項目。
 
@@ -65,7 +65,7 @@ ms.locfileid: "33470393"
 
 | **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
-|監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
+|監督的使用者 <br> 指導的非使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
 | 檢閱者 | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
   
 若要管理大型企業組織中監督的使用者，您可能需要跨大型群組監視所有使用者。 您可以使用 PowerShell 來設定全域監督原則中的 [指派] 群組的通訊群組。 這可讓您監視數千名使用者與單一原則，並保留已更新為新員工加入您的組織在監督原則。

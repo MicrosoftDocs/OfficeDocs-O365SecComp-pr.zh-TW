@@ -3,7 +3,7 @@ title: Exchange Online 信箱中儲存的內容
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Office 365 雲端式應用程式所產生的資料會儲存在 Microsoft cloud 中的使用者的 Exchange Online 信箱。
-ms.openlocfilehash: 6f7a81842df5972a03648a2f93d4bd6fbd738fec
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 380c16e65c2358961b9ee5185c40d3eb7d85950b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266895"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157715"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Exchange Online 信箱中儲存的內容
 
@@ -30,7 +30,7 @@ Exchange Online 中的信箱主要用來儲存郵件、 行事曆項目、 工�
 
 |Office 365 應用程式  |描述  |
 |:---------|:---------|
-|表單     <br/> |（儲存為 PDF 檔案） 的表單和表單 （儲存 CSV 檔案中） 的回覆電子郵件附加且儲存在隱藏的資料夾中建立表單之使用者的信箱。 當您匯出內容從 PST 檔案中的表單時，此資料位於名為下列全域唯一識別 (guid) 的子資料夾中的 [ **ApplicationDataRoot** ] 資料夾： **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**。        <br/> |
+|Forms     <br/> |（儲存為 PDF 檔案） 的表單和表單 （儲存 CSV 檔案中） 的回覆電子郵件附加且儲存在隱藏的資料夾中建立表單之使用者的信箱。 當您匯出內容從 PST 檔案中的表單時，此資料位於名為下列全域唯一識別 (guid) 的子資料夾中的 [ **ApplicationDataRoot** ] 資料夾： **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**。        <br/> |
 |MyAnalytics    <br/> |   MyAnalytics 提供使用者深入了解有關如何在每日花在其根據其信箱中的郵件和行事曆資料的時間。 此資料儲存在隱藏的資料夾中的使用者的信箱。 如需詳細資訊 MyAnalytics 資料及如何將其匯出，請參閱 <<c0>從 MyAnalytics 匯出資料。      <br/> |
 |Office 365 群組    <br/>|  電子郵件、 行事曆項目、 連絡人 （人員）、 備忘稿和工作會儲存在與 Office 365 群組相關聯的信箱。       <br/> |
 |Outlook/Exchange Online<br/>|  電子郵件、 行事曆項目、 連絡人 （人員）、 備忘稿和工作會儲存在使用者的信箱。       <br/> |
@@ -44,4 +44,4 @@ Exchange Online 中的信箱主要用來儲存郵件、 行事曆項目、 工�
 ||||
 
 > [!NOTE]
-> 目前，如果保留 custodian 信箱進階電子文件 （預覽） 中，從表單和 Sway 的內容不會保留此保留。 
+> 目前，如果保留在信箱上 （藉由使用 eDiscovery 和進階電子文件探索案例中的保留），從表單和 Sway 的內容不會保留此保留。 

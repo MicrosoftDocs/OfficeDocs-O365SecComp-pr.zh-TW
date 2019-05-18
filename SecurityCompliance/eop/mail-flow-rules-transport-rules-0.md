@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 您可以使用郵件流程規則 （傳輸規則） 來識別和對郵件採取動作的流程透過 Office 365 組織。
-ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256625"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153145"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中郵件流程規則 （傳輸規則）
 

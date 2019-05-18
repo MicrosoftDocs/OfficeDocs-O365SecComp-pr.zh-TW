@@ -3,7 +3,7 @@ title: 在安全性與合規性中心中的警示原則
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365，以監視潛在威脅、 資料遺失和權限問題的安全性與合規性中心中建立警訊原則。 然後您可以檢視及管理使用者執行活動符合警示原則的條件時，要產生的警示。
-ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
-ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
+ms.openlocfilehash: d4d163a483f47f7b4d785d43a0554e5d7670d24a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33979499"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152505"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>在安全性與合規性中心中的警示原則
 

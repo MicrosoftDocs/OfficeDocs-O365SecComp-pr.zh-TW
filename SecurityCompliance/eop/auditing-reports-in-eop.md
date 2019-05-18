@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Microsoft Exchange Online Protection (EOP) 中的稽核報告可以協助您符合貴組織的法規、 規範和訴訟需求。您可以隨時取得稽核報告，來判斷已對 EOP 組態所做的變更。這些報告可協助您疑難排解組態問題，或找出安全性相關或規範相關問題的原因。
-ms.openlocfilehash: b2b62939d4330b62e3cb78d682f6ac62251bb5bb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 59b5bea248772caf1f72f2b03ae4f25c03187bab
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256651"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153207"
 ---
 # <a name="auditing-reports-in-eop"></a>EOP 中的稽核報告
 

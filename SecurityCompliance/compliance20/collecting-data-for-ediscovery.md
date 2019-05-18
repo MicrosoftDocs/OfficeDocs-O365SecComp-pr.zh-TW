@@ -1,10 +1,10 @@
 ---
-title: 收集資料的進階電子文件 （預覽） 中的案例
+title: 收集資料的進階電子文件中的案例
 ms.author: esclee
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242551"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151885"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>收集資料的進階電子文件 （預覽） 中的案例
+# <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>收集資料的進階電子文件中的案例
 
-一旦您已識別 custodians，針對您的案例感興趣的資料來源，該是時候來識別文件，以探究一組。 您可以使用進階電子文件 （預覽） 中的 「 搜尋 」 工具，來識別這些從 custodial 及非 custodial Office 365 中的位置。
+一旦您已識別 custodians，針對您的案例感興趣的資料來源，該是時候來識別文件，以探究一組。 您可以使用進階電子文件中的 「 搜尋 」 工具，來識別這些從 custodial 及非 custodial Office 365 中的位置。
 
-執行搜尋之後，您可以檢視統計資料，例如有符合搜尋查詢的大部分項目位置擷取的項目。 您也可以預覽結果的子集。 當您已識別想要更進一步檢查的文件組時，您可以收集和處理工作設新增搜尋結果。
+執行搜尋之後，您可以檢視統計資料，例如有符合搜尋查詢的大部分項目位置擷取的項目。 您也可以預覽結果的子集。 當您已識別想要更進一步檢查的文件組時，您可以新增設收集和處理程序檢閱搜尋結果。
 
 ## <a name="create-a-search"></a>Create a search
 
@@ -46,6 +46,6 @@ ms.locfileid: "32242551"
 
 預覽完成之後，[**預覽**] 按鈕會在作用中。 按一下以預覽取樣結果的子集。
 
-## <a name="adding-search-results-to-a-working-set"></a>新增搜尋結果，以工作集
+## <a name="adding-search-results-to-a-review-set"></a>將搜尋結果新增至檢閱設定
 
-當您準備好要收集和處理整個搜尋的結果時，您可以藉由將它新增至工作來執行此動作。 如需詳細資訊，請參閱 <<c0>新增資料至工作集。 
+當您準備好要收集和處理整個搜尋的結果時，您可以藉由將它新增至檢閱來執行此動作。 如需詳細資訊，請參閱 <<c0>新增資料，以檢閱設定。 

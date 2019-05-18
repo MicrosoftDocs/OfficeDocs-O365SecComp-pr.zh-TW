@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835063"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155185"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>設定進階電子文件中的設定律師-委託人權限偵測 （預覽）
 
@@ -65,7 +65,7 @@ ms.locfileid: "33835063"
 
 ### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>步驟 2： 建立律師-委託人權限偵測模型的智慧標籤群組
 
-您可以使用律師-委託人權限偵測的結果檢閱程序中的主要方法是使用智慧標籤群組。 智慧標籤群組採取 ML 模型的結果，並顯示模型中內嵌標記旁的結果，讓您輕鬆地耗用模型的結果，其中相關，與檢閱程序中使用標記，如同任何其他標記您的標記面板中。
+您可以使用律師-委託人權限偵測的結果檢閱程序中的主要方法是使用智慧標籤群組。 智慧標籤群組採取 ML 模型的結果，並顯示模型中內嵌標記旁的結果，讓您輕鬆地耗用模型的結果，其中相關，與檢閱程序中使用標記，如同任何其他標記您的標記面板中。 請參閱[Set up ML 輔助檢閱進階電子文件中的智慧標籤](smart-tags.md)的詳細資訊。
 
 - 在 「 管理標籤 」 中，按一下 [在 「 新增智慧標籤區段 」。
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb29ff34d663cf43af4a9a4b1e966a282d16eaf2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243631"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151945"
 ---
 # <a name="acknowledge-a-hold-notification"></a>確認保留通知 
 當回應法規要求或調查，您可能需要通知來保留電子儲存的資訊 (ESI)，以及可能是相關法律專家作用中或即將發生任何材料其義務的 custodians。 一旦傳送，法務小組必須知道每個 custodian 已接收、 讀取、 並瞭解並同意遵守的特定指示。
 
-若要協助減少時間、 成本和工作的下列設定與您 custodians 進階電子文件 （預覽） 可讓您傳送和待處理事項上法律保留透過電子郵件通知。 除了電子郵件通知，每個 custodian 也會有存取個別的規範入口網站，讓 custodians 保持做出正確的變更為其義務狀態。
+若要協助減少時間、 成本和工作的下列設定與您 custodians 進階電子文件可讓您傳送和待處理事項上法律保留透過電子郵件通知。 除了電子郵件通知，每個 custodian 也會有存取個別的規範入口網站，讓 custodians 保持做出正確的變更為其義務狀態。
 
 ## <a name="email-notifications"></a>電子郵件通知
 一旦已經發出法律保留的通知，每個 custodian 將會收到包含您已定義的合法持有通知唯一和個人化電子郵件，並新增指示。 

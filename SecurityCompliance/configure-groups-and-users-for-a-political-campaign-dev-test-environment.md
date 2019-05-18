@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - Ent_O365
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
-ms.openlocfilehash: bd491bf34f8625b9ed03ce32c8edcc2f446e2464
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b81674723f1da5b4282a331207caad2fc6d3d0a0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259604"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151479"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
@@ -54,7 +54,7 @@ ms.locfileid: "32259604"
     
 2. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權]**** 的 [編輯]****。
     
-3. 在 [產品授權]**** 窗格中，將 **Enterprise Mobility + Security E5** 的產品授權設為 [開啟]**，按一下 [儲存]，然後按兩次 [關閉]。
+3. 在 [產品授權]**** 窗格中，將 **Enterprise Mobility + Security E5** 的產品授權設為 [開啟]******，按一下 [儲存]****，然後按兩次 [關閉]****。
     
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>階段 2：建立和設定 Azure Active Directory (AD) 群組
 

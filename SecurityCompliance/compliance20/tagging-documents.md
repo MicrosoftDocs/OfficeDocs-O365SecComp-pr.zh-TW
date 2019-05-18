@@ -1,10 +1,10 @@
 ---
-title: 標記工作集中的文件
+title: 標記檢閱集中的文件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a3b588f4b8e24783cd0d7198ea995f0fd6c8ae3e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241104"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154025"
 ---
-# <a name="tag-documents-in-a-working-set"></a>標記工作集中的文件
+# <a name="tag-documents-in-a-review-set"></a>標記檢閱集中的文件
 
-組織中的工作集的內容很重要完成 eDiscovery 程序中的各種工作流程。 其中包括：
+組織中檢閱設定的內容很重要完成 eDiscovery 程序中的各種工作流程。 其中包括：
 
 -  挑選不必要的內容
 
@@ -31,11 +31,11 @@ ms.locfileid: "32241104"
  
 -  識別必須由專家或律師檢閱的內容
 
-當專家、 律師或其他使用者檢閱工作集合中的內容時，其相關內容的意見可以擷取使用標記。 例如，如果目的是要 cull 不必要的內容，使用者可以具有標記，例如 「 非回應 「 標記文件。 已檢閱及標記的內容之後，可以建立工作設定搜尋来排除的任何內容標示為 「 非回應 」，以排除此內容中的 eDiscovery 工作流程的下一個步驟。 [標記] 面板可以自訂每個案例，以便將標記可支援預定的檢閱 」 工作流程。
+當專家、 律師或其他使用者檢閱檢閱集合中的內容時，其相關內容的意見可以擷取使用標記。 例如，如果目的是要 cull 不必要的內容，使用者可以具有標記，例如 「 非回應 「 標記文件。 檢閱並標記內容之後，檢閱設定搜尋可以建立排除標示為 「 非回應 」，以排除此內容中的 eDiscovery 工作流程的下一個步驟從任何內容。 [標記] 面板可以自訂每個案例，以便將標記可支援預定的檢閱 」 工作流程。
 
 ## <a name="tag-types"></a>標記類型
 
-進階電子文件 （預覽） 提供兩種類型的標記：
+進階電子文件提供兩種類型的標記：
 
 - **單一選擇標記**-會限制使用者可以選取群組內的單一標籤。 這可確保使用者不選取衝突的標記，例如 「 回應 」 及 「 非回應 」。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "32241104"
 
 ## <a name="tag-structure"></a>標記結構
 
-標記類型，除了結構的標籤的 [標記] 面板中的組織的方式可用來進行更容易了解標記的文件。 標記分組章節。 使用 [設定搜尋支援搜尋由標記和標記] 區段中的功能。 這表示您可以建立工作設定搜尋以擷取使用中] 區段中的任何標記來標記的文件。
+標記類型，除了結構的標籤的 [標記] 面板中的組織的方式可用來進行更容易了解標記的文件。 標記分組章節。 檢閱設定搜尋支援搜尋由標記和標記] 區段中的功能。 這表示您可以建立檢閱設定搜尋以擷取使用中] 區段中的任何標記來標記的文件。
 
 ![在 [標籤] 面板中的標記區段](../media/Tagtypes.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "32241104"
 
 ### <a name="tagging-a-single-document"></a>標記單一文件
 
-當您工作集合中檢視文件，您可以顯示檢閱可用**的編碼控制台]**，即可標記。
+當您檢視文件檢閱集中，您可以顯示檢閱可用**的編碼控制台]**，即可標記。
 
 ![按一下 [標籤面板中顯示的標籤面板](../media/Singledoctag.png)
 

@@ -3,18 +3,18 @@ title: 安全性與合規性中心內的訊息追蹤
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 系統管理員可以使用郵件追蹤安全性 & 合規性中心中找出的郵件發生了什麼事。
-ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265613"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158675"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的訊息追蹤
 
@@ -380,7 +380,7 @@ ms.locfileid: "32265613"
 |`ETR|ruleId=<guid>`|已符合的規則 ID。|
 |`St=<datetime>`|日期和時間 UTC 規則相符項目發生時。|
 |`Action=<ActionDefinition>`|已套用的動作。 如需可用動作的清單，請參閱[郵件流程規則動作在 Exchange Online](https://technet.microsoft.com/library/jj919237.aspx)。|
-|`Mode=<Mode>`|規則的模式。 UserMailbox <br/>• **Enforce**： 將強制執行規則上的所有動作。 <br/>•**搭配原則提示來測試：**： 將會傳送任何 「 原則提示 」 動作，但不是會在處理其他強制執行動作。 <br/>•**不搭配原則提示就測試**： 動作將會列在記錄檔中，但不是會以任何方法通知寄件者和上不會處理強制執行動作。|
+|`Mode=<Mode>`|規則的模式。 有效值為： <br/>• **Enforce**： 將強制執行規則上的所有動作。 <br/>•**搭配原則提示來測試：**： 將會傳送任何 「 原則提示 」 動作，但不是會在處理其他強制執行動作。 <br/>•**不搭配原則提示就測試**： 動作將會列在記錄檔中，但不是會以任何方法通知寄件者和上不會處理強制執行動作。|
 
 符合條件的郵件流程規則，範例**custom_data**值的郵件看起來像這樣：
 

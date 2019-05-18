@@ -1,10 +1,10 @@
 ---
-title: 管理 custodians 進階電子文件 （預覽） 案例中
+title: 管理 custodians 進階電子文件探索案例中
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,113 +14,133 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d9806ecbc23f46ee2d39f8d7e6be07af0d6a83e8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241838"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151615"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>管理 custodians 進階電子文件 （預覽） 案例中
+# <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>管理 custodians 進階電子文件探索案例中
 
-[Custodians] 索引標籤包含的情況下的所有 custodians 排序清單。 Custodians 新增至案例之後，從 Azure Active Directory 會自動收集有關每個 custodian 的詳細資料。
+在進階電子文件中的 [Custodians] 索引標籤包含所有 custodians 已新增至案例清單。 您將 custodians 新增至案例之後，每個 custodian 詳細自動收集自 Azure Active Directory 且進階電子文件探索中檢視。
 
 ![管理 Custodians](../media/CustodianDetails.PNG)
 
-## <a name="viewing-custodian-details"></a>檢視 custodian 詳細資料
+## <a name="view-custodian-details"></a>檢視 custodian 詳細資料
 
-之後您將 custodian 新增至案例及**Custodians** ] 索引標籤上，從清單中選取他們，會出現包含 custodian 詳細資料彈出式頁面。從這裡開始，您可以檢視該 custodian 與相關的所有詳細資料。 彈出式頁面包含下列欄位：
+若要檢視有關 custodian 的詳細資訊，請按一下 [ **Custodians** ] 索引標籤上，從清單 custodian。彈出式頁面隨即出現，並包含 custodian 的下列資訊：
 
 - 連絡人資訊
 
-  - **顯示名稱**： custodian 顯示在通訊錄中的名稱。 這通常是 custodian 名字]、 [中間的初始和最後一個名稱的組合。
-  - **郵件/SMTP**: custodian，例如 jeff@contoso.onmicrosoft.com 的 SMTP 位址。  
-  - **標題**： custodian 的職稱。
-  - **部門**： custodian 適用於部門的名稱。
-  - **管理員**： custodian 的管理員。 指定的管理員會收到此 custodian 任何呈報通訊。
+  - **顯示名稱**-custodian 顯示在通訊錄中的名稱。 這通常是 custodian 名字]、 [中間的初始，和最後一個名稱的組合。
+  
+   - **郵件/SMTP** -custodian，例如 brianj@contoso.onmicrosoft.com 的主要 SMTP 位址。 請注意 custodian 的使用者主要名稱 (UPN) 也會列。
+
+  - **標題**-custodian 的職稱。
+
+  - **部門**-custodian 適用於部門的名稱。
+
+  - **管理員**-custodian 的管理員。 指定的管理員會收到此 custodian 任何呈報通訊。
   
 - 位置資訊
 
-  - **縣/市**： custodian 所在的市/鎮。
-  - **狀態**： 縣 / 市 custodian 的地址。
-  - **國家/地區**： 於 custodian 所在; 國家/地區例如，「 美國 」 或者 「 英國 」。
-  - **Office**： 商務版 custodian 就地的辦公室位置。
+  - **縣/市**-custodian 所在的市/鎮。
+
+  - **狀態**-縣 / 市 custodian 的地址。
+
+  - **國家/地區**-custodian 所在的國家/地區。
+
+  - **Office** -商務版 custodian 就地的辦公室位置。
 
 - 案例資訊
 
-  - **保留狀態**： 指出是否 custodian 具有已處於保留狀態。 
-  - **通訊狀態**： 指出 custodian 是否已經發出保留通知。 如果 custodian 已發出的通知，這會被標示為*已發佈*。 如果 custodian 已不發出通知，則此狀態將會是*未發佈*。 
-  - **狀態**： 在 case custodian 的狀態。 如果 custodian 仍處於保留的情況下，這會是*作用中*。 如果從案例移除 custodian，其狀態會變更為*發行*。 
+  - **保留狀態**-會指出是否 custodian 具有已處於保留狀態。 
 
-- 處理狀態
+  - **通訊狀態**： 指出 custodian 是否已經發出保留通知。 如果 custodian 已發出的通知，此屬性的這個值會是**已發佈**。 如果 custodian 已不發出通知，狀態會**取消發佈**。 
 
-  - **編製索引狀態**： 指出深層索引工作的狀態。  
-  - **編製索引上次更新時間**： 指出的深層索引工作最後觸發 datestamp。
-  - **資料來源**： 顯示的信箱、 網站和小組 custodian 已選取的計數。
+  - **狀態**-在 case custodian 的狀態。 **作用中的**] 狀態表示 custodian 是這種情況的一部分。 如果 custodian 一經釋出從案例，狀態會變更為**發行**。 
 
-## <a name="editing-a-custodian"></a>編輯 custodian
+- 資料來源及索引資訊
+
+    - **資料來源**-顯示計數和類型的資料來源 （信箱、 網站和小組） 與 custodian 相關聯，而且這種情況的一部分。
+
+    - **索引更新時間**-會指出上次觸發進階索引工作的日期和時間。 此屬性也會指出當進階索引處理序正在進行中。
+
+
+## <a name="edit-a-custodian"></a>編輯 custodian
 
 隨著您案例的進度，您可能會發現可能有其他資料來源相關的特定 custodian & 您的案例。 在其他情況下，您可能想要移除特定資料來源的檢閱和視為不相關。
 
-若要更新 custodian 及選取的資料來源：
+若要更新 custodian 相關聯的資料來源：
 
-1. 從**eDiscovery > 進階電子文件 （預覽）** 中選取現有的案例。
+1. 移至**eDiscovery > 進階電子文件**，並開啟案例。
   
-2. 在案例中，按一下 [ **Custodians** ] 索引標籤。
+2. 按一下 [ **Custodians** ] 索引標籤。
   
-3. 從清單中選取 custodian(s)，然後按一下 [**編輯來源**。
+3. 從清單中選取 custodian，然後按一下 [彈出式頁面的 [**編輯**。
 
     ![編輯資料來源](../media/EditCustodianDataSource.PNG)
   
-4. 按一下 [**選擇資料來源**，更新 Exchange 和 OneDrive 位置的選項。
+4. 按一下 [**選擇資料來源**] 索引標籤，若要變更 custodian 的 Exchange 信箱和 OneDrive 帳戶的設定，請按一下 [**選擇資料來源**。
   
-5. 新增或移除 microsoft Teams、 SharePoint 或 Exchange 信箱]，即可選取**其他資料來源**對應的使用者。 如需您可以將對應的資料來源到 custodian 的方式的詳細資訊，請參閱 < <b0>Add custodians 案例</b0>。
+5. 按一下 [**選取其他資料來源**] 索引標籤來新增或移除小組、 SharePoint，或 Exchange custodian 相關聯的信箱。 
+
+    如需 custodian 相關聯的資料來源的詳細資訊，請參閱 「 步驟 3： 建立關聯的其他資料來源]，以 custodian 「[新增 custodians 案例](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian)中。 
   
-6. 若要更新的 custodian 持有狀態，按一下 [ **custodial 就地保留**，以及啟用或停用 custodians 保留。
+6. 按一下 [啟用或停用保留 custodian **custodial 就地保留**]。
 
-> [!TIP]
-> 您可以選取多個 custodians 來執行 [大量動作]，或重新編製索引，放開，編輯一群 custodians 等。
+## <a name="resolve-custodian-processing-errors"></a>解決 custodian 處理錯誤
 
-## <a name="resolving-custodian-processing-errors"></a>解決 custodian 處理錯誤
+在大部分法律調查的 eDiscovery 工作流程，custodian 新增的法律案件之後搜尋 custodian 資料的子集。 非常大的檔案大小或可能造成資料損毀，因為 custodian 相關聯的資料來源中的某些項目可能是已局部編製索引。 在進階電子文件中使用的[進階編製索引](indexing-custodian-data.md)的功能，最局部編製索引的項目可進行自動修復藉由重新編製索引視需要這些項目。
 
-大部分合法的工作流程，即會為特定的調查，新增 custodians 之後會搜尋使用者的資料子集。 因為大型檔案的大小或可能損毀，custodians 的資料來源中的某些項目可能是已局部編製索引。 使用進階電子文件 （預覽） 深層索引功能，這些已局部編製索引的項目可進行自動修復重新編目和重新編製索引視需要這些項目。 
-
-當 custodian 新增至案例時，其資料將會自動為 「 deep 編製索引 」 時，允許使用者離開這些已局部編製索引而不必下載、 修正，並重新執行搜尋 Office 365 以外的位置中的項目。 週期中的情況下，使用者可能修復項目，或指定 custodian 新增新的資料來源。 這可能需要更新 Custodian 索引。 
+當 custodian 新增至案例時，位於 custodian 相關聯的資料來源的資料會自動重新編製索引 （藉由進階索引程序）。 這表示您可以將保留資料就地而不必下載並修復它再搜尋離線）。 不過，週期中法律案例新資料來源可能與 custodian 相關聯。 在此情況下，您重新編製索引 custodian 的資料重新執行 [進階索引程序，以修正任何已局部編製索引的項目，並更新 custodian 資料的索引。
 
 若要觸發地址重新編製索引程序已局部編製索引的項目：
 
-1. 移至**eDiscovery > 進階電子文件 （預覽）** ，然後選取現有的案例。
+1. 移至**eDiscovery > 進階電子文件**，並開啟案例。
 
-2. 在案例中，按一下 [ **Custodians] 索引標籤**。 
+2. 按一下以**Custodians] 索引標籤**，，然後選取 [的 custodian，其資料必須編製索引。 
 
-3. 選取 [需要以重新建立索引，然後按一下 [custodian(s) ![更新索引](../media/UpdateIndex.PNG) 在彈出式頁面。
+3. 在彈出式頁面上，按一下 [**更新索引**]。
 
-4. **Custodians** ] 索引標籤上的 [**編製索引工作狀態**] 欄中的連結，即可檢查 custodian 索引的狀態。  
+   會顯示對話方塊，指出已建立索引工作。
 
-5. 在 [**工作**] 索引標籤上也可以追蹤重新編製索引的程序的狀態。
+重新編製索引 custodian 資料是長時間執行的程序;相對應的工作會建立名為**重新編製索引 custodian 資料**。 您可以藉由監視**編製索引工作狀態**] 欄中的狀態，[**工作**] 索引標籤或 [ **Custodians** ] 索引標籤上追蹤進度。
 
-如需重新編製索引和補救局部編製索引的項目的詳細資訊，請參閱[修正處理錯誤](processing-data-for-case.md)。
+如需詳細資訊，請參閱：
 
-## <a name="releasing-a-custodian-from-a-case"></a>釋放 custodian 從案例
+- [使用處理錯誤](processing-data-for-case.md)
 
-Custodian 發行的情況下其中關閉案例、 custodian 不再下義務以保留內容的情況下，或當 custodian 會被視為不會再是相關為特定案例。 
+- [管理工作](managing-jobs-ediscovery20.md)
 
-如果已發佈保留通知之後，您就會釋放 custodian，發行通知會傳送至 custodian。 此外，也會移除歸因於發行 custodians 任何 custodial 保留。
+## <a name="release-a-custodian-from-a-case"></a>釋出 custodian 從案例
 
-如果 custodian 已處於暫止無訊息狀態，其所未發出任何合法持有通知，然後將移除歸因於發行 custodians 任何 custodial 保留。  
+發行日期 custodian 在會在關閉案例的情況下，custodian 不再下義務以保留內容的情況下，或當 custodian 會被視為不會再是與案件相關。 
+
+如果已發佈保留通知之後，您就會釋放 custodian，發行通知會傳送至 custodian。 此外，會移除任何已 custodian 相關聯的資料來源上的保留。 如果 custodian 放在*無訊息保留*、 他們未發出任何法律保留通知、 發行通知將不會傳送，但已與該 custodian 相關聯的資料來源上任何保留移除。
 
 若要發行 custodian: 
 
-1.  移至 [ **Custodians** ] 索引標籤。
+1. 移至**eDiscovery > 進階電子文件**，並開啟案例。
 
-2.  從清單中選取 custodian，然後按一下 [ ![版本 Custodian](../media/ReleaseCustodian.PNG) 在彈出式頁面。
+2.  移至 [ **Custodians** ] 索引標籤。
 
-    Custodian **Custodians** ] 索引標籤上的狀態設為**已發行**並**保留狀態**的彈出式頁面變更為**非作用中**。 
+3.  **Custodians] 索引標籤上**，按一下，然後選取 [從案例的 [custodian 正在發行日期。
 
-> [!TIP]
-> Custodian 可同時可能參與數個合法持有事件。 當 custodian 發行從案例時，不會影響保留和跨其他事件通知。
+4. 在彈出式頁面上，按一下 [**發行 custodian**]。
 
-## <a name="related-information"></a>相關資訊
+   警告] 頁面上會顯示說明，是否保留暫留 custodian 相關聯的資料來源時，保留會被移除，以及其他任何保留與不同的進階電子文件探索案例相關聯仍然會套用。 包括 Office 365 中的其他類型的保留和保留功能 （例如 Office 365 保留原則）。
 
- - [處理資料時的錯誤補救](error-remediation.md) 
-- [使用通訊](managing-custodian-communications.md)
+5. 按一下 **[是]** ，確認您想要釋出 custodian。 
+
+    請注意，此使用者**Custodians** ] 索引標籤上的狀態設為**已發行**和**保留狀態**的彈出式頁面會變更為**False**。 
+
+> [!NOTE]
+> Custodian 可能同時參與數個法律案件。 當 custodian 發行從案例時，不會影響保留和跨其他事件通知。
+
+## <a name="bulk-edit-custodians"></a>大量編輯 custodians
+
+您可以使用大量編輯器來編輯多個 custodians 為同一時間。 若要這麼做，請只選取兩個或多個 custodians **Custodians** ] 索引標籤上的顯示大量編輯程式，然後按一下下列其中一個工作。
+
+![若要編輯的多個 custodians 設定彈出式頁面](../media/AeDBulkEditCustodians.png)

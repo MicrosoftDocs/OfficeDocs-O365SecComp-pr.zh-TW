@@ -1,10 +1,10 @@
 ---
-title: 進階電子文件 （預覽） 的版本資訊
+title: 進階電子文件的版本資訊
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,29 +13,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文包含 release notes for 進階電子文件 （預覽）。
-ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 本文包含 release notes for 進階電子文件。
+ms.openlocfilehash: f3d26b1c84746581ccf32e1d4aada079fc21dfb3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240938"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154885"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>進階電子文件 （預覽） 的版本資訊
+# <a name="release-notes-for-advanced-ediscovery"></a>進階電子文件的版本資訊
 
-進階電子文件的公開預覽程式是搶先即將推出的功能和更新的方式。 若要搶先使用最新功能，剛建立，並在 Office 365 安全性 & 合規性中心中使用進階電子文件 （預覽） 案例。 請參閱[建立新的案例](create-new-ediscovery-case.md)。
+進階電子文件的公開預覽程式是搶先即將推出的功能和更新的方式。 若要搶先使用最新功能，剛建立，並使用進階電子文件探索案例中安全性 & 合規性中心。 請參閱[建立新的案例](create-new-ediscovery-case.md)。
 
 ## <a name="known-issues"></a>已知問題
 
 **Microsoft Forms**
 
-- 在進階電子文件 （預覽） 中使用 「 搜尋 」 工具來搜尋 custodian 信箱時，將無法搜尋資料對應在 2019 年 1 月 31 日之前建立的表單。 建立要用於搜尋此日期之後的表單。
+- 在進階電子文件中使用 「 搜尋 」 工具來搜尋 custodian 信箱時，將無法搜尋資料對應在 2019 年 1 月 31 日之前建立的表單。 建立要用於搜尋此日期之後的表單。
 
-- 即使刪除建立表單的使用者表單，建立由使用者仍然可以收到回應。 不過，這些回應 （發生之後 custodian 信箱已刪除） 的相對應的資料不會搜尋在進階電子文件 （預覽） 中使用 「 搜尋 」 工具來搜尋 custodian 信箱時。
+- 即使刪除建立表單的使用者表單，建立由使用者仍然可以收到回應。 不過，這些回應 （發生之後 custodian 信箱已刪除） 的相對應的資料不會搜尋在進階電子文件中使用 「 搜尋 」 工具來搜尋 custodian 信箱時。
  
 **Microsoft Sway**
 
-- 在進階電子文件 （預覽） 中使用 「 搜尋 」 工具來搜尋 custodian 信箱時，如果使用者編輯 sway 剛之前的擁有者的使用者帳戶的刪除 sway，則這些變更可能不是可供搜尋。 Sway 區塊變更 sway，只要該函數會收到已刪除帳戶的訊號。 不過，沒有小型機率之前收到此訊號，是否可以編輯 sway。
+- 在進階電子文件中使用 「 搜尋 」 工具來搜尋 custodian 信箱時，如果使用者編輯 sway 剛之前的擁有者的使用者帳戶的刪除 sway，則這些變更可能不是可供搜尋。 Sway 區塊變更 sway，只要該函數會收到已刪除帳戶的訊號。 不過，沒有小型機率之前收到此訊號，是否可以編輯 sway。
 
 ## <a name="issues-fixed-in-this-release"></a>在此版本修正的問題
 
@@ -45,7 +45,7 @@ ms.locfileid: "32240938"
 
 ## <a name="whats-new"></a>新功能
 
-- **安全性 & 合規性中心中的 Redesigned 導覽**– 進階電子文件 （預覽） 有新的外觀與風格。 使用進階電子文件 （預覽） 來管理多個案例的工作流程。
+- **安全性 & 合規性中心中的 Redesigned 導覽**– 進階電子文件有新的外觀與風格。 使用進階電子文件管理多個案例的工作流程。
 
 - **專案管理**– 沒有其他支援新案例的類型。 您也可以選取並儲存您最近和最愛的情況。 追蹤及監視活動內及其的情況下，使用新的儀表板。
 
@@ -63,13 +63,13 @@ ms.locfileid: "32240938"
 
 - **若要搜尋的增強功能**– 建立由識別 custodians 及/或位置的搜尋。
 
-- **工作集**– 管理、 追蹤，並將靜態的稽核設定的文件。
+- **檢閱設定**– 管理、 追蹤及靜態的稽核設定的文件。
 
-- **檢閱**– 使用原生、 文字和附近原生檢視檢閱文件新增至您的工作集。
+- **檢閱**– 使用原生、 文字和附近原生檢視檢閱文件新增至您檢閱組。
 
 - **Redact，加上標籤，並加上註解**– Redact 文字、 套用標記，以及當您檢閱文件註釋。
   
-- **分析供電檢閱**– 利用電子文件探索分析得以尋找、 搜尋及 cull 工作集內的結果。
+- **分析供電檢閱**– 利用進階電子文件探索分析得以尋找、 搜尋及 cull 檢閱集合內的結果。
 
 - **工作**– 長時間執行程序的追蹤狀態。
 

@@ -3,7 +3,7 @@ title: 使用 PST 收集工具來尋找、 複製及刪除您的組織中的 PST
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 收集工具來搜尋組織的網路，以取得散佈整個組織的 PST 檔案的詳細目錄。 尋找 PST 檔案之後，您可以使用 PST 收集工具來複製它們在一個中央位置，以便您可以匯入到 Office 365。
-ms.openlocfilehash: 87e13ec8a4c58f848ac2ff7a430a7532942ece74
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 000da8aec988e85f935a96aabe9faa48932aaeaa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255337"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152775"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 收集工具來尋找、 複製及刪除您的組織中的 PST 檔案
 
@@ -89,7 +89,7 @@ ms.locfileid: "32255337"
     | `DataSource` <br/> |會指定要搜尋資料的類型。 目前，您可以使用 PST 收集工具來搜尋的 PST 檔案。  <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |會指定將會執行此工具的作業類型。 使用值`Find`來尋找 PST 檔案中指定的位置。 請注意此工具可以尋找及取得 Outlook 和 PST 檔案中連線至 Outlook 設定檔的已開啟的 PST 檔案的相關資訊。  <br/> | `-Mode Find` <br/> |
     | `JobName` <br/> |會指定 PST 收集工作的名稱。 當您執行 PST 收集工具來封鎖、 收集和刪除，當您執行工具以找出 PST 檔案時所找到的 PST 檔案時，您會使用這個相同的工作名稱。 工作名稱也會加入至記錄檔、 設定檔名稱。  <br/> | `-JobName PstSearch1` <br/> |
-    | `Locations` <br/> | 會指定要搜尋的 PST 檔案的一或多個位置。 如果您指定多個位置，請使用分號 （;）若要分隔個別的位置。 請務必個別的值，此參數與雙引號括住 ("")。  <br/><br/>   以下是必要的 identity 值格式類型的您可以搜尋的位置。  <br/><br/>        **Ou**來識別 Ou; 使用辨別名稱 (DN)例如：`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]您不能指定內建的電腦容器的 > (例如，CN = 電腦，DC = contoso，DC = com") 因為它不是組織單位。<br/> <br/> **機器**-DN 或完整的網域名稱 (FQDN) 來識別您的網路; 上的用戶端和伺服器機器例如：  <br/>  DN:`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  Or  <br/>  FQDN:`"FILESERVER01.contoso.com"` <br/><br/>  **網路檔案共用**用 UNC 名稱來識別網路檔案共用;例如，`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
+    | `Locations` <br/> | 會指定要搜尋的 PST 檔案的一或多個位置。 如果您指定多個位置，請使用分號 （;）若要分隔個別的位置。 請務必個別的值，此參數與雙引號括住 ("")。  <br/><br/>   以下是必要的 identity 值格式類型的您可以搜尋的位置。  <br/><br/>        **Ou**來識別 Ou; 使用辨別名稱 (DN)例如：`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]您不能指定內建的電腦容器的 > (例如，CN = 電腦，DC = contoso，DC = com") 因為它不是組織單位。<br/> <br/> **機器**-DN 或完整的網域名稱 (FQDN) 來識別您的網路; 上的用戶端和伺服器機器例如：  <br/>  DN:`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  或  <br/>  FQDN:`"FILESERVER01.contoso.com"` <br/><br/>  **網路檔案共用**用 UNC 名稱來識別網路檔案共用;例如，`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `LogLocation` <br/> |指定記錄檔會複製到的資料夾。 如果資料夾不存在，則會加以建立當您執行此工具。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ConfigurationLocation` <br/> |指定.xml 組態檔會複製到的資料夾。 此檔案包含執行工具時找到每個 PST 檔案的相關資訊。 若要複製的 PST 檔案所找到的步驟 3 中執行工具時，將會使用此檔案。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"` <br/> |
     | `ExcludedLocations` <br/> |此選用參數會指定在尋找作業期間略過的位置。 您可以排除特定的 Ou，機器，以及網路檔案共用。 例如，您無法排除機器，例如設定為 SQL server （或其他類型的應用程式伺服器） 的電腦、 使用者沒有存取權。 如果您指定要排除的多個位置，請使用分號 （;）若要分隔個別的位置。 請務必個別的值，此參數與雙引號括住 ("")。  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |

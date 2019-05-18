@@ -3,7 +3,7 @@ title: Microsoft Compliance Manager 和 GDPR
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 10579edea5a36686b8b19cafd9d3d6e148cfdcd3
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473040"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152088"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager 和 GDPR
 

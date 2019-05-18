@@ -3,18 +3,18 @@ title: 佇列警示和佇列
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 系統管理員可以了解佇列的警示和佇列中郵件流程儀表板中的安全性 & 合規性中心。
-ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149a1d82b3627037db2ab5c6e1427c79a49535bd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267654"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158755"
 ---
 # <a name="queue-alerts-and-queues"></a>佇列警示和佇列
 
@@ -70,6 +70,6 @@ Office 365 會繼續重試傳遞到 48 小時。 48 小時之後，郵件會到�
 
 ![佇列的詳細資訊](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

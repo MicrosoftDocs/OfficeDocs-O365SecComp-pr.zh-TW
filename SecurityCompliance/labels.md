@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255016"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154345"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -279,12 +279,14 @@ ms.locfileid: "32255016"
 
 如需查詢語法的詳細資訊，請參閱：
 
-- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 查詢式標籤使用搜尋索引來識別內容。如需有效可搜尋屬性的詳細資訊，請參閱：
 
 - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
-- [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- 
+  [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 範例查詢：
 

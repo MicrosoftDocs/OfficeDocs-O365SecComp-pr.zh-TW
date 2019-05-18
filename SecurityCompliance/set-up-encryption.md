@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/2/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: 使用 Office 365，有些加密功能會開啟預設值;其他功能可設定以滿足特定法規或法律需求。
-ms.openlocfilehash: 1bc4ceb7762c96f55c03f89e7c448f9e4073063e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3bb76d70bd364bd461721d6277516801b3675031
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260791"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158455"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>設定 Office 365 企業版中的加密
 

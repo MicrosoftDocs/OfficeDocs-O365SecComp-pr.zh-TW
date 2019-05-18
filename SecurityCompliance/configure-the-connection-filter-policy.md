@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要確定，不會封鎖從您信任的人員傳送電子郵件，您可以使用連線篩選原則來建立一份允許清單，也就是安全的寄件者清單中，您信任的 IP 位址。 您也可以建立的封鎖寄件者清單。
-ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5d19898b6baf01c7348b434f3caced202507c4d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259004"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151295"
 ---
 # <a name="configure-the-connection-filter-policy"></a>設定連線篩選原則
  
@@ -132,7 +132,7 @@ ms.locfileid: "32259004"
 |:-----|
 |![LinkedIn Learning 的短圖示](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？**         探索 LinkedIn Learning 提供的 **Office 365 admins and IT pros** 免費影片課程。 |
    
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection4"> </a>
 
 [安全寄件者和封鎖的寄件者會列出在 Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)

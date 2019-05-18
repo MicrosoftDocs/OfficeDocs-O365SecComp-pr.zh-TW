@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。
-ms.openlocfilehash: 976594a3f28f2d120270dfabbf708ecb5815ad5c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af773b1ecd3006f8751e353bb5233522f0dbad42
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256294"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150115"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>將網域及設定從某個 EOP 組織移到另一個 EOP 組織
 

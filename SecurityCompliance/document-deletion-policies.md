@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 基於規範、法律或其他商業需求，您的組織可能需要將文件保留一段時間。 但如果您的組織保留文件的時間過久，則會產生不必要的法律風險。 使用文件刪除原則，您可以積極降低風險藉由在一段特定時間之後刪除文件中的網站 — 例如，您可以刪除文件中的使用者的 OneDrive for Business 網站的五年之後建立的文件。
-ms.openlocfilehash: 2a6b1c29986020ebd63f6ddb960f0d28ba348b3e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 59bc100a19f3597aa1bf16506bf6c7049a35af3b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257566"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154855"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文件刪除原則概觀
 

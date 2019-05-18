@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,35 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f4bac6ae7a51b01ff6f9b303bb5c2f4911bdb53d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241024"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153905"
 ---
 # <a name="view-custodian-audit-activity"></a>檢視 custodian 稽核活動
 
-要尋找是否使用者檢視特定的文件，或清除其信箱中的項目？ 進階電子文件 （預覽） 現在已與安全性 & 合規性中心中現有的稽核記錄搜尋工具整合。 使用此內嵌的體驗，您可以使用進階電子文件 （預覽） Custodian 管理工具來協助您調查輕鬆地存取搜尋並活動 custodians 內您的案例。
+要尋找是否使用者檢視特定的文件，或清除其信箱中的項目？ 進階電子文件現在已與安全性 & 合規性中心中現有的稽核記錄搜尋工具整合。 使用此內嵌的體驗，您可以使用進階電子文件 Custodian 管理工具來協助您調查輕鬆地存取搜尋並活動 custodians 內您的案例。
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須獲指派 「 僅檢視稽核記錄檔] 或 [稽核記錄檔角色在 Exchange Online 來搜尋 Office 365 稽核記錄。 根據預設，這些角色被指派給相符性管理和在 Exchange 系統管理中心中的權限] 頁面上的組織管理角色群組。 若要讓使用者能夠搜尋進階電子文件 （預覽） 稽核記錄的最低權限，在 Exchange Online 中建立自訂角色群組、 新增 「 僅檢視稽核記錄檔] 或 [稽核記錄 」 角色，並再將使用者新增為新的角色 /gr 成員oup。 如需詳細資訊，請參閱 < Exchange Online 中的管理角色群組。
+您必須獲指派 「 僅檢視稽核記錄檔] 或 [稽核記錄檔角色在 Exchange Online 來搜尋 Office 365 稽核記錄。 根據預設，這些角色被指派給相符性管理和在 Exchange 系統管理中心中的權限] 頁面上的組織管理角色群組。 若要讓使用者能夠搜尋進階電子文件稽核記錄的最低權限，您可以在 Exchange Online 中建立自訂角色群組、 新增 「 僅檢視稽核記錄檔] 或 [稽核記錄 」 角色，並再將使用者新增新的角色群組的成員身分。 如需詳細資訊，請參閱 < Exchange Online 中的管理角色群組。
 
 > [!IMPORTANT]
 > 如果您在安全性 & 合規性中心中的 [權限] 頁面上的僅檢視稽核記錄檔] 或 [稽核記錄檔角色指派使用者，他們將無法搜尋 Office 365 稽核記錄。 您必須指派 Exchange Online 中的權限。 這是因為基礎指令程式用來搜尋稽核記錄是 Exchange Online cmdlet。
 
-## <a name="step-1-create-an-advanced-ediscovery-preview-audit-log-search"></a>步驟 1： 建立進階電子文件 （預覽） 的稽核記錄搜尋
+## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>步驟 1： 搜尋 custodian 所執行的活動的稽核記錄檔
 
-   1. 從**安全性 & 合規性中心 > 進階電子文件 （預覽）** 中選取現有的案例。
+1. 移至**eDiscovery > 進階電子文件**，並開啟案例。
+  
+2. 按一下 [ **Custodians** ] 索引標籤。
+  
+3. 從清單中，選取 custodian，然後按一下 [延伸] 頁面上的 [**檢視 custodian 活動**。
+
+    Custodian 活動搜尋頁面隨即顯示。 附註您在上一個步驟中選取 custodian 會顯示在**Custodian**下拉式方塊。 您可以在下拉式方塊中，選取不同的 custodians，但您可以僅搜尋活動的一個 custodian 一次。
+
+    ![Custodian 活動搜尋頁面](../media/AeDCustodianActivities1.png)
    
-   2. 瀏覽至 [ **Custodians** ] 索引標籤，然後選取 [custodian。
-   
-   3. 一旦您已選取 custodian，按一下 [  ![檢視 Custodian 活動](../media/ViewCustodianActivity.PNG)  從 [詳細資料] 面板中。
-   
-   4. 設定下列搜尋準則：
+4. 設定下列搜尋準則：
       
-      a. **活動**-按一下下拉式清單，顯示您可以搜尋的活動。 執行搜尋之後，會顯示只有選取活動的稽核記錄。 選取 [**顯示所有活動的結果**會顯示結果符合其他搜尋準則的所有活動。
+   a. **活動**-按一下下拉式清單，顯示您可以搜尋的活動。 執行搜尋之後，會顯示只有選取活動的稽核記錄。 選取 [**顯示所有活動的結果**會顯示所有活動 custodian 所執行的其他搜尋準則相符的結果。
 
       ![活動的清單](../media/CustodianActivityAudit.PNG)
       
@@ -103,4 +107,4 @@ ms.locfileid: "32241024"
 
 3. 選取 [匯出] 選項後，會提示您開啟 CSV 檔案，將它儲存到 [下載項目] 資料夾中，或將其儲存至特定資料夾視窗底部顯示訊息
 
-如需檢視的詳細資訊，篩選，或匯出稽核記錄搜尋結果，請參閱[的搜尋稽核記錄中 Office 365 安全性 & 合規性中心](../search-the-audit-log-in-security-and-compliance.md)。
+如需檢視的詳細資訊，篩選，或匯出稽核記錄搜尋結果，請參閱[的搜尋稽核記錄中的安全性 & 合規性中心](../search-the-audit-log-in-security-and-compliance.md)。

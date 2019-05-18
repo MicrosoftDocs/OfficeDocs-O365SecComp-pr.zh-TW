@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 4/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: 這些文章可協助外部寄件者改善其信譽，並增加其能夠傳遞電子郵件給 Office 365 中的使用者。 他們也會提供一些資訊您可以在方式回報垃圾郵件和網路釣魚嘗試即使您不是 Office 365 使用者自行。
-ms.openlocfilehash: c3f9b6e383b604985a125d270a46c0b0211e7071
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 963615fc6db4bc520b9d0c38d35b18a2a445e399
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260911"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158795"
 ---
 # <a name="sending-mail-to-office-365"></a>傳送郵件至 Office 365
 

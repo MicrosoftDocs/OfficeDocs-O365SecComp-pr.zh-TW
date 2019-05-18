@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用安全性 & 合規性中心中的內容搜尋來執行目標的集合。 目標的集合表示您確信回應大小寫的項目或特殊權限項目都位於信箱或網站的特定資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。
-ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 476478f3f4d5c2d1992989eac790068f28ba747f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264004"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156305"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>在 Office 365 中使用內容搜尋，對目標集合
 
@@ -225,7 +225,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
     
     - 按一下 [**選擇来搜尋的特定信箱**，然後新增您指定當您在步驟 1 中執行指令碼的同一個信箱。 
     
-      Or
+      或
     
     - 按一下 [**選擇要搜尋的特定網站**新增至搜尋，然後新增您指定當您在步驟 1 中執行指令碼的相同網站 URL。 
     

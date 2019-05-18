@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載第三方稽核，了解 Microsoft 如何確保客戶資料安全，以及知道如何您可以遵循 ISO、 HIPAA、 FINRA，以及 FedRAMP 當您使用 Office 365。
-ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261142"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158825"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全性 & 合規性中心中的服務保證
 

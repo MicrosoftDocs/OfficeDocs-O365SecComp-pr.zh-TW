@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
-ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
+ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33628328"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153265"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度標籤中的加密來限制內容的存取
 
@@ -89,7 +89,8 @@ ms.locfileid: "33628328"
 
 當您選擇要對那些使用者或群組允許的權限時，您可以選取下列任一項：
 
-- [預先定義的權限層級](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
+- 
+  [預先定義的權限層級](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
 - 一組自訂的權限，您可在其中選擇任何您想要的權限。
 
 如需每一個特定權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  

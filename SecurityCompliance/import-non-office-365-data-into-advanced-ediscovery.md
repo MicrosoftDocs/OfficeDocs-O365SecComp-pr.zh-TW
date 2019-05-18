@@ -3,7 +3,7 @@ title: 匯入非 Office 365 進階電子文件探索分析內容
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 如何步驟以匯入內容，不會儲存在 O365 到 Azure blob，讓它可以與 AeD 分析
-ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1c971c9f95d03d05db76f80344adeb93b0a72c06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256571"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152685"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>匯入非 Office 365 進階電子文件探索分析內容
 

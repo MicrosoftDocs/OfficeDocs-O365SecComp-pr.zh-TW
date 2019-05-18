@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當您建立的保留標籤，會保留在 Microsoft 365 中的內容時，您可以選擇觸發處置檢閱的保留期間的結尾。
-ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257312"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153425"
 ---
 # <a name="overview-of-disposition-reviews"></a>處置檢閱概觀
 

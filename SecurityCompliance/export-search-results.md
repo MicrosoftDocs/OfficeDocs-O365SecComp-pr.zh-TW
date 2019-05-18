@@ -3,7 +3,7 @@ title: 匯出內容搜尋結果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExport
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '安全性 & 合規性中心中的內容搜尋的搜尋結果匯出到本機電腦上。 電子郵件的結果會匯出為 PST 檔案。 內容從 SharePoint 和 OneDrive for Business 網站會匯出為原生 Office 文件。 '
-ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: deb777125f75f30a3d98d090c4427de8c5388800
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255497"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154545"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 

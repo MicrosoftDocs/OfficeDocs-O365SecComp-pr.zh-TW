@@ -3,18 +3,18 @@ title: 郵件迴圈深入解析
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板中郵件迴圈深入解析。
-ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eddd65bb02fb0ca0d64b0cf9e35a7e40c29e47c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267068"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158665"
 ---
 # <a name="mail-loop-insight"></a>郵件迴圈深入解析
 
@@ -26,6 +26,6 @@ ms.locfileid: "32267068"
 
 ![彈出式視窗窗格中按一下 [檢視詳細資料]，在 [郵件流程儀表板中郵件迴圈深入解析後](media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。

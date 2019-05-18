@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: 使用安全性 & 合規性中心建立 eDiscovery 保留，以及存取及管理組織中的 eDiscovery 案例。
-ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 026bd31145dc73261012a9cde1b6befd19ddba4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253002"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155855"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>管理安全性 & 合規性中心中的 eDiscovery 案例
 

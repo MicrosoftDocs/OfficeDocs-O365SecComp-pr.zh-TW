@@ -1,10 +1,10 @@
 ---
-title: 在 [進階電子文件 （預覽） 建立新的案例
+title: 在進階電子文件中建立新的案例
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b06c377c4841bce16e0121177665d1884497eaaa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: afd5fe71bfc78f5a28fe9bd57ce305650337f331
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244097"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151955"
 ---
-# <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>在 [進階電子文件 （預覽） 建立新的案例    
+# <a name="create-a-new-case-in-advanced-ediscovery"></a>在進階電子文件中建立新的案例  
 
 1. 移至 [https://protection.office.com](https://protection.office.com)。
     
@@ -29,7 +29,7 @@ ms.locfileid: "32244097"
     
 3. 在安全性 & 合規性中心中，按一下 [ **eDiscovery > 進階電子文件**]。
  
-4. 在 [**進階電子文件 （預覽）** ] 頁面上，按一下 [**建立案例**。
+4. 在 [**進階電子文件探索**] 頁面上，按一下 [**建立案例**。
     
 5. 在**新的 eDiscovery 案例**彈出式頁面上，提供這種情況 （必要） 的名稱，然後輸入選用的案例編號及描述。 請注意，案例名稱必須是唯一在組織中。
 
@@ -37,11 +37,11 @@ ms.locfileid: "32244097"
 
     - 按一下 [ **]** 以建立案例，並顯示 [**設定**] 頁面中新的案例。 這可讓您將成員新增至案例。
     
-    - 按一下 [**否]** 剛建立案例，並顯示於 [**進階電子文件 （預覽）** ] 頁面上的案例清單。 如果您選擇此選項，您將會新增為將使用這種情況，以及預設搜尋和分析設定的唯一成員。 您可以將成員新增或變更設定之後建立這種情況的任何時間。
+    - 按一下 [**否]** 剛建立案例，並顯示於 [**進階電子文件探索**] 頁面上的案例清單。 如果您選擇此選項，您將會新增為將使用這種情況，以及預設搜尋和分析設定的唯一成員。 您可以將成員新增或變更設定之後建立這種情況的任何時間。
 
 7. 按一下 [**儲存**] 以建立這種情況。
 
-    新的案例會顯示在 [**進階電子文件 （預覽）** ] 頁面上的案例清單。 
+    新的案例會顯示在 [**進階電子文件探索**] 頁面上的案例清單。 
 
 8. 若要開啟的情況下，按一下 [大小寫名稱。 
 

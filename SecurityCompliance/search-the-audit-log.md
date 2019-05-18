@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/18/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: Office 365 稽核記錄是整合的稽核記錄。 為什麼使用整合的稽核記錄？ 因為訂閱來自您組織的大多數 Office 365 服務的事件都會記錄在您可以搜尋的單一稽核記錄。 這表示您可以搜尋的使用者與這些服務的系統管理員活動：
-ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1d3f45d24a8d1a83c20f5d36b12ced761e00f936
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265855"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158775"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>在 Office 365 中搜尋使用者和系統管理員活動的稽核記錄檔
 

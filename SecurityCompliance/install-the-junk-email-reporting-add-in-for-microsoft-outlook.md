@@ -4,7 +4,7 @@ ms.author: MSFTTracyP
 author: tracyp
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: 在此 articleSupported LanguagesInstall 垃圾電子郵件報告增益集 inUninstall 垃圾郵件回報增益集這些的詳細資訊
-ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c9211cd71fd82af2b9fc0533435ff27a82cd47be
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259821"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152555"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安裝 Microsoft Outlook 的垃圾郵件回報增益集
   
@@ -208,7 +208,7 @@ ms.locfileid: "32259821"
     
 4. 再次啟動 Outlook，確認增益集不再顯示於 Outlook 功能區上。
     
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection3"> </a>
 
 [向 Microsoft 回報垃圾郵件](report-junk-email-messages-to-microsoft.md)

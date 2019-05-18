@@ -3,7 +3,7 @@ title: Office 365 進階郵件加密
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 在 Office 365 中的進階的郵件加密可協助組織符合其合規義務讓管理員將過期並撤銷透過對加密的電子郵件的 Office 365 入口網站的存取。
-ms.openlocfilehash: 5559a2bca4cd804cfcfdf547146eeb416252ca5f
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: dcef5f861711acffb8359063373cd90d4b122d88
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834902"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157646"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Office 365 進階郵件加密
 

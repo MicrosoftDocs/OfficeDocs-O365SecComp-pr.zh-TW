@@ -1,10 +1,10 @@
 ---
-title: 疑難排解 AzCopy 在進階電子文件 （預覽）
+title: 在 [進階電子文件疑難排解 AzCopy
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9711bee4ec9a61510b47568df37dfd3135e1e00c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c8378cf7b9bd21f901b1babbebdcb0b69a8ed73
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241072"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151515"
 ---
-# <a name="troubleshoot-azcopy-in-advanced-ediscovery-preview"></a>疑難排解 AzCopy 在進階電子文件 （預覽）
+# <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>在 [進階電子文件疑難排解 AzCopy
 
-在使用者介面時載入非 Office 365 的資料或錯誤修復進階電子文件 （預覽） 中的文件，提供包含參數與您要上傳檔案儲存位置和 Azure 位置 Azure AzCopy 命令將上傳檔案到的儲存位置。 若要上傳您的文件，您複製此命令，然後再執行命令提示字元處的它在本機電腦上。  下列螢幕擷取畫面顯示 AzCopy 命令的範例：
+在使用者介面時載入非 Office 365 的資料或錯誤修復進階電子文件中的文件，提供 Azure AzCopy 命令含有參數與您要上傳檔案儲存位置與 Azure 儲存體的位置將上傳檔案到的位置。 若要上傳您的文件，您複製此命令，然後再執行命令提示字元處的它在本機電腦上。  下列螢幕擷取畫面顯示 AzCopy 命令的範例：
 
 ![將非 Office 365 檔案上傳](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 

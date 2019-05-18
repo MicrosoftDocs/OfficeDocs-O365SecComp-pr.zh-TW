@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 DLP 原則來保護 Office 365 中的個人資料。
-ms.openlocfilehash: 97a8c584cd010ae10a0416e47d8184c84f1e1ab9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b4754f5b8627b398c92d36baf2d48b04e67edcf9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243190"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155595"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>將保護套用至 Office 365 中的個人資料
 
@@ -142,7 +142,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 <tr class="odd">
 <td align="left">在內容符合原則設定時通知使用者</td>
 <td align="left"><p>核取此方塊 (向使用者顯示原則提示，並傳送他們電子郵件通知。)</p>
-<p>按一下 [自訂提示和電子郵件]，並針對您的環境更新這些項目。請參閱本文中的預設通知：<a href="https://support.office.com/en-us/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">傳送電子郵件通知，並顯示 DLP 原則的原則提示</a>。</p></td>
+<p>按一下 [自訂提示和電子郵件]，並針對您的環境更新這些項目。請參閱本文中的預設通知：<a href="https://support.office.com/zh-TW/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">傳送電子郵件通知，並顯示 DLP 原則的原則提示</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left">在一次共用特定數量的敏感資訊時偵測</td>
@@ -248,9 +248,11 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 詳細資訊：
 
--   [瞭解 SharePoint 中的權限層級](https://support.office.com/zh-TW/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   
+  [瞭解 SharePoint 中的權限層級](https://support.office.com/zh-TW/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [了解 SharePoint 群組](https://support.office.com/zh-TW/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   
+  [了解 SharePoint 群組](https://support.office.com/zh-TW/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>SharePoint 和商務用 OneDrive 文件庫的外部共用原則
 
@@ -301,9 +303,10 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 詳細資訊：
 
 -   
-  [管理您的 SharePoint Online 環境外部共用](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+  [管理您的 SharePoint Online 環境外部共用](https://support.office.com/zh-TW/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [與您組織外的人員共用網站或文件](https://support.office.com/zh-TW/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   
+  [與您組織外的人員共用網站或文件](https://support.office.com/zh-TW/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>網站層級裝置存取控制
 
@@ -352,7 +355,7 @@ SharePoint 和商務用 OneDrive 的裝置存取原則需要 Azure Active Direct
 </tbody>
 </table>
 
-詳細資訊：[SharePoint Online 管理中心：控制從未受管理裝置的存取](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
+詳細資訊：[SharePoint Online 管理中心：控制從未受管理裝置的存取](https://support.office.com/zh-TW/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>身分識別與裝置的服務存取保護
 

@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用安全性 & 合規性中心 」，商務快速尋找 Exchange 信箱，文件中的 SharePoint 網站和 OneDrive 的位置，並在 Skype 中的立即訊息對話中的電子郵件的內容搜尋電子文件探索工具。
-ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403011"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158745"
 ---
 # <a name="search-for-content-in-office-365"></a>在 Office 365 中搜尋內容
 

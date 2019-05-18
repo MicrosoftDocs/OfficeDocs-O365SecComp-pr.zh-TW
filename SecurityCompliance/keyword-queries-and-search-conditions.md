@@ -3,7 +3,7 @@ title: 內容搜尋的關鍵字查詢和搜尋條件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '您可以搜尋在 Exchange Online 信箱，並在 SharePoint 或 OneDrive for Business 網站使用內容搜尋工具安全性 & 合規性中心中了解電子郵件和文件屬性。  '
-ms.openlocfilehash: bb8c8090f8439bbd08b9c153b332c30d78ced8c8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 01cc40f983ddae6db090f531bc33fc5cc7a638ed
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254469"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152495"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -181,7 +181,7 @@ ms.locfileid: "32254469"
   
 |**條件**|**描述**|
 |:-----|:-----|
-|Date|電子郵件的日期已接收到收件者或寄件者所傳送。 對於文件，上次修改文件的日期。|
+|日期|電子郵件的日期已接收到收件者或寄件者所傳送。 對於文件，上次修改文件的日期。|
 |寄件者/作者|寄送郵件人員的電子郵件。 對於文件，在 Office 文件中的 [作者] 欄位中所引用的人員。 您可以輸入多個名稱，以逗號隔開。 **OR**運算子會以邏輯方式連線兩個或多個值。|
 |大小 （以位元組為單位）|電子郵件與文件的大小 （以位元組為單位） 的項目。|
 |主旨/標題|電子郵件訊息的主旨行中的文字。 對於文件，文件的標題。 如先前所述，Title 屬性是 Microsoft Office 文件中指定的中繼資料。 您可以輸入多個主體/標題，以逗號隔開的名稱。 **OR**運算子會以邏輯方式連線兩個或多個值。|

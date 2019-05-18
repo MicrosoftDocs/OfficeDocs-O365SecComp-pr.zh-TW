@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 「Microsoft Office Outlook 的 Microsoft 垃圾郵件回報增益集」提供多種方式回報垃圾郵件：
-ms.openlocfilehash: 7e50143acd6efeb3d47ad0fa04d6d9b57a5ca161
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46dec07830218022dcc9a44a41b93a87fdcc70bf
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265004"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157335"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 回報垃圾郵件
 
@@ -67,7 +67,7 @@ ms.locfileid: "32265004"
   
 選取的郵件會傳送至 Microsoft 進行分析，然後移至 [垃圾郵件] 資料夾。若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。 
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [啟用報告訊息增益集](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

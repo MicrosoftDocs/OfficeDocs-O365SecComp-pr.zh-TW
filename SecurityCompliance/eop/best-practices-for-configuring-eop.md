@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 遵循下列 Exchange Online Protection (EOP) 最佳作法建議，以成功完成設定並避免發生常見組態錯誤。
-ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256641"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150284"
 ---
 # <a name="best-practices-for-configuring-eop"></a>設定 EOP 的最佳作法
   
@@ -97,7 +97,7 @@ ms.locfileid: "32256641"
 
 在系統管理中心使用報告來疑難排解一般問題和趨勢。 使用訊息追蹤工具，尋找關於訊息的單點特定資料。 請參閱[Exchange Online Protection 的報告與訊息追蹤](reporting-and-message-trace-in-exchange-online-protection.md)，以深入了解報告功能。 請參閱[Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx)，以深入了解郵件追蹤工具。
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [EOP 一般常見問題集](eop-general-faq.md)
   

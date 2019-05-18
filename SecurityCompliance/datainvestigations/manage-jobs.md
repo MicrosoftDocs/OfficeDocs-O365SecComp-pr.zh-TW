@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3b144fbf5f00f3dbb017ac176c75677970f2f7f2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 12b86f3e63d69fbd64304f1ed46cff25daffa8ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258181"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150765"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>管理資料調查 （預覽） 中的工作
 
 以下是工作 （也就是通常較長時間執行程序） 所追蹤的調查資料調查 （預覽） 中的 [**工作**] 索引標籤上的清單。 由使用者動作使用和管理調查時便會觸發這些工作。
 
-| 工作類型            | 說明     |
+| 工作類型            | 描述     |
 | :----------------- | :----------     |
 |將資料新增到辨識項設定 | 使用者會新增至辨識項集合的搜尋結果。  如需詳細資訊，請參閱 <<c0>搜尋調查中的資料。 |
 |將資料新增到另一個辨識項設定 | 使用者會從一個辨識項設定為不同的辨識項集合在相同的情況下新增文件。|

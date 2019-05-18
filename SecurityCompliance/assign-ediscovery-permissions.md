@@ -3,7 +3,7 @@ title: 指派安全性 & 合規性中心中的 eDiscovery 權限
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 指派執行使用安全性 & 合規性中心的 eDiscovery 相關工作所需的權限。
-ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250166"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152175"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>指派安全性 & 合規性中心中的 eDiscovery 權限
 
@@ -75,7 +75,7 @@ ms.locfileid: "32250166"
 |**Role**|**合規性管理員**|**eDiscovery 管理員 & 系統管理員**|**組織管理**|**檢閱者**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |專案管理 <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|符合性搜尋 <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|合規性搜尋 <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |匯出 <br/> | <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |保留 <br/>  |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |預覽 <br/>  | <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
@@ -90,7 +90,7 @@ ms.locfileid: "32250166"
 
 此角色可讓使用者建立、 編輯、 刪除及控制安全性 & 合規性中心中的 eDiscovery 案例的存取。 如需詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的管理 eDiscovery 案例。 如先前所述，使用者必須具有大小寫管理角色之前您可以使用**新增 eDiscoveryCaseAdmin**指令程式，讓它們 eDiscovery 系統管理員。 
 
-### <a name="compliance-search"></a>符合性搜尋
+### <a name="compliance-search"></a>合規性搜尋
 
 此角色可讓使用者在安全性 & 合規性中心來搜尋信箱及公用資料夾、 SharePoint Online 網站、 Skype for Business 對話、 Office 365 群組和 Microsoft Teams 的 OneDrive for Business 網站中執行內容搜尋工具。 此角色可讓使用者取得預估搜尋結果，並建立匯出報告，但其他角色所需啟動等預覽、 匯出或刪除搜尋結果的內容搜尋動作。
 

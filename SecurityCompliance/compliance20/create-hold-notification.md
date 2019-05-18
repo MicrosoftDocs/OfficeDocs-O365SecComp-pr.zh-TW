@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efd5dfdee48e892b5fa3fb018a9655c10d9a325e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242781"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155155"
 ---
 # <a name="create-a-legal-hold-notice"></a>建立的合法持有通知
 
-組織可以使用進階電子文件 （預覽） custodian 通訊，來管理他們的工作流程與 custodians 通訊。 透過 [通訊] 工具，法務小組可以有系統地傳送、 收集和追蹤合法持有通知。 彈性建立程序也能讓小組合作，來自訂保留通知工作流程與傳送到 custodians 通知中的內容。 
+組織可以使用進階電子文件 custodian 通訊，來管理他們的工作流程與 custodians 通訊。 透過 [通訊] 工具，法務小組可以有系統地傳送、 收集和追蹤合法持有通知。 彈性建立程序也能讓小組合作，來自訂保留通知工作流程與傳送到 custodians 通知中的內容。 
 
 ![通訊] 頁面](../media/CommunicationPage.PNG)
 
@@ -35,7 +35,7 @@ ms.locfileid: "32242781"
 
 ![名稱 [通訊] 頁面](../media/NameCommunication.PNG)
 
-1. 在安全性 & 合規性中心，移至**eDiscovery > 進階電子文件 （預覽）** 來顯示貴組織中的案例清單。
+1. 在安全性 & 合規性中心，移至**eDiscovery > 進階電子文件**來顯示貴組織中的案例清單。
    
 2. 按一下 [**通訊**] 索引標籤，然後按一下 [**新的通訊**。
    

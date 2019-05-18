@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: 新增及管理安全性與合規性中心中的活動警訊，使 Office 365 會傳送電子郵件通知當使用者在 Office 365 中執行特定活動。
-ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1b09b191f82d8dd589fe2e5f650f42f67a846da2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258663"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151305"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>在 Office 365 中建立活動警示
 

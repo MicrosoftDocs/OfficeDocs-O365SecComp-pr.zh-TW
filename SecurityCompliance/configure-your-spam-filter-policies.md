@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定包含選取的郵件，會被識別為垃圾郵件所採取的動作，然後選擇是否要篩選以特定語言撰寫或從特定國家或地區傳送的郵件。
-ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 740da796d0e2215076bfe38120f98e349099a758
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258811"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151315"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
   
@@ -147,7 +147,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 如果想要使用積極的垃圾郵件篩選方法，您可以啟用進階的垃圾郵件篩選選項。如需套用至整個組織的一般垃圾郵件設定，請參閱[使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)，或[使用 Office 365 垃圾郵件篩選器封鎖垃圾郵件以避免漏報問題](https://go.microsoft.com/fwlink/p/?LinkId=534225)。如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
    
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection6"> </a>
 
 [設定連線篩選原則](configure-the-connection-filter-policy.md)

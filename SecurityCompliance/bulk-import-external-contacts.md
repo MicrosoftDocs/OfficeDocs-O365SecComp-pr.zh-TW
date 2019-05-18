@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解如何系統管理員可以使用 Exchange Online PowerShell 和 CSV 檔案大量匯入外部連絡人至全域通訊清單。
-ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244499"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152205"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>大量匯入外部連絡人至 Exchange Online
 

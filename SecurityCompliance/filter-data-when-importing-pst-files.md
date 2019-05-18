@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 匯入服務中的新的智慧型匯入功能，來篩選實際取得匯入至目標信箱的項目。 智慧型匯入可讓您主動決定何種資料匯入及要留下的項目。 智慧型匯入也可提供見解上您要匯入至 Office 365 的資料。 '
-ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2e012159f7f278dc10db14b07531686b5d130fd9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255692"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154595"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>匯入至 Office 365 的 PST 檔案時篩選資料
 
@@ -114,7 +114,7 @@ ms.locfileid: "32255692"
     
     e. 按一下 [開始匯入的 [**匯入資料**]。 請注意，顯示總將匯入的資料量。 
     
-    Or
+    或
     
     a. 按一下 [**否，我想要匯入每個項目**匯入 Office 365 的 PST 檔案中的所有資料，然後按一下 [**下一步**。
     

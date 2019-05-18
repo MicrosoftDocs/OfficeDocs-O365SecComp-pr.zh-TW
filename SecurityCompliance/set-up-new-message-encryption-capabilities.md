@@ -3,8 +3,8 @@ title: 設定全新的 Office 365 郵件加密功能
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2019
-ms.audience: ITPro
+ms.date: 4/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 以 Azure 資訊保護，您的組織內建的功能可以使用新的 Office 365 郵件加密保護與組織內外的人員的電子郵件通訊。 全新的 OME 功能與其他 Office 365 組織、 Outlook.com、 Gmail，以及其他電子郵件服務搭配使用。
-ms.openlocfilehash: ea8756d08b1c172c433d6cd8ad1752c4c7ad64e9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260751"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156505"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>設定全新的 Office 365 郵件加密功能
 
@@ -70,7 +70,7 @@ Azure RMS 便也會自動啟動最合格的方案，因此您可能不需要執�
 
 2. 執行 Get-irmconfiguration 指令程式。
 
-     您應該會看到 $True AzureRMSEnabled 參數，即表示 OME 在您的租用戶中設定的值。 如果不是，使用 Set-irmconfiguration 設定為啟用 OME $True AzureRMSEnabled 的值。
+     您應該會看到 $True AzureRMSLicensingEnabled 參數，即表示 OME 在您的租用戶中設定的值。 如果不是，使用 Set-irmconfiguration 設定為啟用 OME $True AzureRMSLicensingEnabled 的值。
 
 3. 執行 Test-irmconfiguration 指令程式使用下列語法：
 

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主題提供有關反垃圾郵件保護的常見問題與解答。這些解答適用於 Microsoft Exchange Online 及 Exchange Online Protection (EOP) 客戶。
-ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242491"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152375"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
@@ -187,7 +187,7 @@ Exchange Online Protection 客戶：[報告和郵件追蹤在 Exchange Online Pr
     
     Hotmail 使用名為智慧型網路資料服務的程式，供寄件者查看使用者所提交的投訴。SNDS 是對 Hotmail 傳遞問題進行疑難排解時的主要入口網站。
     
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [Office 365 電子郵件的反垃圾郵件保護](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
   

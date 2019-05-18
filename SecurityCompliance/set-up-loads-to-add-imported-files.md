@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: '檢閱步驟將匯入的檔案新增至最後一個定義的負載或檔案，再執行 Office 365 進階電子文件探索中的相關性訓練的批次。  '
-ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 65e022680cc0bd39bbca3e05a4e3b6d24da1b2ad
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260734"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158605"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>設定載入要在 Office 365 進階電子文件探索中新增匯入的檔案
 
@@ -50,7 +50,7 @@ ms.locfileid: "32260734"
     
 4. 按一下 [**新增檔案**]。 將檔案新增至負載，並會顯示確認訊息。 
     
-5. 按一下 [確定]。
+5. 按一下 [確定]****。
     
 檔案的訓練檔案現在在進階電子文件探索相關性處理。
   

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2014
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: 資訊管理原則是一種內容的一組規則。 資訊管理原則可讓組織控制和追蹤之類的內容會保留多久或哪些動作的使用者可以對該內容。 資料管理原則可協助組織符合法律或政府規範，或是只強制執行一些內部業務流程。
-ms.openlocfilehash: 23662c555dfc19b2fc83b0364d93724e922c7c97
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a19b773a8944fa29c06b29e1928cb88e96cf5a7f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254226"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152605"
 ---
 # <a name="introduction-to-information-management-policies"></a>資訊管理原則簡介
 

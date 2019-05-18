@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主題說明如何 Exchange Online 和 Exchange Online Protection (EOP) 系統管理員可以尋找、 釋出，並回報被隔離的郵件在 Exchange 系統管理中心 (EAC) 上。
-ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7ac65ae5b4225e56861dacacdd61bf5a237f7ca8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255257"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154565"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以系統管理員身分尋找及釋放被隔離的郵件
 
@@ -192,7 +192,7 @@ ms.locfileid: "32255257"
   
 如果您按一下 [**重新整理**![重新整理圖示](media/ITPro-EAC-RefreshIcon.gif)圖示來重新整理您的資料，然後連按兩下郵件，您應該會看到，它已釋出給預定的收件者。 
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection4"> </a>
 
 [隔離常見問題集](quarantine-faq.md)

@@ -3,7 +3,7 @@ title: Office 365 中的內容搜尋
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用內容搜尋 」 工具在 Office 365 或 Microsoft 365 合規性中心] 中，若要搜尋的內容信箱、 SharePoint Online 網站、 OneDrive 帳戶、 Microsoft Teams、 Office 365 群組與 Skype for Business 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽並匯出搜尋結果。 內容搜尋也是有效的工具，以搜尋可能會與 GDPR 資料主體要求相關的內容。
-ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4661f724a646eaaf522485726b2cb0475483e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264059"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153925"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 

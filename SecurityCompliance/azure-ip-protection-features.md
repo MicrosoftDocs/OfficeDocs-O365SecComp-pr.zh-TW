@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: 若要協助保護您的資訊，所有的 Azure 資訊保護合格租用戶開始 2018 年 7 月的初始步驟會有 Azure 資訊保護中的保護功能預設開啟。 Azure 資訊保護中的保護功能已前身為權限管理或 Azure RMS 的 Office 365 中。 如果您的組織有辦公室 E3 服務計劃或更高的服務計劃現在就會開始保護透過 Azure 資訊保護的資訊，當我們推行這些功能。
-ms.openlocfilehash: 2484f9b335a6698894046aaf429fdad68d82491e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f7c5126ddf1a15dde147e724ceced34d95eef185
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243970"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152225"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Azure 資訊保護推行至現有的 Office 365 租用戶中的保護功能
 

@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 本主題說明如何設定 Microsoft Exchange Online Protection (EOP)。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: 496a249f1dc269151dad4b93d2b5cf30fa6ec91b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 93c6cbe41177103778bf96ca652d9d2889849372
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256591"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153055"
 ---
 # <a name="set-up-your-eop-service"></a>設定 EOP 服務
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解如何 Exchange Online 和 Office 365 使用傳輸層安全性 (TLS) 和轉寄密碼 (FS) 來保護電子郵件通訊。 也會由 Microsoft Exchange Online 的發出的憑證的相關資訊。
-ms.openlocfilehash: e80f477c807f3a7ad5f751e0987b191024c816d9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f23b71984302639835537beb757e9089f44ee0c9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255631"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152875"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線
 

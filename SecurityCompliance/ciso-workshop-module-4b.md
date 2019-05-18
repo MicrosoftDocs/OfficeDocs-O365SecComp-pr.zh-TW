@@ -3,19 +3,19 @@ title: 首席資訊安全性長 （首席資訊安全長） 研討會，模組 4
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: bbe28d89280826202c9d338827ac2b1469c8a632
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b296351ed0fe076f22c148487ed1044da3ae4f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243364"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152134"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>首席資訊安全長研討會模組 4b： 威脅保護策略 
 

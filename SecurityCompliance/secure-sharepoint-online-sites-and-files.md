@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
-ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6e65d697e24ce179953b9811fea3de98095664ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265411"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158695"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保護 SharePoint Online 網站與檔案
 

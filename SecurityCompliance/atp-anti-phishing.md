@@ -3,7 +3,7 @@ title: Office 365 中的 ATP 防網路釣魚功能
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
 description: ATP 防網路釣魚是 Office 365 進階威脅防護的一部分。 ATP 防網路釣魚將機器學習模型搭配模擬偵測演算法的一組套用於內送郵件提供保護市售和矛網路釣魚攻擊。 所有郵件都都會受到機器學習模型來偵測網路釣魚郵件，以及一組用來防範各種不同的使用者和網域模擬攻擊的進階演算法訓練廣泛設定。
-ms.openlocfilehash: 25e7845ab7d16b0766636006f2c55debfee2f9f9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0c17273d935dbdaec6d78a62a4edfa015b6b8efa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249563"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155545"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 中的 ATP 防網路釣魚功能
 

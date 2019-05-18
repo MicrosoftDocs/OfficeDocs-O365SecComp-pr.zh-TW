@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5593d9bbf76cd0004b48f45123c4921dc3fed9e6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 79405df5cb581548f8596999a7154c4f8cf2afc1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257621"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150605"
 ---
 # <a name="process-data-for-an-investigation"></a>處理的調查資料
 
@@ -32,4 +32,4 @@ ms.locfileid: "32257621"
 請參閱下列文章以取得詳細資料。
 
 - [進階編製索引的調查資料](index-data-people-of-interest.md)
-- [處理資料時的錯誤補救](error-remediation.md)
+- [處理資料時發生補救錯誤](error-remediation.md)

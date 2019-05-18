@@ -1,9 +1,9 @@
 ---
-title: 檢閱集中檢視文件
+title: 檢視檢閱集中的文件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 65b55f60e1b57b34dbdc7dd62f0a4b373f73a96b
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527126"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151545"
 ---
-# <a name="view-documents-in-a-review-set"></a>檢閱集中檢視文件
+# <a name="view-documents-in-a-review-set"></a>檢視檢閱集中的文件
 
 進階電子文件會顯示透過數個檢視每個具有不同用途的內容。 檢閱集合內的任何文件上的 [可用各種不同的檢視。 目前提供檢視程式：
 

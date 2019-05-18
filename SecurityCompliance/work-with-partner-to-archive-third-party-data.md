@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 您的組織可以與設定的自訂連接器，以從資料來源，例如 Salesforce Chatter，Yahoo Messenger 協力廠商資料匯入 Microsoft 合作夥伴合作，或 Yammer。 這可讓您封存在 Office 365 中的協力廠商資料來源中的資料，所以您可以使用 Office 365 符合性功能，例如合法持有、 內容搜尋和保留原則來管理貴組織的協力廠商資料的控管。
-ms.openlocfilehash: dce015438c9764f66e98936df9454cba73fd8472
-ms.sourcegitcommit: 63a10dc5ffa9d709fac437d3fc9e554b1bcd826f
+ms.openlocfilehash: 9bc8dddfed4b9721237f06ecf03c1ca41df091d6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33307827"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155995"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>使用封存 Office 365 中的協力廠商資料合作夥伴
 

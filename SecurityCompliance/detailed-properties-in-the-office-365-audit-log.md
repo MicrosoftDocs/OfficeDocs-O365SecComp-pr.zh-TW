@@ -3,7 +3,7 @@ title: Office 365 稽核記錄中的詳細內容
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: 包含 Office 365 中的其他屬性的說明稽核記錄。
-ms.openlocfilehash: 2c2d878bb79bdec19aef07ed0de35b53a826e9ca
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 69dfe34b0ace8061c3c41ae074582016fe61a55d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402961"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150335"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 稽核記錄中的詳細內容
 

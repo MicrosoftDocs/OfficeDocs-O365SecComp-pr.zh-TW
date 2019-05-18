@@ -3,7 +3,7 @@ title: 將 PST 檔案匯入至 Office 365 的常見問題集
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '常見問題集的系統管理員如何使用 Office 365 匯入服務 organizaiton 的 PST 檔案匯入到 Office 365 信箱。 '
-ms.openlocfilehash: 69767353a574336351b01fdc42a9c6117c5c31ed
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 632b82a99f1be5d38db3fb50a4b2b4d7a6369186
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255431"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152865"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>將 PST 檔案匯入至 Office 365 的常見問題集
 
@@ -39,7 +39,7 @@ ms.locfileid: "32255431"
   
 - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    Or
+    或
     
 - 您必須是 Office 365 組織中的全域系統管理員。
     
@@ -110,7 +110,7 @@ Yes, this capability is now available.
   
 - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    Or
+    或
     
 - 您必須是 Office 365 組織中的全域系統管理員。
     

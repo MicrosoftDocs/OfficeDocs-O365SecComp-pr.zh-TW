@@ -3,7 +3,7 @@ title: 電子文件探索解決方案系列資料外洩案例-搜尋及清除
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 電子文件探索與搜尋工具來管理與貴組織中的資料外洩事件回應。
-ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b06dea5449d655cfe66072b3607f40c3bb7362da
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258926"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153795"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery solution 解決方案系列： 資料外洩案例-搜尋及清除
 

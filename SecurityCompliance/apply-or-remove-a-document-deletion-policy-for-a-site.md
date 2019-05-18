@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-msft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 組織通常會受限於合規性、 法律或其他法規，需要一段時間保留文件。 但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。 基於這個理由，您的組織可能已建立您網站的文件刪除原則 — 例如，一般商業文件可能需要刪除五年之後建立它們。
-ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c826d6c9e163e79c4e72510e3362328ae902c80c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243269"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152285"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>套用或移除網站的文件刪除原則
 

@@ -3,7 +3,7 @@ title: 在 Office 365 進階電子文件探索中匯出報告欄位
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 說明在進階電子文件的匯出報告中包含的所有欄位。
-ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255461"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154465"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出報告欄位
 
@@ -44,7 +44,7 @@ ms.locfileid: "32255461"
 |Marked_as_pivot  <br/> |Near 重複項目  <br/> |會指出檔案是否樞紐分析表。  <br/> |是  <br/> |是  <br/> |
 |Similarity_percent  <br/> |Near 重複項目  <br/> |相對於樞紐分析表的相似性的百分比。  <br/> |是  <br/> |是  <br/> |
 |Duplicate_subset  <br/> |Near 重複項目  <br/> |重複的子集的唯一識別碼。 會指出檔案是否有重複的確切文字項目。  <br/> |是  <br/> |是  <br/> |
-|Date  <br/> |一般  <br/> |檔案的日期 (取決於檔案類型的電子郵件： 傳送的日期; 文件： 修改日期)。  <br/> |是  <br/> |是  <br/> |
+|日期  <br/> |一般  <br/> |檔案的日期 (取決於檔案類型的電子郵件： 傳送的日期; 文件： 修改日期)。  <br/> |是  <br/> |是  <br/> |
 |Dominant_theme  <br/> |分析  <br/> |主要的佈景主題的檔案。  <br/> |是  <br/> |是  <br/> |
 |Themes_list  <br/> |佈景主題  <br/> |佈景主題名稱的清單。  <br/> |是  <br/> |是  <br/> |
 |ND_set  <br/> |EquiSet  <br/> |Nearduplicate 集的唯一的數值識別碼。  <br/> |是  <br/> |是  <br/> |

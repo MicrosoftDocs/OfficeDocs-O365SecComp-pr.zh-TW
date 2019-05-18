@@ -3,17 +3,17 @@ title: 適用於 Office 伺服器的 GDPR
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 Office 伺服器中解決 GDPR 需求。
-ms.openlocfilehash: 9b1c7eb4313d1c33e273b6ac0d494c2359c40f00
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3c6c7aa30d4d55262cef1edabc528d6644b340c1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255754"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150105"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>適用於內部部署 Office 伺服器的 GDPR
 
@@ -31,7 +31,7 @@ ms.locfileid: "32255754"
 
 -   [內部部署檔案共用](gdpr-for-on-premises-file-shares.md)
 
-如需有關 GDPR 以及 Microsoft 可以如何協助您的詳細資訊，請參閱 [Microsoft 信任中心](https://www.microsoft.com/zh-TW/TrustCenter/Privacy/gdpr/default.aspx)。
+如需有關 GDPR 以及 Microsoft 可以如何協助您的詳細資訊，請參閱 [Microsoft 信任中心](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)。
 
 在您使用內部部署資料進行任何工作之前，請洽詢您的法務和合規性小組，以尋求指引並且深入了解使用個人資料的現有分類結構描述和方法。Microsoft 在位於 [http://aka.ms/gdprpartners](<http://aka.ms/gdprpartners>) 的「Microsoft GDPR 資料探索工具組」中提供開發和擴充分類結構描述的建議。這個工具組也會說明將內部部署資料移至雲端 (您可以在其中使用更複雜的資料控管功能) 的方法。本節中的這篇文章提供對於要保留在內部部署的資料的建議。
 

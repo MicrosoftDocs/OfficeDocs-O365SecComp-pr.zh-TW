@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: '請參閱 < 關於隔離電子郵件系統管理員從使用者垃圾郵件通知訊息的使用者可以執行以下動作的郵件。 '
-ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 666640e15da8bc980ebcf4cc0733c1947eae26b9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264328"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156235"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>利用使用者垃圾郵件通知來釋放並回報被當成垃圾郵件隔離的郵件
 

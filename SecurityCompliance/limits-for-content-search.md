@@ -3,7 +3,7 @@ title: 在安全性 & 合規性中心的內容搜尋的限制
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '了解作用中的安全性 & 在 Office 365，例如同時搜尋的最大數目的合規性中心中的內容搜尋功能的限制。 '
-ms.openlocfilehash: 715c64433ad78197411aff465c7a08baf2f71eb8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6933fcb2a7b54c3617b2c01d54fa50fa4955ead2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252021"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155905"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>在安全性 & 合規性中心的內容搜尋的限制
 
@@ -37,7 +37,7 @@ ms.locfileid: "32252021"
 |:-----|:-----|
 |信箱或可搜尋的單一內容搜尋中的網站數目上限  <br/> |無限制  <br/> |
 |在您組織中的同一時間可執行內容搜尋數目上限。  <br/> |無限制  <br/> |
-|單一使用者可以在同一時間開始的內容搜尋數目上限。 請注意，此限制最有可能叫用時當使用者嘗試使用啟動多個搜尋**Get-compliancesearch \| Start-compliancesearch**安全性 & 合規性中心 PowerShell 中的命令。  <br/> |10  <br/> |
+|單一使用者可以在同一時間開始的內容搜尋數目上限。 請注意，此限制最有可能叫用時當使用者嘗試使用啟動多個搜尋**Get-compliancesearch \| Start-compliancesearch**安全性 & 合規性中心 PowerShell 中的命令。  <br/> |10   <br/> |
 |每個使用者信箱時預覽內容搜尋結果的預覽頁面顯示的項目數目上限。  <br/> |100  <br/> |
 |在預覽內容搜尋結果時，會顯示在預覽頁面的所有使用者信箱中找到的項目數目上限。 顯示最新的項目。  <br/> |1,000  <br/> |
 |可以預覽搜尋結果中的使用者信箱數目上限。 如果有超過 1000 個信箱包含符合搜尋查詢的內容，在大部分的搜尋結果只上方 1000 個信箱將會為可供預覽。  <br/> |1,000  <br/> |
@@ -58,7 +58,7 @@ ms.locfileid: "32252021"
 
 下表說明的索引限制，可能會導致電子郵件訊息所傳回做為未編製索引的項目或內容的搜尋結果中的已局部編製索引項目。
   
-|**索引限制**|**附註**|**描述**|
+|**索引限制**|**最大值**|**描述**|
 |:-----|:-----|:-----|
 |附件大小上限 （不含 Excel 檔案）  <br/> |150 MB  <br/> |會將剖析為編製索引的電子郵件附件的大小上限。 任何大於此限制的附件不會被剖析為編製索引，並包含附件的郵件會被標示為已局部編製索引。  <br/> <br/>**附註：** 剖析是其中的索引服務從附件擷取文字移除不必要的字元，像是標點符號和空格，，然後將文字插入文字 （以處理程序呼叫 token 化），然後儲存在索引中的程序。           |
 |Excel 檔案的大小上限  <br/> |4 MB  <br/> |Excel 檔案的大小上限位在網站上，或附加至將會被剖析為編製索引的電子郵件訊息。 任何過大，而不會剖析此限制，並將檔案或電子郵件檔案附件的郵件會被標示為未建立索引的 Excel 檔案。  <br/> |
