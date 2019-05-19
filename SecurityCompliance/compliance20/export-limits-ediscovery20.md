@@ -1,10 +1,10 @@
 ---
-title: 匯出進階電子文件 （預覽） 中的限制
+title: 匯出進階電子文件中的限制
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3f273152d4242e8ce3f9990dc01927edf105f3dc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 90d25153b37df68f89020558d1fce9c1b213de71
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251971"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151745"
 ---
-# <a name="export-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="7ca17-102">匯出進階電子文件 （預覽） 中的限制</span><span class="sxs-lookup"><span data-stu-id="7ca17-102">Export limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-limits-in-advanced-ediscovery"></a><span data-ttu-id="ea8dc-102">匯出進階電子文件中的限制</span><span class="sxs-lookup"><span data-stu-id="ea8dc-102">Export limits in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="7ca17-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="7ca17-103">Content coming soon.</span></span>
+<span data-ttu-id="ea8dc-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="ea8dc-103">Content coming soon.</span></span>
