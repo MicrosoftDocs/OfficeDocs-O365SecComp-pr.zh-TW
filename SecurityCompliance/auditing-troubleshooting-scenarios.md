@@ -3,7 +3,7 @@ title: 搜尋 Office 365 稽核記錄來疑難排解常見的案例
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 稽核記錄搜尋工具來協助您疑難排解常見問題，例如調查遭入侵的帳戶，或找出誰設定信箱的電子郵件轉寄。
-ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e5c043668d73bdff30dfce962962a015a6748949
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250243"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155675"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>搜尋 Office 365 稽核記錄來疑難排解常見的案例
 

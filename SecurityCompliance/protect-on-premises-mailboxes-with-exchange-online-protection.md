@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: 即使您計劃主控部分或全部信箱內部，您仍然可以保護信箱與 Exchange Online Protection (EOP)。 若要設定連接器，您的帳戶必須是 Office 365 全域管理員或 Exchange 公司管理員 (組織管理角色群組)。 如需 Office 365 權限方式與 Exchange 權限相關資訊，請參閱在 21vianet 運作的 Office 365 中指派系統管理員角色。 如果您的 Exchange 信箱的所有內部部署，請遵循下列步驟來設定您的 EOP 服務。
-ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 20fa94a356823e624fcb42dc493d555cec3fe523
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261551"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156935"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>保護內部部署信箱與 Exchange Online Protection
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 01/14/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Office 365 可協助防止惡意程式碼中的環境，藉由使用者上傳到 SharePoint Online 檔案中偵測有病毒。 掃描檔案有病毒後它們上傳。 如果找到受感染的檔案時，屬性是設定，讓使用者無法下載，或將檔案同步。
-ms.openlocfilehash: d4f18c84935d9c6e1d3f135bbda6c40737956ae7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 463c2d21c92e5b71602cfe5158dbf6c82e8e7385
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266819"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157785"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>在 SharePoint Online 中的病毒偵測
 

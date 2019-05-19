@@ -3,17 +3,17 @@ title: 適用於 Project Server 的 GDPR
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 Project Server 中解決 GDPR 需求。
-ms.openlocfilehash: 67097cdab4fdab31537cf4b6dd27ce17234c2bdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8fb29c2d383c03c79d619d2c78df75cffb4eab27
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255281"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154495"
 ---
 # <a name="gdpr-for-project-server"></a>適用於 Project Server 的 GDPR
 

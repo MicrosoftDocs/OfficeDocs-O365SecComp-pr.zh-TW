@@ -3,7 +3,7 @@ title: 管理 Office 365 中的法律調查
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 使用安全性 & 在 Office 365 規範中心中的 eDiscovery 案例，來管理貴組織的法律調查。 如果您有 E5 訂閱，您可以進一步分析案例資料，藉由使用文字分析、 機器學習和進階電子文件的預測式編碼功能。
-ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6f5b7bc7b1c8d672efe60629b1ccf1315c8b74dd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252091"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155725"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>管理 Office 365 中的法律調查
 

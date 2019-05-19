@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
 ms.date: 10/6/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: 介紹 EOP 和 Office 365 垃圾郵件篩選器所篩選的電子郵件的安全提示。
-ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b5501459a56dcff322dfdfa05d019d7fb626f369
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261433"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156985"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>在 Office 365 中的電子郵件訊息中的安全提示
 
@@ -60,7 +60,7 @@ Exchange Online Protection (EOP) 和 Office 365 保護您的垃圾郵件、 網�
   
 如果您同意與 Office 365 和 EOP 分類的方式郵件 （也就是它不是垃圾郵件或不合法），您可以提交郵件以進行分析，以協助更妥善地讓您的使用經驗。 如需詳細資訊，請參閱[回報垃圾郵件和網路釣魚詐騙網頁型 Outlook 中](https://technet.microsoft.com/library/dn594557.aspx)。 您也可以按一下 [送出至 Microsoft，以協助我們改進直接的註解的安全提示中的意見反應] 連結。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [啟用或停用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 

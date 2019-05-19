@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 如果您傳送大量的未註冊的網域的電子郵件，則會執行您取得封鎖的電子郵件的風險。 閱讀本篇文章以了解更多。
-ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 207b71ab7e144af9709e7485d61c936e07271a11
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263985"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156295"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未註冊的網域電子郵件： 您要知道什麼
 
@@ -48,7 +48,7 @@ Office 365 允許轉送某些郵件透過 Exchange Online Protection (EOP) 的�
 
 4. 完成時，您必須連絡 Microsoft 支援服務，並要求以取得您的租用戶解除封鎖再次傳送來自未註冊的網域。  提供錯誤碼很有幫助，但您想要證明您的環境受到保護，且不會在一次傳送垃圾郵件。 在開啟支援案例的詳細資訊可以找到[以下](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
 

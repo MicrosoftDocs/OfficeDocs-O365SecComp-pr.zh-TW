@@ -4,19 +4,19 @@ ms.author: scotv
 author: scotvidican
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft 致力於讓每個人都能更輕鬆地使用其產品及服務。
-ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8cf86f2ce4aa176baa0a151edea93a247a2113c7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257041"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154705"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>行動不便人士的協助工具
 
@@ -73,7 +73,7 @@ Windows 作業系統有許多內建的協助工具功能或找出適合有困難
     
 Microsoft 支援服務會受限於使用該服務時的金額、條款及當時的情況。 如需詳細資訊，請參閱[Microsoft 支援服務](https://go.microsoft.com/fwlink/p/?linkId=18142)。
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 如需如何存取技術的電腦可協助改進殘障人士生活的詳細資訊，請參閱 < <b0>Microsoft 協助工具</b0>。 
   

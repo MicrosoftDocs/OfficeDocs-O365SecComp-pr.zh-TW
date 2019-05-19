@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/30/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用搜尋統計資料功能來顯示和比較安全性 & 合規性中心中的多個內容搜尋的統計資料。 當您建立或編輯搜尋查詢，以取得增強顯示多少個項目比對每個關鍵字或關鍵字文句的統計資料，您也可以設定關鍵字清單。
-ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267384"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157905"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>檢視內容搜尋結果的關鍵字統計資料
 

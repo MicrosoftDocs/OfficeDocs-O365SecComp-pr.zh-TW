@@ -3,7 +3,7 @@ title: 安全規範中心內的報告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.AuditingHelp
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全性 & 合規性中心來取得各種報告您的 SharePoint Online 和 Exchange Online 組織，以及 Azure Active Directory 的報告。  '
-ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 979eb59ed0adf115b9cdda4cd99f97845e9b4b4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264895"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157227"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全規範中心內的報告
 

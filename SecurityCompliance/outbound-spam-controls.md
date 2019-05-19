@@ -3,7 +3,7 @@ title: 控制 Office 365 的輸出垃圾郵件
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 如果您的組織傳送大量的大宗郵件標示為垃圾郵件，可能會遭到封鎖無法傳送電子郵件與 Office 365。 閱讀本篇文章以深入了解發生的原因以及可以怎麼做其相關資訊。
-ms.openlocfilehash: 0fcbe0c7b9d1bd340e2ab2feb5edec8283ecaf9a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262305"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157595"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>控制 Office 365 的輸出垃圾郵件
 
@@ -61,7 +61,7 @@ b. **使用第 3 方大量 emailer 傳送大量的通訊**。 有幾個 3rd 廠�
 
 通訊、 行動裝置，惡意程式碼反不當使用工作群組 (MAAWG) 會發佈其成員資格名冊[以下](http://www.maawg.org/about/roster)。 數個大量電子郵件提供者清單上，而是負責網際網路公民已知。 
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [當寄件者被封鎖無法傳送輸出垃圾郵件的範例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 

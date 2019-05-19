@@ -1,10 +1,10 @@
 ---
-title: 管理保留在 [進階電子文件 （預覽）
+title: 管理進階電子文件中的保留
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fe6ab3a1e1108e9ab2e4fc201357b72a77453d38
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240948"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154895"
 ---
-# <a name="manage-holds-in-advanced-ediscovery-preview"></a>管理保留在 [進階電子文件 （預覽）
+# <a name="manage-holds-in-advanced-ediscovery"></a>管理進階電子文件中的保留
 
-您可以使用進階電子文件 （預覽） 案例來建立保留來保留可能與您的案例相關的內容。 使用進階電子文件 （預覽） 保留功能，您可以將保留 custodians 和其資料來源上。 此外，您可以保留非 custodial 信箱和 OneDrive for Business 網站。 您也可以將保留在群組信箱、 SharePoint 網站與 OneDrive for Business 網站的 Office 365 群組。 同樣地，您可以保留的信箱和 Microsoft Teams 相關聯的網站。 當您將保留內容的位置時，直到您放開 custodian、 移除特定資料的位置，或完全刪除保留原則，會保留內容。
+您可以使用進階電子文件探索案例來建立保留來保留可能與您的案例相關的內容。 使用進階電子文件保留功能，您可以將保留 custodians 和其資料來源上。 此外，您可以保留非 custodial 信箱和 OneDrive for Business 網站。 您也可以將保留在群組信箱、 SharePoint 網站與 OneDrive for Business 網站的 Office 365 群組。 同樣地，您可以保留的信箱和 Microsoft Teams 相關聯的網站。 當您將保留內容的位置時，直到您放開 custodian、 移除特定資料的位置，或完全刪除保留原則，會保留內容。
 
 ## <a name="manage-custodian-based-holds"></a>管理 custodian 型保留
 
-在某些情況下，您可能會有一組資料 custodians 您識別並選擇来保留。 在 [進階電子文件 （預覽），當這些 custodians 會處於暫止狀態，使用者和其選取的資料來源會自動新增至 custodian 保留原則。 
+在某些情況下，您可能會有一組資料 custodians 您識別並選擇来保留。 在 [進階電子文件，當這些 custodians 會處於暫止狀態，使用者和其選取的資料來源會自動新增至 custodian 保留原則。 
 
 若要檢視 custodian 保留原則：
 
-1. 在**安全性 & 合規性中心**中，按一下 [ **eDiscovery > 進階電子文件 （預覽）** 來顯示貴組織中的案例清單。
+1. 在**安全性 & 合規性中心**中，按一下 [ **eDiscovery > 進階電子文件**來顯示貴組織中的案例清單。
    
-2. 移至要新增您的案例內的 custodians **Custodians** ] 索引標籤。 若要了解如何新增及 custodians 置於進階電子文件 （預覽） 案例內的保留，請參閱[進階電子文件 （預覽） 來新增 Custodians 案例](add-custodians-to-case.md)。 如果您已經加入 custodians 且處於保留狀態，請移至步驟 3。
+2. 移至要新增您的案例內的 custodians **Custodians** ] 索引標籤。 若要了解如何新增及 custodians 置於進階電子文件探索案例內的保留，請參閱 <<c0>新增 Custodians 進階 ediscovery 案例。 如果您已經加入 custodians 且處於保留狀態，請移至步驟 3。
    
 3. 移至 [**保留**] 索引標籤，然後選取 [Custodian 原則。
    
@@ -46,9 +46,9 @@ ms.locfileid: "32240948"
   - 您建立其中所有內容都會都被保留無限期保留。 或者，您可以建立查詢式的保留保留放置只有符合搜尋查詢的內容。
   - 您可以指定日期範圍，以保留，已傳送、 接收或建立該日期範圍內的內容。 或者，您可以保留不論當它已傳送、 接收或建立的所有內容。
 
-若要建立進階電子文件 （預覽） 案例保留：
+若要建立進階電子文件探索案例保留：
 
-1. 在**安全性 & 合規性中心**中，按一下 [ **eDiscovery > 進階電子文件 （預覽）** 來顯示貴組織中的案例清單。
+1. 在**安全性 & 合規性中心**中，按一下 [ **eDiscovery > 進階電子文件**來顯示貴組織中的案例清單。
   
 2. 您想要建立保留的案例旁邊，按一下 [**開啟**]。
   
@@ -130,7 +130,7 @@ ms.locfileid: "32240948"
     > [!NOTE]
     > 若要執行 Get UnifiedGroup 指令程式，您必須獲指派 「 僅檢視收件者角色在 Exchange Online 或是角色群組的成員，才會有指派 「 僅檢視收件者 」 角色。
 
- - 當使用者的信箱被搜尋時，將不會搜尋任何 Office 365 群組或使用者是屬於 Microsoft 小組。 同樣地，當您將 Office 365 群組或 Microsoft 小組保留，只有群組信箱和群組網站置於保留;OneDrive for Business 網站的群組成員與信箱未處於暫止狀態除非您明確將其新增為 custodians，或將其資料來源保留。 因此，如果您將 Office 365 群組或 Microsoft 小組需要保留的特定 custodian，請考慮將群組信箱與群組網站對應到 custodian (請參閱 Managing Custodians 在進階電子文件 （預覽）)。 如果 Office 365 群組或 Microsoft 小組不是單一 custodian 究，請考慮新增至非-custodial 來源保留。 
+ - 當使用者的信箱被搜尋時，將不會搜尋任何 Office 365 群組或使用者是屬於 Microsoft 小組。 同樣地，當您將 Office 365 群組或 Microsoft 小組保留，只有群組信箱和群組網站置於保留;OneDrive for Business 網站的群組成員與信箱未處於暫止狀態除非您明確將其新增為 custodians，或將其資料來源保留。 因此，如果您將 Office 365 群組或 Microsoft 小組需要保留的特定 custodian，請考慮將群組信箱與群組網站對應到 custodian (請參閱 Managing Custodians 進階 eDiscovery 中)。 如果 Office 365 群組或 Microsoft 小組不是單一 custodian 究，請考慮新增至非-custodial 來源保留。 
  
  - 若要取得的 Office 365 群組或 Microsoft 小組成員的清單，您可以在 Office 365 系統管理中心 [家庭 > 群組] 頁面上檢視的內容。 或者，您可以在 Exchange Online PowerShell 中執行下列命令：
 

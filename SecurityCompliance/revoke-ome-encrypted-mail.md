@@ -3,7 +3,7 @@ title: 撤銷由 Office 365 進階郵件加密所加密的電子郵件
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 是 Office 365 系統管理員，您可以撤銷某些使用 Office 365 進階郵件加密所加密的電子郵件。
-ms.openlocfilehash: 7135d2bdb35ddb4866499e66d53ea8d15a284b3d
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: 098ce50791152c8bbb4e4692d6fb85e4c2c7cb58
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835107"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156785"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>撤銷由 Office 365 進階郵件加密所加密的電子郵件
 

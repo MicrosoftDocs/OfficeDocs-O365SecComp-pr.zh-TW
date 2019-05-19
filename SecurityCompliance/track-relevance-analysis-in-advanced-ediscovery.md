@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: '了解如何檢視，並解譯結果在 Office 365 進階電子文件探索案例問題與相關性訓練狀態。  '
-ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1018b414d0192491feebfbec25d865d4463fa26a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264393"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158325"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中追蹤相關性分析
 

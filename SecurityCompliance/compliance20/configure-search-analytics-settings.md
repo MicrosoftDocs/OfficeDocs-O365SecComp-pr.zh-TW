@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243187"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155115"
 ---
 # <a name="configure-search-and-analytics-settings"></a>設定搜尋和分析設定
+
 
 ## <a name="near-duplicates-and-email-threading"></a>近似重複項目和電子郵件執行緒
 
@@ -31,7 +32,7 @@ ms.locfileid: "32243187"
 
 - 臨界值： 如果超出臨界值的兩個文件相似性層級，它們會放置在接近重複的設定相同。
 
-- 根據預設隱藏重複項目： 使用預設設定如果開啟此設定時，會套用篩選器來隱藏重複的文件。 可以在設定必要的工作以手動方式移除篩選。
+- 根據預設隱藏重複項目： 如果開啟此設定時，會在預設的檢閱套用篩選器來隱藏重複的文件。 可以在必要時設定檢閱以手動方式移除篩選。
 
 - 字詞的最小值/最大數目： 近似重複項目和電子郵件執行緒會僅在執行最小的數字和最字詞數目上限至少要有的文件。
 如需詳細資訊，請參閱[接近重複資料偵測](near-duplicates.md)和[電子郵件執行緒](email-threading.md)。
@@ -47,7 +48,7 @@ ms.locfileid: "32243187"
 
 ## <a name="optical-character-recognition-ocr"></a>光學字元辨識 (OCR)
 
-時開啟此設定，將會 ingested 成工作集，讓他們可以是可搜尋的映像上執行 OCR。
+時開啟此設定，將會 ingested 到檢閱設定，讓他們可以是可搜尋的映像上執行 OCR。
 
 ## <a name="ignore-text"></a>忽略的文字
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '您和您的使用者可以提交 false 負數，則為 false 正數垃圾郵件給 Microsoft 進行分析。 '
-ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260651"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156455"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 
@@ -115,7 +115,7 @@ ms.locfileid: "32260651"
   
 垃圾郵件評估是不論原始語言或字元組適用於持續程序。 因為垃圾郵件可以模糊或甚至是缺少 [主旨或郵件內文中的文字，垃圾郵件小組會依賴其他郵件特性，若要執行的篩選。 這表示，當垃圾郵件小組將提供的郵件標示為垃圾郵件，並且對規則基礎進行必要變更之後，該郵件將來便會遭到封鎖，除非其特性又被修改到足可避開我們的篩選器。 我們會不斷地部署新的垃圾郵件規則。 提交的個別規則的時間範圍而異的數量和品質送出資料。 因為所有客戶全域都設定新的垃圾郵件規則，並非所有個別垃圾郵件都會促成新垃圾郵件規則。
    
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 <a name="sectionSection4"> </a>
 
 [反垃圾郵件和反惡意程式碼防護](anti-spam-and-anti-malware-protection.md)

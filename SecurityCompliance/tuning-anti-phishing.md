@@ -4,19 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 系統管理員可以了解如何識別通過，理由和方式了網路釣魚郵件的原因，以及如何在未來防止多個網路釣魚郵件提交的項目。
-ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264315"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156345"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>調整 Office 365 中的反網路釣魚保護
 
@@ -52,7 +52,7 @@ ms.locfileid: "32264315"
 
 ## <a name="best-practices-to-stay-protected"></a>若要保持受保護的最佳作法
 
-- 在 [每月付款，執行[Office 365 安全分數](office-365-secure-score.md)」 來評估您的 Office 365 組織的安全性設定。
+- 在 [每月付款，執行[安全分數](microsoft-secure-score.md)」 來評估您的 Office 365 組織的安全性設定。
 
 - 定期檢閱[詐騙智慧報表](learn-about-spoof-intelligence.md)及**隔離**可疑的郵件，而不是將其傳遞給使用者的垃圾郵件] 資料夾可[啟用反網路釣魚原則中的反詐騙保護](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy)。
 
@@ -78,4 +78,4 @@ ms.locfileid: "32264315"
 
 - 多重要素驗證 (MFA) 是以防止遭入侵的帳戶其實好方法。 您強烈應該考慮啟用 MFA 的所有使用者。 階段式方法中，如啟動 （系統管理員、 主管等），您最機密的使用者啟用 MFA 的所有人啟用 MFA 之前。 如需相關指示，請參閱 <<c0>設定多重要素驗證。
 
-- 攻擊者通常用轉寄規則，外部收件者來擷取資料。 用於[Office 365 安全分數](office-365-secure-score.md)的**轉寄規則的檢閱信箱**資訊來找出並即使防止外部收件者轉寄規則。 如需詳細資訊，請參閱[減輕用戶端外部轉寄規則與安全分數](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。
+- 攻擊者通常用轉寄規則，外部收件者來擷取資料。 使用**檢閱信箱轉寄規則**中的資訊[Microsoft 安全分數](microsoft-secure-score.md)若要尋找並即使防止外部收件者轉寄規則。 如需詳細資訊，請參閱[減輕用戶端外部轉寄規則與安全分數](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。

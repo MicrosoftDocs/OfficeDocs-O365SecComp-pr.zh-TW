@@ -3,7 +3,7 @@ title: 匯出內容搜尋報告
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 而不是匯出實際的安全性 & 在 Office 365 規範中心中的內容搜尋結果，您可以只匯出搜尋結果報告。 報告中包含搜尋結果和詳細資訊，會匯出每個項目的相關文件的摘要。
-ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255651"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154605"
 ---
 # <a name="export-a-content-search-report"></a>匯出內容搜尋報告
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: '用於安全性 & 合規性中心的內容搜尋來搜尋信箱、 SharePoint Online 網站和 OneDrive for Business 位置。 '
-ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cebdbf7808534b82085affa16c06ac1929b3fd8d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261718"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157095"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>在安全規範中心執行內容搜尋
 
@@ -265,8 +265,7 @@ ms.locfileid: "32261718"
  
 [Microsoft Teams 和 Office 365 群組](#microsoft-teams-and-office-365-groups)
   
-
-  [商務用 OneDrive](#onedrive-for-business)
+[商務用 OneDrive](#onedrive-for-business)
   
 [搜尋查詢](#search-queries)
   

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: 了解如何執行 Office 365 進階電子文件探索的快速分析模式
-ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 04b48db445f114fd6138b099703e826c6b4ce7c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264481"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156155"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中使用快速分析
 
@@ -101,7 +101,7 @@ ms.locfileid: "32264481"
     
   - 若要匯出結果的新檔案新增至現有的情況下，繼續執行您目前的批次。 批次中建立工作階段、 選取相同的批次數目，並按一下 [**建立匯出工作階段**中，您可以使用此選項為前一個批次，匯出相同的參數，以累加方式。 
     
-  - 若要匯出至新的批次時，按一下 [**新增**![新增圖示](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)和**批次名稱**輸入新名稱 （或接受預設值） 和 [描述] 中**批次描述**。 按一下 [確定]。
+  - 若要匯出至新的批次時，按一下 [**新增**![新增圖示](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)和**批次名稱**輸入新名稱 （或接受預設值） 和 [描述] 中**批次描述**。 按一下 [確定]****。
     
   - 若要編輯的批次名稱或描述，請選取中**匯出批次**的名稱，請按一下 [**編輯**![編輯圖示](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，然後再修改欄位。
     

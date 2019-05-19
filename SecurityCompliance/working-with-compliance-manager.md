@@ -1,9 +1,9 @@
 ---
-title: 搭配使用 Microsoft Compliance Manager
+title: 搭配使用 Microsoft Compliance Manager （預覽）
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: ec01bc8cbf1a1b59353d2f0840baa539e1331ef4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473062"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157865"
 ---
-# <a name="work-with-microsoft-compliance-manager"></a>搭配使用 Microsoft Compliance Manager
+# <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 
 > [!IMPORTANT]
 > Microsoft Compliance Manager 是提供資料保護和合規性成長與建議，以提升資料保護和合規性的摘要儀表板和管理工具。 提供合規性管理員中的客戶動作是建議;它是由您的組織來評估在其各自的法規環境之前實作這些建議的有效性。 找到合規性管理員中的建議不應該解譯成保證郵件可以合規性。

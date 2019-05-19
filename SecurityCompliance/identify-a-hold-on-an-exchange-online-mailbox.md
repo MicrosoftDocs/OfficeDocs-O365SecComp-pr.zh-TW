@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何識別不同類型的可以放在 Office 365 信箱的保留。 這些類型的保留包含訴訟暫止、 eDiscovery 保留和 Office 365 保留原則。 您也可以判定是否使用者已被排除全組織保留原則
-ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 29ae9d7ba8be2bf0064c163605aee9ad8fd5fd07
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253881"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154195"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -90,7 +90,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 下表說明不同類型的全組織保留，以及如何識別每個包含*InPlaceHolds*屬性中，當您執行**Get-organizationconfig**指令程式的 Guid 為基礎的類型。
 
 
-|保留類型  |範例值  |說明  |
+|保留類型  |範例值  |描述  |
 |---------|---------|---------|
 |Office 365 保留原則套用至 Exchange 信箱、 Exchange 公用資料夾及小組聊天    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   整個組織的保留原則套用至 Exchange 信箱、 Exchange 公用資料夾和 Microsoft teams 1xN 聊天室以開頭的 Guid 來識別`mbx`前置詞。 請注意 1xN 聊天會儲存在個別的交談參與者的信箱。      |
 |Office 365 保留原則套用至 Office 365 群組及小組通道訊息     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    整個組織的保留原則套用至 Office 365 群組和 Microsoft Teams 中的通道郵件以開頭的 Guid 來識別`grp`前置詞。 請注意通道訊息會存放在 Microsoft 小組與相關聯的群組信箱。     |

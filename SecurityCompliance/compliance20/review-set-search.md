@@ -1,10 +1,10 @@
 ---
-title: 查詢檢閱集中的資料
+title: 查詢檢視集中的資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 395cc01238f4dbc91de5dd652e10121f5e0cc926
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 446f3f2588a79cb328476db490f1f555448b5ce7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527132"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154005"
 ---
-# <a name="query-the-data-in-a-review-set"></a>查詢檢閱集中的資料
+# <a name="query-the-data-in-a-review-set"></a>查詢檢視集中的資料
 
 在大多數情況下，將能夠深入探討還有什麼中檢閱設定，並將它們更有效率地檢閱組織很有用。 檢閱集合內的查詢可讓您若要這樣做，可讓您專注於符合一次您所定義之準則的文件的子集。
 

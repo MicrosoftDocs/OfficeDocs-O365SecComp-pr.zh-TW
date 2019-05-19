@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7bfae202886d4c1af5914f4b49d0e4d528b8975d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243804"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155045"
 ---
 # <a name="email-threading"></a>電子郵件執行緒
 
@@ -27,7 +27,7 @@ ms.locfileid: "32243804"
 
 ## <a name="what-does-email-threading-do"></a>電子郵件執行緒做什麼？
 
-每個電子郵件和 desconstructs 電子郵件執行緒會剖析至個別郵件;每個電子郵件是個別郵件的鏈結之一。 然後，它會分析工作集至判斷一封電子郵件是否有獨特的內容，或如果鏈結完全不同的電子郵件中包含的所有電子郵件。 在結尾的電子郵件會分成四種類別：
+每個電子郵件和 desconstructs 電子郵件執行緒會剖析至個別郵件;每個電子郵件是個別郵件的鏈結之一。 然後，它會分析檢閱設定來決定一封電子郵件是否有獨特的內容，或如果鏈結完全包含在不同的電子郵件中的所有電子郵件。 在結尾的電子郵件會分成四種類別：
 
 - **Inclusive**： 最後一封電子郵件中的具有唯一的內容，且電子郵件的所有其他的內容完全包含此電子郵件中的電子郵件中所含的附件。
 

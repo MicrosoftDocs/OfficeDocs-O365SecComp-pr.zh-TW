@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何搜尋並找出 Office 365 中的個人資料。
-ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265335"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158515"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜尋並找出個人資料
 
@@ -97,7 +97,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 <tbody>
 <tr class="odd"><td align="left"><p>移至安全性與合規性中心的內容搜尋</p></td>
 <td align="left"><p>在安全性與合規性中心的左窗格中，按一下 [搜尋與調查]**** &gt; [內容搜尋]****。</p>
-<p>請參閱<a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全性與合規性中心執行內容搜尋</a>。</p></td>
+<p>請參閱<a href="https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全性與合規性中心執行內容搜尋</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>為每一種敏感資訊類型建立新的搜尋項目</p></td>
@@ -117,7 +117,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 <td align="left"><p>尋找這些類型的問題來判斷查詢目標是否精確：</p>
 <p><li>許多誤判</li></p>
 <p><li>缺少已知的資料執行個體</li></p>
-<p>請參閱<a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">從 Office 365 安全性與合規性中心匯出搜尋結果</a>。</p>
+<p>請參閱<a href="https://support.office.com/zh-TW/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">從 Office 365 安全性與合規性中心匯出搜尋結果</a>。</p>
 <p>注意：如果您是使用 Mozilla Firefox 或 Chrome，則可能需要先使用 Internet Explorer 或 Edge 下載報告，才能安裝所需的增益集。</p></td>
 </tr>
 </tbody>

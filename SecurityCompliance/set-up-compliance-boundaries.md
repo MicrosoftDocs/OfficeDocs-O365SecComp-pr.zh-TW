@@ -3,7 +3,7 @@ title: 設定 Office 365 中電子文件探索調查的合規性界限
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合規性界限來建立 Office 365 組織內控制電子文件探索管理員可搜尋的使用者內容位置的邏輯界限。 合規性界限使用搜尋權限篩選 （也稱為的法規安全性篩選器） 來控制哪些信箱、 SharePoint 網站，並可搜尋特定使用者的 OneDrive 帳戶。
-ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ab9fae4dcae04bc79c94f5a5138dfd56cc551414
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264651"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156575"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>設定 Office 365 中電子文件探索調查的合規性界限
 

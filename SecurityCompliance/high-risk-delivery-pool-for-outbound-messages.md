@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 當客戶的電子郵件系統已經受到惡意程式碼或惡意垃圾郵件攻擊，且它傳送到託管的篩選服務的輸出垃圾郵件時，這可能導致各別列出協力廠商區塊上的 Office 365 資料中心伺服器的 IP 位址列出。
-ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0581d4d0ac745f7520f73cd6b4465d72fa1dcf48
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253941"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152725"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>高風險傳遞集區的外寄郵件
 
@@ -45,7 +45,7 @@ DSN 郵件激增的可能原因包括下列：
     
 所有這些問題都可能導致服務處理的 DSN 郵件數量突然增多。 許多時候，這些 DSN 郵件看起來會對其他電子郵件伺服器和服務的垃圾郵件。
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)
   

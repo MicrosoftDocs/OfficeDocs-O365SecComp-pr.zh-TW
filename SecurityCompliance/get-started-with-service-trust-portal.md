@@ -3,7 +3,7 @@ title: 開始使用 Microsoft 服務信任入口網站
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 若為 Office 365、 Azure 和 Dynamics 365 Online 法規合規性報告，若要查看第三方稽核，了解 Microsoft 如何確保客戶資料安全，以及如何您就可以與 ISO、 HIPAA、 NIST、 FINRA、 GDPR 和 FedRAMP 相容時使用這些線上服務。
-ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254289"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154435"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>開始使用 Microsoft 服務信任入口網站
 
@@ -112,7 +112,7 @@ Microsoft 服務信任入口網站提供各種不同的內容、 工具和 Micro
 
 此新功能可讓您儲存 （或*pin 碼*） 的文件，讓您可以在 「 我的文件庫] 頁面上，快速存取它們。 您也可以設定通知，以便 Microsoft 傳送給您的電子郵件訊息時您我的文件庫中的文件進行更新。 如需詳細資訊，請參閱這篇文章中的[「 我的文件庫](#my-library-1)一節。
 
-### <a name="admin"></a>管理
+### <a name="admin"></a>系統管理
 
 僅可設定的全域系統管理員帳戶的管理功能。 此選項可見時才是全域系統管理員身分登入。
   

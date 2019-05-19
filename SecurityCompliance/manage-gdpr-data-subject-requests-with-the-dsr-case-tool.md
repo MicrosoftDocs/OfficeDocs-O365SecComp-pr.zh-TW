@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/25/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 提供歐盟公民 （稱為 「 資料主體） 的特定權限至他們的個人資料;這些權限包括取得它的副本、 要求給它的變更，限制其處理、 刪除它，或接收電子格式。 受到採取資料的正式要求其個人的資料巨集指令會呼叫的資料主體要求或 DSR。 您可以在 Office 365 和 Microsoft 365 合規性中心] 中使用 DSR 案例，來管理您的組織 DSR 調查。
-ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 644a604959d4063e5e7bd994bc9dfb57f8642081
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259879"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155805"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>管理與安全性 & 合規性中心的 DSR 案例工具的 GDPR 資料主體要求
 
@@ -179,7 +179,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
   - Microsoft Edge
     
-    Or
+    或
     
   - Microsoft Internet Explorer 10 或更新版本
     
@@ -297,7 +297,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 當您從 MyAnalytics 及 Office 漫遊服務匯出資料時，資料會儲存至不同的資料夾位於**ApplicationDataRoot**資料夾，也就是資料主體的電子郵件地址的名稱在資料夾下是每個應用程式。 此資料匯出成 JSON 檔案，也就是可讀取的文字檔案類似 XML 或 TXT 檔案，會附加至電子郵件訊息。 目前，這些資料夾是一個名為指派給 MyAnalytics 和 Office 漫遊服務中，如下表所列的全域唯一識別碼 (GUID)。 在未來版本的 DSR 案例工具，GUID 會取代實際的應用程式的名稱。 
   
-|**應用程式**|**GUID/資料夾名稱**|
+|**Application**|**GUID/資料夾名稱**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450f-91f6-3d1ef0848f6e  <br/> |
 |Office 漫遊服務  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |

@@ -3,7 +3,7 @@ title: 特殊權限存取 Office 365 中管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: e03b615971b90e8443f73c3ec8c4cd3febe90450
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261808"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157325"
 ---
 # <a name="privileged-access-management-in-office-365"></a>特殊權限存取 Office 365 中管理
 

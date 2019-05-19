@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '了解如何設定使用者角色、 建立的情況下，並將使用者指派給 Office 365 進階電子文件探索中的案例。  '
-ms.openlocfilehash: 5a22e0683e49ebdaf8391e092aeb101386e0636b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5eb019afcf57b6df17fd42f3058deb0f6b7229f5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260701"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156465"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>設定使用者和 Office 365 進階電子文件探索中的案例
 

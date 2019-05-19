@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 1/3/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365，您的內容加密靜態及在傳輸，使用最強加密、 通訊協定，以及可用的技術。 在 Office 365 中取得加密的概觀。
-ms.openlocfilehash: 7a73d3d3b24e28f8795ec93ac05dbc383b525906
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3cd72b3caf26c18ca6836490bc3cd48c2977863b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256671"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154715"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 
@@ -80,5 +80,3 @@ Microsoft 受管理的磁碟區加密、 檔案加密，以及 Office 365 中的
 [規劃 Office 365 安全性和資訊保護功能](https://support.office.com/article/3d4ac4a1-3920-4ff9-918f-011f3ce60408)
   
 [安全性與合規性 Office 365 商務版-系統管理說明](https://support.office.com/article/7fe448f7-49bd-4d3e-919d-0a6d1cf675bb)
-  
-

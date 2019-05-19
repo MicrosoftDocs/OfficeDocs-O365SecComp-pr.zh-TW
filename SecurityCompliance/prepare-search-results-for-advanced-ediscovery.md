@@ -3,7 +3,7 @@ title: 準備 Office 365 進階 eDiscovery 的搜尋結果
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何準備安全性 & 在 Office 365 規範中心中的內容搜尋的結果，以便進一步分析使用進階電子文件探索工具。
-ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261975"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157465"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>準備 Office 365 進階 eDiscovery 的搜尋結果
 

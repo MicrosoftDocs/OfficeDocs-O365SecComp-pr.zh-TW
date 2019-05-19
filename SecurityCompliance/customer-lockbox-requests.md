@@ -3,7 +3,7 @@ title: Office 365 客戶加密箱要求
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客戶加密箱要求可讓您控制如何 Microsoft 支援工程師可以存取您的資料時所遇到的問題。
-ms.openlocfilehash: 3a86f3333114f3015b85d8066298f9834737f127
-ms.sourcegitcommit: 000548aa269ad775f20af5acd6aa726ac340c793
+ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33661419"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153835"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客戶加密箱
 

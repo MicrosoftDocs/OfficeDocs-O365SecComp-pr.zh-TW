@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續傳送電子郵件從 Office 365 歸類為垃圾郵件，他們將會傳送任何更多的郵件限制。
-ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7a44ff7f2bcf88f2132ee4c372cc11b9657dd16a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264935"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157245"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 
@@ -62,7 +62,7 @@ ms.locfileid: "32264935"
 
 租用戶系統管理員也會收到警告指出受限已傳送任何其他輸出的郵件使用者。 它是預設警示，會提供給所有承租人，而列在 SCC 警示原則] 頁面上，標題為 「 限制使用者無法傳送電子郵件 」。 請移至[安全性 & 合規性中心中的警示原則](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)如需詳細資訊的警示。
 
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [回應遭入侵電子郵件帳戶](responding-to-a-compromised-email-account.md)
 

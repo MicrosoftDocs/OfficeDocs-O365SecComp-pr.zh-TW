@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 使用詐騙智慧安全性&amp;反垃圾郵件設定] 頁面上的合規性中心，以檢閱所有寄件者是詐騙任一屬於您組織的網域或詐騙的外部網域。 詐騙智慧是可用的 Office 365 企業版 E5 一部分或分開進階威脅防護與 Exchange Online Protection 的一部分。
-ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d75c2efc2314b3227c65ec31ef1e0a0d6f931c13
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252246"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155935"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 

@@ -3,10 +3,11 @@ title: 防範 Office 365 中的威脅
 ms.author: tracyp
 author: msfttracyp
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MOE150
 - MET150
@@ -14,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 使用本文做為指南，現在設定您的威脅防護功能。
-ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402981"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157295"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防範 Office 365 中的威脅
 
@@ -65,9 +66,9 @@ Office 365 包含各種威脅防護功能。 以下為您的組織設定您可�
 2. 連按兩下**預設**原則]，然後再選擇 [**設定**。
 
 3. 指定下列設定：
-    
+
     - 在 [**惡意程式碼偵測回應**] 區段中，保留預設設定 [**否]**。
-   
+
     - **常見附件類型篩選**] 區段中，選擇 [**上**]。
 
 4. 按一下 [儲存]****。
@@ -146,7 +147,7 @@ Office 365 包含各種威脅防護功能。 以下為您的組織設定您可�
 
 3. 在 [**模擬**] 區段中，按一下 [**編輯**]，然後指定下列設定：
 
-    -  在 [**新增使用者至保護**索引標籤中，開啟保護。 然後新增使用者，例如您的組織棋盤成員、 CEO、 CFO，以及其他資深領導人。 （您可以輸入個別電子郵件地址，或按一下 [顯示清單。）
+    - 在 [**新增使用者至保護**索引標籤中，開啟保護。 然後新增使用者，例如您的組織棋盤成員、 CEO、 CFO，以及其他資深領導人。 （您可以輸入個別電子郵件地址，或按一下 [顯示清單。）
 
     - [**新增網域，以保護**] 索引標籤中，開啟**自動包含我所擁有的網域**。 如果您有自訂網域，以及將它們新增。
 
@@ -213,5 +214,3 @@ Office 365 包含各種威脅防護功能。 以下為您的組織設定您可�
 |請參閱威脅保護功能如何為您的組織使用中檢視報告    |[安全性儀表板](security-dashboard.md)<br/>[電子郵件安全性報告](view-email-security-reports.md)<br/>[Office 365 atp 報告](view-reports-for-atp.md)<br/>[威脅總管](use-explorer-in-security-and-compliance.md)    |
 |定期檢閱及修訂視您威脅保護原則    |[安全分數](microsoft-secure-score.md)<br/>[智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)<br/>[Office 365 威脅調查及回應功能](keep-users-safe-with-office-365-ti.md)          |
 |監看的新功能和服務更新     |[標準和已設定目標發行選項](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[訊息中心](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
-
-

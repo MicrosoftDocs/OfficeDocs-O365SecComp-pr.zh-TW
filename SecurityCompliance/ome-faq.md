@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 02/11/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關於 Office 365 中新的郵件保護功能的運作方式的問題嗎？ 檢查的答案。
-ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa23e92952ecb5cd5a2cfc2ace5234324d48a1cc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261291"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157565"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 
@@ -37,25 +37,25 @@ OME 合併的電子郵件加密和權限管理功能。 版權管理功能是由
 您可以在下列情況下，使用 OME 的新功能：
   
 - 如果您有永遠不會設定 OME 或 IRM for Office 365 中的 Exchange Online。
-    
+
 - 如果您已設定好 OME 和 IRM，您可以使用下列步驟，如果您使用 Azure 資訊保護 Azure 版權管理服務。
-    
-- 如果您使用 Exchange Online 與 Active Directory Rights Management 服務 (AD RMS)，則無法立即啟用這些新功能。 相反地，您需要[移轉至 Azure 資訊保護的 AD RMS](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)第一次。 完成移轉之後，您可以成功設定 OME。 
-    
+
+- 如果您使用 Exchange Online 與 Active Directory Rights Management 服務 (AD RMS)，則無法立即啟用這些新功能。 相反地，您需要[移轉至 Azure 資訊保護的 AD RMS](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)第一次。 完成移轉之後，您可以成功設定 OME。
+
     如果您選擇繼續使用內部部署 AD RMS 搭配 Exchange Online 而不是移轉至 Azure 資訊保護，您將無法使用這些新功能。
-    
+
 ## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>若要使用全新的 OME 功能是否需要何種訂閱？
 
 若要使用全新的 OME 功能，您需要下列其中一個下列方案：
   
-- Office 365 郵件加密被提供 Office 365 企業版 E3 和 E5，Microsoft 企業版 E3 和 E5、 Microsoft 365 商務版、 Office 365 A1、 A3 和 A5，和 Office 365 政府版 G3 和 G5 的一部分。 客戶不需要額外的授權，以接收由 Azure 資訊保護提供的新保護功能。 
-    
+- Office 365 郵件加密被提供 Office 365 企業版 E3 和 E5，Microsoft 企業版 E3 和 E5、 Microsoft 365 商務版、 Office 365 A1、 A3 和 A5，和 Office 365 政府版 G3 和 G5 的一部分。 客戶不需要額外的授權，以接收由 Azure 資訊保護提供的新保護功能。
+
 - 您也可以新增 Azure 資訊保護方案 1 於下列計劃以接收新的 Office 365 郵件加密功能： Exchange Online Plan 1 Exchange Online Plan 2、 Office 365 F1、 Office 365 商務基本版、 Office 365 商務進階版，或Office 365 企業版 E1。
-    
+
 - 從 Office 365 郵件加密優點每位使用者需要功能線所涵蓋的授權。
-    
-- 完整清單請參閱[Exchange Online 服務說明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)Office 365 郵件加密。 
-    
+
+- 完整清單請參閱[Exchange Online 服務說明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)Office 365 郵件加密。
+
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>我是否可以使用 Exchange Online 與攜帶您自己的金鑰 (BYOK) 在 [Azure 資訊保護？
 
 Yes ！ Microsoft 建議您完成設定 BYOK，才能設定 OME 的步驟。
@@ -141,5 +141,3 @@ Yes ！ 如需自訂電子郵件訊息和 OME 入口網站，請參閱 < 將貴�
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>可以使用郵件加密與符合性功能，例如 eDiscovery？
 
 是。 所有加密的電子郵件是由 Office 365 合規性功能，可供搜尋。
-  
-

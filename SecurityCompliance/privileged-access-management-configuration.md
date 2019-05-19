@@ -3,7 +3,7 @@ title: 在 Office 365 中設定特殊權限的存取管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用此主題以深入了解 Office 365 中設定特殊權限的存取管理
-ms.openlocfilehash: e086e93c268fe4de627bef30d3ac7aed8e6b1f98
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265235"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157415"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定特殊權限的存取管理
 

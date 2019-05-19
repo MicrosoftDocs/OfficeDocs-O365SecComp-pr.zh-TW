@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: '了解 Office 365 進階電子文件探索，包括工作流程和指導方針和訓練與檔案的檢閱步驟中的相關性模組。  '
-ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b585008dca58f95b0f3b932b2ee4b82a1ae731
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263785"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156075"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中使用相關性模組
 

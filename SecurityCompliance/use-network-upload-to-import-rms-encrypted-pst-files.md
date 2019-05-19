@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: 了解如何使用網路上傳將 RMS 加密的 PST 檔案匯入到 Office 365 中的使用者信箱。
-ms.openlocfilehash: 46f77f3fe173da23e08284884bb85c69ab53f710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e14c5a7260bc8b2092075dd2ab711f4da2d3b9c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263673"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157995"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>使用網路上傳將 RMS 加密的 PST 檔案匯入 Office 365
 
@@ -59,7 +59,7 @@ ms.locfileid: "32263673"
     
   - 您必須獲指派 「 郵件收件者角色在 Exchange Online。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
-    Or
+    或
     
   - 您必須是 Office 365 組織中的全域系統管理員。
     
@@ -273,7 +273,7 @@ Azure RMS 已停用依預設，但您或貴組織中的另一個系統管理員�
     | `/protect-tenantid:` <br/> |會指定組織的 Azure RMS 的識別碼。 使用的值，`BPOSId`您在步驟 3 中所取得的屬性。  <br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
     | `/protect-key:` <br/> |步驟 2 中指定您所取得的對稱金鑰。 請務必使用雙引號 (" ") 括住此參數的值。  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |會指定是否將透過網路上傳 PST 檔案或硬碟上運送它們。 值`upload`指出上載檔案在網路上。 值`drive`代表您在硬碟上運送 Pst。  <br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |會指定在其中您的 PST 檔案將可上傳到; Office 365 中的目的地這是您組織的 Azure 儲存體位置。 此參數的值是由從您在步驟 4 中複製的 SAS URL 的網路上傳 URL 所組成。 請務必使用雙引號 (" ") 括住此參數的值。  <br/><br/> **提示：**（選用）您可以在 Azure 儲存體位置以上傳加密的 PST 檔案複製到指定子資料夾。 要這麼做，藉由在網路上傳 URL 中新增 （之後"ingestiondata 」) 的子資料夾位置。 第一個範例不會指定文件庫;這表示 Pst 就會上傳到 （名為*ingestiondata* ） 的根目錄的 Azure 儲存體位置。 第二個範例中的 Azure 儲存體位置的上傳 PST 檔案複製到 （名為*EncryptedPSTs* ） 的子資料夾。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Or  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-dest:` <br/> |會指定在其中您的 PST 檔案將可上傳到; Office 365 中的目的地這是您組織的 Azure 儲存體位置。 此參數的值是由從您在步驟 4 中複製的 SAS URL 的網路上傳 URL 所組成。 請務必使用雙引號 (" ") 括住此參數的值。  <br/><br/> **提示：**（選用）您可以在 Azure 儲存體位置以上傳加密的 PST 檔案複製到指定子資料夾。 要這麼做，藉由在網路上傳 URL 中新增 （之後"ingestiondata 」) 的子資料夾位置。 第一個範例不會指定文件庫;這表示 Pst 就會上傳到 （名為*ingestiondata* ） 的根目錄的 Azure 儲存體位置。 第二個範例中的 Azure 儲存體位置的上傳 PST 檔案複製到 （名為*EncryptedPSTs* ） 的子資料夾。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> 或  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
     | `/upload-destSAS:` <br/> |會指定您組織的 SAS 金鑰。 此參數的值是由 SAS 金鑰，從您在步驟 4 中複製的 SAS URL 所組成。 請注意，第一個字元的 SAS 金鑰問號 (「？ 」)。 請務必使用雙引號 (" ") 括住此參數的值。  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/recurse` <br/> |此選用參數指定的遞迴模式，如此 O365ImportTool.exe 工具會將位於所指定的來源目錄中的子資料夾中的 Pst 檔案複製`/srcdir:`參數。  <br/><br/> **附註：** 如果您加入此參數，在子資料夾中的 PST 檔案中會有不同的檔案路徑名稱 Azure 儲存體位置之後他們正在上傳。 您必須在您在步驟 7 中建立的 CSV 檔案中指定的實際檔案路徑名稱。           | `/recurse` <br/> |
    
@@ -363,12 +363,12 @@ Microsoft Azure 存放裝置總管處於預覽狀態。
     |**參數**|**描述**|**範例**|
     |:-----|:-----|:-----|
     | `Workload` <br/> |指定將匯入資料到 Office 365 服務。 若要將 PST 檔案匯入使用者信箱，請使用`Exchange`。  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |在您上傳 PST 檔案複製到步驟 5 中的 Azure 儲存體位置中指定的資料夾位置。  <br/>  如果您並未納入選擇性的子資料夾名稱中的網路 URL`/upload-dest:`參數在步驟 5 中將此參數保留空白 CSV 檔案中。 如果您包含的子資料夾名稱，請將其指定這個參數中。 此參數的值是區分大小寫。 無論如何，*未*包含"ingestiondata 」 中的值為`FilePath`參數。  <br/> <br/>**重要：** 檔案路徑名稱大小寫必須使用如果中的 SAS URL 中包含的選用子資料夾名稱相同案例`/upload-dest:`在步驟 5 中的參數。 例如，如果您使用`EncryptedPSTs`之子資料夾名稱在步驟 5 中，然後使用`encryptedpsts`中`FilePath`CSV 檔案中的參數，匯入 PST 檔案將會失敗。 請務必在兩個執行個體中使用相同的案例。           |(保留空白)  <br/> Or  <br/>  `EncryptedPSTs` <br/> |
+    | `FilePath` <br/> |在您上傳 PST 檔案複製到步驟 5 中的 Azure 儲存體位置中指定的資料夾位置。  <br/>  如果您並未納入選擇性的子資料夾名稱中的網路 URL`/upload-dest:`參數在步驟 5 中將此參數保留空白 CSV 檔案中。 如果您包含的子資料夾名稱，請將其指定這個參數中。 此參數的值是區分大小寫。 無論如何，*未*包含"ingestiondata 」 中的值為`FilePath`參數。  <br/> <br/>**重要：** 檔案路徑名稱大小寫必須使用如果中的 SAS URL 中包含的選用子資料夾名稱相同案例`/upload-dest:`在步驟 5 中的參數。 例如，如果您使用`EncryptedPSTs`之子資料夾名稱在步驟 5 中，然後使用`encryptedpsts`中`FilePath`CSV 檔案中的參數，匯入 PST 檔案將會失敗。 請務必在兩個執行個體中使用相同的案例。           |(保留空白)  <br/> 或  <br/>  `EncryptedPSTs` <br/> |
     | `Name` <br/> |指定將匯入至使用者信箱的 PST 檔案名稱。  此參數的值是區分大小寫。 因為加密 PST 檔案上傳至 Azure 儲存體位置，`.pfile`副檔名新增至 PST 檔名。 您必須將新增`.pfile`副檔名名稱的 PST 檔案在 CSV 檔案中。  <br/><br/> **重要：** CSV 檔案中的 PST 檔案名稱的情況必須已上傳至步驟 5 中的 Azure 儲存體位置的 PST 檔案相同。 例如，如果您使用`annb.pst.pfile`中`Name`參數 CSV 檔案中，但實際的 PST 檔案的名稱是`AnnB.pst`，該 PST 檔案匯入會失敗。 請務必 PST CSV 檔案中的名稱，會使用相同的情況下，為實際的 PST 檔案。           | `annb.pst.pfile` <br/> |
-    | `Mailbox` <br/> |指定將匯入 PST 檔案的信箱電子郵件地址。   <br/> 若要將 PST 檔案匯入非使用中的信箱，您必須指定此參數的信箱 GUID。 若要取得此 GUID，請執行下列 PowerShell 命令在 Exchange Online 中：`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **附註：** 在某些情況下，您可能需要多個信箱相同電子郵件地址，其中一個信箱不在作用中信箱，而其他信箱位於虛刪除 （或非使用中） 的狀態。 在這些情況下，您必須指定信箱 GUID 來唯一識別信箱，若要將 PST 檔案匯入。 若要取得此 GUID 作用中信箱，請執行下列 PowerShell 命令： `Get-Mailbox - <identity of active mailbox> | FL Guid`。 若要取得的 GUID，虛刪除 （或非使用中） 的信箱，請執行此命令`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> Or  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | 指定是否要匯入 PST 檔案至使用者的封存信箱。 其中有兩個選項：  <br/> **為 FALSE**將 PST 檔案匯入至使用者的主要信箱。  <br/> **True 是表示**將 PST 檔案匯入至使用者的封存信箱。  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/><br/> **附註：** 若要將 PST 檔案匯入主要信箱位於內部部署使用者的雲端式封存信箱，只是指定此參數 **，則為 TRUE** ，並指定使用者的內部部署信箱的電子郵件地址`Mailbox`參數。           | `FALSE` <br/> Or  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | 指定要匯入 PST 檔案的信箱資料夾。  <br/>  如果您將此參數保留空白，PST 會匯入至名為的**匯入**位於的信箱 （位於相同層級的收件匣資料夾和其他預設信箱資料夾） 的根層級的新資料夾。  <br/>  如果您指定`/`，將 PST 檔案中的項目會被匯入直接在使用者的收件匣] 資料夾。  <br/>  如果您指定`/<foldername>`，將 PST 檔案中的項目將會匯入到名為的子資料夾*\<foldername\> * 。 例如，如果您使用`/ImportedPst`，項目會匯入至名為**ImportedPst**的子資料夾。 這個子資料夾將會位於使用者的收件匣] 資料夾。  <br/><br/> **提示：** 請考慮執行一些測試批次來嘗試使用這個參數，因此您可以決定要匯入 Pst 檔案的最佳資料夾位置。           |(保留空白)  <br/> Or  <br/>  `/` <br/> Or  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |此選用參數會指定要用於匯入 PST 檔案中的 ANSI 檔案格式的字碼頁的數字值。 此參數用於從中文、 日文和韓文 (CJK) 的組織中匯入 PST 檔案，因為這些語言通常會使用雙位元組字元集 (DBCS) 的字元編碼。 如果這個參數不用來匯入 PST 檔案，用於信箱資料夾名稱 DBCS 的語言，將資料夾名稱是通常亂碼之後匯入它們。 如需支援的值，使用此參數，請參閱[程式碼頁面識別碼](https://go.microsoft.com/fwlink/p/?LinkId=328514)的清單。  <br/><br/> **附註：** 如先前所述，這是選擇性的參數，您不需要加入 CSV 檔案中。 或者，您可以將它加入並將值保留空白，對一或多個資料列。           |(保留空白)  <br/> Or  <br/>  `932`（這是 ANSI/OEM 日文的程式碼] 頁面上識別碼）  <br/> |
+    | `Mailbox` <br/> |指定將匯入 PST 檔案的信箱電子郵件地址。   <br/> 若要將 PST 檔案匯入非使用中的信箱，您必須指定此參數的信箱 GUID。 若要取得此 GUID，請執行下列 PowerShell 命令在 Exchange Online 中：`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **附註：** 在某些情況下，您可能需要多個信箱相同電子郵件地址，其中一個信箱不在作用中信箱，而其他信箱位於虛刪除 （或非使用中） 的狀態。 在這些情況下，您必須指定信箱 GUID 來唯一識別信箱，若要將 PST 檔案匯入。 若要取得此 GUID 作用中信箱，請執行下列 PowerShell 命令： `Get-Mailbox - <identity of active mailbox> | FL Guid`。 若要取得的 GUID，虛刪除 （或非使用中） 的信箱，請執行此命令`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | 指定是否要匯入 PST 檔案至使用者的封存信箱。 其中有兩個選項：  <br/> **為 FALSE**將 PST 檔案匯入至使用者的主要信箱。  <br/> **True 是表示**將 PST 檔案匯入至使用者的封存信箱。  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/><br/> **附註：** 若要將 PST 檔案匯入主要信箱位於內部部署使用者的雲端式封存信箱，只是指定此參數 **，則為 TRUE** ，並指定使用者的內部部署信箱的電子郵件地址`Mailbox`參數。           | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | 指定要匯入 PST 檔案的信箱資料夾。  <br/>  如果您將此參數保留空白，PST 會匯入至名為的**匯入**位於的信箱 （位於相同層級的收件匣資料夾和其他預設信箱資料夾） 的根層級的新資料夾。  <br/>  如果您指定`/`，將 PST 檔案中的項目會被匯入直接在使用者的收件匣] 資料夾。  <br/>  如果您指定`/<foldername>`，將 PST 檔案中的項目將會匯入到名為的子資料夾*\<foldername\> * 。 例如，如果您使用`/ImportedPst`，項目會匯入至名為**ImportedPst**的子資料夾。 這個子資料夾將會位於使用者的收件匣] 資料夾。  <br/><br/> **提示：** 請考慮執行一些測試批次來嘗試使用這個參數，因此您可以決定要匯入 Pst 檔案的最佳資料夾位置。           |(保留空白)  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
+    | `ContentCodePage` <br/> |此選用參數會指定要用於匯入 PST 檔案中的 ANSI 檔案格式的字碼頁的數字值。 此參數用於從中文、 日文和韓文 (CJK) 的組織中匯入 PST 檔案，因為這些語言通常會使用雙位元組字元集 (DBCS) 的字元編碼。 如果這個參數不用來匯入 PST 檔案，用於信箱資料夾名稱 DBCS 的語言，將資料夾名稱是通常亂碼之後匯入它們。 如需支援的值，使用此參數，請參閱[程式碼頁面識別碼](https://go.microsoft.com/fwlink/p/?LinkId=328514)的清單。  <br/><br/> **附註：** 如先前所述，這是選擇性的參數，您不需要加入 CSV 檔案中。 或者，您可以將它加入並將值保留空白，對一或多個資料列。           |(保留空白)  <br/> 或  <br/>  `932`（這是 ANSI/OEM 日文的程式碼] 頁面上識別碼）  <br/> |
     | `SPFileContainer` <br/> |針對 PST 匯入，請將此參數保留空白。   <br/> |不適用  <br/> |
     | `SPManifestContainer` <br/> |針對 PST 匯入，請將此參數保留空白。   <br/> |不適用  <br/> |
     | `SPSiteUrl` <br/> |針對 PST 匯入，請將此參數保留空白。   <br/> |不適用  <br/> |

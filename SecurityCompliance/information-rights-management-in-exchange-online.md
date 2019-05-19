@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/13/2017
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 您可以設定 Exchange Online IRM 設定為使用內部部署 Active Directory 版權管理服務 (AD RMS)，如有需要以滿足您組織的需求。 這並不常見。 如果您沒有使用 AD RMS 的需求，請改為使用 Office 郵件加密。
-ms.openlocfilehash: 423c6008a55539123b76225458a39c4f98e7725d
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: f5611ca7efeae0ab60ef90ebf4f8a225ea1332e7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470383"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154265"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>使用 AD RMS 的 Exchange Online 郵件加密
 
-為了防止資訊外洩，Exchange Online 包含資訊版權管理 (IRM) 功能，可針對電子郵件訊息和附件提供線上和離線保護。 您可以設定 Exchange Online IRM 設定為使用內部部署 Active Directory 版權管理服務 (AD RMS)，如有需要以滿足您組織的需求。 這並不常見。 如果您沒有使用 AD RMS 的需求，請改為使用[Office 郵件加密](ome.md)。 
+為了防止資訊外洩，Exchange Online 包含資訊版權管理 (IRM) 功能，可針對電子郵件訊息和附件提供線上和離線保護。 您可以設定 Exchange Online IRM 設定為使用內部部署 Active Directory 版權管理服務 (AD RMS)，如有需要以滿足您組織的需求。 這並不常見。 如果您沒有使用 AD RMS 的需求，請改為使用[Office 365 郵件加密](ome.md)。 
 
 可以由使用者在 Microsoft Outlook 或網頁型 Outlook 中套用 IRM 保護，它可以套用由系統管理員使用傳輸保護規則或 Outlook 保護規則。 IRM 可協助您和使用者控制能夠存取、轉寄、列印或複製電子郵件中之機密資料的人員。
   

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主題說明使用者和系統管理員可用的疑難排解步驟，並提供如何連絡技術支援人員以取得協助的相關資訊。
-ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: baf8761ca4ce55695c2def74a39d3ca9a6de79ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259841"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156335"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑難排解和支援資訊
 
@@ -88,7 +88,7 @@ ms.locfileid: "32259841"
 
 如果您需要安裝的說明，設定或解除安裝增益集，請連絡技術支援使用 Microsoft 365 系統管理中心中的 [支援] 頁面上的 [新的服務要求] 連結。 如其他選項，包括提交服務要求透過電話] 和 [自我支援選項，請參閱[說明和 EOP 的支援](eop/help-and-support-for-eop.md)。
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [啟用報告訊息增益集](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

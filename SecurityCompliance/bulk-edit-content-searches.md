@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用大量搜尋編輯器在 Office 365 或 Microsoft 365 安全性與合規性中心] 中，可快速變更一或多個內容搜尋的查詢及內容位置。
-ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243836"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152215"
 ---
 # <a name="bulk-edit-content-searches"></a>大量編輯內容搜尋
 
@@ -44,7 +44,7 @@ ms.locfileid: "32243836"
     
    - 在儲存格中輸入新的查詢。 請注意，您無法編輯查詢的一部分。 您必須輸入整個查詢。
     
-      Or
+      或
     
     - 在儲存格中，貼上新的查詢。 本範例假設您已複製查詢文字從一個檔案，例如文字檔案或 Excel 檔案。
     

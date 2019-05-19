@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: 取得評估階段和在 Office 365 進階電子文件探索中的相關性訓練期間判斷問題的豐富性其角色的概觀。
-ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 229df3f51c6a71ddb644fcd45a6de0e30f9775b9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250200"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155535"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中瞭解相關性評估
 

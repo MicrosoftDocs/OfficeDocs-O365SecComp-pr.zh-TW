@@ -3,21 +3,24 @@ title: Office 365 郵件加密
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/6/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MET150
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 Office 365 郵件加密，組織可以傳送和接收您組織內部和外部的人員之間的加密的電子郵件訊息。 電子郵件訊息加密有助於確保只有預定的收件者可以檢視郵件內容。
-ms.openlocfilehash: 04a7cc23b7a9c4218a719c172544147b3daedd7a
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470403"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157585"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 郵件加密
 
@@ -25,29 +28,6 @@ ms.locfileid: "33470403"
 
 使用 Office 365 郵件加密，組織可以傳送和接收您組織內部和外部的人員之間的加密的電子郵件訊息。 Office 365 郵件加密的運作與 Outlook.com、 yahoo ！、 Gmail，以及其他電子郵件服務。 電子郵件訊息加密有助於確保只有預定的收件者可以檢視郵件內容。
   
-本文屬於較大的一連串的 Office 365 郵件加密的相關文章。 使用下表來快速找出所需的資訊。
-  
-|||
-|:-----|:-----|
-|請閱讀本文...]  <br/> |如果您是...  <br/> |
-|[了解 Office 365 中受保護的郵件](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |使用者想要深入了解如何加密訊息的工作，且您可以使用哪些選項。  <br/> |
-|[如何開啟受保護的郵件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |想要讀取受保護的郵件已傳送至您的使用者。 本文包含資訊閱讀在數個版本的 Outlook，並從不同的電子郵件帳戶，例如 gmail 和 yahoo ！ 包括 Office 365 外部的郵件 帳戶。  <br/> |
-|[傳送、 檢視和回覆加密郵件在 Outlook 中](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |想要傳送、 檢視或從 Outlook 回覆加密的郵件使用者。 即使您不屬於 Office 365 組織，仍會接收傳送至您在 Outlook 中的加密郵件的通知。 如需如何檢視及回覆加密郵件傳送從 Office 365 的指示使用這篇文章。  <br/> |
-|[傳送數位簽章或加密郵件](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |使用者想要傳送、 檢視或回覆加密的郵件使用 Outlook for mac。 本文也會涵蓋使用 OME，例如 S/MIME 以外的加密方法。  <br/> |
-|[在 Android 裝置上檢視加密的郵件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |如果使用者已收到郵件加密與 Office 365 郵件加密您的 Android 裝置上，您可以使用免費 OME 檢視器應用程式，檢視郵件並傳送加密的回覆。 本文說明如何。  <br/> |
-|[在 iPhone 或 iPad 上檢視加密的郵件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |如果使用者已收到郵件加密與 Office 365 郵件加密在 iPhone 或 iPad 上的，您可以使用免費 OME 檢視器應用程式，檢視郵件並傳送加密的回覆。 本文說明如何。  <br/> |
-|Office 365 郵件加密 (OME) （本文）  <br/> |Office 365 或 Exchange Online Protection 系統管理員想要了解您可以在哪裡找到其他資源。  <br/> |
-|[比較 OME 版本](ome-version-comparison.md)  <br/> |Office 365 或 Exchange Online Protection 系統管理員想要了解舊版 Office 365 郵件加密與新 OME 功能之間的差異，如何可以一起運作。  <br/> |
-|[Office 365 郵件加密常見問題集](ome-faq.md) <br/> |Office 365 或 Exchange Online Protection 的系統管理員且想要的答案經常要求的問題，包括授權及新功能與舊版 OME 之間的比較。  <br/> |
-|[設定全新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md) <br/> |Office 365 或 Exchange Online Protection 系統管理員想要了解如何設定 Office 365 組織的新 Office 365 郵件加密功能。  <br/> |
-|[定義郵件流規則以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md) <br/> |已設定 Office 365 郵件加密與您的 Office 365 或 Exchange Online Protection 系統管理員已準備好定義郵件流規則以自動加密從組織傳送的電子郵件訊息。  <br/> |
-|[管理 Office 365 郵件加密](manage-office-365-message-encryption.md) <br/> |Office 365 或 Exchange Online Protection 系統管理員已設定 Office 365 郵件加密且想要設定的 OME 的選用設定。  <br/> |
-|[將貴組織的品牌新增至您的加密郵件](add-your-organization-brand-to-encrypted-messages.md) <br/> |Office 365 或 Exchange Online Protection 系統管理員想要套用貴公司商標新增至自訂貴組織的 Office 365 郵件加密電子郵件的外觀和 OME 入口網站的內容。  <br/> |
-|[Office 365 郵件加密的電子郵件被撤銷](revoke-ome-encrypted-mail.md) <br/> |Office 365 或 Exchange Online Protection 系統管理員想要撤銷已使用 Office 365 郵件加密來加密的電子郵件。  <br/> |
-|Office 365 郵件加密的[郵件原則及符合性服務說明](https://technet.microsoft.com/en-us/library/5c43c8eb-f8f7-4b5a-a743-b1dab7dc2fc8#bkmk_O365_MessageEncryption)> <br/> |尋找 Office 365 郵件加密功能的詳細說明，包括支援 Sku，可從 Office 365。  <br/> |
-|[Office 365 郵件加密的舊版資訊](legacy-information-for-message-encryption.md) <br/> |已設定 Office 365 郵件加密與您的 Office 365 或 Exchange Online Protection 系統管理員想要 OME 正常運作的新功能發行前的相關資訊。 雖然您無法設定新的部署使用 ome 一次不含新功能，Microsoft 會繼續支援現有的部署。 <br/> |
-||
-
 本文的其餘部分套用至全新的 OME 功能。
   
 ## <a name="how-office-365-message-encryption-works"></a>Office 365 郵件加密的運作方式
@@ -68,10 +48,18 @@ OME 舊版和全新的 OME 功能之間的差異的詳細清單，請參閱[比�
   
 讀取加密或權限保護郵件以外的 Outlook 用戶端上的使用者也使用 OME 入口網站來檢視所收到的加密和權限保護郵件。
 
-此外，如果受保護的郵件寄件者位於 GCC High 和收件者是外部 GCC 高，包括商業 Office 365 使用者、 Outlook.com 使用者和使用者的其他電子郵件提供者，例如 Gmail 中，收件者會收到重新導向至包裝函式郵件收件者所在可以閱讀和回覆郵件 OME 入口網站。 否則，如果寄件者和收件者都 GCC 高的環境中，然後使用 Outlook 用戶端來讀取郵件的收件者收到原生、 頂級閱讀加密和權限保護郵件的經驗，即使它們不在相同組織中作為寄件者。
+此外，如果受保護的郵件寄件者位於 GCC High 和收件者是外部 GCC 高，包括商業 Office 365 使用者、 Outlook.com 使用者和使用者的其他電子郵件提供者，例如 Gmail 中，收件者會收到重新導向至包裝函式郵件收件者所在可以閱讀和回覆郵件 OME 入口網站。 否則，如果寄件者和收件者都 GCC 高的環境中，然後使用 Outlook 用戶端來讀取郵件的收件者收到原生、 頂級閱讀加密和權限保護郵件的經驗，即使它們不在相同組織中作為寄件者。 如需在 GCC High 的不同經驗的詳細資訊，請參閱[比較 OME 的版本](ome-version-comparison.md)。
   
 我們已增加訊息和附件，您可以使用 ome 一次來加密的大小限制。 如需限制的詳細資訊，請參閱 < <b0>Exchange Online 限制</b0>。
-  
+
+## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>OME 掌握 Office 365 進階郵件加密的運作方式
+
+Office 365 進階郵件加密可讓您建立多個品牌範本，因此您可以微調控制收件者的郵件，並建立自訂品牌的經驗來支援各種不同的組織結構。
+
+您在 Office 365 協助進階郵件加密符合規範，需要更有彈性控制外部收件者的存取權加密的電子郵件。 使用進階郵件加密在 Office 365 中，以系統管理員身分，您可以控制自動偵測敏感資訊類型 （例如 PII、 金融或狀況識別碼） 或關鍵字，以增強的原則與組織外共用機密電子郵件透過加密的電子郵件的安全 web 入口網站來存取由過期的保護。 此外，為您可以進一步控制透過 Office 365 入口網站外部存取的任何時間撤銷存取電子郵件加密的電子郵件系統。
+
+郵件被撤銷及到期僅適用於您的使用者傳送給您的 Office 365 組織外收件者的電子郵件。 此外，收件者必須透過入口網站來存取電子郵件。 為了確保收件者使用入口網站來接收電子郵件，您設定適用於包裝函式的自訂品牌範本。 然後，您套用郵件流程規則中的品牌範本。 如需進階郵件加密的詳細資訊，請參閱 < <b0>Office 365 進階郵件加密</b0>。
+
 ## <a name="defining-rules-for-office-365-message-encryption"></a>定義 Office 365 郵件加密的規則
 
 Exchange Online 和 Exchange Online Protection 的系統管理員定義郵件流程規則是一種方式來啟用 Office 365 郵件加密的新功能。 這些規則決定應該在哪些條件電子郵件加密的郵件。 當規則設定的加密巨集指令時，任何符合規則條件的郵件加密之前，他們所傳送。
@@ -80,6 +68,10 @@ Exchange Online 和 Exchange Online Protection 的系統管理員定義郵件流
   
 如需如何建立郵件流程規則，以利用全新的 OME 功能的詳細資訊，請參閱 < <b0>Define Rules for Office 365 Message Encryption</b0>。
   
+## <a name="get-started-with-the-new-ome-capabilities"></a>全新的 OME 功能快速入門
+
+如果您已準備好要開始使用您的組織內全新的 OME 功能，請參閱 <<c0>設定新的 Office 365 郵件加密功能。
+
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>傳送、 檢視和回覆加密的電子郵件訊息
 
 使用 Office 365 郵件加密，使用者可以從 Outlook 和 outlook 網頁版傳送加密的電子郵件。 此外，系統管理員可以設定自動加密根據關鍵字比對或其他條件的電子郵件在 Office 365 中的郵件流程規則。
@@ -88,10 +80,13 @@ Exchange Online 和 Exchange Online Protection 的系統管理員定義郵件流
   
 如需如何傳送和檢視加密的郵件的詳細指引，看看下列文章：
   
-- [如何開啟受保護的郵件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)
-
-- [傳送、 檢視和回覆加密郵件在 Outlook 中](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
-
-## <a name="get-started-with-the-new-ome-capabilities"></a>全新的 OME 功能快速入門
-
-如果您已準備好要開始使用您的組織內全新的 OME 功能，請參閱 <<c0>設定新的 Office 365 郵件加密功能。
+|||
+|:-----|:-----|
+|請閱讀本文...]  <br/> |如果您是...  <br/> |
+|[了解 Office 365 中受保護的郵件](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |使用者想要深入了解如何加密訊息的工作，且您可以使用哪些選項。  <br/> |
+|[如何開啟受保護的郵件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |想要讀取受保護的郵件已傳送至您的使用者。 本文包含資訊閱讀在數個版本的 Outlook，並從不同的電子郵件帳戶，例如 gmail 和 yahoo ！ 包括 Office 365 外部的郵件 帳戶。  <br/> |
+|[傳送、 檢視和回覆加密郵件在 Outlook 中](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |想要傳送、 檢視或從 Outlook 回覆加密的郵件使用者。 即使您不屬於 Office 365 組織，仍會接收傳送至您在 Outlook 中的加密郵件的通知。 如需如何檢視和回覆加密郵件傳送從 Office 365 的指示使用這篇文章。  <br/> |
+|[傳送數位簽章或加密郵件](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |使用者想要傳送、 檢視或回覆加密的郵件使用 Outlook for mac。 本文也會涵蓋使用 OME，例如 S/MIME 以外的加密方法。  <br/> |
+|[在 Android 裝置上檢視加密的郵件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |如果使用者已收到郵件加密與 Office 365 郵件加密您的 Android 裝置上，您可以使用免費 OME 檢視器應用程式，檢視郵件並傳送加密的回覆。 本文說明如何。  <br/> |
+|[在 iPhone 或 iPad 上檢視加密的郵件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |如果使用者已收到郵件加密與 Office 365 郵件加密在 iPhone 或 iPad 上的，您可以使用免費 OME 檢視器應用程式，檢視郵件並傳送加密的回覆。 本文說明如何。  <br/> |
+||
