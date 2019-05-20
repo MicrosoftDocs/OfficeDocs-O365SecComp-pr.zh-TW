@@ -1,3 +1,5 @@
+# [安全性與合規性](index.md)
+
 # 開始使用
 ## [Office 365 安全性藍圖](security-roadmap.md)
 ## [設定您的 Office 365 租用戶以提高安全性](tenant-wide-setup-for-increased-security.md)
@@ -49,10 +51,14 @@
 ### [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)
 ### [觀看自訂的 DLP 延伸概觀](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)
-### [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
-### [在 Office 365 安全性與合規性中心 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+### [自訂敏感性資訊類型](custom-sensitive-info-types.md)
+### [使用精確資料比對建立自訂敏感性資訊類型 (預覽)](create-custom-sensitive-info-type-edm.md)
+### [在安全性與合規性中心建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type.md)
+### [使用 PowerShell 建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [建立關鍵字字典](create-a-keyword-dictionary.md)
 ### [文件指紋](document-fingerprinting.md)
+### [敏感性資訊的 DLP 函數](what-the-dlp-functions-look-for.md)
+### [觀看自訂的 DLP 延伸概觀](https://go.microsoft.com/fwlink/?linkid=852306)
 
 ## [Office 365 中的電子郵件加密](email-encryption.md)
 ### [Office 365 郵件加密 (OME)](ome.md)
@@ -107,6 +113,7 @@
 ### [EOP 是什麼？](eop/what-is-eop.md)
 ### [Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
 ### [如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
+### [原則和防護的組合方式](how-policies-and-protections-are-combined.md)
 ### [如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)
 ### [控制 Office 365 的輸出垃圾郵件](outbound-spam-controls.md)
 ### [利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](reduce-spam-email.md)
@@ -142,28 +149,8 @@
 #### [深入了解詐騙情報](learn-about-spoof-intelligence.md)
 #### [在 Outlook.com 和 Outlook 網頁版中找出可疑的郵件](unverified-sender-feature.md)
 
-## [使用 Office 365 雲端 App 安全性來監控與管理資料存取](office-365-cas-overview.md)
-### [查看雲端 App 安全性中的新增功能](new-in-office-365-cas.md)
-#### [2018 年期間的更新](new-in-office-365-cas-2018.md)
-#### [2017 年期間的更新](new-in-office-365-cas-2017.md)
-### [準備好使用 Office 365 雲端 App 安全性](get-ready-for-office-365-cas.md)
-### [設定 Office 365 雲端 App 安全性](turn-on-office-365-cas.md)
-#### [Office 365 雲端 App 安全性中的活動原則和警訊](activity-policies-and-alerts.md)
-#### [Office 365 雲端 App 安全性中的異常偵測原則](anomaly-detection-policies-in-ocas.md)
-#### [使用 Office 365 雲端 App 安全性條件式存取應用程式控制來保護應用程式](ocas-conditional-access-app-control.md)
-##### [為 Office 365 應用程式部署條件式存取應用程式控制](ocas-deploy-conditional-access-app-control.md)
-##### [Office 365 雲端 App 安全性中的工作階段原則](ocas-session-policies.md)
-##### [Office 365 雲端 App 安全性中的存取原則](ocas-access-policies.md)
-#### [將您的 IP 位址分組，以簡化 Office 365 雲端 App 安全性中的管理](group-your-ip-addresses-in-ocas.md)
-#### [將 SIEM 伺服器與 Office 365 雲端 App 安全性整合](integrate-your-siem-server-with-office-365-cas.md)
-### [推出 Office 365 雲端 App 安全性後的使用活動](utilization-activities-for-ocas.md)
-#### [檢閱並對 Office 365 雲端 App 安全性中的警示採取動作](review-office-365-cas-alerts.md)
-#### [調查 Office 365 雲端 App 安全性中的活動](investigate-an-activity-in-office-365-cas.md)
-#### [使用 Office 365 雲端 App 安全性管理 OAuth 應用程式](manage-app-permissions-in-ocas.md)
-#### [Office 365 雲端 App 安全性的網路流量記錄與資料來源](web-traffic-logs-and-data-sources-for-ocas.md)
-#### [暫停或還原 Office 365 雲端 App 安全性中的使用者帳戶](suspend-or-restore-an-account-in-ocas.md)
-### [使用 Office 365 雲端 App 安全性建立 App 探索報表](create-app-discovery-reports-in-ocas.md)
-### [檢閱 Office 365 雲端 App 安全性中的 App 探索結果](review-app-discovery-findings-in-ocas.md)
+## [使用 Cloud App Security 來監控和管理資料存取](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+
 ## [隔離 Office 365 中的電子郵件](quarantine-email-messages.md)
 ### [以系統管理員身分管理被隔離的郵件與檔案](manage-quarantined-messages-and-files.md)
 ### [以使用者身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
@@ -177,19 +164,20 @@
 ## [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
 
 # 記錄管理
-## [檔案計劃管理員](file-plan-manager.md)
-## [保留標籤](labels.md)
-### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [事件型保留](event-driven-retention.md)
-### [自動化事件型保留](automate-event-driven-retention.md)
-## [處置檢閱](disposition-reviews.md)
-## 監視記錄管理
-### [檢視資料控管報告](view-the-data-governance-reports.md)
-### [檢視文件的標籤活動](view-label-activity-for-documents.md)
+## 檔案計畫
+### [檔案計劃管理員](file-plan-manager.md)
+### [保留標籤](labels.md)
+### 
+  [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
-## 關於記錄管理的詳細資訊
-### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
+### [檢視文件的標籤活動](view-label-activity-for-documents.md)
+### [檢視資料控管報告](view-the-data-governance-reports.md)
+## 事件
+### [事件型保留](event-driven-retention.md)
+### [自動化事件型保留](automate-event-driven-retention.md)
+## [處置](disposition-reviews.md)
+## 深入了解記錄管理
+### [觀看有關記錄管理的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # 管理資料控管
 ## [匯入資料](importing-pst-files-to-office-365.md)
@@ -200,7 +188,8 @@
 ### [使用網路上傳來匯入 RMS 加密的 PST 檔案](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [匯入 PST 檔案的常見問題集](faqimporting-pst-files-to-office-365.md)
 ### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
-#### [使用範例連接器來封存第三方資料](archive-third-party-data-with-sample-connector.md)
+#### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
+#### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
 ### [啟用封存信箱](enable-archive-mailboxes.md)
@@ -212,11 +201,13 @@
 ### [檔案計劃管理員](file-plan-manager.md)
 ### [保留標籤](labels.md)
 ### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [事件型保留](event-driven-retention.md)
 ### [自動化事件型保留](automate-event-driven-retention.md)
 ## [處置資料](disposition-reviews.md)
-## [監督通訊內容](supervision-policies.md)
+## 監督通訊
+### [監督原則](supervision-policies.md)
 ### [為您的組織設定監督原則](configure-supervision-policies.md)
 ## [管理非使用中的信箱](inactive-mailboxes-in-office-365.md)
 ### [建立和管理非使用中信箱](create-and-manage-inactive-mailboxes.md)
@@ -460,11 +451,17 @@
 # 郵件流程
 ## [啟用報告訊息增益集](enable-the-report-message-add-in.md)
 ## [安全性與合規性中心內的訊息追蹤](message-trace-scc.md)
-## [安全性與合規性中心內的郵件流程深入解析](mail-flow-insights.md)
-### [自動轉寄訊息的報告](mfi-auto-forwarded-messages-report.md)
-### [郵件迴圈深入解析](mfi-mail-loop-insight.md)
+## [安全性與合規性中心內的郵件流程深入解析](mail-flow-insights-v2.md)
+### [郵件流程圖報告](mfi-mail-flow-map-report.md)
+### [上層網域郵件流程狀態深入解析](mfi-domain-mail-flow-status-insight.md)
+### [SMTP 驗證用戶端報告](mfi-smtp-auth-clients-report.md)
+### [修正寄件者網域深入解析](mfi-sender-domain-insight.md)
+### [未傳遞回報](mfi-non-delivery-report.md)
+### [非公認的網域報告](mfi-non-accepted-domain-report.md)
 ### [外寄和內送的郵件流程](mfi-outbound-and-inbound-mail-flow.md)
 ### [佇列的警示和佇列](mfi-queue-alerts-and-queues.md)
+### [自動轉寄訊息的報告](mfi-auto-forwarded-messages-report.md)
+### [郵件迴圈深入解析](mfi-mail-loop-insight.md)
 ### [緩慢的郵件流程規則深入解析](mfi-slow-mail-flow-rules-insight.md)
 
 # 安全性解決方案
