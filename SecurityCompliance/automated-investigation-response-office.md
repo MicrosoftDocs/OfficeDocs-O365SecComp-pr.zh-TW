@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的自動化調查及回應功能。
-ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
+ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249834"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250316"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>自動化的調查及回應 （空調） 與 Office 365
 
-自動化調查及回應 （空調） （即將推出[Office 365 威脅調查](office-365-ti.md)及回應功能） 可讓您執行自動化的調查並修復已知存在於今天的威脅。 閱讀本篇文章以取得的空調，以及如何可幫助您的組織和安全性作業小組降低威脅，更有效率地概觀。 
+自動化的調查及回應 （空調） （目前處於為下列其中一個許多[Office 365 威脅調查及回應功能](office-365-ti.md)的公用預覽） 可讓您執行自動化的調查並修復已知存在於今天的威脅。 閱讀本篇文章以取得的空調，以及如何可幫助您的組織和安全性作業小組降低威脅，更有效率地概觀。 
 
 若要深入了解當空調功能會變成可用，請參閱[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)。
 
