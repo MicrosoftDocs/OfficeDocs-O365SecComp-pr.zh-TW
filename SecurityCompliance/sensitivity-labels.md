@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
+ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155975"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34166921"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -94,6 +94,8 @@ ms.locfileid: "34155975"
 
 ![建立子標籤的選項](media/Sensitivity_label_sublabel_options.png)
 
+請注意，除了標籤的優先順序，標籤原則的順序也很重要 - 請參閱[下方的此小節](#sensitivity-label-priority-order-matters)。
+
 ### <a name="sublabels-grouping-labels"></a>子標籤 (分組標籤)
 
 您可以使用子標籤將一或多個標籤分組在 Office 應用程式中的使用者可看到的上層標籤之下。 例如，在 [機密文件] 下，您的組織可能會使用不同的標籤來標示該分類的特定類型。 在此範例中，上層標籤 [機密文件] 只是沒有任何保護設定的文字標籤，且因為它有子標籤，所以無法套用至內容。 相反地，使用者必須選擇 [機密文件] 來查看子標籤，然後再選擇要套用到內容的子標籤。
@@ -136,6 +138,24 @@ ms.locfileid: "34155975"
     ![功能區中 [敏感度] 按鈕上的「深入了解」連結](media/Sensitivity_label_learn_more.png)
 
 建立標籤原則並將敏感度標籤指派給使用者和群組之後，這些人會在一小時內在 Office 應用程式中看到這些標籤。
+
+### <a name="label-policy-priority-order-matters"></a>標籤原則優先順序 (順序很重要)
+
+您會在敏感度標籤原則中發佈敏感度標籤，以將其提供給使用者使用，而標籤會顯示在 [標籤原則]**** 頁面上 [敏感度原則]**** 索引標籤的清單中。 正如同敏感度標籤 (請參閱[上方的小節](#sensitivity-label-priority-order-matters))，敏感度標籤原則的順序非常重要，因為順序反映的是優先順序。 優先順序最低的標籤原則會顯示在**上方**，而優先順序最高的標籤原則會顯示在**下方**。
+
+標籤原則包含：
+
+- 一組標籤。
+- 標籤原則的範圍，表示原則中包含的使用者和群組。
+- 以上所述標籤原則的設定 (預設標籤、對齊、強制標籤和說明連結)。
+
+您可以將使用者包含在多個標籤原則中，該使用者即會看到來自這些原則的所有敏感度標籤。 不過，使用者只會看到來自具有最高優先順序標籤原則的原則設定。
+
+如果您的組織中的使用者或群組，看不到您需要的標籤原則中的選項，例如預設標籤或強制標籤，請檢查敏感度標籤原則的順序。 若要重新排序標籤原則，請選取 [敏感度標籤原則 > 選擇右側的省略符號 > [下移]**** 或 [上移]****。
+
+![敏感度標籤原則頁面上的移動選項](media/sensitivity-label-policy-priority.png)
+
+請注意，雖然敏感度標籤原則的優先順序很重要，對保留標籤原則而言，它卻**不**重要。 如[系統會優先處理保留原則嗎？](labels.md#the-principles-of-retention-or-what-takes-precedence)中所述，內容可能會受限於多個保留原則。
 
 ## <a name="how-to-get-started"></a>如何開始使用
 
