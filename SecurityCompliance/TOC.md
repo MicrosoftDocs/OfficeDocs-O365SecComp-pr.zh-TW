@@ -167,8 +167,7 @@
 ## 檔案計畫
 ### [檔案計劃管理員](file-plan-manager.md)
 ### [保留標籤](labels.md)
-### 
-  [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
 ### [檢視文件的標籤活動](view-label-activity-for-documents.md)
 ### [檢視資料控管報告](view-the-data-governance-reports.md)
@@ -201,8 +200,7 @@
 ### [檔案計劃管理員](file-plan-manager.md)
 ### [保留標籤](labels.md)
 ### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### 
-  [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [事件型保留](event-driven-retention.md)
 ### [自動化事件型保留](automate-event-driven-retention.md)
 ## [處置資料](disposition-reviews.md)
