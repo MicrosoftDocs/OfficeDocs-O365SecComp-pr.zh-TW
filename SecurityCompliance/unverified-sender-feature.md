@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157985"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341621"
 ---
 # <a name="unverified-sender"></a>未驗證的寄件者
 
@@ -55,26 +55,6 @@ Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法�
 
 若要驗證失敗不是每個訊息是惡意。 不過，您應該謹慎互動與未驗證如果您不能辨識寄件者的郵件。 或者，如果您辨識通常沒有寄件者 '？ ' 寄件者的影像，但您突然開始看到它，可能會登寄件者詐騙。
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>寄件者地址是不同的 From 地址中顯示的內容
-
-通常，您看到訊息中的電子郵件地址是不同於從地址中看到的內容。 有時網路釣客會嘗試誘騙寄件者是其他人以外人員它們確實是的想法。
-
-當 Outlook.com 和 outlook 網頁版偵測寄件者的實際地址與寄地址的地址之間的差異時，它們會顯示實際寄件者，並使用透過標記，這會加上底線。
-
-![未驗證的寄件者的替代文字](media/unverified-sender-feature1.png)
-
-在這個範例中，在傳送網域`suspicious.com`通過驗證，但寄件者放`unknown@contoso.com`From 地址。
-
-不是每個郵件透過標記為可疑。 不過，如果您不能辨識郵件透過標記，您應該謹慎與其互動。
-
-在 Outlook.com 和新網頁型 Outlook 中，您可以將游標停留寄件者的名稱或郵件清單中，查看他們的電子郵件地址，而不需要開啟該郵件的地址。
-
-![開始使用 OneDrive](media/get-started-with-onedrive-message.png)
-
-如何知道是否您使用新的 Outlook web 上？ 請參閱下列的範例：
-
-![Outlook 與 Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>查看準則沒有 Outlook.com 和網頁型 Outlook 使用新增 '？ ' 和 '透過' 屬性？
@@ -83,11 +63,7 @@ Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法�
 
 針對透過標記： Outlook.com 中自地址的網域不同網域的 DKIM 簽章或 SMTP MAIL FROM 中時，顯示在兩個欄位 （偏好的 DKIM 簽章） 的其中一個網域。
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>可以覆寫這些屬性與 IP 允許、 Exchange 傳輸規則可讓，或安全的寄件者？
-
-您不能覆寫這些屬性。
-
-### <a name="how-do-i-remove-these-properties"></a>如何移除這些內容？
+### <a name="how-do-i-remove-the-"></a>如何移除 '？ '
 
 為 '？ ' 中的寄件者影像： 為寄件者，您應該驗證與 SPF 或 DKIM 郵件。
 
