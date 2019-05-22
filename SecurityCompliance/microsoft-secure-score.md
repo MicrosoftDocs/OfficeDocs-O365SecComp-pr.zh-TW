@@ -9,15 +9,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 ms.topic: article
-search.appverid: met150
-ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+search.appverid:
+- MOE150
+- MET150
+ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
+ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252300"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34334541"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -79,6 +82,10 @@ Microsoft 安全分數，我們新增了建議從 Azure AD，Intune 和雲端 Ap
 經過一段時間在 [**歷程記錄**] 索引標籤中，您可以檢視您組織的分數的圖形。此檢視包含全域平均產業平均，類似的基座計數，以及所有選取的時間範圍內所採取的動作。 您也可以依類別自訂日期範圍與篩選器。
 
 分數的計算一次每日 (大約 1:00 AM PST)。 如果您變更測量的巨集指令，分數會自動更新的下一天。 務必也請注意，某些其他入口網站會顯示 Microsoft 安全分數部分 （例如 Windows defender 資訊安全中心）。 如果您完成改進巨集指令，以及分數會增加這些入口網站，可能需要 24 小時的時間的更新分數 」 來顯示在 Microsoft 365 安全中心。  
+
+## <a name="how-controls-are-scored"></a>如何控制項，就會獲得
+
+控制項可以計分兩種方式。 某些二進位的方式，就會獲得-如果您有功能或設定設定根據我們建議使用規格，您會收到 100%的分數。 其他分數的計算百分比的總組態。 例如，如果改進建議指出您會收到 30 點，是否您保護您的所有使用者使用 MFA，您只需要 100 個受保護的總使用者 5，會提供您的部分分數大約 2 點 (受保護的 5 / 100 總 * 30 的最大點數 = 2 點數部分分數). 
 
 ## <a name="risk-awareness"></a>風險認知
 
