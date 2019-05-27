@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 反網路釣魚保護，更完整的保護，作為 Office 365 進階威脅防護和 Office 365 Exchange Online Protection 中的基本保護的一部分，可協助保護組織免受惡意模擬型網路釣魚攻擊和其他網路釣魚攻擊。
-ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077209"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408368"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則
 
@@ -142,8 +142,8 @@ ms.locfileid: "34077209"
 
 一旦您反網路釣魚原則就緒後，您可以看到您威脅保護功能如何為您的組織使用檢視報告。 請參閱若要了解更多的下列資源：
 
-- [Office 365 進階威脅防護的檢視報告](view-reports-for-atp.md)或[檢視電子郵件安全性報告](view-email-security-reports.md)
+- [Office 365 atp 檢視報告](view-reports-for-atp.md)或[檢視電子郵件安全性報告](view-email-security-reports.md)
 
-- [使用檔案總管 （也稱為威脅總管）](use-explorer-in-security-and-compliance.md)
+- [使用威脅總管] （或即時偵測的資訊）](threat-explorer.md)
 
 掌握即將 ATP 的新功能。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)，並了解[新功能，將會新增 ATP](office-365-atp.md#new-features-in-office-365-atp)。

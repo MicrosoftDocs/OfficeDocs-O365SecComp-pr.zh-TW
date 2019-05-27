@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Office 365 進階威脅防護的威脅智慧功能可協助您研究針對貴組織的潛在威脅、 回應惡意程式碼、 網路釣魚和其他 Office 365 已經偵測出代表您的攻擊，搜尋的威脅指標。
-ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3a1ccc3d3e37b9b1433e8e339709d09ba56970b0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265395"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408358"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威脅調查及回應
 
@@ -61,15 +61,15 @@ ms.locfileid: "32265395"
     
 - [了解威脅追蹤器-新增和值得注意](threat-trackers.md)
 
-- [自動化的調查及回應 （空調） 與 Office 365 威脅情報](automated-investigation-response-office.md)
+- [節省時間和精力自動化調查及回應 （空調） 功能](automated-investigation-response-office.md)
 
-- [使用中的安全性威脅總管&amp;合規性中心](use-explorer-in-security-and-compliance.md)
+- [使用以找出並調查的電子郵件和檔案中的惡意內容威脅總管] （或即時偵測）](threat-explorer.md)
     
 - [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
     
-- [使用攻擊模擬器](attack-simulator.md)
+- [用於模擬的攻擊，並增加使用者的認知的攻擊模擬器](attack-simulator.md)
     
-- [整合 Windows Defender 進階威脅防護的威脅調查及回應](integrate-office-365-ti-with-wdatp.md)
+- [整合 Windows Defender 進階威脅防護的威脅調查及回應能力](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>相關主題
 

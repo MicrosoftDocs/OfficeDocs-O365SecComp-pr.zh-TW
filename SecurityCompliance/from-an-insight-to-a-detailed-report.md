@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: 查看如何可以移動從深入見解到詳細報告安全性&amp;透過資料遺失防護範例的合規性中心。
-ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f87902551aa75e761cb297e127a14aab047d748e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255376"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408288"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>逐步解說 - 從深入解析到詳細報告
 
@@ -38,7 +38,7 @@ ms.locfileid: "32255376"
   
 3. 在清單中選取項目會開啟我們可以在此檢視該項目的詳細的更多詳細資料窗格。 (按一下 [項目)。<br/>![所選的深入了解詳細資料](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>我們會看到我們應該考慮，例如檢閱原則的建議的動作。 （[深入了解更多關於資料外洩防護原則](data-loss-prevention-policies.md)）。
     
-4. 我們也有連結，以檢視更多詳細資料。 (按一下 [<b0>檔案總管中的相關的活動，請參閱 <</c0>)。</b0><br/>這將帶我們 （也稱為威脅總管） 呼叫的[檔案總管](use-explorer-in-security-and-compliance.md)] 中，我們可以在其中套用篩選，然後向下切入的特定詳細資料報表類型。<br/>![有關所選的深入了解更多詳細資訊的檔案總管檢視](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. 我們也有連結，以檢視更多詳細資料。 (按一下 [<b0>檔案總管中的相關的活動，請參閱 <</c0>)。</b0><br/>這將帶我們稱為[威脅總管 （和即時偵測的資訊）](threat-explorer.md)，我們可以在其中套用篩選器並向下切入的特定詳細資料報表類型。<br/>![有關所選的深入了解更多詳細資訊的檔案總管檢視](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 如此一來，我們可以從深入見解到其基礎詳細資料，輕易地移動，並讓組織的資料外洩防護相關的更深思熟慮的決策。
   

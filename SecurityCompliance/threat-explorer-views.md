@@ -1,46 +1,44 @@
 ---
-title: 威脅總管檢視
+title: 威脅總管] 和 [即時偵測的資訊中的檢視
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: 了解各種不同的 （也稱為威脅總管） 的 Office 365 進階威脅防護計劃 2 的一部分的總管中可用的檢視。
-ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 了解各種不同的威脅總管] 和 [即時偵測中可用的檢視。
+ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260515"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408318"
 ---
-# <a name="threat-explorer-views"></a>威脅總管檢視
-
-[威脅總管](use-explorer-in-security-and-compliance.md)是功能強大，接近即時的工具，以協助調查及回應安全性威脅的安全性作業小組&amp;合規性中心。 檔案總管] 會顯示組織資訊可疑的惡意軟體和電子郵件中的釣魚程式和 Office 365 中的檔案，以及其他安全性威脅及風險。 
-
-當您首次開啟檔案總管時的預設檢視中顯示電子郵件惡意程式碼偵測在過去 7 天。 
+# <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅總管] 和 [即時偵測的資訊中的檢視
 
 ![威脅總管](media/ThreatExplorerFirstOpened.png)
 
-瀏覽器也可以顯示安全性保護功能在 Office 365 中，包括[安全連結](atp-safe-links.md)和[安全附件](atp-safe-attachments.md)，您可以修改顯示過去 30 天的資料。 
+[威脅總管](use-explorer-in-security-and-compliance.md)（與 [即時偵測] 報告） 是功能強大，接近即時的工具，以協助調查及回應安全性威脅的安全性作業小組&amp;合規性中心。 Explorer （並即時偵測] 報告） 會顯示您的組織可疑的惡意軟體和電子郵件中的釣魚程式和 Office 365 中的檔案，以及其他安全性威脅及風險的相關資訊。 
 
-> [!NOTE]
-> 如果您有 Office 365 進階威脅防護方案 2 或 Office 365 E5 試用訂閱，只會針對在過去 7 天看到偵測和電子郵件資料。
-  
+- 如果您有[Office 365 進階威脅防護](office-365-atp.md)(ATP) 計劃 2，您會有瀏覽器。
+- 如果您有 Office 365 ATP 方案 1，您必須即時偵測的資訊。
+
+當您首次開啟檔案總管] （或 [即時偵測] 報告） 時，預設的檢視中顯示電子郵件惡意程式碼偵測過去 7 天。 也可以將這份報告顯示 ATP 偵測，例如透過[安全連結](atp-safe-links.md)，偵測到的惡意 Url 和[安全附件](atp-safe-attachments.md)所偵測到的惡意檔案。 您可以修改這份報告顯示過去 30 天的資料 （除非使用試用版訂閱）。 試用訂閱會在過去七天只包含資料。
+
 使用 [**檢視**] 功能表變更顯示的資訊。 工具提示協助您決定使用哪一種檢視。
   
 ![威脅總管檢視] 功能表](media/ThreatExplorerViewMenu.png)
 
-一旦您已選取檢視，您可以套用篩選器，並設定查詢，以進行進一步分析。 下列各節提供瀏覽器中可用的不同檢視的簡要概觀。  
+一旦您已選取檢視，您可以套用篩選器，並設定查詢，以進行進一步分析。 下列各節提供中檔案總管] （或即時偵測） 可用的不同檢視的簡要概觀。  
 
 ## <a name="email--malware"></a>電子郵件 > 惡意程式碼
 
-若要檢視此報告中，在檔案總管中，選擇 [**檢視** > **電子郵件** > **惡意程式碼**。 這個檢視顯示已識別為包含惡意程式碼的電子郵件的相關資訊。  
+若要檢視這份報告，在瀏覽器 （或即時偵測的資訊） 中，選擇 [**檢視** > **電子郵件** > **惡意程式碼**。 這個檢視顯示已識別為包含惡意程式碼的電子郵件的相關資訊。  
 
 ![檢視關於電子郵件被識別為惡意程式碼的資料](media/ExplorerEmailMalwareMenu.png) 
 
@@ -56,7 +54,7 @@ ms.locfileid: "32260515"
 
 ## <a name="email--phish"></a>電子郵件 > Phish
 
-若要檢視此報告中，在檔案總管中，選擇 [**檢視** > **電子郵件** > **釣魚程式**。 這個檢視顯示電子郵件識別為網路釣魚嘗試次數。  
+若要檢視這份報告，在瀏覽器 （或即時偵測的資訊） 中，選擇 [**檢視** > **電子郵件** > **釣魚程式**。 這個檢視顯示電子郵件識別為網路釣魚嘗試次數。  
 
 ![關於電子郵件被識別為網路釣魚嘗試檢視資料](media/ThreatExplorerEmailPhish.png) 
 
@@ -76,7 +74,7 @@ ms.locfileid: "32260515"
 
 ## <a name="email--user-reported"></a>電子郵件 > 使用者報告
 
-若要檢視此報告中，在檔案總管中，選擇 [**檢視** > **電子郵件** > **使用者報告**。 這個檢視顯示電子郵件使用者會回報為垃圾郵件、 非垃圾郵件或網路釣魚電子郵件。 
+若要檢視這份報告，在瀏覽器 （或即時偵測的資訊） 中，選擇 [**檢視** > **電子郵件** > **使用者報告**。 這個檢視顯示電子郵件使用者會回報為垃圾郵件、 非垃圾郵件或網路釣魚電子郵件。 
 
 ![使用者所回報的電子郵件](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -107,7 +105,7 @@ ms.locfileid: "32260515"
 
 ## <a name="content--malware"></a>內容 > 惡意程式碼
 
-若要檢視此報告中，在檔案總管中，選擇 [**檢視** > **內容** > **惡意程式碼**。 這個檢視顯示[Office 365 進階威脅](atp-for-spo-odb-and-teams.md)防護中 SharePoint Online、 商務用 OneDrive 和 Microsoft Teams 已識別為惡意的檔案。
+若要檢視這份報告，在瀏覽器 （或即時偵測的資訊） 中，選擇 [**檢視** > **內容** > **惡意程式碼**。 這個檢視顯示[Office 365 進階威脅](atp-for-spo-odb-and-teams.md)防護中 SharePoint Online、 商務用 OneDrive 和 Microsoft Teams 已識別為惡意的檔案。
 
 檢視惡意程式碼 （如何惡意程式碼偵測到），家長監護，偵測技術的資訊和工作負載 （OneDrive、 SharePoint 或小組）。 
 
@@ -117,7 +115,7 @@ ms.locfileid: "32260515"
   
 ## <a name="click-to-filter-capabilities"></a>按一下 [以篩選功能
 
-使用檔案總管中，您可以套用中按一下 [篩選器。 按一下圖例中的項目，該項目會成為報表的篩選器。 例如，假設我們要尋找在檔案總管中的惡意程式碼檢視：
+Explorer （與即時偵測的資訊），您可以套用中按一下 [篩選器。 按一下圖例中的項目，該項目會成為報表的篩選器。 例如，假設我們要尋找在檔案總管中的惡意程式碼檢視：
   
 ![移至威脅管理，\>總管](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -137,7 +135,7 @@ ms.locfileid: "32260515"
 
 ## <a name="queries-and-filters"></a>查詢及篩選
 
-Explorer 有數個功能強大的篩選器和查詢功能可讓您切入詳細資訊，例如頂端的目標使用者、 上方的惡意程式碼系列、 偵測技術等等。 每一種報表提供了許多方式可檢視和瀏覽資料。
+Explorer （並即時偵測] 報告） 有數個功能強大的篩選器和查詢功能可讓您切入詳細資訊，例如頂端的目標使用者、 上方的惡意程式碼系列、 偵測技術等等。 每一種報表提供了許多方式可檢視和瀏覽資料。
 
 > [!IMPORTANT]
-> 請勿使用萬用字元，例如星號 （*） 或問號 （？），在瀏覽器的 [查詢] 列中。 當您搜尋電子郵件的主旨欄位時，Explorer 便會執行部分符合及收益結果類似萬用字元搜尋。
+> 請勿使用萬用字元，例如星號 （*） 或問號 （？），在瀏覽器 （或即時偵測的資訊） 的 [查詢] 列中。 當您搜尋電子郵件的主旨欄位時，檔案總管] （或即時偵測） 便會執行部分符合及收益結果類似萬用字元搜尋。

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應以及如何開始。
-ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b003805b5732710df88d45662c2a71d6014640e0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254166"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408338"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>開始使用威脅調查及回應 (Office 365 進階威脅防護計劃 2)
 
@@ -49,7 +49,7 @@ ms.locfileid: "32254166"
   
 ### <a name="threat-explorer"></a>威脅總管
 
-分析威脅、 經過一段時間，請參閱 < 的攻擊的磁碟區及分析資料威脅系列、 攻擊者基礎結構，以及其他使用威脅總管 （這也稱為 Explorer）。 威脅總管是任何安全性分析師調查工作流程的起始位置。
+使用<b0>威脅總管 （和即時偵測）</b0>分析威脅、 經過一段時間，請參閱 < 的攻擊的磁碟區及分析資料威脅系列、 攻擊者基礎結構，等等。 威脅總管 （也稱為總管） 是任何安全性分析師調查工作流程的起始位置。
   
 ![威脅總管](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
@@ -93,7 +93,7 @@ Office 365 威脅 Invesigation 和回應功能會包含在 Office 365 進階威�
   |**若要執行這項活動...]** <br/> |**您必須具有下列其中一個這些角色** <br/> |  
   |:-----|:-----|
   |使用威脅儀表板 （或新的[安全性儀表板](security-dashboard.md)）<br/> 檢視最新或目前威脅的相關資訊  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |
-  |使用威脅總管 （也稱為總管）  <br/> 分析的威脅  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |
+  |使用[威脅總管 （和即時偵測）](threat-explorer.md)來分析威脅  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |
   |檢視事件 （也稱為調查） <br/> 將電子郵件訊息新增至事件  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 安全性讀取者 (指派安全性&amp;合規性中心)  <br/> |
   |在事件中觸發電子郵件動作  <br/> 找出並刪除可疑的電子郵件  <br/> |Office 365 全域管理員或安全性系統管理員  <br/> 下列其中一個以上的角色和搜尋及清除 (指派安全性&amp;合規性中心)  <br/> |
   |整合 Office 365 進階的威脅防護計劃 2 與 Windows Defender 進階威脅防護  <br/> 與 SIEM 伺服器整合 Office 365 進階威脅防護計劃 2  <br/> |Office 365 全域系統管理員  <br/> 安全性系統管理員 (指派安全性&amp;合規性中心)  <br/> 適當的角色指派中額外的應用程式 （例如 Windows Defender 進階威脅防護入口網站或 SIEM 伺服器）  <br/> |

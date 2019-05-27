@@ -100,7 +100,7 @@
 #### [使用威脅調查及回應保護使用者的安全](keep-users-safe-with-office-365-ti.md)
 #### [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
 ### [自動調查及回應](automated-investigation-response-office.md)
-### [威脅總管](use-explorer-in-security-and-compliance.md)
+### [[威脅總管] 及即時偵測](threat-explorer.md)
 #### [威脅總管檢視](threat-explorer-views.md)
 ### [威脅追蹤工具](threat-trackers.md)
 ### [Office 365 中的攻擊模擬器](attack-simulator.md)
@@ -164,6 +164,7 @@
 ## [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
 
 # 記錄管理
+## [記錄管理](records-management.md)
 ## 檔案計畫
 ### [檔案計劃管理員](file-plan-manager.md)
 ### [保留標籤](labels.md)

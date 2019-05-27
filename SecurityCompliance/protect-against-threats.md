@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 05/09/2019
 search.appverid:
 - MOE150
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 使用本文做為指南，現在設定您的威脅防護功能。
-ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a9a2baccb4709b3e8d77f620281458d51ed0583a
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157295"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408388"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防範 Office 365 中的威脅
 
@@ -38,9 +38,9 @@ Office 365 包含各種威脅防護功能。 以下為您的組織設定您可�
 |保護類型  |訂閱需求  |
 |---------|---------|
 |反惡意程式碼保護    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)(EOP)        |
-|從惡意 Url 與電子郵件和 Office 文件中的檔案保護    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
+|從惡意 Url 與電子郵件和 Office 文件中的檔案保護    | [Office 365 進階的威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)(ATP)       |
 |反網路釣魚保護    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
-|進階反網路釣魚保護    | [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
+|進階反網路釣魚保護    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |反垃圾郵件保護     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
 |零時差自動清除 （適用於電子郵件）    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)(EOP)        |
 |稽核的記錄 （這用來報告之用）    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
@@ -59,7 +59,7 @@ Office 365 包含各種威脅防護功能。 以下為您的組織設定您可�
 
 ## <a name="part-1---anti-malware-protection"></a>第 1 部份-反惡意程式碼保護
 
-在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP) 的訂閱中使用[反惡意程式碼保護](anti-malware-protection.md)。 
+在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中使用[反惡意程式碼保護](anti-malware-protection.md)。 
 
 1. 在 [[安全性 & 合規性中心](https://protection.office.com)中，選擇 [**威脅管理** > **原則** > **反惡意程式碼**。
 

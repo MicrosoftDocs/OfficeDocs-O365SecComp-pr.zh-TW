@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 整合 Windows Defender 進階威脅防護來威脅管理的詳細的資訊請參閱 < Office 365 進階威脅防護。
-ms.openlocfilehash: f6ea4309d3eb7a4ccd4987d221398d0f15994388
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 8fbbc8beeeba6cfee0e87ee44f99819094d5569e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077249"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408268"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>整合 Office 365 進階的威脅防護與 Windows Defender 進階威脅防護
 
@@ -38,7 +38,7 @@ ms.locfileid: "34077249"
     
 - 您必須是 Office 365 全域管理員或具有安全性系統管理員角色 （例如安全性管理員） 中指派[安全性&amp;合規性中心](https://protection.office.com)。 (請參閱[中的 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md))
     
-- 您必須具有安全性 & 合規性中心中的 Office 365 威脅總管和 Windows Defender 進階威脅防護入口網站存取權。
+- 您必須具有存取[檔案總管] （或即時偵測的資訊）](threat-explorer.md)中的安全性 & 合規性中心以及 Windows Defender 進階威脅防護入口網站。
     
 ## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>將 Windows Defender ATP 與整合 Office 365 進階威脅防護
 

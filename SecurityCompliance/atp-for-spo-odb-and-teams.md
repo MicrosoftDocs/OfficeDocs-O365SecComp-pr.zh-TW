@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: 擴充 Office 365 進階威脅防護中 SharePoint Online、 商務用 OneDrive 和 Microsoft Teams 能夠為您的組織更安全的共同作業的檔案。
-ms.openlocfilehash: 9a1c4d3f7eca335b1668f8fc0947387cc9d496f3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: a73f978ca40571e33864061cfe9538033579b3c7
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077609"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408258"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams
 
@@ -50,7 +50,7 @@ ms.locfileid: "34077609"
 
 - 請確定您的 SharePoint 網站已設定要使用[的新式體驗](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 當檔案識別為惡意及封鎖時，使用者可以看到這已發生的新式體驗，但不是傳統檢視。 ATP 保護套用是否使用新式體驗或傳統檢視;不過，封鎖的檔案的視覺標記有只能在新式體驗。
     
-- 會被識別為惡意 SharePoint Online 中的檔案，商務用 OneDrive 或 Microsoft Teams 會顯示在[Office 365 進階威脅防護的報告](view-reports-for-atp.md)和威脅總管 （ [Office 365 進階威脅防護計劃 2](office-365-ti.md)的一部分).
+- 會被識別為惡意 SharePoint Online 中的檔案，商務用 OneDrive 或 Microsoft Teams 會顯示在[Office 365 進階威脅防護的報告](view-reports-for-atp.md)和[瀏覽器 （和即時偵測的資訊）](threat-explorer.md)中。
     
 - ATP 是貴組織的整體威脅保護策略，其中包含反垃圾郵件和反惡意程式碼防護，以及安全連結和安全附件的一部分。 若要深入了解，請參閱 <<c0>針對 Office 365 中的威脅保護。
     

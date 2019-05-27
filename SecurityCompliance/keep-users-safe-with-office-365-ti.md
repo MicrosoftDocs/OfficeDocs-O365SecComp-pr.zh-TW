@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應功能如何協助貴組織偵測入侵和威脅，快速地降低，以及復原威脅。
-ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077259"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408278"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>保護您的 Office 365 使用者安全與 Office 365 威脅調查及回應功能
 
@@ -37,7 +37,7 @@ ms.locfileid: "34077259"
   
 ## <a name="detect-intrusions-and-threats"></a>偵測入侵和威脅
 
-[檔案總管](use-explorer-in-security-and-compliance.md)（也稱為威脅總管） 可協助安全性系統管理員和分析師識別並了解是您企業內，因為可以由像安全的表面上無害使用者組態規避即使最複雜的安全性設定的威脅寄件者 whitelists。 瀏覽器協助 Office 365 全域或安全性系統管理員快速決定使用者是否已遭到惡意程式碼或釣魚程式的威脅。 這有助於優先順序哪些使用者最風險的威脅和必要的回應。 
+[威脅總管 （或即時偵測的資訊）](threat-explorer.md)（也稱為威脅總管） 可協助安全性系統管理員和分析師識別並了解是您企業內，因為可以由像安全的表面上無害使用者組態規避即使最複雜的安全性設定的威脅寄件者 whitelists。 瀏覽器協助 Office 365 全域或安全性系統管理員快速決定使用者是否已遭到惡意程式碼或釣魚程式的威脅。 這有助於優先順序哪些使用者最風險的威脅和必要的回應。 
   
 Explorer 也可協助系統管理員瀏覽使用者與郵件之間的關係。 了解已損毀的特定郵件的？ 搜尋它以查看哪些使用者接收郵件，然後遵循一系列的事件，並查看這些使用者依次做了什麼。
 

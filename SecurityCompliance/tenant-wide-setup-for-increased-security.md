@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 逐步解說租用戶整體設定會影響您的 Office 365 環境的安全性建議的組態。 您的安全性需求可能需要更多或更少的安全性。 使用這些建議作為起點。
-ms.openlocfilehash: d5e84bfe5994d1f17ddc75bcb1141fb4f4beace3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bac2592fcfefaeb150497cddf134679f9429c656
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158255"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408248"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定 Office 365 租用戶以提高安全性
 
@@ -53,9 +53,9 @@ Office 365 安全分數分析根據您的日常活動和安全性設定的 Offic
   
 |儀表板 * * *|****描述****|
 |:-----|:-----|
-|威脅管理儀表板  <br/> |威脅管理] 區段中的資訊安全中心使用此儀表板來查看有已處理的威脅，並做為報告哪些威脅商務決策者的便利工具調查及回應功能已執行到保護您的業務。  <br/> |
-|威脅總管  <br/> |這也是威脅管理] 區段中的資訊安全中心。 如果您正在調查，或針對您的 Office 365 租用戶可能遭受攻擊，可用於在 [檔案總管威脅分析威脅。 威脅總管] 中顯示您的攻擊的磁碟區一段時間，及您可以分析威脅系列、 攻擊者基礎結構，以及其他此資料。 您也可以標示任何可疑的電子郵件事件清單。  <br/> |
-|報告 — 儀表板  <br/> |在 [安全性中心] 的 [報告] 區段中，檢視稽核報告的 SharePoint Online 和 Exchange Online 組織。 您也可以存取 Azure Active Directory (Azure AD) 使用者登入報告，使用者活動報告，並從 [檢視報告] 頁面上的 Azure AD 稽核記錄。  <br/> |
+|[威脅管理儀表板](security-dashboard.md)  <br/> |資訊安全中心的**威脅管理**] 區段中，使用此儀表板來查看有已處理的威脅，並做為報告哪些威脅商務決策者的便利工具調查及回應功能已經有為了保護您的業務。  <br/> |
+|[威脅總管 （或即時偵測的資訊）](threat-explorer.md)  <br/> |這也是**威脅管理**] 區段中的資訊安全中心。 如果您正在調查，或針對您的 Office 365 租用戶可能遭受攻擊，使用檔案總管] （或即時偵測） 來分析威脅。 Explorer （並即時偵測] 報告） 顯示您的攻擊的磁碟區一段時間，，您可以分析威脅系列、 攻擊者基礎結構，以及其他此資料。 您也可以標示任何可疑的電子郵件事件清單。  <br/> |
+|報告 — 儀表板  <br/> |在 [安全性中心] 的 [**報告**] 區段中，檢視稽核報告的 SharePoint Online 和 Exchange Online 組織。 您也可以存取 Azure Active Directory (Azure AD) 使用者登入報告，使用者活動報告，並從 [**檢視報告**] 頁面上的 Azure AD 稽核記錄。  <br/> |
    
 ![資訊安全中心儀表板](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   

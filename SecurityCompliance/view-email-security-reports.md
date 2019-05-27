@@ -3,8 +3,8 @@ title: 檢視安全性中的電子郵件安全性報告&amp;合規性中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/13/2019
-ms.audience: ITPro
+ms.date: 05/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 了解如何尋找並使用您的組織使用 Office 365 企業版電子郵件安全性報告。 安全性中的電子郵件安全性報告可用&amp;合規性中心。
-ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+description: 了解如何尋找並使用您的組織電子郵件安全性報告。 安全性中的電子郵件安全性報告可用&amp;合規性中心。
+ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970254"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408408"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>檢視安全性中的電子郵件安全性報告&amp;合規性中心
 
@@ -65,7 +65,7 @@ ms.locfileid: "33970254"
 
 ## <a name="threat-protection-status-report"></a>威脅保護狀態報表
 
-**威脅保護狀態**報表的智慧顯示的報告，已偵測並封鎖 Exchange Online protection 的惡意電子郵件。 這份報告顯示電子郵件被識別為惡意程式碼或網路釣魚嘗試的相關資訊。 
+**威脅保護狀態**報表的智慧顯示的報告，已偵測並封鎖 Exchange Online protection 的惡意電子郵件。 這份報告可以用來檢視被識別為惡意程式碼的電子郵件或網路釣魚嘗試透過時間 （最多為 90 天），以及它可讓安全性系統管理員識別趨勢或判斷原則是否需要調整。
 
 > [!NOTE]
 > 威脅保護狀態報表是適用於擁有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); 客戶然而，ATP 客戶威脅保護狀態報表中顯示的資訊可能會包含不同資料比 EOP 客戶可能會看到的內容。 例如，EOP 客戶可以檢視電子郵件，但不是[在 SharePoint Online、 OneDrive 或 Microsoft Teams 中偵測到惡意檔案](atp-for-spo-odb-and-teams.md)的相關資訊，ATP 特有功能中偵測到的惡意程式碼的相關資訊。 （[深入了解更多關於 ATP 報告](view-reports-for-atp.md)）。
@@ -74,7 +74,9 @@ ms.locfileid: "33970254"
   
 ![威脅保護狀態報表](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-當您首次開啟威脅保護狀態報表時，報告顯示資料的過去 7 天的預設值;不過，您可以按一下 [**篩選**]，並 90 天的詳細資料變更日期範圍。 這份報告是適用於檢視的效率和影響貴組織的[Exchange Online Protection 功能](eop/eop-features.md)，以及更長期的趨勢。 
+當您首次開啟威脅保護狀態報表時，報告顯示資料的過去 7 天的預設值;不過，您可以按一下 [**篩選**]，並 90 天的詳細資料變更日期範圍。 （如果您使用試用訂閱，您可能會受限於的 30 天的資料。）
+
+這份報告是適用於檢視的效率和影響貴組織的[Exchange Online Protection 功能](eop/eop-features.md)，以及更長期的趨勢。 
   
 ![威脅保護狀態報告的篩選器](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   

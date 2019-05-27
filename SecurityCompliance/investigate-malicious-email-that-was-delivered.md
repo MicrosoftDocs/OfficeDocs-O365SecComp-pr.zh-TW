@@ -15,40 +15,37 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 6eec99f5b2872a63efab619e9814ab0fa625ca49
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7e2cef742339e54c094cfb0c3b32fbf596896a3d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077269"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408298"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查惡意電子郵件已傳遞 (Office 365 進階威脅防護計劃 2)
 
-[Office 365 進階威脅防護計劃 2](office-365-ti.md)可讓您調查，將您的使用者放在風險，並採取動作來保護您的組織活動。 例如，如果您是貴組織的安全性小組的一部分，您可以尋找和調查可疑的電子郵件已傳遞至您的使用者。 您可以使用[威脅總管](get-started-with-ti.md#threat-explorer)。
-  
-> [!IMPORTANT]
-> Office 365 威脅情報現在是 Office 365 進階威脅防護計劃 2，以及其他威脅保護功能。 若要深入了解，請參閱[Office 365 進階威脅防護方案和價格](https://products.office.com/exchange/advance-threat-protection)和[Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+[Office 365 進階威脅防護](office-365-atp.md)可讓您調查，將您的使用者放在風險，並採取動作來保護您的組織活動。 例如，如果您是貴組織的安全性小組的一部分，您可以尋找和調查可疑的電子郵件已傳遞至您的使用者。 您可以使用[威脅總管 （或即時偵測的資訊）](threat-explorer.md)。
   
 ## <a name="before-you-begin"></a>開始之前...]
 
 請確定符合下列需求：
   
-- 您的組織有[Office 365 進階威脅防護計劃 2](office-365-ti.md) ，並[指派授權給商務用 Office 365 中的使用者](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。
+- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)（方案 1 或計劃 2） 並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
 - [Office 365 稽核記錄](turn-audit-log-search-on-or-off.md)已為您的組織。 
     
-- 貴組織的原則定義的反垃圾郵件、 反惡意程式碼、 反網路釣魚，依此類推。 請參閱[Office 365 進階的威脅防護](office-365-atp.md)。
+- 貴組織的原則定義的反垃圾郵件、 反惡意程式碼、 反網路釣魚，依此類推。 請參閱[針對 Office 365 中的威脅保護](protect-against-threats.md)。
     
 - 您是 Office 365 全域管理員，或具有安全性系統管理員或 「 搜尋及清除角色指派安全性&amp;合規性中心。 請參閱[中的 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。
     
 ## <a name="dealing-with-suspicious-emails"></a>處理可疑的電子郵件
 
-惡意攻擊者可能會將郵件傳送至您的使用者嘗試與釣魚程式其認證，並存取您公司的機密資料 ！ 若要避免這個問題，您應該使用提供的 Office 365，包括 Exchange Online Protection 和進階威脅防護的威脅保護服務。 不過，有的時間攻擊者時將郵件傳送給使用者的 url 然後僅更新版本上將該 URL 點對惡意內容 （惡意程式碼等）。 或者，您可能會發現太晚而遭入侵您組織中的使用者，以及攻擊時遭到盜用了該使用者，使用該帳戶傳送電子郵件給您公司中的其他使用者。 一部分 < cleaning up 這兩種情況，您可能想要移除使用者收件匣的電子郵件。 在這類的情況下，您可以利用尋找並移除這些電子郵件訊息的威脅總管 ！
+惡意攻擊者可能會將郵件傳送至您的使用者嘗試與釣魚程式其認證，並存取您公司的機密資料 ！ 若要避免這個問題，您應該使用提供的 Office 365，包括[Exchange Online Protection](eop/exchange-online-protection-overview.md)和[進階威脅防護](office-365-atp.md)的威脅保護服務。 不過，有的時間攻擊者時將郵件傳送給使用者的 url 然後僅更新版本上將該 URL 點對惡意內容 （惡意程式碼等）。 或者，您可能會發現太晚而遭入侵您組織中的使用者，以及攻擊時遭到盜用了該使用者，使用該帳戶傳送電子郵件給您公司中的其他使用者。 一部分 < cleaning up 這兩種情況，您可能想要移除使用者收件匣的電子郵件。 在這類的情況下，您可以利用[威脅總管 （或即時偵測）](threat-explorer.md)來尋找和移除這些電子郵件訊息 ！
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找並刪除可疑的電子郵件的郵件傳遞
 
 > [!TIP]
-> [威脅總管](get-started-with-ti.md#threat-explorer)（也稱為總管），是功能強大的報表，可以有多個用途，例如尋找及刪除的郵件，用來識別惡意電子郵件寄件者的 IP 位址或開始進一步調查的事件。 下列程序著重於使用 Explorer 來尋找並從收件者信箱刪除惡意電子郵件。 
+> 威脅總管 （也稱為 「 檔案總管 」），是功能強大的報表，可以有多個用途，例如尋找及刪除的郵件，用來識別惡意電子郵件寄件者的 IP 位址或開始進一步調查的事件。 下列程序著重於使用 Explorer 來尋找並從收件者信箱刪除惡意電子郵件。 
   
 1. 移至 [[https://protection.office.com](https://protection.office.com)和 Office 365 使用公司或學校帳戶登入。 這會帶您前往安全性&amp;合規性中心。 
     

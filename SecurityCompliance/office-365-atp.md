@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/28/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、 安全連結、 進階的反網路釣魚工具、 報告工具和威脅智慧功能。
-ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262945"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408378"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -38,6 +38,10 @@ Office 365 進階威脅防護 (ATP) 會保護您的組織抵禦惡意電子郵�
 - [威脅調查及回應功能](#use-threat-investigation-and-response-capabilities)： 使用前置 edge 工具來調查、 了解、 模擬，並防止潛在威脅。 
 
 - [自動化調查及回應功能](#save-time-with-automated-investigation-and-response)： 節省時間和精力調查，並降低威脅。
+
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 計劃 1 和計劃 2
+
+ATP 隨附於 Office 365 E5;不過，ATP 計劃和 ATP 計劃 2 可分別做為特定的訂閱的附加元件。 若要深入了解，請參閱 <<c0>不同 ATP 計劃中的可用功能。
 
 ## <a name="configure-atp-policies"></a>設定 ATP 原則
 
@@ -59,7 +63,17 @@ Office 365 ATP 提供許多工具來設定適當的組織保護層級。
 
 Office 365 ATP 包含進階[報告儀表板](view-reports-for-atp.md)來監視您 ATP 的效能。 您可以在**報告 > 儀表板**存取它的安全性 & 合規性中心中。 
 
-更新中的報表即時，提供您最新的深入資訊。 這些報告也會提供建議和提醒您即將威脅。 預先定義的報告包含[威脅總管](use-explorer-in-security-and-compliance.md)、[威脅保護狀態報表](view-reports-for-atp.md#threat-protection-status-report)， [ATP 檔案類型的報告](view-reports-for-atp.md#atp-file-types-report)、 [ATP 郵件處理報表](view-reports-for-atp.md#atp-message-disposition-report)及其他。 
+更新中的報表即時，提供您最新的深入資訊。 這些報告也會提供建議和提醒您即將威脅。 下面是預先定義的報告： 
+
+- [威脅總管 （或即時偵測的資訊）](threat-explorer.md)
+
+- [威脅保護狀態報表](view-reports-for-atp.md#threat-protection-status-report)
+
+- [ATP 檔案類型的報告](view-reports-for-atp.md#atp-file-types-report)
+
+- [ATP 郵件處理報表](view-reports-for-atp.md#atp-message-disposition-report)
+
+- ...等等。 
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>使用威脅調查及回應功能
 
@@ -67,7 +81,7 @@ Office 365 ATP 計劃 2 包含適合的類別[威脅調查及回應工具](offic
 
 - [威脅追蹤器](threat-trackers.md)提供最新智慧主流 cybersecurity 問題。 例如，您可以檢視最新惡意程式碼的相關資訊，並採取的因應對策之前就會變成組織實際威脅。 可用的追蹤器包括[值得注意的追蹤器](threat-trackers.md#noteworthy-trackers)、[趨勢追蹤器](threat-trackers.md#trending-trackers)、[追蹤查詢](threat-trackers.md#tracked-queries)，以及[已儲存查詢](threat-trackers.md#saved-queries)。
 
-- [檔案總管](use-explorer-in-security-and-compliance.md)（也稱為威脅總管） 是即時報告，可讓您識別和分析最近的威脅。 您可以設定自訂期間顯示資料的檔案總管。
+- [威脅總管 （或即時偵測的資訊）](threat-explorer.md)（也稱為總管） 是即時報告，可讓您識別和分析最近的威脅。 您可以設定自訂期間顯示資料的檔案總管。
 
 - [攻擊模擬器](attack-simulator.md)可讓您識別 vulnerabilites 您組織中執行真實的攻擊案例。 目前類型的攻擊模擬可供使用，包括[顯示名稱矛網路釣魚攻擊](attack-simulator.md#display-name-spear-phishing-attack)、[密碼噴灑攻擊](attack-simulator.md#password-spray-attack)、[暴力密碼攻擊](attack-simulator.md#brute-force-password-attack)，等等。
     
@@ -75,7 +89,7 @@ Office 365 ATP 計劃 2 包含適合的類別[威脅調查及回應工具](offic
 
 (**新增 ！**)當您正在調查潛在的網路攻擊時，時間是本質。 您可以在更快速地找出並降低威脅，將會愈高，您的組織。 Office 365 ATP 計劃 2 現在會包括[自動化的調查及回應 （空調）](automated-investigation-response-office.md)功能。 （如果您沒有這些功能，您必須加以推出 ATP 計劃 2。）
 
-空調包含一組的安全性 playbooks 可啟動自動，例如時就會觸發警示，或以手動方式，例如從威脅總管] 中檢視。 空調可以儲存安全性作業小組時間和精力降低威脅，有效的方式。 若要深入了解，請參閱[自動化調查及回應 （空調） 與 Office 365](automated-investigation-response-office.md)。
+空調包含一組的安全性 playbooks 可啟動自動，例如時就會觸發警示，或以手動方式，例如從瀏覽器中檢視。 空調可以儲存安全性作業小組時間和精力降低威脅，有效的方式。 若要深入了解，請參閱[自動化調查及回應 （空調） 與 Office 365](automated-investigation-response-office.md)。
 
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的權限
 
@@ -95,7 +109,7 @@ Office 365 ATP 計劃 2 包含適合的類別[威脅調查及回應工具](offic
 
 ## <a name="get-office-365-atp"></a>取得 Office 365 ATP
 
-Office 365 ATP 計劃 2 隨附於 Office 365 企業版 E5，Office 365 教育版 A5，Microsoft 365 商務版。 如果您的訂閱未包含 Office 365 ATP，您可能可以當作附加元件購買 ATP。 若要深入了解，請參閱下列資源：
+Office 365 ATP 計劃 2 隨附於 Office 365 企業版 E5，Office 365 教育版 A5，Microsoft 365 商務版。 如果您的訂閱未包含 Office 365 ATP，您可以為特定的訂閱的附加元件購買 ATP 方案 1 或 ATP 計劃 2。 若要深入了解，請參閱下列資源：
 
 - 如需訂閱包含 ATP 計劃的清單，請參閱[Office 365 進階威脅防護 (ATP) 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)。
 
