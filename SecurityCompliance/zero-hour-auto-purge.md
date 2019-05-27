@@ -17,84 +17,84 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是偵測到郵件與垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。 如何 ZAP 執行此動作，則偵測到的惡意內容類型而定。
-ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155955"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408348"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a><span data-ttu-id="702d8-104">零時差自動清除 - 防範垃圾郵件和惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="702d8-104">Zero-hour auto purge - protection against spam and malware</span></span>
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a><span data-ttu-id="e448d-104">零時差自動清除 - 防範垃圾郵件和惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="e448d-104">Zero-hour auto purge - protection against spam and malware</span></span>
 
-## <a name="overview"></a><span data-ttu-id="702d8-105">概觀</span><span class="sxs-lookup"><span data-stu-id="702d8-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="e448d-105">概觀</span><span class="sxs-lookup"><span data-stu-id="e448d-105">Overview</span></span>
 
-<span data-ttu-id="702d8-106">零時差自動清除 (ZAP) 是偵測到的郵件釣魚程式、 垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。</span><span class="sxs-lookup"><span data-stu-id="702d8-106">Zero-hour auto purge (ZAP) is an email protection feature that detects messages with phish, spam, or malware that have already been delivered to your users' inboxes, and then renders the malicious content harmless.</span></span> <span data-ttu-id="702d8-107">ZAP 如何這取決於偵測到; 惡意內容類型郵件可以 zapped 由於郵件內容、 Url 或附件。</span><span class="sxs-lookup"><span data-stu-id="702d8-107">How ZAP does this depends on the type of malicious content detected; mail can be zapped due to mail content, URLs, or attachments.</span></span>
+<span data-ttu-id="e448d-106">零時差自動清除 (ZAP) 是偵測到的郵件釣魚程式、 垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。</span><span class="sxs-lookup"><span data-stu-id="e448d-106">Zero-hour auto purge (ZAP) is an email protection feature that detects messages with phish, spam, or malware that have already been delivered to your users' inboxes, and then renders the malicious content harmless.</span></span> <span data-ttu-id="e448d-107">ZAP 如何這取決於偵測到; 惡意內容類型郵件可以 zapped 由於郵件內容、 Url 或附件。</span><span class="sxs-lookup"><span data-stu-id="e448d-107">How ZAP does this depends on the type of malicious content detected; mail can be zapped due to mail content, URLs, or attachments.</span></span>
   
-<span data-ttu-id="702d8-108">ZAP 是隨附於預設隨附於任何 Office 365 訂用帳戶，包含 Exchange Online 信箱的 Exchange Online Protection。</span><span class="sxs-lookup"><span data-stu-id="702d8-108">ZAP is available with the default Exchange Online Protection that is included with any Office 365 subscription that contains Exchange Online mailboxes.</span></span>
+<span data-ttu-id="e448d-108">ZAP 是隨附於預設隨附於任何 Office 365 訂用帳戶，包含 Exchange Online 信箱的 Exchange Online Protection。</span><span class="sxs-lookup"><span data-stu-id="e448d-108">ZAP is available with the default Exchange Online Protection that is included with any Office 365 subscription that contains Exchange Online mailboxes.</span></span>
 
-<span data-ttu-id="702d8-109">ZAP 已開啟根據預設，但必須符合下列條件：</span><span class="sxs-lookup"><span data-stu-id="702d8-109">ZAP is turned on by default, but the following conditions must be met:</span></span>
+<span data-ttu-id="e448d-109">ZAP 已開啟根據預設，但必須符合下列條件：</span><span class="sxs-lookup"><span data-stu-id="e448d-109">ZAP is turned on by default, but the following conditions must be met:</span></span>
   
-- <span data-ttu-id="702d8-110">**垃圾郵件動作**設為**移至垃圾郵件] 資料夾的郵件**。</span><span class="sxs-lookup"><span data-stu-id="702d8-110">**Spam action** is set to **Move message to Junk Email folder**.</span></span> <span data-ttu-id="702d8-111">您也可以建立僅適用於一群使用者如果您不想所有信箱移轉至雲端過濾的 ZAP 新垃圾郵件篩選原則。</span><span class="sxs-lookup"><span data-stu-id="702d8-111">You can also create a new spam filter policy that applies only to a set of users if you don't want all mailboxes to be screened by ZAP.</span></span>
+- <span data-ttu-id="e448d-110">**垃圾郵件動作**設為**移至垃圾郵件] 資料夾的郵件**。</span><span class="sxs-lookup"><span data-stu-id="e448d-110">**Spam action** is set to **Move message to Junk Email folder**.</span></span> <span data-ttu-id="e448d-111">您也可以建立僅適用於一群使用者如果您不想所有信箱移轉至雲端過濾的 ZAP 新垃圾郵件篩選原則。</span><span class="sxs-lookup"><span data-stu-id="e448d-111">You can also create a new spam filter policy that applies only to a set of users if you don't want all mailboxes to be screened by ZAP.</span></span>
 
-- <span data-ttu-id="702d8-112">使用者有保留其預設垃圾郵件設定]，且已不會關閉垃圾郵件保護。</span><span class="sxs-lookup"><span data-stu-id="702d8-112">Users have kept their default junk mail settings, and have not turned off junk email protection.</span></span> <span data-ttu-id="702d8-113">（如需在 Outlook 中的使用者選項的詳細資訊，請參閱[變更的垃圾郵件篩選器中的保護層級](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b)）。</span><span class="sxs-lookup"><span data-stu-id="702d8-113">(See [Change the level of protection in the Junk Email Filter](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) for details about user options in Outlook.)</span></span> 
+- <span data-ttu-id="e448d-112">使用者有保留其預設垃圾郵件設定]，且已不會關閉垃圾郵件保護。</span><span class="sxs-lookup"><span data-stu-id="e448d-112">Users have kept their default junk mail settings, and have not turned off junk email protection.</span></span> <span data-ttu-id="e448d-113">（如需在 Outlook 中的使用者選項的詳細資訊，請參閱[變更的垃圾郵件篩選器中的保護層級](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b)）。</span><span class="sxs-lookup"><span data-stu-id="e448d-113">(See [Change the level of protection in the Junk Email Filter](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) for details about user options in Outlook.)</span></span> 
   
-## <a name="how-zap-works"></a><span data-ttu-id="702d8-114">如何時能量光束的運作方式</span><span class="sxs-lookup"><span data-stu-id="702d8-114">How ZAP works</span></span>
+## <a name="how-zap-works"></a><span data-ttu-id="e448d-114">如何時能量光束的運作方式</span><span class="sxs-lookup"><span data-stu-id="e448d-114">How ZAP works</span></span>
 
-<span data-ttu-id="702d8-115">Office 365 更新反垃圾郵件引擎和惡意程式碼中的簽章即時每日。</span><span class="sxs-lookup"><span data-stu-id="702d8-115">Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis.</span></span> <span data-ttu-id="702d8-116">不過，您的使用者仍可能會收到惡意的郵件傳遞到不同的原因，包括內容 weaponized 之後會傳遞至使用者的收件匣。</span><span class="sxs-lookup"><span data-stu-id="702d8-116">However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users.</span></span> <span data-ttu-id="702d8-117">ZAP 解決此問題持續監視更新的 Office 365 垃圾郵件和惡意程式碼簽章。</span><span class="sxs-lookup"><span data-stu-id="702d8-117">ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures.</span></span> <span data-ttu-id="702d8-118">ZAP 可以找出並移除先前已傳遞的郵件已在使用者的收件匣中。</span><span class="sxs-lookup"><span data-stu-id="702d8-118">ZAP can find and remove previously delivered messages that are already in users' inboxes.</span></span>
+<span data-ttu-id="e448d-115">Office 365 更新反垃圾郵件引擎和惡意程式碼中的簽章即時每日。</span><span class="sxs-lookup"><span data-stu-id="e448d-115">Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis.</span></span> <span data-ttu-id="e448d-116">不過，您的使用者仍可能會收到惡意的郵件傳遞到不同的原因，包括內容 weaponized 之後會傳遞至使用者的收件匣。</span><span class="sxs-lookup"><span data-stu-id="e448d-116">However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users.</span></span> <span data-ttu-id="e448d-117">ZAP 解決此問題持續監視更新的 Office 365 垃圾郵件和惡意程式碼簽章。</span><span class="sxs-lookup"><span data-stu-id="e448d-117">ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures.</span></span> <span data-ttu-id="e448d-118">ZAP 可以找出並移除先前已傳遞的郵件已在使用者的收件匣中。</span><span class="sxs-lookup"><span data-stu-id="e448d-118">ZAP can find and remove previously delivered messages that are already in users' inboxes.</span></span>
 
-- <span data-ttu-id="702d8-119">識別為垃圾郵件的郵件，ZAP 會將未閱讀的郵件移至使用者的垃圾郵件資料夾。</span><span class="sxs-lookup"><span data-stu-id="702d8-119">For mail that is identified as spam, ZAP moves unread messages to users' Junk mail folder.</span></span>
+- <span data-ttu-id="e448d-119">識別為垃圾郵件的郵件，ZAP 會將未閱讀的郵件移至使用者的垃圾郵件資料夾。</span><span class="sxs-lookup"><span data-stu-id="e448d-119">For mail that is identified as spam, ZAP moves unread messages to users' Junk mail folder.</span></span>
 
-- <span data-ttu-id="702d8-120">識別為釣魚程式的郵件，ZAP 會將郵件移至使用者的垃圾郵件] 資料夾，不論是否已讀取電子郵件。</span><span class="sxs-lookup"><span data-stu-id="702d8-120">For mail that is identified as phish, ZAP moves messages to users' Junk mail folder, regardless of whether the email has been read.</span></span>
+- <span data-ttu-id="e448d-120">識別為釣魚程式的郵件，ZAP 會將郵件移至使用者的垃圾郵件] 資料夾，不論是否已讀取電子郵件。</span><span class="sxs-lookup"><span data-stu-id="e448d-120">For mail that is identified as phish, ZAP moves messages to users' Junk mail folder, regardless of whether the email has been read.</span></span>
 
-- <span data-ttu-id="702d8-121">新偵測到惡意程式碼，ZAP 會移除電子郵件，不論是否已讀取電子郵件附件。</span><span class="sxs-lookup"><span data-stu-id="702d8-121">For newly detected malware, ZAP removes attachments from email messages, regardless of whether the email has been read.</span></span>
+- <span data-ttu-id="e448d-121">新偵測到惡意程式碼，ZAP 會移除電子郵件，不論是否已讀取電子郵件附件。</span><span class="sxs-lookup"><span data-stu-id="e448d-121">For newly detected malware, ZAP removes attachments from email messages, regardless of whether the email has been read.</span></span>
   
-<span data-ttu-id="702d8-122">ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息時，它們不會通知。</span><span class="sxs-lookup"><span data-stu-id="702d8-122">The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved.</span></span> <span data-ttu-id="702d8-123">訊息不能超過 2 天。</span><span class="sxs-lookup"><span data-stu-id="702d8-123">Message must not be older than 2 days.</span></span>
+<span data-ttu-id="e448d-122">ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息時，它們不會通知。</span><span class="sxs-lookup"><span data-stu-id="e448d-122">The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved.</span></span> <span data-ttu-id="e448d-123">訊息不能超過 2 天。</span><span class="sxs-lookup"><span data-stu-id="e448d-123">Message must not be older than 2 days.</span></span>
   
-<span data-ttu-id="702d8-124">允許清單、[郵件流程規則](https://go.microsoft.com/fwlink/p/?LinkId=722755)及使用者規則或其他篩選器會優先於 ZAP。</span><span class="sxs-lookup"><span data-stu-id="702d8-124">Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755), and end user rules or additional filters take precedence over ZAP.</span></span>
+<span data-ttu-id="e448d-124">允許清單、[郵件流程規則](https://go.microsoft.com/fwlink/p/?LinkId=722755)及使用者規則或其他篩選器會優先於 ZAP。</span><span class="sxs-lookup"><span data-stu-id="e448d-124">Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755), and end user rules or additional filters take precedence over ZAP.</span></span>
   
-## <a name="to-review-or-set-up-a-spam-filter-policy"></a><span data-ttu-id="702d8-125">若要檢視或設定的垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="702d8-125">To review or set up a spam filter policy</span></span>
+## <a name="to-review-or-set-up-a-spam-filter-policy"></a><span data-ttu-id="e448d-125">若要檢視或設定的垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="e448d-125">To review or set up a spam filter policy</span></span>
   
-1. <span data-ttu-id="702d8-126">移至 [[https://protection.office.com](https://protection.office.com)和 Office 365 使用公司或學校帳戶登入。</span><span class="sxs-lookup"><span data-stu-id="702d8-126">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365.</span></span>
+1. <span data-ttu-id="e448d-126">移至 [[https://protection.office.com](https://protection.office.com)和 Office 365 使用公司或學校帳戶登入。</span><span class="sxs-lookup"><span data-stu-id="e448d-126">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365.</span></span>
 
-2. <span data-ttu-id="702d8-127">**威脅管理**] 下選擇 [**反垃圾郵件**]。</span><span class="sxs-lookup"><span data-stu-id="702d8-127">Under **Threat management**, choose **Anti-spam**.</span></span>
+2. <span data-ttu-id="e448d-127">**威脅管理**] 下選擇 [**反垃圾郵件**]。</span><span class="sxs-lookup"><span data-stu-id="e448d-127">Under **Threat management**, choose **Anti-spam**.</span></span>
 
-3. <span data-ttu-id="702d8-128">檢閱標準設定。</span><span class="sxs-lookup"><span data-stu-id="702d8-128">Review the standard settings.</span></span>
+3. <span data-ttu-id="e448d-128">檢閱標準設定。</span><span class="sxs-lookup"><span data-stu-id="e448d-128">Review the standard settings.</span></span>
 
-4. <span data-ttu-id="702d8-129">如果您想要自訂您的設定，選取 [**自訂**] 索引標籤，並開啟 [**自訂設定**。</span><span class="sxs-lookup"><span data-stu-id="702d8-129">If you want to customize your settings, select the **Custom** tab, and turn on **Custom settings**.</span></span> <span data-ttu-id="702d8-130">編輯您的設定，如果您想，選擇 [ **+ 建立原則**來新增新的原則。</span><span class="sxs-lookup"><span data-stu-id="702d8-130">Edit your settings and if you want, choose **+ Create a policy** to add a new policy.</span></span>
+4. <span data-ttu-id="e448d-129">如果您想要自訂您的設定，選取 [**自訂**] 索引標籤，並開啟 [**自訂設定**。</span><span class="sxs-lookup"><span data-stu-id="e448d-129">If you want to customize your settings, select the **Custom** tab, and turn on **Custom settings**.</span></span> <span data-ttu-id="e448d-130">編輯您的設定，如果您想，選擇 [ **+ 建立原則**來新增新的原則。</span><span class="sxs-lookup"><span data-stu-id="e448d-130">Edit your settings and if you want, choose **+ Create a policy** to add a new policy.</span></span>
 
-## <a name="to-see-if-zap-moved-your-message"></a><span data-ttu-id="702d8-131">若要查看 ZAP 是否移動郵件</span><span class="sxs-lookup"><span data-stu-id="702d8-131">To see if ZAP moved your message</span></span>
+## <a name="to-see-if-zap-moved-your-message"></a><span data-ttu-id="e448d-131">若要查看 ZAP 是否移動郵件</span><span class="sxs-lookup"><span data-stu-id="e448d-131">To see if ZAP moved your message</span></span>
 
-<span data-ttu-id="702d8-132">如果您想要看到 ZAP 如果移動您的郵件，您可以使用[威脅保護狀態報表](view-email-security-reports.md#threat-protection-status-report)（或[威脅總管](use-explorer-in-security-and-compliance.md)）。</span><span class="sxs-lookup"><span data-stu-id="702d8-132">If you want to see if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) (or [Threat Explorer](use-explorer-in-security-and-compliance.md)).</span></span>
+<span data-ttu-id="e448d-132">如果您想要看到 ZAP 如果移動您的郵件，您可以使用 [[威脅保護狀態報表](view-email-security-reports.md#threat-protection-status-report)] 或 [[威脅總管 （和即時偵測的資訊）](threat-explorer.md)。</span><span class="sxs-lookup"><span data-stu-id="e448d-132">If you want to see if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md).</span></span>
 
-## <a name="to-disable-zap"></a><span data-ttu-id="702d8-133">若要停用 ZAP</span><span class="sxs-lookup"><span data-stu-id="702d8-133">To disable ZAP</span></span>
+## <a name="to-disable-zap"></a><span data-ttu-id="e448d-133">若要停用 ZAP</span><span class="sxs-lookup"><span data-stu-id="e448d-133">To disable ZAP</span></span>
   
-<span data-ttu-id="702d8-134">如果您想要停用您 Office 365 租用戶時能量光束或一組使用者，使用[Set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)，EOP 指令程式的**ZapEnabled**參數。</span><span class="sxs-lookup"><span data-stu-id="702d8-134">If you want to disable ZAP for your Office 365 tenant, or a set of users, use the **ZapEnabled** parameter of [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), an EOP cmdlet.</span></span>
+<span data-ttu-id="e448d-134">如果您想要停用您 Office 365 租用戶時能量光束或一組使用者，使用[Set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)，EOP 指令程式的**ZapEnabled**參數。</span><span class="sxs-lookup"><span data-stu-id="e448d-134">If you want to disable ZAP for your Office 365 tenant, or a set of users, use the **ZapEnabled** parameter of [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), an EOP cmdlet.</span></span>
 
-<span data-ttu-id="702d8-135">在下列範例中，ZAP 已停用名為"Test"的內容篩選原則。</span><span class="sxs-lookup"><span data-stu-id="702d8-135">In the following example, ZAP is disabled for a content filter policy named "Test".</span></span>
+<span data-ttu-id="e448d-135">在下列範例中，ZAP 已停用名為"Test"的內容篩選原則。</span><span class="sxs-lookup"><span data-stu-id="e448d-135">In the following example, ZAP is disabled for a content filter policy named "Test".</span></span>
 
 ```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
-## <a name="faq"></a><span data-ttu-id="702d8-136">常見問題集</span><span class="sxs-lookup"><span data-stu-id="702d8-136">FAQ</span></span>
+## <a name="faq"></a><span data-ttu-id="e448d-136">常見問題集</span><span class="sxs-lookup"><span data-stu-id="e448d-136">FAQ</span></span>
 
-### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a><span data-ttu-id="702d8-137">如果合法郵件移至 [垃圾郵件] 資料夾，會發生什麼事？</span><span class="sxs-lookup"><span data-stu-id="702d8-137">What happens if a legitimate message is moved to the junk mail folder?</span></span>
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a><span data-ttu-id="e448d-137">如果合法郵件移至 [垃圾郵件] 資料夾，會發生什麼事？</span><span class="sxs-lookup"><span data-stu-id="e448d-137">What happens if a legitimate message is moved to the junk mail folder?</span></span>
   
-<span data-ttu-id="702d8-138">您應該遵循[誤判](prevent-email-from-being-marked-as-spam.md)正常的報告程的序。</span><span class="sxs-lookup"><span data-stu-id="702d8-138">You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md).</span></span> <span data-ttu-id="702d8-139">郵件會從收件匣移至 [垃圾郵件] 資料夾的唯一原因可能因為服務已決定郵件是垃圾郵件或惡意。</span><span class="sxs-lookup"><span data-stu-id="702d8-139">The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.</span></span>
+<span data-ttu-id="e448d-138">您應該遵循[誤判](prevent-email-from-being-marked-as-spam.md)正常的報告程的序。</span><span class="sxs-lookup"><span data-stu-id="e448d-138">You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md).</span></span> <span data-ttu-id="e448d-139">郵件會從收件匣移至 [垃圾郵件] 資料夾的唯一原因可能因為服務已決定郵件是垃圾郵件或惡意。</span><span class="sxs-lookup"><span data-stu-id="e448d-139">The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.</span></span>
   
-### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a><span data-ttu-id="702d8-140">如果使用 Office 365 隔離而不是垃圾郵件資料夾？</span><span class="sxs-lookup"><span data-stu-id="702d8-140">What if I use the Office 365 quarantine instead of the junk mail folder?</span></span>
+### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a><span data-ttu-id="e448d-140">如果使用 Office 365 隔離而不是垃圾郵件資料夾？</span><span class="sxs-lookup"><span data-stu-id="e448d-140">What if I use the Office 365 quarantine instead of the junk mail folder?</span></span>
   
-<span data-ttu-id="702d8-141">ZAP 不會將郵件移至隔離區從收件匣這一次。</span><span class="sxs-lookup"><span data-stu-id="702d8-141">ZAP doesn't move messages into quarantine from the Inbox at this time.</span></span>
+<span data-ttu-id="e448d-141">ZAP 不會將郵件移至隔離區從收件匣這一次。</span><span class="sxs-lookup"><span data-stu-id="e448d-141">ZAP doesn't move messages into quarantine from the Inbox at this time.</span></span>
   
-### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a><span data-ttu-id="702d8-142">如果我有自訂郵件流程規則 （封鎖 / 允許規則）？</span><span class="sxs-lookup"><span data-stu-id="702d8-142">What if I have a custom mail flow rule (Block/ Allow Rule)?</span></span>
+### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a><span data-ttu-id="e448d-142">如果我有自訂郵件流程規則 （封鎖 / 允許規則）？</span><span class="sxs-lookup"><span data-stu-id="e448d-142">What if I have a custom mail flow rule (Block/ Allow Rule)?</span></span>
   
-<span data-ttu-id="702d8-143">建立由系統管理員 （郵件流程規則）] 或 [封鎖] 和 [允許規則的規則的優先順序。</span><span class="sxs-lookup"><span data-stu-id="702d8-143">Rules created by admins (mail flow rules) or Block and Allow rules take precedence.</span></span> <span data-ttu-id="702d8-144">這類郵件會排除功能準則，讓郵件流程需要遵循的規則動作 （封鎖/允許規則）。</span><span class="sxs-lookup"><span data-stu-id="702d8-144">Such messages are excluded from the feature criteria so the mail flow will follow the rule action (Block/Allow Rule).</span></span>
+<span data-ttu-id="e448d-143">建立由系統管理員 （郵件流程規則）] 或 [封鎖] 和 [允許規則的規則的優先順序。</span><span class="sxs-lookup"><span data-stu-id="e448d-143">Rules created by admins (mail flow rules) or Block and Allow rules take precedence.</span></span> <span data-ttu-id="e448d-144">這類郵件會排除功能準則，讓郵件流程需要遵循的規則動作 （封鎖/允許規則）。</span><span class="sxs-lookup"><span data-stu-id="e448d-144">Such messages are excluded from the feature criteria so the mail flow will follow the rule action (Block/Allow Rule).</span></span>
 
-### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a><span data-ttu-id="702d8-145">如果將郵件移到另一個資料夾 （例如收件匣規則）？</span><span class="sxs-lookup"><span data-stu-id="702d8-145">What if a message is moved to another folder (e.g. Inbox rule)?</span></span>
-<span data-ttu-id="702d8-146">ZAP 仍能是在此例中運作，除非已被刪除，或處於 [垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="702d8-146">ZAP still works in this case, unless the message has been deleted or is in Junk.</span></span>
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a><span data-ttu-id="e448d-145">如果將郵件移到另一個資料夾 （例如收件匣規則）？</span><span class="sxs-lookup"><span data-stu-id="e448d-145">What if a message is moved to another folder (e.g. Inbox rule)?</span></span>
+<span data-ttu-id="e448d-146">ZAP 仍能是在此例中運作，除非已被刪除，或處於 [垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="e448d-146">ZAP still works in this case, unless the message has been deleted or is in Junk.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="702d8-147">相關主題</span><span class="sxs-lookup"><span data-stu-id="702d8-147">Related Topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e448d-147">相關主題</span><span class="sxs-lookup"><span data-stu-id="e448d-147">Related Topics</span></span>
 
-[<span data-ttu-id="702d8-148">Office 365 電子郵件的反垃圾郵件保護</span><span class="sxs-lookup"><span data-stu-id="702d8-148">Office 365 Email Anti-Spam Protection</span></span>](anti-spam-protection.md)
+[<span data-ttu-id="e448d-148">Office 365 電子郵件的反垃圾郵件保護</span><span class="sxs-lookup"><span data-stu-id="e448d-148">Office 365 Email Anti-Spam Protection</span></span>](anti-spam-protection.md)
   
-[<span data-ttu-id="702d8-149">利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常</span><span class="sxs-lookup"><span data-stu-id="702d8-149">Block email spam with the Office 365 spam filter to prevent false negative issues</span></span>](reduce-spam-email.md)
+[<span data-ttu-id="e448d-149">利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常</span><span class="sxs-lookup"><span data-stu-id="e448d-149">Block email spam with the Office 365 spam filter to prevent false negative issues</span></span>](reduce-spam-email.md)
