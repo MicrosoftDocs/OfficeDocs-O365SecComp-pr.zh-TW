@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解 Explorer （並即時偵測） 安全性&amp;合規性中心。
-ms.openlocfilehash: 62ba70cb62b0c92cf65d77dfaf3eb7306e93fa98
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34415713"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490529"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管 （和即時偵測的資訊）
 
-如果貴組織有[Office 365 進階威脅防護](office-365-atp.md)(Office 365 ATP)，而且您具有[必要權限](#required-licenses-and-permissions)，您必須**Explorer**或**即時偵測**(先前稱為即時報告 —[請參閱 what's new](#new-features-in-real-time-detections)!). 在安全性 & 合規性中心，移至**威脅管理**，然後再選擇 [**檔案總管**] 或 [**即時偵測的資訊**。 
+如果貴組織有[Office 365 進階威脅防護](office-365-atp.md)(Office 365 ATP)，而且您具有[必要權限](#required-licenses-and-permissions)，您必須**Explorer**或**即時偵測**(先前稱為*即時報告*— [，請參閱what's new](#new-features-in-real-time-detections)！)。 在安全性 & 合規性中心，移至**威脅管理**，然後再選擇 [**檔案總管**] 或 [**即時偵測的資訊**。 
 
 |ATP 計劃 2，您會看到：  |ATP 計劃 1，您會看到：  |
 |---------|---------|

@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定原生的連接器，以匯入並封存 Twitter 資料到 Office 365。 此資料會匯入至 Office 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Twitter 資料的控管。
-ms.openlocfilehash: 01c77436fc346a30a3d2cafeac731bf091296632
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4d3bce8418ef2fa62c40d221549e6e089dee9647
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150535"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490541"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>部署封存 Twitter 資料 Office 365 中的連接器
 
@@ -193,13 +193,13 @@ ms.locfileid: "34150535"
 
 4. [**設定的詳細資訊**，請輸入下列組態設定 
 
-   - **Twitter 應用程式識別碼**-您在步驟 5 中建立的 Twitter 應用程式的應用程式識別碼。
-   - **Twitter 應用程式密碼**-Twitter 應用程式，您在步驟 5 中建立的 API 祕密金鑰。
-   - **Twitter 用戶端權杖**-您在步驟 5 中建立的存取權杖。
-   - **Twitter 語彙基元的用戶端密碼**-您在步驟 5 中建立的存取權杖密碼。
+   - **Twitter Api 金鑰**-您在步驟 5 中建立的 Twitter 應用程式的應用程式識別碼。
+   - **Twitter Api 密碼金鑰**-Twitter 應用程式，您在步驟 5 中建立的 API 祕密金鑰。
+   - **Twitter 存取權杖**-您在步驟 5 中建立的存取權杖。
+   - **Twitter 存取 Token 密碼**-您在步驟 5 中建立的存取權杖密碼。
    - **AAD 應用程式識別碼**的 Azure Active Directory 應用程式，您在步驟 2 中建立的應用程式識別碼
    - **AAD 應用程式密碼**-您在步驟 4 中建立的 APISecretKey 密碼的值。
-   - **AAD 應用程式的 Uri** -AAD 應用程式在步驟 2; 中所取得的 Uri例如， https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213。
+   - **AAD 應用程式的 Uri** AAD 應用程式在步驟 2; 中所取得的 Uri例如， https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213。
    - **App 觀點檢測機碼**-保留此方塊空白。
 
 5. 按一下 [**儲存**] 以儲存連接器設定。

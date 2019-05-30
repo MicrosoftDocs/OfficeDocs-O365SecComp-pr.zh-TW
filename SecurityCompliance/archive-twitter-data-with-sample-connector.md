@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定原生連接器 Twitter 資料匯入至 Office 365。 這可讓您封存在 Office 365 中的協力廠商資料來源中的資料，所以您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理貴組織的協力廠商資料的控管。
-ms.openlocfilehash: b53d882a66ba30a0c4c90389253689a9fe1fb457
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ad64a982340013fbc5ef9acb612982ccc846ad3a
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155615"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490499"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>使用範例連接器，來封存 Twitter 資料在 Office 365 （預覽）
 
@@ -101,10 +101,10 @@ ms.locfileid: "34155615"
 
 期間完成此步驟中 （藉由遵循的逐步指示） 時，您會將下列資訊儲存到文字檔。 這些值會用於步驟 6 中設定 Twitter 連接器應用程式。
 
-- 在 twitter 應用程式識別碼
-- 在 twitter 應用程式密碼 （API 祕密金鑰）
-- 在 twitter 用戶端權杖
-- Twitter 語彙基元的用戶端密碼
+- 在 twitter API 金鑰
+- Twitter API 密碼金鑰
+- 在 twitter 存取權杖
+- 在 twitter 存取 Token 密碼
 
 ## <a name="step-6-configure-the-twitter-connector-app"></a>步驟 6： 設定 Twitter 連接器應用程式
 
@@ -114,10 +114,10 @@ ms.locfileid: "34155615"
 
 期間完成此步驟中 （藉由遵循的逐步指示） 時，您將提供下列資訊 （也就完成上述步驟之後，您已複製到文字檔案）：
 
-- 在 twitter 應用程式識別碼 （在步驟 5 中所取得）
-- 在 twitter 應用程式密碼 （在步驟 5 中所取得）
-- 在 twitter 用戶端語彙基元 （在步驟 5 中所取得）
-- 在 twitter 用戶端 token 密碼 （在步驟 5 中所取得）
+- 在 twitter API 金鑰 （在步驟 5 中所取得）
+- 在 twitter API 密碼金鑰 （在步驟 5 中所取得）
+- 在 twitter 存取權杖 （在步驟 5 中所取得）
+- 在 twitter 存取 Token 密碼 （在步驟 5 中所取得）
 - Azure Active Directory 應用程式識別碼 （在步驟 2 中所取得的 AAD 應用程式識別碼）
 - Azure Active Directory 應用程式密碼 （在步驟 2 中所取得的 AAD 應用程式密碼）
 - Azure Active Directory 應用程式的 Uri (AAD 應用程式的 Uri 取得在步驟 2; 例如，https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
