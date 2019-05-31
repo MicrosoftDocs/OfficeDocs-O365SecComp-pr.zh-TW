@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
-description: 檔案計劃管理員提供對於保留標籤和原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: 377589ab0a8fd2f4c5e73a21eac3988091fa3ed3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
+ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152895"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547968"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 
-檔案計劃管理員提供對於保留標籤和原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
+檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
 
 ![檔案計劃頁面](media/file-plan-page.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "34152895"
 您可以判斷誰開啟了檔案計畫管理員並開始了初次執行體驗，方法是檢閱活動 [建立保留原則]**** 和 [為保留原則建立了保留組態]**** 的稽核記錄。
 
 > [!NOTE]
-> 由於客戶的意見反應，我們已移除了會建立預設保留標籤和以上所提及的標籤原則的這項功能。 只有在 2019 年 4 月 11 日之前使用檔案計畫管理員時，才會看到此原則和標籤。
+> 由於客戶的意見反應，我們已移除了會建立預設保留標籤和以上所提及的保留標籤原則的這項功能。 只有在 2019 年 4 月 11 日之前開啟檔案計劃管理員的情況下，才會看到這些保留標籤和保留標籤原則。
 
 ## <a name="navigating-your-file-plan"></a>瀏覽您的檔案計劃
 
@@ -83,9 +83,9 @@ ms.locfileid: "34152895"
 
 ![檔案計劃中的標籤設定](media/file-plan-label-columns.png)
 
-### <a name="label-file-plan-descriptors-columns"></a>標籤檔案計劃描述元資料行
+### <a name="retention-label-file-plan-descriptors-columns"></a>保留標籤檔案計劃描述元資料行
 
-您現在可以在保留標籤組態中包含詳細資訊。將檔案計劃描述元插入標籤可以改善檔案計劃的管理性和組織。
+您現在可以在保留標籤組態中包含詳細資訊。將檔案計劃描述元插入保留標籤可以改善檔案計劃的管理性和組織。
 
 為了讓您開始使用，檔案計劃管理員會為以下項目提供現成的值：函式/部門、分類、授權類型和佈建/引文。您可以在建立或編輯保留標籤時新增檔案計劃描述元值。
 
@@ -97,7 +97,7 @@ ms.locfileid: "34152895"
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-labels-out-of-your-file-plan"></a>從檔案計劃匯出標籤
+## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>匯出所有現有的保留標籤以分析及/或執行離線檢閱
 
 您可以從檔案計劃管理員將所有保留標籤的詳細資料匯出至 .csv 檔案，以協助您加速與貴組織中資料控管專案關係人進行的定期合規性檢閱。
 
@@ -109,11 +109,11 @@ ms.locfileid: "34152895"
 
 ![顯示所有保留標籤的 CSV 檔案](media/file-plan-csv-file.png)
 
-## <a name="import-labels-into-your-file-plan"></a>將標籤匯入至您的檔案計劃
+## <a name="import-retention-labels-into-your-file-plan"></a>將保留標籤匯入至您的檔案計劃
 
-您可以從檔案計劃管理員大量匯入新的標籤，以及修改現有的保留標籤。
+您可以從檔案計劃管理員大量匯入新的保留標籤，以及修改現有的保留標籤。
 
-若要匯入新的保留標籤以及對現有保留標籤進行更新，請移至 [檔案計劃管理員]**** \> [檔案計劃動作]**** \> [匯入標籤]****。
+若要匯入新的保留標籤並更新現有的保留標籤，請移至 [檔案計劃管理員]**** \> [檔案計劃動作]**** \> [匯入標籤]****。
 
 ![匯入檔案計劃的選項](media/file-plan-import-labels-option.png)
 
@@ -123,7 +123,7 @@ ms.locfileid: "34152895"
 
 ![在 Excel 中開啟空白檔案計劃範本](media/file-plan-blank-template.png)
 
-填入範本 (項目有效值的參考資訊即將推出)。
+填入範本 (即將推出：單一保留標籤有效值組合的參考資訊)。
 
 ![已填入資訊的檔案計劃範本](media/file-plan-filled-out-template.png)
 
@@ -131,7 +131,9 @@ ms.locfileid: "34152895"
 
 ![檔案計劃匯入統計資料](media/file-plan-import-statistics.png)
 
-匯入完成後，返回檔案計劃管理員，將新標籤指派給新的或現有的原則。
+萬一有驗證錯誤，檔案計劃匯入將會繼續驗證匯入檔案中的每個項目，並在匯入檔案中顯示參考行/列數的所有錯誤、複製顯示的錯誤結果，讓您可以輕鬆地返回匯入檔案並更正錯誤。 
+
+匯入完成後，返回檔案計劃管理員，讓新的保留標籤與新的或現有的保留標籤原則產生關聯。
 
 ![發佈標籤的選項](media/file-plan-publish-labels-option.png)
 

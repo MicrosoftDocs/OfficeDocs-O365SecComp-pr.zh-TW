@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547978"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -45,43 +45,46 @@ ms.locfileid: "34154345"
     
   - 特定關鍵字符合您建立的查詢。
     
-    自動將保留標籤套用到內容很重要，因為：
+  自動將保留標籤套用到內容很重要，因為：
     
-  - 您不需要訓練您的使用者記下所有分類。
+     - 您不需要訓練您的使用者記下所有分類。
     
-  - 您不需要仰賴使用者正確地將所有內容分類。
+     - 您不需要仰賴使用者正確地將所有內容分類。
     
-  - 使用者不再需要了解資料控管原則，就可以專心工作。
+   - 使用者不再需要了解資料控管原則，就可以專心工作。
 
   > [!NOTE]
   > 自動套用標籤的功能需要每位使用者均擁有 Office 365 Enterprise E5 授權，這些使用者有權編輯網站或信箱中已自動標籤的內容。
       
-- 將**預設保留標籤套用**至 SharePoint 和 Office 365 群組網站的文件庫，以便讓該文件庫中的所有文件取得預設保留標籤。 
-    
 - **在 Office 365 中實作記錄管理**，包括電子郵件和文件。您可以使用保留標籤將內容分類成記錄。在這種情況下，無法變更或移除標籤，且不能編輯或刪除內容。 
+
+- **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，讓該位置中的所有文件都繼承預設保留標籤。  
     
-您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性 &amp; 合規性中心的 [標籤]**** 頁面 > [保留]**** 索引標籤上，建立及管理保留標籤。 
-  
+您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性和合規性中心的 [標籤]**** 頁面 > [保留]**** 索引標籤上，建立及管理保留標籤。  
 
-## <a name="how-retention-labels-work-with-label-policies"></a>運用標籤原則使用保留標籤
+## <a name="how-retention-labels-work-with-retention-label-policies"></a>保留標籤如何與保留標籤原則一起使用
 
-為組織中的人員提供保留標籤，讓他們可以透過兩個步驟的程序將內容分類：首先，您要建立標籤，然後將它們發佈到您選擇的位置。發佈保留標籤時，標籤原則也會隨之建立。
+為組織中的人員提供保留標籤，讓他們可以透過兩個步驟的程序將內容分類：首先，您要建立保留標籤，然後將它們發佈到您選擇的位置。發佈保留標籤時，保留標籤原則也會隨之建立。
   
 ![標籤的角色和工作圖](media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
-保留標籤是獨立且能重複使用的建置區塊，會納入標籤原則中，並發佈到不同的位置。保留標籤可在多個不同原則中重複使用。保留標籤原則的主要用途是將一組標籤分在同一組，並指定您想要顯示這些標籤的位置。
+保留標籤是獨立且能重複使用的建置區塊，會納入一或多個保留標籤原則中。保留標籤原則的主要用途是將一組保留標籤分在同一組，並指定您想要顯示這些標籤的位置。
   
-![標籤、標籤原則、位置的圖](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
+![標籤、標籤原則、位置的圖表](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. 當您發佈保留標籤時，它們會納入標籤原則中。單一保留標籤可以納入多個原則中。
+1. 當您發佈保留標籤時，它們會納入保留標籤原則中。 
+
+2. 單一保留標籤可納入多個保留標籤原則。
+
+3. 單一位置也可納入多個保留標籤原則。    
     
-2. 標籤原則會指定要發佈標籤的位置。
+3. 保留標籤原則會指定要發佈保留標籤的位置。
     
 ## <a name="only-one-retention-label-at-a-time"></a>一次只能有一個保留標籤
 
 請務必了解，電子郵件或文件等內容一次只能指派一個保留標籤：
   
-- 由使用者手動指派的標籤，使用者可以移除或變更指派的保留標籤。
+- 針對使用者手動指派的保留標籤，使用者可以移除或變更獲指派的保留標籤。
     
 - 如果內容有指派自動套用的標籤，使用者可以手動指派保留標籤來取代自動套用的標籤。
     
@@ -99,9 +102,9 @@ ms.locfileid: "34154345"
   
 1. 首先，標籤原則必須先將系統管理中心與原則中的位置同步。
     
-2. 然後，位置可能會需要一些時間將手動標籤提供給使用者，或自動套用標籤至內容。這需要多少時間取決於位置和標籤類型。
+2. 接著，位置可能會需要一些時間，將已發佈的保留標籤提供給使用者，或是將標籤自動套用到內容。 實際所需的時間取決於保留標籤的位置和類型。
     
-### <a name="manual-retention-labels"></a>手動保留標籤
+### <a name="published-retention-labels"></a>已發佈的保留標籤
 
 如果您將保留標籤發佈到 SharePoint 或 OneDrive，需要一天的時間讓這些保留標籤向使用者顯示。此外，如果您將保留標籤發佈到 Exchange，可能需要 7 天來向使用者顯示這些保留標籤，且信箱至少必須包含 10 MB 的資料。
   
@@ -113,7 +116,7 @@ ms.locfileid: "34154345"
   
 ![自動標籤生效的圖](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
-### <a name="how-to-check-on-the-status-of-exchange-labels"></a>如何查看 Exchange 標籤的狀態
+### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何檢查發佈至 Exchange 之保留標籤的狀態
 
 在 Exchange Online 中，是透過每 7 天執行一次的程序，將保留標籤提供給使用者。您可以使用 Powershell 查看此程序上次執行的時間，依此判斷下一次執行時間。
   
@@ -133,11 +136,11 @@ ms.locfileid: "34154345"
   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
   ```
 
-在結果中， `ELCLastSuccessTimeStamp` (UTC) 屬性會顯示系統上次處理信箱的時間。如果自原則建立之後尚未執行過，則不會顯示標籤。若要強制處理，請執行`Start-ManagedFolderAssistant -Identity <user>`。
+結果：`ELCLastSuccessTimeStamp` (UTC) 屬性會顯示系統上次處理您信箱的時間。 如果系統在您建立原則後都還未處理信箱，標籤就無法顯示。 若要強制處理信箱，請執行 `Start-ManagedFolderAssistant -Identity <user>`。
     
 如果標籤沒有出現在 Outlook 網頁版中，而您認為應該要出現，請務必清除瀏覽器中的快取 (CTRL + F5)。
     
-## <a name="label-policies-and-locations"></a>標籤原則與位置
+## <a name="retention-label-policies-and-locations"></a>保留標籤原則與位置
 
 可以將不同類型的保留標籤發佈到不同的位置，視保留標籤的功能而定。
   
@@ -205,13 +208,13 @@ ms.locfileid: "34154345"
   
 ![指派原則按鈕](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-套用保留標籤後，您可以在項目頂端檢視該保留標籤以及它採取的動作。如果電子郵件已分類，且有相關聯的保留期間，您可以一目了然電子郵件的到期日。
+套用保留標籤後，您可以在項目頂端檢視該保留標籤以及所採取的動作。 如果電子郵件已套用具有相關聯保留期間的保留標籤，您可以快速查看電子郵件的到期日。
   
 您也可以將保留標籤套用到資料夾。這在 Outlook 2010 及更新版本中和在 Outlook 網頁版中的作用一樣。詳細資訊請參閱前一節。
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive 和 SharePoint
 
-若要為 OneDrive 或 SharePoint 中的文件 (包括 OneNote 檔案) 加上標籤，請選取該項目 \> 在右上角選擇 [開啟詳細資料窗格]****![資訊窗格圖示](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> [套用標籤]**** \> 選擇保留標籤。 
+若要為 OneDrive 或 SharePoint 中的文件 (包括 OneNote 檔案) 加上標籤，請選取右上角的項目 \>、選擇 [開啟詳細資料窗格]****![[資訊窗格] 圖示](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \>[套用保留標籤]**** \>，然後選擇保留標籤。 
   
 請注意，您也可以將保留標籤套用至資料夾或數個文件，可以為文件庫設定預設保留標籤；詳細資訊請參閱下一小節。
   
@@ -453,8 +456,7 @@ Office 365 先前提供數種用於將內容分類以及管理記錄的功能，
   
 如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](grant-access-to-the-security-and-compliance-center.md)。
   
-需要這些權限才能建立及套用保留標籤和標籤原則。原則強制執行不需要內容的存取權。
-  
+需要這些權限才能建立及套用保留標籤和標籤原則。原則強制執行不需要內容的存取權。  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>尋找標籤的 PowerShell Cmdlet
 
 若要使用標籤 Cmdlet，您必須：
@@ -490,7 +492,3 @@ Office 365 先前提供數種用於將內容分類以及管理記錄的功能，
   - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
 
   - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)
-
-## <a name="more-information"></a>詳細資訊
-
-[保留原則概觀](retention-policies.md)
