@@ -384,6 +384,7 @@
 ## [版本資訊](datainvestigations/data-investigations-release-notes.md)
 ## [管理資料外洩事件](datainvestigations/manage-data-spillage-incidents.md)
 ## [建立新的調查](datainvestigations/create-new-investigation.md)
+## [指派資料調查的權限](datainvestigations/permissions.md)
  
 ## [搜尋調查中的資料](datainvestigations/search-for-data.md)
 ### [建立搜尋查詢](datainvestigations/build-search-queries.md)
