@@ -77,19 +77,20 @@
 #### [設定舊版 Office 365 郵件加密的 Azure Rights Management](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 # 記錄管理
-## [檔案計劃管理員](file-plan-manager.md)
-## [保留標籤](labels.md)
-### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [記錄管理](records-management.md)
+## 檔案計畫
+### [檔案計劃管理員](file-plan-manager.md)
+### [保留標籤](labels.md)
 ### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [事件型保留](event-driven-retention.md)
-### [自動化事件型保留](automate-event-driven-retention.md)
-## [處置檢閱](disposition-reviews.md)
-## 監視記錄管理
-### [檢視資料控管報告](view-the-data-governance-reports.md)
-### [檢視文件的標籤活動](view-label-activity-for-documents.md)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
-## 關於記錄管理的詳細資訊
-### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
+### [檢視文件的標籤活動](view-label-activity-for-documents.md)
+### [檢視資料控管報告](view-the-data-governance-reports.md)
+## 事件
+### [事件型保留](event-driven-retention.md)
+### [自動化事件型保留](automate-event-driven-retention.md)
+## [處置](disposition-reviews.md)
+## 深入了解記錄管理
+### [觀看有關記錄管理的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # 管理資料控管
 ## [匯入資料](importing-pst-files-to-office-365.md)
@@ -223,21 +224,6 @@
 ## [偵測並修復 Office 365 中的非法同意授權](detect-and-remediate-illicit-consent-grants.md)
 ## [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
-# 記錄管理
-## [記錄管理](records-management.md)
-## 檔案計畫
-### [檔案計劃管理員](file-plan-manager.md)
-### [保留標籤](labels.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [利用標籤分析檢視標籤使用量](label-analytics.md)
-### [檢視文件的標籤活動](view-label-activity-for-documents.md)
-### [檢視資料控管報告](view-the-data-governance-reports.md)
-## 事件
-### [事件型保留](event-driven-retention.md)
-### [自動化事件型保留](automate-event-driven-retention.md)
-## [處置](disposition-reviews.md)
-## 深入了解記錄管理
-### [觀看有關記錄管理的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # 管理資料控管
 ## [匯入資料](importing-pst-files-to-office-365.md)
