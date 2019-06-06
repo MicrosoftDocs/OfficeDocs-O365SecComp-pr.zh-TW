@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的保留標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154625"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728620"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -103,7 +103,7 @@ ms.locfileid: "34154625"
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>步驟 3：發佈或自動套用標籤
 
-就像任何標籤一樣，您需要發佈或自動套用事件型標籤，以便手動或自動套用至內容。您可以在 [標籤]**** 或 [標籤原則]**** 頁面上進行這項操作。請注意，將內容分類為記錄的標籤只能發佈和手動套用到內容。 
+就像任何標籤一樣，您需要發佈或自動套用事件型標籤，以便手動或自動套用至內容。您可以在 [標籤]**** 或 [標籤原則]**** 頁面上進行這項操作。 
   
 ![發佈或自動套用標籤的選項](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
