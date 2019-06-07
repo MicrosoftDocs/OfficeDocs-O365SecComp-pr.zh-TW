@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 用於解決有內容位置錯誤的內容搜尋中的 [重試] 按鈕。
-ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157065"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748566"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>再試一次 「 內容搜尋 」 來解決錯誤的內容位置
 
@@ -34,7 +34,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-這些錯誤 （錯誤代碼的 CS008 009 和 CS012-002） 表示內容搜尋來搜尋特定的內容位置; 已經失敗在這個範例中，沒有搜尋兩個信箱。 內容搜尋的彈出式視窗狀態的詳細資訊] 頁面上會顯示這些錯誤。
+這些錯誤 （錯誤代碼的 CS001-002、 CS003-002、 CS008 009、 CS012-002 和其他錯誤的表單 CS0XX 0XX） 表示內容搜尋來搜尋特定的內容位置; 已經失敗在這個範例中，沒有搜尋兩個信箱。 內容搜尋的彈出式視窗狀態的詳細資訊] 頁面上會顯示這些錯誤。
 
 ## <a name="cause-of-content-location-errors"></a>內容位置錯誤的原因
 
