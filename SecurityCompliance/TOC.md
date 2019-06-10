@@ -10,7 +10,6 @@
 ## [前往安全性與合規性中心](go-to-the-securitycompliance-center.md)
 ### [安全規範中心的權限](permissions-in-the-security-and-compliance-center.md)
 ### [讓使用者能夠存取安全性與合規性中心](grant-access-to-the-security-and-compliance-center.md)
-## [安全性儀表板概觀](security-dashboard.md)
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
 ## [資訊安全長 (CISO) 研討會訓練](ciso-workshop.md)
@@ -102,7 +101,7 @@
 ### [匯入 PST 檔案的常見問題集](faqimporting-pst-files-to-office-365.md)
 ### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
 #### [在 Office 365 (預覽版) 中使用範例連接器封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
-#### [使用範例連接器封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
+#### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
 ### [啟用封存信箱](enable-archive-mailboxes.md)
@@ -180,12 +179,19 @@
 ### [使用 DKIM 來驗證外寄電子郵件](use-dkim-to-validate-outbound-email.md)
 ### [支援 DKIM 簽署郵件的驗證](support-for-validation-of-dkim-signed-messages.md)
 ### [使用 DMARC 驗證電子郵件](use-dmarc-to-validate-email.md)
-## [安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md) 
+## [安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
+### [安全性儀表板概觀](security-dashboard.md) 
+#### [逐步解說 - 從詳細報告到深入解析](from-a-detailed-report-to-an-insight.md)
+#### [逐步解說 - 從深入解析到詳細報告](from-an-insight-to-a-detailed-report.md)
+#### [逐步解說 - 從儀表板到深入解析](from-a-dashboard-to-an-insight.md)
+#### [建立報表排程](create-a-schedule-for-a-report.md)
+#### [管理多個報表排程](manage-schedules-for-multiple-reports.md)
+#### [設定及下載自訂報告](set-up-and-download-a-custom-report.md)
+#### [下載現有的報表](download-existing-reports.md)
+### [啟用或停用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 ### [檢視惡意檔案的相關資訊](malicious-files-detected-in-spo-odb-or-teams.md)
 ### [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)
-### [逐步解說 - 從詳細報告到深入解析](from-a-detailed-report-to-an-insight.md)
-### [逐步解說 - 從深入解析到詳細報告](from-an-insight-to-a-detailed-report.md)
-### [逐步解說 - 從儀表板到深入解析](from-a-dashboard-to-an-insight.md)
+
 # [進階威脅防護](office-365-atp.md)
 ## 系統管理員的 ATP 設定工作
 ### 全域系統管理員設定工作
@@ -212,10 +218,10 @@
 ### [SIEM 與 Office 365 ATP 的整合](siem-integration-with-office-365-ti.md)
 ## ATP 的運作方式
 ### [ATP 安全連結的運作方式](how-atp-safe-links-works.md)
-### [動態傳遞和預覽詳係資料](dynamic-delivery-and-previewing.md)
-## [ATP 安全附件的運作方式](how-atp-safe-attachments-works.md)
-### [關於威脅調查及回應](office-365-ti.md)
+### [ATP 安全附件的運作方式](how-atp-safe-attachments-works.md)
+#### [動態傳遞和預覽詳細資料](dynamic-delivery-and-previewing.md)
 ### [威脅調查及回應的運作方式](get-started-with-ti.md)
+#### [關於威脅調查及回應](office-365-ti.md)
 ### [自動調查及回應的運作方式](automated-investigation-response-office.md)
 ### [在 Outlook.com 和 Outlook 網頁版中找出可疑的郵件](unverified-sender-feature.md)
 
@@ -484,11 +490,6 @@
 ### [在 Microsoft 365 安全性中監視裝置](monitor-devices.md)
 ### [在 Microsoft 365 安全性中監視應用程式](monitor-apps.md)
 ## [警示原則](alert-policies.md)
-### [建立報表排程](create-a-schedule-for-a-report.md)
-### [管理多個報表排程](manage-schedules-for-multiple-reports.md)
-### [設定及下載自訂報告](set-up-and-download-a-custom-report.md)
-### [下載現有的報表](download-existing-reports.md)
-## [啟用或停用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
 
 # 郵件流程
 ## [啟用報告訊息增益集](enable-the-report-message-add-in.md)
