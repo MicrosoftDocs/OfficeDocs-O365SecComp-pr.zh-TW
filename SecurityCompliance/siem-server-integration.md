@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 摘要： 閱讀本篇文章以取得 Microsoft 365 的 SIEM 伺服器整合的概觀。
-ms.openlocfilehash: 05b6e980ae8c6a6b5d32fb3428748468dd861902
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652576"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852687"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Microsoft 365 服務和應用程式的 SIEM 伺服器整合
 
@@ -36,7 +36,7 @@ SIEM 伺服器可以接收來自各種不同的 Microsoft 365 服務和應用程
 | [Office 365 進階威脅防護](office-365-atp.md) <br/>   或   <br/>[Office 365 威脅情報](office-365-ti.md) | 稽核記錄 | [Office 365 進階威脅防護的 SIEM 整合](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 記錄整合 | [Microsoft Cloud App Security 的 SIEM 整合](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 記錄整合 | [將 SIEM 伺服器整合搭配雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/) | 記錄整合 | [提取提醒您 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
+| [Microsoft 威脅防護](https://docs.microsoft.com/windows/security/threat-protection/) | 記錄整合 | [提取提醒您 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)（威脅保護和威脅偵測） | 警示 | [Azure 安全性資料匯出至 SIEM-管線組態-預覽](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Azure Active Directory 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | 稽核記錄 | [整合 Azure Active Directory 稽核記錄](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
 | [Azure 的進階的威脅分析](https://docs.microsoft.com/azure/security/azure-threat-detection) | 記錄整合 | [ATA SIEM 記錄檔參考](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |

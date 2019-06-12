@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以針對預設的全公司內容篩選原則或是網域所套用的自訂內容篩選原則，設定使用者垃圾郵件通知。
-ms.openlocfilehash: 07bca81f06a347bbce5e997e570553f85deb5c1d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 66d5cd5fe9456c57c62a3c15710ce84d2e2d6631
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151455"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857643"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中設定使用者垃圾郵件通知
   
@@ -54,7 +54,7 @@ ms.locfileid: "34151455"
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>使用 EAC 來設定使用者垃圾郵件通知
 
-1. 在 Exchange 系統管理中心 (EAC)，瀏覽至 **[保護]** \> **[內容篩選]**。
+1. 在 Exchange 系統管理中心 (EAC)，瀏覽至 [**保護** > **垃圾郵件篩選器**。
     
 2. 選取要啟用使用者垃圾郵件通知 (預設為停用) 的內容篩選原則。
     

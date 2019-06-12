@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的自動化調查及回應功能。
-ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
-ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
+ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250316"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852617"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>自動化的調查及回應 （空調） 與 Office 365
 
@@ -96,7 +96,7 @@ ms.locfileid: "34250316"
 接下來，數個威脅調查並狩獵步驟執行：
 
 - 要搜尋其他電子郵件叢集中的類似電子郵件訊息。
-- 其他平台，例如[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)可共用接收的訊號。
+- 其他平台，例如[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)可共用接收的訊號。
 - 決定在任何使用者是否按下可疑的電子郵件訊息中任何前往惡意連結。
 - 檢查完成跨 Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) 和 Office 365 進階威脅防護 ([ATP](office-365-atp.md))，以查看是否有任何其他類似的訊息報告的使用者。
 - 若要查看是否使用者已遭洩露完成查核。 這項檢查跨[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)，相互關聯任何相關的使用者活動異常運用訊號。 
@@ -242,11 +242,12 @@ ms.locfileid: "34250316"
 
 ![空調調查機器頁面](media/air-investigationmachinepage.png)
 
-調查的一部分，空調相互關聯至裝置的電子郵件威脅。 例如，調查傳遞惡意檔案雜湊跨到[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)調查。 這可讓您的使用者，以協助確保已解決威脅，在雲端和跨端點相關機器的自動化調查。 
+調查的一部分，空調相互關聯至裝置的電子郵件威脅。 例如，調查遞給惡意檔案雜湊跨[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+)調查。 這可讓您的使用者，以協助確保已解決威脅，在雲端和跨端點相關機器的自動化調查。 
 
 您可以：
 - 取得目前機器和威脅找到的視覺化概觀。
-- 選取 [若要開啟 [檢視電腦，到 Windows Defender ATP 安全中心相關的[Windows Defender ATP 調查](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)。
+- 選取 [若要開啟 [檢視電腦，到 Microsoft defender 資訊安全中心中相關的[Microsoft Defender ATP 調查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。
 
 ### <a name="entity-investigation"></a>實體調查
 

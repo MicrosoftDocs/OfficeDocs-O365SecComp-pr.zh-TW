@@ -1,7 +1,7 @@
 ---
 title: 了解的最新的攻擊行銷活動和威脅分析與技巧
 description: 說明威脅分析互動式報告
-keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 資訊安全中心、 威脅分析 Windows Defender ATP、 網路、 安全性狀態，新興的威脅
+keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 資訊安全中心、 威脅分析 Microsoft Defender ATP、 網路、 安全性狀態，新興的威脅
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e3644f5ace35a574613447ae30b6fa3c665662fe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 24d4e5c227ddcb3366e5573b8b04b04a52437873
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251951"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852547"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>了解的最新的攻擊行銷活動和威脅分析與技巧
 
@@ -25,4 +25,4 @@ ms.locfileid: "32251951"
 
 **威脅分析**是一組的互動式報表發佈只要新興威脅-新的技術、 攻擊行銷活動、 和惡意程式碼爆發 — 識別。 報告協助您的環境威脅評估影響，並提供建議的動作，以包含、 增加組織恢復能力，以及防止特定的威脅。
 
-[解更多關於 Windows Defender ATP 中的威脅分析](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/threat-analytics)。  
+[解更多有關 Microsoft Defender ATP 中的威脅分析](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。  

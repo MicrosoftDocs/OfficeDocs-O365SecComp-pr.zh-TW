@@ -3,7 +3,6 @@ title: 安全性儀表板概觀
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全性儀表板來檢閱 Office 365 威脅保護狀態，並檢視，然後對安全性提醒。
-ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 78e6a67ace757cca9d25086c601ab4b4437c7bf8
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077219"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857663"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -30,7 +29,7 @@ ms.locfileid: "34077219"
   
 請觀看影片，概略了解，然後閱讀本篇文章以了解更多。
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
   
 根據貴組織的 Office 365 訂用帳戶包含內容，安全性儀表板包含數個 widget，例如威脅管理摘要、 威脅保護狀態、 全域每週的威脅偵測、 惡意程式碼，以及更多]，如所述下列各節。
   
@@ -45,10 +44,10 @@ ms.locfileid: "34077219"
 
 ![安全性儀表板-威脅管理摘要] 小工具](media/SecDash-ThreatMgmtSummary.png)
 
-您會看到的威脅管理摘要中的資訊取決於您的訂閱所包含的內容。 下表說明會包含 Office 365 企業版 E3 和 Office 365 企業版 E5 哪些資訊。
+您會看到的威脅管理摘要中的資訊取決於您的訂閱所包含的內容。 下表說明會包含 Office 365 E3 和 Office 365 E5 哪些資訊。
 
 
-|Office 365 Enterprise E3  |Office 365 企業版 E5  |
+|Office 365 E3  |Office 365 E5  |
 |---------|---------|
 |已封鎖的惡意程式碼訊息<br/>封鎖的網路釣魚郵件<br>由使用者報告的郵件<br><br><br><br> |已封鎖的惡意程式碼訊息<br>封鎖的網路釣魚郵件<br>由使用者報告的郵件<br>零時差惡意程式碼遭到封鎖<br>偵測到的進階網路釣魚郵件<br>惡意 Url 封鎖 |
 

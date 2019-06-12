@@ -3,34 +3,6 @@
 
 
 
-## <a name="week-of-april-22-2019"></a>2019 年 4 月 22 日當週
-
-
-| 發佈時間 |主題標題 | 變更 |
-|------|------------|--------|
-| 4/22/2019 | [現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心個](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 修改時間 |
-| 4/22/2019 | [保護使用者和裝置存取權](/Office365/SecurityCompliance/protect-access-to-data-and-services) | 修改時間 |
-| 4/22/2019 | [防範 Office 365 中的威脅](/Office365/SecurityCompliance/protect-against-threats) | 修改時間 |
-| 2019/4/23 | [Overview of importing your organization PST files to Office 365](/Office365/SecurityCompliance/importing-pst-files-to-office-365) | 修改時間 |
-| 2019/4/23 | [Office 365 中的監督原則](/Office365/SecurityCompliance/supervision-policies) | 修改時間 |
-| 2019/4/23 | [偵測並修復 Office 365 中的非法同意授權](/Office365/SecurityCompliance/detect-and-remediate-illicit-consent-grants) | 修改時間 |
-| 2019/4/23 | [在安全性 & 規範中心啟用封存信箱](/Office365/SecurityCompliance/enable-archive-mailboxes) | 修改時間 |
-| 2019/4/23 | [Office 365 安全性 & 合規性中心的權限](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 修改時間 |
-| 4/24/2019 | [Office 365 稽核記錄中的詳細內容](/Office365/SecurityCompliance/detailed-properties-in-the-office-365-audit-log) | 修改時間 |
-| 4/24/2019 | [防範 Office 365 中的威脅](/Office365/SecurityCompliance/protect-against-threats) | 修改時間 |
-| 4/24/2019 | Threat management in the Office 365 Security &amp; Compliance Center | 移除 |
-| 4/24/2019 | [在 Office 365 中搜尋內容](/Office365/SecurityCompliance/search-for-content) | 修改時間 |
-| 4/25/2019 | [在 Microsoft 365 安全性中監視裝置](/Office365/SecurityCompliance/monitor-devices) | 修改時間 |
-| 4/25/2019 | [在 Office 365 中封存第三方資料](/Office365/SecurityCompliance/archiving-third-party-data) | 修改時間 |
-| 4/25/2019 | [使用內容搜尋來搜尋協力廠商資料匯入至 Office 365](/Office365/SecurityCompliance/use-content-search-to-search-third-party-data-that-was-imported) | 修改時間 |
-| 4/25/2019 | [為 Office 365 應用程式部署條件式存取應用程式控制](/Office365/SecurityCompliance/ocas-deploy-conditional-access-app-control) | 修改時間 |
-| 4/25/2019 | [Office 365 雲端 App 安全性中的工作階段原則](/Office365/SecurityCompliance/ocas-session-policies) | 修改時間 |
-| 4/25/2019 | [Exchange Online Protection 概觀](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 修改時間 |
-| 4/26/2019 | [Office 365 隔離和 Office 365 中的存取控制](/Office365/SecurityCompliance/office-365-isolation-in-office-365) | 修改時間 |
-| 4/26/2019 | [資料外洩防護原則概觀](/Office365/SecurityCompliance/data-loss-prevention-policies) | 修改時間 |
-| 4/26/2019 | [DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作](/Office365/SecurityCompliance/how-dlp-works-between-admin-centers) | 修改時間 |
-
-
 ## <a name="week-of-april-29-2019"></a>2019 年 4 月 29 日當週
 
 
@@ -252,7 +224,7 @@
 | 5/15/2019 | [預設的 DLP 原則快速入門](/Office365/SecurityCompliance/get-started-with-the-default-dlp-policy) | 修改時間 |
 | 5/15/2019 | [開始使用 Office 365 威脅調查及回應](/Office365/SecurityCompliance/get-started-with-ti) | 修改時間 |
 | 5/15/2019 | [DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作](/Office365/SecurityCompliance/how-dlp-works-between-admin-centers) | 修改時間 |
-| 5/15/2019 | [整合 Office 365 進階的威脅防護與 Windows Defender 進階威脅防護](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 修改時間 |
+| 5/15/2019 | [Microsoft Defender ATP 與整合 Office 365 ATP](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 修改時間 |
 | 5/15/2019 | [尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電子郵件](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改時間 |
 | 5/15/2019 | [保護您的 Office 365 使用者安全與 Office 365 威脅調查及回應功能](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 修改時間 |
 | 5/15/2019 | [檢視 SharePoint、 OneDrive 或 Microsoft Teams 中偵測到的惡意檔案的相關資訊](/Office365/SecurityCompliance/malicious-files-detected-in-spo-odb-or-teams) | 修改時間 |
@@ -669,7 +641,7 @@
 | 5/22/2019 | [Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 修改時間 |
 | 5/22/2019 | [逐步解說 - 從深入解析到詳細報告](/Office365/SecurityCompliance/from-an-insight-to-a-detailed-report) | 修改時間 |
 | 5/22/2019 | [開始使用 Office 365 威脅調查及回應](/Office365/SecurityCompliance/get-started-with-ti) | 修改時間 |
-| 5/22/2019 | [整合 Office 365 進階的威脅防護與 Windows Defender 進階威脅防護](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 修改時間 |
+| 5/22/2019 | [Microsoft Defender ATP 與整合 Office 365 ATP](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 修改時間 |
 | 5/22/2019 | [尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電子郵件](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改時間 |
 | 5/22/2019 | [保護您的 Office 365 使用者安全與 Office 365 威脅調查及回應功能](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 修改時間 |
 | 5/22/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
@@ -683,3 +655,45 @@
 | 5/22/2019 | [檢視安全性中的電子郵件安全性報告&amp;合規性中心](/Office365/SecurityCompliance/view-email-security-reports) | 修改時間 |
 | 5/22/2019 | [檢視 Office 365 進階威脅防護報告](/Office365/SecurityCompliance/view-reports-for-atp) | 修改時間 |
 | 5/22/2019 | [零時差自動清除 - 防範垃圾郵件和惡意程式碼](/Office365/SecurityCompliance/zero-hour-auto-purge) | 修改時間 |
+
+
+## <a name="week-of-may-27-2019"></a>2019 月 27 日當週
+
+
+| 發佈時間 |主題標題 | 變更 |
+|------|------------|--------|
+| 5/28/2019 | [使用範例連接器，來封存 Twitter 資料在 Office 365 （預覽）](/Office365/SecurityCompliance/archive-twitter-data-with-sample-connector) | 修改時間 |
+| 5/28/2019 | [設定您的垃圾郵件篩選原則](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | 修改時間 |
+| 5/28/2019 | [部署封存 Twitter 資料 Office 365 中的連接器](/Office365/SecurityCompliance/deploy-twitter-connector) | 修改時間 |
+| 5/28/2019 | [在安全性 & 規範中心搜尋稽核記錄](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改時間 |
+| 5/28/2019 | [威脅總管 （和即時偵測的資訊）](/Office365/SecurityCompliance/threat-explorer) | 修改時間 |
+| 5/29/2019 | [在安全性與合規性中心中的警示原則](/Office365/SecurityCompliance/alert-policies) | 修改時間 |
+| 5/29/2019 | [在安全性 & 規範中心搜尋稽核記錄](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改時間 |
+| 5/29/2019 | [處理資料時發生補救錯誤](/Office365/SecurityCompliance/compliance20/error-remediation) | 修改時間 |
+| 5/29/2019 | [錯誤修復時處理資料來進行調查](/Office365/SecurityCompliance/datainvestigations/error-remediation) | 修改時間 |
+| 5/29/2019 | [Microsoft 365 中的資料調查 （預覽） 的概觀](/Office365/SecurityCompliance/datainvestigations/overview-data-investigations) | 修改時間 |
+| 5/29/2019 | [檔案計劃管理員的概觀](/Office365/SecurityCompliance/file-plan-manager) | 修改時間 |
+| 5/29/2019 | [新的 Microsoft 365 合規性中心概觀](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 修改時間 |
+| 5/29/2019 | [現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心個](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 修改時間 |
+| 5/29/2019 | [Microsoft 365 中的記錄管理](/Office365/SecurityCompliance/records-management) | 修改時間 |
+| 5/29/2019 | [保留標籤概觀](/Office365/SecurityCompliance/labels) | 修改時間 |
+| 5/30/2019 | [Office 365 ATP 安全附件](/Office365/SecurityCompliance/atp-safe-attachments) | 修改時間 |
+| 5/30/2019 | [Office 365 ATP 安全連結](/Office365/SecurityCompliance/atp-safe-links) | 修改時間 |
+| 5/30/2019 | [使用 PowerShell 大量建立及發佈保留標籤](/Office365/SecurityCompliance/bulk-create-publish-labels-using-powershell) | 修改時間 |
+| 5/30/2019 | [防範 Office 365 中的威脅](/Office365/SecurityCompliance/protect-against-threats) | 修改時間 |
+| 5/31/2019 | [指派權限的資料調查 （預覽）](/Office365/SecurityCompliance/datainvestigations/permissions) | 修改時間 |
+| 5/31/2019 | [在安全性 & 規範中心搜尋稽核記錄](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改時間 |
+| 5/31/2019 | [Office 365 ATP 安全附件](/Office365/SecurityCompliance/atp-safe-attachments) | 修改時間 |
+| 5/31/2019 | [Office 365 ATP 安全連結警告頁面](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 修改時間 |
+| 5/31/2019 | [Office 365 ATP 安全連結](/Office365/SecurityCompliance/atp-safe-links) | 修改時間 |
+| 5/31/2019 | [Microsoft Defender ATP 與整合 Office 365 ATP](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 修改時間 |
+| 5/31/2019 | [現在通常可使用新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心個](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 修改時間 |
+| 5/31/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
+| 5/31/2019 | [Office 365 威脅調查及回應](/Office365/SecurityCompliance/office-365-ti) | 修改時間 |
+| 5/31/2019 | [安全性儀表板概觀](/Office365/SecurityCompliance/security-dashboard) | 修改時間 |
+| 5/31/2019 | [設定使用 Office 365 ATP Safe Links 自訂封鎖 Url 清單](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | 修改時間 |
+| 5/31/2019 | [設定自訂的修正-無法執行-Url 清單，使用 Office 365 ATP 安全連結](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | 修改時間 |
+| 5/31/2019 | [設定 Office 365 ATP 安全附件原則](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 修改時間 |
+| 5/31/2019 | [設定 Office 365 ATP 安全連結原則](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 修改時間 |
+| 5/31/2019 | [Microsoft 365 的 SIEM 伺服器整合](/Office365/SecurityCompliance/siem-server-integration) | 修改時間 |
+| 5/31/2019 | [開啟 Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | 修改時間 |

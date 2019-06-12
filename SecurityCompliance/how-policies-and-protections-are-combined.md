@@ -1,7 +1,7 @@
 ---
 title: 原則與防護組合的方式時郵件紅色標幟
 description: 原則的套用，和電子郵件由 EOP，及/或 ATP 標記惡意程式碼、 垃圾郵件、 高信賴度垃圾郵件、 網路釣魚及大量時採取的動作。
-keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 安全中心，ATP、 Windows Defender ATP、 Office 365 ATP、 Azure ATP
+keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 安全中心，ATP、 Microsoft Defender ATP、 Office 365 ATP、 Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1c2e575a57e1c1118154a912199d9e74cb4ceb4a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e467910e577df46788763dd15f821c09a741e037
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152705"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852497"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>哪些原則適用於何時多個保護方法與在您的電子郵件上執行的偵測掃描
 
