@@ -100,7 +100,7 @@
 ### [使用網路上傳來匯入 RMS 加密的 PST 檔案](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [匯入 PST 檔案的常見問題集](faqimporting-pst-files-to-office-365.md)
 ### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
-#### [在 Office 365 (預覽版) 中使用範例連接器封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
+#### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
 #### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
@@ -153,6 +153,7 @@
 ### [設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)
 ### [傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者](removing-user-from-restricted-users-portal-after-spam.md)
 ### [垃圾郵件信賴等級](spam-confidence-levels.md)
+### [修正 Exchange Online 中的錯誤代碼 5.7.7xx](fix-error-code-5-7-7xx-in-exchange-online.md)
 #### [使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 #### [將惡意程式碼與非惡意程式碼提交給 Microsoft 進行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
@@ -204,7 +205,7 @@
 #### [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)
 ## 管理您的安全性 - ATP 後安裝
 ## [使用威脅分析了解最新的攻擊活動](latest-attack-campaigns.md)
-## [在 Microsoft 365 ATP 中搜尋](hunting.md)
+## [在 Microsoft 365 中搜尋](hunting.md)
 ## [檢視並閱讀 ATP 報表](view-reports-for-atp.md)
 ## [ATP 安全連結警告頁面的意義](atp-safe-links-warning-pages.md)
 ## [使用威脅追蹤工具](threat-trackers.md)
@@ -214,7 +215,7 @@
 ## [威脅總管 (及即時偵測)](threat-explorer.md)
 ### [威脅總管檢視](threat-explorer-views.md)
 ## 為了提高安全性的整合
-### [整合 Office 365 ATP 與 Windows Defender 進階威脅防護](integrate-office-365-ti-with-wdatp.md)
+### [整合 Office 365 ATP 和 Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [SIEM 與 Office 365 ATP 的整合](siem-integration-with-office-365-ti.md)
 ## ATP 的運作方式
 ### [ATP 安全連結的運作方式](how-atp-safe-links-works.md)
@@ -484,11 +485,12 @@
 ## [在稽核記錄中搜尋電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # 監視安全性與合規性
-## [Microsoft 365 安全性中心監視和報告](monitoring-and-reporting.md)
-### [在 Microsoft 365 安全性中監視和報告身分識別](monitor-and-report-identities.md)
-### [在 Microsoft 365 安全性中監視資料](monitor-data.md)
-### [在 Microsoft 365 安全性中監視裝置](monitor-devices.md)
-### [在 Microsoft 365 安全性中監視應用程式](monitor-apps.md)
+## Microsoft 365 安全性中心
+### [監視及檢視報告](monitoring-and-reporting.md)
+### [身分識別監視與報告](monitor-and-report-identities.md)
+### [資料監視與報告](monitor-data.md)
+### [裝置監視與報告](monitor-devices.md)
+### [應用程式監視與報告](monitor-apps.md)
 ## [警示原則](alert-policies.md)
 
 # 郵件流程
