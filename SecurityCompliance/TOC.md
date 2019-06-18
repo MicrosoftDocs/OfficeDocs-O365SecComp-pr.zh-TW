@@ -102,6 +102,7 @@
 ### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
 #### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
 #### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
+#### [設定連接器來封存 LinkedIn 資料](archive-linkedin-data.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
 ### [啟用封存信箱](enable-archive-mailboxes.md)
@@ -243,6 +244,7 @@
 ### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
 #### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
 #### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
+#### [設定連接器來封存 LinkedIn 資料](archive-linkedin-data.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
 ### [啟用封存信箱](enable-archive-mailboxes.md)
