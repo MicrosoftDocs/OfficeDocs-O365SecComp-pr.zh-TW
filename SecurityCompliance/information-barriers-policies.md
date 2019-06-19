@@ -3,20 +3,20 @@ title: 定義資訊屏障原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/18/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
-ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935945"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059531"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定義資訊障礙的原則 (預覽)
 
@@ -48,7 +48,7 @@ ms.locfileid: "34935945"
 |階段    |涉及的專案  |
 |---------|---------|
 |[確定符合必要條件](#prerequisites)     |-確認您具備必要的[授權和許可權](information-barriers.md#required-licenses-and-permissions)<br/>-請確定您組織的目錄包含的資料會反映組織的結構<br/>-啟用 Microsoft 小組的範圍目錄搜尋<br/>-請確定已開啟審核記錄<br/>-使用 PowerShell (提供範例)<br/>-提供 Microsoft 小組的系統管理員同意 (包括步驟)          |
-|[第1部分: 分割組織中的所有使用者](#part-1-segment-users)     |-決定所需的原則<br/>-建立要定義的區段清單<br/>-識別要使用的屬性<br/>-以原則篩選的條款定義區段        |
+|[第1部分: 分割組織中的使用者](#part-1-segment-users)     |-決定所需的原則<br/>-建立要定義的區段清單<br/>-識別要使用的屬性<br/>-以原則篩選的條款定義區段        |
 |[第2部分: 定義資訊障礙原則](#part-2-define-information-barrier-policies)     |-定義您的原則 (尚不適用)<br/>-選擇兩種類型 (封鎖或允許) |
 |[第3部分: 套用資訊屏障原則](#part-3-apply-information-barrier-policies)     |-將原則設為主動狀態<br/>-執行原則應用程式<br/>-查看原則狀態         |
 |(視需要而來)[編輯區段或原則](#edit-a-segment-or-a-policy)     |-編輯區段<br/>-編輯或移除原則<br/>-執行原則應用程式<br/>-查看原則狀態         |
@@ -104,12 +104,12 @@ ms.locfileid: "34935945"
 
 ### <a name="identify-segments"></a>識別區段
 
-除了您的初始原則清單之外, 請列出您組織的區段。 您組織中的每位使用者都應屬於某個區段, 且不應屬於兩個或多個區段。 每個區段只能套用一個資訊屏障原則。 
+除了您的初始原則清單之外, 請列出您組織的區段。 將包含在資訊屏障原則中的使用者應該屬於某個區段, 而且使用者不應屬於兩個或多個區段。 每個區段只能套用一個資訊屏障原則。 
 
-決定您要用來定義資料段的組織目錄資料中的哪些屬性。 您可以使用*部門*、 *MemberOf*或任何支援的屬性。 請確定您在為所有使用者選取的屬性中都有值。 [請參閱資訊障礙 (預覽) 支援的屬性清單](information-barriers-attributes.md)。
+決定您要用來定義資料段的組織目錄資料中的哪些屬性。 您可以使用*部門*、 *MemberOf*或任何支援的屬性。 請確定您為使用者選取的屬性中有值。 [請參閱資訊障礙 (預覽) 支援的屬性清單](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> 在**繼續下一節之前, 請確定您的目錄資料具有可用來定義資料段的屬性值**。 如果您的目錄資料沒有您要使用之屬性的值, 則在繼續進行資訊障礙之前, 必須更新所有使用者帳戶以包含該資訊。 若要取得這項協助, 請參閱下列資源:<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> 在**繼續下一節之前, 請確定您的目錄資料具有可用來定義資料段的屬性值**。 如果您的目錄資料沒有您要使用之屬性的值, 則在繼續進行資訊障礙之前, 必須更新使用者帳戶以包含該資訊。 若要取得這項協助, 請參閱下列資源:<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定義線段
 
@@ -128,7 +128,7 @@ ms.locfileid: "34935945"
     在執行每個 Cmdlet 之後, 您應該會看到有關新線段的詳細資料清單。 詳細資料包含區段的類型、建立或上次修改的日期, 等等。 
 
 > [!IMPORTANT]
-> **請確定您的區段沒有重迭**。 您組織中的每個使用者都應屬於一個 (且只有一個) 區段。 任何使用者都不應該屬於兩個或多個區段。 應該為組織中的所有使用者定義區段。 (請參閱[範例: Contoso](#contosos-defined-segments)在本文中定義的區段。)
+> **請確定您的區段沒有重迭**。 將受到資訊障礙影響的每個使用者都應屬於一個 (且只有一個) 區段。 任何使用者都不應該屬於兩個或多個區段。 (請參閱[範例: Contoso](#contosos-defined-segments)在本文中定義的區段。)
 
 定義您的區段之後, 請繼續定義資訊障礙原則。
 
