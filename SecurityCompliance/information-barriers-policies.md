@@ -3,7 +3,7 @@ title: 定義資訊屏障原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/18/2019
+ms.date: 06/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
-ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
-ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
+ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
+ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "35059531"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35083861"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定義資訊障礙的原則 (預覽)
 
@@ -38,8 +38,8 @@ ms.locfileid: "35059531"
 - **區段**是使用選取的**使用者帳戶屬性**, 在 [Office 365 安全性 & 合規性中心] 中定義的使用者集合。 (請參閱[支援的屬性清單](information-barriers-attributes.md))。 
 
 - **資訊屏障原則**會決定通訊限制或限制。 當您定義資訊屏障原則時, 您可以選擇兩種原則:
-    - 「封鎖」原則, 可防止某一段與另一個區段通訊
-    - 允許一段時間只與特定的其他區段進行通訊的「允許」原則
+    - 「封鎖」原則會防止一個區段與另一個區段進行通訊。
+    - 「允許」原則允許一段時間只與特定的其他區段進行通訊。
 
 - **原則應用程式**是在定義所有資訊屏障原則之後完成, 而且您已準備好將它們套用到您的組織中。
 
@@ -47,7 +47,7 @@ ms.locfileid: "35059531"
 
 |階段    |涉及的專案  |
 |---------|---------|
-|[確定符合必要條件](#prerequisites)     |-確認您具備必要的[授權和許可權](information-barriers.md#required-licenses-and-permissions)<br/>-請確定您組織的目錄包含的資料會反映組織的結構<br/>-啟用 Microsoft 小組的範圍目錄搜尋<br/>-請確定已開啟審核記錄<br/>-使用 PowerShell (提供範例)<br/>-提供 Microsoft 小組的系統管理員同意 (包括步驟)          |
+|[確定符合必要條件](#prerequisites)     |-確認您具備必要的[授權和許可權](information-barriers.md#required-licenses-and-permissions)<br/>-確認您的目錄包含分割使用者的資料<br/>-啟用 Microsoft 小組的範圍目錄搜尋<br/>-請確定已開啟審核記錄<br/>-使用 PowerShell (提供範例)<br/>-提供 Microsoft 小組的系統管理員同意 (包括步驟)          |
 |[第1部分: 分割組織中的使用者](#part-1-segment-users)     |-決定所需的原則<br/>-建立要定義的區段清單<br/>-識別要使用的屬性<br/>-以原則篩選的條款定義區段        |
 |[第2部分: 定義資訊障礙原則](#part-2-define-information-barrier-policies)     |-定義您的原則 (尚不適用)<br/>-選擇兩種類型 (封鎖或允許) |
 |[第3部分: 套用資訊屏障原則](#part-3-apply-information-barrier-policies)     |-將原則設為主動狀態<br/>-執行原則應用程式<br/>-查看原則狀態         |
@@ -115,22 +115,38 @@ ms.locfileid: "35059531"
 
 定義區段不會影響使用者;它只會設定要定義並套用的資訊屏障原則階段。
 
-1. 若要定義組織區段, 請使用**OrganizationSegment 指令程式**搭配**UserGroupFilter**參數, 該參數對應至您要使用的[屬性](information-barriers-attributes.md)。 
+若要定義組織區段, 請使用**OrganizationSegment 指令程式**搭配**UserGroupFilter**參數, 該參數對應至您要使用的[屬性](information-barriers-attributes.md)。
 
-    句法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+句法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
 
-    範例： `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+範例： `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-    在此範例中, 名為*hr*的區段是使用*Hr*、[部門] 屬性中的值來定義。
+在此範例中, 名為*hr*的區段是使用*Hr*、[*部門*] 屬性中的值來定義。 Cmdlet 的 "-eq" 部分是指 "等於"。
 
-2. 針對您要定義的每個區段, 重複步驟1。
+請針對您要定義的每個區段重複此程式。
 
-    在執行每個 Cmdlet 之後, 您應該會看到有關新線段的詳細資料清單。 詳細資料包含區段的類型、建立或上次修改的日期, 等等。 
+在執行每個 Cmdlet 之後, 您應該會看到有關新線段的詳細資料清單。 詳細資料包含區段的類型、建立或上次修改的日期, 等等。 
 
 > [!IMPORTANT]
 > **請確定您的區段沒有重迭**。 將受到資訊障礙影響的每個使用者都應屬於一個 (且只有一個) 區段。 任何使用者都不應該屬於兩個或多個區段。 (請參閱[範例: Contoso](#contosos-defined-segments)在本文中定義的區段。)
 
 定義您的區段之後, 請繼續定義資訊障礙原則。
+
+### <a name="using-equals-and-not-equals-in-segment-definitions"></a>在區段定義中使用「等於」和「不等於」
+
+在上方顯示的第一個範例中, 我們定義了包含邏輯、*部門等於 HR*的區段。 您也可以使用 "not 等於" 參數來定義線段, 如下列範例所示:
+
+句法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+
+範例： `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+在此範例中, 我們定義了一個稱為 NotSales 的區段, 其中包含不在銷售的任何人。 Cmdlet 的 "-ne" 部分是指 "not equals"。
+
+此外, 您可以使用 "等於" 和 "not =" 參數來定義區段。
+
+範例： `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+
+在這個範例中, 我們定義了一個稱為*LocalFTE*的區段, 其中包括位於本機的人員, 且其位置未列為*暫時*。
 
 ## <a name="part-2-define-information-barrier-policies"></a>第2部分: 定義資訊障礙原則
 
@@ -154,7 +170,7 @@ ms.locfileid: "35059531"
 
 1. 若要定義您的第一個封鎖原則, 請使用**InformationBarrierPolicy 指令程式**搭配**SegmentsBlocked**參數。 
 
-    句法`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segmentname" -SegmentsBlocked "segmentname"`
+    句法`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`
 
     範例： `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive`
 
@@ -164,7 +180,7 @@ ms.locfileid: "35059531"
 
     範例： `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive`
 
-    在此範例中, 我們定義了一個稱為「*調查-銷售*」的原則, 以防止與銷售通訊的資訊檢索。
+    在此範例中, 我們定義了一個稱為「*調查-銷售*」的原則, 以防止與*銷售*通訊的*資訊檢索*。
  
 2. 請繼續執行下列其中一項操作:
 
@@ -175,27 +191,21 @@ ms.locfileid: "35059531"
 
 1. 若要允許一個區段只與一個其他區段通訊, 請使用**InformationBarrierPolicy 指令程式**搭配**SegmentsAllowed**參數。 
 
-    句法`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segmentname" -SegmentsAllowed "segmentname"`
+    句法`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`
 
     範例： `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive`
 
-    在此範例中, 我們定義了一個名為「製造 *-HR* 」 ** 的原則。 使用中和套用時, 此原則可讓*製造*人員只能與稱為*HR*的部門中的人員進行通訊。 (在此情況下, 製造無法與不屬於 HR 的使用者通訊。)
+    在此範例中, 我們定義了一個名為「製造 *-HR* 」 ** 的原則。 使用中和套用時, 此原則可讓*製造*人員只能與稱為*HR*的部門中的人員進行通訊。 (在此情況下,*製造*無法與不屬於*HR*的使用者通訊。)
 
-    **如有需要, 您可以使用此 Cmdlet 指定多個區段, 如下列兩個範例所示。**
+    **如有需要, 您可以使用此 Cmdlet 指定多個區段, 如下列範例所示。**
 
-    句法`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segmentname" -SegmentsAllowed "segmentname, segmentname"`
+    句法`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`
 
-    **範例 1: 定義原則以允許多個區段只與一個其他區段通訊**
+    **範例 2: 定義原則以允許區段只與其他兩個區段進行通訊**    
 
-    `New-InformationBarrierPolicy -Name "ResearchManufacturing-HR" -AssignedSegment "Research, Manufacturing" -SegmentsAllowed "HR" -State Inactive`
+    `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive`
 
-    在此範例中, 我們定義了一個原則, 讓*調研*和*製造*資料段只能與*HR*進行通訊。
-
-    **範例 2: 定義原則以允許多個區段只與特定的其他區段進行通訊**    
-
-    `New-InformationBarrierPolicy -Name "SalesMarketing-HRManufacturing" -AssignedSegment "Sales, Marketing" -SegmentsAllowed "HR, Manufacturing" -State Inactive`
-
-    在此範例中, 我們定義了一個原則, 讓*銷售*和*行銷*部門只能與*HR*和*製造公司*進行通訊。
+    在此範例中, 我們定義了一個原則, 讓*調研*區段只能與*HR*和*製造公司*通訊。
 
     針對您要定義的每個原則, 重複此步驟, 讓特定的區段只能與特定的特定區段進行通訊。
 
@@ -289,17 +299,11 @@ ms.locfileid: "35059531"
 
 2. 使用**InformationBarrierPolicy**指令程式搭配**Identity**參數, 並指定您想要進行的變更。
 
-    語法 (封鎖分段與其他區段的通訊): 
-
-    `Set-InformationBarrierPolicy -Identity GUID -SegmentsBlocked "segmentname, segmentname"` 
-
-    語法 (使區段只能與特定的其他區段通訊):
+    範例: 假設已定義原則來封鎖*研究*資料段與*銷售*和*行銷*資料段的通訊。 原則是使用此 Cmdlet 定義的:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
     
-    ``Set-InformationBarrierPolicy -Identity GUID -SegmentsAllowed "segmentname, segmentname"``
+    假設我們想要變更它, 讓*研究*部門中的人員只能與*HR*區段中的人通訊。 若要進行這種變更, 我們會使用此 Cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
-    範例: 假設原則定義為封鎖與銷售和行銷通訊的調研。 原則是使用此 Cmdlet 定義的:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales, Marketing"`
-    
-    假設我們想要變更它, 讓調查中的人員只能與 HR 中的人通訊。 若要進行這種變更, 我們會使用此 Cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    在此範例中, 我們將 "SegmentsBlocked" 變更為 "SegmentsAllowed", 並指定*HR*區段。
 
 3. 當您完成編輯原則時, 請務必套用您的變更。 (請參閱套用[資訊屏障原則](#part-3-apply-information-barrier-policies)。)
 
@@ -352,7 +356,7 @@ ms.locfileid: "35059531"
     針對您的組織, 會套用使用者的變更。 如果您的組織很大, 可能需要24小時 (或更多), 才能完成此程式。 (一般來說, 處理5000使用者帳戶需要大約一小時的時間。)
 
 此時, 一或多個資訊屏障原則會設為非使用中狀態。 從這裡, 您可以執行下列任何一項操作:
-- 保留原樣 (原則設定為非作用中的狀態, 對使用者不會有任何影響)
+- 保留原樣 (原則設定為非作用中的狀態對使用者不會有任何影響)
 - [編輯原則](#edit-a-policy) 
 - [移除原則](#remove-a-policy)
 
@@ -401,7 +405,7 @@ Contoso 會定義三個原則, 如下表所述:
 |---------|---------|
 |原則 1: 防止銷售與資訊檢索進行通訊     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中, 資訊屏障原則稱為「*銷售-研究*」。 使用且套用此原則時, 將有助於防止銷售部門中的使用者與研究資料段中的使用者進行通訊。 這是單向原則;它不會防止研究與銷售進行通訊。 為此, 需要原則2。      |
 |原則 2: 防止與銷售通訊的調研     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此範例中, 資訊屏障原則稱為「*調研-銷售*」。 使用且套用此原則時, 將有助於防止研究資料段中的使用者與銷售部門中的使用者進行通訊。       |
-|原則 3: 允許製造業僅與 HR 和 Marketing 通訊     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR, Marketing" -State Inactive` <p>在這種情況下, 資訊屏障原則稱為*車間-HRMarketing*。 使用且套用此原則時, 製造業只能與 HR 和 Marketing 通訊。 請注意, HR 和 Marketing 不會受到限制, 無法與其他段進行通訊。 |
+|原則 3: 允許製造業僅與 HR 和 Marketing 通訊     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>在這種情況下, 資訊屏障原則稱為*車間-HRMarketing*。 使用且套用此原則時, 製造業只能與 HR 和 Marketing 通訊。 請注意, HR 和 Marketing 不會受到限制, 無法與其他段進行通訊。 |
 
 根據定義的區段和原則, Contoso 會執行**InformationBarrierPoliciesApplication**指令程式, 以套用原則。 
 
