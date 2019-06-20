@@ -3,7 +3,7 @@ title: 使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：使用各種資訊保護層級，對 SharePoint Online 小組網站套用保留標籤和資料外洩防護 (DLP) 原則。
-ms.openlocfilehash: 118911f6430c9ae79dec1fa4a32cd0ba8fa536da
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 72912cce6c6856b048df420a8d449d3d710ed40e
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156895"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059551"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 
@@ -167,7 +167,7 @@ ms.locfileid: "34156895"
     
 以下是敏感性 SharePoint Online 小組網站的設定結果。
   
-![使用 [敏感性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則。](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![使用 [敏感性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 接下來，使用下列步驟來設定 DLP 原則，以在使用者共用組織外部 SharePoint Online 高度機密小組網站上的文件時封鎖使用者。
   
@@ -205,7 +205,7 @@ ms.locfileid: "34156895"
     
 16. 按一下 [確定]****。
     
-17. 在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?)**** 窗格中，按一下 [下一步]****。
+17. 在 [如果偵測到敏感性資訊，您要怎麼做?]**** 窗格中，於 [偵測是否一次共用特定數目的敏感性資訊]**** 下，按一下 [限制存取或加密內容]****，然後按 [下一步]****。
     
 18. 在 [要先開啟原則或測試內容嗎?]**** 窗格中，按一下 [是]**** 立即將它開啟，然後按一下 [下一步]****。
     
@@ -213,9 +213,9 @@ ms.locfileid: "34156895"
     
 以下是高度機密 SharePoint Online 小組網站的設定結果。
   
-![使用 [高度機密性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則。](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![使用 [高度機密性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [使用 Azure 資訊保護來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-azure-information-protection.md)
     
