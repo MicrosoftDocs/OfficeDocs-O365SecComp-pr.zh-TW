@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083861"
+ms.locfileid: "35113247"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定義資訊障礙的原則 (預覽)
 
@@ -134,7 +134,7 @@ ms.locfileid: "35083861"
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>在區段定義中使用「等於」和「不等於」
 
-在上方顯示的第一個範例中, 我們定義了包含邏輯、*部門等於 HR*的區段。 您也可以使用 "not 等於" 參數來定義線段, 如下列範例所示:
+在上方顯示的第一個範例中, 我們定義了「部門等於人力資源」的區段。 該線段包含 "等於" 參數。 您也可以使用 "not 等於" 參數來定義線段, 如下列範例所示:
 
 句法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
