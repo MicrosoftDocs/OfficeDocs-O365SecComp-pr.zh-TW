@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容。
-ms.openlocfilehash: 43948106c69f2a49ce36631acc9d14365d8a2eb9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156965"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131390"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -78,11 +78,14 @@ ms.locfileid: "34156965"
   
 請注意，如果使用者嘗試刪除受限於保留原則的文件庫、清單、資料夾或網站，使用者將會收到錯誤訊息。如果資料夾受限於原則，使用者一開始就移動或刪除資料夾內的任何檔案，則使用者可以刪除資料夾。另外請注意，文件保留庫只會在第一個項目必須複製到文件庫的時候建立，而不是建立保留原則的時候。因此，若要測試原則，您首先必須在受限於原則的網站中編輯或刪除文件，然後瀏覽至文件保留庫檢視保留的副本。
   
-![SharePoint 和 OneDrive 中的保留流程圖](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
+![在 SharePoint 和 OneDrive 中的內容生命週期的圖表](Retention_Diagram_of_retention_flow_in_sites.png)
   
 將保留原則指派給 OneDrive 帳戶或 SharePoint 網站之後，內容可以依循下列兩個途徑之一：
   
-1. 在保留期間，**如果已修改或刪除內容**，則會在文件保留庫中建立指派保留原則時存在之原始內容的複本。在那裡，計時器工作會定期執行，並識別保留期間已過期的項目，然後在保留期間結束後的七天內永久刪除這些項目。 
+1. **若已修改或刪除內容**：在保留期間，文件保留庫中會建立指派保留原則時即存在之原始內容的複本。 計時器工作會在此處定期執行，並識別保留期間已過期的項目，這些項目將被移置第二階段資源回收桶，並會在 93 天後永久刪除。 請注意，終端使用者無法檢視第二階段資源回收筒（只能看到第一階段資源回收筒），但網站集合管理員可以檢視且還原在該處的內容。
+
+    > [!NOTE]
+    > 我們最近已變更保留文件庫中刪除內容的方式。 為了防止意外的資料遺失，我們不再永久刪除保留文件庫中的內容。 相反地，我們只永久刪除資源回收筒中的內容。所以保留文件庫中的所有內容將移至第二階段資源回收筒。
     
 2. 在保留期間，**如果未修改或刪除內容**，則內容會在保留期間結束時移至第一階段資源回收筒。如果使用者從該處刪除內容，或清空此資源回收筒 (也稱為清除)，則文件會移至第二階段資源回收筒。93 天保留期間涵蓋了第一和第二階段資源回收筒。在 93 天保留期間結束時，將永久刪除第一或第二階段資源回收筒中的文件。請注意，資源回收筒未編製索引，因此搜尋不會在該處尋找內容。這表示，eDiscovery 保留無法在資源回收筒中找到任何內容來保留。 
     
@@ -102,7 +105,7 @@ ms.locfileid: "34156965"
   
 將保留原則指派給信箱或公用資料夾之後，內容可以依循下列兩個途徑之一：
   
-1. 在保留期間，**如果使用者已永久修改或刪除項目** (按 SHIFT+DELETE 或從 [刪除的郵件] 中刪除)，則項目會移至 (或在編輯的情況下複製到) [可復原的項目] 資料夾。在那裡，此程序會定期執行，並識別其保留期間已過期的項目，而且會在保留期間結束後的 14 天內永久刪除這些項目。請注意，14 天是預設設定，但它最多可設為 30 天。 
+1. 在保留期間，**如果使用者已永久修改或刪除項目** (按 SHIFT+DELETE 或從 [刪除的郵件] 中刪除)，則項目會移至 (或在編輯的情況下複製到) [可復原的項目] 資料夾。在那裡，此程序會定期執行，並識別其保留期間已過期的項目，而且會在保留期間結束後的 14 天內永久刪除這些項目。請注意，14 天是預設設定，但它最多可設為 30 天。
     
 2. 在保留期間，**如果未修改或刪除項目**，則相同的程序會在信箱中的所有資料夾上定期執行，並識別其保留期間已過期的項目，而且會在保留期間結束後的 14 天內永久刪除這些項目。請注意，14 天是預設設定，但它最多可設為 30 天。 
     
@@ -260,7 +263,8 @@ ms.locfileid: "34156965"
 您可以使用 PowerShell，從保留原則中排除特定類型的 Exchange 項目。例如，您可以排除語音信箱訊息、 IM 交談，以及信箱中的其他 商務用 Skype Online 內容。您也可以排除行事曆、附註和工作項目。僅使用 PowerShell 才能提供此功能；建立保留原則時，無法在 UI 中提供它。
   
 若要這麼做，請使用 `New-RetentionComplianceRule` 和 `Set-RetentionComplianceRule` Cmdlet 中的 `ExcludedItemClasses` 參數。如需 PowerShell 的詳細資訊，請參閱下節[尋找保留原則的 PowerShell Cmdlet](#find-the-powershell-cmdlets-for-retention-policies)。
-  
+
+
 ## <a name="locking-a-retention-policy"></a>鎖定保留原則
 有些組織可能需要遵守由監管機構定義的法規，例如證券交易委員會 (SEC) 法規 17a-4，要求在保留原則開啟之後，不能關閉或執行較不嚴格的限制。使用「保留鎖定」，您可以鎖定原則，讓任何人 (包括系統管理員) 均無法關閉原則或執行較不嚴格的限制。
   
@@ -294,6 +298,24 @@ ms.locfileid: "34156965"
 
 ![顯示在 PowerShell 中已鎖定所有參數的原則](media/retention-policy-preservation-lock-locked-policy.PNG)
   
+## <a name="releasing-a-retention-policy"></a>發佈保留原則
+
+您可以隨時關閉或刪除保留原則。 當您這麼做時，任何保留中的 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間內，原則的內容到期不會發生於保留文件庫，因此，如有需要，您可以在這裡還原任何內容。 您也可以在寬限期內開啟保留原則，這樣，原則的內容將不會被刪除。 本寬限期是透過 PowerShell 設定。
+
+首先，[連接到 Office 365 安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
+
+然後，執行此 PowerShell 指令碼。 您可以將設定租用戶訂閱設定中的`ip_tenantGracePeriodInDays`屬性設為任何介於 0 到 100 天的值。 如果您將此設定為 0，則無任何寬限期，保留原則將會立即發佈。 
+
+`
+$siteSubscription = Get-SPSiteSubscription -Identity 
+$siteSubScriptionId 
+$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
+$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
+$properties.SetValue("ip_tenantGracePeriodInDays",  30)
+`
+
+SharePoint 和 OneDrive 中的此 30 天寬限期對應於 Exchange 中的 30 天延遲保留。 如需詳細資訊，請參閱[管理延遲保留信箱](https://docs.microsoft.com/zh-TW/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold)。
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>原則保留，哪一個優先？
 
 很有可能內容會套用多個保留原則，這些原則各有不同的動作 (保留、刪除或兩者) 和保留期間。哪一個優先？請放心，最低限度，由一個原則保留的內容不會被另一個原則永久刪除。
