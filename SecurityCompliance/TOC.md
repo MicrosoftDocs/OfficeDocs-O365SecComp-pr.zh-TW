@@ -27,7 +27,7 @@
 # [保護資訊](protect-information.md)
 ## [敏感度標籤](sensitivity-labels.md)
 ### [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
-### [自動將敏感度標籤套用到內容](apply_sensitivity_label_automatically.md)
+### [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
 
 ## [防止資料遺失 (DLP)](data-loss-prevention-policies.md)
@@ -538,6 +538,8 @@
 ### [定義資訊屏障原則 (預覽)](information-barriers-policies.md)
 ### [資訊屏障原則的屬性 (預覽)](information-barriers-attributes.md)
 ### [疑難排解資訊屏障 (預覽)](information-barriers-troubleshooting.md)
+### [編輯或移除資訊屏障原則 (預覽)](information-barriers-edit-segments-policies.md.md)
+
 
 ## 客戶金鑰
 ### [使用客戶金鑰控制 Office 365 中的資料](controlling-your-data-using-customer-key.md)
