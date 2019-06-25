@@ -3,7 +3,7 @@ title: 定義資訊屏障原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
-ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
+ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131377"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203732"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定義資訊障礙的原則 (預覽)
 
@@ -29,20 +29,6 @@ ms.locfileid: "35131377"
 > [!TIP]
 > 本文包含一個[範例案例](#example-contosos-departments-segments-and-policies)和一個[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx), 可協助您規劃及定義資訊障礙原則。
 
-## <a name="concepts-of-information-barrier-policies"></a>資訊障礙原則的概念
-
-瞭解資訊屏障原則的基礎概念會很有説明:
-
-- **使用者帳戶屬性**是在 Azure Active Directory (或 Exchange Online) 中定義的。 這些屬性可以包括部門、職稱、位置、小組名稱及其他工作設定檔詳細資料。 
-
-- **區段**是使用選取的**使用者帳戶屬性**, 在 [Office 365 安全性 & 合規性中心] 中定義的使用者集合。 (請參閱[支援的屬性清單](information-barriers-attributes.md))。 
-
-- **資訊屏障原則**會決定通訊限制或限制。 當您定義資訊屏障原則時, 您可以選擇兩種原則:
-    - 「封鎖」原則會防止一個區段與另一個區段進行通訊。
-    - 「允許」原則允許一段時間只與特定的其他區段進行通訊。
-
-- **原則應用程式**是在定義所有資訊屏障原則之後完成, 而且您已準備好將它們套用到您的組織中。
-
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
 
 |階段    |涉及的專案  |
@@ -51,7 +37,7 @@ ms.locfileid: "35131377"
 |[第1部分: 分割組織中的使用者](#part-1-segment-users)     |-決定所需的原則<br/>-建立要定義的區段清單<br/>-識別要使用的屬性<br/>-以原則篩選的條款定義區段        |
 |[第2部分: 定義資訊障礙原則](#part-2-define-information-barrier-policies)     |-定義您的原則 (尚不適用)<br/>-選擇兩種類型 (封鎖或允許) |
 |[第3部分: 套用資訊屏障原則](#part-3-apply-information-barrier-policies)     |-將原則設為主動狀態<br/>-執行原則應用程式<br/>-查看原則狀態         |
-|(視需要而來)[編輯區段或原則](#edit-a-segment-or-a-policy)     |-編輯區段<br/>-編輯或移除原則<br/>-執行原則應用程式<br/>-查看原則狀態         |
+|(視需要而來)[編輯區段或原則](information-barriers-edit-segments-policies.md.md)    |-編輯區段<br/>-編輯或移除原則<br/>-重新執行原則應用程式<br/>-查看原則狀態         |
 |(視需要而來)[疑難排解](information-barriers-troubleshooting.md)|-當事物未如預期運作時採取動作|
 
 ## <a name="prerequisites"></a>必要條件
@@ -113,38 +99,44 @@ ms.locfileid: "35131377"
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定義線段
 
-定義區段不會影響使用者;它只會設定要定義並套用的資訊屏障原則階段。
-
-若要定義組織區段, 請使用**OrganizationSegment 指令程式**搭配**UserGroupFilter**參數, 該參數對應至您要使用的[屬性](information-barriers-attributes.md)。
-
-句法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-範例： `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-
-在此範例中, 名為*hr*的區段是使用*Hr*、[*部門*] 屬性中的值來定義。 Cmdlet 的 "-eq" 部分是指 "等於"。
-
-請針對您要定義的每個區段重複此程式。
-
-在執行每個 Cmdlet 之後, 您應該會看到有關新線段的詳細資料清單。 詳細資料包含區段的類型、建立或上次修改的日期, 等等。 
-
 > [!IMPORTANT]
 > **請確定您的區段沒有重迭**。 將受到資訊障礙影響的每個使用者都應屬於一個 (且只有一個) 區段。 任何使用者都不應該屬於兩個或多個區段。 (請參閱[範例: Contoso](#contosos-defined-segments)在本文中定義的區段。)
 
-定義您的區段之後, 請繼續定義資訊障礙原則。
+定義區段不會影響使用者;它只會設定要定義並套用的資訊屏障原則階段。
+
+1. 使用**OrganizationSegment 指令程式**搭配**UserGroupFilter**參數, 對應至您想要使用的[屬性](information-barriers-attributes.md)。
+    
+    句法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+    
+    範例： `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+    
+    在此範例中, 名為*hr*的區段是使用*Hr*、[*部門*] 屬性中的值來定義。 Cmdlet 的 **-eq**部分參照 "equals"。 (或者, 您可以使用 **-ne**表示 "not 等於"。 請參閱[在區段定義中使用「等於」和「不等於](#using-equals-and-not-equals-in-segment-definitions)」。
+
+    在執行每個 Cmdlet 之後, 您應該會看到有關新線段的詳細資料清單。 詳細資料包含區段的類型、建立或上次修改的日期, 等等。 
+
+2. 請針對您要定義的每個區段重複此程式。
+
+定義您的區段之後, 請繼續[定義資訊障礙原則](#part-2-define-information-barrier-policies)。
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>在區段定義中使用「等於」和「不等於」
 
-在上方顯示的第一個範例中, 我們定義了「部門等於人力資源」的區段。 該線段包含 "等於" 參數。 您也可以使用 "not 等於" 參數來定義線段, 如下列範例所示:
+在下列範例中, 我們定義的是「部門等於人力資源」的區段。 
 
-句法`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+**範例**:`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-範例： `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+請注意, 線段定義包含以 **-eq**表示的 "equals" 參數。 
 
-在此範例中, 我們定義了一個稱為 NotSales 的區段, 其中包含不在銷售的任何人。 Cmdlet 的 "-ne" 部分是指 "not equals"。
+您也可以使用 "not 等於" 參數 (表示為 **-ne**) 定義線段, 如下列範例所示:
 
-此外, 您可以使用 "等於" 和 "not =" 參數來定義區段。
+**語法**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
-範例： `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+**範例**:`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+在此範例中, 我們定義了一個稱為*NotSales*的區段, 其中包含不在*銷售*的任何人。 Cmdlet 的 **-ne**部分是指 "not 等於"。
+
+除了使用 "等於" 或 "not 等於" 定義線段之外, 您還可以使用 "等於" 和 "not =" 參數來定義線段。
+
+**範例**:`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
 
 在這個範例中, 我們定義了一個稱為*LocalFTE*的區段, 其中包括位於本機的人員, 且其位置未列為*暫時*。
 
@@ -250,117 +242,6 @@ ms.locfileid: "35131377"
 |最新的資訊屏障原則應用程式     | 使用**InformationBarrierPoliciesApplicationStatus 指令程式**。 <p>句法`Get-InformationBarrierPoliciesApplicationStatus`<p>    這會顯示原則應用程式是否已完成、失敗或正在進行中的資訊。       |
 |所有資訊屏障原則應用程式|執行`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>這會顯示原則應用程式是否已完成、失敗或正在進行中的資訊。|
 
-## <a name="stop-a-policy-application"></a>停止原則應用程式
-
-如果您已開始套用資訊屏障原則, 而您想要停止套用這些原則, 請使用下列程式。 請記住, 此程式會花大約30-35 分鐘的時間來開始。
-
-1. 若要查看最新資訊屏障原則應用程式的狀態, 請使用**InformationBarrierPoliciesApplicationStatus**指令程式。
-
-    句法`Get-InformationBarrierPoliciesApplicationStatus`
-
-    記下應用程式的 GUID。
-
-2. 使用**InformationBarrierPoliciesApplication**指令程式搭配 Identity 參數。
-
-    句法`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    範例： `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    在此範例中, 我們將停止套用資訊屏障原則。
-
-## <a name="edit-a-segment-or-a-policy"></a>編輯區段或原則
-
-### <a name="edit-a-segment"></a>編輯區段
-
-1. 若要查看所有現有的區段, 請使用**OrganizationSegment 指令程式**。
-    
-    句法`Get-OrganizationSegment`
-
-    您會看到每個區段和詳細資料的清單, 例如區段類型、其 UserGroupFilter 值、建立日期或上次修改者、GUID 等等。
-
-    > [!TIP]
-    > 列印或儲存您的區段清單供日後參考。 例如, 如果您想要編輯某個區段, 您將需要知道其名稱或識別值 (這會與 Identity 參數搭配使用)。
-
-2. 若要編輯區段, 請使用**OrganizationSegment 指令程式**搭配**Identity**參數及相關的詳細資料。 
-
-    句法`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    範例： `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    在此範例中, 針對具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*的區段, 我們會將部門名稱更新為 "HRDept"。
-
-當您完成組織的資料段編輯後, 您可以繼續[定義](#part-2-define-information-barrier-policies)或[編輯](#edit-a-policy)資訊屏障原則。
-
-### <a name="edit-a-policy"></a>編輯原則
-
-1. 若要查看目前資訊屏障原則的清單, 請使用**InformationBarrierPolicy 指令程式**。
-
-    句法`Get-InformationBarrierPolicy`
-
-    在結果清單中, 識別您要變更的原則。 記下原則的 GUID 和名稱。
-
-2. 使用**InformationBarrierPolicy**指令程式搭配**Identity**參數, 並指定您想要進行的變更。
-
-    範例: 假設已定義原則來封鎖*研究*資料段與*銷售*和*行銷*資料段的通訊。 原則是使用此 Cmdlet 定義的:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
-    
-    假設我們想要變更它, 讓*研究*部門中的人員只能與*HR*區段中的人通訊。 若要進行這種變更, 我們會使用此 Cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
-
-    在此範例中, 我們將 "SegmentsBlocked" 變更為 "SegmentsAllowed", 並指定*HR*區段。
-
-3. 當您完成編輯原則時, 請務必套用您的變更。 (請參閱套用[資訊屏障原則](#part-3-apply-information-barrier-policies)。)
-
-### <a name="remove-a-policy"></a>移除原則
-
-1. 若要查看目前資訊屏障原則的清單, 請使用**InformationBarrierPolicy 指令程式**。
-
-    句法`Get-InformationBarrierPolicy`
-
-    在結果清單中, 識別您要移除的原則。 記下原則的 GUID 和名稱。 請確定原則設定為非使用中狀態。
-
-2. 使用**InformationBarrierPolicy**指令程式搭配 Identity 參數。
-
-    句法`Remove-InformationBarrierPolicy -Identity GUID`
-
-    範例: 假設我們想要移除 GUID *43c37853-ea10-4b90-a23d-ab8c93772471*的原則。 若要這麼做, 我們會使用此 Cmdlet:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
-
-    出現提示時, 請確認變更。
-
-3. 針對您要移除的每個原則, 重複步驟1-2。
-
-4. 當您完成移除原則時, 請套用您的變更。 若要這麼做, 請使用**InformationBarrierPoliciesApplication 指令程式**。
-
-    句法`Start-InformationBarrierPoliciesApplication`
-
-    針對您的組織, 會套用使用者的變更。 如果您的組織很大, 可能需要24小時 (或更多), 才能完成此程式。
-
-### <a name="set-a-policy-to-inactive-status"></a>將原則設定為非使用中狀態
-
-1. 若要查看目前資訊屏障原則的清單, 請使用**InformationBarrierPolicy 指令程式**。
-
-    句法`Get-InformationBarrierPolicy`
-
-    在結果清單中, 識別您要變更 (或移除) 的原則。 記下原則的 GUID 和名稱。
-
-2. 若要將原則的狀態設定為非使用中, 請使用**InformationBarrierPolicy**指令程式搭配 Identity 參數, 並將 State 參數設為非使用中。
-
-    句法`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    在此範例中, 我們將*43c37853-ea10-4b90-a23d-ab8c9377247*的資訊屏障原則設定為非使用中狀態。
-
-3. 若要套用您的變更, 請使用**InformationBarrierPoliciesApplication 指令程式**。
-
-    句法`Start-InformationBarrierPoliciesApplication`
-
-    針對您的組織, 會套用使用者的變更。 如果您的組織很大, 可能需要24小時 (或更多), 才能完成此程式。 (一般來說, 處理5000使用者帳戶需要大約一小時的時間。)
-
-此時, 一或多個資訊屏障原則會設為非使用中狀態。 從這裡, 您可以執行下列任何一項操作:
-- 保留原樣 (原則設定為非作用中的狀態對使用者不會有任何影響)
-- [編輯原則](#edit-a-policy) 
-- [移除原則](#remove-a-policy)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>範例: Contoso 的部門、區段和原則
 
@@ -414,6 +295,8 @@ Contoso 會定義三個原則, 如下表所述:
 完成後, Contoso 就符合法律和行業的需求。
 
 ## <a name="related-articles"></a>相關文章
+
+[編輯或移除資訊障礙原則 (預覽)](information-barriers-edit-segments-policies.md.md)
 
 [取得資訊障礙的概況](information-barriers.md)
 
