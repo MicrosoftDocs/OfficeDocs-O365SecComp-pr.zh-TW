@@ -331,7 +331,7 @@
 #### [處理資料時發生補救錯誤](compliance20/error-remediation.md)
 
 ### [收集適用於案例的資料](compliance20/collecting-data-for-ediscovery.md)
-#### [建立搜尋以收集資料](compliance20/create-search-to-collect-data.md)
+#### [建立搜尋](compliance20/create-search-to-collect-data.md)
 #### [建立搜尋查詢](compliance20/building-search-queries.md)
 #### [搜尋統計資料](compliance20/search-statistics.md)
 #### [將搜尋結果新增至檢閱集](compliance20/add-data-to-review-set.md)
@@ -537,8 +537,8 @@
 ## [資訊屏障 (預覽)](information-barriers.md)
 ### [定義資訊屏障原則 (預覽)](information-barriers-policies.md)
 ### [資訊屏障原則的屬性 (預覽)](information-barriers-attributes.md)
-### [疑難排解資訊屏障 (預覽)](information-barriers-troubleshooting.md)
-### [編輯或移除資訊屏障原則 (預覽)](information-barriers-edit-segments-policies.md.md)
+### [疑難排解資訊屏障（預覽）](information-barriers-troubleshooting.md)
+### [編輯資訊屏障原則 （預覽）](information-barriers-edit-segments-policies.md.md)
 
 
 ## 客戶金鑰
