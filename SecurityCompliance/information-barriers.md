@@ -3,20 +3,20 @@ title: 資訊障礙概述
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/26/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用資訊障礙, 以確保在組織內使用 Microsoft 小組來進行通訊合規性。
-ms.openlocfilehash: a2c202d08f1de60f92f13b2ac4c2b9d3c7f900e8
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 6565fc28d70ac6ff9a6f4df6edc75b89d19ae29a
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935935"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279471"
 ---
 # <a name="information-barriers-preview"></a>資訊障礙 (預覽)
 
@@ -34,7 +34,7 @@ Microsoft 雲端服務包含強大的通訊和共同作業功能。 但是, 假�
 針對上述所有範例案例 (以及更多), 您可以定義資訊屏障原則, 以防止或允許 Microsoft 小組中的通訊。 這類原則可防止使用者不應該呼叫或聊天, 或讓人員只能與 Microsoft 小組中的特定群組進行通訊。 在有效的資訊屏障原則中, 每當這些原則所涵蓋的使用者嘗試與 Microsoft 小組中的其他人通訊時, 就會進行檢查以防止 (或允許) 通訊 (如資訊屏障原則所定義)。 若要深入瞭解資訊障礙的使用者經驗, 請參閱[Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
 > [!NOTE]
-> 資訊障礙不適用於電子郵件通訊, 或透過 SharePoint Online 或 OneDrive 進行檔案共用。
+> 資訊障礙不適用於電子郵件通訊或透過 SharePoint Online 或 OneDrive 的檔案共用。 此外, 資訊障礙與[規範界限](set-up-compliance-boundaries.md)無關。
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和許可權
 
@@ -55,6 +55,20 @@ Microsoft 雲端服務包含強大的通訊和共同作業功能。 但是, 假�
 - 資訊障礙管理員
 
 您必須熟悉 PowerShell Cmdlet, 才能定義、驗證或編輯資訊屏障原則。 雖然我們在操作[方法資訊](information-barriers-policies.md)中提供了幾個 PowerShell Cmdlet 範例, 但是您必須瞭解組織的其他詳細資料, 例如參數。
+
+## <a name="concepts-of-information-barrier-policies"></a>資訊障礙原則的概念
+
+瞭解資訊屏障原則的基礎概念會很有説明:
+
+- **使用者帳戶屬性**是在 Azure Active Directory (或 Exchange Online) 中定義的。 這些屬性可以包括部門、職稱、位置、小組名稱及其他工作設定檔詳細資料。 
+
+- **區段**是使用選取的**使用者帳戶屬性**, 在 [Office 365 安全性 & 合規性中心] 中定義的使用者集合。 (請參閱[支援的屬性清單](information-barriers-attributes.md))。 
+
+- **資訊屏障原則**會決定通訊限制或限制。 當您定義資訊屏障原則時, 您可以選擇兩種原則:
+    - 「封鎖」原則會防止一個區段與另一個區段進行通訊。
+    - 「允許」原則允許一段時間只與特定的其他區段進行通訊。
+
+- **原則應用程式**是在定義所有資訊屏障原則之後完成, 而且您已準備好將它們套用到您的組織中。
 
 ## <a name="next-steps"></a>後續步驟
 

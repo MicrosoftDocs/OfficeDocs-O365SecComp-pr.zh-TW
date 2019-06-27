@@ -3,7 +3,7 @@ title: 定義資訊屏障原則
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
-ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
-ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
+ms.openlocfilehash: 0603b5339672be3b4ac6ad4a18c6032f563acf27
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203732"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279461"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>定義資訊障礙的原則 (預覽)
 
@@ -53,7 +53,9 @@ ms.locfileid: "35203732"
 
 - **審核記錄**。 為了查詢原則應用程式的狀態, 必須開啟 audit 記錄。 在您開始定義區段或原則之前, 我們建議您這麼做。 若要深入瞭解, 請參閱[開啟或關閉 Office 365 audit log search](turn-audit-log-search-on-or-off.md)。
 
-- **PowerShell**。 目前, 資訊屏障原則是在 Office 365 安全性 & 合規性中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例, 但是您必須熟悉 PowerShell Cmdlet 和參數。 連線[至 Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+- **PowerShell**。 目前, 資訊屏障原則是在 Office 365 安全性 & 合規性中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例, 但是您必須熟悉 PowerShell Cmdlet 和參數。 您也需要 AzureRM 模組。
+    - [連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [安裝 Azure PowerShell 模組](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - **Microsoft 小組中資訊障礙的系統管理員同意**。 當您的原則就緒時, 資訊障礙就可以從交談會話中移除他們不應該在交談中的人員。 這有助於確保您的組織符合原則和規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。 
 
