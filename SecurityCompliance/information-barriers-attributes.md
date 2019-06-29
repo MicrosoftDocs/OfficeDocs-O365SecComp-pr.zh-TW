@@ -1,52 +1,62 @@
 ---
-title: 針對資訊障礙原則屬性
+title: 資訊屏障原則的屬性
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
-ms.audience: ITPro
+ms.date: 06/28/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: 用做參考的這篇文章，您可以使用資訊障礙原則中的各種屬性。
-ms.openlocfilehash: e72e37950442974897de479c7c11f0053a578d1c
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+description: 請使用本文做為資訊屏障原則中可使用的各種屬性參考。
+ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668288"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394308"
 ---
-# <a name="attributes-for-information-barrier-policies-preview"></a>資訊障礙原則 （預覽） 的屬性
+# <a name="attributes-for-information-barrier-policies-preview"></a>資訊障礙原則的屬性 (預覽)
 
-Azure Active Directory 中的某些屬性可以用於將使用者分。 線段然後作為篩選資訊障礙原則。 例如，您可以使用**部門**部門所定義的使用者區段 （在同一時間假設兩個部門的任何單一員工 works） 組織內。 
+Azure Active Directory 中的某些屬性可以用來分割使用者。 一旦定義區段後, 這些區段就可以做為資訊屏障原則的篩選器。 例如, 您可能會使用**部門**, 依組織中的部門定義使用者區段 (假設沒有單一員工同時對兩個部門運作)。 
 
-本文提供可用的屬性的清單。 若要深入了解資訊障礙，請參閱下列資源：
-- [資訊障礙 （預覽）](information-barriers.md)
-- [在 Microsoft Teams （預覽） 中定義資訊障礙的原則](information-barriers-policies.md)
+本文說明如何將屬性與資訊障礙搭配使用, 並提供可使用的屬性清單。 若要深入瞭解資訊障礙, 請參閱下列資源:
+- [資訊障礙 (預覽)](information-barriers.md)
+- [定義 Microsoft 團隊中資訊障礙的原則 (預覽)](information-barriers-policies.md)
+- [編輯 (或移除) 資訊屏障原則 (預覽)](information-barriers-edit-segments-policies.md.md)
 
-## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何在資訊障礙原則中使用屬性
+## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何使用資訊屏障原則中的屬性
 
-本文中所列的屬性可用來定義 （或編輯） 的使用者區段。 區段做為參數 (UserGroupFilter) 中的資訊障礙原則，如下列範例所示：
+本文所列的屬性可用於定義或編輯使用者的區段。 在[資訊屏障原則](information-barriers-policies.md)中, 您定義的區段會做為參數 (稱為*UserGroupFilter*值)。
 
-|範例  |指令程式  |
-|---------|---------|
-|定義稱為 Segment1 線段使用的部門屬性     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-|定義線段，稱為 SegmentA （假設此屬性包含群組名稱，例如 「 BlueGroup 」），使用 MemberOf 屬性     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-|定義線段，稱為 DayTraders 使用 ExtensionAttribute1 （假設此屬性包含工作標題，例如 「 DayTrader 」）|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+1. 決定要用來定義區段的屬性。 (請參閱本文中的[參考](#reference)一節)。
 
-當您定義的區段時，使用您的所有區段相同的屬性。 例如，如果您定義使用*部門*一些區段，定義所有使用*部門*的線段。 未定義使用*部門*和其他人使用*MemberOf*一些區段。 請確定您的區段不會重疊;每位使用者應該指派給一個區段。 
+2. 請確定使用者帳戶的值已填入您在步驟1中選取的屬性。 查看使用者帳戶詳細資料, 如有必要, 編輯使用者帳戶以包含屬性值。 
 
-若要深入了解，請參閱[使用 PowerShell 的定義區段](information-barriers-policies.md#define-segments-using-powershell)。
+    若要使用 PowerShell 來執行這項操作, 請參閱使用[Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。
+
+    若要在 Azure Active Directory 中執行此作業, 請參閱[使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+
+3. [使用 PowerShell 定義區段](information-barriers-policies.md#define-segments-using-powershell), 類似下列範例:
+
+    |範例  |Cmdlet  |
+    |---------|---------|
+    |使用部門屬性定義稱為 Segment1 的區段     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
+    |使用 MemberOf 屬性定義稱為 SegmentA 的區段 (假設此屬性包含組名, 例如 "BlueGroup")     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
+    |使用 ExtensionAttribute1 定義稱為 DayTraders 的區段 (假設此屬性包含職稱, 例如 "DayTrader")|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+
+    > [!TIP]
+    > 當您定義線段時, 請對您的所有區段使用相同的屬性。 例如, 如果您使用*部門*來定義某些區段, 請使用*部門*定義所有的區段。 請勿使用*部門*和其他使用*MemberOf*的其他區段來定義。 請確定您的區段沒有重迭;每個使用者都應該指派給一個區段。 
 
 ## <a name="reference"></a>參考
 
-下表列出您可以使用資訊障礙的屬性。
+下表列出您可以與資訊障礙搭配使用的屬性。
 
-|Azure Active Directory 屬性名稱 （LDAP 顯示名稱）  |Exchange 屬性名稱  |
+|Azure Active Directory 屬性名稱 (LDAP 顯示名稱)  |Exchange 屬性名稱  |
 |---------|---------|
-|共同撰寫       | 共同撰寫        |
+|合作者       | 合作者        |
 |Company     |Company         |
 |部門     |部門         |
 |ExtensionAttribute1 |CustomAttribute1  |
@@ -79,15 +89,15 @@ Azure Active Directory 中的某些屬性可以用於將使用者分。 線段�
 |UserPrincipalName  |UserPrincipalName  |
 |郵件   |WindowsEmailAddress    |
 |描述    |描述    |
-|MemberOf   |MemberOfGroup  |
+|屬於   |MemberOfGroup  |
 
 ## <a name="related-topics"></a>相關主題
 
-[在 Microsoft Teams （預覽） 中定義資訊障礙的原則](information-barriers-policies.md)
+[定義 Microsoft 團隊中資訊障礙的原則 (預覽)](information-barriers-policies.md)
 
-[疑難排解資訊障礙 （預覽）](information-barriers-troubleshooting.md)
+[疑難排解資訊障礙 (預覽)](information-barriers-troubleshooting.md)
 
-[資訊障礙 （預覽）](information-barriers.md)
+[資訊障礙 (預覽)](information-barriers.md)
 
 
 

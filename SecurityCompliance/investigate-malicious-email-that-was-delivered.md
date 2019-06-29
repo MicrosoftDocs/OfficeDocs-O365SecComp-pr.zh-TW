@@ -1,5 +1,5 @@
 ---
-title: 尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電子郵件
+title: 尋找並調查已傳遞的惡意電子郵件 (Office 365 威脅調查和回應
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,63 +14,96 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 7e2cef742339e54c094cfb0c3b32fbf596896a3d
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意電子郵件。
+ms.openlocfilehash: 5f8c615bed07b75cd3c06ec48f5ba73586f0f6d5
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408298"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394288"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查惡意電子郵件已傳遞 (Office 365 進階威脅防護計劃 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查已傳遞的惡意電子郵件 (Office 365 高級威脅防護方案 2)
 
-[Office 365 進階威脅防護](office-365-atp.md)可讓您調查，將您的使用者放在風險，並採取動作來保護您的組織活動。 例如，如果您是貴組織的安全性小組的一部分，您可以尋找和調查可疑的電子郵件已傳遞至您的使用者。 您可以使用[威脅總管 （或即時偵測的資訊）](threat-explorer.md)。
+[Office 365 高級威脅防護](office-365-atp.md)可讓您調查讓使用者面臨風險的活動, 並採取行動以保護您的組織。 例如, 如果您是組織的安全小組的一部分, 您可以尋找並調查已傳遞給使用者的可疑電子郵件訊息。 您可以使用[威脅瀏覽器 (或即時偵測)](threat-explorer.md)來執行此動作。
   
-## <a name="before-you-begin"></a>開始之前...]
+## <a name="before-you-begin"></a>開始之前 .。。
 
-請確定符合下列需求：
+請確定符合下列需求:
   
-- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)（方案 1 或計劃 2） 並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的組織有[Office 365 Advanced 威脅防護](office-365-atp.md)(plan 1 或 plan 2) 和[授權已指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
-- [Office 365 稽核記錄](turn-audit-log-search-on-or-off.md)已為您的組織。 
+- 您的組織已開啟[Office 365 的 audit 記錄](turn-audit-log-search-on-or-off.md)。 
     
-- 貴組織的原則定義的反垃圾郵件、 反惡意程式碼、 反網路釣魚，依此類推。 請參閱[針對 Office 365 中的威脅保護](protect-against-threats.md)。
+- 您的組織有針對反垃圾郵件、反惡意程式碼、反網路釣魚等所定義的原則。 請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。
     
-- 您是 Office 365 全域管理員，或具有安全性系統管理員或 「 搜尋及清除角色指派安全性&amp;合規性中心。 請參閱[中的 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。
+- 您是 Office 365 全域系統管理員, 或您擁有安全性系統管理員或在安全性&amp;與合規性中心中指派的搜尋和清除角色。 請參閱[Office 365 安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
     
 ## <a name="dealing-with-suspicious-emails"></a>處理可疑的電子郵件
 
-惡意攻擊者可能會將郵件傳送至您的使用者嘗試與釣魚程式其認證，並存取您公司的機密資料 ！ 若要避免這個問題，您應該使用提供的 Office 365，包括[Exchange Online Protection](eop/exchange-online-protection-overview.md)和[進階威脅防護](office-365-atp.md)的威脅保護服務。 不過，有的時間攻擊者時將郵件傳送給使用者的 url 然後僅更新版本上將該 URL 點對惡意內容 （惡意程式碼等）。 或者，您可能會發現太晚而遭入侵您組織中的使用者，以及攻擊時遭到盜用了該使用者，使用該帳戶傳送電子郵件給您公司中的其他使用者。 一部分 < cleaning up 這兩種情況，您可能想要移除使用者收件匣的電子郵件。 在這類的情況下，您可以利用[威脅總管 （或即時偵測）](threat-explorer.md)來尋找和移除這些電子郵件訊息 ！
+惡意攻擊者可能會將郵件傳送給您的使用者, 以嘗試和詐騙其認證, 並取得公司機密的存取權! 若要避免這種情況, 您應該使用 Office 365 中的威脅防護服務, 包括[Exchange Online protection](eop/exchange-online-protection-overview.md)和[高級威脅防護](office-365-atp.md)。 不過, 在某些情況下, 攻擊者可以傳送郵件給您的使用者包含 URL, 而只是稍後再讓該 URL 指向惡意內容 (惡意程式碼等等)。 或者, 您可能會發現組織中的使用者已遭到破壞, 而且該使用者遭到破壞時, 攻擊者會使用該帳戶, 將電子郵件傳送給公司中的其他使用者。 在這兩種情況下, 您可能會想要移除使用者收件匣中的電子郵件訊息。 在這類情況下, 您可以利用[威脅瀏覽器 (或即時偵測)](threat-explorer.md)來尋找並移除這些電子郵件!
+
+## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>在採取動作後, 重新路由傳送電子郵件的位置
+
+威脅 Explorer 即時偵測已新增 [傳遞動作] 和 [傳遞位置] 欄位的 [傳遞] 狀態。 這會使您在電子郵件中的位置產生更完整的圖片。 此變更的其中一部分是讓搜尋更容易進行安全性操作人員, 但是 net 結果是一眼就知道問題電子郵件的位置。
+
+傳遞狀態現在會分成兩欄:
+
+- **傳遞動作**-此電子郵件的狀態為何？
+- **傳遞位置**-這封電子郵件會做為結果的路由？
+
+傳遞動作是由於現有的原則或偵測而對電子郵件採取的動作。 以下是電子郵件可能採取的動作:
+
+1. **傳遞**–電子郵件已傳遞至使用者的收件匣或資料夾, 而且使用者可以直接存取它。
+2. **Junked** –電子郵件會傳送至使用者的 [垃圾郵件] 資料夾或 [已刪除的資料夾], 而且使用者可以存取其垃圾郵件或已刪除的資料夾中的電子郵件。
+3. **封鎖**–隔離、失敗或已捨棄的任何電子郵件。 使用者完全無法存取此功能!
+4. **已更換**–任何惡意附件都由 .txt 檔案取代, 以指出附件是惡意的電子郵件。
+ 
+[傳遞位置] 顯示執行傳遞後的原則和偵測結果。 它會連結至傳遞動作。 新增此欄位是為了深入瞭解當發現問題郵件時所採取的動作。 以下是傳遞位置的可能值:
+
+1. **收件匣或資料夾**-電子郵件位於 [收件匣] 或 [資料夾 (根據您的電子郵件規則)。
+2. **部署或外部**–信箱不存在於雲端上, 但在內部部署。
+3. **垃圾郵件資料夾**–在使用者的 [垃圾郵件] 資料夾中的電子郵件。
+4. [**刪除的郵件] 資料夾**–使用者的 [刪除的郵件] 資料夾中的電子郵件。
+5. **隔離**–隔離中的電子郵件, 且不在使用者的信箱中。
+6. **失敗**–電子郵件無法送達信箱。
+7. **** 捨棄–電子郵件會在郵件流程中的某處遺失。
   
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找並刪除可疑的電子郵件的郵件傳遞
+## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找並刪除已傳遞的可疑電子郵件
 
 > [!TIP]
-> 威脅總管 （也稱為 「 檔案總管 」），是功能強大的報表，可以有多個用途，例如尋找及刪除的郵件，用來識別惡意電子郵件寄件者的 IP 位址或開始進一步調查的事件。 下列程序著重於使用 Explorer 來尋找並從收件者信箱刪除惡意電子郵件。 
-  
-1. 移至 [[https://protection.office.com](https://protection.office.com)和 Office 365 使用公司或學校帳戶登入。 這會帶您前往安全性&amp;合規性中心。 
+> 威脅瀏覽器 (有時稱為 Explorer) 是一種功能強大的報表, 可用於多種用途, 例如尋找和刪除郵件、識別惡意電子郵件寄件者的 IP 位址, 或啟動事件以進一步進行調查。 下列程式著重于使用 Explorer 來尋找和刪除收件者信箱中的惡意電子郵件。
+
+若要查看對前一個傳遞狀態欄位所做的變更 (現在是傳遞動作和傳遞位置): 
+
+1. 請移[https://protection.office.com](https://protection.office.com)至並使用您的公司或學校帳戶登入 Office 365。 這會將您帶到&amp;安全性與合規性中心。 
     
-2. 在左側導覽中，選擇 [**威脅管理，** \> **總管**。
+2. 在左側導覽中, 選擇 [**威脅管理** \> **瀏覽器**]。
+
+![威脅瀏覽器螢幕擷取畫面。](media/Threat Explorer Delivery Action and Delivery Location.PNG)
+
+<!--Comment>
     
-3. 在 [檢視] 功能表中，選擇 [**所有電子郵件**。<br/>![使用 [檢視] 功能表的電子郵件和內容的報告之間選擇](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. 請注意報表，例如**已傳遞**、**未知**，或**傳遞至垃圾郵件**中顯示的標籤。<br/>![顯示所有的電子郵件資料的威脅總管](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>（根據對貴組織的電子郵件所採取的動作，您可能會看到其他標籤，例如**封鎖**或**取代**）。
+4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)
     
-5. 在報告中，選擇 [**已傳遞**的以檢視僅最後出現在使用者的收件匣的電子郵件]。<br/>![按一下 「 傳遞至垃圾郵件 」 從檢視中移除該資料](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. In the report, choose **Delivered** to view only emails that ended up in users' inboxes.<br/>![Clicking "Delivered to junk" removes that data from view](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. 下方圖表中，檢閱圖表下方的**電子郵件**清單。<br/>![下方圖表中，檢視已偵測到的電子郵件的清單](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. Below the chart, review the **Email** list below the chart.<br/>![Below the chart, view a list of email messages that were detected](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. 在清單中，選擇 [項目來檢視電子郵件訊息的相關詳細資料]。 例如，您可以按一下 [檢視資訊寄件者、 收件者、 附件及其他類似的電子郵件的主旨行。<br/>![您可以檢視項目，包括詳細資料和任何附件相關的其他資訊](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.<br/>![You can view additional information about an item, including details and any attachments](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. 之後檢視電子郵件的相關資訊，請啟動 **+ 動作**清單中選取一或多個項目。
+8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
     
-9. 使用 **+ 動作**清單將套用的動作，例如**將移至刪除**的項目。 這會從收件者的信箱刪除選取的郵件。<br/>![當您選取一或多個電子郵件時，您可以選擇從數個可用的動作](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This will delete the selected messages from the recipients' mailboxes.<br/>![When you select one or more email messages, you can choose from several available actions](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
+-->
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 進階的威脅保護計劃 2](office-365-ti.md)
+[Office 365 高級威脅防護方案2](office-365-ti.md)
   
-[防範 Office 365 中的威脅](protect-against-threats.md)
+[防止 Office 365 中的威脅](protect-against-threats.md)
   
-[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md)
+[查看 Office 365 的報告高級威脅防護](view-reports-for-atp.md)
   
 

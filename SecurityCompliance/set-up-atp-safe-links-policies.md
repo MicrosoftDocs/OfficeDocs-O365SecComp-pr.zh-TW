@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/26/2019
+ms.date: 06/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 設定安全連結原則, 以保護您的組織免受 Word、Excel、PowerPoint 和 Visio 檔案中的惡意連結, 以及電子郵件訊息。
-ms.openlocfilehash: 505508771ae1e630d7d34fde9ee1525d19bd5039
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113257"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394338"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -132,7 +132,8 @@ ms.locfileid: "35113257"
 |---------|---------|
 |**關閉** <br/> |不掃描電子郵件中的 Url。  <br/> 可讓您定義例外規則, 例如不會掃描特定收件者群組之電子郵件中的 Url 的規則。  <br/> |
 |**On** <br/> |在使用者按一下電子郵件訊息中的 Url 時, 會將 Url 寫入使用 ATP 安全連結保護來路由使用者。  <br/> 針對封鎖或惡意 Url 的清單, 來檢查 URL。  <br/> |
-|**使用安全附件掃描可下載的內容** <br/> |選取此選項時, 會掃描指向可下載內容的 Url。  <br/> |
+|**對指向檔案的可疑連結和連結套用即時 URL 掃描** <br/> |選取此選項時, 會掃描指向可下載內容的可疑 Url 和連結。  <br/> |
+|**在傳遞郵件之前等候完成 URL 掃描** <br/> |選取此選項時, 會保留包含要掃描之 Url 的郵件, 直到 Url 完成掃描, 並且在傳遞郵件之前確認是安全的。  <br/> |
 |**將安全連結套用至組織內傳送的郵件** <br/> | 當此選項可供使用並選取時, 會將 ATP 安全連結保護套用至組織中的人員所傳送的電子郵件, 前提是電子郵件帳戶是在 Office 365 中主控。  <br/> |
 |**不追蹤使用者按一下** <br/> |選取此選項時, 不會儲存 [來自外部寄件者的電子郵件中的 Url 的資料]。 目前不支援在組織內傳送的電子郵件訊息中, 按一下 [追蹤連結]。  <br/> |
 |**不要允許使用者按一下 [原始 URL]。** <br/> |選取此選項時, 使用者將無法繼續進行 [[警告] 頁面](atp-safe-links-warning-pages.md)到決定為惡意的 URL。  <br/> |
@@ -146,4 +147,4 @@ ms.locfileid: "35113257"
 
 - [在安全性&amp;與合規性中心使用 Explorer](use-explorer-in-security-and-compliance.md)
 
-隨時掌握 ATP 的新功能。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365), 瞭解要[新增至 ATP 的新功能](office-365-atp.md#new-features-in-office-365-atp)。
+隨時掌握 ATP 的新功能。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)。
