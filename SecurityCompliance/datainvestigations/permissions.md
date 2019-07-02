@@ -1,10 +1,10 @@
 ---
-title: 指派權限的資料調查 （預覽）
+title: 指派資料調查的許可權 (預覽)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,26 +13,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文說明如何設定權限才能使用 Microsoft 365 的資料調查工具。
-ms.openlocfilehash: c2627bcb1f226018221969c069607a9b60c7b173
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+description: 本文說明如何設定在 Microsoft 365 中使用 [資料調查工具] 所需的許可權。
+ms.openlocfilehash: bff6b976667f3793cf1973f9ab684ae14d590d97
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652566"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017655"
 ---
-# <a name="assign-permissions-for-data-investigations-preview"></a>指派權限的資料調查 （預覽）
+# <a name="assign-permissions-for-data-investigations-preview"></a>指派資料調查的許可權 (預覽)
 
-若要存取的安全性與合規性中心中的資料進行調查，您必須是資料調查角色群組的成員。 若要新增成員至角色群組，您必須是 「 組織管理 」 角色群組的成員，或指派安全性 & 合規性中心中的角色管理角色。 您會成為資料調查之後，您可建立、 存取，並進行調查的成員資料調查。
+若要存取安全性與合規性中心中的資料調查, 您必須是「資料調查者」角色群組的成員。 若要將成員新增至角色群組, 您必須是「組織管理」角色群組的成員, 或是在安全性 & 合規性中心中指派角色管理角色。 成為資料調查員之後, 您可以在您所屬的資料調查中建立、存取和進行調查。
 
-若要指派資料調查權限：
+若要指派資料調查許可權:
 
-1. 移至 [https://protection.office.com並使用您的公司或學校帳戶登入。
+1. 請移https://protection.office.com至並使用您的公司或學校帳戶登入。
 
-2. 在安全性 & 合規性中心中，按一下 [**權限**]。 
+2. 在 [安全性 & 規範中心] 中, 按一下 [**許可權**]。 
 
-3. 按一下 [**資料調查**角色群組，並再旁彈出式頁面上的**成員**，按一下 [**編輯**。
+3. 按一下 [**資料調查員**] 角色群組, 然後按一下彈出頁面上 [**成員**] 旁的 [**編輯**]。
 
-4. 按一下 [**選取成員**]，然後按一下 [**新增]**。 選取您要新增為資料現場的使用者，然後按一下 [**新增]**。
+4. 按一下 **[選擇成員**], 然後按一下 [**新增**]。 選取您要新增為數據調查人員的使用者, 然後按一下 [**新增**]。
 
-5. 您已新增所有使用者之後，按一下 [**完成**]，然後按一下 [**儲存**] 以儲存角色群組所做的變更。
+5. 在您新增所有使用者之後, 按一下 [**完成**], 然後按一下 [**儲存**], 以將變更儲存至角色群組。

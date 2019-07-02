@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 5f8c615bed07b75cd3c06ec48f5ba73586f0f6d5
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
+ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394288"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "35414803"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查已傳遞的惡意電子郵件 (Office 365 高級威脅防護方案 2)
 
@@ -78,10 +78,9 @@ ms.locfileid: "35394288"
 1. 請移[https://protection.office.com](https://protection.office.com)至並使用您的公司或學校帳戶登入 Office 365。 這會將您帶到&amp;安全性與合規性中心。 
     
 2. 在左側導覽中, 選擇 [**威脅管理** \> **瀏覽器**]。
-
-![威脅瀏覽器螢幕擷取畫面。](media/Threat Explorer Delivery Action and Delivery Location.PNG)
-
 <!--Comment>
+![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
+
     
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   

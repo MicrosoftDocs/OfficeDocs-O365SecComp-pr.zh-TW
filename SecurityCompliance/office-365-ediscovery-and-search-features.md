@@ -1,5 +1,5 @@
 ---
-title: Office 365 eDiscovery 和搜尋功能概觀
+title: Office 365 eDiscovery 和搜尋功能概述
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,54 +12,58 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: EDiscovery 功能，以及其他搜尋功能在 Office 365 稽核使用和透明度的概觀。
-ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 電子檔探索功能的總覽, 以及 Office 365 中的其他搜尋功能, 以供審計使用和透明度。
+ms.openlocfilehash: 985a7fad9d321005439ea592b6fef8744a88220f
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262805"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622453"
 ---
 # <a name="ediscovery-and-search-features"></a>電子文件探索與搜尋功能 
 
 ## <a name="ediscovery"></a>eDiscovery
-「 EDiscovery 」 功能讓系統管理員、 法務人員，提供單一位置和授權的其他使用者進行完整調查 Office 365 使用者活動。 具有適當權限的安全性人員可以執行搜尋和就地保留的內容。 搜尋的結果是您要從內容搜尋，取得相同結果，不同之處在於套用任何保留為建立 eDiscovery 案例。 EDiscovery 搜尋的結果已加密的安全性，並匯出的資料可以使用[進階電子文件探索](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4)分析。
+
+EDiscovery 功能為系統管理員、合規性監察官和其他授權使用者提供單一位置, 以在 Office 365 使用者活動中進行完整的調查。 具有適當許可權的安全性官員會執行搜尋並保留內容。 搜尋結果是您從內容搜尋取得的相同結果, 但不包括為任何套用的保留建立 eDiscovery 案例。 電子檔探索搜尋的結果會針對安全性進行加密, 您可以使用[高級 eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4)分析匯出的資料。
 
 ## <a name="content-search"></a>內容搜尋
-[內容搜尋](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)是一個新的 eDiscovery 搜尋工具，提供改良的縮放和效能功能，透過先前的 eDiscovery 搜尋工具。 您可以使用內容搜尋來搜尋信箱、 公用資料夾、 SharePoint Online 網站和 OneDrive for Business 位置。 內容搜尋已特別設計非常大的搜尋。 您可以搜尋的信箱和網站數目沒有限制。 同時可以執行的搜尋數目也沒有限制。 之後您執行搜尋、 內容來源數目及估計的搜尋結果會顯示在 [搜尋] 頁面上，您可預覽結果，或將其匯出至本機電腦上的 [詳細資料] 窗格中的數目。 如果您的組織有 Office 365 企業版 E5 訂閱，您也可以使用強大的分析功能的[Office 365 進階電子文件探索](http://go.microsoft.com/fwlink/p/?LinkID=620116)分析[準備的結果](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare)。
+
+[內容搜尋](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)是 ediscovery 搜尋工具, 可提供比先前 eDiscovery 搜尋工具更佳的調整和效能功能。 您可以使用內容搜尋來搜尋信箱、公用資料夾、SharePoint Online 網站和商務用 OneDrive 位置。 內容搜尋支援大型搜尋。 您可以搜尋的信箱和網站數目沒有限制。 同時執行的搜尋數目也不會有任何限制。 執行搜尋之後, 會在 [搜尋] 頁面上的 [詳細資料] 窗格中顯示內容來源數目和預估的搜尋結果數目。 您可以預覽結果, 或將結果匯出至本機電腦。 如果您的組織有 Office 365 企業版 E5 訂閱, 您可以使用[office 365 高級 eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116)的功能強大的分析功能, 準備要進行分析的[結果](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare)。
 
 ## <a name="audit-log-search"></a>稽核記錄搜尋
-除了追蹤其 Office 365 組織中的變更，客戶也可以檢視稽核報告和匯出稽核記錄。 一旦啟用 Office 365 租用戶的稽核，使用者和系統管理該租用戶活動是事件記錄檔中，並可供搜尋。 例如，您可以使用信箱稽核記錄來追蹤信箱擁有者以外的使用者信箱上執行的動作。 此外，法務人員可以使用的搜尋和篩選功能來查看如果使用者已經檢視或下載特定文件，或如果系統管理員已執行使用者管理活動或過去 90 天租用戶設定所做的變更。 搜尋結果可以包含重要資訊鑑識調查特定使用者或系統管理員所進行的活動。 使用者和登入 Office 365 的系統管理活動的描述，請參閱[在 Office 365 中的稽核活動](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c#auditlogevents)。
 
-從 SharePoint Online 和商務用 OneDrive 的事件記錄檔中顯示其相符項目的 30 分鐘內。 從 Exchange Online 的事件會出現在稽核記錄項目的 24 小時內。 從 Azure AD 登入事件可用的實例，分鐘內，從 Azure AD 其他目錄事件可用相符項目的 24 小時內。 稽核記錄搜尋結果中的事件也可以匯出以便進一步分析。 （50000 的項目最多可以從單一的稽核記錄搜尋匯出。 若要匯出多個項目，此限制，請減少日期範圍，或執行多個的稽核記錄搜尋。）
+除了在 Office 365 組織中追蹤變更之外, 您還可以查看審計報告及匯出的審計記錄檔。 一旦啟用 Office 365 租使用者的審計, 就會在事件記錄檔中記錄使用者和系統管理活動, 並讓其可供搜尋。 例如, 您可以使用信箱審核記錄來追蹤信箱擁有者以外的使用者對信箱所執行的動作。 合規性監察官可以針對特定使用者活動使用搜尋和篩選功能。 例如, 若要識別查看或下載特定檔的使用者, 如果系統管理員已執行使用者管理活動, 或在過去的90天內查看租使用者設定中的變更。 搜尋結果包含使用者或系統管理員所執行之特定活動的寶貴鑒證資訊。 請參閱[office 365 中的已審核活動](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c#auditlogevents), 以取得 office 365 中所記錄之使用者和系統管理活動的描述。
 
-下表詳述某些活動報告中顯示的資訊。 [在 Office 365 的詳細的內容稽核記錄](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3
-)相關的屬性會收集每個 Office 365 工作負載的詳細資訊，請參閱。
+來自 SharePoint Online 和商務用 OneDrive 的事件會在記錄檔的30分鐘內顯示。 Exchange Online 中的事件會出現在發生24小時內的 [audit] 記錄中。 來自 Azure AD 的登入事件會在發生幾分鐘內提供, 而來自 Azure AD 的其他目錄事件則會在24小時內提供。 您可以在審計記錄搜尋結果中匯出通風口, 以進一步進行分析。 從單一審計記錄搜尋中, 最多可匯出50000個專案。 若要匯出此限制的更多專案, 請減少日期範圍或執行多個審核記錄搜尋。
+
+下表詳細說明 [活動報告] 中顯示的部分資訊。 請參閱[office 365 audit 記錄檔中的詳細](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)資訊, 以取得每個 Office 365 工作負載所收集之屬性的詳細資訊。
 
 | 屬性	 | 描述 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日期 | 事件的日期和時間 |
-| 使用者 | 執行巨集指令的使用者 |
-| ClientIP | 裝置已登入活動時所用的 IPv4 或 IPv6 位址。 |
-| CreationTime | 日期和時間以 Coordinated Universal Time (UTC) 使用者執行活動時。 |
-| EventSource | 識別事件發生。 可能值是 SharePoint 及 ObjectModel。 |
-| 識別碼 | 報告項目的識別碼。 識別碼可唯一識別的報告項目。 |
-| 作業 | 使用者或活動，對應到此使用者活動的顯示結果中選取值的名稱。 |
-| OrganizationId | 組織的 Office 365 服務發生事件的 GUID。 |
-| UserAgent | 使用者的瀏覽器瀏覽器所提供的資訊。 |
-| UserId | 執行的巨集指令 （在 [作業] 屬性中指定），造成正在記錄之記錄中的使用者。 |
-| UserType | 執行此作業的使用者類型。 下列的值可指出使用者類型。 |
-|  | 0 代表一般使用者。 |
-|  | 2 表示您 Office 365 組織中的系統管理員。 |
-|  | 3 表示 Microsoft 資料中心系統管理員或資料中心系統帳戶。 |
-| 工作量 | Office 365 服務發生活動。 此屬性的可能值包括： |
+| 使用者 | 執行動作的使用者 |
+| ClientIP | 記錄活動時所使用之裝置的 IPv4 或 IPv6 位址。 |
+| CreationTime | 使用者執行活動時的日期和時間 (國際標準時間 (UTC))。 |
+| EventSource | 識別發生的事件。 可能的值為 SharePoint 和 ObjectModel。 |
+| ID | 報表專案的識別碼。 識別碼可唯一識別報表專案。 |
+| 作業 | 使用者或活動的名稱, 對應于此使用者活動顯示結果中選取的值。 |
+| OrganizationId | 發生事件之組織之 Office 365 服務的 GUID。 |
+| UserAgent | 瀏覽器所提供之使用者瀏覽器的相關資訊。 |
+| UserId | 執行動作的使用者 (在 Operation 屬性中指定), 導致記錄正在記錄中。 |
+| UserType | 執行作業的使用者類型。 下列值表示使用者類型。 |
+|  | 0表示一般使用者。 |
+|  | 2表示您的 Office 365 組織中的系統管理員。 |
+|  | 3表示 Microsoft 資料中心管理員或資料中心系統帳戶。 |
+| 工作量 | 發生活動的 Office 365 服務。 此屬性可能的值為: |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | 商務用 OneDrive |
 |  | Azure Active Directory 報告 |
 
+如需搜尋 Office 365 audit logs 的詳細步驟, 請參閱[在 office 365 中搜尋 audit logs](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)。
 
-如需詳細步驟，來搜尋 Office 365 稽核記錄，請參閱[Office 365 中的搜尋稽核記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)。
+## <a name="search-unified-audit-log"></a>搜尋整合的審計記錄檔
 
-## <a name="search-unified-audit-log"></a>整合的稽核記錄檔中搜尋
-稽核記錄搜尋功能可用來搜尋稽核記錄。 Office 365 還提供使用遠端 PowerShell 此記錄檔中搜尋的能力。 具體而言， [Search-unifiedauditlog 指令程式](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps)在 Exchange Online PowerShell 中可以用於搜尋事件與相關使用者作業從 Exchange Online、 SharePoint Online、 OneDrive for Business 和 Azure AD 整合的稽核記錄。 您可以搜尋指定的日期範圍內的所有事件，或您可以篩選根據特定條件，例如特定巨集指令，執行巨集指令或目標物件之使用者的結果。 系統管理員可以使用最多可同時執行 Exchange Online PowerShell 工作階段的 3 來分割大型的日期範圍的搜尋設定。
+使用 [Audit Log Search] 功能來搜尋統一的審計記錄檔。 Office 365 也提供使用遠端 PowerShell 搜尋此記錄的功能。 Exchange Online PowerShell 中的[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps)指令程式是用來搜尋與使用者作業 (與 Exchange Online、SharePoint Online、商務用 OneDrive 和 Azure AD) 相關的整合審計記錄檔。 
+
+您可以在指定的日期範圍內搜尋所有事件, 也可以依據特定的準則來篩選結果, 例如特定的動作、執行動作的使用者, 或目標物件。 系統管理員最多可以使用三個同時執行的 Exchange Online PowerShell 會話來分割大量的日期範圍搜尋。

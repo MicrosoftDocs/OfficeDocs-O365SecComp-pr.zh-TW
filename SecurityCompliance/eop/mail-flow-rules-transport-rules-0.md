@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection 中郵件流程規則 （傳輸規則）
+title: Exchange Online Protection 中的郵件流程規則 (傳輸規則)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,27 +9,27 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: 您可以使用郵件流程規則 （傳輸規則） 來識別和對郵件採取動作的流程透過 Office 365 組織。
-ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 您可以使用郵件流程規則 (傳輸規則) 來識別並對流過 Office 365 組織的郵件採取動作。
+ms.openlocfilehash: a08d3ff0d976def1d104c99a9532fe5c826f0523
+ms.sourcegitcommit: 90e514177a1ee6b7485334b15c588b0ac906aa26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153145"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726054"
 ---
-# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中郵件流程規則 （傳輸規則）
+# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的郵件流程規則 (傳輸規則)
 
 您可以使用郵件流程規則 (也稱為傳輸規則)，找出經過 Office 365 組織的郵件並採取相應動作。郵件流程規則類似於 Outlook 和 網頁型 Outlook 中可用的收件匣規則。主要差異是郵件流程規則會在郵件傳輸期間採取動作，而不是在郵件傳遞至信箱之後。郵件流程規則包含一組更豐富的條件、例外狀況和行動，可讓您靈活地實作許多種郵件原則。
   
 本文說明郵件流程規則的元件和它們的運作方式。
   
-步驟來建立、 複製和管理郵件流程規則，請參閱**管理郵件流程規則**。 針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。 若要深入了解測試選項，請參閱 <<c0>測試郵件流程規則」 和 「<b1>原則提示</b1>。
+如需建立、複製及管理郵件流程規則的步驟, 請參閱**管理郵件流程規則**。 針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。 若要深入瞭解測試選項, 請參閱**測試郵件流程規則**和**原則提示**。
   
 如需符合郵件流程規則之訊息的摘要和詳細報告，請參閱 **使用 Office 365 的郵件保護報告以檢視有關惡意程式碼、垃圾郵件和規則偵測的資訊**。
   
 若要使用郵件流程規則實作特定的訊息原則，請參閱下列主題︰
   
-- [若要檢查郵件附件，Office 365 中的使用郵件流程規則](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+- [使用郵件流程規則檢查 Office 365 中的郵件附件](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
 - [設定 Office 365 企業版中的加密](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
@@ -37,13 +37,13 @@ ms.locfileid: "34153145"
     
 - [使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [在 Office 365 中建立整個組織的安全寄件者或封鎖的寄件者清單](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [在 Office 365 中建立封鎖寄件者清單](../create-block-sender-lists-in-office-365.md)
     
 - [透過 Exchange Online Protection 中的檔案附件封鎖功能來降低惡意軟體威脅](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     
 - [定義加密或解密電子郵件訊息的規則](https://go.microsoft.com/fwlink/p/?Linkid=402846)
     
-下列視訊提供示範設定郵件流程規則，在 Exchange Online Protection。
+下列影片提供在 Exchange Online Protection 中設定郵件流程規則的示範。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
@@ -53,13 +53,13 @@ ms.locfileid: "34153145"
   
 - **條件** 識別您要套用動作的郵件。有些條件會檢查郵件標頭欄位 (例如 [收件者]、[寄件者] 或 [副本] 欄位)。有些條件則會檢查郵件屬性 (例如郵件主旨、內文、附件、郵件大小或郵件分類)。在使用大部分的條件時，您都必須指定比較運算子 (例如等於、不等於或包含) 以及要比對的值。如果沒有條件或例外狀況，則規則會套用至所有郵件。 
     
-    如需有關 Exchange Online Protection 中郵件流程規則條件的詳細資訊，請參閱[中 Exchange Online 的郵件流程規則條件和例外狀況 （述詞）。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+    如需 Exchange Online Protection 中郵件流程規則條件的詳細資訊, 請參閱[郵件流程規則條件和例外狀況 (述詞) 中的 Exchange online。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
     
 - **例外狀況** 選擇性地識別不應該套用動作的郵件。可在條件中使用的訊息識別碼也可用於例外狀況。例外狀況可覆寫條件並防止規則動作套用到郵件，即使郵件符合所有設定的條件也是如此。 
     
 - **動作** 指定對於符合規則中的條件，但不符合任何例外狀況的郵件，所應採取的動作。有許多動作可用，例如，拒絕、刪除或重新導向郵件、新增其他收件者、在郵件主旨中新增前置詞，或是將免責聲明插入郵件內文。 
     
-    如需郵件流程規則動作可在 Exchange Online Protection，請參閱[郵件流程規則動作在 Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。
+    如需 Exchange Online Protection 中所提供郵件流程規則動作的詳細資訊, 請參閱[Exchange Online protection 中的郵件流程規則動作](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)。
     
 - **屬性** 指定其他不是條件、例外狀況或動作的規則設定。例如，何時應套用規則、是否強制執行或測試規則，以及規則作用中的時間週期。 
     
@@ -84,7 +84,7 @@ ms.locfileid: "34153145"
 |**EAC 中的屬性名稱**|**PowerShell 中的參數名稱**|**描述**|
 |:-----|:-----|:-----|
 |**優先順序** <br/> | _Priority_ <br/> |表示規則套用到郵件的順序。預設優先順序是以規則的建立時間為基礎 (較舊規則的優先順序高於較新的規則，而較高優先順序的規則會在較低優先順序的規則之前處理)。    <br/> 您可以在規則清單中向上或向下移動規則，以變更 EAC 中的規則優先順序。在 PowerShell 中，您可設定優先順序號碼 (0 為最高優先順序)。    <br/> 例如，如果有一個規則是拒絕含有信用卡號碼的郵件，而另一個規則是需要核准，則您一定希望先執行拒絕規則，並停止套用其他規則。  |
-|**模式** <br/> | _Mode_ <br/> |您可以指定是否要讓規則立即開始處理郵件，或您是否想要測試規則，而不影響郵件傳遞 (不論是否有資料遺失防護或 DLP 原則提示)。  <br/> 原則提示可在 Outlook 或 網頁型 Outlook 中呈現簡短附註，以提供可能原則違規的相關資訊給正在建立郵件的人員。如需詳細資訊，請參閱 **Policy Tips** 。  <br/> 如需模式的詳細資訊，請參閱 <<c0>測試郵件流程規則。  <br/> |
+|**模式** <br/> | _Mode_ <br/> |您可以指定是否要讓規則立即開始處理郵件，或您是否想要測試規則，而不影響郵件傳遞 (不論是否有資料遺失防護或 DLP 原則提示)。  <br/> 原則提示可在 Outlook 或 網頁型 Outlook 中呈現簡短附註，以提供可能原則違規的相關資訊給正在建立郵件的人員。如需詳細資訊，請參閱 **Policy Tips** 。  <br/> 如需模式的詳細資訊, 請參閱**測試郵件流程規則**。  <br/> |
 |**於下列日期啟用此規則** <br/> **於下列日期停用此規則** <br/> | _ActivationDate_ <br/>  _ExpiryDate_ <br/> |指定規則的有效日期範圍。  <br/> |
 |**On** check box selected or not selected  <br/> |新規則： _New-TransportRule_ Cmdlet 上的  **Enabled** 參數。  <br/> 現有規則：使用 **Enable-TransportRule** 或 **Disable-TransportRule** Cmdlet。  <br/> 此值會顯示在規則的 **State** 屬性中。  <br/> |您可以建立已停用的規則，而在您準備進行測試時加以啟用。或者，您可以在不刪除規則的情況下進行停用，以保留設定。  <br/> |
 |**如果無法完成規則處理時便順延郵件** <br/> | _RuleErrorAction_ <br/> |您可以指定如果無法完成規則處理時，應該如何處理郵件。預設會忽略此規則，但您可以選擇重新提交郵件進行處理。  <br/> |
@@ -117,13 +117,13 @@ All messages that flow through your organization are evaluated against the enabl
    
 ## <a name="what-else-should-i-know"></a>其他注意事項
 
-- 規則的**版本**或**RuleVersion**屬性值不在 Exchange Online Protection 中重要的。 
+- 在 Exchange Online Protection 中, 規則的**Version**或**RuleVersion**屬性值並不重要。 
     
 - 在建立或修改郵件流程規則之後，可能需要 30 分鐘，以將新規則或更新的規則套用至訊息。
     
 ## <a name="for-more-information"></a>相關資訊
   
-[使用郵件流程規則來 inspect message attachments 於 Exchange Online](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+[使用郵件流程規則檢查 Exchange Online 中的郵件附件](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
 [Office 365 中的電子郵件加密](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   

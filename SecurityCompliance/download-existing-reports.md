@@ -1,10 +1,10 @@
 ---
-title: 下載現有的報表安全性&amp;合規性中心
+title: 在安全性&amp;與合規性中心下載現有的報告
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,37 +12,37 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: 了解如何下載一或多個現有的報表，安全性&amp;合規性中心。
-ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 瞭解如何在安全性&amp;與合規性中心下載一或多個現有的報告。
+ms.openlocfilehash: 19bae24fd72cb6414f015218db1e2737d1fcd0d6
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256921"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077839"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>下載現有的報表安全性&amp;合規性中心
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>在安全性&amp;與合規性中心下載現有的報告
 
-在[安全性&amp;合規性中心](https://protection.office.com)，有幾項[報表和深入解析](reports-and-insights-in-security-and-compliance.md)可用以協助貴組織的安全性小組減輕並解決貴組織的威脅。 如果您是貴組織的安全性小組的成員，您可以下載一或多個現有的報表。 
+在[安全性&amp;與合規性中心](https://protection.office.com)中, 有數個[報告和深入](reports-and-insights-in-security-and-compliance.md)瞭解可協助貴組織的安全小組降低和解決組織的威脅。 如果您是組織的安全小組成員, 您可以下載一或多個現有的報告。 
   
 ## <a name="download-existing-reports"></a>下載現有的報告
 
 > [!IMPORTANT]
-> 請確定您有必要[權限指派在 Office 365 安全性&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。 一般而言，Office 365 全域系統管理員、 安全性管理員和安全性讀取者可以存取報告安全性&amp;合規性中心。 
+> 請確定您具備[Office 365 安全性&amp;與合規性中心所指派](permissions-in-the-security-and-compliance-center.md)的必要許可權。 一般而言, Office 365 全域系統管理員、安全性系統管理員和安全性讀者可以存取安全性&amp;合規性中心內的報告。 
   
-1. 在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **下載報告**。
+1. 在[安全性&amp;與合規性中心](https://protection.office.com)中, 移至 [**報告** \> ]**以下載**。
     
-2. 在清單中選取一或多個項目。
+2. 選取清單中的一或多個專案。
     
-3. 按一下 [**下載報告**]，然後按一下 [**關閉**]。
+3. 按一下 [**下載報告**], 然後按一下 [**關閉**]。
     
 ## <a name="related-topics"></a>相關主題
 
-[報告和 Office 365 安全性的深入解析&amp;合規性中心](reports-and-insights-in-security-and-compliance.md)
+[Office 365 安全性&amp;與合規性中心中的報告與深入資訊](reports-and-insights-in-security-and-compliance.md)
   
-[建立報表排程安全性&amp;合規性中心](create-a-schedule-for-a-report.md)
+[在安全性&amp;與合規性中心建立報表的排程](create-a-schedule-for-a-report.md)
   
-[管理安全性的報表排程&amp;合規性中心](manage-schedules-for-multiple-reports.md)
+[管理安全性&amp;與合規性中心內的報告排程](manage-schedules-for-multiple-reports.md)
   
-[下載自訂報告中的安全性&amp;合規性中心](set-up-and-download-a-custom-report.md)
+[在安全性&amp;與合規性中心下載自訂報告](set-up-and-download-a-custom-report.md)
   
 

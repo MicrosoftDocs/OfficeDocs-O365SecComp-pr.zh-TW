@@ -15,86 +15,86 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: 包含 Office 365 中的其他屬性的說明稽核記錄。
-ms.openlocfilehash: 69dfe34b0ace8061c3c41ae074582016fe61a55d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Office 365 audit log 記錄中所包含的其他屬性說明。
+ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
+ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150335"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253932"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 稽核記錄中的詳細內容
 
-當您從安全性 & 合規性中心匯出的稽核記錄搜尋結果時，您必須下載符合您的搜尋準則的所有結果的選項。 您執行這項操作藉由選取 [**將結果匯出**\>在**稽核記錄搜尋**] 頁面上的 [**下載所有結果**。 如需詳細資訊，請參閱 <<c0>的搜尋稽核記錄在 Office 365。
+當您從安全性 & 合規性中心匯出審核記錄搜尋的結果時, 您可以選擇下載符合搜尋準則的所有結果。 若要執行此動作, 請選取 [**匯出結果** \> ] [**審核記錄搜尋**] 頁面上的 [**下載所有結果**]。 如需詳細資訊, 請參閱[Search the audit log in The Office 365](search-the-audit-log-in-security-and-compliance.md)。
   
- 當您所有的匯出稽核記錄搜尋結果時，從 Office 365 整合的稽核記錄檔複製到逗點的未經處理資料分隔值 (CSV) 檔案，這會下載到本機電腦。 此檔案包含的其他資訊從名為**詳細資料**] 欄中的稽核記錄項目。 此資料行包含多個屬性的稽核記錄檔記錄的多重值屬性。 此多重值屬性中的**屬性： 值**組的每個都以逗號分隔。 
+ 當您匯出審核記錄搜尋的所有結果時, Office 365 統一的審核記錄中的原始資料會複製到逗號分隔值 (CSV) 檔案, 此檔案會下載到您的本機電腦上。 此檔案包含名為**AuditData**之資料行中每個審計記錄的其他資訊。 此資料行包含來自 audit log 記錄的多個屬性的多重值屬性。 此多重值屬性中的每個**屬性: 值**對都是以逗號分隔。 
   
-下表說明中所包含的內容-根據 Office 365 服務中發生事件 — 在多重屬性的**詳細資料**] 欄中。 **具有此屬性的 Office 365 服務**] 欄中指出之服務與活動 （使用者或系統管理員），其中包含屬性的類型。 有關這些屬性，或可能不會列示在本主題的內容的詳細資訊，請參閱[Office 365 管理活動 API 結構描述](https://go.microsoft.com/fwlink/p/?LinkId=717993)。
+下表說明所包含的屬性, 取決於發生事件的 Office 365 服務 (在 [多重屬性**AuditData** ] 欄中)。 **具有此屬性欄的 Office 365 服務會**指出包含屬性的服務和活動類型 (使用者或系統管理員)。 如需這些屬性的詳細資訊, 或是本主題中可能未列出的屬性, 請參閱[Office 365 管理活動 API 架構](https://go.microsoft.com/fwlink/p/?LinkId=717993)。
   
 > [!TIP]
-> 您可以使用 Excel 中的 Power Query 此資料行分割成多個資料行，使每個屬性將有它自己的資料行。 這可讓您排序及篩選一或多個這些屬性。 若要了解如何執行這項操作，請參閱[分割資料行的文字 (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662)的 「 分割資料行分隔符號 」 一節。 
+> 您可以使用 Excel 中的 Power Query 將此欄分割成多個欄, 讓每個屬性都有自己的資料行。 這可讓您排序及篩選其中一個或多個屬性。 若要瞭解如何執行這項操作, 請參閱[分割一欄文字 (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662)中的「依分隔符號分割資料行」一節。 
   
-|**屬性**|**描述**|**具有此屬性的 office 365 服務**|
+|**屬性**|**描述**|**具有此屬性的 Office 365 服務**|
 |:-----|:-----|:-----|
-|動作項目|執行巨集指令的使用者或服務帳戶。|Azure Active Directory|
-|AddOnName|已新增、 移除或小組中更新附加元件的名稱。 在 [Microsoft Teams 附加元件的型別是 bot、 連接器或] 索引標籤。|Microsoft Teams|
-|AddOnType|已新增、 移除或小組中更新的附加元件的類型。 下列的值可指出附加元件的類型。  <br/> **1** -會指出 bot。<br/> **2** -會指出連接器。<br/> **3** -會指出索引標籤。|Microsoft Teams|
-|AzureActiveDirectoryEventType|Azure Active Directory 事件的類型。 下列的值可指出事件的類型。  <br/> **0** -會指出帳戶登入事件。<br/> **1** -會指出 Azure 應用程式的安全性事件。|Azure Active Directory|
-|ChannelGuid|Microsoft Teams 通道的識別碼。 通道位於小組識別由**TeamName**和**TeamGuid**屬性。|Microsoft Teams|
-|ChannelName|Microsoft Teams 通道的名稱。 通道位於小組識別由**TeamName**和**TeamGuid**屬性。|Microsoft Teams|
-|用戶端|用戶端裝置，裝置作業系統，用來登入事件 (例如，Nokia Lumia 920; 裝置瀏覽器Windows Phone 8;IE 行動 11）。|Azure Active Directory|
-|ClientInfoString|電子郵件用戶端用來執行此作業，例如瀏覽器版本、 Outlook 版本，以及行動裝置資訊的相關資訊|Exchange （信箱活動）|
-|ClientIP|活動已記錄時使用的裝置 IP 位址。 IP 位址會顯示在 IPv4 或 IPv6 地址格式。|Exchange 和 Azure Active Directory|
-|ClientIPAddress|ClientIP 相同。|SharePoint|
-|CreationTime|日期和時間以 Coordinated Universal Time (UTC) 使用者執行活動時。|全部|
-|DestinationFileExtension|檔案副檔名的檔案，複製或移動。 此屬性僅適用於 FileCopied 和 FileMoved 使用者活動的顯示。|SharePoint|
-|DestinationFileName|複製或移動的檔案名稱。 此屬性會顯示僅適用於 FileCopied 和 FileMoved 動作。|SharePoint|
-|DestinationRelativeUrl|其中檔案複製或移動的目的地資料夾的 URL。 **SiteURL**、 **DestinationRelativeURL**，和**DestinationFileName**屬性值的組合為**ObjectID**屬性，亦即已複製之檔案的完整路徑名稱的值相同。 此屬性僅適用於 FileCopied 和 FileMoved 使用者活動的顯示。|SharePoint|
-|EventSource|識別事件發生在 SharePoint 中。 可能值是**SharePoint**及**ObjectModel**。|SharePoint|
-|ExternalAccess|對於 Exchange 系統管理員活動，指定是否在使用者在您的組織，由 Microsoft 資料中心的人員或資料中心服務帳戶，或委派的系統管理員執行指令程式。 **為 False**的值會指出此 cmdlet 所執行的組織中的人員。 **則為 True**的值會指出此 cmdlet 所執行的資料中心人員、 資料中心服務帳戶或將委派的管理員。  <br/> Exchange 信箱活動，會指定是否由組織外部使用者存取信箱。|Exchange|
-|ExtendedProperties|擴充的屬性如 Azure Active Directory 事件。|Azure Active Directory|
-|ID|報告項目的識別碼。 識別碼可唯一識別的報告項目。|全部|
-|InternalLogonType|保留給內部使用。|Exchange （信箱活動）|
-|ItemType|已存取或修改物件的類型。 可能值包括**檔案**、**資料夾**、 **Web**、**網站**、**租用戶**及**DocumentLibrary**。|SharePoint|
+|參與者|執行動作的使用者或服務帳戶。|Azure Active Directory|
+|AddOnName|在小組中新增、移除或更新之附加元件的名稱。 Microsoft 小組中的附加元件類型為 bot、連接器或索引標籤。|Microsoft Teams|
+|AddOnType|在小組中新增、移除或更新的附加元件類型。 下列值會指出附加元件的類型。  <br/> **1** -表示 bot。<br/> **2** -表示連接器。<br/> **3** -表示索引標籤。|Microsoft Teams|
+|AzureActiveDirectoryEventType|Azure Active Directory 事件的類型。 下列值會指出事件的類型。  <br/> **0** -表示帳戶登入事件。<br/> **1** -表示 Azure 應用程式安全性事件。|Azure Active Directory|
+|ChannelGuid|Microsoft 小組通道的識別碼。 通道所在的小組是由**TeamName**和**TeamGuid**屬性來識別。|Microsoft Teams|
+|ChannelName|Microsoft 小組通道的名稱。 通道所在的小組是由**TeamName**和**TeamGuid**屬性來識別。|Microsoft Teams|
+|用戶端|用於登入事件的用戶端裝置、裝置 OS 和裝置瀏覽器 (例如 Nokia Lumia 920;Windows Phone 8;IE Mobile 11)。|Azure Active Directory|
+|ClientInfoString|用來執行作業之電子郵件客戶程式的相關資訊, 例如瀏覽器版本、Outlook 版本, 以及行動裝置資訊|Exchange (信箱活動)|
+|ClientIP|記錄活動時所使用之裝置的 IP 位址。 IP 位址會以 IPv4 或 IPv6 位址格式顯示。|Exchange 和 Azure Active Directory|
+|ClientIPAddress|與 ClientIP 相同。|SharePoint|
+|CreationTime|使用者執行活動時的日期和時間 (國際標準時間 (UTC))。|全部|
+|DestinationFileExtension|複製或移動之檔案的副檔名。 只有 FileCopied 和 FileMoved 使用者活動才會顯示此屬性。|SharePoint|
+|Destinationfilename 檔案|將複製或移動的檔案名。 此屬性只會針對 FileCopied 和 FileMoved 動作顯示。|SharePoint|
+|DestinationRelativeUrl|將檔案複製或移動至其中的目的地資料夾的 URL。 **SiteURL**、 **DestinationRelativeURL**及**destinationfilename 檔案**屬性值的組合與**ObjectID**屬性的值相同, 後者是已複製檔案的完整路徑名稱的值。 只有 FileCopied 和 FileMoved 使用者活動才會顯示此屬性。|SharePoint|
+|EventSource|識別 SharePoint 中發生的事件。 可能的值為**SharePoint**和**ObjectModel**。|SharePoint|
+|ExternalAccess|針對 Exchange 系統管理員活動, 指定由組織中的使用者、Microsoft 資料中心人員或資料中心服務帳戶, 或委派的管理員是否執行 Cmdlet。 值**False**表示您組織中的某個人已執行 Cmdlet。 值**True**表示 Cmdlet 由資料中心人員、資料中心服務帳戶或委派的管理員執行。  <br/> 在 [Exchange 信箱活動] 中, 指定是否由組織外部的使用者存取信箱。|Exchange|
+|ExtendedProperties|Azure Active Directory 事件的延伸屬性。|Azure Active Directory|
+|ID|報表專案的識別碼。 識別碼可唯一識別報表專案。|全部|
+|InternalLogonType|保留給內部使用。|Exchange (信箱活動)|
+|ItemType|已存取或修改的物件類型。 可能的值**** 包括檔案、**資料夾**、 **Web**、**網站**、**租**使用者和**DocumentLibrary**。|SharePoint|
 |LoginStatus|識別可能發生的登入失敗。|Azure Active Directory|
-|LogonType|信箱存取的類型。 下列的值表示存取信箱的使用者類型。  <br/><br/> **0** -會指出信箱擁有者。<br/> **1** -會指出系統管理員。<br/> **2** -表示代理人。 <br/>**3** -會指出在 Microsoft 資料中心中的傳輸服務。<br/> **4** -會指出在 Microsoft 資料中心中的服務帳戶。 <br/>**6** -會指出委派的管理員。|Exchange （信箱活動）|
-|MailboxGuid|Exchange 的上次存取信箱的 GUID。|Exchange （信箱活動）|
-|MailboxOwnerUPN|擁有存取信箱之人員的電子郵件地址。|Exchange （信箱活動）|
-|成員|列出已新增或移除的小組的使用者。 下列的值表示指派給使用者的角色類型。  <br/><br/> **1** -表示擁有者 」 角色。<br/> **2** -會指出 「 成員 」 角色。<br/> **3** -會指出 「 來賓 」 角色。 <br/><br/>Members 屬性也會包含您的組織和成員的電子郵件地址的名稱。|Microsoft Teams|
-|ModifiedProperties (名稱、 NewValue，OldValue)|包含的系統管理事件，例如將使用者新增網站或網站集合系統管理員群組成員身分的屬性。 屬性包含 （例如，[網站管理] 群組） 已修改的屬性名稱的新值已修改的屬性 （這類使用者已新增為網站系統管理員，並修改物件的先前值。|所有 （系統管理員活動）|
-|ObjectID|針對 Exchange 系統管理員稽核記錄，由指令程式修改物件的名稱。  <br/> SharePoint 活動、 檔案或資料夾的使用者存取的完整 URL 路徑名稱。  <br/> 針對 Azure AD 的活動，已修改的使用者帳戶的名稱。|全部|
-|作業|使用者或系統管理員活動的名稱。 此屬性的值會對應至**活動**中，選取值下拉式清單。 如果已選取 [**顯示結果的所有活動**，報表將包含所有服務的所有使用者和系統管理員活動的項目。 描述登入 Office 365 的作業/活動的稽核記錄，請參閱[的搜尋稽核記錄在 Office 365](search-the-audit-log-in-security-and-compliance.md)中的 [**稽核活動**] 索引標籤。  <br/> Exchange 系統管理員活動，此屬性會識別所執行的指令程式的名稱。|全部|
+|LogonType|信箱存取的類型。 下列值表示存取信箱的使用者類型。  <br/><br/> **0** -表示信箱擁有者。<br/> **1** -表示系統管理員。<br/> **2** -表示代理人。 <br/>**3** -指出 Microsoft 資料中心內的傳輸服務。<br/> **4** -表示 Microsoft 資料中心的服務帳戶。 <br/>**6** -表示委派的系統管理員。|Exchange (信箱活動)|
+|MailboxGuid|所存取之信箱的 Exchange GUID。|Exchange (信箱活動)|
+|MailboxOwnerUPN|擁有所存取信箱之人員的電子郵件地址。|Exchange (信箱活動)|
+|成員|列出已從小組中新增或移除的使用者。 下列值會指出指派給使用者的角色類型。  <br/><br/> **1** -指出擁有者角色。<br/> **2** -指出成員角色。<br/> **3** -表示來賓角色。 <br/><br/>Members 屬性也包括您的組織名稱, 以及成員的電子郵件地址。|Microsoft Teams|
+|ModifiedProperties (Name、NewValue、OldValue)|此屬性包含在系統管理事件中, 例如將使用者新增為網站成員或網站集合管理員群組。 此屬性包含已修改的屬性名稱 (例如, 網站管理員群組) 修改過的屬性的新值 (例如, 新增為網站管理員的使用者, 以及已修改物件的先前值)。|全部 (系統管理活動)|
+|ObjectID|對於 Exchange 系統管理員審核記錄, 此 Cmdlet 所修改的物件名稱。  <br/> 針對 SharePoint 活動, 使用者所存取之檔案或資料夾的完整 URL 路徑名稱。  <br/> 針對 Azure AD 活動, 已修改的使用者帳戶名稱。|全部|
+|作業|使用者或系統管理員活動的名稱。 此屬性的值會對應至在 [**活動**] 下拉式清單中選取的值。 如果已選取 [**顯示所有活動的結果**], 則報告將包含所有服務的所有使用者和系統管理員活動的專案。 如需在 Office 365 audit 記錄檔中記錄之作業/活動的描述, 請參閱在[office 365 中搜尋 audit log](search-the-audit-log-in-security-and-compliance.md)中的 [已**審核的活動**] 索引標籤。  <br/> 對於 Exchange 系統管理員活動, 此屬性會識別所執行的指令程式名稱。|全部|
 |OrganizationID|Office 365 組織的 GUID。|全部|
-|路徑|存取郵件所在的信箱資料夾的名稱。 此屬性也找出該資料夾的位置中建立或複製/移至郵件時。|Exchange （信箱活動）|
-|參數|Exchange 系統管理員活動、 名稱和值的 Operation 屬性中所識別的指令程式搭配使用的所有參數。|Exchange （系統管理員活動）|
-|RecordType|指定記錄的作業類型。 下列的值可指出的記錄類型。  <br/><br/> **1** -會指出來自 Exchange 系統管理員稽核記錄的記錄。 <br/>**2** -會指出來自挑信箱項目上執行作業的 Exchange 信箱稽核記錄檔的記錄。 <br/>**3** -也會指出來自 Exchange 信箱稽核記錄的記錄。 此記錄類型表示作業的來源信箱 （如將多個項目移至 [刪除的項目] 資料夾或是永久刪除多個項目） 中的多個項目上執行。 <br/>**4** -會指出在 SharePoint 中，網站系統作業，例如系統管理員或使用者權限指派至網站。 <br/>**6** -會指出檔案或資料夾相關的作業在 SharePoint 中，例如使用者檢視或修改檔案。 <br/>**8** -會指出在 Azure Active Directory 中執行系統管理作業。 <br/>**9** -在 Azure Active Directory 中表示 OrgId 登入事件。 這個記錄類型已被取代。 <br/>**10** -會指出在資料中心的 Microsoft 人員所執行的安全性指令程式事件。 <br/>**11** -會指出資料遺失防護 (DLP) 事件，在 SharePoint 中。<br/> **12** -會指出 Sway 事件。 <br/>**13** -Exchange，當設有一種整合的 DLP 原則中的指示 DLP 事件。 Exchange 郵件流程規則 （也稱為傳輸規則） 為基礎的 DLP 事件不受支援。<br>**14** -會指出在 SharePoint 中的共用事件。<br/> **15** -Azure Active Directory 中表示 Secure Token Service (STS) 登入事件。 <br/>**18** -會指出安全性 & 合規性中心事件。 <br/>**20** -會指出 Power BI 事件。 <br/>**21**-會指出 Dynamics 365 事件。<br/>**22** -會指出 Yammer 事件。 <br/>**23** -會指出 Skype for Business 事件。 <br/>**24** -會指出 eDiscovery 事件。 這個記錄類型會指出由執行內容搜尋及管理安全性與合規性中心中的 eDiscovery 案例所執行的活動。 如需詳細資訊，請參閱[搜尋 eDiscovery 活動在 Office 365 稽核記錄](search-for-ediscovery-activities-in-the-audit-log.md)。<br/>**25、 26 日或 27** -會指出 Microsoft Teams 事件。 <br/>**28** -會指出網路釣魚和惡意程式碼事件從 Exchange Online Protection 和 Office 365 進階威脅防護的事件。<br/> **30** -會指出 Microsoft Flow 事件。<br/> **32**位指示 Microsoft Stream 事件。<br/> **35** -會指出 Microsoft Project 事件。 <br/> **36** -會指出 SharePoint 清單事件。<br/> **38** -會指出與保留原則和安全性與合規性中心中的保留標籤相關的事件。  <br/>**40** -會指出從安全性與合規性警示訊號結果的事件。<br/> **41** -會指出在 Office 365 進階威脅防護中的安全連結時間的區塊] 與 [封鎖覆寫事件。<br/>**44** -會指出工作場所分析事件。 <br/>**45** -會指出 PowerApps 應用程式事件。 <br/> **47** -會指出網路釣魚和惡意程式碼事件從 Office 365 進階威脅防護 SharePoint、 OneDrive 及 Microsoft Teams 中的檔案。|全部|
-|ResultStatus|會指出 （在 [**作業**] 屬性中指定） 的動作是否成功與否。  <br/> Exchange 系統管理員活動，此值為 **，則為 True** （成功） 或**False** （失敗）。|全部  <br/>|
-|SecurityComplianceCenterEventType|表示活動是安全性 & 合規性中心事件。 所有安全性 & 合規性中心活動會都有此屬性為**0**的值。|安全規範中心|
-|SharingType|已指派給資源共用的使用者的共用權限類型。 此使用者識別**UserSharedWith**屬性中。|SharePoint|
-|網站|檔案或資料夾的使用者存取所在的網站 GUID。|SharePoint|
-|SiteUrl|檔案或資料夾的使用者存取所在的網站 URL。|SharePoint|
-|SourceFileExtension|由使用者所存取的檔案副檔名。 此屬性是空白的上次存取的物件時的資料夾。|SharePoint|
-|SourceFileName|檔案或資料夾之使用者所存取的名稱。|SharePoint|
-|SourceRelativeUrl|包含使用者所存取的檔案的資料夾的 URL。 **SiteURL**、 **SourceRelativeURL**，和**SourceFileName**屬性值的組合為**ObjectID**屬性，亦即使用者所存取的檔案的完整路徑名稱的值相同。|SharePoint|
-|主旨|存取郵件的主旨行。|Exchange （信箱活動）|
-|TabType| ] 索引標籤的類型新增、 移除或小組中更新。 此屬性的可能值包括：  <br/><br/> **Excelpin** -Excel] 索引標籤。  <br/> **分機**所有的第一方和協力廠商應用程式;例如 Planner、 VSTS、 和表單。  <br/> **附註**的 OneNote] 索引標籤。  <br/> **Pdfpin** -PDF] 索引標籤。  <br/> **Powerbi** -PowerBI] 索引標籤。  <br/> **Powerpointpin** -PowerPoint] 索引標籤。  <br/> **Sharepointfiles** -SharePoint] 索引標籤。  <br/> **網頁**-釘選的網站] 索引標籤。  <br/> **Wiki] 索引標籤**-wiki] 索引標籤。  <br/> **Wordpin** -Word 索引標籤。|Microsoft Teams|
-|Target|使用者上所執行的巨集指令 （[**作業**] 屬性中所識別）。 例如，如果來賓使用者新增至 SharePoint 或 Microsoft 小組，則該使用者就會被列在此屬性。|Azure Active Directory|
-|TeamGuid|在 [Microsoft Teams 小組的識別碼。|Microsoft Teams|
-|TeamName|在 [Microsoft Teams 小組的名稱。|Microsoft Teams|
-|UserAgent|使用者的瀏覽器的相關資訊。 在瀏覽器提供此資訊。|SharePoint|
-|UserDomain|使用者 （動作項目） 的用戶組織的身分識別資訊誰執行巨集指令。|Azure Active Directory|
-|UserID|執行的巨集指令 （在 [**作業**] 屬性中指定），造成正在記錄之記錄中的使用者。 請注意系統帳戶 （例如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM） 所執行的活動的記錄也會包含在稽核記錄檔。|全部|
-|UserKey|**UserID**屬性中所識別之使用者的替代識別碼。 例如，這個屬性會填入 passport 唯一識別碼 (PUID) 在 SharePoint 中的使用者所執行的事件。 此屬性也可能相同值指定為其他服務] 與 [系統帳戶所執行的事件中發生事件的**UserID**屬性。|全部|
-|UserSharedWith|資源共用的使用者。 如果**作業**屬性的值是**SharingSet**包含此屬性。 此使用者也會列在報告中的**共用與**資料行。|SharePoint|
-|UserType|執行此作業的使用者類型。 下列的值可指出使用者類型。 <br/> <br/> **0** -一般使用者。 <br/>**2** -Office 365 組織中系統管理員。 <sup>1</sup> <br/>**3** -Microsoft 資料中心系統管理員或資料中心系統帳戶。 <br/>**4** -系統帳戶。 <br/>**5** -應用程式。 <br/>**6** -服務主要名稱。<br/>**7** -自訂原則。<br/>**8** -系統原則。|全部|
-|版本|會指出記錄活動 （由**Operation**屬性識別） 的版本號碼。|全部|
-|工作量|Office 365 服務發生的活動。 此屬性的可能值包括：  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>規範<br/>Sway<br/>商務用 Skype<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>專案<br/>PowerApps<br/>工作場所分析**|全部|
+|路徑|所存取郵件所在之信箱資料夾的名稱。 此屬性也會識別在其中建立郵件或複製/移動至其中的資料夾。|Exchange (信箱活動)|
+|參數|針對 Exchange 系統管理活動, 所有參數的名稱和值, 都是與 Operation 屬性中所識別的 Cmdlet 搭配使用。|Exchange (系統管理活動)|
+|RecordType|記錄所指定的作業類型。 下列值會指出記錄類型。  <br/><br/> **1** -指出 Exchange 系統管理員 audit log 中的記錄。 <br/>**2** -表示 Exchange 信箱 audit 記錄檔中對 singled 信箱專案執行的作業的記錄。 <br/>**3** -也指出 Exchange 信箱 audit log 中的記錄。 此記錄類型表示已對來源信箱中的多個專案執行作業 (例如, 將多個專案移至 [刪除的郵件] 資料夾, 或永久刪除多個專案)。 <br/>**4** -表示 SharePoint 中的網站管理員作業, 例如系統管理員或使用者指派許可權給網站。 <br/>**6** -表示 SharePoint 中的檔案或資料夾相關作業, 例如使用者查看或修改檔案。 <br/>**8** -指出在 Azure Active Directory 中執行的系統管理作業。 <br/>**9** -表示 Azure Active Directory 中的 OrgId 登入事件。 此記錄類型已被取代。 <br/>**10** -指出由 Microsoft 人員在資料中心執行的安全性 Cmdlet 事件。 <br/>**11** -指出 SharePoint 中的資料遺失保護 (DLP) 事件。<br/> **12** -表示 Sway 事件。 <br/>**13** -當使用統一的 DLP 原則設定時, 會指出 Exchange 中的 DLP 事件。 不支援以 Exchange 郵件流程規則 (也稱為傳輸規則) 為基礎的 DLP 事件。<br>**14** -表示 SharePoint 中的共用事件。<br/> **15** -表示 Azure Active Directory 中的安全權杖服務 (STS) 登入事件。 <br/>**18** -指出安全性 & 規範中心事件。 <br/>**20** -表示 Power BI 事件。 <br/>**21**-表示 Dynamics 365 事件。<br/>**22** -表示 Yammer 事件。 <br/>**23** -表示商務用 Skype 事件。 <br/>**24** -表示 eDiscovery 事件。 此記錄類型會指出在安全性與合規性中心執行內容搜尋及管理 eDiscovery 案例所執行的活動。 如需詳細資訊, 請參閱[在 Office 365 audit 記錄檔中搜尋 eDiscovery 活動](search-for-ediscovery-activities-in-the-audit-log.md)。<br/>**25、26或 27** -表示 Microsoft 小組事件。 <br/>**28** -指出來自 Exchange Online Protection 和 Office 365 Advanced 威脅防護事件的網路釣魚和惡意程式碼事件。<br/> **30** -表示 Microsoft 流程事件。<br/> **31** -表示高級 eDiscovery 事件。<br/> **32** -表示 Microsoft Stream 事件。<br/> **35** -表示 Microsoft Project 事件。 <br/> **36** -指出 SharePoint 清單事件。<br/> **38** -指出與安全性與合規性中心中的保留原則和保留標籤相關的事件。  <br/>**40** -指出安全性和合規性警示信號所產生的事件。<br/> **41** -指出 Office 365 Advanced 威脅防護中的安全連結封鎖時間和封鎖覆寫事件。<br/>**44** -表示工作場所分析事件。 <br/>**45** -表示 PowerApps 應用程式事件。 <br/> **47** -表示 SharePoint、OneDrive 及 Microsoft 小組檔案的 Office 365 高級威脅防護的網路釣魚和惡意程式碼事件。 <br/> **52** -指出與資料洞察力 REST API 相關的事件。<br/>**54** -指出 SharePoint 清單專案事件。<br/>**55** -指出 SharePoint 內容類型事件。
+|ResultStatus|會指出動作 (在**Operation**屬性中指定) 是否成功。  <br/> 對於 Exchange 系統管理員活動, 此值為**True** (成功) 或**False** (失敗)。|全部  <br/>|
+|SecurityComplianceCenterEventType|表示活動是 & 規範中心事件的安全性。 所有安全性 & 規範中心活動的值都是**0**的屬性。|安全規範中心|
+|SharingType|指派給與資源分享之使用者的共用許可權類型。 此使用者是在**UserSharedWith**屬性中識別的。|SharePoint|
+|網站|使用者所存取的檔案或資料夾所在之網站的 GUID。|SharePoint|
+|SiteUrl|使用者所存取的檔案或資料夾所在之網站的 URL。|SharePoint|
+|SourceFileExtension|使用者所存取之檔案的副檔名。 如果所存取的物件是資料夾, 則此屬性為空白。|SharePoint|
+|SourceFileName|使用者所存取的檔案或資料夾名稱。|SharePoint|
+|SourceRelativeUrl|資料夾的 URL, 該資料夾包含使用者所存取的檔案。 **SiteURL**、 **SourceRelativeURL**及**SourceFileName**屬性值的組合與**ObjectID**屬性的值相同, 後者是使用者存取之檔案的完整路徑名稱。.。|SharePoint|
+|主旨|所存取之郵件的主旨行。|Exchange (信箱活動)|
+|TabType| 在小組中新增、移除或更新的索引標籤類型。 此屬性可能的值為:  <br/><br/> **Excelpin** -Excel 索引標籤。  <br/> **分機**-所有第一方和協力廠商應用程式;例如 Planner、VSTS 和表單。  <br/> [**附注**-OneNote] 索引標籤。  <br/> **Pdfpin** -PDF 索引標籤。  <br/> **Powerbi** -powerbi 索引標籤。  <br/> **Powerpointpin** -PowerPoint 索引標籤。  <br/> **Sharepointfiles** -A SharePoint 索引標籤。  <br/> [**網頁**]-[固定的網站] 索引標籤。  <br/> **Wiki-** 索引標籤-[wiki] 索引標籤。  <br/> **WorDPIn** -[Word] 索引標籤。|Microsoft Teams|
+|Target|執行動作 (在**Operation**屬性中識別) 的使用者。 例如, 如果將來賓使用者新增至 SharePoint 或 Microsoft 小組, 則該使用者將會列在此屬性中。|Azure Active Directory|
+|TeamGuid|Microsoft 小組中的小組識別碼。|Microsoft Teams|
+|TeamName|Microsoft 小組中的小組名稱。|Microsoft Teams|
+|UserAgent|使用者瀏覽器的相關資訊。 此資訊是由瀏覽器所提供。|SharePoint|
+|UserDomain|執行動作之使用者 (主角) 之租使用者組織的身分識別資訊。|Azure Active Directory|
+|UserID|執行動作的使用者 (在**Operation**屬性中指定), 導致記錄正在記錄中。 請注意, 系統帳戶 (例如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM) 所執行之活動的記錄也會包含在 audit 記錄檔中。|全部|
+|UserKey|在**UserID**屬性中所識別之使用者的替代識別碼。 例如, 此屬性會填入使用者在 SharePoint 中執行之事件的 passport 唯一識別碼 (PUID)。 此屬性也可能會指定與其他服務中**** 發生的事件相同的值, 以及系統帳戶執行的事件。|全部|
+|UserSharedWith|與資源分享的使用者。 如果**Operation**屬性的值為**SharingSet**, 則會包含此屬性。 此使用者也會列在報告中的 [**共用**欄位] 欄中。|SharePoint|
+|UserType|執行作業的使用者類型。 下列值表示使用者類型。 <br/> <br/> **0** -一般使用者。 <br/>**2** -您的 Office 365 組織中的系統管理員。 <sup>一級</sup> <br/>**3** -Microsoft 資料中心管理員或資料中心系統帳戶。 <br/>**4** -系統帳戶。 <br/>**5** -應用程式。 <br/>**6** -A 服務主體。<br/>**7** -自訂原則。<br/>**8** -系統原則。|全部|
+|版本|會指出已記錄之活動的版本號碼 (由**Operation**屬性識別)。|全部|
+|工作量|發生活動的 Office 365 服務。 此屬性可能的值為:  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>合規<br/>性<br/>Sway 商務<br/>用 Skype<br/>SecurityComplianceCenter<br/>PowerBI CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>專案<br/>PowerApps<br/>工作區分析**|全部|
 ||||
 
 > [!NOTE]
-> <sup>1</sup>稽核記錄中的 Azure Active Directory 與相關的事件，以系統管理員的值不會有使用。 系統管理員所執行的活動的稽核記錄會指出，一般使用者 (例如， **UserType: 0**) 執行的活動。 **UserID**屬性會識別 （一般使用者或系統管理員） 的人員誰執行活動。
+> <sup>1</sup>對於 Azure Active Directory 相關事件, 系統管理員的值不會用於審計記錄。 由系統管理員所執行之活動的審計記錄會指出一般使用者 (例如, **UserType: 0**) 會執行活動。 **UserID**屬性會識別執行活動的人員 (一般使用者或系統管理員)。
 
-當您按一下 [**詳細資訊**，檢視特定事件的詳細資料時，也會顯示上面所述的屬性。 
+當您在查看特定事件的詳細資料時, 當您按一下 [**詳細資訊**] 時, 也會顯示上面所述的屬性。 
   
-![按一下 [檢視稽核記錄的事件記錄的詳細的內容的詳細資訊](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![按一下 [詳細資訊] 以查看 audit log 事件記錄的詳細屬性](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
   

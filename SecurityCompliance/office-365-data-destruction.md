@@ -1,5 +1,5 @@
 ---
-title: Office 365 資料毀損
+title: Office 365 資料銷毀
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,28 +12,28 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 關於回收、 處置或損毀的 Office 365 資料中心的磁碟機和伺服器的 Microsoft 原則的概觀。
-ms.openlocfilehash: fec6065434fa9fa555a057c68eca60082225652c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 關於 Office 365 資料中心磁片磁碟機和伺服器之回收、處置或銷毀的 Microsoft 原則。
+ms.openlocfilehash: d94a4ff5f240bfbfcd690e6247869f0edc88059f
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262905"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622243"
 ---
-# <a name="office-365-data-destruction"></a>Office 365 資料毀損
+# <a name="office-365-data-destruction"></a>Office 365 資料銷毀
 
-## <a name="physical-data-destruction"></a>實體資料毀損
+## <a name="physical-data-destruction"></a>實體資料銷毀
 
-Microsoft 的資料處理標準的原則可能會位址回收和處置的磁碟機和失敗或淘汰的伺服器。 然後再重新使用 Office 365 內任何磁碟機，Microsoft 會執行與國家標準與技術 Special Publication 800-88 （[NIST SP 800-88 指導方針媒體病毒掃描](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)一致實體的病毒掃描程序). 在 Office 365 中的所有磁碟機都加密使用 BitLocker 磁碟區層級加密，因此實際上，NIST SP 800-88-相容清除是不必要的。 不過，它仍然會執行由 Microsoft。
+Microsoft 有資料處理標準原則, 可解決磁片磁碟機的回收和處置, 以及失敗或淘汰伺服器的情況。 在重複使用任何 Office 365 磁片磁碟機之前, Microsoft 會執行實際的淨化程式, 與國家標準和技術特別發行的出版物 800-88 ([NIST SP 800-88 準則進行媒體淨化](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)) 一致。 由於 Office 365 中的所有磁片磁碟機都是使用 BitLocker 大量層級加密進行加密, 因此在技術上不需要使用 NIST SP 800-88 相容性的擦除。 不過, Microsoft 會執行此程式。
 
-無法在 Office 365 資料中心實體損毀及稽核透過 ISO 程序中使用的磁碟。 依據資產類型來決定適當的處理方式。 針對無法抹除的硬碟，Microsoft 會使用摧毀媒體毀損程序 （例如 disintegrates、 pulverizes，或 incinerates），並呈現資訊的復原無法執行。 Microsoft 也會保留毀損的所有記錄。 Microsoft 正在重新使用 Office 365 內的伺服器上執行類似的病毒掃描程序。 這些指導方針包含電子版與實體的病毒掃描。
+在 Office 365 資料中心內使用的失敗磁片會受到 ISO 處理常式的實際損毀和審核。 資產類型決定適當的處置方法。 對於無法清除的硬碟, Microsoft 會使用析構程式來銷毀媒體, 並不可能的復原資訊。 例如, 磁片實際被損毀、pulverized 或 incinerated。 Microsoft 會保留所有銷毀記錄, 並在 Office 365 內重複使用的伺服器上執行類似的淨化程式。 這些指導方針包含電子和實體的淨化。
 
-使用實際銷毀程序所執行含有正在損毀的磁碟資料中心內的離站處置無法重複使用的磁碟機。 儲存媒體指定處置會放在安全位於每個區域資料中心的紙匣。 每個安全 bin 站台的監視可以視訊監視。 一旦處置 bin 達到大約 50%容量，網站服務小組連絡人實體安全性小組，以協調移除它。 網站服務人員然後移除處置紙匣] 底下護衛安全性長，直到它會被放置在等著資料毀損的安全的存放區。 原則和控管自己期間處置具有裝置資料的處理程序將會定期測試包括程序，確保機器核准毀損的條件。
+每個資料中心都使用內部網站實際銷毀程式來處理其磁片。 針對磁片處理所指定之儲存介質的安全箱位於資料中心的每個區域。 每個安全的 bin 工作站都有視頻監控監控。 一旦釋放的空間約達 50%, 網站服務小組就會與實體安全小組聯絡, 以協調移除。 網站服務人員和安全性辦公室會移除安全處置 bin, 並將它放在指定的安全儲存區中。 在處置期間, 管理對貼裝置之資料處理的原則和程式會進行例行測試, 包括確保已核准受破壞之機器狀況的程式。
 
-資料毀損程序，磁碟會先清除 NIST 800-88 （如果可能的話），相容的方式，然後它放入工業碎機，實際摧毀。 Microsoft 的維護離開使用 NIST SP 800-88 一致清除/清除、 資產毀損、 加密、 準確清查、 追蹤，以及傳輸期間保護的監管鏈，資料中心資產的責任。 此程序透過關閉電路電視監視及毀損憑證發行完成時。
+在資料析構程式中, 會以符合 NIST 800-88 (如果可能) 的方式清除磁片, 然後將其置於工業碎和實際 demolished。 Microsoft 為離開資料中心的資產提供責任, 使其成為使用 NIST SP 800-88 一致的清理/清除、資產銷毀、加密、正確清查、追蹤, 以及保護在傳輸期間的保管環節。 此程式是透過封閉電視來監視, 並在完成時發出銷毀憑證。
 
-Microsoft 會使用資料清除單位，從[極端的通訊協定解決方案](http://www.enterprisedataerasure.com/)(EPS)。 EPS 軟體支援 NIST SP 800-88 需求清除和清除/安全清除。 之前清除或損毀，詳細目錄是由 Microsoft 資產管理員所建立。 如果廠商用於毀損，廠商所提供毀損的損毀，每個資產來驗證的資產管理員的憑證。
+Microsoft 會使用來自[極端通訊協定解決方案](http://www.enterprisedataerasure.com/)(EPS) 的資料擦除單位。 EPS 軟體支援用於清理和清除/安全擦除的 NIST SP 800-88 需求。 在清理或銷毀之前, 會由 Microsoft 資產管理員建立清查。 如果供應商用於損毀, 則廠商會針對銷毀的每個資產 (由資產管理員驗證), 提供損毀憑證。
 
-## <a name="virtual-data-destruction"></a>虛擬資料毀損
+## <a name="virtual-data-destruction"></a>虛擬資料銷毀
 
-Microsoft 有資料處理原則和程序也解決有效的虛擬損毀的資料進行保護，以在服務中實刪除之後不當共用服務租用戶或之間正在存取資料的可能性。 會從一個租用戶中的服務中刪除的資料不存取另一個服務租用戶，即使部分或全部的相同的基礎實體儲存裝置稍後重新指派。 這是用來擴充虛擬環境的多個虛擬化及分散情形技術的效果，計算結果、 作用中刪除內每個服務租用戶 （例如[分頁清空](https://docs.microsoft.com/office365/securitycompliance/office-365-exchange-online-data-deletion#page-zeroing)），和必要的應用程式的行為媒體和應用程式的內容加密程序。
+Microsoft 具有資料處理原則和程式, 可解決資料的有效虛擬銷毀, 以防止在服務租使用者之間不正當的資料共用, 或在服務中實刪除後可供存取。 從一個租使用者中的服務刪除的資料無法存取其他服務租使用者, 即使有任何基礎實體儲存重新指派時也是如此。 這是多重虛擬化和分散技術用來擴充虛擬環境的複合效果, 以及每個服務租使用者 (例如[頁面清空](https://docs.microsoft.com/office365/securitycompliance/office-365-exchange-online-data-deletion#page-zeroing)) 中應用程式的使用中刪除行為, 以及所需的結果。媒體和應用程式內容加密程式。

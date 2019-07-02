@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft 365 安全性監視及報告資料
-description: 說明如何追蹤未經授權的資料外洩可能造成的使用者活動。
-keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 資訊安全中心、 監視、 報表、 資料
+title: Microsoft 365 安全中心的資料監視與報告
+description: 說明如何追蹤可能會導致未授權資料洩漏的使用者活動。
+keywords: 安全性、惡意程式碼、Microsoft 365、M365、security center、monitor、report、data
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,22 +12,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 741daff150ef52ef99c3da31159c02bc9431757f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1facdff5200378fd2084ca909de2bf279b084025
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263228"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852847"
 ---
-# <a name="monitor-and-report-data-in-microsoft-365-security"></a>在 Microsoft 365 安全性監視及報告資料
+# <a name="data-monitoring-and-reporting-in-microsoft-365-security-center"></a>Microsoft 365 安全中心的資料監視與報告
 
-[**資料**] 類別可協助追蹤未經授權的資料外洩可能造成的使用者活動。 這些是現有的 Office 365 DLP 原則報告的時重新作業，加上第 3 方 DLP 原則相符項目報告。
+**資料**類別可協助追蹤可能會造成未經授權資料洩漏的使用者活動。 這些是現有 Office 365 DLP 原則報告的返工, 以及協力廠商的 DLP 原則相符報告。
 
-您可以看到：
+您可以看到:
 
-* 共用最檔案從雲端應用程式的使用者
-* 多少 DLP 原則相符項目發生
-* 多少 DLP 原則覆寫或誤判所報告
-* 多少 DLP 原則相符項目發生在透過 Microsoft Cloud App Security 3rd 廠商雲端服務
+* 從雲端應用程式共用最多檔案的使用者
+* 已發生的 DLP 原則比對數目
+* 報告多少 DLP 原則覆寫或假陽性
+* 透過 Microsoft Cloud App Security 在協力廠商雲端服務中發生的 DLP 原則比對數目
 
-![監視 & 報告] 頁面上的資料類別](./media/security-docs/data.png)
+![報表的資料類別頁面](./media/security-docs/data.png)

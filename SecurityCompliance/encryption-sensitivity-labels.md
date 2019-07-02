@@ -3,7 +3,6 @@ title: 使用敏感度標籤中的加密來限制內容的存取
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153265"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199762"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度標籤中的加密來限制內容的存取
 
@@ -50,7 +49,7 @@ ms.locfileid: "34153265"
 2. **允許加標籤的內容到期**，可在特定日期，或是在套用標籤之後的特定天數之後。在此時間後，使用者將無法開啟加標籤的項目。如果您指定日期，則有效時間直到您的目前時區中該日期的午夜。(請注意，某些電子郵件用戶端可能因為其快取機制而無法強制執行到期，並顯示超過期限的電子郵件。)
 3. 在套用標籤之後**允許離線存取**可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該閾值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
 
-![敏感度標籤的加密設定](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![敏感度標籤的加密設定](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>用於離線存取的 Rights Management 使用授權
 
@@ -71,7 +70,7 @@ ms.locfileid: "34153265"
 1. 首先，新增將獲指派標籤內容之權限的使用者或群組。
 2. 接著，選擇那些使用者對標籤內容具有的權限。
 
-![將權限指派給使用者的選項](media/Sensitivity_Assign_permissions_settings.png)
+![將權限指派給使用者的選項](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>新增使用者或群組
 
@@ -95,13 +94,13 @@ ms.locfileid: "34153265"
 
 如需每一個特定權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
-![選擇預設或自訂權限的選項](media/Sensitivity_Choose_permissions_settings.png)
+![選擇預設或自訂權限的選項](media/Sensitivity-Choose-permissions-settings.png)
 
 請注意，相同標籤可將不同的權限授與不同的使用者。例如，單一標籤可將某些使用者指派為檢閱者，並將不同的使用者指派為共同作者，如下所示。
 
 若要這麼做，請新增使用者或群組、將權限指派給他們，並儲存這些設定。然後，重複這些步驟，新增使用者並將權限指派給他們，每次儲存設定。您可以視需要經常執行此動作，為不同的使用者定義不同的權限。
 
-![具有不同權限的不同使用者](media/Sensitivity_Multiple_users_permissions.png)
+![具有不同權限的不同使用者](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 簽發者 (套用敏感度標籤的使用者) 一律具有完全控制權
 

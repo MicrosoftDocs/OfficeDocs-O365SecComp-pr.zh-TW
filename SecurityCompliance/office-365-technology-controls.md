@@ -12,54 +12,60 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 摘要： Microsoft 技術控制項做法的 Office 365 的概觀。
-ms.openlocfilehash: a8dcb65880fc729fc067b2f2bcf25c7db76dbca9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: '摘要: Office 365 的 Microsoft 技術控制作法概述。'
+ms.openlocfilehash: ce2e09ce7db881197d2598c52283ecde7ed46e61
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262335"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622433"
 ---
 # <a name="office-365-technology-controls"></a>Office 365 技術控制 
 
-Microsoft 會使用數種工具和技術，以控制、 管理和對應地稽核存取客戶資料在 Exchange Online 和 SharePoint Online，包括加密箱和客戶加密箱、 多重要素驗證，以及更多。 Yammer 企業使用類似的控制項，如述[Yammer 企業存取控制](office-365-yammer-enterprise-access-controls.md)。
+Microsoft 會使用多種工具和技術, 控制、管理和審核其線上服務中的客戶資料存取。 這些適用于 Exchange Online、SharePoint Online、密碼箱和客戶加密箱、多重要素驗證等等。 Yammer 會使用[Yammer 企業存取控制](office-365-yammer-enterprise-access-controls.md)中所述的類似控制項。
 
-Office 365 工程師能夠零常設存取 Office 365 客戶資料，且必須經過核准程序，其中包含 Microsoft 與 – 如果客戶授權的客戶加密箱功能 Exchange Online 和 SharePoint Online – 客戶核准，才能存取客戶資料的服務作業可能會發生。 當授與核准時，特定服務的系統管理帳戶會佈建剛時間與剛足夠的存取權執行工作所需的服務要求。
+Office 365 工程師在存取 Office 365 客戶資料時, 可讓您取得任何許可權。 工程師必須先完成 Microsoft 核准程式, 才能存取服務作業的客戶資料。 如果客戶授權 Exchange Online 和 SharePoint Online 的客戶加密箱功能, 則存取客戶資料需要客戶核准。 經過核准後, 服務特定的系統管理帳戶就會為服務要求所需的工作布建即時存取。
 
-## <a name="lockbox-and-customer-lockbox"></a>加密箱和客戶加密箱
-雖然很少發生，客戶可以從可能會暴露在客戶的內容的 Microsoft 工程師，協助他們的問題的 Microsoft 要求協助。 控制存取至 Exchange Online (包括商務資料儲存在使用者的信箱中任何商務用 Skype （Skype for Business 涵蓋範圍不包含 Skype 會議廣播錄製或由使用者上傳至會議的內容）) 和 SharePoint Online （其中包含商務用 OneDrive），Microsoft 會使用稱為 Lockbox 的存取控制系統。 任何 Microsoft 工程師存取所有的 Exchange Online 或 SharePoint Online 的系統或資料之前，他們必須送出使用加密箱存取要求。 針對 Exchange Online 或 SharePoint Online 的所有提高權限存取需要使用加密箱。
+## <a name="lockbox-and-customer-lockbox"></a>密碼箱和客戶加密箱
 
-加密箱處理要求的權限，授與工程師執行服務內的作業及系統管理功能的能力。 透過加密箱，必須由前獲得的權限存取客戶資料的能力工程師管理員核准的工程師送出要求。 在管理員核准時工程師會有時間限制及範圍限制存取客戶資料處理客戶問題。
+雖然極少, 客戶可以向 Microsoft 索取協助, 以將客戶內容公開給 Microsoft 工程師。 若要控制對 Exchange Online 的存取, Microsoft 會使用稱為「密碼箱」的存取控制系統。 在任何 Microsoft 工程師存取任何 Exchange Online 或 SharePoint Online 系統或資料之前, 必須使用密碼箱提交存取要求。 所有 Exchange Online 和 SharePoint Online 的服務要求都是由密碼箱系統處理。 使用密碼箱和客戶加密箱, 所有核准的存取都可透過唯一的使用者進行追蹤, 讓工程師負責處理客戶資料。
 
-Office 365 客戶加密箱可協助您符合合規性責任，例如 FedRAMP 和 HIPAA、 中找到，如果您需要在進行中的程序進行明確資料的存取授權。 在極罕見的執行個體時的 Microsoft 服務工程師需要存取您的資料，您授與該存取才能解決此問題： 所需的資料和有限的時間。 支援工程師所採取的動作用途的稽核記錄，並可透過[Office 365 管理活動 API](https://msdn.microsoft.com/library/office/dn707383.aspx)和[安全性與合規性中心](http://protection.office.com/)。 客戶加密箱客戶插入 Lockbox 核准程序，並讓其能夠控制 Microsoft access 在其 Exchange Online 或 SharePoint Online 內容的服務作業的授權。
+> [!NOTE]
+> Exchange Online 包含任何儲存在使用者信箱中的商務用 Skype 資料。 商務用 skype 覆蓋率不包含 Skype 會議廣播錄製或使用者上傳給會議的內容。 SharePoint Online 包含商務用 OneDrive。
 
->**附註**： 客戶加密箱程式能在[Office 365 企業版 E5](https://products.office.com/business/office-365-enterprise-e5-business-software) ，作為附加元件形式購買，但您必須採取手動的動作，在 Microsoft 365 系統管理中心 (在 [服務設定 |客戶加密箱） 來啟用它。 如需詳細資訊，請參閱 [Office 365 Customer Lockbox 要求](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
+密碼箱處理要求的許可權, 可讓工程師在服務內執行操作和系統管理功能。 工程師透過加密箱提交要求, Microsoft 管理員必須先核准要求, 工程師才能存取客戶資料。 管理員核准之後, 工程師對客戶資料有時間限制和範圍限制存取, 以處理客戶的問題。
 
-Exchange Online 和 SharePoint Online 的所有服務要求是由加密箱系統都處理。 並與客戶加密箱強制執行存取這些服務客戶資料的曝光度與任何服務作業會通過 Lockbox 核准程序，然後可讓客戶核准或拒絕要求之後。
- 
-*圖 1-客戶加密箱工作流程*
+針對 Office 365 的客戶加密箱, 如果您需要明確資料存取授權的程式, 則可協助您符合合規性義務。 這是某些規範標準 (如 FedRAMP 和 HIPAA) 的必要條件。 客戶加密箱會將您插入密碼箱核准程式, 並讓您能夠控制 Microsoft 對您的 Exchange Online 或 SharePoint Online 內容的授權, 以進行服務作業。
 
-如果由客戶，則會拒絕要求，Microsoft 工程師將不會有的客戶內容存取權，並將無法完成服務作業。 如果要求核准由客戶，Microsoft 工程師將有限剛時間客戶內容存取權的透過監視和限制的管理介面。 加密箱與客戶加密箱，所有核准的存取是唯一的使用者，讓工程師負責其處理客戶資料可進行追蹤。
+在 Microsoft 服務工程師需要存取資料時, 在極少的情況下, 您只會授與解決問題所需的資料, 並限制在一段時間內。 如果您拒絕存取要求, Microsoft 工程師將無法存取您的內容, 也無法完成服務作業。 如果您核准要求, Microsoft 工程師就會透過受監視和限制的管理介面, 以有限的即時存取內容。
 
-## <a name="just-in-time-access"></a>剛-階段存取
-Microsoft 會使用剛-時間 (JIT) 存取原則的 Office 365，以進一步降低認證竄改和側面攻擊的風險。 JIT 移除服務持續性系統管理存取權，並取代，視需要提升這些角色到這些權利。 從系統管理員移除持續的權限，可確保認證可用的只有當他們所需，而且會移除在認證遭竊的情況下公司所面臨的風險。
+支援工程師採取的動作會記錄下來以供審計使用, 並可透過[Office 365 管理活動 API](https://msdn.microsoft.com/library/office/dn707383.aspx)和[安全性與合規性中心](http://protection.office.com/)進行存取。
 
-JIT access 模型需要工程師要求提升的權限來執行系統管理職責劃分有限的一段。 此外，OCEs 使用暫時帳戶，建立以電腦產生的複雜密碼，並授與只允許他們能執行必要的工作的角色。 例如，系統管理存取權授與的加密箱是時間繫結，並授與存取權的時間量取決於所要求的角色。 工程師指定加密箱系統要求期間所需的時間存取權的持續的時間。 加密箱系統將會拒絕的要求其中所要求的時間超過最大允許提高權限的時間。 在提高權限要求的到期日之後, 移除系統管理存取權，暫時帳戶已過期。
+>[!NOTE]
+> 您可以在[Office 365 企業版 E5](https://products.office.com/business/office-365-enterprise-e5-business-software)中使用客戶加密箱, 做為附加元件購買。 如需詳細資訊，請參閱 [Office 365 Customer Lockbox 要求](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
 
-當授權並核准 （例如，若要偵錯系統） 的存取，工程師就會收到所產生的授權系統核准提高權限的存取要求每次使用一次系統管理密碼。 此密碼由工程師複製到安全密碼、 是不同於 Microsoft 公司環境中，工程師的認證，而且僅適合提高權限的存取受到核准的工作階段。
+## <a name="just-in-time-access"></a>即時存取
 
-## <a name="constrained-management-interfaces"></a>限制的管理介面
-OCEs 使用兩個管理介面來執行系統管理工作： 透過安全的終端機服務閘道 (TSGs) 和遠端 PowerShell 的遠端桌面。 在這些管理介面有軟體原則和存取控制，放置在可執行哪些應用程式的重大限制哪些命令和 cmdlet 可用。 
+Microsoft 會使用 Office 365 的即時 (JIT) 存取原則, 以緩解認證篡改風險和側向攻擊。 JIT 會移除服務的持續式系統管理存取, 並將權利取代為根據需求提升至這些角色的能力。 從系統管理員移除持續性存取權限, 可確保認證只有在需要時才可供使用, 並降低認證盜竊風險。
 
-Office 365 伺服器將並行工作階段限制一工作階段的每個服務小組系統管理員，每個伺服器。 TSGs 設定以允許只會在單一的並行工作階段的使用者，並不允許多個工作階段。 TSGs 允許連線至多部伺服器同時，使用每個伺服器，在單一工作階段，讓系統管理員可以有效地執行其職責劃分的 Office 365 服務小組系統管理員。 服務小組系統管理員沒有 TSGs 本身的任何權限。 TSG 僅用於強制執行多重要素驗證 (MFA) 和加密的需求。 一旦服務小組管理員連線到 TSG 透過特定伺服器，特定的伺服器會強制執行系統管理員每一個工作階段的限制。
+JIT 存取模型要求工程師要求更高的許可權, 以執行系統管理責任。 此外, 工程師會使用以機器產生的複雜密碼建立的暫時帳戶, 並僅授與允許他們執行必要工作的角色。 例如, 由密碼箱所授與的系統管理存取是時間限制的, 而且所授與的存取時間取決於要求的角色。 工程師指定要求存取密碼箱系統所需的時間。 當要求的時間超過提升的最大允許時間時, 加密箱系統會拒絕要求。 到期之後, 系統會移除系統管理存取權, 而暫時帳戶就會過期。
 
-流量限制和 Office 365 人員的連線及設定需求的 Active Directory 群組原則所建立。 這些原則包含下列特性：
-- TSGs 經設定為使用[FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2 驗證的加密
-- TSG 工作階段都設定為 30 分鐘一段時間之後中斷
-- TSG 工作階段都設定為自動記錄關閉 24 小時之後
+當授權和核准存取時, 工程師會收到由授權系統所產生的一次性管理密碼。 每次核准存取許可權要求時, 都會產生新密碼。 密碼會被覆制到密碼安全, 並與工程師的 Microsoft 公司環境認證分開, 而且只適用于已核准的較高存取會話。
 
-連線至 TSGs 也需要使用不同的實體智慧卡及是分開的工程師 Microsoft 公司認證的帳戶的 MFA。 工程師會發出不同智慧卡進行各種平台，而且機密資料管理平台可用以確保安全認證儲存。 TSGs 使用 Active Directory 群組原則以控制可以登入遠端伺服器，允許工作階段及閒置逾時設定的數目。 其他原則已備妥以限制存取以允許應用程式，以及限制網際網路存取。
+## <a name="constrained-management-interfaces"></a>受限制的管理介面
 
-除了使用特別設定 TSGs 遠端存取 Exchange Online 可讓服務工程師作業角色具有存取特定系統管理功能，使用遠端 PowerShell 的實際執行伺服器上的使用者。 若要這麼做，使用者必須針對 Office 365 實際執行環境的唯讀 （偵錯） 存取權限。 權限提升已啟用它已啟用 TSGs 使用的加密箱程序的方式相同。
+工程師會使用兩個管理介面來執行管理工作: 透過安全的終端機服務閘道 (TSGs) 和遠端 PowerShell 的遠端桌面。 在這些管理介面中, 軟體原則和存取控制措施對執行哪些應用程式以及可用的命令和 Cmdlet 有很大的限制。
 
-遠端存取，如有位於負載平衡的虛擬 IP 做為存取的單一資料點的每個資料中心。 取得在驗證期間存取宣告中所識別的特殊權限層級根據可執行的遠端 PowerShell cmdlet。 這些 cmdlet 都是可存取並執行由使用者連線使用此方法僅系統管理功能。 遠端 PowerShell 用來限制的命令提供給工程師，以根據透過加密箱程序授與的存取層級範圍。 例如，在 Exchange Online 中，Get-mailbox 可能會提供，但不是會將 Set-mailbox。
+Office 365 伺服器會將同時會話限制為每個服務小組管理員、每個伺服器上的一個會話。 TSGs 只允許使用者使用單一併行會話, 且不允許多個會話。 TSGs 允許 Office 365 服務小組管理員同時連線至多部伺服器, 讓系統管理員可以有效地執行其職責。 服務小組管理員不具備 TSGs 本身的任何許可權。 TSG 僅用於強制執行多重要素驗證 (MFA) 和加密需求。 一旦服務小組管理員透過 TSG 連線至特定伺服器, 特定伺服器就會強制執行每個系統管理員的會話限制。
+
+Office 365 人員的使用限制和連線與設定需求是由 Active Directory 群組原則所建立。 這些原則包含下列特性:
+
+- TSGs 只使用[FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2 驗證的加密。
+- 在非活動狀態30分鐘後, TSG 會話會中斷連線。
+- TSG 會話會在24小時後自動登出。
+
+連線至 TSGs 時, 也需要使用個別的實體智慧卡, 以及與工程師的 Microsoft 公司認證不同的帳戶。 工程師會對各種平臺和機密管理平臺發出不同的智慧卡, 以確保認證的安全儲存。 TSGs 使用 Active Directory 群組原則來控制誰可以登入遠端伺服器、允許的會話數目, 以及閒置超時設定。 其他原則會限制允許的應用程式存取, 並限制網際網路存取。
+
+除了使用特別設定的 TSGs 進行遠端存取之外, Exchange Online 可讓具有服務工程師作業角色的使用者使用遠端 PowerShell 來存取生產伺服器上的特定管理功能。 若要這麼做, 使用者必須獲得 Office 365 實際執行環境的唯讀 (debug) 存取權。 啟用許可權提升的方式, 與使用密碼箱處理常式啟用 TSGs 的方式相同。
+
+針對遠端存取, 每個資料中心都有一個負載平衡的虛擬 IP, 可作為單一存取點。 可用的遠端 PowerShell Cmdlet 是根據驗證期間取得之存取權宣告中所識別的許可權層級。 這些 Cmdlet 僅提供使用此方法連線的使用者可存取的唯一系統管理功能。 遠端 PowerShell 限制可供工程師使用的命令範圍, 而且會根據通過密碼箱處理常式所授與的存取層級而定。 例如, 在 Exchange Online 中, 可能會有取得信箱, 但設定信箱則不會有。

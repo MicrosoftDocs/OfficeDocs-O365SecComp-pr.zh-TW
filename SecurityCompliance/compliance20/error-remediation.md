@@ -14,85 +14,82 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5a6c545b15ee07fc0200104b8408e7adb7301c79
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151785"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547938"
 ---
 # <a name="error-remediation-when-processing-data"></a>處理資料時的錯誤補救
 
-錯誤修復允許 eDiscovery 系統管理員修正正確處理內容時，防止進階電子文件的資料問題的能力。 例如，因為檔案已鎖定或加密，無法處理受到密碼保護的檔案。 使用錯誤修復，eDiscovery 系統管理員可以下載這類錯誤的檔案、 移除密碼保護和修復的檔案上傳。
+錯誤修正功能可讓 eDiscovery 系統管理員修正資料問題, 使高級 eDiscovery 無法正確處理內容。 例如, 由於檔案受到鎖定或加密, 因此無法處理受到密碼保護的檔案。 使用錯誤修正功能, eDiscovery 系統管理員可以下載有這類錯誤的檔案、移除密碼保護並上傳修正的檔案。
 
-使用下列工作流程來修復檔案與進階電子文件探索案例中的錯誤。
+使用下列工作流程修復高級 eDiscovery 案例中含有錯誤的檔案。
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>建立要修復檔案與處理錯誤的錯誤修復工作階段
+## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>建立錯誤修復會話以修正含有處理錯誤的檔案
 
 >[!NOTE]
->如果錯誤修復精靈已關閉隨時在下列程序期間，您可以傳回的錯誤修復工作階段 [**處理**] 索引標籤選取 [**檢視**] 下拉式功能表中的 [**錯誤補救措施**。
+>如果在下列程式中隨時關閉錯誤修正嚮導, 您可以在 [ **View** ] 下拉式功能表中選取 [**錯誤 remediations** ], 從 [**處理**] 索引標籤傳回錯誤修正會話。
 
-1. [**處理**] 索引標籤在進階電子文件探索案例中，選取 [**檢視**] 下拉式功能表中的 [**錯誤**]。
+1. 在高級 eDiscovery 案例的 [**處理**] 索引標籤上, 選取 [ **View** ] 下拉式功能表中的 [**錯誤**]。
 
-2. 選取您要修復]，即可錯誤類型或檔案類型] 旁的 [選項] 按鈕的錯誤。  在下列範例中，我們正在修復密碼保護的檔案。
+2. 按一下 [錯誤類型] 或 [檔案類型] 旁的選項按鈕, 選取您要修正的錯誤。  在下列範例中, 我們正在修正受密碼保護的檔案。
 
-3. 按一下 [ **+ 新錯誤修復**]。
+3. 按一下 [ **+ 新的錯誤修復**]。
 
-    ![錯誤修復](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![錯誤修正](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    錯誤修復工作階段會開始，開始準備階段，而發生錯誤的檔案移至安全的 Azure 位置下載位置。
+    錯誤修正會話將從準備階段開始, 其中含有錯誤的檔案會複製到安全的 Azure 位置, 以便下載這些檔案。
 
     ![準備錯誤修復](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. 準備工作完成後，按一下 [**下一步： 下載檔案**繼續進行下載。
+4. 準備完成後, 請按 **[下一步]: 下載**檔案以繼續下載。
 
     ![下載檔案](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. 若要下載檔案，指定 [**下載的目的路徑**;這是您應該已下載檔案的位置的本機電腦上的路徑。  預設路徑，%userprofile%\downloads\errors，指向登入使用者的下載項目資料夾;這可以視需要變更。
+5. 若要下載檔案, 請指定**下載的目的地路徑**;這是您的本機電腦上應該下載檔案的路徑。  預設路徑%USERPROFILE%\Downloads\errors, 指向登入使用者的下載資料夾;您可以視需要變更。
 
     >[!NOTE]
-    >我們建議而不是遠端網路路徑使用本機檔案路徑，以獲得最佳效能。
+    >建議您使用本機檔案路徑, 而非遠端網路路徑, 以取得最佳效能。
 
     > [!NOTE]
-    > 如果您未安裝 AzCopy，您可以從這裡安裝它：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > 如果您尚未安裝 AzCopy, 您可以從下列位置進行安裝:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
-6. 按一下 [**複製到剪貼簿**複製預先定義的命令。 啟動 windows 命令提示字元中，貼上] 命令，並按**Enter**。  
+6. 按一下 [**複製至剪貼**簿], 複製預先定義的命令。 啟動 windows 命令提示字元, 貼上命令, 然後按**enter**鍵。  
 
-    將下載的檔案。
+    將下載檔案。
 
     ![準備錯誤修復](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > 如果提供的 AzCopy 命令失敗，請參閱[疑難排解 AzCopy 進階電子文件中](troubleshooting-azcopy.md)
+    > 如果提供的 AzCopy 命令失敗, 請參閱[在高級 eDiscovery 中疑難排解 AzCopy](troubleshooting-azcopy.md)。
 
-7. 下載檔案之後, 您可以使用適當工具修復它們。 密碼保護之檔案有許多密碼破解您可以使用的工具。 如果您知道之檔案的密碼，您可以將其開啟，並移除密碼保護。
+7. 下載檔案之後, 您可以使用適當的工具進行修復。 對於密碼保護的檔案, 您可以使用許多密碼破解工具。 如果您知道檔案的密碼, 您可以開啟檔案並移除密碼保護。
     > [!NOTE]
-    > IT 很重要，您會保留原封不動的修復檔案的目錄結構和檔案名稱。  所有命名慣例用於下載的檔案和資料夾會讓您能夠建立回原始的 remdiated 檔案的關聯。
+    > 請務必在 tact 中保留已修正檔案的目錄結構和檔案名。  下載的檔案和資料夾中所使用的所有命名慣例, 都能讓 remdiated 檔案回到原始檔案。
 
-8. 現在，返回進階電子文件，然後按一下 [**下一步： 將檔案上傳**。  這將會移到下一步： 您現在可以上載檔案。
+8. 現在, 回到 [Advanced eDiscovery], 然後按 **[下一步]: 上傳檔案]**。  這會移至下一個步驟, 您現在可以在其中上傳檔案。
 
     ![上傳檔案](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. 請指定**的檔案位置路徑**] 文字方塊中，在修復檔案的位置然後按一下 [**複製到 clibpboard**。
+9. 在 [檔案**位置路徑**] 文字方塊中, 指定已修正檔案的位置, 然後按一下 [**複製到剪貼**簿]。
 
-10. 貼上命令到 Windows 命令提示字元，並按**Enter** ，以將檔案上傳。
+10. 將命令貼到 Windows 命令提示字元, 然後按**enter**上傳檔案。
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6 .png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. 最後，回到 [進階電子文件，然後按一下 [**下一步： 處理檔案**。
+11. 最後, 回到 [Advanced eDiscovery], 然後按 **[下一步]: 處理**檔案。
 
-12. 當處理已完成。  您可以回到檢閱設定，並查看修復的檔案。
+12. 處理完成時。  您可以回到 [審閱] 集, 並查看修正的檔案。
 
-## <a name="what-happens-when-files-are-remediated"></a>當檔案修復時，會發生什麼事
+## <a name="what-happens-when-files-are-remediated"></a>修正檔案時會發生什麼情況
 
-當修復的檔案上傳時，原始的中繼資料會保留除了下列欄位： 
+當上傳修正的檔案時, 會保留原始的中繼資料, 但不包括下欄欄位: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
@@ -100,4 +97,4 @@ ms.locfileid: "34151785"
 - WordCount
 - WorkingsetId
 
-如需進階電子文件中的所有文件中繼資料欄位的定義，請參閱 <<c0>文件的中繼資料欄位。
+如需高級 eDiscovery 中所有檔元資料欄位的定義, 請參閱[檔元資料欄位](document-metadata-fields.md)。

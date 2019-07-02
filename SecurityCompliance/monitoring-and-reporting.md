@@ -1,7 +1,7 @@
 ---
-title: 監視及報告安全性狀態，Microsoft 365 安全中心
-description: 說明如何在保護和安全性狀態的快速摘要提供 Microsoft 365 安全性中心。
-keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 資訊安全中心、 監視、 報表、 狀態
+title: 在 Microsoft 365 安全中心中監視和查看報表
+description: 說明 Microsoft 365 安全性中心如何快速提供保護和安全性狀態摘要。
+keywords: 安全性、惡意程式碼、Microsoft 365、M365、security center、monitor、report、status
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,31 +12,31 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 0a0bcbde7daa79aabda30013fca2560384545feb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80b7bf07790b7f5cb8cf0e07acd6abb921404d6f
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263125"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852797"
 ---
-# <a name="monitor-and-report-security-status-in-microsoft-365-security-center"></a>監視及報告安全性狀態，Microsoft 365 安全中心
+# <a name="monitor-and-view-reports-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中監視和查看報表
 
-在 Microsoft 365 安全性中心提供保護和安全性狀態的快速摘要在整個 Microsoft 365 環境。
+Microsoft 365 安全性中心提供在 Microsoft 365 環境中, 保護和安全性狀態的概覽摘要。
 
-資訊安全中心包括**監視 & 報告**] 區段中的功能的卡片涵蓋各種不同的區域的主機該安全性分析師和系統管理員追蹤其日常作業的一部分。 在向下鑽研，卡提供詳細的報告和在某些情況下，管理選項。
+[安全性中心] 包含 [**報告**] 區段, 其中的功能包括安全性分析師和系統管理員在日常作業中追蹤的各種區域。 在向下流覽時, 卡片提供詳細的報告, 在某些情況下則是管理選項。
 
-## <a name="customize-views"></a>自訂檢視
+## <a name="customize-views"></a>自訂視圖
 
-根據預設，監視和報告卡分成分為下列類別：
+依預設, 紙牌會分為下列類別:
   
-* [身分識別](monitor-and-report-identities.md)– 使用者帳戶和認證
-* [資料](monitor-data.md)– 電子郵件和文件內容
-* [裝置](monitor-devices.md)– 電腦、 行動電話和其他裝置
-* [應用程式](monitor-apps.md)– 程式與附加的線上服務
+* [](monitor-and-report-identities.md)身分識別–使用者帳戶和認證
+* [資料](monitor-data.md)–電子郵件和檔內容
+* [裝置](monitor-devices.md)–電腦、行動電話和其他裝置
+* [App](monitor-apps.md) –程式和附加的線上服務
 
-**Group by 主題**，切換至重新排列卡和其群組到下列：
+切換至**群組依據主題**, 以重新排列卡片並將其群組為下列專案:
 
-* **風險**– 反白顯示實體，例如帳戶和裝置，可能會有風險的卡片。 這些卡也反白顯示的可能來源的風險，例如新的威脅行銷活動和特殊權限的雲端應用程式  
-* **偵測趨勢**– 反白顯示新的威脅偵測、 異常行為及原則違規的卡片
-* **設定和健全狀況**– 卡涵蓋設定資料庫和部署的安全性控制，包括管理服務的裝置上架狀態
-* **其他**– 未分類的其他主題下的所有其他卡片
+* **風險**–卡片表示可能有風險的實體 (例如帳戶和裝置)。 這些卡片也會突出顯示可能的風險來源, 例如新的威脅活動和許可權的雲端應用程式  
+* **偵測趨勢**–可醒目提示新威脅偵測、異常和原則違規的卡片
+* 設定**和健康**情況–包括安全性控制的設定及部署的卡片, 包括裝置上架狀態到管理服務
+* **其他**–其他主題未分類的其他所有卡片

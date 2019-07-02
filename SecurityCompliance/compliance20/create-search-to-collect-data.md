@@ -1,5 +1,5 @@
 ---
-title: 建立搜尋以收集資料
+title: Create a search
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,29 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 360ba6a67d43a0b78b1104ae64885697009bb222
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1aa4ce6e406e4b3a3b72b9d93f651416b1fc65f9
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155105"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222247"
 ---
-# <a name="create-a-search-to-collect-data"></a>建立搜尋以收集資料
+# <a name="create-a-search"></a>Create a search
 
-在您的情況下的 [**搜尋**] 索引標籤上您可以按一下 [**新增搜尋**，並遵循精靈建立新的搜尋。
+在您案例的 [**搜尋**] 索引標籤上, 您可以按一下 [**新增搜尋**] 並遵循該嚮導來建立新的搜尋。
 
-## <a name="name-your-search-and-give-description"></a>命名您的搜尋，並提供說明
+## <a name="name-your-search-and-give-it-a-description"></a>命名您的搜尋, 並提供說明
 
-每個搜尋與案例應該有唯一的名稱。 （選用） 您可以提供的描述您的搜尋。 
+每個具有案例的搜尋都應該有唯一的名稱。 您可以選擇性地提供搜尋的描述。 
 
-## <a name="define-your-conditions"></a>定義您的條件
+## <a name="define-your-search-query-and-conditions"></a>定義您的搜尋查詢和條件
 
-您可以定義用於搜尋使用預先內建的條件卡或使用關鍵字查詢語言 (KQL) 條件。 如需詳細資訊，請參閱 <<c0>建立搜尋查詢。
+您可以使用預先建立的條件卡或使用關鍵字查詢語言 (KQL), 來定義關鍵字查詢和搜尋的任何條件。 如需詳細資訊, 請參閱[組建搜尋查詢](building-search-queries.md)。
 
-## <a name="choose-the-custodians-to-search-from"></a>選擇 [從搜尋 custodians
+## <a name="choose-the-custodians-to-search-from"></a>選擇要從中進行搜尋的保管人
 
-一旦您已經定義您的條件，您必須選擇您想要搜尋的位置。 若要這樣做的其中一個方法是藉由指定您想要搜尋您已經新增至案例哪些 custodians。 藉由選取 custodian，您將針對所有的資料來源對應至 custodian 執行搜尋。 如需如何將 custodians 新增至您的案例及管理其資料來源詳細資訊，請參閱[Work with custodians](managing-custodians.md) 。
+一旦您定義好條件, 您必須選擇要搜尋的位置。 其中一種方法是指定您已新增至您要搜尋之案例的保管人。 透過選取保管人, 您將針對對應至保管人的所有資料來源執行搜尋。 如需如何將保管人新增至您的案例以及管理其資料來源的詳細資訊, 請參閱[使用保管人](managing-custodians.md)。
 
-## <a name="choose-non-custodial-locations"></a>選擇 [非 custodial 位置
+## <a name="choose-non-custodial-locations"></a>選擇非 custodial 位置
 
-在某些情況下，您可能想要搜尋不會對應到 custodian 的資料來源。 在此情況下，您可以指定您想要搜尋，或選擇搜尋特定的 Office 365 服務 （例如搜尋所有 Exchange 信箱或所有 SharePoint 和 OneDrive for Business 網站） 的所有內容位置的位置。
+在某些情況下, 您可能想要搜尋未對應至系統管理員的資料來源。 在這種情況下, 您可以指定要搜尋的位置, 或選擇搜尋特定 Office 365 服務的所有內容位置 (例如搜尋所有 Exchange 信箱或所有 SharePoint 和商務用 OneDrive 網站)。

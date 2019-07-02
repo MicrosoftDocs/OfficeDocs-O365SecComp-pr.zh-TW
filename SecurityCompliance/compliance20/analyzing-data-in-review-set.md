@@ -1,5 +1,5 @@
 ---
-title: 在進階電子文件探索中設定檢閱中分析資料
+title: 在高級 eDiscovery 中分析審閱集中的資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155205"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703806"
 ---
-# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>在進階電子文件探索中設定檢閱中分析資料
+# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>在高級 eDiscovery 中分析審閱集中的資料
 
-大型收集文件數目時，它可以是很難全部加以檢閱。 進階電子文件提供數個工具來分析文件，以減少大量的文件沒有任何遺失的資訊，請檢閱，以及協助您組織的文件中以一致的方式。 若要深入了解這些功能，請參閱：
+當收集的檔數很大時, 很難完全查看。 Advanced eDiscovery 提供許多工具來分析檔, 以減少不遺失資訊的檔數量, 並協助您以一致的方式組織檔。 若要深入瞭解這些功能, 請參閱:
 
 - [近似重複項偵測](near-duplicates.md)
 
@@ -31,36 +31,36 @@ ms.locfileid: "34155205"
 
 - [佈景主題](themes.md)
 
-若要分析檢閱集中的資料：
+若要分析審閱集中的資料:
 
-1. 設定分析您的案例。 如需詳細資訊，請參閱 < <b0>Configure search 和分析設定</b0>。
+1. 設定您案例的分析設定。 如需詳細資訊, 請參閱[設定搜尋和分析設定](configure-search-analytics-settings.md)。
 
-2. 開啟您想要分析檢閱設定。
+2. 開啟您要分析的檢查集。
 
-3. 按一下 [**管理檢視設定**]。
+3. 按一下 [**管理審閱集**]。
 
-4. 按一下 [**分析**]。
+4. **針對 [審閱集**] 按一下 [執行分析]。
 
-您可以檢查 analysis 案例的**工作**] 索引標籤上的進度。
+您可以在案例的 [**工作**] 索引標籤上檢查分析進度。
 
- 分析完成之後，您可以檢視分析報表中，執行查詢中分析的輸出上您檢閱設定 （請參閱[設定內檢閱查詢](review-set-search.md)），並查看相關的文件的指定的文件 （請參閱[檢閱資料中的檢閱設定](reviewing-data-in-review-set.md)）。
+ 分析完成之後, 您可以查看分析報告、在分析輸出的檢查集內執行查詢 (請參閱您的[審閱集中的查詢](review-set-search.md)), 並查看指定檔的相關檔 (請參閱檢查[審閱集中的資料](reviewing-data-in-review-set.md))。
 
 ## <a name="analytics-report"></a>分析報告
 
-若要檢視檢閱設定分析報告：
+若要查看審查集的分析報告:
 
-1. 開啟 [檢閱設定]。
+1. 開啟 [檢查集]。
 
-2. 按一下 [**管理檢視設定**]。
+2. 按一下 [**管理審閱集**]。
 
-3. 按一下 [**報告**]。
+3. 按一下 [**查看報告**]。
 
-報表中包含從分析的四個元件：
+報告中有四個元件可供分析:
 
-- 檢閱集合中找不到**分解**-多少電子郵件訊息、 附件及寬鬆的文件。
+- **細目**-在審閱集中找到的電子郵件、附件和鬆散檔數目。
 
-- **文件 （不含附件）** -多少寬鬆的文件已樞紐分析表，唯一接近重複的樞紐分析表或完全重複的另一個文件。
+- **檔 (不包括附件)** -大量的鬆散檔、樞紐分析表的重復資料, 或是其他檔的完全相同的複本。
 
-- **電子郵件**-多少電子郵件訊息所 inclusives、 內含的副本，內含 minuses，或無以上。
+- **電子**郵件-inclusives 的電子郵件數目、包含的副本、包含的 minuses, 或上述都不是。
 
-- **附件**-多少電子郵件附件是唯一或重複的另一個電子郵件附件中檢閱設定。
+- **附件**-審閱集中其他電子郵件附件的電子郵件附件數目是唯一或重複的。
