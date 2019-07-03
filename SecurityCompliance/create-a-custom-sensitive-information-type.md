@@ -1,11 +1,12 @@
 ---
-title: 建立自訂機密資訊類型
+title: 在安全性與合規性中心建立自訂敏感性資訊類型
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 04/17/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,54 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
-ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258257"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077739"
 ---
-# <a name="create-a-custom-sensitive-information-type"></a>建立自訂機密資訊類型
+# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全性與合規性中心建立自訂敏感性資訊類型
 
-Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內件類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
+## <a name="summary"></a>摘要
 
-但是，如果您需要識別及保護不同類型的機密資訊 (例如使用貴組織專屬格式的員工識別碼或專案編號)，則可以建立自訂機密資訊類型。
+閱讀本文，在安全性與合規性中心建立[自訂敏感性資訊類型](custom-sensitive-info-types.md) ([https://protection.office.com](https://protection.office.com))。 透過使用此方法，您建立的自訂敏感性資訊類型會新增到名為 `Microsoft.SCCManaged.CustomRulePack` 的規則套件。
 
-自訂機密資訊類型的基礎部分如下：
+您也可以使用 PowerShell 和 Exact Data Match 功能建立自訂敏感性資訊類型。 若要深入了解這些方法，請參閱：
+- [在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [使用 Exact Data Match (EDM) 建立自訂敏感性資訊類型](create-custom-sensitive-info-type-edm.md)
 
-- **主要模式**：員工識別碼、專案編號等等。這通常由規則運算式 (RegEx) 識別，但它也可以是關鍵字清單。
+## <a name="before-you-begin"></a>開始之前...
 
-- **其他辨識項**：假設您正在尋找九位數的員工識別碼。並非所有的九位數都是員工識別碼，因此您可以搜尋其他文字：像是 "employee"、"badge"、"ID" 這類的關鍵字，或其他以規則運算式為基礎的文字模式。此支援辨識項 (也稱為_支援_或_確切_辨識項)，可增加在內容中找到的九位數確實為員工識別碼的可能性。
-
-- **字元近似值**：主要模式與支援辨識項彼此越接近，偵測到的內容越可能是您要尋找的內容，這是合理的。您可以指定主要模式與支援辨識項之間的字元距離 (也稱為_近似值視窗_)，如下圖所示：
-
-    ![確切辨識項和近似值視窗的圖表](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-
-- **信賴等級**：您具有的支援辨識項越多，相符項目包含您要尋找的機密資訊的可能性就越高。您可以針對使用更多辨識項偵測到的相符項目指派更高等級的信賴。
-
-  滿足條件時，模式會傳回計數和信賴等級，您可以在 DLP 原則的條件中使用。當您將會偵測機密資訊類型的條件新增至 DLP 原則時，可以編輯計數和信賴等級，如下圖所示：
-
-    ![執行個體計數和比對正確性選項](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-
-若要在安全性與合規性中心建立自訂敏感性資訊類型，您有下列選項：
-
-- **使用 UI**：這種方法更輕鬆且更快，但您具有的設定選項比 PowerShell 少。本主題的其餘內容將說明這些程序。
-
-- **使用 PowerShell**：這種方法需要您先建立 XML 檔案 (稱為_規則套件_)，其中包含一或多個敏感性資訊類型，然後使用 PowerShell 來匯入規則套件 (與建立規則套件相較，匯入規則套件更容易解決)。這種方法遠比 UI 複雜得多，但您有更多的設定選項。如需相關指示，請參閱[在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
-
-下表說明重要差異：
-
-|**UI 中的自訂機密資訊類型**|**PowerShell 中的自訂機密資訊類型**|
-|:-----|:-----|
-|名稱與描述為同一種語言。|支援名稱與描述使用多種語言。|
-|支援一種模式。|支援多種模式。|
-|支援辨識項可以是： <br/>• 規則運算式 <br/>• 關鍵字 <br/>• 關鍵字字典|支援辨識項可以是： <br/>• 規則運算式 <br/>• 關鍵字 <br/>• 關鍵字字典 <br/>• [內建 DLP 函數](what-the-dlp-functions-look-for.md)|
-|自訂機密資訊類型會新增到名為 Microsoft.SCCManaged.CustomRulePack 的規則套件|您最多可以建立 10 個包含自訂機密資訊類型的規則套件。|
-|模式比對需要偵測主要模式及所有支援辨識項 (使用隱含的 AND 運算子)。|模式比對需要偵測主要模式及可設定數量的支援辨識項 (可以使用隱含的 AND 及 OR 運算子)。|
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
-
-- 若要開啟安全性與合規性中心，請參閱[移至安全性與合規性中心](go-to-the-securitycompliance-center.md)。
+- 您的組織必須擁有包括資料外洩防護 (DLP) 的訂用帳戶，例如 Office 365 企業版。 請參閱[郵件原則及符合性](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc) (機器翻譯)。 
 
 - 自訂機密資訊類型需要熟悉規則運算式 (RegEx)。如需用於處理文字之 Boost.RegEx (先前稱為 RegEx++) 引擎的詳細資訊，請參閱 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 

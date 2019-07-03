@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定一個原生連接器，以將資料從 LinkedIn 公司頁面匯入到 Office 365。 這可讓您在 Office 365 中封存來自第三方資料來源的資料，使得您可使用法務保存措施、內容搜尋和保留原則之類的合規性功能來管理您組織的第三方資料。
-ms.openlocfilehash: 2b89f990f18ae13ad15015f240ea4c4b0ec434b0
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
+ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017944"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35079377"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>在 Office 365 中設定連接器來封存 LinkedIn 資料 (預覽)
 
@@ -27,9 +27,11 @@ ms.locfileid: "35017944"
 
 ## <a name="before-you--begin"></a>開始之前
 
-- 您必須具備 LinkedIn 使用者帳戶登入認證 (電子郵件地址或電話號碼和密碼)，該帳號是您想要封存的 LinkedIn 公司頁面的系統管理員。 您可以使用這些認證在設定連接器時登入 LinkedIn。
+- 您的組織必須同意讓 Office 365 匯入服務存取組織的信箱資料。 若要同意這項要求，請移至[本頁](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)使用 Office 365 全域系統管理員認證登入，然後接受要求。
 
-- 建立 LinkedIn 公司頁面連接器的使用者，必須獲指派 Exchange Online 中的信箱匯入匯出角色。 這是存取安全性與合規性中心的 [封存第三方資料]**** 頁面所需。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以在 Exchange Online 中將「信箱匯入匯出」角色新增至「組織管理」角色群組。 或者您可以建立角色群組、指派「信箱匯入匯出」角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「在 Exchange Online 中管理角色群組」文章中的[建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)小節。
+- 建立 LinkedIn 公司頁面連接器的使用者，必須獲指派 Exchange Online 中的信箱匯入匯出角色。 這是存取安全性與合規性中心的**封存第三方資料**頁面所需。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以在 Exchange Online 中將「信箱匯入匯出」角色新增至「組織管理」角色群組。 或者您可以建立角色群組、指派「信箱匯入匯出」角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「在 Exchange Online 中管理角色群組」文章中的[建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)小節。
+
+- 您必須具備 LinkedIn 使用者帳戶登入認證 (電子郵件地址或電話號碼和密碼)，該帳號是您想要封存的 LinkedIn 公司頁面的系統管理員。 您可以使用這些認證在設定連接器時登入 LinkedIn。
 
 ## <a name="create-a-linkedin-connector"></a>建立 LinkedIn 連接器
 
@@ -50,7 +52,6 @@ ms.locfileid: "35017944"
    精靈頁面隨即會顯示與您登入的帳戶相關聯的所有 LinkedIn 公司頁面的清單。 您只能針對一個公司頁面設定一個連接器。 如果您的組織有多個 LinkedIn 公司頁面，則必須為每個頁面建立一個連接器。
 
    ![顯示 LinkedIn 公司頁面清單的頁面](media/LinkedInSelectCompanyPage.png)
-
 
 6. 選取您要從中封存項目的公司頁面，然後按 [下一步]****。
 
@@ -74,10 +75,10 @@ ms.locfileid: "35017944"
    from:"Contoso Company Page"
    ```
 
-    或
+    或者
 
    ```
    subject:"Contoso Company Page"
    ```
 
-- 為了讓您易於找出或管理匯入至 Office 365 的 LinkedIn 項目，信箱儲存空間的擁有者 (或獲指派 FullAccess 權限的任何人) 都可以設定收件匣規則，將來自特定 LinkedIn 公司頁面的項目移至特定資料夾。 如果儲存空間信箱會用來封存從不同第三方資料來源匯入的項目，則此方式會很有用。 比方說，您可以建立收件匣規則，將主旨欄位中包含特定 LinkedIn 公司頁面名稱的所有項目移動至特定資料夾。
+- 為了讓您易於找出或管理匯入至 Office 365 的 LinkedIn 項目，信箱儲存空間的擁有者 (或獲指派 FullAccess 權限的任何人) 都可以設定收件匣規則，將來自 LinkedIn 公司頁面的項目移至特定資料夾。 如果儲存空間信箱會用來封存從不同第三方資料來源匯入的項目，則此方式會很有用。 比方說，您可以建立收件匣規則，將主旨欄位中包含特定 LinkedIn 公司頁面名稱的所有項目移動至特定資料夾。

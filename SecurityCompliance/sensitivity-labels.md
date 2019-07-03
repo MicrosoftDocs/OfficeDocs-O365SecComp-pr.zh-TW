@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
-ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
+ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "34166921"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199874"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -26,7 +26,7 @@ ms.locfileid: "34166921"
 
 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。
 
-![Excel 功能區和狀態列上的敏感度標籤](media/Sensitivity_label_in_Excel.png)
+![Excel 功能區和狀態列上的敏感度標籤](media/Sensitivity-label-in-Excel.png)
 
 您可以使用敏感度標籤來：
   
@@ -62,7 +62,7 @@ ms.locfileid: "34166921"
 
 內容中的每個項目皆可套用單一敏感度標籤。但請注意，項目可以同時套用單一敏感度標籤和單一[保留標籤](labels.md)。
 
-![套用至電子郵件的敏感度標籤](media/Sensitivity_label_on_email.png)
+![套用至電子郵件的敏感度標籤](media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>敏感度標籤的功能
 
@@ -72,19 +72,18 @@ ms.locfileid: "34166921"
 
 - **標記內容**的方法為在電子郵件或已套用標籤的文件上新增自訂浮水印、頁首或頁尾。請注意，浮水印僅適用於文件，不適用於電子郵件，並且限制為 255 個字元。此外，頁首和頁尾的限制為 1024 個字元 (除了在 Excel 中的限制為 255 個字元或更少，根據文件是否包含其他頁首或頁尾或其他因素而定。)
 
-    ![套用至文件的浮水印和頁首](media/Sensitivity_label_watermark_header.png)
+    ![套用至文件的浮水印和頁首](media/Sensitivity-label-watermark-header.png)
 
-- 
-  **防止資料遺失**，方法是在 Intune 中開啟端點保護。如果下載了敏感內容，您可協助防止 Windows 裝置的資料遺失。比方說，您無法將已標示的內容複製到 Dropbox、Gmail 或 USB 磁碟機。在敏感度標籤可使用 Windows 資訊保護 (WIP) 之前，您需要先在 Azure 入口網站中建立應用程式保護原則。如需詳細資訊，請參閱 [Windows 資訊保護如何保護具有敏感度標籤的檔案](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。
+- **防止資料遺失**，方法是在 Intune 中開啟端點保護。如果下載了敏感內容，您可協助防止 Windows 裝置的資料遺失。比方說，您無法將已標示的內容複製到 Dropbox、Gmail 或 USB 磁碟機。在敏感度標籤可使用 Windows 資訊保護 (WIP) 之前，您需要先在 Azure 入口網站中建立應用程式保護原則。如需詳細資訊，請參閱 [Windows 資訊保護如何保護具有敏感度標籤的檔案](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。
 
-- **自動將標籤套用到包含敏感性資訊的內容。** 您可以選擇想要將標籤套用到哪些類型的敏感性資訊，以及自動套用標籤或您建議使用者套用標籤的提示。如果您有建議的標籤，提示會顯示您選擇的任何文字。如需詳細資訊，請參閱[自動將敏感度標籤套用到內容](apply_sensitivity_label_automatically.md)。
+- **自動將標籤套用到包含敏感性資訊的內容。** 您可以選擇想要將標籤套用到哪些類型的敏感性資訊，以及自動套用標籤或您建議使用者套用標籤的提示。如果您有建議的標籤，提示會顯示您選擇的任何文字。如需詳細資訊，請參閱[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)。
 
-    ![指派必要標籤的提示](media/Sensitivity_label_Prompt_for_required_label.png)
+    ![指派必要標籤的提示](media/Sensitivity-label-Prompt-for-required-label.png)
 
 
 在您建立敏感性標籤時，這所有選項都可供使用。
 
-![建立敏感度標籤的選項](media/Sensitivity_label_create_options.png)
+![建立敏感度標籤的選項](media/Sensitivity-label-create-options.png)
 
 ### <a name="label-priority-order-matters"></a>標籤優先順序 (順序很重要)
 
@@ -92,9 +91,9 @@ ms.locfileid: "34166921"
 
 文件或電子郵件只能套用單一敏感度標籤。如果您要求使用者提供將標籤變更為較低分類的理由，這份清單的順序可決定什麼是較低的分類。
 
-![建立子標籤的選項](media/Sensitivity_label_sublabel_options.png)
+![建立子標籤的選項](media/Sensitivity-label-sublabel-options.png)
 
-請注意，除了標籤的優先順序，標籤原則的順序也很重要 - 請參閱[下方的此小節](#sensitivity-label-priority-order-matters)。
+請注意，除了標籤的優先順序，標籤原則的順序也很重要 - 請參閱[標籤原則優先順序 (順序很重要)](#label-policy-priority-order-matters)。
 
 ### <a name="sublabels-grouping-labels"></a>子標籤 (分組標籤)
 
@@ -104,7 +103,7 @@ ms.locfileid: "34166921"
 
 (此外，您不應選擇上層標籤作為預設標籤 (請參閱下一節)，或將上層標籤設定為自動套用或建議選項，因為上層標籤無法套用到使用 Azure 資訊保護統一標籤用戶端的 Office 應用程式中的內容。)
 
-![功能區上分組的子標籤](media/Sensitivity_label_grouped_labels.png)
+![功能區上分組的子標籤](media/Sensitivity-label-grouped-labels.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>編輯或刪除敏感度標籤
 
@@ -124,24 +123,24 @@ ms.locfileid: "34166921"
 
 - **變更標籤需要理由。** 如果內容標示為「機密」，而使用者想要移除該標籤，或取代為較低的分類，如「公用」標籤，則您可以要求使用者在執行此動作時提供理由。這些理由可供系統管理員檢閱。我們目前正在處理系統管理員可在其中檢視使用者理由的報告。
 
-    ![提示使用者輸入理由](media/Sensitivity_label_justification_required.png)
+    ![提示使用者輸入理由](media/Sensitivity-label-justification-required.png)
 
 - **要求使用者將標籤套用到他們的電子郵件和文件。** 如果您想要將所有使用者的內容套用標籤，您可以要求必須將標籤套用到所有已儲存的文件和傳送的電子郵件。基於自動或預設 (預設標籤選項如上所述) 指派的條件，使用者可以手動指派標籤。當使用者需要指派標籤時，Outlook 中會顯示提示。
 
     > [!NOTE]
-    > 強制標籤功能需要有 Azure 資訊保護訂閱。若要使用此功能，您必須下載並安裝 [Azure 資訊保護用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)或更新的[ Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/zh-TW/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。我們正在努力在 Office 應用程式中提供此功能的原生支援，讓此功能不需要 Azure 資訊保護用戶端。此外，用戶端只能在 Windows 上執行，因此 Mac、iOS 和 Android 尚未支援此功能。
+    > 強制標籤功能需要有 Azure 資訊保護訂閱。若要使用此功能，您必須下載並安裝 [Azure 資訊保護用戶端](https://www.microsoft.com/download/details.aspx?id=53018)或更新的[ Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。我們正在努力在 Office 應用程式中提供此功能的原生支援，讓此功能不需要 Azure 資訊保護用戶端。此外，用戶端只能在 Windows 上執行，因此 Mac、iOS 和 Android 尚未支援此功能。
 
-    ![Outlook 中詢問使用者套用必要標籤的提示](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
+    ![Outlook 中詢問使用者套用必要標籤的提示](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
 
 - **提供說明連結至自訂說明頁面。** 如果使用者不確定敏感度標籤代表的意義或使用方式，您可以提供「深入了解」URL，其顯示在 Office 應用程式中 [敏感度] 標籤功能表的底部。
 
-    ![功能區中 [敏感度] 按鈕上的「深入了解」連結](media/Sensitivity_label_learn_more.png)
+    ![功能區中 [敏感度] 按鈕上的「深入了解」連結](media/Sensitivity-label-learn-more.png)
 
 建立標籤原則並將敏感度標籤指派給使用者和群組之後，這些人會在一小時內在 Office 應用程式中看到這些標籤。
 
 ### <a name="label-policy-priority-order-matters"></a>標籤原則優先順序 (順序很重要)
 
-您會在敏感度標籤原則中發佈敏感度標籤，以將其提供給使用者使用，而標籤會顯示在 [標籤原則]**** 頁面上 [敏感度原則]**** 索引標籤的清單中。 正如同敏感度標籤 (請參閱[上方的小節](#sensitivity-label-priority-order-matters))，敏感度標籤原則的順序非常重要，因為順序反映的是優先順序。 優先順序最低的標籤原則會顯示在**上方**，而優先順序最高的標籤原則會顯示在**下方**。
+您會在敏感度標籤原則中發佈敏感度標籤，以將其提供給使用者使用，而標籤會顯示在 **[標籤原則]** 頁面上 **[敏感度原則]** 索引標籤的清單中。 正如同敏感度標籤 (請參閱上方的[標籤原則優先順序 (順序很重要)](#label-priority-order-matters)小節)，敏感度標籤原則的順序非常重要，因為順序反映的是優先順序。 優先順序最低的標籤原則會顯示在**上方**，而優先順序最高的標籤原則會顯示在**下方**。
 
 標籤原則包含：
 
@@ -151,7 +150,7 @@ ms.locfileid: "34166921"
 
 您可以將使用者包含在多個標籤原則中，該使用者即會看到來自這些原則的所有敏感度標籤。 不過，使用者只會看到來自具有最高優先順序標籤原則的原則設定。
 
-如果您的組織中的使用者或群組，看不到您需要的標籤原則中的選項，例如預設標籤或強制標籤，請檢查敏感度標籤原則的順序。 若要重新排序標籤原則，請選取 [敏感度標籤原則 > 選擇右側的省略符號 > [下移]**** 或 [上移]****。
+如果您的組織中的使用者或群組看不到您需要的標籤原則中的選項，例如預設標籤或強制標籤，請檢查敏感度標籤原則的順序。 若要重新排序標籤原則，請選取 [敏感度標籤原則 > 選擇右側的省略符號 > [下移]**** 或 [上移]****。
 
 ![敏感度標籤原則頁面上的移動選項](media/sensitivity-label-policy-priority.png)
 
@@ -169,11 +168,11 @@ ms.locfileid: "34166921"
 
 以下是系統管理員、使用者和 Office 應用程式執行項目以讓敏感度標籤運作的基本流程。
 
-![敏感度標籤的工作流程圖](media/Sensitivity_label_flow.png)
+![敏感度標籤的工作流程圖](media/Sensitivity-label-flow.png)
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度標籤會顯示的位置
 
-敏感度標籤會顯示在 Office 應用程式的 UI 中。若要檢視針對特定應用程式與平台目前的可用性，請參閱**[目前提供此功能的位置？](https://support.office.com/zh-TW/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**
+敏感度標籤會顯示在 Office 應用程式的 UI 中。若要檢視針對特定應用程式與平台目前的可用性，請參閱**[目前提供此功能的位置？](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**
 
 ### <a name="office-apps-on-windows"></a>Windows 上的 Office 應用程式
 
@@ -181,34 +180,32 @@ ms.locfileid: "34166921"
 
 即將推出 Windows 中 Office 應用程式敏感度標籤的原生支援。
 
-如果您是現有的 Azure 資訊保護客戶，您可以部署 Azure 資訊保護整合標籤用戶端，其支援敏感度標籤。如需下載用戶端的詳細資訊，請參閱 [Azure 資訊保護統一標籤客戶端：版本發行資訊](https://docs.microsoft.com/zh-TW/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。我們目前正在處理 Windows 中 Office 應用程式敏感度標籤的原生支援，將不再需要 Azure 資訊保護整合標籤用戶端。
+如果您是現有的 Azure 資訊保護客戶，您可以部署 Azure 資訊保護整合標籤用戶端，其支援敏感度標籤。如需下載用戶端的詳細資訊，請參閱 [Azure 資訊保護統一標籤客戶端：版本發行資訊](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。我們目前正在處理 Windows 中 Office 應用程式敏感度標籤的原生支援，將不再需要 Azure 資訊保護整合標籤用戶端。
 
-![Windows 中 Excel 功能區上的敏感度按鈕](media/Sensitivity_label_Sensitivity_button.png)
+![Windows 中 Excel 功能區上的敏感度按鈕](media/Sensitivity-label-Sensitivity-button.png)
 
 ### <a name="office-apps-on-mac"></a>Mac 上的 Office 應用程式
 
 在 Mac 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。套用的標籤也會顯示在視窗底部的狀態列中。
 
-![Mac 中 Office 功能區上的敏感度按鈕](media/Sensitivity_label_on_Mac.png)
+![Mac 中 Office 功能區上的敏感度按鈕](media/Sensitivity-label-on-Mac.png)
 
 ### <a name="office-apps-on-ios"></a>iOS 上的 Office 應用程式
 
 在 iOS 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。套用的標籤也會顯示在視窗底部的狀態列中。
 
-![iOS 中 Office 功能區上的敏感度按鈕](media/Sensitivity_label_on_iOS.png)
+![iOS 中 Office 功能區上的敏感度按鈕](media/Sensitivity-label-on-iOS.png)
 
 ### <a name="office-apps-on-android"></a>Android 上的 Office 應用程式
 
 在 Android 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。套用的標籤也會顯示在視窗底部的狀態列中。
 
-![Android 中 Office 功能區上的敏感度按鈕](media/Sensitivity_label_on_Android.png)
+![Android 中 Office 功能區上的敏感度按鈕](media/Sensitivity-label-on-Android.png)
 
 ### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Office 應用程式中敏感度標籤的詳細資訊
 
-- 
-  [在 Office 中將敏感度標籤套用至您的文件和電子郵件](https://support.office.com/zh-TW/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- 
-  [將敏感度標籤套用至 Office 檔案的已知問題](https://support.office.com/zh-TW/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [在 Office 中將敏感度標籤套用至您的文件和電子郵件](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [將敏感度標籤套用至 Office 檔案的已知問題](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>敏感度標籤如何搭配使用現有的 Azure 資訊保護標籤
 
@@ -217,8 +214,7 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 - 在文件和電子郵件上保留現有的 Azure 資訊保護標籤。
 - 保留現有的 Azure 資訊保護標籤設定。
 
-如果您使用 Azure 資訊保護標籤，目前建議您避免在其他系統管理中心建立新的標籤，直到完成移轉為止。 
-  [Azure 資訊保護移轉主題](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-policy-migrate-labels)提供重要的資訊和一些特定的警告。 如果您尚未準備好要將您的生產環境租用戶移轉到敏感性標籤，則無需擔心：目前，您的使用者可以繼續使用 Azure 資訊保護用戶端，而系統管理員可以繼續使用 Azure 入口網站來進行管理。
+如果您使用 Azure 資訊保護標籤，目前建議您避免在其他系統管理中心建立新的標籤，直到完成移轉為止。 [Azure 資訊保護移轉主題](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)提供重要的資訊和一些特定的警告。 如果您尚未準備好要將您的生產環境租用戶移轉到敏感性標籤，則無需擔心：目前，您的使用者可以繼續使用 Azure 資訊保護用戶端，而系統管理員可以繼續使用 Azure 入口網站來進行管理。
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>使用 Microsoft Intune 中的端點保護來保護 Windows 裝置上的內容
 
@@ -230,44 +226,40 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 
 如果使用者嘗試將已標記的內容上傳到個人 Gmail 帳戶，他們會看到這則訊息。
 
-![已標記內容的訊息無法複製到 Gmail](media/Sensitivity_label_WIP_Gmail.png)
+![已標記內容的訊息無法複製到 Gmail](media/Sensitivity-label-WIP-Gmail.png)
 
 如果使用者嘗試將已標記的內容儲存到 USB 磁碟機，他們會看到這則訊息。
 
-![已標記內容的訊息無法複製到 USB 磁碟機](media/Sensitivity_label_WIP_USB_drive.png)
+![已標記內容的訊息無法複製到 USB 磁碟機](media/Sensitivity-label-WIP-USB-drive.png)
 
 ### <a name="important-prerequisites"></a>重要的先決條件
 
-在敏感度標籤可使用 WIP 之前，您必須先執行下文所述的先決條件：[Windows 資訊保護如何保護具有敏感度標籤的檔案](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。本主題將說明下列先決條件：
+在敏感度標籤可使用 WIP 之前，您必須先執行下文所述的先決條件：[Windows 資訊保護如何保護具有敏感度標籤的檔案](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。本主題將說明下列先決條件：
 
 - 請確定您執行的是 Windows 10，版本 1809 或更新版本。
-- 
-  [設定 Windows Defender 進階威脅防護 (WDATP)](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-atp/get-started)，這會掃描內容以找出標籤，並套用對應的 WIP 保護。ATP 會在 WIP 之外獨立執行某些動作，例如報告異常狀況。
+- [設定 Microsoft Defender 進階威脅防護 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started)，這會掃描標籤內容，並套用對應的 WIP 保護。 ATP 執行某些獨立於 WIP 的動作，例如報告異常狀況。
 - 建立可套用至端點裝置的 Windows 資訊保護 (WIP) 原則。您可以在下列任何位置執行此作業：
-    - 
-  [為 Microsoft Intune 使用 Azure 入口網站透過 MDM 建立 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - 
-  [使用 System Center Configuration Manager 建立及部署 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/zh-TW/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - [為 Microsoft Intune 使用 Azure 入口網站透過 MDM 建立 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+    - [使用 System Center Configuration Manager 建立及部署 Windows 資訊保護 (WIP) 原則](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>使用 Microsoft Cloud App Security 保護協力廠商應用程式和服務中的內容
 
 使用 Cloud App Security (CAS) 保護協力廠商應用程式和服務中的內容。 您可以使用 CAS 來偵測、分類、加標籤，以及保護內容的第三方服務和應用程式 (例如 SalesForce、Box 或 Dropbox) 中的內容。 例如，Dropbox 可能無法了解敏感度標籤，但 CAS 可以取得並保護該位置中加標籤的內容。
 
-如需詳細資訊，請參閱[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-information-protection)。
+如需詳細資訊，請參閱[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/cloud-app-security/use-case-information-protection)。
 
 ### <a name="important-prerequisites"></a>重要的先決條件
 
-在敏感度標籤可使用 CAS 之前，您必須先執行下文所述的先決條件：[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-information-protection)。 本主題說明下列先決條件：
+在敏感度標籤可使用 CAS 之前，您必須先執行下文所述的先決條件：[自動套用 Azure 資訊保護分類標籤](https://docs.microsoft.com/cloud-app-security/use-case-information-protection)。 本主題說明下列先決條件：
 
-- 為您的租用戶[啟用 Cloud App Security 和 Azure 資訊保護](https://docs.microsoft.com/zh-TW/cloud-app-security/azip-integration)。
-- 
-  [將應用程式連線](https://docs.microsoft.com/zh-TW/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)至 Cloud App Security。
+- 為您的租用戶[啟用 Cloud App Security 和 Azure 資訊保護](https://docs.microsoft.com/cloud-app-security/azip-integration)。
+- [將應用程式連線](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)至 Cloud App Security。
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>使用 Microsoft 資訊保護 SDK 將敏感度標籤擴充至協力廠商應用程式和服務
 
 由於敏感度標籤在文件的中繼資料內保存為純文字，協力廠商應用程式和服務可以選擇支援識別及保護含有這類標籤的內容。其他應用程式和服務的支援已展開。
 
-使用 [Microsoft 資訊保護 SDK](https://docs.microsoft.com/zh-TW/information-protection/develop/)，協力廠商應用程式和服務可以讀取並將敏感度標籤和保護套用至文件。SDK 支援 Windows、Mac 和 Linux 上的應用程式。iOS 和 Android 應用程式的支援即將推出。
+使用 [Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/)，協力廠商應用程式和服務可以讀取並將敏感度標籤和保護套用至文件。SDK 支援 Windows、Mac 和 Linux 上的應用程式。iOS 和 Android 應用程式的支援即將推出。
 
 使用 SDK，您可以標記及保護內容，並搭配其他 Microsoft 資訊保護應用程式和服務，如 Office 應用程式、Office 365 服務、Azure 資訊保護掃描器、Microsoft Cloud App Security，以及多種其他的合作夥伴解決方案。例如，深入了解 [Adobe Acrobat 中敏感度標籤的支援](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)。
 
