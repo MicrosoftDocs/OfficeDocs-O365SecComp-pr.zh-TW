@@ -30,7 +30,7 @@
 ### [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
 
-## [防止資料遺失 (DLP)](data-loss-prevention-policies.md)
+## [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
 ### [DLP 和 Microsoft Teams](dlp-microsoft-teams.md)
 ### [觀看 DLP 的延伸概觀](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### 設定 DLP
@@ -103,6 +103,7 @@
 #### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
 #### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
 #### [設定連接器來封存 LinkedIn 資料](archive-linkedin-data.md)
+#### [設定連接器來封存 Instant Bloomberg 資料](archive-instant-bloomberg-data.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
 ### [啟用封存信箱](enable-archive-mailboxes.md)
@@ -245,6 +246,7 @@
 #### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
 #### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
 #### [設定連接器來封存 LinkedIn 資料](archive-linkedin-data.md)
+#### [設定連接器來封存 Instant Bloomberg 資料](archive-instant-bloomberg-data.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
 ### [啟用封存信箱](enable-archive-mailboxes.md)
@@ -482,6 +484,7 @@
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
 ## [管理信箱稽核](enable-mailbox-auditing.md)
 ## [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)
+## [匯出、 設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md)
 ## [使用稽核記錄檔對常見案例進行疑難排解](auditing-troubleshooting-scenarios.md)
 ## [使用稽核記錄中的共用稽核](use-sharing-auditing.md)
 ## [在稽核記錄中搜尋電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)
