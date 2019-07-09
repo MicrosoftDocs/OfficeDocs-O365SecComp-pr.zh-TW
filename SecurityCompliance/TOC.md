@@ -537,11 +537,11 @@
 ### [合規性管理員的新增功能 (預覽版)](compliance-manager-release-notes.md)
 ### [使用合規性管理員 (預覽版)](working-with-compliance-manager.md)
 ### [合規性分數方法 (預覽版)](compliance-score-methodology.md)
-## [資訊屏障 (預覽)](information-barriers.md)
-### [定義資訊屏障原則 (預覽)](information-barriers-policies.md)
-### [資訊屏障原則的屬性 (預覽)](information-barriers-attributes.md)
-### [疑難排解資訊屏障（預覽）](information-barriers-troubleshooting.md)
-### [編輯資訊屏障原則 （預覽）](information-barriers-edit-segments-policies.md.md)
+## [資訊屏障](information-barriers.md)
+### [定義資訊屏障原則](information-barriers-policies.md)
+### [資訊屏障原則的屬性](information-barriers-attributes.md)
+### [疑難排解資訊屏障](information-barriers-troubleshooting.md)
+### [編輯資訊屏障原則](information-barriers-edit-segments-policies.md.md)
 
 
 ## 客戶金鑰
