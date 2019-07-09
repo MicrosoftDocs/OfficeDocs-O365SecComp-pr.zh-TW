@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容。
-ms.openlocfilehash: 84470098cdbe1893a0e85dd52857bee428e58cbb
-ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
+ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435253"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587112"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -58,7 +58,7 @@ ms.locfileid: "35435253"
 
 當您在保留原則中包括網站或信箱這類的位置時，內容仍會留在其原始位置。使用者可以繼續使用其文件或郵件，一樣不會變更。但在他們編輯或刪除原則中包含的內容時，系統會保留內容的複本，與您套用原則時存在的內容相同。
   
-對於 SharePoint 網站集合，當使用者編輯或刪除原始內容時，原始內容的複本會保留在文件保留庫；對於電子郵件和公用資料夾，複本會保留在 [可復原的項目] 資料夾中。大部分人員看不到這些安全位置和保留內容。使用保留原則時，人員甚至不知道其內容受到原則約束。
+針對 SharePoint 網站集合，當使用者編輯或刪除原始內容時，原始內容的複本會保留在文件保留庫；針對電子郵件和公用資料夾，複本會保留在 [可復原的項目] 資料夾中。大部分人員看不到這些安全位置和保留內容。使用保留原則時，人員甚至不知道其內容受到原則約束。
   
 附註：
   

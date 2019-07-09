@@ -3,7 +3,7 @@ title: 自訂內建機密資訊類型
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/03/2019
+ms.date: 07/08/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。
-ms.openlocfilehash: ddfd8bd82164fde6d2121b37d867caaa69355b4b
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 8a621e3f1b24a8cea9cd263e44dc2def8a8b95b7
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077199"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587102"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -214,7 +214,7 @@ ms.locfileid: "34077199"
 |:-----|:-----|
 |實體|實體是我們所謂的機密資訊類型，例如信用卡號碼。每個實體都有唯一的 GUID 作為其識別碼。如果您複製 GUID 並且在 XML 中搜尋，您會找到 XML 規則定義及該 XML 規則的所有當地語系化轉譯。您也可以藉由尋找轉譯的 GUID 並且搜尋該 GUID，來尋找此定義。|
 |函式|XML 檔案參考 `Func_credit_card`，這是已編譯程式碼中的函式。函式是用來執行複雜 regexes 並確認總和檢查碼符合我們的內建規則。因為這是在程式碼中發生，所以部分變數不會在 XML 檔案中顯示。|
-|IdMatch|這是模式嘗試比對的識別碼，例如信用卡號碼。您可以在[實體規則](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity)中深入了解這個項目和 `Match` 標記。|
+|IdMatch|這是模式要嘗試符合的識別碼，例如信用卡號。|
 |關鍵字清單|XML 檔案也會參考 `keyword_cc_verification` 和 `keyword_cc_name`，這是關鍵字清單，我們會從中尋找與實體 `patternsProximity` 的相符項目。目前不會在 XML 中顯示。|
 |模式|模式包含機密類型尋找的清單。包含關鍵字、regexes 及內部函式 (執行像是驗證總和檢查碼的工作)。機密資訊類型可以有多個具有唯一信賴度的模式。建立機密資訊類型時，在找到確切辨識項時傳回高信賴度、找到一些確切辨識項或完全找不到時傳回較低信賴度，這非常有用。|
 |模式 confidenceLevel|這是 DLP 引擎找到相符項目的信賴等級。此信賴等級與符合模式需求時，模式的相符項目相關聯。這是當使用 Exchange 郵件流程規則 (也稱為傳輸規則) 時，您應該考慮的信賴度量值。|
