@@ -2,7 +2,7 @@
 title: 垃圾郵件和大量電子郵件有什麼不同?
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 1/7/2015
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: 客戶有時 askwhat 的垃圾郵件和大量電子郵件的差異？本主題的用途是說明的差異，並提供兩者在 Exchange Online 和 Exchange Online Protection (EOP) 中可用的不同選項的相關資訊。
-ms.openlocfilehash: f0e80b460af2ff5b51f5380063780ee653e00b3d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ee684fb079b11fd345eae6e2c8f5980fcbca5cb0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155985"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598289"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾郵件和大量電子郵件有什麼不同?
 

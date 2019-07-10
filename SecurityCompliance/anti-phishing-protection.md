@@ -2,7 +2,7 @@
 title: Office 365 的防網路釣魚保護
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 10/11/2018
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Office 365 提供各種不同的網路釣魚防護，根據預設，透過 ATP 防網路釣魚等其他供應項目。 本主題介紹您可用於了解和實作 Office 365 中的反網路釣魚選項和策略的線上資源。
-ms.openlocfilehash: a002002967e3e529cada587f9b0bd29fa867e06e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 56db0d4dd47947ffb8d16c96b7588ed4c59ef613
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155665"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598279"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Office 365 的防網路釣魚保護
 

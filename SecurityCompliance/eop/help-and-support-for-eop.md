@@ -1,8 +1,8 @@
 ---
 title: EOP 的說明和支援
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: 4343643d7c1c69d21b45d3a46ac8ac6dba42c3d1
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150325"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599659"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 

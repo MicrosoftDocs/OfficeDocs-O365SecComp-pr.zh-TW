@@ -3,7 +3,7 @@ title: 標記與 Office 365 進階電子文件探索中的評估
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: '檢閱執行評估訓練，包括標記檔案，並檢閱在 Office 365 進階電子文件探索中的評估結果的步驟。 '
-ms.openlocfilehash: 15463ac841e2fbbafe1fe502657a659f4a9e1883
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 067f8933bd7fc1286e468d664bf4dbd754e64f00
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156405"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600736"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>標記與 Office 365 進階電子文件探索中的評估
 

@@ -2,7 +2,7 @@
 title: 在 Office 365 中建立封鎖寄件者清單
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/6/2019
 audience: ITPro
 ms.topic: article
@@ -10,54 +10,56 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: 封鎖寄件者清單選項包括 Outlook 封鎖的寄件者、反垃圾郵件寄件者/網域封鎖清單、IP 封鎖清單, 以及 Exchange 傳輸規則 (ETRs) 也稱為郵件流程規則。
-ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+description: 封鎖寄件者清單選項包括 Outlook 封鎖寄件者、 反垃圾郵件寄件者/網域封鎖清單、 IP 封鎖清單，以及 Exchange 傳輸規則 (Etr) 也稱為郵件流程規則。
+ms.openlocfilehash: 861fa0e47980a6bc295672cf1e8e35954c6f1dfb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017685"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599989"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>在 Office 365 中建立封鎖寄件者清單
 
-有時, 您必須封鎖寄件者的不想要的電子郵件。 有幾種方法可供選擇。 這些選項包括 Outlook 封鎖的寄件者、反垃圾郵件寄件者/網域封鎖清單、IP 封鎖清單和 Exchange 傳輸規則 (ETRs, 也稱為郵件流程規則)。
+有時會需要封鎖寄件者的垃圾電子郵件。 有數種方法可從選擇。 這些選項包括 Outlook 封鎖寄件者、 反垃圾郵件寄件者/網域封鎖清單、 IP 封鎖清單，以及 Exchange 傳輸規則 (Etr，也就是也稱為郵件流程規則)。
 
 > [!NOTE]
-> 雖然組織區塊清單可以用來解決漏報 (遺漏的垃圾郵件), 但這些候選人也應該提交給 Microsoft 進行分析。 使用封鎖清單來管理漏報會大幅增加您的管理負荷。 如果您要使用封鎖清單來達到此目的, 您必須同時將[垃圾郵件、非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://docs.microsoft.com/en-us/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)。
+> 雖然可用於組織封鎖清單地址 false 負號 （未接的垃圾郵件），這些應徵者應也要送出給 Microsoft 進行分析。 誤判使用管理的封鎖清單會大幅增加您管理的額外負荷。 如果您將會使用封鎖清單達到此目的，您必須同時保留文章[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://docs.microsoft.com/en-us/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)，在準備。
 
-設定封鎖寄件者清單的適當方法, 會視影響範圍而有所不同。 針對單一使用者影響, 正確的解決方案可能是使用 Outlook 封鎖的寄件者, 但如果多位使用者或所有使用者都受到影響, 則其中一個其他選項會更合適。
+若要設定封鎖的寄件者清單的適當方法影響的範圍而有所不同。 單一使用者的影響，右解決方案可能是使用 Outlook 封鎖寄件者，但如果多個使用者或所有使用者正在受影響，其中一個其他選項會更合適。
 
-## <a name="options-from-least-to-broadest-scope"></a>從最低到最廣泛的範圍的選項
+## <a name="options-from-least-to-broadest-scope"></a>從最小到最大範圍的選項
 
-建立封鎖清單時, 請務必根據影響範圍 (受影響的人員數目) 來挑選適當的方法, 使其符合封鎖方法的廣度。 以下所列的選項會依範圍和廣度來排序。 清單從窄到範圍, 但閱讀完整建議的*詳細*資料。
+建立封鎖清單時很重要挑選適合的方法，根據 （會影響多少人） 的影響，範圍，使其符合封鎖方法的廣度。 下面所列的選項會透過範圍和廣度排名。 清單會從窄到廣泛，但*讀取特定內容*的完整的建議。
 
 - Outlook 封鎖的寄件者
-- 反垃圾郵件原則: 寄件者/網域封鎖清單
-- Exchange 傳輸規則 (也稱為郵件流程規則) ETRs
-- 反垃圾郵件原則: IP 封鎖清單
+- 反垃圾郵件原則： 寄件者/網域封鎖清單
+- Exchange 傳輸規則 （Etr 也稱為的郵件流程規則）
+- 反垃圾郵件原則： IP 封鎖清單
 
 ## <a name="use-outlook-blocked-senders"></a>使用 Outlook 封鎖的寄件者
 
-當只有少量的使用者受到影響時, 就應該使用 Outlook 封鎖的寄件者, 因為這只會影響傳送給他們的郵件。
+只有少數使用者會受到影響，這是時，也應該使用 Outlook 封鎖寄件者，因為這只會影響郵件傳送給它們。
 
 > [!IMPORTANT]
-> 如果不想要的郵件是來自可信且可識別來源的簡報, 請從電子郵件取消訂閱, 以防止使用者日後收到電子郵件。
+> 如果不想要的郵件新聞稿信譽及辨識的來源，取消訂閱電子郵件中是用來停止從未來取得電子郵件使用者的其他選項。
 
-[Outlook Web App](https://support.office.com/en-us/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)和[outlook 用戶端](https://support.office.com/en-us/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之間的設定步驟是不同的。 **當郵件因為封鎖的寄件者而成功封鎖時, 您會在 X Forefront-反垃圾郵件中看到 SFV: BLK** , 表示郵件遭到封鎖。
+若要設定此案例的步驟是[Outlook Web App](https://support.office.com/en-us/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)和[Outlook 用戶端](https://support.office.com/en-us/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之間的不同。 **郵件已成功封鎖由於封鎖寄件者時您會看到 sfv: X-Forefront-反垃圾郵件的報告**指出郵件會遭到封鎖。
 
-## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>使用反垃圾郵件原則寄件者/網域封鎖清單
+## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>使用反垃圾郵件原則/網域的寄件者封鎖清單
 
-當多個使用者受到影響時, 範圍就會變寬, 而且您必須使用全公司的寄件者/網域封鎖清單反垃圾郵件原則。 您可以在 [[設定您的垃圾郵件篩選原則](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)] 檔中找到詳細步驟。 透過此方法封鎖的任何郵件都會遵循原則中所設定的垃圾郵件動作。
+時所受影響多個使用者，範圍更廣，且您需要使用全公司的寄件者/網域 」 封鎖清單反垃圾郵件原則。 詳細的步驟可以[設定您的垃圾郵件篩選原則](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)的文件中找到。 已封鎖透過此方法的任何訊息會遵循 [垃圾郵件] 動作，該原則中設定的一樣。
 
-## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>使用 Exchange 傳輸規則 (ETRs) 來封鎖特定寄件者
+這些清單的最大限制為大約 1000年項目。
 
-如果您需要封鎖傳送給特定使用者或整個組織的郵件, 則可以使用 ETRs (也稱為郵件流程規則)。 ETRs 比較靈活, 因為它們可以觸發寄件者電子郵件地址或網域, 以及郵件中的關鍵字和其他屬性。 這種靈活性可讓您建立部分對完成的區塊。 [請按一下以取得建立 ETR (也稱為郵件流程規則) 的步驟](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)。
+## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>使用 Exchange 傳輸規則 (Etr) 來封鎖特定寄件者
+
+必要時要傳送給特定使用者或整個組織的封鎖郵件，可以使用 Etr （也稱為郵件流程規則）。 Etr 是更有彈性，因為他們可以觸發關閉寄件者電子郵件地址或網域，以及關鍵字和訊息中的其他屬性。 這種彈性可讓您建立或部分-完整區塊。 [請按一下 [建立 ETR，也稱為郵件流程規則的步驟](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)。
 
 > [!IMPORTANT]
-> 建立的規則非常簡單, 因此很** 重要的是, 您可能會認為所使用的準則盡可能具體。 此外, 請務必在您建立的規則上啟用審核, 並進行測試, 以確保一切正常運作。
+> 很容易建立*過度*積極的規則，因此請務必正在使用的準則會儘可能指定特定。 此外，請務必啟用稽核規則建立並執行測試，以確保每個項目如預期般運作。
 
 ## <a name="use-anti-spam-policy-ip-block-lists"></a>使用反垃圾郵件原則 IP 封鎖清單
 
-當您無法使用其中一個選項來封鎖寄件者時, 可以使用反** 垃圾郵件原則的 IP 封鎖清單。 您[可以在 [設定連線篩選原則] 一文中找到詳細步驟](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-the-connection-filter-policy)。 請務必將封鎖的 Ip 清單保留在此處,*不*建議使用 IP 位址範圍。 **
+*然後*反垃圾郵件原則 IP 封鎖清單時不能使用下列其中一個其他選項來封鎖寄件者，都可以使用。 [可以在文章 Configure the connection filter policy > 中找到的詳細的步驟](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-the-connection-filter-policy)。 請務必保留到*最小*的 Ip 封鎖清單，並*不*建議在這裡使用的 IP 位址範圍。
 
-您應該*特別*避免新增屬於消費者服務或共用基礎結構的 ip 位址範圍, 也請確定您已查看允許的 ip 地址清單, 做為定期維護的一部分。 **因為允許專案可以開啟受攻擊的路由, 所以您必須仔細管理此清單, 並定期移除不再需要的允許專案。** 此外, 如果您要在安全寄件者清單中允許, 請務必閱讀並瞭解在*[Office 365 中建立安全寄件者清單中](create-safe-sender-lists-in-office-365.md)* 的風險和防範措施。
+您應該*特別*避免新增 IP 位址範圍，屬於消費者服務或共用的基礎結構，也請務必定期維護的一部分檢閱允許的 IP 位址清單。 **因為可讓項目可以開啟攻擊的路由，您必須密切管理這份清單，並定期移除允許的項目，但不再需要。** 此外，如果您將會讓使用者在 [安全寄件者清單中請務必閱讀並瞭解的風險和預防措施來*[建立安全的寄件者列出 Office 365 中](create-safe-sender-lists-in-office-365.md)*。

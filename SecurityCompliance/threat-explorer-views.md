@@ -2,7 +2,7 @@
 title: 威脅總管] 和 [即時偵測的資訊中的檢視
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解各種不同的威脅總管] 和 [即時偵測中可用的檢視。
-ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408318"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600816"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅總管] 和 [即時偵測的資訊中的檢視
 

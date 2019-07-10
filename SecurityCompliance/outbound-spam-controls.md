@@ -2,7 +2,7 @@
 title: 控制 Office 365 的輸出垃圾郵件
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 如果您的組織傳送大量的大宗郵件標示為垃圾郵件，可能會遭到封鎖無法傳送電子郵件與 Office 365。 閱讀本篇文章以深入了解發生的原因以及可以怎麼做其相關資訊。
-ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 09aa71cd8b273a3235bc2673d3d17c3decf71da5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157595"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601130"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>控制 Office 365 的輸出垃圾郵件
 

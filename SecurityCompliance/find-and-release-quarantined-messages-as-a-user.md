@@ -2,8 +2,8 @@
 title: 身分找到並釋放被隔離的郵件中 Office 365 的使用者
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/19/2018
+manager: dansimp
+ms.date: 05/19/2018
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 使用者，您可以管理自己被當成垃圾郵件隔離郵件下列兩種方式之一： 藉由回應垃圾郵件直接傳送到您的通知 （如果您的系統管理員已設定這項功能），或使用垃圾郵件隔離功能安全性&amp;合規性置中。
-ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 47c17e59f6f54d973eeaf761ecee6a1ac5a3dbba
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152815"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599349"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>身分找到並釋放被隔離的郵件中 Office 365 的使用者
 

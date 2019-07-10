@@ -2,8 +2,8 @@
 title: 垃圾郵件信賴等級
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 10/2/2017
+manager: dansimp
+ms.date: 10/02/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: 當電子郵件通過垃圾郵件篩選會指派的垃圾郵件計分。 該分數是對應至個別的垃圾郵件信賴等級 (SCL) 分級，並在 X 標頭中加上戳記。 服務採取動作時取決於垃圾郵件信賴解譯的 SCL 分級的郵件。 下表顯示由篩選以及對每個分級的輸入郵件採取的預設動作如何解譯不同 SCL 分級。
-ms.openlocfilehash: 4eba1dc6fa1bbadcfd135a7bf43e7353755df6c4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: beb322341f4d0de25d7bac9681c0beed93c48e5f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158265"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600873"
 ---
 # <a name="spam-confidence-levels"></a>垃圾郵件信賴等級
 

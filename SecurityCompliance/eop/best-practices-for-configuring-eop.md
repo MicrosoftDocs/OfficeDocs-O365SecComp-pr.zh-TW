@@ -1,8 +1,8 @@
 ---
 title: 設定 EOP 的最佳作法
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 遵循下列 Exchange Online Protection (EOP) 最佳作法建議，以成功完成設定並避免發生常見組態錯誤。
-ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 991059b6823059b0e5eae784e21bfc0128cbd2d1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150284"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599809"
 ---
 # <a name="best-practices-for-configuring-eop"></a>設定 EOP 的最佳作法
   
@@ -35,7 +35,7 @@ ms.locfileid: "34150284"
   
 ## <a name="set-anti-spam-options"></a>設定反垃圾郵件選項
 
-管理您的連線篩選器設定來新增 IP 位址至 IP 允許和 IP 封鎖清單，並藉由選取 [**啟用安全清單**] 選項，其中應該減少誤判 （歸類為垃圾郵件的良好郵件） 的數目會收到。 深入瞭解[Configure the connection filter policy ](../configure-the-connection-filter-policy.md)。 如需更多套用到整個組織的垃圾郵件設定，請參閱[如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[利用 Office 365 垃圾郵件篩選器封鎖電子郵件的垃圾郵件，以避免誤判正常問題](https://go.microsoft.com/fwlink/p/?LinkId=534225)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
+管理您的連線篩選器設定來新增 IP 位址至 IP 允許和 IP 封鎖清單，並藉由選取 [**啟用安全清單**] 選項，其中應該減少誤判 （歸類為垃圾郵件的良好郵件） 的數目會收到。 深入瞭解[Configure the connection filter policy >](../configure-the-connection-filter-policy.md)。 如需更多套用到整個組織的垃圾郵件設定，請參閱[如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[利用 Office 365 垃圾郵件篩選器封鎖電子郵件的垃圾郵件，以避免誤判正常問題](https://go.microsoft.com/fwlink/p/?LinkId=534225)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
   
 檢閱並選擇性地變更預設的設定來管理內容篩選器。 例如，您可以變更偵測到垃圾郵件的郵件會發生什麼情況的動作。 如果您想要追求積極的垃圾郵件篩選方法，您可以設定進階垃圾郵件篩選選項。 我們建議您測試這些選項第一次之前實作它們在實際執行環境中 （藉由開啟這些） 建議是網路釣魚有疑慮的組織開啟**SPF 記錄： 完全未通過**選項。 瞭解更多[設定您的垃圾郵件篩選原則](../configure-your-spam-filter-policies.md)和[進階垃圾郵件篩選選項](../advanced-spam-filtering-asf-options.md)。
   

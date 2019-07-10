@@ -2,19 +2,19 @@
 title: 安全性與合規性中心內的郵件流程深入解析
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板。
-ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 402fcf0ac29ecd67c9ecbc2e46c47d9a6392eedd
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155875"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598899"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 

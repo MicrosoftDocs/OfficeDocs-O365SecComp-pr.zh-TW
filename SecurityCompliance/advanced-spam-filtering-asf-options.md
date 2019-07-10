@@ -2,8 +2,8 @@
 title: 進階垃圾郵件篩選選項
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/26/2015
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 進階垃圾郵件篩選選項可讓系統管理員檢查郵件的各種內容屬性。 郵件中有此類屬性存在時，將會提高該郵件的垃圾郵件計分 (進而提高該郵件被識別為垃圾郵件的可能性)，或將該郵件標記為垃圾郵件。 ASF 選項以特定郵件內容為目標，例如 HTML 標記與 URL 重新導向這類常出現在垃圾郵件中的項目。
-ms.openlocfilehash: 84807b102967dc5d4a3812e97681a1c8fc7fa318
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152445"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598669"
 ---
 # <a name="advanced-spam-filtering-options"></a>進階垃圾郵件篩選選項
 
@@ -54,5 +54,5 @@ ms.locfileid: "34152445"
 |SPF 記錄： 完全未通過|啟用此設定時，無法通過 SPF 檢查 （表示寄件 SPF 記錄中未指定 IP 位址） 的郵件會被標示為垃圾郵件。 身為擔心接收網路釣魚郵件的組織，建議您開啟此設定。  <br/> <br/> 測試模式不適用於此選項。  <br/> |X-customspam: SPF 記錄失敗  <br/> |
 |條件式寄件者識別碼篩選： 完全未通過  <br/> |啟用此設定時，完全失敗時的條件式寄件者識別碼檢查任何郵件已標示為垃圾郵件。 此選項結合了 SPF 檢查與寄件者識別碼檢查，以協助防範包含偽造寄件者的郵件標頭。  <br/> <br/> 測試模式不適用於此選項。  <br/> |X-customspam: SPF 寄件者記錄失敗  <br/> |
 |NDR 非法回應  <br/> |如果您正在使用 EOP 來保護內部部署信箱，啟用此設定時，所有合法的未傳遞回報 (NDR) 郵件會傳遞給原始寄件者和 backscatter (非法 NDR) 的所有郵件會被都標示為垃圾郵件。 如果您未啟用此設定，然後所有 Ndr 仍都經過垃圾郵件篩選。 在此情況下，最合法郵件會取得傳遞給原始寄件者時，但並非所有，將會收到退信攻擊郵件標示為垃圾郵件。 不過，未標示為垃圾郵件的非法回應郵件將不會移至原始寄件者，因為它將會移至詐騙的寄件者。 <br/> <br/> 如果您使用服務來保護 Exchange Online 雲端託管信箱，您不需要進行此設定。  <br/><br/> 這兩個案例中 （內部部署和雲端託管信箱），它也不是必要時啟用此設定為透過服務，以是合法退回的郵件將會自動偵測並傳遞給原始寄件者的 Ndr 傳送的外寄郵件. 無法使用此選項 > 測試模式。           <br/><br/>秘訣： 如需退信攻擊郵件與 EOP 的詳細資訊，請參閱[退信攻擊郵件與 EOP](backscatter-messages-and-eop.md)。           |X-customspam： 非法回應 NDR  <br/> |
-|大宗郵件|進階垃圾郵件篩選大量電子郵件的已停用並取代為大量及電子郵件設定的臨界值。 請參閱[垃圾郵件和大量電子郵件之間的差異為何？](what-s-the-difference-between-junk-email-and-bulk-email.md)及[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)的詳細資訊，以及如何進行設定。||
+|大宗郵件|進階垃圾郵件篩選大量電子郵件的已停用並取代為大量及電子郵件設定的臨界值。 請參閱[垃圾郵件和大量電子郵件之間的差異為何？](what-s-the-difference-between-junk-email-and-bulk-email.md)及[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)的詳細資訊，以及如何進行設定。|X-customspam： 大宗郵件 | 大宗郵件  <br/> |
 |

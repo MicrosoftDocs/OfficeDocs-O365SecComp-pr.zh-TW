@@ -1,8 +1,8 @@
 ---
-title: 尋找並調查已傳遞的惡意電子郵件 (Office 365 威脅調查和回應
+title: 尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電子郵件
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -14,74 +14,85 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414803"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605448"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查已傳遞的惡意電子郵件 (Office 365 高級威脅防護方案 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查惡意電子郵件已傳遞 (Office 365 進階威脅防護計劃 2)
 
-[Office 365 高級威脅防護](office-365-atp.md)可讓您調查讓使用者面臨風險的活動, 並採取行動以保護您的組織。 例如, 如果您是組織的安全小組的一部分, 您可以尋找並調查已傳遞給使用者的可疑電子郵件訊息。 您可以使用[威脅瀏覽器 (或即時偵測)](threat-explorer.md)來執行此動作。
+[Office 365 進階威脅防護](office-365-atp.md)可讓您調查，將您的使用者放在風險，並採取動作來保護您的組織活動。 例如，如果您是貴組織的安全性小組的一部分，您可以尋找和調查可疑的電子郵件已傳遞至您的使用者。 您可以使用[威脅總管 （或即時偵測的資訊）](threat-explorer.md)。
   
-## <a name="before-you-begin"></a>開始之前 .。。
+## <a name="before-you-begin"></a>開始之前...]
 
-請確定符合下列需求:
+請確定符合下列需求：
   
-- 您的組織有[Office 365 Advanced 威脅防護](office-365-atp.md)(plan 1 或 plan 2) 和[授權已指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)（方案 1 或計劃 2） 並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
-- 您的組織已開啟[Office 365 的 audit 記錄](turn-audit-log-search-on-or-off.md)。 
+- [Office 365 稽核記錄](turn-audit-log-search-on-or-off.md)已為您的組織。 
     
-- 您的組織有針對反垃圾郵件、反惡意程式碼、反網路釣魚等所定義的原則。 請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。
+- 貴組織的原則定義的反垃圾郵件、 反惡意程式碼、 反網路釣魚，依此類推。 請參閱[針對 Office 365 中的威脅保護](protect-against-threats.md)。
     
-- 您是 Office 365 全域系統管理員, 或您擁有安全性系統管理員或在安全性&amp;與合規性中心中指派的搜尋和清除角色。 請參閱[Office 365 安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您是 Office 365 全域管理員，或具有安全性系統管理員或 「 搜尋及清除角色指派安全性&amp;合規性中心。 請參閱[中的 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。
     
 ## <a name="dealing-with-suspicious-emails"></a>處理可疑的電子郵件
 
-惡意攻擊者可能會將郵件傳送給您的使用者, 以嘗試和詐騙其認證, 並取得公司機密的存取權! 若要避免這種情況, 您應該使用 Office 365 中的威脅防護服務, 包括[Exchange Online protection](eop/exchange-online-protection-overview.md)和[高級威脅防護](office-365-atp.md)。 不過, 在某些情況下, 攻擊者可以傳送郵件給您的使用者包含 URL, 而只是稍後再讓該 URL 指向惡意內容 (惡意程式碼等等)。 或者, 您可能會發現組織中的使用者已遭到破壞, 而且該使用者遭到破壞時, 攻擊者會使用該帳戶, 將電子郵件傳送給公司中的其他使用者。 在這兩種情況下, 您可能會想要移除使用者收件匣中的電子郵件訊息。 在這類情況下, 您可以利用[威脅瀏覽器 (或即時偵測)](threat-explorer.md)來尋找並移除這些電子郵件!
+惡意攻擊者可能會將郵件傳送至您的使用者嘗試與釣魚程式其認證，並存取您公司的機密資料 ！ 若要避免這種情況，您應該使用在 Office 365 中，包括[Exchange Online Protection](eop/exchange-online-protection-overview.md)和[進階威脅防護](office-365-atp.md)的威脅保護服務。 不過，有的時間攻擊者時將郵件傳送給使用者的 url 然後僅更新版本上將該 URL 點對惡意內容 （惡意程式碼等）。 或者，您可能會發現太晚而遭入侵您組織中的使用者，以及攻擊時遭到盜用了該使用者，使用該帳戶傳送電子郵件給您公司中的其他使用者。 一部分 < cleaning up 這兩種情況，您可能想要移除使用者收件匣的電子郵件。 在這類的情況下，您可以利用[威脅總管 （或即時偵測）](threat-explorer.md)來尋找和移除這些電子郵件訊息 ！
 
-## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>在採取動作後, 重新路由傳送電子郵件的位置
+## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>重新路由傳送的電子郵件的所在位置後採取的動作
 
-威脅 Explorer 即時偵測已新增 [傳遞動作] 和 [傳遞位置] 欄位的 [傳遞] 狀態。 這會使您在電子郵件中的位置產生更完整的圖片。 此變更的其中一部分是讓搜尋更容易進行安全性操作人員, 但是 net 結果是一眼就知道問題電子郵件的位置。
+威脅總管即時偵測已新增取代傳遞狀態的傳遞巨集指令並傳遞位置欄位。 這會導致您的電子郵件的登陸其中的更完整圖片。 這項變更的目標的一部分是狩獵更輕鬆地進行安全性 Ops 的人員，但最終結果知道一眼問題電子郵件的位置。
 
-傳遞狀態現在會分成兩欄:
+傳遞狀態現在劃分為兩個資料行：
 
-- **傳遞動作**-此電子郵件的狀態為何？
-- **傳遞位置**-這封電子郵件會做為結果的路由？
+- **傳遞動作**-這封電子郵件的狀態為何？
+- **傳遞位置**-其中這封電子郵件路由傳送結果？
 
-傳遞動作是由於現有的原則或偵測而對電子郵件採取的動作。 以下是電子郵件可能採取的動作:
+傳遞動作是因為現有的原則或偵測電子郵件所採取的動作。 以下是可能一封電子郵件可以採取的動作：
 
-1. **傳遞**–電子郵件已傳遞至使用者的收件匣或資料夾, 而且使用者可以直接存取它。
-2. **Junked** –電子郵件會傳送至使用者的 [垃圾郵件] 資料夾或 [已刪除的資料夾], 而且使用者可以存取其垃圾郵件或已刪除的資料夾中的電子郵件。
-3. **封鎖**–隔離、失敗或已捨棄的任何電子郵件。 使用者完全無法存取此功能!
-4. **已更換**–任何惡意附件都由 .txt 檔案取代, 以指出附件是惡意的電子郵件。
+1. **已傳遞**– 電子郵件已傳遞至收件匣或資料夾的使用者和該使用者可以直接存取。
+2. **Junked** – 電子郵件已傳送至任一使用者的垃圾郵件] 資料夾，或刪除資料夾，且使用者在其 [垃圾郵件或刪除的郵件] 資料夾中具有存取電子郵件。
+3. **封鎖**– 任何電子郵件，會受到隔離，失敗，或已卸除。 這是完全無法存取之使用者所 ！
+4. **取代**– 惡意附件由 state 附件的.txt 檔案所取代其中任何電子郵件程式惡意。
  
-[傳遞位置] 顯示執行傳遞後的原則和偵測結果。 它會連結至傳遞動作。 新增此欄位是為了深入瞭解當發現問題郵件時所採取的動作。 以下是傳遞位置的可能值:
+傳遞位置顯示原則，以及執行後續傳遞的偵測的結果。 它會連結到傳遞巨集指令。 此欄位已新增至提供深入時找到問題郵件採取的動作。 以下是傳遞位置的可能值：
 
-1. **收件匣或資料夾**-電子郵件位於 [收件匣] 或 [資料夾 (根據您的電子郵件規則)。
-2. **部署或外部**–信箱不存在於雲端上, 但在內部部署。
-3. **垃圾郵件資料夾**–在使用者的 [垃圾郵件] 資料夾中的電子郵件。
-4. [**刪除的郵件] 資料夾**–使用者的 [刪除的郵件] 資料夾中的電子郵件。
-5. **隔離**–隔離中的電子郵件, 且不在使用者的信箱中。
-6. **失敗**–電子郵件無法送達信箱。
-7. **** 捨棄–電子郵件會在郵件流程中的某處遺失。
+1. **收件匣或資料夾**– 電子郵件是在收件匣或資料夾中 （根據您的電子郵件的規則）。
+2. **在內部或外部**– 信箱不存在於雲端上，但在-內部部署。
+3. **垃圾郵件資料夾**– 中之使用者的 [垃圾郵件] 資料夾中的電子郵件。
+4. **刪除的項目] 資料夾**– 之使用者的已刪除項目] 資料夾中的電子郵件。
+5. **隔離**-隔離中的電子郵件以及不在使用者的信箱。
+6. **失敗**– 電子郵件無法連到信箱。
+7. **丟棄**– 電子郵件會取得某處遺失，在 [郵件流程。
   
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找並刪除已傳遞的可疑電子郵件
+## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找並刪除可疑的電子郵件的郵件傳遞
 
 > [!TIP]
-> 威脅瀏覽器 (有時稱為 Explorer) 是一種功能強大的報表, 可用於多種用途, 例如尋找和刪除郵件、識別惡意電子郵件寄件者的 IP 位址, 或啟動事件以進一步進行調查。 下列程式著重于使用 Explorer 來尋找和刪除收件者信箱中的惡意電子郵件。
+> 威脅總管 （有時稱為總管），是功能強大的報表，可以有多個用途，例如尋找及刪除的郵件，用來識別惡意電子郵件寄件者的 IP 位址或開始進一步調查的事件。 下列程序著重於使用 Explorer 來尋找並從收件者信箱刪除惡意電子郵件。
 
-若要查看對前一個傳遞狀態欄位所做的變更 (現在是傳遞動作和傳遞位置): 
+若要查看變更先前的傳遞狀態欄位 （現在傳遞巨集指令與傳遞位置）： 
 
-1. 請移[https://protection.office.com](https://protection.office.com)至並使用您的公司或學校帳戶登入 Office 365。 這會將您帶到&amp;安全性與合規性中心。 
+1. 移至 [[https://protection.office.com](https://protection.office.com)和 Office 365 使用公司或學校帳戶登入。 這會帶您前往安全性&amp;合規性中心。 
     
-2. 在左側導覽中, 選擇 [**威脅管理** \> **瀏覽器**]。
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
+2. 在左側導覽中，選擇 [**威脅管理，** \> **總管**。
 
-    
+
+![威脅總管] 的傳遞巨集指令與傳遞位置欄位。](media/ThreatExFields.PNG)
+
+您可能會發現此圖形中新的 ['特殊動作'] 欄。 這項功能的目標是告訴系統管理員處理電子郵件的結果。 特殊動作可能會更新威脅總管] 中的*電子郵件時間表*，這是針對在系統管理員更妥善地進行狩獵體驗新功能的結尾。
+
+電子郵件時間表剪下向下上隨機化因為較少的時間所花費的嘗試了解事件發生於由於電子郵件抵達檢查不同的位置。 當多個事件會發生，在或接近，同時在一封電子郵件時，這些事件會顯示在 [時間表] 檢視中。 某些後續傳遞至您的郵件，即會發生的事件將會擷取 '特殊動作] 欄中。 在後續傳遞郵件所採取的*特殊動作*與組合在一起，郵件從*時間表的電子郵件*的資訊會提供系統管理員深入解析到其原則的運作方式，其中最後已路由傳送郵件，並在某些情況下，哪些最後一評估為。 特殊動作] 欄可以在中傳遞巨集指令並傳遞位置，但若要查看電子郵件時間表的相同位置存取：
+
+1. 按一下電子郵件的主旨。
+2. 在出現面板中，按一下 [*電子郵件時間表*。 (將出現在像是 '摘要' 或 '詳述'] 面板上的其他標題之間 et cetera。)
+
+一旦您開啟電子郵件時間表，您應該會看到會告訴您在該郵件的後續傳遞事件的資料表或在電子郵件沒有進一步事件，您應該會看到將狀態的結果，例如*封鎖*的原始傳遞的單一事件使用*釣魚程式*類似的結論。 ] 索引標籤也會有 [匯出完整的電子郵件時間表，] 選項，這會匯出] 索引標籤上的所有詳細資料和電子郵件 （像是主旨、 寄件者、 收件者、 網路和訊息識別碼） 的詳細資訊。
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)
@@ -99,10 +110,10 @@ ms.locfileid: "35414803"
 -->
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 高級威脅防護方案2](office-365-ti.md)
+[Office 365 進階的威脅保護計劃 2](office-365-ti.md)
   
-[防止 Office 365 中的威脅](protect-against-threats.md)
+[防範 Office 365 中的威脅](protect-against-threats.md)
   
-[查看 Office 365 的報告高級威脅防護](view-reports-for-atp.md)
+[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md)
   
 
