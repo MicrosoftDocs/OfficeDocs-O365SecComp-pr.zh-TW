@@ -2,8 +2,8 @@
 title: Exchange Online 如何保護您的電子郵件機密資料
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/24/2018
+manager: dansimp
+ms.date: 07/01/2019
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
 description: 除了 Office 365 信任中心提供安全性、 隱私權和規範資訊的 Office 365，您可能想要知道 Office 365 如何協助保護您在其資料中心中提供的機密資料。 我們會使用稱為分散式金鑰管理員 (DKM) 的技術。
-ms.openlocfilehash: 609d59b6e4da779e0fa663b40fdbf26036753669
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8350785968c68b22c58be17ec68d94ff908c95d9
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154585"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599429"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online 如何保護您的電子郵件機密資料
 
@@ -29,7 +29,7 @@ ms.locfileid: "34154585"
 
 除了 Office 365 信任中心提供[安全性、 隱私權和規範資訊的 Office 365](https://go.microsoft.com/fwlink/?linkid=874644)，您可能想要知道 Office 365 如何協助保護您在其資料中心中提供的機密資料。 我們會使用稱為分散式金鑰管理員 (DKM) 的技術。
   
-分散式金鑰管理員 (DKM) 是使用一組秘密金鑰來加密及解密資訊用戶端功能。 只有在 Active Directory 網域服務中的特定安全性群組的成員可以存取這些機碼，以便解密由 DKM 加密的資料。 在 Exchange Online 中，只有在其下的 Exchange 處理程序執行特定服務帳戶屬於該 [安全性] 群組。 資料中心裡的標準作業程序的一部分，沒有人所指定屬於此安全性群組的認證，因此沒有 human 具有存取權才能解密這些機密的機碼。
+[分散式金鑰管理員](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)(DKM) 是使用一組秘密金鑰來加密及解密資訊用戶端功能。 只有在 Active Directory 網域服務中的特定安全性群組的成員可以存取這些機碼，以便解密由 DKM 加密的資料。 在 Exchange Online 中，只有在其下的 Exchange 處理程序執行特定服務帳戶屬於該 [安全性] 群組。 資料中心裡的標準作業程序的一部分，沒有人所指定屬於此安全性群組的認證，因此沒有 human 具有存取權才能解密這些機密的機碼。
   
 偵錯、 疑難排解或稽核的用途，資料中心系統管理員必須要求提升權限的存取權的入侵屬於 [安全性] 群組的暫存認證。 此程序需要多個法律核准層級。 如果授與存取權，所有活動是記錄和稽核。 除了存取會只授與固定間隔的時間之後，它會自動到期。
   
@@ -37,11 +37,11 @@ ms.locfileid: "34154585"
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>在其中沒有 Exchange Online 進行地方使用 DKM？
 
-Microsoft 會使用 DKM 加密您在 Exchange Online 資料中心中的機密資料。 例如：
+Microsoft 使用[分散式金鑰管理員](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)加密您的機密資料在 Exchange Online 資料中心。 例如：
   
 - 已連線的帳戶的電子郵件帳戶認證。 已連線的帳戶是協力廠商的帳戶，例如 Hotmail、 Gmail 和 yahoo ！ 郵件帳號。
     
-- 版權管理服務 (RMS) 根機碼。 以下是客戶金鑰是 [匯入從 Azure RMS 或客戶的內部部署 Active Directory 網域服務 RMS 部署所用的加密和解密電子郵件與 RMS 或 Office 365 郵件加密 (OME)。
+- 客戶金鑰。 如果您使用[Office 365 中的客戶金鑰](controlling-your-data-using-customer-key.md)，您將使用[Azure 金鑰保存庫](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)來保護您的機密資料。
     
 ## <a name="related-topics"></a>相關主題
 

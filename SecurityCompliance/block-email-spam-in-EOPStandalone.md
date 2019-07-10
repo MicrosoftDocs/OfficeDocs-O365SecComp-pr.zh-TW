@@ -3,7 +3,7 @@ title: 在 EOP 獨立版中封鎖垃圾郵件
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
+manager: dansimp
 ms.date: 2/25/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: EOP 獨立版系統管理員適用的文件，以協助防止垃圾郵件誤判
-ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 20533f12ccc71fc97d82590efdaf551ab036b17d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152195"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598489"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>利用這些設定來自訂 Office 365 反垃圾郵件篩選器
 
@@ -35,7 +35,7 @@ ms.locfileid: "34152195"
     
 2. 使用[郵件標頭分析器](https://testconnectivity.microsoft.com/?tabid=mha)或手動搜尋位在 X-Forefront-Antispam-Report 標頭中 CIP 標籤後面的 IP 位址。 
     
-3. 遵循[設定連線篩選原則](https://technet.microsoft.com/zh-TW/library/jj200718%28v=exchg.150%29.aspx) (機器翻譯) 中「使用 EAC 來編輯預設連線篩選原則」中的步驟，將 IP 位址新增至 IP 封鎖清單。
+3. 遵循[設定連線篩選原則](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx) (機器翻譯) 中「使用 EAC 來編輯預設連線篩選原則」中的步驟，將 IP 位址新增至 IP 封鎖清單。
     
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>利用郵件流程規則 (傳輸規則) 或垃圾郵件篩選器封鎖大宗郵件
 
@@ -45,8 +45,7 @@ ms.locfileid: "34152195"
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>使用垃圾郵件篩選器封鎖清單封鎖電子郵件垃圾郵件
 
-
-  [設定垃圾郵件篩選原則](https://technet.microsoft.com/zh-TW/library/jj200684%28v=exchg.150%29.aspx) (機器翻譯)，將寄件者地址新增至寄件者封鎖清單，或將網域新增至垃圾郵件篩選器中的網域封鎖清單。電子郵件若來自垃圾郵件篩選器封鎖清單上的寄件者或網域，即會被標示為垃圾郵件。 
+[設定垃圾郵件篩選原則](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) (機器翻譯)，將寄件者地址新增至寄件者封鎖清單，或將網域新增至垃圾郵件篩選器中的網域封鎖清單。電子郵件若來自垃圾郵件篩選器封鎖清單上的寄件者或網域，即會被標示為垃圾郵件。 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>電子郵件使用者也可以使用 Office 365 垃圾郵件篩選器，來協助確定封鎖誤判和電子郵件垃圾郵件
 
@@ -55,7 +54,7 @@ ms.locfileid: "34152195"
 ![封鎖 Outlook 網頁版中的寄件者](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> 如需安全寄件者清單的詳細資訊，請參閱[安全寄件者和封鎖的寄件者清單常見問題集](https://technet.microsoft.com/zh-TW/library/dn133608%28v=exchg.150%29.aspx) (機器翻譯)。 
+> 如需安全寄件者清單的詳細資訊，請參閱[安全寄件者和封鎖的寄件者清單常見問題集](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx) (機器翻譯)。 
   
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>只使用 EOP 的客戶：設定目錄同步處理
 

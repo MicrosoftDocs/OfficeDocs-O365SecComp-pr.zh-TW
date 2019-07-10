@@ -2,8 +2,7 @@
 title: 管理多個報表排程安全性&amp;合規性中心
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/1/2018
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: 了解如何檢視、 編輯和管理安全性的報表排程&amp;合規性中心。
-ms.openlocfilehash: a8f230ddf9442ba0a29d5fdaeba40bc8524405b5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7ea5815d058e4e8d9b0cecb5d06888e695bb526d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077589"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598809"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>管理多個報表排程安全性&amp;合規性中心
 

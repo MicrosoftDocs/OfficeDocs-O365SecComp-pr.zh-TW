@@ -3,7 +3,7 @@ title: 監視個人資料的外洩
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: 02/07/2018
 audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解三種您可以用來監視個人資料外洩的工具。
-ms.openlocfilehash: d5dbf2841b165e46ef40125056f142cbd316e9ee
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d8e3854ad5d08517aae0bf0790561758478e87a2
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158635"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35597949"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
@@ -93,8 +93,7 @@ Office 365 稽核記錄包含的事件來自 Exchange Online、SharePoint Online
 -   
   [搜尋稽核記錄](https://support.office.com/zh-TW/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   
-  [Search-UnifiedAuditLog](https://technet.microsoft.com/zh-TW/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
 
 -   
   [Office 365 稽核記錄中的詳細內容](https://support.office.com/zh-TW/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
