@@ -2,7 +2,7 @@
 title: 零時差自動清除 - 防範垃圾郵件和惡意程式碼
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/11/2019
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是偵測到郵件與垃圾郵件或惡意程式碼中已被傳送到使用者的收件匣，電子郵件保護功能，並再呈現無害惡意內容。 如何 ZAP 執行此動作，則偵測到的惡意內容類型而定。
-ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ceb5a973a65406527de3361a354247908b4cab63
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408348"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613661"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -42,33 +42,37 @@ ZAP 已開啟根據預設，但必須符合下列條件：
 
 Office 365 更新反垃圾郵件引擎和惡意程式碼中的簽章即時每日。 不過，您的使用者仍可能會收到惡意的郵件傳遞到不同的原因，包括內容 weaponized 之後會傳遞至使用者的收件匣。 ZAP 解決此問題持續監視更新的 Office 365 垃圾郵件和惡意程式碼簽章。 ZAP 可以找出並移除先前已傳遞的郵件已在使用者的收件匣中。
 
-- 識別為垃圾郵件的郵件，ZAP 會將未閱讀的郵件移至使用者的垃圾郵件資料夾。
-
-- 識別為釣魚程式的郵件，ZAP 會將郵件移至使用者的垃圾郵件] 資料夾，不論是否已讀取電子郵件。
-
-- 新偵測到惡意程式碼，ZAP 會移除電子郵件，不論是否已讀取電子郵件附件。
-  
 ZAP 動作是很完美的信箱使用者資訊。如果移動電子郵件訊息時，它們不會通知。 訊息不能超過 2 天。
   
 允許清單、[郵件流程規則](https://go.microsoft.com/fwlink/p/?LinkId=722755)及使用者規則或其他篩選器會優先於 ZAP。
-  
-## <a name="to-review-or-set-up-a-spam-filter-policy"></a>若要檢視或設定的垃圾郵件篩選原則
-  
-1. 移至 [[https://protection.office.com](https://protection.office.com)和 Office 365 使用公司或學校帳戶登入。
 
-2. **威脅管理**] 下選擇 [**反垃圾郵件**]。
+**惡意程式碼時，能量光束**新偵測到惡意程式碼，ZAP 移除附件電子郵件，前面的郵件內文中的使用者信箱。 不論讀取狀態的信箱已移除附件。
 
-3. 檢閱標準設定。
+在 [惡意程式碼原則預設為啟用惡意程式碼時，能量光束。 惡意程式碼時，能量光束可以停用使用[Set-malwarefilterpolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps)，EOP 指令程式的**ZapEnabled**參數。
 
-4. 如果您想要自訂您的設定，選取 [**自訂**] 索引標籤，並開啟 [**自訂設定**。 編輯您的設定，如果您想，選擇 [ **+ 建立原則**來新增新的原則。
+**Phish ZAP**便會被視為釣魚程式之後傳遞的郵件，ZAP 會採取動作，根據使用者所涵蓋的垃圾郵件原則。 如果原則 Phish 動作設為採取動作的郵件 （重新導向、 Delete、 隔離，移至垃圾郵件） 上然後 ZAP 會將郵件移至使用者的收件匣，不論郵件讀取狀態的垃圾郵件資料夾。 如果原則 Phish 巨集指令不設採取動作 （新增 X 標頭，修改主旨、 執行任何動作），然後 ZAP 會不採取動作的郵件。 深入了解如何[設定您的垃圾郵件篩選原則](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)。
+
+在 [垃圾郵件原則預設為啟用 phish ZAP。 Phish ZAP 可以使用[Set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)，EOP 指令程式的**ZapEnabled**參數會停用。
+附註： 停用-ZapEnabled 會停用 Phish 時能量光束與垃圾郵件時，能量光束
+
+**垃圾郵件時，能量光束**便會被視為垃圾郵件傳送後的郵件，ZAP 會採取動作，根據使用者所涵蓋的垃圾郵件原則。 如果原則垃圾郵件動作設為採取動作 （重新導向、 Delete、 隔離，移至垃圾郵件） 郵件然後 ZAP 將郵件移至使用者的收件匣] 的 [垃圾郵件] 資料夾如果郵件是未讀取。 如果原則垃圾郵件動作不設採取動作 （新增 X 標頭，修改主旨、 執行任何動作），然後 ZAP 會不採取動作的郵件。 深入了解如何[設定您的垃圾郵件篩選原則](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)。
+
+在 [垃圾郵件原則預設為啟用垃圾郵件時，能量光束。 垃圾郵件時，能量光束可以停用使用[Set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)，EOP 指令程式的**ZapEnabled**參數。
+附註： 停用-ZapEnabled 會停用 Phish 時能量光束與垃圾郵件時，能量光束
 
 ## <a name="to-see-if-zap-moved-your-message"></a>若要查看 ZAP 是否移動郵件
 
 如果您想要看到 ZAP 如果移動您的郵件，您可以使用 [[威脅保護狀態報表](view-email-security-reports.md#threat-protection-status-report)] 或 [[威脅總管 （和即時偵測的資訊）](threat-explorer.md)。
 
 ## <a name="to-disable-zap"></a>若要停用 ZAP
-  
-如果您想要停用您 Office 365 租用戶時能量光束或一組使用者，使用[Set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)，EOP 指令程式的**ZapEnabled**參數。
+**停用惡意程式碼時，能量光束**若要在 O365 租用戶或一組使用者，停用惡意程式碼時，能量光束，請使用[Set-malwarefilterpolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps)，EOP 指令程式的**ZapEnabled**參數。
+
+在下列範例中，ZAP 已停用名為"Test"的內容篩選原則。
+
+```Powershell
+  Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+```
+**停用 Phish 和垃圾郵件時，能量光束**若要停用在 O365 租用戶或一群使用者的釣魚程式和垃圾郵件時，能量光束，請使用[Set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)，EOP 指令程式的**ZapEnabled**參數。
 
 在下列範例中，ZAP 已停用名為"Test"的內容篩選原則。
 
