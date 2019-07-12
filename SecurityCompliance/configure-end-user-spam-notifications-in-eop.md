@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以針對預設的全公司內容篩選原則或是網域所套用的自訂內容篩選原則，設定使用者垃圾郵件通知。
-ms.openlocfilehash: 761f8660dc19f2626ecb5331370f87e0f4c3963a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 8e2c2bd6b3e5a29beccaccea032f650936584a06
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600199"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628456"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中設定使用者垃圾郵件通知
   
@@ -41,7 +41,7 @@ ms.locfileid: "35600199"
 
 **版本 & 報表**，如果郵件不是垃圾郵件和您想要將郵件傳送至您的信箱及該問題報告給 Microsoft 進行分析。
 
-**封鎖**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
+**封鎖寄件者**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 <a name="sectionSection0"> </a>
