@@ -2,48 +2,48 @@
 title: 修正寄件者網域深入解析
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 系統管理員可以了解修正寄件者網域深入了解安全性 & 合規性中心中的郵件流程儀表板中。
-ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
-ms.translationtype: MT
+description: 系統管理員可以在安全性與合規性中心中郵件流程儀表板深入了解修正寄件者網域深入解析。
+ms.openlocfilehash: 89c94616d612fa02c067e0bc2a89f5a3be704ed5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158705"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598059"
 ---
 # <a name="fix-sender-domain-insight"></a>修正寄件者網域深入解析
 
-Office 365 需要從內部電子郵件環境到 Office 365 傳送到符合特定安全性條件的郵件：
+Office 365 要求從內部部署電子郵件環境發送到 Office 365 的郵件符合某些安全標準：
 
-- 您已在使用來源 IP 位址或憑證驗證從您的內部部署電子郵件伺服器的 SMTP 連線的 Office 365 中建立的輸入的連接器。
+- 您已在 Office 365 中建立了輸入連接器，以使用來源 IP 位址或憑證對來自內部部署電子郵件伺服器的 SMTP 連接進行驗證。
 
-- 您已設定內部部署電子郵件伺服器轉送外部世界透過 Office 365 電子郵件。
+- 您已將內部部署電子郵件伺服器配置為透過 Office 365 將電子郵件中繼到外部世界。
 
-- 在您的組態，其中一個下列陳述式為真：
+- 在您的設定中，下列句子之一成立：
 
-  - 寄件者的電子郵件網域註冊 Office 365 組織中。 如需詳細資訊，請參閱 < Office 365 中的 [新增網域。
+  - 寄件者的電子郵件網域已在 Office 365 組織中註冊。 如需詳細資訊，請參閱在 Office 365 中新增帳戶。
 
-  - 內部部署電子郵件伺服器設定為使用憑證來傳送電子郵件給 Office 365 憑證包含或完全符合您已在 Office 365 中註冊的網域名稱，您已在 Office 365 中建立憑證型連接器程式網域。 
+  - 您的內部部署電子郵件伺服器配置為使用憑證向 Office 365 發送電子郵件，該憑證包含或完全符合您在 Office 365 中註冊的域名，並且您已用該網域在 Office 365 中建立了基於憑證的連接器。 
 
-不符合準則的郵件不歸因於組織，可能會遭到拒絕。
+不符合條件的郵件將不屬於公司，且可能會被拒絕。
 
-**修正寄件者網域**深入了解顯示您的電子郵件從內部部署環境不符合準則，可協助您識別可能入侵的機器和使用者帳戶在內部部署電子郵件環境中，可協助您採取修復動作。
+**修正寄件者網域**深入解析會顯示您不符合條件之內部部署環境的電子郵件，可幫助您找出您內部部署電子郵件環境中可能遭入侵的電腦以及使用者帳戶，協助您採取補救措施。
 
-![在 [郵件流程儀表板中的安全性 & 合規性中心修正寄件者網域深入解析](media/sender-domain-insight-selected.png)
+![安全性與合規性中心中郵件流程儀表板的修正寄件者網域深入解析](media/sender-domain-insight-selected.png)
 
-當您按一下 [**檢視詳細資料**時，您將被帶往另一個小工具以更多的詳細資訊，如下圖所示：
+當您按下**檢視詳細資料**，您會被帶到另一個小工具中，並獲得更多詳細資料，如下圖所示：
 
-![[詳細資料] 小工具在修正寄件者網域深入解析](media/sender-domain-view-details.png)
+![修正寄件者網域深入解析的詳細資料小工具](media/sender-domain-view-details.png)
 
-您會看到已用來將郵件傳遞到 Office 365 的輸入的連接器。 您也可以按一下**檢視範例郵件識別碼**，以查看從內部部署電子郵件環境傳送郵件的詳細資訊。 因為這些郵件所拒絕的 Office 365，您無法使用郵件追蹤，但您可以使用範例郵件識別碼在內部部署電子郵件環境中追蹤郵件。
+您會看到用來將郵件傳送到 Office 365 的輸入連接器。 您也可以按一下**檢視樣本郵件識別碼**，查看從您內部部署電子郵件環境中傳送之郵件的詳細資料。 因為 Office 365 拒絕這些郵件，您無法使用郵件追蹤，但您可以使用的範例郵件識別碼內部電子郵件環境中追蹤的訊息。
 
-![在修正寄件者網域深入了解檢視範例郵件識別碼](media/sender-domain-view-sample-message-ids.png)
+![檢視修正寄件者網域深入解析的樣本郵件識別碼](media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-如需郵件流程儀表板中其他郵件流程深入解析的詳細資訊，請參閱 <<c0>安全性 &amp; 合規性中心中的郵件流程深入解析。
+如需其他郵件流量儀表板中的郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。
