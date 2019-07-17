@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何使用 SharePoint Online IRM 透過 Microsoft Azure Active Directory Rights Management Services (RMS) 來保護 SharePoint 清單與文件庫。
-ms.openlocfilehash: 0df2639a12472ab6452afb7d9b66bc48beb9ba1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156555"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756845"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -38,7 +38,7 @@ ms.locfileid: "34156555"
     
 3. 在左窗格中，選擇 [**系統管理中心** \> **SharePoint**。
     
-4. 在左窗格中，選擇 [**設定**]。
+4. 在左窗格中，選擇 [**設定**]，然後選擇**傳統設定] 頁面**。
     
 5. 在 [**資訊版權管理 (IRM)** ] 區段中，選擇 [**使用您的組態中指定的 IRM 服務**，，然後選擇 [**重新整理 IRM 設定**。 重新整理 IRM 設定後，您組織中的人員可以開始在其 SharePoint 清單與文件庫中使用 IRM。 不過，若要這麼做的選項可能會佔用 1 小時的時間來顯示在文件庫設定與清單設定。
     

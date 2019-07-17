@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用安全性 & 合規性中心中的內容搜尋來執行目標的集合。 目標的集合表示您確信回應大小寫的項目或特殊權限項目都位於信箱或網站的特定資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。
-ms.openlocfilehash: 476478f3f4d5c2d1992989eac790068f28ba747f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 525e2daf5b9dc8268e2b5db2eaab17099bf5bc0d
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156305"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756865"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>在 Office 365 中使用內容搜尋，對目標集合
 
@@ -190,7 +190,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 ### <a name="script-output-for-mailbox-folders"></a>信箱資料夾的指令碼輸出
 
-如果您收到信箱資料夾識別碼，指令碼會使用遠端 PowerShell 連線到 Exchange Online、 執行**Get MailboxFolderStatisics**指令程式，然後顯示 [從指定的信箱資料夾的清單。 信箱中每個資料夾，指令碼會顯示在**FolderPath**行中，[ **FolderQuery** ] 欄中的資料夾識別碼的資料夾名稱。 此外，指令碼會將**folderId** （這是信箱屬性的名稱） 的前置詞新增至資料夾識別碼。 由於**folderid**屬性是可搜尋的屬性，您要使用`folderid:<folderid>`搜尋查詢中搜尋該資料夾的步驟 2 中。 
+如果您收到信箱資料夾識別碼，指令碼會使用遠端 PowerShell 連線到 Exchange Online、 執行**Get MailboxFolderStatisics**指令程式，然後顯示 [從指定的信箱資料夾的清單。 信箱中每個資料夾，指令碼會顯示在**FolderPath**行中，[ **FolderQuery** ] 欄中的資料夾識別碼的資料夾名稱。 此外，指令碼會將**folderId** （這是信箱屬性的名稱） 的前置詞新增至資料夾識別碼。 由於**folderid**屬性是可搜尋的屬性，您要使用`folderid:<folderid>`搜尋查詢中搜尋該資料夾的步驟 2 中。 指令碼會顯示最大值為 100 個信箱資料夾。
 
 > [!IMPORTANT]
 > 本文中的指令碼包含編碼方式將轉換都會由**Get-mailboxfolderstatistics**會編入搜尋索引的相同 48 個字元格式的 64 個字元的資料夾識別碼值的邏輯。 如果您只要在 PowerShell 中的資料夾識別碼取得 （而不是在本文中執行指令碼） 執行**Get-mailboxfolderstatistics**指令程式，將會失敗的搜尋查詢，會使用該資料夾用戶端識別碼值。 您必須執行指令碼，以在內容搜尋中取得正確格式化資料夾可用的識別碼。
@@ -203,7 +203,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 ### <a name="script-output-for-site-folders"></a>網站資料夾的指令碼輸出
 
-如果您收到**documentlink**屬性的路徑從 SharePoint 或 OneDrive for Business 網站，指令碼安全性 & 合規性中心使用遠端 PowerShell 連線時，會建立新的內容搜尋會搜尋資料夾的網站然後顯示的資料夾清單位在指定的站台。 指令碼會顯示每個資料夾的名稱，並將**documentlink**的前置詞新增至資料夾的 URL。 由於**documentlink**屬性是可搜尋的屬性，您要使用`documentlink:<path>`搜尋查詢中搜尋該資料夾的步驟 2 中的屬性： 值組。 
+如果您收到**documentlink**屬性的路徑從 SharePoint 或 OneDrive for Business 網站，指令碼安全性 & 合規性中心使用遠端 PowerShell 連線時，會建立新的內容搜尋會搜尋資料夾的網站然後顯示的資料夾清單位在指定的站台。 指令碼會顯示每個資料夾的名稱，並將**documentlink**的前置詞新增至資料夾的 URL。 由於**documentlink**屬性是可搜尋的屬性，您要使用`documentlink:<path>`搜尋查詢中搜尋該資料夾的步驟 2 中的屬性： 值組。 指令碼會顯示最大值為 200 個站台資料夾。 如果有 200 個以上的網站資料夾，會顯示為最新的。
   
 以下是範例的指令碼的站台資料夾所傳回的輸出。
   
