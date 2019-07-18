@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容。
-ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587112"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772170"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -62,7 +62,7 @@ ms.locfileid: "35587112"
   
 附註：
   
-- Skype 內容儲存在 Exchange 中，在此會根據訊息類型 (電子郵件或交談) 套用原則。
+- 小組（交談）的內容會儲存在 Exchange 中，其中會根據訊息類型（電子郵件或交談）套用原則。
     
 - 套用到 Office 365 群組的保留原則同時包含群組信箱和網站。
     
