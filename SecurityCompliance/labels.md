@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547978"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772160"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -72,7 +72,8 @@ ms.locfileid: "34547978"
   
 ![標籤、標籤原則、位置的圖表](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. 當您發佈保留標籤時，它們會納入保留標籤原則中。 
+1. 當您發佈保留標籤時，會將它們納入保留標籤原則。 請注意，保留標籤的名稱是固定的，且建立後即無法進行編輯。
+
 
 2. 單一保留標籤可納入多個保留標籤原則。
 
