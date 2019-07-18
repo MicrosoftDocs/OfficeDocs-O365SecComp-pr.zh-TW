@@ -587,7 +587,6 @@
 ### [Exchange Online 資料復原](office-365-exchange-data-resiliency.md)
 ### [惡意程式碼與勒索軟體防護](office-365-malware-and-ransomware-protection.md)
 ### [監視及自我修復](office-365-monitoring-and-self-healing.md)
-### [SharePoint Online 資料復原](office-365-sharepoint-data-resiliency.md)
 ## [Office 365 中的資料保留、刪除及毀損](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [資料毀損](office-365-data-destruction.md)
 ### [Office 365 中的不變性](office-365-data-immutability.md)
