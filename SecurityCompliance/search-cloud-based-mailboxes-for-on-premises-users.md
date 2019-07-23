@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 用於安全性 & 合規性中心的內容搜尋工具來搜尋並匯出在 Exchange 混合式部署中的內部部署使用者 MicrosoftTeams 聊天室資料 （稱為 1xN 聊天室）。
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756855"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820486"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜尋內部部署使用者的雲端式的信箱
 
-如果您的組織具有 Exchange 混合式部署，且已啟用 Microsoft Teams，使用者可以使用小組聊天應用程式的立即訊息。 雲端型使用者，（也稱為 1xN 聊天） 小組聊天資料會儲存至其主要的雲端式信箱。 當內部部署使用者使用的小組聊天應用程式時，其主要信箱是位於的內部。 若要解決這項限制，Microsoft 已發行位置 （稱為 「 內部部署使用者的基於雲端的信箱） 的雲端式存放裝置區域建立用來儲存內部部署使用者的小組聊天資料的新功能。 這可讓您使用安全性 & 合規性中心中的 「 內容搜尋 」 工具來搜尋並匯出內部部署使用者的小組聊天資料。 
+如果您的組織具有 Exchange 混合式部署，且已啟用 Microsoft Teams，使用者可以使用小組聊天應用程式的立即訊息。 雲端型使用者，（也稱為 1xN 聊天） 小組聊天資料會儲存至其主要的雲端式信箱。 當內部部署使用者使用的小組聊天應用程式時，其主要信箱是位於的內部。 若要解決這項限制，Microsoft 已發行位置 （稱為 「 內部部署使用者的基於雲端的信箱） 的雲端式存放裝置區域建立用來儲存內部部署使用者的小組聊天資料的新功能。 這可讓您在安全 & 與規範中心中使用內容搜尋工具來搜尋並匯出內部部署使用者的小組聊天資料。 
   
 以下是設定為內部部署使用者的雲端式信箱的限制與需求：
   
@@ -50,7 +50,7 @@ ms.locfileid: "35756855"
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>若要啟用此功能與 Microsoft 支援服務要求歸檔
 
-您必須將歸檔與 Microsoft 支援服務，讓您的組織使用圖形化使用者介面中安全性 & 規範中心搜尋小組聊天資料在內部部署使用者的雲端式信箱中。 在安全性 & 合規性中心 PowerShell 中使用這項功能。 您不需要將支援要求提交給使用 PowerShell 來搜尋內部部署使用者的小組聊天資料。 
+您必須將歸檔與 Microsoft 支援服務，讓您的組織使用圖形化使用者介面中安全性 & 規範中心搜尋內部部署使用者的雲端式信箱中的小組聊天資料。 在安全性 & 合規性中心 PowerShell 中使用這項功能。 您不需要將支援要求提交給使用 PowerShell 來搜尋內部部署使用者的小組聊天資料。 
   
 當您將要求提交給 Microsoft 支援服務時，請包含下列資訊：
   
@@ -64,7 +64,7 @@ ms.locfileid: "35756855"
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>啟用此功能後，會發生什麼事？
 
-這項功能在 Office 365 組織中部署之後，在內容搜尋和安全性 & 合規性中心中的 eDiscovery 案例相關聯的搜尋中，會進行下列變更：
+這項功能在 Office 365 組織中部署之後，在內容搜尋和安全性 & 規範中心的 eDiscovery 案例相關聯的搜尋中，會進行下列變更：
   
 - 在內容搜尋的**位置**會新增至**內部部署使用者的加入 Office 應用程式內容**] 核取方塊。 
     
@@ -76,7 +76,7 @@ ms.locfileid: "35756855"
   
 ## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>搜尋內容的內部部署使用者的雲端式信箱中的小組聊天
 
-啟用此功能之後，您可以使用安全性 & 合規性中心中內容搜尋來搜尋內部部署使用者的雲端式信箱中的小組聊天資料。 
+啟用此功能之後，您可以使用安全性 & 規範中心的內容搜尋來搜尋內部部署使用者的雲端式信箱中的小組聊天資料。 
   
 1. 在 [安全性 & 合規性中心，移至**搜尋** \> **內容搜尋**
     
@@ -163,6 +163,6 @@ ms.locfileid: "35756855"
   
 Microsoft 已啟動的內部部署使用者的小組聊天資料儲存於 2018 年 1 月 31 日。 的話，如果此日期之後，已之間 Active Directory 和 Azure Active Directory 同步內部部署 microsoft Teams 使用者的身分識別，然後其小組聊天資料儲存在雲端式信箱中，而且可搜尋使用內容搜尋。 Microsoft 也將從 2018 年 1 月 31 日之前的小組聊天資料儲存在內部部署使用者的雲端式信箱中運作。 有關此的詳細資訊將會推出。
 
- * * 內部部署使用者需要授權才能小組聊天資料儲存在雲端架構信箱嗎？ 
+ **內部部署使用者需要授權才能小組聊天資料儲存在雲端架構信箱嗎？**
   
 是。 若要在雲端式信箱中儲存內部部署使用者的小組聊天資料，使用者必須具有 Microsoft Teams 授權和 Exchange Online 計劃授權 Office 365 （或 Microsoft 365） 中。
