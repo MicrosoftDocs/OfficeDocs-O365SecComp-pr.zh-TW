@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容。
-ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772170"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840898"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -78,7 +78,7 @@ ms.locfileid: "35772170"
   
 請注意，如果使用者嘗試刪除受限於保留原則的文件庫、清單、資料夾或網站，使用者將會收到錯誤訊息。如果資料夾受限於原則，使用者一開始就移動或刪除資料夾內的任何檔案，則使用者可以刪除資料夾。另外請注意，文件保留庫只會在第一個項目必須複製到文件庫的時候建立，而不是建立保留原則的時候。因此，若要測試原則，您首先必須在受限於原則的網站中編輯或刪除文件，然後瀏覽至文件保留庫檢視保留的副本。
   
-![在 SharePoint 和 OneDrive 中的內容生命週期的圖表](Retention_Diagram_of_retention_flow_in_sites.png)
+![在 SharePoint 和 OneDrive 中的內容生命週期的圖表](media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 將保留原則指派給 OneDrive 帳戶或 SharePoint 網站之後，內容可以依循下列兩個途徑之一：
   
