@@ -1,119 +1,119 @@
 ---
 title: 反垃圾郵件訊息標頭
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefront-反垃圾郵件報告**標頭每封郵件。
-ms.openlocfilehash: b09b5fef883ef720223e6bfaf36437b1bdf6c393
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
-ms.translationtype: MT
+description: Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封郵件插入 **X-Forefront-Antispam-Report** 標頭。
+ms.openlocfilehash: b83cba8240ff27b9d6e872ad09bf23c2755478c5
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152365"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854617"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
-Exchange Online Protection 掃描內送電子郵件訊息時它插入**X Forefront-反垃圾郵件報告**標頭每封郵件。 此標頭的欄位有助於提供系統管理員郵件及其處理方式的相關資訊。 **X-Microsoft 反垃圾郵件**標頭中的欄位提供大宗郵件和網路釣魚的其他資訊。 除了這些兩個標頭，Exchange Online Protection 也**authentication-results**標頭中插入處理每一封郵件的電子郵件驗證結果。
+Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封郵件插入 **X-Forefront-Antispam-Report** 標頭。 此標頭的欄位有助於提供系統管理員郵件及其處理方式的相關資訊。 **X-Microsoft-Antispam** 標頭中的欄位可提供大宗郵件和網路釣魚的額外資訊。 除了這兩個標頭之外，Exchange Online Protection 還會為其在 **Authentication-results** 標頭中處理的每封郵件插入電子郵件身份驗證結果。
 
-如需如何在各種電子郵件用戶端中檢視電子郵件訊息標頭資訊，請參閱 <<c0>郵件標頭分析器。 
+如需如何在各種電子郵件用戶端中檢視電子郵件標頭的詳細資訊，請參閱[郵件標頭分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。 
   
 > [!TIP]
->  您可以複製並貼入[郵件分析器](https://testconnectivity.microsoft.com/?tabid=mha)工具中的郵件標頭的內容。 此工具可協助剖析標頭，並將它轉換為更 readible 的格式。
+>  您可以複製郵件標頭的內容並貼到[郵件分析器](https://testconnectivity.microsoft.com/?tabid=mha) (英文) 工具中。 這項工具可協助您剖析標頭，並以易讀取的格式來呈現。
   
-## <a name="x-forefront-antispam-report-message-header-fields"></a>X Forefront-反垃圾郵件報告郵件標頭欄位
+## <a name="x-forefront-antispam-report-message-header-fields"></a>X-Forefront-Antispam-Report 郵件標頭欄位
 
-存取郵件標頭資訊之後，搜尋**X Forefront-反垃圾郵件報告**，然後尋找這些欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
+存取郵件標頭資訊之後，請搜尋 **X-Forefront-Antispam-Report**，然後尋找以下欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
 
 |**標頭欄位**|**描述**|
 |:-----|:-----|
-|CIP：[IP 位址]|連接的 IP 位址。 在連線篩選器中建立 IP 允許清單或 IP 封鎖清單時，您可以指定此 IP 位址。 如需詳細資訊，請參閱[設定連線篩選原則](configure-the-connection-filter-policy.md)。|
+|CIP：[IP 位址]|連接的 IP 位址。 在連線篩選器中建立 IP 允許清單或 IP 封鎖清單時，您可以指定此 IP 位址。 如需詳細資訊，請參閱[設定連線篩選原則](configure-the-connection-filter-policy.md) (機器翻譯)。|
 |CTRY|郵件連線到服務的來源國家。這是由連線的 IP 位址來判斷，這可能與原始傳送的 IP 位址不同。|
-|蘭|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
-|SCL|郵件的垃圾郵件信賴等級 (SCL) 值。 如需有關如何解譯這些值的詳細資訊，請參閱 <<c0>垃圾郵件信賴等級。|
+|LANG|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
+|SCL|郵件的垃圾郵件信賴等級 (SCL) 值。 如需解譯這些值的相關資訊，請參閱[垃圾郵件信賴等級](spam-confidence-levels.md) (機器翻譯)。|
 |PCL|郵件的網路釣魚信賴等級 (PCL) 值。|
-|SRV:BULK|郵件被識別為大量電子郵件。 如果已啟用**封鎖所有大量電子郵件訊息的進階垃圾郵件篩選選項**都，它會被標示為垃圾郵件。 如果未啟用，則會在其餘的篩選規則判斷該郵件為垃圾郵件時，才將它標記為垃圾郵件。|
-|SFV:SFE|已略過篩選，因為它已傳送從個人的安全寄件者清單上的地址，將已讓通過的郵件。|
-|SFV:|已略過篩選，因為它已傳送從個人的封鎖寄件者清單上的地址，已封鎖郵件。  <br/> **秘訣**： 如需使用者如何建立安全及封鎖的寄件者清單的詳細資訊，請參閱[封鎖或允許 （垃圾郵件設定）](https://go.microsoft.com/fwlink/p/?LinkId=294862) （outlook 網頁版） 和[垃圾郵件篩選器概觀](https://go.microsoft.com/fwlink/p/?LinkId=270065)(Outlook)。|
+|SRV:BULK|郵件被識別為大量電子郵件。 如果啟用 [封鎖所有大量電子郵件的進階垃圾郵件篩選選項]****，則會將電子郵件標記為垃圾郵件。 如果未啟用，則會在其餘的篩選規則判斷該郵件為垃圾郵件時，才將它標記為垃圾郵件。|
+|SFV:SFE|已略過篩選作業並允許郵件傳入，因為該郵件是從個人的安全寄件者清單上的地址寄送而來。|
+|SFV:BLK|已略過篩選作業，但郵件遭到封鎖，因為該郵件是從個人的封鎖寄件者清單上的地址寄來的。  <br/> **秘訣**：如需使用者應如何建立安全和封鎖寄件者清單的詳細資訊，請參閱[封鎖或允許 (垃圾郵件設定)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook 網頁版) 以及[垃圾電子郵件篩選概觀](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook)。|
 |IPV:CAL|因為 IP 位址指定於連線篩選的 [IP 允許] 清單中，所以已透過垃圾郵件篩選允許郵件。|
 |IPV:NLI|IP 位址不被列在任何 IP 信譽清單中。|
 |SFV:SPM|內容篩選已將郵件標記為垃圾郵件。|
-|SFV:SKS|內容篩選在處理郵件前，已將郵件標記為垃圾郵件。 這包括的郵件郵件符合郵件流程規則 （也稱為傳輸規則） 的位置，自動將它標記為垃圾郵件，並略過所有其他篩選。|
-|SFV:SKA|郵件會略過篩選，並已傳遞至收件匣] 中，因為它符合垃圾郵件篩選原則，例如**寄件者允許**清單中的 [允許] 清單。|
-|SFV:|郵件已標示為垃圾郵件，因為它符合垃圾郵件篩選原則，例如**寄件者封鎖**清單中的封鎖清單。|
-|與 SFV: SKN|郵件在受到內容篩選處理之前已被標記為非垃圾郵件。 這包括在郵件符合郵件流程規則，以自動將它標記為非垃圾郵件，並略過所有其他篩選的郵件。|
+|SFV:SKS|內容篩選在處理郵件前，已將郵件標記為垃圾郵件。 這包括符合郵件流程規則 (也稱為傳輸規則) 而自動標記為垃圾郵件，因而略過所有其他篩選的郵件。|
+|SFV:SKA|郵件已略過篩選並已傳送到收件匣，因為它符合垃圾郵件篩選原則中的允許清單，例如 [寄件者允許]**** 清單。|
+|SFV:SKB|郵件已標示為垃圾郵件，因為它符合垃圾郵件篩選原則中的封鎖清單，例如 [寄件者封鎖]**** 清單。|
+|SFV:SKN|郵件在受到內容篩選處理之前已被標記為非垃圾郵件。 這包括符合郵件流程規則而自動標記為非垃圾郵件，因而略過所有其他篩選的郵件。|
 |SFV:SKI|與 SFV:SKN 類似；郵件基於其他原因 (例如，因為是租用戶內的組織內部電子郵件) 而略過篩選。|
 |SFV:SKQ|郵件已從隔離區釋出，並傳送給預定的收件者。|
 |SFV:NSPM|郵件標記為非垃圾郵件，並傳送給預定的收件者。|
 |H:[helostring]|連線郵件伺服器的 HELO 或 EHLO 字串。|
-|PTR:[ReverseDNS]|PTR 記錄或指標記錄，傳送端 IP 位址，也稱為反向 DNS 位址。|
-|SFTY|郵件已識別為網路釣魚，並使用下列其中一個下列值，也會標示： <br/>• 9.1： 預設值。 包含網路釣魚 URL、 可能包含其他網路釣魚的內容，或可能已標示為網路釣魚由另一個郵件篩選器，例如內部部署版本的 Exchange 伺服器之前轉送郵件至 Office 365 的郵件。 <br/>• 9.11： 郵件未通過反詐騙檢查其中的傳送端網域，在 [從： 標頭相同，或對齊，或屬於相同的組織接收方網域。 這表示組織內部詐騙安全提示將會新增到郵件。 <br/>• 9.19： 無法在傳送網域嘗試模擬接收者，所擁有的網域或自訂的網域由反網路釣魚原則保護的網域模擬檢查的郵件。 這表示模擬安全提示將會新增到郵件，如果啟用透過反網路釣魚原則。 <br/>• 9.20： 郵件無法傳送的使用者嘗試模擬接收器組織內的使用者，或自訂的使用者受到反網路釣魚原則的使用者模擬檢查。 這表示模擬安全提示將會新增到郵件，如果啟用透過反網路釣魚原則。 <br/>• 9.21： 無法反詐騙檢查，在 [從在傳送網域的郵件： 標頭不會驗證及來自外部網域。 搭配 CompAuth （請參閱驗證結果）。 <br/>• 9.22： 相同 9.21，不同之處在於使用者擁有安全的寄件者覆寫。 <br/>• 9.23： 相同 9.22，不同之處在於組織具有的允許寄件者或網域，已覆寫。 <br/>• 9.24： 相同 9.23，不同之處在於使用者擁有 Exchange 郵件流程規則覆寫。|
-|X-CustomSpam：[ASFOption]|郵件符合進階垃圾郵件篩選選項。 例如 **[X-CustomSpam：遠端站台的影像連結]** 表示已符合 **[遠端站台的影像連結]** ASF 選項。 若要了解哪些 X 標頭文字加入每個特定 ASF 選項，請參閱 <<c0>進階垃圾郵件篩選選項。|
+|PTR:[ReverseDNS]|傳送 IP 位址 (也稱為反向 DNS 位址) 的 PTR 記錄或指標記錄。|
+|SFTY|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <br/>• 9.1：預設值。 該郵件包含網路釣魚 URL、可能包含其他網路釣魚內容，或者在將郵件轉送到 Office 365 之前，可能已被其他郵件篩選器 (如內部部署的 Exchange Server 版本) 標記為網路釣魚郵件。 <br/>• 9.11：郵件的反詐騙檢查失敗，其中 [寄件者:] 標頭中的寄件網域與接收網域相同，或與接收網域相同或屬於同一組織。 這表示將在郵件中新增組織內部詐騙安全提示。 <br/>• 9.19：郵件的網域模擬檢查失敗，寄件網域嘗試模擬接收者擁有的網域，或受反網路釣魚原則保護的自訂網域。 這表示如果透過反網路釣魚原則來啟用，則會在郵件中新增模擬安全提示。 <br/>• 9.20：郵件的使用者模擬檢查失敗，寄件使用者嘗試模擬接收者組織內的使用者，或受反網路釣魚原則保護的自訂使用者。 這表示如果透過反網路釣魚原則來啟用，則會在郵件中新增模擬安全提示。 <br/>• 9.21：郵件的反詐騙檢查失敗，[寄件者:] 標頭中的寄件網域不驗證且來自外部網域。 搭配 CompAuth 使用 (請參閱 Authentication-Results)。 <br/>• 9.22：與 9.21 相同，唯一不同的是使用者的安全寄件者遭到覆寫。 <br/>• 9.23：與 9.22 相同，唯一不同的是組織允許遭到覆寫的寄件者或網域。 <br/>• 9.24：與 9.23 相同，唯一不同的是使用者的 Exchange 郵件流程規則遭到覆寫。|
+|X-CustomSpam: [ASFOption]|郵件符合進階的垃圾郵件篩選選項。 例如，**X-CustomSpam: Image links to remote sites** 表示已符合 [遠端站台的影像連結]**** ASF 選項。 若要了解每個特定的 ASF 選項新增的 X-header 文字，請參閱[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md) (機器翻譯)。|
    
-## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft 反垃圾郵件郵件標頭欄位
+## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft-Antispam 郵件標頭欄位
 
-下表說明有用**X-Microsoft 反垃圾郵件**郵件標頭中的欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
+下表說明在 **X-Microsoft-Antispam** 郵件標頭中的實用欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
   
 |**標頭欄位**|**描述**|
 |:-----|:-----|
-|BCL|大量抱怨層級 (BCL) 的郵件。 如需詳細資訊，請參閱[大量抱怨層級的值](bulk-complaint-level-values.md)。|
-|PCL|網路釣魚信賴等級 (PCL) 的訊息，指出是否是網路釣魚郵件。 此狀態可以傳回為下列其中一個下列數值： <br/>• **0-3**： 郵件的內容不可能是網路釣魚。 <br/>• **4-8**： 郵件的內容很可能是網路釣魚。 <br/>• **-9990**: (Exchange Online Protection 僅) 郵件的內容很可能是網路釣魚。  <br/>  值用來判斷您的電子郵件用戶端對郵件採取什麼動作。 例如，Outlook 會使用 PCL 戳記來封鎖可疑郵件的內容。 如需有關網路釣魚及 Outlook 處理網路釣魚郵件的方式的詳細資訊，請參閱[開啟或關閉電子郵件訊息中的連結](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8)。|
+|BCL|郵件的大量相容層級 (BCL)。 如需詳細資訊，請參閱[大量相容層級值](bulk-complaint-level-values.md) (機器翻譯)。|
+|PCL|郵件的網路釣魚信賴等級 (PCL)，表示郵件是否為網路釣魚郵件。 此狀態可以傳回下列其中一個數值： <br/>• **0-3**：郵件內容不可能是網路釣魚郵件。 <br/>• **4-8**：郵件內容有可能是網路釣魚郵件。 <br/>• **-9990**：(僅限 Exchange Online Protection) 郵件內容有可能是網路釣魚郵件。  <br/>  這些值用於判定您的電子郵件用戶端會對郵件採取的動作。 例如，Outlook 會使用 PCL 戳記來封鎖可疑郵件的內容。 如需網路釣魚及 Outlook 如何處理網路釣魚郵件的詳細資訊，請參閱[開啟或關閉電子郵件中的連結](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8) (機器翻譯)。|
    
-## <a name="authentication-results-message-header"></a>驗證結果的郵件標頭
+## <a name="authentication-results-message-header"></a>Authentication-results 郵件標頭
 
-針對 SPF，DKIM、 DMARC 檢查的結果會記錄，或加上戳記，當我們郵件伺服器收到的電子郵件的**驗證結果**郵件標頭中的 Office 365。
+當我們的郵件伺服器收到電子郵件時，Office 365 會在 **Authentication-results** 郵件標頭中記錄或標記對 SPF、DKIM 和DMARC 的檢查結果。
   
-### <a name="check-stamp-syntax-and-examples"></a>檢查戳記語法和範例
+### <a name="check-stamp-syntax-and-examples"></a>檢查戳記語法及範例
 
-下列的語法範例顯示的文字部分 」 戳記 」 的 Office 365 適用於每個正文電子郵件的驗證檢查，當我們郵件伺服器所接收的電子郵件的郵件標頭。 戳記會新增至的**Authentication-results**標頭。
+以下語法範例顯示，當我們的郵件伺服器在收到郵件時，Office 365 針對進行電子郵件驗證檢查的每封電子郵件套用至郵件標頭的文字「戳記」部分。 該戳記會新增至 **Authentication-Results** 標頭。
   
-**語法： SPF 檢查戳記**
+**語法：SPF 檢查戳記**
   
-Spf，適用於下列語法。
+針對 SPF 會套用下列語法。
   
 ```
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
-**範例： SPF 檢查戳記**
+**範例：SPF 檢查戳記**
   
 ```
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
-**語法： DKIM 檢查戳記**
+**語法：DKIM 檢查戳記**
   
-對於 DKIM，會套用下列語法。
+針對 DKIM 會套用下列語法。
   
 ```
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
-**範例： DKIM 檢查戳記**
+**範例：DKIM 檢查戳記**
   
 ```
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
-**語法： DMARC 檢查戳記**
+**語法：DMARC 檢查戳記**
   
-針對 DMARC，適用於下列語法。
+針對 DMARC 會套用下列語法。
   
 ```
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
-**範例： DMARC 檢查戳記**
+**範例：DMARC 檢查戳記**
   
 ```
 dmarc=pass action=none header.from=contoso.com
@@ -122,18 +122,18 @@ dmarc=fail action=none header.from=contoso.com
 dmarc=fail action=oreject header.from=contoso.com
 ```
 
-### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>驗證結果的郵件 Office 365 電子郵件驗證所使用的標頭欄位
+### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Office 365 電子郵件驗證使用的 Authentication-results 郵件標頭欄位
 
-此表說明的欄位及可能的值為每個電子郵件的驗證檢查。
+下表描述每個電子郵件驗證檢查的欄位和可能的值。
   
 |**標頭欄位**|**描述**|
 |:-----|:-----|
-|spf|說明郵件 SPF 檢查的結果。 可能值包括： <br/>•**傳遞 （IP 位址）**： 指出傳遞郵件的 SPF 檢查，並包含寄件者的 IP 位址。 用戶端授權來傳送或轉送代表寄件者網域的電子郵件。 <br/>•**失敗 （IP 位址）**： 會指出失敗郵件的 SPF 檢查，並包含寄件者的 IP 位址。 這有時稱為_完全未通過]_。 <br/>• **softfail （原因）**： 表示 SPF 記錄已指定主機為不允許傳送，但在轉換。 <br/>•**中性**： 指出的 SPF 記錄有明確指定，它不判斷是否已授權的 IP 位址。 <br/>• **none**： 表示網域沒有 SPF 記錄或 SPF 記錄不會評估的結果。 <br/>• **temperror**： 指出錯誤發生，可能是暫時性的性質，例如，DNS 錯誤。 嘗試稍後再可能會成功並無任何系統管理員動作。 <br/>• **permerror**： 指出發生永久性錯誤。 發生這種情況，例如，網域有格式錯誤的 SPF 記錄。|
-|smtp.mailfrom|包含從中傳送郵件的來源網域。 任何錯誤是關於此電子郵件將傳送給郵件管理員或負責網域的實體。 這有時稱為 5321.MailFrom 地址或反向路徑地址在郵件信封。|
-|dkim|說明郵件 DKIM 檢查的結果。 可能值包括： <br/>•**傳遞**： 指出郵件傳遞 DKIM 檢查。 <br/>•**失敗 （原因）**： 會指出失敗郵件的 DKIM 檢查和原因。 例如，如果未簽署的郵件，或未驗證簽章。 <br/>• **none**： 表示郵件已不帶正負號。 這可能有或可能不會指出網域有 DKIM 記錄或 DKIM 記錄不會評估的結果，只有這封郵件已不帶正負號。|
-|header.d|如果有的話的 DKIM 簽章中所識別網域。 這是查詢的公開金鑰的網域。|
-|dmarc|說明郵件 DMARC 檢查的結果。 可能值包括： <br/>•**傳遞**： 指出郵件通過 DMARC 檢查。 <br/>•**失敗**： 指出失敗郵件的 DMARC 檢查。 <br/>• **bestguesspass**： 表示在網域沒有 DMARC TXT 記錄存在，但如果其中一個已存在，就能傳遞郵件的 DMARC 檢查。 這是因為中 5321.MailFrom 地址的網域符合 5322.From 地址的網域。 <br/>• **none**： 表示沒有 DKIM TXT 記錄都存在的傳送中的網域 DNS。|
-|巨集指令|會指出 DMARC 檢查的結果為基礎的垃圾郵件篩選器所採取的動作。 例如： <br/>• **permerror**: DMARC 評估期間發生永久性錯誤例如遇到錯誤的 DMARC TXT 記錄在 DNS 中。 嘗試重新傳送此郵件不可能結尾不同的結果。 相反地，您可能需要連絡網域的擁有者以解決問題。 <br/>• **temperror**: DMARC 評估期間發生暫時性錯誤。 您可能會要求寄件者重新傳送更新版本才能正確地處理電子郵件訊息。 <br/>• **oreject**或**o.reject**： 待命的覆寫拒絕。 在此案例 Office 365 會使用此巨集指令收到未通過 DMARC 的郵件時檢查其 DMARC TXT 記錄具有 p 的原則的網域中 = 拒絕。 而不是刪除或拒絕郵件，Office 365 會將郵件標示為垃圾郵件。 如需有關 Office 365 為什麼設定這種方式的詳細資訊，請參閱 < <b0>Office 365 如何處理內送電子郵件，未通過 DMARC</b0>。 <br/>• **pct.quarantine**： 表示百分比小於 100%的未通過 DMARC 的郵件將會繼續傳遞。 這表示郵件無法 DMARC 和原則設為隔離，但 pct 欄位未設定為 100%和系統隨機決定不適用 DMARC 動作]，依指定的網域原則。 <br/>• **pct.reject**： 表示百分比小於 100%的未通過 DMARC 的郵件將會繼續傳遞。 這表示郵件無法 DMARC 和原則設為 [拒絕，但 pct 欄位未設定為 100%和系統隨機決定不適用 DMARC 動作]，依指定的網域原則。|
-|header.from|在電子郵件訊息標頭之 From 地址網域。 這有時稱為_5322.From_地址。|
-|compauth|複合驗證結果。 Office 365 所用來結合多個例如 SPF、 DKIM、 DMARC 或任何其他的一部分來判斷已驗證郵件訊息的驗證類型。 使用 [從： 評估的基礎的網域。|
-|原因|原因的複合驗證成功或失敗。 三位數是由原因的值所組成： <br/>• **000**： 郵件明確無法驗證。 例如，收到郵件的隔離或拒絕動作 DMARC 失敗。 <br/>• **001**： 郵件以隱含方式無法驗證，並且在傳送網域沒有發行驗證原則。 例如，DMARC 原則的 p = 無。 <br/>• **1xx**： 將郵件傳遞驗證。 第二個兩位數是由 Office 365 的內部代碼。 <br/>• **2xx**： 訊息虛傳遞驗證。 第二個兩位數是由 Office 365 的內部代碼。 <br/>• **3xx**： 郵件已不檢查複合驗證。 <br/>• **4xx**： 郵件略過複合驗證。 第二個兩位數是由 Office 365 的內部代碼。|
+|spf|描述郵件的 SPF 檢查結果。 可能的值包括： <br/>• **pass (IP 位址)**：表示郵件的 SPF 檢查通過，且會包含寄件者的 IP 位址。 用戶端獲得授權，可代表寄件者的網域傳送或轉送電子郵件。 <br/>• **fail (IP 位址)**：表示郵件的 SPF 檢查失敗，且會包含寄件者的 IP 位址。 有時也稱為 _hard fail_。 <br/>• **softfail (原因)**：表示 SPF 記錄已將主機指定為不允許傳送但處於轉換狀態。 <br/>• **neutral**：表示 SPF 記錄已明確聲明它未宣告 IP 地址是否已獲授權。 <br/>• **none**：表示網域沒有 SPF 記錄或 SPF 記錄未計算結果。 <br/>• **temperror**：表示錯誤的發生可能是暫時性的，例如 DNS 錯誤。 稍後再試可能就會成功，系統管理員無須採取任何動作。 <br/>• **permerror**：表示發生永久性錯誤。 例如，當網域擁有的 SPF 記錄格式錯誤時，就可能會發生永久性錯誤。|
+|smtp.mailfrom|包含郵件傳送來源的來源網域。 有關此電子郵件的任何錯誤都將傳送給郵件管理員或負責該網域的實體。 這有時稱為 5321.MailFrom 地址或郵件信封上的反向路徑地址。|
+|dkim|描述郵件的 DKIM 檢查結果。 可能的值包括： <br/>• **pass**：表示郵件的 DKIM 檢查通過。 <br/>• **fail (原因)**：表示郵件的 DKIM 檢查失敗及原因。 例如，郵件未簽署或簽章未經過驗證。 <br/>• **none**：表示郵件未簽署。 這可能會也可能不會表示網域具有 DKIM 記錄或 DKIM 記錄未計算結果，僅表示此郵件未簽署。|
+|header.d|如果有的話，表示在 DKIM 簽章中識別出網域。 這是查詢公開金鑰的網域。|
+|dmarc|描述郵件的 DMARC 檢查結果。 可能的值包括： <br/>• **pass**：表示郵件的 DMARC 檢查通過。 <br/>• **fail**：表示郵件的 DMARC 檢查失敗。 <br/>• **bestguesspass**：表示該網域沒有 DMARC TXT 記錄，但如果有，郵件的 DMARC 檢查就會通過。 這是因為 5321.MailFrom 地址中的網域符合 5322.From 地址中的網域。 <br/>• **none**：表示 DNS 中的寄件網域沒有 DKIM TXT 記錄。|
+|action|表示垃圾郵件篩選器根據 DMARC 檢查結果所採取的動作作。 例如： <br/>• **permerror**：在 DMARC 評估期間發生永久性錯誤，例如在 DNS 中發生格式錯誤的 DMARC TXT 記錄。 嘗試重新傳送此郵件也不太會有不同的結果。 相反地，您可能需要連絡網域擁有者來解決問題。 <br/>• **temperror**：DMARC 評估期間發生暫時錯誤。 您可能可以要求寄件人稍後重新傳送郵件，以便正確處理電子郵件。 <br/>• **oreject** 或 **o.reject**：代表覆寫拒絕。 在這種情況下，當 Office 365 從DMARC TXT 記錄具有 p = reject 原則的網域收到 DMARC 檢查失敗的郵件時，Office 365 將採取此動作。 Office 365 會將郵件標記為垃圾郵件，而不是刪除或拒絕郵件。 如需 Office 365 以這種方式設定的原因詳細資訊，請參閱 [Office 365 如何處理未通過 DMARC 的輸入電子郵件](use-dmarc-to-validate-email.md#inbounddmarcfail)。 <br/>• **pct.quarantine**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為隔離，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。 <br/>• **pct.reject**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為拒絕，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。|
+|header.from|電子郵件標頭中 From 地址的網域。 這有時稱為 _5322.From_ 地址。|
+|compauth|複合驗證結果。 Office 365 所使用，用於組合多種類型的驗證 (如 SPF、DKIM、DMARC 或郵件的任何其他部分)，以判斷郵件是否經過驗證。 使用 From: 網域作為評估基礎。|
+|reason|複合驗證通過或失敗的原因。 原因值由三個數字組成： <br/>• **000**：郵件驗證明確失敗。 例如，郵件收到 DMARC 失敗以及隔離或拒絕的動作。 <br/>• **001**：郵件驗證隱含地失敗，且寄件網域未發佈驗證原則。 例如，DMARC 原則為 p=none。 <br/>• **1xx**：郵件通過驗證。 後面兩個數字是 Office 365 使用的內部代碼。 <br/>• **2xx**：郵件非強制通過驗證。 後面兩個數字是 Office 365 使用的內部代碼。 <br/>• **3xx**：郵件未進行複合驗證檢查。 <br/>• **4xx**：郵件略過複合驗證。 後面兩個數字是 Office 365 使用的內部代碼。|
