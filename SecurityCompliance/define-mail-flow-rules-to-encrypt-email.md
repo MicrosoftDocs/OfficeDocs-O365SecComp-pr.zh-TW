@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以了解如何建立郵件流程規則 （傳輸規則） 來加密及解密使用 Office 365 郵件加密的郵件中。
-ms.openlocfilehash: 624219c3d974c0a9ab8004bb7b606264c5d0f8ee
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 系統管理員可以了解如何建立郵件流程規則 （傳輸規則） 來加密及解密使用 Office 365 郵件加密的郵件。
+ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150645"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854687"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 
@@ -47,7 +47,7 @@ ms.locfileid: "34150645"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Office 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
+3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
 4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "34150645"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Office 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
+3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
 4. In the EAC, go to **Mail flow** \> **Rules**.
 
@@ -105,7 +105,7 @@ ms.locfileid: "34150645"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Office 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
+3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
 4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
@@ -163,7 +163,7 @@ ms.locfileid: "34150645"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Office 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
+3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
 4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
