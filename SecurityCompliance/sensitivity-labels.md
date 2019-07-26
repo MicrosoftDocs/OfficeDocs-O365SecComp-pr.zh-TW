@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199874"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840885"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -44,7 +44,7 @@ ms.locfileid: "35199874"
     
 在這些案例中，Office 365 中的敏感度標籤可以幫助您對正確的內容採取正確的動作。使用敏感度標籤，您可以分類整個組織中的資料，並根據該分類強制執行保護設定。
   
-您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心，或 Office 365 安全性與合規性中心中建立敏感性標籤。Azure 資訊保護、Office App 和 Office 365 服務可以使用這些敏感性標籤。
+您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心，或 Office 365 安全性與合規性中心中建立敏感度標籤。Azure 資訊保護、Office App 和 Office 365 服務可以使用這些敏感度標籤。
 
 針對 Azure 資訊保護客戶，您可以使用其他系統管理中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 **Azure 資訊保護標籤與 Office 365 敏感度標籤完全彼此相容。** 這表示，比方說，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。
 
@@ -81,13 +81,13 @@ ms.locfileid: "35199874"
     ![指派必要標籤的提示](media/Sensitivity-label-Prompt-for-required-label.png)
 
 
-在您建立敏感性標籤時，這所有選項都可供使用。
+在您建立敏感度標籤時，這所有選項都可供使用。
 
 ![建立敏感度標籤的選項](media/Sensitivity-label-create-options.png)
 
 ### <a name="label-priority-order-matters"></a>標籤優先順序 (順序很重要)
 
-建立敏感性標籤時，它們會顯示在 [標籤]**** 頁面的 [敏感度]**** 索引標籤上的清單中。 在此清單中，標籤的順序很重要，因為它反映的是其優先順序。 您想要讓最具限制性的敏感性標籤，例如 [高度機密性]，顯示在清單的最**底端**，以及最不具限制性的敏感性標籤，例如公用，顯示在最**上方**。
+建立敏感度標籤時，它們會顯示在 [標籤]**** 頁面的 [敏感度]**** 索引標籤上的清單中。 在此清單中，標籤的順序很重要，因為它反映的是其優先順序。 您想要讓最具限制性的敏感度標籤，例如 [高度機密性]，顯示在清單的最**底端**，以及最不具限制性的敏感度標籤，例如公用，顯示在最**上方**。
 
 文件或電子郵件只能套用單一敏感度標籤。如果您要求使用者提供將標籤變更為較低分類的理由，這份清單的順序可決定什麼是較低的分類。
 
@@ -214,7 +214,7 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 - 在文件和電子郵件上保留現有的 Azure 資訊保護標籤。
 - 保留現有的 Azure 資訊保護標籤設定。
 
-如果您使用 Azure 資訊保護標籤，目前建議您避免在其他系統管理中心建立新的標籤，直到完成移轉為止。 [Azure 資訊保護移轉主題](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)提供重要的資訊和一些特定的警告。 如果您尚未準備好要將您的生產環境租用戶移轉到敏感性標籤，則無需擔心：目前，您的使用者可以繼續使用 Azure 資訊保護用戶端，而系統管理員可以繼續使用 Azure 入口網站來進行管理。
+如果您使用 Azure 資訊保護標籤，目前建議您避免在其他系統管理中心建立新的標籤，直到完成移轉為止。 [Azure 資訊保護移轉主題](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)提供重要的資訊和一些特定的警告。 如果您尚未準備好要將您的生產環境租用戶移轉到敏感度標籤，則無需擔心：目前，您的使用者可以繼續使用 Azure 資訊保護用戶端，而系統管理員可以繼續使用 Azure 入口網站來進行管理。
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>使用 Microsoft Intune 中的端點保護來保護 Windows 裝置上的內容
 
@@ -267,7 +267,7 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 
 ## <a name="permissions"></a>權限
 
-您的法務小組中將建立敏感度標籤的成員必須具備安全性與合規性中心的權限。根據預設，租用戶管理員將可存取此位置，並且可直接讓法務人員與其他人存取安全性與合規性中心，而不需要為其提供租用戶管理員的所有權限。若要這麼做，我們建議您：移至安全性與合規性中心的 [權限]**** 頁面，編輯 [規範管理員]**** 角色群組，將該成員加入此角色群組。
+合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心的權限。 根據預設，您的租用戶系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。若要這麼做，我們建議您移至其中一個系統管理中心的**權限**頁面，然後將成員新增至**合規性系統管理員**或**安全性系統系統管理員**角色群組。
 
 如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](grant-access-to-the-security-and-compliance-center.md)。
 
