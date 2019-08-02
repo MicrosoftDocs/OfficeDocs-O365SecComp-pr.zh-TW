@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '身為系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。 您可以設定原則，讓 Office 365 篩選郵件，並傳送至隔離區幾個原因： 因為被判定是垃圾郵件、 大量、 網路釣魚、 惡意程式碼，或因為它們符合郵件流程規則。 '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598799"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054715"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>在 Office 365 中系統管理員身分管理被隔離的郵件和檔案
 
@@ -29,14 +29,14 @@ ms.locfileid: "35598799"
   
 根據預設，Office 365 會直接將網路釣魚郵件和包含惡意程式碼的郵件傳送至隔離區。 其他已篩選的郵件會傳送至使用者的垃圾郵件] 資料夾中，除非您要傳送至隔離區設定的原則。
   
-您必須在 Office 365 全域系統管理員 (GA) 的權限或安全性系統管理員，才能使用安全性與合規性中心中的隔離郵件已傳送給其他使用者，並使用隔離的檔案。
+您必須在 Office 365 全域系統管理員 (GA) 的權限或屬於一或多個安全性 & 合規性中心角色群組，才能使用被隔離的郵件或隔離的檔案。 如需詳細資訊，請參閱[Office 365 安全性 & 合規性中心的權限](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)。
   
 > [!IMPORTANT]
 >根據預設，垃圾郵件、 大量和網路釣魚郵件會隔離區中保留 30 天。 因為它們符合郵件流程規則遭到隔離的郵件會保留在隔離區 7 天。 惡意程式碼的郵件會保留在隔離區 15 天。 您可以自訂安全性中的反垃圾郵件設定] 中的垃圾郵件隔離時間&amp;合規性中心。 當 Office 365 會從隔離區刪除郵件時，您無法再次開啟它。 如有需要，您可以在您的反垃圾郵件篩選原則中變更隔離郵件的保留期間。 如需詳細資訊，請參閱本文中的[設定隔離保留期限](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>檢視您的組織已隔離的郵件
 
-1. 使用 Office 365 組織中具備全域系統管理員權限的工作或學校帳戶，登入 Office 365 並[移至安全性與合規性中心](go-to-the-securitycompliance-center.md)。
+1. 使用公司或學校帳戶具備全域系統管理員權限 （或適當的安全性 & 合規性中心角色） Office 365 組織中，登入 Office 365 並[移至安全性與合規性中心](go-to-the-securitycompliance-center.md)。
     
 2. 在左側清單中，展開 [**威脅管理**，選擇 [**檢閱**，，然後選擇 [**隔離**。
     
@@ -189,7 +189,7 @@ ms.locfileid: "35598799"
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>若要在安全性與合規性中心修改預設垃圾郵件篩選器原則的隔離保留期限
 
-1. 使用 Office 365 組織中具備全域系統管理員權限的工作或學校帳戶，登入 Office 365 並[移至安全性與合規性中心](go-to-the-securitycompliance-center.md)。
+1. 使用 Office 365 組織中具有全域系統管理員權限 （或適當的安全性 & 合規性中心角色） 的工作或學校帳戶，登入 Office 365 並[移至安全性與合規性中心](go-to-the-securitycompliance-center.md)。
     
 2. 位於左側，展開**威脅管理**，選擇 [**原則**] 中，，然後選擇 [**反垃圾郵件**。 <br/>
     > [!TIP]

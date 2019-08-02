@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: 520ca0fb48a131026d9a46138605892203bf6e93
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599599"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054725"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
@@ -64,11 +64,9 @@ ms.locfileid: "35599599"
     > [!IMPORTANT]
     > 完成 Azure Active Directory 同步處理工具設定精靈 之後，您的 Active Directory 樹系中會建立 **MSOL_AD_SYNC** 帳戶。此帳戶將用來讀取和同步處理您的內部部署 Active Directory 資訊。為了讓目錄同步作業能夠正確運作，請確定有開啟您的本機目錄同步作業伺服器上的 TCP 443。 
   
-4. 啟動已同步處理的使用者，如[啟用同步處理的使用者](http://go.microsoft.com/fwlink/p/?LinkId=308913)所說明。
+  4. 管理目錄同步處理，如[管理目錄同步作業](http://go.microsoft.com/fwlink/p/?LinkId=308915)所說明。
     
-5. 管理目錄同步處理，如[管理目錄同步作業](http://go.microsoft.com/fwlink/p/?LinkId=308915)所說明。
-    
-6. Verify that EOP is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment. 
+  5. Verify that EOP is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment. 
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>使用 EAC 管理郵件使用者
 
