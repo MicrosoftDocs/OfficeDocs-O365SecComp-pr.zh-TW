@@ -3,7 +3,7 @@ title: 未驗證的寄件者
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/25/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 233474dbfff430be8dd95d513adeb257bb26c5c7
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600259"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628506"
 ---
 # <a name="unverified-sender"></a>未驗證的寄件者
+
+> [!NOTE] 
+> 這些更新會循環現在，並可能無法使用尚未對所有使用者。
 
 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
 
@@ -35,7 +38,7 @@ Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法�
 
 如果您是 Office 365 客戶可以管理安全性 & 合規性中心透過這項功能。 
 
-- 在 Office 365 安全性 & 合規性中心，租用戶系統管理員可以開啟功能，開啟或關閉，透過反 Phish 原則] 底下的反詐騙保護。 此外，它可以透過 ' 組 AntiPhishPolicy' 指令程式管理。 如需詳細資訊，請參閱 < 在 Office 365 及集合 AntiPhishPolicy 反網路釣魚保護。
+- 在 Office 365 安全性 & 合規性中心，全域或安全性系統管理員可以關閉透過反 Phish 原則] 底下的反詐騙保護功能，開啟或關閉。 此外，它可以透過 ' 組 AntiPhishPolicy' 指令程式管理。 如需詳細資訊，請參閱[在 Office 365 中的反網路釣魚保護](anti-phishing-protection.md)及 [設定 AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps)。
 
     ![編輯的圖形介面中的未驗證寄件者。](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

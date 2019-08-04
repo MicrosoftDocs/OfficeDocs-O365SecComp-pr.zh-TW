@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何使用 SharePoint Online IRM 透過 Microsoft Azure Active Directory Rights Management Services (RMS) 來保護 SharePoint 清單與文件庫。
-ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 6fc51eaaf7f5d5d22167d10ab70d45dbf03cc6d2
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756845"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792069"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -34,7 +34,7 @@ ms.locfileid: "35756845"
   
 1. 以全域管理員或 SharePoint 系統管理員身分登入 Office 365。
     
-2. 選取 [應用程式啟動器圖示![Office 365 中的應用程式啟動器圖示](media/e5aee650-c566-4100-aaad-4cc2355d909f.png)中左上角，然後選擇 [**系統**]，以開啟在 Office 365 系統管理中心。 (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
+2. 在左上角選取應用程式啟動器圖示 ![Office 365 中的應用程式啟動器圖示](media/e5aee650-c566-4100-aaad-4cc2355d909f.png)，然後選擇 [系統管理員]**** 來開啟 Microsoft 365 系統管理中心。 (如果您沒有看到 [系統管理員] 磚，則您沒有組織中的 Office 365 系統管理員權限。) 
     
 3. 在左窗格中，選擇 [**系統管理中心** \> **SharePoint**。
     
@@ -51,7 +51,7 @@ ms.locfileid: "35756845"
   
 當人員下載中啟用 IRM 的清單或文件庫的檔案時，檔案加密，因此只有授權的使用者可以檢視它們。 每個受版權管理檔案也包含會限制檢視檔案的人員的發行授權。 一般限制包括唯讀屬性，停用複製文字，防止人員從儲存本機複本，並列印檔案時，防止人員進行檔案。 可以讀取 IRM 支援的檔案類型的用戶端程式會使用受版權管理檔案內的發行授權，以強制執行這些限制。 這是如何受版權管理檔案會保留其保護即使之後就會下載。 若要在清單或文件庫啟用 IRM，請參閱[資訊版權管理套用至清單或文件庫](apply-irm-to-a-list-or-library.md)。
   
-您無法建立或編輯文件中啟用 IRM 的文件庫使用 Office Online。 相反地，一次一個人可以下載並編輯之中 IRM 加密的檔案。 使用 [存回和取出管理*共同撰寫*，或製作跨多個使用者。 
+您無法建立或編輯文件中啟用 IRM 的文件庫的瀏覽器中使用 Office。 相反地，一次一個人可以下載並編輯之中 IRM 加密的檔案。 使用 [存回和取出管理*共同撰寫*，或製作跨多個使用者。 
   
 當您從受 IRM 保護文件庫下載 PDF 檔案時，Office 365 會建立受保護的 PDF 檔案。 也不會變更檔案的副檔名，但受保護的檔案。 若要檢視此檔案中，您將需要 Azure 資訊保護檢視器中，完整的 Azure 資訊保護用戶端，或支援檢視的另一個應用程式保護 PDF 檔案。 
   

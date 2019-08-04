@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 安全連結功能提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。 閱讀本篇文章以了解 ATP 安全連結的運作方式。
-ms.openlocfilehash: 7570fd65a9831a6436eec8c402a2bc0c2ae09b40
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 67779560e279028c158179c265196199b5d37d1c
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599179"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792039"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全連結的運作方式
          
@@ -49,9 +49,9 @@ ms.locfileid: "35599179"
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>ATP 安全連結的運作方式與 Url 中的 Office 文件
 
-在高的層級，以下是[ATP 安全連結](atp-safe-links.md)保護中的運作方式 Url 的 Office 365 專業增強版應用程式 （目前版本的 Word、 Excel 及 PowerPoint Windows 或 Mac、 iOS 或 Android 裝置，Windows、 OneNote Online，與 Office Visio 的 Office 應用程式線上）：
+在高的層級，以下是[ATP 安全連結](atp-safe-links.md)保護中的運作方式 Url 的 Office 365 專業增強版的應用程式 (目前版本的 Word、 Excel 及 PowerPoint Windows 或 Mac、 iOS 或 Android 裝置，windows，在瀏覽器] 的 OneNote Visio 的 Office 應用程式和Office 的瀏覽器中):
   
-1. 人員在其電腦、 智慧型手機或平板電腦上安裝 Office 365 專業增強版。 （或者，他們會使用 Office Online 在其瀏覽器中）。
+1. 人員在其電腦、 智慧型手機或平板電腦上安裝 Office 365 專業增強版。 （或是在其瀏覽器中使用 Office]）。
     
 2. 使用者開啟 Word、 Excel、 PowerPoint 或 Visio，並為 Office 365 企業版使用其公司或學校帳戶登入。 文件中包含的 Url。
     

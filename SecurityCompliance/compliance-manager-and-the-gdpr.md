@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152088"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786648"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager 和 GDPR
 
-一般資料保護規定 (GDPR) 准許歐盟所可以影響您的合規性策略，並且託管管理使用者與使用合規性管理員中的客戶資訊所需的動作。
+一般資料保護規定 (GDPR) 准許歐盟所可能會影響您合規性策略和授權表單特定動作，以管理使用者和客戶使用合規性管理員中的資訊。
 
 ## <a name="user-privacy-settings"></a>使用者隱私權設定
 
@@ -59,7 +59,7 @@ ms.locfileid: "34152088"
 3. 開啟文件以檢視報告資料。
 
 > [!IMPORTANT]
-> 這並不會保留並顯示動作項目指派歷程記錄的狀態變更的歷程報告。 產生的報告是控制項動作項目指派報告執行的時間 （寫入至報表的日期和時間戳記） 的快照。 例如，動作項目任何後續重新指派不同的快照集報表資料如果導致相同的使用者再次產生此報告。
+> 將報告資料不會保留並顯示動作項目指派歷程記錄的狀態變更的歷程記錄清單。 產生的報告是控制項動作項目指派報告執行的時間 （寫入至報表的日期和時間戳記） 的快照。 例如，動作項目任何後續重新指派不同的快照集報表資料如果導致相同的使用者再次產生報告。
   
 ## <a name="delete-user-data-history"></a>刪除使用者資料歷程記錄
 

@@ -15,23 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: 使用者必須獲指派 Office 365 安全性 & 合規性中心中的權限，他們可以管理其安全性或規範功能的任何之前。
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+description: 使用者必須獲指派 Office 365 安全性 & 合規性中心的權限，他們可以管理其安全性或規範功能的任何之前。
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645118"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792009"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>讓使用者能夠存取 Office 365 安全規範中心
 
-使用者必須獲指派 Office 365 安全性 & 合規性中心中的權限，他們可以管理其安全性或規範功能的任何之前。 為 Office 365 全域系統管理員或 OrganizationManagement 角色群組的安全性 & 合規性中心中的成員，您可以授與這些權限的使用者。 使用者只能管理您授予權利給他們的安全性或符合性功能。 
+使用者必須獲指派 Office 365 安全性 & 合規性中心的權限，他們可以管理其安全性或規範功能的任何之前。 為 Office 365 全域系統管理員或 OrganizationManagement 角色群組的安全性 & 合規性中心中的成員，您可以授與這些權限的使用者。 使用者只能管理您授予權利給他們的安全性或符合性功能。 
   
-如需詳細資訊的不同的權限您可以授與安全性 & 合規性中心中的使用者，請參閱[Office 365 安全性 & 合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+如需詳細資訊的不同的權限您可以授與安全性 & 合規性中心中的使用者，請參閱[Office 365 安全性 & 合規性中心的權限](permissions-in-the-security-and-compliance-center.md)。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您必須是 Office 365 全域系統管理員或若要完成本文中的步驟安全性 & 合規性中心 OrganizationManagement 角色群組的成員。
+- 您必須是 Office 365 全域系統管理員或若要完成本文中的步驟安全性 & 合規性中心，OrganizationManagement 角色群組的成員。
 
 - 安全性 & 合規性中心的角色群組可能會有類似的角色群組的名稱在 Exchange Online，但是兩者並不相同。
 
@@ -39,11 +39,11 @@ ms.locfileid: "35645118"
 
 - 使用管理代理者 」 (AOBO) 權限的委派的存取權限 (DAP) 合作夥伴無法存取安全性 & 合規性中心。
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用 Office 365 系統管理中心將另一個使用者存取權授與安全性 & 合規性中心
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用管理中心將另一個使用者存取權授與安全性 & 合規性中心
 
 1. [登入 Office 365 並移至系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=525275)。
 
-2. 在 Office 365 系統管理中心中，開啟 [**系統管理中心**，然後按一下 [**安全性 & 合規性**。
+2. 在 Microsoft 365 系統管理中心中，開啟 [**系統管理中心**，然後按一下 [**安全性 & 合規性**。
 
 3. 在安全性 & 合規性中心，前往 [**權限**。
 
@@ -83,7 +83,7 @@ ms.locfileid: "35645118"
   
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
-若要確認您已給予使用者存取至安全性 & 合規性中心，請使用**Get-rolegroupmember**指令程式檢視成員中 「 組織管理 」 角色群組，如下列範例所示。
+若要確認您已給予使用者存取安全性 & 合規性中心，使用**Get-rolegroupmember**指令程式檢視成員中 「 組織管理 」 角色群組，如下列範例所示。
   
 ```
 Get-RoleGroupMember -Identity "Organization Management"

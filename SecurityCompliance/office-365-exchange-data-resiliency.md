@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Exchange Online 和 Office 365 內的資料復原的各個方面的說明。
-ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 96611c2db166e34a47b845b5683a367dd29ec25f
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262755"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786668"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 中的 Exchange Online 資料恢復
 
@@ -55,7 +55,7 @@ Exchange Online 中的信箱資料損毀防範達成，使用 Exchange 的原生
 ## <a name="transport-resilience"></a>傳輸恢復能力 
 Exchange Online 包含兩個主要傳輸台回復性功能： 陰影備援和 Safety Net。 在傳輸時，陰影備援會保留郵件的備援副本。 成功傳遞郵件之後，Safety Net 會保留郵件的備援副本。 
 
-使用陰影備援時，每個 Exchange Online 的傳輸伺服器會建立該函數會收到之前會認可成功接收郵件的傳送伺服器的每個郵件的複本。 這讓所有的郵件傳輸管線中備援傳輸中。 如果 Exchange Online 會決定原始郵件已傳送的過程中遺失，已重新傳遞郵件的備援副本。 
+使用陰影備援時，每個 Exchange Online 的傳輸伺服器會建立該函數會收到之前會認可成功接收郵件的傳送伺服器的每一封郵件的複本。 這讓所有的郵件傳輸管線中備援傳輸中。 如果 Exchange Online 會決定原始郵件已傳送的過程中遺失，已重新傳遞郵件的備援副本。 
 
 Safety Net 是與信箱伺服器上的傳輸服務相關聯的傳輸佇列。 此佇列儲存其副本的伺服器成功處理的郵件。 當信箱資料庫或伺服器失敗需要啟動過期資料庫副本的信箱時，安全網佇列中的郵件會自動重新提交給新的主動副本的信箱資料庫。 Safety Net 也是設為備援，藉此消除傳輸為單一失敗點。 它會使用主要 Safety Net 與陰影 Safety Net 的概念移位，其中如果主要 Safety Net 無法使用 12 小時以上，重新提交要求將成為陰影重新提交要求，且郵件重新傳遞從陰影 Safety Net。
 

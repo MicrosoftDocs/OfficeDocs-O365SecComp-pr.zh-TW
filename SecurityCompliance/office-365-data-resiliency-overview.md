@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 了解 Microsoft Office 365 中的資料復原。
-ms.openlocfilehash: ef8f3f9599f187e26885cb8ff81559546cc49c50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 90edfe1a7e2baac172fcd9b8cc36163b8130484b
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262855"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786678"
 ---
 # <a name="data-resiliency-in-office-365"></a>Office 365 中的資料復原
 
@@ -29,7 +29,7 @@ ms.locfileid: "32262855"
 建置在恢復能力和復原開頭為基礎的基礎結構和處理程序會在某個時間點失敗的假設： 硬體 （基礎結構） 將會失敗、 人類會使錯誤，以及軟體會有錯誤。 而是說軟體開發人員並非思考之前雲端這些項目不正確，這些問題的一般 IT 實作的已處理已之前雲端極為不同： 
 - 首先，硬體和基礎結構的防護措施有明顯。 這表示有資料中心所需的 99.99%可靠性大幅電源與網路備援及伺服器已實作與硬體型叢集、 雙重電源供應器、 雙網路介面及類似。 
 - 其次，程序是最重要的。 作業小組維護嚴格的程序，採用 windows，已的變更，而且通常已明顯的專案管理負荷。 
-- 第三，部署所需冰河步調的地方。 部署的程式碼而擁有來源表示等待修補程式版本，而且主要版本釋放更換所涉及的硬體和重大的資金 outlay。 此外，若要修正問題的唯一方法就是復原。 因此，大多數 IT 組織會部署只有主要版本，以避免以保有最新的工作。 
+- 第三，部署所需冰河步調的地方。 部署的程式碼而擁有來源表示等待修補程式版本，而且主要版本釋放更換所涉及的硬體和重大的資金 outlay。 此外，若要修正問題的唯一方法就是回復。 因此，大多數 IT 組織會部署只有主要版本，以避免以保有最新的工作。 
 - 最後，已部署的系統的小數位數以及其 interconnectedness 程度已在過去小很多比它現在是。 
 
 現今，客戶預期來自 Microsoft 的連續創新而不會危害品質]，且這是與恢復能力和恢復能力記住為什麼內建 Microsoft 的服務和軟體的原因之一。 
