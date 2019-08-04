@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 Exchange Server 中解決 GDPR 需求。
-ms.openlocfilehash: 96caf2793f11772aafd80124b03fd0cb32599442
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9b15934f598adcd692d8c47358db357bcea58814
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152755"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792049"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>適用於 Office Web Apps Server 和 Office Online Server 的 GDPR
 
@@ -63,7 +63,7 @@ Office Online Server 和 Office Web Apps Server 遙測資料是以 ULS 記錄的
 
 ## <a name="types-of-data"></a>資料類型
 
-Office Online 記錄包含各種不同類型的資料。以下是 ULS 記錄可能包含的資料範例：
+Office 記錄包含各種不同類型的資料。以下是 ULS 記錄可能包含的資料範例：
 
 -   使用產品時發生的問題的錯誤碼
 

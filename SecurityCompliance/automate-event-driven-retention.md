@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: c89abc373a6c0a1de6b6528c638dbd34e586b6d7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 180c98c57986ef7523548978bd1709cc79205e86
+ms.sourcegitcommit: 28484eb103bc7f3694f10e010228472049adbe9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152275"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35594351"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
@@ -170,7 +170,7 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 <tbody>
 <tr class="odd">
 <td>URL</td>
-<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent)</td>
+<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</td>
 <td></td>
 </tr>
 <tr class="even">
