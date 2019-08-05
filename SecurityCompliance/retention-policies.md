@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容。
-ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 1d9ad24a8322bec471a2725e16c0cd49ffa71202
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840898"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054765"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -300,19 +300,7 @@ ms.locfileid: "35840898"
   
 ## <a name="releasing-a-retention-policy"></a>發佈保留原則
 
-您可以隨時關閉或刪除保留原則。 當您這麼做時，任何保留中的 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間內，原則的內容到期不會發生於保留文件庫，因此，如有需要，您可以在這裡還原任何內容。 您也可以在寬限期內開啟保留原則，這樣，原則的內容將不會被刪除。 本寬限期是透過 PowerShell 設定。
-
-首先，[連接到 Office 365 安全性與合規性中心 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
-
-然後，執行此 PowerShell 指令碼。 您可以將設定租用戶訂閱設定中的`ip_tenantGracePeriodInDays`屬性設為任何介於 0 到 100 天的值。 如果您將此設定為 0，則無任何寬限期，保留原則將會立即發佈。 
-
-`
-$siteSubscription = Get-SPSiteSubscription -Identity 
-$siteSubScriptionId 
-$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
-$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
-$properties.SetValue("ip_tenantGracePeriodInDays",  30)
-`
+您可以隨時關閉或刪除保留原則。 當您這麼做時，任何保留中的 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間內，原則的內容到期不會發生於保留文件庫，因此，如有需要，您可以在這裡還原任何內容。 您也可以在寬限期內開啟保留原則，這樣，原則的內容將不會被刪除。 此寬限期可使用 PowerShell 設定；近期，我們將提供您可使用的範例指令碼。
 
 SharePoint 和 OneDrive 中的此 30 天寬限期對應於 Exchange 中的 30 天延遲保留。 如需詳細資訊，請參閱[管理延遲保留信箱](https://docs.microsoft.com/zh-TW/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold)。
 

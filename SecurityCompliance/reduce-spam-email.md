@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解最常用來協助減少 Office 365 中垃圾郵件的方式。
-ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601230"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054705"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何減少 Office 365 中的垃圾郵件
 
  **您在 Office 365 收到太多垃圾郵件嗎？請執行此動作。**
   
-我們強烈建議您[使用報告郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)來回報郵件誤判的狀況，以協助我們改善篩選器。此外，您可以將郵件*以附件方式*轉寄到 junk@office365.microsoft.com 或 phish@office365.microsoft.com (如果網路釣魚郵件)。
+我們強烈建議您使用[回報郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)來報告誤判郵件，以協助我們改進我們的篩選器。此外，您可以使用[提交總管](admin-submission.md)來提交郵件。
 
 > [!TIP]
 > 如果您認為郵件是垃圾郵件，而且郵件也位於垃圾郵件資料夾，那就沒有問題。如果您完全不想在信箱中看到垃圾郵件，則應該變更反垃圾郵件原則來隔離郵件。如需隔離郵件的詳細資訊，請參閱[隔離Office 365 中的電子郵件](quarantine-email-messages.md) (機器翻譯)。
@@ -57,7 +57,10 @@ ms.locfileid: "35601230"
     
 - **立即封鎖寄件者** 在您需要立即封鎖寄件者的情況下，您可以依電子郵件地址、網域或 IP 位址進行封鎖。請參閱[在 Office 365 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md) (機器翻譯)。使用者允許清單中的項目可以覆寫系統管理員所設定的封鎖。
     
-- **為使用者開啟回報郵件增益集** 我們建議建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。身為系統管理員，您也可以檢視使用者傳送的意見反應，並使用任何模式，來調整任何可能造成問題的設定。
+- **開啟使用者的回報郵件增益集**：我們強烈建議您[為使用者啟用回報郵件增益集](enable-the-report-message-add-in.md)。
+
+- **使用[提交總管](admin-submission.md)** 系統管理員現在可以使用檔案或網路訊息 ID、URL 以及 Microsoft Office 365 掃描的檔案來傳送電子郵件。 身為系統管理員，您也能夠檢視使用者傳送的意見反應，並使用任何模式來調整任何可能造成問題的設定。
+
 - **啟用 [DKIM](use-dkim-to-validate-outbound-email.md)** 以簽署所有外寄郵件，藉此提高您的網域和租用戶中的安全性。
  > [!TIP]
 > 啟用 DKIM 之後，您必須啟用 [DMARC](use-dkim-to-validate-outbound-email.md)，因為此記錄會驗證 DKIM 和 SPF 是否正確運作，而一般來說，因為 O365 會管理您的私人和公用對稱金鑰，偽造的電子郵件不會有簽章。
@@ -66,8 +69,6 @@ ms.locfileid: "35601230"
 
 - **啟用垃圾郵件規則，並檢查您的允許清單** 檢查垃圾郵件動作規則是否已啟用，以及寄件者或寄件者的網域是否未設為要在您的個人允許清單中略過。存取這些設定的最佳方式來自[封鎖或允許 (垃圾郵件設定)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) (機器翻譯)。當您在那裡時，也可以選擇封鎖寄件者的電子郵件地址或網域。
     
-- **向 Microsoft 報告垃圾郵件** 透過[使用回報郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) (機器翻譯)，向 Microsoft 報告垃圾郵件。此外，您可以將郵件傳送至 junk@office365.microsoft.com，並將一或多封郵件附加到報告。
-    
-    **重要** 如果您未以附件形式轉寄郵件，則標頭將會遺失，而且我們將無法改善 (英文) Office 365 中的垃圾郵件篩選功能。 
-    
+- **向 Microsoft 回報垃圾郵件**：請使用[使用回報郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) 將垃圾郵件回報給 Microsoft。
+       
 - **從大量電子郵件取消訂閱** 如果郵件是您已註冊的項目 (例如電子報、產品公告等)，而且其包含的連結來自聲譽卓著的來源，則您可能只想取消訂閱。Office 365 通常不會將這些郵件視為垃圾郵件。您也可以選擇封鎖寄件者，或要求系統管理員進行將導致所有大宗郵件被視為垃圾郵件的變更。
