@@ -3,7 +3,7 @@ title: 尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/19/2019
+ms.date: 08/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605448"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165669"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查惡意電子郵件已傳遞 (Office 365 進階威脅防護計劃 2)
 
@@ -30,7 +30,7 @@ ms.locfileid: "35605448"
 
 請確定符合下列需求：
   
-- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)（方案 1 或計劃 2） 並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)(Plan 2) 並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
 - [Office 365 稽核記錄](turn-audit-log-search-on-or-off.md)已為您的組織。 
     
@@ -53,20 +53,20 @@ ms.locfileid: "35605448"
 
 傳遞動作是因為現有的原則或偵測電子郵件所採取的動作。 以下是可能一封電子郵件可以採取的動作：
 
-1. **已傳遞**– 電子郵件已傳遞至收件匣或資料夾的使用者和該使用者可以直接存取。
-2. **Junked** – 電子郵件已傳送至任一使用者的垃圾郵件] 資料夾，或刪除資料夾，且使用者在其 [垃圾郵件或刪除的郵件] 資料夾中具有存取電子郵件。
-3. **封鎖**– 任何電子郵件，會受到隔離，失敗，或已卸除。 這是完全無法存取之使用者所 ！
-4. **取代**– 惡意附件由 state 附件的.txt 檔案所取代其中任何電子郵件程式惡意。
+- **已傳遞**– 電子郵件已傳遞至收件匣或資料夾的使用者和該使用者可以直接存取。
+- **Junked** – 電子郵件已傳送至任一使用者的垃圾郵件] 資料夾，或刪除資料夾，且使用者在其 [垃圾郵件或刪除的郵件] 資料夾中具有存取電子郵件。
+- **封鎖**– 任何電子郵件，會受到隔離，失敗，或已卸除。 這是完全無法存取之使用者所 ！
+- **取代**– 惡意附件由 state 附件的.txt 檔案所取代其中任何電子郵件程式惡意。
  
 傳遞位置顯示原則，以及執行後續傳遞的偵測的結果。 它會連結到傳遞巨集指令。 此欄位已新增至提供深入時找到問題郵件採取的動作。 以下是傳遞位置的可能值：
 
-1. **收件匣或資料夾**– 電子郵件是在收件匣或資料夾中 （根據您的電子郵件的規則）。
-2. **在內部或外部**– 信箱不存在於雲端上，但在-內部部署。
-3. **垃圾郵件資料夾**– 中之使用者的 [垃圾郵件] 資料夾中的電子郵件。
-4. **刪除的項目] 資料夾**– 之使用者的已刪除項目] 資料夾中的電子郵件。
-5. **隔離**-隔離中的電子郵件以及不在使用者的信箱。
-6. **失敗**– 電子郵件無法連到信箱。
-7. **丟棄**– 電子郵件會取得某處遺失，在 [郵件流程。
+- **收件匣或資料夾**– 電子郵件是在收件匣或資料夾中 （根據您的電子郵件的規則）。
+- **在內部或外部**– 信箱不存在於雲端上，但在-內部部署。
+- **垃圾郵件資料夾**– 中之使用者的 [垃圾郵件] 資料夾中的電子郵件。
+- **刪除的項目] 資料夾**– 之使用者的已刪除項目] 資料夾中的電子郵件。
+- **隔離**-隔離中的電子郵件以及不在使用者的信箱。
+- **失敗**– 電子郵件無法連到信箱。
+- **丟棄**– 電子郵件會取得某處遺失，在 [郵件流程。
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找並刪除可疑的電子郵件的郵件傳遞
 
@@ -91,23 +91,20 @@ ms.locfileid: "35605448"
 
 一旦您開啟電子郵件時間表，您應該會看到會告訴您在該郵件的後續傳遞事件的資料表或在電子郵件沒有進一步事件，您應該會看到將狀態的結果，例如*封鎖*的原始傳遞的單一事件使用*釣魚程式*類似的結論。 ] 索引標籤也會有 [匯出完整的電子郵件時間表，] 選項，這會匯出] 索引標籤上的所有詳細資料和電子郵件 （像是主旨、 寄件者、 收件者、 網路和訊息識別碼） 的詳細資訊。
 
-
-<!--Comment>    
-3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. 在 [檢視] 功能表中，選擇 [**所有電子郵件**。<br/>![使用 [檢視] 功能表的電子郵件和內容的報告之間選擇](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)
+4. 請注意報表，例如**已傳遞**、**未知**，或**傳遞至垃圾郵件**中顯示的標籤。<br/>![顯示所有的電子郵件資料的威脅總管](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>（根據對貴組織的電子郵件所採取的動作，您可能會看到其他標籤，例如**封鎖**或**取代**）。
     
-5. In the report, choose **Delivered** to view only emails that ended up in users' inboxes.<br/>![Clicking "Delivered to junk" removes that data from view](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. 在報告中，選擇 [**已傳遞**的以檢視僅最後出現在使用者的收件匣的電子郵件]。<br/>![按一下 「 傳遞至垃圾郵件 」 從檢視中移除該資料](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. Below the chart, review the **Email** list below the chart.<br/>![Below the chart, view a list of email messages that were detected](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. 下方圖表中，檢閱圖表下方的**電子郵件**清單。<br/>![下方圖表中，檢視已偵測到的電子郵件的清單](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.<br/>![You can view additional information about an item, including details and any attachments](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. 在清單中，選擇 [項目來檢視電子郵件訊息的相關詳細資料]。 例如，您可以按一下 [檢視資訊寄件者、 收件者、 附件及其他類似的電子郵件的主旨行。<br/>![您可以檢視項目，包括詳細資料和任何附件相關的其他資訊](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
+8. 之後檢視電子郵件的相關資訊，請啟動 **+ 動作**清單中選取一或多個項目。
     
-9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This will delete the selected messages from the recipients' mailboxes.<br/>![When you select one or more email messages, you can choose from several available actions](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. 使用 **+ 動作**清單將套用的動作，例如**將移至刪除**的項目。 這會從收件者的信箱刪除選取的郵件。<br/>![當您選取一或多個電子郵件時，您可以選擇從數個可用的動作](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
--->
 ## <a name="related-topics"></a>相關主題
 
 [Office 365 進階的威脅保護計劃 2](office-365-ti.md)

@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要： 設定組織的其他 Office 365 開發/測試環境中隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e4d4d4462efa91247954501c51a71120a7d341e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152585"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053088"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 
@@ -59,7 +59,7 @@ SharePoint 群組和權限等級由控制存取 SharePoint Online 小組網站�
 如果您想要在模擬的企業組態中建立隔離的 SharePoint Online 小組網站，請遵循[Office 365 開發/測試環境的 DirSync](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment)中的指示。
   
 > [!NOTE]
-> 建立隔離的 SharePoint Online 網站不需要模擬的企業版開發/測試環境，其中包含連線至網際網路的模擬內部網路和 Windows Server AD 樹系中的目錄同步處理。 它提供了此選項，讓您可以測試隔離的 SharePoint Online 網站與代表典型組織的環境中實驗。 
+> 建立隔離的 SharePoint Online 網站不需要模擬的企業版開發/測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理 Active Directory 網域服務 (AD DS) 樹系中。 它提供了此選項，讓您可以測試隔離的 SharePoint Online 網站與代表典型組織的環境中實驗。 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>階段 2： 建立使用者帳戶，並存取群組
 
@@ -235,7 +235,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 11. 新**Projectx-documents** ] 索引標籤上瀏覽器中，按一下 [**新增 > Word 文件**]。
     
-12. 在 [ **Word Online** ] 頁面中輸入一些文字，以指出**儲存**，按一下瀏覽器的上一頁按鈕，然後重新整理] 頁面上的狀態等。 您應該會看到新**Document.docx** **文**件資料夾。
+12. [] 頁面上輸入一些文字，以指出**儲存**，按一下瀏覽器的上一頁按鈕，然後重新整理] 頁面上的狀態等。 您應該會看到新**Document.docx** **文**件資料夾。
     
 13. 按一下**Document.docx**文件的省略符號，然後按一下 [**取得連結**。
     

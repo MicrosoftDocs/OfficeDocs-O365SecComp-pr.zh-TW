@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 摘要： 逐步執行獨立的 SharePoint Online 小組網站的設計程序。
-ms.openlocfilehash: 04634052354de47a09aa3b13e2c82d97be22f4d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 19f030f5210fb6742098543ae91117a90d583242
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150315"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053120"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>設計獨立的 SharePoint Online 小組網站
 
@@ -31,11 +31,11 @@ ms.locfileid: "34150315"
 
 使用下列 SharePoint 群組建立預設每個 SharePoint Online 小組網站：
   
-- \<網站 name> 成員
+- \<站台名稱 # C0 成員
     
-- \<網站 name> 訪客
+- \<站台名稱 # C0 訪客
     
-- \<網站 name> 擁有者
+- \<站台名稱 # C0 擁有者
     
 這些群組不同 Office 365 和 Azure Active Directory (AD) 群組，並會指派的資源之網站的權限的基準。
   
@@ -43,9 +43,9 @@ ms.locfileid: "34150315"
   
 |**SharePoint 群組**|**權限等級**|
 |:-----|:-----|
-|\<網站 name> 成員  <br/> |編輯  <br/> |
-|\<網站 name> 訪客  <br/> |讀取  <br/> |
-|\<網站 name> 擁有者  <br/> |完全控制  <br/> |
+|\<站台名稱 # C0 成員  <br/> |編輯  <br/> |
+|\<站台名稱 # C0 訪客  <br/> |讀取  <br/> |
+|\<站台名稱 # C0 擁有者  <br/> |完全控制  <br/> |
    
  **最佳作法：** 您可以建立其他的 SharePoint 群組和權限等級。 不過，建議使用的預設 SharePoint 群組和權限層級的隔離 SharePoint Online 網站。
   
@@ -59,35 +59,35 @@ ms.locfileid: "34150315"
   
 使用預設 SharePoint 群組做為範例：
   
-- 屬於**\<網站 name> 成員**SharePoint 群組，其中可以包含使用者帳戶和群組、 指派的**編輯**權限層級
+- 屬於**\<網站名稱> 成員**SharePoint 群組，其中可以包含使用者帳戶和群組、 指派的**編輯**權限層級
     
-- 屬於**\<網站 name> 訪客**SharePoint 群組，其中可以包含使用者帳戶和群組、 指派**讀取**權限等級
+- 屬於**\<網站名稱> 訪客**SharePoint 群組，其中可以包含使用者帳戶和群組、 指派**讀取**權限等級
     
-- 屬於**\<網站 name> 擁有者**SharePoint 群組，其中可以包含使用者帳戶和群組、 指派 [**完全控制**」 權限等級
+- 屬於**\<網站名稱> 擁有者**SharePoint 群組，其中可以包含使用者帳戶和群組、 指派 [**完全控制**」 權限等級
     
  **最佳作法：** 雖然您可以管理透過個別使用者帳戶的權限，我們建議您使用單一 Azure AD 群組，而是稱為存取群組。 這可簡化透過在 [存取] 群組的成員資格的權限管理，而不是管理清單中的使用者帳戶為每個 SharePoint 群組。
   
-Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組出現在其**類型**設為 [**安全性**與 Office 系統管理中心中，而且不具有電子郵件地址。 您可以管理 azure AD 群組內：
+Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組出現在其**類型**設為 [**安全性**與 Microsoft 365 系統管理中心中，而且不具有電子郵件地址。 您可以管理 azure AD 群組內：
   
-- Windows Server Active Directory (AD)
+- Active Directory 網域服務 (AD DS)
     
-    這些是在您的內部部署 Windows Server AD 基礎結構中建立及同步處理至 Office 365 訂閱的群組。 在 [Office 系統管理中心中，這些群組會有**與 active directory Synched****狀態**。
+    這些是您內部部署中已建立的群組 AD DS 基礎結構和同步處理至 Office 365 訂閱。 在 Microsoft 365 系統管理中心中，這些群組會有**與 active directory Synched****狀態**。
     
 - Office 365
     
-    以下是使用 Office 系統管理中心，在 Azure 入口網站或 Microsoft PowerShell 已建立的群組。 在 [Office 系統管理中心中，這些群組會有**雲端****狀態**。
+    以下是使用 Microsoft 365 系統管理中心，在 Azure 入口網站或 Microsoft PowerShell 已建立的群組。 在 Microsoft 365 系統管理中心中，這些群組會有**雲端**的**狀態**。
     
- **最佳作法：** 如果您是使用 Windows Server AD 內部，並且同步處理與您的 Office 365 訂閱，執行您的使用者和群組管理與 Windows Server AD。
+ **最佳作法：** 如果您是使用 AD DS 內部，並且同步處理與您的 Office 365 訂閱，執行您的使用者和群組管理與 AD DS。
   
 隔離的 SharePoint Online 小組網站，建議的群組結構看起來像這樣：
   
 |**SharePoint 群組**|**Azure AD 為基礎的存取群組**|**權限等級**|
 |:-----|:-----|:-----|
-|\<網站 name> 成員  <br/> |\<網站 name> 成員  <br/> |編輯  <br/> |
-|\<網站 name> 訪客  <br/> |\<網站 name> 檢視者  <br/> |讀取  <br/> |
-|\<網站 name> 擁有者  <br/> |\<網站 name> 系統管理員  <br/> |完全控制  <br/> |
+|\<站台名稱 # C0 成員  <br/> |\<站台名稱 # C0 成員  <br/> |編輯  <br/> |
+|\<站台名稱 # C0 訪客  <br/> |\<站台名稱 # C0 檢視者  <br/> |讀取  <br/> |
+|\<站台名稱 # C0 擁有者  <br/> |\<站台名稱 # C0 系統管理員  <br/> |完全控制  <br/> |
    
- **最佳作法：** 雖然您可以使用 Office 365 或 Azure AD 群組作為 SharePoint 群組的成員，我們建議您使用 Azure AD 群組。 Azure AD 群組、 管理透過 Windows Server AD 或 Office 365，讓您更多彈性，可使用巢狀的群組指派權限。
+ **最佳作法：** 雖然您可以使用 Office 365 或 Azure AD 群組作為 SharePoint 群組的成員，我們建議您使用 Azure AD 群組。 Azure AD 群組、 管理透過 AD DS 或 Office 365，讓您更多彈性，可使用巢狀的群組指派權限。
   
 以下是預設設定為使用 Azure AD 為基礎的存取群組的 SharePoint 群組。
   
@@ -95,9 +95,9 @@ Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組�
   
 在設計時三個存取群組，請謹記下列事項：
   
-- 應該只有幾個成員中的**\<網站 name> Admins**存取群組，對應至數目更少的 SharePoint Online 系統管理員負責管理小組網站。
+- 應該只有幾個成員中的**\<網站名稱> Admins**存取群組，對應至數目更少的 SharePoint Online 系統管理員負責管理小組網站。
     
-- 大部分的網站成員位於**\<網站 name> 成員**或**\<網站 name> Viewer**存取群組。 因為網站中的成員**\<網站 name> 成員**存取群組已刪除或修改網站中的資源，請仔細考慮其成員資格的能力。 有疑問，新增至網站成員**\<網站 name> Viewer**存取群組。
+- 大部分的網站成員位於**\<網站名稱> 成員**或**\<網站名稱> Viewer**存取群組。 因為網站中的成員**\<網站名稱> 成員**存取群組已刪除或修改網站中的資源，請仔細考慮其成員資格的能力。 有疑問，新增至網站成員**\<網站名稱> Viewer**存取群組。
     
 以下是範例為名為 ProjectX 隔離網站的存取群組與 SharePoint 群組。
   

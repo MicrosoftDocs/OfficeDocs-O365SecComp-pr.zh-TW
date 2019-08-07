@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 摘要： 管理隔離的 SharePoint Online 小組網站與這些程序。
-ms.openlocfilehash: 1670c806c799cdbd9ffa6d3c45568a3342b88815
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e6ed86421ec199ce785e2daff5e9c5447939e69b
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155815"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053078"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理獨立的 SharePoint Online 小組網站
 
@@ -35,11 +35,11 @@ ms.locfileid: "34155815"
     
 - 檢視： 將使用者帳戶新增至網站檢視者存取群組
     
-如果您要管理使用者帳戶和群組透過 Windows Server Active Directory (AD)，將適當的使用者新增至使用您一般 Windows Server AD 使用者和群組管理程序的適當的存取群組並同步處理與等候您Office 365 訂用帳戶。
+如果您要管理使用者帳戶和群組透過 Active Directory 網域服務 (AD DS)，將適當的使用者新增至適當的存取群組使用一般的 AD DS 使用者和群組管理程序，並等候與您的 Office 365 同步處理訂用帳戶。
   
-如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Office 系統管理中心或 Microsoft PowerShell:
+如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Microsoft 365 系統管理中心或 Microsoft PowerShell:
   
-- 針對 Office 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，將適當的使用者新增至適當的存取群組。
+- 針對 Microsoft 365 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，將適當的使用者新增至適當的存取群組。
     
 - Powershell 中，第一個[與 PowerShell 的 Azure Active Directory 針對 Graph 模組連線](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。 若要將使用者帳戶新增至其使用者主體名稱 (UPN) 存取群組，使用下列 PowerShell 命令區塊：
     
@@ -70,11 +70,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 - 檢視： 將群組新增至網站檢視者存取群組
     
-如果您要管理使用者帳戶和透過 Windows Server AD 群組，將適當的群組新增至適當的群組使用標準的 Windows Server AD 使用者和群組管理程序，並等待同步處理您的 Office 365 訂閱。
+如果您要管理使用者帳戶和透過 AD DS 群組，將適當的群組新增至適當的群組使用一般的 AD DS 使用者和群組管理程序，並等待同步處理您的 Office 365 訂閱。
   
-如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Office 系統管理中心或 PowerShell:
+如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Microsoft 365 系統管理中心或 PowerShell:
   
-- 針對 Office 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，將適當的群組新增至適當的存取群組。
+- 針對 Microsoft 365 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，將適當的群組新增至適當的存取群組。
     
 - Powershell 中，第一個[與 PowerShell 的 Azure Active Directory 針對 Graph 模組連線](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  然後，使用下列 PowerShell 命令：
@@ -95,11 +95,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
     
 - 檢視： 移除從網站檢視者存取群組的使用者帳戶
     
-如果您要管理使用者帳戶和透過 Windows Server AD 群組，從使用標準的 Windows Server AD 使用者和群組管理程序的適當的存取群組中移除適當的使用者，並等候與您的 Office 365 進行同步處理訂用帳戶。
+如果您要管理使用者帳戶和透過 AD DS 群組，從使用一般的 AD DS 使用者和群組管理程序適當的存取群組中移除適當的使用者，並等待同步處理您的 Office 365 訂閱。
   
-如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Office 系統管理中心或 PowerShell:
+如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Microsoft 365 系統管理中心或 PowerShell:
   
-- 針對 Office 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，從適當的存取群組中移除適當的使用者。
+- 針對 Microsoft 365 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，從適當的存取群組中移除適當的使用者。
     
 - Powershell 中，第一個[與 PowerShell 的 Azure Active Directory 針對 Graph 模組連線](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 若要移除其 upn 存取群組的使用者帳戶，請使用下列 PowerShell 命令區塊：
@@ -128,11 +128,11 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
     
 - 檢視： 移除從網站檢視者存取群組的群組
     
-如果您要管理使用者帳戶和透過 Windows Server Active Directory 群組，使用您一般 Windows Server AD 使用者和群組管理程序的適當的存取群組中移除適當的群組，並等候同步處理您Office 365 訂用帳戶。
+如果您要管理使用者帳戶和透過 Windows Server Active Directory 群組，從使用一般的 AD DS 使用者和群組管理程序的適當的存取群組中移除適當的群組，並等候與您的 Office 365 進行同步處理訂用帳戶。
   
-如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Office 系統管理中心或 PowerShell:
+如果您要管理使用者帳戶和群組透過 Office 365，您可以使用 Microsoft 365 系統管理中心或 PowerShell:
   
-- 針對 Office 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，從適當的存取群組中移除適當的群組。
+- 針對 Microsoft 365 系統管理中心中，使用已被指派的使用者帳戶系統管理員或公司系統管理員角色的使用者帳戶登入並使用群組，從適當的存取群組中移除適當的群組。
     
 - Powershell 中，第一個[與 PowerShell 的 Azure Active Directory 針對 Graph 模組連線](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。    
 若要使用他們的顯示名稱存取群組中移除群組，請使用下列 PowerShell 命令區塊：
@@ -167,9 +167,9 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 9. 按一下 [**授與權限 > 與 > 進階共用**]。
     
-10. 在 [權限] 頁面上，按一下 [**\<網站] 清單中的 name> 成員**。
+10. 在 [權限] 頁面上，按一下 [**\<網站清單中的名稱> 成員**。
     
-11. 在**\<網站 name> 成員**] 頁面上，選取之網站成員存取群組旁的核取記號、 按一下 [**動作]**、 按一下 [**移除使用者群組**]，然後按一下 [ **[確定]**。
+11. 在**\<網站名稱> 成員**] 頁面上，選取之網站成員存取群組旁的核取記號、 按一下 [**動作]**、 按一下 [**移除使用者群組**]，然後按一下 [ **[確定]**。
     
 12. 若要將特定成員新增至這個子資料夾，按一下 [**新 > 新增使用者**]。
     
@@ -177,9 +177,9 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 14. 重新整理 [web] 頁面上，以查看新的結果。
     
-15. 在左導覽中的**群組**] 底下按一下 [**\<網站 name> 訪客**群組，並使用步驟 11-14 指定 （視需要），可以檢視檔案的子資料夾中的使用者帳戶的集合。
+15. 在左導覽中的**群組**] 底下按一下 [**\<網站名稱> 訪客**群組，並使用步驟 11-14 指定 （視需要），可以檢視檔案的子資料夾中的使用者帳戶的集合。
     
-16. 在左導覽中的**群組**] 底下按一下 [**\<網站 name> 擁有者**群組，並使用步驟 11-14 指定 （視需要） 可以管理的子資料夾中的權限的使用者帳戶的集合。
+16. 在左導覽中的**群組**] 底下按一下 [**\<網站名稱> 擁有者**群組，並使用步驟 11-14 指定 （視需要） 可以管理的子資料夾中的權限的使用者帳戶的集合。
     
 17. 關閉瀏覽器中的 [**人員與群組**] 索引標籤。
     
