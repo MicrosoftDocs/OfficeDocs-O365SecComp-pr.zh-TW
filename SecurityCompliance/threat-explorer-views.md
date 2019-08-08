@@ -3,7 +3,7 @@ title: 威脅總管] 和 [即時偵測的資訊中的檢視
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解各種不同的威脅總管] 和 [即時偵測中可用的檢視。
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600816"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230387"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅總管] 和 [即時偵測的資訊中的檢視
 
@@ -72,9 +72,9 @@ ms.locfileid: "35600816"
 
 ![關於偵測到 URL 的詳細資料](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>電子郵件 > 使用者報告
+## <a name="email--submissions"></a>電子郵件 > 提交
 
-若要檢視這份報告，在瀏覽器 （或即時偵測的資訊） 中，選擇 [**檢視** > **電子郵件** > **使用者報告**。 這個檢視顯示電子郵件使用者會回報為垃圾郵件、 非垃圾郵件或網路釣魚電子郵件。 
+若要檢視這份報告，在瀏覽器 （或即時偵測的資訊） 中，選擇 [**檢視** > **電子郵件** > **送出資料**。 這個檢視顯示電子郵件使用者會回報為垃圾郵件、 非垃圾郵件或網路釣魚電子郵件。 
 
 ![使用者所回報的電子郵件](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ Explorer （與即時偵測的資訊），您可以套用中按一下 [篩選器
 
 ## <a name="queries-and-filters"></a>查詢及篩選
 
-Explorer （並即時偵測] 報告） 有數個功能強大的篩選器和查詢功能可讓您切入詳細資訊，例如頂端的目標使用者、 上方的惡意程式碼系列、 偵測技術等等。 每一種報表提供了許多方式可檢視和瀏覽資料。
+Explorer （以及即時偵測] 報告） 有數個功能強大的篩選器和查詢功能可讓您切入詳細資訊，例如頂端的目標使用者、 上方的惡意程式碼系列、 偵測技術等等。 每一種報表提供了許多方式可檢視和瀏覽資料。
 
 > [!IMPORTANT]
-> 請勿使用萬用字元，例如星號 （*） 或問號 （？），在瀏覽器 （或即時偵測的資訊） 的 [查詢] 列中。 當您搜尋電子郵件的主旨欄位時，檔案總管] （或即時偵測） 便會執行部分符合及收益結果類似萬用字元搜尋。
+> 請勿使用萬用字元，例如星號或問號，在瀏覽器 （或即時偵測的資訊） 的 [查詢] 列中。 當您搜尋電子郵件訊息的 [**主旨] 欄位**時，會執行部分比對檔案總管] （或即時偵測的資訊），並會產生類似萬用字元搜尋的結果。

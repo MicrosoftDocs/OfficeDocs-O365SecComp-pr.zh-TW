@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自動展開封存在 Office 365 中，可提供無限制的封存儲存 Exchange Online 信箱。
-ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158065"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231077"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>在 Office 365 中的無限制封存概觀
 
-在 Office 365 中封存信箱提供使用者額外信箱儲存空間。 啟用使用者的封存信箱之後，最多 100 GB 的額外儲存空間使用。 達到 100 GB 的儲存配額時，組織必須與 Microsoft 連絡到的封存信箱的要求額外儲存空間。 這不再是這種情況。 新的無限制封存功能 （稱為*自動展開封存*） 的 Office 365 中提供無限制的封存信箱中的儲存體數量。 現在，達到封存信箱中的儲存配額時，Office 365 會自動增加的封存，這表示使用者不會用盡信箱儲存空間和系統管理員不需要要求封存信箱的額外儲存空間.
+在 Office 365 中封存信箱提供使用者額外信箱儲存空間。 啟用使用者的封存信箱之後，最多 100 GB 的額外儲存空間使用。 在過去，當已達到 100 GB 的儲存配額，組織必須與 Microsoft 連絡到的封存信箱的要求額外儲存空間。 這不再是這種情況。
+
+Office 365 中的無限制封存功能 (稱為*自動展開封存*) 提供封存信箱中無限制的儲存空間量。 現在，達到封存信箱中的儲存配額時，Office 365 會自動增加的封存，這表示使用者不會用盡信箱儲存空間和系統管理員不需要要求封存信箱的額外儲存空間.
   
 如需逐步指示的開啟自動展開封存，請參閱[啟用 Office 365 中的無限制封存](enable-unlimited-archiving.md)。
   

@@ -1,7 +1,7 @@
 ---
 title: 針對 DLP 原則傳送電子郵件通知並顯示原則提示
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: dansimp
 ms.date: 06/14/2019
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '原則提示是通知或其他人正在使用的內容與 DLP 原則衝突時，會出現的警告。 您可以使用電子郵件通知和原則提示來增加知悉的變更，並協助教育人員需貴組織的原則。 您也可以的讓人員選擇覆寫原則，以便他們不會封鎖如果他們有有效的商務需要或原則會偵測誤判。 '
-ms.openlocfilehash: 524499c7d530115ad5938d0ec60616afe1d174ff
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600599"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231107"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 

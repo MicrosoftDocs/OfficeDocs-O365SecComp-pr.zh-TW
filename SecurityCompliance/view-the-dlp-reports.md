@@ -1,7 +1,7 @@
 ---
 title: 檢視資料外洩防護報告
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/7/2018
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則相符項目、 覆寫或誤判; 的數請參閱是否它們在一段時間; 趨勢向上或向下以不同方式; 篩選報表然後選取圖形上線條上的一點檢視其他詳細資料。
-ms.openlocfilehash: edca8ad8ae970453e6baf9c1910e17cc62568af5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077299"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230367"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 
@@ -73,7 +73,7 @@ ms.locfileid: "34077299"
   
 ## <a name="permissions-for-dlp-reports"></a>DLP 報告的權限
 
-若要檢視 DLP 報告中的安全性 & 合規性中心，您必須已獲指派:
+若要檢視 DLP 報告中安全性 & 合規性中心，您必須被指派:
 
 - 在 Exchange 系統管理中心中的**安全性讀取者**角色。 根據預設，此角色被指派給組織管理和安全性助讀程式在 Exchange 系統管理中心中的角色群組。
 

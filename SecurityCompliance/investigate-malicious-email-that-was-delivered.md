@@ -1,9 +1,9 @@
 ---
-title: 尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電子郵件
+title: 尋找並調查已傳遞 Office 365 中的惡意電子郵件
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/02/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165669"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230557"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>尋找並調查惡意電子郵件已傳遞 (Office 365 進階威脅防護計劃 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>尋找並調查已傳遞 Office 365 中的惡意電子郵件
 
 [Office 365 進階威脅防護](office-365-atp.md)可讓您調查，將您的使用者放在風險，並採取動作來保護您的組織活動。 例如，如果您是貴組織的安全性小組的一部分，您可以尋找和調查可疑的電子郵件已傳遞至您的使用者。 您可以使用[威脅總管 （或即時偵測的資訊）](threat-explorer.md)。
   
@@ -30,7 +30,7 @@ ms.locfileid: "36165669"
 
 請確定符合下列需求：
   
-- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)(Plan 2) 並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)，並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
 - [Office 365 稽核記錄](turn-audit-log-search-on-or-off.md)已為您的組織。 
     
