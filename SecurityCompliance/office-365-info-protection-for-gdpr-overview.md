@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 取得 GDPR 的 Office 365 資訊保護概觀。了解如何探索、分類、保護及監視個人資料。
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152485"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165659"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR 的 Office 365 資訊保護概觀
 
@@ -35,7 +35,7 @@ GDPR 規定個人資料的收集、儲存、處理及共用。在 GDPR 下，個
 
 這套解決方案旨在協助組織探索並保護 Office 365 中可能受到 GDPR 約束的個人資料。它不是作為 GDPR 規範認證提供的。組織有責任確保自己的 GDPR 規範，並建議諮詢其法律和規範團隊，或向專門從事規範工作的第三方尋求指導和建議。
 
-[GDPR 評估](https://assessment.microsoft.com/gdpr-compliance)是免費的快速線上自我評估工具，可協助您的組織檢閱其遵循 GDPR 的整體就緒程度。(<http://aka.ms/gdprassessment>)。
+[GDPR 評估](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D)是免費的快速線上自我評估工具，可協助您的組織檢閱其遵循 GDPR 的整體就緒程度。
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>評估和管理您的規範風險
 
@@ -47,7 +47,7 @@ GDPR 規定個人資料的收集、儲存、處理及共用。在 GDPR 下，個
 
 ![使用合規性管理員來檢視需求及追蹤進度](Media/Overview-image1.png)
 
-如需詳細資訊，請參閱[使用服務信任入口網站中的合規性管理員](https://support.office.com/zh-TW/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942)。 
+如需詳細資訊，請參閱[使用服務信任入口網站中的合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)。 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>步驟 2 — 使用內容搜尋和敏感資訊類型來尋找個人資料 
 

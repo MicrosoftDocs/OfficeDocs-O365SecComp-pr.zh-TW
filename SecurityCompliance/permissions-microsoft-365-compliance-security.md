@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
-ms.openlocfilehash: e08c082513a0ed382ca6b208082d38f1813636ce
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 99a50d625fb503fd12514dde39e0ffe01ea97a5e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168288"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36222773"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -66,7 +66,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 具有此角色的使用者有權限保護和追蹤 Microsoft 365 合規性中心、Microsoft 365 系統管理中心和 Azure 中的資料。 使用者也可以管理 Exchange 系統管理中心、合規性管理員、Teams 和商務用 Skype 系統管理中心內的所有功能，並建立適用於 Azure 和 Microsoft 365 的支援票證。
 
-|**在此服務中...**|**合規性系統管理員可以...**|
+|**在此服務中...**|**合規性資料系統管理員可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合規性中心**](https://compliance.microsoft.com/)|保護和管理組織在所有 Microsoft 365 服務中的資料。 <br/><br/> 管理合規性警示。 <br/><br/> 管理敏感度標籤|
 |[**合規性管理員**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
@@ -78,7 +78,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 具有此角色的使用者有權限管理 Microsoft 365 安全性中心、Azure Active Directory Identity Protection、Azure 資訊保護和 Office 365 安全性與合規性中心中的安全性相關功能。
 
-|**在此服務中...**|**合規性系統管理員可以...**|
+|**在此服務中...**|**安全性系統管理員可以...**|
 |:-----|:-----|
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|監視所有 Microsoft 365 服務的安全性相關原則。 <br/><br/>  管理安全性威脅和警示。 <br/><br/> 檢視報告。 <br/><br/> 管理敏感度標籤。|
 |**身分識別保護中心**|執行安全性讀取者角色可執行的所有動作，並執行所有身分識別保護中心的作業，除了重設密碼之外。|
@@ -95,7 +95,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 具備此角色的使用者可管理警示，並具有安全性相關功能的全域唯讀存取權 (含 Microsoft 365 安全性中心、Azure Active Directory、身分識別保護、Privileged Identity Management 中的所有資訊)，並能讀取 Azure Active Directory 登入報告與稽核記錄，且具有 Office 365 安全性與合規性中心的全域唯讀存取權。
 
-|**在此服務中...**|**合規性系統管理員可以...**|
+|**在此服務中...**|**安全性系統操作員可以...**|
 |:-----|:-----|
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應安全性警示。|
 |**身分識別保護中心** (即將推出)|執行安全性讀取者角色可執行的所有動作。|
@@ -110,7 +110,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 具備此角色的使用者具有安全性相關功能的全域唯讀存取權 (含 Microsoft 365 資訊安全中心、Azure Active Directory、Identity Protection、Privileged Identity Management 中的所有資訊)，並能讀取 Azure Active Directory 登入報告與稽核記錄，且具有 Office 365 安全性與合規性中心的全域唯讀存取權。
 
-|**在此服務中...**|**合規性系統管理員可以...**|
+|**在此服務中...**|**安全性系統讀取者可以...**|
 |:-----|:-----|
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|檢視所有 Microsoft 365 服務的安全性相關原則。 <br/><br/> 檢視安全性威脅和警示。 <br/><br/> 檢視報告。|
 |**身分識別保護中心**|讀取有關安全性功能的所有安全性報告和設定資訊：反垃圾郵件、加密、資料遺失防護 (DLP)、反惡意程式碼、進階威脅防護 (ATP)、反網路釣魚和郵件流程規則 (也稱為傳輸規則)。|
