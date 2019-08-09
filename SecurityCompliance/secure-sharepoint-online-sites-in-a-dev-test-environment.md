@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在開發/測試環境中建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: 148db19c8902735829a5849901723b5f2f200b74
-ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
+ms.openlocfilehash: bc17f5a4009b7a967a395084e8a058c45bbad82e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "35059541"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053130"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在開發/測試環境中保護 SharePoint Online 網站
 
@@ -183,7 +183,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 1. 從瀏覽器的 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
     
-2. 從瀏覽器的新 [Office 系統管理中心]**** 索引標籤中，按一下 [使用者]****。
+2. 從瀏覽器的新 [Microsoft 365 系統管理中心]**** 索引標籤中，按一下 [使用者]****。
     
 3. 在使用者清單中，按一下 [CEO]****。
     

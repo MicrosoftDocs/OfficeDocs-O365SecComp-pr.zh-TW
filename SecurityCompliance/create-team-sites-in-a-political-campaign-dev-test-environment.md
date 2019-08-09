@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: 3e0a79a0e521ab193685511cef59bcfa3fa68896
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bade24bbe0ebcf56007a7b5650ee5a55fc3697b6
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151155"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053110"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 
@@ -41,7 +41,7 @@ ms.locfileid: "34151155"
     
 2. 從 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
     
-3. 從瀏覽器的新 [Office 系統管理中心]**** 索引標籤中，按一下 [系統管理中心] > [安全性 &amp; 合規性]****。
+3. 從瀏覽器的新 [Microsoft 365 系統管理中心]**** 索引標籤中，按一下 [系統管理中心] > [安全性與合規性]****。
     
 4. 從瀏覽器的新 [首頁 - 安全性 &amp; 合規性]**** 索引標籤中，按一下 [分類] > [標籤]****。
     
