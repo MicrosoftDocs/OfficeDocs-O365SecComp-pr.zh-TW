@@ -16,7 +16,7 @@ ms.collection:
 description: 摘要： 本文說明如何更新網域名稱服務 (DNS) 記錄，使您可以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。 使用 SPF 協助驗證自您自訂網域傳送的輸出電子郵件。
 ms.openlocfilehash: 15472900986a367e084c6126580cef85d286a94b
 ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/25/2019
 ms.locfileid: "35854787"
@@ -41,13 +41,13 @@ ms.locfileid: "35854787"
     
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>更新 Office 365 的 SPF TXT 記錄
 
-在 DNS 中更新 TXT 記錄之前，您需要收集一些資訊，並判斷記錄的格式。這有助於防止產生 DNS 錯誤。如需進階範例、有關支援的 SPF 語法的更詳細討論，請參閱 [若要防止詐騙及 Office 365 中的網路釣魚 SPF 的運作方式](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
+在 DNS 中更新 TXT 記錄之前，您需要收集一些資訊，並判斷記錄的格式。這有助於防止產生 DNS 錯誤。如需進階範例、有關支援的 SPF 語法的更詳細討論，請參閱 [ SPF 如何運作以防止 Office 365 中的詐騙和網路釣魚](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
   
 收集這項資訊：
   
 - 您網域的目前 SPF TXT 記錄。如需相關指示，請參閱[收集建立 Office 365 DNS 記錄所需的資訊](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。
     
-- 所有內部部署訊息伺服器的 IP 位址。例如， **192.168.0.1**。
+- 所有內部部署訊息伺服器的 IP 位址。例如，**192.168.0.1**。
     
 - 要使用的網域名稱，針對您需要包含在 SPF TXT 記錄中的所有協力廠商網域。某些大量郵件提供者已設定要用於他們的客戶的子網域。例如，公司 MailChimp 已設定 **servers.mcsv.net**。
     
@@ -61,39 +61,39 @@ ms.locfileid: "35854787"
 |:-----|:-----|:-----|:-----|
 |1  <br/> |任何電子郵件系統 (必要項)  <br/> |通用。以此值開頭的所有 SPF TXT 記錄  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online  <br/> |通用  <br/> |include:spf.protection.outlook.com  <br/> |
-|3  <br/> |僅限 Exchange Online 專用  <br/> |不通用  <br/> |ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include: spf.protection.outlook.com  <br/> |
+|3  <br/> |僅限 Exchange Online 專用  <br/> |不通用  <br/> |ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com  <br/> |
 |4  <br/> |僅限 Office 365 德國、Microsoft Cloud 德國  <br/> |不通用  <br/> |include:spf.protection.outlook.de  <br/> |
 |5  <br/> |協力廠商電子郵件系統  <br/> |不通用  <br/> |包括：\<網域名稱\>  <br/> 其中網域名稱是協力廠商電子郵件系統的網域名稱。  <br/> |
 |6  <br/> |內部部署郵件系統例如，Exchange Online Protection 加上另一個郵件系統  <br/> |不通用  <br/> | 對每個額外郵件系統使用其中一個︰  <br/>  ip4：\<  _IP address_\>  <br/>  ip6：\<  _IP address_\>  <br/>  包括︰\<  _domain name_\>  <br/>  其中 \<  _IP address_\> 的值是其他郵件系統的 IP 位址，\< _domain name_\> 是代表您的網域傳送郵件的其他郵件系統的網域名稱。  <br/> |
 |7  <br/> |任何電子郵件系統 (必要項)  <br/> |通用。以此值結束的所有 SPF TXT 記錄  <br/> |\< _enforcement rule_\>  <br/> 這可以是數個值其中之一。建議您使用 **-all**。  <br/> |
    
-1.1，例如，如果您是完全裝載於 Office 365，也就是您有任何內部郵件伺服器上，您的 SPF TXT 記錄會包含 1、 2 和 7 的資料列和看起來像這樣：
+1.1  例如，如果您已完全裝載於 Office 365，也就是您沒有內部部署郵件伺服器，您的 SPF TXT 記錄會包含 1、2 和 7 的資料列，並且看起來如下：
     
   ```
    v=spf1 include:spf.protection.outlook.com -all
   ```
 
-1.2 這是最常見的 Office 365 SPF TXT 記錄。 此記錄適用於幾乎所有人，不論是否您 Office 365 資料中心位於美國，或在歐洲 （包括德國），或在另一個位置。
+1.2  這是最通用的 Office 365 SPF TXT 記錄。 這筆記錄可供絕大部分人使用，無論您的 Office 365 資料中心是設於美國、歐洲 (包括德國) 或其他地方。
     
-1.3 不過，如果您已購買 Office 365 Germany，組件的 Microsoft Cloud 德國，您應該使用從第 4 行的 include 陳述式而不是第 2 行。 例如，如果您是完全裝載於 Office 365 Germany，也就是您有任何內部郵件伺服器上，您的 SPF TXT 記錄會包含 1、 4 和 7 的資料列和看起來像這樣：
+1.3  不過，如果您已購買 Office 365 Germany (為 Microsoft Cloud Germany 的一部分)，您需要使用第 4 行所包含的陳述式，而不是第 2 行。 例如，如果您已經完全裝載於 Office 365 Germany，也就是您沒有內部部署郵件伺服器，您的 SPF TXT 記錄會包含 1、4 和 7 的資料列，並且看起來如下：
     
   ```
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-1.4 如果您已部署 Office 365 中並已設定您的 SPF TXT 記錄的自訂網域，而且您即將移轉至 Office 365 Germany，您需要更新您的 SPF TXT 記錄。 若要這麼做，請變更**include: spf.protection.outlook.com**為**include:spf.protection.outlook.de**。
+1.4  如果您已部署 Office 365，並已為您的自訂網域設定 SPF TXT 記錄，且正在移轉至 Office 365 Germany，您將需要更新 SPF TXT 記錄。 若要這樣做，請將 **include:spf.protection.outlook.com** 變更至 **include:spf.protection.outlook.de**。
     
-2. 一旦您已形成 SPF TXT 記錄，您必須更新 dns 記錄。 您只能有一個網域的 SPF TXT 記錄。 如果 SPF TXT 記錄存在，而不是新增新的記錄，您需要更新現有的記錄。 移到[建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)，，然後按一下 [您的 DNS 主機的連結。 
+2. 一旦您已形成 SPF TXT 記錄，您需要在 DNS 中更新記錄。 您的網域只能有一個 SPF TXT 記錄。 如果存在 SPF TXT 記錄，請不要新增新的記錄，而是必須更新現有的記錄。 移至[建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)，然後按一下您的 DNS 主機的連結。 
     
 3. 測試您的 SPF TXT 記錄。
     
 ## <a name="more-information-about-spf"></a>關於 SPF 的詳細資訊
 
-如需進階範例、有關支援的 SPF 語法、詐騙、疑難排解，以及 Office 365 如何支援 SPF 的更詳細討論，請參閱 [若要防止詐騙及 Office 365 中的網路釣魚 SPF 的運作方式](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
+如需進階範例、有關支援的 SPF 語法、詐騙、疑難排解，以及 Office 365 如何支援 SPF 的更詳細討論，請參閱 [SPF 如何運作以防止 Office 365 中的詐騙和網路釣魚](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
   
 ## <a name="next-steps-after-you-set-up-spf-for-office-365"></a>後續步驟：為 Office 365 設定 SPF 之後
 
-無法使用您的 SPF TXT 記錄嗎?請參閱[疑難排解： 的 SPF Office 365 中的最佳作法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
+無法使用您的 SPF TXT 記錄嗎?請參閱[疑難排解：Office 365 中 SPF 的最佳作法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
   
  SPF 是設計來協助防止詐騙，但是有 SPF 無法防護的詐騙技術。為了防止這些項目，設定 SPF 之後，您也應該為 Office 365 設定 DKIM 和 DMARC。若要開始使用，請參閱 [使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。接下來，請參閱[使用 DMARC 來驗證 Office 365 電子郵件](use-dmarc-to-validate-email.md)。
   
