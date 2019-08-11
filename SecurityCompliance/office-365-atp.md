@@ -1,105 +1,107 @@
 ---
 title: Office 365 進階威脅防護
-ms.author: deniseb
-author: denisebmsft
-manager: laurawi
+ms.author: tracyp
+author: msfttracyp
+manager: dansimp
 ms.date: 03/28/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
-description: Office 365 進階威脅防護包括安全附件、 安全連結、 進階的反網路釣魚工具、 報告工具和威脅智慧功能。
-ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
-ms.translationtype: MT
+description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
+ms.openlocfilehash: ca948fdd99ca04830ecb7685ed8930a71345299f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408378"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231087"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
 > [!IMPORTANT]
-> 本文適用於 Office 365 企業版和 Microsoft 365 企業版客戶。 如果您使用 Outlook.com、 Office 365 家用版、 Office 365 個人或，而且您正在尋找在 Outlook 中的安全連結的相關資訊，請參閱 <<c0>進階 Outlook.com 安全性。
+> 本文適用於擁有 [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企業客戶。 如果您使用 Outlook.com、Office 365 家用版或 Office 365 個人版，並且在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="overview"></a>概觀
 
-Office 365 進階威脅防護 (ATP) 會保護您的組織抵禦惡意電子郵件、 連結 (Url) 及共同作業工具所造成的威脅。 ATP 包含：
+Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 ATP 包括：
 
-- [威脅防護原則](#configure-atp-policies)： 定義威脅防護原則，以設定適當的組織保護層級。 
+- [威脅防護原則](#configure-atp-policies)：定義威脅防護原則，用來為組織設定適當的保護層級。 
 
-- [報告](#view-atp-reports)： 檢視即時報告來監視您組織中的 ATP 效能。 
+- [報告](#view-atp-reports)：檢視即時報告來監控組織中 ATP 的效能。 
 
-- [威脅調查及回應功能](#use-threat-investigation-and-response-capabilities)： 使用前置 edge 工具來調查、 了解、 模擬，並防止潛在威脅。 
+- [威脅調查與回應功能](#use-threat-investigation-and-response-capabilities)：使用先進的工具來調查、了解、模擬以及防止潛在威脅。 
 
-- [自動化調查及回應功能](#save-time-with-automated-investigation-and-response)： 節省時間和精力調查，並降低威脅。
+- [自動調查及回應功能](#save-time-with-automated-investigation-and-response)：節省調查和減輕威脅的時間和精力。
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 計劃 1 和計劃 2
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
 
-ATP 隨附於 Office 365 E5;不過，ATP 計劃和 ATP 計劃 2 可分別做為特定的訂閱的附加元件。 若要深入了解，請參閱 <<c0>不同 ATP 計劃中的可用功能。
+ATP 包含在 Office 365 E5 中。不過，ATP 方案 1 和 ATP 方案 2 各為附加元件形式提供某些訂閱使用。 若要深入了解，請參閱 [ATP 方案中功能的可用性](https://docs.microsoft.com/zh-TW/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="configure-atp-policies"></a>設定 ATP 原則
 
-Office 365 ATP 提供許多工具來設定適當的組織保護層級。 
+Office 365 ATP 提供許多工具來為組織設定適當層級的保護。 
 
-貴組織的安全性小組必須在 Office 365 安全性 & 合規性中心中定義每個 ATP 工具的原則。 移至**威脅管理，** > **原則**，以存取原則選項。 (若要取得此問題的一些協助，請參閱[快速入門指南： 設定 Office 365 進階威脅防護](checklist-atp-setup.md)。)
+組織的安全性小組必須在 Office 365 安全性與合規性中心為每個 ATP 工具定義原則。 移至 [威脅管理]****  >  [原則]**** 以存取原則選項。 (若要取得此動作的一些相關說明，請參閱[快速入門指南：設定 Office 365 進階威脅防護](checklist-atp-setup.md)。)
 
-針對您組織所定義的原則決定預先定義的威脅的行為和保護層級。 原則選項是相當有彈性。 例如，貴組織的安全性小組可以在使用者、 組織、 收件者及網域層級設定微調威脅防護。 請務必定期檢閱您的原則因為新的威脅與挑戰浮現每日。  
+為您的組織定義的原則會決定預先定義的威脅的行為和保護層級。 原則選項極具彈性。 例如，組織的安全性小組也可以在使用者、組織、收件者和網域層級設定微調的威脅防護。 因為新威脅及挑戰每天都會出現，請務必定期檢閱您的原則。  
 
-- [ATP 安全附件](atp-safe-attachments.md)： 提供零時差保護來保護郵件系統，藉由檢查電子郵件附件為惡意內容。 它路由傳送所有郵件和附件，不需要特殊環境中，病毒/惡意程式碼簽章]，然後會使用機器學習和分析技術來偵測惡意意圖。 如果不找到任何可疑的活動，則郵件會轉送到信箱。 若要深入了解，請參閱 <<c0>設定 Office 365 ATP 安全附件原則。
+- [ATP 安全附件](atp-safe-attachments.md)：透過檢查電子郵件附件中的惡意內容，提供零時差保護，以保護您的郵件系統。 它會將沒有病毒/惡意程式碼簽章的所有郵件與附件路由傳送至特殊的環境，然後使用機器學習和分析技術來偵測惡意意圖。 如果找不到任何可疑的活動，便會將郵件轉寄到信箱。 若要深入了解，請參閱[設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)。
 
-- [ATP 安全連結](atp-safe-links.md)： 提供電子郵件訊息和 Office 檔案中的時間按一下 [驗證的 Url。 保護持續進行，並套用您的通訊和 Office 環境。 連結掃描的每個 click： 安全連結仍然可以存取和動態封鎖惡意連結。 若要深入了解，請參閱 <<c0>設定 Office 365 ATP 安全連結原則。 
+- [ATP 安全連結](atp-safe-links.md)：提供 URL 的點擊時驗證 (例如在電子郵件訊息和 Office 檔案中)。 保護會持續進行，並在您郵件和 Office 環境間套用。 每次按一下連結時掃描：安全連結仍保持可存取，並且以動態方式封鎖惡意連結。 若要深入了解，請參閱[設定 Office 365 ATP 安全連結原則](https://docs.microsoft.com/zh-TW/office365/securitycompliance/set-up-atp-safe-links-policies)。 
 
-- [適用於 SharePoint、 OneDrive 及 Microsoft Teams ATP](atp-for-spo-odb-and-teams.md)： 會保護您的組織，當使用者共同作業和共用檔案，藉由識別和封鎖惡意檔案小組網站和文件庫。 若要深入了解，請參閱[開啟 Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)。 
+- [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)：透過找出並封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時保護您的組織。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 開啟 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。 
 
-- [ATP 防網路釣魚保護](atp-anti-phishing.md)： 偵測到嘗試模擬您的使用者與自訂的網域。 它會套用機器學習模型和進階的模擬偵測演算法來說明網路釣魚攻擊。 若要深入了解，請參閱 < <b0>Set up Office 365 ATP 防網路釣魚和防網路釣魚原則</b0>。
+- [ATP 防網路釣魚保護](atp-anti-phishing.md)：偵測模擬使用者和自訂網域的嘗試。 適用於電腦學習模型和進階模擬偵測演算法，以避免網路釣魚攻擊。 若要深入了解，請參閱[設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則](set-up-anti-phishing-policies.md)。
 
 ## <a name="view-atp-reports"></a>檢視 ATP 報告
 
-Office 365 ATP 包含進階[報告儀表板](view-reports-for-atp.md)來監視您 ATP 的效能。 您可以在**報告 > 儀表板**存取它的安全性 & 合規性中心中。 
+Office 365 ATP 包含進階的[報告儀表板](view-reports-for-atp.md)以監控 ATP 效能。 您可以在安全性與合規性中心的 [報告] > [儀表板]**** 存取它。 
 
-更新中的報表即時，提供您最新的深入資訊。 這些報告也會提供建議和提醒您即將威脅。 下面是預先定義的報告： 
+報告會即時更新，提供您最新的深入解析。 這些報告也提供建議並警示您即將發生的潛在威脅。 預先定義的報告包括下列： 
 
-- [威脅總管 （或即時偵測的資訊）](threat-explorer.md)
+- [威脅總管 (或即時偵測)](threat-explorer.md)
 
-- [威脅保護狀態報表](view-reports-for-atp.md#threat-protection-status-report)
+- [威脅防護狀態報告](view-reports-for-atp.md#threat-protection-status-report)
 
-- [ATP 檔案類型的報告](view-reports-for-atp.md#atp-file-types-report)
+- [ATP 檔案類型報告](view-reports-for-atp.md#atp-file-types-report)
 
-- [ATP 郵件處理報表](view-reports-for-atp.md#atp-message-disposition-report)
+- [ATP 郵件處置報告](view-reports-for-atp.md#atp-message-disposition-report)
 
-- ...等等。 
+- 還有更多。 
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>使用威脅調查及回應功能
 
-Office 365 ATP 計劃 2 包含適合的類別[威脅調查及回應工具](office-365-ti.md)，可讓您組織的安全性小組，以預測，了解，並防止惡意攻擊。 
+Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](office-365-ti.md)，可讓組織的安全性小組預期、了解和防止惡意攻擊。 
 
-- [威脅追蹤器](threat-trackers.md)提供最新智慧主流 cybersecurity 問題。 例如，您可以檢視最新惡意程式碼的相關資訊，並採取的因應對策之前就會變成組織實際威脅。 可用的追蹤器包括[值得注意的追蹤器](threat-trackers.md#noteworthy-trackers)、[趨勢追蹤器](threat-trackers.md#trending-trackers)、[追蹤查詢](threat-trackers.md#tracked-queries)，以及[已儲存查詢](threat-trackers.md#saved-queries)。
+- [威脅追蹤工具](threat-trackers.md)提供有關戰勝網路安全性問題的最新情報。 例如，您可以檢視有關最新惡意程式碼的資訊，並在它成為組織的實際威脅之前便採取措施。 可用的追蹤器包括：[值得注意的追蹤器](threat-trackers.md#noteworthy-trackers)、[趨勢追蹤器](threat-trackers.md#trending-trackers)、[追蹤的查詢](threat-trackers.md#tracked-queries)和[已儲存的查詢](threat-trackers.md#saved-queries)。
 
-- [威脅總管 （或即時偵測的資訊）](threat-explorer.md)（也稱為總管） 是即時報告，可讓您識別和分析最近的威脅。 您可以設定自訂期間顯示資料的檔案總管。
+- [威脅總管 (或即時偵測)](threat-explorer.md) (也稱為檔案總管) 是即時的報告，可讓您識別並分析最近的威脅。 您可以設定檔案總管來顯示自訂期間的資料。
 
-- [攻擊模擬器](attack-simulator.md)可讓您識別 vulnerabilites 您組織中執行真實的攻擊案例。 目前類型的攻擊模擬可供使用，包括[顯示名稱矛網路釣魚攻擊](attack-simulator.md#display-name-spear-phishing-attack)、[密碼噴灑攻擊](attack-simulator.md#password-spray-attack)、[暴力密碼攻擊](attack-simulator.md#brute-force-password-attack)，等等。
+- [攻擊模擬器](attack-simulator.md)可讓您在組織中執行真實化攻擊案例以找出漏洞。 目前攻擊類型的模擬可供使用，包括[顯示名稱魚叉式網路釣魚攻擊](attack-simulator.md#display-name-spear-phishing-attack)、[密碼噴濺攻擊](attack-simulator.md#password-spray-attack)、[暴力密碼破解攻擊](attack-simulator.md#brute-force-password-attack)等。
     
-## <a name="save-time-with-automated-investigation-and-response"></a>節省時間，以自動化的調查及回應
+## <a name="save-time-with-automated-investigation-and-response"></a>利用自動調查及回應節省時間
 
-(**新增 ！**)當您正在調查潛在的網路攻擊時，時間是本質。 您可以在更快速地找出並降低威脅，將會愈高，您的組織。 Office 365 ATP 計劃 2 現在會包括[自動化的調查及回應 （空調）](automated-investigation-response-office.md)功能。 （如果您沒有這些功能，您必須加以推出 ATP 計劃 2。）
+(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您的組織的處境便愈好。 Office 365 ATP 方案 2 現在將包含[自動調查及回應 (AIR)](automated-investigation-response-office.md) 功能。 (如果您尚沒有這些功能，您會隨著 ATP 方案 2 取得這些功能。)
 
-空調包含一組的安全性 playbooks 可啟動自動，例如時就會觸發警示，或以手動方式，例如從瀏覽器中檢視。 空調可以儲存安全性作業小組時間和精力降低威脅，有效的方式。 若要深入了解，請參閱[自動化調查及回應 （空調） 與 Office 365](automated-investigation-response-office.md)。
+AIR 包含一組安全性劇本，可以自動啟動 (例如當警示觸發時)，或手動啟動 (例如從檔案總管中的檢視)。 AIR 可以在緩和威脅方面有效也有效率地節省您安全性作業小組的時間和精力。 若要深入了解，請參閱[使用 Office 365 自動調查及回應 (AIR)](automated-investigation-response-office.md)。
 
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的權限
 
-若要存取安全性 & 合規性中心中的 ATP 功能，您必須獲指派適當的角色。 下表包含一些範例：
+若要存取安全性與合規性中心的 ATP 功能，您必須獲指派適當的角色。 下表包括一些範例：
 
-|角色或角色群組  |若要了解更多的資源  |
+|角色或角色群組  |可深入了解的資源  |
 |---------|---------|
 |Office 365 全域系統管理員 |[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|安全性系統管理員 |[在 Azure Active Directory 系統管理員角色權限](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online 組織管理 |[權限在 Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>與<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|安全性系統管理員 |
+  [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/zh-TW/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online 組織管理 |
+  [Exchange Online 中的權限](https://docs.microsoft.com/zh-TW/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 如需詳細資訊，請參閱：
 
@@ -109,18 +111,19 @@ Office 365 ATP 計劃 2 包含適合的類別[威脅調查及回應工具](offic
 
 ## <a name="get-office-365-atp"></a>取得 Office 365 ATP
 
-Office 365 ATP 計劃 2 隨附於 Office 365 企業版 E5，Office 365 教育版 A5，Microsoft 365 商務版。 如果您的訂閱未包含 Office 365 ATP，您可以為特定的訂閱的附加元件購買 ATP 方案 1 或 ATP 計劃 2。 若要深入了解，請參閱下列資源：
+Office 365 ATP 方案 2 包含在 Office 365 企業版 E5、Office 365 教育版 A5 和 Microsoft 365 商務版中。 如果您的訂閱不包含 Office 365 ATP，您可以以附加元件形式為特定訂閱購買 ATP 方案 1 或 ATP 方案 2。 若要深入了解，請參閱下列資源：
 
-- 如需訂閱包含 ATP 計劃的清單，請參閱[Office 365 進階威脅防護 (ATP) 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)。
+- 請參閱 [Office 365 進階威脅防護 (ATP) 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)以取得包含 ATP 方案的訂閱清單。
 
-- 如需方案 1 和 2 中所包含的功能清單，請參閱[進階威脅防護 (ATP) 計劃的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 請參閱[各進階威脅防護 (ATP) 計劃中可用的功能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)以取得方案 1 和 2 中包含的功能清單。
 
-- 若要比較方案，並購買 Office 365 ATP[取得 Office 365 進階威脅防護的權限](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)，請參閱。
+- 請參閱[取得適合的 Office 365 進階威脅防護](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)以比較方案及購買 Office 365 ATP。
 
-## <a name="new-features-in-office-365-atp"></a>Office 365 ATP 中新功能
+## <a name="new-features-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
 新功能會持續新增至 Office 365 ATP。 若要深入了解，請參閱下列資源：
 
-- [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供在開發和推出新功能的清單。
+- [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供開發中和正在推出的新功能清單。
 
-- [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)說明 ATP 計劃的功能和可用性。
+- 
+  [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/zh-TW/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)描述各 ATP 方案的功能和可用性。
