@@ -6,6 +6,7 @@
 ## [新的 Microsoft 365 安全性中心和 Microsoft 365 合規性中心](microsoft-security-and-compliance.md)
 ### [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)
 ### [Microsoft 365 安全性中心](overview-security-center.md)
+### [Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限](permissions-microsoft-365-compliance-security.md)
 ### [Microsoft 安全分數](microsoft-secure-score.md)
 ## [前往安全性與合規性中心](go-to-the-securitycompliance-center.md)
 ### [安全規範中心的權限](permissions-in-the-security-and-compliance-center.md)
@@ -344,7 +345,7 @@
 #### [將資料新增至另一個檢閱集](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [管理載入集](compliance20/manage-load-sets.md)
 
-### [檢閱案例資料](compliance20/reviewing-data-in-review-set.md)
+### 檢閱案例資料
 #### [檢視檢閱集中的文件](compliance20/view-documents-in-review-set.md)
 #### [查詢檢視集中的資料](compliance20/review-set-search.md)
 #### [標記檢閱集中的文件](compliance20/tagging-documents.md)
@@ -362,7 +363,7 @@
 
 ### [管理工作](compliance20/managing-jobs-ediscovery20.md)
 
-### [設定案例設定](compliance20/configuring-case-settings-ediscovery20.md)
+### 設定案例設定
 #### [關閉或刪除案例](compliance20/close-or-delete-case.md)
 #### [從案例新增或移除成員](compliance20/add-remove-members.md)
 #### [設定搜尋和分析設定](compliance20/configure-search-analytics-settings.md)
