@@ -52,7 +52,7 @@
 ### [觀看自訂的 DLP 延伸概觀](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)
 ### [自訂敏感性資訊類型](custom-sensitive-info-types.md)
-### [使用精確資料比對建立自訂敏感性資訊類型 (預覽)](create-custom-sensitive-info-type-edm.md)
+### [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 ### [在安全性與合規性中心建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type.md)
 ### [使用 PowerShell 建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [建立關鍵字字典](create-a-keyword-dictionary.md)
