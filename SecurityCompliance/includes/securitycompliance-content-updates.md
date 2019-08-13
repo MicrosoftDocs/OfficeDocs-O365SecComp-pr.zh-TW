@@ -3,30 +3,6 @@
 
 
 
-## <a name="week-of-july-01-2019"></a>2019 年 7 月 01 日當週
-
-
-| 發佈時間 |主題標題 | 變更 |
-|------|------------|--------|
-| 7/1/2019 | [尋找並調查惡意 （Office 365 威脅調查及回應已傳送的電子郵件](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改時間 |
-| 7/1/2019 | [Office 365 安全性 & 合規性中心的權限](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 修改時間 |
-| 7/1/2019 | [在安全性 & 合規性中心 PowerShell 中建立自訂機密資訊類型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | 修改時間 |
-| 7/1/2019 | [資料外洩防護和 Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | 修改時間 |
-| 7/2/2019 | [在 Office 365 中封存第三方資料](/Office365/SecurityCompliance/archiving-third-party-data) | 修改時間 |
-| 7/2/2019 | [Exchange Online 如何保護您的電子郵件機密資料](/Office365/SecurityCompliance/exchange-online-secures-email-secrets) | 修改時間 |
-| 7/2/2019 | [使用內容搜尋來搜尋協力廠商資料匯入至 Office 365](/Office365/SecurityCompliance/use-content-search-to-search-third-party-data-that-was-imported) | 修改時間 |
-| 7/2/2019 | [資料外洩防護和 Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | 修改時間 |
-| 7/2/2019 | [大量編輯內容搜尋](/Office365/SecurityCompliance/bulk-edit-content-searches) | 修改時間 |
-| 7/2/2019 | [Office 365 稽核記錄中的詳細內容](/Office365/SecurityCompliance/detailed-properties-in-the-office-365-audit-log) | 修改時間 |
-| 7/2/2019 | [Office 365 中的 eDiscovery](/Office365/SecurityCompliance/ediscovery) | 修改時間 |
-| 7/2/2019 | [保留原則概觀](/Office365/SecurityCompliance/retention-policies) | 修改時間 |
-| 7/2/2019 | [在安全性 & 規範中心搜尋稽核記錄](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改時間 |
-| 7/2/2019 | [使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單](/Office365/SecurityCompliance/search-the-mailbox-and-onedrive-for-business-for-a-list-of-users) | 修改時間 |
-| 7/2/2019 | [稽核共用來找出與外部使用者共用的資源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改時間 |
-| 7/2/2019 | [針對資訊障礙原則屬性](/Office365/SecurityCompliance/information-barriers-attributes) | 修改時間 |
-| 7/3/2019 | [在安全性與合規性中心中的警示原則](/Office365/SecurityCompliance/alert-policies) | 修改時間 |
-
-
 ## <a name="week-of-july-08-2019"></a>2019 年 7 月 08 日當週
 
 
@@ -361,3 +337,70 @@
 | 8/2/2019 | [處理資料時發生補救錯誤](/Office365/SecurityCompliance/compliance20/error-remediation) | 修改時間 |
 | 8/2/2019 | [內容搜尋的關鍵字查詢與搜尋條件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 修改時間 |
 | 8/2/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
+
+
+## <a name="week-of-august-05-2019"></a>2019 年 8 月 05 日當週
+
+
+| 發佈時間 |主題標題 | 變更 |
+|------|------------|--------|
+| 8/6/2019 | [Microsoft 365 合規性中心與 Microsoft 365 安全性中心的權限](/Office365/SecurityCompliance/permissions-microsoft-365-compliance-security) | 修改時間 |
+| 8/6/2019 | [使用 DKIM 在 Office 365 中的自訂網域中的電子郵件](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | 修改時間 |
+| 8/6/2019 | [在 Office 365 中，O365 提交，Office 365 垃圾郵件問題，O365 誤判系統提交提交 office 365 中的釣魚程式、 送出掃描、 可疑的電子郵件，Office 365 中的電子郵件、 掃描郵件、 有 Microsoft 掃描的釣魚程式]，讓 Microsoft 的垃圾郵件掃描巨集、 送出電子郵件、 送出電子郵件](/Office365/SecurityCompliance/admin-submission) | 修改時間 |
+| 8/7/2019 | [威脅總管] 和 [即時偵測](/Office365/SecurityCompliance/threat-explorer) | 修改時間 |
+| 8/7/2019 | [Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 修改時間 |
+| 8/7/2019 | [Office 365 ATP 安全附件](/Office365/SecurityCompliance/atp-safe-attachments) | 修改時間 |
+| 8/7/2019 | [Office 365 ATP 安全連結警告頁面](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 修改時間 |
+| 8/7/2019 | [Office 365 ATP 安全連結](/Office365/SecurityCompliance/atp-safe-links) | 修改時間 |
+| 8/7/2019 | [在安全性 & 合規性中心 PowerShell 中建立自訂機密資訊類型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | 修改時間 |
+| 8/7/2019 | [在安全性 & 合規性中心建立自訂機密資訊類型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 修改時間 |
+| 8/7/2019 | [從範本建立 DLP 原則](/Office365/SecurityCompliance/create-a-dlp-policy-from-a-template) | 修改時間 |
+| 8/7/2019 | [建立關鍵字字典](/Office365/SecurityCompliance/create-a-keyword-dictionary) | 修改時間 |
+| 8/7/2019 | [使用完全資料符合建立自訂機密資訊類型](/Office365/SecurityCompliance/create-custom-sensitive-info-type-edm) | 修改時間 |
+| 8/7/2019 | [建立、測試及調整 DLP 原則](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 修改時間 |
+| 8/7/2019 | [DLP 的自訂敏感性資訊類型](/Office365/SecurityCompliance/custom-sensitive-info-types) | 修改時間 |
+| 8/7/2019 | [自訂內建的敏感性資訊類型](/Office365/SecurityCompliance/customize-a-built-in-sensitive-information-type) | 修改時間 |
+| 8/7/2019 | [資料外洩防護的概觀](/Office365/SecurityCompliance/data-loss-prevention-policies) | 修改時間 |
+| 8/7/2019 | [資料外洩防護和 Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | 修改時間 |
+| 8/7/2019 | [文件指紋](/Office365/SecurityCompliance/document-fingerprinting) | 修改時間 |
+| 8/7/2019 | [動態傳遞和預覽與 Office 365 ATP 安全附件](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | 修改時間 |
+| 8/7/2019 | [啟用報告訊息增益集](/Office365/SecurityCompliance/enable-the-report-message-add-in) | 修改時間 |
+| 8/7/2019 | [形成查詢以尋找儲存在網站上的敏感性資料](/Office365/SecurityCompliance/form-a-query-to-find-sensitive-data-stored-on-sites) | 修改時間 |
+| 8/7/2019 | [DLP 原則建議快速入門](/Office365/SecurityCompliance/get-started-with-dlp-policy-recommendations) | 修改時間 |
+| 8/7/2019 | [預設的 DLP 原則快速入門](/Office365/SecurityCompliance/get-started-with-the-default-dlp-policy) | 修改時間 |
+| 8/7/2019 | [Office 365 ATP 安全附件的運作方式](/Office365/SecurityCompliance/how-atp-safe-attachments-works) | 修改時間 |
+| 8/7/2019 | [Office 365 ATP 安全連結的運作方式](/Office365/SecurityCompliance/how-atp-safe-links-works) | 修改時間 |
+| 8/7/2019 | [DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作](/Office365/SecurityCompliance/how-dlp-works-between-admin-centers) | 修改時間 |
+| 8/7/2019 | [針對資訊障礙原則屬性](/Office365/SecurityCompliance/information-barriers-attributes) | 修改時間 |
+| 8/7/2019 | [編輯資訊障礙原則](/Office365/SecurityCompliance/information-barriers-edit-segments-policies.md) | 修改時間 |
+| 8/7/2019 | [定義資訊障礙原則](/Office365/SecurityCompliance/information-barriers-policies) | 修改時間 |
+| 8/7/2019 | [疑難排解資訊障礙](/Office365/SecurityCompliance/information-barriers-troubleshooting) | 修改時間 |
+| 8/7/2019 | [資訊障礙概觀](/Office365/SecurityCompliance/information-barriers) | 修改時間 |
+| 8/7/2019 | [尋找並調查已傳遞 Office 365 中的惡意電子郵件](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改時間 |
+| 8/7/2019 | [新的 Microsoft 365 合規性中心概觀](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 修改時間 |
+| 8/7/2019 | [Office 365 進階威脅防護](/Office365/SecurityCompliance/office-365-atp) | 修改時間 |
+| 8/7/2019 | [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](/Office365/SecurityCompliance/protect-documents-that-have-fci-or-other-properties) | 修改時間 |
+| 8/7/2019 | [設定使用 Office 365 ATP Safe Links 自訂封鎖 Url 清單](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | 修改時間 |
+| 8/7/2019 | [設定自訂的修正-無法執行-Url 清單，使用 Office 365 ATP 安全連結](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | 修改時間 |
+| 8/7/2019 | [設定 Office 365 ATP 安全附件原則](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 修改時間 |
+| 8/7/2019 | [設定 Office 365 ATP 安全連結原則](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 修改時間 |
+| 8/7/2019 | [威脅總管] 和 [即時偵測的資訊中的檢視](/Office365/SecurityCompliance/threat-explorer-views) | 修改時間 |
+| 8/7/2019 | [開啟 Office 365 ATP SharePoint、 OneDrive 及 Microsoft Teams](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | 修改時間 |
+| 8/7/2019 | [針對 DLP 原則傳送電子郵件通知並顯示原則提示](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | 修改時間 |
+| 8/7/2019 | [檢視安全性中的電子郵件安全性報告&amp;合規性中心](/Office365/SecurityCompliance/view-email-security-reports) | 修改時間 |
+| 8/7/2019 | [檢視資料外洩防護報告](/Office365/SecurityCompliance/view-the-dlp-reports) | 修改時間 |
+| 8/7/2019 | [DLP 功能所尋找的項目](/Office365/SecurityCompliance/what-the-dlp-functions-look-for) | 修改時間 |
+| 8/7/2019 | [DLP 原則範本包含哪些內容](/Office365/SecurityCompliance/what-the-dlp-policy-templates-include) | 修改時間 |
+| 8/7/2019 | [敏感性資訊類型在找什麼](/Office365/SecurityCompliance/what-the-sensitive-information-types-look-for) | 修改時間 |
+| 8/7/2019 | [下載匯出工作](/Office365/SecurityCompliance/compliance20/download-export-jobs) | 修改時間 |
+| 8/7/2019 | [在 Office 365 中的無限制封存概觀](/Office365/SecurityCompliance/unlimited-archiving) | 修改時間 |
+| 8/8/2019 | [建立搜尋查詢](/Office365/SecurityCompliance/compliance20/building-search-queries) | 修改時間 |
+| 8/8/2019 | 在進階電子文件中的案例設定 | 移除 |
+| 8/8/2019 | [在 Microsoft 365 進階電子文件解決方案的概觀](/Office365/SecurityCompliance/compliance20/overview-ediscovery-20) | 修改時間 |
+| 8/8/2019 | [檢閱在進階電子文件中的案例資料](/Office365/SecurityCompliance/compliance20/reviewing-data-in-review-set) | 修改時間 |
+| 8/8/2019 | [Office 365 安全性 & 合規性中心的權限](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 修改時間 |
+| 8/8/2019 | [設定 Office 365 中電子文件探索調查的合規性界限](/Office365/SecurityCompliance/set-up-compliance-boundaries) | 修改時間 |
+| 8/8/2019 | [稽核共用來找出與外部使用者共用的資源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改時間 |
+| 8/9/2019 | [在安全性 & 合規性中心建立自訂機密資訊類型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 修改時間 |
+| 8/9/2019 | 使用完全資料符合建立自訂機密資訊類型 | 移除 |
+| 8/9/2019 | [DLP 的自訂敏感性資訊類型](/Office365/SecurityCompliance/custom-sensitive-info-types) | 修改時間 |

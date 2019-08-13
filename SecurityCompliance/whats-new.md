@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: 1c51edbe5c6ac29d174fe0277c3f17628cdaf229
-ms.sourcegitcommit: ea86a64cf19f07952be4c16c89e0389b4ba3768e
+ms.openlocfilehash: 22c3253f3c529ff361fc1984f6bc82de8d72b094
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "36286264"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297803"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -46,10 +46,6 @@ ms.locfileid: "36286264"
 不需捲動 sea 的報告，找出您想。 您可以現在 （根據其標題） 的報告和類別篩選搜尋 like '標籤' 和 '規範' 和 'Office 365' 和' Microsoft Cloud App Security' 等的來源。
 
 ![報告與套用的篩選器搜尋和篩選按鈕的螢幕擷取畫面](media/mcc_report_filtering.png)
-
-### <a name="partners-admin-on-behalf-of-aobo-permissions"></a>代表 (AOBO) 權限的合作夥伴： 系統管理員
-
-適用於 Microsoft 認證合作夥伴的好消息。 系統代理者 」 (AOBO) 權限的協力廠商現在可以藉由將客戶的網域新增至 URL 存取 Microsoft 365 安全性與合規性中心。 例如：`https://security.microsoft.com/contoso.com`。
 
 ### <a name="help-content"></a>說明內容
 
