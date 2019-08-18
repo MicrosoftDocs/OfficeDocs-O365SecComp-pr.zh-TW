@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547968"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430010"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 
@@ -123,7 +123,28 @@ ms.locfileid: "34547968"
 
 ![在 Excel 中開啟空白檔案計劃範本](media/file-plan-blank-template.png)
 
-填入範本 (即將推出：單一保留標籤有效值組合的參考資訊)。
+填寫範本。 下表提供有效的值。
+
+|**屬性**|**類型**|**有效值**|
+|:-----|:-----|:-----|
+|LabelName|字串|如果值包含空格，請使用引號 (") 括住值。|
+|註解|字串|如果值包含空格，請使用引號 (") 括住值。 |
+|記事|字串|自訂|
+|IsRecordLabel|字串|$true: The label is a record label.</br>$false：該標籤不是記錄標籤。 這是預設值。|
+|RetentionAction|字串|刪除</br>保留</br>KeepAndDelete |
+|RetentionDuration|字串|此屬性會指定要保留內容的天數。 有效值為：</br>正整數。</br>不限任何值。|
+|RetentionType|字串|此屬性會指定保留期限是否從內容建立日期、標籤 (標記) 日期或上次修改日期開始算起。 有效值為：</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|此屬性會指定 Delete 和 KeepAndDelete 保留動作檢閱者的電子郵件地址。 您可以指定多個以逗號隔開的電子郵件地址。|
+|ReferenceId|字串|自訂|
+|Departmentname|字串|自訂|
+|類別|字串|自訂|
+|類別|字串|自訂|
+|AuthorityType|字串|自訂|
+|CitationName|字串|自訂|
+|CitationUrl|字串|自訂|
+|CitationJurisdiction|字串|自訂|
+|Regulatory|字串|自訂|
+|EventType|字串|此屬性會指定與標籤相關聯的保留規則。 您可以使用唯一識別規則的任何值。 例如：</br>名稱</br>辨別名稱 (DN)</br>GUID </br>您可以使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/zh-TW/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) Cmdlet 來檢視可用的保留規則。|
 
 ![已填入資訊的檔案計劃範本](media/file-plan-filled-out-template.png)
 
