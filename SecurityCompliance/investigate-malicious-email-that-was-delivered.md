@@ -1,5 +1,5 @@
 ---
-title: 尋找並調查惡意電子郵件已傳遞在 Office 365、 TIMailData 內嵌、 安全性事件、 事件，ATP Powershell，電子郵件惡意程式碼、 危害使用者釣魚程式的電子郵件、 惡意程式碼的電子郵件
+title: 尋找並調查惡意電子郵件，已在 Office 365、 TIMailData 內嵌、 安全性事件、 事件，ATP Powershell 傳遞電子郵件惡意程式碼、 遭入侵的使用者，釣魚程式的電子郵件、 惡意程式碼的電子郵件、 讀取電子郵件標頭、 讀取標頭、 開啟電子郵件標頭
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407942"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444865"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>尋找並調查已傳遞 Office 365 中的惡意電子郵件
 
@@ -40,9 +40,56 @@ ms.locfileid: "36407942"
     
 ## <a name="dealing-with-suspicious-emails"></a>處理可疑的電子郵件
 
-惡意攻擊者可能會將郵件傳送至您的使用者嘗試與釣魚程式其認證，並存取您公司的機密資料 ！ 若要避免這種情況，您應該使用在 Office 365 中，包括[Exchange Online Protection](eop/exchange-online-protection-overview.md)和[進階威脅防護](office-365-atp.md)的威脅保護服務。 不過，有的時間攻擊者時將郵件傳送給使用者的 url 然後僅更新版本上將該 URL 點對惡意內容 （惡意程式碼等）。 或者，您可能會發現太晚而遭入侵您組織中的使用者，以及攻擊時遭到盜用了該使用者，使用該帳戶傳送電子郵件給您公司中的其他使用者。 一部分 < cleaning up 這兩種情況，您可能想要移除使用者收件匣的電子郵件。 在這類的情況下，您可以利用[威脅總管 （或即時偵測）](threat-explorer.md)來尋找和移除這些電子郵件訊息 ！
+惡意攻擊者可能會將郵件傳送至您的使用者嘗試與釣魚程式其認證，並存取您公司的機密資料 ！ 若要避免這種情況，您應該使用在 Office 365 中，包括[Exchange Online Protection](eop/exchange-online-protection-overview.md)和[進階威脅防護](office-365-atp.md)的威脅保護服務。 不過，有的時間攻擊者時將郵件傳送給使用者的 url 然後僅更新版本上將該 URL 點對惡意內容 （惡意程式碼等）。 
+
+或者，您可能會發現太晚而遭入侵您組織中的使用者，以及攻擊時遭到盜用了該使用者，使用該帳戶傳送電子郵件給您公司中的其他使用者。 一部分 < cleaning up 這兩種情況，您可能想要移除使用者收件匣的電子郵件。 在這類的情況下，您可以利用[威脅總管 （或即時偵測）](threat-explorer.md)來尋找和移除這些電子郵件訊息 ！
 
 ## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>重新路由傳送的電子郵件的所在位置後採取的動作
+
+因此問題的電子郵件至何處，以及哪些工具可協助了解發生了什麼事它們現場？ 威脅總管欄位報告資訊可協助系統管理員會解碼問題的電子郵件事件。
+
+### <a name="view-the-email-headers-and-download-the-email-body"></a>檢視的電子郵件標頭，並下載電子郵件內文
+
+**電子郵件標頭預覽和下載的電子郵件內文**是很有幫助的電子郵件威脅總管中可用的威脅管理功能。 系統管理員將能夠分析並下載標頭和威脅的電子郵件。 存取使用這項功能是由所控制角色型存取控制 (RBAC)，以減少使用者的電子郵件內容的曝光度的風險。
+
+若要授與下載的郵件，並預覽所有電子郵件] 檢視中的標頭的能力，必須將新*角色*，稱為 「 預覽 」 新增到另一個 Office 365 角色群組 （例如到秒作業或秒的系統管理員）。
+
+若要查看彈出式視窗與您的電子郵件下載電子郵件標頭預覽] 選項： 
+
+1. 移至 [[https://protection.office.com](https://protection.office.com)和 Office 365 使用公司或學校帳戶登入。 這會帶您前往安全性&amp;合規性中心。 
+    
+2. 在左側導覽中，選擇 [**威脅管理，** \> **總管**。
+
+3. 按一下 [上威脅總管表格中的主題。
+
+這會開啟彈出式視窗中，位於這兩個標頭預覽] 和 [電子郵件下載連結。
+
+> [!IMPORTANT]
+> 請使用這兩個表格巨集中接續在一起。 其中一個會告訴您 RBAC 有需要，另一個，應授與權限的位置。
+<p>
+
+|活動  |具有存取權的 RBAC new-rolegroup |所需的 '預覽' 角色？  |
+|---------|---------|---------|
+|使用分析威脅威脅總管 （和即時偵測的資訊）     |  Office 365 全域系統管理員<br> 安全性系統管理員 <br> 安全性讀取者      | 否   |
+|使用檢視的電子郵件，以及預覽標頭和下載隔離電子郵件威脅總管 （和即時偵測的資訊）    |     Office 365 全域系統管理員 <br> 安全性系統管理員 <br>安全性讀取者    |       否  |
+|使用威脅總管檢視標頭，並下載傳遞至信箱的電子郵件     |      Office 365 全域系統管理員 <br>安全性系統管理員<br> 安全性讀取者 <br> 預覽    |   是      |
+
+<br>
+
+|RBAC new-rolegroup  |使用者指派給它們的位置  |
+|---------|---------|
+| 全域系統管理員   | Office 365 Admin Center        |
+| 安全性系統管理員      |    安全規範中心     |
+| 安全性讀取者   |    安全規範中心     |
+|      |    安全規範中心     |
+
+
+> [!CAUTION]
+> 請記住，「 預覽 」 是角色並不 new-rolegroup 和該角色必須新增至 New-rolegroup 事後。
+
+![威脅總管彈出式視窗與下載和預覽頁面上的連結。](media/ThreatExplorerDownloadandPreview.PNG)
+
+### <a name="check-the-delivery-action-and-location"></a>請檢查傳遞動作及位置
 
 威脅總管即時偵測已新增取代傳遞狀態的傳遞巨集指令並傳遞位置欄位。 這會導致您的電子郵件的登陸其中的更完整圖片。 這項變更的目標的一部分是狩獵更輕鬆地進行安全性 Ops 的人員，但最終結果知道一眼問題電子郵件的位置。
 
@@ -67,7 +114,11 @@ ms.locfileid: "36407942"
 - **隔離**-隔離中的電子郵件以及不在使用者的信箱。
 - **失敗**– 電子郵件無法連到信箱。
 - **丟棄**– 電子郵件會取得某處遺失，在 [郵件流程。
+
+### <a name="view-the-timeline-of-your-email"></a>檢視您的電子郵件的時間表
   
+ **電子郵件時間表**威脅總管中的另一個欄位也會較容易搜尋系統管理員適用的設。 而不寶貴的時間檢查電子郵件可能會移到何處，當時調查事件，當多個事件發生，在或接近，同時在電子郵件，這些事件會顯示在 [時間表] 檢視。 發生後傳遞至您的郵件部分事件會擷取 '*特殊動作*] 欄中。 合併資訊從時間表的郵件採取郵件後傳遞的特殊動作提供系統管理員深入資訊原則和威脅處理 （例如其中已路由傳送郵件，以及在某些情況下，最終評估已）。
+
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找並刪除可疑的電子郵件的郵件傳遞
 
 > [!TIP]
