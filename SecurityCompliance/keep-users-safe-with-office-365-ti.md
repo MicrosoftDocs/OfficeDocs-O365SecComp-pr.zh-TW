@@ -1,5 +1,5 @@
 ---
-title: 保護您的 Office 365 使用者安全回應能力與 Office 365 威脅調查
+title: 您維持組織安全回應能力與 Office 365 威脅調查
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,14 +15,14 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應功能如何協助貴組織偵測入侵和威脅，快速地降低，以及復原威脅。
-ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: baedfb1ff74117bd2ed36cdf4551f898d377a971
+ms.sourcegitcommit: 4fd64e1811ae96633035cbc9cab1dbef3cbba34d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478172"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484396"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>保護您的 Office 365 使用者安全回應能力與 Office 365 威脅調查
+# <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>您維持組織安全回應能力與 Office 365 威脅調查
 
 ## <a name="overview"></a>概觀
 
