@@ -3,7 +3,7 @@ title: 保護您的 Office 365 使用者安全回應能力與 Office 365 威脅�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: 08/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應功能如何協助貴組織偵測入侵和威脅，快速地降低，以及復原威脅。
-ms.openlocfilehash: 28fbf0a66370e2e1d407454017943e57f5f368b1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598979"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478172"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>保護您的 Office 365 使用者安全回應能力與 Office 365 威脅調查
 
@@ -28,13 +28,13 @@ ms.locfileid: "35598979"
 
 您知道哪些 Office 365 使用者受到攻擊，或惡化-危害嗎？ 知道如何減輕及復原免於遭受攻擊的目標使用者？ 您知道您可以完全與已在 Office 365 中可用的安全性功能嗎？ 
   
-[Office 365 威脅調查及回應](office-365-ti.md)功能都包含在 Office 365 E5 訂閱 （做為 Office 365 進階威脅防護計劃 2 的一部分）。 這些功能有幫助的每個月相較於先前的 2 季 37%80%，並增加大小寫的輸送量降低的平均時間社交事件 for 解析度的 Microsoft IT ！ 
+[Office 365 威脅調查及回應](office-365-ti.md)功能都包含在 Office 365 E5 訂閱 （做為[Office 365 進階的威脅防護](office-365-atp.md)計劃 2 的一部分）。 這些功能有幫助的每個月相較於先前的 2 季 37%80%，並增加大小寫的輸送量降低的平均時間社交事件 for 解析度的 Microsoft IT ！ 
 
 我們最近新增了新功能，協助改善如何偵測及復原威脅 ！ 以下是快速的逐步執行的方式更新的威脅調查及回應功能可以讓您更有效率。
   
 ## <a name="detect-intrusions-and-threats"></a>偵測入侵和威脅
 
-[威脅總管 （或即時偵測的資訊）](threat-explorer.md)（也稱為威脅總管） 可協助安全性系統管理員和分析師識別並了解是您企業內，因為可以由像安全的表面上無害使用者組態規避即使最複雜的安全性設定的威脅寄件者 whitelists。 瀏覽器協助 Office 365 全域或安全性系統管理員快速決定使用者是否已遭到惡意程式碼或釣魚程式的威脅。 這有助於優先順序哪些使用者最風險的威脅和必要的回應。 
+[威脅總管 （或即時偵測的資訊）](threat-explorer.md)（也稱為 「 檔案總管 」） 可協助安全性系統管理員和分析師識別並了解是您企業內，因為可以由像安全的寄件者的表面上無害使用者組態規避即使最複雜的安全性設定的威脅whitelists。 瀏覽器協助 Office 365 全域或安全性系統管理員快速決定使用者是否已遭到惡意程式碼或釣魚程式的威脅。 這有助於優先順序哪些使用者最風險的威脅和必要的回應。 
   
 Explorer 也可協助系統管理員瀏覽使用者與郵件之間的關係。 了解已損毀的特定郵件的？ 搜尋它以查看哪些使用者接收郵件，然後遵循一系列的事件，並查看這些使用者依次做了什麼。
 
@@ -56,7 +56,6 @@ Explorer 也可協助系統管理員瀏覽使用者與郵件之間的關係。 �
 
 Office 365 威脅調查及回應能力供電 Microsoft 智慧型安全性圖形的資料。 此圖形取得最新的威脅訊號，可從 1 億 Windows 裝置、 450 20 億個每月的 Azure 登入，以及 Office 365 中的 400 20 億個每月電子郵件訊息。 此 unrivaled 的威脅訊號是什麼讓客戶租用戶來說相當重要有影響其組織的潛在威脅的完整檢視系統管理員和安全性分析師廣泛的可視性。 
   
-   
 ## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>為什麼要使用 Office 365 威脅調查及回應功能？
 
 Gartner 估計 cybersecurity 上已花費在 2017 單獨透過 $90B。 Sid Deshpande，主要的研究分析師 Gartner，在引號做為指出該 「 業界 shift 鍵，以偵測及回應... 傳送清除郵件防護是難度，除非它繫結到偵測及回應功能 」。 威脅調查及回應是不可或缺的一部分的服務，每個企業的組合，並可供成為獨立服務或的 Office 365 E5。
