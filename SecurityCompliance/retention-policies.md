@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或只套用到特定位置或使用者；以及將原則套用到所有內容或只套用到符合特定條件的內容。
-ms.openlocfilehash: 1d9ad24a8322bec471a2725e16c0cd49ffa71202
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 71c7fbf06709dd9d7e6ba3f084e0377f821ca171
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054765"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444893"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -300,9 +300,9 @@ ms.locfileid: "36054765"
   
 ## <a name="releasing-a-retention-policy"></a>發佈保留原則
 
-您可以隨時關閉或刪除保留原則。 當您這麼做時，任何保留中的 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間內，原則的內容到期不會發生於保留文件庫，因此，如有需要，您可以在這裡還原任何內容。 您也可以在寬限期內開啟保留原則，這樣，原則的內容將不會被刪除。 此寬限期可使用 PowerShell 設定；近期，我們將提供您可使用的範例指令碼。
+您可以隨時關閉或刪除保留原則。 當您這麼做時，保留在文件保留庫中的任何 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間，保留文件庫中不會發生該原則的內容到期，因此，如有需要，您可以在這裡還原任何內容。 您也可以在寬限期期間再次開啟保留原則，這麼一來，將不會刪除該原則的內容。
 
-SharePoint 和 OneDrive 中的此 30 天寬限期對應於 Exchange 中的 30 天延遲保留。 如需詳細資訊，請參閱[管理延遲保留信箱](https://docs.microsoft.com/zh-TW/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold)。
+SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延遲保留對應。 如需詳細資訊，請參閱[管理延遲保留信箱](https://docs.microsoft.com/zh-TW/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold)。
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>原則保留，哪一個優先？
 
