@@ -3,19 +3,19 @@ title: 歐盟國家識別碼
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟國民身分識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
-ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154455"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490770"
 ---
 # <a name="eu-national-identification-number"></a>歐盟國家識別碼
 
@@ -59,7 +59,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
+#### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 奧地利身分識別號碼
   
@@ -123,11 +123,11 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
 
 egn
   
-egn #
+egn#
   
 保加利亞文的國際電話號碼
   
@@ -135,21 +135,21 @@ egn #
   
 社會安全號碼
   
-nationalnumber #
+nationalnumber#
   
-ssn #
+ssn#
   
 ssn
   
 nationalnumber
   
-bnn #
+bnn#
   
 bnn
   
 個人識別碼
   
-personalidnumber #
+personalidnumber#
   
 ЕДИНЕН ГРАЖДАНСКИ НОМЕР
   
@@ -157,7 +157,7 @@ edinen grazhdanski nomer
   
 ЕГН
   
-ЕГН #
+ЕГН#
   
 ## <a name="croatia"></a>克羅埃西亞
 
@@ -197,7 +197,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
+#### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
 證號碼
   
@@ -266,7 +266,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
+#### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 個人識別碼的程式碼
   
@@ -278,7 +278,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 個人識別碼
   
-personalidnumber #
+personalidnumber#
   
 ik
   
@@ -350,7 +350,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
+#### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
 個人識別碼
   
@@ -417,7 +417,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 個人公用服務號碼
   
@@ -491,7 +491,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
+#### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 個人的程式碼
   
@@ -501,7 +501,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 會計年度的程式碼
   
-personalcodeno #
+personalcodeno#
   
 個人識別碼
   
@@ -519,7 +519,7 @@ codice 識別碼 personale
   
 codice fiscale
   
-## <a name="italy"></a>義大利
+## <a name="latvia"></a>拉脫維亞
 
 ### <a name="format"></a>格式
 
@@ -567,7 +567,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
+#### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 個人的程式碼
   
@@ -575,7 +575,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 個人的憑證數目
   
-personalcodeno #
+personalcodeno#
   
 個人識別碼
   
@@ -632,7 +632,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
+#### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
 個人數字碼
   
@@ -642,7 +642,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 唯一識別數字
   
-uniqueidentityno #
+uniqueidentityno#
   
 個人的程式碼。
   
@@ -697,23 +697,23 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
+#### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
 個人識別碼
   
 個人識別碼
   
-personalidno #
+personalidno#
   
 唯一識別碼
   
-personalidnumber #
+personalidnumber#
   
 唯一識別碼機碼
   
 個人識別碼的程式碼
   
-uniqueidkey #
+uniqueidkey#
   
 個別的程式碼
   
@@ -727,11 +727,11 @@ eindeutige 識別碼
   
 numéro d'identification 人員
   
-idpersonnelle #
+idpersonnelle#
   
 persönliche identifikationsnummer
   
-eindeutigeid #
+eindeutigeid#
   
 ## <a name="malta"></a>馬爾他
 
@@ -778,7 +778,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
+#### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
 個人數字碼
   
@@ -788,7 +788,7 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 唯一識別數字
   
-uniqueidentityno #
+uniqueidentityno#
   
 kodiċi numerali personali
   
@@ -839,7 +839,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
 個人數字碼
   
@@ -849,11 +849,11 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 唯一識別數字
   
-uniqueidentityno #
+uniqueidentityno#
   
 bsn
   
-bsn #
+bsn#
   
 persoonlijke numerieke 程式碼
   
@@ -912,7 +912,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
+#### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
 個人數字碼
   
@@ -920,19 +920,19 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 cnp
   
-cnp #
+cnp#
   
 pin 碼
   
-pin 碼 #
+pin 碼#
   
 保險號碼
   
-insurancenumber #
+insurancenumber#
   
 唯一識別數字
   
-uniqueidentityno #
+uniqueidentityno#
   
 cod 數值個人
   
@@ -946,11 +946,11 @@ număr identitate
   
 număr identificare 個人
   
-număridentitate #
+număridentitate#
   
-codnumericpersonal #
+codnumericpersonal#
   
-numărpersonalunic #
+numărpersonalunic#
   
 ## <a name="slovakia"></a>斯洛伐克
 
@@ -993,7 +993,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
+#### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 出生數目
   
@@ -1003,9 +1003,9 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 社會安全號碼
   
-nationalnumber #
+nationalnumber#
   
-ssn #
+ssn#
   
 ssn
   
@@ -1013,7 +1013,7 @@ ssn
   
 個人識別碼
   
-personalidnumber #
+personalidnumber#
   
 rč
   
@@ -1070,7 +1070,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
+#### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
 個人數字碼
   
@@ -1080,13 +1080,13 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
   
 唯一識別數字
   
-uniqueidentityno #
+uniqueidentityno#
   
 唯一的主版公民數目
   
 edinstvena identifikacijska številka
   
-uniqueidentityno #
+uniqueidentityno#
   
 edinstvena številka glavnega državljana
   
@@ -1130,7 +1130,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
+#### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 dni
   
@@ -1148,19 +1148,19 @@ dni
   
 唯一識別數字
   
-nationalidno #
+nationalidno#
   
-uniqueid #
+uniqueid#
   
-dni #
+dni#
   
-nationalid #
+nationalid#
   
-nie #
+nie#
   
 nie
   
-nienúmero #
+nienúmero#
   
 nie número
   
@@ -1172,9 +1172,9 @@ número nacional identidad
   
 dni número
   
-dninúmero #
+dninúmero#
   
-identidadúnico #
+identidadúnico#
   
 ## <a name="sweden"></a>瑞典
 
