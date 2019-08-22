@@ -15,15 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
-ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
+ms.openlocfilehash: 3b108e292e7c7942e471d345b11124beac52f369
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393913"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478242"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
-
+<!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 > [!NOTE]
 > 針對已取得 Office 365 進階合規性授權的使用者，系統最近將資料外洩防護功能新增至 Microsoft Teams 聊天和頻道訊息，該功能可作為獨立選項提供，並包含在 Office 365 E5 和 Microsoft 365 E5 合規性中。 若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance) (機器翻譯)。
 
@@ -314,6 +314,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 ## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>使用標籤做為 DLP 原則的條件
 
 您可以建立標籤，然後：
+<!-- what kind of label? -->
   
 - **發佈**標籤，以便使用者查看並手動將它套用到內容。 
     
@@ -367,7 +368,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 ### <a name="simple-settings"></a>簡單設定
 
-目前，最常見的 DLP 情境是建立原則以協助保護含有機密資訊的內容，避免組織外部的人員共用這類內容，並採取自動修正動作，如限制可存取內容的對象、傳送使用者或系統管理員通知，並稽核事件以便日後調查。 採用 DLP 的人員可協助避免機密資訊不當外洩。
+目前，最常見的 DLP 情境是建立原則以協助保護含有敏感性資訊的內容，避免組織外部的人員共用這類內容，並採取自動修正動作，如限制可存取內容的對象、傳送使用者或系統管理員通知，並稽核事件以便日後調查。 採用 DLP 的人員可協助避免敏感性資訊不當外洩。
   
 若要以更簡單的方式達成這個目標，請在建立 DLP 原則時，選擇 [使用簡單設定]****。 這些設定會提供執行最常見 DLP 原則所需的項目，讓您不必進入規則編輯器。
   
@@ -450,12 +451,14 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
 - Microsoft Teams 頻道和聊天訊息
     
 原則同步處理至正確的位置之後，會開始評估內容並強制執行動作。
+<!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>商務用 OneDrive 和 SharePoint Online 網站中的原則評估
 
 在您所有的 SharePoint Online 網站和商務用 OneDrive 網站上，文件都會持續變動 — 文件會不斷地建立、編輯、共用等等。 這表示文件可能會隨時違反或符合 DLP 原則。 例如，人員可以將不含敏感資訊文件上傳到小組網站，而後另一個人可以編輯同一份文件並在其中加入敏感資訊。
   
 因此，DLP 原則會頻繁地在背景中檢查文件是否有原則相符項目。 您可以將此視為非同步原則評估。
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>運作方式
  
@@ -463,7 +466,7 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
   
 ![顯示 DLP 原則如何以非同步的方式評估內容的圖表](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-最後，文件可能會違反 DLP 原則，但也可能會符合 DLP 原則。例如，如果人員在文件中加入信用卡號碼，有可能會導致 DLP 原則自動封鎖文件的存取。但如果人員稍後移除敏感資訊，則會在下次依據原則進行評估時自動復原動作 (在此案例中為封鎖)。
+<!-- conflict with a DLP policy is bad wording --> 最後，文件可能會違反 DLP 原則，但也可能會符合 DLP 原則。例如，如果人員在文件中加入信用卡號碼，有可能會導致 DLP 原則自動封鎖文件的存取。但如果人員稍後移除敏感資訊，則會在下次依據原則進行評估時自動復原動作 (在此案例中為封鎖)。
   
 DLP 會評估可編製索引的任何內容。 若要進一步了解依預設會對哪些檔案類型進行編目，請參閱 [SharePoint Server 中的預設編目副檔名和剖析檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) (機器翻譯)。
   
@@ -475,12 +478,14 @@ DLP 會評估可編製索引的任何內容。 若要進一步了解依預設會
   
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office 桌上型電腦程式中的原則評估
 
+<!-- same capability to identify sensitive information line conflates sensitive information types and such -->
 Excel、PowerPoint 和 Word 都具有與 SharePoint Online 和商務用 OneDrive 相同的功能，可識別敏感資訊並套用 DLP 原則。 這些 Office 程式會直接從中央原則存放區同步處理其 DLP 原則，並在有人使用從 DLP 原則所包含的網站開啟的文件時，持續根據 DLP 原則來評估內容。
   
 Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容使用者的產能。 如果他們正在處理大型文件，或使用者的電腦忙碌中，可能需要幾秒鐘才會顯示原則提示。
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams 中的原則評估
- 
+ <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
+
 當您建立 DLP 原則，其中包含 Microsoft Teams 作為位置時，原則會從 Office 365 安全性與合規性中心同步到使用者帳戶與 Microsoft Teams 頻道和聊天訊息。 根據 DLP 原則的設定方式，當有人嘗試在 Microsoft Teams 聊天或頻道訊息中共用敏感性資訊時，可以封鎖或撤銷訊息。 此外，若文件包含敏感性資訊且與來賓 (外部使用者) 共用，則不會對這些使用者開放。 若要深入了解，請參閱[資料外洩防護和 Microsoft Teams](dlp-microsoft-teams.md)。
  
 ## <a name="permissions"></a>權限

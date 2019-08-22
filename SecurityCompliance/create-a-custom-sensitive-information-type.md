@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
-ms.openlocfilehash: e7b2d07c64d97eafee5b269bbc0e395855c2ab44
-ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
+ms.openlocfilehash: c291d7265df460113769b997aae49b5295d8727f
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36279155"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478212"
 ---
+<!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全性與合規性中心建立自訂敏感性資訊類型
 
 ## <a name="summary"></a>摘要
@@ -37,9 +38,9 @@ ms.locfileid: "36279155"
 
 - 自訂機密資訊類型需要熟悉規則運算式 (RegEx)。如需用於處理文字之 Boost.RegEx (先前稱為 RegEx++) 引擎的詳細資訊，請參閱 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
-  Microsoft 客戶服務與支援中心無法協助提供自訂內容比對定義 (建立自訂分類或規則運算式模式)。支援工程師可以提供有限的功能支援 (例如，基於測試目的提供範例規則運算式模式，或協助對未如預期般觸發的現有規則運算式模式進行疑難排解)，但無法保證任何自訂內容比對開發作業將符合您的需求。
+  Microsoft 客戶服務及支援無法協助您建立自訂分類或規則運算式模式。 支援工程師可以提供有限的功能支援，例如，基於測試目的提供範例規則運算式模式，或協助對未如預期般觸發的現有規則運算式模式進行疑難排解，但無法保證任何自訂內容比對開發作業將符合您的需求或義務。
 
-- DLP 會使用搜尋編目程式來識別並分類 SharePoint Online 和商務用 OneDrive 中的機密資訊。若要識別現有內容中的新自訂機密資訊類型，必須重新編目內容。內容是根據排程來重新編目，但您可以手動重新編目網站集合、清單或文件庫的內容。如需詳細資訊，請參閱[手動要求編目或重新檢索網站、文件庫或清單](https://docs.microsoft.com/sharepoint/crawl-site-content)。
+- DLP 會使用搜尋檢索器識別及分類 SharePoint Online 和商務用 OneDrive 中網站中的敏感性資訊。 若要在所有現有內容中識別您的新自訂敏感性資訊類型，必須將內容重新編目。 內容會根據排程進行編目，但您可以手動重新編目網站集合、清單或文件庫的內容。 如需詳細資訊，請參閱[手動要求網站、文件庫或清單進行編目和重新建立索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
 
 ## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a>在安全性與合規性中心建立自訂機密資訊類型
 
@@ -118,7 +119,7 @@ ms.locfileid: "36279155"
 ## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>在安全性與合規性中心修改自訂機密資訊類型
 
 **附註**：
-
+<!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type https://docs.microsoft.com/en-us/office365/securitycompliance/customize-a-built-in-sensitive-information-type it sure seems like it does-->
 - 您只能修改自訂機密資訊類型，不能修改內建的機密資訊類型。但您可以使用 PowerShell 來匯出內建的自訂機密資訊類型、自訂它們，並將其匯入為自訂機密資訊類型。如需詳細資訊，請參閱[自訂內建的機密資訊類型](customize-a-built-in-sensitive-information-type.md)。
 
 - 您只能修改在 UI 中建立的自訂機密資訊類型。如果您使用 [PowerShell 程序](create-a-custom-sensitive-information-type-in-scc-powershell.md)匯入自訂的機密資訊類型規則套件，則會收到錯誤訊息。
