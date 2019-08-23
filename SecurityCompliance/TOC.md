@@ -206,8 +206,6 @@
 #### [設定自訂封鎖 URL 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### 角色系統管理員設定工作
 #### [開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](turn-on-atp-for-spo-odb-and-teams.md)
-#### [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)
-## 管理您的安全性 - ATP 後安裝
 ## [使用威脅分析了解最新的攻擊活動](latest-attack-campaigns.md)
 ## [在 Microsoft 365 中搜尋](hunting.md)
 ## [檢視並閱讀 ATP 報表](view-reports-for-atp.md)
@@ -218,17 +216,18 @@
 ## [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
 ## [威脅總管 (及即時偵測)](threat-explorer.md)
 ### [威脅總管檢視](threat-explorer-views.md)
+### [在 Outlook.com 和 Outlook 網頁版中找出可疑的郵件](unverified-sender-feature.md)
 ## 為了提高安全性的整合
 ### [整合 Office 365 ATP 和 Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [SIEM 與 Office 365 ATP 的整合](siem-integration-with-office-365-ti.md)
 ## ATP 的運作方式
 ### [ATP 安全連結的運作方式](how-atp-safe-links-works.md)
 ### [ATP 安全附件的運作方式](how-atp-safe-attachments-works.md)
-#### [動態傳遞和預覽詳細資料](dynamic-delivery-and-previewing.md)
-### [威脅調查及回應的運作方式](get-started-with-ti.md)
-#### [關於威脅調查及回應](office-365-ti.md)
+### [動態傳遞和預覽詳細資料](dynamic-delivery-and-previewing.md)
+### [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)
+### [威脅調查及回應的運作方式](office-365-ti.md)
 ### [自動調查及回應的運作方式](automated-investigation-response-office.md)
-### [在 Outlook.com 和 Outlook 網頁版中找出可疑的郵件](unverified-sender-feature.md)
+
 
 # 安全性事件管理
 ## [Office 365 安全性事件回應](office365-security-incident-response-overview.md)
