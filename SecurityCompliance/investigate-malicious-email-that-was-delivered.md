@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444865"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566221"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>尋找並調查已傳遞 Office 365 中的惡意電子郵件
 
@@ -88,6 +88,9 @@ ms.locfileid: "36444865"
 > 請記住，「 預覽 」 是角色並不 new-rolegroup 和該角色必須新增至 New-rolegroup 事後。
 
 ![威脅總管彈出式視窗與下載和預覽頁面上的連結。](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> 這項功能不會顯示從未找到在使用者的信箱，如果已卸除一封電子郵件，就會發生或其傳遞失敗的電子郵件。 情況下時從使用者的信箱刪除電子郵件系統管理員會看到一提找不到的郵件' 發生錯誤。
 
 ### <a name="check-the-delivery-action-and-location"></a>請檢查傳遞動作及位置
 
