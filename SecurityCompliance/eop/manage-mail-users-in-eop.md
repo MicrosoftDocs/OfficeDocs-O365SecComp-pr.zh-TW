@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 69ed6460966a399ac5b1e3cf71bd985917bec82c
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054725"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620487"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
@@ -53,20 +53,20 @@ ms.locfileid: "36054725"
   
 取得必要權限，並做好目錄同步處理的準備工作，如[為目錄同步作業做好準備](https://go.microsoft.com/fwlink/p/?LinkId=308908)所說明。
   
-### <a name="to-synchronize-user-directories"></a>同步處理使用者目錄
+### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>若要同步處理使用者目錄與 Azure Active Directory Connect (AAD Connect)
 
-1. 啟動目錄同步處理，如[啟動目錄同步處理](https://go.microsoft.com/fwlink/p/?LinkId=308909)所說明。
-    
-2. 設定目錄同步處理電腦，如[設定您的目錄同步處理電腦](http://go.microsoft.com/fwlink/p/?LinkId=308911)所說明。
-    
-3. 同步處理您的目錄，如[使用設定精靈同步處理您的目錄](http://go.microsoft.com/fwlink/?LinkId=308912)所說明。
-    
-    > [!IMPORTANT]
-    > 完成 Azure Active Directory 同步處理工具設定精靈 之後，您的 Active Directory 樹系中會建立 **MSOL_AD_SYNC** 帳戶。此帳戶將用來讀取和同步處理您的內部部署 Active Directory 資訊。為了讓目錄同步作業能夠正確運作，請確定有開啟您的本機目錄同步作業伺服器上的 TCP 443。 
-  
-  4. 管理目錄同步處理，如[管理目錄同步作業](http://go.microsoft.com/fwlink/p/?LinkId=308915)所說明。
-    
-  5. Verify that EOP is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment. 
+若要同步處理至 Azure Active Directory (AAD) 的使用者第一次必須**啟動目錄同步處理**，如[啟動目錄同步處理](https://go.microsoft.com/fwlink/p/?LinkId=308909)所述。
+
+下一步是安裝及設定的內部電腦執行 AAD Connect （如果您還沒有一個--一些值得檢查事先）。 下列文章會告訴您如何安裝及與 AAD 連線同步到 Azure AD 從內部部署帳戶。
+
+[設定 AAD Connect，快速的方式。](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)
+
+但在執行該工作之前，請確定 [您符合先決條件] (https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites，然後[選擇 [安裝類型](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation)。 在上面張貼的連結是快速安裝簡短文章。 如果時需要這些，您也可以找到[自訂的安裝](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom)或[通過驗證](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start)的文章。
+
+> [!IMPORTANT]
+> 完成 Azure Active Directory 同步處理工具設定精靈 之後，您的 Active Directory 樹系中會建立 **MSOL_AD_SYNC** 帳戶。 此帳戶將用來讀取和同步處理您的內部部署 Active Directory 資訊。 為了讓目錄同步處理正常運作，請確定 TCP 443 上您的本機目錄同步處理伺服器已開啟 
+
+設定後您同步處理，請務必確認，則 EOP 會正確同步處理。 In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment.
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>使用 EAC 管理郵件使用者
 

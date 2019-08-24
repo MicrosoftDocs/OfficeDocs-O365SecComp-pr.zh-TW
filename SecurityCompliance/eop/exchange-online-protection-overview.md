@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服務，它能協助組織抵禦垃圾郵件和惡意軟體，同時也包括預防組織發生訊息原則違規的功能。
-ms.openlocfilehash: 4035a676bf815642735699a106e6430cf8245a05
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: a59839c212f365e9602c3b329c3c30953dbbf1ac
+ms.sourcegitcommit: 01a9f8073eb911709be893e41414e94ec01906af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566193"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622021"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -35,9 +35,9 @@ Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服�
 
 若要了解 EOP 的運作方式，查看它如何處理傳入電子郵件很有幫助：
 
-![EOP 中的程序的電子郵件。](../media/GitHubBugs/emailprocessingineop.png)
+![電子郵件程序圖。](../media/GitHubBugs/emailprocessingineop1.png)
   
-傳入郵件最初會通過連線篩選，此篩選會檢查寄件者的信譽，並檢查郵件是否有惡意程式碼。 大部分垃圾郵件都會在此時遭到阻止並由 EOP 刪除。 郵件會繼續透過原則篩選，針對您建立或強制執行從範本的自訂郵件流程規則 （也稱為傳輸規則） 來評估郵件。 例如，您可能有一個規則，會在特定寄件者的郵件送達時，傳送通知給管理員(如果您具有該功能，此時也會進行資料遺失防護檢查；如需功能可用性的相關資訊，請參閱 Exchange Online Protection 服務說明。 )接著，郵件會通過內容篩選，在此篩選中，會檢查內容是否有垃圾郵件常見的術語或內容。 經內容篩選認定為垃圾郵件的郵件，可以傳送至使用者的 [垃圾郵件] 資料夾，或者根據您在其他選項中的設定傳送至隔離區。 郵件順利通過這些保護層級的所有之後，它會傳遞至收件者。
+傳入郵件最初會通過連線篩選，此篩選會檢查寄件者的信譽，並檢查郵件是否有惡意程式碼。 大部分垃圾郵件都會在此時遭到阻止並由 EOP 刪除。 郵件會繼續透過原則篩選，針對您建立或強制執行從範本的自訂郵件流程規則 （也稱為傳輸規則） 來評估郵件。 例如，您可能有一個規則，會在特定寄件者的郵件送達時，傳送通知給管理員(如果您具有該功能，此時也會進行資料遺失防護檢查；如需功能可用性的相關資訊，請參閱 Exchange Online Protection 服務說明。 )接著，郵件會通過內容篩選，在此篩選中，會檢查內容是否有垃圾郵件常見的術語或內容。 郵件判定為垃圾郵件內容篩選可傳送至使用者的垃圾郵件資料夾或隔離區，根據您設定其他選項 （包括收件匣或自訂的資料夾） 之間。 郵件順利通過這些保護層級的所有之後，它會傳遞至收件者。
   
 ### <a name="eop-datacenters"></a>EOP 資料中心
 
