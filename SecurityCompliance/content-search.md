@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Office 365 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: cf1935b8ab4df80182739497f60adf5a2bc6a6d7
-ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
+ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36473413"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493164"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -317,7 +317,7 @@ ms.locfileid: "36473413"
     
 - 有時候，使用者的作用中信箱及非作用中信箱可能擁有相同的 SMTP 地址。 在此情況下，僅會搜尋您選取做為內容搜尋位置的特定信箱。 換句話說，如果您將使用者的信箱新增至搜尋，您無法假設會同時搜尋其作用中和非作用中信箱。 只會搜尋您明確地新增至搜尋的信箱。
     
-- 您可以使用安全性與合規性中心 PowerShell 來建立內容搜尋，以搜尋非作用中信箱。 若要這麼做，您必須將句點 ( . ) 預先附加到非作用中信箱的電子郵件地址。 例如，下列命令會建立內容搜尋，搜尋電子郵件地址為 pavelb@contoso.onmicrosoft.com 的非作用中信箱：
+- 您可以使用安全性與合規性中心 PowerShell 來建立內容搜尋，以搜尋非作用中信箱。 若要這麼做，您必須將一個句點 (. ) 附加至非作用中信箱的電子郵件地址前端。 例如，下列命令會建立內容搜尋，搜尋電子郵件地址為 pavelb@contoso.onmicrosoft.com 的非作用中信箱：
 
    ``` 
    New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
@@ -335,13 +335,13 @@ ms.locfileid: "36473413"
 
 如果您從 Office 365 或 Azure Active Directory 中的使用者帳戶移除 Exchange Online 授權 (或整個 Office 365 授權)，該使用者的信箱就會變成「連線中斷」** 的信箱。 這表示信箱已不再與使用者帳戶相關聯。 搜尋中斷連線的信箱時，會發生以下狀況：
 
-- 從信箱中移除授權後，信箱會進入 30 天的寬限期。 在寬限期內，您仍然可以使用內容搜尋來搜尋信箱。
+- 如果從信箱移除授權，信箱即不再可供搜尋。 
 
-- 如果未在 30 天內重新授權信箱，信箱會被標示為永久刪除並在下一次處理信箱時，從 Office 365 中移除。 根據處理信箱的時間而定，您可能還可以在 30 天寬限期到期後進行搜尋。 信箱通常會每隔七天處理一次。 處理之後，信箱將被移除且無法搜尋。
+- 如果現有的內容搜尋包含已移除授權的信箱，如果您重新執行內容搜尋，則不會從已中斷連線的信箱傳回任何搜尋結果。
 
-- 如果現有的內容搜尋包含授權已移除的使用者信箱，則在重新執行搜尋時將包括已中斷連線的信箱，直到 30 天寬限期到期為止。 寬限期到期且信箱移除後，重新執行搜尋將不再包含信箱。
+- 如果您使用 **New-ComplianceSearch** Cmdlet 來建立內容搜尋，並將中斷連線的信箱指定為要搜尋的 Exchange 內容位置，內容搜尋將不會從已中斷連線的信箱傳回任何搜尋結果。
 
-- 如果從已保留的信箱中刪除授權 (由 [Office 365 中的各種保留功能](identify-a-hold-on-an-exchange-online-mailbox.md)所保留)，則信箱將無限期保留，並將在 30 天寬限期後保持可搜尋的狀態。
+如果您要保留已中斷連線信箱中的資料，使其可供搜尋，您必須在移除授權之前，先在信箱上放置保留。 這麼做會保留資料，並在移除保留之前讓中斷連線的信箱可供搜尋。 如需保留的詳細資訊，請參閱[如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 
 ### <a name="previewing-search-results"></a>預覽搜尋結果
 
