@@ -1,5 +1,5 @@
 ---
-title: 尋找並調查惡意電子郵件，已在 Office 365、 TIMailData 內嵌、 安全性事件、 事件，ATP Powershell 傳遞電子郵件惡意程式碼、 遭入侵的使用者，釣魚程式的電子郵件、 惡意程式碼的電子郵件、 讀取電子郵件標頭、 讀取標頭、 開啟電子郵件標頭
+title: 尋找並調查已傳遞 Office 365 中的惡意電子郵件
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: fba73e49192b4880ec2990ec17c81f646b51264b
+ms.sourcegitcommit: 43c609653ac6ade486a2c5c2650cac02aa7d3b4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566221"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645329"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>尋找並調查已傳遞 Office 365 中的惡意電子郵件
 

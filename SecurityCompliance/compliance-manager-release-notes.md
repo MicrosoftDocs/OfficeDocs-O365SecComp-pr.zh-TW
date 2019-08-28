@@ -1,7 +1,7 @@
 ---
 title: Microsoft Compliance Manager 版本資訊
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 196118972079f83ba2f6a59ce1ae1514d9616599
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152065"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643235"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>版本資訊的合規性管理員 （預覽）
 

@@ -1,7 +1,7 @@
 ---
 title: 搭配使用 Microsoft Compliance Manager （預覽）
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157865"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643305"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 
