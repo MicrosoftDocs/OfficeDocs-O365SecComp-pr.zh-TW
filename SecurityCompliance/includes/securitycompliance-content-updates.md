@@ -3,46 +3,6 @@
 
 
 
-## <a name="week-of-july-15-2019"></a>2019 年 7 月 15 日當週
-
-
-| 發佈時間 |主題標題 | 變更 |
-|------|------------|--------|
-| 7/16/2019 | [在 Office 365 中搜尋內部部署使用者的雲端式的信箱](/Office365/SecurityCompliance/search-cloud-based-mailboxes-for-on-premises-users) | 修改時間 |
-| 7/16/2019 | [在安全性 & 規範中心搜尋稽核記錄](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 修改時間 |
-| 7/16/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | 修改時間 |
-| 7/16/2019 | [在 Office 365 中使用內容搜尋，對目標集合](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | 修改時間 |
-| 7/17/2019 | [保留標籤概觀](/Office365/SecurityCompliance/labels) | 修改時間 |
-| 7/17/2019 | [Office 365 的 SharePoint 資料復原](/Office365/SecurityCompliance/office-365-sharepoint-data-resiliency) | 修改時間 |
-| 7/17/2019 | [保留原則概觀](/Office365/SecurityCompliance/retention-policies) | 修改時間 |
-| 7/17/2019 | Office 365 的 SharePoint 資料復原 | 移除 |
-| 7/18/2019 | [首席資訊安全性長 （首席資訊安全長） 研討會、 模組 3:Identity 和存取管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 修改時間 |
-| 7/18/2019 | [首席資訊安全性長 （首席資訊安全長） 研討會，模組 4a： 威脅保護策略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 修改時間 |
-| 7/18/2019 | [首席資訊安全性長 （首席資訊安全長） 研討會，模組 4b： 威脅保護策略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 修改時間 |
-| 7/18/2019 | [首席資訊安全性長 （首席資訊安全長） 研討會，模組 5： 資訊保護](/Office365/SecurityCompliance/ciso-workshop-module-5) | 修改時間 |
-| 7/18/2019 | [Microsoft Compliance Manager 和 GDPR](/Office365/SecurityCompliance/compliance-manager-and-the-gdpr) | 修改時間 |
-| 7/18/2019 | [Microsoft Compliance Manager 概觀](/Office365/SecurityCompliance/compliance-manager-overview) | 修改時間 |
-| 7/18/2019 | [合規性分數方法](/Office365/SecurityCompliance/compliance-score-methodology) | 修改時間 |
-| 7/18/2019 | [Office 365 客戶加密箱要求](/Office365/SecurityCompliance/customer-lockbox-requests) | 修改時間 |
-| 7/18/2019 | [使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | 修改時間 |
-| 7/18/2019 | [Office 365 中的資料復原](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | 修改時間 |
-| 7/18/2019 | [Office 365 處理資料損毀](/Office365/SecurityCompliance/office-365-dealing-with-data-corruption) | 修改時間 |
-| 7/18/2019 | [Office 365 抵禦拒絕服務攻擊防禦雲端服務](/Office365/SecurityCompliance/office-365-defending-cloud-services-against-dos-attacks) | 修改時間 |
-| 7/18/2019 | [Office 365 Exchange 資料恢復](/Office365/SecurityCompliance/office-365-exchange-data-resiliency) | 修改時間 |
-| 7/18/2019 | [Office 365 Exchange Online 資料刪除](/Office365/SecurityCompliance/office-365-exchange-online-data-deletion) | 修改時間 |
-| 7/18/2019 | [將您組織的品牌新增至您的加密郵件](/Office365/SecurityCompliance/add-your-organization-brand-to-encrypted-messages) | 修改時間 |
-| 7/18/2019 | [管理進階電子文件中的保留](/Office365/SecurityCompliance/compliance20/managing-holds) | 修改時間 |
-| 7/18/2019 | [定義郵件流規則以加密 Office 365 中的電子郵件](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 修改時間 |
-| 7/18/2019 | [Office 365 中的加密](/Office365/SecurityCompliance/encryption) | 修改時間 |
-| 7/18/2019 | [適用於 Office Online Server 和 Office Web Apps Server 的 GDPR](/Office365/SecurityCompliance/gdpr-for-office-online-server) | 修改時間 |
-| 7/18/2019 | [讓使用者能夠存取 Office 365 安全性 & 合規性中心](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | 修改時間 |
-| 7/18/2019 | [Office 365 ATP 安全連結的運作方式](/Office365/SecurityCompliance/how-atp-safe-links-works) | 修改時間 |
-| 7/18/2019 | [獨立的 SharePoint Online 小組網站開發/測試環境](/Office365/SecurityCompliance/isolated-sharepoint-online-team-site-dev-test-environment) | 修改時間 |
-| 7/18/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | 修改時間 |
-| 7/18/2019 | [設定全新的 Office 365 郵件加密功能](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | 修改時間 |
-| 7/18/2019 | [檢閱在進階電子文件中的交談](/Office365/SecurityCompliance/compliance20/conversation-review-sets) | 修改時間 |
-
-
 ## <a name="week-of-july-22-2019"></a>2019 年 7 月 22 日當週
 
 
@@ -218,3 +178,41 @@
 | 8/16/2019 | [威脅總管] 和 [即時偵測，新威脅總管] 中，變更威脅總管] 中，新增至 Office 365、 安全性、 雲端安全性、 新 ATP，新的 ATP 功能中的安全性](/Office365/SecurityCompliance/threat-explorer) | 修改時間 |
 | 8/16/2019 | [內容搜尋的關鍵字查詢與搜尋條件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 修改時間 |
 | 8/16/2019 | [稽核共用來找出與外部使用者共用的資源](/Office365/SecurityCompliance/use-sharing-auditing) | 修改時間 |
+
+
+## <a name="week-of-august-19-2019"></a>2019 年 8 月 19 日當週
+
+
+| 發佈時間 |主題標題 | 變更 |
+|------|------------|--------|
+| 8/19/2019 | [內容搜尋的關鍵字查詢與搜尋條件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 修改時間 |
+| 8/19/2019 | [使用封存 Office 365 中的協力廠商資料合作夥伴](/Office365/SecurityCompliance/work-with-partner-to-archive-third-party-data) | 修改時間 |
+| 8/20/2019 | [Office 365 中的內容搜尋](/Office365/SecurityCompliance/content-search) | 修改時間 |
+| 8/20/2019 | [使用封存 Office 365 中的協力廠商資料合作夥伴](/Office365/SecurityCompliance/work-with-partner-to-archive-third-party-data) | 修改時間 |
+| 8/20/2019 | 開始使用 Office 365 威脅調查及回應 | 移除 |
+| 8/20/2019 | [Office 365 威脅調查及回應](/Office365/SecurityCompliance/office-365-ti) | 修改時間 |
+| 8/20/2019 | [設定內容搜尋的權限篩選](/Office365/SecurityCompliance/permissions-filtering-for-content-search) | 修改時間 |
+| 8/20/2019 | [保護您的 Office 365 使用者安全回應能力與 Office 365 威脅調查](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 修改時間 |
+| 8/20/2019 | [在安全性 & 合規性中心 PowerShell 中建立自訂機密資訊類型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | 修改時間 |
+| 8/20/2019 | [在安全性 & 合規性中心建立自訂機密資訊類型](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 修改時間 |
+| 8/20/2019 | [使用完全資料符合建立自訂機密資訊類型](/Office365/SecurityCompliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification) | 修改時間 |
+| 8/20/2019 | [自訂內建的敏感性資訊類型](/Office365/SecurityCompliance/customize-a-built-in-sensitive-information-type) | 修改時間 |
+| 8/20/2019 | [資料外洩防護的概觀](/Office365/SecurityCompliance/data-loss-prevention-policies) | 修改時間 |
+| 8/20/2019 | [資料外洩防護和 Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | 修改時間 |
+| 8/20/2019 | [敏感性資訊類型在找什麼](/Office365/SecurityCompliance/what-the-sensitive-information-types-look-for) | 修改時間 |
+| 8/20/2019 | [您維持組織安全回應能力與 Office 365 威脅調查](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 修改時間 |
+| 8/21/2019 | [Office 365 中的資料復原](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | 修改時間 |
+| 8/21/2019 | [處理資料時發生補救錯誤](/Office365/SecurityCompliance/compliance20/error-remediation) | 修改時間 |
+| 8/21/2019 | [錯誤修復時處理資料來進行調查](/Office365/SecurityCompliance/datainvestigations/error-remediation) | 修改時間 |
+| 8/21/2019 | [歐盟國家識別碼](/Office365/SecurityCompliance/eu-national-identification-number) | 修改時間 |
+| 8/21/2019 | [為您的組織設定監督原則](/Office365/SecurityCompliance/configure-supervision-policies) | 修改時間 |
+| 8/21/2019 | [Office 365 中的監督原則](/Office365/SecurityCompliance/supervision-policies) | 修改時間 |
+| 8/21/2019 | [Office 365 中的內容搜尋](/Office365/SecurityCompliance/content-search) | 修改時間 |
+| 8/21/2019 | [如何找出位於 Exchange Online 信箱的保留類型](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | 修改時間 |
+| 8/22/2019 | [尋找並調查惡意電子郵件，已在 Office 365、 TIMailData 內嵌、 安全性事件、 事件，ATP Powershell 傳遞電子郵件惡意程式碼、 遭入侵的使用者，釣魚程式的電子郵件、 惡意程式碼的電子郵件、 讀取電子郵件標頭、 讀取標頭、 開啟電子郵件標頭](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 修改時間 |
+| 8/22/2019 | [Office 365 威脅調查及回應](/Office365/SecurityCompliance/office-365-ti) | 修改時間 |
+| 8/22/2019 | [Exchange Online Protection 概觀](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 修改時間 |
+| 8/23/2019 | [大量抱怨層級值、 大量郵件寄件者、 BCL 層級、 BCL 的運作方式、 BCL 分級反垃圾郵件，反垃圾郵件的標頭，大量郵件篩選功能，停止大宗郵件](/Office365/SecurityCompliance/bulk-complaint-level-values) | 修改時間 |
+| 8/23/2019 | [管理 EOP 中的郵件使用者](/Office365/SecurityCompliance/eop/manage-mail-users-in-eop) | 修改時間 |
+| 8/23/2019 | [利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件](/Office365/SecurityCompliance/use-spam-notifications-to-release-and-report-quarantined-messages) | 修改時間 |
+| 8/23/2019 | [Exchange Online Protection 概觀](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 修改時間 |
