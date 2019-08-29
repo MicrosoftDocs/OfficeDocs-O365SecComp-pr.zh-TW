@@ -3,7 +3,7 @@ title: 建立報表排程安全性&amp;合規性中心
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定在 [安全性報表排程&amp;合規性中心。
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077599"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658081"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>建立報表排程安全性&amp;合規性中心
 
@@ -33,11 +33,29 @@ ms.locfileid: "34077599"
   
 1. 在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板**。
     
-2. 選擇 [報告]。 此範例而言，我們將選擇的威脅保護狀態報表。
+2. 選擇下列其中一個下列報告： 
+
+    - DLP 原則相符項目
+    - Exchange 傳輸規則
+    - DLP 誤判和覆寫
+    - Office 365 ATP 檔案類型
+    - Office 365 ATP 郵件處理
+    - 電子郵件中偵測到的惡意程式碼
+    - 上方的惡意程式碼
+    - 排名最前面的寄件者及收件者
+    - 詐騙偵測
+    - 垃圾郵件偵測
+    - 傳送和接收電子郵件
+    - DLP 事件
+    - 加密報表
+
+    此範例而言，我們將選擇的進階威脅防護的檔案類型報表。
     
-3. 在報表的左上角，選擇 [ **+ 建立排程**]。
+3. 在報表的左上角，選擇 [ **+ 建立排程**]。 
     
-    ![您可以建立報表排程安全性&amp;合規性中心](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![若要建立排程](media/atpfiletypes-createschedule.png)
+
+    (請注意： 並非所有報表都有 [ **+ 建立排程**] 按鈕。)
   
     [**建立排程**] 對話方塊隨即開啟。 
     

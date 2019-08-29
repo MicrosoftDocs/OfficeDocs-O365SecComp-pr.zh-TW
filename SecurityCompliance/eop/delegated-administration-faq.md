@@ -3,19 +3,19 @@ title: 委派管理常見問題集
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 12/9/2016
+ms.date: 8/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 針對想要執行委派的 Office 365 管理工作的 Microsoft 合作夥伴和轉銷售，包括能夠管理其他承租人 (公司) 的 Exchange Online Protection (EOP)，本主題提供常見問題與解答。
-ms.openlocfilehash: 0121c0a50e7f3ef7e5ab918a69efbd9ed609413e
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 6de70859c7bcb5e735be8f29684c7fcd731f6ed5
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165639"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658109"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常見問題集
 
@@ -26,12 +26,12 @@ ms.locfileid: "36165639"
 答：是。 如果您的 Microsoft 合作夥伴或轉銷商，而且您已簽署最多可為 Microsoft 顧問，您可以要求權限管理在系統管理中心內其租用戶。 這稱為委派管理，以及它可讓您管理其 Office 365 租用戶中 （包括 EOP 設定） 如果當您已在組織內系統管理員。 執行委派的管理的步驟如下所示：
   
 1. 註冊成為 [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits)。
-    
-2. 註冊 Office 365 委派管理。客戶必須將委派管理員的身分授權給您，您才可以開始管理客戶的帳戶。若要取得核准，您需要先[將委派管理的邀請寄給他們](https://go.microsoft.com/fwlink/?LinkId=396829)。(您也可以稍後再提供委派管理給客戶。) 
-    
-3. 建立委派的管理員帳戶。
-    
-請參閱＜[合作夥伴：建立業務以及管理您的 Office 365 合作夥伴帳戶](https://go.microsoft.com/fwlink/?LinkId=301485)＞，以取得如何設定 Office 365 委派管理的詳細資訊。 
+
+2. 註冊 Office 365 委派管理。客戶必須將委派管理員的身分授權給您，您才可以開始管理客戶的帳戶。若要取得核准，您需要先[將委派管理的邀請寄給他們](https://go.microsoft.com/fwlink/?LinkId=396829)。(您也可以稍後再提供委派管理給客戶。)
+
+3. 建立委派的管理員帳戶使用中[的 [新增或刪除委派的系統管理員](https://go.microsoft.com/fwlink/?LinkId=396831)的步驟。
+
+請參閱＜[合作夥伴：建立業務以及管理您的 Office 365 合作夥伴帳戶](https://go.microsoft.com/fwlink/?LinkId=301485)＞，以取得如何設定 Office 365 委派管理的詳細資訊。
   
  **問：我是客戶，不是轉銷商，該如何為子承租人設定委派的系統管理員？**
   
@@ -43,6 +43,4 @@ ms.locfileid: "36165639"
   
  **問：我可以取得所有子承租人的彙總報告嗎？**
   
-答：是。 跨您管理公司的合併報告不適用於 Micrsoft 365 系統管理中心報告這一次。 不過，這可以透過遠端 Windows PowerShell 或[報告 web 服務](https://go.microsoft.com/fwlink/?LinkId=279926)。 
-  
-
+答：是。 跨您管理公司的合併報告不適用於 Microsoft 365 系統管理中心報告這一次。 不過，您可以使用遠端 Windows PowerShell 或[報告 web 服務](https://go.microsoft.com/fwlink/?LinkId=279926)。

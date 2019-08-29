@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786648"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649958"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager 和 GDPR
 
@@ -40,7 +40,7 @@ ms.locfileid: "35786648"
 
 2. 當您已輸入正確的使用者名稱時，選取**搜尋**。
 
-3. 不會傳回的使用者帳戶，'找不到使用者' 會顯示在頁面上。 檢查使用者的電子郵件地址資訊並進行修正為必要。 若要重試，選取**搜尋**。
+3. 不會傳回的使用者帳戶，頁面會顯示**找不到使用者**。 檢查使用者的電子郵件地址資訊並進行修正為必要。 若要重試，選取**搜尋**。
 
 4. 使用者帳戶傳回，從**搜尋**按鈕變更，以**純**文字。 這表示傳回的使用者帳戶是其他函數的作業系統內容，這些函數套用到此使用者帳戶。
 

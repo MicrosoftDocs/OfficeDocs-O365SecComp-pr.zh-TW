@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: 信箱稽核記錄 （也稱為預設信箱稽核或信箱的稽核預設情況下） 的 Microsoft 365 中預設已開啟。 這表示信箱擁有者、 代理人和系統管理員所執行的特定動作都會自動記錄在信箱稽核記錄，您可以搜尋的信箱上執行的活動。
-ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+description: 信箱稽核記錄 （也稱為預設信箱稽核或信箱的稽核預設情況下） 的 Office 365 中預設已開啟。 這表示信箱擁有者、 代理人和系統管理員所執行的特定動作都會自動記錄在信箱稽核記錄，您可以搜尋的信箱上執行的活動。
+ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599919"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649908"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
-2019 年 1 月開始，Microsoft 開啟信箱稽核記錄依預設，所有的 Microsoft 365 組織。 這表示自動記錄信箱擁有者、 代理人和系統管理員所執行某些動作，以及對應的信箱稽核記錄時，會提供您的信箱稽核記錄中搜尋它們。 信箱稽核依預設已開啟之前，您必須以手動啟用每個使用者信箱在您的組織中使用。
+2019 年 1 月開始，Microsoft 開啟信箱稽核記錄功能預設為所有 Office 365 組織。 這表示自動記錄信箱擁有者、 代理人和系統管理員所執行某些動作，以及對應的信箱稽核記錄時，會提供您的信箱稽核記錄中搜尋它們。 信箱稽核依預設已開啟之前，您必須以手動啟用每個使用者信箱在您的組織中使用。
 
 以下是一些信箱的稽核預設的優點：
 
@@ -36,8 +36,8 @@ ms.locfileid: "35599919"
 
 - （因為您正在稽核所有信箱的相同的動作），您可以有整個組織的一致的信箱稽核原則。
 
-> [!TIP]
-> 重要的是有關信箱的稽核預設版本，請記得： 您不需要執行任何動作來管理信箱的稽核。 不過，若要了解更多、 自訂預設設定，從信箱稽核或完全將其關閉，本主題可協助您。
+> [!NOTE]
+>• 關於信箱的稽核預設版本，請記得重要事情是： 您不需要執行任何動作來管理信箱的稽核。 不過，若要了解更多、 自訂預設設定，從信箱稽核或完全將其關閉，本主題可協助您。 <br><br>• 即使信箱的稽核預設已開啟，您可能會注意到安全 & 與規範中心中或透過 Office 365 管理活動 API，不在稽核記錄搜尋中找到的某些使用者的信箱稽核事件。 如需詳細資訊，請參閱本主題[的詳細資訊](#more-information)一節。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>確認信箱的稽核預設已開啟
 
@@ -334,7 +334,23 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>詳細資訊
 
-- 根據預設，信箱稽核記錄會保留 90 天在被刪除之前的記錄。 您可以在 Exchange Online PowerShell 中的**Set-mailbox**指令程式上使用*AuditLogAgeLimit*參數變更稽核記錄保留天數。 不過，增加此值不會讓您搜尋超過 90 天的 Microsoft 365 稽核記錄中的事件。
+- 只有擁有 E5 授權的使用者手動啟用的信箱的信箱稽核記錄的位置或由系統管理員會在稽核記錄搜尋的安全性 & 合規性中心中或透過 Office 365 管理活動 API 傳回信箱稽核記錄事件。
+
+  若要擷取沒有 E5 授權使用者的信箱稽核記錄項目，您可以：
+
+  - 在 Exchange Online PowerShell 中使用下列 cmdlet:
+
+    - [Search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)來搜尋信箱稽核記錄檔中的特定使用者。
+
+    - [New-mailboxauditlogsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch)來搜尋信箱稽核記錄，針對特定使用者，並使透過電子郵件傳送給指定的收件者的結果。
+
+  - Exchange Online 中使用 Exchange 系統管理中心 (EAC)，執行下列動作：
+
+    - [匯出信箱稽核記錄](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+
+    - [執行非擁有者信箱存取報告](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+
+- 根據預設，信箱稽核記錄會保留 90 天在被刪除之前的記錄。 您可以在 Exchange Online PowerShell 中的**Set-mailbox**指令程式上使用*AuditLogAgeLimit*參數變更稽核記錄保留天數。 不過，增加此值不會讓您搜尋超過 90 天的 Office 365 稽核記錄中的事件。
 
   如果您增加保留天數時，您需要使用[Search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)指令程式在 Exchange Online PowerShell 來搜尋使用者的信箱稽核記錄超過 90 天的記錄。
 
@@ -361,6 +377,6 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - 您無法直接存取稽核記錄檔中記錄 [可復原的項目] 資料夾中。相反地，您會使用**Search-mailboxauditlog**指令程式，或搜尋 Microsoft 365 稽核記錄] 來尋找及檢視信箱稽核記錄。
+    - 您無法直接存取稽核記錄檔中記錄 [可復原的項目] 資料夾中。相反地，您會使用**Search-mailboxauditlog**指令程式，或搜尋 Office 365 稽核記錄] 來尋找及檢視信箱稽核記錄。
 
 - 如果信箱會處於暫止狀態或指派給 「 規範中心中的保留原則，稽核記錄會記錄仍會保留該信箱*AuditLogAgeLimit*屬性 （預設為 90 天） 所定義的持續時間。 若要保留稽核記錄會記錄較長的保留的信箱，您需要增加信箱的*AuditLogAgeLimit*值。
