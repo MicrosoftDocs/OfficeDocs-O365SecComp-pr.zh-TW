@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a60a45833eafd0151ac3a48ff67087b90bd50e31
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599659"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676757"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
@@ -48,40 +48,38 @@ ms.locfileid: "35599659"
 ### <a name="ask-for-help-on-the-web"></a>在網路上尋求協助
 
 1. 登入 Microsoft 365 系統管理中心。
-    
+
 2. 移至 **[支援]** \> **[要求客戶支援]** \> **[新增服務要求]**
-    
+
 3. 利用表單填入問題的相關資訊、搜尋先前問題的解決方案，或是附上記錄或相關檔案。
-    
+
 ### <a name="ask-for-help-on-the-telephone"></a>透過電話尋求協助
 
 1. 登入 Microsoft 365 系統管理中心。
-    
+
 2. 若為一般產品問題，請移至 **[支援]** \> **[要求客戶支援]** \> **[連絡技術支援]**。
-    
+
     購買 EOP 之前如有疑問，或關於帳務和訂閱的問題，請移至 **[支援]** \> **[要求客戶支援]** \> **[連絡帳務和訂閱支援]**。
-    
+
 3. 使用 Virtual Agent for Microsoft Office 365，搜尋最新的適用電話號碼。
-    
+
 ## <a name="support-telephone-numbers"></a>支援電話號碼
 
 Microsoft 提供全球產品支援的當地或免付費電話號碼。許多支援中心會在上班時間以當地語言提供協助，或全年無休以英語提供協助。如果下面未列出您的地區，請如上所述利用 Virtual Agent for Microsoft Office 365 來尋找當地支援電話號碼。
   
 |**國家或地區**|**購買前和帳務問題**|**技術支援問題**|
 |:-----|:-----|:-----|
-|巴西  <br/> |免付費電話：08007621146          當地：1147001999  <br/> |相同  <br/> |
-|法國  <br/> |免付費電話：0805 540 594           當地：01 57 32 42 97  <br/> |相同  <br/> |
-|德國  <br/> |免付費電話：0800 589 2332           當地：069 380 789 508  <br/> |相同  <br/> |
-|日本  <br/> |免付費電話：0120-628860          當地：343326257  <br/> |免付費電話：0120-996680          當地：357679793  <br/> |
-|韓國  <br/> |免付費電話：080-495-0880          當地：234831937  <br/> |相同  <br/> |
-|西班牙  <br/> |免付費電話：900 814 197          當地：912 718 160  <br/> |相同  <br/> |
-|英國  <br/> |免付費電話：0800 032 6417          當地：0203 450 6455  <br/> |相同  <br/> |
-|美國  <br/> |免付費電話：1-877-913-2707  <br/> |免付費電話：1-800-865-9408  <br/> |
+|巴西|免付費電話： 08007621146 <br/> 本機： 1147001999|相同|
+|法國|免付費電話： 0805年 540 594 <br/> 當地： 01 57 32 42 97|相同|
+|德國|免付費電話： 0800年 589 2332 <br/>  本機： 069 380 789 508|相同|
+|日本|免付費電話： 0120年-628860 <br/> 本機： 343326257|免付費電話： 0120年-996680 <br/> 本機： 357679793|
+|韓國|免付費電話： 080-495-0880 <br/> 本機： 234831937|相同|
+|西班牙|免付費電話： 900 814 197 <br/> 本機： 912 718 160|相同|
+|英國|免付費電話： 0800年 032 6417 <br/> 當地： 0203年 450 6455|相同|
+|美國|免付費電話：1-877-913-2707|免付費電話：1-800-865-9408|
    
 ## <a name="for-more-information-about-eop-documentation"></a>如需 EOP 文件的詳細資訊
 
 [第三方版權注意事項](third-party-copyright-notices.md)
   
 [行動不便人士的協助工具](accessibility-for-people-with-disabilities.md)
-  
-

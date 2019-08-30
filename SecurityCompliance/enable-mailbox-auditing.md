@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 信箱稽核記錄 （也稱為預設信箱稽核或信箱的稽核預設情況下） 的 Office 365 中預設已開啟。 這表示信箱擁有者、 代理人和系統管理員所執行的特定動作都會自動記錄在信箱稽核記錄，您可以搜尋的信箱上執行的活動。
-ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
-ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
+ms.openlocfilehash: 50be60e3ca863c6625693c1b4debce1217571002
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36649908"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676863"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -88,7 +88,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
     - Exchange Online 中的就地 eDiscovery。
 
-  - 信箱是藉由使用[Microsoft Exchange Server MAPI 編輯器](https://go.microsoft.com/fwlink/p/?linkId=204086)來存取。
+  - 信箱是藉由使用 Microsoft Exchange Server MAPI 編輯器來存取。
 
 ### <a name="mailbox-actions-for-user-mailboxes-and-shared-mailboxes"></a>代表使用者信箱和共用的信箱的信箱動作
 

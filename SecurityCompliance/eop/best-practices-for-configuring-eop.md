@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 遵循下列 Exchange Online Protection (EOP) 最佳作法建議，以成功完成設定並避免發生常見組態錯誤。
-ms.openlocfilehash: 991059b6823059b0e5eae784e21bfc0128cbd2d1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 95eb1848b3004c2a19084f1dba1b26eaaa39da58
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599809"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676833"
 ---
 # <a name="best-practices-for-configuring-eop"></a>設定 EOP 的最佳作法
   
@@ -35,12 +35,12 @@ ms.locfileid: "35599809"
   
 ## <a name="set-anti-spam-options"></a>設定反垃圾郵件選項
 
-管理您的連線篩選器設定來新增 IP 位址至 IP 允許和 IP 封鎖清單，並藉由選取 [**啟用安全清單**] 選項，其中應該減少誤判 （歸類為垃圾郵件的良好郵件） 的數目會收到。 深入瞭解[Configure the connection filter policy >](../configure-the-connection-filter-policy.md)。 如需更多套用到整個組織的垃圾郵件設定，請參閱[如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[利用 Office 365 垃圾郵件篩選器封鎖電子郵件的垃圾郵件，以避免誤判正常問題](https://go.microsoft.com/fwlink/p/?LinkId=534225)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
+管理您的連線篩選器設定來新增 IP 位址至 IP 允許和 IP 封鎖清單，並藉由選取 [**啟用安全清單**] 選項，其中應該減少誤判 （歸類為垃圾郵件的良好郵件） 的數目會收到。 深入瞭解[Configure the connection filter policy >](../configure-the-connection-filter-policy.md)。 對於適用於整個組織的多個垃圾郵件設定]，看看[如何防止實際電子郵件被標示為在 Office 365 中的垃圾郵件](../prevent-email-from-being-marked-as-spam.md)或[如何減少 Office 365 中的垃圾郵件](../reduce-spam-email.md)）。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些主題將有所幫助。
   
 檢閱並選擇性地變更預設的設定來管理內容篩選器。 例如，您可以變更偵測到垃圾郵件的郵件會發生什麼情況的動作。 如果您想要追求積極的垃圾郵件篩選方法，您可以設定進階垃圾郵件篩選選項。 我們建議您測試這些選項第一次之前實作它們在實際執行環境中 （藉由開啟這些） 建議是網路釣魚有疑慮的組織開啟**SPF 記錄： 完全未通過**選項。 瞭解更多[設定您的垃圾郵件篩選原則](../configure-your-spam-filter-policies.md)和[進階垃圾郵件篩選選項](../advanced-spam-filtering-asf-options.md)。
   
 > [!IMPORTANT]
-> 如果您使用預設的內容篩選動作，**將郵件移至垃圾郵件] 資料夾**，以確保此巨集指令將搭配內部部署信箱，您必須在您內部部署設定 Exchange 郵件流程規則 （也稱為傳輸規則）若要偵測 EOP 所新增的垃圾郵件標頭的伺服器。 如需詳細資訊，請參閱[確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 
+> 如果您使用預設的內容篩選動作，**移至垃圾郵件] 資料夾的郵件**，以確保此巨集指令將搭配內部部署信箱，您必須在您的內部部署 Exchange 上設定郵件流程規則 （也稱為傳輸規則）若要偵測 EOP 所新增的垃圾郵件標頭的伺服器。 如需詳細資訊，請參閱[確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
   
 我們建議您檢閱[反垃圾郵件保護常見問題集](../anti-spam-protection-faq.md)，包括的輸出郵寄最佳作法章節內容，以協助確保您的輸出郵件會傳遞。
   
@@ -52,36 +52,36 @@ ms.locfileid: "35599809"
   
 如果您擔心包含惡意程式碼的可執行檔案，您可以建立會封鎖任何具有可執行內容之電子郵件附件的 Exchange 郵件流程規則。 若要封鎖[使用郵件流程規則檢查郵件附件中 Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)中所列的檔案類型，請遵循[如何減少惡意程式碼威脅透過檔案附件封鎖在 Exchange Online Protection](https://support.microsoft.com/kb/2959596)中的步驟。
   
-您可以使用 EAC 中常見的附件類型篩選器。 選取 [**保護**] \> **惡意軟體篩選器**。 您可以建立會封鎖任何具有可執行內容的電子郵件附件的郵件流程規則。 
+您可以使用 EAC 中常見的附件類型篩選器。 選取 [**保護**] \> **惡意軟體篩選器**。 您可以建立會封鎖任何具有可執行內容的電子郵件附件的郵件流程規則。
   
-為了增加防護，建議使用郵件流程規則封鎖下列部分或所有副檔名：ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、ht、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf、wsh。 這可以經由使用的**任何附件副檔名包括這些字詞**的條件。 
+為了增加防護，建議使用郵件流程規則封鎖下列部分或所有副檔名：ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、ht、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf、wsh。 這可以經由使用的**任何附件副檔名包括這些字詞**的條件。
   
 系統管理員和使用者可以提交通過篩選器的惡意程式碼，或者提交您認為錯誤識別為惡意程式碼的檔案，將其傳送給 Microsoft 以進行分析。如需詳細資訊，請參閱[Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md)。
   
 ## <a name="create-mail-flow-rules"></a>建立郵件流程規則
 
-建立郵件流程規則 （也稱為傳輸規則） 或自訂的篩選，以符合您的業務需求。
+建立郵件流程規則或自訂篩選，以符合您的業務需求。
   
 在實際執行環境中部署新規則時，請先選取其中一個測試模式，以查看規則的效果。 一旦您滿意，規則的運作情況符合預期，將規則模式變更為 [**強制**。
   
-當您部署新規則時，請考慮新增額外的**產生附隨報告**來監視巨集指令中的規則動作。 
+當您部署新規則時，請考慮新增額外的**產生附隨報告**來監視巨集指令中的規則動作。
   
-若您使用混合式部署組態，亦即組織有一部分是內部部署，而另一部分部署在 Office 365 中，則您可以建立規則以整體套用至整個組織。 若要這麼做，使用內部部署與 Office 365 部署中都可使用的條件。 雖然大部分的條件在這兩種部署中都可使用，但有少數僅適用於特定的部署案例。 了解請參閱[郵件流程規則 （傳輸規則） 在 [Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)。
+若您使用混合式部署組態，亦即組織有一部分是內部部署，而另一部分部署在 Office 365 中，則您可以建立規則以整體套用至整個組織。 若要這麼做，使用內部部署與 Office 365 部署中都可使用的條件。 雖然大部分的條件在這兩種部署中都可使用，但有少數僅適用於特定的部署案例。 了解請參閱[郵件流程規則 （傳輸規則） 在 [Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
   
-如果您要對組織內流通的郵件檢查電子郵件附件，您可以設定郵件流程規則。然後，根據其附件的內容或特性，對已檢查的郵件採取動作。若要深入了解，請參閱 [Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)。
+如果您要對組織內流通的郵件檢查電子郵件附件，您可以設定郵件流程規則。 然後，根據其附件的內容或特性，對已檢查的郵件採取動作。 深入瞭解如何[使用郵件流程規則檢查郵件附件中 Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。
   
 ### <a name="phishing-and-spoofing-prevention"></a>預防網路釣魚和詐騙
 
 您可以藉由偵測個人資訊是在何時以電子郵件離開組織，以改善防網路釣魚保護。例如，您可以在郵件流程規則中使用下列規則運算式，以偵測可能危害隱私的個人財務資料或資訊傳輸。
   
-- \d\d\d\d\s\d\d\d\d\s\d\d\d\d\s\d\d\d\d (MasterCard Visa)
-    
-- \d\d\d\d\s\d\d\d\d\d\d\s\d\d\d\d\d (American Express)
-    
-- \d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d (任何 16 位數的數字)
-    
-- \d\d\d\-\d\d\-\d\d\d\d (社會安全編號)
-    
+- `\d\d\d\d\s\d\d\d\d\s\d\d\d\d\s\d\d\d\d`（MasterCard 或 Visa）
+
+- `\d\d\d\d\s\d\d\d\d\d\d\s\d\d\d\d\d`(American Express)
+
+- `\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d`（任何 16 位數的數字）
+
+- `\d\d\d\-\d\d\-\d\d\d\d`（社會安全編號）
+
 封鎖似乎是從自己網域所傳送的內送惡意電子郵件，也可以減少成功的垃圾郵件和網路釣魚活動。例如，您可以建立郵件流程規則，拒絕郵件由貴公司網域傳送到相同的公司網域，以封鎖這種類型的寄件者偽造。
   
 > [!CAUTION]
@@ -95,7 +95,7 @@ ms.locfileid: "35599809"
   
 ## <a name="reporting-and-troubleshooting"></a>報告和疑難排解
 
-在系統管理中心使用報告來疑難排解一般問題和趨勢。 使用訊息追蹤工具，尋找關於訊息的單點特定資料。 請參閱[Exchange Online Protection 的報告與訊息追蹤](reporting-and-message-trace-in-exchange-online-protection.md)，以深入了解報告功能。 請參閱[Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx)，以深入了解郵件追蹤工具。
+在系統管理中心使用報告來疑難排解一般問題和趨勢。 使用訊息追蹤工具，尋找關於訊息的單點特定資料。 請參閱[Exchange Online Protection 的報告與訊息追蹤](reporting-and-message-trace-in-exchange-online-protection.md)，以深入了解報告功能。 請參閱[Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)，以深入了解郵件追蹤工具。
   
 ## <a name="for-more-information"></a>如需詳細資訊
 
@@ -103,8 +103,6 @@ ms.locfileid: "35599809"
   
 [EOP 的說明和支援](help-and-support-for-eop.md)
   
-[如何協助確保郵件不會標示為垃圾郵件](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[如何在 Office 365 中防止實際電子郵件被標示為垃圾郵件](../prevent-email-from-being-marked-as-spam.md)
   
-[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常](https://go.microsoft.com/fwlink/p/?LinkId=534225)
-  
-
+[如何減少 Office 365 中的垃圾郵件](../reduce-spam-email.md)
