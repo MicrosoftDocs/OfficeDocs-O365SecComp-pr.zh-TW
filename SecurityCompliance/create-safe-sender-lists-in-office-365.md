@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要是確定您接收來自特定寄件者的郵件，因為您信任它們與他們的郵件，您可以調整您允許在 Exchange 系統管理中心中的垃圾郵件篩選原則中的清單。
-ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 49803dee186a0f89e3caa42f8c7559bb6ce0c7c9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599979"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699211"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中建立安全的寄件者清單
 
