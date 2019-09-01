@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: e4028fa9526afbb33cb184adb7b3cd301feae837
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772160"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676653"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -163,7 +163,7 @@ ms.locfileid: "35772160"
   
 - 在保留期間結束時觸發處置檢閱，這樣能在刪除 SharePoint 和 OneDrive 文件之前，必須先檢閱它們。如需詳細資訊，請參閱[處置檢閱概觀](disposition-reviews.md) (機器翻譯)。
     
-- 保留期間是從內容套用標籤時開始計算，而不是內容的壽命或上次修改時間。
+- 保留期間是從內容套用標籤時開始計算，而不是內容的壽命或上次修改時間。 請注意，此選項僅適用 SharePoint 網站和 OneDrive 帳戶中的內容。 針對 Exchange 電子郵件，保留期間一律會取決於傳送或接收訊息的日期，無論在這裡選擇的選項為何。
     
 ![保留設定與標籤專用的選項](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
@@ -283,14 +283,12 @@ ms.locfileid: "35772160"
 
 如需查詢語法的詳細資訊，請參閱：
 
-- 
-  [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 查詢式標籤使用搜尋索引來識別內容。如需有效可搜尋屬性的詳細資訊，請參閱：
 
 - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
-- 
-  [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 範例查詢：
 
