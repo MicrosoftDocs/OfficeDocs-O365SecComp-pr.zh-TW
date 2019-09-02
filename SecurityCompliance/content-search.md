@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Office 365 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
-ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
+ms.openlocfilehash: cc6a385ec639f6df787c2de23fece8cb53a4d25e
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493164"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675464"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -184,6 +184,8 @@ ms.locfileid: "36493164"
 [預覽搜尋結果](#previewing-search-results)
   
 [部分編製索引的項目](#partially-indexed-items)
+
+[在 SharePoint 多地理位置環境中搜尋內容](#searching-for-content-in-a-sharepoint-multi-geo-environment)
   
 ### <a name="content-search-limits"></a>內容搜尋限制
 
@@ -367,4 +369,41 @@ ms.locfileid: "36493164"
 
 - 如先前所解說，估計的搜尋結果中會包含信箱中部分編製索引的項目。 估計的搜尋結果中不會包括來自 SharePoint 和 OneDrive 的部分編製索引項目。 
     
-- 若部分編製索引的項目符合搜尋查詢 (因為其他郵件或文件屬性符合搜尋準則)，則不會將它包含在未編製索引項目的估計數量中。 若搜尋準則排除了部分編製索引的項目，則不會將它包含在未編製索引項目的估計數量中。 如需詳細資訊，請參閱 [Office 365 的內容搜尋中部分編製索引的項目](partially-indexed-items-in-content-search.md)。
+- 若部分編製索引的項目符合搜尋查詢 (因為其他郵件或文件屬性符合搜尋準則)，則不會將它包含在未編製索引項目的估計數量中。 若搜尋準則排除了部分編製索引的項目，則不會將它包含在未編製索引項目的估計數量中。 如需詳細資訊，請參閱 [Office 365 的內容搜尋中部分編製索引的項目](partially-indexed-items-in-content-search.md) (機器翻譯)。
+
+### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>在 SharePoint 多地理位置環境中搜尋內容
+
+如果電子文件探索管理員需要在 [SharePoint 多地理位置環境](https://go.microsoft.com/fwlink/?linkid=860840)中的不同區域中搜尋 SharePoint 和 OneDrive 中的內容，則需要執行以下操作才能進行：
+   
+1. 為電子文件探索管理員需要搜尋的每個衛星地理位置建立個別的使用者帳戶。 若要在該地理位置中的網站搜尋內容，電子文件探索管理員必須登入您為該位置建立的帳戶，然後再執行內容搜尋。
+
+2. 為電子文件探索管理員需要搜尋的每個衛星地理位置 (以及相應的使用者帳戶) 建立搜尋權限篩選條件。 當電子文件探索管理員登入與該位置關聯的使用者帳戶時，每一個搜尋權限篩選條件都會將內容搜尋的範圍限制為特定的地理位置。
+ 
+> [!TIP]
+> 在 [進階電子文件探索][](compliance20/overview-ediscovery-20.md) 中使用搜尋工具時，您不必使用此策略。 這是因為在進階電子文件探索中搜尋 SharePoint 網站和OneDrive 帳戶時，會搜尋所有資料中心。 只有在使用內容搜尋工具並執行與[電子文件探索案例](ediscovery-cases.md)相關聯的搜尋時，才必須使用這個特定區域使用者帳戶和搜尋權限篩選器的策略。 
+
+
+例如，假設電子文件探索管理員需要在芝加哥、倫敦和東京的衛星位置搜尋 SharePoint 和 OneDrive 內容。 第一個步驟是建立三個使用者帳戶，每個位置一個。 下一步是建立三個搜尋權限篩選條件，每個位置及相應的使用者帳戶一個。 以下是此案例的三個搜尋權限篩選條件的範例。 在每個範例中，[區域]**** 指定該地理位置的 SharePoint 資料中心位置，[使用者]**** 參數指定相應的使用者帳戶。 
+
+**北美**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Chicago" -Users ediscovery-chicago@contoso.com -Region NAM -Action ALL
+```
+
+**歐洲**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-London" -Users ediscovery-london@contoso.com -Region GBR -Action ALL
+```
+
+**亞太地區**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Toyko" -Users ediscovery-tokyo@contoso.com -Region JPN -Action ALL
+```
+
+使用搜尋權限篩選條件在多地理位置環境中搜尋內容時，請記住以下事項：
+
+- [地區]**** 參數會指示搜尋特定的衛星位置。 如果電子文件探索管理員只搜尋搜尋權限篩選器指定之區域以外的 SharePoint 和 OneDrive 網站，則不會傳回搜尋結果。 
+
+- [地區]**** 參數不會控制 Exchange 信箱的搜尋。 搜尋信箱時，也會搜尋所有資料中心。 
+    
+如需在多地理位置環境中使用搜尋權限篩選條件的詳細資訊，請參閱[設定 Office 365 中電子文件探索調查的合規性界限](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)中的「搜尋和匯出在多地理位置環境中的內容」(機器翻譯) 這一節。
