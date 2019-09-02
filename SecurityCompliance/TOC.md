@@ -235,50 +235,6 @@
 ## [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
 
-# 管理資料控管
-## [匯入資料](importing-pst-files-to-office-365.md)
-### [使用網路上傳來匯入 PST 檔案](use-network-upload-to-import-pst-files.md)
-### [使用磁碟機運送來匯入 PST 檔案](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [使用 PST 收集工具來尋找、複製及刪除 PST 檔案](find-copy-and-delete-pst-files-in-your-organization.md)
-### [匯入 PST 檔案時篩選資料](filter-data-when-importing-pst-files.md)
-### [使用網路上傳來匯入 RMS 加密的 PST 檔案](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [匯入 PST 檔案的常見問題集](faqimporting-pst-files-to-office-365.md)
-### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
-#### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
-#### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
-#### [設定連接器來封存 LinkedIn 資料](archive-linkedin-data.md)
-#### [設定連接器來封存 Instant Bloomberg 資料](archive-instant-bloomberg-data.md)
-#### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
-## 儲存資料
-### [啟用封存信箱](enable-archive-mailboxes.md)
-### [無限制封存概觀](unlimited-archiving.md)
-### [啟用無限制封存](enable-unlimited-archiving.md)
-### [設定信箱的封存與刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## 保留資料
-### [保留原則](retention-policies.md)
-### [檔案計劃管理員](file-plan-manager.md)
-### [保留標籤](labels.md)
-### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [事件型保留](event-driven-retention.md)
-### [自動化事件型保留](automate-event-driven-retention.md)
-## [處置資料](disposition-reviews.md)
-## 監督通訊
-### [監督原則](supervision-policies.md)
-### [為您的組織設定監督原則](configure-supervision-policies.md)
-## [管理非使用中的信箱](inactive-mailboxes-in-office-365.md)
-### [建立和管理非使用中信箱](create-and-manage-inactive-mailboxes.md)
-### [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [復原非使用中的信箱](recover-an-inactive-mailbox.md)
-### [還原非使用中的信箱](restore-an-inactive-mailbox.md)
-### [刪除非使用中的信箱](delete-an-inactive-mailbox.md)
-## 監視資料控管
-### [檢視文件的標籤活動](view-label-activity-for-documents.md)
-### [利用標籤分析檢視標籤使用量](label-analytics.md)
-### [檢視資料控管報告](view-the-data-governance-reports.md)
-## 資料控管的其他資訊
-### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [搜尋內容](search-for-content.md)
 ## [使用內容搜尋](content-search.md)
 ### [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
@@ -441,7 +397,6 @@
 ### [保留密件副本與展開的通訊群組收件者](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [管理資料調查](datainvestigations/overview-data-investigations.md)
-## [版本資訊](datainvestigations/data-investigations-release-notes.md)
 ## [管理資料外洩事件](datainvestigations/manage-data-spillage-incidents.md)
 ## [建立新的調查](datainvestigations/create-new-investigation.md)
 ## [指派資料調查的權限](datainvestigations/permissions.md)
@@ -456,6 +411,7 @@
 ### [標註及校訂文件](datainvestigations/annotate-and-redact-documents.md)
 ### [載入非 Office 365 資料](datainvestigations/load-non-office365-data.md)
 ### [處理資料時發生補救錯誤](datainvestigations/error-remediation.md)
+### [從其原始位置刪除項目](datainvestigations/delete-items-from-original-locations.md)
 
 ## [執行分析以更快速地調查](datainvestigations/run-analytics-to-investigate-faster.md)
 ### [電子郵件執行緒](datainvestigations/email-threading.md)
@@ -477,6 +433,7 @@
 ### [關閉或刪除調查](datainvestigations/close-or-delete-investigation.md)
 
 ## 資料調查參考
+### [版本資訊](datainvestigations/data-investigations-release-notes.md)
 ### [資料調查中的限制](datainvestigations/limits-datainvestigations.md)
 ### [支援的檔案類型](datainvestigations/supported-filetypes-datainvestigations.md)
 ### [下載中繼資料欄位](datainvestigations/document-metadata-fields.md)
