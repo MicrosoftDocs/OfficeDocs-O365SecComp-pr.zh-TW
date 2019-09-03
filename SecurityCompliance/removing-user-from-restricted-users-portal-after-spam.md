@@ -81,12 +81,10 @@ ms.locfileid: "35854717"
 
 [回應遭入侵的電子郵件帳戶](responding-to-a-compromised-email-account.md)
 
-
-  [了解「無法傳送電子郵件的受限制使用者」警示](https://docs.microsoft.com/zh-TW/office365/securitycompliance/alert-policies)
+[了解「無法傳送電子郵件的受限制使用者」警示](https://docs.microsoft.com/zh-TW/office365/securitycompliance/alert-policies)
 
 [輸出郵件的高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)
 
 [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
 
-
-  [安全性與合規性中心的警示原則](https://docs.microsoft.com/zh-TW/office365/securitycompliance/alert-policies)
+[安全性與合規性中心的警示原則](https://docs.microsoft.com/zh-TW/office365/securitycompliance/alert-policies)

@@ -43,8 +43,7 @@ ms.locfileid: "36054671"
     
 - **SFV:SKB** 表示郵件已標示為垃圾郵件，因為它符合垃圾郵件篩選原則中的封鎖清單。 
     
-- 
-  **SFV:BULK** 表示位於 x-microsoft-antispam 的大量抱怨層級 (BCL) 值高於已對內容篩選器設定的大量閾值。大量電子郵件是使用者可能已註冊，但仍有可能不想要的電子郵件。在郵件標頭中，於 X-Microsoft-Antispam 標頭中尋找 BCL (大量信賴等級) 屬性。如果 BCL 值小於垃圾郵件篩選器中設定的閾值，您可能想要調整閾值，而不是將這些類型的大宗郵件標示為垃圾郵件。不同的使用者對於[大量電子郵件的處理方式](https://docs.microsoft.com/zh-TW/office365/SecurityCompliance/bulk-complaint-level-values) (英文) 各有不同的容錯和喜好設定。您可以針對不同的使用者喜好設定建立不同的原則或規則。
+- **SFV:BULK** 表示位於 x-microsoft-antispam 的大量抱怨層級 (BCL) 值高於已對內容篩選器設定的大量閾值。大量電子郵件是使用者可能已註冊，但仍有可能不想要的電子郵件。在郵件標頭中，於 X-Microsoft-Antispam 標頭中尋找 BCL (大量信賴等級) 屬性。如果 BCL 值小於垃圾郵件篩選器中設定的閾值，您可能想要調整閾值，而不是將這些類型的大宗郵件標示為垃圾郵件。不同的使用者對於[大量電子郵件的處理方式](https://docs.microsoft.com/zh-TW/office365/SecurityCompliance/bulk-complaint-level-values) (英文) 各有不同的容錯和喜好設定。您可以針對不同的使用者喜好設定建立不同的原則或規則。
     
 - **CAT:SPOOF** 或 **CAT:PHISH** 表示郵件似乎是詐騙郵件，表示無法驗證郵件來源，且可能是可疑的郵件。如果有效，寄件者將需要確定它們具有適當的 SPF 及 DKIM 設定。如需詳細資訊，請檢查 Authentication-Results 標頭。雖然可能很難讓所有寄件者都使用適當的電子郵件驗證方法，但略過這些檢查可能風險極大，而且是造成危害的首要原因。 
     
@@ -64,8 +63,7 @@ ms.locfileid: "36054671"
 
 - **使用[提交總管](admin-submission.md)** 系統管理員現在可以使用檔案或網路訊息 ID、URL 以及 Microsoft Office 365 掃描的檔案來傳送電子郵件。 身為系統管理員，您也能夠檢視使用者傳送的意見反應，並使用任何模式來調整任何可能造成問題的設定。
 
-- 
-  **確認您的使用者在傳送及接收電子郵件允許的限制內**，如[這裡](https://docs.microsoft.com/zh-TW/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)所示。
+- **確認您的使用者在傳送及接收電子郵件允許的限制內**，如[這裡](https://docs.microsoft.com/zh-TW/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)所示。
 
  - **仔細檢查大量層級**，如[這裡](bulk-complaint-level-values.md)所指定
     
@@ -83,7 +81,7 @@ EOP 將信任使用者的安全寄件者人和收件人，但不會信任安全�
 
 如果您的使用者在 Outlook 中啟用了「僅限安全清單：只有來自安全寄件者清單或安全收件者清單上的人員或網域所寄出的郵件才會傳送到您的收件匣」，除非寄件者位於收件者的安全寄件者清單中，否則所有電子郵件將進入垃圾郵件資料夾。無論 EOP 將郵件標示為非垃圾郵件，或是您在EOP 設定規則將郵件標示為非垃圾郵件，這個情況都會發生。
   
-您可以遵照 [Outlook：可停用垃圾電子郵件 UI 和篩選機制的原則設定](https://support.microsoft.com/en-us/kb/2180568) (機器翻譯) 中的指示，為您的 Outlook 使用者停用 [僅限安全清單] 選項。
+您可以遵照 [Outlook：可停用垃圾電子郵件 UI 和篩選機制的原則設定](https://support.microsoft.com/zh-TW/kb/2180568) (機器翻譯) 中的指示，為您的 Outlook 使用者停用 [僅限安全清單] 選項。
   
 如果您是在 Outlook 網頁版中查看郵件，則會顯示一個黃色安全提示，指出郵件位於垃圾郵件資料夾，因為寄件者不在收件者的安全寄件者清單中。
   

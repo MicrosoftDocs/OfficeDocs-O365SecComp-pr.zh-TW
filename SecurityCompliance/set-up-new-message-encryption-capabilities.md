@@ -47,14 +47,13 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 如需詳細資訊，請參閱：
 
 - [要使用全新的 OME 功能，我需要什麼訂閱？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)可檢查您的訂閱方案是否包含 Azure 資訊保護 (其中包含 Azure RMS 功能)。
-- [Azure 資訊保護](https://azure.microsoft.com/en-us/services/information-protection/)可取得購買合格訂閱的相關資訊。  
+- [Azure 資訊保護](https://azure.microsoft.com/zh-TW/services/information-protection/)可取得購買合格訂閱的相關資訊。  
 
 ### <a name="manually-activating-azure-rights-management"></a>手動啟用 Azure 版權管理
 
 如果您已停用 Azure RMS，或如果它因任何原因無法自動啟用，您可以在以下位置手動啟用：
 
-- 
-  **Microsoft 365 系統管理中心**：如需相關指示，請參閱[如何從系統管理中心啟用 Azure 版權管理](https://docs.microsoft.com/zh-TW/azure/information-protection/activate-office365)。
+- **Microsoft 365 系統管理中心**：如需相關指示，請參閱[如何從系統管理中心啟用 Azure 版權管理](https://docs.microsoft.com/zh-TW/azure/information-protection/activate-office365)。
 - **Azure 入口網站**：如需相關指示，請參閱[如何從 Azure 入口網站中啟用 Azure 版權管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>設定 Azure 資訊保護租用戶金鑰的管理

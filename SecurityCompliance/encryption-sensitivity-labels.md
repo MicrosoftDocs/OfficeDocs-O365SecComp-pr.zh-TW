@@ -88,8 +88,7 @@ ms.locfileid: "35199762"
 
 當您選擇要對那些使用者或群組允許的權限時，您可以選取下列任一項：
 
-- 
-  [預先定義的權限層級](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
+- [預先定義的權限層級](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
 - 一組自訂的權限，您可在其中選擇任何您想要的權限。
 
 如需每一個特定權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  

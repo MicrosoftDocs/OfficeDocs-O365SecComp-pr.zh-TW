@@ -98,10 +98,8 @@ AIR 包含一組安全性劇本，可以自動啟動 (例如當警示觸發時)�
 |角色或角色群組  |可深入了解的資源  |
 |---------|---------|
 |Office 365 全域系統管理員 |[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|安全性系統管理員 |
-  [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/zh-TW/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online 組織管理 |
-  [Exchange Online 中的權限](https://docs.microsoft.com/zh-TW/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|安全性系統管理員 |[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/zh-TW/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online 組織管理 |[Exchange Online 中的權限](https://docs.microsoft.com/zh-TW/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 如需詳細資訊，請參閱：
 
@@ -125,5 +123,4 @@ Office 365 ATP 方案 2 包含在 Office 365 企業版 E5、Office 365 教育版
 
 - [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供開發中和正在推出的新功能清單。
 
-- 
-  [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/zh-TW/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)描述各 ATP 方案的功能和可用性。
+- [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/zh-TW/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)描述各 ATP 方案的功能和可用性。

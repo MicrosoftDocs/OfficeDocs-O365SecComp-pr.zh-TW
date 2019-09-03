@@ -81,22 +81,17 @@ Office 365 稽核記錄包含的事件來自 Exchange Online、SharePoint Online
 
 警示原則和搜尋稽核記錄的相關資訊：
 
--   
-  [Microsoft 365 安全性與合規性中心的警示原則](https://support.office.com/zh-TW/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Microsoft 365 安全性與合規性中心的警示原則](https://support.office.com/zh-TW/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   
-  [搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動](https://support.office.com/zh-TW/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (簡介)
+-   [搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動](https://support.office.com/zh-TW/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (簡介)
 
--   
-  [開啟或關閉 Office 365 稽核記錄搜尋](https://support.office.com/zh-TW/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [開啟或關閉 Office 365 稽核記錄搜尋](https://support.office.com/zh-TW/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   
-  [搜尋稽核記錄](https://support.office.com/zh-TW/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [搜尋稽核記錄](https://support.office.com/zh-TW/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
 
--   
-  [Office 365 稽核記錄中的詳細內容](https://support.office.com/zh-TW/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Office 365 稽核記錄中的詳細內容](https://support.office.com/zh-TW/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -130,13 +125,11 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 
 詳細資訊：
 
--   
-  [部署 Cloud App Security](https://docs.microsoft.com/zh-TW/cloud-app-security/getting-started-with-cloud-app-security)
+-   [部署 Cloud App Security](https://docs.microsoft.com/zh-TW/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Microsoft Cloud App Security 的詳細資訊](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
+-   [Microsoft Cloud App Security 的詳細資訊](https://www.microsoft.com/zh-TW/cloud-platform/cloud-app-security)
 
--   
-  [禁止使用 Microsoft Cloud App Security Proxy 下載敏感資訊](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-proxy-block-session-aad)
+-   [禁止使用 Microsoft Cloud App Security Proxy 下載敏感資訊](https://docs.microsoft.com/zh-TW/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>範例檔案以及偵測個人資料共用的活動原則
 
