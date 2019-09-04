@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文說明 Office 365 如何使用寄件者原則架構 (SPF) TXT 記錄在 DNS 中以確保目的地電子郵件系統信任自您自訂網域傳送的郵件。 這適用於從 Office 365 傳送的外寄郵件。 從 Office 365 傳送到 Office 365 內的收件者的郵件將會一律通過 SPF。
-ms.openlocfilehash: f872159280968227e88f8014117db28b88097075
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 41055f5eb2f3fe3e4e54f7b863b3739ec51c198a
+ms.sourcegitcommit: 8be0297950840e33dc693d139b69ee142edbed81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599219"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "36714012"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用寄件者原則架構 (SPF) 來防範詐騙
 
@@ -107,7 +107,7 @@ SPF 有一項缺點是，它不會運作時已轉寄電子郵件。 例如，假
 IN TXT "v=spf1 include:contoso.net include:contoso.org -all"
 ```
 
-時接收伺服器會看到此記錄在 DNS 中，它也會執行 DNS 查閱 contoso.net 然後 contoso.org 的 SPF TXT 記錄上。如果找到其他包含陳述式內 contoso.net 或 contoso.org 的記錄，它會太遵循這些。 以協助防止阻斷服務攻擊，DNS 查閱且單一電子郵件的最大數目為 10。 每個包含陳述式代表其他 DNS 查閱。 如果郵件超過 10 個限制，郵件就會失敗 SPF。 一旦郵件達到此限制，接收伺服器的設定，根據寄件者可能會收到訊息，指出郵件產生 「 太多查閱 」 或 「 郵件的最大的躍點計數超過 」。 如何避免此問題的秘訣，請參閱[疑難排解： Office 365 中 SPF 的最佳作法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
+時接收伺服器會看到此記錄在 DNS 中，它也會執行 DNS 查閱 contoso.net 然後 contoso.org 的 SPF TXT 記錄上。如果找到其他包含陳述式內 contoso.net 或 contoso.org 的記錄，它會太遵循這些。 以協助防止阻斷服務攻擊，DNS 查閱且單一電子郵件的最大數目為 10。 每個包含陳述式代表其他 DNS 查閱。 如果郵件超過 10 個限制，郵件就會失敗 SPF。 一旦郵件達到此限制，接收伺服器的設定，根據寄件者可能會收到訊息，指出郵件產生 「 太多查閱 」 或 「 已超出最大躍點訊息 」 (其中情形時查閱循環及超越 DNS 逾時）。 如何避免此問題的秘訣，請參閱[疑難排解： Office 365 中 SPF 的最佳作法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
   
 ## <a name="requirements-for-your-spf-txt-record-and-office-365"></a>您的 SPF TXT 記錄與 Office 365 的需求
 <a name="SPFReqsinO365"> </a>
