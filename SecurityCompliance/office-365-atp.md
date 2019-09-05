@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: ca948fdd99ca04830ecb7685ed8930a71345299f
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: d9dda9b19f601e26d01a18f7602f4fae3e0a0cb4
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231087"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761719"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -87,7 +87,7 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>利用自動調查及回應節省時間
 
-(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您的組織的處境便愈好。 Office 365 ATP 方案 2 現在將包含[自動調查及回應 (AIR)](automated-investigation-response-office.md) 功能。 (如果您尚沒有這些功能，您會隨著 ATP 方案 2 取得這些功能。)
+(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您組織的處境便愈好。 Office 365 ATP 方案 2 現在將包含[自動調查及回應 (AIR)](automated-investigation-response-office.md) 功能。 (如果您尚沒有這些功能，您會隨著 ATP 方案 2 取得這些功能。)
 
 AIR 包含一組安全性劇本，可以自動啟動 (例如當警示觸發時)，或手動啟動 (例如從檔案總管中的檢視)。 AIR 可以在緩和威脅方面有效也有效率地節省您安全性作業小組的時間和精力。 若要深入了解，請參閱[使用 Office 365 自動調查及回應 (AIR)](automated-investigation-response-office.md)。
 
