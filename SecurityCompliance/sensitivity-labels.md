@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
-ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
+ms.openlocfilehash: ce05fe8062cb0f651edc74101b11877c091eb6fb
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36675454"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717703"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -68,7 +68,7 @@ ms.locfileid: "36675454"
 
 敏感度標籤套用至電子郵件或文件後，會對內容強制執行該標籤的保護設定。使用敏感度標籤，您可以：
 
-- 僅**加密**電子郵件，或同時加密電子郵件與文件。您可以選擇哪些使用者或群組擁有權限執行哪些動作和執行時間。比方說，您可以選擇讓組織外特定網域中的使用者僅在內容標示後的 7 天擁有權限檢閱內容。如需詳細資訊，請參閱[使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
+- 僅**加密**電子郵件，或同時加密電子郵件與文件。您可以選擇哪些使用者或群組擁有權限執行哪些動作和執行時間。比方說，您可以選擇讓組織外特定網域中的使用者僅在內容標示後的 7 天擁有權限檢閱內容。或者，您可以允許使用者在套用標籤時指派內容的權限，而不是由您指派權限。如需詳細資訊，請參閱[使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)。
 
 - **標記內容**的方法為在電子郵件或已套用標籤的文件上新增自訂浮水印、頁首或頁尾。請注意，浮水印僅適用於文件，不適用於電子郵件，並且限制為 255 個字元。此外，頁首和頁尾的限制為 1024 個字元 (除了在 Excel 中的限制為 255 個字元或更少，根據文件是否包含其他頁首或頁尾或其他因素而定。)
 
