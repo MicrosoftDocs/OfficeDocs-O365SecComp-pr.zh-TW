@@ -12,45 +12,45 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 拒絕服務 (DoS) 攻擊的概述。
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+description: 拒絕服務 (DoS) 攻擊的概觀。
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622473"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761659"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>防禦 Office 365 中的拒絕服務攻擊
 
 ## <a name="introduction"></a>簡介
 
-Microsoft 為超過100個資料中心的全域雲端基礎結構所主控的200雲端服務提供信任的基礎結構。 這些包括：
+Microsoft 會傳遞 200 位以上的雲端服務中的全域雲端基礎結構的 100 個以上的資料中心主控高可信度電腦基礎結構。 這些包括：
 
 - Microsoft Azure
 - Microsoft Bing
 - Microsoft Dynamics 365
 - Microsoft Office 365
 - Microsoft OneDrive
-- 用 skype
+- Skype
 - Xbox Live
 
-作為具有大量網際網路平臺的全球組織, 以及提供雲端服務的許多網路內容, Microsoft 是駭客及其他惡意人員的大型、常見的目標。 用戶端與 Microsoft 雲端之間的網路通訊層是最大的惡意攻擊目標之一。 事實上, Microsoft 會持續且永久地採用某種形式的網路網路攻擊。 根據此, Microsoft 會使用縱深防禦的安全性原則來保護其雲端服務和網路。 若沒有防禦這些攻擊的可靠和持續性緩解系統, Microsoft 的雲端服務將會離線且無法供客戶使用。
+重大的網際網路平台服務與許多顯著的網際網路內容提供雲端服務的全球組織，Microsoft 是駭客及其他惡意個人的大型、 常見目標。 用戶端與 Microsoft 雲端之間的網路通訊層是下列其中一個惡意攻擊的最大目標。 事實上，Microsoft 會持續和持續在某種形式的網路型 cyberattack 下。 內嵌，Microsoft 會使用深度防禦安全性原則來保護其雲端服務及網路。 防禦這些攻擊的可靠和持續性降低系統，而 Microsoft 雲端服務就是離線，讓客戶無法使用。
 
-## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>拒絕服務攻擊的定義和徵兆
+## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>定義和拒絕服務攻擊的徵狀
 
-攻擊網路服務的一種方法, 就是建立許多對服務主機的要求, 以使網路和伺服器不會遭到合法使用者的服務。 這稱為「拒絕服務」 (DoS) 攻擊。 當由多個演員、端點和/或向量執行攻擊時, 會將其稱為分散式阻斷服務 (DDoS) 攻擊。 雖然方法、motives 和目標各不相同, 但 DoS 和 DDoS 攻擊通常是由防止網際網路網站或服務正常運作, 或暫時或無限期的努力所構成。
+網路服務來進行攻擊的一種方式是建立許多要求對服務主機壓制網路和拒絕合法的使用者提供服務的伺服器。 這稱為拒絕服務 (DoS) 攻擊。 藉由多個動作項目、 端點] 及/或向量執行攻擊時，它被稱為分散式的拒絕服務 (DDoS) 攻擊。 雖然表示、 動機和目標而有所不同，DoS 和 DDoS 攻擊通常包含以防止網際網路網站或服務無法正確運作，或在所有，暫時或無限期的努力。
 
-[美國電腦緊急就緒小組](https://www.us-cert.gov/)(美國) 會定義 DoS 攻擊的表現, 包括:
+[美國電腦緊急整備小組](https://www.us-cert.gov/)(US CERT) 會定義要包含的 DoS 攻擊的徵狀：
 
-- 網路效能較慢 (開啟檔案或存取網際網路網站時)
-- 網站不可用
-- 無法存取網站
-- 收到垃圾郵件大幅增加
-- 無線或有線網際網路連線的連接
-- 長期失去存取網站或任何網際網路服務的許可權
+- 特別慢速網路效能 (時開啟的檔案或存取的網際網路網站)
+- 二者皆無法使用的網站
+- 無法存取的網站
+- 大幅增加接收到的垃圾郵件
+- 中斷連線的無線或有線的網際網路連線
+- 長期遺失的網頁或任何網際網路服務的存取權
 
 ## <a name="related-topics"></a>相關主題
 
 - [防禦阻斷服務攻擊的核心原則](office-365-core-principles-of-defense-against-dos-attacks.md)
-- [Microsoft 的拒絕服務防護策略](office-365-microsoft-dos-defense-strategy.md)
+- [Microsoft 的拒絕服務攻擊防禦策略](office-365-microsoft-dos-defense-strategy.md)
 - [防禦拒絕服務攻擊的 Microsoft 雲端服務](office-365-defending-cloud-services-against-dos-attacks.md)

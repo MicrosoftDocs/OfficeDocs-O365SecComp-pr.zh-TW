@@ -13,17 +13,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 此解決方案會告訴您何種最常見網路安全性攻擊看起來會像在 Office 365 和給他們的回應方式
-ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 此解決方案會告訴您攻擊看起來會像在 Office 365，以及如何回應這些何種最常見 cybersecurity
+ms.openlocfilehash: f756141b9edfdef2769f18979dcab5ba731ee3fe
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157674"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761669"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全性事件回應
 
- **摘要：** 此解決方案會告訴您指標是針對 Office 365 中最常見的網路安全性攻擊、 如何以正面確認任何指定的攻擊，以及如何回應給它。
+ **摘要：** 此解決方案會告訴您指標是針對 Office 365 中最常見的 cybersecurity 攻擊、 如何以正面確認任何指定的攻擊，以及如何回應給它。
   
 ## <a name="overview"></a>概觀
 可以阻撓並非所有網路攻擊。 攻擊者會不斷地尋找防禦策略中的新弱點或他們所利用舊的。 藉此了解如何辨識攻擊可讓您更快速地來進行回應，縮短安全性事件的持續時間。
