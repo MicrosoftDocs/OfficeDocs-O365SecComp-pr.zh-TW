@@ -1,9 +1,9 @@
 ---
-title: 自動化的調查和 Office 365 中的回應 （空調）
+title: 自動化 Office 365 中的事件回應 （空調）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 了解 Office 365 進階威脅防護中的自動化調查及回應功能。
-ms.openlocfilehash: a62714adb0682d3faf27e25fff365bb1ba6d4fc5
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+description: 了解 Office 365 進階威脅防護中的自動化事件回應功能。
+ms.openlocfilehash: 84b68efe35ebefddf4770f491cc3be453a81f577
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761699"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822483"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
+# <a name="automated-incident-response-air-in-office-365"></a>自動化 Office 365 中的事件回應 （空調）
 
-自動化的調查和 （包含在[Office 365 進階的威脅防護](office-365-atp.md)計劃 2） 的回應 （空調） 功能可讓您回應熟知威脅存在於今天執行自動化的調查程序。 閱讀本篇文章以取得的空調，以及如何可幫助您的組織和安全性作業小組降低威脅，更有效率地概觀。 若要開始使用空調，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
+（包含在[Office 365 進階的威脅防護](office-365-atp.md)計劃 2） 的自動化事件回應 （空調） 功能可讓您回應熟知威脅存在於今天執行自動化的調查程序。 閱讀本篇文章以取得的空調，以及如何可幫助您的組織和安全性作業小組降低威脅，更有效率地概觀。 若要開始使用空調，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
 
 > [!NOTE]
 > 您必須是全域系統管理員、 安全性系統管理員、 安全性運算子或安全性讀取者若要執行本文所述的工作。 若要深入了解，請參閱[Microsoft 365 安全性中心： 角色和權限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
@@ -102,19 +102,22 @@ ms.locfileid: "36761699"
 - 套用篩選。 選擇 [從**調查類型**、**時間範圍**、**狀態**或這些項目的組合。
 - 將資料匯出至.csv 檔案。
 
-調查狀態表示分析和動作的進度。 當調查執行時，狀態會變更為表示是否已找到威脅，以及是否已核准的動作。 
-- **起始**： 調查已排入佇列推出開始
-- **執行**： 調查已啟動，並且所進行的分析
-- **否威脅找到**： 調查已完成其分析，而且找不到任何威脅
-- **終止前所需的系統**： 調查已不關閉，並將在 7 天後過期
-- **擱置中的巨集指令**： 調查找到威脅與建議的動作
-- **威脅找到**： 調查找到威脅，但威脅沒有空調內可用的動作
-- **Remediated**： 調查完成，並完全修復 （已核准所有動作）
-- **部分修復**： 調查完成，並建議的動作的一些已核准
-- **終止前所需的使用者**： 系統管理員終止調查
-- **失敗**： 無法到達在威脅結論調查期間發生錯誤
-- **排入佇列的節流設定**： 調查正在等候由於系統處理限制 （以保護服務效能） 的分析
-- **終止前所需的節流設定**： 調查無法完成中有足夠的時間，因為調查磁碟區及處理限制的系統。 您可以重新觸發調查，選取 [檔案總管中的 [電子郵件，然後選取調查巨集指令。
+調查狀態表示分析和動作的進度。 當調查執行時，狀態會變更，指出是否已找到威脅，以及是否已核准的動作，如下表所述：
+
+|狀態 | 描述  |
+|----|----| 
+|**啟動中**|調查已排入佇列推出開始 |
+|**正在執行** |調查已啟動，並且所進行的分析 |
+|**沒有找到的威脅** |調查已完成其分析，而且找不到任何威脅 |
+|**由系統終止** |調查已不關閉，並將在 7 天後過期 |
+|**擱置中的巨集指令** |調查找到威脅與建議的動作 |
+|**找到的威脅** |調查找到威脅，但威脅沒有空調內可用的動作 |
+|**修復** |調查完成，並完全修復 （已核准所有動作） |
+|**部分修復** |調查完成，並建議的動作的一些已核准 |
+|**終止的使用者** |系統管理員終止調查 |
+|**失敗**|禁止達到上威脅結論調查期間發生錯誤 |
+|**排入佇列的節流設定**|調查正在等候由於系統處理限制 （以保護服務效能） 的分析 |
+|**終止的節流設定**|在有足夠的時間，因為調查磁碟區及處理限制的系統無法完成調查。 您可以重新觸發調查，選取 [檔案總管中的 [電子郵件，然後選取調查巨集指令。 |
 
 ### <a name="investigation-graph"></a>調查圖
 
@@ -270,7 +273,7 @@ ms.locfileid: "36761699"
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>範例： 安全性系統管理員會觸發從威脅總管調查
 
-除了警示所觸發的自動調查，貴組織的安全性作業小組可以觸發自動進行調查，從[威脅總管](use-explorer-in-security-and-compliance.md)] 中檢視。
+除了警示所觸發的自動化調查，貴組織的安全性作業小組可以觸發自動進行調查，從[威脅總管](use-explorer-in-security-and-compliance.md)] 中檢視。
 
 例如，假設您正在檢視的資料在檔案總管中關於使用者報告的郵件。 您可以在結果清單中選取項目，然後按一下 [**調查]**。
 
@@ -280,7 +283,7 @@ ms.locfileid: "36761699"
 
 ![在檔案總管中開始進行調查，惡意程式碼](media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-類似於 playbooks 觸發警示的通知，會觸發從瀏覽器中檢視的自動調查包含根目錄和調查]，以找出並相互關聯的威脅，步驟及建議的動作來減輕這些威脅。
+類似於 playbooks 觸發警示的通知，會觸發從瀏覽器中檢視的自動化的調查包含根目錄和調查]，以找出並相互關聯的威脅，步驟及建議的動作來減輕這些威脅。
 
 ## <a name="how-to-get-air"></a>如何取得航空
 
