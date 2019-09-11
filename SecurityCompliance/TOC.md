@@ -227,7 +227,7 @@
 ### [動態傳遞和預覽詳細資料](dynamic-delivery-and-previewing.md)
 ### [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)
 ### [威脅調查及回應的運作方式](office-365-ti.md)
-### [自動調查及回應的運作方式](automated-investigation-response-office.md)
+### [自動化事件回應的運作方式](automated-investigation-response-office.md)
 
 
 # 安全性事件管理
