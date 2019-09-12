@@ -35,9 +35,7 @@ ms.locfileid: "34152735"
 
 針對檔案共用、SharePoint 網站及文件庫，建議做法包括下列步驟：
 
-1.  
-  **
-  [安裝及設定 Azure 資訊保護掃描器。](https://docs.microsoft.com/zh-TW/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[安裝及設定 Azure 資訊保護掃描器。](https://docs.microsoft.com/zh-TW/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   決定要使用哪個機密資料類型。
 

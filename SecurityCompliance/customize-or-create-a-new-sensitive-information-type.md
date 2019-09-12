@@ -141,11 +141,9 @@ ms.locfileid: "34153735"
 
 使用下列資源，利用 KQL 來制訂和最佳化查詢：
 
--   
-  [關鍵字查詢語言 (KQL) 語法參考 (DMC)](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [關鍵字查詢語言 (KQL) 語法參考 (DMC)](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   
-  [執行內容搜尋](https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [執行內容搜尋](https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 內容搜尋提供另一種資源，協助您開發 KQL 查詢及敏感資訊類型 — 關鍵字。為什麼使用關鍵字清單？您可以取得統計資料，顯示多少個項目比對每一個關鍵字的。這可協助您快速識別哪些關鍵字的效率最好 (最差)。如需搜尋統計資料的詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](https://support.office.com/zh-TW/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
 
