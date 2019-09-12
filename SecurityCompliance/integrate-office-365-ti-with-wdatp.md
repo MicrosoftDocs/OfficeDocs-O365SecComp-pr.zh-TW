@@ -1,7 +1,7 @@
 ---
 title: 整合 Office 365 進階的威脅防護與 Microsoft Defender 進階威脅防護
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 01/22/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 整合 Microsoft Defender 進階威脅防護來威脅管理的詳細的資訊請參閱 < Office 365 進階威脅防護。
-ms.openlocfilehash: 640c073e9ef5b32ffaa8d38a426d86b60d80d2aa
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 5ab849b833f71868d9b08fd1af76ee6d904f5d59
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599049"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852805"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>整合 Office 365 進階的威脅防護與 Microsoft Defender 進階威脅防護
 
@@ -38,11 +38,11 @@ ms.locfileid: "35599049"
     
 - 您必須是 Office 365 全域管理員或具有安全性系統管理員角色 （例如安全性管理員） 中指派[安全性&amp;合規性中心](https://protection.office.com)。 (請參閱[中的 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md))
     
-- 您必須具有存取[檔案總管] （或即時偵測的資訊）](threat-explorer.md)中的安全性 & 合規性中心以及 Microsoft defender 資訊安全中心。
+- 您必須擁有存取權這兩個[檔案總管] （或即時偵測的資訊）](threat-explorer.md)中的安全性 & 規範中心和 Microsoft defender 資訊安全中心。
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>若要將 Microsoft Defender ATP 與整合 Office 365 ATP
 
-整合 Office 365 ATP 與 Microsoft Defender ATP 會設定使用這兩種安全性 & 合規性中心和 Microsoft defender 資訊安全中心。
+整合 Office 365 ATP 與 Microsoft Defender ATP 會設定使用安全 & 與規範中心和 Microsoft defender 資訊安全中心。
   
 1. 為 Office 365 全域系統管理員或安全性系統管理員，請移至[https://protection.office.com](https://protection.office.com)並以 Office 365 您公司或學校帳戶登入。
     

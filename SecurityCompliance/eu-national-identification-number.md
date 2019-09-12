@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟國民身分識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
+ms.openlocfilehash: b784b7509eed899f9f03db96ee5e827b9bf70d2e
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36490770"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852745"
 ---
 # <a name="eu-national-identification-number"></a>歐盟國家識別碼
 
@@ -1096,13 +1096,13 @@ emšo
 
 ### <a name="format"></a>格式
 
-七位數後尾隨一個字元
+後面接著一個字元的八位數
   
 ### <a name="pattern"></a>模式
 
-七位數後尾隨一個字元
+後面接著一個字元的八位數
   
-- 七位數
+- 八位數
     
 - 一個數字或字母 （不區分大小寫）
     
