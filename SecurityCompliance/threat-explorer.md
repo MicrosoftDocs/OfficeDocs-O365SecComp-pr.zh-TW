@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: 049d26a328074be5e209ddecd959cd888a34b650
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: b404fdf5abaf0031313b211c2ef2d415045de4d1
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444883"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852795"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -137,9 +137,9 @@ ms.locfileid: "36444883"
 ## <a name="start-automated-investigation-and-response"></a>啟動自動調查及回應
 
 > [!NOTE]
-> **Office 365 ATP 方案 2** 和 **Office 365 E5** 提供自動調查及回應功能。
+> **Office 365 ATP 方案 2** 和 **Office 365 E5** 提供自動化的事件回應功能。
 
-(新增)！[自動化調查及回應](automated-investigation-response-office.md)能為您的安全性作業小組節省許多時間和精力來調查及降低網路攻擊。 除了設定會觸發安全性劇本的警示，您可以在總管中的檢視啟動自動化調查及回應程序。 
+(新增！)[自動化的事件回應](automated-investigation-response-office.md)能為您的安全性作業小組節省許多時間和精力來調查及降低網路攻擊。 除了設定會觸發安全性劇本的警示，您可以在總管中的檢視啟動自動化調查及回應程序。 
 
 如需這方面的詳細資訊，請參閱[範例：安全性系統管理員從總管觸發調查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 
