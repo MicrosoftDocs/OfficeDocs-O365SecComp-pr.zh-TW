@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: 06c1292138ef7ca4c8421c169555454686ef8858
-ms.sourcegitcommit: 72ee6feaa0e0fd6bf01bfb855ad6e3bef370bf89
+ms.openlocfilehash: b3adf13fe662640c2dbc21eea6a48e2629a1113c
+ms.sourcegitcommit: 9fd606e8d912f4507fbcd9f1fcb9dfcfd20de08b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393332"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980429"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -29,6 +29,12 @@ ms.locfileid: "36393332"
 
 > [!TIP]
 > 感興趣其他系統管理中心中運作？ 請參閱下列文章：<br>[What's new in Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[什麼是 SharePoint 系統管理中心新增](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+
+## <a name="august-2019"></a>2019 年 8 月
+
+### <a name="data-investigations"></a>資料調查
+
+當執行資料調查，您現在可以從其原始位置刪除項目。 這表示您可以從 Exchange 信箱、 SharePoint 網站與 OneDrive 帳戶刪除項目，整個組織。 因為您以作為證據收集項目，您必須複製這些保留在辨識項設為您可以進一步調查，或只保留做為參考。 [深入了解](datainvestigations/delete-items-from-original-locations.md)
 
 ## <a name="july-2019"></a>2019 年 7 月
 
