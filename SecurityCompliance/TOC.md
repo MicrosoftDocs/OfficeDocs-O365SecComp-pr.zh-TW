@@ -1,6 +1,7 @@
 # [安全性與合規性](index.md)
 
 # 開始使用
+## [合規性中心的新功能](whats-new.md)
 ## [Office 365 安全性藍圖](security-roadmap.md)
 ## [設定您的 Office 365 租用戶以提高安全性](tenant-wide-setup-for-increased-security.md)
 ## [新的 Microsoft 365 安全性中心和 Microsoft 365 合規性中心](microsoft-security-and-compliance.md)

@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: f10c6b488683201a2980702cc83efe97bf54f046
-ms.sourcegitcommit: 50a2654d6d56249c3f836607f436446049be7833
+ms.openlocfilehash: 9fa2d1b2d047638ade395a2602ba6f6c8bf2ea79
+ms.sourcegitcommit: 6cc11f46f27a8c4f460100ba4da20c23bfd96f7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838163"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36877312"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
 ## <a name="introduction"></a>簡介
 
-您需要尋找是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用 Office 365 安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的使用者和系統管理員活動：
+需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用 Office 365 安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的使用者和系統管理員活動：
 
 - SharePoint Online 和商務用 OneDrive 中的使用者活動
 
@@ -75,6 +75,9 @@ ms.locfileid: "36838163"
 - 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的 Office 365 稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 訂閱，具體來說，取決於指派給特定使用者的授權類型。
 
   - **Office 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
+
+    > [!NOTE]
+    > 即使信箱稽核預設為開啟，您可能會發現某些使用者的信箱稽核事件在安全性與合規性中心的稽核記錄搜尋或透過 Office 365 管理活動 API 找不到。 如需詳細資訊，請參閱[信箱稽核記錄的相關資訊](enable-mailbox-auditing.md#more-information)。
 
   - **Office 365 E5：** 稽核記錄也會保留 90 天。 E5 使用者與具有 E3 授權及 Office 365 進階合規性附加元件授權的使用者，最終可保留稽核記錄一年。
 
