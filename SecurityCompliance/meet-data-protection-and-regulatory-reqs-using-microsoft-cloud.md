@@ -838,8 +838,8 @@ ms.locfileid: "36643315"
    
 ## <a name="see-also"></a>另請參閱
 
-- [合規性管理員互動指南](https://content.cloudguides.com/guides/Compliance%20Manager) (英文)
+- [合規性管理員互動指南](https://content.cloudguides.com/guides/Compliance%20Manager)
 
-- [宣布合規性管理員正式公開上市](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922) (英文)
+- [宣布合規性管理員正式公開上市](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
 
-- [Microsoft 365 提供資訊保護策略來協助符合 GDPR](https://blogs.office.com/en-us/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
+- [Microsoft 365 提供資訊保護策略來協助符合 GDPR](https://blogs.office.com/zh-TW/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

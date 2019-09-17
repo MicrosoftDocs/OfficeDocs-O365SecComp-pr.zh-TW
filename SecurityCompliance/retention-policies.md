@@ -51,8 +51,8 @@ ms.locfileid: "36822503"
   
 您可以在以下位置建立和管理保留原則：
 
-- [Microsoft 365 合規性中心](https://compliance.microsoft.com/) (英文) 的 [原則]**** 頁面。
-- [Office 365 安全性與合規性中心](https://protection.office.com/) (英文) 的 [資料控管]**** 下的 [保留]**** 頁面。
+- [Microsoft 365 合規性中心](https://compliance.microsoft.com/) 的 [原則]**** 頁面。
+- [Office 365 安全性與合規性中心](https://protection.office.com/) 的 [資料控管]**** 下的 [保留]**** 頁面。
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留原則如何就地使用內容
 
@@ -99,7 +99,7 @@ ms.locfileid: "36822503"
   
 當使用者嘗試變更信箱項目的特定內容時 (例如主旨、內文、附件、寄件者和收件者，或是傳送或接收郵件的日期)，在認可變更之前，會先將原始項目的複本儲存至 [可復原的項目] 資料夾。後續每次變更時都會執行此動作。在保留期間結束時，即會永久刪除 [可復原的項目] 資料夾中的複本。
   
-如果使用者離職，且其信箱包含在保留原則中，則一旦刪除使用者的 Office 365 帳戶，信箱就會變成非作用中信箱。非作用中信箱的內容仍受限於信箱在變成非作用中之前放置在其上的任何保留原則，而且 eDiscovery 可搜尋此內容。如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md) (機器翻譯)。
+如果使用者離職，且其信箱包含在保留原則中，則一旦刪除使用者的 Office 365 帳戶，信箱就會變成非作用中信箱。非作用中信箱的內容仍受限於信箱在變成非作用中之前放置在其上的任何保留原則，而且 eDiscovery 可搜尋此內容。如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md)。
   
 ![電子郵件和公用資料夾中的保留流程圖](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
   
@@ -153,7 +153,7 @@ ms.locfileid: "36822503"
   
 ### <a name="retain-content-that-contains-specific-keywords"></a>保留包含特定關鍵字的內容
 
-您可以只將保留原則套用至符合特定條件的內容，然後只對該內容採取保留動作。可使用的條件現在支援將保留原則套用至包含特定字詞或片語的內容。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。如需這些運算子的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md) (機器翻譯)。
+您可以只將保留原則套用至符合特定條件的內容，然後只對該內容採取保留動作。可使用的條件現在支援將保留原則套用至包含特定字詞或片語的內容。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。如需這些運算子的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
 即將推出對新增可搜尋屬性 (例如 **subject:**) 的支援。
   
@@ -239,7 +239,7 @@ ms.locfileid: "36822503"
   
 ### <a name="teams-locations"></a>Teams 位置
 
-您可以使用保留原則來保留 Teams 中的聊天和通道訊息。Teams 聊天儲存在涉及聊天的每個使用者之信箱的隱藏資料夾中，而 Teams 通道訊息則儲存在團隊的群組信箱中類似的隱藏資料夾中。不過，請務必了解 Teams 會使用 Azure 提供的聊天服務，其中也會儲存此資料，而且根據預設這項服務會永遠儲存該資料。基於這個原因，我們強烈建議您使用 Teams 位置來保留和刪除 Teams 資料。使用 Teams 位置會同時從 Exchange 信箱和基礎 Azure 提供的聊天服務中永久刪除資料。如需詳細資訊，請參閱 [Microsoft Teams 中的安全性及合規性概觀](https://go.microsoft.com/fwlink/?linkid=871258) (英文)。
+您可以使用保留原則來保留 Teams 中的聊天和通道訊息。Teams 聊天儲存在涉及聊天的每個使用者之信箱的隱藏資料夾中，而 Teams 通道訊息則儲存在團隊的群組信箱中類似的隱藏資料夾中。不過，請務必了解 Teams 會使用 Azure 提供的聊天服務，其中也會儲存此資料，而且根據預設這項服務會永遠儲存該資料。基於這個原因，我們強烈建議您使用 Teams 位置來保留和刪除 Teams 資料。使用 Teams 位置會同時從 Exchange 信箱和基礎 Azure 提供的聊天服務中永久刪除資料。如需詳細資訊，請參閱 [Microsoft Teams 中的安全性及合規性概觀](https://go.microsoft.com/fwlink/?linkid=871258)。
   
 請注意，套用到 Exchange 或 Office 365 群組位置中使用者或群組信箱的保留原則不會影響 Teams 聊天和頻道訊息。即使 Teams 聊天和通道訊息儲存在 Exchange 中，它們也只會受到套用至 Teams 位置的保留原則影響。
   
@@ -332,25 +332,25 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
   
 ## <a name="use-a-retention-policy-instead-of-these-features"></a>使用保留原則，而不是這些功能
 
-單一保留原則可以輕鬆地套用到 Office 365 中的整個組織和位置，包括 Exchange Online、SharePoint Online、商務用 OneDrive 和 Office 365 群組。如果您需要保留或刪除 Office 365 中任何位置的內容，則我們建議您使用保留原則。(您也可以使用標籤與保留設定搭配 - 如需詳細資訊，請參閱[標籤概觀](labels.md) (英文)。)
+單一保留原則可以輕鬆地套用到 Office 365 中的整個組織和位置，包括 Exchange Online、SharePoint Online、商務用 OneDrive 和 Office 365 群組。如果您需要保留或刪除 Office 365 中任何位置的內容，則我們建議您使用保留原則。(您也可以使用標籤與保留設定搭配 - 如需詳細資訊，請參閱[標籤概觀](labels.md)。)
   
 有一些之前用來保留或刪除 Office 365 中的內容的其他功能。 如下所示。 這些功能會隨著保留原則和保留標籤繼續運作。 但建議您使用保留原則或標籤 (而非所有這些功能) 來進行資料控管。 保留原則是唯一可以同時保留及刪除 Office 365 中的內容之功能。
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [管理 Office 365 安全性與合規性中心的 eDiscovery 案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (機器翻譯) (eDiscovery 保留) 
+- [管理 Office 365 安全性與合規性中心的 eDiscovery 案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery 保留) 
     
-- [就地保留與訴訟暫止](https://go.microsoft.com/fwlink/?linkid=846124) (機器翻譯) (eDiscovery 保留) 
+- [就地保留與訴訟暫止](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery 保留) 
 
-- [如何找出位於 Exchange Online 信箱的保留類型](https://docs.microsoft.com/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox) (機器翻譯)
+- [如何找出位於 Exchange Online 信箱的保留類型](https://docs.microsoft.com/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox)
     
-- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125) (機器翻譯)，又稱為[郵件記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (機器翻譯) (僅限刪除) 
+- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125)，又稱為[郵件記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (僅限刪除) 
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive
 
-- [管理 Office 365 安全性與合規性中心的 eDiscovery 案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (機器翻譯) (eDiscovery 保留) 
+- [管理 Office 365 安全性與合規性中心的 eDiscovery 案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery 保留) 
     
-- [在 eDiscovery 中心將內容新增至案例及保留來源](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (機器翻譯) (eDiscovery 保留) 
+- [在 eDiscovery 中心將內容新增至案例及保留來源](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (eDiscovery 保留) 
     
 - [文件刪除原則的概觀](https://support.office.com/article/55e8d858-f278-482b-a198-2e62d6a2e6e5) (僅限刪除) 
     
@@ -358,7 +358,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
     
 - [網站關閉及刪除的使用原則](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5) (僅限刪除) 
     
-- [資料管理原則](intro-to-info-mgmt-policies.md) (機器翻譯) (僅限刪除) 
+- [資料管理原則](intro-to-info-mgmt-policies.md) (僅限刪除) 
     
 請注意，如果您之前曾為了資料控管而使用任何 eDiscovery 保留，您應為主動合規性改用保留原則。 您應僅對電子文件探索使用保留。
   
@@ -368,11 +368,11 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
   
 ## <a name="what-happened-to-preservation-policies"></a>保留原則發生了什麼情況？
 
-如果您過去使用的是保留原則 (preservation policy)，該原則現已自動轉換為只使用保留動作的保留原則 (retention policy)，即該原則不會刪除內容。 保留原則將繼續運作，並保留您的內容，而不會要求您進行任何變更。 您可以在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/) (英文) 的 [原則]**** 頁面，或在[安全性與合規性中心](https://protection.office.com/) (英文) 的 [資料控管]**** 下的 [保留]**** 頁面上尋找這些原則。 您可以編輯保留原則以變更保留期間，但您不能進行其他變更，例如新增或移除位置。 
+如果您過去使用的是保留原則 (preservation policy)，該原則現已自動轉換為只使用保留動作的保留原則 (retention policy)，即該原則不會刪除內容。 保留原則將繼續運作，並保留您的內容，而不會要求您進行任何變更。 您可以在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/) 的 [原則]**** 頁面，或在[安全性與合規性中心](https://protection.office.com/) 的 [資料控管]**** 下的 [保留]**** 頁面上尋找這些原則。 您可以編輯保留原則以變更保留期間，但您不能進行其他變更，例如新增或移除位置。 
   
 ## <a name="permissions"></a>權限
 
-您的合規性小組中負責建立保留原則的成員必須具備[安全性與合規性中心](https://protection.office.com/) (英文) 的權限。 根據預設，租用戶管理員將可存取此位置，並且可直接讓法務人員與其他人存取[安全性與合規性中心](https://protection.office.com/) (英文) ，而不需要為其提供租用戶管理員的所有權限。若要這麼做，我們建議您：移至[安全性與合規性中心](https://protection.office.com/) (英文) 的 [權限]**** 頁面，編輯 [規範管理員]**** 角色群組，將該成員加入此角色群組。 
+您的合規性小組中負責建立保留原則的成員必須具備[安全性與合規性中心](https://protection.office.com/) 的權限。 根據預設，租用戶管理員將可存取此位置，並且可直接讓法務人員與其他人存取[安全性與合規性中心](https://protection.office.com/) ，而不需要為其提供租用戶管理員的所有權限。若要這麼做，我們建議您：移至[安全性與合規性中心](https://protection.office.com/) 的 [權限]**** 頁面，編輯 [規範管理員]**** 角色群組，將該成員加入此角色群組。 
   
 如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](grant-access-to-the-security-and-compliance-center.md)。
   
@@ -388,8 +388,8 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
     
 ## <a name="more-information"></a>詳細資訊
 
-- [標籤概觀](labels.md) (英文)
+- [標籤概觀](labels.md)
 - [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Microsoft Teams 的限制和規格](https://docs.microsoft.com/zh-TW/microsoftteams/limits-specifications-teams) (英文) 
+- [Microsoft Teams 的限制和規格](https://docs.microsoft.com/zh-TW/microsoftteams/limits-specifications-teams) 
     
 

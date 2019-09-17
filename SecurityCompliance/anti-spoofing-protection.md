@@ -79,7 +79,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
   
 如此一來，使用者就能確信他們所收到的電子郵件未遭到假冒，寄件者也能放心，沒有人會冒充他們的網域，而 Office 365 的客戶也能提供更完善的防護，如冒充防護。
   
-若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Office 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209) (英文)。
+若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Office 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)。
   
 ## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>識別分類為詐騙郵件的郵件
 
@@ -114,7 +114,7 @@ Microsoft 將詐騙郵件區分為兩種類型：
   
  **組織內部詐騙**
   
-也稱為自我詐騙，當寄件者地址中的網域與收件者網域相同或相符時 (當收件者網域是組織[接受的網域](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)之一時)，就會發生這種情況；或者，當寄件者地址中的網域是同一組織的一部分時。
+也稱為自我詐騙，當寄件者地址中的網域與收件者網域相同或相符時 (當收件者網域是組織[接受的網域](https://technet.microsoft.com/zh-TW/library/jj945194%28v=exchg.150%29.aspx)之一時)，就會發生這種情況；或者，當寄件者地址中的網域是同一組織的一部分時。
   
 例如，下列寄件者和收件者來自相同網域 (contoso.com)。 在電子郵件地址間插入空格以防止垃圾郵件機器人從此網頁進行收集)：
   
@@ -374,7 +374,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 **方法 3 - 為寄件者/收件者配對建立允許項目**
   
-您也可以選擇略過篩選特定寄件者的所有垃圾郵件。 如需詳細資訊，請參閱[如何在 Office 365 中安全地將寄件者新增至允許清單](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/) (英文)。
+您也可以選擇略過篩選特定寄件者的所有垃圾郵件。 如需詳細資訊，請參閱[如何在 Office 365 中安全地將寄件者新增至允許清單](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/)。
   
 如果您使用這個方法，將略過垃圾郵件和部分網路釣魚篩選，但不會略過惡意程式碼篩選。
   
@@ -551,9 +551,9 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
   
 如果您或組織內部人員是郵寄清單的系統管理員，可以設定它略過反詐騙檢查。
   
-- 請查看 DMARC.org 上的常見問題集：[我操作郵寄清單，並想要與 DMARC 互相操作，該怎麼做？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F) (英文)
+- 請查看 DMARC.org 上的常見問題集：[我操作郵寄清單，並想要與 DMARC 互相操作，該怎麼做？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
 
-- 閱讀此部落格文章的指示：[郵寄清單操作人員與 DMARC 互相操作以避免失敗的提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/) (英文)
+- 閱讀此部落格文章的指示：[郵寄清單操作人員與 DMARC 互相操作以避免失敗的提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
 
 - 若考慮在郵寄清單伺服器上安裝更新以支援 ARC，請參閱 [https://arc-spec.org](https://arc-spec.org/)
 
@@ -633,7 +633,7 @@ example.com IN TXT "v=spf1 include:spf.example.com ?all"
 
 即使您對來自您的平台的電子郵件進行驗證，也無法保證Microsoft 的可傳遞性，但至少可保證 Microsoft 不會因為郵件未經過驗證，而將它列為垃圾郵件。 如需 Outlook.com 如何篩選電子郵件的詳細資料，請參閱[Outlook.com Postmaster 頁面](https://postmaster.live.com/pm/postmaster.aspx)。
   
-如需服務提供者最佳作法的詳細資訊，請參閱[適用服務提供者的 M3AAWG 行動傳訊最佳做法](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf) (英文)。
+如需服務提供者最佳作法的詳細資訊，請參閱[適用服務提供者的 M3AAWG 行動傳訊最佳做法](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf)。
   
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -653,7 +653,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 回報垃圾郵件或非垃圾郵件？
 
-您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx) (機器翻譯)。
+您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://technet.microsoft.com/zh-TW/library/jj200769%28v=exchg.150%29.aspx)。
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我是網域系統管理員，但我不認識所有寄件者！
 

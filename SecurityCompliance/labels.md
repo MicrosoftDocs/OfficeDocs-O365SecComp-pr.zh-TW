@@ -121,7 +121,7 @@ ms.locfileid: "36676653"
 
 在 Exchange Online 中，是透過每 7 天執行一次的程序，將保留標籤提供給使用者。您可以使用 Powershell 查看此程序上次執行的時間，依此判斷下一次執行時間。
   
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773) (機器翻譯)。
+1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773)。
     
 2. 執行下列命令。
     
@@ -157,11 +157,11 @@ ms.locfileid: "36676653"
   
 ## <a name="how-retention-labels-enforce-retention"></a>保留標籤如何強制保留
 
-保留標籤可以強制執行與保留原則完全相同的保留動作。您可以使用保留標籤來實作複雜的內容規劃 (或檔案規劃)。如需保留運作方式的詳細資訊，請參閱[保留原則概觀](retention-policies.md) (英文)。
+保留標籤可以強制執行與保留原則完全相同的保留動作。您可以使用保留標籤來實作複雜的內容規劃 (或檔案規劃)。如需保留運作方式的詳細資訊，請參閱[保留原則概觀](retention-policies.md)。
   
 除此之外，保留標籤有兩個只能用於保留標籤，但不能用於保留原則的保留選項。使用保留標籤，您可以：
   
-- 在保留期間結束時觸發處置檢閱，這樣能在刪除 SharePoint 和 OneDrive 文件之前，必須先檢閱它們。如需詳細資訊，請參閱[處置檢閱概觀](disposition-reviews.md) (機器翻譯)。
+- 在保留期間結束時觸發處置檢閱，這樣能在刪除 SharePoint 和 OneDrive 文件之前，必須先檢閱它們。如需詳細資訊，請參閱[處置檢閱概觀](disposition-reviews.md)。
     
 - 保留期間是從內容套用標籤時開始計算，而不是內容的壽命或上次修改時間。 請注意，此選項僅適用 SharePoint 網站和 OneDrive 帳戶中的內容。 針對 Exchange 電子郵件，保留期間一律會取決於傳送或接收訊息的日期，無論在這裡選擇的選項為何。
     
@@ -263,7 +263,7 @@ ms.locfileid: "36676653"
   
 ### <a name="auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information"></a>自動將保留標籤套用至包含特定類型敏感資訊的內容
 
-當您為敏感資訊建立自動套用保留標籤時，會看到和建立資料外洩防護 (DLP) 原則相同的原則範本清單。每個原則範本皆預先設定為尋找特定類型的敏感資訊，例如，此處顯示的範本會尋找美國 ITIN、SSN 和護照號碼。若要深入了解 DLP，請參閱[資料外洩防護原則概觀](data-loss-prevention-policies.md) (機器翻譯)。
+當您為敏感資訊建立自動套用保留標籤時，會看到和建立資料外洩防護 (DLP) 原則相同的原則範本清單。每個原則範本皆預先設定為尋找特定類型的敏感資訊，例如，此處顯示的範本會尋找美國 ITIN、SSN 和護照號碼。若要深入了解 DLP，請參閱[資料外洩防護原則概觀](data-loss-prevention-policies.md)。
   
 ![敏感資訊類型的原則範本](media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
@@ -373,29 +373,29 @@ ms.locfileid: "36676653"
   
 ### <a name="records-cant-be-deleted"></a>無法刪除記錄
 
-如果您嘗試刪除 Exchange 中的一筆記錄，該項目會移到「可復原的項目」資料夾中，如[保留原則如何就地處理內容](retention-policies.md#how-a-retention-policy-works-with-content-in-place) (英文) 中所述。
+如果您嘗試刪除 Exchange 中的一筆記錄，該項目會移到「可復原的項目」資料夾中，如[保留原則如何就地處理內容](retention-policies.md#how-a-retention-policy-works-with-content-in-place) 中所述。
   
 如果您嘗試刪除 SharePoint 中的記錄，您會看到無法刪除該項目的錯誤，該項目仍會保留在文件庫中。
   
 ![無法從 SharePoint 中刪除項目的訊息](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
   
-如果您嘗試刪除 OneDrive 中的一筆記錄，該項目會移到「文件保留庫」中，如[保留原則如何就地處理內容](retention-policies.md#how-a-retention-policy-works-with-content-in-place) (英文) 中所述。
+如果您嘗試刪除 OneDrive 中的一筆記錄，該項目會移到「文件保留庫」中，如[保留原則如何就地處理內容](retention-policies.md#how-a-retention-policy-works-with-content-in-place) 中所述。
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>使用保留標籤作為 DLP 原則的條件
 
 保留標籤可強制執行保留內容的動作。此外，您也可以使用保留標籤作為資料外洩防護 (DLP) 原則的條件。DLP 原則可以對包含特定標籤的內容強制執行其他動作，例如限制存取。 
   
-如需詳細資訊，請參閱[使用標籤做為條件的 DLP 原則](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy) (機器翻譯)。
+如需詳細資訊，請參閱[使用標籤做為條件的 DLP 原則](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy)。
   
 ## <a name="monitor-retention-labels"></a>監控保留標籤
 
 發佈或自動套用保留標籤後，您會想要確認它們如您的預期套用到內容。若要監控您的保留標籤，可以使用：
   
-- **標籤活動總管**。使用標籤活動總管 (如下所示)，可以快速搜尋和檢視過去 30 天在 SharePoint 和商務用 OneDrive 上所有內容的保留標籤活動。如需詳細資訊，請參閱[檢視文件的標籤活動](view-label-activity-for-documents.md) (英文)。
+- **標籤活動總管**。使用標籤活動總管 (如下所示)，可以快速搜尋和檢視過去 30 天在 SharePoint 和商務用 OneDrive 上所有內容的保留標籤活動。如需詳細資訊，請參閱[檢視文件的標籤活動](view-label-activity-for-documents.md)。
 
 - [標籤分析]**** 頁面。 在 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中，您可以快速檢視最常使用的標籤和套用標籤的位置。 您也可以檢視具有特定標籤的所有內容。 如需詳細資訊，請參閱[利用標籤分析檢視標籤使用量](label-analytics.md)。
     
-- **資料控管報告**。使用資料控管報告，可以快速檢視過去 90 天在 Exchange、SharePoint、商務用 OneDrive 上所有內容的保留標籤趨勢和活動。如需詳細資訊，請參閱[資料控管報告](view-the-data-governance-reports.md) (英文)。
+- **資料控管報告**。使用資料控管報告，可以快速檢視過去 90 天在 Exchange、SharePoint、商務用 OneDrive 上所有內容的保留標籤趨勢和活動。如需詳細資訊，請參閱[資料控管報告](view-the-data-governance-reports.md)。
     
 ![標籤活動總管](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
@@ -403,7 +403,7 @@ ms.locfileid: "36676653"
 
 將保留標籤指派至內容後 (無論是由使用者指派或自動套用)，您可以使用「內容搜尋」，尋找以特定保留標籤分類的所有內容。
   
-當您建立內容搜尋時，請選擇 [合規性標籤]**** 條件，然後輸入完整的標籤名稱或是部分標籤名稱加上萬用字元。如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md) (機器翻譯)。
+當您建立內容搜尋時，請選擇 [合規性標籤]**** 條件，然後輸入完整的標籤名稱或是部分標籤名稱加上萬用字元。如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
 ![合規性標籤條件](media/82d6af16-59f8-462f-babb-c894b2917018.png)
   
@@ -439,7 +439,7 @@ Office 365 先前提供數種用於將內容分類以及管理記錄的功能，
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125) (機器翻譯)，又稱為[郵件記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (機器翻譯) (僅限刪除) 
+- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125)，又稱為[郵件記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (僅限刪除) 
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive
 
@@ -447,7 +447,7 @@ Office 365 先前提供數種用於將內容分類以及管理記錄的功能，
     
 - [記錄中心簡介](https://support.office.com/article/bae6ca5a-7b19-40e0-b433-e3613a747c2c) (保留) 
     
-- [資料管理原則](intro-to-info-mgmt-policies.md) (機器翻譯) (僅限刪除) 
+- [資料管理原則](intro-to-info-mgmt-policies.md) (僅限刪除) 
     
 ## <a name="permissions"></a>權限
 
