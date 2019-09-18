@@ -1,8 +1,8 @@
 ---
 title: Office 365 安全電子郵件入口網站隱私權聲明
-ms.author: tracyp
-author: MSFTTracyP
-manager: dansimp
+ms.author: krowley
+author: KCCross
+manager: laurawi
 ms.date: 10/12/2018
 audience: End User
 ms.topic: reference
@@ -14,12 +14,12 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 上次更新： 5 月 2017
-ms.openlocfilehash: 06414b4400ed980968fb95e2e9c4ec06beec8a42
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 0842a7cad9b69cc85cb72802d44b7229bc7b932c
+ms.sourcegitcommit: 30fc793d3e77e223dee6c96a94e50cda2de34bb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600529"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37011705"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>Office 365 安全電子郵件入口網站隱私權聲明
 

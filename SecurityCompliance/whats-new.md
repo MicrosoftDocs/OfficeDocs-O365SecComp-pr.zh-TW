@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: b3adf13fe662640c2dbc21eea6a48e2629a1113c
-ms.sourcegitcommit: 9fd606e8d912f4507fbcd9f1fcb9dfcfd20de08b
+ms.openlocfilehash: c5abb71c21e6c65d46768d584101f6902c0422c2
+ms.sourcegitcommit: 30fc793d3e77e223dee6c96a94e50cda2de34bb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "36980429"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37011715"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -31,6 +31,8 @@ ms.locfileid: "36980429"
 > 感興趣其他系統管理中心中運作？ 請參閱下列文章：<br>[What's new in Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[什麼是 SharePoint 系統管理中心新增](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
 ## <a name="august-2019"></a>2019 年 8 月
+
+想知道為何在發行前方安靜本月嗎？ 我們向下建立新的創新合規性解決方案，將會在[Microsoft Ignite](https://www.microsoft.com/ignite)市年 11 月中的標題。 持續關注 ！
 
 ### <a name="data-investigations"></a>資料調查
 
